@@ -1,0 +1,67 @@
+connectors/acerta.yaml
+  s_eeda7bd9685d9d::t_c349ac4f433af8 1-4
+connectors/act.yaml
+  s_eeda7bd9685d9d::t_fd7440fb92bce5 1-10
+connectors/activecampaign.yaml
+  s_eeda7bd9685d9d::t_c7823cf49c6591 1-34
+connectors/adp-ihcm.yaml
+  s_eeda7bd9685d9d::t_5dff4224d3996e 1-4
+connectors/adp-workforce-now.yaml
+  s_eeda7bd9685d9d::t_a681fea8f8e13e 1-11
+connectors/albacross.yaml
+  s_eeda7bd9685d9d::t_fb8dfdb5a7c6c6 1-10
+connectors/amazon-seller-central.yaml
+  s_eeda7bd9685d9d::t_3f70c525ec1433 1-12
+connectors/attio.yaml
+  s_eeda7bd9685d9d::t_2d531c036aae8e 1-9
+connectors/bamboohr.yaml
+  s_eeda7bd9685d9d::t_8e7585852d43b3 1-11
+connectors/bigcommerce.yaml
+  s_eeda7bd9685d9d::t_19710de27f99a9 1-11
+connectors/blackbaud.yaml
+  s_eeda7bd9685d9d::t_e2460c68a89000 1-11
+connectors/bol-com.yaml
+  s_eeda7bd9685d9d::t_c0219a1c9c87aa 1-9
+connectors/breathehr.yaml
+  s_eeda7bd9685d9d::t_11064f54b1e376 1-4
+connectors/bullhorn-ats.yaml
+  s_eeda7bd9685d9d::t_65585e4a2a07f7 1-4
+connectors/catalystone.yaml
+  s_eeda7bd9685d9d::t_d23bfab2407a4a 1-10
+connectors/cegid-talentsoft.yaml
+  s_eeda7bd9685d9d::t_6276ad5c7410e8 1-4
+connectors/ceridian-dayforce.yaml
+  s_eeda7bd9685d9d::t_cc8c6f0952796e 1-18
+connectors/cezannehr.yaml
+  s_eeda7bd9685d9d::t_792d125a51ba49 1-10
+connectors/charliehr.yaml
+  s_eeda7bd9685d9d::t_7682a529999144 1-4
+connectors/ciphr.yaml
+  s_eeda7bd9685d9d::t_3ff0152ee07575 1-4
+connectors/close.yaml
+  s_eeda7bd9685d9d::t_3e6a3001b27b52 1-9
+connectors/clover.yaml
+  s_eeda7bd9685d9d::t_bf7a9e81dea806 1-4
+connectors/copper.yaml
+  s_eeda7bd9685d9d::t_005446cb0472ff 1-10
+index.json
+  s_eeda7bd9685d9d::t_1d96afb525bb64 2266-2566
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_8987dae29de5f4 344-354,359-360
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "49930c960e7f8f8339e993065e4a407d82bdc8d1",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
