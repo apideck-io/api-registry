@@ -1,17 +1,18 @@
 id: jira
 name: "Jira"
+notes: "Server set to the OAuth 2.0 (3LO) base, api.atlassian.com/ex/jira/{cloud_id}, which Apideck connections use; the spec itself names your-domain.atlassian.net, the API-token base."
 specs:
   - name: "Jira Cloud platform REST API v3"
     url: "https://developer.atlassian.com/cloud/jira/platform/swagger-v3.v3.json"
     format: openapi-3.0
     provenance: vendor
-    server: "https://your-domain.atlassian.net"
+    server: "https://api.atlassian.com/ex/jira/{cloud_id}"
     license: "Apache 2.0"
     notes: "Per-tenant server (https://{site}.atlassian.net; OAuth 3LO uses https://api.atlassian.com/ex/jira/{cloudId}). apiVersion is a build snapshot string that changes on every publish."
   - name: "Jira Software Cloud REST API"
     url: "https://developer.atlassian.com/cloud/jira/software/swagger.v3.json"
     format: openapi-3.0
     provenance: vendor
-    server: "https://your-domain.atlassian.net"
+    server: "https://api.atlassian.com/ex/jira/{cloud_id}"
     license: "Apache 2.0"
     notes: "Agile/boards/sprints API. Per-tenant server."

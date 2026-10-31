@@ -2873,7 +2873,8 @@
           "title": "The Jira Cloud platform REST API",
           "apiVersion": "1001.0.0-SNAPSHOT-d794cfb4c7554a89092e2f32783da3a72153f3f0",
           "specVersion": "3.0.1",
-          "server": "https://your-domain.atlassian.net",
+          "server": "https://api.atlassian.com/ex/jira/{cloud_id}",
+          "specServer": "https://your-domain.atlassian.net",
           "changedOn": "2026-10-31"
         },
         "Jira Software Cloud REST API": {
@@ -2884,7 +2885,8 @@
           "title": "Jira Software Cloud API",
           "apiVersion": "1001.0.0",
           "specVersion": "3.0.1",
-          "server": "https://your-domain.atlassian.net",
+          "server": "https://api.atlassian.com/ex/jira/{cloud_id}",
+          "specServer": "https://your-domain.atlassian.net",
           "changedOn": "2026-10-31"
         }
       }
