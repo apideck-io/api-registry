@@ -1,0 +1,35 @@
+README.md
+  s_eeda7bd9685d9d::t_23444ef40c4ffa 32
+connectors/dualentry.yaml
+  s_eeda7bd9685d9d::t_6b2957e1f17548 2
+connectors/kashflow.yaml
+  s_eeda7bd9685d9d::t_c7a437bde115b6 2
+connectors/myob-acumatica.yaml
+  s_eeda7bd9685d9d::t_b52f51a1ac03ff 6,9
+connectors/sage-intacct-rest.yaml
+  s_eeda7bd9685d9d::t_af64af11b673e4 3-11
+connectors/salesforce.yaml
+  s_eeda7bd9685d9d::t_0f85b1550bcba7 3-4
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_19eaef4d403ddf 83-84,223-224,227,231,246,250-252,366-367,371-374,377,384
+connectors/github-enterprise-cloud.yaml
+  s_eeda7bd9685d9d::t_6a585b65cc669f 3,9
+index.json
+  s_eeda7bd9685d9d::t_97a91bc408e9c3 1375,1585,1696,1722-1726,2174-2175,2387-2388,2392-2413,2459-2460,2464-2485
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4116aeee0020b81c7cef560fa7cf831481d5e8b3",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
