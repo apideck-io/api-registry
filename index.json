@@ -1724,6 +1724,23 @@
     "sage-intacct-rest": {
       "name": "Sage Intacct REST",
       "specs": {}
+    },
+    "jobadder": {
+      "name": "JobAdder",
+      "specs": {
+        "JobAdder API v2": {
+          "status": "ok",
+          "sha256": "08f2c43c22ddb9073ac7df1c85e9ec1e20accc6fe25b72102bd3aad3f83d9c58",
+          "bytes": 1313149,
+          "operations": 398,
+          "title": "JobAdder API",
+          "apiVersion": "v2",
+          "specVersion": "3.0.1",
+          "server": "https://api.jobadder.com/v2",
+          "specServer": "/v2",
+          "changedOn": "2026-10-31"
+        }
+      }
     }
   }
 }

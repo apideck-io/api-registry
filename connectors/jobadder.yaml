@@ -1,0 +1,9 @@
+id: jobadder
+name: "JobAdder"
+specs:
+  - name: "JobAdder API v2"
+    url: "https://api.jobadder.com/v2/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.jobadder.com/v2"
+    notes: "The spec's own server is relative (/v2); production is api.jobadder.com and sandbox is sandboxapi.jobadder.com, as in Apideck's connector. Interactive docs at https://api.jobadder.com/v2/docs."
