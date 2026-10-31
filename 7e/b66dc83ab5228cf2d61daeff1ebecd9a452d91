@@ -1,0 +1,65 @@
+connectors/google-workspace.yaml
+  s_eeda7bd9685d9d::t_2d2b7e5228b2f7 1-10
+connectors/greenhouse.yaml
+  s_eeda7bd9685d9d::t_a91296af4f0fac 1-10
+connectors/group-s.yaml
+  s_eeda7bd9685d9d::t_ff8273ff0439d1 1-4
+connectors/gusto.yaml
+  s_eeda7bd9685d9d::t_18b2598b266395 1-4
+connectors/haileyhr.yaml
+  s_eeda7bd9685d9d::t_38219063670097 1-9
+connectors/hibob-oauth.yaml
+  s_eeda7bd9685d9d::t_15917883957e9d 1-11
+connectors/hibob.yaml
+  s_eeda7bd9685d9d::t_397855fb5e8acd 1-81
+connectors/homerun-hr.yaml
+  s_eeda7bd9685d9d::t_6d5b7610a8fabe 1-10
+connectors/hr-works.yaml
+  s_eeda7bd9685d9d::t_e0fc631260a70a 1-9
+connectors/hubspot.yaml
+  s_eeda7bd9685d9d::t_a7fb3bf34408b2 1-34
+connectors/humaans-io.yaml
+  s_eeda7bd9685d9d::t_5f324b13481eb7 1-4
+connectors/intuit-bank-feeds.yaml
+  s_eeda7bd9685d9d::t_ecb9c43c2ee967 1-4
+connectors/jira-api-token.yaml
+  s_eeda7bd9685d9d::t_c4dfbcef55eb8b 1-18
+connectors/jira-teams.yaml
+  s_eeda7bd9685d9d::t_2c01b87a423e29 1-17
+connectors/jira.yaml
+  s_eeda7bd9685d9d::t_bb298679d27396 1-17
+connectors/jumpcloud.yaml
+  s_eeda7bd9685d9d::t_438dbab2ba8196 1-14
+connectors/justworks.yaml
+  s_eeda7bd9685d9d::t_86ca6812f16ba2 1-10
+connectors/keka.yaml
+  s_eeda7bd9685d9d::t_2b06803dfc195a 1-94
+connectors/kenjo.yaml
+  s_eeda7bd9685d9d::t_65bc43695b5ecc 1-9
+connectors/lever.yaml
+  s_eeda7bd9685d9d::t_94a31ced368ea4 1-4
+connectors/lexware-office.yaml
+  s_eeda7bd9685d9d::t_953366b4ca43ba 1-10
+connectors/liantis.yaml
+  s_eeda7bd9685d9d::t_b928809f450778 1-4
+connectors/lightspeed.yaml
+  s_eeda7bd9685d9d::t_a82b69d1bf84c0 1-4
+index.json
+  s_eeda7bd9685d9d::t_402406f3312266 2567-3199
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7eb66dc83ab5228cf2d61daeff1ebecd9a452d91",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
