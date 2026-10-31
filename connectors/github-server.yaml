@@ -1,0 +1,10 @@
+id: github-server
+name: "GitHub Enterprise Server (on-prem)"
+notes: "Per-instance host; version-specific spec."
+specs:
+  - name: "GitHub Enterprise Server 3.22 REST API"
+    url: "https://raw.githubusercontent.com/github/rest-api-description/main/descriptions/ghes-3.22/ghes-3.22.json"
+    format: openapi-3.0
+    provenance: vendor
+    license: "MIT"
+    notes: "Latest GHES version in repo (ghes-3.22). Older versions under descriptions/ghes-*. Host is per instance."

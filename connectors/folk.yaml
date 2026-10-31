@@ -1,0 +1,10 @@
+id: folk
+name: "Folk"
+notes: "Fetchable vendor OpenAPI."
+specs:
+  - name: "folk External API"
+    url: "https://developer.folk.app/schemas/2025-06-09.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.folk.app"
+    notes: "Listed under 'OpenAPI Specs' in https://developer.folk.app/llms.txt. Date-versioned filename; check llms.txt for newer versions."

@@ -1741,6 +1741,528 @@
           "changedOn": "2026-10-31"
         }
       }
+    },
+    "crisp": {
+      "name": "Crisp",
+      "specs": {
+        "Crisp REST API v1 Postman collection": {
+          "status": "ok",
+          "sha256": "515860c6d84f45e42b4faa969be156dd4ebdaef2a5f717378956cb2681a62c02",
+          "bytes": 143546,
+          "operations": 156,
+          "title": "Crisp REST API Reference (V1)",
+          "server": "https://api.crisp.chat/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "deel": {
+      "name": "Deel",
+      "specs": {
+        "Deel API (combined endpoints)": {
+          "status": "ok",
+          "sha256": "e90b8d8a6279a96c8400880544168b28faab9202d26423335166edc786092b1f",
+          "bytes": 7063174,
+          "operations": 541,
+          "title": "Endpoints",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.letsdeel.com/rest",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "digits": {
+      "name": "Digits",
+      "specs": {
+        "Digits Connect API": {
+          "status": "ok",
+          "sha256": "285699164330388c629d17c72837faf02ba38d204b9daa3bfe661ac73c47ba41",
+          "bytes": 233924,
+          "operations": 93,
+          "title": "Digits Connect API",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.3",
+          "server": "https://connect.digits.com",
+          "changedOn": "2026-10-31"
+        },
+        "Digits Connect API - OAuth": {
+          "status": "ok",
+          "sha256": "928bf89b622d32faab9512ee2e4ec5e11cb39697961e3effc07874127c401d7f",
+          "bytes": 3175,
+          "operations": 1,
+          "title": "Digits Connect API - OAuth Authorization",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.3",
+          "server": "https://connect.digits.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "dropbox": {
+      "name": "Dropbox",
+      "specs": {}
+    },
+    "e-boekhouden": {
+      "name": "e-Boekhouden.nl",
+      "specs": {
+        "e-Boekhouden REST API v1": {
+          "status": "ok",
+          "sha256": "7b53f6dd9b39ce9c39d94a64686d7c807dd20139529a4ce9b338281506452aab",
+          "bytes": 578380,
+          "operations": 41,
+          "title": "e-Boekhouden API",
+          "apiVersion": "v1",
+          "specVersion": "3.1.1",
+          "server": "https://api.e-boekhouden.nl/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "e-conomic": {
+      "name": "e-conomic",
+      "specs": {
+        "Visma e-conomic OpenAPI Projects v2": {
+          "status": "ok",
+          "sha256": "6e52414a229d826dcdede1335bc3c983f5d3fa5ff1ca7ae38dfd0dec5a921e34",
+          "bytes": 576020,
+          "operations": 98,
+          "title": "Visma e-conomic OpenAPI Projects v2",
+          "apiVersion": "1.1.0",
+          "specVersion": "3.1.1",
+          "server": "https://apis.e-conomic.com/projectsapi/v1.1.0/",
+          "changedOn": "2026-10-31"
+        },
+        "Visma e-conomic OpenAPI Customers": {
+          "status": "ok",
+          "sha256": "a2f3eaff154b1346f4eb9df155d78fa3907725c0aa70788a079930a31ff3eae1",
+          "bytes": 168377,
+          "operations": 22,
+          "title": "Visma e-conomic OpenAPI Customers",
+          "apiVersion": "3.1.0",
+          "specVersion": "3.1.1",
+          "server": "https://apis.e-conomic.com/customersapi/v3.1.0/",
+          "changedOn": "2026-10-31"
+        },
+        "Visma e-conomic OpenAPI Products": {
+          "status": "ok",
+          "sha256": "1e229da0bcac32b286926355e7c747898098809f8513b3a73234c332d07a59f0",
+          "bytes": 282547,
+          "operations": 53,
+          "title": "Visma e-conomic OpenAPI Products",
+          "apiVersion": "2.1.0",
+          "specVersion": "3.1.1",
+          "server": "https://apis.e-conomic.com/productsapi/v2.1.0/",
+          "changedOn": "2026-10-31"
+        },
+        "Visma e-conomic OpenAPI Subscriptions": {
+          "status": "ok",
+          "sha256": "0301669d34faa707f448d1a9c9089e196aca6d2a5852d31f29f954acebb17a5c",
+          "bytes": 156418,
+          "operations": 22,
+          "title": "Visma e-conomic OpenAPI Subscriptions",
+          "apiVersion": "6.0.3",
+          "specVersion": "3.1.1",
+          "server": "https://apis.e-conomic.com/subscriptionsapi/v6.0.3/",
+          "changedOn": "2026-10-31"
+        },
+        "Visma e-conomic OpenAPI Q2C": {
+          "status": "ok",
+          "sha256": "baa651c96ee88562be08923f3e71e334a50be6998435b387f77333366ce68e3b",
+          "bytes": 272647,
+          "operations": 32,
+          "title": "Visma e-conomic OpenAPI Q2C",
+          "apiVersion": "6.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://apis.e-conomic.com/q2capi/v6.0.0/",
+          "changedOn": "2026-10-31"
+        },
+        "Visma e-conomic OpenAPI Dimensions": {
+          "status": "ok",
+          "sha256": "30f5483a7cdb738b4318e1453e2747a6c03860b1db265edc515ea3f83721eea9",
+          "bytes": 340848,
+          "operations": 62,
+          "title": "Visma e-conomic OpenAPI Dimensions",
+          "apiVersion": "5.3.1",
+          "specVersion": "3.1.1",
+          "server": "https://apis.e-conomic.com/dimensionsapi/v5.3.1/",
+          "changedOn": "2026-10-31"
+        },
+        "Visma e-conomic OpenAPI Journals": {
+          "status": "ok",
+          "sha256": "188857dada8d2eaf89316298ff5f9fd875603fc07265dc7fa727f445f7150b5e",
+          "bytes": 215345,
+          "operations": 29,
+          "title": "Visma e-conomic OpenAPI Journals",
+          "apiVersion": "16.0.1",
+          "specVersion": "3.1.1",
+          "server": "https://apis.e-conomic.com/journalsapi/v16.0.1/",
+          "changedOn": "2026-10-31"
+        },
+        "Visma e-conomic OpenAPI Documents": {
+          "status": "ok",
+          "sha256": "8db4e6ec8ac2b863b86512eb5524c8d007f661e84418960c48fe0ff2feb8ae80",
+          "bytes": 68519,
+          "operations": 8,
+          "title": "Visma e-conomic OpenAPI Documents",
+          "apiVersion": "4.0.2",
+          "specVersion": "3.1.1",
+          "server": "https://apis.e-conomic.com/documentsapi/v4.0.2/",
+          "changedOn": "2026-10-31"
+        },
+        "Visma e-conomic OpenAPI Suppliers": {
+          "status": "ok",
+          "sha256": "80d2b760c25253364107654a11f306318c8e1bc458fdd0a1e98b3d4e63e66a02",
+          "bytes": 93409,
+          "operations": 14,
+          "title": "Visma e-conomic OpenAPI Suppliers",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://apis.e-conomic.com/suppliersapi/v2.0.0/",
+          "changedOn": "2026-10-31"
+        },
+        "Visma e-conomic OpenAPI Accounts": {
+          "status": "ok",
+          "sha256": "d41c634b8480af6ebe8f38c2d8983bff803a86b2c64375e629b908e693ee0aa7",
+          "bytes": 128716,
+          "operations": 19,
+          "title": "Visma e-conomic OpenAPI Accounts",
+          "apiVersion": "7.0.1",
+          "specVersion": "3.1.1",
+          "server": "https://apis.e-conomic.com/accountsapi/v7.0.1/",
+          "changedOn": "2026-10-31"
+        },
+        "Visma e-conomic OpenAPI BookedEntries": {
+          "status": "ok",
+          "sha256": "1bdd29647726ab9d3f719ef1b538a5097abcae33f3609bc960416e58fd38bb31",
+          "bytes": 81951,
+          "operations": 5,
+          "title": "Visma e-conomic OpenAPI BookedEntries",
+          "apiVersion": "7.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://apis.e-conomic.com/bookedentriesapi/v7.0.0/",
+          "specServer": "https://apis.e-conomic.com/bookedEntriesapi/v7.0.0/",
+          "changedOn": "2026-10-31"
+        },
+        "Visma e-conomic OpenAPI AccountingYear": {
+          "status": "ok",
+          "sha256": "727b166882917b459f5aea9140b5d84c538304a49b0936408bcaf2b131a4d1be",
+          "bytes": 72847,
+          "operations": 9,
+          "title": "Visma e-conomic OpenAPI AccountingYear",
+          "apiVersion": "2.0.1",
+          "specVersion": "3.1.1",
+          "server": "https://apis.e-conomic.com/accountingyearsapi/v2.0.1/",
+          "changedOn": "2026-10-31"
+        },
+        "Visma e-conomic OpenAPI Budgets": {
+          "status": "ok",
+          "sha256": "ac1d234d7d9f066168ef580628e0d27cb03adcb7d673da81bb40f69b71191ae9",
+          "bytes": 58573,
+          "operations": 7,
+          "title": "Visma e-conomic OpenAPI Budgets",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://apis.e-conomic.com/budgetsapi/v2.0.0/",
+          "changedOn": "2026-10-31"
+        },
+        "Visma e-conomic OpenAPI Webhooks": {
+          "status": "ok",
+          "sha256": "c5adabc7be8835eb494ff0a10ae9f29b6ff857c55cc78e6e2678489d354ef78a",
+          "bytes": 68505,
+          "operations": 8,
+          "title": "Visma e-conomic OpenAPI Webhooks",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://apis.e-conomic.com/webhooksapi/v1.0.0/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "employmenthero": {
+      "name": "Employment Hero",
+      "specs": {
+        "Employment Hero API Postman collection": {
+          "status": "ok",
+          "sha256": "1f9909dbc294f4e23a219ec134b771a92f728bad590b86fd91a416a94acfd3d3",
+          "bytes": 291793,
+          "operations": 234,
+          "title": "Employment Hero API",
+          "server": "https://api.employmenthero.com/api",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "etsy": {
+      "name": "Etsy",
+      "specs": {
+        "Etsy Open API v3": {
+          "status": "ok",
+          "sha256": "4d6b2a4af50c8a72b32bd1980d66f1c420f42b25b1c7e71ca4d98c3f928ee95d",
+          "bytes": 966623,
+          "operations": 108,
+          "title": "Etsy Open API v3",
+          "apiVersion": "3.0.0",
+          "specVersion": "3.0.2",
+          "server": "https://openapi.etsy.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "factorialhr": {
+      "name": "Factorial",
+      "specs": {
+        "Factorial API": {
+          "status": "ok",
+          "sha256": "2e665926ad91a1be70f5004b27705a7143e01b7b6eb8113279cfc2e0f3be001a",
+          "bytes": 1205185,
+          "operations": 615,
+          "title": "Factorial API",
+          "apiVersion": "2026-10-01",
+          "specVersion": "3.1.0",
+          "server": "https://api.factorialhr.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "flexmail": {
+      "name": "Flexmail",
+      "specs": {
+        "Flexmail email marketing API": {
+          "status": "ok",
+          "sha256": "c38a43936d2f9323b0112f76ded9d7b848dd27ddb67bad4169fdd46ef9f73427",
+          "bytes": 299135,
+          "operations": 43,
+          "title": "Flexmail email marketing API",
+          "apiVersion": "1.2.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.flexmail.eu",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "folk": {
+      "name": "Folk",
+      "specs": {
+        "folk External API": {
+          "status": "ok",
+          "sha256": "abb289c319170f37b4360b6a6f7424433cac700303af1ce2c1540bbff56c63d5",
+          "bytes": 1223431,
+          "operations": 87,
+          "title": "Folk External API",
+          "apiVersion": "2025-06-09",
+          "specVersion": "3.1.0",
+          "server": "https://api.folk.app",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "folks-hr": {
+      "name": "Folks HR",
+      "specs": {
+        "Folks API Documentation (V2)": {
+          "status": "ok",
+          "sha256": "05f68ada6def7276fe9dc462e56a177983cc3696c271f3a9ac9f7b340f885dfa",
+          "bytes": 508144,
+          "operations": 71,
+          "title": "Folks API Documentation",
+          "apiVersion": "2026.10.29.03",
+          "specVersion": "3.0.0",
+          "server": "https://api.folkshr.app",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "fourth": {
+      "name": "Fourth",
+      "specs": {
+        "Fourth UK Employee API": {
+          "status": "ok",
+          "sha256": "ac0123f7f7969cecb24ed4b1bd9f9906181be8e9655387148356fc4c921111dd",
+          "bytes": 111555,
+          "operations": 31,
+          "title": "UK Employee API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "http://localhost:54541",
+          "changedOn": "2026-10-31"
+        },
+        "Fourth Labor Productivity API": {
+          "status": "ok",
+          "sha256": "de6ec04e410705f710e8bbb1a50d5dfb3f1548368b0f933b7c1a210915daa162",
+          "bytes": 192287,
+          "operations": 32,
+          "title": "Labor Productivity API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "http://localhost:50000",
+          "changedOn": "2026-10-31"
+        },
+        "Fourth Account SCIM API": {
+          "status": "ok",
+          "sha256": "be41877b773c9cebdadf9b9c3dce32540c6d158f788f5f653206466295e63c4b",
+          "bytes": 55522,
+          "operations": 6,
+          "title": "Fourth Account SCIM API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "changedOn": "2026-10-31"
+        },
+        "Fourth Schedules API": {
+          "status": "ok",
+          "sha256": "70c99924ef608ee56800e569827426c86277a0017c7b68d9c55a07af499887ec",
+          "bytes": 6631,
+          "operations": 1,
+          "title": "Schedules API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "http://localhost:54707",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "freshservice": {
+      "name": "Freshservice",
+      "specs": {}
+    },
+    "freshteam": {
+      "name": "Freshteam",
+      "specs": {}
+    },
+    "freshsales": {
+      "name": "Freshworks CRM",
+      "specs": {}
+    },
+    "geodynamics-be": {
+      "name": "GeoDynamics",
+      "specs": {
+        "GeoDynamics API": {
+          "status": "ok",
+          "sha256": "e51d2b7e529597a0e3289414afb71c074548b56c864e3cdbf635c42671480ec9",
+          "bytes": 2349825,
+          "operations": 264,
+          "title": "GeoDynamics API",
+          "apiVersion": "",
+          "specVersion": "3.0.0",
+          "server": "https://api.intellitracer.be",
+          "changedOn": "2026-10-31"
+        },
+        "GeoDynamics Proof API": {
+          "status": "ok",
+          "sha256": "bc0b11415899ea16a9eb0aed23dadb19c49db0b818532ce8ee40c9faa9c86534",
+          "bytes": 34636,
+          "operations": 11,
+          "title": "GeoDynamics Proof API",
+          "apiVersion": "1",
+          "specVersion": "3.0.0",
+          "server": "https://api.geodynamics.dev/proof",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "github-enterprise-cloud": {
+      "name": "GitHub Enterprise Cloud (data residency)",
+      "specs": {
+        "GitHub Enterprise Cloud REST API": {
+          "status": "ok",
+          "sha256": "4d2e30f8adbdaa4d79ed3c8bd55ecb4c26b28ea01d8de053639183775e642cba",
+          "bytes": 15311703,
+          "operations": 1548,
+          "title": "GitHub v3 REST API",
+          "apiVersion": "1.1.4",
+          "specVersion": "3.0.3",
+          "server": "https://api.github.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "github-server": {
+      "name": "GitHub Enterprise Server (on-prem)",
+      "specs": {
+        "GitHub Enterprise Server 3.22 REST API": {
+          "status": "ok",
+          "sha256": "d60341a2bba849aefd6e7b7275763e6da8ef90581f0d957e19d8d8a6c4d79770",
+          "bytes": 11839071,
+          "operations": 1105,
+          "title": "GitHub v3 REST API",
+          "apiVersion": "1.1.4",
+          "specVersion": "3.0.3",
+          "server": "{protocol}://{hostname}/api/v3",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "gitlab": {
+      "name": "GitLab",
+      "specs": {
+        "GitLab REST API v4": {
+          "status": "ok",
+          "sha256": "f8fdcc6c047db9f1e031a6676c09756688cfe1ddd62de25f31c89ba6d3738324",
+          "bytes": 2451370,
+          "operations": 1150,
+          "title": "GitLab API",
+          "apiVersion": "v4",
+          "specVersion": "2.0",
+          "server": "https://gitlab.com",
+          "changedOn": "2026-10-31"
+        },
+        "GitLab GraphQL API": {
+          "status": "ok",
+          "sha256": "90b9a7a2680f3c24b610b8c45884f10ac7ba4cda82a10f1f93cc76f8600389eb",
+          "bytes": 8645325,
+          "operations": 898,
+          "server": "https://gitlab.com/api/graphql",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "gitlab-server": {
+      "name": "GitLab server (on-prem)",
+      "specs": {
+        "GitLab REST API v4": {
+          "status": "ok",
+          "sha256": "f8fdcc6c047db9f1e031a6676c09756688cfe1ddd62de25f31c89ba6d3738324",
+          "bytes": 2451370,
+          "operations": 1150,
+          "title": "GitLab API",
+          "apiVersion": "v4",
+          "specVersion": "2.0",
+          "server": "https://{instance}/api/v4",
+          "specServer": "https://gitlab.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "google-contacts": {
+      "name": "Google Contacts",
+      "specs": {
+        "Google People API": {
+          "status": "ok",
+          "sha256": "3d66aa5bbf54569cfa7ce780217f382324941a9c51620dca2bb8e026f0701d04",
+          "bytes": 144907,
+          "operations": 24,
+          "title": "People API",
+          "apiVersion": "v1",
+          "server": "https://people.googleapis.com/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "google-drive": {
+      "name": "Google Drive",
+      "specs": {
+        "Google Drive API v3": {
+          "status": "ok",
+          "sha256": "7c66d6f0f982573b88bfd4986d2f9ab4ec17b1651130ac55944d3c8b831c4817",
+          "bytes": 269545,
+          "operations": 64,
+          "title": "Google Drive API",
+          "apiVersion": "v3",
+          "server": "https://www.googleapis.com/",
+          "specServer": "https://www.googleapis.com/drive/v3/",
+          "changedOn": "2026-10-31"
+        }
+      }
     }
   }
 }

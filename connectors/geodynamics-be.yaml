@@ -1,0 +1,16 @@
+id: geodynamics-be
+name: "GeoDynamics"
+notes: "Fetchable vendor OpenAPI."
+specs:
+  - name: "GeoDynamics API"
+    url: "https://build.geodynamics.eu/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.intellitracer.be"
+    notes: "Linked from https://build.geodynamics.eu/llms.txt. info.version is empty. Spec server is api.intellitracer.be while docs use https://api.geodynamics.dev/intellitracer/...; per-tenant via API token."
+  - name: "GeoDynamics Proof API"
+    url: "https://build.geodynamics.eu/openapi-proof.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.geodynamics.dev/proof"
+    notes: "Subcontractor/workplace API, separate auth (service keys)."

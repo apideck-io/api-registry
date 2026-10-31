@@ -1,0 +1,88 @@
+id: e-conomic
+name: "e-conomic"
+notes: "14 vendor OpenAPI 3.1 specs, 389 operations total. The older REST API (https://restapi.e-conomic.com/) publishes per-resource JSON Schema only (no OpenAPI); /swagger.json paths return 401."
+specs:
+  - name: "Visma e-conomic OpenAPI Projects v2"
+    url: "https://apis.e-conomic.com/projectsapi/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apis.e-conomic.com/projectsapi/v1.1.0/"
+    notes: "One of 14 public services listed in https://apis.e-conomic.com/index.js. Server path embeds the spec version."
+  - name: "Visma e-conomic OpenAPI Customers"
+    url: "https://apis.e-conomic.com/customersapi/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apis.e-conomic.com/customersapi/v3.1.0/"
+    notes: "One of 14 public services listed in https://apis.e-conomic.com/index.js. Server path embeds the spec version."
+  - name: "Visma e-conomic OpenAPI Products"
+    url: "https://apis.e-conomic.com/productsapi/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apis.e-conomic.com/productsapi/v2.1.0/"
+    notes: "One of 14 public services listed in https://apis.e-conomic.com/index.js. Server path embeds the spec version."
+  - name: "Visma e-conomic OpenAPI Subscriptions"
+    url: "https://apis.e-conomic.com/subscriptionsapi/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apis.e-conomic.com/subscriptionsapi/v6.0.3/"
+    notes: "One of 14 public services listed in https://apis.e-conomic.com/index.js. Server path embeds the spec version."
+  - name: "Visma e-conomic OpenAPI Q2C"
+    url: "https://apis.e-conomic.com/q2capi/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apis.e-conomic.com/q2capi/v6.0.0/"
+    notes: "One of 14 public services listed in https://apis.e-conomic.com/index.js. Server path embeds the spec version."
+  - name: "Visma e-conomic OpenAPI Dimensions"
+    url: "https://apis.e-conomic.com/dimensionsapi/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apis.e-conomic.com/dimensionsapi/v5.3.1/"
+    notes: "One of 14 public services listed in https://apis.e-conomic.com/index.js. Server path embeds the spec version."
+  - name: "Visma e-conomic OpenAPI Journals"
+    url: "https://apis.e-conomic.com/journalsapi/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apis.e-conomic.com/journalsapi/v16.0.1/"
+    notes: "One of 14 public services listed in https://apis.e-conomic.com/index.js. Server path embeds the spec version."
+  - name: "Visma e-conomic OpenAPI Documents"
+    url: "https://apis.e-conomic.com/documentsapi/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apis.e-conomic.com/documentsapi/v4.0.2/"
+    notes: "One of 14 public services listed in https://apis.e-conomic.com/index.js. Server path embeds the spec version."
+  - name: "Visma e-conomic OpenAPI Suppliers"
+    url: "https://apis.e-conomic.com/suppliersapi/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apis.e-conomic.com/suppliersapi/v2.0.0/"
+    notes: "One of 14 public services listed in https://apis.e-conomic.com/index.js. Server path embeds the spec version."
+  - name: "Visma e-conomic OpenAPI Accounts"
+    url: "https://apis.e-conomic.com/accountsapi/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apis.e-conomic.com/accountsapi/v7.0.1/"
+    notes: "One of 14 public services listed in https://apis.e-conomic.com/index.js. Server path embeds the spec version."
+  - name: "Visma e-conomic OpenAPI BookedEntries"
+    url: "https://apis.e-conomic.com/bookedentriesapi/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apis.e-conomic.com/bookedentriesapi/v7.0.0/"
+    notes: "One of 14 public services listed in https://apis.e-conomic.com/index.js. Server path embeds the spec version."
+  - name: "Visma e-conomic OpenAPI AccountingYear"
+    url: "https://apis.e-conomic.com/accountingyearsapi/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apis.e-conomic.com/accountingyearsapi/v2.0.1/"
+    notes: "One of 14 public services listed in https://apis.e-conomic.com/index.js. Server path embeds the spec version."
+  - name: "Visma e-conomic OpenAPI Budgets"
+    url: "https://apis.e-conomic.com/budgetsapi/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apis.e-conomic.com/budgetsapi/v2.0.0/"
+    notes: "One of 14 public services listed in https://apis.e-conomic.com/index.js. Server path embeds the spec version."
+  - name: "Visma e-conomic OpenAPI Webhooks"
+    url: "https://apis.e-conomic.com/webhooksapi/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apis.e-conomic.com/webhooksapi/v1.0.0/"
+    notes: "One of 14 public services listed in https://apis.e-conomic.com/index.js. Server path embeds the spec version."

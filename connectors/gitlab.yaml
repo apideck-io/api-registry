@@ -1,0 +1,17 @@
+id: gitlab
+name: "GitLab"
+notes: "REST swagger + GraphQL introspection both fetchable."
+specs:
+  - name: "GitLab REST API v4"
+    url: "https://gitlab.com/gitlab-org/gitlab/-/raw/master/doc/api/openapi/openapi_v2.yaml"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://gitlab.com"
+    notes: "Generated Swagger 2.0 in the GitLab repo (doc/api/openapi/openapi_v2.yaml), ~2.4 MB; not exhaustive of every documented endpoint. No license field in spec."
+  - name: "GitLab GraphQL API"
+    url: "https://gitlab.com/api/graphql"
+    format: graphql
+    extract: graphql-introspection
+    provenance: vendor
+    server: "https://gitlab.com/api/graphql"
+    notes: "Anonymous introspection works: 176 Query fields + 722 Mutation fields (count includes deprecated)."

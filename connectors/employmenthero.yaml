@@ -1,0 +1,10 @@
+id: employmenthero
+name: "Employment Hero"
+notes: "Vendor Postman collection only."
+specs:
+  - name: "Employment Hero API Postman collection"
+    url: "https://developer.employmenthero.com/postman-collection.json"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://api.employmenthero.com/api"
+    notes: "Download link on https://developer.employmenthero.com/api-references. Base URL from collection variable base_url. OAuth2 at oauth.employmenthero.com. No OpenAPI found. Payroll (ex-KeyPay) API is separate and not covered here."
