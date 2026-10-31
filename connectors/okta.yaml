@@ -1,0 +1,11 @@
+id: okta
+name: "Okta"
+notes: "OpenAPI 3.0, 782 ops."
+specs:
+  - name: "Okta Admin Management API"
+    url: "https://raw.githubusercontent.com/okta/okta-management-openapi-spec/master/dist/current/management-minimal.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{yourOktaDomain}"
+    license: "Apache-2.0"
+    notes: "Official okta/okta-management-openapi-spec repo. Per-tenant server ({yourOktaDomain}). ~4 MB."

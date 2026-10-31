@@ -1,0 +1,11 @@
+id: minox
+name: "Minox"
+notes: "Fetchable via swagger-ui init script (new extract type)."
+specs:
+  - name: "Minox API"
+    url: "https://app.minox.nl/docs/api/rest/swagger-ui-init.js"
+    format: openapi-3.0
+    extract: swagger-ui-init
+    provenance: vendor
+    server: "https://app.minox.nl/api/1"
+    notes: "Spec is embedded as options.swaggerDoc inside the swagger-ui-express init script of the public Swagger UI at https://app.minox.nl/docs/api/rest/ (no standalone JSON URL). Needs a new extractor: JSON object after 'let options =' -> .swaggerDoc. Server in spec is relative (/api/1)."

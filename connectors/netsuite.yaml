@@ -1,0 +1,4 @@
+id: netsuite
+name: "NetSuite"
+notes: "WSDL only publicly; REST OpenAPI is per account behind auth. NetSuite SuiteTalk SOAP WSDL: https://webservices.netsuite.com/wsdl/v2025_2_0/netsuite.wsdl (Public SuiteTalk SOAP WSDL (no auth). REST: SuiteTalk REST metadata catalog (OpenAPI 3 per account at https://{accountId}.suitetalk.api.netsuite.com/services/rest/record/v1/metadata-catalog) requires OAuth, so it is per tenant and login-only. HTML REST docs: https://system.netsuite.com/help/helpcenter/en_US/APIs/REST_API_Browser/record/v1/2025.2/index.html.)"
+specs: []

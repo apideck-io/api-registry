@@ -33,6 +33,7 @@ Two optional fields cover vendors that don't serve a plain file:
   - `zip-bundle`: a zip of module files (Zoho Books)
   - `markdown-json-fence`: JSON inside a Markdown code fence (Sage)
   - `redoc-state`: embedded in a Redoc page's `__redoc_state` (Fortnox)
+  - `swagger-ui-init`: embedded as `swaggerDoc` in a swagger-ui-express init script (Minox)
   - `graphql-introspection`: no SDL file, but the endpoint answers an anonymous introspection query (Wave, Access Financials)
 - `manual: login | bot-protection` records a spec CI can't fetch (it needs `notes` on how to get it).
 

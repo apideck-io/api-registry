@@ -1,0 +1,10 @@
+id: paychex
+name: "Paychex"
+notes: "OpenAPI 3.0, 110 ops; URL unstable."
+specs:
+  - name: "Paychex External API"
+    url: "https://developer.paychex.com/sites/default/files/apidocument/openapi-merge-develop.213-public.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.paychex.com"
+    notes: "Redoc spec-url on https://developer.paychex.com/documentation. Filename contains a build number (213) and will change on republish; re-discover from the documentation page's <redoc spec-url>."

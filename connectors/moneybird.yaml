@@ -1,0 +1,10 @@
+id: moneybird
+name: "Moneybird"
+notes: "OpenAPI 3.1, 300 ops."
+specs:
+  - name: "Moneybird API"
+    url: "https://raw.githubusercontent.com/moneybird/openapi/main/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://moneybird.com/api/v2"
+    notes: "Official moneybird/openapi GitHub repo (also openapi.yml). Updated daily; apiVersion string changes with each build."

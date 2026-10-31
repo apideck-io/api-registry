@@ -1,0 +1,10 @@
+id: monday
+name: "monday.com"
+notes: "GraphQL, 335 ops."
+specs:
+  - name: "monday.com GraphQL schema (SDL)"
+    url: "https://api.monday.com/v2/get_schema?format=sdl"
+    format: graphql
+    provenance: vendor
+    server: "https://api.monday.com/v2"
+    notes: "Anonymous SDL endpoint. 107 Query + 228 Mutation fields. Returns the current default API version; add &version=YYYY-MM to pin."

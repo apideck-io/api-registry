@@ -1,0 +1,17 @@
+id: messagebird
+name: "MessageBird"
+notes: "Bird platform spec 514 ops; legacy SMS spec 4 ops."
+specs:
+  - name: "Bird API"
+    url: "https://bird.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{region}.platform.bird.com"
+    notes: "Current Bird (formerly MessageBird) platform API, linked from https://docs.bird.com/api. YAML at https://bird.com/openapi.yaml, Postman collection at https://bird.com/postman/bird-api.postman_collection.json. ~7 MB."
+  - name: "Legacy MessageBird SMS API"
+    url: "https://raw.githubusercontent.com/messagebird/openapi-specs/main/sms/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://rest.messagebird.com/messages"
+    license: "BSD-2-Clause"
+    notes: "Legacy rest.messagebird.com API (repo messagebird/openapi-specs, last pushed 2022). Use this if the connector still targets the legacy REST API."

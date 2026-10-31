@@ -1,0 +1,137 @@
+id: lucca-hr
+name: "Lucca"
+notes: "19 vendor OpenAPI 3.1 files; main 'latest' API has 78 ops, legacy APIs total 179 ops."
+specs:
+  - name: "Lucca API (latest, 2024-11-01)"
+    url: "https://developers.luccasoftware.com/openapi-specs/lucca-api%402024-11-01.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Main current API on Lucca's Mintlify developer portal (developers.lucca.fr redirects to developers.luccasoftware.com). Server is per tenant ({host} = <company>.ilucca.net). Literal URL path contains '@'."
+  - name: "Lucca legacy: Directory-v3"
+    url: "https://developers.luccasoftware.com/openapi-specs/directory-v3.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca legacy: Organization structure API"
+    url: "https://developers.luccasoftware.com/openapi-specs/organization-v3.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca legacy: Lucca Absences API"
+    url: "https://developers.luccasoftware.com/openapi-specs/timmi-absences-v3.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca legacy: Lucca Timesheet API"
+    url: "https://developers.luccasoftware.com/openapi-specs/timmi-timesheet-v3.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca legacy: Lucca Timesheet API (not v3)"
+    url: "https://developers.luccasoftware.com/openapi-specs/timmi-timesheet.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca legacy: Lucca Project API (not v3)"
+    url: "https://developers.luccasoftware.com/openapi-specs/timmi-project.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca legacy: Lucca Office"
+    url: "https://developers.luccasoftware.com/openapi-specs/timmi-office.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca legacy: Time Settings API"
+    url: "https://developers.luccasoftware.com/openapi-specs/schedule.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca legacy: Lucca Expenses"
+    url: "https://developers.luccasoftware.com/openapi-specs/cleemy-expenses-v3.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca legacy: Lucca.Invoices"
+    url: "https://developers.luccasoftware.com/openapi-specs/lucca-invoices.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca legacy: Lucca.Files"
+    url: "https://developers.luccasoftware.com/openapi-specs/lucca-files.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca legacy: Lucca-Compensation"
+    url: "https://developers.luccasoftware.com/openapi-specs/pagga-remuneration.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca legacy: Lucca-MealVoucher"
+    url: "https://developers.luccasoftware.com/openapi-specs/Pagga-MealVoucher.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca legacy: Lucca Training"
+    url: "https://developers.luccasoftware.com/openapi-specs/poplee-training.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca legacy: Lucca Recruitment public APIs"
+    url: "https://developers.luccasoftware.com/openapi-specs/recruitment.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca legacy: Lucca Recruitment public APIs (2)"
+    url: "https://developers.luccasoftware.com/openapi-specs/recruitment-world.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://jobs.world.luccasoftware.com"
+    license: "Apache-2.0"
+    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+  - name: "Lucca authentication"
+    url: "https://developers.luccasoftware.com/openapi-specs/authentication.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://accounts.world.luccasoftware.com"
+    license: "Apache-2.0"
+    notes: "OAuth token endpoint."
+  - name: "Lucca webhook client"
+    url: "https://developers.luccasoftware.com/openapi-specs/webhook-client-api.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{domain}"
+    license: "Unlicensed"
+    notes: "Webhook receiver contract."
