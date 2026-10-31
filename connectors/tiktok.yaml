@@ -1,0 +1,4 @@
+id: tiktok
+name: "TikTok Shop"
+notes: "No public machine-readable spec. TikTok Shop Partner API docs: https://partner.tiktokshop.com/docv2/page/seller-api-overview (JS-rendered Partner Center docs; no OpenAPI/Postman published. SDKs are downloaded from Partner Center after login; tiktok/ttspc-* GitHub repos are sample apps only.)"
+specs: []

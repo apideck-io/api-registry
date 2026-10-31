@@ -1,0 +1,4 @@
+id: zendesk-sell
+name: "Zendesk Sell"
+notes: "No machine-readable spec for Sell. Zendesk Sell (Sales CRM) API docs: https://developer.zendesk.com/api-reference/sales-crm/introduction/ (HTML docs only. Zendesk's published OAS (https://developer.zendesk.com/zendesk/oas.yaml) covers the Support API, not Sell; no Sell-specific spec found. Server https://api.getbase.com/v2.)"
+specs: []

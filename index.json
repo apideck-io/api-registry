@@ -4152,6 +4152,214 @@
           "changedOn": "2026-10-31"
         }
       }
+    },
+    "silae-fr": {
+      "name": "Silae",
+      "specs": {}
+    },
+    "alexishr": {
+      "name": "Simployer One",
+      "specs": {
+        "Simployer One (HRM One) API": {
+          "status": "ok",
+          "sha256": "386acd165f66971e9c69e6b61cb1b7155bc949b145f65292d1a8fcbf998cad41",
+          "bytes": 788479,
+          "operations": 145,
+          "title": "HRM One API",
+          "apiVersion": "v1-preview",
+          "specVersion": "3.0.0",
+          "server": "https://api.alexishr.com/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "sympa": {
+      "name": "Sympa",
+      "specs": {
+        "Sympa Generic API (Postman)": {
+          "status": "ok",
+          "sha256": "203ee4557e415a7efc22a73203af6e38aa226d18de24da582a2411f44739ec67",
+          "bytes": 2597997,
+          "operations": 15,
+          "title": "Sympa Generic API",
+          "server": "https://api.sympahr.net/api",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "teamleader": {
+      "name": "Teamleader",
+      "specs": {
+        "Teamleader Focus API": {
+          "status": "ok",
+          "sha256": "46c0fd3d8c30a0a69fbd5705b167314f8b13bd2728a78fea85588d212e60ca62",
+          "bytes": 1090924,
+          "operations": 292,
+          "title": "Teamleader API",
+          "apiVersion": "1.232.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.focus.teamleader.eu",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "teamtailor": {
+      "name": "Teamtailor",
+      "specs": {
+        "Teamtailor API (Postman)": {
+          "status": "ok",
+          "sha256": "a90f9d6ec6d91b0304e266b7f3cd97526a1f7db34d4e7b3dea449291026d2a39",
+          "bytes": 1002986,
+          "operations": 131,
+          "title": "Teamtailor API",
+          "server": "https://api.teamtailor.com/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "tiktok": {
+      "name": "TikTok Shop",
+      "specs": {}
+    },
+    "trinet": {
+      "name": "TriNet",
+      "specs": {}
+    },
+    "twinfield": {
+      "name": "Twinfield",
+      "specs": {}
+    },
+    "ukg-pro": {
+      "name": "UKG Pro",
+      "specs": {}
+    },
+    "visma-eaccounting": {
+      "name": "Visma eAccounting",
+      "specs": {
+        "Visma eAccounting API v2": {
+          "status": "ok",
+          "sha256": "455e7bd775ae65870d2ab4b7bdeaefa52ff97578468db6244bc97a94f022841d",
+          "bytes": 955488,
+          "operations": 229,
+          "title": "Bookkeeping & Invoicing/eAccounting API V2",
+          "apiVersion": "v2",
+          "specVersion": "3.0.4",
+          "server": "https://eaccountingapi.vismaonline.com/v2/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "nmbrs": {
+      "name": "Visma Nmbrs",
+      "specs": {
+        "Visma Nmbrs Public REST API": {
+          "status": "ok",
+          "sha256": "710b982807babc775aab116e2169aafdc4b464a36abb4f5fa51599089af330ed",
+          "bytes": 497416,
+          "operations": 126,
+          "title": "Visma Nmbrs Public REST API",
+          "apiVersion": "Global",
+          "specVersion": "3.0.1",
+          "server": "https://api.nmbrsapp.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "vonage": {
+      "name": "Vonage",
+      "specs": {
+        "Vonage SMS API": {
+          "status": "ok",
+          "sha256": "2c8e216e7af29cdaca46bf029e93b49c03273a984c42c4b21ef0d21aef3a1325",
+          "bytes": 30970,
+          "operations": 1,
+          "title": "SMS API",
+          "apiVersion": "1.5.1",
+          "specVersion": "3.0.0",
+          "server": "https://rest.nexmo.com",
+          "changedOn": "2026-10-31"
+        },
+        "Vonage Messages API": {
+          "status": "ok",
+          "sha256": "7c10740ffa6d2ed48dadbb19195397592c1bb9dc6f38592d1a9a7fda2d609110",
+          "bytes": 238004,
+          "operations": 2,
+          "title": "Messages API",
+          "apiVersion": "1.20.0",
+          "specVersion": "3.0.3",
+          "server": "https://{api-region}.nexmo.com/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "walmart": {
+      "name": "Walmart",
+      "specs": {}
+    },
+    "webexpenses": {
+      "name": "Webexpenses",
+      "specs": {
+        "Webexpenses API (GB)": {
+          "status": "ok",
+          "sha256": "feb85a8e709798ba859512546f23001ba0f40a16856dffea33774ad6407644cf",
+          "bytes": 316737,
+          "operations": 51,
+          "title": "Webexpenses",
+          "apiVersion": "1.0.20",
+          "specVersion": "3.0.3",
+          "server": "https://api.gb.webexpenses.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "wix": {
+      "name": "Wix ",
+      "specs": {}
+    },
+    "woocommerce": {
+      "name": "WooCommerce",
+      "specs": {
+        "WooCommerce REST API v3 (community)": {
+          "status": "ok",
+          "sha256": "be9e6a075390984fae70f69675b38d28f2656bb6b65ef95d6d4fc712c6147060",
+          "bytes": 223084,
+          "operations": 122,
+          "title": "WooCommerce REST API",
+          "apiVersion": "v3",
+          "specVersion": "3.0.1",
+          "server": "https://example-woocommerce-shop.com/wp-json/wc/v3",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "workable": {
+      "name": "Workable",
+      "specs": {}
+    },
+    "zendesk-sell": {
+      "name": "Zendesk Sell",
+      "specs": {}
+    },
+    "zoho-crm": {
+      "name": "Zoho CRM",
+      "specs": {
+        "Zoho CRM API v8 (per-module OpenAPI bundle)": {
+          "status": "ok",
+          "sha256": "fe5e2d4dfd7881358d02f41a59c3871a3e6f587ccb6b0f8b2e26c507a417f6f7",
+          "bytes": 14406249,
+          "operations": 452,
+          "files": 103,
+          "title": "Zoho CRM API v8 (per-module OpenAPI bundle)",
+          "apiVersion": "8.0, 8",
+          "specVersion": "3.1.0",
+          "server": "https://zohoapis.{dc}/crm/{version}",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "zoho-people": {
+      "name": "Zoho People",
+      "specs": {}
     }
   }
 }

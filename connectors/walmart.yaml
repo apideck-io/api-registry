@@ -1,0 +1,4 @@
+id: walmart
+name: "Walmart"
+notes: "Publishes one OpenAPI block per endpoint on ReadMe reference pages (.md), with no whole-file download; not a full API spec, so not indexed. Only per-endpoint fragments are reachable."
+specs: []

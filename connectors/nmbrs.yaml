@@ -1,0 +1,10 @@
+id: nmbrs
+name: "Visma Nmbrs"
+notes: "REST spec plus legacy SOAP WSDLs. Nmbrs SOAP API v3 (WSDL): https://api.nmbrs.nl/soap/v3/EmployeeService.asmx?WSDL (Legacy SOAP API, WSDLs fetch anonymously: EmployeeService, CompanyService, DebtorService, ReportService under https://api.nmbrs.nl/soap/v3/.)"
+specs:
+  - name: "Visma Nmbrs Public REST API"
+    url: "https://stoplight.io/api/v1/projects/nmbrs/nmbrs-restapi/nodes/api-design/nmbrs-api-Global.v1.yaml?fromExportButton=true&snapshotType=http_service&deref=optimizedBundle"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.nmbrsapp.com"
+    notes: "Declares 3.0.1. Stoplight export (project 288284, branch public-documentation) behind https://nmbrs.stoplight.io/docs/nmbrs-restapi."

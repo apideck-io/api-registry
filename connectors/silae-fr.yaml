@@ -1,0 +1,4 @@
+id: silae-fr
+name: "Silae"
+notes: "No public machine-readable spec. Silae API documentation: https://silae-api.document360.io/ (Document360 HTML docs (one page per RPC-style function, index at https://silae-api.document360.io/llms.txt). No OpenAPI found; docs mention a Postman collection but no public URL. Calls go to https://payroll-api.silae.fr/payroll via Azure APIM (Ocp-Apim-Subscription-Key + OAuth2 client credentials); the APIM developer portal https://api-portal.silae.fr/ is partner-login only. document360 redirect-loops plain curl.)"
+specs: []
