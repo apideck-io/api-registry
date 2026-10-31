@@ -1,0 +1,4 @@
+id: sap-s4hana-cloud
+name: "SAP S/4HANA Cloud"
+notes: "SAP Business Accelerator Hub (api.sap.com) hosts EDMX and OpenAPI per API (API_JOURNALENTRYITEMBASIC_SRV, API_BUSINESS_PARTNER, API_SUPPLIERINVOICE_PROCESS_SRV and more), but downloads need an SAP login. Add per-API entries once fetched with an account."
+specs: []

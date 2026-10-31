@@ -1,0 +1,15 @@
+id: quickbooks-desktop
+name: "QuickBooks Desktop"
+notes: "Intuit publishes no OpenAPI for QuickBooks Desktop. The API is qbXML over the SDK, QBXMLRP2 COM or Web Connector SOAP; Intuit ships the XSDs only inside the SDK installer."
+specs:
+  - name: "Conductor API (QuickBooks Desktop REST wrapper)"
+    url: "https://raw.githubusercontent.com/conductor-is/quickbooks-desktop-node/main/openapi.documented.yml"
+    format: openapi-3.1
+    provenance: third-party
+    server: "https://api.conductor.is/v1"
+    notes: "Conductor's REST wrapper over qbXML, published in its own SDK repo. Describes Conductor's API, not Intuit's."
+  - name: "qbXML 13.0 operations schema"
+    url: "https://raw.githubusercontent.com/jsgoupil/quickbooks-sync/master/src/QbXml/Schemas/qbxmlops130.xsd"
+    format: xsd
+    provenance: community
+    notes: "Intuit-authored XSD redistributed in a community repo; the companion type schema qbxml130.xsd sits in the same folder."

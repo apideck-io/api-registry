@@ -1,0 +1,11 @@
+id: sage-intacct
+name: "Sage Intacct"
+notes: "The legacy XML API (a single gateway at https://api.intacct.com/ia/xml/xmlgw.phtml) has no machine-readable spec."
+specs:
+  - name: "Sage Intacct REST API"
+    url: "https://developer.sage.com/api/proxy-distribution?path=assets%2Fintacct%2Fapis%2Fintacct%2F1%2Fintacct-openapi.json&contentType=application%2Fjson&download=true"
+    format: openapi-3.0
+    provenance: vendor
+    manual: bot-protection
+    server: "https://api.intacct.com/ia/api/v1"
+    notes: "developer.sage.com sits behind Cloudflare bot protection that refuses CI; download it in a browser. A July 2026 capture counted about 2,150 operations."

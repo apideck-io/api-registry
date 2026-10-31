@@ -1,0 +1,9 @@
+id: freshbooks
+name: "FreshBooks"
+notes: "FreshBooks publishes a Postman collection only, linked from freshbooks.com/api/postman-collection."
+specs:
+  - name: "FreshBooks API Postman collection"
+    url: "https://documenter.gw.postman.com/api/collections/3322108/S1ERwwza?segregateAuth=true&versionTag=latest"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://api.freshbooks.com"

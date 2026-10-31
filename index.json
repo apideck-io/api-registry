@@ -221,7 +221,7 @@
       "specs": {
         "Gmail API": {
           "status": "ok",
-          "sha256": "0f15f8efc799cb2ec10eaabc94813a567f0124e7f731490346e9a819d84e7950",
+          "sha256": "5f2011f4bc0f333bb6514ec16435448bf7cccd2b7b815baa1cfd1dc8461c6b9a",
           "bytes": 217716,
           "operations": 79,
           "title": "Gmail API",
@@ -236,7 +236,7 @@
       "specs": {
         "Google Analytics Data API": {
           "status": "ok",
-          "sha256": "13b63a9432434ff917de595b259f4cd916255e552b3422de3e94555479e1d9e8",
+          "sha256": "bdb28fb99eee428fef7342c4607a5ed7ecd6cf8248ebe11d7bde8e48da709020",
           "bytes": 121351,
           "operations": 11,
           "title": "Google Analytics Data API",
@@ -251,7 +251,7 @@
       "specs": {
         "BigQuery API": {
           "status": "ok",
-          "sha256": "dcceac42e84b8814b785c08df553dd90558d776a484cda5668a3b0a1a12d309f",
+          "sha256": "f5f75602ab794c0910efcd7e2344a48b5b1d250e8386380ae4d6b82c1827e8c5",
           "bytes": 594508,
           "operations": 47,
           "title": "BigQuery API",
@@ -266,7 +266,7 @@
       "specs": {
         "Calendar API": {
           "status": "ok",
-          "sha256": "80b47f7184baf42a598c1322dba5fb5fddc7999c74c0bcb24e31fba1c5f7f9b1",
+          "sha256": "195840bf1b483e9472408529f2a3c70600e1e23ad9dd5c0d701e09578045701a",
           "bytes": 170208,
           "operations": 38,
           "title": "Calendar API",
@@ -281,7 +281,7 @@
       "specs": {
         "Google Sheets API": {
           "status": "ok",
-          "sha256": "e4e25dedccc6f551812c67f2caf82260867d3df8f7b90422b4e6c904e50dcf70",
+          "sha256": "9897086962028486308d2804205943255749cac51c0a7b87d852e8095940b852",
           "bytes": 394571,
           "operations": 17,
           "title": "Google Sheets API",
@@ -296,7 +296,7 @@
       "specs": {
         "Tag Manager API": {
           "status": "ok",
-          "sha256": "4e49f47539513635f77d793d9ce29a7a3ba0803651887df222315ec89b452d70",
+          "sha256": "f1af2126705fa1857b2e17c2995133f48717040391dd003c035d4e5415e92c15",
           "bytes": 270858,
           "operations": 106,
           "title": "Tag Manager API",
@@ -904,48 +904,15 @@
     "xero": {
       "name": "Xero",
       "specs": {
-        "Xero OAuth 2 Identity Service API": {
+        "Xero Accounting API": {
           "status": "ok",
-          "sha256": "eea0725c67bd6603ff318e1b9c25699fc607aa075a0c1255721ade7d3563f0ea",
-          "bytes": 5329,
-          "operations": 2,
-          "title": "Xero OAuth 2 Identity Service API",
+          "sha256": "1afca0717bb0d323210c0f88f3802684c068059f6e5161ee24ddde7ee6294a64",
+          "bytes": 933096,
+          "operations": 235,
+          "title": "Xero Accounting API",
           "apiVersion": "19.1.0",
           "specVersion": "3.0.0",
-          "server": "https://api.xero.com",
-          "changedOn": "2026-10-31"
-        },
-        "Xero Payroll AU API": {
-          "status": "ok",
-          "sha256": "a2edef22468c88aab2caebf30f6eea90b575a65f6eb42216e3b415cc8d0f9ba9",
-          "bytes": 189836,
-          "operations": 32,
-          "title": "Xero Payroll AU API",
-          "apiVersion": "19.1.0",
-          "specVersion": "3.0.0",
-          "server": "https://api.xero.com/payroll.xro/1.0",
-          "changedOn": "2026-10-31"
-        },
-        "Xero Payroll NZ": {
-          "status": "ok",
-          "sha256": "b7d7baf62607c89e878217cbc924e67cad15dc75abc0ebb1ddc3d6aaf3f7b6d7",
-          "bytes": 299437,
-          "operations": 71,
-          "title": "Xero Payroll NZ",
-          "apiVersion": "19.1.0",
-          "specVersion": "3.0.0",
-          "server": "https://api.xero.com/payroll.xro/2.0",
-          "changedOn": "2026-10-31"
-        },
-        "Xero Payroll UK": {
-          "status": "ok",
-          "sha256": "a0d663634e4a71308169f88b8428ae7436128fb43dca21ca74374f281156c36b",
-          "bytes": 263894,
-          "operations": 69,
-          "title": "Xero Payroll UK",
-          "apiVersion": "19.1.0",
-          "specVersion": "3.0.0",
-          "server": "https://api.xero.com/payroll.xro/2.0",
+          "server": "https://api.xero.com/api.xro/2.0",
           "changedOn": "2026-10-31"
         },
         "Xero Assets API": {
@@ -991,6 +958,72 @@
           "specVersion": "3.0.0",
           "server": "https://api.xero.com/bankfeeds.xro/1.0",
           "changedOn": "2026-10-31"
+        },
+        "Xero Bank Feeds API v2": {
+          "status": "ok",
+          "sha256": "7b83382640300f9dffe4c6f331586f7dd362025596c36f08edc2a1c8bf17d000",
+          "bytes": 52869,
+          "operations": 5,
+          "title": "Xero Bank Feeds API v2",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com/bankfeeds.xro/2.0",
+          "changedOn": "2026-10-31"
+        },
+        "Xero Payroll UK": {
+          "status": "ok",
+          "sha256": "a0d663634e4a71308169f88b8428ae7436128fb43dca21ca74374f281156c36b",
+          "bytes": 263894,
+          "operations": 69,
+          "title": "Xero Payroll UK",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com/payroll.xro/2.0",
+          "changedOn": "2026-10-31"
+        },
+        "Xero Payroll AU": {
+          "status": "ok",
+          "sha256": "a2edef22468c88aab2caebf30f6eea90b575a65f6eb42216e3b415cc8d0f9ba9",
+          "bytes": 189836,
+          "operations": 32,
+          "title": "Xero Payroll AU API",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com/payroll.xro/1.0",
+          "changedOn": "2026-10-31"
+        },
+        "Xero Payroll AU v2": {
+          "status": "ok",
+          "sha256": "679e6269ee3f5091ee28786ed31616f25bf26ab75db4577943cb44e09ae6f421",
+          "bytes": 31761,
+          "operations": 9,
+          "title": "Xero Payroll AU API 2.0",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com/payroll.xro/2.0",
+          "changedOn": "2026-10-31"
+        },
+        "Xero Payroll NZ": {
+          "status": "ok",
+          "sha256": "b7d7baf62607c89e878217cbc924e67cad15dc75abc0ebb1ddc3d6aaf3f7b6d7",
+          "bytes": 299437,
+          "operations": 71,
+          "title": "Xero Payroll NZ",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com/payroll.xro/2.0",
+          "changedOn": "2026-10-31"
+        },
+        "Xero OAuth 2 Identity Service API": {
+          "status": "ok",
+          "sha256": "eea0725c67bd6603ff318e1b9c25699fc607aa075a0c1255721ade7d3563f0ea",
+          "bytes": 5329,
+          "operations": 2,
+          "title": "Xero OAuth 2 Identity Service API",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com",
+          "changedOn": "2026-10-31"
         }
       }
     },
@@ -1006,6 +1039,135 @@
           "apiVersion": "2.0.0",
           "specVersion": "3.0.3",
           "server": "https://{subdomain}.{domain}.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "quickbooks-desktop": {
+      "name": "QuickBooks Desktop",
+      "specs": {
+        "Conductor API (QuickBooks Desktop REST wrapper)": {
+          "status": "ok",
+          "sha256": "67d9e59a913a6a643714807017b812503f2107b725474e1cbc4a3812816935ee",
+          "bytes": 4318551,
+          "operations": 262,
+          "title": "Conductor API",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.1.0",
+          "server": "https://api.conductor.is/v1",
+          "changedOn": "2026-10-31"
+        },
+        "qbXML 13.0 operations schema": {
+          "status": "ok",
+          "sha256": "81fd35625bdc0bf057b3f3967e7a838bf6f4c1ce2bec4524512c146eb629626b",
+          "bytes": 288868,
+          "operations": 241,
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "microsoft-dynamics-365-business-central": {
+      "name": "Microsoft Dynamics 365 Business Central",
+      "specs": {
+        "Business Central standard API v1.0": {
+          "status": "ok",
+          "sha256": "8e28d7bdf6e16ea8b3c59cbeeed4645db21995f4cf1c10de03e7563593501faa",
+          "bytes": 552237,
+          "operations": 324,
+          "title": "(v1.0) Dynamics 365 Business Central",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.businesscentral.dynamics.com/v2.0/sandbox/api/v1.0",
+          "changedOn": "2026-10-31"
+        },
+        "Business Central API v2.0 OData $metadata": {
+          "status": "manual: login"
+        }
+      }
+    },
+    "sage-business-cloud-accounting": {
+      "name": "Sage Business Cloud Accounting",
+      "specs": {
+        "Sage Business Cloud Accounting API v3.1": {
+          "status": "ok",
+          "sha256": "948a5d7c7cdb67f92d28e19a453f4f67a11e3f161634d714957ce316b43ea75a",
+          "bytes": 7253331,
+          "operations": 284,
+          "title": "Sage Business Cloud Accounting - Accounts",
+          "apiVersion": "3.1",
+          "specVersion": "3.0.0",
+          "server": "https://api.accounting.sage.com/v3.1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "oracle-fusion": {
+      "name": "Oracle Fusion Cloud",
+      "specs": {
+        "REST API for Oracle Fusion Cloud Financials (26D)": {
+          "status": "ok",
+          "sha256": "8ef217cec3b776a8fcadc562fff00dc6fdb5c9444a6810969a2897576f9ce493",
+          "bytes": 99477481,
+          "operations": 2407,
+          "title": "REST API for Oracle Fusion Cloud Financials",
+          "apiVersion": "2026.09.29",
+          "specVersion": "3.0.0",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "sap-s4hana-cloud": {
+      "name": "SAP S/4HANA Cloud",
+      "specs": {}
+    },
+    "quickbooks": {
+      "name": "QuickBooks Online",
+      "specs": {
+        "QuickBooks Online V3 API (converted from Intuit's Postman collection)": {
+          "status": "ok",
+          "sha256": "bf1a0ad4bf3e9617c34ceecde0dbead343879cf0c07245e5f75ac55d340c9a31",
+          "bytes": 450749,
+          "operations": 85,
+          "title": "QuickBooks Online V3API Collections - OAuth2",
+          "apiVersion": "1.0",
+          "specVersion": "2.0",
+          "server": "https://DefaultParameterValue/v3/company/DefaultParameterValue",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "sage-intacct": {
+      "name": "Sage Intacct",
+      "specs": {
+        "Sage Intacct REST API": {
+          "status": "manual: bot-protection"
+        }
+      }
+    },
+    "zoho-books": {
+      "name": "Zoho Books",
+      "specs": {
+        "Zoho Books API v3 (OpenAPI bundle)": {
+          "status": "ok",
+          "sha256": "89b337bacfb1c3a37f08144536218cb3009102af48f3dcf848eef02934c42438",
+          "bytes": 359278,
+          "operations": 885,
+          "files": 45,
+          "specVersion": "3.0.0",
+          "server": "https://www.zohoapis.com/books/v3",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "freshbooks": {
+      "name": "FreshBooks",
+      "specs": {
+        "FreshBooks API Postman collection": {
+          "status": "ok",
+          "sha256": "686c7253348c14e6d4ec473ef53e4bac4bcc012ed03b31f744e2b10ffa2f03c1",
+          "bytes": 1592606,
+          "operations": 213,
+          "title": "FreshBooks API",
           "changedOn": "2026-10-31"
         }
       }

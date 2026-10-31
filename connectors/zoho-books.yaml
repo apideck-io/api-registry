@@ -1,0 +1,10 @@
+id: zoho-books
+name: "Zoho Books"
+specs:
+  - name: "Zoho Books API v3 (OpenAPI bundle)"
+    url: "https://www.zoho.com/books/api/v3/openapi-all.zip"
+    format: openapi-3.0
+    provenance: vendor
+    extract: zip-bundle
+    server: "https://www.zohoapis.com/books/v3"
+    notes: "Linked as 'Download Zoho Books OpenAPI Document' from the v3 introduction; one OpenAPI file per module."

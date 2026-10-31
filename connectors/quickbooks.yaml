@@ -1,0 +1,10 @@
+id: quickbooks
+name: "QuickBooks Online"
+notes: "Intuit publishes no OpenAPI or Swagger for the QuickBooks Online Accounting API, only Postman collections (developer.intuit.com/app/developer/qbo/docs/develop/postman), whose download link is rendered client-side. Add the collection URL here once captured."
+specs:
+  - name: "QuickBooks Online V3 API (converted from Intuit's Postman collection)"
+    url: "https://gist.githubusercontent.com/kinlane/8b67e8bb101500cbc1bce2a7ca49fffc/raw/8ad0324f7c1b753347e8d0e6ada24d0df0c60d9b/QuickBooks%20Online%20V3%20API%20OpenAPI.json"
+    format: swagger-2.0
+    provenance: community
+    server: "https://quickbooks.api.intuit.com/v3/company/{realmId}"
+    notes: "A community conversion pinned to one gist revision; its host is a placeholder. Partial against the real API."

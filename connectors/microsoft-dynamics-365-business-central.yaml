@@ -1,0 +1,15 @@
+id: microsoft-dynamics-365-business-central
+name: "Microsoft Dynamics 365 Business Central"
+notes: "Microsoft publishes OpenAPI only for API v1.0; its docs state there is no downloadable YAML for v2.0, which exists only as tenant OData $metadata."
+specs:
+  - name: "Business Central standard API v1.0"
+    url: "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/api-reference/v1.0/contracts/bcoas1.0.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.businesscentral.dynamics.com/v2.0/sandbox/api/v1.0"
+  - name: "Business Central API v2.0 OData $metadata"
+    url: "https://api.businesscentral.dynamics.com/v2.0/{tenant}/{environment}/api/v2.0/$metadata"
+    format: odata-edmx
+    provenance: vendor
+    manual: login
+    notes: "The authoritative v2.0 contract. Needs an Entra ID token for a tenant; fetch it with a sandbox connection and convert to OpenAPI."

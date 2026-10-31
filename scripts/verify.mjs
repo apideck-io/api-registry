@@ -7,6 +7,7 @@
 // sha256 and operation count, with `status` recording the failure, so one outage doesn't erase history.
 
 import { createHash } from "node:crypto";
+import { inflateRawSync } from "node:zlib";
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { parse as parseYaml } from "yaml";
@@ -19,6 +20,11 @@ const ONLY = args.includes("--only") ? args[args.indexOf("--only") + 1] : null;
 const FORMATS = new Set(["openapi-3.0", "openapi-3.1", "swagger-2.0", "google-discovery", "asyncapi-2", "postman-2.1", "odata-edmx", "xsd", "graphql"]);
 const PROVENANCE = new Set(["vendor", "third-party", "community", "fork"]);
 const ID = /^[a-z0-9]+(-[a-z0-9]+)*$/;
+// Some vendors wrap the spec: developer.sage.com serves its OpenAPI JSON inside a Markdown code fence.
+// Zoho Books ships its OpenAPI as a zip of per-module files.
+const EXTRACT = new Set(["markdown-json-fence", "zip-bundle"]);
+// Specs we know about but CI cannot fetch: behind a login, or behind bot protection that refuses CI.
+const MANUAL = new Set(["login", "bot-protection"]);
 const METHODS = ["get", "put", "post", "delete", "patch", "head", "options", "trace"];
 
 // ---- validation ----
@@ -53,6 +59,9 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
     if (s?.path && !existsSync(join(ROOT, s.path))) errors.push(`${at}: path ${s.path} does not exist`);
     if (!FORMATS.has(s?.format)) errors.push(`${at}: format must be one of ${[...FORMATS].join(", ")}`);
     if (!PROVENANCE.has(s?.provenance)) errors.push(`${at}: provenance must be one of ${[...PROVENANCE].join(", ")}`);
+    if (s?.extract && !EXTRACT.has(s.extract)) errors.push(`${at}: extract must be one of ${[...EXTRACT].join(", ")}`);
+    if (s?.manual && !MANUAL.has(s.manual)) errors.push(`${at}: manual must be one of ${[...MANUAL].join(", ")}`);
+    if (s?.manual && !s?.notes) errors.push(`${at}: a spec CI can't fetch needs notes saying how to get it`);
   });
   entries.push(doc);
 }
@@ -64,13 +73,43 @@ console.log(`${entries.length} connector entries valid, ${entries.reduce((n, e) 
 if (VALIDATE_ONLY) process.exit(0);
 
 // ---- verification ----
+const canonical = (v) =>
+  Array.isArray(v) ? `[${v.map(canonical).join(",")}]`
+  : v && typeof v === "object" ? `{${Object.keys(v).filter((k) => v[k] !== undefined).sort().map((k) => `${JSON.stringify(k)}:${canonical(v[k])}`).join(",")}}`
+  : JSON.stringify(v);
+// Minimal zip reader (central directory, stored or deflated entries); enough for a vendor's spec bundle.
+function unzip(buf) {
+  let eocd = buf.length - 22;
+  while (eocd >= 0 && buf.readUInt32LE(eocd) !== 0x06054b50) eocd--;
+  if (eocd < 0) throw new Error("not a zip file");
+  const count = buf.readUInt16LE(eocd + 10);
+  let p = buf.readUInt32LE(eocd + 16);
+  const files = [];
+  for (let i = 0; i < count; i++) {
+    const method = buf.readUInt16LE(p + 10);
+    const size = buf.readUInt32LE(p + 20);
+    const nameLen = buf.readUInt16LE(p + 28);
+    const extraLen = buf.readUInt16LE(p + 30);
+    const commentLen = buf.readUInt16LE(p + 32);
+    const local = buf.readUInt32LE(p + 42);
+    const name = buf.toString("utf8", p + 46, p + 46 + nameLen);
+    const start = local + 30 + buf.readUInt16LE(local + 26) + buf.readUInt16LE(local + 28);
+    const raw = buf.subarray(start, start + size);
+    if (!name.endsWith("/")) files.push({ name, text: (method === 8 ? inflateRawSync(raw) : raw).toString("utf8") });
+    p += 46 + nameLen + extraLen + commentLen;
+  }
+  return files;
+}
+
 async function load(spec) {
   if (spec.path) return { status: 200, body: readFileSync(join(ROOT, spec.path), "utf8") };
   const ctl = new AbortController();
   const timer = setTimeout(() => ctl.abort(), 60000);
   try {
     const res = await fetch(spec.url, { signal: ctl.signal, headers: { "user-agent": "apideck-api-registry/2 (+https://github.com/apideck-io/api-registry)" } });
-    return { status: res.status, body: res.ok ? await res.text() : null };
+    if (!res.ok) return { status: res.status, body: null };
+    if (spec.extract === "zip-bundle") return { status: res.status, body: null, bytes: Buffer.from(await res.arrayBuffer()) };
+    return { status: res.status, body: await res.text() };
   } catch (e) {
     return { status: 0, body: null, error: e.name === "AbortError" ? "timeout" : e.message };
   } finally {
@@ -120,7 +159,26 @@ for (const e of entries) {
   const specs = {};
   for (const s of e.specs) {
     const old = before[s.name] ?? {};
+    // Recorded, never fetched: a login wall, or bot protection that refuses CI. Earlier figures stay.
+    if (s.manual) {
+      specs[s.name] = { ...old, status: `manual: ${s.manual}` };
+      continue;
+    }
     const r = await load(s);
+    if (r.body && s.extract === "markdown-json-fence") {
+      const m = r.body.match(/```json\s*\n([\s\S]*?)\n```/);
+      r.body = m ? m[1] : null;
+      if (!m) r.error = "no json fence found";
+    }
+    let bundle = null;
+    if (r.bytes) {
+      try {
+        bundle = unzip(r.bytes).filter((f) => /\.(json|ya?ml)$/i.test(f.name));
+        r.body = "zip"; // marks success; the hash below is of the zip bytes themselves
+      } catch (err) {
+        r.error = `bad zip: ${err.message}`;
+      }
+    }
     if (!r.body) {
       failures++;
       specs[s.name] = { ...old, status: r.error ?? `HTTP ${r.status}` };
@@ -129,19 +187,27 @@ for (const e of entries) {
     }
     let info;
     try {
-      info = inspect(s.format, r.body);
+      if (bundle) {
+        // One entry per module file; the bundle's count is their sum.
+        const parts = bundle.map((f) => inspect(s.format, f.text));
+        info = { operations: parts.reduce((n, x) => n + (x.operations ?? 0), 0), files: bundle.length, specVersion: parts[0]?.specVersion, server: parts.find((x) => x.server)?.server };
+      } else info = inspect(s.format, r.body);
     } catch (err) {
       failures++;
       specs[s.name] = { ...old, status: `unparseable: ${err.message.slice(0, 80)}` };
       console.log(`✗ ${e.id} · ${s.name}: unparseable`);
       continue;
     }
-    const sha256 = createHash("sha256").update(r.body).digest("hex");
+        // Google Discovery docs come back with a different key order on each request and re-stamp etag and
+    // revision on every publish, with no change to the API. Hash a key-sorted copy without those fields,
+    // or the nightly job would open a drift PR every night.
+    const hashed = s.format === "google-discovery" ? canonical({ ...JSON.parse(r.body), etag: undefined, revision: undefined }) : r.bytes ?? r.body;
+    const sha256 = createHash("sha256").update(hashed).digest("hex");
     const changed = old.sha256 && old.sha256 !== sha256;
     specs[s.name] = {
       status: "ok",
       sha256,
-      bytes: Buffer.byteLength(r.body),
+      bytes: r.bytes ? r.bytes.length : Buffer.byteLength(r.body),
       ...Object.fromEntries(Object.entries(info).filter(([, v]) => v != null)),
       changedOn: changed || !old.sha256 ? today : old.changedOn,
     };

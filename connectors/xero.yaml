@@ -1,51 +1,70 @@
 id: xero
 name: "Xero"
+notes: "All from Xero's official XeroAPI/Xero-OpenAPI repo (MIT). It also holds finance, identity and app-store specs, not listed here."
 specs:
-  - name: "Xero OAuth 2 Identity Service API"
-    url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero-identity.yaml"
+  - name: "Xero Accounting API"
+    url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero_accounting.yaml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://api.xero.com"
-    source: apitracker
-  - name: "Xero Payroll AU API"
-    url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero-payroll-au.yaml"
-    format: openapi-3.0
-    provenance: vendor
-    server: "https://api.xero.com/payroll.xro/1.0"
-    source: apitracker
-  - name: "Xero Payroll NZ"
-    url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero-payroll-nz.yaml"
-    format: openapi-3.0
-    provenance: vendor
-    server: "https://api.xero.com/payroll.xro/2.0"
-    source: apitracker
-  - name: "Xero Payroll UK"
-    url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero-payroll-uk.yaml"
-    format: openapi-3.0
-    provenance: vendor
-    server: "https://api.xero.com/payroll.xro/2.0"
-    source: apitracker
+    license: MIT
+    server: "https://api.xero.com/api.xro/2.0"
   - name: "Xero Assets API"
     url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero_assets.yaml"
     format: openapi-3.0
     provenance: vendor
+    license: MIT
     server: "https://api.xero.com/assets.xro/1.0"
-    source: apitracker
   - name: "Xero Files API"
     url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero_files.yaml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://api.xero.com/files.xro/1.0/"
-    source: apitracker
+    license: MIT
+    server: "https://api.xero.com/files.xro/1.0"
   - name: "Xero Projects API"
     url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero-projects.yaml"
     format: openapi-3.0
     provenance: vendor
+    license: MIT
     server: "https://api.xero.com/projects.xro/2.0"
-    source: apitracker
   - name: "Xero Bank Feeds API"
     url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero_bankfeeds.yaml"
     format: openapi-3.0
     provenance: vendor
+    license: MIT
     server: "https://api.xero.com/bankfeeds.xro/1.0"
-    source: apitracker
+  - name: "Xero Bank Feeds API v2"
+    url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero_bankfeeds_v2.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    license: MIT
+    server: "https://api.xero.com/bankfeeds.xro/2.0"
+  - name: "Xero Payroll UK"
+    url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero-payroll-uk.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    license: MIT
+    server: "https://api.xero.com/payroll.xro/2.0"
+  - name: "Xero Payroll AU"
+    url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero-payroll-au.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    license: MIT
+    server: "https://api.xero.com/payroll.xro/1.0"
+  - name: "Xero Payroll AU v2"
+    url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero-payroll-au-v2.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    license: MIT
+    server: "https://api.xero.com/payroll.xro/2.0"
+  - name: "Xero Payroll NZ"
+    url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero-payroll-nz.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    license: MIT
+    server: "https://api.xero.com/payroll.xro/2.0"
+  - name: "Xero OAuth 2 Identity Service API"
+    url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero-identity.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    license: MIT
+    server: "https://api.xero.com"
