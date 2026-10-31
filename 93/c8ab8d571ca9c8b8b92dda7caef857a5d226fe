@@ -1,0 +1,137 @@
+README.md
+  s_eeda7bd9685d9d::t_d569a6482881ef 1-63
+.github/workflows/nightly.yml
+  s_eeda7bd9685d9d::t_1a87ece871ca47 1-39
+.github/workflows/validate.yml
+  s_eeda7bd9685d9d::t_2b2d747435a5eb 1-18
+.gitignore
+  s_eeda7bd9685d9d::t_7c32275474dfe5 9
+connectors/afas.yaml
+  s_eeda7bd9685d9d::t_775651fa83292d 1-15
+connectors/asana.yaml
+  s_eeda7bd9685d9d::t_a825ae0dbd5618 1-8
+connectors/azure-devops.yaml
+  s_eeda7bd9685d9d::t_48f44a267e0a91 1-8
+connectors/basecamp.yaml
+  s_eeda7bd9685d9d::t_8b8f5f02bc6a50 1-8
+connectors/box.yaml
+  s_eeda7bd9685d9d::t_39552a0fdc1b29 1-9
+connectors/calendly.yaml
+  s_eeda7bd9685d9d::t_4af7cd044b27e9 1-8
+connectors/cascade-hr.yaml
+  s_eeda7bd9685d9d::t_5b917285366b5d 1-9
+connectors/chartmogul.yaml
+  s_eeda7bd9685d9d::t_e97ccddd0622f4 1-8
+connectors/clickup.yaml
+  s_eeda7bd9685d9d::t_f4d42312ce5046 1-8
+connectors/digital-ocean.yaml
+  s_eeda7bd9685d9d::t_ff39458745b987 1-8
+connectors/drift.yaml
+  s_eeda7bd9685d9d::t_0ca181a741d34a 1-8
+connectors/ebay.yaml
+  s_eeda7bd9685d9d::t_ec4a1611445ab5 1-8
+connectors/github.yaml
+  s_eeda7bd9685d9d::t_57b251235c0a4d 1-9
+connectors/gmail.yaml
+  s_eeda7bd9685d9d::t_ae1725ccb50dc6 1-7
+connectors/google-analytics.yaml
+  s_eeda7bd9685d9d::t_3d73db2ff1de1d 1-7
+connectors/google-bigquery.yaml
+  s_eeda7bd9685d9d::t_400831176a897c 1-7
+connectors/google-calendar.yaml
+  s_eeda7bd9685d9d::t_ee832f7c27c02c 1-7
+connectors/google-sheets.yaml
+  s_eeda7bd9685d9d::t_26dc0ad29f7f5d 1-7
+connectors/google-tag-manager.yaml
+  s_eeda7bd9685d9d::t_d4279c53d1130c 1-7
+connectors/heap.yaml
+  s_eeda7bd9685d9d::t_9f15c8674f9a1f 1-8
+connectors/intercom.yaml
+  s_eeda7bd9685d9d::t_fea4a3cbcd35c8 1-8
+connectors/iubenda.yaml
+  s_eeda7bd9685d9d::t_c3107b0e5775ce 1-8
+connectors/jetbrains-youtrack.yaml
+  s_eeda7bd9685d9d::t_cfdb5163893c07 1-8
+connectors/jira-data-center.yaml
+  s_eeda7bd9685d9d::t_f198ef3a2f9671 1-8
+connectors/jira-service-desk.yaml
+  s_eeda7bd9685d9d::t_af314468f95b88 1-8
+connectors/journy-io.yaml
+  s_eeda7bd9685d9d::t_7ee7a9907e5720 1-8
+connectors/kustomer.yaml
+  s_eeda7bd9685d9d::t_bca84a2bfd8865 1-8
+connectors/loket-nl.yaml
+  s_eeda7bd9685d9d::t_d681e7595df008 1-9
+connectors/mailchimp.yaml
+  s_eeda7bd9685d9d::t_ec1a36e1ee4191 1-8
+connectors/mailgun.yaml
+  s_eeda7bd9685d9d::t_add1f8d23a9470 1-8
+connectors/microsoft-outlook-calendar.yaml
+  s_eeda7bd9685d9d::t_5d5d1e2e488264 1-8
+connectors/microsoft-outlook.yaml
+  s_eeda7bd9685d9d::t_65683320559827 1-8
+connectors/microsoft-teams.yaml
+  s_eeda7bd9685d9d::t_2d80c116489f05 1-8
+connectors/mollie.yaml
+  s_eeda7bd9685d9d::t_0ec370a2aff26b 1-8
+connectors/notion.yaml
+  s_eeda7bd9685d9d::t_2c0ea4a9a0b33f 1-8
+connectors/onetrust.yaml
+  s_eeda7bd9685d9d::t_bb04e55cc82bb9 1-8
+connectors/personio.yaml
+  s_eeda7bd9685d9d::t_cd48461a01b5a1 1-9
+connectors/pipedrive.yaml
+  s_eeda7bd9685d9d::t_d67783829b43b4 1-9
+connectors/segment.yaml
+  s_eeda7bd9685d9d::t_9edee8117ae049 1-8
+connectors/sendgrid.yaml
+  s_eeda7bd9685d9d::t_3c7a4bf299884c 1-8
+connectors/servicenow.yaml
+  s_eeda7bd9685d9d::t_ec829d7e65c250 1-8
+connectors/sesamehr.yaml
+  s_eeda7bd9685d9d::t_5ee2ba2d54050d 1-8
+connectors/shortcut.yaml
+  s_eeda7bd9685d9d::t_0c32fbfd65cca5 1-8
+connectors/slack.yaml
+  s_eeda7bd9685d9d::t_677bdcc79d8a3c 1-8
+connectors/square.yaml
+  s_eeda7bd9685d9d::t_f1b28b9cd551fc 1-9
+connectors/stripe.yaml
+  s_eeda7bd9685d9d::t_b30953cab5d692 1-9
+connectors/telnyx.yaml
+  s_eeda7bd9685d9d::t_3eae79c445cfec 1-9
+connectors/toasttab-pos.yaml
+  s_eeda7bd9685d9d::t_e5b7a0dc756a04 1-8
+connectors/twilio.yaml
+  s_eeda7bd9685d9d::t_a999eb0bfeb815 1-63
+connectors/typeform.yaml
+  s_eeda7bd9685d9d::t_778ebcccb6ca82 1-8
+connectors/xero.yaml
+  s_eeda7bd9685d9d::t_8a804288a2dbff 1-51
+connectors/zendesk.yaml
+  s_eeda7bd9685d9d::t_a3408d56cf331d 1-8
+index.json
+  s_eeda7bd9685d9d::t_0f6831126a4907 1-1014
+package-lock.json
+  s_eeda7bd9685d9d::t_36142e288fb5d0 1-31
+package.json
+  s_eeda7bd9685d9d::t_7b7a93c078f810 1-12
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_3a219d279c1504 1-156
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "93c8ab8d571ca9c8b8b92dda7caef857a5d226fe",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
