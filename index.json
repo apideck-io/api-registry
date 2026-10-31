@@ -1694,9 +1694,6 @@
     "salesforce": {
       "name": "Salesforce",
       "specs": {
-        "Salesforce developer docs OpenAPI downloads (Connect REST, Data 360 Connect, etc.)": {
-          "status": "manual: bot-protection"
-        },
         "sObjects REST API OpenAPI 3.0 (beta, per org)": {
           "status": "manual: login"
         }
