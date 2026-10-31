@@ -1,0 +1,8 @@
+id: ebay
+name: "eBay"
+specs:
+  - name: "Marketplace Account Deletion notifications"
+    path: specs/ebay/marketplace-account-deletion-asyncapi-1.0.0-2021-05-21.yaml
+    format: asyncapi-2
+    provenance: community
+    notes: "Authored in this repo in 2021 from eBay's notification docs; kept as a stored copy."

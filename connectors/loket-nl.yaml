@@ -1,0 +1,9 @@
+id: loket-nl
+name: "Loket.nl"
+specs:
+  - name: "Loket API"
+    url: "https://developer.loket.nl/swagger.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loket.nl"
+    source: apitracker

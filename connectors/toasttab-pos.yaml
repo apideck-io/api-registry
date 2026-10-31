@@ -1,0 +1,8 @@
+id: toasttab-pos
+name: "Toast"
+specs:
+  - name: "Toast Orders API"
+    url: "https://doc.toasttab.com/toast-api-specifications/toast-orders-api.yaml"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://ws-api.toasttab.com/orders/v2"

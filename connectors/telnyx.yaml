@@ -1,0 +1,9 @@
+id: telnyx
+name: "Telnyx"
+specs:
+  - name: "Telnyx API"
+    url: "https://raw.githubusercontent.com/team-telnyx/openapi/master/openapi/spec3.yml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.telnyx.com/v2"
+    source: apitracker

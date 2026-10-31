@@ -1,0 +1,8 @@
+id: chartmogul
+name: "ChartMogul"
+specs:
+  - name: "ChartMogul API"
+    url: "https://raw.githubusercontent.com/jentic/jentic-public-apis/main/apis/openapi/chartmogul.com/main/1.0.0/openapi.json"
+    format: openapi-3.0
+    provenance: community
+    server: "https://api.chartmogul.com/v1"

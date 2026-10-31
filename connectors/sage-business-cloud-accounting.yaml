@@ -1,0 +1,10 @@
+id: sage-business-cloud-accounting
+name: "Sage Business Cloud Accounting"
+specs:
+  - name: "Sage Business Cloud Accounting API v3.1"
+    url: "https://developer.sage.com/accounting/apis/sagebusinesscloudaccounting/3.1.0/accounting.md"
+    format: openapi-3.0
+    provenance: vendor
+    extract: markdown-json-fence
+    server: "https://api.accounting.sage.com/v3.1"
+    notes: "developer.sage.com serves the OpenAPI JSON inside a Markdown code fence; the older swagger.full.json URL returns 403."

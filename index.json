@@ -1,0 +1,1202 @@
+{
+  "connectors": {
+    "afas": {
+      "name": "AFAS Software",
+      "specs": {
+        "AFAS Artikelen API": {
+          "status": "ok",
+          "sha256": "fa860a46a766c5b85b47bb83c8717cb10b103237e9f02c1ab06bf8e914fae438",
+          "bytes": 427208,
+          "operations": 37,
+          "title": "AFAS Artikelen API",
+          "apiVersion": "8.8.11",
+          "specVersion": "3.0.0",
+          "server": "https://{id}.rest.afas.online/ProfitRestServices",
+          "changedOn": "2026-10-31"
+        },
+        "AFAS SB API": {
+          "status": "ok",
+          "sha256": "ec95991b533276ceb43182ef900c3806124b522836bf7cf0ea9576ed1f15ae9e",
+          "bytes": 253188,
+          "operations": 40,
+          "title": "AFAS SB API",
+          "apiVersion": "2.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://{domain}.afasfocus.nl/{customerenvironment}",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "asana": {
+      "name": "Asana",
+      "specs": {
+        "Asana": {
+          "status": "ok",
+          "sha256": "e4867e9cd131efa48ae91297e14b0ddd045c1ac767a90a9d84a3ce99ca07f73a",
+          "bytes": 3480616,
+          "operations": 271,
+          "title": "Asana",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.0",
+          "server": "https://app.asana.com/api/1.0",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "azure-devops": {
+      "name": "Azure DevOps",
+      "specs": {
+        "WorkItemTracking": {
+          "status": "ok",
+          "sha256": "e8253fcc6cc6fe7951008273a7ae65e9e41452e76a20084ec8aef43ad37c3b65",
+          "bytes": 311298,
+          "operations": 80,
+          "title": "WorkItemTracking",
+          "apiVersion": "7.1",
+          "specVersion": "2.0",
+          "server": "https://dev.azure.com",
+          "specServer": "https://dev.azure.com/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "basecamp": {
+      "name": "Basecamp",
+      "specs": {
+        "Basecamp": {
+          "status": "ok",
+          "sha256": "fb76f28ffd3958485ec2c249f4b1d0df1d95304fd1183091a9f597f6caac977d",
+          "bytes": 1335007,
+          "operations": 295,
+          "title": "Basecamp",
+          "apiVersion": "2026-10-30",
+          "specVersion": "3.1.0",
+          "server": "https://3.basecampapi.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "box": {
+      "name": "Box",
+      "specs": {
+        "Box Platform API": {
+          "status": "ok",
+          "sha256": "47cdf4bcbc7cdebcb042f155f13a8413bf913678489bd15b263b65f49e841ba1",
+          "bytes": 1810932,
+          "operations": 297,
+          "title": "Box Platform API",
+          "apiVersion": "2024.0",
+          "specVersion": "3.0.2",
+          "server": "https://api.box.com/2.0",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "calendly": {
+      "name": "Calendly",
+      "specs": {
+        "Calendly API": {
+          "status": "ok",
+          "sha256": "7ae64d8a092612e1306cc9a44d8c35e90fc5d385c1710fe883823c677693575d",
+          "bytes": 554101,
+          "operations": 82,
+          "title": "Calendly API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.calendly.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "cascade-hr": {
+      "name": "IRIS Cascade HR",
+      "specs": {
+        "HR API": {
+          "status": "ok",
+          "sha256": "7a4734dbe37035ba9279ed32d505123363490c74971173aba7ce7cc2c97beb79",
+          "bytes": 1296519,
+          "operations": 87,
+          "title": "HR API",
+          "apiVersion": "2",
+          "specVersion": "3.0.1",
+          "server": "https://api.iris.co.uk/hr/v2",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "chartmogul": {
+      "name": "ChartMogul",
+      "specs": {
+        "ChartMogul API": {
+          "status": "ok",
+          "sha256": "e93802859f2c77b985661ae5e2e20795d396d0c09a0371e17372299aeb2920b1",
+          "bytes": 14863,
+          "operations": 24,
+          "title": "ChartMogul API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.chartmogul.com/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "clickup": {
+      "name": "ClickUp",
+      "specs": {
+        "ClickUp API v2 Reference": {
+          "status": "ok",
+          "sha256": "a0a72ec97ddb4e4859b9ed89b997bb784ba5828412ff35119f41e87103069662",
+          "bytes": 529169,
+          "operations": 138,
+          "title": "ClickUp API v2 Reference",
+          "apiVersion": "2.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.clickup.com/api",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "digital-ocean": {
+      "name": "DigitalOcean",
+      "specs": {
+        "DigitalOcean API": {
+          "status": "ok",
+          "sha256": "54df5b803435fc9e2c0e1ef09a70c61ca89e6efbf5ec4b66ba5384da0fd124a0",
+          "bytes": 4239887,
+          "operations": 866,
+          "title": "DigitalOcean API",
+          "apiVersion": "2.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.digitalocean.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "drift": {
+      "name": "Drift",
+      "specs": {
+        "Drift API": {
+          "status": "ok",
+          "sha256": "acca6b9790849feef5fed06ab3a7142520f43f2c2215064a4544e7b5e9380069",
+          "bytes": 58716,
+          "operations": 37,
+          "title": "Drift API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://driftapi.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "ebay": {
+      "name": "eBay",
+      "specs": {
+        "Marketplace Account Deletion notifications": {
+          "status": "ok",
+          "sha256": "40c6d1e15d5ee8b692fe30add9963133ee990ebc568b53ba06fbd679dfb124f9",
+          "bytes": 2306,
+          "operations": 1,
+          "title": "eBay Notifications",
+          "apiVersion": "1.0.0",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "github": {
+      "name": "GitHub",
+      "specs": {
+        "GitHub v3 REST API": {
+          "status": "ok",
+          "sha256": "d5271db96080c9a4a0537c124bfc85022c42cf7283feff5335429bdce10e5127",
+          "bytes": 78368989,
+          "operations": 1254,
+          "title": "GitHub v3 REST API",
+          "apiVersion": "1.1.4",
+          "specVersion": "3.0.3",
+          "server": "https://api.github.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "gmail": {
+      "name": "Gmail",
+      "specs": {
+        "Gmail API": {
+          "status": "ok",
+          "sha256": "5f2011f4bc0f333bb6514ec16435448bf7cccd2b7b815baa1cfd1dc8461c6b9a",
+          "bytes": 217716,
+          "operations": 79,
+          "title": "Gmail API",
+          "apiVersion": "v1",
+          "server": "https://gmail.googleapis.com/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "google-analytics": {
+      "name": "Google Analytics",
+      "specs": {
+        "Google Analytics Data API": {
+          "status": "ok",
+          "sha256": "bdb28fb99eee428fef7342c4607a5ed7ecd6cf8248ebe11d7bde8e48da709020",
+          "bytes": 121351,
+          "operations": 11,
+          "title": "Google Analytics Data API",
+          "apiVersion": "v1beta",
+          "server": "https://analyticsdata.googleapis.com/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "google-bigquery": {
+      "name": "Google BigQuery",
+      "specs": {
+        "BigQuery API": {
+          "status": "ok",
+          "sha256": "f5f75602ab794c0910efcd7e2344a48b5b1d250e8386380ae4d6b82c1827e8c5",
+          "bytes": 594508,
+          "operations": 47,
+          "title": "BigQuery API",
+          "apiVersion": "v2",
+          "server": "https://bigquery.googleapis.com/bigquery/v2/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "google-calendar": {
+      "name": "Google Calendar",
+      "specs": {
+        "Calendar API": {
+          "status": "ok",
+          "sha256": "195840bf1b483e9472408529f2a3c70600e1e23ad9dd5c0d701e09578045701a",
+          "bytes": 170208,
+          "operations": 38,
+          "title": "Calendar API",
+          "apiVersion": "v3",
+          "server": "https://www.googleapis.com/calendar/v3/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "google-sheets": {
+      "name": "Google Sheets",
+      "specs": {
+        "Google Sheets API": {
+          "status": "ok",
+          "sha256": "9897086962028486308d2804205943255749cac51c0a7b87d852e8095940b852",
+          "bytes": 394571,
+          "operations": 17,
+          "title": "Google Sheets API",
+          "apiVersion": "v4",
+          "server": "https://sheets.googleapis.com/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "google-tag-manager": {
+      "name": "Google Tag Manager",
+      "specs": {
+        "Tag Manager API": {
+          "status": "ok",
+          "sha256": "f1af2126705fa1857b2e17c2995133f48717040391dd003c035d4e5415e92c15",
+          "bytes": 270858,
+          "operations": 106,
+          "title": "Tag Manager API",
+          "apiVersion": "v2",
+          "server": "https://tagmanager.googleapis.com/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "heap": {
+      "name": "Heap",
+      "specs": {
+        "Heap API": {
+          "status": "ok",
+          "sha256": "056e383c87508f65b4dbcd389786b58d545013883e8aff868525b5a276081620",
+          "bytes": 15069,
+          "operations": 6,
+          "title": "Heap API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://heapanalytics.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "intercom": {
+      "name": "Intercom",
+      "specs": {
+        "Intercom API": {
+          "status": "ok",
+          "sha256": "15220f68d145658066f1a194f5b535ae4b5010322db1358fb63f4e8265d8ff9c",
+          "bytes": 910133,
+          "operations": 154,
+          "title": "Intercom API",
+          "apiVersion": "2.14",
+          "specVersion": "3.0.1",
+          "server": "https://api.intercom.io",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "iubenda": {
+      "name": "Iubenda",
+      "specs": {
+        "iubenda Consent Solution API": {
+          "status": "ok",
+          "sha256": "5085b092daa1a7845c6a0d1b684d9f9869722a4881d53b78f7255d129f78db30",
+          "bytes": 50783,
+          "operations": 17,
+          "title": "iubenda Consent Solution API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://consent.iubenda.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "jetbrains-youtrack": {
+      "name": "JetBrains YouTrack",
+      "specs": {
+        "YouTrack REST API": {
+          "status": "ok",
+          "sha256": "22f0e5827da3a56849634c59e3041972d88ea20be39b16b0860976af376a6c23",
+          "bytes": 564729,
+          "operations": 281,
+          "title": "YouTrack REST API",
+          "apiVersion": "2026.4",
+          "specVersion": "3.0.1",
+          "server": "https://{instance}.youtrack.cloud/api",
+          "specServer": "https://youtrack.jetbrains.com:443/api",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "jira-data-center": {
+      "name": "Jira Data Center",
+      "specs": {
+        "Jira Software Data Center REST API Reference": {
+          "status": "ok",
+          "sha256": "ed6bd682e7d54f85d273ca6d25ec7d86052810ca9e5b590c48cdc1cd4e983923",
+          "bytes": 534066,
+          "operations": 430,
+          "title": "Jira Software Data Center REST API Reference",
+          "apiVersion": "swagger-merged-template.yaml",
+          "specVersion": "3.0.1",
+          "server": "https://{baseUrl}/rest/api/2",
+          "specServer": "http://{baseurl}/rest",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "jira-service-desk": {
+      "name": "Jira Service Desk",
+      "specs": {
+        "Service Management Public REST API": {
+          "status": "ok",
+          "sha256": "511d6e039a28c094e7a369dc3f17b7dbd6d067ba6e2071d6c2b86d939f8d0e17",
+          "bytes": 370437,
+          "operations": 75,
+          "title": "Service Management Public REST API",
+          "apiVersion": "1001.0.0-SNAPSHOT-d794cfb4c7554a89092e2f32783da3a72153f3f0",
+          "specVersion": "3.0.1",
+          "server": "https://{your-domain}.atlassian.net",
+          "specServer": "https://your-domain.atlassian.net",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "journy-io": {
+      "name": "journy.io",
+      "specs": {
+        "Developer documentation": {
+          "status": "ok",
+          "sha256": "178f4a23c5128ebc61b2f6210d85a8d973cf48859fb410f5e5ec38d8a5a312e0",
+          "bytes": 311850,
+          "operations": 16,
+          "title": "Developer documentation",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.journy.io",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "kustomer": {
+      "name": "Kustomer",
+      "specs": {
+        "Kustomer API": {
+          "status": "ok",
+          "sha256": "f14dec92742a1624f804ad66e60a6cdce7f697af54a16c57bc872b629c694008",
+          "bytes": 8669,
+          "operations": 19,
+          "title": "Kustomer API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.kustomerapp.com/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "loket-nl": {
+      "name": "Loket.nl",
+      "specs": {
+        "Loket API": {
+          "status": "ok",
+          "sha256": "d6f5bd87bd9d39d2735fa2493e7ee3d76f8eec317b888e066a7a0a33f03228de",
+          "bytes": 4682315,
+          "operations": 1089,
+          "title": "Loket API",
+          "apiVersion": "V2",
+          "specVersion": "3.1.0",
+          "server": "https://api.loket.nl",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "mailchimp": {
+      "name": "MailChimp",
+      "specs": {
+        "Mailchimp Marketing API": {
+          "status": "ok",
+          "sha256": "374046a5209daa8d68cdb5dd7e0244fcf214928af4321ff539755849641b9a21",
+          "bytes": 10769438,
+          "operations": 298,
+          "title": "Mailchimp Marketing API",
+          "apiVersion": "3.0.91",
+          "specVersion": "2.0",
+          "server": "https://{dc}.api.mailchimp.com/3.0",
+          "specServer": "https://server.api.mailchimp.com/3.0",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "mailgun": {
+      "name": "Mailgun",
+      "specs": {
+        "Mailgun API": {
+          "status": "ok",
+          "sha256": "dee461c04d9ddf854db518c0e274121ef181cdb25aa05691b8ddfd09706da687",
+          "bytes": 878898,
+          "operations": 267,
+          "title": "Mailgun API",
+          "apiVersion": "3.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.mailgun.net",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "microsoft-outlook-calendar": {
+      "name": "Outlook Calendar",
+      "specs": {
+        "OData Service for namespace microsoft.graph": {
+          "status": "ok",
+          "sha256": "69de68b2c895bc608a58229e662e2b3eeb23524385516afc250ff0b8f165ff29",
+          "bytes": 44457302,
+          "operations": 17911,
+          "title": "OData Service for namespace microsoft.graph",
+          "apiVersion": "v1.0",
+          "specVersion": "3.0.4",
+          "server": "https://graph.microsoft.com/v1.0",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "microsoft-outlook": {
+      "name": "Microsoft Outlook",
+      "specs": {
+        "OData Service for namespace microsoft.graph": {
+          "status": "ok",
+          "sha256": "69de68b2c895bc608a58229e662e2b3eeb23524385516afc250ff0b8f165ff29",
+          "bytes": 44457302,
+          "operations": 17911,
+          "title": "OData Service for namespace microsoft.graph",
+          "apiVersion": "v1.0",
+          "specVersion": "3.0.4",
+          "server": "https://graph.microsoft.com/v1.0",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "microsoft-teams": {
+      "name": "Microsoft Teams",
+      "specs": {
+        "OData Service for namespace microsoft.graph": {
+          "status": "ok",
+          "sha256": "69de68b2c895bc608a58229e662e2b3eeb23524385516afc250ff0b8f165ff29",
+          "bytes": 44457302,
+          "operations": 17911,
+          "title": "OData Service for namespace microsoft.graph",
+          "apiVersion": "v1.0",
+          "specVersion": "3.0.4",
+          "server": "https://graph.microsoft.com/v1.0",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "mollie": {
+      "name": "Mollie",
+      "specs": {
+        "Mollie API": {
+          "status": "ok",
+          "sha256": "01847046d5d0c577c90acc73096c6836472b18094c8c9572a328b655e8622ac3",
+          "bytes": 1949107,
+          "operations": 128,
+          "title": "Mollie API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.mollie.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "notion": {
+      "name": "Notion",
+      "specs": {
+        "Notion API": {
+          "status": "ok",
+          "sha256": "d33548174dfc6ebad012fc73b1483532c7887d8c97fd6deb62d56c742e96baba",
+          "bytes": 85302,
+          "operations": 24,
+          "title": "Notion API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.notion.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "onetrust": {
+      "name": "OneTrust",
+      "specs": {
+        "Consent & Preferences - Universal Consent & Preference Management (OAS)": {
+          "status": "ok",
+          "sha256": "fe4a0697ec9da33c66c145b17561a9f371c7604fb40241a8bf4a5ce4df5b0ad1",
+          "bytes": 639076,
+          "operations": 97,
+          "title": "Consent & Preferences - Universal Consent & Preference Management (OAS)",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://{hostname}",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "personio": {
+      "name": "Personio",
+      "specs": {
+        "Personnel Data": {
+          "status": "ok",
+          "sha256": "9ce7b977824c488f23b3a21562be3dec83733aa93474a585dffa21fcc826af46",
+          "bytes": 193303,
+          "operations": 29,
+          "title": "Personnel Data",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.personio.de/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "pipedrive": {
+      "name": "Pipedrive",
+      "specs": {
+        "Pipedrive API v1": {
+          "status": "ok",
+          "sha256": "1515a2849bdba807d563f23915dae6736771175c997fc8ddfdfc67ad5ec1f76c",
+          "bytes": 1801833,
+          "operations": 213,
+          "title": "Pipedrive API v1",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.pipedrive.com/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "segment": {
+      "name": "Segment",
+      "specs": {
+        "Segment Public API": {
+          "status": "ok",
+          "sha256": "dd8d23668fa1f317a53fc5242d91279ba7a9ee6c49697f3d80d60b486b03cc4d",
+          "bytes": 60885,
+          "operations": 30,
+          "title": "Segment Public API",
+          "apiVersion": "73.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.segmentapis.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "sendgrid": {
+      "name": "Sendgrid",
+      "specs": {
+        "Email Activity (beta)": {
+          "status": "ok",
+          "sha256": "80aaf7926007ffa486bf9d2d5d8b1337ec8a361d465a0f17dbe784258f8b2a1f",
+          "bytes": 1551569,
+          "operations": 334,
+          "title": "Email Activity (beta)",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.sendgrid.com/v3",
+          "specServer": "http://api.sendgrid.com/v3",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "servicenow": {
+      "name": "ServiceNow",
+      "specs": {
+        "ServiceNow REST API": {
+          "status": "ok",
+          "sha256": "ddc984b2ef58b6bdfa83603a4e1430a3c0361feefdbf95c90973a2cb7d77d6dd",
+          "bytes": 64609,
+          "operations": 20,
+          "title": "ServiceNow REST API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://{instance}.service-now.com/api",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "sesamehr": {
+      "name": "Sesame HR",
+      "specs": {
+        "Sesame Public API": {
+          "status": "ok",
+          "sha256": "1a1d2ef0ad48768ca9876cbf863cafb918dcbb3f7cb59b68ea43a8de3886d4ee",
+          "bytes": 3149107,
+          "operations": 287,
+          "title": "Sesame Public API",
+          "apiVersion": "3.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://api-{region}.sesametime.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "shortcut": {
+      "name": "Shortcut",
+      "specs": {
+        "Shortcut API": {
+          "status": "ok",
+          "sha256": "9863069a92305b885108324790abdaea241c1b2d130ae73df573517111314528",
+          "bytes": 524038,
+          "operations": 143,
+          "title": "Shortcut API",
+          "apiVersion": "3.0",
+          "specVersion": "2.0",
+          "server": "https://api.app.shortcut.com",
+          "specServer": "https://api.app.shortcut.com/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "slack": {
+      "name": "Slack",
+      "specs": {
+        "Slack Web API": {
+          "status": "ok",
+          "sha256": "742a5c977180a829df8767cf57bc417d99b3713583aee83741efb9c08ca731e7",
+          "bytes": 1237332,
+          "operations": 174,
+          "title": "Slack Web API",
+          "apiVersion": "1.7.0",
+          "specVersion": "2.0",
+          "server": "https://slack.com/api",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "square": {
+      "name": "Square",
+      "specs": {
+        "Square": {
+          "status": "ok",
+          "sha256": "8f65460732e19d7445f7a34d8a9df09163db45273df5176a1cc794890ef591fb",
+          "bytes": 3273134,
+          "operations": 332,
+          "title": "Square",
+          "apiVersion": "2.0",
+          "specVersion": "3.0.0",
+          "server": "https://connect.squareup.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "stripe": {
+      "name": "Stripe",
+      "specs": {
+        "Stripe API": {
+          "status": "ok",
+          "sha256": "585b581504ae0d6760b823cdfae4ac8a218b53f2c32c0135f6a4e35a84d874f6",
+          "bytes": 6630124,
+          "operations": 612,
+          "title": "Stripe API",
+          "apiVersion": "2026-09-30.endive",
+          "specVersion": "3.0.0",
+          "server": "https://api.stripe.com/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "telnyx": {
+      "name": "Telnyx",
+      "specs": {
+        "Telnyx API": {
+          "status": "ok",
+          "sha256": "7df03f766ad9daa5f6dcf172ace127056868a9bfbb941eb792d887d8db900132",
+          "bytes": 6512594,
+          "operations": 1507,
+          "title": "Telnyx API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.telnyx.com/v2",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "toasttab-pos": {
+      "name": "Toast",
+      "specs": {
+        "Toast Orders API": {
+          "status": "ok",
+          "sha256": "92949e501e4ebbfeb7f2337b56df28fe0218e71e25ba2a91de66c1a97bf38168",
+          "bytes": 140691,
+          "operations": 16,
+          "title": "Toast Orders API",
+          "apiVersion": "2.15.0",
+          "specVersion": "2.0",
+          "server": "https://ws-api.toasttab.com/orders/v2",
+          "specServer": "https://toast-api-server/orders/v2",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "twilio": {
+      "name": "Twilio",
+      "specs": {
+        "Twilio - Accounts": {
+          "status": "ok",
+          "sha256": "4f7d3c7d9c0bc3ccb913146defe068514d6e8f7ef91818e572b0a476045db31a",
+          "bytes": 68997,
+          "operations": 20,
+          "title": "Twilio - Accounts",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://accounts.twilio.com",
+          "changedOn": "2026-10-31"
+        },
+        "Twilio - Api": {
+          "status": "ok",
+          "sha256": "052b294839a56c89a921c77639305d99ad15be6e248bdeaef8975aea6cfcb339",
+          "bytes": 1504725,
+          "operations": 197,
+          "title": "Twilio - Api",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.twilio.com",
+          "changedOn": "2026-10-31"
+        },
+        "Twilio - Bulkexports": {
+          "status": "ok",
+          "sha256": "e198bdf0488f7de0161c8d468aefa9edde6efa69d319bc30ca607bcbd4abe3bc",
+          "bytes": 38810,
+          "operations": 9,
+          "title": "Twilio - Bulkexports",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://bulkexports.twilio.com",
+          "changedOn": "2026-10-31"
+        },
+        "Twilio - Chat": {
+          "status": "ok",
+          "sha256": "00f7db8e090deeb81732830079a3febc70738dc87ad2decb21a9a66835315656",
+          "bytes": 217143,
+          "operations": 40,
+          "title": "Twilio - Chat",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://chat.twilio.com",
+          "changedOn": "2026-10-31"
+        },
+        "Twilio - Conversations": {
+          "status": "ok",
+          "sha256": "84db3b5f83cb95289ebcd3745d019d16377cca8e9ccc60328ca0522fbea214e3",
+          "bytes": 680007,
+          "operations": 103,
+          "title": "Twilio - Conversations",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://conversations.twilio.com",
+          "changedOn": "2026-10-31"
+        },
+        "Twilio - Events": {
+          "status": "ok",
+          "sha256": "e3fe6148499e174cbf13cfa3113c6c2b606f91b288d857234ec3092803e1142e",
+          "bytes": 99346,
+          "operations": 22,
+          "title": "Twilio - Events",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://events.twilio.com",
+          "changedOn": "2026-10-31"
+        },
+        "Twilio - Flex": {
+          "status": "ok",
+          "sha256": "638572cf53bfafc8ba6524ad9f77abce32fb7fe18a958a49fcb1363529a70fa8",
+          "bytes": 388340,
+          "operations": 73,
+          "title": "Twilio - Flex",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://flex-api.twilio.com",
+          "changedOn": "2026-10-31"
+        },
+        "Twilio - Frontline": {
+          "status": "ok",
+          "sha256": "16ba05c10185a233fa53343e4cb2f417b447cb0c6951c0f5fe7aec32d80c8fe1",
+          "bytes": 8153,
+          "operations": 2,
+          "title": "Twilio - Frontline",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://frontline-api.twilio.com",
+          "changedOn": "2026-10-31"
+        },
+        "Twilio - Insights": {
+          "status": "ok",
+          "sha256": "05a5bd7f333639d3426798664c241e11a5e1b291262cdf761531d4759ffc0f1a",
+          "bytes": 247816,
+          "operations": 17,
+          "title": "Twilio - Insights",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://insights.twilio.com",
+          "changedOn": "2026-10-31"
+        },
+        "Twilio - Ip_messaging": {
+          "status": "ok",
+          "sha256": "7dfd6846bfa65a25d0de30cd9a4b6dd826f4762184547bb3f7d374dcc1bd7f77",
+          "bytes": 170452,
+          "operations": 40,
+          "title": "Twilio - Ip_messaging",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://ip-messaging.twilio.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "typeform": {
+      "name": "Typeform",
+      "specs": {
+        "Typeform API": {
+          "status": "ok",
+          "sha256": "0c16c2872141e1cca3a3e485aaabd83aaeb5d49521f3a75ccfbf7bc53b08f13c",
+          "bytes": 54237,
+          "operations": 30,
+          "title": "Typeform API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.typeform.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "xero": {
+      "name": "Xero",
+      "specs": {
+        "Xero Accounting API": {
+          "status": "ok",
+          "sha256": "1afca0717bb0d323210c0f88f3802684c068059f6e5161ee24ddde7ee6294a64",
+          "bytes": 933096,
+          "operations": 235,
+          "title": "Xero Accounting API",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com/api.xro/2.0",
+          "changedOn": "2026-10-31"
+        },
+        "Xero Assets API": {
+          "status": "ok",
+          "sha256": "33ae6b5d42674611263f2f77d1d9826e7406a8b96938358f0aa42367595642d2",
+          "bytes": 37955,
+          "operations": 6,
+          "title": "Xero Assets API",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com/assets.xro/1.0",
+          "changedOn": "2026-10-31"
+        },
+        "Xero Files API": {
+          "status": "ok",
+          "sha256": "4200a3862498935b5cc64fde6c79a01e1063ba145ac08f94fb38512740b2a0fc",
+          "bytes": 31954,
+          "operations": 18,
+          "title": "Xero Files API",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com/files.xro/1.0",
+          "specServer": "https://api.xero.com/files.xro/1.0/",
+          "changedOn": "2026-10-31"
+        },
+        "Xero Projects API": {
+          "status": "ok",
+          "sha256": "4626306130835ae05bdd7341e60f20f25325da97a7357735095a8a9f35c4348f",
+          "bytes": 50878,
+          "operations": 16,
+          "title": "Xero Projects API",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com/projects.xro/2.0",
+          "changedOn": "2026-10-31"
+        },
+        "Xero Bank Feeds API": {
+          "status": "ok",
+          "sha256": "e4bb3b98b2efd37627f1e4d2c850dfd544588cb97214491ceccd78f54dec5366",
+          "bytes": 35419,
+          "operations": 7,
+          "title": "Xero Bank Feeds API",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com/bankfeeds.xro/1.0",
+          "changedOn": "2026-10-31"
+        },
+        "Xero Bank Feeds API v2": {
+          "status": "ok",
+          "sha256": "7b83382640300f9dffe4c6f331586f7dd362025596c36f08edc2a1c8bf17d000",
+          "bytes": 52869,
+          "operations": 5,
+          "title": "Xero Bank Feeds API v2",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com/bankfeeds.xro/2.0",
+          "changedOn": "2026-10-31"
+        },
+        "Xero Payroll UK": {
+          "status": "ok",
+          "sha256": "a0d663634e4a71308169f88b8428ae7436128fb43dca21ca74374f281156c36b",
+          "bytes": 263894,
+          "operations": 69,
+          "title": "Xero Payroll UK",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com/payroll.xro/2.0",
+          "changedOn": "2026-10-31"
+        },
+        "Xero Payroll AU": {
+          "status": "ok",
+          "sha256": "a2edef22468c88aab2caebf30f6eea90b575a65f6eb42216e3b415cc8d0f9ba9",
+          "bytes": 189836,
+          "operations": 32,
+          "title": "Xero Payroll AU API",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com/payroll.xro/1.0",
+          "changedOn": "2026-10-31"
+        },
+        "Xero Payroll AU v2": {
+          "status": "ok",
+          "sha256": "679e6269ee3f5091ee28786ed31616f25bf26ab75db4577943cb44e09ae6f421",
+          "bytes": 31761,
+          "operations": 9,
+          "title": "Xero Payroll AU API 2.0",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com/payroll.xro/2.0",
+          "changedOn": "2026-10-31"
+        },
+        "Xero Payroll NZ": {
+          "status": "ok",
+          "sha256": "b7d7baf62607c89e878217cbc924e67cad15dc75abc0ebb1ddc3d6aaf3f7b6d7",
+          "bytes": 299437,
+          "operations": 71,
+          "title": "Xero Payroll NZ",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com/payroll.xro/2.0",
+          "changedOn": "2026-10-31"
+        },
+        "Xero OAuth 2 Identity Service API": {
+          "status": "ok",
+          "sha256": "eea0725c67bd6603ff318e1b9c25699fc607aa075a0c1255721ade7d3563f0ea",
+          "bytes": 5329,
+          "operations": 2,
+          "title": "Xero OAuth 2 Identity Service API",
+          "apiVersion": "19.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.xero.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "zendesk": {
+      "name": "Zendesk",
+      "specs": {
+        "Support API": {
+          "status": "ok",
+          "sha256": "809a093dd15caa57536520db2c7dd8a829e8e6c2a25c01b3f7af3f4e9b8d22e6",
+          "bytes": 2471434,
+          "operations": 676,
+          "title": "Support API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://{subdomain}.zendesk.com",
+          "specServer": "https://{subdomain}.{domain}.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "quickbooks-desktop": {
+      "name": "QuickBooks Desktop",
+      "specs": {
+        "Conductor API (QuickBooks Desktop REST wrapper)": {
+          "status": "ok",
+          "sha256": "67d9e59a913a6a643714807017b812503f2107b725474e1cbc4a3812816935ee",
+          "bytes": 4318551,
+          "operations": 262,
+          "title": "Conductor API",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.1.0",
+          "server": "https://api.conductor.is/v1",
+          "changedOn": "2026-10-31"
+        },
+        "qbXML 13.0 operations schema": {
+          "status": "ok",
+          "sha256": "81fd35625bdc0bf057b3f3967e7a838bf6f4c1ce2bec4524512c146eb629626b",
+          "bytes": 288868,
+          "operations": 241,
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "microsoft-dynamics-365-business-central": {
+      "name": "Microsoft Dynamics 365 Business Central",
+      "specs": {
+        "Business Central standard API v1.0": {
+          "status": "ok",
+          "sha256": "8e28d7bdf6e16ea8b3c59cbeeed4645db21995f4cf1c10de03e7563593501faa",
+          "bytes": 552237,
+          "operations": 324,
+          "title": "(v1.0) Dynamics 365 Business Central",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.businesscentral.dynamics.com/v2.0/sandbox/api/v1.0",
+          "changedOn": "2026-10-31"
+        },
+        "Business Central API v2.0 OData $metadata": {
+          "status": "manual: login"
+        }
+      }
+    },
+    "sage-business-cloud-accounting": {
+      "name": "Sage Business Cloud Accounting",
+      "specs": {
+        "Sage Business Cloud Accounting API v3.1": {
+          "status": "ok",
+          "sha256": "948a5d7c7cdb67f92d28e19a453f4f67a11e3f161634d714957ce316b43ea75a",
+          "bytes": 7253331,
+          "operations": 284,
+          "title": "Sage Business Cloud Accounting - Accounts",
+          "apiVersion": "3.1",
+          "specVersion": "3.0.0",
+          "server": "https://api.accounting.sage.com/v3.1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "oracle-fusion": {
+      "name": "Oracle Fusion Cloud",
+      "specs": {
+        "REST API for Oracle Fusion Cloud Financials (26D)": {
+          "status": "ok",
+          "sha256": "8ef217cec3b776a8fcadc562fff00dc6fdb5c9444a6810969a2897576f9ce493",
+          "bytes": 99477481,
+          "operations": 2407,
+          "title": "REST API for Oracle Fusion Cloud Financials",
+          "apiVersion": "2026.09.29",
+          "specVersion": "3.0.0",
+          "server": "https://{host}/fscmRestApi/resources/11.13.18.05",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "sap-s4hana-cloud": {
+      "name": "SAP S/4HANA Cloud",
+      "specs": {
+        "Business Partner (A2X)": {
+          "status": "manual: login"
+        },
+        "Journal Entry Item - Read": {
+          "status": "manual: login"
+        },
+        "Supplier Invoice - Process": {
+          "status": "manual: login"
+        }
+      }
+    },
+    "quickbooks": {
+      "name": "QuickBooks Online",
+      "specs": {
+        "QuickBooks Online V3 API (converted from Intuit's Postman collection)": {
+          "status": "ok",
+          "sha256": "bf1a0ad4bf3e9617c34ceecde0dbead343879cf0c07245e5f75ac55d340c9a31",
+          "bytes": 450749,
+          "operations": 85,
+          "title": "QuickBooks Online V3API Collections - OAuth2",
+          "apiVersion": "1.0",
+          "specVersion": "2.0",
+          "server": "https://quickbooks.api.intuit.com/v3/company/{realmId}",
+          "specServer": "https://DefaultParameterValue/v3/company/DefaultParameterValue",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "sage-intacct": {
+      "name": "Sage Intacct",
+      "specs": {
+        "Sage Intacct REST API": {
+          "status": "manual: bot-protection"
+        }
+      }
+    },
+    "zoho-books": {
+      "name": "Zoho Books",
+      "specs": {
+        "Zoho Books API v3 (OpenAPI bundle)": {
+          "status": "ok",
+          "sha256": "280c5dd6e16de893d0bc78c7bfcd832851f2cf9fdfdfffdc755cac97fddc8e85",
+          "bytes": 3027513,
+          "operations": 885,
+          "files": 45,
+          "title": "Zoho Books API v3 (OpenAPI bundle)",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://www.zohoapis.com/books/v3",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "freshbooks": {
+      "name": "FreshBooks",
+      "specs": {
+        "FreshBooks API Postman collection": {
+          "status": "ok",
+          "sha256": "686c7253348c14e6d4ec473ef53e4bac4bcc012ed03b31f744e2b10ffa2f03c1",
+          "bytes": 1592606,
+          "operations": 213,
+          "title": "FreshBooks API",
+          "server": "https://api.freshbooks.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    }
+  }
+}

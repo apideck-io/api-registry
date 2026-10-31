@@ -1,0 +1,9 @@
+id: personio
+name: "Personio"
+specs:
+  - name: "Personnel Data"
+    url: "https://raw.githubusercontent.com/personio/api-docs/master/personio-personnel-data-api-oa3.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.personio.de/v1"
+    source: apitracker

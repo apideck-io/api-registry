@@ -1,0 +1,8 @@
+id: drift
+name: "Drift"
+specs:
+  - name: "Drift API"
+    url: "https://raw.githubusercontent.com/jentic/jentic-public-apis/main/apis/openapi/drift.com/main/1.0.0/openapi.json"
+    format: openapi-3.0
+    provenance: community
+    server: "https://driftapi.com"

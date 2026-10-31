@@ -1,0 +1,7 @@
+id: google-analytics
+name: "Google Analytics"
+specs:
+  - name: "Google Analytics Data API"
+    url: "https://analyticsdata.googleapis.com/$discovery/rest?version=v1beta"
+    format: google-discovery
+    provenance: vendor

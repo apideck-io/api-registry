@@ -1,0 +1,8 @@
+id: asana
+name: "Asana"
+specs:
+  - name: "Asana"
+    url: "https://raw.githubusercontent.com/Asana/openapi/master/defs/asana_oas.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.asana.com/api/1.0"

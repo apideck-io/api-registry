@@ -1,0 +1,8 @@
+id: shortcut
+name: "Shortcut"
+specs:
+  - name: "Shortcut API"
+    url: "https://developer.shortcut.com/api/rest/v3/shortcut.swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.app.shortcut.com"

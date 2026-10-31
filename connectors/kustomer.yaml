@@ -1,0 +1,8 @@
+id: kustomer
+name: "Kustomer"
+specs:
+  - name: "Kustomer API"
+    url: "https://raw.githubusercontent.com/jentic/jentic-public-apis/main/apis/openapi/kustomer.com/main/1.0.0/openapi.json"
+    format: openapi-3.0
+    provenance: community
+    server: "https://api.kustomerapp.com/v1"

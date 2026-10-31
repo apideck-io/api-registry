@@ -1,0 +1,8 @@
+id: heap
+name: "Heap"
+specs:
+  - name: "Heap API"
+    url: "https://raw.githubusercontent.com/jentic/jentic-public-apis/main/apis/openapi/heap.io/main/1.0.0/openapi.json"
+    format: openapi-3.0
+    provenance: community
+    server: "https://heapanalytics.com"

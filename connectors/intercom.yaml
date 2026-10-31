@@ -1,0 +1,8 @@
+id: intercom
+name: "Intercom"
+specs:
+  - name: "Intercom API"
+    url: "https://raw.githubusercontent.com/intercom/Intercom-OpenAPI/main/descriptions/2.14/api.intercom.io.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.intercom.io"

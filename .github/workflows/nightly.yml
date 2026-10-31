@@ -1,0 +1,45 @@
+name: Nightly spec check
+# Re-fetches every spec and opens one PR when any spec changed, moved or stopped resolving.
+# index.json has no "checked on" stamps, so a quiet night produces no diff and no PR.
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+# A manual dispatch during a scheduled run would race on the same nightly/spec-drift branch.
+concurrency:
+  group: nightly-spec-check
+  cancel-in-progress: false
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      # shell: bash runs with -eo pipefail, so a verifier crash fails the job instead of hiding behind tee.
+      - run: npm run verify | tee verify.log
+        shell: bash
+      - name: Summarise changes
+        id: summary
+        run: |
+          {
+            echo 'body<<EOF'
+            echo 'Specs that changed (Δ), are new (+), recovered (↺) or failed (✗) in the nightly check:'
+            echo
+            grep -E '^(Δ|\+|↺|✗)' verify.log || echo 'None; index metadata only.'
+            echo 'EOF'
+          } >> "$GITHUB_OUTPUT"
+      - uses: peter-evans/create-pull-request@v6
+        with:
+          branch: nightly/spec-drift
+          title: "Spec drift: ${{ github.run_id }}"
+          commit-message: "index: nightly spec check"
+          body: ${{ steps.summary.outputs.body }}
+          add-paths: index.json
+          delete-branch: true

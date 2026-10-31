@@ -1,0 +1,9 @@
+id: github
+name: "GitHub"
+specs:
+  - name: "GitHub v3 REST API"
+    url: "https://raw.githubusercontent.com/github/rest-api-description/main/descriptions/api.github.com/dereferenced/api.github.com.deref.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.github.com"
+    source: apitracker

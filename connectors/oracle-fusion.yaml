@@ -1,0 +1,10 @@
+id: oracle-fusion
+name: "Oracle Fusion Cloud"
+notes: "Oracle publishes one OpenAPI file per REST API book and per quarterly release; the URL carries the release (26d), so update it each quarter. Procurement, Project Management and SCM books have their own files."
+specs:
+  - name: "REST API for Oracle Fusion Cloud Financials (26D)"
+    url: "https://docs.oracle.com/en/cloud/saas/financials/26d/farfa/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{host}/fscmRestApi/resources/11.13.18.05"
+    notes: "About 99 MB. The spec has no servers block; paths are relative to the server above on the customer's pod."

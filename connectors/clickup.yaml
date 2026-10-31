@@ -1,0 +1,8 @@
+id: clickup
+name: "ClickUp"
+specs:
+  - name: "ClickUp API v2 Reference"
+    url: "https://developer.clickup.com/openapi/clickup-api-v2-reference.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.clickup.com/api"

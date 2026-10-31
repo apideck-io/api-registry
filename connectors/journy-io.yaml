@@ -1,0 +1,8 @@
+id: journy-io
+name: "journy.io"
+specs:
+  - name: "Developer documentation"
+    url: "https://api.apis.guru/v2/specs/journy.io/1.0.0/openapi.json"
+    format: openapi-3.0
+    provenance: community
+    server: "https://api.journy.io"
