@@ -17,10 +17,19 @@ node -e 'const [a,b]=process.versions.node.split(".").map(Number); process.exit(
 # live connection and a write would change real data.
 node -e '
 const fs = require("fs"); const t = fs.readFileSync(process.argv[1], "utf8");
-const doc = t.trim().startsWith("{") ? JSON.parse(t) : require(require.resolve("yaml", { paths: [process.cwd()] })).parse(t);
+let yaml;
+if (!t.trim().startsWith("{")) {
+  try {
+    yaml = require(require.resolve("yaml", { paths: [process.argv[2], process.cwd()] }));
+  } catch {
+    console.error("The yaml package is missing: run `npm ci` in the api-registry checkout first.");
+    process.exit(1);
+  }
+}
+const doc = yaml ? yaml.parse(t) : JSON.parse(t);
 const writes = Object.entries(doc.paths ?? {}).flatMap(([p, item]) => ["put", "post", "patch", "delete"].filter((m) => item?.[m]).map((m) => `${m.toUpperCase()} ${p}`));
 if (writes.length) { console.error(`Refusing: the spec has write operations (${writes.slice(0, 3).join(", ")}…). This runner is read-only.`); process.exit(1); }
-' "$dir/$spec" || exit 1
+' "$dir/$spec" "$(cd "$(dirname "$0")/../.." && pwd)" || exit 1
 for v in APIDECK_API_KEY APIDECK_APP_ID APIDECK_CONSUMER_ID; do
   [ -n "${!v:-}" ] || { echo "$v is not set" >&2; exit 1; }
 done
