@@ -60,6 +60,7 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
     if (names.has(s?.name)) errors.push(`${at}: duplicate spec name "${s.name}"`);
     names.add(s?.name);
     if (!s?.url && !s?.path) errors.push(`${at}: url (preferred) or path is required`);
+    if (s?.url && s?.path) errors.push(`${at}: give url or path, not both`);
     if (s?.url && !/^https:\/\//.test(s.url)) errors.push(`${at}: url must be https`);
     if (s?.path && !existsSync(join(ROOT, s.path))) errors.push(`${at}: path ${s.path} does not exist`);
     if (!FORMATS.has(s?.format)) errors.push(`${at}: format must be one of ${[...FORMATS].join(", ")}`);
@@ -122,11 +123,17 @@ function unzip(buf) {
 const MAX_BYTES = 200 * 1024 * 1024;
 
 // Several entries share one file (Microsoft Graph backs Outlook, Calendar and Teams); fetch each URL once.
+// A body stays cached only until the last spec that uses it has loaded it, so memory doesn't grow with the run.
+const keyOf = (spec) => `${spec.url ?? spec.path}|${spec.extract ?? ""}`;
+const uses = new Map();
 const fetched = new Map();
 async function load(spec) {
-  const key = `${spec.url ?? spec.path}|${spec.extract ?? ""}`;
+  const key = keyOf(spec);
   if (!fetched.has(key)) fetched.set(key, loadUncached(spec));
   const r = await fetched.get(key);
+  const left = (uses.get(key) ?? 1) - 1;
+  uses.set(key, left);
+  if (left <= 0) fetched.delete(key);
   return { ...r }; // callers mutate their copy
 }
 
@@ -192,7 +199,7 @@ function inspect(format, body) {
       sdl = sdl.replace(/\([^()]*\)/g, "");
     }
     // SDL can rename roots in a schema block (schema { query: QueryRoot }); default to Query and Mutation.
-    const decl = sdl.match(/schema\s*\{([^}]*)\}/)?.[1] ?? "";
+    const decl = sdl.match(/\bschema\s*\{([^}]*)\}/)?.[1] ?? "";
     const rootNames = [decl.match(/query\s*:\s*(\w+)/)?.[1] ?? "Query", decl.match(/mutation\s*:\s*(\w+)/)?.[1] ?? "Mutation"];
     const roots = [...sdl.matchAll(/(?:extend\s+)?type\s+(\w+)\b[^{]*\{([^}]*)\}/g)].filter((m) => rootNames.includes(m[1]));
     if (!roots.length) throw new Error(`no ${rootNames.join(" or ")} type`);
@@ -237,6 +244,8 @@ function inspect(format, body) {
   const server = doc.servers?.[0]?.url ?? (doc.host ? `${doc.schemes?.[0] ?? "https"}://${doc.host}${doc.basePath ?? ""}` : null);
   return { operations: n, title: doc.info?.title, apiVersion: doc.info?.version, specVersion: doc.openapi ?? doc.swagger, server };
 }
+
+for (const e of entries) if (!ONLY || e.id === ONLY) for (const s of e.specs) if (!s.manual) uses.set(keyOf(s), (uses.get(keyOf(s)) ?? 0) + 1);
 
 const indexPath = join(ROOT, "index.json");
 const prev = existsSync(indexPath) ? JSON.parse(readFileSync(indexPath, "utf8")) : { connectors: {} };
