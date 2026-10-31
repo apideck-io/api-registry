@@ -1,5 +1,5 @@
 id: dualentry
-name: "Dualentry"
+name: "DualEntry"
 notes: "Vendor OpenAPI 3.1, three versions, public."
 specs:
   - name: "DualEntry Public API v2"

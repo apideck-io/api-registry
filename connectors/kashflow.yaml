@@ -1,5 +1,5 @@
 id: kashflow
-name: "Kashflow"
+name: "KashFlow"
 notes: "The REST Swagger is the primary spec. KashFlow legacy SOAP API: https://securedwebapp.com/api/service.asmx?WSDL (WSDL (note only): 192 distinct wsdl:operation names. Legacy API.)"
 specs:
   - name: "KashFlow REST API (Swashbuckle)"

@@ -80,7 +80,8 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
     if (!FORMATS.has(s?.format)) errors.push(`${at}: format must be one of ${[...FORMATS].join(", ")}`);
     if (!PROVENANCE.has(s?.provenance)) errors.push(`${at}: provenance must be one of ${[...PROVENANCE].join(", ")}`);
     if (s?.extract && !EXTRACT.has(s.extract)) errors.push(`${at}: extract must be one of ${[...EXTRACT].join(", ")}`);
-    const extractFits = { "graphql-introspection": ["graphql"], "swagger-ui-init": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "redoc-state": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "markdown-json-fence": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "zip-bundle": ["openapi-3.0", "openapi-3.1", "swagger-2.0"] };
+    // Null prototype, so a malformed value like `extract: toString` is a validation error, not a TypeError.
+    const extractFits = Object.assign(Object.create(null), { "graphql-introspection": ["graphql"], "swagger-ui-init": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "redoc-state": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "markdown-json-fence": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "zip-bundle": ["openapi-3.0", "openapi-3.1", "swagger-2.0"] });
     if (s?.extract && extractFits[s.extract] && !extractFits[s.extract].includes(s?.format)) errors.push(`${at}: extract ${s.extract} doesn't apply to format ${s?.format}`);
     if (s?.extract && !s?.url) errors.push(`${at}: extract applies to a fetched url; store an extracted spec as a plain path instead`);
     if (s?.manual && !MANUAL.has(s.manual)) errors.push(`${at}: manual must be one of ${[...MANUAL].join(", ")}`);
@@ -219,11 +220,15 @@ function inspect(format, body) {
     // SDL: count fields on the root Query and Mutation types. Introspection JSON: count their fields.
     if (body.trim().startsWith("{")) {
       const json = JSON.parse(body);
+      // A GraphQL error response can still be HTTP 200; so can a schema with no query root.
+      if (Array.isArray(json?.errors) && json.errors.length) throw new Error(`introspection returned errors: ${String(json.errors[0]?.message ?? "").slice(0, 60)}`);
       const schema = json?.data?.__schema ?? json?.__schema;
       if (!schema?.types) throw new Error("no __schema in introspection result");
+      if (!schema.queryType?.name) throw new Error("introspection has no query root");
       // Root types can be renamed; introspection names them.
       const rootNames = [schema.queryType?.name, schema.mutationType?.name].filter(Boolean);
       const n = schema.types.filter((t) => rootNames.includes(t.name)).reduce((m, t) => m + (t.fields?.length ?? 0), 0);
+      if (!n) throw new Error("the root types have no fields");
       return { operations: n };
     }
     // Strip descriptions, strings and comments, then argument lists (which can hold {…} defaults), so a
@@ -238,10 +243,13 @@ function inspect(format, body) {
     const rootNames = [decl.match(/query\s*:\s*(\w+)/)?.[1] ?? "Query", decl.match(/mutation\s*:\s*(\w+)/)?.[1] ?? "Mutation"];
     const roots = [...sdl.matchAll(/(?:extend\s+)?type\s+(\w+)\b[^{]*\{([^}]*)\}/g)].filter((m) => rootNames.includes(m[1]));
     if (!roots.length) throw new Error(`no ${rootNames.join(" or ")} type`);
+    if (!roots.some((m) => m[1] === rootNames[0])) throw new Error(`no ${rootNames[0]} root type`);
     // Drop argument lists first (they can span lines), then count "name:" field starts.
     // Every "name:" left in the body is a field (arguments are already gone), however many share a line.
     const fields = (block) => (block.match(/\b\w+\s*:/g) ?? []).length;
-    return { operations: roots.reduce((n, m) => n + fields(m[2]), 0) };
+    const total = roots.reduce((n, m) => n + fields(m[2]), 0);
+    if (!total) throw new Error("the root types have no fields");
+    return { operations: total };
   }
   // YAML is read with the failsafe schema so every scalar stays a string: unquoted `swagger: 2.0` or
   // `version: 1.10` would otherwise become the numbers 2 and 1.1.
@@ -355,20 +363,25 @@ for (const e of entries) {
         // A repository archive also holds JSON schemas, configs and examples: keep the files that are specs
         // of the declared format, and fail only when none is.
         const parts = [];
+        const skipped = [];
+        const specFiles = [];
         for (const f of bundle) {
           try {
             parts.push(inspect(s.format, f.text));
-          } catch {
-            // not a spec file
+            specFiles.push(f);
+          } catch (err) {
+            // Not a spec of the declared format (a schema, a config), or a spec that doesn't parse: say which.
+            skipped.push(`${f.name.replace(/^[^/]*\//, "")}: ${String(err.message).slice(0, 60)}`);
           }
         }
+        bundle = specFiles; // hash and size only what was counted, so a changed README isn't "drift"
         if (!parts.length) throw new Error(`no ${s.format} file among ${bundle.length} in the bundle`);
         const one = (k) => [...new Set(parts.map((x) => x[k]).filter(Boolean))];
         const versions = one("apiVersion");
         info = {
           operations: parts.reduce((n, x) => n + (x.operations ?? 0), 0),
           files: parts.length,
-          ...(bundle.length > parts.length ? { skippedFiles: bundle.length - parts.length } : {}),
+          ...(skipped.length ? { skippedFiles: skipped.length, skipped: skipped.slice(0, 20) } : {}),
           // Each module has its own title; the bundle is named by the entry, with the module count beside it.
           title: s.name,
           apiVersion: versions.length === 1 ? versions[0] : versions.join(", ") || null,

@@ -1,11 +1,11 @@
 id: github-enterprise-cloud
 name: "GitHub Enterprise Cloud (data residency)"
-notes: "Same spec as GHEC; per-tenant host for data residency."
+notes: "GitHub Enterprise Cloud with data residency is served from https://api.{subdomain}.ghe.com; the same spec without data residency targets api.github.com. Same spec as GHEC; per-tenant host for data residency."
 specs:
   - name: "GitHub Enterprise Cloud REST API"
     url: "https://raw.githubusercontent.com/github/rest-api-description/main/descriptions/ghec/ghec.json"
     format: openapi-3.0
     provenance: vendor
-    server: "https://api.github.com"
+    server: "https://api.{subdomain}.ghe.com"
     license: "MIT"
     notes: "Official github/rest-api-description ghec description. For data residency (GHE.com) the base URL is https://api.<subdomain>.ghe.com (per tenant); same operations as ghec. Large file (~15 MB)."

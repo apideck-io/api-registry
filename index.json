@@ -1372,7 +1372,7 @@
       "specs": {}
     },
     "kashflow": {
-      "name": "Kashflow",
+      "name": "KashFlow",
       "specs": {
         "KashFlow REST API (Swashbuckle)": {
           "status": "ok",
@@ -1582,7 +1582,7 @@
       "specs": {}
     },
     "dualentry": {
-      "name": "Dualentry",
+      "name": "DualEntry",
       "specs": {
         "DualEntry Public API v2": {
           "status": "ok",
@@ -1693,11 +1693,7 @@
     },
     "salesforce": {
       "name": "Salesforce",
-      "specs": {
-        "sObjects REST API OpenAPI 3.0 (beta, per org)": {
-          "status": "manual: login"
-        }
-      }
+      "specs": {}
     },
     "freeagent": {
       "name": "FreeAgent",
@@ -1723,7 +1719,11 @@
     },
     "sage-intacct-rest": {
       "name": "Sage Intacct REST",
-      "specs": {}
+      "specs": {
+        "Sage Intacct REST API": {
+          "status": "manual: bot-protection"
+        }
+      }
     },
     "jobadder": {
       "name": "JobAdder",
@@ -2171,7 +2171,8 @@
           "title": "GitHub v3 REST API",
           "apiVersion": "1.1.4",
           "specVersion": "3.0.3",
-          "server": "https://api.github.com",
+          "server": "https://api.{subdomain}.ghe.com",
+          "specServer": "https://api.github.com",
           "changedOn": "2026-10-31"
         }
       }
@@ -2383,11 +2384,33 @@
       "specs": {
         "Selling Partner API models": {
           "status": "ok",
-          "sha256": "93821f1b8aa8eb7a9457322a8b8e329f77ec8238b93ebb0a4d3004ef654dff1b",
-          "bytes": 9782305,
+          "sha256": "e2412d43527fea8f3d506d8b265068c60e690567030e01ca67e114d630c008d2",
+          "bytes": 8688124,
           "operations": 394,
           "files": 73,
           "skippedFiles": 63,
+          "skipped": [
+            ".github/workflows/closing_inactive_issues.yml: no swagger: 2.0 root",
+            ".github/workflows/rdme-openapi.yml: Nested mappings are not allowed in compact mappings at line ",
+            ".github/workflows/trigger-sdk-repository.yml: no swagger: 2.0 root",
+            "clients/postman-collections/tokens-api-sandbox-postman-collection.json: no swagger: 2.0 root",
+            "clients/sellingpartner-api-aa-java/resources/java/config.json: no swagger: 2.0 root",
+            "clients/sellingpartner-api-aa-javascript/package-lock.json: no swagger: 2.0 root",
+            "clients/sellingpartner-api-aa-javascript/package.json: no swagger: 2.0 root",
+            "clients/sellingpartner-api-aa-javascript/src/js.config.json: no swagger: 2.0 root",
+            "clients/sellingpartner-api-aa-php/composer.json: no swagger: 2.0 root",
+            "clients/sellingpartner-api-aa-php/resources/openapi-generator/config.json: no swagger: 2.0 root",
+            "schemas/feeds/listings-feed-message-schema-v2.json: no swagger: 2.0 root",
+            "schemas/feeds/listings-feed-processing-report-schema-v2.example.json: no swagger: 2.0 root",
+            "schemas/feeds/listings-feed-processing-report-schema-v2.json: no swagger: 2.0 root",
+            "schemas/feeds/listings-feed-schema-v2.example.json: no swagger: 2.0 root",
+            "schemas/feeds/listings-feed-schema-v2.json: no swagger: 2.0 root",
+            "schemas/notifications/AnyOfferChangedNotification.json: no swagger: 2.0 root",
+            "schemas/notifications/B2bAnyOfferChangedNotification.json: no swagger: 2.0 root",
+            "schemas/notifications/BrandedItemContentChangeNotification.json: no swagger: 2.0 root",
+            "schemas/notifications/DataKioskQueryProcessingFinishedNotification.json: no swagger: 2.0 root",
+            "schemas/notifications/DetailPageTrafficEventNotification.json: no swagger: 2.0 root"
+          ],
           "title": "Selling Partner API models",
           "apiVersion": "2026-06-01, 2024-05-09, 2020-11-01, 2024-04-01, 2023-11-30, v0, 2020-12-01, 2022-04-01, 2024-06-01, 2023-11-15, 2022-07-01, 2022-03-23, 2024-09-11, 2026-07-30, v1, 2021-06-30, 2026-03-17, 2026-06-25, 2024-06-19, 2024-03-20, 2020-07-01, 2026-07-04, 2020-09-01, 2021-08-01, 2026-04-20, 2026-01-01, 2022-05-01, 2025-12-01, 2022-11-07, 2024-03-01, v2, 2025-02-01, 2021-03-01, 2026-01-30, 2024-11-01, 2021-12-28, 2021-10-28",
           "specVersion": "2.0",
@@ -2433,11 +2456,33 @@
       "specs": {
         "BigCommerce API specs (archived)": {
           "status": "ok",
-          "sha256": "7fb0768964522c43c4f9c17d0fe3b0cb06fc2aec4a088844f6b5d9ac848edd66",
-          "bytes": 4150520,
+          "sha256": "d30b72ef23a38e424a74829d02479940cf8cf5ec74b44aae125eac438e285e05",
+          "bytes": 3696625,
           "operations": 574,
           "files": 60,
           "skippedFiles": 171,
+          "skipped": [
+            ".eslintrc.json: Expected double-quoted property name in JSON at position 45 ",
+            ".github/workflows/deploy.yml: no openapi 3.x root",
+            ".github/workflows/lint.yml: no openapi 3.x root",
+            ".github/workflows/spectral.yml: no openapi 3.x root",
+            ".spectral.yaml: no openapi 3.x root",
+            "models/email_templates/_all.yml: no openapi 3.x root",
+            "models/email_templates/abandoned_cart_email.yml: no openapi 3.x root",
+            "models/email_templates/account_details_changed_email.yml: no openapi 3.x root",
+            "models/email_templates/account_reset_password_email.yml: no openapi 3.x root",
+            "models/email_templates/combined/abandoned_cart_email.yml: no openapi 3.x root",
+            "models/email_templates/combined/abandoned_cart_email_deprecated.yml: no openapi 3.x root",
+            "models/email_templates/combined/account_details_changed_email.yml: no openapi 3.x root",
+            "models/email_templates/combined/account_reset_password_email.yml: no openapi 3.x root",
+            "models/email_templates/combined/combined_order_status_email.yml: no openapi 3.x root",
+            "models/email_templates/combined/create_account_email.yml: no openapi 3.x root",
+            "models/email_templates/combined/create_guest_account_email.yml: no openapi 3.x root",
+            "models/email_templates/combined/gift_certificate_email.yml: no openapi 3.x root",
+            "models/email_templates/combined/global.yml: no openapi 3.x root",
+            "models/email_templates/combined/invoice_email.yml: no openapi 3.x root",
+            "models/email_templates/combined/order_message_notification.yml: no openapi 3.x root"
+          ],
           "title": "BigCommerce API specs (archived)",
           "apiVersion": "3.0.0, Storefront, 3.0, 1.0.0, 1.0.0-oas3, 1.0, 3",
           "specVersion": "3.0.0",

@@ -29,7 +29,7 @@ specs:
 ```
 
 Two optional fields cover vendors that don't serve a plain file:
-- `extract` unwraps a spec that comes wrapped in something else:
+- `extract` says how the verifier gets the spec when the URL doesn't serve a plain file: it unwraps a wrapper, or for `graphql-introspection` it queries the endpoint:
   - `zip-bundle`: a zip of module files (Zoho Books)
   - `markdown-json-fence`: JSON inside a Markdown code fence (Sage)
   - `redoc-state`: embedded in a Redoc page's `__redoc_state` (Fortnox)
