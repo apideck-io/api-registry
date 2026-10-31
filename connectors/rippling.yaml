@@ -1,0 +1,4 @@
+id: rippling
+name: "Rippling"
+notes: "OpenAPI exists internally but is not published. Rippling REST API docs: https://developer.rippling.com/documentation/rest-api (Docusaurus docs generated from OpenAPI (docusaurus-openapi-docs) but no spec download exposed; guessed /openapi paths 404. Per-page Markdown at <page>.md and an index at https://developer.rippling.com/llms.txt. The SDK @rippling/rippling-sdk comes from a private repo.)"
+specs: []

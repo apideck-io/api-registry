@@ -1,0 +1,11 @@
+id: sap-successfactors
+name: "SAP SuccessFactors"
+notes: "Operations not counted: no anonymous access. Only community copies of EDMX on GitHub."
+specs:
+  - name: "SAP SuccessFactors OData v2 (per service EDMX)"
+    url: "https://api.sap.com/package/SuccessFactorsFoundation/odata"
+    format: odata-edmx
+    provenance: vendor
+    server: "https://{api-server}/odata/v2"
+    manual: login
+    notes: "SAP Business Accelerator Hub (api.sap.com) publishes EDMX/OpenAPI per service (ECEmployeeProfile, PLTUserManagement, RCMJobRequisition, ...) but downloads need an SAP login and the host didn't answer anonymous curl. Each tenant also serves its own $metadata at https://{api-server}/odata/v2/$metadata (authenticated). Data-center-specific hosts."

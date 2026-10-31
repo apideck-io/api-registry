@@ -1,0 +1,4 @@
+id: sdworx-webservice
+name: "SD Worx (Web service)"
+notes: "Same situation as sdworx. SD Worx web service: https://developer.sdworx.com (No public WSDL/spec found; portal is behind SD Worx login. Likely a SOAP web service provisioned per customer.)"
+specs: []

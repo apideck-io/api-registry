@@ -1,0 +1,9 @@
+id: prestashop
+name: "Prestashop"
+notes: "Spec covers the PS9 Admin API only."
+specs:
+  - name: "PrestaShop 9 Admin API"
+    url: "https://devdocs.prestashop-project.org/9/admin-api/swagger-doc/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    notes: "New OAuth2 Admin API in PrestaShop 9 (per-shop: https://{shop}/admin-api). The classic Webservice API (/api, XML/JSON, key auth) that most integrations use has no OpenAPI; its schema is discoverable per shop via ?schema=blank/synopsis. Confirm which one the connector uses."

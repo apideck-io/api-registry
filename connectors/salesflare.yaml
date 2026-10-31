@@ -1,0 +1,9 @@
+id: salesflare
+name: "Salesflare"
+specs:
+  - name: "Salesflare API"
+    url: "https://api.salesflare.com/openapi.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.salesflare.com/"
+    notes: "Swagger 2.0 despite the filename; backs https://api.salesflare.com/docs."

@@ -1,0 +1,4 @@
+id: people-hr
+name: "People HR"
+notes: "No machine-readable spec. People HR API docs: https://apidocs.peoplehr.com/ (Static HTML reference only (employee, salary, holiday, absence, timesheet, document pages...). No OpenAPI/Postman found. RPC-style POST API at https://api.peoplehr.net.)"
+specs: []

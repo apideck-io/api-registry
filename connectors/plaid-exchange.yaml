@@ -1,0 +1,11 @@
+id: plaid-exchange
+name: "Plaid Core Exchange"
+notes: "Spec is the FDX subset that institutions implement for Plaid, not a Plaid-hosted API."
+specs:
+  - name: "Plaid Core Exchange (FDX subset) v6.4"
+    url: "https://raw.githubusercontent.com/plaid/core-exchange/main/versions/6.4/corex.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.your-organization.com/fdx/v6"
+    license: "FDX API License Agreement (https://financialdataexchange.org/)"
+    notes: "Official plaid/core-exchange repo; versions 4.6 through 6.4 under versions/<v>/corex.yaml. Server is a placeholder: each data provider hosts its own implementation. Use of the spec implies acceptance of the FDX licence (no SPDX)."

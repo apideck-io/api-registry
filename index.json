@@ -3197,6 +3197,238 @@
     "lightspeed": {
       "name": "Lightspeed",
       "specs": {}
+    },
+    "people-hr": {
+      "name": "People HR",
+      "specs": {}
+    },
+    "picqer": {
+      "name": "Picqer",
+      "specs": {}
+    },
+    "plaid-exchange": {
+      "name": "Plaid Core Exchange",
+      "specs": {
+        "Plaid Core Exchange (FDX subset) v6.4": {
+          "status": "ok",
+          "sha256": "5823a66f64ef2b00f6d10150e2fa5ad3773ae9a37a2688b424007674b0666f31",
+          "bytes": 142172,
+          "operations": 9,
+          "title": "FDX V6.4.0",
+          "apiVersion": "6.4.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.your-organization.com/fdx/v6",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "planhat": {
+      "name": "Planhat",
+      "specs": {}
+    },
+    "plivo": {
+      "name": "Plivo",
+      "specs": {}
+    },
+    "portt": {
+      "name": "Portt",
+      "specs": {}
+    },
+    "prestashop": {
+      "name": "Prestashop",
+      "specs": {
+        "PrestaShop 9 Admin API": {
+          "status": "ok",
+          "sha256": "ba18087d21b28c12bb7fadb60ed566686115dd35c110cb31c49bb2e8f2a444b2",
+          "bytes": 224423,
+          "operations": 206,
+          "title": "Backoffice API",
+          "apiVersion": "0.1.0",
+          "specVersion": "3.1.0",
+          "server": "/admin-api",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "recruitee": {
+      "name": "Recruitee",
+      "specs": {
+        "Recruitee ATS API": {
+          "status": "ok",
+          "sha256": "477b4cb3922d9bc5a4cc6ef0f70cef259920a7a4b3ab09c70f70f9c652810469",
+          "bytes": 189855,
+          "operations": 18,
+          "title": "ATS API",
+          "apiVersion": "unknown",
+          "specVersion": "3.1.0",
+          "server": "https://api.recruitee.com",
+          "changedOn": "2026-10-31"
+        },
+        "Recruitee Careers Site API": {
+          "status": "ok",
+          "sha256": "7c6ff6c012b6bca53ee73adbc0305175c680be917c6ffca1b6f124eada7e6acd",
+          "bytes": 38701,
+          "operations": 3,
+          "title": "CAREERS SITE API",
+          "apiVersion": "unknown",
+          "specVersion": "3.1.0",
+          "server": "https://{yourcompany}.recruitee.com/api",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "remote": {
+      "name": "Remote",
+      "specs": {
+        "Remote API": {
+          "status": "ok",
+          "sha256": "c33fa7b933a7808c7e0969afcd90cab71b2bd1c6542f683520b892a25519662a",
+          "bytes": 3086622,
+          "operations": 308,
+          "title": "Remote API",
+          "apiVersion": "0.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://gateway.remote.com/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "rippling": {
+      "name": "Rippling",
+      "specs": {}
+    },
+    "adp-run": {
+      "name": "RUN Powered by ADP",
+      "specs": {}
+    },
+    "sage-hr": {
+      "name": "Sage HR",
+      "specs": {
+        "Sage HR API": {
+          "status": "ok",
+          "sha256": "c524f92ddb6b730711eb517d8ef882e6db4502b3faa48f8d1407d78b7e158528",
+          "bytes": 98869,
+          "operations": 67,
+          "title": "Sage HR API",
+          "apiVersion": "1.0",
+          "specVersion": "2.0",
+          "server": "https://subdomain.sage.hr/api",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "salesflare": {
+      "name": "Salesflare",
+      "specs": {
+        "Salesflare API": {
+          "status": "ok",
+          "sha256": "be64436ea9c1e256e5d7eaef87ad32a6e7749fd65c09562a5fa876ef6e01a183",
+          "bytes": 524492,
+          "operations": 71,
+          "title": "Salesflare API",
+          "apiVersion": "1.0.0",
+          "specVersion": "2.0",
+          "server": "https://api.salesflare.com/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "sap-successfactors": {
+      "name": "SAP SuccessFactors",
+      "specs": {
+        "SAP SuccessFactors OData v2 (per service EDMX)": {
+          "status": "manual: login"
+        }
+      }
+    },
+    "sapling": {
+      "name": "Sapling",
+      "specs": {}
+    },
+    "sdworx": {
+      "name": "SD Worx",
+      "specs": {}
+    },
+    "sdworx-be-sme": {
+      "name": "SD Worx (BE SME Payroll)",
+      "specs": {}
+    },
+    "sdworx-webservice": {
+      "name": "SD Worx (Web service)",
+      "specs": {}
+    },
+    "securex": {
+      "name": "Securex",
+      "specs": {}
+    },
+    "sharepoint": {
+      "name": "SharePoint",
+      "specs": {
+        "Microsoft Graph v1.0 (SharePoint sites/drives)": {
+          "status": "ok",
+          "sha256": "69de68b2c895bc608a58229e662e2b3eeb23524385516afc250ff0b8f165ff29",
+          "bytes": 44457302,
+          "operations": 17911,
+          "title": "OData Service for namespace microsoft.graph",
+          "apiVersion": "v1.0",
+          "specVersion": "3.0.4",
+          "server": "https://graph.microsoft.com/v1.0",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "shopify": {
+      "name": "Shopify",
+      "specs": {
+        "Shopify Admin GraphQL API": {
+          "status": "ok",
+          "sha256": "7409984730ccf705753fb76dcdc159bdb660287c92209dd6452204602e3ab8ff",
+          "bytes": 3240630,
+          "operations": 835,
+          "server": "https://{shop}.myshopify.com/admin/api/2026-10/graphql.json",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "shopify-public-app": {
+      "name": "Shopify (Public App)",
+      "specs": {
+        "Shopify Admin GraphQL API": {
+          "status": "ok",
+          "sha256": "7409984730ccf705753fb76dcdc159bdb660287c92209dd6452204602e3ab8ff",
+          "bytes": 3240630,
+          "operations": 835,
+          "server": "https://{shop}.myshopify.com/admin/api/2026-10/graphql.json",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "shopware": {
+      "name": "Shopware",
+      "specs": {
+        "Shopware 6 Admin API": {
+          "status": "ok",
+          "sha256": "9e271cc35f0c88ac7b9995d7298e990606d08ed0b15580ab25f1de7a9ff3e706",
+          "bytes": 4278844,
+          "operations": 1122,
+          "title": "Shopware Admin API",
+          "apiVersion": "6.7.9999999-dev",
+          "specVersion": "3.2.0",
+          "server": "/api",
+          "changedOn": "2026-10-31"
+        },
+        "Shopware 6 Store API": {
+          "status": "ok",
+          "sha256": "b152951c29f0c96f45c8fb688cf3592c153fcfeec7cb6f5842e6de48898f4828",
+          "bytes": 849706,
+          "operations": 116,
+          "title": "Shopware Store API",
+          "apiVersion": "6.7.9999999-dev",
+          "specVersion": "3.2.0",
+          "server": "/store-api",
+          "changedOn": "2026-10-31"
+        }
+      }
     }
   }
 }

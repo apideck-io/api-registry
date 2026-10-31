@@ -1,0 +1,4 @@
+id: planhat
+name: "Planhat"
+notes: "No machine-readable spec. Planhat API docs: https://www.planhat.com/developers/api/introduction (Framer-built HTML docs (docs.planhat.com redirects here). No OpenAPI or Postman link found on the site or via search. API base https://api.planhat.com.)"
+specs: []

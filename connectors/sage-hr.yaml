@@ -1,0 +1,9 @@
+id: sage-hr
+name: "Sage HR"
+specs:
+  - name: "Sage HR API"
+    url: "https://jsapi.apiary.io/apis/sagehr.apib"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://subdomain.sage.hr/api"
+    notes: "Apiary-hosted (sagehr.docs.apiary.io); the raw .apib endpoint returns Swagger 2.0 YAML despite its content-type. Per tenant: {subdomain}.sage.hr. Same spec covers ATS (recruitment) and HRIS endpoints."
