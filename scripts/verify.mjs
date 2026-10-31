@@ -31,7 +31,15 @@ const ID = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 // Fortnox embeds its OpenAPI in a Redoc page (window.__redoc_state) with no raw file to link.
 // Some GraphQL APIs publish no SDL but answer an anonymous introspection query (Wave, Access Financials).
 const EXTRACT = new Set(["markdown-json-fence", "zip-bundle", "redoc-state", "graphql-introspection"]);
-const INTROSPECTION = "{ __schema { queryType { name } mutationType { name } types { name fields { name } } } }";
+// Full enough that changed argument types, return types, nullability, input fields or enum values show as drift.
+const TYPE_REF = "kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name } } } }";
+const INTROSPECTION = `{ __schema { queryType { name } mutationType { name } subscriptionType { name } types {
+  kind name
+  fields(includeDeprecated: true) { name isDeprecated args { name defaultValue type { ${TYPE_REF} } } type { ${TYPE_REF} } }
+  inputFields { name defaultValue type { ${TYPE_REF} } }
+  enumValues(includeDeprecated: true) { name isDeprecated }
+  interfaces { name } possibleTypes { name }
+} } }`;
 // Specs we know about but CI cannot fetch: behind a login, or behind bot protection that refuses CI.
 const MANUAL = new Set(["login", "bot-protection"]);
 const METHODS = ["get", "put", "post", "delete", "patch", "head", "options", "trace"];

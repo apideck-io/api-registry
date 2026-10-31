@@ -7,4 +7,4 @@ specs:
     format: odata-edmx
     provenance: vendor
     server: "https://odata.restaurant365.net/api/v2/views/"
-    notes: "EDMX metadata fetched anonymously (21.8 KB). 19 EntitySets (Company, GlAccount, Item, Location, Transaction, TransactionDetail, Employee, LaborDetail, SalesDetail, SalesPayment, ...), no function or action imports. The count is entity sets. Read-only API that needs Basic auth to query data. Docs: https://docs.restaurant365.com/docs/restaurant365-odata-connector-1 (also offers a Postman examples co"
+    notes: "EDMX metadata fetched anonymously (21.8 KB). 19 EntitySets (Company, GlAccount, Item, Location, Transaction, TransactionDetail, Employee, LaborDetail, SalesDetail, SalesPayment, ...), no function or action imports. The count is entity sets. Read-only API that needs Basic auth to query data. Docs: https://docs.restaurant365.com/docs/restaurant365-odata-connector-1 (also offers a Postman examples collection as an expiring CDN attachment)."

@@ -1359,9 +1359,9 @@
       "specs": {
         "Wave Public GraphQL API (introspection)": {
           "status": "ok",
-          "sha256": "f21dcd46d21ec0f6941371f653d671f8cfdbac1be800cbdf65ec0c2f19e70a85",
-          "bytes": 23836,
-          "operations": 54,
+          "sha256": "84af683fa6214cddd6847514358dc42c7681b2e1e85a02a032c33ccdd00fc012",
+          "bytes": 214434,
+          "operations": 55,
           "server": "https://gql.waveapps.com/graphql/public",
           "changedOn": "2026-10-31"
         }
@@ -1413,8 +1413,8 @@
       "specs": {
         "Access Financials GraphQL (introspection)": {
           "status": "ok",
-          "sha256": "a8fc5d5c2b65ca6292f8d26fcbf473d76a235cf65442645b8e48c01d8571fe82",
-          "bytes": 381425,
+          "sha256": "2efa41693b3dde01d7ab3b791e84cd4fd6d32acbadcb06b274af01a67838f470",
+          "bytes": 3301839,
           "operations": 21,
           "server": "https://api.erp.accessacloud.com/financials-graphql",
           "changedOn": "2026-10-31"

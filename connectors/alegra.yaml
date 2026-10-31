@@ -1,4 +1,4 @@
 id: alegra
 name: "Alegra"
-notes: "No single raw spec. Vendor ReadMe docs only expose per-operation OpenAPI fragments. Alegra API (ReadMe reference): https://developer.alegra.com/llms.txt (ReadMe-hosted docs at https://developer.alegra.com/. Each reference page's .md (e.g. https://developer.alegra.com/reference/get_invoices.md) embeds an OpenAPI 3.0.3 fragment for that one operation, from per-section definitions (e.g. title 'Ingresos'). No complete downloadable spec was found (/openapi.json 404). llms.txt lists ~474 reference pages across Ingresos, Gastos, Inventario, Contactos, Contabilidad, Bancos, Configuraciones, Webhooks, "
+notes: "No single raw spec. Vendor ReadMe docs only expose per-operation OpenAPI fragments. Alegra API (ReadMe reference): https://developer.alegra.com/llms.txt"
 specs: []

@@ -1,4 +1,4 @@
 id: wafeq
 name: "Wafeq"
-notes: "No downloadable full spec. One could be rebuilt from per-page fragments, but that would not be a published vendor artifact. Wafeq Public API (ReadMe): https://developer.wafeq.com/reference (ReadMe developer portal. Full OpenAPI download is admin-only (openapiVisibility: admin), and https://developer.wafeq.com/openapi lists no files. Each reference page's .md (e.g. https://developer.wafeq.com/reference/accounts_list.md) embeds a per-operation OpenAPI fragment (drf-spectacular style), and https://developer.wafeq.com/llms.txt indexes about 300 reference pages. Schema paths on api.wafeq.com (/v1/s"
+notes: "No downloadable full spec. One could be rebuilt from per-page fragments, but that would not be a published vendor artifact. Wafeq Public API (ReadMe): https://developer.wafeq.com/reference"
 specs: []

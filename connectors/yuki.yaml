@@ -1,4 +1,4 @@
 id: yuki
 name: "Yuki"
-notes: "SOAP only. Format is recorded as none and the WSDL URL is given; all 10 service WSDLs fetched and parsed. Yuki Accounting SOAP service: https://api.yukiworks.nl/ws/Accounting.asmx?WSDL (WSDL (ASMX), namespace http://www.theyukicompany.com/. 33 operations on the AccountingSoap portType. Yuki splits its API into one WSDL per service; all are public at https://api.yukiworks.nl/ws/<Service>.asmx?WSDL. Operation counts by SOAP portType: Accounting 33, AccountingInfo 26, Archive 41, Sales 17, Contact 16, PettyCash 16, Purchase 15, Vat 15, Domains 21, Backoffice 15, for 215 across those 10 services.)"
+notes: "SOAP only; the registry has no WSDL format yet, so nothing is fetched. Yuki splits its API into 10 service WSDLs (215 operations in total); the Accounting service is at https://api.yukiworks.nl/ws/Accounting.asmx?WSDL (33 operations)."
 specs: []
