@@ -1,14 +1,7 @@
 id: jira-teams
 name: "Jira Teams"
-notes: "Assumed to be the Jira Cloud API (issue-tracking) used with Atlassian Teams; the Atlassian Teams public REST API spec is included. Confirm which surface the connector hits."
+notes: "Apideck's connector page (https://developers.apideck.com/connectors/jira-teams) states the connector uses the Atlassian Teams Public API. The Jira Cloud platform API is a separate connector; see connectors/jira.yaml."
 specs:
-  - name: "Jira Cloud platform REST API v3"
-    url: "https://developer.atlassian.com/cloud/jira/platform/swagger-v3.v3.json"
-    format: openapi-3.0
-    provenance: vendor
-    server: "https://your-domain.atlassian.net"
-    license: "Apache 2.0"
-    notes: "Per-tenant server (https://{site}.atlassian.net; OAuth 3LO uses https://api.atlassian.com/ex/jira/{cloudId}). apiVersion is a build snapshot string that changes on every publish."
   - name: "Atlassian Teams Public REST API v1"
     url: "https://developer.atlassian.com/platform/teams/swagger-public-api-v1.v3.json"
     format: openapi-3.0

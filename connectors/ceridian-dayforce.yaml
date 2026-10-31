@@ -14,5 +14,4 @@ specs:
     format: openapi-3.0
     provenance: third-party
     server: "https://ustest241-services.dayforcehcm.com/Api"
-    license: "Apache-2.0"
-    notes: "WSO2 api-specs repo; appears to be a converted copy of a tenant Swagger (server points at a Ceridian test tenant). 214 paths / 384 ops."
+    notes: "WSO2 api-specs repo; appears to be a converted copy of a tenant Swagger (server points at a Ceridian test tenant). 214 paths / 384 ops. The WSO2 repo is Apache-2.0, but that does not license Ceridian's API definition it reproduces, so no license is recorded."

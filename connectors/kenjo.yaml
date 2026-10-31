@@ -5,5 +5,5 @@ specs:
     url: "https://dash.readme.com/api/v1/api-registry/1lffmvjjerjk"
     format: openapi-3.0
     provenance: vendor
-    server: "https://sandbox-api.kenjo.io/api/v1"
-    notes: "ReadMe-hosted (kenjo.readme.io), fetched via ReadMe registry from oasPublicUrl '@kenjo/v2.0#1lffmvjjerjk'; UUID may change on re-sync, re-resolve from any https://kenjo.readme.io/reference/<endpoint>. First server is the sandbox; production is https://api.kenjo.io/api/v1."
+    server: "https://api.kenjo.io/api/v1"
+    notes: "ReadMe-hosted (kenjo.readme.io), fetched via ReadMe registry from oasPublicUrl '@kenjo/v2.0#1lffmvjjerjk'; UUID may change on re-sync, re-resolve from any https://kenjo.readme.io/reference/<endpoint>. The spec lists the sandbox https://sandbox-api.kenjo.io/api/v1 first; the server here is production."

@@ -1,6 +1,6 @@
 id: e-conomic
 name: "e-conomic"
-notes: "14 vendor OpenAPI 3.1 specs, 389 operations total. The older REST API (https://restapi.e-conomic.com/) publishes per-resource JSON Schema only (no OpenAPI); /swagger.json paths return 401."
+notes: "14 vendor OpenAPI 3.1 specs, 388 operations total. The older REST API (https://restapi.e-conomic.com/) publishes per-resource JSON Schema only (no OpenAPI); /swagger.json paths return 401."
 specs:
   - name: "Visma e-conomic OpenAPI Projects v2"
     url: "https://apis.e-conomic.com/projectsapi/openapi.json"

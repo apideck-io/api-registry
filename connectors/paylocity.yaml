@@ -1,6 +1,6 @@
 id: paylocity
 name: "Paylocity"
-notes: "Partial: 11 of 19 ReadMe API definitions resolved (113 ops). Not resolved: assessments-api, background-check-api, custom-fields-api, employee-demographic-api (v1), partner-onboarding-api, pay-detail-api, payroll-history-api, skills-api, webhooks-api (their reference pages expose no oasPublicUrl or were not crawled)."
+notes: "Partial: 11 of 19 ReadMe API definitions resolved (113 ops). The 8 not resolved: assessments-api, background-check-api, custom-fields-api, employee-demographic-api (v1), partner-onboarding-api, payroll-history-api, skills-api, webhooks-api (their reference pages expose no oasPublicUrl or were not crawled)."
 specs:
   - name: "Paylocity WebLink API"
     url: "https://dash.readme.com/api/v1/api-registry/1kule2bgmv1byu7c"

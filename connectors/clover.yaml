@@ -1,4 +1,16 @@
 id: clover
 name: "Clover"
-notes: "HTML/ReadMe docs only. Sandbox host apisandbox.dev.clover.com."
-specs: []
+notes: "ReadMe-hosted docs at https://docs.clover.com/dev/reference/api-reference-overview, split into several definitions under @clover-platform/v3. Indexed: Platform API and Ecommerce Service API. Also found, not indexed: Multiple service charge (MSC) Pilot APIs (#17440ljmod6cyth), Gift card Tokenization Service API (#3yii2i91jm22yqbyg) and Clover Card Present REST API (#adhg9modeou8f, a device-local API). PAKMS and Recurring definitions were not resolved; definitions were found by sampling 26 of ~309 reference pages, so more may exist."
+specs:
+  - name: "Clover Platform API"
+    url: "https://dash.readme.com/api/v1/api-registry/1836s2z4smohp2458"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.clover.com"
+    notes: "From oasPublicUrl '@clover-platform/v3#1836s2z4smohp2458' on docs.clover.com reference pages (e.g. https://docs.clover.com/dev/reference/customersgetcustomers). Registry UUIDs can change on re-sync. The spec lists only the sandbox https://apisandbox.dev.clover.com; the server here is the North America production host (EU: https://api.eu.clover.com, LA: https://api.la.clover.com)."
+  - name: "Clover Ecommerce Service API"
+    url: "https://dash.readme.com/api/v1/api-registry/1ghuo735mo0c7s9y"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://scl.clover.com"
+    notes: "From oasPublicUrl '@clover-platform/v3#1ghuo735mo0c7s9y' (e.g. https://docs.clover.com/dev/reference/createcharge). Registry UUIDs can change on re-sync. The spec lists only sandbox hosts (https://scl-sandbox.dev.clover.com, https://apisandbox.dev.clover.com); the server here is the North America production host."

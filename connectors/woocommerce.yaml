@@ -6,5 +6,5 @@ specs:
     url: "https://raw.githubusercontent.com/wtx-labs/woocommerce-api-openapi-specification/main/woocommerce-rest-api-openapi-specification.yml"
     format: openapi-3.0
     provenance: community
-    server: "https://example-woocommerce-shop.com/wp-json/wc/v3"
-    notes: "Declares 3.0.1. Hand-written by WTX Labs (README says MIT, no LICENSE file). WooCommerce publishes no OpenAPI: official docs at https://developer.woocommerce.com/docs/apis/rest-api/v3/ (MDX in woocommerce/woocommerce). Each store also serves a WP REST discovery index at https://{store}/wp-json/wc/v3 (not an accepted format). Per-store host."
+    server: "https://{store}/wp-json/wc/v3"
+    notes: "Declares 3.0.1. Hand-written by WTX Labs (README says MIT, no LICENSE file). WooCommerce publishes no OpenAPI: official docs at https://developer.woocommerce.com/docs/apis/rest-api/v3/ (MDX in woocommerce/woocommerce). Each store also serves a WP REST discovery index at https://{store}/wp-json/wc/v3 (not an accepted format). Per-store host; the spec itself uses example-woocommerce-shop.com."

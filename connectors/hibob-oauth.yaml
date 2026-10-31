@@ -1,11 +1,4 @@
 id: hibob-oauth
 name: "Hibob (OAuth)"
-notes: "Same API as hibob (OAuth auth variant); reuse the hibob specs."
-specs:
-  - name: "HiBob Employee data API"
-    url: "https://dash.readme.com/api/v1/api-registry/8r8i3omosg6gz1"
-    format: openapi-3.1
-    provenance: vendor
-    server: "https://api.hibob.com/v1"
-    license: "Proprietary"
-    notes: "ReadMe-hosted (apidocs.hibob.com), split into per-domain definitions under @hibob/v1. Fetched from ReadMe's public API registry via each page's oasPublicUrl. Registry UUIDs change when HiBob re-syncs; re-resolve from https://apidocs.hibob.com/reference/<endpoint> pages (index at https://apidocs.hibob.com/reference/llms.txt)."
+notes: "Same API as hibob; see connectors/hibob.yaml."
+specs: []

@@ -6,19 +6,19 @@ specs:
     url: "https://raw.githubusercontent.com/AdobeDocs/commerce-webapi/main/src/openapi/admin-schema-2.4.9.yaml"
     format: swagger-2.0
     provenance: vendor
-    server: "http://example.com/rest/default"
-    notes: "Adobe's official docs repo (AdobeDocs/commerce-webapi), source for developer.adobe.com/commerce/webapi/reference/rest/paas. Server is per store; any Magento 2 instance also serves its own spec at {store}/rest/all/schema?services=all. Older versions 2.4.6-2.4.8 alongside."
+    server: "https://{store}/rest/default"
+    notes: "Adobe's official docs repo (AdobeDocs/commerce-webapi), source for developer.adobe.com/commerce/webapi/reference/rest/paas. Server is per store (the spec declares http://example.com/rest/default); any Magento 2 instance also serves its own spec at {store}/rest/all/schema?services=all. Older versions 2.4.6-2.4.8 alongside."
   - name: "Adobe Commerce Customer REST (2.4.9)"
     url: "https://raw.githubusercontent.com/AdobeDocs/commerce-webapi/main/src/openapi/customer-schema-2.4.9.yaml"
     format: swagger-2.0
     provenance: vendor
-    server: "http://example.com/rest/default"
+    server: "https://{store}/rest/default"
     notes: "Customer-token scope."
   - name: "Adobe Commerce Guest REST (2.4.9)"
     url: "https://raw.githubusercontent.com/AdobeDocs/commerce-webapi/main/src/openapi/guest-schema-2.4.9.yaml"
     format: swagger-2.0
     provenance: vendor
-    server: "http://example.com/rest/default"
+    server: "https://{store}/rest/default"
     notes: "Anonymous scope."
   - name: "Adobe Commerce GraphQL (2.4.8)"
     url: "https://raw.githubusercontent.com/AdobeDocs/commerce-webapi/main/spectaql/schema_2-4-8.json"

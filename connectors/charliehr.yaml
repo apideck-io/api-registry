@@ -1,4 +1,4 @@
 id: charliehr
 name: "CharlieHR"
-notes: "Researched 2026-10-31: no machine-readable spec found."
+notes: "No public spec. Per CharlieHR's help article (https://help.charliehr.com/en/articles/9579162-integrate-charlie-with-unlisted-platforms), the V3 API documentation is shown only inside the app (Company > Integrations > API Keys) to Super Admins who generate keys; no public developer portal or OpenAPI URL exists."
 specs: []

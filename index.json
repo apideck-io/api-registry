@@ -2258,7 +2258,7 @@
           "operations": 64,
           "title": "Google Drive API",
           "apiVersion": "v3",
-          "server": "https://www.googleapis.com/",
+          "server": "https://www.googleapis.com/drive/v3",
           "specServer": "https://www.googleapis.com/drive/v3/",
           "changedOn": "2026-10-31"
         }
@@ -2476,7 +2476,11 @@
     },
     "bullhorn-ats": {
       "name": "Bullhorn ATS",
-      "specs": {}
+      "specs": {
+        "Bullhorn Recruitment Cloud API (per instance)": {
+          "status": "manual: login"
+        }
+      }
     },
     "catalystone": {
       "name": "CatalystOne",
@@ -2549,7 +2553,32 @@
     },
     "clover": {
       "name": "Clover",
-      "specs": {}
+      "specs": {
+        "Clover Platform API": {
+          "status": "ok",
+          "sha256": "95fd9ec401ef5f82171420fb2da34aea00cb1951a038bcbc89a8e7c1e73d1cf1",
+          "bytes": 6674925,
+          "operations": 213,
+          "title": "Platform API",
+          "apiVersion": "3.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.clover.com",
+          "specServer": "https://apisandbox.dev.clover.com",
+          "changedOn": "2026-10-31"
+        },
+        "Clover Ecommerce Service API": {
+          "status": "ok",
+          "sha256": "a0aeb344ed80fcfc8503e12c4165f7c47e2b82737ba3190c28787ad2531f6e7f",
+          "bytes": 117057,
+          "operations": 21,
+          "title": "Ecommerce Service API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://scl.clover.com",
+          "specServer": "https://scl-sandbox.dev.clover.com",
+          "changedOn": "2026-10-31"
+        }
+      }
     },
     "copper": {
       "name": "Copper",
@@ -2748,19 +2777,7 @@
     },
     "hibob-oauth": {
       "name": "Hibob (OAuth)",
-      "specs": {
-        "HiBob Employee data API": {
-          "status": "ok",
-          "sha256": "e308cff89db13385369f68e7dcc7543c2da42828000a0ef3336c38835a36d3a1",
-          "bytes": 180654,
-          "operations": 61,
-          "title": "Employee data API",
-          "apiVersion": "1.0.0",
-          "specVersion": "3.1.1",
-          "server": "https://api.hibob.com/v1",
-          "changedOn": "2026-10-31"
-        }
-      }
+      "specs": {}
     },
     "homerun-hr": {
       "name": "Homerun HR",
@@ -2921,17 +2938,6 @@
     "jira-teams": {
       "name": "Jira Teams",
       "specs": {
-        "Jira Cloud platform REST API v3": {
-          "status": "ok",
-          "sha256": "30d96390297b247d3e734110a689c9314209021b00badacea12fdf2a34f97ad4",
-          "bytes": 2511514,
-          "operations": 630,
-          "title": "The Jira Cloud platform REST API",
-          "apiVersion": "1001.0.0-SNAPSHOT-d794cfb4c7554a89092e2f32783da3a72153f3f0",
-          "specVersion": "3.0.1",
-          "server": "https://your-domain.atlassian.net",
-          "changedOn": "2026-10-31"
-        },
         "Atlassian Teams Public REST API v1": {
           "status": "ok",
           "sha256": "6be132c735101212208ee9255761fe18c046632bf8e50345e48729bc7cfb1f78",
@@ -3169,7 +3175,8 @@
           "title": "Kenjo API",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.0",
-          "server": "https://sandbox-api.kenjo.io/api/v1",
+          "server": "https://api.kenjo.io/api/v1",
+          "specServer": "https://sandbox-api.kenjo.io/api/v1",
           "changedOn": "2026-10-31"
         }
       }
@@ -3219,7 +3226,8 @@
           "title": "FDX V6.4.0",
           "apiVersion": "6.4.0",
           "specVersion": "3.0.3",
-          "server": "https://api.your-organization.com/fdx/v6",
+          "server": "https://{provider-host}/fdx/v6",
+          "specServer": "https://api.your-organization.com/fdx/v6",
           "changedOn": "2026-10-31"
         }
       }
@@ -3247,7 +3255,8 @@
           "title": "Backoffice API",
           "apiVersion": "0.1.0",
           "specVersion": "3.1.0",
-          "server": "/admin-api",
+          "server": "https://{shop_domain}/admin-api",
+          "specServer": "/admin-api",
           "changedOn": "2026-10-31"
         }
       }
@@ -3314,7 +3323,8 @@
           "title": "Sage HR API",
           "apiVersion": "1.0",
           "specVersion": "2.0",
-          "server": "https://subdomain.sage.hr/api",
+          "server": "https://{subdomain}.sage.hr/api",
+          "specServer": "https://subdomain.sage.hr/api",
           "changedOn": "2026-10-31"
         }
       }
@@ -3338,7 +3348,16 @@
     "sap-successfactors": {
       "name": "SAP SuccessFactors",
       "specs": {
-        "SAP SuccessFactors OData v2 (per service EDMX)": {
+        "User Management (PLTUserManagement)": {
+          "status": "manual: login"
+        },
+        "Employee Central - Employment Information (ECEmploymentInformation)": {
+          "status": "manual: login"
+        },
+        "Employee Central - Employee Profile (ECEmployeeProfile)": {
+          "status": "manual: login"
+        },
+        "Recruiting - Job Requisition (RCMJobRequisition)": {
           "status": "manual: login"
         }
       }
@@ -3746,7 +3765,8 @@
           "title": "Commerce Admin REST endpoints - All inclusive",
           "apiVersion": "2.4.9",
           "specVersion": "2.0",
-          "server": "http://example.com/rest/default",
+          "server": "https://{store}/rest/default",
+          "specServer": "http://example.com/rest/default",
           "changedOn": "2026-10-31"
         },
         "Adobe Commerce Customer REST (2.4.9)": {
@@ -3757,7 +3777,8 @@
           "title": "Commerce Customer REST endpoints - All inclusive",
           "apiVersion": "2.4.9",
           "specVersion": "2.0",
-          "server": "http://example.com/rest/default",
+          "server": "https://{store}/rest/default",
+          "specServer": "http://example.com/rest/default",
           "changedOn": "2026-10-31"
         },
         "Adobe Commerce Guest REST (2.4.9)": {
@@ -3768,7 +3789,8 @@
           "title": "Commerce Guest REST endpoints - All inclusive",
           "apiVersion": "2.4.9",
           "specVersion": "2.0",
-          "server": "http://example.com/rest/default",
+          "server": "https://{store}/rest/default",
+          "specServer": "http://example.com/rest/default",
           "changedOn": "2026-10-31"
         },
         "Adobe Commerce GraphQL (2.4.8)": {
@@ -3887,7 +3909,7 @@
       "specs": {
         "MYOB AccountRight API Postman collection": {
           "status": "ok",
-          "sha256": "fc95823d5db6065f4cd2d26714cf61d354743784ba81089544ccbc0f582a41ef",
+          "sha256": "6d5c3821993e1aaf039577f187f23d0b2d5c8a958a1b37fc2a9d4445446f77b4",
           "bytes": 7071274,
           "operations": 257,
           "title": "MYOB AccountRight",
@@ -3898,7 +3920,19 @@
     },
     "namely": {
       "name": "Namely",
-      "specs": {}
+      "specs": {
+        "Namely API": {
+          "status": "ok",
+          "sha256": "5a769a632723880e3950d355ed7f6f2b16b8816df66f77dd2e3881e12cbcfb59",
+          "bytes": 245022,
+          "operations": 54,
+          "title": "Namely API",
+          "apiVersion": "",
+          "specVersion": "2.0",
+          "server": "https://{company}.namely.com/api/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
     },
     "netsuite": {
       "name": "NetSuite",
@@ -4315,7 +4349,7 @@
       }
     },
     "wix": {
-      "name": "Wix ",
+      "name": "Wix",
       "specs": {}
     },
     "woocommerce": {
@@ -4329,7 +4363,8 @@
           "title": "WooCommerce REST API",
           "apiVersion": "v3",
           "specVersion": "3.0.1",
-          "server": "https://example-woocommerce-shop.com/wp-json/wc/v3",
+          "server": "https://{store}/wp-json/wc/v3",
+          "specServer": "https://example-woocommerce-shop.com/wp-json/wc/v3",
           "changedOn": "2026-10-31"
         }
       }

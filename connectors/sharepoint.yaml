@@ -7,4 +7,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://graph.microsoft.com/v1.0"
-    notes: "OpenAPI 3.0.4, ~44MB YAML from Microsoft's official msgraph-metadata repo. 17,911 ops total across all of Graph; 3,049 under /sites and /drives (the SharePoint/file-storage surface). Beta at openapi/beta/openapi.yaml."
+    notes: "OpenAPI 3.0.4, ~44 MB YAML (needs a large heap to parse) from Microsoft's official msgraph-metadata repo. 17,911 ops total across all of Graph; 3,049 under /sites and /drives (the SharePoint/file-storage surface). Beta at openapi/beta/openapi.yaml."

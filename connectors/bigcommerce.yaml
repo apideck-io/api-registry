@@ -1,6 +1,6 @@
 id: bigcommerce
 name: "BigCommerce"
-notes: "Successor dev-docs repo also archived; no live spec source found. GraphQL Storefront API needs a store token (not counted)."
+notes: "The successor dev-docs repo is also archived; no live spec source was found. The bundle mixes REST Management API files with storefront (*.sf.yml) files whose own server is https://{store_domain}/api/storefront; the entry-level server below is the Management API host only. Zip bundles have no include/exclude option, so the storefront files cannot be split into their own spec from this one archive URL; operation counts include them. GraphQL Storefront API needs a store token (not counted)."
 specs:
   - name: "BigCommerce API specs (archived)"
     url: "https://github.com/bigcommerce/api-specs/archive/refs/heads/main.zip"
@@ -8,4 +8,4 @@ specs:
     extract: zip-bundle
     provenance: vendor
     server: "https://api.bigcommerce.com/stores/{store_hash}/v3"
-    notes: "Official bigcommerce GitHub org, but the repo is ARCHIVED (last push 2024-01-09); may lag the live API. 59 OpenAPI 3.0.x YAML files under reference/ (one is orders.v2.oas2.yml, counted as OAS anyway), 571 ops total incl. storefront (*.sf.yml) APIs. Example: https://raw.githubusercontent.com/bigcommerce/api-specs/main/reference/catalog/products_catalog.v3.yml (49 ops). Per-store {store_hash}. No repo license."
+    notes: "Official bigcommerce GitHub org, but the repo is ARCHIVED (last push 2024-01-09); may lag the live API. Verification counts 60 OpenAPI 3.0 files and 574 ops, including the storefront (*.sf.yml) files; orders.v2.oas2.yml is Swagger 2.0 and is skipped under the declared openapi-3.0 format. Example: https://raw.githubusercontent.com/bigcommerce/api-specs/main/reference/catalog/products_catalog.v3.yml (49 ops). Per-store {store_hash}. No repo license."

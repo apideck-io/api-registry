@@ -120,7 +120,7 @@ specs:
     provenance: vendor
     server: "https://jobs.world.luccasoftware.com"
     license: "Apache-2.0"
-    notes: "Legacy per-product API listed under /api-reference/legacy. Per-tenant {host}."
+    notes: "Legacy per-product API listed under /api-reference/legacy. Served from the fixed host jobs.world.luccasoftware.com, not a per-tenant host."
   - name: "Lucca authentication"
     url: "https://developers.luccasoftware.com/openapi-specs/authentication.yaml"
     format: openapi-3.1

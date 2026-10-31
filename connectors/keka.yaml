@@ -25,7 +25,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{company}.{environment}.com/api"
-    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api/v1 (environment keka or kekademo)."
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api (environment keka or kekademo); unlike the other modules, the Hire paths carry their own version segment, so the base has no /v1."
   - name: "Keka Attendance"
     url: "https://dash.readme.com/api/v1/api-registry/9hrwd4mp3wl1l7"
     format: openapi-3.0
@@ -85,7 +85,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{company}.{environment}.com/api"
-    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api/v1 (environment keka or kekademo)."
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api (environment keka or kekademo); unlike the other modules, the Hire paths carry their own version segment, so the base has no /v1."
   - name: "Keka Requisition"
     url: "https://dash.readme.com/api/v1/api-registry/3piglt1wy7s1"
     format: openapi-3.0

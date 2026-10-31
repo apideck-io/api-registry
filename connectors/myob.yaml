@@ -7,4 +7,4 @@ specs:
     format: postman-2.1
     provenance: vendor
     server: "https://api.myob.com/accountright"
-    notes: "Official collection linked from https://developer.myob.com/api/myob-business-api/accountright-postman-collection/ (published Postman documenter at https://accountrightapi.myob.cloud). Collection schema is Postman v2.0.0, not 2.1. ~7 MB. Per company-file URI under the base. No OpenAPI published; HTML docs at https://developer.myob.com/api/myob-business-api/v2/."
+    notes: "Official collection linked from https://developer.myob.com/api/myob-business-api/accountright-postman-collection/ (published Postman documenter at https://accountrightapi.myob.cloud). The collection uses Postman schema v2.0.0; it is recorded as postman-2.1, the closest supported format value, and the verifier does not check the schema version. ~7 MB. Per company-file URI under the base. No OpenAPI published; HTML docs at https://developer.myob.com/api/myob-business-api/v2/."

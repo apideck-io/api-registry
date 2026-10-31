@@ -1,9 +1,10 @@
 id: prestashop
 name: "Prestashop"
-notes: "Spec covers the PS9 Admin API only."
+notes: "Covers the PrestaShop 9 Admin API only. The classic Webservice API (https://{shop_domain}/api) is a different API and has no OpenAPI document."
 specs:
   - name: "PrestaShop 9 Admin API"
     url: "https://devdocs.prestashop-project.org/9/admin-api/swagger-doc/openapi.json"
     format: openapi-3.1
     provenance: vendor
-    notes: "New OAuth2 Admin API in PrestaShop 9 (per-shop: https://{shop}/admin-api). The classic Webservice API (/api, XML/JSON, key auth) that most integrations use has no OpenAPI; its schema is discoverable per shop via ?schema=blank/synopsis. Confirm which one the connector uses."
+    server: "https://{shop_domain}/admin-api"
+    notes: "OAuth2 Admin API introduced in PrestaShop 9. The spec declares only the relative server /admin-api; each shop serves it on its own domain. The classic Webservice API (/api, XML/JSON, API-key auth) differs from it: it has no OpenAPI, and each shop describes its resources via ?schema=blank or ?schema=synopsis."

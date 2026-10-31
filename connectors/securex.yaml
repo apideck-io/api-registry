@@ -1,4 +1,4 @@
 id: securex
 name: "Securex"
-notes: "No public API documentation. none: https://www.securex.be (No public developer portal or spec found; only Apideck/apitracker listings.)"
+notes: "Securex runs a public Azure API Management developer portal at https://securexacc-portal-api.securex.eu/. Anonymously it lists one API, 'Hello' (a test API for API-management features); the production APIs and their definitions appear only after sign-in with credentials from a Securex contact. No public spec, so none is indexed."
 specs: []
