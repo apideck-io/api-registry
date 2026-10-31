@@ -1,0 +1,65 @@
+connectors/adp-run.yaml
+  s_eeda7bd9685d9d::t_182ceb49467b19 1-4
+connectors/people-hr.yaml
+  s_eeda7bd9685d9d::t_4b3745a8403c6f 1-4
+connectors/picqer.yaml
+  s_eeda7bd9685d9d::t_a909b68ef9f337 1-4
+connectors/plaid-exchange.yaml
+  s_eeda7bd9685d9d::t_49b030cb47c632 1-11
+connectors/planhat.yaml
+  s_eeda7bd9685d9d::t_845530bb7c80c2 1-4
+connectors/plivo.yaml
+  s_eeda7bd9685d9d::t_d66409d2ca3369 1-4
+connectors/portt.yaml
+  s_eeda7bd9685d9d::t_35f79c95385794 1-4
+connectors/prestashop.yaml
+  s_eeda7bd9685d9d::t_e3f15e4486213c 1-9
+connectors/recruitee.yaml
+  s_eeda7bd9685d9d::t_665c877b0e91e2 1-16
+connectors/remote.yaml
+  s_eeda7bd9685d9d::t_9f09538aa7ff0d 1-9
+connectors/rippling.yaml
+  s_eeda7bd9685d9d::t_6e41079ad4b163 1-4
+connectors/sage-hr.yaml
+  s_eeda7bd9685d9d::t_751d98f235c5f8 1-9
+connectors/salesflare.yaml
+  s_eeda7bd9685d9d::t_9c9c54c1d378e6 1-9
+connectors/sap-successfactors.yaml
+  s_eeda7bd9685d9d::t_46b4173e3e7d78 1-11
+connectors/sapling.yaml
+  s_eeda7bd9685d9d::t_4d60399e5ddfc8 1-4
+connectors/sdworx-be-sme.yaml
+  s_eeda7bd9685d9d::t_b63b64381dc951 1-4
+connectors/sdworx-webservice.yaml
+  s_eeda7bd9685d9d::t_8f955139a0b60c 1-4
+connectors/sdworx.yaml
+  s_eeda7bd9685d9d::t_e5d19e897f42f5 1-4
+connectors/securex.yaml
+  s_eeda7bd9685d9d::t_f856a37b677664 1-4
+connectors/sharepoint.yaml
+  s_eeda7bd9685d9d::t_dc7a1e0717e3db 1-10
+connectors/shopify-public-app.yaml
+  s_eeda7bd9685d9d::t_21057a4c4d98c1 1-11
+connectors/shopify.yaml
+  s_eeda7bd9685d9d::t_5d157e56fae5c1 1-10
+connectors/shopware.yaml
+  s_eeda7bd9685d9d::t_c4ccb190d8b338 1-15
+index.json
+  s_eeda7bd9685d9d::t_568227210ede05 3200-3431
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "bfc10323778eac2d872a07f44c7a6b4552efd32c",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
