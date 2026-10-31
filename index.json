@@ -1197,6 +1197,22 @@
           "changedOn": "2026-10-31"
         }
       }
+    },
+    "hubspot": {
+      "name": "HubSpot",
+      "specs": {
+        "CRM Companies v3": {
+          "status": "ok",
+          "sha256": "2062f6b1469aedc649498cf10c466bcdf825d483aeef2f068c0674b2a98007db",
+          "bytes": 97771,
+          "operations": 12,
+          "title": "Companies",
+          "apiVersion": "v3",
+          "specVersion": "3.0.1",
+          "server": "https://api.hubapi.com",
+          "changedOn": "2026-10-31"
+        }
+      }
     }
   }
 }

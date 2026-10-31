@@ -1,0 +1,650 @@
+{
+  "_": {
+    "postman_id": "e1ef162e-de3b-420c-9fbc-3aca53b388be"
+  },
+  "item": [
+    {
+      "id": "ed9eda96-7aef-4fb2-8427-5c4aea81db90",
+      "name": "List companies",
+      "request": {
+        "name": "List companies",
+        "description": {
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "crm",
+            "v3",
+            "objects",
+            "companies"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "limit",
+              "value": "3"
+            }
+          ],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "body": {}
+      },
+      "response": [
+        {
+          "id": "adaf180d-1218-4128-bdf7-ef0250481148",
+          "name": "A page of companies",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "crm",
+                "v3",
+                "objects",
+                "companies"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": true,
+                  "description": {
+                    "content": "Comma-separated properties to return",
+                    "type": "text/plain"
+                  },
+                  "key": "properties",
+                  "value": "string"
+                },
+                {
+                  "disabled": true,
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "key": "propertiesWithHistory",
+                  "value": "string"
+                },
+                {
+                  "disabled": true,
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "key": "associations",
+                  "value": "string"
+                },
+                {
+                  "disabled": true,
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "key": "limit",
+                  "value": "9457"
+                },
+                {
+                  "disabled": true,
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "key": "after",
+                  "value": "string"
+                },
+                {
+                  "disabled": true,
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "key": "archived",
+                  "value": "true"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"results\": [\n    {\n      \"id\": \"string\",\n      \"properties\": {\n        \"key_0\": \"string\",\n        \"key_1\": \"string\",\n        \"key_2\": \"string\"\n      },\n      \"createdAt\": \"1954-02-13T02:20:50.623Z\",\n      \"updatedAt\": \"2018-01-11T14:39:12.667Z\",\n      \"archived\": true,\n      \"url\": \"https://yqCPAUAYoIKYTtfslN.epedIEJSOyGtw1v,Hu-5teSR1Z,xBY2IBfiUHk\",\n      \"archivedAt\": \"1997-08-07T03:09:04.415Z\",\n      \"associations\": {\n        \"key_0\": {\n          \"results\": [\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            },\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            }\n          ],\n          \"paging\": {}\n        },\n        \"key_1\": {\n          \"results\": [\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            },\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            }\n          ],\n          \"paging\": {}\n        }\n      },\n      \"propertiesWithHistory\": {\n        \"key_0\": [\n          {\n            \"value\": \"string\",\n            \"timestamp\": \"1949-12-03T14:26:02.761Z\",\n            \"sourceType\": \"string\",\n            \"sourceId\": \"string\",\n            \"sourceLabel\": \"string\",\n            \"updatedByUserId\": 9082\n          },\n          {\n            \"value\": \"string\",\n            \"timestamp\": \"1963-05-28T03:44:25.913Z\",\n            \"sourceType\": \"string\",\n            \"sourceId\": \"string\",\n            \"sourceLabel\": \"string\",\n            \"updatedByUserId\": 8235\n          }\n        ],\n        \"key_1\": [\n          {\n            \"value\": \"string\",\n            \"timestamp\": \"1972-12-15T07:52:02.836Z\",\n            \"sourceType\": \"string\",\n            \"sourceId\": \"string\",\n            \"sourceLabel\": \"string\",\n            \"updatedByUserId\": 6108\n          },\n          {\n            \"value\": \"string\",\n            \"timestamp\": \"2021-09-03T22:33:01.891Z\",\n            \"sourceType\": \"string\",\n            \"sourceId\": \"string\",\n            \"sourceLabel\": \"string\",\n            \"updatedByUserId\": 9593\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"string\",\n      \"properties\": {\n        \"key_0\": \"string\",\n        \"key_1\": \"string\"\n      },\n      \"createdAt\": \"2025-01-26T20:20:54.254Z\",\n      \"updatedAt\": \"1962-12-06T07:19:41.700Z\",\n      \"archived\": false,\n      \"url\": \"https://EZlqZxze.tfdOxBcY6cqlPPeuS1jdSb,X-oy9rEvIO6QuB7Xzo\",\n      \"archivedAt\": \"1997-03-03T01:18:20.003Z\",\n      \"associations\": {\n        \"key_0\": {\n          \"results\": [\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            },\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            }\n          ],\n          \"paging\": {}\n        },\n        \"key_1\": {\n          \"results\": [\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            },\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            }\n          ],\n          \"paging\": {}\n        }\n      },\n      \"propertiesWithHistory\": {\n        \"key_0\": [\n          {\n            \"value\": \"string\",\n            \"timestamp\": \"1947-01-11T00:30:14.609Z\",\n            \"sourceType\": \"string\",\n            \"sourceId\": \"string\",\n            \"sourceLabel\": \"string\",\n            \"updatedByUserId\": 332\n          },\n          {\n            \"value\": \"string\",\n            \"timestamp\": \"1988-05-01T12:08:46.473Z\",\n            \"sourceType\": \"string\",\n            \"sourceId\": \"string\",\n            \"sourceLabel\": \"string\",\n            \"updatedByUserId\": 3670\n          }\n        ]\n      }\n    }\n  ],\n  \"paging\": {\n    \"next\": {\n      \"after\": \"string\",\n      \"link\": \"http://ECJvjmd.yrhxY1JkikVT2Tm0SIsZuCq5Yc6Drbow5n01SmPFS+vpye\"\n    }\n  }\n}",
+          "cookie": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "f4d3677b-8221-4b28-898b-485225af7e85",
+            "type": "text/javascript",
+            "exec": [
+              "// Validate status 2xx \npm.test(\"[GET]::/crm/v3/objects/companies - Status code is 2xx\", function () {\n   pm.response.to.be.success;\n});\n",
+              "// Validate if response header has matching content-type\npm.test(\"[GET]::/crm/v3/objects/companies - Content-Type is application/json\", function () {\n   pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\n});\n",
+              "// Validate if response has JSON Body \npm.test(\"[GET]::/crm/v3/objects/companies - Response has JSON Body\", function () {\n    pm.response.to.have.jsonBody();\n});\n",
+              "// Response Validation\nconst schema = {\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"results\"],\"properties\":{\"results\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"x-inferred\":true,\"additionalProperties\":false,\"required\":[\"id\",\"properties\",\"createdAt\",\"updatedAt\",\"archived\",\"url\"],\"properties\":{\"id\":{\"type\":\"string\"},\"properties\":{\"type\":\"object\",\"additionalProperties\":{\"type\":[\"string\",\"null\"]}},\"createdAt\":{\"type\":\"string\",\"format\":\"date-time\"},\"updatedAt\":{\"type\":\"string\",\"format\":\"date-time\"},\"archived\":{\"type\":\"boolean\",\"x-observed\":true},\"url\":{\"type\":\"string\",\"format\":\"uri\",\"x-observed\":true},\"archivedAt\":{\"type\":\"string\",\"format\":\"date-time\",\"x-observed\":\"archived=true\"},\"associations\":{\"type\":\"object\",\"x-observed\":\"associations=contacts\",\"additionalProperties\":{\"type\":\"object\",\"additionalProperties\":false,\"properties\":{\"results\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"id\",\"type\"],\"properties\":{\"id\":{\"type\":\"string\"},\"type\":{\"type\":\"string\"}}}},\"paging\":{\"type\":\"object\"}}}},\"propertiesWithHistory\":{\"type\":\"object\",\"x-observed\":\"propertiesWithHistory=name\",\"additionalProperties\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"value\",\"timestamp\",\"sourceType\"],\"properties\":{\"value\":{\"type\":\"string\"},\"timestamp\":{\"type\":\"string\",\"format\":\"date-time\"},\"sourceType\":{\"type\":\"string\"},\"sourceId\":{\"type\":\"string\"},\"sourceLabel\":{\"type\":\"string\"},\"updatedByUserId\":{\"type\":\"integer\"}}}}}}}},\"paging\":{\"type\":\"object\",\"additionalProperties\":false,\"properties\":{\"next\":{\"type\":\"object\",\"additionalProperties\":false,\"x-observed\":true,\"properties\":{\"after\":{\"type\":\"string\"},\"link\":{\"type\":\"string\",\"format\":\"uri\"}}}}}}}\n\n// Validate if response matches JSON schema \npm.test(\"[GET]::/crm/v3/objects/companies - Schema is valid\", function() {\n    pm.response.to.have.jsonSchema(schema,{unknownFormats: [\"int32\", \"int64\", \"float\", \"double\"]});\n});\n",
+              "// Set response object as internal variable\nlet jsonData = {};\ntry {jsonData = pm.response.json();}catch(e){}\n",
+              "// Set property value as variable\nconst _resResults0Id = jsonData?.results?.[0]?.id;\n",
+              "// pm.collectionVariables - Set companyId as variable for jsonData.results[0].id\nif (_resResults0Id !== undefined) {\n   pm.collectionVariables.set(\"companyId\", jsonData.results[0].id);\n   console.log(\"- use {{companyId}} as collection variable for value\",jsonData.results[0].id);\n} else {\n   console.log('INFO - Unable to assign variable {{companyId}}, as jsonData.results[0].id is undefined.');\n};\n"
+            ]
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "a748bfdd-4ae5-4698-9990-33ccf347ce74",
+      "name": "Retrieve a company",
+      "request": {
+        "name": "Retrieve a company",
+        "description": {
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "crm",
+            "v3",
+            "objects",
+            "companies",
+            ":companyId"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "description": {
+                "content": "(Required) ",
+                "type": "text/plain"
+              },
+              "type": "string",
+              "value": "{{companyId}}",
+              "key": "companyId"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "body": {}
+      },
+      "response": [
+        {
+          "id": "8722bdd4-edff-4411-a5f1-c5202e538c3a",
+          "name": "A company",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "crm",
+                "v3",
+                "objects",
+                "companies",
+                ":companyId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": true,
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "key": "properties",
+                  "value": "string"
+                },
+                {
+                  "disabled": true,
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "key": "propertiesWithHistory",
+                  "value": "string"
+                },
+                {
+                  "disabled": true,
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "key": "associations",
+                  "value": "string"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "description": {
+                    "content": "(Required) ",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "string",
+                  "key": "companyId"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"id\": \"string\",\n  \"properties\": {\n    \"key_0\": \"string\",\n    \"key_1\": \"string\"\n  },\n  \"createdAt\": \"1969-10-22T00:57:21.060Z\",\n  \"updatedAt\": \"1976-04-16T03:12:16.256Z\",\n  \"archived\": false,\n  \"url\": \"http://vTHrvDnwLtbGJVmpyaG.fqwePLJUW7fPNrzQO.vBFvc8xQsM6LJCFG3r2D\",\n  \"archivedAt\": \"2009-06-12T19:46:30.334Z\",\n  \"associations\": {\n    \"key_0\": {\n      \"results\": [\n        {\n          \"id\": \"string\",\n          \"type\": \"string\"\n        },\n        {\n          \"id\": \"string\",\n          \"type\": \"string\"\n        }\n      ],\n      \"paging\": {}\n    },\n    \"key_1\": {\n      \"results\": [\n        {\n          \"id\": \"string\",\n          \"type\": \"string\"\n        },\n        {\n          \"id\": \"string\",\n          \"type\": \"string\"\n        }\n      ],\n      \"paging\": {}\n    }\n  },\n  \"propertiesWithHistory\": {\n    \"key_0\": [\n      {\n        \"value\": \"string\",\n        \"timestamp\": \"1980-10-15T04:45:11.239Z\",\n        \"sourceType\": \"string\",\n        \"sourceId\": \"string\",\n        \"sourceLabel\": \"string\",\n        \"updatedByUserId\": 9331\n      },\n      {\n        \"value\": \"string\",\n        \"timestamp\": \"1972-07-18T14:43:50.374Z\",\n        \"sourceType\": \"string\",\n        \"sourceId\": \"string\",\n        \"sourceLabel\": \"string\",\n        \"updatedByUserId\": 9103\n      }\n    ],\n    \"key_1\": [\n      {\n        \"value\": \"string\",\n        \"timestamp\": \"1971-03-14T00:07:40.655Z\",\n        \"sourceType\": \"string\",\n        \"sourceId\": \"string\",\n        \"sourceLabel\": \"string\",\n        \"updatedByUserId\": 8039\n      },\n      {\n        \"value\": \"string\",\n        \"timestamp\": \"1964-06-30T13:21:40.038Z\",\n        \"sourceType\": \"string\",\n        \"sourceId\": \"string\",\n        \"sourceLabel\": \"string\",\n        \"updatedByUserId\": 1266\n      }\n    ]\n  }\n}",
+          "cookie": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "1ba14c25-6bc8-4fea-9810-c4e459697101",
+            "type": "text/javascript",
+            "exec": [
+              "// Validate status 2xx \npm.test(\"[GET]::/crm/v3/objects/companies/:companyId - Status code is 2xx\", function () {\n   pm.response.to.be.success;\n});\n",
+              "// Validate if response header has matching content-type\npm.test(\"[GET]::/crm/v3/objects/companies/:companyId - Content-Type is application/json\", function () {\n   pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\n});\n",
+              "// Validate if response has JSON Body \npm.test(\"[GET]::/crm/v3/objects/companies/:companyId - Response has JSON Body\", function () {\n    pm.response.to.have.jsonBody();\n});\n",
+              "// Response Validation\nconst schema = {\"type\":\"object\",\"x-inferred\":true,\"additionalProperties\":false,\"required\":[\"id\",\"properties\",\"createdAt\",\"updatedAt\",\"archived\",\"url\"],\"properties\":{\"id\":{\"type\":\"string\"},\"properties\":{\"type\":\"object\",\"additionalProperties\":{\"type\":[\"string\",\"null\"]}},\"createdAt\":{\"type\":\"string\",\"format\":\"date-time\"},\"updatedAt\":{\"type\":\"string\",\"format\":\"date-time\"},\"archived\":{\"type\":\"boolean\",\"x-observed\":true},\"url\":{\"type\":\"string\",\"format\":\"uri\",\"x-observed\":true},\"archivedAt\":{\"type\":\"string\",\"format\":\"date-time\",\"x-observed\":\"archived=true\"},\"associations\":{\"type\":\"object\",\"x-observed\":\"associations=contacts\",\"additionalProperties\":{\"type\":\"object\",\"additionalProperties\":false,\"properties\":{\"results\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"id\",\"type\"],\"properties\":{\"id\":{\"type\":\"string\"},\"type\":{\"type\":\"string\"}}}},\"paging\":{\"type\":\"object\"}}}},\"propertiesWithHistory\":{\"type\":\"object\",\"x-observed\":\"propertiesWithHistory=name\",\"additionalProperties\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"value\",\"timestamp\",\"sourceType\"],\"properties\":{\"value\":{\"type\":\"string\"},\"timestamp\":{\"type\":\"string\",\"format\":\"date-time\"},\"sourceType\":{\"type\":\"string\"},\"sourceId\":{\"type\":\"string\"},\"sourceLabel\":{\"type\":\"string\"},\"updatedByUserId\":{\"type\":\"integer\"}}}}}}}\n\n// Validate if response matches JSON schema \npm.test(\"[GET]::/crm/v3/objects/companies/:companyId - Schema is valid\", function() {\n    pm.response.to.have.jsonSchema(schema,{unknownFormats: [\"int32\", \"int64\", \"float\", \"double\"]});\n});\n"
+            ]
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "2671c955-a26d-4fae-96e6-d55da75fb6e2",
+      "name": "Variation Tests",
+      "item": [
+        {
+          "id": "64f0a2d2-ac29-41d6-b65c-cf2dd9db44c6",
+          "name": "HubSpot CRM Companies (generated from docs) Variations",
+          "item": [
+            {
+              "id": "fc804ac8-7702-4f15-8263-2f24fdaa38b1",
+              "name": "Retrieve a company[With associations and history]",
+              "request": {
+                "name": "Retrieve a company[With associations and history]",
+                "description": {
+                  "type": "text/plain"
+                },
+                "url": {
+                  "path": [
+                    "crm",
+                    "v3",
+                    "objects",
+                    "companies",
+                    ":companyId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "key": "associations",
+                      "value": "contacts"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "propertiesWithHistory",
+                      "value": "name"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "type": "string",
+                      "value": "{{companyId}}",
+                      "key": "companyId"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "response": [
+                {
+                  "id": "273a2318-84fd-4868-8207-8115af670bb6",
+                  "name": "A company",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "crm",
+                        "v3",
+                        "objects",
+                        "companies",
+                        ":companyId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [
+                        {
+                          "disabled": true,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "properties",
+                          "value": "string"
+                        },
+                        {
+                          "disabled": true,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "propertiesWithHistory",
+                          "value": "string"
+                        },
+                        {
+                          "disabled": true,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "associations",
+                          "value": "string"
+                        }
+                      ],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "(Required) ",
+                            "type": "text/plain"
+                          },
+                          "type": "any",
+                          "value": "string",
+                          "key": "companyId"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"id\": \"string\",\n  \"properties\": {\n    \"key_0\": \"string\",\n    \"key_1\": \"string\"\n  },\n  \"createdAt\": \"1969-10-22T00:57:21.060Z\",\n  \"updatedAt\": \"1976-04-16T03:12:16.256Z\",\n  \"archived\": false,\n  \"url\": \"http://vTHrvDnwLtbGJVmpyaG.fqwePLJUW7fPNrzQO.vBFvc8xQsM6LJCFG3r2D\",\n  \"archivedAt\": \"2009-06-12T19:46:30.334Z\",\n  \"associations\": {\n    \"key_0\": {\n      \"results\": [\n        {\n          \"id\": \"string\",\n          \"type\": \"string\"\n        },\n        {\n          \"id\": \"string\",\n          \"type\": \"string\"\n        }\n      ],\n      \"paging\": {}\n    },\n    \"key_1\": {\n      \"results\": [\n        {\n          \"id\": \"string\",\n          \"type\": \"string\"\n        },\n        {\n          \"id\": \"string\",\n          \"type\": \"string\"\n        }\n      ],\n      \"paging\": {}\n    }\n  },\n  \"propertiesWithHistory\": {\n    \"key_0\": [\n      {\n        \"value\": \"string\",\n        \"timestamp\": \"1980-10-15T04:45:11.239Z\",\n        \"sourceType\": \"string\",\n        \"sourceId\": \"string\",\n        \"sourceLabel\": \"string\",\n        \"updatedByUserId\": 9331\n      },\n      {\n        \"value\": \"string\",\n        \"timestamp\": \"1972-07-18T14:43:50.374Z\",\n        \"sourceType\": \"string\",\n        \"sourceId\": \"string\",\n        \"sourceLabel\": \"string\",\n        \"updatedByUserId\": 9103\n      }\n    ],\n    \"key_1\": [\n      {\n        \"value\": \"string\",\n        \"timestamp\": \"1971-03-14T00:07:40.655Z\",\n        \"sourceType\": \"string\",\n        \"sourceId\": \"string\",\n        \"sourceLabel\": \"string\",\n        \"updatedByUserId\": 8039\n      },\n      {\n        \"value\": \"string\",\n        \"timestamp\": \"1964-06-30T13:21:40.038Z\",\n        \"sourceType\": \"string\",\n        \"sourceId\": \"string\",\n        \"sourceLabel\": \"string\",\n        \"updatedByUserId\": 1266\n      }\n    ]\n  }\n}",
+                  "cookie": []
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "ff66209b-6f93-4d56-8bef-ec387e543a07",
+                    "type": "text/javascript",
+                    "exec": [
+                      "// Validate status 2xx \npm.test(\"[GET]::/crm/v3/objects/companies/:companyId - Status code is 2xx\", function () {\n   pm.response.to.be.success;\n});\n",
+                      "// Response Validation\nconst schema = {\"type\":\"object\",\"x-inferred\":true,\"additionalProperties\":false,\"required\":[\"id\",\"properties\",\"createdAt\",\"updatedAt\",\"archived\",\"url\"],\"properties\":{\"id\":{\"type\":\"string\"},\"properties\":{\"type\":\"object\",\"additionalProperties\":{\"type\":[\"string\",\"null\"]}},\"createdAt\":{\"type\":\"string\",\"format\":\"date-time\"},\"updatedAt\":{\"type\":\"string\",\"format\":\"date-time\"},\"archived\":{\"type\":\"boolean\",\"x-observed\":true},\"url\":{\"type\":\"string\",\"format\":\"uri\",\"x-observed\":true},\"archivedAt\":{\"type\":\"string\",\"format\":\"date-time\",\"x-observed\":\"archived=true\"},\"associations\":{\"type\":\"object\",\"x-observed\":\"associations=contacts\",\"additionalProperties\":{\"type\":\"object\",\"additionalProperties\":false,\"properties\":{\"results\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"id\",\"type\"],\"properties\":{\"id\":{\"type\":\"string\"},\"type\":{\"type\":\"string\"}}}},\"paging\":{\"type\":\"object\"}}}},\"propertiesWithHistory\":{\"type\":\"object\",\"x-observed\":\"propertiesWithHistory=name\",\"additionalProperties\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"value\",\"timestamp\",\"sourceType\"],\"properties\":{\"value\":{\"type\":\"string\"},\"timestamp\":{\"type\":\"string\",\"format\":\"date-time\"},\"sourceType\":{\"type\":\"string\"},\"sourceId\":{\"type\":\"string\"},\"sourceLabel\":{\"type\":\"string\"},\"updatedByUserId\":{\"type\":\"integer\"}}}}}}}\n\n// Validate if response matches JSON schema \npm.test(\"[GET]::/crm/v3/objects/companies/:companyId - Schema is valid\", function() {\n    pm.response.to.have.jsonSchema(schema,{unknownFormats: [\"int32\", \"int64\", \"float\", \"double\"]});\n});\n"
+                    ]
+                  }
+                }
+              ],
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              }
+            },
+            {
+              "id": "5402a44b-8917-4f60-8ee5-32b7d4a0f6f4",
+              "name": "List companies[Archived]",
+              "request": {
+                "name": "List companies[Archived]",
+                "description": {
+                  "type": "text/plain"
+                },
+                "url": {
+                  "path": [
+                    "crm",
+                    "v3",
+                    "objects",
+                    "companies"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "key": "limit",
+                      "value": "2"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "archived",
+                      "value": "true"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "response": [
+                {
+                  "id": "613cadea-5f8d-495b-b104-bfe6f1efba84",
+                  "name": "A page of companies",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "crm",
+                        "v3",
+                        "objects",
+                        "companies"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [
+                        {
+                          "disabled": true,
+                          "description": {
+                            "content": "Comma-separated properties to return",
+                            "type": "text/plain"
+                          },
+                          "key": "properties",
+                          "value": "string"
+                        },
+                        {
+                          "disabled": true,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "propertiesWithHistory",
+                          "value": "string"
+                        },
+                        {
+                          "disabled": true,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "associations",
+                          "value": "string"
+                        },
+                        {
+                          "disabled": true,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "limit",
+                          "value": "9457"
+                        },
+                        {
+                          "disabled": true,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "after",
+                          "value": "string"
+                        },
+                        {
+                          "disabled": true,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "archived",
+                          "value": "true"
+                        }
+                      ],
+                      "variable": []
+                    },
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"results\": [\n    {\n      \"id\": \"string\",\n      \"properties\": {\n        \"key_0\": \"string\",\n        \"key_1\": \"string\",\n        \"key_2\": \"string\"\n      },\n      \"createdAt\": \"1954-02-13T02:20:50.623Z\",\n      \"updatedAt\": \"2018-01-11T14:39:12.667Z\",\n      \"archived\": true,\n      \"url\": \"https://yqCPAUAYoIKYTtfslN.epedIEJSOyGtw1v,Hu-5teSR1Z,xBY2IBfiUHk\",\n      \"archivedAt\": \"1997-08-07T03:09:04.415Z\",\n      \"associations\": {\n        \"key_0\": {\n          \"results\": [\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            },\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            }\n          ],\n          \"paging\": {}\n        },\n        \"key_1\": {\n          \"results\": [\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            },\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            }\n          ],\n          \"paging\": {}\n        }\n      },\n      \"propertiesWithHistory\": {\n        \"key_0\": [\n          {\n            \"value\": \"string\",\n            \"timestamp\": \"1949-12-03T14:26:02.761Z\",\n            \"sourceType\": \"string\",\n            \"sourceId\": \"string\",\n            \"sourceLabel\": \"string\",\n            \"updatedByUserId\": 9082\n          },\n          {\n            \"value\": \"string\",\n            \"timestamp\": \"1963-05-28T03:44:25.913Z\",\n            \"sourceType\": \"string\",\n            \"sourceId\": \"string\",\n            \"sourceLabel\": \"string\",\n            \"updatedByUserId\": 8235\n          }\n        ],\n        \"key_1\": [\n          {\n            \"value\": \"string\",\n            \"timestamp\": \"1972-12-15T07:52:02.836Z\",\n            \"sourceType\": \"string\",\n            \"sourceId\": \"string\",\n            \"sourceLabel\": \"string\",\n            \"updatedByUserId\": 6108\n          },\n          {\n            \"value\": \"string\",\n            \"timestamp\": \"2021-09-03T22:33:01.891Z\",\n            \"sourceType\": \"string\",\n            \"sourceId\": \"string\",\n            \"sourceLabel\": \"string\",\n            \"updatedByUserId\": 9593\n          }\n        ]\n      }\n    },\n    {\n      \"id\": \"string\",\n      \"properties\": {\n        \"key_0\": \"string\",\n        \"key_1\": \"string\"\n      },\n      \"createdAt\": \"2025-01-26T20:20:54.254Z\",\n      \"updatedAt\": \"1962-12-06T07:19:41.700Z\",\n      \"archived\": false,\n      \"url\": \"https://EZlqZxze.tfdOxBcY6cqlPPeuS1jdSb,X-oy9rEvIO6QuB7Xzo\",\n      \"archivedAt\": \"1997-03-03T01:18:20.003Z\",\n      \"associations\": {\n        \"key_0\": {\n          \"results\": [\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            },\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            }\n          ],\n          \"paging\": {}\n        },\n        \"key_1\": {\n          \"results\": [\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            },\n            {\n              \"id\": \"string\",\n              \"type\": \"string\"\n            }\n          ],\n          \"paging\": {}\n        }\n      },\n      \"propertiesWithHistory\": {\n        \"key_0\": [\n          {\n            \"value\": \"string\",\n            \"timestamp\": \"1947-01-11T00:30:14.609Z\",\n            \"sourceType\": \"string\",\n            \"sourceId\": \"string\",\n            \"sourceLabel\": \"string\",\n            \"updatedByUserId\": 332\n          },\n          {\n            \"value\": \"string\",\n            \"timestamp\": \"1988-05-01T12:08:46.473Z\",\n            \"sourceType\": \"string\",\n            \"sourceId\": \"string\",\n            \"sourceLabel\": \"string\",\n            \"updatedByUserId\": 3670\n          }\n        ]\n      }\n    }\n  ],\n  \"paging\": {\n    \"next\": {\n      \"after\": \"string\",\n      \"link\": \"http://ECJvjmd.yrhxY1JkikVT2Tm0SIsZuCq5Yc6Drbow5n01SmPFS+vpye\"\n    }\n  }\n}",
+                  "cookie": []
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "5b7aff3a-170e-4fc4-877b-e996bdf4335a",
+                    "type": "text/javascript",
+                    "exec": [
+                      "// Validate status 2xx \npm.test(\"[GET]::/crm/v3/objects/companies - Status code is 2xx\", function () {\n   pm.response.to.be.success;\n});\n",
+                      "// Response Validation\nconst schema = {\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"results\"],\"properties\":{\"results\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"x-inferred\":true,\"additionalProperties\":false,\"required\":[\"id\",\"properties\",\"createdAt\",\"updatedAt\",\"archived\",\"url\"],\"properties\":{\"id\":{\"type\":\"string\"},\"properties\":{\"type\":\"object\",\"additionalProperties\":{\"type\":[\"string\",\"null\"]}},\"createdAt\":{\"type\":\"string\",\"format\":\"date-time\"},\"updatedAt\":{\"type\":\"string\",\"format\":\"date-time\"},\"archived\":{\"type\":\"boolean\",\"x-observed\":true},\"url\":{\"type\":\"string\",\"format\":\"uri\",\"x-observed\":true},\"archivedAt\":{\"type\":\"string\",\"format\":\"date-time\",\"x-observed\":\"archived=true\"},\"associations\":{\"type\":\"object\",\"x-observed\":\"associations=contacts\",\"additionalProperties\":{\"type\":\"object\",\"additionalProperties\":false,\"properties\":{\"results\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"id\",\"type\"],\"properties\":{\"id\":{\"type\":\"string\"},\"type\":{\"type\":\"string\"}}}},\"paging\":{\"type\":\"object\"}}}},\"propertiesWithHistory\":{\"type\":\"object\",\"x-observed\":\"propertiesWithHistory=name\",\"additionalProperties\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"value\",\"timestamp\",\"sourceType\"],\"properties\":{\"value\":{\"type\":\"string\"},\"timestamp\":{\"type\":\"string\",\"format\":\"date-time\"},\"sourceType\":{\"type\":\"string\"},\"sourceId\":{\"type\":\"string\"},\"sourceLabel\":{\"type\":\"string\"},\"updatedByUserId\":{\"type\":\"integer\"}}}}}}}},\"paging\":{\"type\":\"object\",\"additionalProperties\":false,\"properties\":{\"next\":{\"type\":\"object\",\"additionalProperties\":false,\"x-observed\":true,\"properties\":{\"after\":{\"type\":\"string\"},\"link\":{\"type\":\"string\",\"format\":\"uri\"}}}}}}}\n\n// Validate if response matches JSON schema \npm.test(\"[GET]::/crm/v3/objects/companies - Schema is valid\", function() {\n    pm.response.to.have.jsonSchema(schema,{unknownFormats: [\"int32\", \"int64\", \"float\", \"double\"]});\n});\n"
+                    ]
+                  }
+                }
+              ],
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              }
+            }
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "3af42567-a6f8-4fcc-8670-167dbc00a6f4",
+        "type": "text/javascript",
+        "exec": [
+          "// Send every request through the Apideck Proxy; Vault holds the customer's HubSpot token.\nconst downstream = pm.request.url.toString();\npm.request.headers.upsert({ key: 'x-apideck-downstream-url', value: downstream });\npm.request.headers.upsert({ key: 'x-apideck-service-id', value: pm.environment.get('serviceId') });\npm.request.headers.upsert({ key: 'x-apideck-app-id', value: pm.environment.get('apideckAppId') });\npm.request.headers.upsert({ key: 'x-apideck-consumer-id', value: pm.environment.get('apideckConsumerId') });\npm.request.headers.upsert({ key: 'Authorization', value: 'Bearer ' + pm.environment.get('apideckApiKey') });\npm.request.url = 'https://unify.apideck.com/proxy';"
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.hubapi.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "e1ef162e-de3b-420c-9fbc-3aca53b388be",
+    "name": "HubSpot CRM Companies (generated from docs)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}

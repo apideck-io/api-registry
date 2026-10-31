@@ -1,0 +1,119 @@
+# v2: v1 plus the conditional fields Portman variation tests surfaced (associations, propertiesWithHistory,
+#   archived=true): associations, propertiesWithHistory and archivedAt. Fields seen in every response are required.
+# v1: v0 plus the fixes Portman's contract run against the live API reported (2026-10-31):
+#   Company.archived, Company.url and paging.next.link were missing. Fields confirmed by a live response
+#   are marked x-observed instead of x-inferred.
+# v0 was generated from HubSpot's public docs only (developers.hubspot.com CRM Companies guide, 2026-10-31).
+# Documented: the two GET paths and the properties / propertiesWithHistory / associations query params.
+# Not documented, so inferred from common REST conventions and marked x-inferred: limit, after, archived,
+# the server URL and the entire response body.
+openapi: 3.0.3
+info:
+  title: HubSpot CRM Companies (generated from docs)
+  version: v3-generated-2
+servers:
+  - url: https://api.hubapi.com
+    x-inferred: true
+paths:
+  /crm/v3/objects/companies:
+    get:
+      operationId: listCompanies
+      summary: List companies
+      parameters:
+        - { name: properties, in: query, schema: { type: string }, description: Comma-separated properties to return }
+        - { name: propertiesWithHistory, in: query, schema: { type: string } }
+        - { name: associations, in: query, schema: { type: string } }
+        - { name: limit, in: query, schema: { type: integer }, x-inferred: true }
+        - { name: after, in: query, schema: { type: string }, x-inferred: true }
+        - { name: archived, in: query, schema: { type: boolean }, x-inferred: true }
+      responses:
+        "200":
+          description: A page of companies
+          x-inferred: true
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: false
+                required: [results]
+                properties:
+                  results:
+                    type: array
+                    items: { $ref: "#/components/schemas/Company" }
+                  paging:
+                    type: object
+                    additionalProperties: false
+                    properties:
+                      next:
+                        type: object
+                        additionalProperties: false
+                        x-observed: true
+                        properties:
+                          after: { type: string }
+                          link: { type: string, format: uri }
+  /crm/v3/objects/companies/{companyId}:
+    get:
+      operationId: getCompany
+      summary: Retrieve a company
+      parameters:
+        - { name: companyId, in: path, required: true, schema: { type: string } }
+        - { name: properties, in: query, schema: { type: string } }
+        - { name: propertiesWithHistory, in: query, schema: { type: string } }
+        - { name: associations, in: query, schema: { type: string } }
+      responses:
+        "200":
+          description: A company
+          x-inferred: true
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Company" }
+components:
+  schemas:
+    Company:
+      type: object
+      x-inferred: true
+      additionalProperties: false
+      required: [id, properties, createdAt, updatedAt, archived, url]
+      properties:
+        id: { type: string }
+        properties:
+          type: object
+          additionalProperties: { type: string, nullable: true }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+        archived: { type: boolean, x-observed: true }
+        url: { type: string, format: uri, x-observed: true }
+        archivedAt: { type: string, format: date-time, x-observed: archived=true }
+        associations:
+          type: object
+          x-observed: associations=contacts
+          additionalProperties:
+            type: object
+            additionalProperties: false
+            properties:
+              results:
+                type: array
+                items:
+                  type: object
+                  additionalProperties: false
+                  required: [id, type]
+                  properties:
+                    id: { type: string }
+                    type: { type: string }
+              paging: { type: object }
+        propertiesWithHistory:
+          type: object
+          x-observed: propertiesWithHistory=name
+          additionalProperties:
+            type: array
+            items:
+              type: object
+              additionalProperties: false
+              required: [value, timestamp, sourceType]
+              properties:
+                value: { type: string }
+                timestamp: { type: string, format: date-time }
+                sourceType: { type: string }
+                sourceId: { type: string }
+                sourceLabel: { type: string }
+                updatedByUserId: { type: integer }
