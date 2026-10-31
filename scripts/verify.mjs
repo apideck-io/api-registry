@@ -32,7 +32,8 @@ const ID = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 // Some GraphQL APIs publish no SDL but answer an anonymous introspection query (Wave, Access Financials).
 const EXTRACT = new Set(["markdown-json-fence", "zip-bundle", "redoc-state", "graphql-introspection"]);
 // Full enough that changed argument types, return types, nullability, input fields or enum values show as drift.
-const TYPE_REF = "kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name } } } }";
+// Eight levels, as graphql-js uses: enough for [[Foo!]!]! and deeper wrappings.
+const TYPE_REF = "kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name } } } } } } }";
 const INTROSPECTION = `{ __schema { queryType { name } mutationType { name } subscriptionType { name } types {
   kind name
   fields(includeDeprecated: true) { name isDeprecated args { name defaultValue type { ${TYPE_REF} } } type { ${TYPE_REF} } }
@@ -78,6 +79,8 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
     if (!FORMATS.has(s?.format)) errors.push(`${at}: format must be one of ${[...FORMATS].join(", ")}`);
     if (!PROVENANCE.has(s?.provenance)) errors.push(`${at}: provenance must be one of ${[...PROVENANCE].join(", ")}`);
     if (s?.extract && !EXTRACT.has(s.extract)) errors.push(`${at}: extract must be one of ${[...EXTRACT].join(", ")}`);
+    const extractFits = { "graphql-introspection": ["graphql"], "redoc-state": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "markdown-json-fence": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "zip-bundle": ["openapi-3.0", "openapi-3.1", "swagger-2.0"] };
+    if (s?.extract && extractFits[s.extract] && !extractFits[s.extract].includes(s?.format)) errors.push(`${at}: extract ${s.extract} doesn't apply to format ${s?.format}`);
     if (s?.extract && !s?.url) errors.push(`${at}: extract applies to a fetched url; store an extracted spec as a plain path instead`);
     if (s?.manual && !MANUAL.has(s.manual)) errors.push(`${at}: manual must be one of ${[...MANUAL].join(", ")}`);
     if (s?.manual && !s?.notes) errors.push(`${at}: a spec CI can't fetch needs notes saying how to get it`);

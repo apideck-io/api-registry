@@ -7,7 +7,6 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://accounting-clients.api.datev.de/platform/v2"
-    license: "DATEV eG"
     notes: "OpenAPI served anonymously by the DATEV Developer Portal's own backend (portal product page: https://developer.datev.de/de/product-detail/accounting-clients). The API id is a portal UUID and may change with new versions; resolve via https://developer.datev.de/mediator/products/accounting-clients/apis."
   - name: "DATEV accounting:documents"
     url: "https://developer.datev.de/mediator/apis/3184cf7b-de13-412c-993f-c3ddbca8dd17/document"
@@ -20,7 +19,6 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://accounting-extf-files.api.datev.de/platform/v3"
-    license: "DATEV eG"
     notes: "OpenAPI served anonymously by the DATEV Developer Portal's own backend (portal product page: https://developer.datev.de/de/product-detail/accounting-extf-files). The API id is a portal UUID and may change with new versions; resolve via https://developer.datev.de/mediator/products/accounting-extf-files/apis."
   - name: "DATEV accounting:dxso-jobs"
     url: "https://developer.datev.de/mediator/apis/632748c6-66be-4f15-ad5b-00ad27b7b990/document"
