@@ -86,6 +86,7 @@ function unzip(buf) {
   const count = buf.readUInt16LE(eocd + 10);
   let p = buf.readUInt32LE(eocd + 16);
   const files = [];
+  let total = 0; // decompressed bytes so far: a small archive must not inflate past the download cap
   for (let i = 0; i < count; i++) {
     const method = buf.readUInt16LE(p + 10);
     const size = buf.readUInt32LE(p + 20);
@@ -98,7 +99,10 @@ function unzip(buf) {
     const raw = buf.subarray(start, start + size);
     if (!name.endsWith("/")) {
       if (method !== 0 && method !== 8) throw new Error(`${name}: compression method ${method} is not supported (stored or deflate only)`);
-      files.push({ name, text: (method === 8 ? inflateRawSync(raw) : raw).toString("utf8") });
+      const out = method === 8 ? inflateRawSync(raw, { maxOutputLength: MAX_BYTES - total }) : raw;
+      total += out.length;
+      if (total > MAX_BYTES) throw new Error("archive expands past the size cap");
+      files.push({ name, text: out.toString("utf8") });
     }
     p += 46 + nameLen + extraLen + commentLen;
   }
@@ -154,13 +158,19 @@ function inspect(format, body) {
   if (format === "graphql") {
     // SDL: count fields on the root Query and Mutation types. Introspection JSON: count their fields.
     if (body.trim().startsWith("{")) {
-      const types = JSON.parse(body)?.data?.__schema?.types ?? JSON.parse(body)?.__schema?.types;
-      if (!types) throw new Error("no __schema in introspection result");
-      const n = types.filter((t) => t.name === "Query" || t.name === "Mutation").reduce((m, t) => m + (t.fields?.length ?? 0), 0);
+      const json = JSON.parse(body);
+      const schema = json?.data?.__schema ?? json?.__schema;
+      if (!schema?.types) throw new Error("no __schema in introspection result");
+      // Root types can be renamed; introspection names them.
+      const rootNames = [schema.queryType?.name, schema.mutationType?.name].filter(Boolean);
+      const n = schema.types.filter((t) => rootNames.includes(t.name)).reduce((m, t) => m + (t.fields?.length ?? 0), 0);
       return { operations: n };
     }
-    const roots = [...body.matchAll(/type\s+(Query|Mutation)\s*\{([^}]*)\}/g)];
-    if (!roots.length) throw new Error("no Query or Mutation type");
+    // SDL can rename roots in a schema block (schema { query: QueryRoot }); default to Query and Mutation.
+    const decl = body.match(/schema\s*\{([^}]*)\}/)?.[1] ?? "";
+    const rootNames = [decl.match(/query\s*:\s*(\w+)/)?.[1] ?? "Query", decl.match(/mutation\s*:\s*(\w+)/)?.[1] ?? "Mutation"];
+    const roots = [...body.matchAll(/(?:extend\s+)?type\s+(\w+)\b[^{]*\{([^}]*)\}/g)].filter((m) => rootNames.includes(m[1]));
+    if (!roots.length) throw new Error(`no ${rootNames.join(" or ")} type`);
     // Drop argument lists first (they can span lines), then count "name:" field starts.
     const fields = (block) => (block.replace(/\([^)]*\)/g, "").match(/^\s*\w+\s*:/gm) ?? []).length;
     return { operations: roots.reduce((n, m) => n + fields(m[2]), 0) };
@@ -236,6 +246,7 @@ for (const e of entries) {
         r.error = `bad zip: ${err.message}`;
       }
     }
+    if (r.body === "") r.error = "empty response";
     if (!r.body) {
       failures++;
       specs[s.name] = { ...old, status: r.error ?? `HTTP ${r.status}` };
@@ -283,7 +294,8 @@ for (const e of entries) {
     specs[s.name] = {
       status: "ok",
       sha256,
-      bytes: r.bytes ? r.bytes.length : Buffer.byteLength(r.body),
+      // For a bundle, the size of its files: the archive's own size changes when it is merely rebuilt.
+      bytes: bundle ? bundle.reduce((n, f) => n + Buffer.byteLength(f.text), 0) : Buffer.byteLength(r.body),
       ...Object.fromEntries(Object.entries(info).filter(([, v]) => v != null)),
       changedOn: changed || !old.sha256 ? today : old.changedOn,
     };
