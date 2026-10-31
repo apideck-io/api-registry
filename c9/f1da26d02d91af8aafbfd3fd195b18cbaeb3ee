@@ -1,0 +1,49 @@
+connectors/freshbooks.yaml
+  s_eeda7bd9685d9d::t_8c5a82492e4e71 1-9
+connectors/microsoft-dynamics-365-business-central.yaml
+  s_eeda7bd9685d9d::t_0331a1e9576d06 1-15
+connectors/oracle-fusion.yaml
+  s_b5530286302508::t_aeb1d79a7403ed 1-10
+connectors/quickbooks-desktop.yaml
+  s_b5530286302508::t_443bdf433c3cc9 1-15
+connectors/quickbooks.yaml
+  s_eeda7bd9685d9d::t_6213e5fabb179d 1-10
+connectors/sage-business-cloud-accounting.yaml
+  s_b5530286302508::t_3175f02b535158 1-10
+connectors/sage-intacct.yaml
+  s_eeda7bd9685d9d::t_4cf9c59a470111 1-11
+connectors/sap-s4hana-cloud.yaml
+  s_b5530286302508::t_73954b983f4e55 1-4
+connectors/xero.yaml
+  s_eeda7bd9685d9d::t_b8556d8735c0d5 3,5-6,9-10,15,21-22,27,33,35-70
+connectors/zoho-books.yaml
+  s_eeda7bd9685d9d::t_ac3cc75a2a3a5e 1-10
+index.json
+  s_eeda7bd9685d9d::t_930adc8063f465 224,239,254,269,284,299,907,909-912,915,961-1026,1045-1173
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_5f743775656f7c 10,23-27,62-64,76-103,110-112,162-166,168-181,190-194,201-205,210
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c9f1da26d02d91af8aafbfd3fd195b18cbaeb3ee",
+  "prompts": {},
+  "sessions": {
+    "s_b5530286302508": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f9dd8942-1a38-4993-b209-62caf197a7ca",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
