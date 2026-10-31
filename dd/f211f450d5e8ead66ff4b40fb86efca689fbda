@@ -1,0 +1,21 @@
+pilots/portman/hubspot-companies/portman-collection.v2.validated.json
+  s_eeda7bd9685d9d::t_c1297100dd127d 3,7,48,96,114,136,144,163,206,279,287,303,307,311,365,438,446,460,506,554,572,594,602,626,642
+pilots/portman/run.sh
+  s_eeda7bd9685d9d::t_41dd4ed88858ef 10,13-18,27-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ddf211f450d5e8ead66ff4b40fb86efca689fbda",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
