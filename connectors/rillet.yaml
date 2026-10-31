@@ -1,0 +1,10 @@
+id: rillet
+name: "Rillet"
+notes: "Vendor OpenAPI 3.1, public."
+specs:
+  - name: "Rillet Accounting API"
+    url: "https://docs.api.rillet.com/openapi/rillet-accounting-api.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.rillet.com"
+    notes: "Linked from https://docs.api.rillet.com/docs/getting-started (ReadMe hub; listing at /openapi). 118 paths. Sandbox server https://sandbox.api.rillet.com. Note docs.rillet.com (different host) returns 401."

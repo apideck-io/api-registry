@@ -1,0 +1,16 @@
+id: salesforce
+name: "Salesforce"
+notes: "No public static spec verified for the core REST/sObjects API. forcedotcom/postman-salesforce-apis (official Postman collection, 250+ requests) is archived and the repo holds no collection JSON; the collection lives in the Salesforce Developers Postman public workspace (https://www.postman.com/salesforce-developers). Not counted."
+specs:
+  - name: "Salesforce developer docs OpenAPI downloads (Connect REST, Data 360 Connect, etc.)"
+    url: "https://developer.salesforce.com/docs/platform/connect-rest-api/references/connect-rest-api-agentforce"
+    format: openapi-3.0
+    provenance: vendor
+    manual: bot-protection
+    notes: "New-UI reference pages carry a \"Download OpenAPI specification\" link (Redocly). developer.salesforce.com returns an Akamai error page to non-browser clients, so the raw spec URL and contents were not verified; format/ops unknown."
+  - name: "sObjects REST API OpenAPI 3.0 (beta, per org)"
+    url: "https://{instance}.my.salesforce.com/services/data/v{version}/async/specifications/oas3"
+    format: openapi-3.0
+    provenance: vendor
+    manual: login
+    notes: "Org-specific, generated on request (opt-in beta). Docs: https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/openapi_beta.htm."

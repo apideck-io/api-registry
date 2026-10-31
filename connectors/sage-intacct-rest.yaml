@@ -1,0 +1,4 @@
+id: sage-intacct-rest
+name: "Sage Intacct REST"
+notes: "Same API as sage-intacct; see connectors/sage-intacct.yaml."
+specs: []

@@ -1,0 +1,11 @@
+id: visma-netvisor
+name: "Visma Netvisor"
+notes: "No raw machine-readable spec found. The closest is the vendor's Postman collection, which needs a login to export. Docs are HTML at support.netvisor.fi. There is a third-party TS client, rantalainen/netvisor-api-client."
+specs:
+  - name: "Netvisor API All endpoints (Postman)"
+    url: "https://www.postman.com/postman-enterprise-for-visma-group-1/visma-solutions-oy-netvisor-api-flow-examples/documentation/nx3c6af/netvisor-api-all-endpoints"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://isvapi.netvisor.fi"
+    manual: login
+    notes: "Public Postman collection in the Visma Solutions Oy workspace. Raw collection JSON needs the Postman app or API (key), so it was not fetched or counted. The API is XML-over-HTTP (resource.nv); payload structure is defined by DTDs described in HTML docs at https://support.netvisor.fi/en/articles/766841-netvisor-api-in-general. No OpenAPI, WSDL or XSD found."

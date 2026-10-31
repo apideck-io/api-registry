@@ -1,0 +1,4 @@
+id: navan
+name: "Navan"
+notes: "Nothing machine-readable is public. Vendor HTML docs only. Navan Expense API (HTML docs): https://developer.navan.com/api/ (Hand-written static HTML reference (transactions, users, receipts, custom fields, audit logs, etc.) with no embedded or linked OpenAPI. developer.navan.com/openapi.json returns HTML; app.navan.com/api/docs/openapi.json returns 401. The api-evangelist/navan OpenAPI and Postman files are third-party and partly 'MODELED', so they are excluded. developer.navan.com also hosts an MCP page (/mcp/).)"
+specs: []

@@ -28,7 +28,10 @@ const PROVENANCE = new Set(["vendor", "third-party", "community", "fork"]);
 const ID = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 // Some vendors wrap the spec: developer.sage.com serves its OpenAPI JSON inside a Markdown code fence.
 // Zoho Books ships its OpenAPI as a zip of per-module files.
-const EXTRACT = new Set(["markdown-json-fence", "zip-bundle"]);
+// Fortnox embeds its OpenAPI in a Redoc page (window.__redoc_state) with no raw file to link.
+// Some GraphQL APIs publish no SDL but answer an anonymous introspection query (Wave, Access Financials).
+const EXTRACT = new Set(["markdown-json-fence", "zip-bundle", "redoc-state", "graphql-introspection"]);
+const INTROSPECTION = "{ __schema { queryType { name } mutationType { name } types { name fields { name } } } }";
 // Specs we know about but CI cannot fetch: behind a login, or behind bot protection that refuses CI.
 const MANUAL = new Set(["login", "bot-protection"]);
 const METHODS = ["get", "put", "post", "delete", "patch", "head", "options", "trace"];
@@ -85,6 +88,21 @@ if (ONLY && !entries.some((e) => e.id === ONLY)) {
 }
 
 // ---- verification ----
+// The JSON object starting at `start`, found by matching braces outside strings (code follows it in the page).
+function balancedObject(text, start) {
+  let depth = 0;
+  let inString = false;
+  for (let i = start; i < text.length; i++) {
+    const ch = text[i];
+    if (inString) {
+      if (ch === "\\") i++;
+      else if (ch === '"') inString = false;
+    } else if (ch === '"') inString = true;
+    else if (ch === "{") depth++;
+    else if (ch === "}" && --depth === 0) return text.slice(start, i + 1);
+  }
+  throw new Error("unterminated object");
+}
 const canonical = (v) =>
   Array.isArray(v) ? `[${v.map(canonical).join(",")}]`
   : v && typeof v === "object" ? `{${Object.keys(v).filter((k) => v[k] !== undefined).sort().map((k) => `${JSON.stringify(k)}:${canonical(v[k])}`).join(",")}}`
@@ -143,7 +161,11 @@ async function loadUncached(spec) {
   const ctl = new AbortController();
   const timer = setTimeout(() => ctl.abort(), 120000);
   try {
-    const res = await fetch(spec.url, { signal: ctl.signal, headers: { "user-agent": "apideck-api-registry/2 (+https://github.com/apideck-io/api-registry)" } });
+    const ua = { "user-agent": "apideck-api-registry/2 (+https://github.com/apideck-io/api-registry)" };
+    const res =
+      spec.extract === "graphql-introspection"
+        ? await fetch(spec.url, { method: "POST", signal: ctl.signal, headers: { ...ua, "content-type": "application/json" }, body: JSON.stringify({ query: INTROSPECTION }) })
+        : await fetch(spec.url, { signal: ctl.signal, headers: ua });
     if (!res.ok) {
       await res.body?.cancel(); // release the connection; the body of an error page isn't needed
       return { status: res.status, body: null };
@@ -270,6 +292,17 @@ for (const e of entries) {
       continue;
     }
     const r = await load(s);
+    if (r.body && s.extract === "redoc-state") {
+      const at = r.body.search(/__redoc_state\s*=\s*\{/);
+      try {
+        const spec = at >= 0 && JSON.parse(balancedObject(r.body, r.body.indexOf("{", at)))?.spec?.data;
+        r.body = spec ? JSON.stringify(spec) : null;
+        if (!spec) r.error = "no __redoc_state spec found";
+      } catch (err) {
+        r.body = null;
+        r.error = `bad __redoc_state: ${err.message.slice(0, 60)}`;
+      }
+    }
     if (r.body && s.extract === "markdown-json-fence") {
       const m = r.body.match(/```json\s*\n([\s\S]*?)\n```/);
       r.body = m ? m[1] : null;

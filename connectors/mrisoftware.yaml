@@ -1,0 +1,4 @@
+id: mrisoftware
+name: "MRI Software"
+notes: "No public machine-readable spec. MRI MIX / APIDesign APIs are per-installation (https://{MRIWebDomain}/MRIAPIServices/api.asp?$api={APIName}) with a per-API $metadata endpoint requiring Basic auth (per MRI API Integrations Guide PDF: https://www.mrisoftware.com/wp-content/uploads/2018/01/MRI-API-Integrations-Guide-5.pdf). Product page: https://www.mrisoftware.com/products/mri-information-exchange/. Azure APIM developer portals exist (e.g. https://education-apideveloper.devtest.mrisoftware.com/) but are product-specific and not public specs."
+specs: []

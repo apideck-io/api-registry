@@ -1,0 +1,9 @@
+id: banqup
+name: "banqUP"
+notes: "Developer portal: https://developerportal.unifiedpost.com."
+specs:
+  - name: "Banqup (Unifiedpost) APIs v4"
+    url: "https://v4-api.platform.eu.banqup.com/swagger.yml"
+    format: openapi-3.0
+    provenance: vendor
+    notes: "As of 2026-10-31 the vendor file has 3 YAML syntax errors (unindented multi-line descriptions near lines 9112, 9150 and 9862), so it is recorded as unparseable until Banqup fixes it. A lenient parse counts 148 operations across 101 paths. No servers block."

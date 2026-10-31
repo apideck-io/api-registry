@@ -1,0 +1,4 @@
+id: snelstart
+name: "SnelStart"
+notes: "Spec sits behind a portal login. Only community markdown references exist elsewhere. SnelStart B2B API v2: https://b2bapi-developer.snelstart.nl/ (Azure API Management developer portal. Anonymous list (https://b2bapi-developer.snelstart.nl/developer/apis?api-version=2022-04-01-preview) returns {\"value\":[]}, so APIs and the OpenAPI export are visible only after sign-in. Swagger paths on b2bapi.snelstart.nl return 404.)"
+specs: []

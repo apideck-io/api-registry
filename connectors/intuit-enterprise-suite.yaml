@@ -1,0 +1,4 @@
+id: intuit-enterprise-suite
+name: "Intuit Enterprise Suite"
+notes: "Shares QBO APIs. No machine-readable vendor spec is fetchable. IES (QuickBooks Online Accounting REST + GraphQL): https://developer.intuit.com/app/developer/ies/docs/get-started (IES has no API of its own. Apps use the QuickBooks Online Accounting/Payments/Payroll REST APIs per entity, plus a GraphQL Dimensions API at https://qb.api.intuit.com/graphql (also used for custom fields, projects and sales tax). That endpoint returns 401 AuthenticationFailed to anonymous introspection, and no SDL is published. Intuit publishes no official OpenAPI for QBO. Postman collections come only through https:/"
+specs: []

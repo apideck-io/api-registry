@@ -1,0 +1,4 @@
+id: exact-online
+name: "Exact Online"
+notes: "No vendor machine-readable spec. Exact publishes only HTML reference docs: https://start.exactonline.nl/docs/HlpRestAPIResources.aspx (per-endpoint detail pages HlpRestAPIResourcesDetails.aspx?name=...). API is OData v2-style but no public $metadata (requires auth). Same API serves exact-online-uk (start.exactonline.co.uk) and exact-online-nl (start.exactonline.nl). ExactOnlineRestApiReference (meta-data.json): https://raw.githubusercontent.com/DannyvdSluijs/ExactOnlineRestApiReference/main/meta-data.json (Not OpenAPI: custom JSON scraped nightly from the official HTML reference. 438 endpoints"
+specs: []

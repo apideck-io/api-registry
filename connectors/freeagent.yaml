@@ -1,0 +1,10 @@
+id: freeagent
+name: "FreeAgent"
+notes: "No OpenAPI. FreeAgent staff said in Sept 2026 that an OpenAPI 3 definition is in progress (https://api-discuss.freeagent.com/t/openapi-swagger-definition-for-freeagent-api/2815). HTML docs: https://dev.freeagent.com/docs."
+specs:
+  - name: "FreeAgent Postman collection"
+    url: "https://raw.githubusercontent.com/fac/postman-freeagent-api-collection/master/FreeAgent.postman_collection.json"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://api.freeagent.com/v2"
+    notes: "Official (fac = FreeAgent GitHub org), referenced by FreeAgent staff as the closest thing to a spec. Repo has no licence and was last pushed 2022-08-03, so may be stale."

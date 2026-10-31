@@ -1,0 +1,10 @@
+id: holded
+name: "Holded"
+notes: "Official raw OpenAPI 3.1. The api-evangelist/holded YAMLs are third-party subsets and should be ignored."
+specs:
+  - name: "Holded API (v2)"
+    url: "https://api.holded.com/openapi/api2.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.holded.com"
+    notes: "Linked as 'openapi.json' from the vendor API reference at https://www.holded.com/developers/api-reference. 5.5 MB. The older developers.holded.com (ReadMe) API is deprecated."

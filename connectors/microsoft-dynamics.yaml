@@ -1,0 +1,11 @@
+id: microsoft-dynamics
+name: "Microsoft Dynamics CRM"
+notes: "Only tenant $metadata exists. Reference docs (HTML): https://learn.microsoft.com/power-apps/developer/data-platform/webapi/reference/about."
+specs:
+  - name: "Dataverse Web API $metadata (per tenant)"
+    url: "https://{org}.api.crm.dynamics.com/api/data/v9.2/$metadata"
+    format: odata-edmx
+    provenance: vendor
+    server: "https://{org}.api.crm.dynamics.com/api/data/v9.2"
+    manual: login
+    notes: "Only tenant-specific CSDL $metadata (OData v4 EDMX), requires an authenticated org. No public static spec."

@@ -1,0 +1,10 @@
+id: campfire
+name: "Campfire"
+notes: "Served live by the vendor API host. No auth needed."
+specs:
+  - name: "Campfire Developer APIs"
+    url: "https://api.meetcampfire.com/api/schema?format=json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.meetcampfire.com"
+    notes: "OpenAPI 3.0.3 (drf-spectacular), 233 paths, ~2.4 MB. The same spec as YAML is at https://api.meetcampfire.com/api/schema/. Covers core accounting, revenue recognition, cash management, etc. Docs: https://docs.campfire.ai."
