@@ -24,7 +24,7 @@ if (ONLY === "" || ONLY?.startsWith("--")) {
 }
 
 const FORMATS = new Set(["openapi-3.0", "openapi-3.1", "swagger-2.0", "google-discovery", "asyncapi-2", "postman-2.1", "odata-edmx", "xsd", "graphql"]);
-const PROVENANCE = new Set(["vendor", "third-party", "community", "fork"]);
+const PROVENANCE = new Set(["vendor", "third-party", "community", "fork", "generated"]);
 const ID = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 // Some vendors wrap the spec: developer.sage.com serves its OpenAPI JSON inside a Markdown code fence.
 // Zoho Books ships its OpenAPI as a zip of per-module files.

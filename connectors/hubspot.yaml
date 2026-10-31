@@ -1,0 +1,9 @@
+id: hubspot
+name: "HubSpot"
+notes: "HubSpot publishes one OpenAPI file per API and dated rollout in HubSpot/HubSpot-public-api-spec-collection; add the other CRM objects the same way. pilots/portman scores a docs-generated Companies spec against this one."
+specs:
+  - name: "CRM Companies v3"
+    url: "https://raw.githubusercontent.com/HubSpot/HubSpot-public-api-spec-collection/main/PublicApiSpecs/CRM/Companies/Rollouts/424/v3/companies.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.hubapi.com"

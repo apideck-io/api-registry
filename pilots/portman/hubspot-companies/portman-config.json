@@ -1,0 +1,188 @@
+{
+  "version": 1.0,
+  "tests": {
+    "contractTests": [
+      {
+        "openApiOperation": "*::/*",
+        "statusSuccess": {
+          "enabled": true
+        },
+        "contentType": {
+          "enabled": true
+        },
+        "jsonBody": {
+          "enabled": true
+        },
+        "schemaValidation": {
+          "enabled": true
+        }
+      }
+    ],
+    "variationTests": [
+      {
+        "openApiOperation": "GET::/crm/v3/objects/companies/{companyId}",
+        "variations": [
+          {
+            "name": "With associations and history",
+            "overwrites": [
+              {
+                "overwriteRequestQueryParams": [
+                  {
+                    "key": "associations",
+                    "value": "contacts"
+                  },
+                  {
+                    "key": "propertiesWithHistory",
+                    "value": "name"
+                  },
+                  {
+                    "key": "properties",
+                    "remove": true
+                  }
+                ],
+                "overwriteRequestPathVariables": [
+                  {
+                    "key": "companyId",
+                    "value": "{{companyId}}"
+                  }
+                ]
+              }
+            ],
+            "tests": {
+              "contractTests": [
+                {
+                  "statusSuccess": {
+                    "enabled": true
+                  },
+                  "schemaValidation": {
+                    "enabled": true
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "openApiOperation": "GET::/crm/v3/objects/companies",
+        "variations": [
+          {
+            "name": "Archived",
+            "overwrites": [
+              {
+                "overwriteRequestQueryParams": [
+                  {
+                    "key": "archived",
+                    "value": "true"
+                  },
+                  {
+                    "key": "limit",
+                    "value": "2"
+                  },
+                  {
+                    "key": "after",
+                    "remove": true
+                  },
+                  {
+                    "key": "properties",
+                    "remove": true
+                  },
+                  {
+                    "key": "propertiesWithHistory",
+                    "remove": true
+                  },
+                  {
+                    "key": "associations",
+                    "remove": true
+                  }
+                ]
+              }
+            ],
+            "tests": {
+              "contractTests": [
+                {
+                  "statusSuccess": {
+                    "enabled": true
+                  },
+                  "schemaValidation": {
+                    "enabled": true
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "assignVariables": [
+    {
+      "openApiOperation": "GET::/crm/v3/objects/companies",
+      "collectionVariables": [
+        {
+          "responseBodyProp": "results[0].id",
+          "name": "companyId"
+        }
+      ]
+    }
+  ],
+  "overwrites": [
+    {
+      "openApiOperation": "GET::/crm/v3/objects/companies",
+      "overwriteRequestQueryParams": [
+        {
+          "key": "limit",
+          "value": "3"
+        },
+        {
+          "key": "after",
+          "remove": true
+        },
+        {
+          "key": "archived",
+          "remove": true
+        },
+        {
+          "key": "properties",
+          "remove": true
+        },
+        {
+          "key": "propertiesWithHistory",
+          "remove": true
+        },
+        {
+          "key": "associations",
+          "remove": true
+        }
+      ]
+    },
+    {
+      "openApiOperation": "GET::/crm/v3/objects/companies/{companyId}",
+      "overwriteRequestPathVariables": [
+        {
+          "key": "companyId",
+          "value": "{{companyId}}"
+        }
+      ],
+      "overwriteRequestQueryParams": [
+        {
+          "key": "properties",
+          "remove": true
+        },
+        {
+          "key": "propertiesWithHistory",
+          "remove": true
+        },
+        {
+          "key": "associations",
+          "remove": true
+        }
+      ]
+    }
+  ],
+  "globals": {
+    "collectionPreRequestScripts": [
+      "// Send every request through the Apideck Proxy; Vault holds the customer's HubSpot token.\n// Resolve {{variables}} before forwarding, so the proxy never receives a literal placeholder.\nconst downstream = pm.variables.replaceIn(pm.request.url.toString());\npm.request.headers.upsert({ key: 'x-apideck-downstream-url', value: downstream });\npm.request.headers.upsert({ key: 'x-apideck-service-id', value: pm.environment.get('serviceId') });\npm.request.headers.upsert({ key: 'x-apideck-app-id', value: pm.environment.get('apideckAppId') });\npm.request.headers.upsert({ key: 'x-apideck-consumer-id', value: pm.environment.get('apideckConsumerId') });\npm.request.headers.upsert({ key: 'Authorization', value: 'Bearer ' + pm.environment.get('apideckApiKey') });\npm.request.url = 'https://unify.apideck.com/proxy';"
+    ]
+  }
+}

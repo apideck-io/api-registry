@@ -22,7 +22,7 @@ specs:
   - name: "Xero Accounting API"
     url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero_accounting.yaml"
     format: openapi-3.0       # openapi-3.0 | openapi-3.1 | swagger-2.0 | google-discovery | asyncapi-2 | postman-2.1 | odata-edmx | xsd | graphql
-    provenance: vendor        # vendor | third-party | community | fork
+    provenance: vendor        # vendor | third-party | community | fork | generated
     server: "https://api.xero.com/api.xro/2.0"
     license: "MIT"            # optional; as the vendor states it
     notes: "..."              # optional
@@ -54,6 +54,7 @@ An app whose vendor publishes no spec still gets an entry with `specs: []` and a
 | `third-party` | Published by a company building on the API (for example a wrapper vendor) |
 | `community` | Maintained by individuals or community catalogs; verify before relying on it |
 | `fork` | A copy of a vendor or community spec with fixes, maintained by its forker |
+| `generated` | Built from a vendor's docs and corrected by contract tests against the live API; see `pilots/portman` |
 
 ## Checks
 
