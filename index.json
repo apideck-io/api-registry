@@ -1372,7 +1372,7 @@
       "specs": {}
     },
     "kashflow": {
-      "name": "Kashflow",
+      "name": "KashFlow",
       "specs": {
         "KashFlow REST API (Swashbuckle)": {
           "status": "ok",
@@ -1582,7 +1582,7 @@
       "specs": {}
     },
     "dualentry": {
-      "name": "Dualentry",
+      "name": "DualEntry",
       "specs": {
         "DualEntry Public API v2": {
           "status": "ok",
@@ -1693,11 +1693,7 @@
     },
     "salesforce": {
       "name": "Salesforce",
-      "specs": {
-        "sObjects REST API OpenAPI 3.0 (beta, per org)": {
-          "status": "manual: login"
-        }
-      }
+      "specs": {}
     },
     "freeagent": {
       "name": "FreeAgent",
@@ -1723,7 +1719,11 @@
     },
     "sage-intacct-rest": {
       "name": "Sage Intacct REST",
-      "specs": {}
+      "specs": {
+        "Sage Intacct REST API": {
+          "status": "manual: bot-protection"
+        }
+      }
     },
     "jobadder": {
       "name": "JobAdder",
