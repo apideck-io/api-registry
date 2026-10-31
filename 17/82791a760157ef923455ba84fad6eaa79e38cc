@@ -1,0 +1,59 @@
+connectors/alexishr.yaml
+  s_eeda7bd9685d9d::t_9253f2bba34c95 1-10
+connectors/nmbrs.yaml
+  s_eeda7bd9685d9d::t_8aa5486271a572 1-10
+connectors/silae-fr.yaml
+  s_eeda7bd9685d9d::t_329ea5aebf46b6 1-4
+connectors/sympa.yaml
+  s_eeda7bd9685d9d::t_699da2510e91ad 1-9
+connectors/teamleader.yaml
+  s_eeda7bd9685d9d::t_f4d6558b26b540 1-10
+connectors/teamtailor.yaml
+  s_eeda7bd9685d9d::t_15bb6136ee325f 1-9
+connectors/tiktok.yaml
+  s_eeda7bd9685d9d::t_21bfd8e226ee30 1-4
+connectors/trinet.yaml
+  s_eeda7bd9685d9d::t_58db578435f491 1-4
+connectors/twinfield.yaml
+  s_eeda7bd9685d9d::t_4c73f65d87bd56 1-4
+connectors/ukg-pro.yaml
+  s_eeda7bd9685d9d::t_80e87ef3fd5fb0 1-4
+connectors/visma-eaccounting.yaml
+  s_eeda7bd9685d9d::t_71b8253e3a6268 1-9
+connectors/vonage.yaml
+  s_eeda7bd9685d9d::t_3d9d25cc0b980b 1-17
+connectors/walmart.yaml
+  s_eeda7bd9685d9d::t_829531ff1f9c6d 1-4
+connectors/webexpenses.yaml
+  s_eeda7bd9685d9d::t_1209562e52a252 1-10
+connectors/wix.yaml
+  s_eeda7bd9685d9d::t_f3bc89f74b6f04 1-4
+connectors/woocommerce.yaml
+  s_eeda7bd9685d9d::t_f418a4f0a6f264 1-10
+connectors/workable.yaml
+  s_eeda7bd9685d9d::t_759ddd5e35bcb7 1-4
+connectors/zendesk-sell.yaml
+  s_eeda7bd9685d9d::t_ef3457351f9d87 1-4
+connectors/zoho-crm.yaml
+  s_eeda7bd9685d9d::t_f12df8d7fbe7a0 1-10
+connectors/zoho-people.yaml
+  s_eeda7bd9685d9d::t_53677bbafb39c6 1-4
+index.json
+  s_eeda7bd9685d9d::t_5a02110dfb9d1a 4155-4362
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1782791a760157ef923455ba84fad6eaa79e38cc",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
