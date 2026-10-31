@@ -1,0 +1,73 @@
+connectors/crisp.yaml
+  s_eeda7bd9685d9d::t_0416f3b50dce4c 1-10
+connectors/deel.yaml
+  s_eeda7bd9685d9d::t_0d9defcfdc45ef 1-10
+connectors/digits.yaml
+  s_eeda7bd9685d9d::t_aea467494ce6c1 1-16
+connectors/dropbox.yaml
+  s_eeda7bd9685d9d::t_ce22b9484bc1ed 1-4
+connectors/e-boekhouden.yaml
+  s_eeda7bd9685d9d::t_1aab8f2e28b08b 1-10
+connectors/e-conomic.yaml
+  s_eeda7bd9685d9d::t_b932ba19bad2da 1-88
+connectors/employmenthero.yaml
+  s_eeda7bd9685d9d::t_b28034b63add94 1-10
+connectors/etsy.yaml
+  s_eeda7bd9685d9d::t_522214ea67fa4d 1-10
+connectors/factorialhr.yaml
+  s_eeda7bd9685d9d::t_cc655a8882f2ff 1-10
+connectors/flexmail.yaml
+  s_eeda7bd9685d9d::t_29c256b26272b6 1-10
+connectors/folk.yaml
+  s_eeda7bd9685d9d::t_8fabc850e14371 1-10
+connectors/folks-hr.yaml
+  s_eeda7bd9685d9d::t_578993f1e30cd6 1-10
+connectors/fourth.yaml
+  s_eeda7bd9685d9d::t_1bed634e964d30 1-24
+connectors/freshsales.yaml
+  s_eeda7bd9685d9d::t_a187eee3a7a168 1-4
+connectors/freshservice.yaml
+  s_eeda7bd9685d9d::t_fce7b857436c99 1-4
+connectors/freshteam.yaml
+  s_eeda7bd9685d9d::t_998c9d9a221a48 1-4
+connectors/geodynamics-be.yaml
+  s_eeda7bd9685d9d::t_fea7eb5a846405 1-16
+connectors/github-enterprise-cloud.yaml
+  s_eeda7bd9685d9d::t_fbf8265a197ea9 1-11
+connectors/github-server.yaml
+  s_eeda7bd9685d9d::t_55aa011c9a15d9 1-10
+connectors/gitlab-server.yaml
+  s_eeda7bd9685d9d::t_cd15efcb45eb89 1-10
+connectors/gitlab.yaml
+  s_eeda7bd9685d9d::t_034d0526ac7e23 1-17
+connectors/google-contacts.yaml
+  s_eeda7bd9685d9d::t_003fec5fde595e 1-10
+connectors/google-drive.yaml
+  s_eeda7bd9685d9d::t_581ff07b3a5e0c 1-10
+index.json
+  s_2075e0810faefb::t_30d0fc8117ae78 1744-2265
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "27e128f393cae75fe3b81383cdcb0021f64b18c0",
+  "prompts": {},
+  "sessions": {
+    "s_2075e0810faefb": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "dae35396-9bcf-4862-acff-edbe2ad9dbf1",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
