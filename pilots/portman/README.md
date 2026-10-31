@@ -30,12 +30,12 @@ These are the two GET operations, scored against `HubSpot/HubSpot-public-api-spe
 
 What contract testing can't find:
 - **`objectWriteTraceId` and `warnings`** only appear on write responses, so a read-only run never sees them.
-- **`archived` and `idProperty` on get-by-id** never appear in a response, so they're invisible from the outside. Only the docs or a request that fails can reveal a missing request parameter.
+- **The `archived` and `idProperty` query parameters on get-by-id** never appear in a response, so they're invisible from the outside. (The `archived` response field was observed and is in v1 and v2.) Only the docs or a request that fails can reveal a missing request parameter.
 - **"Required"** is inferred from "present in every response we saw." That's right for 5 of 5 here, plus one field that's optional in the official spec.
 
 ## What this means for docs-only vendors
 
-- A generated spec that has passed contract and variation tests on real responses is good enough to index read operations behind the proxy. Record it with provenance `generated` and say which operations were exercised.
+- For the **read operations a run exercised**, a generated spec that passed contract and variation tests is good enough to index behind the proxy. Record it with provenance `generated` and list those operations. Two gaps remain even then: request parameters that never show up in a response (here two of twelve), and required fields, which are only inferred from what every response contained. This pilot covered two operations of one API, so treat it as a method to repeat per connector, not a general guarantee.
 - Write operations need a sandbox or test records. Don't contract-test writes against a customer's data.
 - Coverage is limited by what the docs name. The tests correct shapes; they don't discover endpoints.
 

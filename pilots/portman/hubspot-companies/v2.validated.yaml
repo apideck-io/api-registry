@@ -73,7 +73,8 @@ components:
       type: object
       x-inferred: true
       additionalProperties: false
-      required: [id, properties, createdAt, updatedAt, archived, url]
+      # url is optional in HubSpot's own spec, though every response in this run carried it.
+      required: [id, properties, createdAt, updatedAt, archived]
       properties:
         id: { type: string }
         properties:

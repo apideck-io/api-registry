@@ -13,6 +13,14 @@ dir=$1 spec=$2 service=$3 base=$4
 # Portman's faker dependency is ESM-only; loading it needs Node 22's require(esm).
 node -e 'const [a,b]=process.versions.node.split(".").map(Number); process.exit(a>22||(a===22&&b>=12)?0:1)' \
   || { echo "Node 22.12+ required (found $(node -v))" >&2; exit 1; }
+# Read-only by construction: refuse a spec with any operation that isn't a GET, since the run calls the
+# live connection and a write would change real data.
+node -e '
+const fs = require("fs"); const t = fs.readFileSync(process.argv[1], "utf8");
+const doc = t.trim().startsWith("{") ? JSON.parse(t) : require(require.resolve("yaml", { paths: [process.cwd()] })).parse(t);
+const writes = Object.entries(doc.paths ?? {}).flatMap(([p, item]) => ["put", "post", "patch", "delete"].filter((m) => item?.[m]).map((m) => `${m.toUpperCase()} ${p}`));
+if (writes.length) { console.error(`Refusing: the spec has write operations (${writes.slice(0, 3).join(", ")}…). This runner is read-only.`); process.exit(1); }
+' "$dir/$spec" || exit 1
 for v in APIDECK_API_KEY APIDECK_APP_ID APIDECK_CONSUMER_ID; do
   [ -n "${!v:-}" ] || { echo "$v is not set" >&2; exit 1; }
 done
@@ -31,4 +39,4 @@ if ! npx -y @apideck/portman@1.35.2 -l "$dir/$spec" -c "$dir/portman-config.json
 fi
 if [ "${KEEP_COLLECTION:-}" = 1 ]; then cp "$work/collection.json" "$dir/portman-collection.${spec%.*}.json"; fi
 # Portman's --runNewman does not pass the environment to the pre-request script; run Newman directly.
-npx -y newman@6 run "$work/collection.json" -e "$work/env.json" --reporters cli
+npx -y newman@6.2.3 run "$work/collection.json" -e "$work/env.json" --reporters cli

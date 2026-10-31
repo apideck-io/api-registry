@@ -182,7 +182,7 @@
   ],
   "globals": {
     "collectionPreRequestScripts": [
-      "// Send every request through the Apideck Proxy; Vault holds the customer's HubSpot token.\nconst downstream = pm.request.url.toString();\npm.request.headers.upsert({ key: 'x-apideck-downstream-url', value: downstream });\npm.request.headers.upsert({ key: 'x-apideck-service-id', value: pm.environment.get('serviceId') });\npm.request.headers.upsert({ key: 'x-apideck-app-id', value: pm.environment.get('apideckAppId') });\npm.request.headers.upsert({ key: 'x-apideck-consumer-id', value: pm.environment.get('apideckConsumerId') });\npm.request.headers.upsert({ key: 'Authorization', value: 'Bearer ' + pm.environment.get('apideckApiKey') });\npm.request.url = 'https://unify.apideck.com/proxy';"
+      "// Send every request through the Apideck Proxy; Vault holds the customer's HubSpot token.\n// Resolve {{variables}} before forwarding, so the proxy never receives a literal placeholder.\nconst downstream = pm.variables.replaceIn(pm.request.url.toString());\npm.request.headers.upsert({ key: 'x-apideck-downstream-url', value: downstream });\npm.request.headers.upsert({ key: 'x-apideck-service-id', value: pm.environment.get('serviceId') });\npm.request.headers.upsert({ key: 'x-apideck-app-id', value: pm.environment.get('apideckAppId') });\npm.request.headers.upsert({ key: 'x-apideck-consumer-id', value: pm.environment.get('apideckConsumerId') });\npm.request.headers.upsert({ key: 'Authorization', value: 'Bearer ' + pm.environment.get('apideckApiKey') });\npm.request.url = 'https://unify.apideck.com/proxy';"
     ]
   }
 }
