@@ -1,0 +1,21 @@
+pilots/portman/README.md
+  s_961b981f4e789c::t_c13033047cc606 49-50
+pilots/portman/run.sh
+  s_961b981f4e789c::t_9abfbb0efe03fe 27,32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "cf4f3de81f03b24906adbe5ff874994a52d85af4",
+  "prompts": {},
+  "sessions": {
+    "s_961b981f4e789c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "565f9a13-1981-4d51-a10d-7dd0e8ad61cf",
+        "model": "unknown"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
