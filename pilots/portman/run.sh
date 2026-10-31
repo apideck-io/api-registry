@@ -24,11 +24,11 @@ require("fs").writeFileSync(process.argv[1], JSON.stringify({ name: "proxy", val
   v("apideckApiKey", process.env.APIDECK_API_KEY), v("apideckAppId", process.env.APIDECK_APP_ID),
   v("apideckConsumerId", process.env.APIDECK_CONSUMER_ID), v("serviceId", process.argv[2]) ] }));
 ' "$work/env.json" "$service"
-if ! npx -y @apideck/portman -l "$dir/$spec" -c "$dir/portman-config.json" -b "$base" \
+if ! npx -y @apideck/portman@1.35.2 -l "$dir/$spec" -c "$dir/portman-config.json" -b "$base" \
   -o "$work/collection.json" --syncPostman false --includeTests true > "$work/portman.log" 2>&1; then
   cat "$work/portman.log" >&2 # Portman reports most errors on stdout; show them before the temp dir goes
   exit 1
 fi
-if [ "${KEEP_COLLECTION:-}" = 1 ]; then cp "$work/collection.json" "$dir/portman-collection.${spec%.yaml}.json"; fi
+if [ "${KEEP_COLLECTION:-}" = 1 ]; then cp "$work/collection.json" "$dir/portman-collection.${spec%.*}.json"; fi
 # Portman's --runNewman does not pass the environment to the pre-request script; run Newman directly.
 npx -y newman@6 run "$work/collection.json" -e "$work/env.json" --reporters cli

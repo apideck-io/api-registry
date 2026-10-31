@@ -46,4 +46,6 @@ APIDECK_API_KEY=… APIDECK_APP_ID=… APIDECK_CONSUMER_ID=… \
   pilots/portman/run.sh pilots/portman/hubspot-companies v2.validated.yaml hubspot https://api.hubapi.com
 ```
 
+The connected account needs at least one company: get-by-id uses the first id from the list call, and with none it requests an unfilled `{{companyId}}` and fails with 404. Node 22.12+ is required, and Portman is pinned to 1.35.2, the version tested.
+
 Requests go to `https://unify.apideck.com/proxy`, with the original URL in `x-apideck-downstream-url`, so Vault supplies the HubSpot token. Portman's own `--runNewman` doesn't pass the environment to the collection's pre-request script, so the script runs Newman directly.
