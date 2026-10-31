@@ -1,0 +1,91 @@
+connectors/adp-ihcm.yaml
+  s_eeda7bd9685d9d::t_62e5eea410c217 3
+connectors/albacross.yaml
+  s_eeda7bd9685d9d::t_8120e92d97c83d 3
+connectors/azure-active-directory.yaml
+  s_eeda7bd9685d9d::t_ac5b73733afde3 10
+connectors/bigcommerce.yaml
+  s_eeda7bd9685d9d::t_9c1a8680b8019e 3,11
+connectors/bullhorn-ats.yaml
+  s_eeda7bd9685d9d::t_23736be088984b 3-11
+connectors/cegid-talentsoft.yaml
+  s_eeda7bd9685d9d::t_3a46ec14e84f08 3
+connectors/ceridian-dayforce.yaml
+  s_eeda7bd9685d9d::t_dd80519cf7e6a6 17
+connectors/charliehr.yaml
+  s_eeda7bd9685d9d::t_d12a150d593f00 3
+connectors/ciphr.yaml
+  s_eeda7bd9685d9d::t_355415533c3d4f 3
+connectors/clover.yaml
+  s_eeda7bd9685d9d::t_d187bc55a0acad 3-16
+connectors/deel.yaml
+  s_eeda7bd9685d9d::t_55c929872b8373 10
+connectors/e-conomic.yaml
+  s_eeda7bd9685d9d::t_a01d4f377a9d0d 3
+connectors/google-drive.yaml
+  s_eeda7bd9685d9d::t_07e821009b36fc 9-10
+connectors/hibob-oauth.yaml
+  s_eeda7bd9685d9d::t_59ba8a2e25b7df 3-4
+connectors/jira-teams.yaml
+  s_eeda7bd9685d9d::t_766d0f3d40c50a 3
+connectors/keka.yaml
+  s_eeda7bd9685d9d::t_5c35e8aacc5efa 28,88
+connectors/kenjo.yaml
+  s_eeda7bd9685d9d::t_ae3d85ab707dd6 8-9
+connectors/lucca-hr.yaml
+  s_eeda7bd9685d9d::t_af5908162b8014 123
+connectors/magento.yaml
+  s_eeda7bd9685d9d::t_5e8de472efcc57 9-10,15,21
+connectors/metomic-io.yaml
+  s_eeda7bd9685d9d::t_4ee5e69827db72 3
+connectors/minox.yaml
+  s_eeda7bd9685d9d::t_91f59490f85653 3,11
+connectors/myob.yaml
+  s_eeda7bd9685d9d::t_9463231369072f 10
+connectors/namely.yaml
+  s_eeda7bd9685d9d::t_ebf8f5bd1a6e9e 3-10
+connectors/onedrive.yaml
+  s_eeda7bd9685d9d::t_0c06073b6f84a8 10
+connectors/paylocity.yaml
+  s_eeda7bd9685d9d::t_3dbe39f94f9c4c 3
+connectors/plaid-exchange.yaml
+  s_eeda7bd9685d9d::t_03d7906d46c6f7 9,11
+connectors/prestashop.yaml
+  s_eeda7bd9685d9d::t_c3fee8e99bd619 3,9-10
+connectors/sage-hr.yaml
+  s_eeda7bd9685d9d::t_9595394fe84bcd 8-9
+connectors/sap-successfactors.yaml
+  s_eeda7bd9685d9d::t_79aac43e5a0d61 3,5-6,11-32
+connectors/sdworx-webservice.yaml
+  s_eeda7bd9685d9d::t_7c564913c3aa27 3
+connectors/securex.yaml
+  s_eeda7bd9685d9d::t_9832adb83b14a2 3
+connectors/sharepoint.yaml
+  s_eeda7bd9685d9d::t_7f4344e43fe38a 10
+connectors/shopify-public-app.yaml
+  s_eeda7bd9685d9d::t_37b8ef9ef67859 11
+connectors/shopify.yaml
+  s_eeda7bd9685d9d::t_5240c9a54ab1c5 10
+connectors/wix.yaml
+  s_eeda7bd9685d9d::t_db116cf4a366cc 2
+connectors/woocommerce.yaml
+  s_eeda7bd9685d9d::t_80d8bff5a1ae76 9-10
+index.json
+  s_eeda7bd9685d9d::t_2bc37699e30b1d 2261,2479-2483,2556-2581,2780,3178-3179,3229-3230,3258-3259,3326-3327,3351-3360,3768-3769,3780-3781,3792-3793,3912,3923-3935,4352,4366-4367
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "9821cb40bc97f5e45f0c775f67f293569d9a2e24",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
