@@ -1,0 +1,21 @@
+connectors/jobadder.yaml
+  s_eeda7bd9685d9d::t_944e8bb0bc8e6b 1-9
+index.json
+  s_eeda7bd9685d9d::t_203801ad6cdfad 1727-1743
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f9deaa472a1644b124fe845b68021da182bdf530",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
