@@ -16,7 +16,8 @@ import { parse as parseYaml } from "yaml";
 const ROOT = fileURLToPath(new URL("..", import.meta.url)); // decoded, so paths with spaces work
 const args = process.argv.slice(2);
 const VALIDATE_ONLY = args.includes("--validate-only");
-const ONLY = args.includes("--only") ? args[args.indexOf("--only") + 1] ?? "" : null;
+const onlyEq = args.find((a) => a.startsWith("--only="));
+const ONLY = onlyEq ? onlyEq.slice(7) : args.includes("--only") ? args[args.indexOf("--only") + 1] ?? "" : null;
 if (ONLY === "" || ONLY?.startsWith("--")) {
   console.error("--only needs a connector id");
   process.exit(1);
@@ -204,10 +205,13 @@ function inspect(format, body) {
     const roots = [...sdl.matchAll(/(?:extend\s+)?type\s+(\w+)\b[^{]*\{([^}]*)\}/g)].filter((m) => rootNames.includes(m[1]));
     if (!roots.length) throw new Error(`no ${rootNames.join(" or ")} type`);
     // Drop argument lists first (they can span lines), then count "name:" field starts.
-    const fields = (block) => (block.match(/^\s*\w+\s*:/gm) ?? []).length;
+    // Every "name:" left in the body is a field (arguments are already gone), however many share a line.
+    const fields = (block) => (block.match(/\b\w+\s*:/g) ?? []).length;
     return { operations: roots.reduce((n, m) => n + fields(m[2]), 0) };
   }
-  const doc = body.trim().startsWith("{") ? JSON.parse(body) : parseYaml(body);
+  // YAML is read with the failsafe schema so every scalar stays a string: unquoted `swagger: 2.0` or
+  // `version: 1.10` would otherwise become the numbers 2 and 1.1.
+  const doc = body.trim().startsWith("{") ? JSON.parse(body) : parseYaml(body, { schema: "failsafe" });
   if (!doc || typeof doc !== "object") throw new Error("not a JSON or YAML document");
   if (format === "google-discovery") {
     if (!doc.discoveryVersion || !doc.resources) throw new Error("no discoveryVersion or resources");
