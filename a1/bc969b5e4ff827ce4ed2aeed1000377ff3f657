@@ -1,0 +1,27 @@
+pilots/portman/README.md
+  s_eeda7bd9685d9d::t_cc0bfcc7814db6 33,38
+pilots/portman/hubspot-companies/portman-collection.v2.validated.json
+  s_eeda7bd9685d9d::t_3f9dc7521f28b5 3,7,48,96,114,136,144,150,163,206,279,287,293,303,307,311,365,438,446,450,460,506,554,572,594,602,606,626,629,642
+pilots/portman/hubspot-companies/portman-config.json
+  s_eeda7bd9685d9d::t_9cd2c5735f51a2 185
+pilots/portman/hubspot-companies/v2.validated.yaml
+  s_eeda7bd9685d9d::t_9be794c91f5fc9 76-77
+pilots/portman/run.sh
+  s_eeda7bd9685d9d::t_fe115244276bfd 16-23,42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a1bc969b5e4ff827ce4ed2aeed1000377ff3f657",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
