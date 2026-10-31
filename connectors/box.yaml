@@ -1,0 +1,9 @@
+id: box
+name: "Box"
+specs:
+  - name: "Box Platform API"
+    url: "https://raw.githubusercontent.com/box/box-openapi/en/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.box.com/2.0"
+    source: apitracker

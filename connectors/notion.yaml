@@ -1,0 +1,8 @@
+id: notion
+name: "Notion"
+specs:
+  - name: "Notion API"
+    url: "https://raw.githubusercontent.com/makenotion/notion-mcp-server/main/scripts/notion-openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.notion.com"

@@ -1,0 +1,8 @@
+id: jetbrains-youtrack
+name: "JetBrains YouTrack"
+specs:
+  - name: "YouTrack REST API"
+    url: "https://youtrack.jetbrains.com/api/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{instance}.youtrack.cloud/api"

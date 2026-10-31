@@ -1,0 +1,8 @@
+id: azure-devops
+name: "Azure DevOps"
+specs:
+  - name: "WorkItemTracking"
+    url: "https://raw.githubusercontent.com/hatem-mahdy-bahra-electric/vsts-rest-api-specs/master/specification/wit/7.1/workItemTracking.json"
+    format: swagger-2.0
+    provenance: fork
+    server: "https://dev.azure.com"

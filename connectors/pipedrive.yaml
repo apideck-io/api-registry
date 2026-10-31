@@ -1,0 +1,9 @@
+id: pipedrive
+name: "Pipedrive"
+specs:
+  - name: "Pipedrive API v1"
+    url: "https://developers.pipedrive.com/docs/api/v1/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.pipedrive.com/v1"
+    source: apitracker

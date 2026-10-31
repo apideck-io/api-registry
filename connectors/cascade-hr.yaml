@@ -1,0 +1,9 @@
+id: cascade-hr
+name: "IRIS Cascade HR"
+specs:
+  - name: "HR API"
+    url: "https://swagger.hrapi.co.uk/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.iris.co.uk/hr/v2"
+    source: apitracker

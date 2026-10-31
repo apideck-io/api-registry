@@ -1,0 +1,8 @@
+id: sendgrid
+name: "Sendgrid"
+specs:
+  - name: "Email Activity (beta)"
+    url: "https://api.apis.guru/v2/specs/sendgrid.com/1.0.0/openapi.json"
+    format: openapi-3.0
+    provenance: community
+    server: "https://api.sendgrid.com/v3"

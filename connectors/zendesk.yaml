@@ -1,0 +1,8 @@
+id: zendesk
+name: "Zendesk"
+specs:
+  - name: "Support API"
+    url: "https://developer.zendesk.com/zendesk/oas.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{subdomain}.zendesk.com"

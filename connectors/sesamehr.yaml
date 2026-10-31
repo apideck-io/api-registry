@@ -1,0 +1,8 @@
+id: sesamehr
+name: "Sesame HR"
+specs:
+  - name: "Sesame Public API"
+    url: "https://apidocs.sesametime.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api-{region}.sesametime.com"

@@ -1,0 +1,8 @@
+id: calendly
+name: "Calendly"
+specs:
+  - name: "Calendly API"
+    url: "https://stoplight.io/api/v1/projects/calendly/api-docs/nodes/reference/calendly-api/openapi.yaml?deref=optimizedBundle"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.calendly.com"

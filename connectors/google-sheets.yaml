@@ -1,0 +1,7 @@
+id: google-sheets
+name: "Google Sheets"
+specs:
+  - name: "Google Sheets API"
+    url: "https://sheets.googleapis.com/$discovery/rest?version=v4"
+    format: google-discovery
+    provenance: vendor

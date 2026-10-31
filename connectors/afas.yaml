@@ -1,0 +1,15 @@
+id: afas
+name: "AFAS Software"
+specs:
+  - name: "AFAS Artikelen API"
+    url: "https://raw.githubusercontent.com/AFASSoftware/OASContent/main/OpenApiSpecs/profit/en/Artikelen.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{id}.rest.afas.online/ProfitRestServices"
+    source: apitracker
+  - name: "AFAS SB API"
+    url: "https://raw.githubusercontent.com/AFASSoftware/OASContent/main/OpenApiSpecs/sb/en/2-1-0.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{domain}.afasfocus.nl/{customerenvironment}"
+    source: apitracker

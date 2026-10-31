@@ -1,0 +1,63 @@
+id: twilio
+name: "Twilio"
+specs:
+  - name: "Twilio - Accounts"
+    url: "https://raw.githubusercontent.com/twilio/twilio-oai/main/spec/yaml/twilio_accounts_v1.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://accounts.twilio.com"
+    source: apitracker
+  - name: "Twilio - Api"
+    url: "https://raw.githubusercontent.com/twilio/twilio-oai/main/spec/yaml/twilio_api_v2010.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.twilio.com"
+    source: apitracker
+  - name: "Twilio - Bulkexports"
+    url: "https://raw.githubusercontent.com/twilio/twilio-oai/main/spec/yaml/twilio_bulkexports_v1.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://bulkexports.twilio.com"
+    source: apitracker
+  - name: "Twilio - Chat"
+    url: "https://raw.githubusercontent.com/twilio/twilio-oai/main/spec/yaml/twilio_chat_v1.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://chat.twilio.com"
+    source: apitracker
+  - name: "Twilio - Conversations"
+    url: "https://raw.githubusercontent.com/twilio/twilio-oai/main/spec/yaml/twilio_conversations_v1.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://conversations.twilio.com"
+    source: apitracker
+  - name: "Twilio - Events"
+    url: "https://raw.githubusercontent.com/twilio/twilio-oai/main/spec/yaml/twilio_events_v1.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://events.twilio.com"
+    source: apitracker
+  - name: "Twilio - Flex"
+    url: "https://raw.githubusercontent.com/twilio/twilio-oai/main/spec/yaml/twilio_flex_v1.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://flex-api.twilio.com"
+    source: apitracker
+  - name: "Twilio - Frontline"
+    url: "https://raw.githubusercontent.com/twilio/twilio-oai/main/spec/yaml/twilio_frontline_v1.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://frontline-api.twilio.com"
+    source: apitracker
+  - name: "Twilio - Insights"
+    url: "https://raw.githubusercontent.com/twilio/twilio-oai/main/spec/yaml/twilio_insights_v1.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://insights.twilio.com"
+    source: apitracker
+  - name: "Twilio - Ip_messaging"
+    url: "https://raw.githubusercontent.com/twilio/twilio-oai/main/spec/yaml/twilio_ip_messaging_v1.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://ip-messaging.twilio.com"
+    source: apitracker

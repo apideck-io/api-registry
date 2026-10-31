@@ -1,0 +1,8 @@
+id: segment
+name: "Segment"
+specs:
+  - name: "Segment Public API"
+    url: "https://raw.githubusercontent.com/jentic/jentic-public-apis/main/apis/openapi/segmentapis.com/main/73.0.0/openapi.json"
+    format: openapi-3.0
+    provenance: community
+    server: "https://api.segmentapis.com"

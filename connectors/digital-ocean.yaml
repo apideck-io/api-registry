@@ -1,0 +1,8 @@
+id: digital-ocean
+name: "DigitalOcean"
+specs:
+  - name: "DigitalOcean API"
+    url: "https://api-engineering.nyc3.cdn.digitaloceanspaces.com/spec-ci/DigitalOcean-public.v2.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.digitalocean.com"

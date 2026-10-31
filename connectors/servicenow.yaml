@@ -1,0 +1,8 @@
+id: servicenow
+name: "ServiceNow"
+specs:
+  - name: "ServiceNow REST API"
+    url: "https://raw.githubusercontent.com/jentic/jentic-public-apis/main/apis/openapi/servicenow.com/main/1.0.0/openapi.json"
+    format: openapi-3.0
+    provenance: community
+    server: "https://{instance}.service-now.com/api"

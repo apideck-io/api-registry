@@ -1,0 +1,9 @@
+id: stripe
+name: "Stripe"
+specs:
+  - name: "Stripe API"
+    url: "https://raw.githubusercontent.com/stripe/openapi/master/openapi/spec3.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.stripe.com/"
+    source: apitracker

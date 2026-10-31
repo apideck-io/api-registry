@@ -1,0 +1,7 @@
+id: google-calendar
+name: "Google Calendar"
+specs:
+  - name: "Calendar API"
+    url: "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"
+    format: google-discovery
+    provenance: vendor

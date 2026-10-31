@@ -1,0 +1,12 @@
+{
+  "name": "@apideck/api-registry",
+  "private": true,
+  "type": "module",
+  "description": "A manifest of machine-readable API specifications per connector, verified nightly.",
+  "scripts": {
+    "validate": "node scripts/verify.mjs --validate-only",
+    "verify": "node scripts/verify.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": { "yaml": "^2.9.1" }
+}

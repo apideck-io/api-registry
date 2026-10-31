@@ -1,0 +1,7 @@
+id: google-bigquery
+name: "Google BigQuery"
+specs:
+  - name: "BigQuery API"
+    url: "https://bigquery.googleapis.com/$discovery/rest?version=v2"
+    format: google-discovery
+    provenance: vendor

@@ -1,0 +1,9 @@
+id: square
+name: "Square"
+specs:
+  - name: "Square"
+    url: "https://raw.githubusercontent.com/square/connect-api-specification/master/api.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://connect.squareup.com"
+    source: apitracker
