@@ -1,0 +1,4 @@
+id: bullhorn-ats
+name: "Bullhorn ATS"
+notes: "Bullhorn Recruitment Cloud (Salesforce-based, different product) exposes a per-instance OAS3 at https://{instance}.my.salesforce.com/services/apexrest/TR1/api/v1/specifications/oas3 (auth required)."
+specs: []

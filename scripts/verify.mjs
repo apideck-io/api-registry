@@ -341,12 +341,23 @@ for (const e of entries) {
     try {
       if (bundle) {
         // One entry per module file; the bundle's count is their sum.
-        const parts = bundle.map((f) => inspect(s.format, f.text));
+        // A repository archive also holds JSON schemas, configs and examples: keep the files that are specs
+        // of the declared format, and fail only when none is.
+        const parts = [];
+        for (const f of bundle) {
+          try {
+            parts.push(inspect(s.format, f.text));
+          } catch {
+            // not a spec file
+          }
+        }
+        if (!parts.length) throw new Error(`no ${s.format} file among ${bundle.length} in the bundle`);
         const one = (k) => [...new Set(parts.map((x) => x[k]).filter(Boolean))];
         const versions = one("apiVersion");
         info = {
           operations: parts.reduce((n, x) => n + (x.operations ?? 0), 0),
-          files: bundle.length,
+          files: parts.length,
+          ...(bundle.length > parts.length ? { skippedFiles: bundle.length - parts.length } : {}),
           // Each module has its own title; the bundle is named by the entry, with the module count beside it.
           title: s.name,
           apiVersion: versions.length === 1 ? versions[0] : versions.join(", ") || null,

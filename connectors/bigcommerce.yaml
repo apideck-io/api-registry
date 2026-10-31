@@ -1,0 +1,11 @@
+id: bigcommerce
+name: "BigCommerce"
+notes: "Successor dev-docs repo also archived; no live spec source found. GraphQL Storefront API needs a store token (not counted)."
+specs:
+  - name: "BigCommerce API specs (archived)"
+    url: "https://github.com/bigcommerce/api-specs/archive/refs/heads/main.zip"
+    format: openapi-3.0
+    extract: zip-bundle
+    provenance: vendor
+    server: "https://api.bigcommerce.com/stores/{store_hash}/v3"
+    notes: "Official bigcommerce GitHub org, but the repo is ARCHIVED (last push 2024-01-09); may lag the live API. 59 OpenAPI 3.0.x YAML files under reference/ (one is orders.v2.oas2.yml, counted as OAS anyway), 571 ops total incl. storefront (*.sf.yml) APIs. Example: https://raw.githubusercontent.com/bigcommerce/api-specs/main/reference/catalog/products_catalog.v3.yml (49 ops). Per-store {store_hash}. No repo license."

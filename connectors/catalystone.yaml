@@ -1,0 +1,10 @@
+id: catalystone
+name: "CatalystOne"
+specs:
+  - name: "CatalystOne Developer Platform (Azure APIM export)"
+    url: "https://developer.catalystone.com/developer/apis/profile?api-version=2022-04-01-preview&export=true&format=openapi%2Bjson"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.catalystone.io/profiles"
+    manual: login
+    notes: "Azure APIM portal (early access). Anonymous export returns a skeleton with no paths; full definitions need sign-in. 117 operations counted from the anonymous operations list across 11 APIs (job-requisition 36, profile 24, fast-feedback 18, hrdp 7, scim 7, oauth2 7, projectbank 6, webhooks 5, absence-manager 4, reviews 2, lookup 1). API list: https://developer.catalystone.com/developer/apis?api-version=2022-04-01-preview."

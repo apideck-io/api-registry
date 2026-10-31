@@ -2263,6 +2263,307 @@
           "changedOn": "2026-10-31"
         }
       }
+    },
+    "acerta": {
+      "name": "Acerta",
+      "specs": {}
+    },
+    "act": {
+      "name": "Act",
+      "specs": {
+        "Act! Web API (Swagger)": {
+          "status": "ok",
+          "sha256": "f0ee29ad84fbf2c0d2aed6cfcab4d5f56e0f98c2918edd62dd941510fb64a057",
+          "bytes": 701492,
+          "operations": 410,
+          "title": "act.web.api",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://apimta.act.com/act.web.api",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "activecampaign": {
+      "name": "ActiveCampaign",
+      "specs": {
+        "ActiveCampaign API v3": {
+          "status": "ok",
+          "sha256": "bd541be3d0a50a1b448ec8259397efd69aec95bb0cb9f3bc834ff9ce2e876f3e",
+          "bytes": 5258050,
+          "operations": 1483,
+          "title": "v3",
+          "apiVersion": "3",
+          "specVersion": "3.1.0",
+          "server": "https://{youraccountname}.api-us1.com/api/3",
+          "changedOn": "2026-10-31"
+        },
+        "ActiveCampaign Partners API": {
+          "status": "ok",
+          "sha256": "846abb7d30bd59a4cd2ac7d522cd419d1ddf475f9dac466b365d4a9aceca0163",
+          "bytes": 81627,
+          "operations": 36,
+          "title": "Partners API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://agency-partner-hub-web.global-aws-use1-p.app-us1.com/",
+          "changedOn": "2026-10-31"
+        },
+        "ActiveCampaign SMS Broadcast API": {
+          "status": "ok",
+          "sha256": "49f06f290f606ddf72fa75f982d46e6da7fb251c6599756e3b44b3b9e67bdb2f",
+          "bytes": 20994,
+          "operations": 17,
+          "title": "SMS Broadcast API",
+          "apiVersion": "3.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://{yourAccountName}.api-us1.com/api/3",
+          "changedOn": "2026-10-31"
+        },
+        "ActiveCampaign API v2 (legacy)": {
+          "status": "ok",
+          "sha256": "5e6c9ca8fffe3de03a585170520d05dc99d3a8dd43f727a6ae751c688ad9f23d",
+          "bytes": 2159,
+          "operations": 1,
+          "title": "v2",
+          "apiVersion": "3",
+          "specVersion": "3.1.0",
+          "server": "https://{youraccountname}.api-us1.com/api/2",
+          "changedOn": "2026-10-31"
+        },
+        "ActiveCampaign trackcmp (event tracking)": {
+          "status": "ok",
+          "sha256": "dc9f70329d59a6076d78043cd2023f8ce3322a40e71c66883c6da64cac971b30",
+          "bytes": 2539,
+          "operations": 1,
+          "title": "trackcmp",
+          "apiVersion": "3",
+          "specVersion": "3.1.0",
+          "server": "https://trackcmp.net",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "adp-ihcm": {
+      "name": "ADP iHCM",
+      "specs": {}
+    },
+    "adp-workforce-now": {
+      "name": "ADP Workforce Now",
+      "specs": {
+        "ADP WFN APIs (Postman)": {
+          "status": "ok",
+          "sha256": "e834486d24ba336b2a2be60f31643f86e4e756fe49a34d36cfc205d0a22af0c1",
+          "bytes": 75796,
+          "operations": 89,
+          "title": "ADP APIs",
+          "server": "https://api.adp.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "albacross": {
+      "name": "Albacross",
+      "specs": {
+        "Albacross Reveal API": {
+          "status": "ok",
+          "sha256": "4ce15c97a630db2c98edce102c0b2204740716f9631fc3e0138a23ea8696d31d",
+          "bytes": 3474,
+          "operations": 1,
+          "title": "Reveal API docs",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.3",
+          "server": "https://reveal.api.albacross.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "amazon-seller-central": {
+      "name": "Amazon Seller Central",
+      "specs": {
+        "Selling Partner API models": {
+          "status": "ok",
+          "sha256": "93821f1b8aa8eb7a9457322a8b8e329f77ec8238b93ebb0a4d3004ef654dff1b",
+          "bytes": 9782305,
+          "operations": 394,
+          "files": 73,
+          "skippedFiles": 63,
+          "title": "Selling Partner API models",
+          "apiVersion": "2026-06-01, 2024-05-09, 2020-11-01, 2024-04-01, 2023-11-30, v0, 2020-12-01, 2022-04-01, 2024-06-01, 2023-11-15, 2022-07-01, 2022-03-23, 2024-09-11, 2026-07-30, v1, 2021-06-30, 2026-03-17, 2026-06-25, 2024-06-19, 2024-03-20, 2020-07-01, 2026-07-04, 2020-09-01, 2021-08-01, 2026-04-20, 2026-01-01, 2022-05-01, 2025-12-01, 2022-11-07, 2024-03-01, v2, 2025-02-01, 2021-03-01, 2026-01-30, 2024-11-01, 2021-12-28, 2021-10-28",
+          "specVersion": "2.0",
+          "server": "https://sellingpartnerapi-na.amazon.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "attio": {
+      "name": "Attio",
+      "specs": {
+        "Attio REST API": {
+          "status": "ok",
+          "sha256": "fc8fc24c05aa50e777cd856bfad82d5de9208cae70c8f650b0c1df4386daefd4",
+          "bytes": 1130089,
+          "operations": 97,
+          "title": "Attio API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.attio.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "bamboohr": {
+      "name": "BambooHR",
+      "specs": {
+        "BambooHR API (unofficial)": {
+          "status": "ok",
+          "sha256": "7f7d3fa03f494efd605df3e952c3b2e99beb32a4b482fafbf7683de7ac4cf780",
+          "bytes": 230859,
+          "operations": 126,
+          "title": "BambooHR API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.bamboohr.com/api/gateway.php/{subdomain}",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "bigcommerce": {
+      "name": "BigCommerce",
+      "specs": {
+        "BigCommerce API specs (archived)": {
+          "status": "ok",
+          "sha256": "7fb0768964522c43c4f9c17d0fe3b0cb06fc2aec4a088844f6b5d9ac848edd66",
+          "bytes": 4150520,
+          "operations": 574,
+          "files": 60,
+          "skippedFiles": 171,
+          "title": "BigCommerce API specs (archived)",
+          "apiVersion": "3.0.0, Storefront, 3.0, 1.0.0, 1.0.0-oas3, 1.0, 3",
+          "specVersion": "3.0.0",
+          "server": "https://api.bigcommerce.com/stores/{store_hash}/v3",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "blackbaud": {
+      "name": "Blackbaud",
+      "specs": {
+        "Blackbaud SKY API (Azure APIM export)": {
+          "status": "manual: login"
+        }
+      }
+    },
+    "bol-com": {
+      "name": "bol.com",
+      "specs": {
+        "bol.com Retailer API v10": {
+          "status": "ok",
+          "sha256": "25e8c809f3a6e123f7fbd48ec51036930aa05ed4bd33a87567416704110a613b",
+          "bytes": 208414,
+          "operations": 69,
+          "title": "v10 - Retailer API",
+          "apiVersion": "10.x",
+          "specVersion": "3.0.1",
+          "server": "https://api.bol.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "breathehr": {
+      "name": "Breathe HR",
+      "specs": {}
+    },
+    "bullhorn-ats": {
+      "name": "Bullhorn ATS",
+      "specs": {}
+    },
+    "catalystone": {
+      "name": "CatalystOne",
+      "specs": {
+        "CatalystOne Developer Platform (Azure APIM export)": {
+          "status": "manual: login"
+        }
+      }
+    },
+    "cegid-talentsoft": {
+      "name": "Cegid Talentsoft",
+      "specs": {}
+    },
+    "ceridian-dayforce": {
+      "name": "Ceridian Dayforce",
+      "specs": {
+        "Dayforce REST API (per tenant)": {
+          "status": "manual: login"
+        },
+        "Dayforce API (WSO2 copy)": {
+          "status": "ok",
+          "sha256": "657f2cdc7e53571bd0f22937e2be7c3cc22aad92cf04df324260f03a808bfba3",
+          "bytes": 1605597,
+          "operations": 384,
+          "title": "Dayforce API",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://ustest241-services.dayforcehcm.com/Api",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "cezannehr": {
+      "name": "Cezanne HR",
+      "specs": {
+        "Cezanne HR API (Postman)": {
+          "status": "ok",
+          "sha256": "999ccea96eb94fdbdd358973865861dc6067a2d79298e21045f7bfdfaf083ebf",
+          "bytes": 1596030,
+          "operations": 350,
+          "title": "Cezanne HR API",
+          "server": "https://w3.cezanneondemand.com/CezanneOnDemand",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "charliehr": {
+      "name": "CharlieHR",
+      "specs": {}
+    },
+    "ciphr": {
+      "name": "CIPHR",
+      "specs": {}
+    },
+    "close": {
+      "name": "Close",
+      "specs": {
+        "Close API": {
+          "status": "ok",
+          "sha256": "3b2b1f316d91b2aba183bce00192056d8882daf1f3dc280ff07ae0a4fc2161fa",
+          "bytes": 1068831,
+          "operations": 303,
+          "title": "API Endpoints",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.close.com/api/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "clover": {
+      "name": "Clover",
+      "specs": {}
+    },
+    "copper": {
+      "name": "Copper",
+      "specs": {
+        "Copper Developer API (Postman)": {
+          "status": "ok",
+          "sha256": "6ec0df3a8fc0dff4f4dfa56dea2d0aa1e319e6f4cfdfe29d8ab670653a89a8be",
+          "bytes": 1334523,
+          "operations": 83,
+          "title": "Copper Developer API",
+          "server": "https://api.copper.com/developer_api/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
     }
   }
 }

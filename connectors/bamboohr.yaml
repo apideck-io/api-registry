@@ -1,0 +1,11 @@
+id: bamboohr
+name: "BambooHR"
+notes: "Vendor docs at https://documentation.bamboohr.com/reference are ReadMe with OAS download disabled (openapiVisibility=admin); each reference page embeds only its own single-operation OAS fragment (server https://{companyDomain}.bamboohr.com), so no full vendor spec is fetchable."
+specs:
+  - name: "BambooHR API (unofficial)"
+    url: "https://raw.githubusercontent.com/kevinoid/bamboohr-openapi/main/openapi.yaml"
+    format: openapi-3.1
+    provenance: community
+    server: "https://api.bamboohr.com/api/gateway.php/{subdomain}"
+    license: "MIT (repo); spec info.license: BambooHR API Terms of Use"
+    notes: "Hand-maintained by Kevin Locke; pushed 2026-07-22. Per-tenant {subdomain}."

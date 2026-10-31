@@ -1,0 +1,4 @@
+id: adp-ihcm
+name: "ADP iHCM"
+notes: "No spec; login-gated collection per API Central project."
+specs: []

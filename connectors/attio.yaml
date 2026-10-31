@@ -1,0 +1,9 @@
+id: attio
+name: "Attio"
+specs:
+  - name: "Attio REST API"
+    url: "https://api.attio.com/openapi/api"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.attio.com"
+    notes: "53 paths / 97 ops."
