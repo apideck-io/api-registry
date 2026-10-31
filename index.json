@@ -54,7 +54,8 @@
           "title": "WorkItemTracking",
           "apiVersion": "7.1",
           "specVersion": "2.0",
-          "server": "https://dev.azure.com/",
+          "server": "https://dev.azure.com",
+          "specServer": "https://dev.azure.com/",
           "changedOn": "2026-10-31"
         }
       }
@@ -366,7 +367,8 @@
           "title": "YouTrack REST API",
           "apiVersion": "2026.4",
           "specVersion": "3.0.1",
-          "server": "https://youtrack.jetbrains.com:443/api",
+          "server": "https://{instance}.youtrack.cloud/api",
+          "specServer": "https://youtrack.jetbrains.com:443/api",
           "changedOn": "2026-10-31"
         }
       }
@@ -382,7 +384,8 @@
           "title": "Jira Software Data Center REST API Reference",
           "apiVersion": "swagger-merged-template.yaml",
           "specVersion": "3.0.1",
-          "server": "http://{baseurl}/rest",
+          "server": "https://{baseUrl}/rest/api/2",
+          "specServer": "http://{baseurl}/rest",
           "changedOn": "2026-10-31"
         }
       }
@@ -398,7 +401,8 @@
           "title": "Service Management Public REST API",
           "apiVersion": "1001.0.0-SNAPSHOT-d794cfb4c7554a89092e2f32783da3a72153f3f0",
           "specVersion": "3.0.1",
-          "server": "https://your-domain.atlassian.net",
+          "server": "https://{your-domain}.atlassian.net",
+          "specServer": "https://your-domain.atlassian.net",
           "changedOn": "2026-10-31"
         }
       }
@@ -462,7 +466,8 @@
           "title": "Mailchimp Marketing API",
           "apiVersion": "3.0.91",
           "specVersion": "2.0",
-          "server": "https://server.api.mailchimp.com/3.0",
+          "server": "https://{dc}.api.mailchimp.com/3.0",
+          "specServer": "https://server.api.mailchimp.com/3.0",
           "changedOn": "2026-10-31"
         }
       }
@@ -638,7 +643,8 @@
           "title": "Email Activity (beta)",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.0",
-          "server": "http://api.sendgrid.com/v3",
+          "server": "https://api.sendgrid.com/v3",
+          "specServer": "http://api.sendgrid.com/v3",
           "changedOn": "2026-10-31"
         }
       }
@@ -686,7 +692,8 @@
           "title": "Shortcut API",
           "apiVersion": "3.0",
           "specVersion": "2.0",
-          "server": "https://api.app.shortcut.com/",
+          "server": "https://api.app.shortcut.com",
+          "specServer": "https://api.app.shortcut.com/",
           "changedOn": "2026-10-31"
         }
       }
@@ -766,7 +773,8 @@
           "title": "Toast Orders API",
           "apiVersion": "2.15.0",
           "specVersion": "2.0",
-          "server": "https://toast-api-server/orders/v2",
+          "server": "https://ws-api.toasttab.com/orders/v2",
+          "specServer": "https://toast-api-server/orders/v2",
           "changedOn": "2026-10-31"
         }
       }
@@ -935,7 +943,8 @@
           "title": "Xero Files API",
           "apiVersion": "19.1.0",
           "specVersion": "3.0.0",
-          "server": "https://api.xero.com/files.xro/1.0/",
+          "server": "https://api.xero.com/files.xro/1.0",
+          "specServer": "https://api.xero.com/files.xro/1.0/",
           "changedOn": "2026-10-31"
         },
         "Xero Projects API": {
@@ -1039,7 +1048,8 @@
           "title": "Support API",
           "apiVersion": "2.0.0",
           "specVersion": "3.0.3",
-          "server": "https://{subdomain}.{domain}.com",
+          "server": "https://{subdomain}.zendesk.com",
+          "specServer": "https://{subdomain}.{domain}.com",
           "changedOn": "2026-10-31"
         }
       }
@@ -1143,7 +1153,8 @@
           "title": "QuickBooks Online V3API Collections - OAuth2",
           "apiVersion": "1.0",
           "specVersion": "2.0",
-          "server": "https://DefaultParameterValue/v3/company/DefaultParameterValue",
+          "server": "https://quickbooks.api.intuit.com/v3/company/{realmId}",
+          "specServer": "https://DefaultParameterValue/v3/company/DefaultParameterValue",
           "changedOn": "2026-10-31"
         }
       }

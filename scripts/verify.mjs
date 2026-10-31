@@ -8,14 +8,19 @@
 
 import { createHash } from "node:crypto";
 import { inflateRawSync } from "node:zlib";
+import { fileURLToPath } from "node:url";
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { parse as parseYaml } from "yaml";
 
-const ROOT = new URL("..", import.meta.url).pathname;
+const ROOT = fileURLToPath(new URL("..", import.meta.url)); // decoded, so paths with spaces work
 const args = process.argv.slice(2);
 const VALIDATE_ONLY = args.includes("--validate-only");
-const ONLY = args.includes("--only") ? args[args.indexOf("--only") + 1] : null;
+const ONLY = args.includes("--only") ? args[args.indexOf("--only") + 1] ?? "" : null;
+if (ONLY === "" || ONLY?.startsWith("--")) {
+  console.error("--only needs a connector id");
+  process.exit(1);
+}
 
 const FORMATS = new Set(["openapi-3.0", "openapi-3.1", "swagger-2.0", "google-discovery", "asyncapi-2", "postman-2.1", "odata-edmx", "xsd", "graphql"]);
 const PROVENANCE = new Set(["vendor", "third-party", "community", "fork"]);
@@ -72,6 +77,10 @@ if (errors.length) {
 }
 console.log(`${entries.length} connector entries valid, ${entries.reduce((n, e) => n + e.specs.length, 0)} specs.`);
 if (VALIDATE_ONLY) process.exit(0);
+if (ONLY && !entries.some((e) => e.id === ONLY)) {
+  console.error(`--only ${ONLY}: no connectors/${ONLY}.yaml`);
+  process.exit(1);
+}
 
 // ---- verification ----
 const canonical = (v) =>
@@ -112,7 +121,16 @@ function unzip(buf) {
 // Oracle's Financials spec is about 99 MB; anything far beyond that is a wrong URL or a hostile endpoint.
 const MAX_BYTES = 200 * 1024 * 1024;
 
+// Several entries share one file (Microsoft Graph backs Outlook, Calendar and Teams); fetch each URL once.
+const fetched = new Map();
 async function load(spec) {
+  const key = `${spec.url ?? spec.path}|${spec.extract ?? ""}`;
+  if (!fetched.has(key)) fetched.set(key, loadUncached(spec));
+  const r = await fetched.get(key);
+  return { ...r }; // callers mutate their copy
+}
+
+async function loadUncached(spec) {
   if (spec.path) return { status: 200, body: readFileSync(join(ROOT, spec.path), "utf8") };
   const ctl = new AbortController();
   const timer = setTimeout(() => ctl.abort(), 120000);
@@ -166,13 +184,20 @@ function inspect(format, body) {
       const n = schema.types.filter((t) => rootNames.includes(t.name)).reduce((m, t) => m + (t.fields?.length ?? 0), 0);
       return { operations: n };
     }
+    // Strip descriptions, strings and comments, then argument lists (which can hold {…} defaults), so a
+    // type body ends at its own closing brace and description lines aren't counted as fields.
+    let sdl = body.replace(/"""[\s\S]*?"""/g, "").replace(/"(?:\\.|[^"\\])*"/g, '""').replace(/#.*$/gm, "");
+    for (let prev; prev !== sdl; ) {
+      prev = sdl;
+      sdl = sdl.replace(/\([^()]*\)/g, "");
+    }
     // SDL can rename roots in a schema block (schema { query: QueryRoot }); default to Query and Mutation.
-    const decl = body.match(/schema\s*\{([^}]*)\}/)?.[1] ?? "";
+    const decl = sdl.match(/schema\s*\{([^}]*)\}/)?.[1] ?? "";
     const rootNames = [decl.match(/query\s*:\s*(\w+)/)?.[1] ?? "Query", decl.match(/mutation\s*:\s*(\w+)/)?.[1] ?? "Mutation"];
-    const roots = [...body.matchAll(/(?:extend\s+)?type\s+(\w+)\b[^{]*\{([^}]*)\}/g)].filter((m) => rootNames.includes(m[1]));
+    const roots = [...sdl.matchAll(/(?:extend\s+)?type\s+(\w+)\b[^{]*\{([^}]*)\}/g)].filter((m) => rootNames.includes(m[1]));
     if (!roots.length) throw new Error(`no ${rootNames.join(" or ")} type`);
     // Drop argument lists first (they can span lines), then count "name:" field starts.
-    const fields = (block) => (block.replace(/\([^)]*\)/g, "").match(/^\s*\w+\s*:/gm) ?? []).length;
+    const fields = (block) => (block.match(/^\s*\w+\s*:/gm) ?? []).length;
     return { operations: roots.reduce((n, m) => n + fields(m[2]), 0) };
   }
   const doc = body.trim().startsWith("{") ? JSON.parse(body) : parseYaml(body);
@@ -204,9 +229,11 @@ function inspect(format, body) {
   }
   if (format === "swagger-2.0" && String(doc.swagger) !== "2.0") throw new Error("no swagger: 2.0 root");
   if (format.startsWith("openapi-") && !String(doc.openapi ?? "").startsWith("3")) throw new Error("no openapi 3.x root");
-  if (!doc.paths || typeof doc.paths !== "object") throw new Error("no paths");
+  // OpenAPI 3.1 allows a document with only webhooks or components; earlier versions require paths.
+  const pathsOptional = String(doc.openapi ?? "").startsWith("3.1") && (doc.webhooks || doc.components);
+  if ((!doc.paths || typeof doc.paths !== "object") && !pathsOptional) throw new Error("no paths");
   let n = 0;
-  for (const item of Object.values(doc.paths)) for (const m of METHODS) if (item?.[m]) n++;
+  for (const item of Object.values(doc.paths ?? {})) for (const m of METHODS) if (item?.[m]) n++;
   const server = doc.servers?.[0]?.url ?? (doc.host ? `${doc.schemes?.[0] ?? "https"}://${doc.host}${doc.basePath ?? ""}` : null);
   return { operations: n, title: doc.info?.title, apiVersion: doc.info?.version, specVersion: doc.openapi ?? doc.swagger, server };
 }
@@ -281,7 +308,10 @@ for (const e of entries) {
     // or the nightly job would open a drift PR every night.
     const { doc, ...meta } = info;
     info = meta;
-    if (!info.server && s.server) info.server = s.server; // the entry's curated server when the spec has none
+    // The entry's server is set by hand and wins; specs often carry placeholders (DefaultParameterValue,
+    // {baseUrl}). The spec's own value is kept as specServer when they differ.
+    if (s.server && info.server && info.server !== s.server) info.specServer = info.server;
+    if (s.server) info.server = s.server;
     // A rebuilt zip changes its bytes (timestamps, compression) without any spec changing, so a bundle
     // is hashed on its files' names and contents.
     const hashed = doc
