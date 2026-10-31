@@ -1,6 +1,6 @@
 id: xero
 name: "Xero"
-notes: "All from Xero's official XeroAPI/Xero-OpenAPI repo (MIT). It also holds finance, identity and app-store specs, not listed here."
+notes: "All from Xero's official XeroAPI/Xero-OpenAPI repo (MIT). It also holds the finance and app-store specs, not listed here."
 specs:
   - name: "Xero Accounting API"
     url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero_accounting.yaml"

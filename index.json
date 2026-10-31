@@ -70,6 +70,7 @@
           "title": "Basecamp",
           "apiVersion": "2026-10-30",
           "specVersion": "3.1.0",
+          "server": "https://3.basecampapi.com",
           "changedOn": "2026-10-31"
         }
       }
@@ -1112,13 +1113,24 @@
           "title": "REST API for Oracle Fusion Cloud Financials",
           "apiVersion": "2026.09.29",
           "specVersion": "3.0.0",
+          "server": "https://{host}/fscmRestApi/resources/11.13.18.05",
           "changedOn": "2026-10-31"
         }
       }
     },
     "sap-s4hana-cloud": {
       "name": "SAP S/4HANA Cloud",
-      "specs": {}
+      "specs": {
+        "Business Partner (A2X)": {
+          "status": "manual: login"
+        },
+        "Journal Entry Item - Read": {
+          "status": "manual: login"
+        },
+        "Supplier Invoice - Process": {
+          "status": "manual: login"
+        }
+      }
     },
     "quickbooks": {
       "name": "QuickBooks Online",
@@ -1149,10 +1161,12 @@
       "specs": {
         "Zoho Books API v3 (OpenAPI bundle)": {
           "status": "ok",
-          "sha256": "89b337bacfb1c3a37f08144536218cb3009102af48f3dcf848eef02934c42438",
+          "sha256": "280c5dd6e16de893d0bc78c7bfcd832851f2cf9fdfdfffdc755cac97fddc8e85",
           "bytes": 359278,
           "operations": 885,
           "files": 45,
+          "title": "Zoho Books API v3 (OpenAPI bundle)",
+          "apiVersion": "1.0.0",
           "specVersion": "3.0.0",
           "server": "https://www.zohoapis.com/books/v3",
           "changedOn": "2026-10-31"
@@ -1168,6 +1182,7 @@
           "bytes": 1592606,
           "operations": 213,
           "title": "FreshBooks API",
+          "server": "https://api.freshbooks.com",
           "changedOn": "2026-10-31"
         }
       }

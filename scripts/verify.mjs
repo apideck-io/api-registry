@@ -60,6 +60,7 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
     if (!FORMATS.has(s?.format)) errors.push(`${at}: format must be one of ${[...FORMATS].join(", ")}`);
     if (!PROVENANCE.has(s?.provenance)) errors.push(`${at}: provenance must be one of ${[...PROVENANCE].join(", ")}`);
     if (s?.extract && !EXTRACT.has(s.extract)) errors.push(`${at}: extract must be one of ${[...EXTRACT].join(", ")}`);
+    if (s?.extract && !s?.url) errors.push(`${at}: extract applies to a fetched url; store an extracted spec as a plain path instead`);
     if (s?.manual && !MANUAL.has(s.manual)) errors.push(`${at}: manual must be one of ${[...MANUAL].join(", ")}`);
     if (s?.manual && !s?.notes) errors.push(`${at}: a spec CI can't fetch needs notes saying how to get it`);
   });
@@ -95,21 +96,43 @@ function unzip(buf) {
     const name = buf.toString("utf8", p + 46, p + 46 + nameLen);
     const start = local + 30 + buf.readUInt16LE(local + 26) + buf.readUInt16LE(local + 28);
     const raw = buf.subarray(start, start + size);
-    if (!name.endsWith("/")) files.push({ name, text: (method === 8 ? inflateRawSync(raw) : raw).toString("utf8") });
+    if (!name.endsWith("/")) {
+      if (method !== 0 && method !== 8) throw new Error(`${name}: compression method ${method} is not supported (stored or deflate only)`);
+      files.push({ name, text: (method === 8 ? inflateRawSync(raw) : raw).toString("utf8") });
+    }
     p += 46 + nameLen + extraLen + commentLen;
   }
   return files;
 }
 
+// Oracle's Financials spec is about 99 MB; anything far beyond that is a wrong URL or a hostile endpoint.
+const MAX_BYTES = 200 * 1024 * 1024;
+
 async function load(spec) {
   if (spec.path) return { status: 200, body: readFileSync(join(ROOT, spec.path), "utf8") };
   const ctl = new AbortController();
-  const timer = setTimeout(() => ctl.abort(), 60000);
+  const timer = setTimeout(() => ctl.abort(), 120000);
   try {
     const res = await fetch(spec.url, { signal: ctl.signal, headers: { "user-agent": "apideck-api-registry/2 (+https://github.com/apideck-io/api-registry)" } });
-    if (!res.ok) return { status: res.status, body: null };
-    if (spec.extract === "zip-bundle") return { status: res.status, body: null, bytes: Buffer.from(await res.arrayBuffer()) };
-    return { status: res.status, body: await res.text() };
+    if (!res.ok) {
+      await res.body?.cancel(); // release the connection; the body of an error page isn't needed
+      return { status: res.status, body: null };
+    }
+    // Stream with a cap instead of buffering an unbounded response.
+    const chunks = [];
+    let size = 0;
+    for await (const chunk of res.body) {
+      size += chunk.length;
+      if (size > MAX_BYTES) {
+        ctl.abort();
+        return { status: res.status, body: null, error: `larger than ${MAX_BYTES / 1024 / 1024} MB` };
+      }
+      chunks.push(chunk);
+    }
+    const buf = Buffer.concat(chunks);
+    if (spec.extract === "zip-bundle") return { status: res.status, body: null, bytes: buf };
+    // Strip a UTF-8 byte-order mark, as res.text() would; some vendor files carry one.
+    return { status: res.status, body: buf.toString("utf8").replace(/^\uFEFF/, "") };
   } catch (e) {
     return { status: 0, body: null, error: e.name === "AbortError" ? "timeout" : e.message };
   } finally {
@@ -117,12 +140,35 @@ async function load(spec) {
   }
 }
 
+// Every format must show its identifying root, so a 200 error page or JSON error payload is a failure,
+// not an "ok" spec with zero operations.
 function inspect(format, body) {
-  if (format === "xsd") return { operations: (body.match(/<xsd?:element\s+name="[^"]+Rq"/g) ?? []).length || null };
-  if (format === "odata-edmx") return { operations: (body.match(/<EntitySet\s/g) ?? []).length };
-  if (format === "graphql") return {};
+  if (format === "xsd") {
+    if (!/<(xsd?:)?schema[\s>]/.test(body)) throw new Error("no xsd:schema root");
+    return { operations: (body.match(/<xsd?:element\s+name="[^"]+Rq"/g) ?? []).length };
+  }
+  if (format === "odata-edmx") {
+    if (!/<edmx:Edmx[\s>]/.test(body)) throw new Error("no edmx:Edmx root");
+    return { operations: (body.match(/<EntitySet\s/g) ?? []).length };
+  }
+  if (format === "graphql") {
+    // SDL: count fields on the root Query and Mutation types. Introspection JSON: count their fields.
+    if (body.trim().startsWith("{")) {
+      const types = JSON.parse(body)?.data?.__schema?.types ?? JSON.parse(body)?.__schema?.types;
+      if (!types) throw new Error("no __schema in introspection result");
+      const n = types.filter((t) => t.name === "Query" || t.name === "Mutation").reduce((m, t) => m + (t.fields?.length ?? 0), 0);
+      return { operations: n };
+    }
+    const roots = [...body.matchAll(/type\s+(Query|Mutation)\s*\{([^}]*)\}/g)];
+    if (!roots.length) throw new Error("no Query or Mutation type");
+    // Drop argument lists first (they can span lines), then count "name:" field starts.
+    const fields = (block) => (block.replace(/\([^)]*\)/g, "").match(/^\s*\w+\s*:/gm) ?? []).length;
+    return { operations: roots.reduce((n, m) => n + fields(m[2]), 0) };
+  }
   const doc = body.trim().startsWith("{") ? JSON.parse(body) : parseYaml(body);
+  if (!doc || typeof doc !== "object") throw new Error("not a JSON or YAML document");
   if (format === "google-discovery") {
+    if (!doc.discoveryVersion || !doc.resources) throw new Error("no discoveryVersion or resources");
     let n = 0;
     const walk = (r) => {
       for (const res of Object.values(r ?? {})) {
@@ -131,17 +177,26 @@ function inspect(format, body) {
       }
     };
     walk(doc.resources);
-    return { operations: n, title: doc.title, apiVersion: doc.version, server: doc.rootUrl ? doc.rootUrl + (doc.servicePath ?? "") : null };
+    return { operations: n, title: doc.title, apiVersion: doc.version, server: doc.rootUrl ? doc.rootUrl + (doc.servicePath ?? "") : null, doc };
   }
   if (format === "postman-2.1") {
+    if (!doc.info || !Array.isArray(doc.item)) throw new Error("no info or item list");
     let n = 0;
     const walk = (items) => items?.forEach((it) => (it.request ? n++ : walk(it.item)));
     walk(doc.item);
     return { operations: n, title: doc.info?.name };
   }
-  if (format === "asyncapi-2") return { operations: Object.keys(doc.channels ?? {}).length, title: doc.info?.title, apiVersion: doc.info?.version };
+  if (format === "asyncapi-2") {
+    if (!String(doc.asyncapi ?? "").startsWith("2")) throw new Error("no asyncapi 2.x root");
+    // A channel can carry both publish and subscribe; count the operations, not the channels.
+    const n = Object.values(doc.channels ?? {}).reduce((m, c) => m + (c?.publish ? 1 : 0) + (c?.subscribe ? 1 : 0), 0);
+    return { operations: n, title: doc.info?.title, apiVersion: doc.info?.version };
+  }
+  if (format === "swagger-2.0" && String(doc.swagger) !== "2.0") throw new Error("no swagger: 2.0 root");
+  if (format.startsWith("openapi-") && !String(doc.openapi ?? "").startsWith("3")) throw new Error("no openapi 3.x root");
+  if (!doc.paths || typeof doc.paths !== "object") throw new Error("no paths");
   let n = 0;
-  for (const item of Object.values(doc.paths ?? {})) for (const m of METHODS) if (item?.[m]) n++;
+  for (const item of Object.values(doc.paths)) for (const m of METHODS) if (item?.[m]) n++;
   const server = doc.servers?.[0]?.url ?? (doc.host ? `${doc.schemes?.[0] ?? "https"}://${doc.host}${doc.basePath ?? ""}` : null);
   return { operations: n, title: doc.info?.title, apiVersion: doc.info?.version, specVersion: doc.openapi ?? doc.swagger, server };
 }
@@ -173,7 +228,9 @@ for (const e of entries) {
     let bundle = null;
     if (r.bytes) {
       try {
-        bundle = unzip(r.bytes).filter((f) => /\.(json|ya?ml)$/i.test(f.name));
+        // Skip macOS resource forks (__MACOSX/, ._name.json): binary files with a spec-like name.
+        bundle = unzip(r.bytes).filter((f) => /\.(json|ya?ml)$/i.test(f.name) && !/(^|\/)(__MACOSX\/|\._)/.test(f.name));
+        if (!bundle.length) throw new Error("no JSON or YAML files inside");
         r.body = "zip"; // marks success; the hash below is of the zip bytes themselves
       } catch (err) {
         r.error = `bad zip: ${err.message}`;
@@ -190,7 +247,17 @@ for (const e of entries) {
       if (bundle) {
         // One entry per module file; the bundle's count is their sum.
         const parts = bundle.map((f) => inspect(s.format, f.text));
-        info = { operations: parts.reduce((n, x) => n + (x.operations ?? 0), 0), files: bundle.length, specVersion: parts[0]?.specVersion, server: parts.find((x) => x.server)?.server };
+        const one = (k) => [...new Set(parts.map((x) => x[k]).filter(Boolean))];
+        const versions = one("apiVersion");
+        info = {
+          operations: parts.reduce((n, x) => n + (x.operations ?? 0), 0),
+          files: bundle.length,
+          // Each module has its own title; the bundle is named by the entry, with the module count beside it.
+          title: s.name,
+          apiVersion: versions.length === 1 ? versions[0] : versions.join(", ") || null,
+          specVersion: parts[0]?.specVersion,
+          server: parts.find((x) => x.server)?.server,
+        };
       } else info = inspect(s.format, r.body);
     } catch (err) {
       failures++;
@@ -198,10 +265,19 @@ for (const e of entries) {
       console.log(`✗ ${e.id} · ${s.name}: unparseable`);
       continue;
     }
-        // Google Discovery docs come back with a different key order on each request and re-stamp etag and
+    // Google Discovery docs come back with a different key order on each request and re-stamp etag and
     // revision on every publish, with no change to the API. Hash a key-sorted copy without those fields,
     // or the nightly job would open a drift PR every night.
-    const hashed = s.format === "google-discovery" ? canonical({ ...JSON.parse(r.body), etag: undefined, revision: undefined }) : r.bytes ?? r.body;
+    const { doc, ...meta } = info;
+    info = meta;
+    if (!info.server && s.server) info.server = s.server; // the entry's curated server when the spec has none
+    // A rebuilt zip changes its bytes (timestamps, compression) without any spec changing, so a bundle
+    // is hashed on its files' names and contents.
+    const hashed = doc
+      ? canonical({ ...doc, etag: undefined, revision: undefined })
+      : bundle
+        ? canonical([...bundle].sort((a, b) => a.name.localeCompare(b.name)).map((f) => [f.name.replace(/^.*\//, ""), f.text]))
+        : r.body;
     const sha256 = createHash("sha256").update(hashed).digest("hex");
     const changed = old.sha256 && old.sha256 !== sha256;
     specs[s.name] = {
@@ -211,7 +287,9 @@ for (const e of entries) {
       ...Object.fromEntries(Object.entries(info).filter(([, v]) => v != null)),
       changedOn: changed || !old.sha256 ? today : old.changedOn,
     };
-    console.log(`${changed ? "Δ" : "✓"} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations`);
+    // Δ changed, + newly indexed, ↺ recovered from a failure, ✓ unchanged. The nightly PR body lists all but ✓.
+    const mark = changed ? "Δ" : !old.sha256 ? "+" : old.status && old.status !== "ok" ? "↺" : "✓";
+    console.log(`${mark} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations`);
   }
   out.connectors[e.id] = { name: e.name, specs };
 }

@@ -1,6 +1,6 @@
 # API registry
 
-Machine-readable API specifications for the apps [Apideck](https://www.apideck.com) connects to: OpenAPI, Swagger, Google Discovery, AsyncAPI, OData, XSD and Postman. One entry per app, each spec verified every night.
+Machine-readable API specifications for the apps [Apideck](https://www.apideck.com) connects to: OpenAPI, Swagger, Google Discovery, AsyncAPI, OData, XSD, GraphQL and Postman. One entry per app, each spec verified every night.
 
 The registry stores **links, not copies**. Most vendor specs carry licences that don't allow redistribution, so an entry points at the vendor's own published file. The only specs stored here are ones authored in this repo.
 
@@ -10,7 +10,7 @@ The registry stores **links, not copies**. Most vendor specs carry licences that
 connectors/<id>.yaml   one entry per app (hand-maintained)
 index.json             what the last check found per spec (generated: never edit)
 specs/                 the few specs authored here
-scripts/verify.mjs     validates entries, fetches every spec, writes index.json
+scripts/verify.mjs     validates entries, checks every spec it can reach, writes index.json
 ```
 
 An entry:
@@ -31,10 +31,18 @@ specs:
 An app whose vendor publishes no spec still gets an entry with `specs: []` and a `notes` line saying what exists instead. That records that we looked.
 
 `index.json` records, per spec:
-- `status`: `ok`, or why it failed
+- `status`: `ok`; `manual: login` or `manual: bot-protection` for specs CI can't fetch (recorded, never fetched); otherwise why it failed. A response without the format's identifying root, such as a JSON error payload, counts as a failure.
 - `sha256`
 - `bytes`
-- `operations`: path × method for OpenAPI and Swagger; methods for Discovery; entity sets for OData
+- `operations`, which counts differently per format:
+  - OpenAPI and Swagger: path × method
+  - Discovery: methods
+  - AsyncAPI: publish and subscribe operations
+  - Postman: requests
+  - OData: entity sets
+  - XSD: `…Rq` request elements
+  - GraphQL: fields on the root `Query` and `Mutation` types
+  - A zip bundle sums its files and adds `files`.
 - `title`, `apiVersion`, `specVersion` and `server`
 - `changedOn`: the last date the file's hash changed
 
@@ -52,7 +60,7 @@ An app whose vendor publishes no spec still gets an entry with `specs: []` and a
 ```bash
 npm ci
 npm run validate          # entries only, no network (runs on every PR)
-npm run verify            # fetch every spec and rewrite index.json
+npm run verify            # fetch every URL spec, read every stored one, skip manual ones; rewrite index.json
 node scripts/verify.mjs --only xero
 ```
 
