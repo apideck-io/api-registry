@@ -2564,6 +2564,639 @@
           "changedOn": "2026-10-31"
         }
       }
+    },
+    "google-workspace": {
+      "name": "Google Workspace",
+      "specs": {
+        "Admin SDK Directory API": {
+          "status": "ok",
+          "sha256": "e971c899812ff8be6b7c031b3a46632a71baefbb239e911c0d035d249598c68c",
+          "bytes": 387433,
+          "operations": 128,
+          "title": "Admin SDK API",
+          "apiVersion": "directory_v1",
+          "server": "https://admin.googleapis.com/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "greenhouse": {
+      "name": "Greenhouse",
+      "specs": {
+        "Greenhouse Harvest API v3": {
+          "status": "ok",
+          "sha256": "55cd31a93dabe00c7f6baa0d7306e3e46227e8237814ff89677af4694b959fb4",
+          "bytes": 426687,
+          "operations": 151,
+          "title": "Harvest API",
+          "apiVersion": "v3",
+          "specVersion": "3.1.0",
+          "server": "https://harvest.greenhouse.io",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "group-s": {
+      "name": "Group S",
+      "specs": {}
+    },
+    "gusto": {
+      "name": "Gusto",
+      "specs": {}
+    },
+    "haileyhr": {
+      "name": "Hailey HR",
+      "specs": {
+        "Hailey HR API v1": {
+          "status": "ok",
+          "sha256": "9d90442cb8bbee17d0582b783da6fee9d33663e161d17bb6fa4d0fe5efc092d5",
+          "bytes": 163333,
+          "operations": 37,
+          "title": "Hailey HR Api",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://api.haileyhr.app",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "hibob": {
+      "name": "Hibob (Legacy)",
+      "specs": {
+        "HiBob Employee data API": {
+          "status": "ok",
+          "sha256": "e308cff89db13385369f68e7dcc7543c2da42828000a0ef3336c38835a36d3a1",
+          "bytes": 180654,
+          "operations": 61,
+          "title": "Employee data API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.hibob.com/v1",
+          "changedOn": "2026-10-31"
+        },
+        "HiBob Attendance API": {
+          "status": "ok",
+          "sha256": "f1e0070f05c8f4e966b59da73684a2f183b9abf42018c3456736a760f6356cd2",
+          "bytes": 130241,
+          "operations": 23,
+          "title": "Attendance API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.hibob.com/v1",
+          "changedOn": "2026-10-31"
+        },
+        "HiBob Goals API": {
+          "status": "ok",
+          "sha256": "0002cfe11b827ca19528a077db85a0173a0b77d29e8a3b43cf8487f84d5398b4",
+          "bytes": 56020,
+          "operations": 16,
+          "title": "Goals API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.hibob.com/v1",
+          "changedOn": "2026-10-31"
+        },
+        "HiBob Workforce Planning API": {
+          "status": "ok",
+          "sha256": "383d3304cca1b2063d1b176e8a7e82090504718db54405cd14a3d99975a240d4",
+          "bytes": 83226,
+          "operations": 15,
+          "title": "Workforce Planning API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.hibob.com/v1",
+          "changedOn": "2026-10-31"
+        },
+        "HiBob Bob Hiring API": {
+          "status": "ok",
+          "sha256": "a16d8b780892094adb47e59a2f14656f8c217f13b76a4b044bc228e763f96342",
+          "bytes": 148655,
+          "operations": 15,
+          "title": "Bob Hiring API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.hibob.com/v1",
+          "changedOn": "2026-10-31"
+        },
+        "HiBob Time Off API": {
+          "status": "ok",
+          "sha256": "648cbc5d8d7f8e88739d0bd2c208cd1a3ddc6ec2602058b03a80ea409b0a99f8",
+          "bytes": 135974,
+          "operations": 14,
+          "title": "Time Off API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.hibob.com/v1",
+          "changedOn": "2026-10-31"
+        },
+        "HiBob Docs API": {
+          "status": "ok",
+          "sha256": "9bcefdca88b573237db20df51a16d872479ced09415e7bbd2cb4cbac97c2b5a9",
+          "bytes": 27574,
+          "operations": 11,
+          "title": "Docs API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.hibob.com/v1",
+          "changedOn": "2026-10-31"
+        },
+        "HiBob Job Catalog API": {
+          "status": "ok",
+          "sha256": "bbdf52fc732fa74c9f8c7688fe72d0c0361d94e1fcd3ba9ea3b196b58d5f8337",
+          "bytes": 23460,
+          "operations": 8,
+          "title": "Job Catalog API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.hibob.com/v1",
+          "changedOn": "2026-10-31"
+        },
+        "HiBob Bob Learning API": {
+          "status": "ok",
+          "sha256": "5b40204a854e638613f0a1764281085488e1709d7749945bf52825d939bc3ca7",
+          "bytes": 30999,
+          "operations": 6,
+          "title": "Bob Learning API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.hibob.com/v1",
+          "changedOn": "2026-10-31"
+        },
+        "HiBob Reports API": {
+          "status": "ok",
+          "sha256": "cea6a4a66215f5206b2ffd764b46c36f6d457de5c832bf0807505416d3f234b3",
+          "bytes": 12252,
+          "operations": 4,
+          "title": "Reports API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.hibob.com/v1",
+          "changedOn": "2026-10-31"
+        },
+        "HiBob Tasks API": {
+          "status": "ok",
+          "sha256": "87572f3c3ab3381ab28f76e1d9d71ed5ed33a2233ed2e665edacb67efa4d737e",
+          "bytes": 10863,
+          "operations": 3,
+          "title": "Tasks API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.hibob.com/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "hibob-oauth": {
+      "name": "Hibob (OAuth)",
+      "specs": {
+        "HiBob Employee data API": {
+          "status": "ok",
+          "sha256": "e308cff89db13385369f68e7dcc7543c2da42828000a0ef3336c38835a36d3a1",
+          "bytes": 180654,
+          "operations": 61,
+          "title": "Employee data API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.hibob.com/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "homerun-hr": {
+      "name": "Homerun HR",
+      "specs": {
+        "Homerun Public API v2": {
+          "status": "ok",
+          "sha256": "7d1c00c0cacd0e6a9e76a0186c242d2186caba670fb75b3b0cdad8ff5cf12ac6",
+          "bytes": 62635,
+          "operations": 25,
+          "title": "Homerun Public API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.homerun.co/v2",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "hr-works": {
+      "name": "HR Works",
+      "specs": {
+        "HR WORKS API v2": {
+          "status": "ok",
+          "sha256": "303de1c24d3aea8e142d9b5fe9cd39e64acd2b85cdf08792d29500382cf64726",
+          "bytes": 400154,
+          "operations": 144,
+          "title": "HR WORKS API v2",
+          "apiVersion": "2.20",
+          "specVersion": "3.0.0",
+          "server": "https://api.hrworks.de",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "hubspot": {
+      "name": "HubSpot",
+      "specs": {
+        "HubSpot CRM Contacts": {
+          "status": "ok",
+          "sha256": "0bfc51ecbf87c0d90bd13663db9189b665c06272b717c677966b909e796bc05c",
+          "bytes": 119879,
+          "operations": 16,
+          "title": "Contacts",
+          "apiVersion": "2026-03",
+          "specVersion": "3.0.1",
+          "server": "https://api.hubapi.com",
+          "changedOn": "2026-10-31"
+        },
+        "HubSpot CRM Companies": {
+          "status": "ok",
+          "sha256": "a950ce04d70c4b5cc7a3e0a1465956d2be6841a1d838670b49014e1bfc56632b",
+          "bytes": 117813,
+          "operations": 15,
+          "title": "Companies",
+          "apiVersion": "2026-03",
+          "specVersion": "3.0.1",
+          "server": "https://api.hubapi.com",
+          "changedOn": "2026-10-31"
+        },
+        "HubSpot CRM Deals": {
+          "status": "ok",
+          "sha256": "ad24485bf240618eeb7723d3827af945608c8afbccf0113a15414095855afbf7",
+          "bytes": 115911,
+          "operations": 15,
+          "title": "Deals",
+          "apiVersion": "2026-03",
+          "specVersion": "3.0.1",
+          "server": "https://api.hubapi.com",
+          "changedOn": "2026-10-31"
+        },
+        "HubSpot CRM Leads": {
+          "status": "ok",
+          "sha256": "a76bbd98ab2145c2875e8664365397ec6bf05e1801c8abefec453b87cfb28e83",
+          "bytes": 115538,
+          "operations": 14,
+          "title": "Leads",
+          "apiVersion": "2026-03",
+          "specVersion": "3.0.1",
+          "server": "https://api.hubapi.com",
+          "changedOn": "2026-10-31"
+        },
+        "HubSpot CRM Associations": {
+          "status": "ok",
+          "sha256": "810d1a3d5731e025bdf8f7161e5c3dd2fba8bb1f51f2bd6499bf73d94a30f29f",
+          "bytes": 150423,
+          "operations": 11,
+          "title": "Associations",
+          "apiVersion": "2026-03",
+          "specVersion": "3.0.1",
+          "server": "https://api.hubapi.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "humaans-io": {
+      "name": "Humaans",
+      "specs": {}
+    },
+    "intuit-bank-feeds": {
+      "name": "Intuit Bank Feeds",
+      "specs": {}
+    },
+    "jira": {
+      "name": "Jira",
+      "specs": {
+        "Jira Cloud platform REST API v3": {
+          "status": "ok",
+          "sha256": "30d96390297b247d3e734110a689c9314209021b00badacea12fdf2a34f97ad4",
+          "bytes": 2511514,
+          "operations": 630,
+          "title": "The Jira Cloud platform REST API",
+          "apiVersion": "1001.0.0-SNAPSHOT-d794cfb4c7554a89092e2f32783da3a72153f3f0",
+          "specVersion": "3.0.1",
+          "server": "https://your-domain.atlassian.net",
+          "changedOn": "2026-10-31"
+        },
+        "Jira Software Cloud REST API": {
+          "status": "ok",
+          "sha256": "4e108d54b99064475c6ba0f986cce46dcace81336e034b58a5400b93174b927a",
+          "bytes": 658314,
+          "operations": 105,
+          "title": "Jira Software Cloud API",
+          "apiVersion": "1001.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://your-domain.atlassian.net",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "jira-api-token": {
+      "name": "Jira (API Token)",
+      "specs": {
+        "Jira Cloud platform REST API v3": {
+          "status": "ok",
+          "sha256": "30d96390297b247d3e734110a689c9314209021b00badacea12fdf2a34f97ad4",
+          "bytes": 2511514,
+          "operations": 630,
+          "title": "The Jira Cloud platform REST API",
+          "apiVersion": "1001.0.0-SNAPSHOT-d794cfb4c7554a89092e2f32783da3a72153f3f0",
+          "specVersion": "3.0.1",
+          "server": "https://your-domain.atlassian.net",
+          "changedOn": "2026-10-31"
+        },
+        "Jira Software Cloud REST API": {
+          "status": "ok",
+          "sha256": "4e108d54b99064475c6ba0f986cce46dcace81336e034b58a5400b93174b927a",
+          "bytes": 658314,
+          "operations": 105,
+          "title": "Jira Software Cloud API",
+          "apiVersion": "1001.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://your-domain.atlassian.net",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "jira-teams": {
+      "name": "Jira Teams",
+      "specs": {
+        "Jira Cloud platform REST API v3": {
+          "status": "ok",
+          "sha256": "30d96390297b247d3e734110a689c9314209021b00badacea12fdf2a34f97ad4",
+          "bytes": 2511514,
+          "operations": 630,
+          "title": "The Jira Cloud platform REST API",
+          "apiVersion": "1001.0.0-SNAPSHOT-d794cfb4c7554a89092e2f32783da3a72153f3f0",
+          "specVersion": "3.0.1",
+          "server": "https://your-domain.atlassian.net",
+          "changedOn": "2026-10-31"
+        },
+        "Atlassian Teams Public REST API v1": {
+          "status": "ok",
+          "sha256": "6be132c735101212208ee9255761fe18c046632bf8e50345e48729bc7cfb1f78",
+          "bytes": 31078,
+          "operations": 15,
+          "title": "Teams API",
+          "apiVersion": "4.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.atlassian.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "jumpcloud": {
+      "name": "JumpCloud",
+      "specs": {
+        "JumpCloud API v2": {
+          "status": "ok",
+          "sha256": "f2f910f21205332ba4544256e3701f4113626a5363277fe6304454848a7495bd",
+          "bytes": 3106538,
+          "operations": 832,
+          "title": "JumpCloud API",
+          "apiVersion": "2.0",
+          "specVersion": "3.1.0",
+          "server": "https://console.jumpcloud.com/api/v2",
+          "changedOn": "2026-10-31"
+        },
+        "JumpCloud API v1": {
+          "status": "ok",
+          "sha256": "8f9b745de6d70a77d2cb69e404f28968123895622f1aaf75b0178982a5fa294c",
+          "bytes": 372737,
+          "operations": 61,
+          "title": "JumpCloud API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://console.jumpcloud.com/api",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "justworks": {
+      "name": "Justworks",
+      "specs": {
+        "Justworks Partner API v1": {
+          "status": "ok",
+          "sha256": "f1d413b4182258bf567985aefef2f219de462c7fc8889d920730c4c01d85db4a",
+          "bytes": 148362,
+          "operations": 25,
+          "title": "Justworks API",
+          "apiVersion": "1.56.0",
+          "specVersion": "3.0.0",
+          "server": "https://public-api.justworks.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "keka": {
+      "name": "Keka HR",
+      "specs": {
+        "Keka Payroll": {
+          "status": "ok",
+          "sha256": "a4b1eadc2a626bba1e8b0f88253b785bcfa66db5892448b00e2881d8b3a225b8",
+          "bytes": 156200,
+          "operations": 50,
+          "title": "Payroll",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://{company}.{environment}.com/api/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Keka PSA": {
+          "status": "ok",
+          "sha256": "e99b9bb18c218369c9cac17d58b7d538a806d8c63c4b715968036ac5ede4e174",
+          "bytes": 136612,
+          "operations": 45,
+          "title": "PSA",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://{company}.{environment}.com/api/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Keka Core Hr": {
+          "status": "ok",
+          "sha256": "d4f1d9facc7bea8607cf360f472c2561309114d8996cf1437bb4e5b6e609c37d",
+          "bytes": 60675,
+          "operations": 25,
+          "title": "Core Hr",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://{company}.{environment}.com/api/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Keka Keka Hire API": {
+          "status": "ok",
+          "sha256": "fcf1c09be7ce3a9586cc9d21633f0df0ecf4f39179d374e27b79286e1d076b79",
+          "bytes": 44246,
+          "operations": 24,
+          "title": "Keka Hire API",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://{company}.{environment}.com/api",
+          "changedOn": "2026-10-31"
+        },
+        "Keka Attendance": {
+          "status": "ok",
+          "sha256": "21cd4780f52faf7209af1d41819282deb85e6518aa3bb05363ef1c42c41735e6",
+          "bytes": 90162,
+          "operations": 22,
+          "title": "Attendance",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://{company}.{environment}.com/api/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Keka Expense": {
+          "status": "ok",
+          "sha256": "1ddab4271a7c8d9a12f6b6e996eab7e89859f1f0395bf24e23e630a664d5b000",
+          "bytes": 29413,
+          "operations": 17,
+          "title": "Expense",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://{company}.{environment}.com/api/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Keka PMS": {
+          "status": "ok",
+          "sha256": "8b751f2867a6005e168e5d8ed3f37b4c7ac93df4eaa8848ed300355a0e967d55",
+          "bytes": 79983,
+          "operations": 17,
+          "title": "PMS",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://{company}.{environment}.com/api/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Keka Document": {
+          "status": "ok",
+          "sha256": "d091e6a65d64d2c27f8a5f5db6df1cdddb72ae5bbd7c3496291634e665ef4203",
+          "bytes": 20335,
+          "operations": 10,
+          "title": "Document",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://{company}.{environment}.com/api/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Keka Assets": {
+          "status": "ok",
+          "sha256": "5f9ef312b933c67235daaf0dc265a798a3e5df58890f30e2d8316f6e8cbea450",
+          "bytes": 11940,
+          "operations": 6,
+          "title": "Assets",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://{company}.{environment}.com/api/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Keka Leave": {
+          "status": "ok",
+          "sha256": "db81ec20bbff78b3b6e0abf61bcce85971d3b78bedb56b666026ca5a22f73a52",
+          "bytes": 93716,
+          "operations": 5,
+          "title": "Leave",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://{company}.{environment}.com/api/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Keka Helpdesk": {
+          "status": "ok",
+          "sha256": "8d6a822a035054ecabd9c7242142f3a9b4c225ad9ca084ccae50b2c6e7e706ef",
+          "bytes": 40174,
+          "operations": 5,
+          "title": "Helpdesk",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://{company}.{environment}.com/api/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Keka BGV APIs": {
+          "status": "ok",
+          "sha256": "359862c13bb5de3bb9793699e503c002091b65931d55bd2218c7d663eae7bb02",
+          "bytes": 32879,
+          "operations": 2,
+          "title": "BGV APIs",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://{company}.{environment}.com/api/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Keka KEKA API": {
+          "status": "ok",
+          "sha256": "0a6fd53ef57d33bfd94cea8daac2d0494cf683d61e67ad6b76ab1fc21daac51c",
+          "bytes": 5899,
+          "operations": 1,
+          "title": "KEKA API",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://{company}.{environment}.com/api/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Keka Keka Hire API (2)": {
+          "status": "ok",
+          "sha256": "cf933a2e80261d55c224c39ca4d5f7011323bcae6f122755facb7ee46afbb2ae",
+          "bytes": 14540,
+          "operations": 1,
+          "title": "Keka Hire API",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://{company}.{environment}.com/api",
+          "changedOn": "2026-10-31"
+        },
+        "Keka Requisition": {
+          "status": "ok",
+          "sha256": "a73352fcc0cd9b941815a52dd64a62e01d6312c154efe63a0b116d27417ec799",
+          "bytes": 6766,
+          "operations": 1,
+          "title": "Requisition",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://{company}.{environment}.com/api/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "kenjo": {
+      "name": "Kenjo",
+      "specs": {
+        "Kenjo API": {
+          "status": "ok",
+          "sha256": "0e9aad402268af6e767ee00265584cd95f33439e9443ecd1d9e5d09cce16447e",
+          "bytes": 282923,
+          "operations": 87,
+          "title": "Kenjo API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://sandbox-api.kenjo.io/api/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "lever": {
+      "name": "Lever",
+      "specs": {}
+    },
+    "lexware-office": {
+      "name": "Lexware Office",
+      "specs": {
+        "Lexware Office API Postman samples": {
+          "status": "ok",
+          "sha256": "e368a49b706f9cf8f616cdbc354d6d5b86b19909f6ad74f1a1af13530514233e",
+          "bytes": 76291,
+          "operations": 49,
+          "title": "Lexware API",
+          "server": "https://api.lexware.io",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "liantis": {
+      "name": "Liantis",
+      "specs": {}
+    },
+    "lightspeed": {
+      "name": "Lightspeed",
+      "specs": {}
     }
   }
 }

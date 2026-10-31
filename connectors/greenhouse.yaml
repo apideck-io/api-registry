@@ -1,0 +1,10 @@
+id: greenhouse
+name: "Greenhouse"
+notes: "Harvest v3 spec found; Job Board and Ingestion APIs not checked."
+specs:
+  - name: "Greenhouse Harvest API v3"
+    url: "https://dash.readme.com/api/v1/api-registry/ko7u23mfr7e7n5"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://harvest.greenhouse.io"
+    notes: "ReadMe-hosted at https://harvestdocs.greenhouse.io, fetched via ReadMe public API registry from oasPublicUrl '@greenhouse-harvest/v3.0#ko7u23mfr7e7n5' (on endpoint pages; the /reference landing page points to a separate 1-op Auth API, 8zug2am8zcesem). Registry UUID changes on re-sync; re-resolve from any https://harvestdocs.greenhouse.io/reference/<endpoint> page. Legacy Harvest v1/v2 (https://developers.greenhouse.io/harvest.html) is HTML only; v1/v2 are being retired in favour of v3."

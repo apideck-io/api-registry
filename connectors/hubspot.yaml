@@ -1,0 +1,34 @@
+id: hubspot
+name: "HubSpot"
+notes: "HubSpot publishes one OpenAPI per API product (125 in the index at https://api.hubspot.com/public/api/spec/v1/specs; also github.com/HubSpot/HubSpot-public-api-spec-collection). Only the core CRM specs used by the crm/lead connector were fetched and counted; the rest are reachable from the index."
+specs:
+  - name: "HubSpot CRM Contacts"
+    url: "https://api.hubspot.com/public/api/spec/v2/specs/release/75232/version/2026-03"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.hubapi.com"
+    notes: "From HubSpot's public spec index https://api.hubspot.com/public/api/spec/v1/specs (125 APIs, each with versions 3 / 2025-09 / 2026-03 / 2026-09 and an openApi URL). Release ids differ per version; resolve via the index."
+  - name: "HubSpot CRM Companies"
+    url: "https://api.hubspot.com/public/api/spec/v2/specs/release/75244/version/2026-03"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.hubapi.com"
+    notes: "See index https://api.hubspot.com/public/api/spec/v1/specs"
+  - name: "HubSpot CRM Deals"
+    url: "https://api.hubspot.com/public/api/spec/v2/specs/release/75246/version/2026-03"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.hubapi.com"
+    notes: "See index https://api.hubspot.com/public/api/spec/v1/specs"
+  - name: "HubSpot CRM Leads"
+    url: "https://api.hubspot.com/public/api/spec/v2/specs/release/75224/version/2026-03"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.hubapi.com"
+    notes: "See index https://api.hubspot.com/public/api/spec/v1/specs"
+  - name: "HubSpot CRM Associations"
+    url: "https://api.hubspot.com/public/api/spec/v2/specs/release/75258/version/2026-03"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.hubapi.com"
+    notes: "See index https://api.hubspot.com/public/api/spec/v1/specs"

@@ -1,0 +1,10 @@
+id: google-workspace
+name: "Google Workspace"
+notes: "Directory API is the employee/people surface Google Workspace exposes."
+specs:
+  - name: "Admin SDK Directory API"
+    url: "https://admin.googleapis.com/$discovery/rest?version=directory_v1"
+    format: google-discovery
+    provenance: vendor
+    server: "https://admin.googleapis.com/"
+    notes: "Google Discovery doc; methods counted recursively across resources. Same doc at https://www.googleapis.com/discovery/v1/apis/admin/directory_v1/rest. Users/groups/orgunits are the HRIS-relevant resources."

@@ -1,0 +1,9 @@
+id: hr-works
+name: "HR Works"
+specs:
+  - name: "HR WORKS API v2"
+    url: "https://stoplight.io/api/v1/projects/hrworks-api-v2/hrworks-api-v2/nodes/reference/openapi.yaml?fromExportButton=true&snapshotType=http_service&deref=optimizedBundle"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.hrworks.de"
+    notes: "Stoplight-hosted docs at https://developers.hrworks.de/docs/hrworks-api-v2 (project synced from GitHub). Export URL from the node's links.export_url. Demo server https://api.demo-hrworks.de."

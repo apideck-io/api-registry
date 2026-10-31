@@ -1,0 +1,10 @@
+id: homerun-hr
+name: "Homerun HR"
+specs:
+  - name: "Homerun Public API v2"
+    url: "https://developers.homerun.co/"
+    format: openapi-3.0
+    extract: redoc-state
+    provenance: vendor
+    server: "https://api.homerun.co/v2"
+    notes: "Spec only embedded as __redoc_state in the Redoc page; no standalone download link."

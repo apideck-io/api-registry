@@ -1,0 +1,10 @@
+id: lexware-office
+name: "Lexware Office"
+notes: "No OpenAPI; vendor Postman collection only."
+specs:
+  - name: "Lexware Office API Postman samples"
+    url: "https://developers.lexware.io/assets/public/Lexware-API-Samples.postman_collection.json"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://api.lexware.io"
+    notes: "Linked from https://developers.lexware.io/docs/ (formerly developers.lexoffice.io, which redirects). Requests use {{resourceurl}}; environment at /assets/public/Lexware-API.postman_environment.json. Sample collection, not exhaustive; docs are HTML."

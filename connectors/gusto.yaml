@@ -1,0 +1,4 @@
+id: gusto
+name: "Gusto"
+notes: "Gusto publishes one OpenAPI block per endpoint inside its per-endpoint docs pages; the full spec is in a private repository. Not a full API spec, so not indexed. No single fetchable full spec; only per-endpoint fences. Vendor SDKs (github.com/Gusto/gusto-*-client) exist."
+specs: []

@@ -1,0 +1,9 @@
+id: haileyhr
+name: "Hailey HR"
+specs:
+  - name: "Hailey HR API v1"
+    url: "https://api.haileyhr.app/docs/v1/docs.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.haileyhr.app"
+    notes: "Swagger UI at https://api.haileyhr.app/docs/index.html. Spec has no servers block; base URL https://api.haileyhr.app (demo https://api.demo.haileyhr.app)."
