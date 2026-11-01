@@ -1,0 +1,19 @@
+scripts/verify.mjs
+  s_1f1ca60914a185::t_be1f4fc8376f78 487-488
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "308c7227fe56a77490e3a0deb5c21ffaa2d33357",
+  "prompts": {},
+  "sessions": {
+    "s_1f1ca60914a185": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6526c4fe-4f71-427e-af03-7eff8b144aa5",
+        "model": "unknown"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
