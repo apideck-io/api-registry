@@ -1,0 +1,37 @@
+connectors/amplitude.yaml
+  s_d3d24217f7bac9::t_840de2de44fd74 4-11
+connectors/builtwith.yaml
+  s_d3d24217f7bac9::t_704430e790cc24 4-11
+connectors/constant-contact.yaml
+  s_d3d24217f7bac9::t_4fdfc0918606e2 4-10
+connectors/dynatrace.yaml
+  s_d3d24217f7bac9::t_baa3b8be97a8ab 4-11
+connectors/group-s.yaml
+  s_d3d24217f7bac9::t_6bcfe78f06ae07 3-10
+connectors/lastpass.yaml
+  s_d3d24217f7bac9::t_eacb4d7eb61d2e 4-10
+connectors/mailerlite.yaml
+  s_d3d24217f7bac9::t_8f7ab038441434 4-11
+connectors/razorpay.yaml
+  s_d3d24217f7bac9::t_1f2e583a20f87c 4-10
+connectors/wiza.yaml
+  s_d3d24217f7bac9::t_7ea6b98aa31435 4-10
+index.json
+  s_d3d24217f7bac9::t_3a8ca8ce65251f 3118-3132,6199-6213,6593-6607,7492-7507,7776-7790,10383-10397,10809-10823,11493-11507,13454-13468
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5a5aa8c62f8b38b9ce5fef0b19f6cd90fdf2be18",
+  "prompts": {},
+  "sessions": {
+    "s_d3d24217f7bac9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6c9008fd-17df-40fa-a5ba-6a9d158adc63",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
