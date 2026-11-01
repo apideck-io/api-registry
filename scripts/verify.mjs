@@ -376,7 +376,8 @@ function inspectDocument(format, body) {
   if ((!doc.paths || typeof doc.paths !== "object") && !pathsOptional) throw new Error("no paths");
   let n = 0;
   // OpenAPI 3.2 adds the query method and additionalOperations (custom HTTP methods) on a path item.
-  for (const item of Object.values(doc.paths ?? {})) {
+  // Azure specs put paths that differ only by query in x-ms-paths; they're operations too.
+  for (const item of [...Object.values(doc.paths ?? {}), ...Object.values(doc["x-ms-paths"] ?? {})]) {
     for (const m of [...METHODS, "query"]) if (item?.[m]) n++;
     if (item?.additionalOperations && typeof item.additionalOperations === "object") n += Object.keys(item.additionalOperations).length;
   }

@@ -1,5 +1,10 @@
 id: rootly
 name: "Rootly"
 apideck: false
-notes: "Checked docs.rootly.com llms.txt and common swagger.json/openapi.json paths; the vendor's swagger file is behind bot protection (HTTP 403 on rootly.com/api/v1/swagger.json) and could not be fetched."
-specs: []
+specs:
+  - name: "Rootly API v1"
+    url: "https://rootly.com/api/v1/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    manual: bot-protection
+    notes: "The vendor's spec answers 403 to non-browser clients, so CI can't fetch it; open the URL in a browser to download it."

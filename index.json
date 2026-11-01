@@ -7881,8 +7881,7 @@
           "title": "Ahrefs API",
           "apiVersion": "3.0.0",
           "specVersion": "3.2.0",
-          "server": "https://api.ahrefs.com",
-          "specServer": "https://api.ahrefs.com/v3",
+          "server": "https://api.ahrefs.com/v3",
           "changedOn": "2026-11-01"
         }
       }
@@ -8379,8 +8378,7 @@
           "title": "OAuth2",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
-          "server": "https://api.beehiiv.com/v2",
-          "specServer": "https://app.beehiiv.com",
+          "server": "https://app.beehiiv.com",
           "changedOn": "2026-11-01"
         }
       }
@@ -10554,7 +10552,11 @@
     "rootly": {
       "name": "Rootly",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "Rootly API v1": {
+          "status": "manual: bot-protection"
+        }
+      }
     },
     "salesloft": {
       "name": "Salesloft",
@@ -11312,7 +11314,7 @@
           "status": "ok",
           "sha256": "9e1cad949b3eb97bf40ffbc7da5b2fa2653451a6b9302b625ff26b63ce1aa28f",
           "bytes": 473518,
-          "operations": 0,
+          "operations": 69,
           "title": "Azure Blob Storage",
           "apiVersion": "2026-10-06",
           "specVersion": "2.0",
@@ -11347,7 +11349,7 @@
           "operations": 87,
           "title": "Cloud Storage JSON API",
           "apiVersion": "v1",
-          "server": "https://storage.googleapis.com",
+          "server": "https://storage.googleapis.com/storage/v1",
           "specServer": "https://storage.googleapis.com/storage/v1/",
           "changedOn": "2026-11-01"
         }

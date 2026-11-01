@@ -6,5 +6,5 @@ specs:
     url: "https://docs.ahrefs.com/openapi.json"
     format: openapi-3.1
     provenance: vendor
-    server: "https://api.ahrefs.com"
+    server: "https://api.ahrefs.com/v3"
     notes: "OpenAPI 3.2.0. Per-tool specs are indexed at https://docs.ahrefs.com/reference/index.json."

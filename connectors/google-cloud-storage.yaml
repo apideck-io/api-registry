@@ -6,4 +6,4 @@ specs:
     url: "https://storage.googleapis.com/$discovery/rest?version=v1"
     format: google-discovery
     provenance: vendor
-    server: "https://storage.googleapis.com"
+    server: "https://storage.googleapis.com/storage/v1"
