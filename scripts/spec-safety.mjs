@@ -74,6 +74,9 @@ const canonical = (v) =>
   : JSON.stringify(v);
 
 const METHODS = ["get", "put", "post", "delete", "options", "head", "patch", "trace", "query"];
+// Scope order in a security requirement means nothing, and some vendors (X) shuffle it on every request.
+const security = (reqs) =>
+  Array.isArray(reqs) ? reqs.map((r) => Object.fromEntries(Object.entries(r ?? {}).map(([k, v]) => [k, Array.isArray(v) ? [...v].sort() : v]))) : (reqs ?? null);
 
 /** A short hash of where a spec's calls go and how they authenticate, or null for formats without one. */
 export function surfaceOf(format, doc) {
@@ -86,14 +89,14 @@ export function surfaceOf(format, doc) {
       for (const m of METHODS) {
         const op = item[m];
         if (op?.servers) perPath.push([p, m, op.servers]);
-        if (op?.security) perPath.push([p, m, "security", op.security]);
+        if (op?.security) perPath.push([p, m, "security", security(op.security)]);
       }
     }
-    surface = { servers: doc.servers ?? null, schemes: doc.components?.securitySchemes ?? null, security: doc.security ?? null, perPath };
+    surface = { servers: doc.servers ?? null, schemes: doc.components?.securitySchemes ?? null, security: security(doc.security), perPath };
   } else if (format === "swagger-2.0") {
     const perOp = [];
-    for (const [p, item] of Object.entries(doc.paths ?? {})) for (const m of METHODS) if (item?.[m]?.security) perOp.push([p, m, item[m].security]);
-    surface = { host: doc.host ?? null, basePath: doc.basePath ?? null, schemes: doc.schemes ?? null, definitions: doc.securityDefinitions ?? null, security: doc.security ?? null, perOp };
+    for (const [p, item] of Object.entries(doc.paths ?? {})) for (const m of METHODS) if (item?.[m]?.security) perOp.push([p, m, security(item[m].security)]);
+    surface = { host: doc.host ?? null, basePath: doc.basePath ?? null, schemes: doc.schemes ?? null, definitions: doc.securityDefinitions ?? null, security: security(doc.security), perOp };
   } else if (format === "google-discovery") {
     surface = { rootUrl: doc.rootUrl ?? null, servicePath: doc.servicePath ?? null, auth: doc.auth ?? null };
   } else if (format.startsWith("postman-")) {

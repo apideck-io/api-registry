@@ -1249,7 +1249,6 @@
         "Sage Business Cloud Accounting API v3.1": {
           "status": "ok",
           "sha256": "948a5d7c7cdb67f92d28e19a453f4f67a11e3f161634d714957ce316b43ea75a",
-          "fetchSha256": "defc618f2d73d561e7544d973575829eb7f81439a3fe21cbc5df6c0e468ce820",
           "bytes": 7253331,
           "operations": 284,
           "title": "Sage Business Cloud Accounting - Accounts",
@@ -1349,9 +1348,10 @@
           "operations": 213,
           "title": "FreshBooks API",
           "specVersion": "2.0.0",
-          "surface": "c56553ce8fabac99",
+          "surface": "ad8c1991b2882c08",
           "server": "https://api.freshbooks.com",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -1379,7 +1379,6 @@
         "Fortnox API": {
           "status": "ok",
           "sha256": "f268177b4f7abe2eac8c2042e6ddb466c067bdf326dd93da82268d0aa3e5f18a",
-          "fetchSha256": "d2054bcd55796a46c43b6d71e2b0e6b957955f650466da15a876463edf23723b",
           "bytes": 973338,
           "operations": 451,
           "title": "Fortnox API",
@@ -1921,9 +1920,10 @@
           "operations": 155,
           "title": "FreeAgent",
           "specVersion": "2.1.0",
-          "surface": "78d0b545ef11dadd",
+          "surface": "4e49b2e0c1a34102",
           "server": "https://api.freeagent.com/v2",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -1973,9 +1973,10 @@
           "operations": 156,
           "title": "Crisp REST API Reference (V1)",
           "specVersion": "2.1.0",
-          "surface": "5bb2d6ac9312b088",
+          "surface": "a4b9555f8b6cebdd",
           "server": "https://api.crisp.chat/v1",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -2249,9 +2250,10 @@
           "operations": 234,
           "title": "Employment Hero API",
           "specVersion": "2.1.0",
-          "surface": "bb2229b36e937684",
+          "surface": "dc21c878d2115446",
           "server": "https://api.employmenthero.com/api",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -2667,9 +2669,10 @@
           "operations": 89,
           "title": "ADP APIs",
           "specVersion": "2.0.0",
-          "surface": "4deb30cd3a6c8e62",
+          "surface": "559bf710c4b8fb44",
           "server": "https://api.adp.com",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -2892,9 +2895,10 @@
           "operations": 350,
           "title": "Cezanne HR API",
           "specVersion": "2.0.0",
-          "surface": "cfb5b387aaa816b0",
+          "surface": "ae1e7c92d1910dca",
           "server": "https://w3.cezanneondemand.com/CezanneOnDemand",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -2968,9 +2972,10 @@
           "operations": 83,
           "title": "Copper Developer API",
           "specVersion": "2.1.0",
-          "surface": "0925a6d9ffb17269",
+          "surface": "1d6f239e6e2fff23",
           "server": "https://api.copper.com/developer_api/v1",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -3021,8 +3026,8 @@
       "specs": {
         "Hailey HR API v1": {
           "status": "ok",
-          "sha256": "f6ce9b9b51e6efb1cbdef877ffa6f10d6da1418c75fc7e91a70d153f38d31bb5",
-          "fetchSha256": "f6ce9b9b51e6efb1cbdef877ffa6f10d6da1418c75fc7e91a70d153f38d31bb5",
+          "sha256": "0bc0a050204aca1bf976f99b4838b474069834dd791227953a320b9ab5d3ba1b",
+          "fetchSha256": "0bc0a050204aca1bf976f99b4838b474069834dd791227953a320b9ab5d3ba1b",
           "bytes": 163333,
           "operations": 37,
           "title": "Hailey HR Api",
@@ -3192,7 +3197,6 @@
         "Homerun Public API v2": {
           "status": "ok",
           "sha256": "7d1c00c0cacd0e6a9e76a0186c242d2186caba670fb75b3b0cdad8ff5cf12ac6",
-          "fetchSha256": "c2170be9cda584f1d37c785d1b0a4ce794267cea3f582e279c44e16fadc22066",
           "bytes": 62635,
           "operations": 25,
           "title": "Homerun Public API",
@@ -3419,7 +3423,6 @@
         "Justworks Partner API v1": {
           "status": "ok",
           "sha256": "f1d413b4182258bf567985aefef2f219de462c7fc8889d920730c4c01d85db4a",
-          "fetchSha256": "4e49306c12d87cd49c7dd93b6f40d935bbdea5d6c47f34d225fd4c76ad158b35",
           "bytes": 148362,
           "operations": 25,
           "title": "Justworks API",
@@ -3665,9 +3668,10 @@
           "operations": 49,
           "title": "Lexware API",
           "specVersion": "2.1.0",
-          "surface": "4b8634cab5c22f31",
+          "surface": "c3d7c13fe78924c4",
           "server": "https://api.lexware.io",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -3953,9 +3957,10 @@
           "operations": 434,
           "title": "Lightspeed eCom",
           "specVersion": "2.1.0",
-          "surface": "a21e0f7ec597c77b",
+          "surface": "46c230e77e5699d8",
           "server": "https://{api_key}:{api_secret}@api.{cluster}.com/{language}/",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -4367,9 +4372,9 @@
       "specs": {
         "Bird API": {
           "status": "ok",
-          "sha256": "450bf892c492eff33c33f3e91e65e18fa1d33424b8a47a224f383bc6607c4ca4",
-          "fetchSha256": "450bf892c492eff33c33f3e91e65e18fa1d33424b8a47a224f383bc6607c4ca4",
-          "bytes": 7108982,
+          "sha256": "2404976eea7deef0addd178ea0e972c336dc309d9d4ee6106697bd2da8bb3981",
+          "fetchSha256": "2404976eea7deef0addd178ea0e972c336dc309d9d4ee6106697bd2da8bb3981",
+          "bytes": 7114283,
           "operations": 514,
           "title": "Bird API",
           "apiVersion": "1.0.0",
@@ -4429,7 +4434,6 @@
         "Minox API": {
           "status": "ok",
           "sha256": "7a6e2eb558cf0fdf224e1b833661acde68448374a5565bd763e005838dd58c7d",
-          "fetchSha256": "19da5621c9b8ddafa8f089c1a4ee227b24f7223b01e8f3c0b9755b4cb55c0a4e",
           "bytes": 866592,
           "operations": 185,
           "title": "Minox API",
@@ -4484,15 +4488,16 @@
       "specs": {
         "MYOB AccountRight API Postman collection": {
           "status": "ok",
-          "sha256": "85bc88cc218d93f701fc3c33e8fba40a97c471bd85e19f3d0d7dd8327465303a",
-          "fetchSha256": "85bc88cc218d93f701fc3c33e8fba40a97c471bd85e19f3d0d7dd8327465303a",
+          "sha256": "6b0ef52be9237be26deeada9a736a76ef7307badb8cc33f7935bb0cbfcc4ce65",
+          "fetchSha256": "6b0ef52be9237be26deeada9a736a76ef7307badb8cc33f7935bb0cbfcc4ce65",
           "bytes": 7071274,
           "operations": 257,
           "title": "MYOB AccountRight",
           "specVersion": "2.0.0",
-          "surface": "0743859a01fddcbd",
+          "surface": "867c9a2e6e17b7d3",
           "server": "https://api.myob.com/accountright",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -4574,8 +4579,9 @@
           "operations": 19,
           "title": "Apps API - OneLogin",
           "specVersion": "2.1.0",
-          "surface": "8a68a2a2c9991002",
-          "changedOn": "2026-10-31"
+          "surface": "428fe3618c9f1502",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "OneLogin API v2: Authorization Servers": {
           "status": "ok",
@@ -4585,8 +4591,9 @@
           "operations": 17,
           "title": "Authorization Servers - OneLogin API",
           "specVersion": "2.1.0",
-          "surface": "8a68a2a2c9991002",
-          "changedOn": "2026-10-31"
+          "surface": "55a6848bcc6efcb2",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "OneLogin API v2: User Mappings": {
           "status": "ok",
@@ -4596,8 +4603,9 @@
           "operations": 11,
           "title": "User Mappings - OneLogin API",
           "specVersion": "2.1.0",
-          "surface": "8a68a2a2c9991002",
-          "changedOn": "2026-10-31"
+          "surface": "125a37bb1e53c6a8",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "OneLogin API v2: Vigilance AI": {
           "status": "ok",
@@ -4607,8 +4615,9 @@
           "operations": 7,
           "title": "Vigilance AI - OneLogin API",
           "specVersion": "2.1.0",
-          "surface": "8a68a2a2c9991002",
-          "changedOn": "2026-10-31"
+          "surface": "c945394f46a2e95b",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "OneLogin API v2: Access Tokens": {
           "status": "ok",
@@ -4618,8 +4627,9 @@
           "operations": 3,
           "title": "Access Tokens - OneLogin API",
           "specVersion": "2.1.0",
-          "surface": "8a68a2a2c9991002",
-          "changedOn": "2026-10-31"
+          "surface": "305a88dfba3e4291",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "OneLogin API v2: SAML Assertion v2": {
           "status": "ok",
@@ -4629,8 +4639,9 @@
           "operations": 2,
           "title": "SAML Assertion v2 - OneLogin API",
           "specVersion": "2.1.0",
-          "surface": "8a68a2a2c9991002",
-          "changedOn": "2026-10-31"
+          "surface": "149418606083dce1",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -4851,9 +4862,10 @@
           "operations": 15,
           "title": "Sympa Generic API",
           "specVersion": "2.0.0",
-          "surface": "85c5e7d481362460",
+          "surface": "3036c644ded4c836",
           "server": "https://api.sympahr.net/api",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -4886,9 +4898,10 @@
           "operations": 131,
           "title": "Teamtailor API",
           "specVersion": "2.0.0",
-          "surface": "92c13e043d4a5ab8",
+          "surface": "58cf106f3ea709e1",
           "server": "https://api.teamtailor.com/v1",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -5218,16 +5231,17 @@
       "specs": {
         "X API v2": {
           "status": "ok",
-          "sha256": "eb26932276c5a515892f8885359b872bcc7f56aac3a840878c3d24572a831620",
-          "fetchSha256": "eb26932276c5a515892f8885359b872bcc7f56aac3a840878c3d24572a831620",
+          "sha256": "fca1fd293f321bef53bf15d396c94d28b54e68255df6eda034cf5fe37efc72be",
+          "fetchSha256": "fca1fd293f321bef53bf15d396c94d28b54e68255df6eda034cf5fe37efc72be",
           "bytes": 1314742,
           "operations": 257,
           "title": "X API v2",
           "apiVersion": "2.173",
           "specVersion": "3.0.0",
           "server": "https://api.x.com",
-          "surface": "3bbb820aa4cca6db",
-          "changedOn": "2026-11-01"
+          "surface": "c8fc034cc8ec4772",
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -7340,6 +7354,7 @@
             " arrays. Note that <|endoftext|> is the document separator that the model sees ",
             "00}` to prevent the <|endoftext|> token from being generated. "
           ],
+          "suspiciousSha": "14913b452d41d6aa",
           "changedOn": "2026-11-01"
         }
       }
@@ -7714,9 +7729,10 @@
           "operations": 114,
           "title": "Teamwork V.3",
           "specVersion": "2.1.0",
-          "surface": "afae1fcfd2e3a2b8",
+          "surface": "c72c23e319df3fef",
           "server": "https://{site}.teamwork.com/projects/api/v3",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -9015,7 +9031,6 @@
         "Adyntel API - existing endpoints": {
           "status": "ok",
           "sha256": "a7abb290f08c33e78edc26bcd235fa5996f56c60d24c2e72443df69bdabbf36d",
-          "fetchSha256": "92edd9eca61d26bc32432b3fd21645f3d21824796afa878df7d46d1610e9fdef",
           "bytes": 20394,
           "operations": 10,
           "title": "Adyntel API",
@@ -9281,8 +9296,8 @@
       "specs": {
         "apaleo Inventory API": {
           "status": "ok",
-          "sha256": "4c1815241293cb25b5a41eb2708b09c1f0ba45552d26489bebd6fa63ca6ce910",
-          "fetchSha256": "4c1815241293cb25b5a41eb2708b09c1f0ba45552d26489bebd6fa63ca6ce910",
+          "sha256": "9a358799381ec01dd7b24a5d1d365b8c0035c7f27898339620dd877dc2a28f77",
+          "fetchSha256": "9a358799381ec01dd7b24a5d1d365b8c0035c7f27898339620dd877dc2a28f77",
           "bytes": 151914,
           "operations": 35,
           "title": "apaleo Inventory API",
@@ -9294,8 +9309,8 @@
         },
         "apaleo Rate Plan API": {
           "status": "ok",
-          "sha256": "a0fe602190ffc0d01d0b90bd1d0bcc86865ab59b913de522778cb505efb38d58",
-          "fetchSha256": "a0fe602190ffc0d01d0b90bd1d0bcc86865ab59b913de522778cb505efb38d58",
+          "sha256": "27a382e1c47f49be503eaf76a3c0280e7f8a9d060565d41e26ce33dc5b88223c",
+          "fetchSha256": "27a382e1c47f49be503eaf76a3c0280e7f8a9d060565d41e26ce33dc5b88223c",
           "bytes": 262866,
           "operations": 45,
           "title": "apaleo Rate Plan API",
@@ -9307,9 +9322,9 @@
         },
         "apaleo Booking API": {
           "status": "ok",
-          "sha256": "09ce30dbf2b7cf5aee5cf44ab5809bf9cfc6dd1d7ba9e8227a88c1a0117f9b03",
-          "fetchSha256": "09ce30dbf2b7cf5aee5cf44ab5809bf9cfc6dd1d7ba9e8227a88c1a0117f9b03",
-          "bytes": 545347,
+          "sha256": "c0e9bfcac0e3095ccad8b57d53f0f271437e86b2ee2f59a3c6b2689981bad495",
+          "fetchSha256": "c0e9bfcac0e3095ccad8b57d53f0f271437e86b2ee2f59a3c6b2689981bad495",
+          "bytes": 545345,
           "operations": 77,
           "title": "apaleo Booking API",
           "apiVersion": "v1",
@@ -9320,9 +9335,9 @@
         },
         "apaleo Finance API": {
           "status": "ok",
-          "sha256": "6914ef3e933042e0362559b68007a5a3fcb2bdb95158387475450f86e47472eb",
-          "fetchSha256": "6914ef3e933042e0362559b68007a5a3fcb2bdb95158387475450f86e47472eb",
-          "bytes": 386767,
+          "sha256": "9fa524b292da190e22dc98468191e7b32a20f0d8438630cae14ed0228b90b5d3",
+          "fetchSha256": "9fa524b292da190e22dc98468191e7b32a20f0d8438630cae14ed0228b90b5d3",
+          "bytes": 386765,
           "operations": 65,
           "title": "apaleo Finance API",
           "apiVersion": "v1",
@@ -9359,8 +9374,8 @@
         },
         "apaleo Operations API": {
           "status": "ok",
-          "sha256": "df3cd99175422ab1e58d86d2aaeb36f6616e5b2cbaf1ccd2288cf6235fea9c8a",
-          "fetchSha256": "df3cd99175422ab1e58d86d2aaeb36f6616e5b2cbaf1ccd2288cf6235fea9c8a",
+          "sha256": "7b30f0dbc94b4769d90197d498a5f4e318ed69036b8411dc61f3bdc8bab7b5c3",
+          "fetchSha256": "7b30f0dbc94b4769d90197d498a5f4e318ed69036b8411dc61f3bdc8bab7b5c3",
           "bytes": 39563,
           "operations": 10,
           "title": "apaleo Operations API",
@@ -9398,8 +9413,8 @@
         },
         "apaleo Logs API": {
           "status": "ok",
-          "sha256": "2a54470636a7bb37f2d0f26be141b1251306718285b1ad23d8ea11c9dfa707ad",
-          "fetchSha256": "2a54470636a7bb37f2d0f26be141b1251306718285b1ad23d8ea11c9dfa707ad",
+          "sha256": "a260d4545a05966290725c6c153337d1e4a3cfa86bd53b60970cf20a27893891",
+          "fetchSha256": "a260d4545a05966290725c6c153337d1e4a3cfa86bd53b60970cf20a27893891",
           "bytes": 60082,
           "operations": 4,
           "title": "apaleo logs API",
@@ -10357,7 +10372,6 @@
         "Drata API V2": {
           "status": "ok",
           "sha256": "701eaea07212563e17d88eaa9a8055b091f538aefe4e838e554edae716a6ec6d",
-          "fetchSha256": "d04475f353937dbe727e9a94c2c81f616b0cadd106d726569ad93499b51e6a62",
           "bytes": 1256561,
           "operations": 255,
           "title": "Drata API",
@@ -10469,9 +10483,10 @@
           "operations": 36,
           "title": "Findymail API documentation",
           "specVersion": "2.1.0",
-          "surface": "d4b2b4aba2580d3a",
+          "surface": "63329caef3251b64",
           "server": "https://app.findymail.com",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -10908,9 +10923,10 @@
           "operations": 68,
           "title": "JobNimbus Public API",
           "specVersion": "2.0.0",
-          "surface": "ffa8a85ae5601b9e",
+          "surface": "ffe84d36fb5d39bf",
           "server": "https://app.jobnimbus.com/api1",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -10944,9 +10960,10 @@
           "operations": 403,
           "title": "API Reference",
           "specVersion": "2.1.0",
-          "surface": "06d22b642d19ccd2",
+          "surface": "955a9bdbaaff3530",
           "server": "https://api.infusionsoft.com/crm",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Keap REST API v1": {
           "status": "ok",
@@ -10956,9 +10973,10 @@
           "operations": 141,
           "title": "API Reference",
           "specVersion": "2.1.0",
-          "surface": "06d22b642d19ccd2",
+          "surface": "8e3b24d8e1870283",
           "server": "https://api.infusionsoft.com/crm",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Keap Services API": {
           "status": "ok",
@@ -10968,9 +10986,10 @@
           "operations": 45,
           "title": "API Reference",
           "specVersion": "2.1.0",
-          "surface": "fe06399ba6485852",
+          "surface": "88834deb1165a3a8",
           "server": "https://api.infusionsoft.com/services",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -11039,7 +11058,6 @@
         "Leapsome API": {
           "status": "ok",
           "sha256": "0c5822586dd179863374dec6c30e8d255c2c62233cb21f5c4f68d53660c659a6",
-          "fetchSha256": "7c401c25674b4f7e32e90826414c684efd52317e65c6e34847b8da546758fd3c",
           "bytes": 176989,
           "operations": 27,
           "title": "Leapsome API",
@@ -11948,9 +11966,10 @@
           "operations": 291,
           "title": "Pipeline CRM API",
           "specVersion": "2.1.0",
-          "surface": "a851d3e7e6d811f7",
+          "surface": "3bf270f971b98cd4",
           "server": "https://api.pipelinecrm.com/api/v3",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -12513,8 +12532,8 @@
         },
         "Apply API": {
           "status": "ok",
-          "sha256": "8e4cf290d3ff5f4239adc045fdb064cbad4ddf6ea5bbf7f407e47ca26eb303fa",
-          "fetchSha256": "8e4cf290d3ff5f4239adc045fdb064cbad4ddf6ea5bbf7f407e47ca26eb303fa",
+          "sha256": "2ad95b29220f031311b7c80353f25b843daa99ca1e1e9c99e2c04936421efea9",
+          "fetchSha256": "2ad95b29220f031311b7c80353f25b843daa99ca1e1e9c99e2c04936421efea9",
           "bytes": 13471,
           "operations": 3,
           "title": "Apply API",
@@ -13170,7 +13189,6 @@
         "Embroidery Effect API": {
           "status": "ok",
           "sha256": "847703855eced40b8026eda0001756d5d58253ba7c886e6165be49758bc06c06",
-          "fetchSha256": "32899d1faba9a3f0d14423fa7525f01c552b5b80a584c3c6507c1ad5411dd003",
           "bytes": 2296,
           "operations": 1,
           "title": "Dynamic Mockups API",
@@ -13183,7 +13201,6 @@
         "MockAnything AI API": {
           "status": "ok",
           "sha256": "3bfcdc3901a10e8522c61e58dc64a7312598b9cfb9707d67cc79d4d114d89672",
-          "fetchSha256": "1151c44f01040bc03beea33ee2d71501de4be38da2624479f1d786edb3d8b878",
           "bytes": 25136,
           "operations": 5,
           "title": "Dynamic Mockups MockAnything AI API",
@@ -13196,7 +13213,6 @@
         "MotionMockups AI API": {
           "status": "ok",
           "sha256": "b04fa44e7c3bd809113fda27e23aa2455e41e37682bc58a00b642cc71dac4236",
-          "fetchSha256": "531f8d6c554c9954302e29dc56f78d5223f789a1872dd830b72e6d3f8a2cb144",
           "bytes": 7087,
           "operations": 3,
           "title": "Dynamic Mockups MotionMockups AI API",
@@ -13209,7 +13225,6 @@
         "Render Mockup API": {
           "status": "ok",
           "sha256": "d586bb7202b76eaba3c5975385c68be245a564e41706780498d16685be0f623a",
-          "fetchSha256": "30e880dc986a2564ea999f3379fff344b656dcf60b6a4e273a2ee3428f2a544c",
           "bytes": 8016,
           "operations": 1,
           "title": "Dynamic Mockups API",
@@ -13222,7 +13237,6 @@
         "Batch Render Mockups API": {
           "status": "ok",
           "sha256": "151aa114ff0f2437126dbe5ac90d625b611a5b82ec086ef4c183e3856f0788a5",
-          "fetchSha256": "9390096ff21a9f328542c4398299fdb0ee69548da87d12c03b858e866d3cb3a2",
           "bytes": 9110,
           "operations": 1,
           "title": "Dynamic Mockups Batch Render API",
@@ -13235,7 +13249,6 @@
         "Get Mockups API": {
           "status": "ok",
           "sha256": "fa9ce9d1a89b9e89bb05f7ca772eb7ff8917f9fdc21c22b5af949160f988c359",
-          "fetchSha256": "2941b44ef3ee4c5cd6675475b80125f7ca8fed75dc7649ac160cad5cecd49184",
           "bytes": 4739,
           "operations": 2,
           "title": "Dynamic Mockups API",
@@ -13248,7 +13261,6 @@
         "Collections API": {
           "status": "ok",
           "sha256": "0703bf0cadb4e1c8e4865c484c4642aad5672ad16fc567e60b67dafdd7e610cf",
-          "fetchSha256": "b49117531eed0d1105f1a828b114751cc85c0ee16c8fe8be623206bb87306590",
           "bytes": 4563,
           "operations": 2,
           "title": "Dynamic Mockups API",
@@ -13261,7 +13273,6 @@
         "Render Collection API": {
           "status": "ok",
           "sha256": "60c1077f0d8479ba6a716f4f7d85d6f82fc22259c9c7916094ff80efbcf11b25",
-          "fetchSha256": "3dd42ed16429ec571dd24909e6a9f5e740529c1f28c5790927b7a3b4e0d271b3",
           "bytes": 1898,
           "operations": 1,
           "title": "Product API Suite",
@@ -13274,7 +13285,6 @@
         "Catalogs API": {
           "status": "ok",
           "sha256": "1a13b3d5a4c499640fd9f3d2aefe0c15687c291af44e7794e622cfcfd41a8736",
-          "fetchSha256": "207a4b21307b47c81b1d518fd8e8ea7af3a3973c2649d6d313f53b6c7180c6a0",
           "bytes": 3653,
           "operations": 2,
           "title": "Dynamic Mockups Catalog API",
@@ -13287,7 +13297,6 @@
         "Render Print Files API": {
           "status": "ok",
           "sha256": "f779ed647b0b9390ccda2b43ec7607acf837a1c208461b7914f0a489892eff17",
-          "fetchSha256": "2fbdec37bd2206eefe9555916178e00ca5dcdfdd7d20cfc94016aadd0d14df28",
           "bytes": 5536,
           "operations": 1,
           "title": "Dynamic Mockups API",
@@ -13300,7 +13309,6 @@
         "Photoshop Files API": {
           "status": "ok",
           "sha256": "f63da9c15b68b059ff75d56a340180f4d0f9ba640d0079604bbd4cbee2ef0389",
-          "fetchSha256": "97e8137cc1800d14493f3fc0f3e1efa63ac612e0629590340bd33726d57b5e75",
           "bytes": 3915,
           "operations": 2,
           "title": "Dynamic Mockups API",
