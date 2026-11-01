@@ -23,15 +23,3 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://{tenantDomain}/my-org/v1"
-  - name: "Event Catalog"
-    url: "https://auth0.com/docs/oas/events/events-schema.json"
-    format: openapi-3.1
-    provenance: vendor
-    server: "https://{tenantDomain}"
-    notes: "Event schema definitions for Auth0 events."
-  - name: "Tenant Logs"
-    url: "https://auth0.com/docs/oas/tenant-logs/logs-schema.json"
-    format: openapi-3.1
-    provenance: vendor
-    server: "https://{tenantDomain}"
-    notes: "Schema definitions for tenant log events."

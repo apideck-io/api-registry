@@ -7,12 +7,6 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.beehiiv.com/v2"
-  - name: "beehiiv Webhooks"
-    url: "https://developers.beehiiv.com/openapi/webhooks.json"
-    format: openapi-3.1
-    provenance: vendor
-    server: "https://api.beehiiv.com/v2"
-    notes: "Webhook payload definitions; no paths."
   - name: "beehiiv OAuth2"
     url: "https://developers.beehiiv.com/openapi/oauth2.json"
     format: openapi-3.1

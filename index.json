@@ -8173,28 +8173,6 @@
           "specVersion": "3.1.0",
           "server": "https://{tenantDomain}/my-org/v1",
           "changedOn": "2026-11-01"
-        },
-        "Event Catalog": {
-          "status": "ok",
-          "sha256": "5a66dc12910a7a51f9048b90c5c84fdda175bccfdb5a491c634789e71c883435",
-          "bytes": 2493479,
-          "operations": 0,
-          "title": "Event Catalog",
-          "apiVersion": "0.13.6",
-          "specVersion": "3.1.0",
-          "server": "https://{tenantDomain}",
-          "changedOn": "2026-11-01"
-        },
-        "Tenant Logs": {
-          "status": "ok",
-          "sha256": "6c48b4332c440f5799fb6bad816e4e0fcbefbe9641e879641450ee5df799abf6",
-          "bytes": 1430868,
-          "operations": 0,
-          "title": "Tenant Logs",
-          "apiVersion": "1.0.0",
-          "specVersion": "3.1.0",
-          "server": "https://{tenantDomain}",
-          "changedOn": "2026-11-01"
         }
       }
     },
@@ -8354,17 +8332,6 @@
           "bytes": 588839,
           "operations": 142,
           "title": "API Reference",
-          "apiVersion": "1.0.0",
-          "specVersion": "3.1.0",
-          "server": "https://api.beehiiv.com/v2",
-          "changedOn": "2026-11-01"
-        },
-        "beehiiv Webhooks": {
-          "status": "ok",
-          "sha256": "cba9460420908480fd983a4356140171b18765ab287d31f7380f205e07a3f3ec",
-          "bytes": 31313,
-          "operations": 0,
-          "title": "Webhooks",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.beehiiv.com/v2",
