@@ -7,4 +7,5 @@ specs:
     url: "https://webservices5.autotask.net/ATServicesRest/swagger/docs/v1"
     format: swagger-2.0
     provenance: vendor
-    server: "https://webservices5.autotask.net/ATServicesRest"
+    server: "https://{zone}.autotask.net/ATServicesRest"
+    notes: "Each tenant is on one zone (webservicesN.autotask.net); Autotask's zone-information lookup returns it."

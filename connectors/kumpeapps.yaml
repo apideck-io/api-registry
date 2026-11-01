@@ -7,4 +7,5 @@ specs:
     url: "https://api.kumpeapps.com/python/swagger/swagger.yaml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://restapi.kumpeapps.com/{version}"
+    server: "https://restapi.kumpeapps.com/v5"
+    notes: "The spec's only version is v5."

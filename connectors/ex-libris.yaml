@@ -7,5 +7,5 @@ specs:
     url: "https://developers.exlibrisgroup.com/wp-content/uploads/alma/openapi/tasklists.yaml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://api-{region}.hosted.exlibrisgroup.com"
-    notes: "One Alma module (task lists); the gateway host depends on the institution's region (na, eu, ap, ca, cn)."
+    server: "https://{gateway-host}"
+    notes: "One Alma module (task lists). The gateway depends on the institution's region: api-na, api-eu, api-ap, api-aps and api-ca .hosted.exlibrisgroup.com, or api-cn.hosted.exlibrisgroup.com.cn."
