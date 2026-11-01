@@ -1,0 +1,19 @@
+connectors/amadeus.yaml
+  s_eeda7bd9685d9d::t_ca14296ef8c7bc 4,11,17,23,29,35,41,47,53,59,65,71,77,83,89,95,101,107,113,119,125,131,137
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3177c54a8808d23da1860268c920670af996be5c",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
