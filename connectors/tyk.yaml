@@ -7,5 +7,5 @@ specs:
     url: "https://raw.githubusercontent.com/TykTechnologies/tyk-swagger-definitions/master/tyk_gateway_api.yml"
     format: swagger-2.0
     provenance: vendor
-    server: "https://raw.githubusercontent.com"
-    notes: "The spec declares no server; this is the host that serves it."
+    server: "https://{tyk-gateway-host}"
+    notes: "The Gateway API runs on the customer's own Tyk gateway; the spec declares no host."

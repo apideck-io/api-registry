@@ -7,5 +7,5 @@ specs:
     url: "https://raw.githubusercontent.com/openstf/stf/master/lib/units/api/swagger/api_v1_generated.json"
     format: swagger-2.0
     provenance: vendor
-    server: "https://raw.githubusercontent.com"
-    notes: "The spec declares no server; this is the host that serves it."
+    server: "https://{stf-host}/api/v1"
+    notes: "Smartphone Test Farm is self-hosted; the spec declares only its base path."

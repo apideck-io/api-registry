@@ -7,5 +7,5 @@ specs:
     url: "https://raw.githubusercontent.com/anchore/anchore-engine/master/anchore_engine/services/apiext/swagger/swagger.yaml"
     format: swagger-2.0
     provenance: vendor
-    server: "https://raw.githubusercontent.com"
-    notes: "The spec declares no server; this is the host that serves it."
+    server: "https://{anchore-engine-host}"
+    notes: "Anchore Engine is self-hosted; the spec declares no host."

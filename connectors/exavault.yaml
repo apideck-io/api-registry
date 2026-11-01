@@ -7,4 +7,5 @@ specs:
     url: "https://exavault-website.cdn.prismic.io/exavault-website/2d2d871e-394d-433e-9305-f38b6656f279_evapi_2.0_public.yaml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://accountname.exavault.com/api/v2"
+    server: "https://{account}.exavault.com/api/v2"
+    notes: "Per account: {account} is the ExaVault account name."

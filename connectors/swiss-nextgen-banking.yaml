@@ -7,4 +7,5 @@ specs:
     url: "https://raw.githubusercontent.com/openbankingproject-ch/obp-apis/master/swiss-ng-api.yaml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://api.dev.openbankingproject.ch"
+    server: "https://{bank-host}"
+    notes: "A framework each bank implements on its own host; the spec lists the project's development host, api.dev.openbankingproject.ch."

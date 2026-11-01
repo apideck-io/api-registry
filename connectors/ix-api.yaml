@@ -7,5 +7,5 @@ specs:
     url: "https://docs.ix-api.net/v2/ix-api-latest.json"
     format: openapi-3.0
     provenance: vendor
-    server: "https://docs.ix-api.net/api/v2"
-    notes: "The spec's server is relative; resolved against the host that serves the spec."
+    server: "https://{ixp-host}/api/v2"
+    notes: "IX-API is a standard each internet exchange implements on its own host."

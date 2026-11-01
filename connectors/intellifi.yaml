@@ -7,5 +7,5 @@ specs:
     url: "https://intellifi-nl.github.io/brain-rest-api-spec/openapi.yml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://intellifi-nl.github.io/brain-rest-api-spec/%7Bprotocol%7D://%7Bcustomer%7D.intellifi.%7Btld%7D/api"
-    notes: "The spec's server is relative; resolved against the host that serves the spec."
+    server: "{protocol}://{customer}.intellifi.{tld}/api"
+    notes: "Per customer, as the spec declares."
