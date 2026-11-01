@@ -574,7 +574,7 @@ for (const id of Object.keys(out.connectors)) if (!entries.some((e) => e.id === 
 // full run: a run with --only can't see the other entries' files.
 if (!ONLY && existsSync(join(ROOT, "derived/graphql"))) {
   const used = new Set(Object.values(out.connectors).flatMap((c) => Object.values(c.specs).map((s) => s.derived?.file)).filter(Boolean));
-  for (const f of readdirSync(join(ROOT, "derived/graphql"))) {
+  for (const f of readdirSync(join(ROOT, "derived/graphql")).filter((n) => n.endsWith(".introspection.json"))) {
     if (!used.has(`derived/graphql/${f}`)) {
       unlinkSync(join(ROOT, "derived/graphql", f));
       console.log(`- derived/graphql/${f}: no spec uses it any more, removed`);
