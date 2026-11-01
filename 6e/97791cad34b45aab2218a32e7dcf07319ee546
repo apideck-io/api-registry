@@ -1,0 +1,57 @@
+README.md
+  s_eeda7bd9685d9d::t_181e9880cc389b 3
+connectors/affinity.yaml
+  s_eeda7bd9685d9d::t_549f98b6b8547b 9
+connectors/aha.yaml
+  s_eeda7bd9685d9d::t_b1e9a48a78c203 4-9
+connectors/algolia.yaml
+  s_eeda7bd9685d9d::t_47972e76c770bd 15,25,30,35
+connectors/eventbrite.yaml
+  s_eeda7bd9685d9d::t_04e5969bf2210e 4
+connectors/gorgias.yaml
+  s_eeda7bd9685d9d::t_96b31b51c8c6a5 4
+connectors/la-growth-machine.yaml
+  s_eeda7bd9685d9d::t_bc0774f40be0b5 4-9
+connectors/mercury.yaml
+  s_eeda7bd9685d9d::t_e341995c003c5a 4
+connectors/metabase.yaml
+  s_eeda7bd9685d9d::t_2dd3c1319fe2a9 4,10
+connectors/ramp.yaml
+  s_eeda7bd9685d9d::t_fa37d5425a8f72 9
+connectors/razorpay.yaml
+  s_eeda7bd9685d9d::t_8c76926781f631 4
+connectors/sanity.yaml
+  s_eeda7bd9685d9d::t_b6dda29fbcba7d 10,15,20,25,30,35,40
+connectors/sentry.yaml
+  s_eeda7bd9685d9d::t_96b9b20938484b 9
+connectors/ticktick.yaml
+  s_eeda7bd9685d9d::t_a6145fd90bc131 4
+connectors/todoist.yaml
+  s_eeda7bd9685d9d::t_111063ed6bbada 9
+connectors/toggl.yaml
+  s_eeda7bd9685d9d::t_944470be626dbe 4-20
+connectors/webex.yaml
+  s_eeda7bd9685d9d::t_555692cf9ddb38 4,30
+connectors/zoho-desk.yaml
+  s_eeda7bd9685d9d::t_00e836804f476c 10,15,20,25,30,35,40,45
+index.json
+  s_eeda7bd9685d9d::t_80960c10947b6f 5194,5202-5214,5244,5266,5277,5288,6140-6152,6291,6487,6526,6537,6548,6559,6570,6581,6592,6614,6744,6753-6784,6876,6926,6937,6948,6959,6970,6981,6992,7003
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_93850ed9a541c6 374-375,482-483,520-523
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6e97791cad34b45aab2218a32e7dcf07319ee546",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
