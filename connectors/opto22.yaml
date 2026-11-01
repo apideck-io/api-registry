@@ -7,5 +7,5 @@ specs:
     url: "https://developer.opto22.com/static/generated/groov-rest-api/swagger.yaml"
     format: swagger-2.0
     provenance: vendor
-    server: "https://{groov-host}"
+    server: "https://{groov-host}/api"
     notes: "groov View runs on the customer's own device; the spec's host is the developer site."
