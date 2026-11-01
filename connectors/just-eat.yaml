@@ -8,3 +8,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://uk.api.just-eat.io"
+    notes: "The spec lists regional servers: uk.api.just-eat.io, i18n.api.just-eat.io and aus.api.just-eat.io; use the market's."

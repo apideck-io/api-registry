@@ -7,4 +7,5 @@ specs:
     url: "https://raw.githubusercontent.com/cbornet/netatmo-swagger-decl/master/spec/swagger.yaml"
     format: swagger-2.0
     provenance: community
-    server: "https://api.netatmo.net/api"
+    server: "https://api.netatmo.com/api"
+    notes: "Netatmo's API is on api.netatmo.com; this community spec names the retired api.netatmo.net."
