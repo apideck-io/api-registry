@@ -507,6 +507,9 @@ for (const e of entries) {
     // The entry's server is set by hand and wins; specs often carry placeholders (DefaultParameterValue,
     // {baseUrl}). The spec's own value is kept as specServer when they differ.
     if (s.server && info.server && info.server !== s.server) info.specServer = info.server;
+    // The entry's format must match the document: a 3.1 spec declared openapi-3.0 picks the wrong parser downstream.
+    const declared = { "openapi-3.0": "3.0", "openapi-3.1": "3.1", "swagger-2.0": "2.0" }[s.format];
+    if (declared && info.specVersion && !String(info.specVersion).startsWith(declared)) info.formatMismatch = `declared ${s.format}, the spec says ${info.specVersion}`;
     if (s.server) info.server = s.server;
     // A rebuilt zip changes its bytes (timestamps, compression) without any spec changing, so a bundle
     // is hashed on its files' names and contents.
@@ -565,7 +568,8 @@ for (const e of entries) {
       : [overlay?.unmatched?.length && `${overlay.unmatched.length} action(s) match nothing`, overlay?.redundant?.length && `${overlay.redundant.length} action(s) change nothing`].filter(Boolean);
     const stale =
       (problems.length ? ` ⚠ overlay: ${problems.join("; ")}` : "") +
-      (info.derivedError ? ` ⚠ SDL not parseable by graphql-js (${info.derivedError})${info.derived ? "; kept the last introspection result" : ""}` : "");
+      (info.derivedError ? ` ⚠ SDL not parseable by graphql-js (${info.derivedError})${info.derived ? "; kept the last introspection result" : ""}` : "") +
+      (info.formatMismatch ? ` ⚠ format: ${info.formatMismatch}` : "");
     console.log(`${mark} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations${stale}`);
   }
   out.connectors[e.id] = { name: e.name, ...(e.apideck === false ? { apideck: false } : {}), specs };

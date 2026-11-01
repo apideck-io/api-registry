@@ -5432,10 +5432,10 @@
       "specs": {
         "Cal.com API v2": {
           "status": "ok",
-          "sha256": "cac5ec02a46bfcb9a2cdab8263e778a0dc61cc6b2cd4ffddc04639ddf8987e65",
-          "bytes": 559988,
-          "operations": 121,
-          "title": "Cal.diy API v2",
+          "sha256": "d5f2dd5f993590b95a3654182cd302bc1001c3d4ec5c6aac3a2b5807df3f9ebf",
+          "bytes": 2286394,
+          "operations": 420,
+          "title": "Cal.com API v2",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.cal.com",
@@ -6269,7 +6269,8 @@
           "operations": 736,
           "title": "Metabase API documentation",
           "specVersion": "3.1.0",
-          "server": "http://localhost:3000",
+          "server": "https://{metabase-host}",
+          "specServer": "http://localhost:3000",
           "changedOn": "2026-11-01"
         }
       }
