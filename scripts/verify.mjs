@@ -332,11 +332,11 @@ function inspect(format, body) {
       const roots = [schema.queryType?.name, schema.mutationType?.name].filter(Boolean);
       const n = schema.types.filter((t) => roots.includes(t.name)).reduce((m, t) => m + (t.fields?.length ?? 0), 0);
       if (!n) throw new Error("the root types have no fields");
-      return { operations: n, introspection, ...flagged(scanText(sdlDescriptions(body))) };
+      return { operations: n, introspection, ...flagged(scanText(sdlDescriptions(body), { positional: false })) };
     } catch (err) {
       if (/no query root|no fields/.test(err.message)) throw err;
       // Not parseable by graphql-js: count fields as before, without a derived file, and say why.
-      return { ...countSdlFields(body), derivedError: err.message.split("\n")[0].slice(0, 100), ...flagged(scanText(sdlDescriptions(body))) };
+      return { ...countSdlFields(body), derivedError: err.message.split("\n")[0].slice(0, 100), ...flagged(scanText(sdlDescriptions(body), { positional: false })) };
     }
   }
   return inspectDocument(format, body);
@@ -616,7 +616,7 @@ for (const e of entries) {
             ? { surface: createHash("sha256").update(parts.map((x, i) => [specFiles[i].name, x.surface ?? "-"]).sort((a, b) => a[0].localeCompare(b[0])).map((x) => x.join("=")).join(",")).digest("hex").slice(0, 16) }
             : {}),
           ...(parts.some((x) => x.suspicious)
-            ? { suspicious: parts.flatMap((x) => x.suspicious ?? []).slice(0, 3), suspiciousSha: suspiciousFingerprint(parts.map((x, i) => `${specFiles[i].name}=${x.suspiciousSha ?? ""}`)) }
+            ? { suspicious: parts.flatMap((x) => x.suspicious ?? []).slice(0, 3), suspiciousSha: suspiciousFingerprint(parts.flatMap((x, i) => (x.suspiciousSha ? [`${specFiles[i].name}=${x.suspiciousSha}`] : []))) }
             : {}),
         };
       } else info = inspect(s.format, r.body);

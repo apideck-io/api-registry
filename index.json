@@ -4491,8 +4491,8 @@
       "specs": {
         "MYOB AccountRight API Postman collection": {
           "status": "ok",
-          "sha256": "6b0ef52be9237be26deeada9a736a76ef7307badb8cc33f7935bb0cbfcc4ce65",
-          "fetchSha256": "6b0ef52be9237be26deeada9a736a76ef7307badb8cc33f7935bb0cbfcc4ce65",
+          "sha256": "5419561b443f97b6b1e1db9bc3e6a9752fcbb98a70e40c898e824afff03365e4",
+          "fetchSha256": "5419561b443f97b6b1e1db9bc3e6a9752fcbb98a70e40c898e824afff03365e4",
           "bytes": 7071274,
           "operations": 257,
           "title": "MYOB AccountRight",

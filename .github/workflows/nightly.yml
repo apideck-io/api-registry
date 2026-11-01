@@ -53,6 +53,14 @@ jobs:
             echo 'review=false' >> "$GITHUB_OUTPUT"
             echo 'note=No servers, authentication or instruction-like text changed.' >> "$GITHUB_OUTPUT"
           fi
+      # Before pushing a flagged night: cancel auto-merge on the open PR, so the push can't complete it.
+      - name: Hold the open PR before pushing
+        if: steps.gate.outputs.review == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(gh pr list --head nightly/spec-drift --state open --json number -q '.[0].number')
+          if [ -n "$n" ]; then gh pr merge "$n" --disable-auto || true; fi
       - uses: peter-evans/create-pull-request@v6
         id: pr
         with:

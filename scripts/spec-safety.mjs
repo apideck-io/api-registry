@@ -36,7 +36,7 @@ const TEXT_KEYS = new Set(["description", "summary", "title", "x-summary"]);
  * index.json); `hits` are every flagged text in full with where it sits, so a fingerprint of them changes when
  * text is added to an already-accepted description or copied to another place.
  */
-export function scanText(doc, max = 500) {
+export function scanText(doc, { max = 500, positional = true } = {}) {
   const samples = [];
   const hits = [];
   const seen = new Set();
@@ -47,7 +47,7 @@ export function scanText(doc, max = 500) {
       const hidden = HIDDEN_CHARS.test(v);
       const hit = INSTRUCTION_LIKE.find((re) => re.test(v));
       if (!hidden && !hit) return;
-      hits.push(`${at}\u0000${v}`);
+      hits.push(`${positional ? at : ""}\u0000${v}`);
       const i = hit ? v.search(hit) : v.search(HIDDEN_CHARS);
       const sample = (hidden ? "hidden characters: " : "") + v.slice(Math.max(0, i - 20), i + 60).replace(/\s+/g, " ").replace(HIDDEN_ALL, "\u2423");
       if (!seen.has(sample) && samples.length < 3) {
@@ -57,13 +57,15 @@ export function scanText(doc, max = 500) {
       return;
     }
     if (Array.isArray(v)) v.forEach((x, i) => walk(x, key, `${at}/${i}`, depth + 1));
-    else if (typeof v === "object") for (const [k, x] of Object.entries(v)) walk(x, k, `${at}/${k}`, depth + 1);
+    // A Postman description can be an object: { content, type }.
+    else if (typeof v === "object") for (const [k, x] of Object.entries(v)) walk(x, TEXT_KEYS.has(key) && k === "content" ? key : k, `${at}/${k}`, depth + 1);
   };
   walk(doc, "", "", 0);
   return { samples, hits };
 }
 
-/** Descriptions in a GraphQL SDL file (block and plain strings), as a document suspiciousText can scan. */
+/** Descriptions in a GraphQL SDL file (block and plain strings), as a document scanText can scan. Scan it with
+ * positional: false, since a new string earlier in the file would shift every later one. */
 export function sdlDescriptions(sdl) {
   return { description: [...sdl.matchAll(/"""([\s\S]*?)"""|"((?:[^"\\\n]|\\.)*)"/g)].map((m) => m[1] ?? m[2]) };
 }
