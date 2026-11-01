@@ -384,8 +384,15 @@ function inspectDocument(format, body) {
   const server = doc.servers?.[0]?.url ?? (doc.host ? `${doc.schemes?.[0] ?? "https"}://${doc.host}${doc.basePath ?? ""}` : null);
   // OpenAPI and Swagger require info.title and info.version. A vendor file without them still describes its
   // operations, so it's kept, and the gap is recorded and flagged in the nightly PR.
-  const missing = ["title", "version"].filter((k) => !doc.info?.[k]).map((k) => `info.${k}`);
-  return { operations: n, title: doc.info?.title, apiVersion: doc.info?.version, specVersion: doc.openapi ?? doc.swagger, server, ...(missing.length ? { specIssues: `no ${missing.join(" or ")}` } : {}) };
+  // Both must be non-empty strings (a JSON number such as version: 1 is not a valid info.version).
+  const problem = (k) => {
+    const v = doc.info?.[k];
+    if (v === undefined || v === null || v === "") return `no info.${k}`;
+    if (typeof v !== "string") return `info.${k} is a ${typeof v}, not a string`;
+    return v.trim() ? null : `info.${k} is blank`;
+  };
+  const issues = ["title", "version"].map(problem).filter(Boolean);
+  return { operations: n, title: doc.info?.title, apiVersion: doc.info?.version, specVersion: doc.openapi ?? doc.swagger, server, ...(issues.length ? { specIssues: issues.join(", ") } : {}) };
 }
 
 for (const e of entries) if (!ONLY || e.id === ONLY) for (const s of e.specs) if (!s.manual) uses.set(keyOf(s), (uses.get(keyOf(s)) ?? 0) + 1);

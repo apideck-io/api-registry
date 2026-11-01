@@ -6770,7 +6770,7 @@
           "operations": 36,
           "specVersion": "2.0",
           "server": "https://api.track.toggl.com",
-          "specIssues": "no info.title or info.version",
+          "specIssues": "no info.title, no info.version",
           "changedOn": "2026-11-01"
         },
         "Toggl Webhooks API v1": {
@@ -6780,7 +6780,7 @@
           "operations": 10,
           "specVersion": "2.0",
           "server": "https://api.track.toggl.com/webhooks/api/v1",
-          "specIssues": "no info.title or info.version",
+          "specIssues": "no info.title, no info.version",
           "changedOn": "2026-11-01"
         }
       }
