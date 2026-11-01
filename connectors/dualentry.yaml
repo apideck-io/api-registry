@@ -1,0 +1,22 @@
+id: dualentry
+name: "DualEntry"
+notes: "Vendor OpenAPI 3.1, three versions, public."
+specs:
+  - name: "DualEntry Public API v2"
+    url: "https://docs.dualentry.com/developers/openapi/resources-v2.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.dualentry.com"
+    notes: "Current stable. Listed under \"OpenAPI Specs\" in https://docs.dualentry.com/llms.txt. 209 paths."
+  - name: "DualEntry Public API v1"
+    url: "https://docs.dualentry.com/developers/openapi/resources-v1.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.dualentry.com"
+    notes: "Older version. 126 paths."
+  - name: "DualEntry Public API v3-alpha"
+    url: "https://docs.dualentry.com/developers/openapi/resources-v3-alpha.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.dualentry.com"
+    notes: "Alpha. 223 paths."

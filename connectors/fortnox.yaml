@@ -1,0 +1,11 @@
+id: fortnox
+name: "Fortnox"
+notes: "Vendor spec exists but only as embedded Redoc state, with no stable raw URL. Third-party copies exist (rsystem-se/fortnox_openapi, archived; api-evangelist subsets), and the vendor spec makes them unnecessary."
+specs:
+  - name: "Fortnox API"
+    url: "https://api.fortnox.se/apidocs"
+    extract: redoc-state
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.fortnox.se"
+    notes: "OpenAPI 3.0.3 is embedded in the Redoc page (window.__redoc_state.spec.data, ~1 MB); the page's 'Download' link is client-side, not a raw URL. https://api.fortnox.se/apidocs/openapi.json and apps.fortnox.se/apidocs/openapi.json both 404. CI must fetch the HTML (~8 MB) and extract __redoc_state. info.version is empty. A separate Alpha/Beta spec is embedded the same way at https://apps.fortnox.se/apidocs/experimental (not counted)."

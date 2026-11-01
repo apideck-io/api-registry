@@ -28,7 +28,19 @@ const PROVENANCE = new Set(["vendor", "third-party", "community", "fork"]);
 const ID = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 // Some vendors wrap the spec: developer.sage.com serves its OpenAPI JSON inside a Markdown code fence.
 // Zoho Books ships its OpenAPI as a zip of per-module files.
-const EXTRACT = new Set(["markdown-json-fence", "zip-bundle"]);
+// Fortnox embeds its OpenAPI in a Redoc page (window.__redoc_state) with no raw file to link.
+// Some GraphQL APIs publish no SDL but answer an anonymous introspection query (Wave, Access Financials).
+const EXTRACT = new Set(["markdown-json-fence", "zip-bundle", "redoc-state", "graphql-introspection"]);
+// Full enough that changed argument types, return types, nullability, input fields or enum values show as drift.
+// Eight levels, as graphql-js uses: enough for [[Foo!]!]! and deeper wrappings.
+const TYPE_REF = "kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name } } } } } } }";
+const INTROSPECTION = `{ __schema { queryType { name } mutationType { name } subscriptionType { name } types {
+  kind name
+  fields(includeDeprecated: true) { name isDeprecated args { name defaultValue type { ${TYPE_REF} } } type { ${TYPE_REF} } }
+  inputFields { name defaultValue type { ${TYPE_REF} } }
+  enumValues(includeDeprecated: true) { name isDeprecated }
+  interfaces { name } possibleTypes { name }
+} } }`;
 // Specs we know about but CI cannot fetch: behind a login, or behind bot protection that refuses CI.
 const MANUAL = new Set(["login", "bot-protection"]);
 const METHODS = ["get", "put", "post", "delete", "patch", "head", "options", "trace"];
@@ -67,6 +79,9 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
     if (!FORMATS.has(s?.format)) errors.push(`${at}: format must be one of ${[...FORMATS].join(", ")}`);
     if (!PROVENANCE.has(s?.provenance)) errors.push(`${at}: provenance must be one of ${[...PROVENANCE].join(", ")}`);
     if (s?.extract && !EXTRACT.has(s.extract)) errors.push(`${at}: extract must be one of ${[...EXTRACT].join(", ")}`);
+    // Null prototype, so a malformed value like `extract: toString` is a validation error, not a TypeError.
+    const extractFits = Object.assign(Object.create(null), { "graphql-introspection": ["graphql"], "redoc-state": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "markdown-json-fence": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "zip-bundle": ["openapi-3.0", "openapi-3.1", "swagger-2.0"] });
+    if (s?.extract && extractFits[s.extract] && !extractFits[s.extract].includes(s?.format)) errors.push(`${at}: extract ${s.extract} doesn't apply to format ${s?.format}`);
     if (s?.extract && !s?.url) errors.push(`${at}: extract applies to a fetched url; store an extracted spec as a plain path instead`);
     if (s?.manual && !MANUAL.has(s.manual)) errors.push(`${at}: manual must be one of ${[...MANUAL].join(", ")}`);
     if (s?.manual && !s?.notes) errors.push(`${at}: a spec CI can't fetch needs notes saying how to get it`);
@@ -85,6 +100,21 @@ if (ONLY && !entries.some((e) => e.id === ONLY)) {
 }
 
 // ---- verification ----
+// The JSON object starting at `start`, found by matching braces outside strings (code follows it in the page).
+function balancedObject(text, start) {
+  let depth = 0;
+  let inString = false;
+  for (let i = start; i < text.length; i++) {
+    const ch = text[i];
+    if (inString) {
+      if (ch === "\\") i++;
+      else if (ch === '"') inString = false;
+    } else if (ch === '"') inString = true;
+    else if (ch === "{") depth++;
+    else if (ch === "}" && --depth === 0) return text.slice(start, i + 1);
+  }
+  throw new Error("unterminated object");
+}
 const canonical = (v) =>
   Array.isArray(v) ? `[${v.map(canonical).join(",")}]`
   : v && typeof v === "object" ? `{${Object.keys(v).filter((k) => v[k] !== undefined).sort().map((k) => `${JSON.stringify(k)}:${canonical(v[k])}`).join(",")}}`
@@ -143,7 +173,11 @@ async function loadUncached(spec) {
   const ctl = new AbortController();
   const timer = setTimeout(() => ctl.abort(), 120000);
   try {
-    const res = await fetch(spec.url, { signal: ctl.signal, headers: { "user-agent": "apideck-api-registry/2 (+https://github.com/apideck-io/api-registry)" } });
+    const ua = { "user-agent": "apideck-api-registry/2 (+https://github.com/apideck-io/api-registry)" };
+    const res =
+      spec.extract === "graphql-introspection"
+        ? await fetch(spec.url, { method: "POST", signal: ctl.signal, headers: { ...ua, "content-type": "application/json" }, body: JSON.stringify({ query: INTROSPECTION }) })
+        : await fetch(spec.url, { signal: ctl.signal, headers: ua });
     if (!res.ok) {
       await res.body?.cancel(); // release the connection; the body of an error page isn't needed
       return { status: res.status, body: null };
@@ -185,11 +219,15 @@ function inspect(format, body) {
     // SDL: count fields on the root Query and Mutation types. Introspection JSON: count their fields.
     if (body.trim().startsWith("{")) {
       const json = JSON.parse(body);
+      // A GraphQL error response can still be HTTP 200; so can a schema with no query root.
+      if (Array.isArray(json?.errors) && json.errors.length) throw new Error(`introspection returned errors: ${String(json.errors[0]?.message ?? "").slice(0, 60)}`);
       const schema = json?.data?.__schema ?? json?.__schema;
       if (!schema?.types) throw new Error("no __schema in introspection result");
+      if (!schema.queryType?.name) throw new Error("introspection has no query root");
       // Root types can be renamed; introspection names them.
       const rootNames = [schema.queryType?.name, schema.mutationType?.name].filter(Boolean);
       const n = schema.types.filter((t) => rootNames.includes(t.name)).reduce((m, t) => m + (t.fields?.length ?? 0), 0);
+      if (!n) throw new Error("the root types have no fields");
       return { operations: n };
     }
     // Strip descriptions, strings and comments, then argument lists (which can hold {…} defaults), so a
@@ -204,10 +242,13 @@ function inspect(format, body) {
     const rootNames = [decl.match(/query\s*:\s*(\w+)/)?.[1] ?? "Query", decl.match(/mutation\s*:\s*(\w+)/)?.[1] ?? "Mutation"];
     const roots = [...sdl.matchAll(/(?:extend\s+)?type\s+(\w+)\b[^{]*\{([^}]*)\}/g)].filter((m) => rootNames.includes(m[1]));
     if (!roots.length) throw new Error(`no ${rootNames.join(" or ")} type`);
+    if (!roots.some((m) => m[1] === rootNames[0])) throw new Error(`no ${rootNames[0]} root type`);
     // Drop argument lists first (they can span lines), then count "name:" field starts.
     // Every "name:" left in the body is a field (arguments are already gone), however many share a line.
     const fields = (block) => (block.match(/\b\w+\s*:/g) ?? []).length;
-    return { operations: roots.reduce((n, m) => n + fields(m[2]), 0) };
+    const total = roots.reduce((n, m) => n + fields(m[2]), 0);
+    if (!total) throw new Error("the root types have no fields");
+    return { operations: total };
   }
   // YAML is read with the failsafe schema so every scalar stays a string: unquoted `swagger: 2.0` or
   // `version: 1.10` would otherwise become the numbers 2 and 1.1.
@@ -270,6 +311,17 @@ for (const e of entries) {
       continue;
     }
     const r = await load(s);
+    if (r.body && s.extract === "redoc-state") {
+      const at = r.body.search(/__redoc_state\s*=\s*\{/);
+      try {
+        const spec = at >= 0 && JSON.parse(balancedObject(r.body, r.body.indexOf("{", at)))?.spec?.data;
+        r.body = spec ? JSON.stringify(spec) : null;
+        if (!spec) r.error = "no __redoc_state spec found";
+      } catch (err) {
+        r.body = null;
+        r.error = `bad __redoc_state: ${err.message.slice(0, 60)}`;
+      }
+    }
     if (r.body && s.extract === "markdown-json-fence") {
       const m = r.body.match(/```json\s*\n([\s\S]*?)\n```/);
       r.body = m ? m[1] : null;

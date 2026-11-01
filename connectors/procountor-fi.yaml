@@ -1,0 +1,10 @@
+id: procountor-fi
+name: "Procountor"
+notes: "Official spec, verified. Despite the 'Swagger' name it is OpenAPI 3.1."
+specs:
+  - name: "Procountor API"
+    url: "https://dev.procountor.com/static/swagger.latest.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://pts-api.procountor.com/api"
+    notes: "OpenAPI 3.1.0, 136 paths, ~880 KB. Loaded by the Swagger UI at https://dev.procountor.com/api-reference/. The first server is the test environment; production is https://api.procountor.com/api. Version-pinned files follow /static/swagger.<version>.json (e.g. v2605, v2602)."

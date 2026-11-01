@@ -1,0 +1,10 @@
+id: fiken
+name: "Fiken"
+notes: "Official raw OpenAPI."
+specs:
+  - name: "Fiken API v2"
+    url: "https://api.fiken.no/api/v2/docs/swagger.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.fiken.no/api/v2"
+    notes: "Named swagger.yaml, but the content is OpenAPI 3.0.2 (~332 KB). /openapi.yaml 404s."

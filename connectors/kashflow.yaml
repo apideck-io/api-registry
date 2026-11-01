@@ -1,0 +1,10 @@
+id: kashflow
+name: "KashFlow"
+notes: "The REST Swagger is the primary spec. KashFlow legacy SOAP API: https://securedwebapp.com/api/service.asmx?WSDL (WSDL (note only): 192 distinct wsdl:operation names. Legacy API.)"
+specs:
+  - name: "KashFlow REST API (Swashbuckle)"
+    url: "https://api.kashflow.com/v2/swagger/docs/v1"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.kashflow.com:443/v2"
+    notes: "Swagger 2.0, 541 paths, ~1 MB. Discovery path taken from the vendor Swagger UI at https://api.kashflow.com/v2/swagger/ui/index."

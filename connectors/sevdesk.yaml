@@ -1,0 +1,10 @@
+id: sevdesk
+name: "sevDesk"
+notes: "Official raw OpenAPI."
+specs:
+  - name: "sevdesk API"
+    url: "https://api.sevdesk.de/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://my.sevdesk.de/api/v1"
+    notes: "OpenAPI 3.0.0 YAML, ~671 KB. https://my.sevdesk.de/swaggerUI/openapi.yaml returns an HTML page, not the spec."

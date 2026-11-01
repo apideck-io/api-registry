@@ -1,0 +1,4 @@
+id: exact-online-uk
+name: "Exact Online UK"
+notes: "Same API as exact-online; see connectors/exact-online.yaml."
+specs: []

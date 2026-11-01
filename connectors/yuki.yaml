@@ -1,0 +1,4 @@
+id: yuki
+name: "Yuki"
+notes: "SOAP only; the registry has no WSDL format yet, so nothing is fetched. Yuki splits its API into 10 service WSDLs (215 operations in total); the Accounting service is at https://api.yukiworks.nl/ws/Accounting.asmx?WSDL (33 operations)."
+specs: []

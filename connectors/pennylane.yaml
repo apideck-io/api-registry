@@ -1,0 +1,10 @@
+id: pennylane
+name: "Pennylane"
+notes: "Official v2 spec, verified."
+specs:
+  - name: "Pennylane Company API v2"
+    url: "https://pennylane.readme.io/openapi/accounting.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.pennylane.com"
+    notes: "OpenAPI 3.0.1, 131 paths. Listed as the only file on the vendor's ReadMe index https://pennylane.readme.io/openapi ('All OpenAPI Files for v2.0'). Cloudflare-fronted but fetched fine with curl."

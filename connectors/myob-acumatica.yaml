@@ -1,0 +1,11 @@
+id: myob-acumatica
+name: "MYOB Acumatica"
+notes: "A vendor spec exists only per tenant instance, behind a login. Nothing public to fetch."
+specs:
+  - name: "MYOB Acumatica contract-based REST endpoint (per instance)"
+    url: "https://{instance}.myobadvanced.com/entity/Default/{version}/swagger.json?company={tenant}"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{instance}.myobadvanced.com/entity/Default/{version}"
+    manual: login
+    notes: "Acumatica generates swagger.json per instance, endpoint and version, and it requires an authenticated session on a customer instance. There is no public hosted copy (www.myobadvanced.com redirects). Not fetched. Docs: https://help.acumatica.com/Wiki/ShowWiki.aspx?pageid=6ff6b2c9-554d-4e65-b916-da2237a421f6 and the HTML entity list at https://enterprise-support.myob.com/acudev/default-endpoints."

@@ -1,0 +1,4 @@
+id: salesforce
+name: "Salesforce"
+notes: "Reference pages offer a Download OpenAPI link, but developer.salesforce.com blocks non-browser clients, so the raw spec URL is unverified: https://developer.salesforce.com/docs/platform/connect-rest-api/references/connect-rest-api-agentforce. No public static spec verified for the core REST/sObjects API. forcedotcom/postman-salesforce-apis (official Postman collection, 250+ requests) is archived and the repo holds no collection JSON; the collection lives in the Salesforce Developers Postman public workspace (https://www.postman.com/salesforce-developers). Not counted. The REST API's OpenAPI document (beta) is generated per org on request: POST to https://{instance}.my.salesforce.com/services/data/v{version}/async/specifications/oas3 starts a job, and the document is fetched from the returned locator once it completes. It needs an authenticated org, so there is no static URL to record."
+specs: []

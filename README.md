@@ -28,6 +28,14 @@ specs:
     notes: "..."              # optional
 ```
 
+Two optional fields cover vendors that don't serve a plain file:
+- `extract` says how the verifier gets the spec when the URL doesn't serve a plain file: it unwraps a wrapper, or for `graphql-introspection` it queries the endpoint:
+  - `zip-bundle`: a zip of module files (Zoho Books)
+  - `markdown-json-fence`: JSON inside a Markdown code fence (Sage)
+  - `redoc-state`: embedded in a Redoc page's `__redoc_state` (Fortnox)
+  - `graphql-introspection`: no SDL file, but the endpoint answers an anonymous introspection query (Wave, Access Financials)
+- `manual: login | bot-protection` records a spec CI can't fetch (it needs `notes` on how to get it).
+
 An app whose vendor publishes no spec still gets an entry with `specs: []` and a `notes` line saying what exists instead. That records that we looked.
 
 `index.json` records, per spec:

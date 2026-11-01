@@ -1,0 +1,34 @@
+id: datev-unternehmen-online
+name: "DATEV Unternehmen Online"
+notes: "DATEV publishes one OpenAPI 3.0.x per API product; fetched anonymously from the portal backend (no login). Total 34 operations across the 5 APIs Apideck uses. Portal pages are a JS SPA, so the stable human URL is https://developer.datev.de/de/product-detail/{product}/{version}/overview. dxso-jobs also relies on XSD-defined XML invoice formats (not fetched)."
+specs:
+  - name: "DATEV accounting-clients"
+    url: "https://developer.datev.de/mediator/apis/7a60037f-8b98-40bf-b8bb-9eb4e23b3eac/document"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://accounting-clients.api.datev.de/platform/v2"
+    notes: "OpenAPI served anonymously by the DATEV Developer Portal's own backend (portal product page: https://developer.datev.de/de/product-detail/accounting-clients). The API id is a portal UUID and may change with new versions; resolve via https://developer.datev.de/mediator/products/accounting-clients/apis."
+  - name: "DATEV accounting:documents"
+    url: "https://developer.datev.de/mediator/apis/3184cf7b-de13-412c-993f-c3ddbca8dd17/document"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://accounting-documents.api.datev.de/platform/v2"
+    notes: "OpenAPI served anonymously by the DATEV Developer Portal's own backend (portal product page: https://developer.datev.de/de/product-detail/accounting-documents). The API id is a portal UUID and may change with new versions; resolve via https://developer.datev.de/mediator/products/accounting-documents/apis."
+  - name: "DATEV accounting:extf-files"
+    url: "https://developer.datev.de/mediator/apis/4e42f72c-302f-4fb0-b097-ac157c32731a/document"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://accounting-extf-files.api.datev.de/platform/v3"
+    notes: "OpenAPI served anonymously by the DATEV Developer Portal's own backend (portal product page: https://developer.datev.de/de/product-detail/accounting-extf-files). The API id is a portal UUID and may change with new versions; resolve via https://developer.datev.de/mediator/products/accounting-extf-files/apis."
+  - name: "DATEV accounting:dxso-jobs"
+    url: "https://developer.datev.de/mediator/apis/632748c6-66be-4f15-ad5b-00ad27b7b990/document"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://accounting-dxso-jobs.api.datev.de/platform/v2"
+    notes: "OpenAPI served anonymously by the DATEV Developer Portal's own backend (portal product page: https://developer.datev.de/de/product-detail/accounting-dxso-jobs). The API id is a portal UUID and may change with new versions; resolve via https://developer.datev.de/mediator/products/accounting-dxso-jobs/apis."
+  - name: "DATEV Accounting Data Exchange"
+    url: "https://developer.datev.de/mediator/apis/1bb01dbc-ecc2-4b48-b22b-912343fd7805/document"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://accounting-data-exchange.api.datev.de/platform/v1"
+    notes: "OpenAPI served anonymously by the DATEV Developer Portal's own backend (portal product page: https://developer.datev.de/de/product-detail/accounting-dataexchange). The API id is a portal UUID and may change with new versions; resolve via https://developer.datev.de/mediator/products/accounting-dataexchange/apis."

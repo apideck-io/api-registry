@@ -1,0 +1,10 @@
+id: clearbooks-uk
+name: "Clear Books"
+notes: "REST API with an official, stable raw OpenAPI 3.1 file."
+specs:
+  - name: "Clear Books API v1"
+    url: "https://api.clearbooks.co.uk/spec/v1.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.clearbooks.co.uk/v1"
+    notes: "Linked as the download from the vendor's Redoc docs at https://api-docs.clearbooks.co.uk/. Served as application/octet-stream. Legacy SOAP API (WSDL https://secure.clearbooks.co.uk/api/accounting/wsdl/) is discontinued; not counted."

@@ -1,0 +1,4 @@
+id: odoo
+name: "Odoo"
+notes: "No static spec. Odoo <=18: XML-RPC/JSON-RPC external API, HTML docs only (https://www.odoo.com/documentation/18.0/developer/reference/external_api.html). Odoo 19 adds the External JSON-2 API (/json/2/{model}/{method}) and the api_doc module: per-database dynamic docs at https://{instance}/doc with JSON descriptors at /doc/index.json and /doc/{model}.json (session) or /doc-bearer/index.json (API key). These are Odoo-specific JSON, not OpenAPI, and per instance. Docs: https://www.odoo.com/documentation/19.0/developer/reference/external_api.html."
+specs: []

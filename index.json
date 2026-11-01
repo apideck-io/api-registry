@@ -1197,6 +1197,550 @@
           "changedOn": "2026-10-31"
         }
       }
+    },
+    "clearbooks-uk": {
+      "name": "Clear Books",
+      "specs": {
+        "Clear Books API v1": {
+          "status": "ok",
+          "sha256": "0eb6ec399dceb3f42daf108850ce8e7e54216a7af9fb16f1a69d266a156bf28d",
+          "bytes": 120728,
+          "operations": 63,
+          "title": "Clear Books API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.clearbooks.co.uk/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "fortnox": {
+      "name": "Fortnox",
+      "specs": {
+        "Fortnox API": {
+          "status": "ok",
+          "sha256": "f268177b4f7abe2eac8c2042e6ddb466c067bdf326dd93da82268d0aa3e5f18a",
+          "bytes": 973338,
+          "operations": 451,
+          "title": "Fortnox API",
+          "apiVersion": "",
+          "specVersion": "3.0.3",
+          "server": "https://api.fortnox.se",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "yuki": {
+      "name": "Yuki",
+      "specs": {}
+    },
+    "holded": {
+      "name": "Holded",
+      "specs": {
+        "Holded API (v2)": {
+          "status": "ok",
+          "sha256": "db68018441fb92ac4c22461c7f2347b293fb67dc8eb58a71088367d0639012f0",
+          "bytes": 5491587,
+          "operations": 366,
+          "title": "Holded API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.holded.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "spiris": {
+      "name": "Spiris",
+      "specs": {
+        "Bookkeeping & Invoicing/eAccounting API V2": {
+          "status": "ok",
+          "sha256": "455e7bd775ae65870d2ab4b7bdeaefa52ff97578468db6244bc97a94f022841d",
+          "bytes": 955488,
+          "operations": 229,
+          "title": "Bookkeeping & Invoicing/eAccounting API V2",
+          "apiVersion": "v2",
+          "specVersion": "3.0.4",
+          "server": "https://eaccountingapi.vismaonline.com/v2/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "sevdesk": {
+      "name": "sevDesk",
+      "specs": {
+        "sevdesk API": {
+          "status": "ok",
+          "sha256": "2f4931a876c0c3fad778382ad2ae6f3ed1b3545dc0542a75cd214bf6e7c649e0",
+          "bytes": 671199,
+          "operations": 154,
+          "title": "sevdesk API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://my.sevdesk.de/api/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "visma-netvisor": {
+      "name": "Visma Netvisor",
+      "specs": {
+        "Netvisor API All endpoints (Postman)": {
+          "status": "manual: login"
+        }
+      }
+    },
+    "myob-acumatica": {
+      "name": "MYOB Acumatica",
+      "specs": {
+        "MYOB Acumatica contract-based REST endpoint (per instance)": {
+          "status": "manual: login"
+        }
+      }
+    },
+    "alegra": {
+      "name": "Alegra",
+      "specs": {}
+    },
+    "navan": {
+      "name": "Navan",
+      "specs": {}
+    },
+    "fiken": {
+      "name": "Fiken",
+      "specs": {
+        "Fiken API v2": {
+          "status": "ok",
+          "sha256": "29111da67f946870830055e8320becb986f9158baa12e463904329c0b23b7356",
+          "bytes": 332236,
+          "operations": 190,
+          "title": "Fiken API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.0.2",
+          "server": "https://api.fiken.no/api/v2",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "pennylane": {
+      "name": "Pennylane",
+      "specs": {
+        "Pennylane Company API v2": {
+          "status": "ok",
+          "sha256": "6c72a445a9a9db3a7c289e9687fa1412d1444fd3111b1db72839c4566c912a3a",
+          "bytes": 1981971,
+          "operations": 183,
+          "title": "Company V2",
+          "apiVersion": "2.0",
+          "specVersion": "3.0.1",
+          "server": "https://app.pennylane.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "campfire": {
+      "name": "Campfire",
+      "specs": {
+        "Campfire Developer APIs": {
+          "status": "ok",
+          "sha256": "67bd9df974442ba40b81afa4de8c32dd7e7c6b532cb2f200eb27bece270c7bd9",
+          "bytes": 2388685,
+          "operations": 414,
+          "title": "Campfire Developer APIs",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.meetcampfire.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "wave": {
+      "name": "Wave",
+      "specs": {
+        "Wave Public GraphQL API (introspection)": {
+          "status": "ok",
+          "sha256": "84af683fa6214cddd6847514358dc42c7681b2e1e85a02a032c33ccdd00fc012",
+          "bytes": 214434,
+          "operations": 55,
+          "server": "https://gql.waveapps.com/graphql/public",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "snelstart": {
+      "name": "SnelStart",
+      "specs": {}
+    },
+    "kashflow": {
+      "name": "KashFlow",
+      "specs": {
+        "KashFlow REST API (Swashbuckle)": {
+          "status": "ok",
+          "sha256": "cde1b33674a37909a9de876eca56e9868b941908ef3ec7219de85d9f09cc261e",
+          "bytes": 1027843,
+          "operations": 708,
+          "title": "KashFlow.RestApi",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://api.kashflow.com:443/v2",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "restaurant365": {
+      "name": "Restaurant365",
+      "specs": {
+        "R365 OData v2 views": {
+          "status": "ok",
+          "sha256": "fa322dbaf4424547dd6ef86a2e09e2bf1c18eca48e6174dee2450976aae4cc80",
+          "bytes": 21818,
+          "operations": 19,
+          "server": "https://odata.restaurant365.net/api/v2/views/",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "banqup": {
+      "name": "banqUP",
+      "specs": {
+        "Banqup (Unifiedpost) APIs v4": {
+          "status": "unparseable: Missing closing \"quote at line 9112, column 81:\n\n          description: \"status "
+        }
+      }
+    },
+    "access-financials": {
+      "name": "Access Financials",
+      "specs": {
+        "Access Financials GraphQL (introspection)": {
+          "status": "ok",
+          "sha256": "2efa41693b3dde01d7ab3b791e84cd4fd6d32acbadcb06b274af01a67838f470",
+          "bytes": 3301839,
+          "operations": 21,
+          "server": "https://api.erp.accessacloud.com/financials-graphql",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "wafeq": {
+      "name": "Wafeq",
+      "specs": {}
+    },
+    "intuit-enterprise-suite": {
+      "name": "Intuit Enterprise Suite",
+      "specs": {}
+    },
+    "procountor-fi": {
+      "name": "Procountor",
+      "specs": {
+        "Procountor API": {
+          "status": "ok",
+          "sha256": "18636eae3730276c2ea56fb318cc45c1d99ba7f134a0d2f9cf1e6ef38acb5938",
+          "bytes": 884073,
+          "operations": 193,
+          "title": "Procountor API",
+          "apiVersion": "26.10",
+          "specVersion": "3.1.0",
+          "server": "https://pts-api.procountor.com/api",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "exact-online": {
+      "name": "Exact Online",
+      "specs": {}
+    },
+    "acumatica": {
+      "name": "Acumatica",
+      "specs": {
+        "Acumatica contract-based REST (per instance)": {
+          "status": "manual: login"
+        }
+      }
+    },
+    "rillet": {
+      "name": "Rillet",
+      "specs": {
+        "Rillet Accounting API": {
+          "status": "ok",
+          "sha256": "a55132c5100436971fcd0904d8a989e82b50f49faacc442337b7c9e34bbf8e12",
+          "bytes": 487380,
+          "operations": 195,
+          "title": "Rillet Accounting API",
+          "apiVersion": "v4.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.rillet.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "workday": {
+      "name": "Workday",
+      "specs": {
+        "Workday REST common v1": {
+          "status": "ok",
+          "sha256": "552c76e77cd607b93a62e1e997cee111e731ed1452c47bf1b8f291a544036db2",
+          "bytes": 226759,
+          "operations": 42,
+          "title": "common",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://<tenantHostname>/api/common/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Workday REST staffing v7": {
+          "status": "ok",
+          "sha256": "84ffc55c9717381c2a3edf6a45bc0b1989ad54f49e620c93fd07ad946792b3fd",
+          "bytes": 715504,
+          "operations": 146,
+          "title": "staffing",
+          "apiVersion": "v7",
+          "specVersion": "2.0",
+          "server": "https://<tenantHostname>/staffing/v7",
+          "changedOn": "2026-10-31"
+        },
+        "Workday REST person v4": {
+          "status": "ok",
+          "sha256": "3dea274e2608a0b1c30bafe4bff371dc936f3c23580b9780b5e204f6fc705aff",
+          "bytes": 626671,
+          "operations": 115,
+          "title": "person",
+          "apiVersion": "v4",
+          "specVersion": "2.0",
+          "server": "https://<tenantHostname>/person/v4",
+          "changedOn": "2026-10-31"
+        },
+        "Workday REST accountsPayable v1": {
+          "status": "ok",
+          "sha256": "c2418c1036493d8fee11bb0bbfc0b8f5d23d7e918208bceb0da94d3300dce851",
+          "bytes": 102687,
+          "operations": 12,
+          "title": "accountsPayable",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://<tenantHostname>/accountsPayable/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Workday REST customerAccounts v1": {
+          "status": "ok",
+          "sha256": "2258ebcd72f435eb0a82dc8e89b9502e6be052d58562e35944225410b0fd3615",
+          "bytes": 85317,
+          "operations": 13,
+          "title": "customerAccounts",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://<tenantHostname>/customerAccounts/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Workday REST procurement v5": {
+          "status": "ok",
+          "sha256": "6224ca95429f76d5987b7b493961ddb4c94fbc61ed824268ec6da794269dc92e",
+          "bytes": 623370,
+          "operations": 47,
+          "title": "procurement",
+          "apiVersion": "v5",
+          "specVersion": "2.0",
+          "server": "https://<tenantHostname>/procurement/v5",
+          "changedOn": "2026-10-31"
+        },
+        "Workday REST expense v1": {
+          "status": "ok",
+          "sha256": "75f11a63f6fcaa41b79cc2f7d707f46caae64b51fa130a54be8a76334a29e19b",
+          "bytes": 82170,
+          "operations": 17,
+          "title": "expense",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://<tenantHostname>/expense/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Workday REST coreAccounting v1": {
+          "status": "ok",
+          "sha256": "a0b0a0bb67e47d6e82c8cf4b8c7dbf93cd6f909bf2448a5aee236de826ae632e",
+          "bytes": 18257,
+          "operations": 3,
+          "title": "coreAccounting",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://<tenantHostname>/coreAccounting/v1",
+          "changedOn": "2026-10-31"
+        },
+        "Workday REST revenue v1": {
+          "status": "ok",
+          "sha256": "750a6210662957c4fce34429069d9a7c8ec55259c67bdbb66df688d1e7d74f9e",
+          "bytes": 52514,
+          "operations": 5,
+          "title": "revenue",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://<tenantHostname>/revenue/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "mrisoftware": {
+      "name": "MRI Software",
+      "specs": {}
+    },
+    "dualentry": {
+      "name": "DualEntry",
+      "specs": {
+        "DualEntry Public API v2": {
+          "status": "ok",
+          "sha256": "08bd120a0301713c03dccc4e30c7917189ce39a442a4a53a6f94296c713908a1",
+          "bytes": 2882923,
+          "operations": 313,
+          "title": "DualEntry Public API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.dualentry.com",
+          "changedOn": "2026-10-31"
+        },
+        "DualEntry Public API v1": {
+          "status": "ok",
+          "sha256": "a68fa7b9d2916a3880d05027b7207dd15bd1245154c70bd3b8cba49b7d153578",
+          "bytes": 2145890,
+          "operations": 213,
+          "title": "DualEntry Public API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.dualentry.com",
+          "changedOn": "2026-10-31"
+        },
+        "DualEntry Public API v3-alpha": {
+          "status": "ok",
+          "sha256": "6af56e4af1d3613ecc7712830bce11cc80a08dd5090bb8895e0ffac76c4458b5",
+          "bytes": 3061032,
+          "operations": 326,
+          "title": "DualEntry Public API",
+          "apiVersion": "3.0.0-alpha",
+          "specVersion": "3.1.0",
+          "server": "https://api.dualentry.com",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "datev-unternehmen-online": {
+      "name": "DATEV Unternehmen Online",
+      "specs": {
+        "DATEV accounting-clients": {
+          "status": "ok",
+          "sha256": "30be6bc240665a82095396eab55269e5600a250f2e486d7047f433664b954359",
+          "bytes": 13919,
+          "operations": 2,
+          "title": "accounting-clients",
+          "apiVersion": "2.0",
+          "specVersion": "3.0.3",
+          "server": "https://accounting-clients.api.datev.de/platform/v2",
+          "changedOn": "2026-10-31"
+        },
+        "DATEV accounting:documents": {
+          "status": "ok",
+          "sha256": "88a80a162f273bed2952ddad174d3039b018d9e4f491b13efb41580abb71d72e",
+          "bytes": 113070,
+          "operations": 7,
+          "title": "accounting:documents",
+          "apiVersion": "2.1.17",
+          "specVersion": "3.0.1",
+          "server": "https://accounting-documents.api.datev.de/platform/v2",
+          "changedOn": "2026-10-31"
+        },
+        "DATEV accounting:extf-files": {
+          "status": "ok",
+          "sha256": "618747aff97a491ead409459566c0d7f370ab067ae738049fa8bd3cac671d57c",
+          "bytes": 29098,
+          "operations": 3,
+          "title": "accounting:extf-files",
+          "apiVersion": "3.0.1",
+          "specVersion": "3.0.3",
+          "server": "https://accounting-extf-files.api.datev.de/platform/v3",
+          "changedOn": "2026-10-31"
+        },
+        "DATEV accounting:dxso-jobs": {
+          "status": "ok",
+          "sha256": "6a32b1ec889c417932de3666e0011eb0c9c8f75411e521a8ba3fb9c4197a5450",
+          "bytes": 75487,
+          "operations": 8,
+          "title": "accounting:dxso-jobs",
+          "apiVersion": "2.1.11",
+          "specVersion": "3.0.1",
+          "server": "https://accounting-dxso-jobs.api.datev.de/platform/v2",
+          "changedOn": "2026-10-31"
+        },
+        "DATEV Accounting Data Exchange": {
+          "status": "ok",
+          "sha256": "c29ed8773c8d37f4ad6f7e9d4d2fb17b6a2aa7af0008aaf9eb6ef75a7c77d359",
+          "bytes": 59347,
+          "operations": 14,
+          "title": "Accounting Data Exchange",
+          "apiVersion": "1.7.0",
+          "specVersion": "3.0.3",
+          "server": "https://accounting-data-exchange.api.datev.de/platform/v1",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "microsoft-dynamics": {
+      "name": "Microsoft Dynamics CRM",
+      "specs": {
+        "Dataverse Web API $metadata (per tenant)": {
+          "status": "manual: login"
+        }
+      }
+    },
+    "odoo": {
+      "name": "Odoo",
+      "specs": {}
+    },
+    "salesforce": {
+      "name": "Salesforce",
+      "specs": {}
+    },
+    "freeagent": {
+      "name": "FreeAgent",
+      "specs": {
+        "FreeAgent Postman collection": {
+          "status": "ok",
+          "sha256": "6bff9134e8412b6db908e1ec3e54b4e1ddf3c43e6899e9919e9700b8e5bd234d",
+          "bytes": 169126,
+          "operations": 155,
+          "title": "FreeAgent",
+          "server": "https://api.freeagent.com/v2",
+          "changedOn": "2026-10-31"
+        }
+      }
+    },
+    "exact-online-nl": {
+      "name": "Exact Online NL",
+      "specs": {}
+    },
+    "exact-online-uk": {
+      "name": "Exact Online UK",
+      "specs": {}
+    },
+    "sage-intacct-rest": {
+      "name": "Sage Intacct REST",
+      "specs": {
+        "Sage Intacct REST API": {
+          "status": "manual: bot-protection"
+        }
+      }
+    },
+    "jobadder": {
+      "name": "JobAdder",
+      "specs": {
+        "JobAdder API v2": {
+          "status": "ok",
+          "sha256": "08f2c43c22ddb9073ac7df1c85e9ec1e20accc6fe25b72102bd3aad3f83d9c58",
+          "bytes": 1313149,
+          "operations": 398,
+          "title": "JobAdder API",
+          "apiVersion": "v2",
+          "specVersion": "3.0.1",
+          "server": "https://api.jobadder.com/v2",
+          "specServer": "/v2",
+          "changedOn": "2026-10-31"
+        }
+      }
     }
   }
 }

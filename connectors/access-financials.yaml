@@ -1,0 +1,11 @@
+id: access-financials
+name: "Access Financials"
+notes: "GraphQL only. Spec is introspection, verified."
+specs:
+  - name: "Access Financials GraphQL (introspection)"
+    url: "https://api.erp.accessacloud.com/financials-graphql"
+    format: graphql
+    extract: graphql-introspection
+    provenance: vendor
+    server: "https://api.erp.accessacloud.com/financials-graphql"
+    notes: "Anonymous introspection works: 11 Query fields and 10 Mutation fields. No SDL file is published. Endpoint is from the vendor docs at https://developer.erp.accessacloud.com/docs/financials/explore-api/. Data calls need an APIM subscription key plus a bearer token or HMAC. A sibling endpoint, https://api.erp.accessacloud.com/dimensions-graphql, serves Access Dimensions."

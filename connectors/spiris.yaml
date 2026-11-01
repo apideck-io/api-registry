@@ -1,0 +1,10 @@
+id: spiris
+name: "Spiris"
+notes: "Official raw OpenAPI 3.0 file. Docs are at developer.vismaonline.com."
+specs:
+  - name: "Bookkeeping & Invoicing/eAccounting API V2"
+    url: "https://eaccountingapi.vismaonline.com/openapi/v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://eaccountingapi.vismaonline.com/v2/"
+    notes: "OpenAPI 3.0.4, ~955 KB. Rendered by Scalar at https://eaccountingapi.vismaonline.com/scalar/v2. The old /swagger/docs/v2 path now 404s."

@@ -1,0 +1,11 @@
+id: wave
+name: "Wave"
+notes: "Spec is introspection only, verified 2026-10-31."
+specs:
+  - name: "Wave Public GraphQL API (introspection)"
+    url: "https://gql.waveapps.com/graphql/public"
+    format: graphql
+    extract: graphql-introspection
+    provenance: vendor
+    server: "https://gql.waveapps.com/graphql/public"
+    notes: "No published SDL file. Anonymous introspection (POST __schema) works without a token: 12 Query fields and 42 active Mutation fields (index.json counts 55 because it includes a deprecated field), no Subscription, 224 types. CI must POST an introspection query; a GET won't do. Human docs and API Explorer are at developer.waveapps.com (Zendesk, returns 403 to curl)."

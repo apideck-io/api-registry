@@ -1,0 +1,58 @@
+id: workday
+name: "Workday"
+notes: "REST directory https://community.workday.com/sites/default/files/file-hosting/restapi/index.html (public, no login) lists 89 Swagger 2.0 files; latest version of each of 53 services fetched and parsed: 964 operations total. Files served at restapi/{file} (not restapi/openApiFiles/). Finance-relevant subset recorded individually. No licence field in specs. Workday SOAP Financial_Management v47.0: https://community.workday.com/sites/default/files/file-hosting/productionapi/Financial_Management/v47.0/Financial_Management.wsdl Workday SOAP Human_Resources v47.0: https://community.workday.com/sites/default/files/file-hosting/productionapi/Human_Resources/v47.0/Human_Resources.wsdl"
+specs:
+  - name: "Workday REST common v1"
+    url: "https://community.workday.com/sites/default/files/file-hosting/restapi/common_v1_20261003_oas2.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://<tenantHostname>/api/common/v1"
+    notes: "Per-service Swagger 2.0 file listed in the Workday REST API Directory (public, no login). Filename carries a release date (20261003) and changes each release; resolve current names from the directory bundle."
+  - name: "Workday REST staffing v7"
+    url: "https://community.workday.com/sites/default/files/file-hosting/restapi/staffing_v7_20261003_oas2.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://<tenantHostname>/staffing/v7"
+    notes: "Per-service Swagger 2.0 file listed in the Workday REST API Directory (public, no login). Filename carries a release date (20261003) and changes each release; resolve current names from the directory bundle."
+  - name: "Workday REST person v4"
+    url: "https://community.workday.com/sites/default/files/file-hosting/restapi/person_v4_20261003_oas2.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://<tenantHostname>/person/v4"
+    notes: "Per-service Swagger 2.0 file listed in the Workday REST API Directory (public, no login). Filename carries a release date (20261003) and changes each release; resolve current names from the directory bundle."
+  - name: "Workday REST accountsPayable v1"
+    url: "https://community.workday.com/sites/default/files/file-hosting/restapi/accountsPayable_v1_20261003_oas2.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://<tenantHostname>/accountsPayable/v1"
+    notes: "Per-service Swagger 2.0 file listed in the Workday REST API Directory (public, no login). Filename carries a release date (20261003) and changes each release; resolve current names from the directory bundle."
+  - name: "Workday REST customerAccounts v1"
+    url: "https://community.workday.com/sites/default/files/file-hosting/restapi/customerAccounts_v1_20261003_oas2.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://<tenantHostname>/customerAccounts/v1"
+    notes: "Per-service Swagger 2.0 file listed in the Workday REST API Directory (public, no login). Filename carries a release date (20261003) and changes each release; resolve current names from the directory bundle."
+  - name: "Workday REST procurement v5"
+    url: "https://community.workday.com/sites/default/files/file-hosting/restapi/procurement_v5_20261003_oas2.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://<tenantHostname>/procurement/v5"
+    notes: "Per-service Swagger 2.0 file listed in the Workday REST API Directory (public, no login). Filename carries a release date (20261003) and changes each release; resolve current names from the directory bundle."
+  - name: "Workday REST expense v1"
+    url: "https://community.workday.com/sites/default/files/file-hosting/restapi/expense_v1_20261003_oas2.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://<tenantHostname>/expense/v1"
+    notes: "Per-service Swagger 2.0 file listed in the Workday REST API Directory (public, no login). Filename carries a release date (20261003) and changes each release; resolve current names from the directory bundle."
+  - name: "Workday REST coreAccounting v1"
+    url: "https://community.workday.com/sites/default/files/file-hosting/restapi/coreAccounting_v1_20261003_oas2.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://<tenantHostname>/coreAccounting/v1"
+    notes: "Per-service Swagger 2.0 file listed in the Workday REST API Directory (public, no login). Filename carries a release date (20261003) and changes each release; resolve current names from the directory bundle."
+  - name: "Workday REST revenue v1"
+    url: "https://community.workday.com/sites/default/files/file-hosting/restapi/revenue_v1_20261003_oas2.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://<tenantHostname>/revenue/v1"
+    notes: "Per-service Swagger 2.0 file listed in the Workday REST API Directory (public, no login). Filename carries a release date (20261003) and changes each release; resolve current names from the directory bundle."

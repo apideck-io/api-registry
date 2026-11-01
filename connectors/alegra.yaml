@@ -1,0 +1,4 @@
+id: alegra
+name: "Alegra"
+notes: "No single raw spec. Vendor ReadMe docs only expose per-operation OpenAPI fragments. Alegra API (ReadMe reference): https://developer.alegra.com/llms.txt"
+specs: []
