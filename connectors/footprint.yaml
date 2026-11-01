@@ -1,7 +1,7 @@
 id: footprint
 name: "Footprint"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.onefootprint.com"
+notes: "Spec served by the vendor (found from its developer portal, https://docs.onefootprint.com)."
 specs:
   - name: "Footprint API"
     url: "https://docs.onefootprint.com/llms/openapi.json"

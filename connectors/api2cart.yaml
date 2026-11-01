@@ -1,7 +1,7 @@
 id: api2cart
 name: "API2Cart"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://api2cart.com/e-commerce-api-integration-benefits-for-development"
+notes: "Spec served by the vendor (found from its developer portal, https://api2cart.com/e-commerce-api-integration-benefits-for-development)."
 specs:
   - name: "API2Cart OpenAPI (Shopify/openapi)"
     url: "https://app.api2cart.com/openapi/Shopify/openapi.json"

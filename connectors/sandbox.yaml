@@ -1,7 +1,7 @@
 id: sandbox
 name: "Sandbox"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://developer.sandbox.co.in/docs/income-tax-business-api"
+notes: "Spec served by the vendor (found from its developer portal, https://developer.sandbox.co.in/docs/income-tax-business-api)."
 specs:
   - name: "in-co-sandbox-bank-virtual-account"
     url: "https://developer.sandbox.co.in/api-reference/bank/virtual-account/openapi.json"

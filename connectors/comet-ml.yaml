@@ -1,7 +1,7 @@
 id: comet-ml
 name: "Comet ML"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://www.comet.ml/docs"
+notes: "Spec served by the vendor (found from its developer portal, https://www.comet.ml/docs)."
 specs:
   - name: "Opik API"
     url: "https://www.comet.com/docs/opik/openapi.json"

@@ -1,7 +1,7 @@
 id: wegift
 name: "WeGift"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://developer.wegift.io/"
+notes: "Spec served by the vendor (found from its developer portal, https://developer.wegift.io/)."
 specs:
   - name: "Runa API"
     url: "https://developer.wegift.io/reference/2024-02-05/openapi.json"

@@ -1,7 +1,7 @@
 id: auto-dev
 name: "Auto.dev"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://auto.dev/docs"
+notes: "Spec served by the vendor (found from its developer portal, https://auto.dev/docs)."
 specs:
   - name: "Auto.dev Vehicle Data API"
     url: "https://www.auto.dev/openapi.json"

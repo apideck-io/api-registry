@@ -1,7 +1,7 @@
 id: status-io
 name: "Status.io"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://developers.status.io"
+notes: "Spec served by the vendor (found from its developer portal, https://developers.status.io)."
 specs:
   - name: "Status.io API v2"
     url: "https://developer.status.io/openapi.json"

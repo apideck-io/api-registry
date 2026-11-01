@@ -1,7 +1,7 @@
 id: opal
 name: "Opal"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.opal.dev/docs"
+notes: "Spec served by the vendor (found from its developer portal, https://docs.opal.dev/docs)."
 specs:
   - name: "Opal API"
     url: "https://app.opal.dev/openapi.yaml"

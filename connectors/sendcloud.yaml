@@ -1,7 +1,7 @@
 id: sendcloud
 name: "Sendcloud"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://sendcloud.dev/"
+notes: "Spec served by the vendor (found from its developer portal, https://sendcloud.dev/)."
 specs:
   - name: "Analytics"
     url: "https://sendcloud.dev/.openapi/v3/analytics/openapi.yaml"

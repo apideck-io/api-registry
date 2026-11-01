@@ -1,15 +1,16 @@
 id: award-force
 name: "Award Force"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://apidocs.awardforce.com"
+notes: "Spec served by the vendor (found from its developer portal, https://apidocs.awardforce.com)."
 specs:
-  - name: "Award Force API (openapi)"
+  - name: "Award Force API v1.0"
     url: "https://docs.awardforce.com/openapi.json"
     format: openapi-3.0
     provenance: vendor
     server: "https://api.cr4ce.com"
-  - name: "Award Force API (api-reference/openapi-v2_3)"
+  - name: "Award Force API v2.3"
     url: "https://apidocs.awardforce.com/api-reference/openapi-v2_3.yaml"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.us.cr4ce.com"
+    notes: "Regional servers: api.us.cr4ce.com, api.eu.cr4ce.com, api.au.cr4ce.com, api.ca.cr4ce.com and api.hk.cr4ce.com; use the account's region."

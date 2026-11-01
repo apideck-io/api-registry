@@ -1,7 +1,7 @@
 id: promptlayer
 name: "PromptLayer"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.promptlayer.com"
+notes: "Spec served by the vendor (found from its developer portal, https://docs.promptlayer.com)."
 specs:
   - name: "PromptLayer API"
     url: "https://docs.promptlayer.com/openapi.json"

@@ -1,7 +1,7 @@
 id: everflow
 name: "Everflow"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://developers.everflow.io/"
+notes: "Spec served by the vendor (found from its developer portal, https://developers.everflow.io/)."
 specs:
   - name: "Everflow Network API - Account Billing"
     url: "https://developers.everflow.io/openapi/account-billing.yaml"

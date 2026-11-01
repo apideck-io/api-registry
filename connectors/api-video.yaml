@@ -1,7 +1,7 @@
 id: api-video
 name: "api.video"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.api.video"
+notes: "Spec served by the vendor (found from its developer portal, https://docs.api.video)."
 specs:
   - name: "api.video"
     url: "https://docs.api.video/openapi.yaml"

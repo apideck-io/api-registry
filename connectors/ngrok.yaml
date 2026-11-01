@@ -1,7 +1,7 @@
 id: ngrok
 name: "ngrok"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://ngrok.com/docs"
+notes: "Spec served by the vendor (found from its developer portal, https://ngrok.com/docs)."
 specs:
   - name: "ngrok OpenAPI"
     url: "https://ngrok.com/openapi.yaml"

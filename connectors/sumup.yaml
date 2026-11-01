@@ -1,7 +1,7 @@
 id: sumup
 name: "SumUp"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://developer.sumup.com"
+notes: "Spec served by the vendor (found from its developer portal, https://developer.sumup.com)."
 specs:
   - name: "SumUp REST API"
     url: "https://developer.sumup.com/openapi.json"

@@ -1,7 +1,7 @@
 id: emptor
 name: "Emptor"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.emptor.io"
+notes: "Spec served by the vendor (found from its developer portal, https://docs.emptor.io)."
 specs:
   - name: "BGC API"
     url: "https://docs.emptor.io/openapi.json"

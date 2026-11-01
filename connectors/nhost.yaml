@@ -1,7 +1,7 @@
 id: nhost
 name: "Nhost"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.nhost.io"
+notes: "Spec served by the vendor (found from its developer portal, https://docs.nhost.io)."
 specs:
   - name: "Nhost Authentication API"
     url: "https://docs.nhost.io/openapi/auth.json"

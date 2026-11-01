@@ -1,7 +1,7 @@
 id: checkly
 name: "Checkly"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://checklyhq.com/docs"
+notes: "Spec served by the vendor (found from its developer portal, https://checklyhq.com/docs)."
 specs:
   - name: "Checkly Public API"
     url: "https://www.checklyhq.com/openapi.json"

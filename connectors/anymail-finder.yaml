@@ -1,7 +1,7 @@
 id: anymail-finder
 name: "Anymail finder"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://anymailfinder.com/api/docs"
+notes: "Spec served by the vendor (found from its developer portal, https://anymailfinder.com/api/docs)."
 specs:
   - name: "Anymail finder Api"
     url: "https://api.anymailfinder.com/openapi.json"

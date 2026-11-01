@@ -1,7 +1,7 @@
 id: productive
 name: "Productive"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://developer.productive.io"
+notes: "Spec served by the vendor (found from its developer portal, https://developer.productive.io)."
 specs:
   - name: "API Documentation"
     url: "https://developer.productive.io/reference/download_spec?format=json"

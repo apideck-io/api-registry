@@ -1,7 +1,7 @@
 id: buddy
 name: "Buddy"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://buddy.works/docs"
+notes: "Spec served by the vendor (found from its developer portal, https://buddy.works/docs)."
 specs:
   - name: "Buddy API"
     url: "https://buddy.works/openapi.json"

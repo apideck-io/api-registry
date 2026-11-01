@@ -1,7 +1,7 @@
 id: debounce
 name: "DeBounce"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.debounce.io"
+notes: "Spec served by the vendor (found from its developer portal, https://docs.debounce.io)."
 specs:
   - name: "DeBounce Bulk Email Validation API"
     url: "https://docs.debounce.io/api-reference/openapi-bulk.json"

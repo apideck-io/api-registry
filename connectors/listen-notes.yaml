@@ -1,7 +1,7 @@
 id: listen-notes
 name: "Listen Notes"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://www.listennotes.com/api/docs/?s=modal"
+notes: "Spec served by the vendor (found from its developer portal, https://www.listennotes.com/api/docs/?s=modal)."
 specs:
   - name: "Listen API: Podcast Search, Directory, and Insights API"
     url: "https://listen-api.listennotes.com/api/v2/openapi.yaml"

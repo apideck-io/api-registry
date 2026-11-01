@@ -1,7 +1,7 @@
 id: coop-pank
 name: "Coop Pank"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://openbanking.cooppank.ee/"
+notes: "Spec served by the vendor (found from its developer portal, https://openbanking.cooppank.ee/)."
 specs:
   - name: "Coop OpenBanking XS2A apis"
     url: "https://openbanking.cooppank.ee/swagger.json"

@@ -1,7 +1,7 @@
 id: knock
 name: "Knock"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.knock.app"
+notes: "Spec served by the vendor (found from its developer portal, https://docs.knock.app)."
 specs:
   - name: "Knock API"
     url: "https://docs.knock.app/openapi.json"

@@ -1,7 +1,7 @@
 id: flinks
 name: "Flinks"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.flinks.io/docs"
+notes: "Spec served by the vendor (found from its developer portal, https://docs.flinks.io/docs)."
 specs:
   - name: "Flinks Outbound Auth API"
     url: "https://docs.flinks.io/openapi-outbound-auth.yaml"

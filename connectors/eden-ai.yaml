@@ -1,7 +1,7 @@
 id: eden-ai
 name: "Eden AI"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.edenai.co/docs"
+notes: "Spec served by the vendor (found from its developer portal, https://docs.edenai.co/docs)."
 specs:
   - name: "Organization Management"
     url: "https://api.edenai.run/v2/info/splitted-schema/management_api/openapi.json"
