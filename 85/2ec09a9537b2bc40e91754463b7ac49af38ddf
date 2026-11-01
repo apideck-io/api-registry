@@ -1,0 +1,25 @@
+connectors/flinks.yaml
+  s_eeda7bd9685d9d::t_df9f296ed2e9f3 11,22,28
+connectors/mx.yaml
+  s_eeda7bd9685d9d::t_5775512d2b7339 35
+connectors/polygon-io.yaml
+  s_eeda7bd9685d9d::t_b35b8379b2f78c 2,4
+connectors/sandbox.yaml
+  s_eeda7bd9685d9d::t_132b1ce252a47e 23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "852ec09a9537b2bc40e91754463b7ac49af38ddf",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
