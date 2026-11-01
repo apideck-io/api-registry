@@ -73,7 +73,7 @@ An app whose vendor publishes no spec still gets an entry with `specs: []` and a
 - A change of servers or authentication, or a spec whose servers and authentication are checked for the first time (`⚠ surface`), text in a description or summary that reads like instructions to an AI agent or hides itself with bidirectional overrides or invisible Unicode tag characters, when it differs from what an earlier merge already accepted (`⚠ text`), or a spec that stopped resolving (✗ … newly failing; one already failing is listed without holding the PR) labels the PR `needs-review` and lists why at the top. The patterns are in `scripts/spec-safety.mjs`.
 - Otherwise the PR is labelled `spec-drift`. It merges itself only when the repository variable `NIGHTLY_AUTOMERGE` is `true`; by default a person merges every nightly PR.
 
-A consumer should pin a registry commit, download each spec, and refuse one whose bytes don't match `fetchSha256`.
+A consumer should pin a registry commit, download each spec, and refuse one whose bytes don't match `fetchSha256`. [SECURITY.md](SECURITY.md) describes what this protects against, its limits, and how to report a problem.
 
 
 ## GraphQL schemas
