@@ -62,9 +62,10 @@
           "apiVersion": "7.1",
           "specVersion": "2.0",
           "server": "https://dev.azure.com",
-          "surface": "728caf7168978d5b",
+          "surface": "e69cd372bd829db9",
           "specServer": "https://dev.azure.com/",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -526,9 +527,10 @@
           "apiVersion": "3.0.91",
           "specVersion": "2.0",
           "server": "https://{dc}.api.mailchimp.com/3.0",
-          "surface": "82da3ba9fb41351c",
+          "surface": "98491c9e14b26e7e",
           "specServer": "https://server.api.mailchimp.com/3.0",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -782,9 +784,10 @@
           "apiVersion": "3.0",
           "specVersion": "2.0",
           "server": "https://api.app.shortcut.com",
-          "surface": "38da17034fa9ab1c",
+          "surface": "d68ca1374fc2e43d",
           "specServer": "https://api.app.shortcut.com/",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -801,7 +804,7 @@
           "apiVersion": "1.7.0",
           "specVersion": "2.0",
           "server": "https://slack.com/api",
-          "surface": "00d4bf7749131500",
+          "surface": "aabeda2cc956a1fd",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
         }
@@ -880,7 +883,7 @@
           "apiVersion": "2.15.0",
           "specVersion": "2.0",
           "server": "https://ws-api.toasttab.com/orders/v2",
-          "surface": "d2220e4ae1dbcdeb",
+          "surface": "3738054913e22282",
           "specServer": "https://toast-api-server/orders/v2",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
@@ -1317,9 +1320,10 @@
           "apiVersion": "1.0",
           "specVersion": "2.0",
           "server": "https://quickbooks.api.intuit.com/v3/company/{realmId}",
-          "surface": "32f4627fe62d5c3c",
+          "surface": "5c6508cf563b93ae",
           "specServer": "https://DefaultParameterValue/v3/company/DefaultParameterValue",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -1572,8 +1576,9 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://api.kashflow.com:443/v2",
-          "surface": "b3959e149aa3d0cc",
-          "changedOn": "2026-10-31"
+          "surface": "8bed88002f69f526",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -1681,8 +1686,9 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://<tenantHostname>/api/common/v1",
-          "surface": "d59c2c82b45eb436",
-          "changedOn": "2026-10-31"
+          "surface": "07d40eec24d2f172",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST staffing v7": {
           "status": "ok",
@@ -1694,8 +1700,9 @@
           "apiVersion": "v7",
           "specVersion": "2.0",
           "server": "https://<tenantHostname>/staffing/v7",
-          "surface": "9ef50b3997632f96",
-          "changedOn": "2026-10-31"
+          "surface": "4cdcff247dd3d155",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST person v4": {
           "status": "ok",
@@ -1707,8 +1714,9 @@
           "apiVersion": "v4",
           "specVersion": "2.0",
           "server": "https://<tenantHostname>/person/v4",
-          "surface": "90619e6ac616509d",
-          "changedOn": "2026-10-31"
+          "surface": "062a81c81981f4a6",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST accountsPayable v1": {
           "status": "ok",
@@ -1720,8 +1728,9 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://<tenantHostname>/accountsPayable/v1",
-          "surface": "3d49066055e580cb",
-          "changedOn": "2026-10-31"
+          "surface": "c3d259ecd0af4f73",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST customerAccounts v1": {
           "status": "ok",
@@ -1733,8 +1742,9 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://<tenantHostname>/customerAccounts/v1",
-          "surface": "42ae73542d76688b",
-          "changedOn": "2026-10-31"
+          "surface": "79134b6f43e21716",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST procurement v5": {
           "status": "ok",
@@ -1746,8 +1756,9 @@
           "apiVersion": "v5",
           "specVersion": "2.0",
           "server": "https://<tenantHostname>/procurement/v5",
-          "surface": "a7dd12c051638d5f",
-          "changedOn": "2026-10-31"
+          "surface": "f657e2c2dad7a64e",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST expense v1": {
           "status": "ok",
@@ -1759,8 +1770,9 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://<tenantHostname>/expense/v1",
-          "surface": "c995a2c224632fd6",
-          "changedOn": "2026-10-31"
+          "surface": "515cd131fcea8371",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST coreAccounting v1": {
           "status": "ok",
@@ -1772,8 +1784,9 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://<tenantHostname>/coreAccounting/v1",
-          "surface": "e6fa3abd7aac0a2a",
-          "changedOn": "2026-10-31"
+          "surface": "4d237ed3543391a7",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST revenue v1": {
           "status": "ok",
@@ -1785,8 +1798,9 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://<tenantHostname>/revenue/v1",
-          "surface": "873223efe2c56f76",
-          "changedOn": "2026-10-31"
+          "surface": "60b982b01bb2d4dc",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -1992,7 +2006,7 @@
           "operations": 156,
           "title": "Crisp REST API Reference (V1)",
           "specVersion": "2.1.0",
-          "surface": "c8caeff8b5f3ef48",
+          "surface": "df167721cbe73f02",
           "server": "https://api.crisp.chat/v1",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
@@ -2380,8 +2394,9 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "http://localhost:54541",
-          "surface": "5af20e984fea6c33",
-          "changedOn": "2026-10-31"
+          "surface": "bd29b4b4eddd2f8b",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Fourth Labor Productivity API": {
           "status": "ok",
@@ -2393,8 +2408,9 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "http://localhost:50000",
-          "surface": "6ca9f0b6b7dc202c",
-          "changedOn": "2026-10-31"
+          "surface": "d884eaa0f59894d3",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Fourth Account SCIM API": {
           "status": "ok",
@@ -2405,8 +2421,9 @@
           "title": "Fourth Account SCIM API",
           "apiVersion": "v1",
           "specVersion": "2.0",
-          "surface": "6d862703b6d85a02",
-          "changedOn": "2026-10-31"
+          "surface": "add66ae5831a8444",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Fourth Schedules API": {
           "status": "ok",
@@ -2418,8 +2435,9 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "http://localhost:54707",
-          "surface": "e59a97d21780e675",
-          "changedOn": "2026-10-31"
+          "surface": "60369c4455f3f764",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -2517,8 +2535,9 @@
           "apiVersion": "v4",
           "specVersion": "2.0",
           "server": "https://gitlab.com",
-          "surface": "058ae5da705c1a04",
-          "changedOn": "2026-10-31"
+          "surface": "700cbf7cd4dacf0b",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "GitLab GraphQL API": {
           "status": "ok",
@@ -2526,7 +2545,7 @@
           "bytes": 8645325,
           "operations": 898,
           "server": "https://gitlab.com/api/graphql",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-01"
         }
       }
     },
@@ -2543,9 +2562,10 @@
           "apiVersion": "v4",
           "specVersion": "2.0",
           "server": "https://{instance}/api/v4",
-          "surface": "058ae5da705c1a04",
+          "surface": "700cbf7cd4dacf0b",
           "specServer": "https://gitlab.com",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -2601,8 +2621,9 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://apimta.act.com/act.web.api",
-          "surface": "1a36bbc3fbf3a86d",
-          "changedOn": "2026-10-31"
+          "surface": "c015bfea5b982454",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -2752,7 +2773,7 @@
           "apiVersion": "2026-06-01, 2024-05-09, 2020-11-01, 2024-04-01, 2023-11-30, v0, 2020-12-01, 2022-04-01, 2024-06-01, 2023-11-15, 2022-07-01, 2022-03-23, 2024-09-11, 2026-07-30, v1, 2021-06-30, 2026-03-17, 2026-06-25, 2024-06-19, 2024-03-20, 2020-07-01, 2026-07-04, 2020-09-01, 2021-08-01, 2026-04-20, 2026-01-01, 2022-05-01, 2025-12-01, 2022-11-07, 2024-03-01, v2, 2025-02-01, 2021-03-01, 2026-01-30, 2024-11-01, 2021-12-28, 2021-10-28",
           "specVersion": "2.0",
           "server": "https://sellingpartnerapi-na.amazon.com",
-          "surface": "3ded96f4655d90ed",
+          "surface": "8e21cb3cd3dc8ded",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
         }
@@ -3052,8 +3073,8 @@
       "specs": {
         "Hailey HR API v1": {
           "status": "ok",
-          "sha256": "52c26ee99d182d6989a4ae8cab3a86ad68b9da1f0d0e95e51f825c9673422d8b",
-          "fetchSha256": "52c26ee99d182d6989a4ae8cab3a86ad68b9da1f0d0e95e51f825c9673422d8b",
+          "sha256": "57792a794152ce01ef94cc074b8ca209f1294f6fcdec67d2bde8d18342a1b5dc",
+          "fetchSha256": "57792a794152ce01ef94cc074b8ca209f1294f6fcdec67d2bde8d18342a1b5dc",
           "bytes": 163333,
           "operations": 37,
           "title": "Hailey HR Api",
@@ -3841,9 +3862,10 @@
           "apiVersion": "1.0",
           "specVersion": "2.0",
           "server": "https://{subdomain}.sage.hr/api",
-          "surface": "8781f0ecb3e65304",
+          "surface": "292c0be5d542df6a",
           "specServer": "https://subdomain.sage.hr/api",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -3859,8 +3881,9 @@
           "apiVersion": "1.0.0",
           "specVersion": "2.0",
           "server": "https://api.salesflare.com/",
-          "surface": "81a20c60d89d8923",
-          "changedOn": "2026-11-01"
+          "surface": "ea479dda2d9638b5",
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -4355,9 +4378,10 @@
           "apiVersion": "2.4.9",
           "specVersion": "2.0",
           "server": "https://{store}/rest/default",
-          "surface": "5aeef359dbc15f0c",
+          "surface": "46315c89dc37ea6b",
           "specServer": "http://example.com/rest/default",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Adobe Commerce Customer REST (2.4.9)": {
           "status": "ok",
@@ -4369,9 +4393,10 @@
           "apiVersion": "2.4.9",
           "specVersion": "2.0",
           "server": "https://{store}/rest/default",
-          "surface": "5aeef359dbc15f0c",
+          "surface": "46315c89dc37ea6b",
           "specServer": "http://example.com/rest/default",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Adobe Commerce Guest REST (2.4.9)": {
           "status": "ok",
@@ -4383,9 +4408,10 @@
           "apiVersion": "2.4.9",
           "specVersion": "2.0",
           "server": "https://{store}/rest/default",
-          "surface": "5aeef359dbc15f0c",
+          "surface": "46315c89dc37ea6b",
           "specServer": "http://example.com/rest/default",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Adobe Commerce GraphQL (2.4.8)": {
           "status": "ok",
@@ -4519,8 +4545,8 @@
       "specs": {
         "MYOB AccountRight API Postman collection": {
           "status": "ok",
-          "sha256": "bdce5cd2514f220a59d63704efc1d1161e931ed5351eccfd312ab4efe13ac73e",
-          "fetchSha256": "bdce5cd2514f220a59d63704efc1d1161e931ed5351eccfd312ab4efe13ac73e",
+          "sha256": "36bb1238df4cf401efbeea20f7fd70811332857eb09d0fce7eb5b33671552df2",
+          "fetchSha256": "36bb1238df4cf401efbeea20f7fd70811332857eb09d0fce7eb5b33671552df2",
           "bytes": 7071274,
           "operations": 257,
           "title": "MYOB AccountRight",
@@ -4546,8 +4572,9 @@
           "specVersion": "2.0",
           "server": "https://{company}.namely.com/api/v1",
           "specIssues": "no info.version",
-          "surface": "62136fa078a62059",
-          "changedOn": "2026-10-31"
+          "surface": "d4db772091446735",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -4893,7 +4920,7 @@
           "operations": 15,
           "title": "Sympa Generic API",
           "specVersion": "2.0.0",
-          "surface": "124521a6494a69b8",
+          "surface": "d8749acc375f4522",
           "server": "https://api.sympahr.net/api",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
@@ -5268,8 +5295,8 @@
       "specs": {
         "X API v2": {
           "status": "ok",
-          "sha256": "5245e1471ef772194a3564be8d108aa1c08c301ac6769b76cc57ac48946fb264",
-          "fetchSha256": "5245e1471ef772194a3564be8d108aa1c08c301ac6769b76cc57ac48946fb264",
+          "sha256": "5d09a3e33fc4e24495c95aa23639da6bd24a6f26cc801c70340ba5d3cd0aa6f7",
+          "fetchSha256": "5d09a3e33fc4e24495c95aa23639da6bd24a6f26cc801c70340ba5d3cd0aa6f7",
           "bytes": 1314742,
           "operations": 257,
           "title": "X API v2",
@@ -5296,8 +5323,9 @@
           "apiVersion": "2.0.0",
           "specVersion": "2.0",
           "server": "https://api.zoom.us/v2",
-          "surface": "6247865301430b21",
-          "changedOn": "2026-11-01"
+          "surface": "c64fe97cad8e3cc7",
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -6057,8 +6085,9 @@
           "apiVersion": "2.0",
           "specVersion": "2.0",
           "server": "https://api.bitbucket.org/2.0",
-          "surface": "d99a0cbe61499bd0",
-          "changedOn": "2026-11-01"
+          "surface": "38e5515f426deebe",
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -6481,9 +6510,10 @@
           "apiVersion": "v2.1",
           "specVersion": "2.0",
           "server": "https://demo.docusign.net/restapi",
-          "surface": "442b9907173422f1",
+          "surface": "8444770205e4f749",
           "specServer": "https://www.docusign.net/restapi",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Admin API v2.1": {
           "status": "ok",
@@ -6495,9 +6525,10 @@
           "apiVersion": "v2.1",
           "specVersion": "2.0",
           "server": "https://api-d.docusign.net/management",
-          "surface": "6db895605787dbda",
+          "surface": "459306d09f64089d",
           "specServer": "https://api.docusign.net/Management",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Rooms API v2": {
           "status": "ok",
@@ -6509,8 +6540,9 @@
           "apiVersion": "v2",
           "specVersion": "2.0",
           "server": "https://demo.rooms.docusign.com/restapi",
-          "surface": "e84db213b4bf1237",
-          "changedOn": "2026-11-01"
+          "surface": "42c73e83ae3559b4",
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Click API v1": {
           "status": "ok",
@@ -6522,9 +6554,10 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://demo.docusign.net/clickapi",
-          "surface": "aadc837a0ca4b4c4",
+          "surface": "3c09a097561e1391",
           "specServer": "https://www.demo.docusign.net/clickapi",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -7842,9 +7875,10 @@
           "apiVersion": "9",
           "specVersion": "2.0",
           "server": "https://api.track.toggl.com/api/v9",
-          "surface": "5a6f28e871ed3941",
+          "surface": "a704957e19c700ec",
           "specServer": "https://localhost:8080/api/v9",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Toggl Reports API v3": {
           "status": "ok",
@@ -7855,8 +7889,9 @@
           "specVersion": "2.0",
           "server": "https://api.track.toggl.com",
           "specIssues": "no info.title, no info.version",
-          "surface": "4e0d83ac5a7efa4b",
-          "changedOn": "2026-11-01"
+          "surface": "5c0a8d8d6e350d7f",
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Toggl Webhooks API v1": {
           "status": "ok",
@@ -7867,8 +7902,9 @@
           "specVersion": "2.0",
           "server": "https://api.track.toggl.com/webhooks/api/v1",
           "specIssues": "no info.title, no info.version",
-          "surface": "4558d3c4dffd8325",
-          "changedOn": "2026-11-01"
+          "surface": "8fbd4300bb6a22dd",
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -8300,8 +8336,8 @@
       "specs": {
         "Instantly API v2": {
           "status": "ok",
-          "sha256": "2fdbc4e72614982f2dc191eee1cdb0291bd2b3c3933b879a227bdde9b14d3e3c",
-          "fetchSha256": "2fdbc4e72614982f2dc191eee1cdb0291bd2b3c3933b879a227bdde9b14d3e3c",
+          "sha256": "332910909074c6e22b425bcc31d8dd03c46612223760035c3bcec085c2b8a08a",
+          "fetchSha256": "332910909074c6e22b425bcc31d8dd03c46612223760035c3bcec085c2b8a08a",
           "bytes": 4465370,
           "operations": 256,
           "title": "API Explorer",
@@ -8404,9 +8440,9 @@
       "specs": {
         "Snyk REST API": {
           "status": "ok",
-          "sha256": "3ab82500be952779ee26c668d2d2208bf374489e3d46b207626e612bc0166f27",
-          "fetchSha256": "3ab82500be952779ee26c668d2d2208bf374489e3d46b207626e612bc0166f27",
-          "bytes": 2466078,
+          "sha256": "eeda46ba02173d488102298ee6ee3439572cc3752172441ea5113d9b91e9ac53",
+          "fetchSha256": "eeda46ba02173d488102298ee6ee3439572cc3752172441ea5113d9b91e9ac53",
+          "bytes": 2466104,
           "operations": 303,
           "title": "Snyk API",
           "apiVersion": "REST",
@@ -8423,8 +8459,8 @@
       "specs": {
         "Twelve Data API": {
           "status": "ok",
-          "sha256": "ddc6642016d9403b25cf538c74dbcef5c4f814128fd74ec283a50b1a1ef9ce84",
-          "fetchSha256": "ddc6642016d9403b25cf538c74dbcef5c4f814128fd74ec283a50b1a1ef9ce84",
+          "sha256": "d613c91f4a4e51600960858ae8ce30325d8b485be6489bc4fdf5ede254fc2995",
+          "fetchSha256": "d613c91f4a4e51600960858ae8ce30325d8b485be6489bc4fdf5ede254fc2995",
           "bytes": 3447575,
           "operations": 187,
           "title": "Twelve Data API",
@@ -8960,8 +8996,9 @@
           "apiVersion": "1.0.1",
           "specVersion": "3.0.0",
           "server": "https://{gristhost}/api",
-          "surface": "f55b59d0fff7db3f",
-          "changedOn": "2026-11-01"
+          "surface": "a4706fc9f54ea885",
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -9357,57 +9394,57 @@
       "specs": {
         "apaleo Inventory API": {
           "status": "ok",
-          "sha256": "205dd227bfdbeb3379ebf0b91ab996e401dce3f12dc64db9c40c7d5158ab9488",
-          "fetchSha256": "205dd227bfdbeb3379ebf0b91ab996e401dce3f12dc64db9c40c7d5158ab9488",
+          "sha256": "9a358799381ec01dd7b24a5d1d365b8c0035c7f27898339620dd877dc2a28f77",
+          "fetchSha256": "9a358799381ec01dd7b24a5d1d365b8c0035c7f27898339620dd877dc2a28f77",
           "bytes": 151914,
           "operations": 35,
           "title": "apaleo Inventory API",
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://api.apaleo.com",
-          "surface": "aa0bb4bc9c679b89",
+          "surface": "6fd9044dfae83cc2",
           "changedOn": "2026-11-01",
           "surfaceChangedOn": "2026-11-01"
         },
         "apaleo Rate Plan API": {
           "status": "ok",
-          "sha256": "310d199ae2c0d6bd69e784ea4d85065318b34ee9b3f410620407412236c490ca",
-          "fetchSha256": "310d199ae2c0d6bd69e784ea4d85065318b34ee9b3f410620407412236c490ca",
+          "sha256": "05d3eea6074057ab9a2dd117e2548ff19c9282b36469f0c9001c1bdccf5b61c5",
+          "fetchSha256": "05d3eea6074057ab9a2dd117e2548ff19c9282b36469f0c9001c1bdccf5b61c5",
           "bytes": 262866,
           "operations": 45,
           "title": "apaleo Rate Plan API",
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://api.apaleo.com",
-          "surface": "b3ab86ebae9f5a6a",
+          "surface": "9e9edb073930545c",
           "changedOn": "2026-11-01",
           "surfaceChangedOn": "2026-11-01"
         },
         "apaleo Booking API": {
           "status": "ok",
-          "sha256": "bd52573aa3518c591a2d357c8f0bc6c4b03777d98c18295cb7c0a795146ea1b0",
-          "fetchSha256": "bd52573aa3518c591a2d357c8f0bc6c4b03777d98c18295cb7c0a795146ea1b0",
-          "bytes": 545346,
+          "sha256": "ef44a0d61a9fd61049f8525e94a2f3d5dce71c167057efd51f297e3ca463cf2d",
+          "fetchSha256": "ef44a0d61a9fd61049f8525e94a2f3d5dce71c167057efd51f297e3ca463cf2d",
+          "bytes": 545348,
           "operations": 77,
           "title": "apaleo Booking API",
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://api.apaleo.com",
-          "surface": "9d6b6783238cf9f9",
+          "surface": "5df2e69d3d8fba74",
           "changedOn": "2026-11-01",
           "surfaceChangedOn": "2026-11-01"
         },
         "apaleo Finance API": {
           "status": "ok",
-          "sha256": "52a8893109677a3cec7d643d9d061d3c17987429f77522e97c7d18ccc628d331",
-          "fetchSha256": "52a8893109677a3cec7d643d9d061d3c17987429f77522e97c7d18ccc628d331",
+          "sha256": "f93af5bf5242e1d6de09424d273d80aecd0e191ea9d73f626cae7e14d32dfdfd",
+          "fetchSha256": "f93af5bf5242e1d6de09424d273d80aecd0e191ea9d73f626cae7e14d32dfdfd",
           "bytes": 386767,
           "operations": 65,
           "title": "apaleo Finance API",
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://api.apaleo.com",
-          "surface": "7e198986ac13f9cc",
+          "surface": "b4ac7d866bc07963",
           "changedOn": "2026-11-01",
           "surfaceChangedOn": "2026-11-01"
         },
@@ -9421,7 +9458,7 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://api.apaleo.com",
-          "surface": "e379d9961d4e3288",
+          "surface": "58d07ca1c8b02cb3",
           "changedOn": "2026-11-01",
           "surfaceChangedOn": "2026-11-01"
         },
@@ -9435,20 +9472,21 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://api.apaleo.com",
-          "surface": "aed898d57660b7dc",
-          "changedOn": "2026-11-01"
+          "surface": "898e64355ea54f06",
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         },
         "apaleo Operations API": {
           "status": "ok",
-          "sha256": "15e15f93f95281ae8d88662bd47e74dffa0a02383bfbebb983a877e8104f1676",
-          "fetchSha256": "15e15f93f95281ae8d88662bd47e74dffa0a02383bfbebb983a877e8104f1676",
+          "sha256": "00f5ae6b8989d00e27cf59c5207b86e41f42c083519e8e02f8aa33792f0e0ce0",
+          "fetchSha256": "00f5ae6b8989d00e27cf59c5207b86e41f42c083519e8e02f8aa33792f0e0ce0",
           "bytes": 39563,
           "operations": 10,
           "title": "apaleo Operations API",
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://api.apaleo.com",
-          "surface": "2005af64f149470d",
+          "surface": "b197354174243d6d",
           "changedOn": "2026-11-01",
           "surfaceChangedOn": "2026-11-01"
         },
@@ -9462,7 +9500,7 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://api.apaleo.com",
-          "surface": "613bfb20497c1274",
+          "surface": "477685bd768f528f",
           "changedOn": "2026-11-01",
           "surfaceChangedOn": "2026-11-01"
         },
@@ -9476,21 +9514,21 @@
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://api.apaleo.com",
-          "surface": "83455bb89ffd0537",
+          "surface": "7d59608d0a0e4497",
           "changedOn": "2026-11-01",
           "surfaceChangedOn": "2026-11-01"
         },
         "apaleo Logs API": {
           "status": "ok",
-          "sha256": "52a2db16e6bb75defd6826c1432554a4152497f9aca1df281c03f91f5d088bbe",
-          "fetchSha256": "52a2db16e6bb75defd6826c1432554a4152497f9aca1df281c03f91f5d088bbe",
-          "bytes": 60082,
+          "sha256": "5e14fe37e79ecf6e0c28157eccda33aa976a4f6e08f26286ea081b9d3bb9ec05",
+          "fetchSha256": "5e14fe37e79ecf6e0c28157eccda33aa976a4f6e08f26286ea081b9d3bb9ec05",
+          "bytes": 60061,
           "operations": 4,
           "title": "apaleo logs API",
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://api.apaleo.com",
-          "surface": "2697030f26c26f40",
+          "surface": "33e8f8ea9e03bb03",
           "changedOn": "2026-11-01",
           "surfaceChangedOn": "2026-11-01"
         }
@@ -10118,8 +10156,9 @@
           "apiVersion": "3",
           "specVersion": "2.0",
           "server": "https://rest.cleverreach.com",
-          "surface": "7adef27614f7f046",
-          "changedOn": "2026-11-01"
+          "surface": "7faf9b3ab5b3a473",
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -10924,9 +10963,10 @@
           "apiVersion": "1.8",
           "specVersion": "2.0",
           "server": "https://api.iterable.com",
-          "surface": "d66462460479a835",
+          "surface": "933f977a30833d43",
           "specServer": "https://api.iterable.com/",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -11455,9 +11495,10 @@
           "apiVersion": "1.0",
           "specVersion": "2.0",
           "server": "https://{munchkinId}.mktorest.com",
-          "surface": "1ced38f0346c9e61",
+          "surface": "e59564d462ec1a7a",
           "specServer": "https://localhost:8080/",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Asset API": {
           "status": "ok",
@@ -11469,9 +11510,10 @@
           "apiVersion": "1.0",
           "specVersion": "2.0",
           "server": "https://{munchkinId}.mktorest.com",
-          "surface": "1ced38f0346c9e61",
+          "surface": "e59564d462ec1a7a",
           "specServer": "https://localhost:8080/",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Data Ingestion API": {
           "status": "ok",
@@ -11496,9 +11538,10 @@
           "apiVersion": "1.0",
           "specVersion": "2.0",
           "server": "https://{munchkinId}.mktorest.com",
-          "surface": "1ced38f0346c9e61",
+          "surface": "e59564d462ec1a7a",
           "specServer": "https://localhost:8080/",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         },
         "User API": {
           "status": "ok",
@@ -11510,9 +11553,10 @@
           "apiVersion": "1.0",
           "specVersion": "2.0",
           "server": "https://{munchkinId}.mktorest.com",
-          "surface": "1ced38f0346c9e61",
+          "surface": "e59564d462ec1a7a",
           "specServer": "https://localhost:8080/",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -11710,8 +11754,9 @@
           "apiVersion": "2.63.1",
           "specVersion": "2.0",
           "server": "https://api.netlify.com/api/v1",
-          "surface": "3989bccf612d2d71",
-          "changedOn": "2026-11-01"
+          "surface": "37e82c17f525b5e0",
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -11767,9 +11812,10 @@
           "apiVersion": "2.0.0",
           "specVersion": "2.0",
           "server": "https://api.oceanio.com",
-          "surface": "ef2136e56579f399",
+          "surface": "f4f255bfb5af235c",
           "specServer": "https://api.oceanio.com/",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -12112,9 +12158,10 @@
           "apiVersion": "1.0.0",
           "specVersion": "2.0",
           "server": "https://api.postmarkapp.com",
-          "surface": "8e1175363b63aa35",
+          "surface": "b9a17758448636bf",
           "specServer": "https://api.postmarkapp.com/",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Postmark Account API": {
           "status": "ok",
@@ -12126,9 +12173,10 @@
           "apiVersion": "0.9.0",
           "specVersion": "2.0",
           "server": "https://api.postmarkapp.com",
-          "surface": "8e1175363b63aa35",
+          "surface": "b9a17758448636bf",
           "specServer": "https://api.postmarkapp.com/",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -12629,8 +12677,8 @@
         },
         "Apply API": {
           "status": "ok",
-          "sha256": "2ad95b29220f031311b7c80353f25b843daa99ca1e1e9c99e2c04936421efea9",
-          "fetchSha256": "2ad95b29220f031311b7c80353f25b843daa99ca1e1e9c99e2c04936421efea9",
+          "sha256": "8e4cf290d3ff5f4239adc045fdb064cbad4ddf6ea5bbf7f407e47ca26eb303fa",
+          "fetchSha256": "8e4cf290d3ff5f4239adc045fdb064cbad4ddf6ea5bbf7f407e47ca26eb303fa",
           "bytes": 13471,
           "operations": 3,
           "title": "Apply API",
@@ -12835,9 +12883,10 @@
           "apiVersion": "v2",
           "specVersion": "2.0",
           "server": "https://app.ticketmaster.com",
-          "surface": "bcde943f10fcf8f2",
+          "surface": "0752a9d19c2cbed2",
           "specServer": "https://www.ticketmaster.com/discovery/v2",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         },
         "Commerce API v2": {
           "status": "ok",
@@ -12849,9 +12898,10 @@
           "apiVersion": "v2",
           "specVersion": "2.0",
           "server": "https://app.ticketmaster.com",
-          "surface": "52e3210413a92874",
+          "surface": "8aabca60f3c63097",
           "specServer": "https://www.ticketmaster.com/commerce/v2",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -13272,8 +13322,9 @@
           "apiVersion": "2026-10-06",
           "specVersion": "2.0",
           "server": "https://{account}.blob.core.windows.net",
-          "surface": "be7b7b46d9cde2d4",
-          "changedOn": "2026-11-01"
+          "surface": "033c672cd93b8915",
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
