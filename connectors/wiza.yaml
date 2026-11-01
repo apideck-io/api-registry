@@ -1,5 +1,10 @@
 id: wiza
 name: "Wiza"
 apideck: false
-notes: "No spec URL could be confirmed: wiza.co's docs answer 403 to non-browser clients. API docs: https://wiza.co/api-docs"
-specs: []
+notes: "Linked from docs.wiza.co's llms.txt (docs.wiza.co/api-reference/openapi.json is the docs platform's sample, not Wiza's API)."
+specs:
+  - name: "Wiza API"
+    url: "https://docs.wiza.co/swagger/v1/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://wiza.co"

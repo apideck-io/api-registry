@@ -1,5 +1,11 @@
 id: mailerlite
 name: "MailerLite"
 apideck: false
-notes: "No published spec found. API docs: https://developers.mailerlite.com/docs/"
-specs: []
+notes: "api.mailerlite.com serves a Swagger file for the legacy API v2. The current API (connect.mailerlite.com) is documented in HTML only: https://developers.mailerlite.com/docs/"
+specs:
+  - name: "MailerLite API v2 (legacy)"
+    url: "https://api.mailerlite.com/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.mailerlite.com/api/v2"
+    notes: "Legacy API; 6 operations. The spec's host uses http; the API serves https."

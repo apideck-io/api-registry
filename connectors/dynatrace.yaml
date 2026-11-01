@@ -1,5 +1,11 @@
 id: dynatrace
 name: "Dynatrace"
 apideck: false
-notes: "No machine-readable spec found. Checked docs.dynatrace.com/llms.txt, GitHub org/repo searches and a web search. Dynatrace states that each environment serves its own OpenAPI file from the in-product API browser, which requires an environment login, so there is no public URL."
-specs: []
+notes: "api.dynatrace.com serves the Account Management API spec at /openapi.json. Environment APIs are served per tenant (each environment hosts its own spec)."
+specs:
+  - name: "Dynatrace Account Management API"
+    url: "https://api.dynatrace.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.dynatrace.com"
+    notes: "The spec declares no servers; its paths (/iam/v1/…) are on api.dynatrace.com."

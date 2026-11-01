@@ -1,5 +1,11 @@
 id: amplitude
 name: "Amplitude"
 apideck: false
-notes: "No downloadable spec found. API reference: https://amplitude.com/docs/apis"
-specs: []
+notes: "Amplitude publishes its REST APIs as one OpenAPI document, linked from https://amplitude.com/llms.txt; reference: https://amplitude.com/docs/apis"
+specs:
+  - name: "Amplitude Public APIs"
+    url: "https://amplitude.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://amplitude.com"
+    notes: "The spec lists the US hosts and analytics.eu.amplitude.com for EU data residency; some APIs (HTTP V2, Batch) live on api2.amplitude.com as the spec's per-path servers say."
