@@ -486,7 +486,10 @@ for (const e of entries) {
           specVersions: [...new Set(parts.map((x) => x.specVersion).filter(Boolean))],
           // Missing required fields in any module, so the nightly PR flags them for bundles too.
           ...(parts.some((x) => x.specIssues)
-            ? { specIssues: parts.map((x, i) => (x.specIssues ? `${specFiles[i].name.replace(/^[^/]*\//, "")}: ${x.specIssues}` : null)).filter(Boolean).slice(0, 10).join("; ") }
+            ? (() => {
+                const issues = parts.map((x, i) => (x.specIssues ? `${specFiles[i].name.replace(/^[^/]*\//, "")}: ${x.specIssues}` : null)).filter(Boolean);
+                return { specIssues: `${issues.length} of ${parts.length} modules: ${issues.slice(0, 10).join("; ")}${issues.length > 10 ? "; …" : ""}` };
+              })()
             : {}),
           server: parts.find((x) => x.server)?.server,
         };
