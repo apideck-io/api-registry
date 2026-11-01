@@ -100,5 +100,7 @@ jobs:
           if gh pr view "$n" --json labels -q '.labels[].name' | grep -qx needs-review; then
             echo "PR #$n was flagged on an earlier night; leaving it for review."
           else
-            gh pr merge "$n" --squash --auto --delete-branch
+            # A PR opened with github.token starts no other workflows, so there may be no checks to wait for:
+            # then GitHub won't queue an auto-merge, and the PR is merged directly (the verifier already ran).
+            gh pr merge "$n" --squash --auto --delete-branch || gh pr merge "$n" --squash --delete-branch
           fi

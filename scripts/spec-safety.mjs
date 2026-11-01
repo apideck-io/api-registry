@@ -83,10 +83,17 @@ export function suspiciousFingerprint(hits) {
   return hits.length ? createHash("sha256").update(JSON.stringify([...hits].sort())).digest("hex").slice(0, 16) : null;
 }
 
-const canonical = (v) =>
-  Array.isArray(v) ? `[${v.map(canonical).join(",")}]`
-  : v && typeof v === "object" ? `{${Object.keys(v).filter((k) => v[k] !== undefined).sort().map((k) => `${JSON.stringify(k)}:${canonical(v[k])}`).join(",")}}`
-  : JSON.stringify(v);
+// Cycle-safe: a YAML anchor can refer back to itself inside servers or security schemes.
+const canonical = (v, stack = new Set()) => {
+  if (!v || typeof v !== "object") return JSON.stringify(v);
+  if (stack.has(v)) return '"[cycle]"';
+  stack.add(v);
+  const out = Array.isArray(v)
+    ? `[${v.map((x) => canonical(x, stack)).join(",")}]`
+    : `{${Object.keys(v).filter((k) => v[k] !== undefined).sort().map((k) => `${JSON.stringify(k)}:${canonical(v[k], stack)}`).join(",")}}`;
+  stack.delete(v);
+  return out;
+};
 
 const METHODS = ["get", "put", "post", "delete", "options", "head", "patch", "trace", "query"];
 // Scope order in a security requirement means nothing, and some vendors (X) shuffle it on every request.
@@ -151,7 +158,8 @@ export function surfaceOf(format, doc) {
         events(here, it.event);
         // A request can be written as just its URL.
         const u = typeof it.request === "string" ? it.request : it.request?.url;
-        const raw = typeof u === "string" ? u : u?.raw ?? (Array.isArray(u?.host) ? u.host.join(".") : u?.host);
+        const host = Array.isArray(u?.host) ? u.host.join(".") : u?.host;
+        const raw = typeof u === "string" ? u : u?.raw ?? (host ? `${u?.protocol ? `${u.protocol}://` : ""}${host}` : undefined);
         // Scheme and host: a switch from https to http sends credentials in cleartext.
         if (raw) {
           const m = /^([a-z][\w+.-]*:\/\/)?([^/?#]*)/i.exec(String(raw));
