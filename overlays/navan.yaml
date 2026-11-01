@@ -1,0 +1,245 @@
+overlay: 1.0.0
+info:
+  title: "Navan Booking Data API: nullable fields"
+  version: 1.0.0
+actions:
+  - target: $.components.schemas['BookingReport']['properties']['airlineRoute']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['approvalChangedAt']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['approverEmail']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['approverReason']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['billToClient']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['cabin']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['cabinPurchased']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['cancelledAt']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['carType']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['domestic']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['eventName']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['flight']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['flownCabinClass']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['hotelChain']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['hotelCode']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['invitationType']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['inviteConnectionMethod']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['preferredVendor']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['priceBenchmark']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['projects']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['purpose']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['statementDescription']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['BookingReport']['properties']['tripLength']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Cnr']['properties']['cnrCodes']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Cnr']['properties']['cnrProviders']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Cnr']['properties']['cnrSources']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Cnr']['properties']['publishedPrice']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Coupon']['properties']['statusCode']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Coupon']['properties']['travelDate']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Credit']['properties']['creditFromOriginalBooking']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Location']['properties']['address']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Location']['properties']['airportCode']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Location']['properties']['city']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Location']['properties']['country']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Location']['properties']['postalCode']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Location']['properties']['state']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Passport']['properties']['countryOfCitizenship']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Passport']['properties']['countryOfIssue']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Passport']['properties']['expiresOn']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Passport']['properties']['issuedOn']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Person']['properties']['billableEntity']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Person']['properties']['employeedId']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Person']['properties']['managerEmail']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Person']['properties']['managerName']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Person']['properties']['managerUuid']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Reshopping']['properties']['reshoppingNewTicketNumber']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Reshopping']['properties']['reshoppingOriginalTicketNumber']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Segment']['properties']['airlineAlliance']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Segment']['properties']['cabin']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Segment']['properties']['cabinPurchased']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Segment']['properties']['fareClass']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Segment']['properties']['flightNumber']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Segment']['properties']['hotelChain']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Segment']['properties']['hotelSuperChain']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Segment']['properties']['providerCode']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Segment']['properties']['providerName']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Transaction']['properties']['associatedTicketNumber']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Transaction']['properties']['coupons']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Transaction']['properties']['description']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
+  - target: $.components.schemas['Transaction']['properties']['ticketNumber']
+    update:
+      nullable: true
+    description: Returned as null by the live API; the spec doesn't mark it nullable.
