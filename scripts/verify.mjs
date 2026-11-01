@@ -15,6 +15,7 @@ import { parse as parseYaml } from "yaml";
 import { createRequire } from "node:module";
 import openapiFormat from "openapi-format";
 import { buildASTSchema, introspectionFromSchema, parse as parseGraphQL } from "graphql";
+import { suspiciousText, surfaceOf } from "./spec-safety.mjs";
 
 const { openapiOverlay, resolveJsonPathValue } = openapiFormat;
 // The JSONPath parser openapi-format applies overlays with, resolved through it rather than declared
@@ -255,7 +256,10 @@ async function load(spec) {
 }
 
 async function loadUncached(spec) {
-  if (spec.path) return { status: 200, body: readFileSync(join(ROOT, spec.path), "utf8") };
+  if (spec.path) {
+    const buf = readFileSync(join(ROOT, spec.path));
+    return { status: 200, body: buf.toString("utf8"), fetchSha256: createHash("sha256").update(buf).digest("hex") };
+  }
   const ctl = new AbortController();
   const timer = setTimeout(() => ctl.abort(), 120000);
   try {
@@ -280,9 +284,12 @@ async function loadUncached(spec) {
       chunks.push(chunk);
     }
     const buf = Buffer.concat(chunks);
-    if (spec.extract === "zip-bundle") return { status: res.status, body: null, bytes: buf };
+    // The hash of the exact bytes served, before any unwrapping: a consumer that downloads the same URL
+    // compares its own bytes with this to know it got the file this check saw.
+    const fetchSha256 = createHash("sha256").update(buf).digest("hex");
+    if (spec.extract === "zip-bundle") return { status: res.status, body: null, bytes: buf, fetchSha256 };
     // Strip a UTF-8 byte-order mark, as res.text() would; some vendor files carry one.
-    return { status: res.status, body: buf.toString("utf8").replace(/^\uFEFF/, "") };
+    return { status: res.status, body: buf.toString("utf8").replace(/^\uFEFF/, ""), fetchSha256 };
   } catch (e) {
     return { status: 0, body: null, error: e.name === "AbortError" ? "timeout" : e.message };
   } finally {
@@ -364,6 +371,14 @@ function inspectDocument(format, body) {
   // `version: 1.10` would otherwise become the numbers 2 and 1.1.
   const doc = body.trim().startsWith("{") ? JSON.parse(body) : parseYaml(body, { schema: "failsafe", maxAliasCount: 10000 });
   if (!doc || typeof doc !== "object") throw new Error("not a JSON or YAML document");
+  const info = inspectParsed(format, doc);
+  // Where calls go and how they authenticate, and any text aimed at a model (scripts/spec-safety.mjs).
+  const surface = surfaceOf(format, doc);
+  const suspicious = suspiciousText(doc);
+  return { ...info, ...(surface ? { surface } : {}), ...(suspicious.length ? { suspicious } : {}) };
+}
+
+function inspectParsed(format, doc) {
   if (format === "google-discovery") {
     if (!doc.discoveryVersion || !doc.resources) throw new Error("no discoveryVersion or resources");
     let n = 0;
@@ -589,6 +604,9 @@ for (const e of entries) {
               })()
             : {}),
           server: parts.find((x) => x.server)?.server,
+          // One fingerprint for the bundle: every module's, in file order.
+          ...(parts.some((x) => x.surface) ? { surface: createHash("sha256").update(parts.map((x) => x.surface ?? "-").join(",")).digest("hex").slice(0, 16) } : {}),
+          ...(parts.some((x) => x.suspicious) ? { suspicious: parts.flatMap((x) => x.suspicious ?? []).slice(0, 3) } : {}),
         };
       } else info = inspect(s.format, r.body);
     } catch (err) {
@@ -683,13 +701,17 @@ for (const e of entries) {
         overlay = { file: s.overlay, error: err.message.slice(0, 120) };
       }
     }
+    // Servers or authentication differ from the last check: flagged, and the nightly PR waits for a person.
+    const surfaceChanged = Boolean(old.surface && info.surface && old.surface !== info.surface);
     specs[s.name] = {
       status: "ok",
       sha256,
+      ...(r.fetchSha256 ? { fetchSha256: r.fetchSha256 } : {}),
       // For a bundle, the size of its files: the archive's own size changes when it is merely rebuilt.
       bytes: bundle ? bundle.reduce((n, f) => n + Buffer.byteLength(f.text), 0) : Buffer.byteLength(r.body),
       ...Object.fromEntries(Object.entries(info).filter(([, v]) => v != null)),
       changedOn: changed || !old.sha256 ? today : old.changedOn,
+      ...(surfaceChanged ? { surfaceChangedOn: today } : old.surfaceChangedOn && info.surface === old.surface ? { surfaceChangedOn: old.surfaceChangedOn } : {}),
       ...(overlay ? { overlay } : {}),
     };
     // Δ changed, + newly indexed, ↺ recovered from a failure, ✓ unchanged. The nightly PR body lists all but ✓.
@@ -701,7 +723,9 @@ for (const e of entries) {
       (problems.length ? ` ⚠ overlay: ${problems.join("; ")}` : "") +
       (info.derivedError ? ` ⚠ SDL not parseable by graphql-js (${info.derivedError})${info.derived ? "; kept the last introspection result" : ""}` : "") +
       (info.formatMismatch ? ` ⚠ format: ${info.formatMismatch}` : "") +
-      (info.specIssues ? ` ⚠ spec: ${info.specIssues}` : "");
+      (info.specIssues ? ` ⚠ spec: ${info.specIssues}` : "") +
+      (surfaceChanged ? " ⚠ surface: servers or authentication changed" : "") +
+      (info.suspicious ? ` ⚠ text: reads like instructions to an AI (${info.suspicious.map((x) => JSON.stringify(x)).join("; ")})` : "");
     console.log(`${mark} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations${stale}`);
   }
   out.connectors[e.id] = { name: e.name, ...(e.apideck === false ? { apideck: false } : {}), specs };

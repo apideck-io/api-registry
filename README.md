@@ -61,8 +61,19 @@ An app whose vendor publishes no spec still gets an entry with `specs: []` and a
 - `changedOn`: the last date the file's hash changed. A parameter `default` holding an ISO timestamp is left out of the hash, since some vendors render the current date into their spec on every request
 - `formatMismatch`: set when the entry's `format` disagrees with the spec's own version (OpenAPI, Swagger, and a Postman collection's `info.schema`)
 - `specIssues`: set when an OpenAPI or Swagger file's `info.title` or `info.version` is missing, empty, blank (whitespace only) or not a string (in a JSON file, such as `"version": 1`; YAML values are read as text, so a YAML `version: 1` passes); the spec is still indexed
+- `fetchSha256`: the hash of the exact bytes served at the spec's URL, before any unwrapping. A consumer that downloads the URL compares its own bytes with this, so it uses the file this check saw (`sha256` is of the extracted, sometimes normalised, spec, so it can't be compared directly)
+- `surface`: a short fingerprint of where calls go and how they authenticate (servers, host, security schemes and requirements); `surfaceChangedOn` is the last date it changed
 
-The nightly pull request flags both with ⚠.
+## Integrity
+
+`index.json` is what consumers trust, so a change to it goes through a pull request:
+
+- Any change to a spec shows as Δ in the nightly PR with its new hash. `formatMismatch` and `specIssues` show as ⚠ too, without holding the PR.
+- A change of servers or authentication (`⚠ surface`), text in a description or summary that reads like instructions to an AI agent, or hidden Unicode (`⚠ text`), or a spec that stopped resolving (✗) labels the PR `needs-review` and lists why at the top. The patterns are in `scripts/spec-safety.mjs`.
+- Otherwise the PR is labelled `spec-drift`. It merges itself only when the repository variable `NIGHTLY_AUTOMERGE` is `true`; by default a person merges every nightly PR.
+
+A consumer should pin a registry commit, download each spec, and refuse one whose bytes don't match `fetchSha256`.
+
 
 ## GraphQL schemas
 

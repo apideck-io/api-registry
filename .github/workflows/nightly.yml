@@ -35,13 +35,50 @@ jobs:
             grep -E '^(Δ|\+|↺|✗)|⚠' verify.log || echo 'None; index metadata only.'
             echo 'EOF'
           } >> "$GITHUB_OUTPUT"
+      # A spec whose servers or authentication changed, whose text reads like instructions to an AI, or
+      # that failed, is held for a person: the PR is labelled and says why. index.json is the hash
+      # consumers trust, so a merge is what makes a changed file trusted.
+      - name: Decide whether a person must review
+        id: gate
+        run: |
+          if grep -qE '^✗|⚠ (surface|text):' verify.log; then
+            echo 'review=true' >> "$GITHUB_OUTPUT"
+            {
+              echo 'note<<EOF'
+              echo '**Needs review before merging:**'
+              grep -E '^✗|⚠ (surface|text):' verify.log | sed 's/^/- /'
+              echo 'EOF'
+            } >> "$GITHUB_OUTPUT"
+          else
+            echo 'review=false' >> "$GITHUB_OUTPUT"
+            echo 'note=No servers, authentication or instruction-like text changed.' >> "$GITHUB_OUTPUT"
+          fi
       - uses: peter-evans/create-pull-request@v6
+        id: pr
         with:
           branch: nightly/spec-drift
           title: "Spec drift: ${{ github.run_id }}"
           commit-message: "index: nightly spec check"
-          body: ${{ steps.summary.outputs.body }}
+          body: |
+            ${{ steps.gate.outputs.note }}
+
+            ${{ steps.summary.outputs.body }}
+          labels: ${{ steps.gate.outputs.review == 'true' && 'needs-review' || 'spec-drift' }}
           add-paths: |
             index.json
             derived/**
           delete-branch: true
+      # Off unless the repository variable NIGHTLY_AUTOMERGE is "true": then a PR with nothing to review
+      # merges itself (repository auto-merge must be allowed). Anything flagged above always waits.
+      - name: Merge a PR with nothing to review
+        if: steps.pr.outputs.pull-request-number && steps.gate.outputs.review == 'false' && vars.NIGHTLY_AUTOMERGE == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # The PR is reused night to night; one labelled needs-review on an earlier night still waits for a person.
+        run: |
+          n="${{ steps.pr.outputs.pull-request-number }}"
+          if gh pr view "$n" --json labels -q '.labels[].name' | grep -qx needs-review; then
+            echo "PR #$n was flagged on an earlier night; leaving it for review."
+          else
+            gh pr merge "$n" --squash --auto --delete-branch
+          fi
