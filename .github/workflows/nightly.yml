@@ -41,12 +41,12 @@ jobs:
       - name: Decide whether a person must review
         id: gate
         run: |
-          if grep -qE '^✗|⚠ (surface|text):' verify.log; then
+          if grep -qE '^✗.*\(newly failing\)$|⚠ (surface|text):' verify.log; then
             echo 'review=true' >> "$GITHUB_OUTPUT"
             {
               echo 'note<<EOF'
               echo '**Needs review before merging:**'
-              grep -E '^✗|⚠ (surface|text):' verify.log | sed 's/^/- /'
+              grep -E '^✗.*\(newly failing\)$|⚠ (surface|text):' verify.log | sed 's/^/- /'
               echo 'EOF'
             } >> "$GITHUB_OUTPUT"
           else

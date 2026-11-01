@@ -29,12 +29,15 @@ export const HIDDEN_CHARS = /[\u202A-\u202E\u2066-\u2069]/;
 
 const TEXT_KEYS = new Set(["description", "summary", "title", "x-summary"]);
 
-/** Up to `max` short samples of instruction-like or hidden text in a parsed spec. */
-export function suspiciousText(doc, max = 3) {
+/**
+ * Instruction-like or hidden text in a parsed spec: every distinct match (capped at 500), so a fingerprint of
+ * them changes when any one is added, while index.json shows the first few as samples.
+ */
+export function suspiciousText(doc, max = 500) {
   const found = [];
   const seen = new Set();
   const walk = (v, key, depth) => {
-    if (found.length >= max || depth > 40 || v == null) return;
+    if (found.length >= max || depth > 1000 || v == null) return;
     if (typeof v === "string") {
       if (!TEXT_KEYS.has(key)) return;
       const hidden = HIDDEN_CHARS.test(v);
@@ -53,6 +56,16 @@ export function suspiciousText(doc, max = 3) {
   };
   walk(doc, "", 0);
   return found;
+}
+
+/** Descriptions in a GraphQL SDL file (block and plain strings), as a document suspiciousText can scan. */
+export function sdlDescriptions(sdl) {
+  return { description: [...sdl.matchAll(/"""([\s\S]*?)"""|"((?:[^"\\\n]|\\.)*)"/g)].map((m) => m[1] ?? m[2]) };
+}
+
+/** A short, order-independent fingerprint of every flagged text. */
+export function suspiciousFingerprint(found) {
+  return found.length ? createHash("sha256").update(JSON.stringify([...found].sort())).digest("hex").slice(0, 16) : null;
 }
 
 const canonical = (v) =>
@@ -85,15 +98,22 @@ export function surfaceOf(format, doc) {
     surface = { rootUrl: doc.rootUrl ?? null, servicePath: doc.servicePath ?? null, auth: doc.auth ?? null };
   } else if (format.startsWith("postman-")) {
     const hosts = new Set();
-    const walk = (items) =>
-      items?.forEach((it) => {
+    const auth = [];
+    const walk = (items, at) =>
+      items?.forEach((it, i) => {
+        const here = `${at}/${it.name ?? i}`;
         const u = it.request?.url;
         const raw = typeof u === "string" ? u : u?.raw ?? (Array.isArray(u?.host) ? u.host.join(".") : u?.host);
         if (raw) hosts.add(String(raw).replace(/^\w+:\/\//, "").split(/[/?#]/)[0]);
-        walk(it.item);
+        // Auth set on a folder or a request overrides the collection's.
+        if (it.auth) auth.push([here, it.auth]);
+        if (it.request?.auth) auth.push([`${here}#request`, it.request.auth]);
+        walk(it.item, here);
       });
-    walk(doc.item);
-    surface = { auth: doc.auth ?? null, hosts: [...hosts].sort() };
+    walk(doc.item, "");
+    // A host is usually {{baseUrl}}: the collection variables are where it actually points.
+    const variables = (doc.variable ?? []).map((v) => [v?.key ?? v?.id, v?.value ?? null]).sort((a, b) => String(a[0]).localeCompare(String(b[0])));
+    surface = { auth: doc.auth ?? null, nested: auth, hosts: [...hosts].sort(), variables };
   }
   return surface && createHash("sha256").update(canonical(surface)).digest("hex").slice(0, 16);
 }

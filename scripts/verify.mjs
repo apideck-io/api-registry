@@ -15,7 +15,7 @@ import { parse as parseYaml } from "yaml";
 import { createRequire } from "node:module";
 import openapiFormat from "openapi-format";
 import { buildASTSchema, introspectionFromSchema, parse as parseGraphQL } from "graphql";
-import { suspiciousText, surfaceOf } from "./spec-safety.mjs";
+import { sdlDescriptions, suspiciousFingerprint, suspiciousText, surfaceOf } from "./spec-safety.mjs";
 
 const { openapiOverlay, resolveJsonPathValue } = openapiFormat;
 // The JSONPath parser openapi-format applies overlays with, resolved through it rather than declared
@@ -321,7 +321,7 @@ function inspect(format, body) {
       const rootNames = [schema.queryType?.name, schema.mutationType?.name].filter(Boolean);
       const n = schema.types.filter((t) => rootNames.includes(t.name)).reduce((m, t) => m + (t.fields?.length ?? 0), 0);
       if (!n) throw new Error("the root types have no fields");
-      return { operations: n };
+      return { operations: n, ...flagged(suspiciousText(schema)) };
     }
     // SDL is parsed with graphql-js and published as an introspection result (derived/), so consumers read
     // one GraphQL format. assumeValidSDL: vendors' SDL often uses directives it doesn't declare.
@@ -332,11 +332,11 @@ function inspect(format, body) {
       const roots = [schema.queryType?.name, schema.mutationType?.name].filter(Boolean);
       const n = schema.types.filter((t) => roots.includes(t.name)).reduce((m, t) => m + (t.fields?.length ?? 0), 0);
       if (!n) throw new Error("the root types have no fields");
-      return { operations: n, introspection };
+      return { operations: n, introspection, ...flagged(suspiciousText(sdlDescriptions(body))) };
     } catch (err) {
       if (/no query root|no fields/.test(err.message)) throw err;
       // Not parseable by graphql-js: count fields as before, without a derived file, and say why.
-      return { ...countSdlFields(body), derivedError: err.message.split("\n")[0].slice(0, 100) };
+      return { ...countSdlFields(body), derivedError: err.message.split("\n")[0].slice(0, 100), ...flagged(suspiciousText(sdlDescriptions(body))) };
     }
   }
   return inspectDocument(format, body);
@@ -374,9 +374,15 @@ function inspectDocument(format, body) {
   const info = inspectParsed(format, doc);
   // Where calls go and how they authenticate, and any text aimed at a model (scripts/spec-safety.mjs).
   const surface = surfaceOf(format, doc);
-  const suspicious = suspiciousText(doc);
-  return { ...info, ...(surface ? { surface } : {}), ...(suspicious.length ? { suspicious } : {}) };
+  return { ...info, ...(surface ? { surface } : {}), ...flagged(suspiciousText(doc)) };
 }
+
+// A failure that holds the nightly PR: the spec resolved last time, or has never been checked. One that was
+// already failing is listed but doesn't block every night until the vendor fixes it.
+const newlyFailing = (old) => !old.status || old.status === "ok";
+
+// What index.json keeps of flagged text: a few samples to read, and a fingerprint of all of it to compare.
+const flagged = (found) => (found.length ? { suspicious: found.slice(0, 3), suspiciousSha: suspiciousFingerprint(found) } : {});
 
 function inspectParsed(format, doc) {
   if (format === "google-discovery") {
@@ -561,7 +567,7 @@ for (const e of entries) {
     if (!r.body) {
       failures++;
       specs[s.name] = { ...old, status: r.error ?? `HTTP ${r.status}` };
-      console.log(`✗ ${e.id} · ${s.name}: ${specs[s.name].status}`);
+      console.log(`✗ ${e.id} · ${s.name}: ${specs[s.name].status}${newlyFailing(old) ? " (newly failing)" : ""}`);
       continue;
     }
     let info;
@@ -606,13 +612,15 @@ for (const e of entries) {
           server: parts.find((x) => x.server)?.server,
           // One fingerprint for the bundle: every module's, in file order.
           ...(parts.some((x) => x.surface) ? { surface: createHash("sha256").update(parts.map((x) => x.surface ?? "-").join(",")).digest("hex").slice(0, 16) } : {}),
-          ...(parts.some((x) => x.suspicious) ? { suspicious: parts.flatMap((x) => x.suspicious ?? []).slice(0, 3) } : {}),
+          ...(parts.some((x) => x.suspicious)
+            ? { suspicious: parts.flatMap((x) => x.suspicious ?? []).slice(0, 3), suspiciousSha: suspiciousFingerprint(parts.map((x) => x.suspiciousSha ?? "")) }
+            : {}),
         };
       } else info = inspect(s.format, r.body);
     } catch (err) {
       failures++;
       specs[s.name] = { ...old, status: `unparseable: ${err.message.slice(0, 80)}` };
-      console.log(`✗ ${e.id} · ${s.name}: unparseable`);
+      console.log(`✗ ${e.id} · ${s.name}: unparseable${newlyFailing(old) ? " (newly failing)" : ""}`);
       continue;
     }
     // Google Discovery docs come back with a different key order on each request and re-stamp etag and
@@ -705,14 +713,16 @@ for (const e of entries) {
     const surfaceChanged = Boolean(old.surface && info.surface && old.surface !== info.surface);
     // Flagged text is recorded (suspicious); it holds the nightly PR only when it differs from what was
     // recorded, and so reviewed, before. OpenAI's docs mention its own <|endoftext|> token, for one.
-    const suspiciousNew = Boolean(info.suspicious) && canonical(info.suspicious) !== canonical(old.suspicious ?? null);
+    const suspiciousNew = Boolean(info.suspiciousSha) && info.suspiciousSha !== old.suspiciousSha;
+    // A spec seen for the first time has no earlier fingerprint to compare: its servers and auth are new.
+    const surfaceNew = Boolean(info.surface && !old.surface);
     specs[s.name] = {
       status: "ok",
       sha256,
       // Only where the served bytes are stable: a Discovery document, a zip bundle and a spec with generated
       // dates are hashed in a normalised form (sha256) because their bytes differ between requests, so a raw
       // hash would change every night. Consumers check those against sha256 with the same normalisation.
-      ...(r.fetchSha256 && !doc && !bundle && !parsedForHash && !s.extract?.startsWith("graphql") ? { fetchSha256: r.fetchSha256 } : {}),
+      ...(r.fetchSha256 && !doc && !bundle && !parsedForHash && !s.extract ? { fetchSha256: r.fetchSha256 } : {}),
       // For a bundle, the size of its files: the archive's own size changes when it is merely rebuilt.
       bytes: bundle ? bundle.reduce((n, f) => n + Buffer.byteLength(f.text), 0) : Buffer.byteLength(r.body),
       ...Object.fromEntries(Object.entries(info).filter(([, v]) => v != null)),
@@ -731,6 +741,7 @@ for (const e of entries) {
       (info.formatMismatch ? ` ⚠ format: ${info.formatMismatch}` : "") +
       (info.specIssues ? ` ⚠ spec: ${info.specIssues}` : "") +
       (surfaceChanged ? " ⚠ surface: servers or authentication changed" : "") +
+      (surfaceNew ? " ⚠ surface: first check of its servers and authentication" : "") +
       (suspiciousNew ? ` ⚠ text: reads like instructions to an AI (${info.suspicious.map((x) => JSON.stringify(x)).join("; ")})` : "");
     console.log(`${mark} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations${stale}`);
   }
