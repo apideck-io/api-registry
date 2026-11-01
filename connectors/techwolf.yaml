@@ -8,3 +8,4 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://{tenant_name}.{region}.techwolf.ai"
+    notes: "The spec's own placeholders: {tenant_name}, {region}, set per customer or account."

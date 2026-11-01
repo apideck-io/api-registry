@@ -8,3 +8,4 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "{siteUrl}"
+    notes: "The spec's own placeholder: {siteUrl}, set per customer or account."

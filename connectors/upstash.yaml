@@ -8,3 +8,4 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://qstash-{region}.upstash.io"
+    notes: "The spec's own placeholder: {region}, set per customer or account."

@@ -31,13 +31,16 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{instance}-api.private.fin.ag"
+    notes: "The spec's own placeholder: {instance}, set per customer or account."
   - name: "Flinks API (openapi-wealth)"
     url: "https://docs.flinks.io/openapi-wealth.yaml"
     format: openapi-3.0
     provenance: vendor
     server: "https://{instanceWealth}-api.private.fin.ag"
+    notes: "The spec's own placeholder: {instanceWealth}, set per customer or account."
   - name: "Flinks API (openapi)"
     url: "https://docs.flinks.io/openapi.yaml"
     format: openapi-3.0
     provenance: vendor
     server: "https://{instance}-api.private.fin.ag"
+    notes: "The spec's own placeholder: {instance}, set per customer or account."

@@ -8,8 +8,10 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{subdomain}.api.showpad.com/v4"
+    notes: "The spec's own placeholder: {subdomain}, set per customer or account."
   - name: "Showpad API (openapi/openapi.v3)"
     url: "https://developer.showpad.com/openapi/openapi.v3.json"
     format: openapi-3.0
     provenance: vendor
     server: "https://{subdomain}.showpad.biz/api/v3"
+    notes: "The spec's own placeholder: {subdomain}, set per customer or account."

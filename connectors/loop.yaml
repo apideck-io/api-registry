@@ -112,4 +112,5 @@ specs:
     url: "https://docs.loopreturns.com/openapi/ship-by-loop-api.yaml"
     format: openapi-3.1
     provenance: vendor
-    server: "https://api.loopreturns.com/api/{version}"
+    server: "https://api.loopreturns.com/api/2026-07"
+    notes: "Pinned to 2026-07, the newest version the spec allows (also v1 and latest)."

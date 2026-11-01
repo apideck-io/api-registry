@@ -8,3 +8,4 @@ specs:
     format: swagger-2.0
     provenance: vendor
     server: "{protocol}://{WEAVIATE_HOSTNAME}:{PORT}/v1"
+    notes: "The spec's own placeholders: {protocol}, {WEAVIATE_HOSTNAME}, {PORT}, set per customer or account."

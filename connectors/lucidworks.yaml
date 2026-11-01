@@ -8,3 +8,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{FUSION_HOST}/api"
+    notes: "The spec's own placeholder: {FUSION_HOST}, set per customer or account."

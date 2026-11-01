@@ -8,8 +8,10 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{subdomain}.auth.{region}.nhost.run/v1"
+    notes: "The spec's own placeholders: {subdomain}, {region}, set per customer or account."
   - name: "Nhost Storage API"
     url: "https://docs.nhost.io/openapi/storage.json"
     format: openapi-3.0
     provenance: vendor
     server: "https://{subdomain}.storage.{region}.nhost.run/v1"
+    notes: "The spec's own placeholders: {subdomain}, {region}, set per customer or account."

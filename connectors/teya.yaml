@@ -1,7 +1,7 @@
 id: teya
 name: "Teya"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, http://developer.teya.com)."
+notes: "Spec served by the vendor (found from its developer portal, https://developer.teya.com)."
 specs:
   - name: "POSLink API"
     url: "https://docs.teya.com/apis/poslink/openapi.yaml"

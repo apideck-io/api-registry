@@ -8,4 +8,4 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.mothership.com/beta"
-    notes: "Production host; the spec names the sandbox, sandbox.api.mothership.com."
+    notes: "Production host; the spec also lists the sandbox, sandbox.api.mothership.com."
