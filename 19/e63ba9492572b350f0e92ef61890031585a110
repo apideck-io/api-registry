@@ -1,0 +1,21 @@
+README.md
+  s_eeda7bd9685d9d::t_a06e6343e95882 76
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_c5d182a6fb60a5 17,58,374-377,379-384,390,407-410
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "19e63ba9492572b350f0e92ef61890031585a110",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
