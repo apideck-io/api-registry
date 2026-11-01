@@ -381,7 +381,10 @@ function inspectDocument(format, body) {
     if (item?.additionalOperations && typeof item.additionalOperations === "object") n += Object.keys(item.additionalOperations).length;
   }
   const server = doc.servers?.[0]?.url ?? (doc.host ? `${doc.schemes?.[0] ?? "https"}://${doc.host}${doc.basePath ?? ""}` : null);
-  return { operations: n, title: doc.info?.title, apiVersion: doc.info?.version, specVersion: doc.openapi ?? doc.swagger, server };
+  // OpenAPI and Swagger require info.title and info.version. A vendor file without them still describes its
+  // operations, so it's kept, and the gap is recorded and flagged in the nightly PR.
+  const missing = ["title", "version"].filter((k) => !doc.info?.[k]).map((k) => `info.${k}`);
+  return { operations: n, title: doc.info?.title, apiVersion: doc.info?.version, specVersion: doc.openapi ?? doc.swagger, server, ...(missing.length ? { specIssues: `no ${missing.join(" or ")}` } : {}) };
 }
 
 for (const e of entries) if (!ONLY || e.id === ONLY) for (const s of e.specs) if (!s.manual) uses.set(keyOf(s), (uses.get(keyOf(s)) ?? 0) + 1);
@@ -580,7 +583,8 @@ for (const e of entries) {
     const stale =
       (problems.length ? ` ⚠ overlay: ${problems.join("; ")}` : "") +
       (info.derivedError ? ` ⚠ SDL not parseable by graphql-js (${info.derivedError})${info.derived ? "; kept the last introspection result" : ""}` : "") +
-      (info.formatMismatch ? ` ⚠ format: ${info.formatMismatch}` : "");
+      (info.formatMismatch ? ` ⚠ format: ${info.formatMismatch}` : "") +
+      (info.specIssues ? ` ⚠ spec: ${info.specIssues}` : "");
     console.log(`${mark} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations${stale}`);
   }
   out.connectors[e.id] = { name: e.name, ...(e.apideck === false ? { apideck: false } : {}), specs };

@@ -1,5 +1,5 @@
 id: gorgias
 name: "Gorgias"
 apideck: false
-notes: "No fetchable spec file found: the reference (https://developers.gorgias.com/reference/introduction) and its llms.txt link no OpenAPI download."
+notes: "No fetchable spec file found: the reference (https://developers.gorgias.com/reference/introduction) and its llms.txt file do not link to an OpenAPI download."
 specs: []

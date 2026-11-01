@@ -59,6 +59,10 @@ An app whose vendor publishes no spec still gets an entry with `specs: []` and a
   - A zip bundle sums its files and adds `files`.
 - `title`, `apiVersion`, `specVersion` and `server`
 - `changedOn`: the last date the file's hash changed
+- `formatMismatch`: set when the entry's `format` disagrees with the spec's own version
+- `specIssues`: set when an OpenAPI or Swagger file lacks a required field (`info.title`, `info.version`); the spec is still indexed
+
+The nightly pull request flags both with ⚠.
 
 ## GraphQL schemas
 
