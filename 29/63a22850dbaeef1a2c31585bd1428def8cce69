@@ -1,0 +1,101 @@
+.github/workflows/nightly.yml
+  s_eeda7bd9685d9d::t_ed3ea118e55d91 33
+README.md
+  s_eeda7bd9685d9d::t_51e5acd6ca519d 27,37-38,61-63
+connectors/1password.yaml
+  s_eeda7bd9685d9d::t_971256ac14bd45 10-11
+connectors/adp-workforce-now.yaml
+  s_eeda7bd9685d9d::t_a6b28403faf882 7
+connectors/adyen.yaml
+  s_eeda7bd9685d9d::t_c579fa271c71b7 4,41,47
+connectors/adyntel.yaml
+  s_eeda7bd9685d9d::t_8c659488806e1d 4-11
+connectors/alchemy.yaml
+  s_eeda7bd9685d9d::t_86a7f23ae2372b 36-80
+connectors/apple-business-manager.yaml
+  s_eeda7bd9685d9d::t_64dd4a5ad9489c 4
+connectors/autodesk.yaml
+  s_eeda7bd9685d9d::t_b98ce7b64a2a2a 4,36-45
+connectors/baserow.yaml
+  s_eeda7bd9685d9d::t_db2553a9f81d77 10
+connectors/basin.yaml
+  s_eeda7bd9685d9d::t_a3c6d51c416108 4-9
+connectors/bettercontact.yaml
+  s_eeda7bd9685d9d::t_492cb35d4e9fcd 4-10
+connectors/braintree.yaml
+  s_eeda7bd9685d9d::t_cf31940e05e26d 10
+connectors/braze.yaml
+  s_eeda7bd9685d9d::t_d777e2f48b9b22 4-55
+connectors/builder-io.yaml
+  s_eeda7bd9685d9d::t_5bc996a5e1ee8d 4
+connectors/cezannehr.yaml
+  s_eeda7bd9685d9d::t_c62071d240bb96 7
+connectors/clockify.yaml
+  s_eeda7bd9685d9d::t_0c6ae87956dbb2 4-10
+connectors/crunchbase.yaml
+  s_eeda7bd9685d9d::t_21f228265df7c2 4-11
+connectors/crustdata.yaml
+  s_eeda7bd9685d9d::t_6f3e1c59500d36 4-60
+connectors/cursor.yaml
+  s_eeda7bd9685d9d::t_7a5273e58ac015 10-16
+connectors/databricks.yaml
+  s_eeda7bd9685d9d::t_252e605014edeb 4
+connectors/drata.yaml
+  s_eeda7bd9685d9d::t_b13b4e866d64de 4-11
+connectors/dynamic-mockups.yaml
+  s_eeda7bd9685d9d::t_9c398ccc1d872a 4-70
+connectors/freshbooks.yaml
+  s_eeda7bd9685d9d::t_6631c21c4cf9e3 7
+connectors/grafana.yaml
+  s_eeda7bd9685d9d::t_6dd4f056be7d3d 9-10
+connectors/groq.yaml
+  s_eeda7bd9685d9d::t_1095efe36299b4 4
+connectors/heyreach.yaml
+  s_eeda7bd9685d9d::t_68ec7c84fa92e2 4
+connectors/jobdiva.yaml
+  s_eeda7bd9685d9d::t_f11b5ae7dd8bb6 4-11
+connectors/jobnimbus.yaml
+  s_eeda7bd9685d9d::t_b5cb00c41334f7 4-10
+connectors/kintone.yaml
+  s_eeda7bd9685d9d::t_e353e10abe28c1 10
+connectors/leapsome.yaml
+  s_eeda7bd9685d9d::t_0e2442e73ccd4a 4-10
+connectors/lilt.yaml
+  s_eeda7bd9685d9d::t_69a89713f46bb8 4-10
+connectors/mailtrap.yaml
+  s_eeda7bd9685d9d::t_12d3a49f2a714e 9-10
+connectors/myob.yaml
+  s_1216b7ab38d26c::t_e912ec73ce9b44 7,10
+connectors/sympa.yaml
+  s_eeda7bd9685d9d::t_2239aa1e2f2295 6
+connectors/teamtailor.yaml
+  s_eeda7bd9685d9d::t_754a7432fbfcf6 6
+index.json
+  s_eeda7bd9685d9d::t_8e1e7dc60904bb 1201,1713,1761,1999,2370,2580,2648,3254,3521,3986,3990,3992,4065,4074,4083,4092,4101,4110,4302,4333,5194,5213,5354-5465,6003,6842,7278,7991-8003,8096-8194,8485-8506,8582-8595,8633-8645,8906-8918,8984-8988,8993-9018,9034-9044,9178-9190,9282,9666-9670,9675-9686,9714,9724,9734,9797-9809,9819-9831,9976,10600,11692-11814
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_13902f6f62c4fe 44,187-207,379,384-386,445-452,471-532,626,634-644,646,649-651
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2963a22850dbaeef1a2c31585bd1428def8cce69",
+  "prompts": {},
+  "sessions": {
+    "s_1216b7ab38d26c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a14a97-820b-72f2-85b1-9bee130548e5",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
