@@ -32,16 +32,92 @@ jobs:
             echo 'body<<EOF'
             echo 'Specs that changed (Δ), are new (+), recovered (↺), failed (✗) or carry a warning (⚠: an overlay that no longer matches, a format that disagrees with the spec, missing or invalid info fields, or an SDL graphql-js rejects) in the nightly check:'
             echo
-            grep -E '^(Δ|\+|↺|✗)|⚠' verify.log || echo 'None; index metadata only.'
+            echo '````text'
+            # Not a pipe into ||: without pipefail its status would be tr's, so the fallback could never print.
+            if grep -qE '^(Δ|\+|↺|✗)|⚠' verify.log; then grep -E '^(Δ|\+|↺|✗)|⚠' verify.log | tr -d '`'; else echo 'None; index metadata only.'; fi
+            echo '````'
             echo 'EOF'
           } >> "$GITHUB_OUTPUT"
+      # A spec whose servers or authentication changed, whose text reads like instructions to an AI, or
+      # that failed, is held for a person: the PR is labelled and says why. index.json is the hash
+      # consumers trust, so a merge is what makes a changed file trusted.
+      - name: Decide whether a person must review
+        id: gate
+        run: |
+          if grep -qE '^✗.*\(newly failing\)$|⚠ (surface|text):' verify.log; then
+            echo 'review=true' >> "$GITHUB_OUTPUT"
+            {
+              echo 'note<<EOF'
+              echo '**Needs review before merging:**'
+              # Vendor text goes in a code block: it can't render, link or mention anyone.
+              echo '````text'
+              grep -E '^✗.*\(newly failing\)$|⚠ (surface|text):' verify.log | tr -d '`'
+              echo '````'
+              echo 'EOF'
+            } >> "$GITHUB_OUTPUT"
+          else
+            echo 'review=false' >> "$GITHUB_OUTPUT"
+            echo 'note=No servers, authentication or instruction-like text changed.' >> "$GITHUB_OUTPUT"
+          fi
+      # Before pushing a flagged night: cancel auto-merge on the open PR, so the push can't complete it.
+      - name: Hold the open PR before pushing
+        if: steps.gate.outputs.review == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Fail closed: if the open PR can't be listed, or auto-merge can't be confirmed off, don't push.
+          n=$(gh pr list --head nightly/spec-drift --state open --json number -q '.[0].number')
+          if [ -n "$n" ]; then
+            gh pr merge "$n" --disable-auto || true
+            state=$(gh pr view "$n" --json autoMergeRequest -q '.autoMergeRequest')
+            if [ -n "$state" ] && [ "$state" != "null" ]; then echo "::error::Auto-merge is still on for PR #$n"; exit 1; fi
+          fi
       - uses: peter-evans/create-pull-request@v6
+        id: pr
         with:
           branch: nightly/spec-drift
           title: "Spec drift: ${{ github.run_id }}"
           commit-message: "index: nightly spec check"
-          body: ${{ steps.summary.outputs.body }}
+          body: |
+            ${{ steps.gate.outputs.note }}
+
+            ${{ steps.summary.outputs.body }}
+          labels: ${{ steps.gate.outputs.review == 'true' && 'needs-review' || 'spec-drift' }}
           add-paths: |
             index.json
             derived/**
           delete-branch: true
+      # A flagged night cancels any auto-merge an earlier, clean night turned on for the same PR.
+      - name: Hold a flagged PR
+        if: steps.pr.outputs.pull-request-number && steps.gate.outputs.review == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n="${{ steps.pr.outputs.pull-request-number }}"
+          gh pr merge "$n" --disable-auto || true
+          state=$(gh pr view "$n" --json autoMergeRequest -q '.autoMergeRequest')
+          if [ -n "$state" ] && [ "$state" != "null" ]; then echo "::error::Auto-merge is still on for PR #$n"; exit 1; fi
+      # Off unless the repository variable NIGHTLY_AUTOMERGE is "true": then a PR with nothing to review
+      # merges itself (repository auto-merge must be allowed). Anything flagged above always waits.
+      - name: Merge a PR with nothing to review
+        if: steps.pr.outputs.pull-request-number && steps.gate.outputs.review == 'false' && vars.NIGHTLY_AUTOMERGE == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # The PR is reused night to night; one labelled needs-review on an earlier night still waits for a person.
+        run: |
+          n="${{ steps.pr.outputs.pull-request-number }}"
+          # Fail closed: a label lookup that fails must not fall through to merging.
+          labels=$(gh pr view "$n" --json labels -q '.labels[].name') || { echo "::error::Could not read the labels of PR #$n"; exit 1; }
+          if printf '%s\n' "$labels" | grep -qx needs-review; then
+            echo "PR #$n was flagged on an earlier night; leaving it for review."
+          else
+            # A PR opened with github.token starts no other workflows, so there may be no checks to wait for:
+            # then GitHub won't queue an auto-merge, and the PR is merged directly (the verifier already ran).
+            # GitHub computes mergeability after a push, so a fresh PR is retried a few times before giving up.
+            for i in 1 2 3 4 5; do
+              gh pr merge "$n" --squash --auto --delete-branch && exit 0
+              gh pr merge "$n" --squash --delete-branch && exit 0
+              sleep 15
+            done
+            echo "::warning::Could not merge PR #$n; leaving it for review."
+          fi
