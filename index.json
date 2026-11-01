@@ -1528,26 +1528,7 @@
     },
     "navan": {
       "name": "Navan",
-      "specs": {
-        "Navan Booking Data API": {
-          "status": "ok",
-          "sha256": "d69399ae36acef2bf1ff824fdb3752e9ede327c2863932903e53f81a38651a91",
-          "fetchSha256": "d69399ae36acef2bf1ff824fdb3752e9ede327c2863932903e53f81a38651a91",
-          "bytes": 20888,
-          "operations": 1,
-          "title": "Booking Data API",
-          "apiVersion": "1",
-          "specVersion": "3.0.0",
-          "server": "https://api.navan.com",
-          "surface": "a4378fe3f5d11cf6",
-          "changedOn": "2026-11-01",
-          "overlay": {
-            "file": "overlays/navan.yaml",
-            "sha256": "f3cb8fe0a6f1e811a29be9b4cabeb61ce17fc07482741dc02a9d9ad05d7c3f36",
-            "actions": 60
-          }
-        }
-      }
+      "specs": {}
     },
     "fiken": {
       "name": "Fiken",
