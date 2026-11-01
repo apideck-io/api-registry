@@ -6,4 +6,5 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://connect.squareup.com"
+    overlay: overlays/square.yaml
     source: apitracker

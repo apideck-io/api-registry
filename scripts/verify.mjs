@@ -12,6 +12,23 @@ import { fileURLToPath } from "node:url";
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { parse as parseYaml } from "yaml";
+import { createRequire } from "node:module";
+import openapiFormat from "openapi-format";
+
+const { openapiOverlay, resolveJsonPathValue } = openapiFormat;
+// The JSONPath parser openapi-format applies overlays with, resolved through it rather than declared
+// twice, so validation accepts exactly what the nightly run can apply.
+const jsonpathly = createRequire(createRequire(import.meta.url).resolve("openapi-format"))("jsonpathly");
+// openapi-format rewrites RFC 9535 filters ([?@.x]) to the engine's form ([?(@.x)]) before parsing.
+const jsonPathSyntaxError = (target) => {
+  try {
+    jsonpathly.parse(target.replace(/\[\?(@|\$)([^\]]*)\]/g, "[?($1$2)]"));
+    return null;
+  } catch (e) {
+    return e.message.split("\n")[0].slice(0, 100);
+  }
+};
+const nonEmpty = (v) => typeof v === "string" && v.trim() !== "";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url)); // decoded, so paths with spaces work
 const args = process.argv.slice(2);
@@ -44,6 +61,49 @@ const INTROSPECTION = `{ __schema { queryType { name } mutationType { name } sub
 } } }`;
 // Specs we know about but CI cannot fetch: behind a login, or behind bot protection that refuses CI.
 const MANUAL = new Set(["login", "bot-protection"]);
+// OpenAPI Overlay documents (https://spec.openapis.org/overlay/) that fix a vendor's spec without forking it.
+const OVERLAY_FORMATS = new Set(["openapi-3.0", "openapi-3.1", "swagger-2.0"]);
+const OVERLAY_VERSION = /^1\.[01]\.\d+$/;
+function overlayErrors(file, spec) {
+  const errs = [];
+  if (!/^overlays\/[a-z0-9-]+(\.[a-z0-9-]+)*\.ya?ml$/.test(file)) return ["overlay must be a file under overlays/, e.g. overlays/square.yaml"];
+  if (!existsSync(join(ROOT, file))) return [`overlay ${file} does not exist`];
+  if (!OVERLAY_FORMATS.has(spec.format)) errs.push(`overlay applies to OpenAPI or Swagger specs, not ${spec.format}`);
+  if (spec.extract) errs.push("overlay can't be combined with extract");
+  if (spec.manual) errs.push("overlay can't be combined with manual: the nightly check never fetches the spec to apply it");
+  let doc;
+  try {
+    doc = parseYaml(readFileSync(join(ROOT, file), "utf8"));
+  } catch (e) {
+    return [...errs, `overlay ${file}: invalid YAML (${e.message})`];
+  }
+  if (!OVERLAY_VERSION.test(String(doc?.overlay ?? ""))) errs.push(`overlay ${file}: "overlay" must be a 1.0.x or 1.1.x version`);
+  if (!nonEmpty(doc?.info?.title) || !nonEmpty(String(doc?.info?.version ?? ""))) errs.push(`overlay ${file}: info.title and info.version are required strings`);
+  if (doc?.extends && doc.extends !== spec.url) errs.push(`overlay ${file}: extends (${doc.extends}) must be the spec's url`);
+  if (!Array.isArray(doc?.actions) || !doc.actions.length) errs.push(`overlay ${file}: actions must be a non-empty list`);
+  (doc?.actions ?? []).forEach((a, i) => {
+    const at = `overlay ${file} actions[${i}]`;
+    if (typeof a?.target !== "string" || !a.target.startsWith("$")) errs.push(`${at}: target must be a JSONPath starting with $`);
+    else {
+      const syntax = jsonPathSyntaxError(a.target);
+      if (syntax) errs.push(`${at}: target is not valid JSONPath (${syntax})`);
+    }
+    // One operation per action, with a payload of the right type.
+    const ops = ["update", "remove", "copy"].filter((k) => a?.[k] !== undefined);
+    if (!ops.length) errs.push(`${at}: needs update, copy or remove: true`);
+    if (ops.length > 1) errs.push(`${at}: give one of update, copy or remove, not ${ops.join(" and ")}`);
+    if (a?.update === null) errs.push(`${at}: update can't be null`);
+    if (a?.remove !== undefined && a.remove !== true) errs.push(`${at}: remove must be true`);
+    if (a?.copy !== undefined) {
+      if (typeof a.copy !== "string" || !a.copy.startsWith("$")) errs.push(`${at}: copy must be a JSONPath to the source node`);
+      else if (jsonPathSyntaxError(a.copy)) errs.push(`${at}: copy is not valid JSONPath`);
+      if (!/^1\.1\./.test(String(doc.overlay))) errs.push(`${at}: copy needs overlay 1.1.x`);
+    }
+    if (!nonEmpty(a?.description)) errs.push(`${at}: description is required (say what the vendor's spec gets wrong)`);
+  });
+  return errs;
+}
+
 const METHODS = ["get", "put", "post", "delete", "patch", "head", "options", "trace"];
 
 // ---- validation ----
@@ -86,6 +146,7 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
     if (s?.extract && !s?.url) errors.push(`${at}: extract applies to a fetched url; store an extracted spec as a plain path instead`);
     if (s?.manual && !MANUAL.has(s.manual)) errors.push(`${at}: manual must be one of ${[...MANUAL].join(", ")}`);
     if (s?.manual && !s?.notes) errors.push(`${at}: a spec CI can't fetch needs notes saying how to get it`);
+    if (s?.overlay !== undefined) for (const m of overlayErrors(s.overlay, s)) errors.push(`${at}: ${m}`);
   });
   entries.push(doc);
 }
@@ -413,6 +474,38 @@ for (const e of entries) {
         : r.body;
     const sha256 = createHash("sha256").update(hashed).digest("hex");
     const changed = old.sha256 && old.sha256 !== sha256;
+    // An overlay is applied to the fetched spec on every run. Its actions whose target no longer matches
+    // anything are listed: the vendor fixed the mistake (drop the action) or moved it (update the target).
+    let overlay;
+    if (s.overlay) {
+      const text = readFileSync(join(ROOT, s.overlay), "utf8");
+      try {
+        const parseSpec = () => (/^\s*[{[]/.test(r.body) ? JSON.parse(r.body) : parseYaml(r.body, { maxAliasCount: 10000 }));
+        const overlaySet = parseYaml(text);
+        // Applied one action at a time, so each is judged on its own effect: an action whose target matches
+        // nothing is unmatched (the vendor moved it), an update that leaves its target unchanged is
+        // redundant (the vendor already says it: they fixed it).
+        let current = parseSpec();
+        const unmatched = [];
+        const redundant = [];
+        for (const action of overlaySet.actions) {
+          const before = canonical(resolveJsonPathValue(current, action.target));
+          const res = await openapiOverlay(current, { overlaySet: { ...overlaySet, actions: [action] } });
+          if (res.resultData.unusedActions.length) unmatched.push(action.target);
+          else if (action.update !== undefined && before === canonical(resolveJsonPathValue(res.data, action.target))) redundant.push(action.target);
+          current = res.data;
+        }
+        overlay = {
+          file: s.overlay,
+          sha256: createHash("sha256").update(text).digest("hex"),
+          actions: overlaySet.actions.length,
+          ...(unmatched.length ? { unmatched } : {}),
+          ...(redundant.length ? { redundant } : {}),
+        };
+      } catch (err) {
+        overlay = { file: s.overlay, error: err.message.slice(0, 120) };
+      }
+    }
     specs[s.name] = {
       status: "ok",
       sha256,
@@ -420,10 +513,15 @@ for (const e of entries) {
       bytes: bundle ? bundle.reduce((n, f) => n + Buffer.byteLength(f.text), 0) : Buffer.byteLength(r.body),
       ...Object.fromEntries(Object.entries(info).filter(([, v]) => v != null)),
       changedOn: changed || !old.sha256 ? today : old.changedOn,
+      ...(overlay ? { overlay } : {}),
     };
     // Δ changed, + newly indexed, ↺ recovered from a failure, ✓ unchanged. The nightly PR body lists all but ✓.
     const mark = changed ? "Δ" : !old.sha256 ? "+" : old.status && old.status !== "ok" ? "↺" : "✓";
-    console.log(`${mark} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations`);
+    const problems = overlay?.error
+      ? [overlay.error]
+      : [overlay?.unmatched?.length && `${overlay.unmatched.length} action(s) match nothing`, overlay?.redundant?.length && `${overlay.redundant.length} action(s) change nothing`].filter(Boolean);
+    const stale = problems.length ? ` ⚠ overlay: ${problems.join("; ")}` : "";
+    console.log(`${mark} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations${stale}`);
   }
   out.connectors[e.id] = { name: e.name, specs };
 }

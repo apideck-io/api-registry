@@ -30,9 +30,9 @@ jobs:
         run: |
           {
             echo 'body<<EOF'
-            echo 'Specs that changed (Δ), are new (+), recovered (↺) or failed (✗) in the nightly check:'
+            echo 'Specs that changed (Δ), are new (+), recovered (↺), failed (✗) or have an overlay that no longer matches (⚠) in the nightly check:'
             echo
-            grep -E '^(Δ|\+|↺|✗)' verify.log || echo 'None; index metadata only.'
+            grep -E '^(Δ|\+|↺|✗)|⚠' verify.log || echo 'None; index metadata only.'
             echo 'EOF'
           } >> "$GITHUB_OUTPUT"
       - uses: peter-evans/create-pull-request@v6
