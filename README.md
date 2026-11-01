@@ -10,6 +10,7 @@ The registry stores **links, not copies**. Most vendor specs carry licences that
 connectors/<id>.yaml   one entry per app (hand-maintained)
 index.json             what the last check found per spec (generated: never edit)
 specs/                 the few specs authored here
+overlays/              fixes to vendor specs, as OpenAPI Overlay documents
 scripts/verify.mjs     validates entries, checks every spec it can reach, writes index.json
 ```
 
@@ -45,6 +46,37 @@ An app whose vendor publishes no spec still gets an entry with `specs: []` and a
   - A zip bundle sums its files and adds `files`.
 - `title`, `apiVersion`, `specVersion` and `server`
 - `changedOn`: the last date the file's hash changed
+
+## Overlays
+
+When a vendor's spec is wrong in a way that breaks clients, the fix goes in an [OpenAPI Overlay](https://spec.openapis.org/overlay/) under `overlays/`, not in a fork. The entry points at it:
+
+```yaml
+  - name: "Square"
+    url: "https://raw.githubusercontent.com/square/connect-api-specification/master/api.json"
+    format: openapi-3.0
+    provenance: vendor
+    overlay: overlays/square.yaml
+```
+
+```yaml
+overlay: 1.0.0
+info: { title: Square spec fixes, version: 1.0.0 }
+extends: https://raw.githubusercontent.com/square/connect-api-specification/master/api.json
+actions:
+  - target: "$.paths['/v2/vendors/{vendor_id}'].put"
+    description: UpdateVendor puts {vendor_id} in its path but declares no parameters.
+    update:
+      parameters:
+        - { name: vendor_id, in: path, required: true, schema: { type: string } }
+```
+
+- Overlays fix what the spec says about the API: a missing parameter, a wrong server, a duplicate operationId. How one product wires a connector (which setting fills a variable, allowed hosts) stays in that product.
+- Every action needs a `description` saying what the vendor's spec gets wrong. `extends`, when given, must be the spec's `url`. Overlays apply to OpenAPI and Swagger specs only.
+- The nightly check applies each overlay to the fetched spec and records it in `index.json` (`overlay.file`, `sha256`, `actions`). Actions whose target no longer matches anything are listed under `overlay.unmatched` and flagged with ⚠ in the nightly pull request: the vendor fixed the mistake (drop the action) or moved it (update the target).
+- The spec's own `sha256` is of the vendor's file, not the overlaid result, so drift still means the vendor changed something.
+
+Applied with [openapi-format](https://github.com/thim81/openapi-format), which supports Overlay 1.0 and 1.1.
 
 ## Provenance
 

@@ -726,7 +726,12 @@
           "apiVersion": "2.0",
           "specVersion": "3.0.0",
           "server": "https://connect.squareup.com",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-10-31",
+          "overlay": {
+            "file": "overlays/square.yaml",
+            "sha256": "b19bb6edf8f4e234f936dcef3d955785112275ab67adb1b2cc0136dc8dc337df",
+            "actions": 1
+          }
         }
       }
     },

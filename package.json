@@ -7,6 +7,6 @@
     "validate": "node scripts/verify.mjs --validate-only",
     "verify": "node scripts/verify.mjs"
   },
-  "engines": { "node": ">=20" },
-  "dependencies": { "yaml": "^2.9.1" }
+  "engines": { "node": ">=22" },
+  "dependencies": { "openapi-format": "^1.34.0", "yaml": "^2.9.1" }
 }
