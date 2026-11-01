@@ -391,7 +391,7 @@ function inspectDocument(format, body) {
     return v.trim() ? null : `info.${k} is blank`;
   };
   const issues = ["title", "version"].map(problem).filter(Boolean);
-  return { operations: n, title: doc.info?.title, apiVersion: doc.info?.version, specVersion: doc.openapi ?? doc.swagger, server, ...(issues.length ? { specIssues: issues.join("; ") } : {}) };
+  return { operations: n, title: doc.info?.title, apiVersion: doc.info?.version, specVersion: doc.openapi ?? doc.swagger, server, ...(issues.length ? { specIssues: issues.join(", ") } : {}) };
 }
 
 for (const e of entries) if (!ONLY || e.id === ONLY) for (const s of e.specs) if (!s.manual) uses.set(keyOf(s), (uses.get(keyOf(s)) ?? 0) + 1);
