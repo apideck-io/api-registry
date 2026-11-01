@@ -1,0 +1,8 @@
+id: google-docs
+name: "Google Docs"
+apideck: false
+specs:
+  - name: "Google Docs API"
+    url: "https://docs.googleapis.com/$discovery/rest?version=v1"
+    format: google-discovery
+    provenance: vendor

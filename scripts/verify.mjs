@@ -123,6 +123,8 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
   if (doc?.id !== id) errors.push(`${where}: id must equal the file name ("${id}")`);
   if (!ID.test(id)) errors.push(`${where}: id must be lowercase kebab-case`);
   if (!doc?.name) errors.push(`${where}: name is required`);
+  // Apps Apideck doesn't connect yet are listed too, marked apideck: false (the id is then the app's common slug).
+  if (doc?.apideck !== undefined && doc.apideck !== false) errors.push(`${where}: apideck is only set to false, for an app Apideck doesn't connect yet`);
   if (!Array.isArray(doc?.specs)) {
     errors.push(`${where}: specs must be a list (use [] with a note when no spec is published)`);
     continue;
@@ -566,7 +568,7 @@ for (const e of entries) {
       (info.derivedError ? ` ⚠ SDL not parseable by graphql-js (${info.derivedError})${info.derived ? "; kept the last introspection result" : ""}` : "");
     console.log(`${mark} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations${stale}`);
   }
-  out.connectors[e.id] = { name: e.name, specs };
+  out.connectors[e.id] = { name: e.name, ...(e.apideck === false ? { apideck: false } : {}), specs };
 }
 // Entries removed from connectors/ leave the index too.
 for (const id of Object.keys(out.connectors)) if (!entries.some((e) => e.id === id)) delete out.connectors[id];

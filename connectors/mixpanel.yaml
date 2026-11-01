@@ -1,0 +1,55 @@
+id: mixpanel
+name: "Mixpanel"
+apideck: false
+notes: "Listed in docs.mixpanel.com/llms.txt; EU (eu.mixpanel.com) and India (in.mixpanel.com) residency hosts too."
+specs:
+  - name: "Mixpanel Ingestion API"
+    url: "https://docs.mixpanel.com/openapi/ingestion.openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.mixpanel.com"
+  - name: "Mixpanel Query API"
+    url: "https://docs.mixpanel.com/openapi/query.openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://mixpanel.com/api/query"
+  - name: "Mixpanel Export API"
+    url: "https://docs.mixpanel.com/openapi/export.openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://data.mixpanel.com/api/2.0"
+  - name: "Mixpanel Identity API"
+    url: "https://docs.mixpanel.com/openapi/identity.openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.mixpanel.com"
+  - name: "Mixpanel Annotations API"
+    url: "https://docs.mixpanel.com/openapi/annotations.openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://mixpanel.com/api/app"
+  - name: "Mixpanel Lexicon Schemas API"
+    url: "https://docs.mixpanel.com/openapi/lexicon-schemas.openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://mixpanel.com/api/app"
+  - name: "Mixpanel GDPR API"
+    url: "https://docs.mixpanel.com/openapi/gdpr.openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://mixpanel.com/api/app"
+  - name: "Mixpanel Feature Flags API"
+    url: "https://docs.mixpanel.com/openapi/feature-flags.openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://mixpanel.com"
+  - name: "Mixpanel Experiments API"
+    url: "https://docs.mixpanel.com/openapi/experiments.openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://mixpanel.com/api/app"
+  - name: "Mixpanel Service Accounts API"
+    url: "https://docs.mixpanel.com/openapi/service-accounts.openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://mixpanel.com/api/app"

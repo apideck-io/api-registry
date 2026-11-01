@@ -1,0 +1,5 @@
+id: airtable
+name: "Airtable"
+apideck: false
+notes: "No published spec for the Web API (https://airtable.com/developers/web/api/introduction); each base also has its own generated docs."
+specs: []

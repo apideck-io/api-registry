@@ -1,0 +1,5 @@
+id: reddit
+name: "Reddit"
+apideck: false
+notes: "No published spec. API reference: https://www.reddit.com/dev/api (OAuth, https://oauth.reddit.com)."
+specs: []

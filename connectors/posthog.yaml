@@ -1,0 +1,10 @@
+id: posthog
+name: "PostHog"
+apideck: false
+specs:
+  - name: "PostHog API"
+    url: "https://us.posthog.com/api/schema/"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://us.posthog.com"
+    notes: "EU cloud: https://eu.posthog.com."

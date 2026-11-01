@@ -1,0 +1,5 @@
+id: ashby
+name: "Ashby"
+apideck: false
+notes: "No published spec found. RPC-style API (POST /CATEGORY.method) documented at https://developers.ashbyhq.com; third-party specs exist but aren't Ashby's."
+specs: []

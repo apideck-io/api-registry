@@ -1,0 +1,10 @@
+id: spotify
+name: "Spotify"
+apideck: false
+specs:
+  - name: "Spotify Web API"
+    url: "https://raw.githubusercontent.com/sonallux/spotify-web-api/main/fixed-spotify-open-api.yml"
+    format: openapi-3.0
+    provenance: community
+    server: "https://api.spotify.com/v1"
+    notes: "Community-maintained (sonallux/spotify-web-api), generated from Spotify's docs with fixes; Spotify publishes none."

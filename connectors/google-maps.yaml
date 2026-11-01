@@ -1,0 +1,9 @@
+id: google-maps
+name: "Google Maps"
+apideck: false
+specs:
+  - name: "Places API (New)"
+    url: "https://places.googleapis.com/$discovery/rest?version=v1"
+    format: google-discovery
+    provenance: vendor
+    notes: "The Maps Platform is many APIs; Places is the one agent tools use most."

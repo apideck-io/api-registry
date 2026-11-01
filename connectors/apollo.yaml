@@ -1,0 +1,10 @@
+id: apollo
+name: "Apollo"
+apideck: false
+specs:
+  - name: "Apollo REST API"
+    url: "https://docs.apollo.io/openapi/apollo-rest-api.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.apollo.io/api/v1"
+    notes: "Regenerated whenever Apollo publishes its docs."
