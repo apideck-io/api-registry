@@ -6,4 +6,4 @@ specs:
     url: "https://raw.githubusercontent.com/getsentry/sentry-api-schema/main/openapi-derefed.json"
     format: openapi-3.0
     provenance: vendor
-    server: "https://sentry.io"
+    server: "https://{region}.sentry.io"

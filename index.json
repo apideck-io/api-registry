@@ -5191,8 +5191,7 @@
           "title": "Affinity API v2",
           "apiVersion": "",
           "specVersion": "3.1.1",
-          "server": "https://api.affinity.co/v2",
-          "specServer": "https://api.affinity.co",
+          "server": "https://api.affinity.co",
           "changedOn": "2026-11-01"
         }
       }
@@ -5200,7 +5199,19 @@
     "aha": {
       "name": "Aha!",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "Aha! API v1": {
+          "status": "ok",
+          "sha256": "7ac0186e1408af832074892f76336b4d34aec104e4ff93a8c852a87e11da43d2",
+          "bytes": 3138143,
+          "operations": 344,
+          "title": "Aha! API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://{account-domain}.aha.io/api/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
     },
     "aircall": {
       "name": "Aircall",
@@ -5230,8 +5241,7 @@
           "title": "Analytics API",
           "apiVersion": "2.0.0",
           "specVersion": "3.0.2",
-          "server": "https://analytics.algolia.com",
-          "specServer": "https://analytics.{region}.algolia.com",
+          "server": "https://analytics.{region}.algolia.com",
           "changedOn": "2026-11-01"
         },
         "Recommend API": {
@@ -5253,8 +5263,7 @@
           "title": "Ingestion API",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.2",
-          "server": "https://data.us.algolia.com",
-          "specServer": "https://data.{region}.algolia.com",
+          "server": "https://data.{region}.algolia.com",
           "changedOn": "2026-11-01"
         },
         "Query Suggestions API": {
@@ -5265,8 +5274,7 @@
           "title": "Query Suggestions API",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.2",
-          "server": "https://query-suggestions.us.algolia.com",
-          "specServer": "https://query-suggestions.{region}.algolia.com",
+          "server": "https://query-suggestions.{region}.algolia.com",
           "changedOn": "2026-11-01"
         },
         "A/B Testing API": {
@@ -5277,8 +5285,7 @@
           "title": "A/B Testing API",
           "apiVersion": "2.0.0",
           "specVersion": "3.0.2",
-          "server": "https://analytics.algolia.com",
-          "specServer": "https://analytics.{region}.algolia.com",
+          "server": "https://analytics.{region}.algolia.com",
           "changedOn": "2026-11-01"
         }
       }
@@ -6130,7 +6137,19 @@
     "la-growth-machine": {
       "name": "La Growth Machine",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "La Growth Machine API": {
+          "status": "ok",
+          "sha256": "e90a51b1a62d3e47ce785e561f604fca714ef1cf21f380eab6b45077e9984ca7",
+          "bytes": 375814,
+          "operations": 54,
+          "title": "La Growth Machine API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://apiv2.lagrowthmachine.com/flow",
+          "changedOn": "2026-11-01"
+        }
+      }
     },
     "lemlist": {
       "name": "Lemlist",
@@ -6269,7 +6288,7 @@
           "operations": 736,
           "title": "Metabase API documentation",
           "specVersion": "3.1.0",
-          "server": "https://{metabase-host}",
+          "server": "{scheme}://{metabase-host}:{port}",
           "specServer": "http://localhost:3000",
           "changedOn": "2026-11-01"
         }
@@ -6465,8 +6484,7 @@
           "title": "Ramp Developer API",
           "apiVersion": "v1",
           "specVersion": "3.0.2",
-          "server": "https://api.ramp.com/developer/v1",
-          "specServer": "https://api.ramp.com",
+          "server": "https://api.ramp.com",
           "changedOn": "2026-11-01"
         }
       }
@@ -6505,8 +6523,7 @@
           "title": "Query API reference",
           "apiVersion": "v2025-02-19",
           "specVersion": "3.1.1",
-          "server": "https://{projectId}.api.sanity.io",
-          "specServer": "https://{projectId}.api.sanity.io/{apiVersion}",
+          "server": "https://{projectId}.api.sanity.io/{apiVersion}",
           "changedOn": "2026-11-01"
         },
         "Mutation API": {
@@ -6517,8 +6534,7 @@
           "title": "Mutation API reference",
           "apiVersion": "v2025-02-19",
           "specVersion": "3.1.1",
-          "server": "https://{projectId}.api.sanity.io",
-          "specServer": "https://{projectId}.api.sanity.io/{apiVersion}",
+          "server": "https://{projectId}.api.sanity.io/{apiVersion}",
           "changedOn": "2026-11-01"
         },
         "Actions API": {
@@ -6529,8 +6545,7 @@
           "title": "Actions API reference",
           "apiVersion": "v2025-02-19",
           "specVersion": "3.1.1",
-          "server": "https://{projectId}.api.sanity.io",
-          "specServer": "https://{projectId}.api.sanity.io/{apiVersion}",
+          "server": "https://{projectId}.api.sanity.io/{apiVersion}",
           "changedOn": "2026-11-01"
         },
         "Doc API": {
@@ -6541,8 +6556,7 @@
           "title": "Doc API reference",
           "apiVersion": "v2025-02-19",
           "specVersion": "3.1.1",
-          "server": "https://{projectId}.api.sanity.io",
-          "specServer": "https://{projectId}.api.sanity.io/{apiVersion}",
+          "server": "https://{projectId}.api.sanity.io/{apiVersion}",
           "changedOn": "2026-11-01"
         },
         "Assets API": {
@@ -6553,8 +6567,7 @@
           "title": "Assets API reference",
           "apiVersion": "v2024-06-24",
           "specVersion": "3.1.1",
-          "server": "https://{projectId}.api.sanity.io",
-          "specServer": "https://{projectId}.api.sanity.io/{apiVersion}/assets",
+          "server": "https://{projectId}.api.sanity.io/{apiVersion}/assets",
           "changedOn": "2026-11-01"
         },
         "Export API": {
@@ -6565,8 +6578,7 @@
           "title": "Export API reference",
           "apiVersion": "2025-02-19",
           "specVersion": "3.1.1",
-          "server": "https://{projectId}.api.sanity.io",
-          "specServer": "https://{projectId}.api.sanity.io/{apiVersion}",
+          "server": "https://{projectId}.api.sanity.io/{apiVersion}",
           "changedOn": "2026-11-01"
         },
         "Listen API": {
@@ -6577,8 +6589,7 @@
           "title": "Listen API reference",
           "apiVersion": "2025-02-19",
           "specVersion": "3.1.1",
-          "server": "https://{projectId}.api.sanity.io",
-          "specServer": "https://{projectId}.api.sanity.io/{apiVersion}",
+          "server": "https://{projectId}.api.sanity.io/{apiVersion}",
           "changedOn": "2026-11-01"
         }
       }
@@ -6600,8 +6611,7 @@
           "title": "API Reference",
           "apiVersion": "v0",
           "specVersion": "3.0.3",
-          "server": "https://sentry.io",
-          "specServer": "https://{region}.sentry.io",
+          "server": "https://{region}.sentry.io",
           "changedOn": "2026-11-01"
         }
       }
@@ -6731,7 +6741,7 @@
           "title": "Todoist API",
           "apiVersion": "1",
           "specVersion": "3.1.0",
-          "server": "https://api.todoist.com/api/v1",
+          "server": "https://api.todoist.com",
           "specServer": "https://api.todoist.com/",
           "changedOn": "2026-11-01"
         }
@@ -6740,7 +6750,38 @@
     "toggl": {
       "name": "Toggl",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "Toggl Track API v9": {
+          "status": "ok",
+          "sha256": "ab70fe306871c1259874b7dfa60e86f11f71805b59964187e6e00c5c7e3bce56",
+          "bytes": 922793,
+          "operations": 283,
+          "title": "Toggl API",
+          "apiVersion": "9",
+          "specVersion": "2.0",
+          "server": "https://api.track.toggl.com/api/v9",
+          "specServer": "https://localhost:8080/api/v9",
+          "changedOn": "2026-11-01"
+        },
+        "Toggl Reports API v3": {
+          "status": "ok",
+          "sha256": "977138dabcb2f4ada374831acb7347116df071e86c4767d45039412109c61d1b",
+          "bytes": 224361,
+          "operations": 36,
+          "specVersion": "2.0",
+          "server": "https://api.track.toggl.com/reports/api/v3",
+          "changedOn": "2026-11-01"
+        },
+        "Toggl Webhooks API v1": {
+          "status": "ok",
+          "sha256": "6d0fcbc09387e08ba1a756d69dffe802eb7bdfc1fee158f72f01b30109f8d050",
+          "bytes": 27954,
+          "operations": 10,
+          "specVersion": "2.0",
+          "server": "https://api.track.toggl.com/webhooks/api/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
     },
     "vercel": {
       "name": "Vercel",
@@ -6832,7 +6873,7 @@
           "title": "Webex Contact Center",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.0",
-          "server": "https://webexapis.com/v1",
+          "server": "https://api.wxcc-{region}.cisco.com",
           "changedOn": "2026-11-01"
         },
         "Webex Devices": {
@@ -6882,7 +6923,7 @@
           "title": "Ticket",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
-          "server": "https://desk.zoho.com/api/v1",
+          "server": "https://desk.zoho.com",
           "changedOn": "2026-11-01"
         },
         "Contacts": {
@@ -6893,7 +6934,7 @@
           "title": "Contact",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
-          "server": "https://desk.zoho.com/api/v1",
+          "server": "https://desk.zoho.com",
           "changedOn": "2026-11-01"
         },
         "Accounts": {
@@ -6904,7 +6945,7 @@
           "title": "Account",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
-          "server": "https://desk.zoho.com/api/v1",
+          "server": "https://desk.zoho.com",
           "changedOn": "2026-11-01"
         },
         "Agents": {
@@ -6915,7 +6956,7 @@
           "title": "Agent",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
-          "server": "https://desk.zoho.com/api/v1",
+          "server": "https://desk.zoho.com",
           "changedOn": "2026-11-01"
         },
         "Departments": {
@@ -6926,7 +6967,7 @@
           "title": "Department",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
-          "server": "https://desk.zoho.com/api/v1",
+          "server": "https://desk.zoho.com",
           "changedOn": "2026-11-01"
         },
         "Threads": {
@@ -6937,7 +6978,7 @@
           "title": "Thread",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
-          "server": "https://desk.zoho.com/api/v1",
+          "server": "https://desk.zoho.com",
           "changedOn": "2026-11-01"
         },
         "Articles": {
@@ -6948,7 +6989,7 @@
           "title": "Article",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
-          "server": "https://desk.zoho.com/api/v1",
+          "server": "https://desk.zoho.com",
           "changedOn": "2026-11-01"
         },
         "Tasks": {
@@ -6959,7 +7000,7 @@
           "title": "Task",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
-          "server": "https://desk.zoho.com/api/v1",
+          "server": "https://desk.zoho.com",
           "changedOn": "2026-11-01"
         }
       }

@@ -1,6 +1,6 @@
 # API registry
 
-Machine-readable API specifications for the apps [Apideck](https://www.apideck.com) connects to: OpenAPI, Swagger, Google Discovery, AsyncAPI, OData, XSD, GraphQL and Postman. One entry per app, each spec verified every night.
+Machine-readable API specifications for the apps [Apideck](https://www.apideck.com) connects to, and for widely used apps it doesn't connect yet: OpenAPI, Swagger, Google Discovery, AsyncAPI, OData, XSD, GraphQL and Postman. One entry per app, each spec verified every night.
 
 The registry stores **links, not copies**. Most vendor specs carry licences that don't allow redistribution, so an entry points at the vendor's own published file. The only specs stored here are ones authored in this repo.
 

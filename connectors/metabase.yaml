@@ -1,10 +1,10 @@
 id: metabase
 name: "Metabase"
 apideck: false
-notes: "Self-hosted: the API runs on your own Metabase host."
+notes: "Self-hosted: the API runs on your own Metabase instance (a default install serves http on port 3000)."
 specs:
   - name: "Metabase API"
     url: "https://raw.githubusercontent.com/metabase/metabase/master/docs/api.json"
     format: openapi-3.1
     provenance: vendor
-    server: "https://{metabase-host}"
+    server: "{scheme}://{metabase-host}:{port}"

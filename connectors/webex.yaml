@@ -1,6 +1,7 @@
 id: webex
 name: "Webex"
 apideck: false
+notes: "Webex publishes one spec per product (github.com/webex/webex-openapi-specs, public-spec/); BroadWorks, UCM and Wholesale are not listed here."
 specs:
   - name: "Webex Meetings"
     url: "https://raw.githubusercontent.com/webex/webex-openapi-specs/main/public-spec/webex-meeting.json"
@@ -26,7 +27,7 @@ specs:
     url: "https://raw.githubusercontent.com/webex/webex-openapi-specs/main/public-spec/webex-contact-center.json"
     format: openapi-3.0
     provenance: vendor
-    server: "https://webexapis.com/v1"
+    server: "https://api.wxcc-{region}.cisco.com"
   - name: "Webex Devices"
     url: "https://raw.githubusercontent.com/webex/webex-openapi-specs/main/public-spec/webex-device.json"
     format: openapi-3.0

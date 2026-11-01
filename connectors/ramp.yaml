@@ -6,4 +6,4 @@ specs:
     url: "https://docs.ramp.com/openapi/developer-api.json"
     format: openapi-3.0
     provenance: vendor
-    server: "https://api.ramp.com/developer/v1"
+    server: "https://api.ramp.com"

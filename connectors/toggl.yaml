@@ -1,5 +1,20 @@
 id: toggl
 name: "Toggl"
 apideck: false
-notes: "No downloadable spec found. API documentation: https://engineering.toggl.com/docs"
-specs: []
+notes: "Toggl publishes its Swagger files as site assets whose file names change when the files do (engineering.toggl.com/docs/openapi); a 404 here means the link needs updating."
+specs:
+  - name: "Toggl Track API v9"
+    url: "https://engineering.toggl.com/assets/files/api-bdc6b9918a1df375538d8cff99611b6d.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.track.toggl.com/api/v9"
+  - name: "Toggl Reports API v3"
+    url: "https://engineering.toggl.com/assets/files/reports-c9bb77e23d0637e43ddfd60a0134437d.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.track.toggl.com/reports/api/v3"
+  - name: "Toggl Webhooks API v1"
+    url: "https://engineering.toggl.com/assets/files/webhooks-479d375ba167e9f885df9356e34a7c4e.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.track.toggl.com/webhooks/api/v1"

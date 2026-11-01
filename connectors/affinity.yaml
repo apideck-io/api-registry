@@ -6,4 +6,4 @@ specs:
     url: "https://developer.affinity.co/api-reference/openapi.json"
     format: openapi-3.1
     provenance: vendor
-    server: "https://api.affinity.co/v2"
+    server: "https://api.affinity.co"

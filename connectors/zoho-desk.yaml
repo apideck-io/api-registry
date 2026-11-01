@@ -7,39 +7,39 @@ specs:
     url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Ticket.json"
     format: openapi-3.1
     provenance: vendor
-    server: "https://desk.zoho.com/api/v1"
+    server: "https://desk.zoho.com"
   - name: "Contacts"
     url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Contact.json"
     format: openapi-3.1
     provenance: vendor
-    server: "https://desk.zoho.com/api/v1"
+    server: "https://desk.zoho.com"
   - name: "Accounts"
     url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Account.json"
     format: openapi-3.1
     provenance: vendor
-    server: "https://desk.zoho.com/api/v1"
+    server: "https://desk.zoho.com"
   - name: "Agents"
     url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Agent.json"
     format: openapi-3.1
     provenance: vendor
-    server: "https://desk.zoho.com/api/v1"
+    server: "https://desk.zoho.com"
   - name: "Departments"
     url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Department.json"
     format: openapi-3.1
     provenance: vendor
-    server: "https://desk.zoho.com/api/v1"
+    server: "https://desk.zoho.com"
   - name: "Threads"
     url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Thread.json"
     format: openapi-3.1
     provenance: vendor
-    server: "https://desk.zoho.com/api/v1"
+    server: "https://desk.zoho.com"
   - name: "Articles"
     url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Article.json"
     format: openapi-3.1
     provenance: vendor
-    server: "https://desk.zoho.com/api/v1"
+    server: "https://desk.zoho.com"
   - name: "Tasks"
     url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Task.json"
     format: openapi-3.1
     provenance: vendor
-    server: "https://desk.zoho.com/api/v1"
+    server: "https://desk.zoho.com"

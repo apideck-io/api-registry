@@ -12,7 +12,7 @@ specs:
     url: "https://raw.githubusercontent.com/algolia/api-clients-automation/main/specs/bundled/analytics.yml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://analytics.algolia.com"
+    server: "https://analytics.{region}.algolia.com"
   - name: "Recommend API"
     url: "https://raw.githubusercontent.com/algolia/api-clients-automation/main/specs/bundled/recommend.yml"
     format: openapi-3.0
@@ -22,14 +22,14 @@ specs:
     url: "https://raw.githubusercontent.com/algolia/api-clients-automation/main/specs/bundled/ingestion.yml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://data.us.algolia.com"
+    server: "https://data.{region}.algolia.com"
   - name: "Query Suggestions API"
     url: "https://raw.githubusercontent.com/algolia/api-clients-automation/main/specs/bundled/query-suggestions.yml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://query-suggestions.us.algolia.com"
+    server: "https://query-suggestions.{region}.algolia.com"
   - name: "A/B Testing API"
     url: "https://raw.githubusercontent.com/algolia/api-clients-automation/main/specs/bundled/abtesting.yml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://analytics.algolia.com"
+    server: "https://analytics.{region}.algolia.com"

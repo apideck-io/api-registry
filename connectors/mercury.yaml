@@ -1,5 +1,5 @@
 id: mercury
 name: "Mercury"
 apideck: false
-notes: "No downloadable spec found. API reference: https://docs.mercury.com/reference"
+notes: "No fetchable spec file found. The API reference (https://docs.mercury.com/reference) is rendered from OpenAPI definitions, but their file path returns 404 outside the docs site."
 specs: []

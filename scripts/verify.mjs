@@ -371,7 +371,8 @@ function inspectDocument(format, body) {
   if (format === "swagger-2.0" && String(doc.swagger) !== "2.0") throw new Error("no swagger: 2.0 root");
   if (format.startsWith("openapi-") && !String(doc.openapi ?? "").startsWith("3")) throw new Error("no openapi 3.x root");
   // OpenAPI 3.1 and later allow a document with only webhooks or components; earlier versions require paths.
-  const pathsOptional = /^3\.[1-9]/.test(String(doc.openapi ?? "")) && (doc.webhooks || doc.components);
+  const isMap = (v) => Boolean(v) && typeof v === "object" && !Array.isArray(v);
+  const pathsOptional = /^3\.[1-9]/.test(String(doc.openapi ?? "")) && (isMap(doc.webhooks) || isMap(doc.components));
   if ((!doc.paths || typeof doc.paths !== "object") && !pathsOptional) throw new Error("no paths");
   let n = 0;
   // OpenAPI 3.2 adds the query method and additionalOperations (custom HTTP methods) on a path item.
@@ -478,6 +479,8 @@ for (const e of entries) {
           title: s.name,
           apiVersion: versions.length === 1 ? versions[0] : versions.join(", ") || null,
           specVersion: parts[0]?.specVersion,
+          // Every module's version, so the format check covers all of them, not just the first.
+          specVersions: [...new Set(parts.map((x) => x.specVersion).filter(Boolean))],
           server: parts.find((x) => x.server)?.server,
         };
       } else info = inspect(s.format, r.body);
@@ -514,7 +517,10 @@ for (const e of entries) {
     // The entry's format must match the document: a 3.1 spec declared openapi-3.0 picks the wrong parser downstream.
     // openapi-3.1 also covers 3.2, a backwards-compatible minor version (Shopware publishes 3.2).
     const accepts = { "openapi-3.0": ["3.0"], "openapi-3.1": ["3.1", "3.2"], "swagger-2.0": ["2.0"] }[s.format];
-    if (accepts && info.specVersion && !accepts.some((v) => String(info.specVersion).startsWith(v))) info.formatMismatch = `declared ${s.format}, the spec says ${info.specVersion}`;
+    const versions = info.specVersions ?? (info.specVersion ? [info.specVersion] : []);
+    const wrong = versions.filter((ver) => !accepts?.some((v) => String(ver).startsWith(v)));
+    if (accepts && wrong.length) info.formatMismatch = `declared ${s.format}, the spec says ${wrong.join(", ")}`;
+    delete info.specVersions;
     if (s.server) info.server = s.server;
     // A rebuilt zip changes its bytes (timestamps, compression) without any spec changing, so a bundle
     // is hashed on its files' names and contents.
