@@ -1,0 +1,25 @@
+README.md
+  s_eeda7bd9685d9d::t_e6455f28d3a439 62-65
+connectors/gorgias.yaml
+  s_eeda7bd9685d9d::t_89344737d54219 4
+index.json
+  s_eeda7bd9685d9d::t_2c140c5ab531f0 6773,6783
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_a7239154033dd0 384-387,586-587
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "94591322d5de581fc0e0b264eda97f902f6ef4a7",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
