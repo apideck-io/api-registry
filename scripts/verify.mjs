@@ -490,7 +490,8 @@ for (const e of entries) {
     if (introspection) {
       // Named after the spec's URL, so connectors sharing a schema (linear, linear-multiworkspace) share a file.
       const file = `derived/graphql/${createHash("sha256").update(s.url ?? s.path).digest("hex").slice(0, 16)}.introspection.json`;
-      const text = JSON.stringify(introspection) + "\n";
+      // Indented like index.json, so a vendor's schema change reads as a line diff in the nightly PR.
+      const text = JSON.stringify(introspection, null, 2) + "\n";
       const abs = join(ROOT, file);
       if (!existsSync(abs) || readFileSync(abs, "utf8") !== text) {
         mkdirSync(dirname(abs), { recursive: true });

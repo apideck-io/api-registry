@@ -3525,8 +3525,8 @@
           "operations": 574,
           "derived": {
             "file": "derived/graphql/9ea1cd4a37bb0243.introspection.json",
-            "sha256": "cc6c478cb906e790cfffba4e6efaa18023ac8727d122d27e01f5a7eca853f413",
-            "bytes": 3360175
+            "sha256": "15d3db1f56e0fc5bf84a476ecb0b04106193ecf45c39666e160d1db36d7b1db5",
+            "bytes": 6215027
           },
           "server": "https://api.linear.app/graphql",
           "changedOn": "2026-10-31"
@@ -3543,8 +3543,8 @@
           "operations": 574,
           "derived": {
             "file": "derived/graphql/9ea1cd4a37bb0243.introspection.json",
-            "sha256": "cc6c478cb906e790cfffba4e6efaa18023ac8727d122d27e01f5a7eca853f413",
-            "bytes": 3360175
+            "sha256": "15d3db1f56e0fc5bf84a476ecb0b04106193ecf45c39666e160d1db36d7b1db5",
+            "bytes": 6215027
           },
           "server": "https://api.linear.app/graphql",
           "changedOn": "2026-10-31"
@@ -3945,8 +3945,8 @@
           "operations": 335,
           "derived": {
             "file": "derived/graphql/0656071d10c32575.introspection.json",
-            "sha256": "6e92fa5b20b5f1ba6447accacf3a7bd2e61b1a899f905a1736436a4db4a6faeb",
-            "bytes": 1954908
+            "sha256": "9c40d284201f77c196ec288607a39395d2e67ee37928bc790129dbd84940ad17",
+            "bytes": 3634533
           },
           "server": "https://api.monday.com/v2",
           "changedOn": "2026-10-31"
