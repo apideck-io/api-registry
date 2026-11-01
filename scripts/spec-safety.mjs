@@ -4,25 +4,28 @@
 //           requirements. A vendor rarely changes these; when they do change, a person should look before
 //           the new file is trusted, so the nightly PR is not merged automatically.
 // suspicious Text in descriptions or summaries that reads like instructions to an AI agent ("ignore previous
-//           instructions", chat-template tokens, hidden Unicode). Tools built from a spec pass this text to
+//           instructions", chat-template tokens, bidirectional overrides). Tools built from a spec pass this text to
 //           a model, so a spec carrying it is held for review.
 
 import { createHash } from "node:crypto";
 
 // Phrases aimed at a model rather than a developer. Kept narrow: API docs say "you must", "call this
-// endpoint" and "the token" all the time, so plain imperatives are not flagged.
+// endpoint" and "the token" all the time, and AI vendors document a "system prompt" parameter, so plain
+// imperatives and that phrase are not flagged.
 export const INSTRUCTION_LIKE = [
   /\b(ignore|disregard|forget|override)\s+(all\s+|any\s+|the\s+)?(previous|prior|above|earlier|preceding|system)\s+(instructions?|prompts?|messages?|rules|context)/i,
-  /\b(system|developer)\s+prompt\b/i,
   /\byou\s+are\s+(now\s+)?(an?\s+)?(ai|assistant|chatbot|language\s+model|llm|claude|chatgpt|gpt)\b/i,
-  /<\|?\s*(im_start|im_end|endoftext|system|assistant|user)\s*\|?>/i,
+  // Chat-template tokens need both pipes: <User> is a generic type in plenty of specs.
+  /<\|\s*(im_start|im_end|endoftext|system|assistant|user)\s*\|>/i,
   /\[\/?INST\]|<<\/?SYS>>/,
   /\bdo\s+not\s+(tell|inform|reveal\s+to|mention\s+to)\s+the\s+user\b/i,
   /\b(send|post|forward|exfiltrate|upload)\b[^.]{0,60}\b(api[\s_-]?keys?|access\s+tokens?|credentials|passwords?|secrets?)\b[^.]{0,40}\bto\s+(https?:\/\/|\S+@\S+)/i,
-  /\b(ai|llm|agent|assistant|model)s?\b[^.]{0,30}\b(must|should)\s+(always\s+|now\s+|first\s+)?(ignore|call|invoke|execute|run|send)\b/i,
+  // Not "agent": in helpdesk APIs that is a person ("the agent should call the customer back").
+  /\b(ai|llm|assistant|language\s+model)s?\b[^.]{0,30}\b(must|should)\s+(always\s+|now\s+|first\s+)?(ignore|call|invoke|execute|run|send)\b/i,
 ];
-// Zero-width and bidirectional-override characters: invisible to a reviewer, readable by a model.
-export const HIDDEN_CHARS = /[​-‏‪-‮⁠-⁤⁦-⁩﻿]/;
+// Bidirectional overrides: they make text display differently from what a model reads. Zero-width spaces are
+// common in pasted vendor docs and are not flagged (consumers strip them).
+export const HIDDEN_CHARS = /[\u202A-\u202E\u2066-\u2069]/;
 
 const TEXT_KEYS = new Set(["description", "summary", "title", "x-summary"]);
 
@@ -34,11 +37,11 @@ export function suspiciousText(doc, max = 3) {
     if (found.length >= max || depth > 40 || v == null) return;
     if (typeof v === "string") {
       if (!TEXT_KEYS.has(key)) return;
-      const hidden = HIDDEN_CHARS.test(v.replace(/^﻿/, ""));
+      const hidden = HIDDEN_CHARS.test(v);
       const hit = hidden ? null : INSTRUCTION_LIKE.find((re) => re.test(v));
       if (!hidden && !hit) return;
       const at = hit ? v.search(hit) : v.search(HIDDEN_CHARS);
-      const sample = (hidden ? "hidden characters: " : "") + v.slice(Math.max(0, at - 20), at + 60).replace(/\s+/g, " ").replace(HIDDEN_CHARS, "␣");
+      const sample = (hidden ? "hidden characters: " : "") + v.slice(Math.max(0, at - 20), at + 60).replace(/\s+/g, " ").replace(HIDDEN_CHARS, "\u2423");
       if (!seen.has(sample)) {
         seen.add(sample);
         found.push(sample);

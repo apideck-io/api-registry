@@ -703,10 +703,16 @@ for (const e of entries) {
     }
     // Servers or authentication differ from the last check: flagged, and the nightly PR waits for a person.
     const surfaceChanged = Boolean(old.surface && info.surface && old.surface !== info.surface);
+    // Flagged text is recorded (suspicious); it holds the nightly PR only when it differs from what was
+    // recorded, and so reviewed, before. OpenAI's docs mention its own <|endoftext|> token, for one.
+    const suspiciousNew = Boolean(info.suspicious) && canonical(info.suspicious) !== canonical(old.suspicious ?? null);
     specs[s.name] = {
       status: "ok",
       sha256,
-      ...(r.fetchSha256 ? { fetchSha256: r.fetchSha256 } : {}),
+      // Only where the served bytes are stable: a Discovery document, a zip bundle and a spec with generated
+      // dates are hashed in a normalised form (sha256) because their bytes differ between requests, so a raw
+      // hash would change every night. Consumers check those against sha256 with the same normalisation.
+      ...(r.fetchSha256 && !doc && !bundle && !parsedForHash && !s.extract?.startsWith("graphql") ? { fetchSha256: r.fetchSha256 } : {}),
       // For a bundle, the size of its files: the archive's own size changes when it is merely rebuilt.
       bytes: bundle ? bundle.reduce((n, f) => n + Buffer.byteLength(f.text), 0) : Buffer.byteLength(r.body),
       ...Object.fromEntries(Object.entries(info).filter(([, v]) => v != null)),
@@ -725,7 +731,7 @@ for (const e of entries) {
       (info.formatMismatch ? ` ⚠ format: ${info.formatMismatch}` : "") +
       (info.specIssues ? ` ⚠ spec: ${info.specIssues}` : "") +
       (surfaceChanged ? " ⚠ surface: servers or authentication changed" : "") +
-      (info.suspicious ? ` ⚠ text: reads like instructions to an AI (${info.suspicious.map((x) => JSON.stringify(x)).join("; ")})` : "");
+      (suspiciousNew ? ` ⚠ text: reads like instructions to an AI (${info.suspicious.map((x) => JSON.stringify(x)).join("; ")})` : "");
     console.log(`${mark} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations${stale}`);
   }
   out.connectors[e.id] = { name: e.name, ...(e.apideck === false ? { apideck: false } : {}), specs };
