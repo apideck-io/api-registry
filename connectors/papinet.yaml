@@ -7,4 +7,5 @@ specs:
     url: "https://raw.githubusercontent.com/papinet/papiNet-API/master/1.0.0/papiNet-API.yaml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://papinet.papinet.io"
+    server: "https://{member-host}"
+    notes: "papiNet is an industry standard each member implements on its own host; the spec's host is an example."

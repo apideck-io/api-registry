@@ -7,5 +7,5 @@ specs:
     url: "https://raw.githubusercontent.com/velopaymentsapi/VeloOpenApi/master/spec/openapi.yaml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://api.velopayments.com"
-    notes: "Production host; the spec lists the sandbox, api.sandbox.velopayments.com."
+    server: "https://api.payouts.velopayments.com"
+    notes: "Production host, as the spec names it; sandbox at api.sandbox.velopayments.com."
