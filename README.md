@@ -49,7 +49,7 @@ An app whose vendor publishes no spec still gets an entry with `specs: []` and a
 - `sha256`
 - `bytes`
 - `operations`, which counts differently per format:
-  - OpenAPI and Swagger: path × method
+  - OpenAPI and Swagger: path × method (including Azure's `x-ms-paths`, and OpenAPI 3.2's `query` method and `additionalOperations`)
   - Discovery: methods
   - AsyncAPI: publish and subscribe operations
   - Postman: requests
