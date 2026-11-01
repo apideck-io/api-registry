@@ -508,8 +508,9 @@ for (const e of entries) {
     // {baseUrl}). The spec's own value is kept as specServer when they differ.
     if (s.server && info.server && info.server !== s.server) info.specServer = info.server;
     // The entry's format must match the document: a 3.1 spec declared openapi-3.0 picks the wrong parser downstream.
-    const declared = { "openapi-3.0": "3.0", "openapi-3.1": "3.1", "swagger-2.0": "2.0" }[s.format];
-    if (declared && info.specVersion && !String(info.specVersion).startsWith(declared)) info.formatMismatch = `declared ${s.format}, the spec says ${info.specVersion}`;
+    // openapi-3.1 also covers 3.2, a backwards-compatible minor version (Shopware publishes 3.2).
+    const accepts = { "openapi-3.0": ["3.0"], "openapi-3.1": ["3.1", "3.2"], "swagger-2.0": ["2.0"] }[s.format];
+    if (accepts && info.specVersion && !accepts.some((v) => String(info.specVersion).startsWith(v))) info.formatMismatch = `declared ${s.format}, the spec says ${info.specVersion}`;
     if (s.server) info.server = s.server;
     // A rebuilt zip changes its bytes (timestamps, compression) without any spec changing, so a bundle
     // is hashed on its files' names and contents.

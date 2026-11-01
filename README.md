@@ -24,7 +24,7 @@ name: "Xero"
 specs:
   - name: "Xero Accounting API"
     url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero_accounting.yaml"
-    format: openapi-3.0       # openapi-3.0 | openapi-3.1 | swagger-2.0 | google-discovery | asyncapi-2 | postman-2.1 | odata-edmx | xsd | graphql
+    format: openapi-3.0       # openapi-3.0 | openapi-3.1 (also 3.2) | swagger-2.0 | google-discovery | asyncapi-2 | postman-2.1 | odata-edmx | xsd | graphql
     provenance: vendor        # vendor | third-party | community | fork
     server: "https://api.xero.com/api.xro/2.0"
     license: "MIT"            # optional; as the vendor states it
