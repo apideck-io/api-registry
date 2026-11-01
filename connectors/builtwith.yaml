@@ -1,5 +1,11 @@
 id: builtwith
 name: "BuiltWith"
 apideck: false
-notes: "Searched for a published OpenAPI/Swagger spec and checked the docs site (llms.txt, openapi.json paths); none found. api.builtwith.com documents endpoints as HTML only."
-specs: []
+notes: "api.builtwith.com serves an OpenAPI document for its pay-per-call (x402) API at /openapi.json."
+specs:
+  - name: "BuiltWith x402 Pay-per-Call API"
+    url: "https://api.builtwith.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.builtwith.com"
+    notes: "Covers the x402 pay-per-call endpoints; the key-based APIs are documented at https://api.builtwith.com/ in HTML."

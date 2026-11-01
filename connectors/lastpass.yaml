@@ -1,5 +1,10 @@
 id: lastpass
 name: "LastPass"
 apideck: false
-notes: "No vendor-published spec found; the Enterprise API is a single POST endpoint documented in prose."
-specs: []
+notes: "Linked from developer.lastpass.com's llms.txt."
+specs:
+  - name: "LastPass API"
+    url: "https://developer.lastpass.com/api/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.lastpass.com/business"

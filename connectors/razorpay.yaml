@@ -1,5 +1,10 @@
 id: razorpay
 name: "Razorpay"
 apideck: false
-notes: "No spec file on Razorpay's own domain or GitHub org. The API reference (https://razorpay.com/docs/api/) links Razorpay's Postman public workspace with the API collections."
-specs: []
+notes: "razorpay.com serves its API spec at /openapi.json. API reference: https://razorpay.com/docs/api/"
+specs:
+  - name: "Razorpay API"
+    url: "https://razorpay.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.razorpay.com/v1"

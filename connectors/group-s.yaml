@@ -1,4 +1,10 @@
 id: group-s
 name: "Group S"
-notes: "No public machine-readable spec. Group S API: https://payroll-groups.be/ (Only a login-gated 'Group S API Management' portal (https://payroll-groups.be/) for API keys; no public docs or spec found. Apideck lists the connector as auth-only.)"
-specs: []
+notes: "payroll-groups.be serves the Group S Middleware API spec at /openapi.json."
+specs:
+  - name: "Group S Middleware API"
+    url: "https://payroll-groups.be/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://payroll-groups.be"
+    notes: "The spec declares no servers or security schemes; the server is the host that serves it."

@@ -1,5 +1,10 @@
 id: constant-contact
 name: "Constant Contact"
 apideck: false
-notes: "No downloadable spec found. API v3 reference: https://developer.constantcontact.com/api_reference/index.html"
-specs: []
+notes: "Linked from the developer portal's llms.txt; API v3 reference: https://developer.constantcontact.com/api_reference/index.html"
+specs:
+  - name: "Constant Contact API v3 (AppConnect V3)"
+    url: "https://api.cc.email/v3/swagger.yaml"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.cc.email/v3"
