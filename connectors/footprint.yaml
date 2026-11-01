@@ -8,4 +8,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://api.onefootprint.com"
-    notes: "The spec declares no server; this is the vendor's API host."
+    notes: "The spec gives its server without a scheme (//api.onefootprint.com); this is it over https."
