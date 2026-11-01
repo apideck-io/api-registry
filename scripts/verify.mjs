@@ -383,7 +383,8 @@ function inspectDocument(format, body) {
   const server = doc.servers?.[0]?.url ?? (doc.host ? `${doc.schemes?.[0] ?? "https"}://${doc.host}${doc.basePath ?? ""}` : null);
   // OpenAPI and Swagger require info.title and info.version. A vendor file without them still describes its
   // operations, so it's kept, and the gap is recorded and flagged in the nightly PR.
-  const missing = ["title", "version"].filter((k) => !doc.info?.[k]).map((k) => `info.${k}`);
+  // Both must be non-empty strings (a JSON number such as version: 1 is not a valid info.version).
+  const missing = ["title", "version"].filter((k) => typeof doc.info?.[k] !== "string" || !doc.info[k].trim()).map((k) => `info.${k}`);
   return { operations: n, title: doc.info?.title, apiVersion: doc.info?.version, specVersion: doc.openapi ?? doc.swagger, server, ...(missing.length ? { specIssues: `no ${missing.join(" or ")}` } : {}) };
 }
 
