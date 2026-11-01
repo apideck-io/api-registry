@@ -1,0 +1,19 @@
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_99c590b1eb8919 12,500-502,563-565,573-584
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "11e0a7b6a6ef35bf209889f4ed86aa88e38205c7",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
