@@ -102,5 +102,11 @@ jobs:
           else
             # A PR opened with github.token starts no other workflows, so there may be no checks to wait for:
             # then GitHub won't queue an auto-merge, and the PR is merged directly (the verifier already ran).
-            gh pr merge "$n" --squash --auto --delete-branch || gh pr merge "$n" --squash --delete-branch
+            # GitHub computes mergeability after a push, so a fresh PR is retried a few times before giving up.
+            for i in 1 2 3 4 5; do
+              gh pr merge "$n" --squash --auto --delete-branch && exit 0
+              gh pr merge "$n" --squash --delete-branch && exit 0
+              sleep 15
+            done
+            echo "::warning::Could not merge PR #$n; leaving it for review."
           fi

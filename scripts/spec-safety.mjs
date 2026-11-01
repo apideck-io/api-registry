@@ -24,9 +24,11 @@ export const INSTRUCTION_LIKE = [
   /\b(ai|llm|assistant|language\s+model)s?\b[^.]{0,30}\b(must|should)\s+(always\s+|now\s+|first\s+)?(ignore|call|invoke|execute|run|send)\b/i,
 ];
 // Bidirectional overrides and marks make text display differently from what a model reads; Unicode tag
-// characters (U+E0000-E007F) are invisible and still read by some models. Zero-width spaces are common in
+// characters (U+E0000-E007F), variation selectors and invisible operators are invisible and still read by
+// some models. Zero-width spaces are common in
 // pasted vendor docs and are not flagged (consumers strip them).
-export const HIDDEN_CHARS = /[\u061C\u200E\u200F\u202A-\u202E\u2066-\u2069\u{E0000}-\u{E007F}]/u;
+// One U+FE0F follows many emoji; only a run of variation selectors is the smuggling pattern.
+export const HIDDEN_CHARS = /[\u061C\u200E\u200F\u202A-\u202E\u2060-\u2064\u2066-\u2069\u{E0000}-\u{E007F}\u{E0100}-\u{E01EF}]|[\uFE00-\uFE0F]{2,}/u;
 const HIDDEN_ALL = new RegExp(HIDDEN_CHARS.source, "gu");
 
 const TEXT_KEYS = new Set(["description", "summary", "title", "x-summary", "deprecationReason"]);
@@ -146,7 +148,7 @@ export function surfaceOf(format, doc) {
         if (item?.[m]?.security) perOp.push([p, m, security(item[m].security)]);
         if (item?.[m]?.schemes) perOp.push([p, m, "schemes", item[m].schemes]);
       }
-    surface = { host: doc.host ?? null, basePath: doc.basePath ?? null, schemes: doc.schemes ?? null, definitions: doc.securityDefinitions ?? null, security: security(doc.security), perOp };
+    surface = { host: doc.host ?? null, parameterizedHost: doc["x-ms-parameterized-host"] ?? null, basePath: doc.basePath ?? null, schemes: doc.schemes ?? null, definitions: doc.securityDefinitions ?? null, security: security(doc.security), perOp };
   } else if (format === "google-discovery") {
     surface = {
       rootUrl: doc.rootUrl ?? null,
@@ -162,6 +164,7 @@ export function surfaceOf(format, doc) {
     const auth = [];
     const scripts = [];
     const seenItems = new WeakSet();
+    const vars = [...(Array.isArray(doc.variable) ? doc.variable : [])];
     // Pre-request and test scripts can send requests (pm.sendRequest) anywhere, credentials included.
     const events = (at, ev) => (Array.isArray(ev) ? ev : []).forEach((e) => e?.script && scripts.push([at, e.listen ?? null, e.script.exec ?? null]));
     events("", doc.event);
@@ -173,13 +176,18 @@ export function surfaceOf(format, doc) {
         events(here, it.event);
         // A request can be written as just its URL.
         const u = typeof it.request === "string" ? it.request : it.request?.url;
-        const host = Array.isArray(u?.host) ? u.host.join(".") : u?.host;
-        const raw = typeof u === "string" ? u : u?.raw ?? (host ? `${u?.protocol ? `${u.protocol}://` : ""}${host}` : undefined);
-        // Scheme and host: a switch from https to http sends credentials in cleartext.
-        if (raw) {
-          const m = /^([a-z][\w+.-]*:\/\/)?([^/?#]*)/i.exec(String(raw));
+        // Scheme and host, from the raw URL and from the structured fields Postman actually sends: a switch
+        // from https to http sends credentials in cleartext.
+        if (typeof u === "string" || u?.raw) {
+          const m = /^([a-z][\w+.-]*:\/\/)?([^/?#]*)/i.exec(String(typeof u === "string" ? u : u.raw));
           hosts.add(`${(m[1] ?? "").toLowerCase()}${m[2]}`);
         }
+        if (u && typeof u === "object" && (u.host || u.protocol || u.port)) {
+          const host = Array.isArray(u.host) ? u.host.join(".") : u.host ?? "";
+          hosts.add(`${u.protocol ? `${String(u.protocol).toLowerCase()}://` : ""}${host}${u.port ? `:${u.port}` : ""}`);
+        }
+        // Folder-level variables count like the collection's.
+        if (Array.isArray(it.variable)) vars.push(...it.variable);
         // Auth set on a folder or a request overrides the collection's.
         if (it.auth) auth.push([here, it.auth]);
         if (it.request?.auth) auth.push([`${here}#request`, it.request.auth]);
@@ -190,7 +198,12 @@ export function surfaceOf(format, doc) {
     // these name are where calls and credentials actually go. Other variables (sample ids, dates) aren't.
     const refs = (text) => [...String(text).matchAll(/\{\{\s*([^}\s]+)\s*\}\}/g)].map((m) => m[1]);
     const used = new Set([...[...hosts].flatMap(refs), ...refs(canonical([doc.auth ?? null, auth]))]);
-    const variables = (doc.variable ?? []).filter((v) => used.has(v?.key ?? v?.id)).map((v) => [v?.key ?? v?.id, v?.value ?? null]).sort((a, b) => String(a[0]).localeCompare(String(b[0])));
+    // Followed through other variables: baseUrl = {{scheme}}://{{host}} makes host count too.
+    for (let grew = true; grew; ) {
+      grew = false;
+      for (const v of vars) if (used.has(v?.key ?? v?.id)) for (const r of refs(v?.value ?? "")) if (!used.has(r)) (used.add(r), (grew = true));
+    }
+    const variables = vars.filter((v) => v && used.has(v.key ?? v.id)).map((v) => [v.key ?? v.id, v.value ?? null]).sort((a, b) => String(a[0]).localeCompare(String(b[0])) || canonical(a[1]).localeCompare(canonical(b[1])));
     surface = { auth: doc.auth ?? null, nested: auth, hosts: [...hosts].sort(), variables, scripts };
   }
   return surface && createHash("sha256").update(canonical(surface)).digest("hex").slice(0, 16);
