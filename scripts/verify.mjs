@@ -612,12 +612,12 @@ for (const e of entries) {
             : {}),
           server: parts.find((x) => x.server)?.server,
           // One fingerprint for the bundle: every module's, in file order.
-          // In file-name order, as sha256 is: a rebuilt archive may list the same files differently.
+          // By base name, as sha256 is: a rebuilt archive may list or nest the same files differently.
           ...(parts.some((x) => x.surface)
-            ? { surface: createHash("sha256").update(parts.map((x, i) => [specFiles[i].name, x.surface ?? "-"]).sort((a, b) => a[0].localeCompare(b[0])).map((x) => x.join("=")).join(",")).digest("hex").slice(0, 16) }
+            ? { surface: createHash("sha256").update(parts.map((x, i) => [specFiles[i].name.replace(/^.*\//, ""), x.surface ?? "-"]).sort((a, b) => a[0].localeCompare(b[0])).map((x) => x.join("=")).join(",")).digest("hex").slice(0, 16) }
             : {}),
           ...(parts.some((x) => x.suspicious)
-            ? { suspicious: parts.flatMap((x) => x.suspicious ?? []).slice(0, 3), suspiciousSha: suspiciousFingerprint(parts.flatMap((x, i) => (x.suspiciousSha ? [`${specFiles[i].name}=${x.suspiciousSha}`] : []))) }
+            ? { suspicious: parts.flatMap((x) => x.suspicious ?? []).slice(0, 3), suspiciousSha: suspiciousFingerprint(parts.flatMap((x, i) => (x.suspiciousSha ? [`${specFiles[i].name.replace(/^.*\//, "")}=${x.suspiciousSha}`] : []))) }
             : {}),
         };
       } else info = inspect(s.format, r.body);

@@ -29,7 +29,7 @@ export const INSTRUCTION_LIKE = [
 export const HIDDEN_CHARS = /[\u061C\u200E\u200F\u202A-\u202E\u2066-\u2069\u{E0000}-\u{E007F}]/u;
 const HIDDEN_ALL = new RegExp(HIDDEN_CHARS.source, "gu");
 
-const TEXT_KEYS = new Set(["description", "summary", "title", "x-summary"]);
+const TEXT_KEYS = new Set(["description", "summary", "title", "x-summary", "deprecationReason"]);
 
 /**
  * Instruction-like or hidden text in a parsed spec. `samples` are short, readable excerpts (distinct, for
@@ -40,8 +40,14 @@ export function scanText(doc, { max = 100000, positional = true } = {}) {
   const samples = [];
   const hits = [];
   const seen = new Set();
+  // YAML anchors share objects, and a self-reference makes a cycle: each object is scanned once.
+  const visited = new WeakSet();
   const walk = (v, key, at, depth) => {
     if (hits.length >= max || depth > 1000 || v == null) return;
+    if (typeof v === "object") {
+      if (visited.has(v)) return;
+      visited.add(v);
+    }
     if (typeof v === "string") {
       if (!TEXT_KEYS.has(key)) return;
       const hidden = HIDDEN_CHARS.test(v);
@@ -92,7 +98,13 @@ export function surfaceOf(format, doc) {
   let surface = null;
   if (format.startsWith("openapi-")) {
     const perPath = [];
-    for (const [p, item] of Object.entries(doc.paths ?? {})) {
+    // OpenAPI 3.1 path items can be references into components.pathItems.
+    const deref = (item) => {
+      const ref = typeof item?.$ref === "string" && /^#\/components\/pathItems\/(.+)$/.exec(item.$ref)?.[1];
+      return ref ? { ...doc.components?.pathItems?.[decodeURIComponent(ref.replace(/~1/g, "/").replace(/~0/g, "~"))], ...item } : item;
+    };
+    for (const [p, raw] of Object.entries(doc.paths ?? {})) {
+      const item = deref(raw);
       if (!item || typeof item !== "object") continue;
       if (item.servers) perPath.push([p, "*", item.servers]);
       for (const m of METHODS) {
@@ -107,13 +119,29 @@ export function surfaceOf(format, doc) {
     for (const [p, item] of Object.entries(doc.paths ?? {})) for (const m of METHODS) if (item?.[m]?.security) perOp.push([p, m, security(item[m].security)]);
     surface = { host: doc.host ?? null, basePath: doc.basePath ?? null, schemes: doc.schemes ?? null, definitions: doc.securityDefinitions ?? null, security: security(doc.security), perOp };
   } else if (format === "google-discovery") {
-    surface = { rootUrl: doc.rootUrl ?? null, servicePath: doc.servicePath ?? null, auth: doc.auth ?? null };
+    surface = {
+      rootUrl: doc.rootUrl ?? null,
+      servicePath: doc.servicePath ?? null,
+      baseUrl: doc.baseUrl ?? null,
+      mtlsRootUrl: doc.mtlsRootUrl ?? null,
+      batchPath: doc.batchPath ?? null,
+      endpoints: doc.endpoints ?? null,
+      auth: doc.auth ?? null,
+    };
   } else if (format.startsWith("postman-")) {
     const hosts = new Set();
     const auth = [];
+    const scripts = [];
+    const seenItems = new WeakSet();
+    // Pre-request and test scripts can send requests (pm.sendRequest) anywhere, credentials included.
+    const events = (at, ev) => (Array.isArray(ev) ? ev : []).forEach((e) => e?.script && scripts.push([at, e.listen ?? null, e.script.exec ?? null]));
+    events("", doc.event);
     const walk = (items, at) =>
-      items?.forEach((it, i) => {
+      (Array.isArray(items) ? items : []).forEach((it, i) => {
+        if (!it || typeof it !== "object" || seenItems.has(it)) return;
+        seenItems.add(it);
         const here = `${at}/${it.name ?? i}`;
+        events(here, it.event);
         // A request can be written as just its URL.
         const u = typeof it.request === "string" ? it.request : it.request?.url;
         const raw = typeof u === "string" ? u : u?.raw ?? (Array.isArray(u?.host) ? u.host.join(".") : u?.host);
@@ -124,11 +152,12 @@ export function surfaceOf(format, doc) {
         walk(it.item, here);
       });
     walk(doc.item, "");
-    // A host is usually {{baseUrl}}: the collection variables it names are where it actually points. Other
-    // variables (sample ids, dates) aren't servers or authentication.
-    const used = new Set([...hosts].flatMap((h) => [...h.matchAll(/\{\{\s*([^}\s]+)\s*\}\}/g)].map((m) => m[1])));
+    // A host is usually {{baseUrl}}, and an OAuth block's token URL {{auth_url}}: the collection variables
+    // these name are where calls and credentials actually go. Other variables (sample ids, dates) aren't.
+    const refs = (text) => [...String(text).matchAll(/\{\{\s*([^}\s]+)\s*\}\}/g)].map((m) => m[1]);
+    const used = new Set([...[...hosts].flatMap(refs), ...refs(canonical([doc.auth ?? null, auth]))]);
     const variables = (doc.variable ?? []).filter((v) => used.has(v?.key ?? v?.id)).map((v) => [v?.key ?? v?.id, v?.value ?? null]).sort((a, b) => String(a[0]).localeCompare(String(b[0])));
-    surface = { auth: doc.auth ?? null, nested: auth, hosts: [...hosts].sort(), variables };
+    surface = { auth: doc.auth ?? null, nested: auth, hosts: [...hosts].sort(), variables, scripts };
   }
   return surface && createHash("sha256").update(canonical(surface)).digest("hex").slice(0, 16);
 }
