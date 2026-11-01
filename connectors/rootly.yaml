@@ -6,5 +6,6 @@ specs:
     url: "https://rootly.com/api/v1/swagger.json"
     format: swagger-2.0
     provenance: vendor
+    server: "https://api.rootly.com"
     manual: bot-protection
-    notes: "The vendor's spec answers 403 to non-browser clients, so CI can't fetch it; open the URL in a browser to download it."
+    notes: "The vendor's spec answers 403 to non-browser clients, so CI can't fetch it; open the URL in a browser to download it. Its format (Swagger 2.0, from the file name) hasn't been checked for the same reason."
