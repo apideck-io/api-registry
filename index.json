@@ -4465,6 +4465,7 @@
     },
     "posthog": {
       "name": "PostHog",
+      "apideck": false,
       "specs": {
         "PostHog API": {
           "status": "ok",
@@ -4481,6 +4482,7 @@
     },
     "pagerduty": {
       "name": "PagerDuty",
+      "apideck": false,
       "specs": {
         "PagerDuty REST API": {
           "status": "ok",
@@ -4497,6 +4499,7 @@
     },
     "trello": {
       "name": "Trello",
+      "apideck": false,
       "specs": {
         "Trello REST API": {
           "status": "ok",
@@ -4513,6 +4516,7 @@
     },
     "datadog": {
       "name": "Datadog",
+      "apideck": false,
       "specs": {
         "Datadog API v1": {
           "status": "ok",
@@ -4542,6 +4546,7 @@
     },
     "confluence": {
       "name": "Confluence",
+      "apideck": false,
       "specs": {
         "Confluence Cloud REST API v2": {
           "status": "ok",
@@ -4571,6 +4576,7 @@
     },
     "microsoft-excel": {
       "name": "Microsoft Excel",
+      "apideck": false,
       "specs": {
         "OData Service for namespace microsoft.graph": {
           "status": "ok",
@@ -4587,6 +4593,7 @@
     },
     "resend": {
       "name": "Resend",
+      "apideck": false,
       "specs": {
         "Resend API": {
           "status": "ok",
@@ -4603,10 +4610,11 @@
     },
     "x": {
       "name": "X (Twitter)",
+      "apideck": false,
       "specs": {
         "X API v2": {
           "status": "ok",
-          "sha256": "eda7a71cb5221cc568dd51c943d994646ed27d5efd836f6fbd100b9301b4e93a",
+          "sha256": "eb26932276c5a515892f8885359b872bcc7f56aac3a840878c3d24572a831620",
           "bytes": 1314742,
           "operations": 257,
           "title": "X API v2",
@@ -4619,6 +4627,7 @@
     },
     "zoom": {
       "name": "Zoom",
+      "apideck": false,
       "specs": {
         "Zoom API v2": {
           "status": "ok",
@@ -4635,6 +4644,7 @@
     },
     "spotify": {
       "name": "Spotify",
+      "apideck": false,
       "specs": {
         "Spotify Web API": {
           "status": "ok",
@@ -4651,6 +4661,7 @@
     },
     "figma": {
       "name": "Figma",
+      "apideck": false,
       "specs": {
         "Figma REST API": {
           "status": "ok",
@@ -4667,6 +4678,7 @@
     },
     "miro": {
       "name": "Miro",
+      "apideck": false,
       "specs": {
         "Miro REST API": {
           "status": "ok",
@@ -4684,6 +4696,7 @@
     },
     "apollo": {
       "name": "Apollo",
+      "apideck": false,
       "specs": {
         "Apollo REST API": {
           "status": "ok",
@@ -4700,6 +4713,7 @@
     },
     "mixpanel": {
       "name": "Mixpanel",
+      "apideck": false,
       "specs": {
         "Mixpanel Ingestion API": {
           "status": "ok",
@@ -4825,6 +4839,7 @@
     },
     "snowflake": {
       "name": "Snowflake",
+      "apideck": false,
       "specs": {
         "Snowflake SQL API": {
           "status": "ok",
@@ -4962,6 +4977,7 @@
     },
     "youtube": {
       "name": "YouTube",
+      "apideck": false,
       "specs": {
         "YouTube Data API v3": {
           "status": "ok",
@@ -4977,6 +4993,7 @@
     },
     "google-docs": {
       "name": "Google Docs",
+      "apideck": false,
       "specs": {
         "Google Docs API": {
           "status": "ok",
@@ -4992,6 +5009,7 @@
     },
     "google-slides": {
       "name": "Google Slides",
+      "apideck": false,
       "specs": {
         "Google Slides API": {
           "status": "ok",
@@ -5007,6 +5025,7 @@
     },
     "google-forms": {
       "name": "Google Forms",
+      "apideck": false,
       "specs": {
         "Google Forms API": {
           "status": "ok",
@@ -5022,6 +5041,7 @@
     },
     "google-maps": {
       "name": "Google Maps",
+      "apideck": false,
       "specs": {
         "Places API (New)": {
           "status": "ok",
@@ -5037,6 +5057,7 @@
     },
     "fireflies": {
       "name": "Fireflies.ai",
+      "apideck": false,
       "specs": {
         "Fireflies GraphQL API": {
           "status": "manual: login"
@@ -5045,6 +5066,7 @@
     },
     "exa": {
       "name": "Exa",
+      "apideck": false,
       "specs": {
         "Exa API": {
           "status": "ok",
@@ -5061,6 +5083,7 @@
     },
     "customer-io": {
       "name": "Customer.io",
+      "apideck": false,
       "specs": {
         "Customer.io Track API": {
           "status": "ok",
@@ -5088,6 +5111,7 @@
     },
     "granola": {
       "name": "Granola",
+      "apideck": false,
       "specs": {
         "Granola API": {
           "status": "ok",
@@ -5104,30 +5128,37 @@
     },
     "freshdesk": {
       "name": "Freshdesk",
+      "apideck": false,
       "specs": {}
     },
     "ashby": {
       "name": "Ashby",
+      "apideck": false,
       "specs": {}
     },
     "airtable": {
       "name": "Airtable",
+      "apideck": false,
       "specs": {}
     },
     "reddit": {
       "name": "Reddit",
+      "apideck": false,
       "specs": {}
     },
     "pylon": {
       "name": "Pylon",
+      "apideck": false,
       "specs": {}
     },
     "linkedin": {
       "name": "LinkedIn",
+      "apideck": false,
       "specs": {}
     },
     "telegram": {
       "name": "Telegram",
+      "apideck": false,
       "specs": {}
     }
   }
