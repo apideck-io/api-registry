@@ -193,7 +193,7 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://panel.sendcloud.sc/api/v2"
-  - name: "Returns (returns/openapi)'"
+  - name: "Returns (v2/returns/openapi)"
     url: "https://sendcloud.dev/.openapi/v2/returns/openapi.yaml"
     format: openapi-3.1
     provenance: vendor

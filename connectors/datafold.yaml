@@ -8,6 +8,7 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://us.datafold.com"
+    notes: "The spec lists a US host (us.datafold.com) and an EU host (eub.datafold.com); use the account's region."
   - name: "Datafold API (openapi-public)"
     url: "https://docs.datafold.com/openapi-public.json"
     format: openapi-3.1
