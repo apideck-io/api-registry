@@ -1,4 +1,10 @@
 id: navan
 name: "Navan"
-notes: "Nothing machine-readable is public. Vendor HTML docs only. Navan Expense API (HTML docs): https://developer.navan.com/api/ (Hand-written static HTML reference (transactions, users, receipts, custom fields, audit logs, etc.) with no embedded or linked OpenAPI. developer.navan.com/openapi.json returns HTML; app.navan.com/api/docs/openapi.json returns 401. The api-evangelist/navan OpenAPI and Postman files are third-party and partly 'MODELED', so they are excluded. developer.navan.com also hosts an MCP page (/mcp/).)"
-specs: []
+notes: "Navan's Expense API is documented in HTML only (https://developer.navan.com/api/), with no machine-readable spec. developer.navan.com also hosts an MCP page (/mcp/)."
+specs:
+  - name: "Navan Booking Data API"
+    url: "https://app.navan.com/api/public-api.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.navan.com"
+    notes: "Served behind Navan's Swagger UI (https://app.navan.com/swagger-ui/index.html, listed in /v3/api-docs/swagger-config). The spec declares no servers; calls go to api.navan.com with an OAuth 2.0 client-credentials token from https://app.navan.com/ta-auth/oauth/token (scope bookings:read). Date filters are Unix timestamps."
