@@ -1,7 +1,7 @@
 id: gemini
 name: "Gemini"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.gemini.com/rest-api)."
+notes: "Spec served by the vendor (found from its developer portal, https://docs.gemini.com)."
 specs:
   - name: "Gemini Exchange REST API"
     url: "https://developer.gemini.com/specs/openapi/rest.yaml"

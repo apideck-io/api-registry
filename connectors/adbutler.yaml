@@ -1,7 +1,7 @@
 id: adbutler
 name: "AdButler"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://www.adbutler.com/developers.spark)."
+notes: "Spec served by the vendor (found from its developer portal, https://www.adbutler.com)."
 specs:
   - name: "AdButler API"
     url: "https://www.adbutler.com/openapi.json"

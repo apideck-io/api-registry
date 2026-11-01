@@ -1,7 +1,7 @@
 id: privy
 name: "Privy"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://help.privy.com/hc/en-us)."
+notes: "Spec served by the vendor (found from its developer portal, https://help.privy.com)."
 specs:
   - name: "Privy API"
     url: "https://help.privy.com/openapi/privy-api.yaml"

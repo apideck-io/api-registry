@@ -1,7 +1,7 @@
 id: infisical
 name: "Infisical"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://infisical.com/docs/documentation/getting-started/cli)."
+notes: "Spec served by the vendor (found from its developer portal, https://infisical.com/docs)."
 specs:
   - name: "Infisical API"
     url: "https://infisical.com/openapi.json"

@@ -1,7 +1,7 @@
 id: handwrytten
 name: "Handwrytten"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://www.handwrytten.com/api.html)."
+notes: "Spec served by the vendor (found from its developer portal, https://www.handwrytten.com)."
 specs:
   - name: "Handwrytten API"
     url: "https://www.handwrytten.com/openapi.json"

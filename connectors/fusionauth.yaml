@@ -1,7 +1,7 @@
 id: fusionauth
 name: "FusionAuth"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://fusionauth.io/features/built-for-developers)."
+notes: "Spec served by the vendor (found from its developer portal, https://fusionauth.io)."
 specs:
   - name: "FusionAuth API"
     url: "https://fusionauth.io/docs/openapi.yaml"

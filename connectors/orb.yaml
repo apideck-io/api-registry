@@ -1,7 +1,7 @@
 id: orb
 name: "Orb"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.withorb.com/docs/orb-docs)."
+notes: "Spec served by the vendor (found from its developer portal, https://docs.withorb.com/docs)."
 specs:
   - name: "Orb API"
     url: "https://docs.withorb.com/api-reference/orb-openapi.json"

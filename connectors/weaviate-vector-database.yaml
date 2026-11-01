@@ -1,7 +1,7 @@
 id: weaviate-vector-database
 name: "Weaviate"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://weaviate.io/developers/weaviate/modules/reader-generator-modules/generative-openai)."
+notes: "Spec served by the vendor (found from its developer portal, https://weaviate.io/developers)."
 specs:
   - name: "Weaviate REST API"
     url: "https://docs.weaviate.io/openapi.json"
