@@ -39,39 +39,50 @@ const TEXT_KEYS = new Set(["description", "summary", "title", "x-summary", "depr
  * text is added to an already-accepted description or copied to another place.
  */
 export function scanText(doc, { max = 10000, positional = true } = {}) {
-  // Each object's hits are collected once and replayed under every place it appears: a YAML alias reused in
+  // Each object's result is computed once and replayed under every place it appears: a YAML alias reused in
   // two places counts twice (adding or removing a copy changes the fingerprint), shared subtrees aren't
-  // rescanned, and a self-reference (an object already on the current path) stops the walk.
+  // rescanned, and a self-reference (an object already on the current path) stops the walk. Each result keeps
+  // an exact count of its hits but at most `max` of them, so a document with a huge number of matches (an
+  // alias bomb) stays cheap, and a hit beyond the cap still changes the fingerprint through the count.
   const cache = new WeakMap();
   const onPath = new Set();
-  let total = 0;
+  const add = (out, h, prefix) => {
+    if (out.hits.length < max) out.hits.push({ ...h, rel: `${prefix}${h.rel}` });
+  };
   const collect = (v, key, depth) => {
-    if (v == null || depth > 1000) return [];
+    if (v == null || depth > 1000) return { hits: [], count: 0 };
     if (typeof v === "string") {
-      if (!TEXT_KEYS.has(key)) return [];
+      if (!TEXT_KEYS.has(key)) return { hits: [], count: 0 };
       const hidden = HIDDEN_CHARS.test(v);
       const hit = INSTRUCTION_LIKE.find((re) => re.test(v));
-      return hidden || hit ? [{ rel: "", text: v, hidden, hit }] : [];
+      return hidden || hit ? { hits: [{ rel: "", text: v, hidden, hit }], count: 1 } : { hits: [], count: 0 };
     }
-    if (typeof v !== "object" || onPath.has(v)) return [];
+    if (typeof v !== "object" || onPath.has(v)) return { hits: [], count: 0 };
     const byKey = cache.get(v);
     if (byKey?.has(key)) return byKey.get(key);
     onPath.add(v);
-    const out = [];
+    const out = { hits: [], count: 0 };
     // A list position isn't part of the place: a type or parameter added earlier would shift every later one.
-    if (Array.isArray(v)) for (const x of v) for (const h of collect(x, key, depth + 1)) out.length < max && out.push({ ...h, rel: `/*${h.rel}` });
-    // A Postman description can be an object: { content, type }.
-    else
-      for (const [k, x] of Object.entries(v))
-        for (const h of collect(x, TEXT_KEYS.has(key) && k === "content" ? key : k, depth + 1)) out.length < max && out.push({ ...h, rel: `/${k}${h.rel}` });
+    const children = Array.isArray(v)
+      ? v.map((x) => [x, key, "/*"])
+      : // A Postman description can be an object: { content, type }.
+        Object.entries(v).map(([k, x]) => [x, TEXT_KEYS.has(key) && k === "content" ? key : k, `/${k}`]);
+    for (const [x, k, prefix] of children) {
+      const r = collect(x, k, depth + 1);
+      out.count += r.count;
+      for (const h of r.hits) {
+        if (out.hits.length >= max) break;
+        add(out, h, prefix);
+      }
+    }
     onPath.delete(v);
     if (!cache.has(v)) cache.set(v, new Map());
     cache.get(v).set(key, out);
-    total += out.length;
     return out;
   };
-  const found = collect(doc, "", 0).slice(0, max);
+  const { hits: found, count } = collect(doc, "", 0);
   const hits = found.map((h) => `${positional ? h.rel : ""}\u0000${h.text}`);
+  if (count > found.length) hits.push(`\u0000[${count} matches in all]`);
   const samples = [];
   for (const h of found) {
     const i = h.hit ? h.text.search(h.hit) : h.text.search(HIDDEN_CHARS);
@@ -80,6 +91,19 @@ export function scanText(doc, { max = 10000, positional = true } = {}) {
     if (samples.length >= 3) break;
   }
   return { samples, hits };
+}
+
+/** The text in an XML document (element text and attribute values), each as its own description. */
+export function xmlTexts(xml) {
+  const decode = (t) => t.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&amp;/g, "&");
+  const texts = [
+    ...[...xml.matchAll(/>([^<]+)</g)].map((m) => m[1]),
+    ...[...xml.matchAll(/=\s*"([^"]*)"/g)].map((m) => m[1]),
+    ...[...xml.matchAll(/=\s*'([^']*)'/g)].map((m) => m[1]),
+  ]
+    .map((t) => decode(t).trim())
+    .filter((t) => t.length >= 12);
+  return { description: texts };
 }
 
 /** Descriptions in a GraphQL SDL file (block and plain strings), as a document scanText can scan. Scan it with
@@ -165,7 +189,11 @@ export function surfaceOf(format, doc) {
     surface = { host: doc.host ?? null, parameterizedHost: doc["x-ms-parameterized-host"] ?? null, basePath: doc.basePath ?? null, schemes: doc.schemes ?? null, definitions: doc.securityDefinitions ?? null, security: security(doc.security), perOp: sorted(perOp) };
   } else if (format === "asyncapi-2") {
     // Brokers and how clients authenticate to them.
-    surface = { servers: doc.servers ?? null, schemes: doc.components?.securitySchemes ?? null };
+    // A channel can pin the servers it is on, and each publish/subscribe operation its own security.
+    const channels = Object.entries(doc.channels ?? {})
+      .map(([name, c]) => [name, c?.servers ?? null, security(c?.publish?.security), security(c?.subscribe?.security)])
+      .filter((row) => row.slice(1).some((x) => x != null));
+    surface = { servers: doc.servers ?? null, schemes: doc.components?.securitySchemes ?? null, channels: sorted(channels) };
   } else if (format === "google-discovery") {
     surface = {
       rootUrl: doc.rootUrl ?? null,

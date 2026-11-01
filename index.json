@@ -231,8 +231,9 @@
           "operations": 1,
           "title": "eBay Notifications",
           "apiVersion": "1.0.0",
-          "surface": "ac94a079bcf792fc",
-          "changedOn": "2026-10-31"
+          "surface": "7459d6ffaa11bcfc",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },

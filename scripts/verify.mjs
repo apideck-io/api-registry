@@ -15,7 +15,7 @@ import { parse as parseYaml } from "yaml";
 import { createRequire } from "node:module";
 import openapiFormat from "openapi-format";
 import { buildASTSchema, introspectionFromSchema, parse as parseGraphQL } from "graphql";
-import { scanText, sdlDescriptions, suspiciousFingerprint, surfaceOf } from "./spec-safety.mjs";
+import { scanText, sdlDescriptions, suspiciousFingerprint, surfaceOf, xmlTexts } from "./spec-safety.mjs";
 
 const { openapiOverlay, resolveJsonPathValue } = openapiFormat;
 // The JSONPath parser openapi-format applies overlays with, resolved through it rather than declared
@@ -302,11 +302,11 @@ async function loadUncached(spec) {
 function inspect(format, body) {
   if (format === "xsd") {
     if (!/<(xsd?:)?schema[\s>]/.test(body)) throw new Error("no xsd:schema root");
-    return { operations: (body.match(/<xsd?:element\s+name="[^"]+Rq"/g) ?? []).length, ...flagged(scanText({ description: body }, { positional: false })) };
+    return { operations: (body.match(/<xsd?:element\s+name="[^"]+Rq"/g) ?? []).length, ...flagged(scanText(xmlTexts(body), { positional: false })) };
   }
   if (format === "odata-edmx") {
     if (!/<edmx:Edmx[\s>]/.test(body)) throw new Error("no edmx:Edmx root");
-    return { operations: (body.match(/<EntitySet\s/g) ?? []).length, ...flagged(scanText({ description: body }, { positional: false })) };
+    return { operations: (body.match(/<EntitySet\s/g) ?? []).length, ...flagged(scanText(xmlTexts(body), { positional: false })) };
   }
   if (format === "graphql") {
     // SDL: count fields on the root Query and Mutation types. Introspection JSON: count their fields.
