@@ -3,7 +3,7 @@ name: "Mothership"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://developers.mothership.com)."
 specs:
-  - name: "API"
+  - name: "Mothership Freight API"
     url: "https://docs.mothership.com/openapi.json"
     format: openapi-3.1
     provenance: vendor

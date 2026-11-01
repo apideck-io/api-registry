@@ -3,90 +3,90 @@ name: "Sandbox"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://developer.sandbox.co.in/docs/income-tax-business-api)."
 specs:
-  - name: "in-co-sandbox-bank-virtual-account"
+  - name: "Bank Virtual Account API"
     url: "https://developer.sandbox.co.in/api-reference/bank/virtual-account/openapi.json"
     format: openapi-3.0
     provenance: vendor
     server: "https://api.sandbox.co.in"
     notes: "Production host; the spec names the test environment, test-api.sandbox.co.in."
-  - name: "in-co-sandbox-gst-analytics"
+  - name: "GST Analytics API"
     url: "https://developer.sandbox.co.in/api-reference/gst/analytics/openapi.json"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.sandbox.co.in"
     notes: "Production host; the spec names the test environment, test-api.sandbox.co.in."
-  - name: "in-co-sandbox-gst-compliance"
+  - name: "GST Compliance API"
     url: "https://developer.sandbox.co.in/api-reference/gst/compliance/openapi.json"
     format: openapi-3.0
     provenance: vendor
     server: "https://api.sandbox.co.in"
-  - name: "in-co-sandbox-it-calculator"
+  - name: "Income Tax Calculator API"
     url: "https://developer.sandbox.co.in/api-reference/it/calculator/openapi.json"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.sandbox.co.in"
     notes: "Production host; the spec names the test environment, test-api.sandbox.co.in."
-  - name: "in-co-sandbox-it-compliance"
+  - name: "Income Tax Compliance API"
     url: "https://developer.sandbox.co.in/api-reference/it/compliance/openapi.json"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.sandbox.co.in"
     notes: "Production host; the spec names the test environment, test-api.sandbox.co.in."
-  - name: "in-co-sandbox-it-ocr"
+  - name: "Income Tax OCR API"
     url: "https://developer.sandbox.co.in/api-reference/it/ocr/openapi.json"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.sandbox.co.in"
     notes: "Production host; the spec names the test environment, test-api.sandbox.co.in."
-  - name: "in-co-sandbox-it"
+  - name: "Income Tax API"
     url: "https://developer.sandbox.co.in/api-reference/it/openapi.json"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.sandbox.co.in"
     notes: "Production host; the spec names the test environment, test-api.sandbox.co.in."
-  - name: "in-co-sandbox-it-report"
+  - name: "Income Tax Report API"
     url: "https://developer.sandbox.co.in/api-reference/it/report/openapi.json"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.sandbox.co.in"
     notes: "Production host; the spec names the test environment, test-api.sandbox.co.in."
-  - name: "in-co-sandbox-kyc"
+  - name: "KYC API"
     url: "https://developer.sandbox.co.in/api-reference/kyc/openapi.json"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.sandbox.co.in"
     notes: "Production host; the spec names the test environment, test-api.sandbox.co.in."
-  - name: "kyc-internal"
+  - name: "KYC Pan API"
     url: "https://developer.sandbox.co.in/api-reference/kyc/pan/openapi.json"
     format: openapi-3.0
     provenance: vendor
     server: "https://api.sandbox.co.in"
     notes: "Production host; the spec names the test environment, test-api.sandbox.co.in."
-  - name: "in-co-sandbox-authentication"
+  - name: "Authentication API"
     url: "https://developer.sandbox.co.in/api-reference/openapi.json"
     format: openapi-3.0
     provenance: vendor
     server: "https://api.sandbox.co.in"
     notes: "Production host; the spec names the test environment, test-api.sandbox.co.in."
-  - name: "in-co-sandbox-tds-analytics"
+  - name: "TDS Analytics API"
     url: "https://developer.sandbox.co.in/api-reference/tds/analytics/openapi.json"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.sandbox.co.in"
     notes: "Production host; the spec names the test environment, test-api.sandbox.co.in."
-  - name: "in-co-sandbox-tds-calculator"
+  - name: "TDS Calculator API"
     url: "https://developer.sandbox.co.in/api-reference/tds/calculator/openapi.json"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.sandbox.co.in"
     notes: "Production host; the spec names the test environment, test-api.sandbox.co.in."
-  - name: "compliance"
+  - name: "TDS Compliance API"
     url: "https://developer.sandbox.co.in/api-reference/tds/compliance/openapi.json"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.sandbox.co.in"
     notes: "Production host; the spec names the test environment, test-api.sandbox.co.in."
-  - name: "in-co-sandbox-tds-reports"
+  - name: "TDS Reports API"
     url: "https://developer.sandbox.co.in/api-reference/tds/reports/openapi.json"
     format: openapi-3.0
     provenance: vendor

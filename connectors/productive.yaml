@@ -3,7 +3,7 @@ name: "Productive"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://developer.productive.io)."
 specs:
-  - name: "API Documentation"
+  - name: "Productive API"
     url: "https://developer.productive.io/reference/download_spec?format=json"
     format: openapi-3.1
     provenance: vendor

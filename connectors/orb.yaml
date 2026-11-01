@@ -3,7 +3,7 @@ name: "Orb"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://docs.withorb.com/docs/orb-docs)."
 specs:
-  - name: "API Reference"
+  - name: "Orb API"
     url: "https://docs.withorb.com/api-reference/orb-openapi.json"
     format: openapi-3.1
     provenance: vendor

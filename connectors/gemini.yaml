@@ -3,7 +3,7 @@ name: "Gemini"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://docs.gemini.com/rest-api)."
 specs:
-  - name: "REST API"
+  - name: "Gemini Exchange REST API"
     url: "https://developer.gemini.com/specs/openapi/rest.yaml"
     format: openapi-3.0
     provenance: vendor
