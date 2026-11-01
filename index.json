@@ -1540,7 +1540,12 @@
           "specVersion": "3.0.0",
           "server": "https://api.navan.com",
           "surface": "a4378fe3f5d11cf6",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-01",
+          "overlay": {
+            "file": "overlays/navan.yaml",
+            "sha256": "f3cb8fe0a6f1e811a29be9b4cabeb61ce17fc07482741dc02a9d9ad05d7c3f36",
+            "actions": 60
+          }
         }
       }
     },
