@@ -101,7 +101,14 @@ export function surfaceOf(format, doc) {
     // OpenAPI 3.1 path items can be references into components.pathItems.
     const deref = (item) => {
       const ref = typeof item?.$ref === "string" && /^#\/components\/pathItems\/(.+)$/.exec(item.$ref)?.[1];
-      return ref ? { ...doc.components?.pathItems?.[decodeURIComponent(ref.replace(/~1/g, "/").replace(/~0/g, "~"))], ...item } : item;
+      if (!ref) return item;
+      let name = ref.replace(/~1/g, "/").replace(/~0/g, "~");
+      try {
+        name = decodeURIComponent(name);
+      } catch {
+        // a malformed escape: look it up as written
+      }
+      return { ...doc.components?.pathItems?.[name], ...item };
     };
     for (const [p, raw] of Object.entries(doc.paths ?? {})) {
       const item = deref(raw);
@@ -145,7 +152,11 @@ export function surfaceOf(format, doc) {
         // A request can be written as just its URL.
         const u = typeof it.request === "string" ? it.request : it.request?.url;
         const raw = typeof u === "string" ? u : u?.raw ?? (Array.isArray(u?.host) ? u.host.join(".") : u?.host);
-        if (raw) hosts.add(String(raw).replace(/^\w+:\/\//, "").split(/[/?#]/)[0]);
+        // Scheme and host: a switch from https to http sends credentials in cleartext.
+        if (raw) {
+          const m = /^([a-z][\w+.-]*:\/\/)?([^/?#]*)/i.exec(String(raw));
+          hosts.add(`${(m[1] ?? "").toLowerCase()}${m[2]}`);
+        }
         // Auth set on a folder or a request overrides the collection's.
         if (it.auth) auth.push([here, it.auth]);
         if (it.request?.auth) auth.push([`${here}#request`, it.request.auth]);

@@ -614,7 +614,7 @@ for (const e of entries) {
           // One fingerprint for the bundle: every module's, in file order.
           // By base name, as sha256 is: a rebuilt archive may list or nest the same files differently.
           ...(parts.some((x) => x.surface)
-            ? { surface: createHash("sha256").update(parts.map((x, i) => [specFiles[i].name.replace(/^.*\//, ""), x.surface ?? "-"]).sort((a, b) => a[0].localeCompare(b[0])).map((x) => x.join("=")).join(",")).digest("hex").slice(0, 16) }
+            ? { surface: createHash("sha256").update(parts.map((x, i) => [specFiles[i].name.replace(/^.*\//, ""), x.surface ?? "-", specFiles[i].name]).sort((a, b) => a[0].localeCompare(b[0]) || a[2].localeCompare(b[2])).map((x) => `${x[0]}=${x[1]}`).join(",")).digest("hex").slice(0, 16) }
             : {}),
           ...(parts.some((x) => x.suspicious)
             ? { suspicious: parts.flatMap((x) => x.suspicious ?? []).slice(0, 3), suspiciousSha: suspiciousFingerprint(parts.flatMap((x, i) => (x.suspiciousSha ? [`${specFiles[i].name.replace(/^.*\//, "")}=${x.suspiciousSha}`] : []))) }
@@ -680,7 +680,12 @@ for (const e of entries) {
           ? canonical(withoutGeneratedDates(parsedForHash))
           : r.body;
     const sha256 = createHash("sha256").update(hashed).digest("hex");
-    const changed = old.sha256 && old.sha256 !== sha256;
+    // Only where the served bytes are stable: a Discovery document, a zip bundle, a spec with generated dates
+    // and an extracted spec are hashed in a normalised form (sha256), since their bytes differ between
+    // requests or carry page build hashes; a raw hash would change every night.
+    const fetchSha256 = r.fetchSha256 && !doc && !bundle && !parsedForHash && !s.extract ? r.fetchSha256 : undefined;
+    // A changed fetchSha256 is a change too (a byte-order mark added, say): consumers check against it.
+    const changed = (old.sha256 && old.sha256 !== sha256) || Boolean(old.fetchSha256 && fetchSha256 && old.fetchSha256 !== fetchSha256);
     // An overlay is applied to the fetched spec on every run. Its actions whose target no longer matches
     // anything are listed: the vendor fixed the mistake (drop the action) or moved it (update the target).
     let overlay;
@@ -723,10 +728,7 @@ for (const e of entries) {
     specs[s.name] = {
       status: "ok",
       sha256,
-      // Only where the served bytes are stable: a Discovery document, a zip bundle and a spec with generated
-      // dates are hashed in a normalised form (sha256) because their bytes differ between requests, so a raw
-      // hash would change every night. Consumers check those against sha256 with the same normalisation.
-      ...(r.fetchSha256 && !doc && !bundle && !parsedForHash && !s.extract ? { fetchSha256: r.fetchSha256 } : {}),
+      ...(fetchSha256 ? { fetchSha256 } : {}),
       // For a bundle, the size of its files: the archive's own size changes when it is merely rebuilt.
       bytes: bundle ? bundle.reduce((n, f) => n + Buffer.byteLength(f.text), 0) : Buffer.byteLength(r.body),
       ...Object.fromEntries(Object.entries(info).filter(([, v]) => v != null)),

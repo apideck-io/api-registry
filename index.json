@@ -1361,7 +1361,7 @@
           "operations": 213,
           "title": "FreshBooks API",
           "specVersion": "2.0.0",
-          "surface": "8cf9c2aa5949dc54",
+          "surface": "f9c28146d465d5d6",
           "server": "https://api.freshbooks.com",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
@@ -1992,7 +1992,7 @@
           "operations": 156,
           "title": "Crisp REST API Reference (V1)",
           "specVersion": "2.1.0",
-          "surface": "a7ae1eb74d35d4a3",
+          "surface": "c8caeff8b5f3ef48",
           "server": "https://api.crisp.chat/v1",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
@@ -2269,7 +2269,7 @@
           "operations": 234,
           "title": "Employment Hero API",
           "specVersion": "2.1.0",
-          "surface": "dd7b488dc1ace467",
+          "surface": "5c0d0f30a71500fc",
           "server": "https://api.employmenthero.com/api",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
@@ -2997,7 +2997,7 @@
           "operations": 83,
           "title": "Copper Developer API",
           "specVersion": "2.1.0",
-          "surface": "d3ca4249f92dd153",
+          "surface": "0f6610eb857607bb",
           "server": "https://api.copper.com/developer_api/v1",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
@@ -3987,7 +3987,7 @@
           "operations": 434,
           "title": "Lightspeed eCom",
           "specVersion": "2.1.0",
-          "surface": "d6868fb800bb452a",
+          "surface": "e40fe8125eb275b2",
           "server": "https://{api_key}:{api_secret}@api.{cluster}.com/{language}/",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
@@ -4519,13 +4519,13 @@
       "specs": {
         "MYOB AccountRight API Postman collection": {
           "status": "ok",
-          "sha256": "63c732017172c021d5d857caddf3986e28991fe30cd00c48b8f9d7b0b2c6a19b",
-          "fetchSha256": "63c732017172c021d5d857caddf3986e28991fe30cd00c48b8f9d7b0b2c6a19b",
+          "sha256": "9f3db1027268e8039bb81c158612657912bc1350e52e81212fdb790da1388463",
+          "fetchSha256": "9f3db1027268e8039bb81c158612657912bc1350e52e81212fdb790da1388463",
           "bytes": 7071274,
           "operations": 257,
           "title": "MYOB AccountRight",
           "specVersion": "2.0.0",
-          "surface": "34bb3a3e26d0271b",
+          "surface": "d654267dd159aa50",
           "server": "https://api.myob.com/accountright",
           "changedOn": "2026-11-01",
           "surfaceChangedOn": "2026-11-01"
@@ -4610,7 +4610,7 @@
           "operations": 19,
           "title": "Apps API - OneLogin",
           "specVersion": "2.1.0",
-          "surface": "46a4cadfe0d4deb2",
+          "surface": "6e76ed5fd5b610f7",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
         },
@@ -4622,7 +4622,7 @@
           "operations": 17,
           "title": "Authorization Servers - OneLogin API",
           "specVersion": "2.1.0",
-          "surface": "28a7ed7c2c78056b",
+          "surface": "fc3eb8266ba1519c",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
         },
@@ -4634,7 +4634,7 @@
           "operations": 11,
           "title": "User Mappings - OneLogin API",
           "specVersion": "2.1.0",
-          "surface": "41d1835be21b6645",
+          "surface": "8224f578c6895b4e",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
         },
@@ -4646,7 +4646,7 @@
           "operations": 7,
           "title": "Vigilance AI - OneLogin API",
           "specVersion": "2.1.0",
-          "surface": "ebac3d16d19a88ed",
+          "surface": "83ebd4bab600e055",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
         },
@@ -4658,7 +4658,7 @@
           "operations": 3,
           "title": "Access Tokens - OneLogin API",
           "specVersion": "2.1.0",
-          "surface": "83b533da3d800497",
+          "surface": "555ee0604ed149e7",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
         },
@@ -4670,7 +4670,7 @@
           "operations": 2,
           "title": "SAML Assertion v2 - OneLogin API",
           "specVersion": "2.1.0",
-          "surface": "cb401ccf2be9974e",
+          "surface": "d4e66011b0999a89",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
         }
@@ -4893,7 +4893,7 @@
           "operations": 15,
           "title": "Sympa Generic API",
           "specVersion": "2.0.0",
-          "surface": "bcfd36a567edbb01",
+          "surface": "124521a6494a69b8",
           "server": "https://api.sympahr.net/api",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
@@ -4929,7 +4929,7 @@
           "operations": 131,
           "title": "Teamtailor API",
           "specVersion": "2.0.0",
-          "surface": "1e676f36fad2ed86",
+          "surface": "03799cea7ce1e915",
           "server": "https://api.teamtailor.com/v1",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
@@ -11009,7 +11009,7 @@
           "operations": 68,
           "title": "JobNimbus Public API",
           "specVersion": "2.0.0",
-          "surface": "79aa383c4d043ffa",
+          "surface": "eb1f5c769ee43204",
           "server": "https://app.jobnimbus.com/api1",
           "changedOn": "2026-11-01",
           "surfaceChangedOn": "2026-11-01"
