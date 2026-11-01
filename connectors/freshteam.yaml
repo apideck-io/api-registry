@@ -1,0 +1,4 @@
+id: freshteam
+name: "Freshteam"
+notes: "No machine-readable spec. Per-tenant subdomain. Freshteam API docs: https://developers.freshteam.com/api/ (HTML docs only; no OpenAPI/Postman reference found on the page.)"
+specs: []

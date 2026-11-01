@@ -1,0 +1,4 @@
+id: lightspeed
+name: "Lightspeed"
+notes: "Lightspeed (X-Series) publishes one OpenAPI block per endpoint inside per-endpoint docs pages, not a full spec. Which Lightspeed product this connector targets is unconfirmed. Unclear which Lightspeed product this connector targets (a separate lightspeed-ecommerce connector exists); X-Series and R-Series both recorded. eCom (C-Series) docs at developers.lightspeedhq.com/ecom are HTML plus a Postman page. Lightspeed Retail R-Series Postman workspace: https://www.postman.com/lightspeedhq/workspace/r-series-api/ (R-Series docs at https://developers.lightspeedhq.com/retail/ are HTML; the vendor Postman workspace is the only machine-readable artifact (export from postman.com, JS-rendered).)"
+specs: []

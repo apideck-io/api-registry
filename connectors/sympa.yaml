@@ -1,0 +1,9 @@
+id: sympa
+name: "Sympa"
+specs:
+  - name: "Sympa Generic API (Postman)"
+    url: "https://documenter.gw.postman.com/api/collections/33639379/2sA3kXG1vX?segregateAuth=true&versionTag=latest"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://api.sympahr.net/api"
+    notes: "Postman Documenter JSON behind https://documenter.getpostman.com/view/33639379/2sA3kXG1vX (linked from Sympa's partner programme page). Declares Postman schema v2.0.0. API is OData v4 subset; per-customer interfaces are admin-configured, and $metadata at https://api.sympahr.net/api/$metadata needs auth. Multinational tenants get country-suffixed endpoints (AbsencesFI etc.)."

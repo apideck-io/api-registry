@@ -1,0 +1,15 @@
+id: shopware
+name: "Shopware"
+specs:
+  - name: "Shopware 6 Admin API"
+    url: "https://raw.githubusercontent.com/shopware/admin-api-reference/main/adminapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    license: "MIT"
+    notes: "Declares openapi 3.2.0 (recorded as 3.1, the closest allowed value). Official shopware/admin-api-reference repo behind shopware.stoplight.io. Per shop: https://{shop}/api. Plugin variants (SwagCommercial-adminapi.json etc.) are in the same repo."
+  - name: "Shopware 6 Store API"
+    url: "https://raw.githubusercontent.com/shopware/store-api-reference/main/storeapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    license: "MIT"
+    notes: "Declares openapi 3.2.0. Storefront API, per shop: https://{shop}/store-api."

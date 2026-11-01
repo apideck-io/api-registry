@@ -1,0 +1,11 @@
+id: linear
+name: "Linear"
+notes: "GraphQL SDL, 574 ops."
+specs:
+  - name: "Linear GraphQL schema (SDL)"
+    url: "https://raw.githubusercontent.com/linear/linear/master/packages/sdk/src/schema.graphql"
+    format: graphql
+    provenance: vendor
+    server: "https://api.linear.app/graphql"
+    license: "MIT"
+    notes: "Generated SDL in Linear's official SDK monorepo (linear/linear, MIT). 183 Query + 391 Mutation fields. Anonymous introspection on api.linear.app requires auth; the SDL file is the stable source."

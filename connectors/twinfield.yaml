@@ -1,0 +1,4 @@
+id: twinfield
+name: "Twinfield"
+notes: "WSDL only. Twinfield ProcessXml SOAP service (WSDL): https://accounting.twinfield.com/webservices/processxml.asmx?wsdl (SOAP only. WSDLs fetch anonymously; ProcessXml carries Twinfield's XML message types. Other services: finder.asmx, declarations.asmx, deleted.asmx on the same host, session at https://login.twinfield.com/webservices/session.asmx?wsdl. Host is per cluster (returned at login, e.g. accounting2.twinfield.com).)"
+specs: []

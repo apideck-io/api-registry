@@ -1,0 +1,24 @@
+id: fourth
+name: "Fourth"
+notes: "Multiple vendor Swagger 2.0 files with dated Drupal upload paths (will change on re-upload). Hosts are per tenant and not public. Other Fourth APIs (inventory/Adaco, POS, tasks, notifications, recipes) also have reference pages but are not HRIS."
+specs:
+  - name: "Fourth UK Employee API"
+    url: "https://developer.fourth.com/sites/default/files/2021-12/uk-employee_2021-12-23.json"
+    format: swagger-2.0
+    provenance: vendor
+    notes: "Linked from https://developer.fourth.com/en-gb/docs/uk-employee-api/reference. Host in spec is localhost; real host is per customer and supplied by Fourth (<ROOT>/organisations/{organisationId}/). Note: the developer portal returned HTTP 406 to a browser-like custom User-Agent but 200 to plain curl."
+  - name: "Fourth Labor Productivity API"
+    url: "https://developer.fourth.com/sites/default/files/2024-05/2024-05-30_LaborProductivity_0.json"
+    format: swagger-2.0
+    provenance: vendor
+    notes: "HR-system import API (employees, employments, assignments, absences, job titles, locations). Host per customer (<ROOT>/import/{organizationId}/); spec host is localhost."
+  - name: "Fourth Account SCIM API"
+    url: "https://developer.fourth.com/sites/default/files/2021-01/fourth-account-scim-api_2021-01-13-b.json"
+    format: swagger-2.0
+    provenance: vendor
+    notes: "User provisioning."
+  - name: "Fourth Schedules API"
+    url: "https://developer.fourth.com/sites/default/files/2025-10/schedules-api-2025-10-06_0.json"
+    format: swagger-2.0
+    provenance: vendor
+    notes: "Single endpoint."

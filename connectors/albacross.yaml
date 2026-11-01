@@ -1,0 +1,10 @@
+id: albacross
+name: "Albacross"
+notes: "Only the Reveal (IP-to-company) API has a spec; its Postman collection is a single-request example and is not indexed. The Enrich API is documented at https://docs.albacross.com/ (client-rendered SPA, no spec found)."
+specs:
+  - name: "Albacross Reveal API"
+    url: "https://reveal.api.albacross.com/public/albacross_reveal_api.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://reveal.api.albacross.com"
+    notes: "External $ref to https://reveal.api.albacross.com/public/swagger-ui/common_components.yml. Served as application/octet-stream. Postman collection also at https://reveal.api.albacross.com/public/postman_collection.json (1 request)."

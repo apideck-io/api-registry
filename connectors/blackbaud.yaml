@@ -1,0 +1,11 @@
+id: blackbaud
+name: "Blackbaud"
+notes: "Also Blackbaud-published Power Platform certified connectors (Swagger 2.0 subsets) at github.com/microsoft/PowerPlatformConnectors/tree/dev/certified-connectors (\"Blackbaud Raiser's Edge NXT ...\"), hosted by Microsoft, not counted."
+specs:
+  - name: "Blackbaud SKY API (Azure APIM export)"
+    url: "https://developer.sky.blackbaud.com/developer/apis/56b76470069a0509c8f1c5b3?api-version=2022-04-01-preview&export=true&format=openapi%2Bjson"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.sky.blackbaud.com/constituent/v1"
+    manual: login
+    notes: "Azure API Management developer portal. Anonymous export returns only an info/servers skeleton with zero paths; full definitions need a signed-in developer account. Operation count (2015 across 64 APIs; Constituent=168, School=177, Gift v2=40) comes from the anonymous list endpoint https://developer.sky.blackbaud.com/developer/apis/{id}/operations?api-version=2022-04-01-preview. API list: https://developer.sky.blackbaud.com/developer/apis?api-version=2022-04-01-preview."

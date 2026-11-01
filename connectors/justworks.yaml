@@ -1,0 +1,10 @@
+id: justworks
+name: "Justworks"
+specs:
+  - name: "Justworks Partner API v1"
+    url: "https://public-api.justworks.com/v1/docs"
+    format: openapi-3.0
+    extract: redoc-state
+    provenance: vendor
+    server: "https://public-api.justworks.com"
+    notes: "Spec only embedded as __redoc_state in the Redoc page; no servers block in the spec (base URL from docs). Community split copies at github.com/api-evangelist/justworks."

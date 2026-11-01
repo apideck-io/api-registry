@@ -1,0 +1,4 @@
+id: breathehr
+name: "Breathe HR"
+notes: "Docs/previewer: https://developer.breathehr.com/examples. Breathe HR API (Swagger 1.2): https://api.breathehr.com/v1/swagger_doc (Vendor-served but Swagger 1.2 (Grape-generated): resource listing with 23 resources, each at https://api.breathehr.com/v1/swagger_doc/{resource}; 62 operations total. Not an accepted format; would need conversion to OAS. Sandbox: api.sandbox.breathehr.com.)"
+specs: []

@@ -1,0 +1,4 @@
+id: zoho-people
+name: "Zoho People"
+notes: "No machine-readable spec. Zoho People API docs: https://www.zoho.com/people/api/overview.html (HTML docs only. Zoho publishes OpenAPI for CRM (zoho/crm-oas) and Books, but nothing for People. Data-centre-specific host https://people.zoho.{dc}/people/api/.)"
+specs: []

@@ -1,0 +1,4 @@
+id: liantis
+name: "Liantis"
+notes: "Nothing public. Liantis API: https://developers.apideck.com/apis/hris/liantis/configuration (No public developer portal or docs; API access and documentation are issued by Liantis Integration Services (business.solutions@liantis.be) after a partnership contract. OAuth2 client credentials; accept env https://accept.liantis.be.)"
+specs: []

@@ -1,0 +1,4 @@
+id: dropbox
+name: "Dropbox"
+notes: "No OpenAPI; Stone IDL is the vendor source of truth. Dropbox API Stone spec: https://github.com/dropbox/dropbox-api-spec (Official machine-readable spec is in Dropbox's Stone IDL (*.stone files), not OpenAPI. 276 'route' declarations across 23 namespaces (includes versioned/deprecated routes; 44 deprecated on the declaration line). Stone can generate other formats but no official OpenAPI is published. Repo updated 2026-10-31.)"
+specs: []

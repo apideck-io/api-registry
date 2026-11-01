@@ -1,0 +1,10 @@
+id: flexmail
+name: "Flexmail"
+notes: "Fetchable vendor OpenAPI."
+specs:
+  - name: "Flexmail email marketing API"
+    url: "https://api.flexmail.eu/documentation/openapi.php"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.flexmail.eu"
+    notes: "Loaded by the RapiDoc page at https://api.flexmail.eu/documentation/. No servers block in the spec; base URL from docs."

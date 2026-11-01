@@ -1,0 +1,4 @@
+id: plivo
+name: "Plivo"
+notes: "Postman collection exists but no fetchable raw URL located within the time box. Plivo API docs / Postman collection: https://www.plivo.com/docs/ (HTML docs. Plivo documents an official Postman collection (Voice, SMS, Numbers, Account, Lookup, PHLO) forked from its Postman workspace via a docs button (see https://www.plivo.com/docs/faq/developer-tools/postman), but no stable raw collection URL was found. No OpenAPI in the plivo GitHub org; SDKs e.g. https://github.com/plivo/plivo-go.)"
+specs: []

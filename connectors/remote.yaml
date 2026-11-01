@@ -1,0 +1,9 @@
+id: remote
+name: "Remote"
+specs:
+  - name: "Remote API"
+    url: "https://gateway.remote.com/v1/docs/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://gateway.remote.com/"
+    notes: "3MB JSON including webhooks. Sandbox is https://gateway.remote-sandbox.com."

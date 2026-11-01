@@ -1,0 +1,10 @@
+id: lightspeed-ecommerce
+name: "Lightspeed eCom (C-Series)"
+notes: "Postman only, 434 requests."
+specs:
+  - name: "Lightspeed eCom Postman collection"
+    url: "https://developers.lightspeedhq.com/ecom/introduction/images/Lightspeed_eCom.postman_collection.json"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://{api_key}:{api_secret}@api.{cluster}.com/{language}/"
+    notes: "Official Postman collection linked from https://developers.lightspeedhq.com/ecom/introduction/postman/. Cluster-specific host (api.webshopapp.com EU, api.shoplightspeed.com US). No OpenAPI published."

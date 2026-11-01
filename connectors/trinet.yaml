@@ -1,0 +1,4 @@
+id: trinet
+name: "TriNet"
+notes: "Spec exists but is gated. TriNet API (SwaggerHub portal): https://trinet.portal.swaggerhub.com/ (Specs for three API groups (DCP, HRIS, PEO) are on a SwaggerHub portal that redirects to SmartBear login; none are public in the SwaggerHub registry (api.swaggerhub.com/apis/TriNet returns 0). Public summary at https://developers.trinet.com/explore-trinet-apis. Server https://api.trinet.com/{version}/... The legacy Zenefits platform API (developers.zenefits.com) has HTML docs only.)"
+specs: []

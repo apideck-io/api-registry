@@ -1,0 +1,10 @@
+id: shopify
+name: "Shopify"
+specs:
+  - name: "Shopify Admin GraphQL API"
+    url: "https://shopify.dev/admin-graphql-direct-proxy/2026-10"
+    format: graphql
+    extract: graphql-introspection
+    provenance: vendor
+    server: "https://{shop}.myshopify.com/admin/api/2026-10/graphql.json"
+    notes: "Anonymous introspection works against shopify.dev's docs GraphiQL proxy (POST, no auth); verification counts 835 root Query + Mutation fields. Version path is quarterly (2026-01/04/07/10 and 'unstable' all answer; 2025-10 now rejected), so CI must bump it. Real endpoint is per-shop and needs an access token. Admin REST API is legacy with no official OpenAPI."

@@ -1,0 +1,64 @@
+id: paylocity
+name: "Paylocity"
+notes: "Partial: 11 of 19 ReadMe API definitions resolved (113 ops). The 8 not resolved: assessments-api, background-check-api, custom-fields-api, employee-demographic-api (v1), partner-onboarding-api, payroll-history-api, skills-api, webhooks-api (their reference pages expose no oasPublicUrl or were not crawled)."
+specs:
+  - name: "Paylocity WebLink API"
+    url: "https://dash.readme.com/api/v1/api-registry/1kule2bgmv1byu7c"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://dc1demogw.paylocity.com/api"
+    notes: "ReadMe API registry entry from oasPublicUrl '@paylocity-1/v2026-10-20#1kule2bgmv1byu7c' on developer.paylocity.com reference pages (direct /openapi/*.json download is admin-only). Registry UUIDs can change when the definition is re-uploaded. Server shown is the demo gateway; production is api.paylocity.com / dc1prodgwext.paylocity.com."
+  - name: "Paylocity Company Level Information"
+    url: "https://dash.readme.com/api/v1/api-registry/63rzx44lmq6qcts3"
+    format: openapi-3.0
+    provenance: vendor
+    notes: "ReadMe API registry entry from oasPublicUrl '@paylocity-1/v2026-10-20#63rzx44lmq6qcts3' on developer.paylocity.com reference pages (direct /openapi/*.json download is admin-only). Registry UUIDs can change when the definition is re-uploaded. Server shown is the demo gateway; production is api.paylocity.com / dc1prodgwext.paylocity.com."
+  - name: "Paylocity Pay Setup API"
+    url: "https://dash.readme.com/api/v1/api-registry/bryc48zmq5db7n0"
+    format: openapi-3.0
+    provenance: vendor
+    notes: "ReadMe API registry entry from oasPublicUrl '@paylocity-1/v2026-10-20#bryc48zmq5db7n0' on developer.paylocity.com reference pages (direct /openapi/*.json download is admin-only). Registry UUIDs can change when the definition is re-uploaded. Server shown is the demo gateway; production is api.paylocity.com / dc1prodgwext.paylocity.com."
+  - name: "Paylocity Scheduling Api"
+    url: "https://dash.readme.com/api/v1/api-registry/141vd43emvfhu8z6"
+    format: openapi-3.0
+    provenance: vendor
+    notes: "ReadMe API registry entry from oasPublicUrl '@paylocity-1/v2026-10-20#141vd43emvfhu8z6' on developer.paylocity.com reference pages (direct /openapi/*.json download is admin-only). Registry UUIDs can change when the definition is re-uploaded. Server shown is the demo gateway; production is api.paylocity.com / dc1prodgwext.paylocity.com."
+  - name: "Paylocity Pay Details API"
+    url: "https://dash.readme.com/api/v1/api-registry/ijrn9dmqk0ex4y"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://dc1demogwext.paylocity.com"
+    notes: "ReadMe API registry entry from oasPublicUrl '@paylocity-1/v2026-10-20#ijrn9dmqk0ex4y' on developer.paylocity.com reference pages (direct /openapi/*.json download is admin-only). Registry UUIDs can change when the definition is re-uploaded. Server shown is the demo gateway; production is api.paylocity.com / dc1prodgwext.paylocity.com."
+  - name: "Paylocity Learning Management API"
+    url: "https://dash.readme.com/api/v1/api-registry/yzfumqmqjmpeml"
+    format: openapi-3.0
+    provenance: vendor
+    notes: "ReadMe API registry entry from oasPublicUrl '@paylocity-1/v2026-10-20#yzfumqmqjmpeml' on developer.paylocity.com reference pages (direct /openapi/*.json download is admin-only). Registry UUIDs can change when the definition is re-uploaded. Server shown is the demo gateway; production is api.paylocity.com / dc1prodgwext.paylocity.com."
+  - name: "Paylocity Punch detail Api"
+    url: "https://dash.readme.com/api/v1/api-registry/dx78lkmt34vsaw"
+    format: openapi-3.0
+    provenance: vendor
+    notes: "ReadMe API registry entry from oasPublicUrl '@paylocity-1/v2026-10-20#dx78lkmt34vsaw' on developer.paylocity.com reference pages (direct /openapi/*.json download is admin-only). Registry UUIDs can change when the definition is re-uploaded. Server shown is the demo gateway; production is api.paylocity.com / dc1prodgwext.paylocity.com."
+  - name: "Paylocity Employee Demographic API"
+    url: "https://dash.readme.com/api/v1/api-registry/8xl325mtug6mka"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://dc1demogwext.paylocity.com"
+    notes: "ReadMe API registry entry from oasPublicUrl '@paylocity-1/v2026-10-20#8xl325mtug6mka' on developer.paylocity.com reference pages (direct /openapi/*.json download is admin-only). Registry UUIDs can change when the definition is re-uploaded. Server shown is the demo gateway; production is api.paylocity.com / dc1prodgwext.paylocity.com."
+  - name: "Paylocity Document Management API"
+    url: "https://dash.readme.com/api/v1/api-registry/yzfumymqjsq5sn"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://dc1demogwext.paylocity.com"
+    notes: "ReadMe API registry entry from oasPublicUrl '@paylocity-1/v2026-10-20#yzfumymqjsq5sn' on developer.paylocity.com reference pages (direct /openapi/*.json download is admin-only). Registry UUIDs can change when the definition is re-uploaded. Server shown is the demo gateway; production is api.paylocity.com / dc1prodgwext.paylocity.com."
+  - name: "Paylocity Pay Entry"
+    url: "https://dash.readme.com/api/v1/api-registry/dckd1onmgs1pjvn"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://dc1demogwext.paylocity.com"
+    notes: "ReadMe API registry entry from oasPublicUrl '@paylocity-1/v2026-10-20#dckd1onmgs1pjvn' on developer.paylocity.com reference pages (direct /openapi/*.json download is admin-only). Registry UUIDs can change when the definition is re-uploaded. Server shown is the demo gateway; production is api.paylocity.com / dc1prodgwext.paylocity.com."
+  - name: "Paylocity Punch Import API"
+    url: "https://dash.readme.com/api/v1/api-registry/30ymaq3pm857jkis"
+    format: openapi-3.0
+    provenance: vendor
+    notes: "ReadMe API registry entry from oasPublicUrl '@paylocity-1/v2026-10-20#30ymaq3pm857jkis' on developer.paylocity.com reference pages (direct /openapi/*.json download is admin-only). Registry UUIDs can change when the definition is re-uploaded. Server shown is the demo gateway; production is api.paylocity.com / dc1prodgwext.paylocity.com."

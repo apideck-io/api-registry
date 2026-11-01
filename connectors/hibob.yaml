@@ -1,0 +1,81 @@
+id: hibob
+name: "Hibob (Legacy)"
+notes: "11 per-domain specs, 176 ops total, found by sampling ~60 of 267 endpoint pages; a few groups (skills, employers metadata, external hires) returned no oasPublicUrl and may live in further definitions."
+specs:
+  - name: "HiBob Employee data API"
+    url: "https://dash.readme.com/api/v1/api-registry/8r8i3omosg6gz1"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.hibob.com/v1"
+    license: "Proprietary"
+    notes: "ReadMe-hosted (apidocs.hibob.com), split into per-domain definitions under @hibob/v1. Fetched from ReadMe's public API registry via each page's oasPublicUrl. Registry UUIDs change when HiBob re-syncs; re-resolve from https://apidocs.hibob.com/reference/<endpoint> pages (index at https://apidocs.hibob.com/reference/llms.txt)."
+  - name: "HiBob Attendance API"
+    url: "https://dash.readme.com/api/v1/api-registry/5wfhabmlz473m0"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.hibob.com/v1"
+    license: "Proprietary"
+    notes: "ReadMe-hosted (apidocs.hibob.com), split into per-domain definitions under @hibob/v1. Fetched from ReadMe's public API registry via each page's oasPublicUrl. Registry UUIDs change when HiBob re-syncs; re-resolve from https://apidocs.hibob.com/reference/<endpoint> pages (index at https://apidocs.hibob.com/reference/llms.txt)."
+  - name: "HiBob Goals API"
+    url: "https://dash.readme.com/api/v1/api-registry/jqx21lwmkavwe4l"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.hibob.com/v1"
+    license: "Proprietary"
+    notes: "ReadMe-hosted (apidocs.hibob.com), split into per-domain definitions under @hibob/v1. Fetched from ReadMe's public API registry via each page's oasPublicUrl. Registry UUIDs change when HiBob re-syncs; re-resolve from https://apidocs.hibob.com/reference/<endpoint> pages (index at https://apidocs.hibob.com/reference/llms.txt)."
+  - name: "HiBob Workforce Planning API"
+    url: "https://dash.readme.com/api/v1/api-registry/bietjtwlmlpdbz3b"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.hibob.com/v1"
+    license: "Proprietary"
+    notes: "ReadMe-hosted (apidocs.hibob.com), split into per-domain definitions under @hibob/v1. Fetched from ReadMe's public API registry via each page's oasPublicUrl. Registry UUIDs change when HiBob re-syncs; re-resolve from https://apidocs.hibob.com/reference/<endpoint> pages (index at https://apidocs.hibob.com/reference/llms.txt)."
+  - name: "HiBob Bob Hiring API"
+    url: "https://dash.readme.com/api/v1/api-registry/fbnukkq6motu7wmz"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.hibob.com/v1"
+    license: "Proprietary"
+    notes: "ReadMe-hosted (apidocs.hibob.com), split into per-domain definitions under @hibob/v1. Fetched from ReadMe's public API registry via each page's oasPublicUrl. Registry UUIDs change when HiBob re-syncs; re-resolve from https://apidocs.hibob.com/reference/<endpoint> pages (index at https://apidocs.hibob.com/reference/llms.txt)."
+  - name: "HiBob Time Off API"
+    url: "https://dash.readme.com/api/v1/api-registry/1xbvekomlj5urab"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.hibob.com/v1"
+    license: "Proprietary"
+    notes: "ReadMe-hosted (apidocs.hibob.com), split into per-domain definitions under @hibob/v1. Fetched from ReadMe's public API registry via each page's oasPublicUrl. Registry UUIDs change when HiBob re-syncs; re-resolve from https://apidocs.hibob.com/reference/<endpoint> pages (index at https://apidocs.hibob.com/reference/llms.txt)."
+  - name: "HiBob Docs API"
+    url: "https://dash.readme.com/api/v1/api-registry/6lzz939fmlqi28gr"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.hibob.com/v1"
+    license: "Proprietary"
+    notes: "ReadMe-hosted (apidocs.hibob.com), split into per-domain definitions under @hibob/v1. Fetched from ReadMe's public API registry via each page's oasPublicUrl. Registry UUIDs change when HiBob re-syncs; re-resolve from https://apidocs.hibob.com/reference/<endpoint> pages (index at https://apidocs.hibob.com/reference/llms.txt)."
+  - name: "HiBob Job Catalog API"
+    url: "https://dash.readme.com/api/v1/api-registry/bxbd2jsnmlgofckj"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.hibob.com/v1"
+    license: "Proprietary"
+    notes: "ReadMe-hosted (apidocs.hibob.com), split into per-domain definitions under @hibob/v1. Fetched from ReadMe's public API registry via each page's oasPublicUrl. Registry UUIDs change when HiBob re-syncs; re-resolve from https://apidocs.hibob.com/reference/<endpoint> pages (index at https://apidocs.hibob.com/reference/llms.txt)."
+  - name: "HiBob Bob Learning API"
+    url: "https://dash.readme.com/api/v1/api-registry/lankcmnx7sd1c"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.hibob.com/v1"
+    license: "Proprietary"
+    notes: "ReadMe-hosted (apidocs.hibob.com), split into per-domain definitions under @hibob/v1. Fetched from ReadMe's public API registry via each page's oasPublicUrl. Registry UUIDs change when HiBob re-syncs; re-resolve from https://apidocs.hibob.com/reference/<endpoint> pages (index at https://apidocs.hibob.com/reference/llms.txt)."
+  - name: "HiBob Reports API"
+    url: "https://dash.readme.com/api/v1/api-registry/1c9tqstjmlgoiref"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.hibob.com/v1"
+    license: "Proprietary"
+    notes: "ReadMe-hosted (apidocs.hibob.com), split into per-domain definitions under @hibob/v1. Fetched from ReadMe's public API registry via each page's oasPublicUrl. Registry UUIDs change when HiBob re-syncs; re-resolve from https://apidocs.hibob.com/reference/<endpoint> pages (index at https://apidocs.hibob.com/reference/llms.txt)."
+  - name: "HiBob Tasks API"
+    url: "https://dash.readme.com/api/v1/api-registry/5xpkjmlthnqpi"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.hibob.com/v1"
+    license: "Proprietary"
+    notes: "ReadMe-hosted (apidocs.hibob.com), split into per-domain definitions under @hibob/v1. Fetched from ReadMe's public API registry via each page's oasPublicUrl. Registry UUIDs change when HiBob re-syncs; re-resolve from https://apidocs.hibob.com/reference/<endpoint> pages (index at https://apidocs.hibob.com/reference/llms.txt)."

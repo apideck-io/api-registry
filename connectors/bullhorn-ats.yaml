@@ -1,0 +1,11 @@
+id: bullhorn-ats
+name: "Bullhorn ATS"
+notes: "Bullhorn Recruitment Cloud (Salesforce-based, a different product from Bullhorn ATS/CRM) exposes a per-instance OAS3 that needs authentication; recorded as manual."
+specs:
+  - name: "Bullhorn Recruitment Cloud API (per instance)"
+    url: "https://{instance}.my.salesforce.com/services/apexrest/TR1/api/v1/specifications/oas3"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{instance}.my.salesforce.com/services/apexrest/TR1/api/v1"
+    manual: login
+    notes: "Sign in to a Bullhorn Recruitment Cloud org and GET this URL with the org's Salesforce session token to download the OpenAPI 3 document. Not fetched anonymously, so the format and server path are as documented, unverified."

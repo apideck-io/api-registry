@@ -1,0 +1,14 @@
+id: jumpcloud
+name: "JumpCloud"
+specs:
+  - name: "JumpCloud API v2"
+    url: "https://docs.jumpcloud.com/api/2.0/index.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://console.jumpcloud.com/api/v2"
+  - name: "JumpCloud API v1"
+    url: "https://docs.jumpcloud.com/api/1.0/index.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://console.jumpcloud.com/api"
+    notes: "Users (systemusers) live in v1."

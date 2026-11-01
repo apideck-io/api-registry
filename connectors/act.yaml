@@ -1,0 +1,10 @@
+id: act
+name: "Act"
+notes: "Vendor docs: https://www.act.com/developer/ ; Swagger UI https://apimta.act.com/act.web.api/Swagger/index.html. Community split copies exist at github.com/api-evangelist/act (ignored)."
+specs:
+  - name: "Act! Web API (Swagger)"
+    url: "https://apimta.act.com/act.web.api/swagger/docs/v1"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://apimta.act.com/act.web.api"
+    notes: "Served anonymously by Act!'s hosted (multi-tenant cloud) Web API instance; 254 paths / 410 operations. Other regional hosts (apica.act.com, apius.act.com) return 403 for the same path. Act! Premium Cloud is per-customer: Server/{customer}-api/act.web.api; on-prem is {host}/act.web.api. OData v4 query options on collection reads."

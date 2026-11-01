@@ -1,0 +1,4 @@
+id: adp-ihcm
+name: "ADP iHCM"
+notes: "No public spec. ADP's developer portal (https://developers.adp.com/, API Explorer at https://developers.adp.com/build/api-explorer) is a client-rendered app; anonymous curl returns only the app shell. API access and Postman collections are provided per project in ADP API Central (https://api-central.adp.com/), which needs an ADP login. Whether an OpenAPI download exists behind that login is unverified."
+specs: []

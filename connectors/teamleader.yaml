@@ -1,0 +1,10 @@
+id: teamleader
+name: "Teamleader"
+specs:
+  - name: "Teamleader Focus API"
+    url: "https://cdn.jsdelivr.net/npm/@teamleader/focus-api-specification@latest/dist/api.focus.teamleader.eu.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.focus.teamleader.eu"
+    license: "MIT"
+    notes: "Official npm package @teamleader/focus-api-specification (MIT, repo teamleadercrm/focus-api-specification, not public on GitHub). Same file on unpkg. Powers developer.focus.teamleader.eu. RPC-style (all POST, e.g. /contacts.list)."

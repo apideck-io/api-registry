@@ -1,0 +1,10 @@
+id: myob
+name: "MYOB"
+notes: "Postman only, 257 requests."
+specs:
+  - name: "MYOB AccountRight API Postman collection"
+    url: "https://documenter.gw.postman.com/api/collections/443669/RzZ3Kh2j?segregateAuth=true&versionTag=latest"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://api.myob.com/accountright"
+    notes: "Official collection linked from https://developer.myob.com/api/myob-business-api/accountright-postman-collection/ (published Postman documenter at https://accountrightapi.myob.cloud). The collection uses Postman schema v2.0.0; it is recorded as postman-2.1, the closest supported format value, and the verifier does not check the schema version. ~7 MB. Per company-file URI under the base. No OpenAPI published; HTML docs at https://developer.myob.com/api/myob-business-api/v2/."

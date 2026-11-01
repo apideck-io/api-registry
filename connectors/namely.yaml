@@ -1,0 +1,10 @@
+id: namely
+name: "Namely"
+notes: "Docs are a Stoplight project at https://developers.namely.com/docs/namely-api (workspace namely, project namely-api); the Swagger file is served by Stoplight's nodes API."
+specs:
+  - name: "Namely API"
+    url: "https://stoplight.io/api/v1/projects/namely/namely-api/nodes/reference/openapi.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://{company}.namely.com/api/v1"
+    notes: "Swagger 2.0 despite the openapi.json file name; 39 paths / 54 ops. The spec sets no host or basePath; each customer has its own subdomain, so the server is a {company} placeholder. No license in info."

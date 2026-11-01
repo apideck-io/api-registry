@@ -1,0 +1,4 @@
+id: ciphr
+name: "CIPHR"
+notes: "No public spec. CIPHR's integrations page (https://www.ciphr.com/ciphr-integrations) mentions its API but links no developer docs; developer.ciphr.com, developers.ciphr.com and docs.ciphr.com do not resolve. API access is per tenant with credentials issued by CIPHR."
+specs: []

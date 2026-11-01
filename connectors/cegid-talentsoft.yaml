@@ -1,0 +1,4 @@
+id: cegid-talentsoft
+name: "Cegid Talentsoft"
+notes: "No spec indexed. Docs: Cegid Developer Portal (https://developers.cegid.com/; Talentsoft Recruiting docs under /docreference/BusinessUnits/Recruiting-developer-portal/) and the Cegid HR developer portal (https://cegid-hr-developers.talentsoft.net/). Subscription keys need a Cegid sign-in, and the APIs run on per-tenant hosts (https://{tenant}.talent-soft.com). No public standalone OpenAPI URL was confirmed; whether the portals' API reference pages expose one is unverified."
+specs: []

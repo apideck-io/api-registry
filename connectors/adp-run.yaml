@@ -1,0 +1,4 @@
+id: adp-run
+name: "RUN Powered by ADP"
+notes: "Gated behind ADP partner login. ADP API Explorer (RUN): https://developers.adp.com/ (JS-rendered developer portal. API guides (e.g. Payroll Data Input API Guide PDF at marketplace-cdn.adp.com) and Postman collections are behind ADP Marketplace partner login; production also needs per-client mTLS certificates. No public spec found.)"
+specs: []

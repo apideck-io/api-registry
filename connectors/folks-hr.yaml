@@ -1,0 +1,10 @@
+id: folks-hr
+name: "Folks HR"
+notes: "Fetchable vendor OpenAPI."
+specs:
+  - name: "Folks API Documentation (V2)"
+    url: "https://api.folkshr.app/docs/public-api-docs.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.folkshr.app"
+    notes: "Source of the Swagger UI at https://api.folkshr.app/api/documentation. No servers block in spec; base from docs (/api/v2/...). Covers V2 (employees, custom fields, time, org structure). A V1 API (timesheets, ATS) is documented separately and was not located as a spec."

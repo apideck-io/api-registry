@@ -1,0 +1,11 @@
+id: officient-io
+name: "Officient"
+notes: "Spec exists but not downloadable anonymously."
+specs:
+  - name: "Officient API"
+    url: "https://apidocs.officient.io/reference"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.officient.io"
+    manual: login
+    notes: "ReadMe-hosted definition officient-api.json (OAS 3.1) with OpenAPI download set to admin-only; /openapi/officient-api.json returns 404 and the registry UUID on the pages (bpkg15lsbt2717) returns REGISTRY_NOTFOUND. Each reference page embeds only its own single-path fragment. Obtaining the full file needs the vendor or a ReadMe login."

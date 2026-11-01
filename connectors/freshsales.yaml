@@ -1,0 +1,4 @@
+id: freshsales
+name: "Freshworks CRM"
+notes: "No machine-readable spec. Per-tenant domain. Freshworks CRM (Freshsales) API docs: https://developers.freshworks.com/crm/api/ (HTML docs only; no OpenAPI/Postman reference found.)"
+specs: []

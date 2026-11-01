@@ -1,0 +1,4 @@
+id: wix
+name: "Wix"
+notes: "No official machine-readable spec. Wix REST API reference: https://dev.wix.com/docs/api-reference (HTML docs with per-method Markdown (append .md to a page URL). No official OpenAPI or Postman. Only community stubs (api-evangelist/wix on GitHub, 4-op skeletons) exist; not recorded. Server https://www.wixapis.com.)"
+specs: []

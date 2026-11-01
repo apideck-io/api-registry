@@ -1,0 +1,17 @@
+id: vonage
+name: "Vonage"
+notes: "Confirm whether the connector uses the legacy SMS API or the Messages API."
+specs:
+  - name: "Vonage SMS API"
+    url: "https://developer.vonage.com/api/v1/developer/api/file/sms?format=json&vendorId=vonage"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://rest.nexmo.com"
+    notes: "The 'Download OpenAPI specification' endpoint behind https://developer.vonage.com/en/api-reference/sms. Single op POST /sms/{format} plus a delivery-receipt callback."
+  - name: "Vonage Messages API"
+    url: "https://developer.vonage.com/api/v1/developer/api/file/messages?format=json&vendorId=vonage"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{api-region}.nexmo.com/v1"
+    license: "Apache 2.0"
+    notes: "Declares 3.0.3. Same endpoint pattern serves every Vonage product spec (file/<api-name>)."

@@ -1,0 +1,4 @@
+id: sapling
+name: "Sapling"
+notes: "No public spec. none: https://www.kallidus.com/ (Sapling (Kallidus) API keys come from Admin Settings; docs live in the logged-in help centre. Paths per third-party guides: https://{subdomain}.saplingapp.io/api/v1/beta/users (US) or https://{subdomain}.kallidus-suite.com/hr/api/v1/beta/users (UK). No public spec.)"
+specs: []

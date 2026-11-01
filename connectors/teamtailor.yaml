@@ -1,0 +1,9 @@
+id: teamtailor
+name: "Teamtailor"
+specs:
+  - name: "Teamtailor API (Postman)"
+    url: "https://documenter.gw.postman.com/api/collections/14157246/TVzSiGxA?segregateAuth=true&versionTag=latest"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://api.teamtailor.com/v1"
+    notes: "Postman Documenter JSON behind https://docs.teamtailor.com/ (collection 14157246/TVzSiGxA). Declares Postman schema v2.0.0. JSON:API. Regional hosts (api.na.teamtailor.com) exist."

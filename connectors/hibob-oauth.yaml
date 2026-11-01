@@ -1,0 +1,4 @@
+id: hibob-oauth
+name: "Hibob (OAuth)"
+notes: "Same API as hibob; see connectors/hibob.yaml."
+specs: []
