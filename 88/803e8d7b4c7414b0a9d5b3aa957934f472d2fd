@@ -1,0 +1,21 @@
+connectors/navan.yaml
+  s_eeda7bd9685d9d::t_a1685a409192c0 3-10
+index.json
+  s_eeda7bd9685d9d::t_fdeaaa7e2db920 1531-1545
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "88803e8d7b4c7414b0a9d5b3aa957934f472d2fd",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
