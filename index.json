@@ -1332,8 +1332,9 @@
           "apiVersion": "1.0.0",
           "specVersion": "3.0.0",
           "server": "https://www.zohoapis.com/books/v3",
-          "surface": "9bbbb4b237d7d596",
-          "changedOn": "2026-10-31"
+          "surface": "679b235d5305b59a",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -2730,8 +2731,9 @@
           "apiVersion": "2026-06-01, 2024-05-09, 2020-11-01, 2024-04-01, 2023-11-30, v0, 2020-12-01, 2022-04-01, 2024-06-01, 2023-11-15, 2022-07-01, 2022-03-23, 2024-09-11, 2026-07-30, v1, 2021-06-30, 2026-03-17, 2026-06-25, 2024-06-19, 2024-03-20, 2020-07-01, 2026-07-04, 2020-09-01, 2021-08-01, 2026-04-20, 2026-01-01, 2022-05-01, 2025-12-01, 2022-11-07, 2024-03-01, v2, 2025-02-01, 2021-03-01, 2026-01-30, 2024-11-01, 2021-12-28, 2021-10-28",
           "specVersion": "2.0",
           "server": "https://sellingpartnerapi-na.amazon.com",
-          "surface": "4e1fa582432929d5",
-          "changedOn": "2026-10-31"
+          "surface": "d6464a6e24f774c0",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -2808,8 +2810,9 @@
           "specVersion": "3.0.0",
           "specIssues": "48 of 60 modules: reference/abandoned_carts.v3.yml: no info.version; reference/carts.v3.yml: no info.version; reference/catalog/brands_catalog.v3.yml: no info.version; reference/catalog/categories_catalog.v3.yml: no info.version; reference/catalog/category-trees_catalog.v3.yml: no info.version; reference/catalog/product-modifiers_catalog.v3.yml: no info.version; reference/catalog/product-variant-options_catalog.v3.yml: no info.version; reference/catalog/product-variants_catalog.v3.yml: no info.version; reference/catalog/products_catalog.v3.yml: no info.version; reference/channels.v3.yml: no info.version; …",
           "server": "https://api.bigcommerce.com/stores/{store_hash}/v3",
-          "surface": "65dcd2dd1489ec92",
-          "changedOn": "2026-10-31"
+          "surface": "83c41af84e9ef331",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -5054,8 +5057,9 @@
           "apiVersion": "8.0, 8",
           "specVersion": "3.1.0",
           "server": "https://zohoapis.{dc}/crm/{version}",
-          "surface": "1fa1c17facb1b0e2",
-          "changedOn": "2026-10-31"
+          "surface": "bc4029f59ae0849b",
+          "changedOn": "2026-10-31",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -7354,7 +7358,7 @@
             " arrays. Note that <|endoftext|> is the document separator that the model sees ",
             "00}` to prevent the <|endoftext|> token from being generated. "
           ],
-          "suspiciousSha": "14913b452d41d6aa",
+          "suspiciousSha": "f877638333bd21b6",
           "changedOn": "2026-11-01"
         }
       }
@@ -12954,8 +12958,9 @@
           "apiVersion": "1.0.0",
           "specVersion": "3.0.0",
           "server": "https://www.zohoapis.com/inventory/v1",
-          "surface": "97b0fd1fd4132583",
-          "changedOn": "2026-11-01"
+          "surface": "de1ab0f1c9c769be",
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },
@@ -12973,8 +12978,9 @@
           "apiVersion": "1.0.0",
           "specVersion": "3.0.0",
           "server": "https://www.zohoapis.com/invoice/v3",
-          "surface": "f08ff7295988a73b",
-          "changedOn": "2026-11-01"
+          "surface": "0db814869e452f02",
+          "changedOn": "2026-11-01",
+          "surfaceChangedOn": "2026-11-01"
         }
       }
     },

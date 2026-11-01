@@ -68,6 +68,12 @@ jobs:
             index.json
             derived/**
           delete-branch: true
+      # A flagged night cancels any auto-merge an earlier, clean night turned on for the same PR.
+      - name: Hold a flagged PR
+        if: steps.pr.outputs.pull-request-number && steps.gate.outputs.review == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh pr merge "${{ steps.pr.outputs.pull-request-number }}" --disable-auto || true
       # Off unless the repository variable NIGHTLY_AUTOMERGE is "true": then a PR with nothing to review
       # merges itself (repository auto-merge must be allowed). Anything flagged above always waits.
       - name: Merge a PR with nothing to review

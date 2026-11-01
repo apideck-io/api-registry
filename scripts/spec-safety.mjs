@@ -23,39 +23,44 @@ export const INSTRUCTION_LIKE = [
   // Not "agent": in helpdesk APIs that is a person ("the agent should call the customer back").
   /\b(ai|llm|assistant|language\s+model)s?\b[^.]{0,30}\b(must|should)\s+(always\s+|now\s+|first\s+)?(ignore|call|invoke|execute|run|send)\b/i,
 ];
-// Bidirectional overrides: they make text display differently from what a model reads. Zero-width spaces are
-// common in pasted vendor docs and are not flagged (consumers strip them).
-export const HIDDEN_CHARS = /[\u202A-\u202E\u2066-\u2069]/;
+// Bidirectional overrides and marks make text display differently from what a model reads; Unicode tag
+// characters (U+E0000-E007F) are invisible and still read by some models. Zero-width spaces are common in
+// pasted vendor docs and are not flagged (consumers strip them).
+export const HIDDEN_CHARS = /[\u061C\u200E\u200F\u202A-\u202E\u2066-\u2069\u{E0000}-\u{E007F}]/u;
+const HIDDEN_ALL = new RegExp(HIDDEN_CHARS.source, "gu");
 
 const TEXT_KEYS = new Set(["description", "summary", "title", "x-summary"]);
 
 /**
- * Instruction-like or hidden text in a parsed spec: every distinct match (capped at 500), so a fingerprint of
- * them changes when any one is added, while index.json shows the first few as samples.
+ * Instruction-like or hidden text in a parsed spec. `samples` are short, readable excerpts (distinct, for
+ * index.json); `hits` are every flagged text in full with where it sits, so a fingerprint of them changes when
+ * text is added to an already-accepted description or copied to another place.
  */
-export function suspiciousText(doc, max = 500) {
-  const found = [];
+export function scanText(doc, max = 500) {
+  const samples = [];
+  const hits = [];
   const seen = new Set();
-  const walk = (v, key, depth) => {
-    if (found.length >= max || depth > 1000 || v == null) return;
+  const walk = (v, key, at, depth) => {
+    if (hits.length >= max || depth > 1000 || v == null) return;
     if (typeof v === "string") {
       if (!TEXT_KEYS.has(key)) return;
       const hidden = HIDDEN_CHARS.test(v);
-      const hit = hidden ? null : INSTRUCTION_LIKE.find((re) => re.test(v));
+      const hit = INSTRUCTION_LIKE.find((re) => re.test(v));
       if (!hidden && !hit) return;
-      const at = hit ? v.search(hit) : v.search(HIDDEN_CHARS);
-      const sample = (hidden ? "hidden characters: " : "") + v.slice(Math.max(0, at - 20), at + 60).replace(/\s+/g, " ").replace(HIDDEN_CHARS, "\u2423");
-      if (!seen.has(sample)) {
+      hits.push(`${at}\u0000${v}`);
+      const i = hit ? v.search(hit) : v.search(HIDDEN_CHARS);
+      const sample = (hidden ? "hidden characters: " : "") + v.slice(Math.max(0, i - 20), i + 60).replace(/\s+/g, " ").replace(HIDDEN_ALL, "\u2423");
+      if (!seen.has(sample) && samples.length < 3) {
         seen.add(sample);
-        found.push(sample);
+        samples.push(sample);
       }
       return;
     }
-    if (Array.isArray(v)) for (const x of v) walk(x, key, depth + 1);
-    else if (typeof v === "object") for (const [k, x] of Object.entries(v)) walk(x, k, depth + 1);
+    if (Array.isArray(v)) v.forEach((x, i) => walk(x, key, `${at}/${i}`, depth + 1));
+    else if (typeof v === "object") for (const [k, x] of Object.entries(v)) walk(x, k, `${at}/${k}`, depth + 1);
   };
-  walk(doc, "", 0);
-  return found;
+  walk(doc, "", "", 0);
+  return { samples, hits };
 }
 
 /** Descriptions in a GraphQL SDL file (block and plain strings), as a document suspiciousText can scan. */
@@ -63,9 +68,9 @@ export function sdlDescriptions(sdl) {
   return { description: [...sdl.matchAll(/"""([\s\S]*?)"""|"((?:[^"\\\n]|\\.)*)"/g)].map((m) => m[1] ?? m[2]) };
 }
 
-/** A short, order-independent fingerprint of every flagged text. */
-export function suspiciousFingerprint(found) {
-  return found.length ? createHash("sha256").update(JSON.stringify([...found].sort())).digest("hex").slice(0, 16) : null;
+/** A short, order-independent fingerprint of every flagged text and its place. */
+export function suspiciousFingerprint(hits) {
+  return hits.length ? createHash("sha256").update(JSON.stringify([...hits].sort())).digest("hex").slice(0, 16) : null;
 }
 
 const canonical = (v) =>

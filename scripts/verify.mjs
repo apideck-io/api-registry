@@ -15,7 +15,7 @@ import { parse as parseYaml } from "yaml";
 import { createRequire } from "node:module";
 import openapiFormat from "openapi-format";
 import { buildASTSchema, introspectionFromSchema, parse as parseGraphQL } from "graphql";
-import { sdlDescriptions, suspiciousFingerprint, suspiciousText, surfaceOf } from "./spec-safety.mjs";
+import { scanText, sdlDescriptions, suspiciousFingerprint, surfaceOf } from "./spec-safety.mjs";
 
 const { openapiOverlay, resolveJsonPathValue } = openapiFormat;
 // The JSONPath parser openapi-format applies overlays with, resolved through it rather than declared
@@ -321,7 +321,7 @@ function inspect(format, body) {
       const rootNames = [schema.queryType?.name, schema.mutationType?.name].filter(Boolean);
       const n = schema.types.filter((t) => rootNames.includes(t.name)).reduce((m, t) => m + (t.fields?.length ?? 0), 0);
       if (!n) throw new Error("the root types have no fields");
-      return { operations: n, ...flagged(suspiciousText(schema)) };
+      return { operations: n, ...flagged(scanText(schema)) };
     }
     // SDL is parsed with graphql-js and published as an introspection result (derived/), so consumers read
     // one GraphQL format. assumeValidSDL: vendors' SDL often uses directives it doesn't declare.
@@ -332,11 +332,11 @@ function inspect(format, body) {
       const roots = [schema.queryType?.name, schema.mutationType?.name].filter(Boolean);
       const n = schema.types.filter((t) => roots.includes(t.name)).reduce((m, t) => m + (t.fields?.length ?? 0), 0);
       if (!n) throw new Error("the root types have no fields");
-      return { operations: n, introspection, ...flagged(suspiciousText(sdlDescriptions(body))) };
+      return { operations: n, introspection, ...flagged(scanText(sdlDescriptions(body))) };
     } catch (err) {
       if (/no query root|no fields/.test(err.message)) throw err;
       // Not parseable by graphql-js: count fields as before, without a derived file, and say why.
-      return { ...countSdlFields(body), derivedError: err.message.split("\n")[0].slice(0, 100), ...flagged(suspiciousText(sdlDescriptions(body))) };
+      return { ...countSdlFields(body), derivedError: err.message.split("\n")[0].slice(0, 100), ...flagged(scanText(sdlDescriptions(body))) };
     }
   }
   return inspectDocument(format, body);
@@ -374,7 +374,7 @@ function inspectDocument(format, body) {
   const info = inspectParsed(format, doc);
   // Where calls go and how they authenticate, and any text aimed at a model (scripts/spec-safety.mjs).
   const surface = surfaceOf(format, doc);
-  return { ...info, ...(surface ? { surface } : {}), ...flagged(suspiciousText(doc)) };
+  return { ...info, ...(surface ? { surface } : {}), ...flagged(scanText(doc)) };
 }
 
 // A failure that holds the nightly PR: the spec resolved last time, or has never been checked. One that was
@@ -382,7 +382,7 @@ function inspectDocument(format, body) {
 const newlyFailing = (old) => !old.status || old.status === "ok";
 
 // What index.json keeps of flagged text: a few samples to read, and a fingerprint of all of it to compare.
-const flagged = (found) => (found.length ? { suspicious: found.slice(0, 3), suspiciousSha: suspiciousFingerprint(found) } : {});
+const flagged = ({ samples, hits }) => (hits.length ? { suspicious: samples, suspiciousSha: suspiciousFingerprint(hits) } : {});
 
 function inspectParsed(format, doc) {
   if (format === "google-discovery") {
@@ -611,9 +611,12 @@ for (const e of entries) {
             : {}),
           server: parts.find((x) => x.server)?.server,
           // One fingerprint for the bundle: every module's, in file order.
-          ...(parts.some((x) => x.surface) ? { surface: createHash("sha256").update(parts.map((x) => x.surface ?? "-").join(",")).digest("hex").slice(0, 16) } : {}),
+          // In file-name order, as sha256 is: a rebuilt archive may list the same files differently.
+          ...(parts.some((x) => x.surface)
+            ? { surface: createHash("sha256").update(parts.map((x, i) => [specFiles[i].name, x.surface ?? "-"]).sort((a, b) => a[0].localeCompare(b[0])).map((x) => x.join("=")).join(",")).digest("hex").slice(0, 16) }
+            : {}),
           ...(parts.some((x) => x.suspicious)
-            ? { suspicious: parts.flatMap((x) => x.suspicious ?? []).slice(0, 3), suspiciousSha: suspiciousFingerprint(parts.map((x) => x.suspiciousSha ?? "")) }
+            ? { suspicious: parts.flatMap((x) => x.suspicious ?? []).slice(0, 3), suspiciousSha: suspiciousFingerprint(parts.map((x, i) => `${specFiles[i].name}=${x.suspiciousSha ?? ""}`)) }
             : {}),
         };
       } else info = inspect(s.format, r.body);
