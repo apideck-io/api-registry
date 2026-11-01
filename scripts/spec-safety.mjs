@@ -106,20 +106,30 @@ export function surfaceOf(format, doc) {
   if (format.startsWith("openapi-")) {
     const perPath = [];
     // OpenAPI 3.1 path items can be references into components.pathItems.
+    // Followed up to ten hops; a reference that can't be resolved here (another file) is kept as its target,
+    // so changing where it points changes the fingerprint.
     const deref = (item) => {
-      const ref = typeof item?.$ref === "string" && /^#\/components\/pathItems\/(.+)$/.exec(item.$ref)?.[1];
-      if (!ref) return item;
-      let name = ref.replace(/~1/g, "/").replace(/~0/g, "~");
-      try {
-        name = decodeURIComponent(name);
-      } catch {
-        // a malformed escape: look it up as written
+      let cur = item;
+      for (let hop = 0; hop < 10 && typeof cur?.$ref === "string"; hop++) {
+        const ref = /^#\/components\/pathItems\/(.+)$/.exec(cur.$ref)?.[1];
+        if (!ref) break;
+        let name = ref.replace(/~1/g, "/").replace(/~0/g, "~");
+        try {
+          name = decodeURIComponent(name);
+        } catch {
+          // a malformed escape: look it up as written
+        }
+        const target = doc.components?.pathItems?.[name];
+        if (!target || typeof target !== "object") break;
+        const { $ref: _ref, ...rest } = cur;
+        cur = { ...target, ...rest };
       }
-      return { ...doc.components?.pathItems?.[name], ...item };
+      return cur;
     };
     for (const [p, raw] of Object.entries(doc.paths ?? {})) {
       const item = deref(raw);
       if (!item || typeof item !== "object") continue;
+      if (typeof item.$ref === "string") perPath.push([p, "$ref", item.$ref]);
       if (item.servers) perPath.push([p, "*", item.servers]);
       for (const m of METHODS) {
         const op = item[m];
@@ -130,7 +140,12 @@ export function surfaceOf(format, doc) {
     surface = { servers: doc.servers ?? null, schemes: doc.components?.securitySchemes ?? null, security: security(doc.security), perPath };
   } else if (format === "swagger-2.0") {
     const perOp = [];
-    for (const [p, item] of Object.entries(doc.paths ?? {})) for (const m of METHODS) if (item?.[m]?.security) perOp.push([p, m, security(item[m].security)]);
+    // An operation's own schemes override the document's (an http-only operation).
+    for (const [p, item] of Object.entries(doc.paths ?? {}))
+      for (const m of METHODS) {
+        if (item?.[m]?.security) perOp.push([p, m, security(item[m].security)]);
+        if (item?.[m]?.schemes) perOp.push([p, m, "schemes", item[m].schemes]);
+      }
     surface = { host: doc.host ?? null, basePath: doc.basePath ?? null, schemes: doc.schemes ?? null, definitions: doc.securityDefinitions ?? null, security: security(doc.security), perOp };
   } else if (format === "google-discovery") {
     surface = {

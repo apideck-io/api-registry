@@ -8300,8 +8300,8 @@
       "specs": {
         "Instantly API v2": {
           "status": "ok",
-          "sha256": "8bf3dc20a3ccfbd3f45fb03da92ef94f7976d61ca1e7d9d27fffe8c622494285",
-          "fetchSha256": "8bf3dc20a3ccfbd3f45fb03da92ef94f7976d61ca1e7d9d27fffe8c622494285",
+          "sha256": "2fdbc4e72614982f2dc191eee1cdb0291bd2b3c3933b879a227bdde9b14d3e3c",
+          "fetchSha256": "2fdbc4e72614982f2dc191eee1cdb0291bd2b3c3933b879a227bdde9b14d3e3c",
           "bytes": 4465370,
           "operations": 256,
           "title": "API Explorer",
@@ -8423,8 +8423,8 @@
       "specs": {
         "Twelve Data API": {
           "status": "ok",
-          "sha256": "d613c91f4a4e51600960858ae8ce30325d8b485be6489bc4fdf5ede254fc2995",
-          "fetchSha256": "d613c91f4a4e51600960858ae8ce30325d8b485be6489bc4fdf5ede254fc2995",
+          "sha256": "ddc6642016d9403b25cf538c74dbcef5c4f814128fd74ec283a50b1a1ef9ce84",
+          "fetchSha256": "ddc6642016d9403b25cf538c74dbcef5c4f814128fd74ec283a50b1a1ef9ce84",
           "bytes": 3447575,
           "operations": 187,
           "title": "Twelve Data API",
@@ -9357,9 +9357,9 @@
       "specs": {
         "apaleo Inventory API": {
           "status": "ok",
-          "sha256": "90d5c532f3f3bbffb26bf631e0967b6c56440dceacd19c70170f61bd9cc83caf",
-          "fetchSha256": "90d5c532f3f3bbffb26bf631e0967b6c56440dceacd19c70170f61bd9cc83caf",
-          "bytes": 151908,
+          "sha256": "205dd227bfdbeb3379ebf0b91ab996e401dce3f12dc64db9c40c7d5158ab9488",
+          "fetchSha256": "205dd227bfdbeb3379ebf0b91ab996e401dce3f12dc64db9c40c7d5158ab9488",
+          "bytes": 151914,
           "operations": 35,
           "title": "apaleo Inventory API",
           "apiVersion": "v1",
@@ -9371,8 +9371,8 @@
         },
         "apaleo Rate Plan API": {
           "status": "ok",
-          "sha256": "e1a370a388ff6518f55049b0d3880db0752d1101b07c1c203632038b5b556d40",
-          "fetchSha256": "e1a370a388ff6518f55049b0d3880db0752d1101b07c1c203632038b5b556d40",
+          "sha256": "310d199ae2c0d6bd69e784ea4d85065318b34ee9b3f410620407412236c490ca",
+          "fetchSha256": "310d199ae2c0d6bd69e784ea4d85065318b34ee9b3f410620407412236c490ca",
           "bytes": 262866,
           "operations": 45,
           "title": "apaleo Rate Plan API",
@@ -9385,9 +9385,9 @@
         },
         "apaleo Booking API": {
           "status": "ok",
-          "sha256": "e5976d3dea0ba96873dc5397b8eaf18728c8579882b8295aa5cf47845b93ee82",
-          "fetchSha256": "e5976d3dea0ba96873dc5397b8eaf18728c8579882b8295aa5cf47845b93ee82",
-          "bytes": 545347,
+          "sha256": "bd52573aa3518c591a2d357c8f0bc6c4b03777d98c18295cb7c0a795146ea1b0",
+          "fetchSha256": "bd52573aa3518c591a2d357c8f0bc6c4b03777d98c18295cb7c0a795146ea1b0",
+          "bytes": 545346,
           "operations": 77,
           "title": "apaleo Booking API",
           "apiVersion": "v1",
@@ -9399,8 +9399,8 @@
         },
         "apaleo Finance API": {
           "status": "ok",
-          "sha256": "5fe2a475f86e1f909873cbdf4dc41e0f8a40d8c70dc61b84d9ed080c9d15d710",
-          "fetchSha256": "5fe2a475f86e1f909873cbdf4dc41e0f8a40d8c70dc61b84d9ed080c9d15d710",
+          "sha256": "52a8893109677a3cec7d643d9d061d3c17987429f77522e97c7d18ccc628d331",
+          "fetchSha256": "52a8893109677a3cec7d643d9d061d3c17987429f77522e97c7d18ccc628d331",
           "bytes": 386767,
           "operations": 65,
           "title": "apaleo Finance API",
@@ -9440,8 +9440,8 @@
         },
         "apaleo Operations API": {
           "status": "ok",
-          "sha256": "58a7644c85f98002e688490561622562cbeb7308663e9f8f039a2292150c264a",
-          "fetchSha256": "58a7644c85f98002e688490561622562cbeb7308663e9f8f039a2292150c264a",
+          "sha256": "15e15f93f95281ae8d88662bd47e74dffa0a02383bfbebb983a877e8104f1676",
+          "fetchSha256": "15e15f93f95281ae8d88662bd47e74dffa0a02383bfbebb983a877e8104f1676",
           "bytes": 39563,
           "operations": 10,
           "title": "apaleo Operations API",
@@ -9482,8 +9482,8 @@
         },
         "apaleo Logs API": {
           "status": "ok",
-          "sha256": "f4635a2d723f1ac6af962c48ce6b72f99c33a746f572ced0d1966ea51d43b219",
-          "fetchSha256": "f4635a2d723f1ac6af962c48ce6b72f99c33a746f572ced0d1966ea51d43b219",
+          "sha256": "52a2db16e6bb75defd6826c1432554a4152497f9aca1df281c03f91f5d088bbe",
+          "fetchSha256": "52a2db16e6bb75defd6826c1432554a4152497f9aca1df281c03f91f5d088bbe",
           "bytes": 60082,
           "operations": 4,
           "title": "apaleo logs API",
