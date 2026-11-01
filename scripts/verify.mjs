@@ -485,7 +485,9 @@ for (const e of entries) {
           // Every module's version, so the format check covers all of them, not just the first.
           specVersions: [...new Set(parts.map((x) => x.specVersion).filter(Boolean))],
           // Missing required fields in any module, so the nightly PR flags them for bundles too.
-          ...(parts.some((x) => x.specIssues) ? { specIssues: [...new Set(parts.map((x) => x.specIssues).filter(Boolean))].join("; ") } : {}),
+          ...(parts.some((x) => x.specIssues)
+            ? { specIssues: parts.map((x, i) => (x.specIssues ? `${specFiles[i].name.replace(/^[^/]*\//, "")}: ${x.specIssues}` : null)).filter(Boolean).slice(0, 10).join("; ") }
+            : {}),
           server: parts.find((x) => x.server)?.server,
         };
       } else info = inspect(s.format, r.body);
