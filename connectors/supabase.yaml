@@ -1,0 +1,9 @@
+id: supabase
+name: "Supabase"
+apideck: false
+specs:
+  - name: "Supabase Management API"
+    url: "https://api.supabase.com/api/v1-json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.supabase.com"

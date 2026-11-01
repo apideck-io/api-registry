@@ -1,0 +1,5 @@
+id: facebook
+name: "Facebook"
+apideck: false
+notes: "No OpenAPI or Swagger spec published. Graph API reference: https://developers.facebook.com/docs/graph-api"
+specs: []

@@ -1,0 +1,5 @@
+id: dialpad
+name: "Dialpad"
+apideck: false
+notes: "No downloadable spec found. REST API reference: https://developers.dialpad.com"
+specs: []

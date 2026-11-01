@@ -1,0 +1,10 @@
+id: onenote
+name: "OneNote"
+apideck: false
+notes: "Part of Microsoft Graph; OneNote endpoints are under /me/onenote (notebooks, sections, pages)."
+specs:
+  - name: "OData Service for namespace microsoft.graph"
+    url: "https://raw.githubusercontent.com/microsoftgraph/msgraph-metadata/master/openapi/v1.0/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://graph.microsoft.com/v1.0"

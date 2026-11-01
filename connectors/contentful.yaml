@@ -1,0 +1,5 @@
+id: contentful
+name: "Contentful"
+apideck: false
+notes: "No downloadable spec found. REST API reference: https://www.contentful.com/developers/docs/references/content-management-api/"
+specs: []

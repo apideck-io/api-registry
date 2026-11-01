@@ -1,0 +1,5 @@
+id: tableau
+name: "Tableau"
+apideck: false
+notes: "No published OpenAPI spec. REST API reference: https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api.htm"
+specs: []

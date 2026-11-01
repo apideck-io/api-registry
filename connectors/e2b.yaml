@@ -1,0 +1,9 @@
+id: e2b
+name: "E2B"
+apideck: false
+specs:
+  - name: "E2B API"
+    url: "https://raw.githubusercontent.com/e2b-dev/E2B/main/spec/openapi.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.e2b.app"

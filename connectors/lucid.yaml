@@ -1,0 +1,19 @@
+id: lucid
+name: "Lucid"
+apideck: false
+specs:
+  - name: "Lucid REST API"
+    url: "https://developer.lucid.co/openapi/lucid-rest-api.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.lucid.co"
+  - name: "Lucid Data API"
+    url: "https://developer.lucid.co/openapi/lucid-data-api.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://data.lucid.app"
+  - name: "Lucid SCIM API"
+    url: "https://developer.lucid.co/openapi/lucid-scim-api.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://users.lucid.app/scim/v2"

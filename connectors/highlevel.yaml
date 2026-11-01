@@ -1,0 +1,55 @@
+id: highlevel
+name: "HighLevel"
+apideck: false
+notes: "HighLevel publishes one spec per module; the core ones are listed (the vendor repo's apps/ folder holds more)."
+specs:
+  - name: "Contacts"
+    url: "https://raw.githubusercontent.com/GoHighLevel/highlevel-api-docs/main/apps/contacts.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://services.leadconnectorhq.com"
+  - name: "Conversations"
+    url: "https://raw.githubusercontent.com/GoHighLevel/highlevel-api-docs/main/apps/conversations.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://services.leadconnectorhq.com"
+  - name: "Calendars"
+    url: "https://raw.githubusercontent.com/GoHighLevel/highlevel-api-docs/main/apps/calendars.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://services.leadconnectorhq.com"
+  - name: "Opportunities"
+    url: "https://raw.githubusercontent.com/GoHighLevel/highlevel-api-docs/main/apps/opportunities.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://services.leadconnectorhq.com"
+  - name: "Locations"
+    url: "https://raw.githubusercontent.com/GoHighLevel/highlevel-api-docs/main/apps/locations.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://services.leadconnectorhq.com"
+  - name: "Invoices"
+    url: "https://raw.githubusercontent.com/GoHighLevel/highlevel-api-docs/main/apps/invoices.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://services.leadconnectorhq.com"
+  - name: "Payments"
+    url: "https://raw.githubusercontent.com/GoHighLevel/highlevel-api-docs/main/apps/payments.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://services.leadconnectorhq.com"
+  - name: "Users"
+    url: "https://raw.githubusercontent.com/GoHighLevel/highlevel-api-docs/main/apps/users.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://services.leadconnectorhq.com"
+  - name: "Workflows"
+    url: "https://raw.githubusercontent.com/GoHighLevel/highlevel-api-docs/main/apps/workflows.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://services.leadconnectorhq.com"
+  - name: "Companies"
+    url: "https://raw.githubusercontent.com/GoHighLevel/highlevel-api-docs/main/apps/companies.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://services.leadconnectorhq.com"

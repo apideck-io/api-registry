@@ -1,0 +1,9 @@
+id: fathom
+name: "Fathom"
+apideck: false
+specs:
+  - name: "Fathom External API"
+    url: "https://developers.fathom.ai/api-reference/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.fathom.ai/external/v1"

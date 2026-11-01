@@ -1,0 +1,9 @@
+id: workos
+name: "WorkOS"
+apideck: false
+specs:
+  - name: "WorkOS API"
+    url: "https://workos.com/docs/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.workos.com"

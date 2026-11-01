@@ -1,0 +1,9 @@
+id: front
+name: "Front"
+apideck: false
+specs:
+  - name: "Front Core API"
+    url: "https://raw.githubusercontent.com/frontapp/front-api-specs/main/core-api/core-api.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api2.frontapp.com"

@@ -1,0 +1,19 @@
+id: smartsheet
+name: "Smartsheet"
+apideck: false
+specs:
+  - name: "Smartsheet API"
+    url: "https://developers.smartsheet.com/_bundle/api/smartsheet/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.smartsheet.com/2.0"
+  - name: "Resource Management API"
+    url: "https://developers.smartsheet.com/_bundle/api/resource_management/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.rm.smartsheet.com/api/v1"
+  - name: "Brandfolder API"
+    url: "https://developers.smartsheet.com/_bundle/api/brandfolder/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://brandfolder.com/api/v4"

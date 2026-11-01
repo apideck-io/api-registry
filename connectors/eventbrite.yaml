@@ -1,0 +1,5 @@
+id: eventbrite
+name: "Eventbrite"
+apideck: false
+notes: "No downloadable spec found. API reference: https://docs.eventbrite.com"
+specs: []

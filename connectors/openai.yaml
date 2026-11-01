@@ -1,0 +1,9 @@
+id: openai
+name: "OpenAI"
+apideck: false
+specs:
+  - name: "OpenAI API"
+    url: "https://raw.githubusercontent.com/openai/openai-openapi/master/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.openai.com/v1"

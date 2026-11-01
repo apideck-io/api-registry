@@ -1,0 +1,45 @@
+id: zoho-desk
+name: "Zoho Desk"
+apideck: false
+notes: "Zoho publishes one OpenAPI file per module (github.com/zoho/zohodesk-oas, v1.0/); the core modules are listed."
+specs:
+  - name: "Tickets"
+    url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Ticket.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://desk.zoho.com/api/v1"
+  - name: "Contacts"
+    url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Contact.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://desk.zoho.com/api/v1"
+  - name: "Accounts"
+    url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Account.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://desk.zoho.com/api/v1"
+  - name: "Agents"
+    url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Agent.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://desk.zoho.com/api/v1"
+  - name: "Departments"
+    url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Department.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://desk.zoho.com/api/v1"
+  - name: "Threads"
+    url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Thread.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://desk.zoho.com/api/v1"
+  - name: "Articles"
+    url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Article.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://desk.zoho.com/api/v1"
+  - name: "Tasks"
+    url: "https://raw.githubusercontent.com/zoho/zohodesk-oas/master/v1.0/Task.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://desk.zoho.com/api/v1"

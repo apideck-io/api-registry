@@ -1,0 +1,45 @@
+id: incident-io
+name: "incident.io"
+apideck: false
+notes: "incident.io publishes one spec per API area (listed in docs.incident.io/llms.txt); the core ones are listed."
+specs:
+  - name: "Incidents v2"
+    url: "https://docs.incident.io/openapi/tags/incidents-v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.incident.io"
+  - name: "Alerts v2"
+    url: "https://docs.incident.io/openapi/tags/alerts-v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.incident.io"
+  - name: "Schedules v2"
+    url: "https://docs.incident.io/openapi/tags/schedules-v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.incident.io"
+  - name: "Escalations v2"
+    url: "https://docs.incident.io/openapi/tags/escalations-v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.incident.io"
+  - name: "Catalog Entries v3"
+    url: "https://docs.incident.io/openapi/tags/catalog-entries-v3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.incident.io"
+  - name: "Follow-ups v3"
+    url: "https://docs.incident.io/openapi/tags/follow-ups-v3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.incident.io"
+  - name: "Actions v3"
+    url: "https://docs.incident.io/openapi/tags/actions-v3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.incident.io"
+  - name: "Users v2"
+    url: "https://docs.incident.io/openapi/tags/users-v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.incident.io"

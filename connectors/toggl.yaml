@@ -1,0 +1,5 @@
+id: toggl
+name: "Toggl"
+apideck: false
+notes: "No downloadable spec found. API documentation: https://engineering.toggl.com/docs"
+specs: []

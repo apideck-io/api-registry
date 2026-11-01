@@ -1,0 +1,9 @@
+id: render
+name: "Render"
+apideck: false
+specs:
+  - name: "Render Public API"
+    url: "https://api-docs.render.com/openapi/render-public-api-1.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.render.com/v1"

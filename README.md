@@ -40,7 +40,7 @@ Two optional fields cover vendors that don't serve a plain file:
   - `graphql-introspection`: no SDL file, but the endpoint answers an anonymous introspection query (Wave, Access Financials)
 - `manual: login | bot-protection` records a spec CI can't fetch (it needs `notes` on how to get it).
 
-The registry covers apps beyond Apideck's catalog: the ones the agent-tool vendors cover too, so there's one place to find any app's spec. Those entries carry `apideck: false`; everything else about them is the same.
+The registry also covers widely used apps Apideck doesn't connect yet, so there's one place to find any app's spec. Those entries carry `apideck: false`; everything else about them is the same.
 
 An app whose vendor publishes no spec still gets an entry with `specs: []` and a `notes` line saying what exists instead. That records that we looked.
 

@@ -1,0 +1,9 @@
+id: lemlist
+name: "Lemlist"
+apideck: false
+specs:
+  - name: "lemlist API v2"
+    url: "https://developer.lemlist.com/api-reference/openapi/v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.lemlist.com/api"

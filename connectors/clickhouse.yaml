@@ -1,0 +1,9 @@
+id: clickhouse
+name: "ClickHouse"
+apideck: false
+specs:
+  - name: "ClickHouse Cloud API"
+    url: "https://clickhouse.com/docs/_specs/cloud-openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.clickhouse.cloud"

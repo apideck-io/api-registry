@@ -1,0 +1,5 @@
+id: mercury
+name: "Mercury"
+apideck: false
+notes: "No downloadable spec found. API reference: https://docs.mercury.com/reference"
+specs: []

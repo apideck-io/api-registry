@@ -1,0 +1,5 @@
+id: semrush
+name: "Semrush"
+apideck: false
+notes: "No published spec. API docs: https://developer.semrush.com/api/"
+specs: []

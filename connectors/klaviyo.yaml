@@ -1,0 +1,14 @@
+id: klaviyo
+name: "Klaviyo"
+apideck: false
+specs:
+  - name: "Klaviyo API (stable)"
+    url: "https://raw.githubusercontent.com/klaviyo/openapi/main/openapi/stable.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://a.klaviyo.com"
+  - name: "Klaviyo API (beta)"
+    url: "https://raw.githubusercontent.com/klaviyo/openapi/main/openapi/beta.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://a.klaviyo.com"

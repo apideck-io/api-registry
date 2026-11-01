@@ -1,0 +1,9 @@
+id: grafana
+name: "Grafana"
+apideck: false
+specs:
+  - name: "Grafana HTTP API"
+    url: "https://raw.githubusercontent.com/grafana/grafana/main/public/openapi3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{grafana-host}/api"

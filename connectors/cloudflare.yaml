@@ -1,0 +1,9 @@
+id: cloudflare
+name: "Cloudflare"
+apideck: false
+specs:
+  - name: "Cloudflare API"
+    url: "https://raw.githubusercontent.com/cloudflare/api-schemas/main/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.cloudflare.com/client/v4"

@@ -1,0 +1,9 @@
+id: google-tasks
+name: "Google Tasks"
+apideck: false
+specs:
+  - name: "Google Tasks API v1"
+    url: "https://tasks.googleapis.com/$discovery/rest?version=v1"
+    format: google-discovery
+    provenance: vendor
+    server: "https://tasks.googleapis.com"

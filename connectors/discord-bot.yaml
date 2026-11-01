@@ -1,0 +1,10 @@
+id: discord-bot
+name: "Discord Bot"
+apideck: false
+notes: "Same HTTP API as discord, used with a bot token."
+specs:
+  - name: "Discord HTTP API"
+    url: "https://raw.githubusercontent.com/discord/discord-api-spec/main/specs/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://discord.com/api/v10"
