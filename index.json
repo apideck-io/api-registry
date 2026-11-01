@@ -3115,21 +3115,7 @@
     },
     "group-s": {
       "name": "Group S",
-      "specs": {
-        "Group S Middleware API": {
-          "status": "ok",
-          "sha256": "3196f5990fe43c91cf85305d7d338271c463105a67532b2d12affbacfaf5f7d4",
-          "fetchSha256": "3196f5990fe43c91cf85305d7d338271c463105a67532b2d12affbacfaf5f7d4",
-          "bytes": 22629,
-          "operations": 31,
-          "title": "Group S Middleware API",
-          "apiVersion": "2.0.0",
-          "specVersion": "3.1.0",
-          "server": "https://payroll-groups.be",
-          "surface": "544c32aacaf23f89",
-          "changedOn": "2026-11-01"
-        }
-      }
+      "specs": {}
     },
     "gusto": {
       "name": "Gusto",
@@ -6196,21 +6182,7 @@
     "amplitude": {
       "name": "Amplitude",
       "apideck": false,
-      "specs": {
-        "Amplitude Public APIs": {
-          "status": "ok",
-          "sha256": "e475ad97669a922f03b24b9f62eacb142488f1960eaa8fc452f17f8f4165a884",
-          "fetchSha256": "e475ad97669a922f03b24b9f62eacb142488f1960eaa8fc452f17f8f4165a884",
-          "bytes": 96788,
-          "operations": 38,
-          "title": "Amplitude Public APIs",
-          "apiVersion": "2026-10-05",
-          "specVersion": "3.1.0",
-          "server": "https://amplitude.com",
-          "surface": "4da32e63facc2af9",
-          "changedOn": "2026-11-01"
-        }
-      }
+      "specs": {}
     },
     "bitbucket": {
       "name": "Bitbucket",
@@ -6590,21 +6562,7 @@
     "constant-contact": {
       "name": "Constant Contact",
       "apideck": false,
-      "specs": {
-        "Constant Contact API v3 (AppConnect V3)": {
-          "status": "ok",
-          "sha256": "0b71880700c96e4c318f68ba7b316b16e434769b3bd05c25077f8b567168eaa4",
-          "fetchSha256": "0b71880700c96e4c318f68ba7b316b16e434769b3bd05c25077f8b567168eaa4",
-          "bytes": 725931,
-          "operations": 131,
-          "title": "AppConnect V3",
-          "apiVersion": "3.0.210",
-          "specVersion": "2.0",
-          "server": "https://api.cc.email/v3",
-          "surface": "575a47b1f813f2d6",
-          "changedOn": "2026-11-01"
-        }
-      }
+      "specs": {}
     },
     "contentful": {
       "name": "Contentful",
@@ -7489,22 +7447,7 @@
     "mailerlite": {
       "name": "MailerLite",
       "apideck": false,
-      "specs": {
-        "MailerLite API v2 (legacy)": {
-          "status": "ok",
-          "sha256": "3127b180af0c5afd72b9edf4da3edcd49a3ced5f9778efcefef4c7087411de88",
-          "fetchSha256": "3127b180af0c5afd72b9edf4da3edcd49a3ced5f9778efcefef4c7087411de88",
-          "bytes": 7286,
-          "operations": 6,
-          "title": "MailerLite",
-          "apiVersion": "2.0",
-          "specVersion": "2.0",
-          "server": "https://api.mailerlite.com/api/v2",
-          "surface": "83870635e33476bb",
-          "specServer": "http://api.mailerlite.com/api/v2",
-          "changedOn": "2026-11-01"
-        }
-      }
+      "specs": {}
     },
     "make": {
       "name": "Make",
@@ -7773,21 +7716,7 @@
     "razorpay": {
       "name": "Razorpay",
       "apideck": false,
-      "specs": {
-        "Razorpay API": {
-          "status": "ok",
-          "sha256": "824ca9e6faef0f08da4670d219931a842a68e6c88a4015160e5f4815a5e6a9a4",
-          "fetchSha256": "824ca9e6faef0f08da4670d219931a842a68e6c88a4015160e5f4815a5e6a9a4",
-          "bytes": 402421,
-          "operations": 136,
-          "title": "Razorpay API",
-          "apiVersion": "1.0.0",
-          "specVersion": "3.0.0",
-          "server": "https://api.razorpay.com/v1",
-          "surface": "a1454f2ee245cdf1",
-          "changedOn": "2026-11-01"
-        }
-      }
+      "specs": {}
     },
     "render": {
       "name": "Render",
@@ -10380,21 +10309,7 @@
     "builtwith": {
       "name": "BuiltWith",
       "apideck": false,
-      "specs": {
-        "BuiltWith x402 Pay-per-Call API": {
-          "status": "ok",
-          "sha256": "128fc6ec8424d643430df928e442234965fd2e140fee48b4483fb10155755e89",
-          "fetchSha256": "128fc6ec8424d643430df928e442234965fd2e140fee48b4483fb10155755e89",
-          "bytes": 25133,
-          "operations": 14,
-          "title": "BuiltWith x402 Pay-per-Call API",
-          "apiVersion": "1.0.0",
-          "specVersion": "3.1.0",
-          "server": "https://api.builtwith.com",
-          "surface": "0f135e0abbfa2b0e",
-          "changedOn": "2026-11-01"
-        }
-      }
+      "specs": {}
     },
     "canny": {
       "name": "Canny",
@@ -10806,21 +10721,7 @@
     "dynatrace": {
       "name": "Dynatrace",
       "apideck": false,
-      "specs": {
-        "Dynatrace Account Management API": {
-          "status": "ok",
-          "sha256": "d7d0fd9fcaa6f762b2969d44518d36d16c35fd91427fa84315b54f79b057810d",
-          "fetchSha256": "d7d0fd9fcaa6f762b2969d44518d36d16c35fd91427fa84315b54f79b057810d",
-          "bytes": 194081,
-          "operations": 96,
-          "title": "Dynatrace Account Management API",
-          "apiVersion": "1.0",
-          "specVersion": "3.0.0",
-          "server": "https://api.dynatrace.com",
-          "surface": "6a624f5a7203add2",
-          "changedOn": "2026-11-01"
-        }
-      }
+      "specs": {}
     },
     "envoy": {
       "name": "Envoy",
@@ -11490,21 +11391,7 @@
     "lastpass": {
       "name": "LastPass",
       "apideck": false,
-      "specs": {
-        "LastPass API": {
-          "status": "ok",
-          "sha256": "a0c14841e28d8af046b33ea17b52c01a991e5d28c9720859d43b484ad1b319e3",
-          "fetchSha256": "a0c14841e28d8af046b33ea17b52c01a991e5d28c9720859d43b484ad1b319e3",
-          "bytes": 116686,
-          "operations": 39,
-          "title": "LastPass API",
-          "apiVersion": "1.0.0",
-          "specVersion": "3.0.4",
-          "server": "https://api.lastpass.com/business",
-          "surface": "74f6e47d36b56a0d",
-          "changedOn": "2026-11-01"
-        }
-      }
+      "specs": {}
     },
     "lattice": {
       "name": "Lattice",
@@ -13451,21 +13338,7 @@
     "wiza": {
       "name": "Wiza",
       "apideck": false,
-      "specs": {
-        "Wiza API": {
-          "status": "ok",
-          "sha256": "6eb3c27688e3f5f9ad14ac8ff89b925a819d47ee430046fe5d4d6d2808513db3",
-          "fetchSha256": "6eb3c27688e3f5f9ad14ac8ff89b925a819d47ee430046fe5d4d6d2808513db3",
-          "bytes": 170364,
-          "operations": 13,
-          "title": "Wiza API Documentation",
-          "apiVersion": "v1",
-          "specVersion": "3.0.1",
-          "server": "https://wiza.co",
-          "surface": "a9743b37f9bd5318",
-          "changedOn": "2026-11-01"
-        }
-      }
+      "specs": {}
     },
     "yandex": {
       "name": "Yandex",
