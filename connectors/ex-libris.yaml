@@ -3,8 +3,9 @@ name: "Ex Libris"
 apideck: false
 notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
 specs:
-  - name: "Ex Libris APIs"
+  - name: "Alma task lists API"
     url: "https://developers.exlibrisgroup.com/wp-content/uploads/alma/openapi/tasklists.yaml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://api-eu.hosted.exlibrisgroup.com"
+    server: "https://api-{region}.hosted.exlibrisgroup.com"
+    notes: "One Alma module (task lists); the gateway host depends on the institution's region (na, eu, ap, ca, cn)."

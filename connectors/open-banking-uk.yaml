@@ -19,8 +19,8 @@ specs:
     url: "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/master/dist/openapi/event-notifications-openapi.yaml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://{aspsp-host}/open-banking/v4.0"
-    notes: "Each bank (ASPSP) implements the standard on its own host."
+    server: "https://{tpp-host}/open-banking/v4.0"
+    notes: "Endpoints the third-party provider (TPP) hosts so banks can send it events."
   - name: "Confirmation of Funds API Specification"
     url: "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/master/dist/openapi/confirmation-funds-openapi.yaml"
     format: openapi-3.0

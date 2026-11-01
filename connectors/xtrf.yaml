@@ -7,4 +7,5 @@ specs:
     url: "https://presentation.s.xtrf.eu/home-api/openapi.json"
     format: openapi-3.0
     provenance: vendor
-    server: "https://presentation.s.xtrf.eu/home-api"
+    server: "https://{xtrf-host}/home-api"
+    notes: "One XTRF instance per customer; the spec's host is XTRF's presentation instance."
