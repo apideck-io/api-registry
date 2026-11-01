@@ -1198,6 +1198,7 @@
           "bytes": 1592606,
           "operations": 213,
           "title": "FreshBooks API",
+          "specVersion": "2.0.0",
           "server": "https://api.freshbooks.com",
           "changedOn": "2026-10-31"
         }
@@ -1709,6 +1710,7 @@
           "bytes": 169126,
           "operations": 155,
           "title": "FreeAgent",
+          "specVersion": "2.1.0",
           "server": "https://api.freeagent.com/v2",
           "changedOn": "2026-10-31"
         }
@@ -1756,6 +1758,7 @@
           "bytes": 143546,
           "operations": 156,
           "title": "Crisp REST API Reference (V1)",
+          "specVersion": "2.1.0",
           "server": "https://api.crisp.chat/v1",
           "changedOn": "2026-10-31"
         }
@@ -1993,6 +1996,7 @@
           "bytes": 291793,
           "operations": 234,
           "title": "Employment Hero API",
+          "specVersion": "2.1.0",
           "server": "https://api.employmenthero.com/api",
           "changedOn": "2026-10-31"
         }
@@ -2363,6 +2367,7 @@
           "bytes": 75796,
           "operations": 89,
           "title": "ADP APIs",
+          "specVersion": "2.0.0",
           "server": "https://api.adp.com",
           "changedOn": "2026-10-31"
         }
@@ -2572,6 +2577,7 @@
           "bytes": 1596030,
           "operations": 350,
           "title": "Cezanne HR API",
+          "specVersion": "2.0.0",
           "server": "https://w3.cezanneondemand.com/CezanneOnDemand",
           "changedOn": "2026-10-31"
         }
@@ -2639,6 +2645,7 @@
           "bytes": 1334523,
           "operations": 83,
           "title": "Copper Developer API",
+          "specVersion": "2.1.0",
           "server": "https://api.copper.com/developer_api/v1",
           "changedOn": "2026-10-31"
         }
@@ -3244,6 +3251,7 @@
           "bytes": 76291,
           "operations": 49,
           "title": "Lexware API",
+          "specVersion": "2.1.0",
           "server": "https://api.lexware.io",
           "changedOn": "2026-10-31"
         }
@@ -3510,6 +3518,7 @@
           "bytes": 443689,
           "operations": 434,
           "title": "Lightspeed eCom",
+          "specVersion": "2.1.0",
           "server": "https://{api_key}:{api_secret}@api.{cluster}.com/{language}/",
           "changedOn": "2026-10-31"
         }
@@ -3974,12 +3983,13 @@
       "specs": {
         "MYOB AccountRight API Postman collection": {
           "status": "ok",
-          "sha256": "6d5c3821993e1aaf039577f187f23d0b2d5c8a958a1b37fc2a9d4445446f77b4",
+          "sha256": "0546a2edfdba417babef8d263ebdb2336c34408d2c71fd29a3ade8270eafc16f",
           "bytes": 7071274,
           "operations": 257,
           "title": "MYOB AccountRight",
+          "specVersion": "2.0.0",
           "server": "https://api.myob.com/accountright",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-01"
         }
       }
     },
@@ -4052,6 +4062,7 @@
           "bytes": 19712,
           "operations": 19,
           "title": "Apps API - OneLogin",
+          "specVersion": "2.1.0",
           "changedOn": "2026-10-31"
         },
         "OneLogin API v2: Authorization Servers": {
@@ -4060,6 +4071,7 @@
           "bytes": 14667,
           "operations": 17,
           "title": "Authorization Servers - OneLogin API",
+          "specVersion": "2.1.0",
           "changedOn": "2026-10-31"
         },
         "OneLogin API v2: User Mappings": {
@@ -4068,6 +4080,7 @@
           "bytes": 11536,
           "operations": 11,
           "title": "User Mappings - OneLogin API",
+          "specVersion": "2.1.0",
           "changedOn": "2026-10-31"
         },
         "OneLogin API v2: Vigilance AI": {
@@ -4076,6 +4089,7 @@
           "bytes": 6192,
           "operations": 7,
           "title": "Vigilance AI - OneLogin API",
+          "specVersion": "2.1.0",
           "changedOn": "2026-10-31"
         },
         "OneLogin API v2: Access Tokens": {
@@ -4084,6 +4098,7 @@
           "bytes": 6321,
           "operations": 3,
           "title": "Access Tokens - OneLogin API",
+          "specVersion": "2.1.0",
           "changedOn": "2026-10-31"
         },
         "OneLogin API v2: SAML Assertion v2": {
@@ -4092,6 +4107,7 @@
           "bytes": 1744,
           "operations": 2,
           "title": "SAML Assertion v2 - OneLogin API",
+          "specVersion": "2.1.0",
           "changedOn": "2026-10-31"
         }
       }
@@ -4283,6 +4299,7 @@
           "bytes": 2597997,
           "operations": 15,
           "title": "Sympa Generic API",
+          "specVersion": "2.0.0",
           "server": "https://api.sympahr.net/api",
           "changedOn": "2026-10-31"
         }
@@ -4313,6 +4330,7 @@
           "bytes": 1002986,
           "operations": 131,
           "title": "Teamtailor API",
+          "specVersion": "2.0.0",
           "server": "https://api.teamtailor.com/v1",
           "changedOn": "2026-10-31"
         }
@@ -5173,7 +5191,7 @@
           "title": "1Password Connect",
           "apiVersion": "1.7.1",
           "specVersion": "3.0.2",
-          "server": "http://{connect-host}/v1",
+          "server": "{scheme}://{connect-host}:{port}/v1",
           "specServer": "http://localhost:8080/v1",
           "changedOn": "2026-11-01"
         }
@@ -5192,6 +5210,7 @@
           "apiVersion": "",
           "specVersion": "3.1.1",
           "server": "https://api.affinity.co",
+          "specIssues": "no info.version",
           "changedOn": "2026-11-01"
         }
       }
@@ -5332,7 +5351,118 @@
     "braze": {
       "name": "Braze",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "Export user profile by identifier": {
+          "status": "ok",
+          "sha256": "1586c9655c3f5b5898153fffe2c0f454ab1297c5739ac47c587b2504af8b888a",
+          "bytes": 64297,
+          "operations": 1,
+          "title": "Braze REST API – Export user profile by identifier",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://rest.iad-01.braze.com",
+          "changedOn": "2026-11-01"
+        },
+        "Identify users": {
+          "status": "ok",
+          "sha256": "b1e6c4139279ad9f2a19ecb26da2cd887d7e0808e12f6303f10a4aa072d603c4",
+          "bytes": 18495,
+          "operations": 1,
+          "title": "Braze REST API – Identify users",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://rest.iad-01.braze.com",
+          "changedOn": "2026-11-01"
+        },
+        "Create new user alias": {
+          "status": "ok",
+          "sha256": "00a3b1c743725e356e9d0ba54bcfb2c4333bd114b75f0db9334a1a5dd8eba905",
+          "bytes": 10102,
+          "operations": 1,
+          "title": "Braze REST API – Create new user alias",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://rest.iad-01.braze.com",
+          "changedOn": "2026-11-01"
+        },
+        "Update user alias": {
+          "status": "ok",
+          "sha256": "ffdbbb4403f22d697800b846a568b7f35a4e6b4c8d51467fc51e6d664f7f3d4f",
+          "bytes": 7869,
+          "operations": 1,
+          "title": "Braze REST API – Update user alias",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://rest.iad-01.braze.com",
+          "changedOn": "2026-11-01"
+        },
+        "Merge users": {
+          "status": "ok",
+          "sha256": "3121cdf805bb887291b8de126808047c8e65622e0dff9b8d9ca2feafdd0c5e92",
+          "bytes": 29035,
+          "operations": 1,
+          "title": "Braze REST API – Merge users",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://rest.iad-01.braze.com",
+          "changedOn": "2026-11-01"
+        },
+        "Rename external ID": {
+          "status": "ok",
+          "sha256": "1207f9875170f41fcc9f4e262ccb82c4ca8b7b7c99d9843cae3afbf6f3619cf6",
+          "bytes": 14405,
+          "operations": 1,
+          "title": "Braze REST API – Rename external ID",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://rest.iad-01.braze.com",
+          "changedOn": "2026-11-01"
+        },
+        "Remove external ID": {
+          "status": "ok",
+          "sha256": "f5d07dbf35d7a23df678f6347c27e604703f849a5a9ee4464e76b479a0939bf9",
+          "bytes": 7420,
+          "operations": 1,
+          "title": "Braze REST API – Remove external ID",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://rest.iad-01.braze.com",
+          "changedOn": "2026-11-01"
+        },
+        "Delete users": {
+          "status": "ok",
+          "sha256": "5473e4f546c2011f55768100931a9ed8cf84993d99903cd7dd2519ac0a6b564f",
+          "bytes": 17293,
+          "operations": 1,
+          "title": "Braze REST API – Delete users",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://rest.iad-01.braze.com",
+          "changedOn": "2026-11-01"
+        },
+        "Export custom events list": {
+          "status": "ok",
+          "sha256": "c83580315ef5f6f576883e9b19bfb64d6297c0b2bb5d6b88c6f71fb1a839c4a2",
+          "bytes": 8275,
+          "operations": 1,
+          "title": "Braze REST API – Export custom events list",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://rest.iad-01.braze.com",
+          "changedOn": "2026-11-01"
+        },
+        "Export product IDs": {
+          "status": "ok",
+          "sha256": "cd3a8297a2c3ad30c637bb9e37470d4407120a17da4247d221c812d07be6467b",
+          "bytes": 7188,
+          "operations": 1,
+          "title": "Braze REST API – Export product IDs",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://rest.iad-01.braze.com",
+          "changedOn": "2026-11-01"
+        }
+      }
     },
     "breezyhr": {
       "name": "BreezyHR",
@@ -5870,7 +6000,7 @@
           "title": "Grafana HTTP API.",
           "apiVersion": "0.0.1",
           "specVersion": "3.0.3",
-          "server": "https://{grafana-host}/api",
+          "server": "{scheme}://{grafana-host}:{port}/api",
           "specServer": "/api",
           "changedOn": "2026-11-01"
         }
@@ -6709,6 +6839,7 @@
           "bytes": 43597,
           "operations": 114,
           "title": "Teamwork V.3",
+          "specVersion": "2.1.0",
           "server": "https://{site}.teamwork.com/projects/api/v3",
           "changedOn": "2026-11-01"
         }
@@ -7144,7 +7275,7 @@
       "specs": {
         "Hub API": {
           "status": "ok",
-          "sha256": "cd7eaeba67f2ce565856791b670a7a609b0e610e9f5830a038e7a15d018cff70",
+          "sha256": "af09466fbf824b0fa56b5ffb3b0b682332f1af0200e92feecbaf0ec7a1ed6fda",
           "bytes": 1210863,
           "operations": 374,
           "title": "Hub API Endpoints",
@@ -7760,11 +7891,6 @@
       "apideck": false,
       "specs": {}
     },
-    "adobe-commerce": {
-      "name": "Adobe Commerce",
-      "apideck": false,
-      "specs": {}
-    },
     "adyen": {
       "name": "Adyen",
       "apideck": false,
@@ -7862,7 +7988,19 @@
     "adyntel": {
       "name": "Adyntel",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "Adyntel API - existing endpoints": {
+          "status": "ok",
+          "sha256": "a7abb290f08c33e78edc26bcd235fa5996f56c60d24c2e72443df69bdabbf36d",
+          "bytes": 20394,
+          "operations": 10,
+          "title": "Adyntel API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.adyntel.com",
+          "changedOn": "2026-11-01"
+        }
+      }
     },
     "agencyzoom": {
       "name": "AgencyZoom",
@@ -7954,6 +8092,105 @@
           "apiVersion": "1.0",
           "specVersion": "3.1.0",
           "server": "https://manage.g.alchemy.com",
+          "changedOn": "2026-11-01"
+        },
+        "Alchemy Aptos API": {
+          "status": "ok",
+          "sha256": "a36208b37453cac9d0d3401b98d44bca3b5a96550cacf9b5dc550faa520f7650",
+          "bytes": 90706,
+          "operations": 24,
+          "title": "🌐 Aptos",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://aptos-mainnet.g.alchemy.com/v2/{apiKey}",
+          "changedOn": "2026-11-01"
+        },
+        "Alchemy Ethereum Beacon API": {
+          "status": "ok",
+          "sha256": "0f0e6bd7775c75c6b9ae196cf4f1e7b78e63c4a75e23e2fb170d33e1c31dd357",
+          "bytes": 135953,
+          "operations": 39,
+          "title": "Ethereum Beacon",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://eth-mainnetbeacon.g.alchemy.com/v2/{apiKey}",
+          "changedOn": "2026-11-01"
+        },
+        "Alchemy HyperCore API": {
+          "status": "ok",
+          "sha256": "b5aae4d9a59ecd59955ab5a78aa4ddf0b74e56964dcea8e8b6825f7896671bc6",
+          "bytes": 28826,
+          "operations": 8,
+          "title": "⚡ HyperCore API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.g.alchemy.com/hypercore/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Alchemy Tron HTTP API": {
+          "status": "ok",
+          "sha256": "34317507177c6beaaeaf0dd478f6948f8dc9ffa9158e74c9cc55c2b2ba6b7a59",
+          "bytes": 133886,
+          "operations": 75,
+          "title": "Tron HTTP API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://tron-mainnet.g.alchemy.com/v2/{apiKey}",
+          "changedOn": "2026-11-01"
+        },
+        "Alchemy Tron Solidity HTTP API": {
+          "status": "ok",
+          "sha256": "36015e2a76a63f4c1bb63741c2ab2dd566c64e3af7e224f44068ebd137a5ada9",
+          "bytes": 39460,
+          "operations": 27,
+          "title": "Tron Solidity HTTP API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://tron-mainnet.g.alchemy.com/v2/{apiKey}",
+          "changedOn": "2026-11-01"
+        },
+        "Alchemy UTXO API (Bitcoin)": {
+          "status": "ok",
+          "sha256": "ff3c0899de20d52b78594e91b08087b24af946a84a16dc02f53a6a5bd1e93d13",
+          "bytes": 30352,
+          "operations": 12,
+          "title": "🪙 UTXO API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://{network}.g.alchemy.com/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Alchemy UTXO API (Bitcoin Cash)": {
+          "status": "ok",
+          "sha256": "bfc0fa7862970b5557752468c1a2db6b296d5bf66ed5545dbcfb972bfe51eb06",
+          "bytes": 32115,
+          "operations": 12,
+          "title": "🪙 UTXO API (Bitcoin Cash)",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://{network}.g.alchemy.com/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Alchemy UTXO API (Dogecoin)": {
+          "status": "ok",
+          "sha256": "35c48077acd1f1ac5ab5e27b977451de60342ec21778fd2b91867017c9ec373f",
+          "bytes": 30831,
+          "operations": 12,
+          "title": "🪙 UTXO API (Dogecoin)",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://{network}.g.alchemy.com/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Alchemy UTXO API (Litecoin)": {
+          "status": "ok",
+          "sha256": "3940e7c2e56800262eef5bcecbc8e44506b0b6dc20ffbfcda7c620bd6535bd8d",
+          "bytes": 31165,
+          "operations": 12,
+          "title": "🪙 UTXO API (Litecoin)",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://{network}.g.alchemy.com/v2",
           "changedOn": "2026-11-01"
         }
       }
@@ -8245,6 +8482,28 @@
           "specVersion": "3.0.3",
           "server": "https://developer.api.autodesk.com",
           "changedOn": "2026-11-01"
+        },
+        "Construction Account Admin (APS)": {
+          "status": "ok",
+          "sha256": "5b82c3003ee847eb23d484a3f4ef1d171b303ac9b2721933209ac15cb88102c1",
+          "bytes": 198391,
+          "operations": 30,
+          "title": "Construction.Account.Admin",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.0",
+          "server": "https://developer.api.autodesk.com",
+          "changedOn": "2026-11-01"
+        },
+        "Construction Issues (APS)": {
+          "status": "ok",
+          "sha256": "1e011563c8f646b8e4c263738130e9c2798ca2724f797336df636797f16c6754",
+          "bytes": 82413,
+          "operations": 14,
+          "title": "Construction.Issues",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.0",
+          "server": "https://developer.api.autodesk.com",
+          "changedOn": "2026-11-01"
         }
       }
     },
@@ -8320,7 +8579,20 @@
     "basin": {
       "name": "Basin",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "Basin API V1": {
+          "status": "ok",
+          "sha256": "9e6932285c878449100be311ec4156661dacd044ee1c84d9b5ed0eb7f2257625",
+          "bytes": 87802,
+          "operations": 29,
+          "title": "API V1",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://usebasin.com",
+          "specServer": "https://usebasin.com/",
+          "changedOn": "2026-11-01"
+        }
+      }
     },
     "beehiiv": {
       "name": "Beehiiv",
@@ -8358,7 +8630,19 @@
     "bettercontact": {
       "name": "Bettercontact",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "BetterContact API": {
+          "status": "ok",
+          "sha256": "cd9044a26697d0275b956be6ada1ca2b1e80df9e8f15ba5c72386002f85f49d8",
+          "bytes": 113300,
+          "operations": 9,
+          "title": "BetterContact API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://app.bettercontact.rocks/api/v2",
+          "changedOn": "2026-11-01"
+        }
+      }
     },
     "bigchange": {
       "name": "BigChange",
@@ -8619,7 +8903,19 @@
     "clockify": {
       "name": "Clockify",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "Clockify API": {
+          "status": "ok",
+          "sha256": "e7bfa8711bb2f31cff163ceb46b490aa446deec602488862d7f82589f5901d48",
+          "bytes": 1320456,
+          "operations": 175,
+          "title": "Clockify API",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://api.clockify.me/api",
+          "changedOn": "2026-11-01"
+        }
+      }
     },
     "cloudtalk": {
       "name": "CloudTalk",
@@ -8685,12 +8981,41 @@
     "crunchbase": {
       "name": "Crunchbase",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "Crunchbase Enterprise API": {
+          "status": "manual: login"
+        }
+      }
     },
     "crustdata": {
       "name": "Crustdata",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "Crustdata account API (2025-11-01)": {
+          "status": "manual: login"
+        },
+        "Crustdata batch API (2025-11-01)": {
+          "status": "manual: login"
+        },
+        "Crustdata company API (2025-11-01)": {
+          "status": "manual: login"
+        },
+        "Crustdata job API (2025-11-01)": {
+          "status": "manual: login"
+        },
+        "Crustdata person API (2025-11-01)": {
+          "status": "manual: login"
+        },
+        "Crustdata social post API (2025-11-01)": {
+          "status": "manual: login"
+        },
+        "Crustdata watch API (2025-11-01)": {
+          "status": "manual: login"
+        },
+        "Crustdata web API (2025-11-01)": {
+          "status": "manual: login"
+        }
+      }
     },
     "cursor": {
       "name": "Cursor",
@@ -8704,6 +9029,17 @@
           "title": "Cursor Origin API",
           "apiVersion": "v1alpha1",
           "specVersion": "3.1.0",
+          "server": "https://api.cursor.com",
+          "changedOn": "2026-11-01"
+        },
+        "Cursor Cloud Agents API": {
+          "status": "ok",
+          "sha256": "dd3b836c4e95ad68892274280e53c348619cdd2051988793d2a85e8213d9a489",
+          "bytes": 146464,
+          "operations": 37,
+          "title": "Cursor Cloud Agents API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
           "server": "https://api.cursor.com",
           "changedOn": "2026-11-01"
         }
@@ -8839,7 +9175,19 @@
     "drata": {
       "name": "Drata",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "Drata API V2": {
+          "status": "ok",
+          "sha256": "701eaea07212563e17d88eaa9a8055b091f538aefe4e838e554edae716a6ec6d",
+          "bytes": 1256561,
+          "operations": 255,
+          "title": "Drata API",
+          "apiVersion": "V2",
+          "specVersion": "3.0.0",
+          "server": "https://public-api.drata.com/public/v2",
+          "changedOn": "2026-11-01"
+        }
+      }
     },
     "dynatrace": {
       "name": "Dynatrace",
@@ -8931,6 +9279,7 @@
           "bytes": 110296,
           "operations": 36,
           "title": "Findymail API documentation",
+          "specVersion": "2.1.0",
           "server": "https://app.findymail.com",
           "changedOn": "2026-11-01"
         }
@@ -9314,12 +9663,27 @@
     "jobdiva": {
       "name": "JobDiva",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "JobDiva API (Swagger)": {
+          "status": "manual: login"
+        }
+      }
     },
     "jobnimbus": {
       "name": "JobNimbus",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "JobNimbus Public API": {
+          "status": "ok",
+          "sha256": "4c0eac43c95129f24dcf5c9a17ab5feeb19fb329130c040214d75e9ef8bf804c",
+          "bytes": 267843,
+          "operations": 68,
+          "title": "JobNimbus Public API",
+          "specVersion": "2.0.0",
+          "server": "https://app.jobnimbus.com/api1",
+          "changedOn": "2026-11-01"
+        }
+      }
     },
     "judge-me": {
       "name": "Judge.me",
@@ -9347,6 +9711,7 @@
           "bytes": 9321532,
           "operations": 403,
           "title": "API Reference",
+          "specVersion": "2.1.0",
           "server": "https://api.infusionsoft.com/crm",
           "changedOn": "2026-11-01"
         },
@@ -9356,6 +9721,7 @@
           "bytes": 4251685,
           "operations": 141,
           "title": "API Reference",
+          "specVersion": "2.1.0",
           "server": "https://api.infusionsoft.com/crm",
           "changedOn": "2026-11-01"
         },
@@ -9365,6 +9731,7 @@
           "bytes": 256015,
           "operations": 45,
           "title": "API Reference",
+          "specVersion": "2.1.0",
           "server": "https://api.infusionsoft.com/services",
           "changedOn": "2026-11-01"
         }
@@ -9427,7 +9794,19 @@
     "leapsome": {
       "name": "Leapsome",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "Leapsome API": {
+          "status": "ok",
+          "sha256": "0c5822586dd179863374dec6c30e8d255c2c62233cb21f5c4f68d53660c659a6",
+          "bytes": 176989,
+          "operations": 27,
+          "title": "Leapsome API",
+          "apiVersion": "1.0.1",
+          "specVersion": "3.0.1",
+          "server": "https://api.leapsome.com/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
     },
     "lightfield": {
       "name": "Lightfield",
@@ -9437,7 +9816,19 @@
     "lilt": {
       "name": "Lilt",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "LILT API": {
+          "status": "ok",
+          "sha256": "99b66cc7808d56de22bfc57597ccb4651134f6accf299958f61c4de2997c5b74",
+          "bytes": 191074,
+          "operations": 71,
+          "title": "LILT API",
+          "apiVersion": "v3.0.3",
+          "specVersion": "3.0.3",
+          "server": "https://api.lilt.com",
+          "changedOn": "2026-11-01"
+        }
+      }
     },
     "linkhut": {
       "name": "Linkhut",
@@ -9582,8 +9973,7 @@
           "title": "Email Sending",
           "apiVersion": "2.0.0",
           "specVersion": "3.1.0",
-          "server": "https://send.api.mailtrap.io",
-          "specServer": "https://mailtrap.io",
+          "server": "https://mailtrap.io",
           "changedOn": "2026-11-01"
         },
         "Contacts": {
@@ -10207,6 +10597,7 @@
           "bytes": 3543875,
           "operations": 291,
           "title": "Pipeline CRM API",
+          "specVersion": "2.1.0",
           "server": "https://api.pipelinecrm.com/api/v3",
           "changedOn": "2026-11-01"
         }
@@ -11298,7 +11689,129 @@
     "dynamic-mockups": {
       "name": "Dynamic Mockups",
       "apideck": false,
-      "specs": {}
+      "specs": {
+        "Embroidery Effect API": {
+          "status": "ok",
+          "sha256": "847703855eced40b8026eda0001756d5d58253ba7c886e6165be49758bc06c06",
+          "bytes": 2296,
+          "operations": 1,
+          "title": "Dynamic Mockups API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://app.dynamicmockups.com/api/v1",
+          "changedOn": "2026-11-01"
+        },
+        "MockAnything AI API": {
+          "status": "ok",
+          "sha256": "3bfcdc3901a10e8522c61e58dc64a7312598b9cfb9707d67cc79d4d114d89672",
+          "bytes": 25136,
+          "operations": 5,
+          "title": "Dynamic Mockups MockAnything AI API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://app.dynamicmockups.com/api/v1",
+          "changedOn": "2026-11-01"
+        },
+        "MotionMockups AI API": {
+          "status": "ok",
+          "sha256": "b04fa44e7c3bd809113fda27e23aa2455e41e37682bc58a00b642cc71dac4236",
+          "bytes": 7087,
+          "operations": 3,
+          "title": "Dynamic Mockups MotionMockups AI API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://app.dynamicmockups.com/api/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Render Mockup API": {
+          "status": "ok",
+          "sha256": "d586bb7202b76eaba3c5975385c68be245a564e41706780498d16685be0f623a",
+          "bytes": 8016,
+          "operations": 1,
+          "title": "Dynamic Mockups API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://app.dynamicmockups.com/api/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Batch Render Mockups API": {
+          "status": "ok",
+          "sha256": "151aa114ff0f2437126dbe5ac90d625b611a5b82ec086ef4c183e3856f0788a5",
+          "bytes": 9110,
+          "operations": 1,
+          "title": "Dynamic Mockups Batch Render API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://app.dynamicmockups.com/api/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Get Mockups API": {
+          "status": "ok",
+          "sha256": "fa9ce9d1a89b9e89bb05f7ca772eb7ff8917f9fdc21c22b5af949160f988c359",
+          "bytes": 4739,
+          "operations": 2,
+          "title": "Dynamic Mockups API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://app.dynamicmockups.com/api/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Collections API": {
+          "status": "ok",
+          "sha256": "0703bf0cadb4e1c8e4865c484c4642aad5672ad16fc567e60b67dafdd7e610cf",
+          "bytes": 4563,
+          "operations": 2,
+          "title": "Dynamic Mockups API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://app.dynamicmockups.com/api/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Render Collection API": {
+          "status": "ok",
+          "sha256": "60c1077f0d8479ba6a716f4f7d85d6f82fc22259c9c7916094ff80efbcf11b25",
+          "bytes": 1898,
+          "operations": 1,
+          "title": "Product API Suite",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://app.dynamicmockups.com/api/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Catalogs API": {
+          "status": "ok",
+          "sha256": "1a13b3d5a4c499640fd9f3d2aefe0c15687c291af44e7794e622cfcfd41a8736",
+          "bytes": 3653,
+          "operations": 2,
+          "title": "Dynamic Mockups Catalog API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://app.dynamicmockups.com/api/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Render Print Files API": {
+          "status": "ok",
+          "sha256": "f779ed647b0b9390ccda2b43ec7607acf837a1c208461b7914f0a489892eff17",
+          "bytes": 5536,
+          "operations": 1,
+          "title": "Dynamic Mockups API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://app.dynamicmockups.com/api/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Photoshop Files API": {
+          "status": "ok",
+          "sha256": "f63da9c15b68b059ff75d56a340180f4d0f9ba640d0079604bbd4cbee2ef0389",
+          "bytes": 3915,
+          "operations": 2,
+          "title": "Dynamic Mockups API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://app.dynamicmockups.com/api/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
     },
     "epic-games": {
       "name": "Epic Games",

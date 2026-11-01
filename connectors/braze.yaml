@@ -1,5 +1,55 @@
 id: braze
 name: "Braze"
 apideck: false
-notes: "No downloadable spec found. REST API reference: https://www.braze.com/docs/api/home"
-specs: []
+notes: "Braze publishes one OpenAPI file per REST endpoint at https://www.braze.com/docs/assets/api/openapi/{name}.yaml (see https://www.braze.com/docs/api/using_openapi_specs/) with no index of file names; the files listed are those verified. Servers are per instance: rest.<instance>.braze.com, or .eu for EU instances."
+specs:
+  - name: "Export user profile by identifier"
+    url: "https://www.braze.com/docs/assets/api/openapi/users_export_ids.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://rest.iad-01.braze.com"
+  - name: "Identify users"
+    url: "https://www.braze.com/docs/assets/api/openapi/users_identify.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://rest.iad-01.braze.com"
+  - name: "Create new user alias"
+    url: "https://www.braze.com/docs/assets/api/openapi/users_alias_new.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://rest.iad-01.braze.com"
+  - name: "Update user alias"
+    url: "https://www.braze.com/docs/assets/api/openapi/users_alias_update.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://rest.iad-01.braze.com"
+  - name: "Merge users"
+    url: "https://www.braze.com/docs/assets/api/openapi/users_merge.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://rest.iad-01.braze.com"
+  - name: "Rename external ID"
+    url: "https://www.braze.com/docs/assets/api/openapi/users_external_ids_rename.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://rest.iad-01.braze.com"
+  - name: "Remove external ID"
+    url: "https://www.braze.com/docs/assets/api/openapi/users_external_ids_remove.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://rest.iad-01.braze.com"
+  - name: "Delete users"
+    url: "https://www.braze.com/docs/assets/api/openapi/users_delete.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://rest.iad-01.braze.com"
+  - name: "Export custom events list"
+    url: "https://www.braze.com/docs/assets/api/openapi/events_list.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://rest.iad-01.braze.com"
+  - name: "Export product IDs"
+    url: "https://www.braze.com/docs/assets/api/openapi/purchases_product_list.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://rest.iad-01.braze.com"

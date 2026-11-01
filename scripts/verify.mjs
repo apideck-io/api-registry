@@ -41,7 +41,7 @@ if (ONLY === "" || ONLY?.startsWith("--")) {
   process.exit(1);
 }
 
-const FORMATS = new Set(["openapi-3.0", "openapi-3.1", "swagger-2.0", "google-discovery", "asyncapi-2", "postman-2.1", "odata-edmx", "xsd", "graphql"]);
+const FORMATS = new Set(["openapi-3.0", "openapi-3.1", "swagger-2.0", "google-discovery", "asyncapi-2", "postman-2.0", "postman-2.1", "odata-edmx", "xsd", "graphql"]);
 const PROVENANCE = new Set(["vendor", "third-party", "community", "fork"]);
 const ID = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 // Some vendors wrap the spec: developer.sage.com serves its OpenAPI JSON inside a Markdown code fence.
@@ -184,6 +184,27 @@ const canonical = (v) =>
   Array.isArray(v) ? `[${v.map(canonical).join(",")}]`
   : v && typeof v === "object" ? `{${Object.keys(v).filter((k) => v[k] !== undefined).sort().map((k) => `${JSON.stringify(k)}:${canonical(v[k])}`).join(",")}}`
   : JSON.stringify(v);
+// Some vendors render "now" into their spec: a parameter's default is today's date (Hugging Face's
+// usage ranges), so every fetch differs. Those values are left out of the hash; the file is still
+// recorded as served.
+const ISO_TIMESTAMP = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2}(\.\d+)?)?(Z|[+-]\d{2}:?\d{2})?$/;
+// Cheap pre-check on the raw text, so only files that need it are parsed for hashing.
+const GENERATED_DATE_DEFAULT = /["']?default["']?\s*:\s*["']?\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/;
+const withoutGeneratedDates = (v) =>
+  Array.isArray(v) ? v.map(withoutGeneratedDates)
+  : v && typeof v === "object"
+    ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, k === "default" && typeof x === "string" && ISO_TIMESTAMP.test(x) ? "<generated date>" : withoutGeneratedDates(x)]))
+    : v;
+// The first value stored under `key` anywhere in a parsed JSON document (depth-first).
+function findKey(v, key) {
+  if (!v || typeof v !== "object") return undefined;
+  if (!Array.isArray(v) && Object.hasOwn(v, key)) return v[key];
+  for (const x of Object.values(v)) {
+    const found = findKey(x, key);
+    if (found !== undefined) return found;
+  }
+  return undefined;
+}
 // Minimal zip reader (central directory, stored or deflated entries); enough for a vendor's spec bundle.
 function unzip(buf) {
   let eocd = buf.length - 22;
@@ -355,12 +376,14 @@ function inspectDocument(format, body) {
     walk(doc.resources);
     return { operations: n, title: doc.title, apiVersion: doc.version, server: doc.rootUrl ? doc.rootUrl + (doc.servicePath ?? "") : null, doc };
   }
-  if (format === "postman-2.1") {
+  if (format === "postman-2.0" || format === "postman-2.1") {
     if (!doc.info || !Array.isArray(doc.item)) throw new Error("no info or item list");
     let n = 0;
     const walk = (items) => items?.forEach((it) => (it.request ? n++ : walk(it.item)));
     walk(doc.item);
-    return { operations: n, title: doc.info?.name };
+    // The collection names its schema version in info.schema (…/collection/v2.0.0/collection.json).
+    const schema = /\/v(\d+\.\d+\.\d+)\//.exec(String(doc.info.schema ?? ""))?.[1];
+    return { operations: n, title: doc.info?.name, ...(schema ? { specVersion: schema } : {}) };
   }
   if (format === "asyncapi-2") {
     if (!String(doc.asyncapi ?? "").startsWith("2")) throw new Error("no asyncapi 2.x root");
@@ -419,7 +442,14 @@ for (const e of entries) {
     if (r.body && s.extract === "redoc-state") {
       const at = r.body.search(/__redoc_state\s*=\s*\{/);
       try {
-        const spec = at >= 0 && JSON.parse(balancedObject(r.body, r.body.indexOf("{", at)))?.spec?.data;
+        // A Redoc page (window.__redoc_state = { spec: { data } }), or a Redocly portal's Gatsby page data
+        // (Drata), where the same store is a JSON string in a redocStoreStr field: { definition: { data } }.
+        const spec =
+          at >= 0
+            ? JSON.parse(balancedObject(r.body, r.body.indexOf("{", at)))?.spec?.data
+            : /^\s*\{/.test(r.body)
+              ? JSON.parse(findKey(JSON.parse(r.body), "redocStoreStr") ?? "null")?.definition?.data
+              : null;
         r.body = spec ? JSON.stringify(spec) : null;
         if (!spec) r.error = "no __redoc_state spec found";
       } catch (err) {
@@ -438,9 +468,68 @@ for (const e of entries) {
       }
     }
     if (r.body && s.extract === "markdown-json-fence") {
-      const m = r.body.match(/```json\s*\n([\s\S]*?)\n```/);
-      r.body = m ? m[1] : null;
-      if (!m) r.error = "no json fence found";
+      // One page may hold one OpenAPI document per endpoint (Adyntel): those with paths are merged into the
+      // first, so the entry covers the page. A page with a single fence is taken as it is.
+      const fences = [...r.body.matchAll(/```json\s*\n([\s\S]*?)\n```/g)].map((m) => m[1]);
+      const specFences = fences.filter((f) => {
+        try {
+          const d = JSON.parse(f);
+          return Boolean((d?.openapi || d?.swagger) && d.paths && Object.keys(d.paths).length);
+        } catch {
+          return false;
+        }
+      });
+      const docs = specFences.map((f) => JSON.parse(f));
+      // A fence holding only shared components (no paths) is merged too, so $refs into it resolve.
+      // A fence holding only shared components (an OpenAPI root, no paths) is merged too, so $refs into it resolve.
+      const componentDocs = fences
+        .filter((f) => !specFences.includes(f))
+        .map((f) => { try { return JSON.parse(f); } catch { return null; } })
+        .filter((d) => (d?.openapi || d?.swagger) && d.components && !Object.keys(d.paths ?? {}).length);
+      const conflicts = [];
+      if (docs.length > 1 || (docs.length === 1 && componentDocs.length)) {
+        // Merged only where nothing can be lost: the documents agree on version, servers and security, a path
+        // appears in one document (or identically in several), and a component name means one thing.
+        // Anything else fails the spec rather than publishing a merge that misdescribes an endpoint.
+        const [first, ...rest] = docs;
+        // Servers and security apply to operations, so only the documents with paths must agree on them.
+        const same = (k, ds) => new Set(ds.map((d) => canonical(d[k] ?? null))).size === 1;
+        for (const k of ["openapi", "swagger"]) if (!same(k, [...docs, ...componentDocs])) conflicts.push(`top-level ${k}`);
+        for (const k of ["servers", "security"]) if (!same(k, docs)) conflicts.push(`top-level ${k}`);
+        const METHODS = new Set(["get", "put", "post", "delete", "options", "head", "patch", "trace", "query"]);
+        const rest_ = (item) => Object.fromEntries(Object.entries(item ?? {}).filter(([m]) => !METHODS.has(m)));
+        for (const d of rest) for (const t of d.tags ?? []) if (!(first.tags ??= []).some((x) => x.name === t.name)) first.tags.push(t);
+        for (const d of [...rest, ...componentDocs]) {
+          for (const [k, v] of Object.entries(d.paths ?? {})) {
+            // One path in two documents (GET in one, POST in another): merged method by method when the
+            // rest of the path item (parameters, servers, $ref, extensions) is identical.
+            const have = first.paths[k];
+            if (have === undefined) first.paths[k] = v;
+            else if (canonical(rest_(have)) !== canonical(rest_(v))) conflicts.push(`path ${k}`);
+            else
+              for (const [m, op] of Object.entries(v ?? {})) {
+                if (!METHODS.has(m)) continue;
+                if (have[m] === undefined) have[m] = op;
+                else if (canonical(have[m]) !== canonical(op)) conflicts.push(`${m} ${k}`);
+              }
+          }
+          for (const [kind, defs] of Object.entries(d.components ?? {})) {
+            first.components ??= {};
+            first.components[kind] ??= {};
+            for (const [name, def] of Object.entries(defs ?? {})) {
+              const have = first.components[kind][name];
+              if (have === undefined) first.components[kind][name] = def;
+              else if (canonical(have) !== canonical(def)) conflicts.push(`${kind}.${name}`);
+            }
+          }
+        }
+        r.body = JSON.stringify(first);
+        if (conflicts.length) {
+          r.body = null;
+          r.error = `fences define ${conflicts.slice(0, 3).join(", ")} differently`;
+        }
+      } else r.body = specFences[0] ?? fences[0] ?? null; // one document: its own text, byte for byte
+      if (!fences.length) r.error = "no json fence found";
     }
     let bundle = null;
     if (r.bytes) {
@@ -534,7 +623,7 @@ for (const e of entries) {
     if (s.server && info.server && info.server !== s.server) info.specServer = info.server;
     // The entry's format must match the document: a 3.1 spec declared openapi-3.0 picks the wrong parser downstream.
     // openapi-3.1 also covers 3.2, a backwards-compatible minor version (Shopware publishes 3.2).
-    const accepts = { "openapi-3.0": ["3.0"], "openapi-3.1": ["3.1", "3.2"], "swagger-2.0": ["2.0"] }[s.format];
+    const accepts = { "openapi-3.0": ["3.0"], "openapi-3.1": ["3.1", "3.2"], "swagger-2.0": ["2.0"], "postman-2.0": ["2.0"], "postman-2.1": ["2.1"] }[s.format];
     const versions = info.specVersions ?? (info.specVersion ? [info.specVersion] : []);
     const wrong = versions.filter((ver) => !accepts?.some((v) => String(ver).startsWith(v)));
     if (accepts && wrong.length) info.formatMismatch = `declared ${s.format}, the spec says ${wrong.join(", ")}`;
@@ -542,11 +631,24 @@ for (const e of entries) {
     if (s.server) info.server = s.server;
     // A rebuilt zip changes its bytes (timestamps, compression) without any spec changing, so a bundle
     // is hashed on its files' names and contents.
+    // A spec carrying a generated date (see withoutGeneratedDates) is hashed on a parsed, key-sorted copy;
+    // every other file on its exact bytes, as before.
+    const generatedDates = !doc && !bundle && OVERLAY_FORMATS.has(s.format) && GENERATED_DATE_DEFAULT.test(r.body);
+    let parsedForHash = null;
+    if (generatedDates) {
+      try {
+        parsedForHash = /^\s*[{[]/.test(r.body) ? JSON.parse(r.body) : parseYaml(r.body, { maxAliasCount: 10000 });
+      } catch {
+        parsedForHash = null; // unparseable here: fall back to the raw bytes
+      }
+    }
     const hashed = doc
-      ? canonical({ ...doc, etag: undefined, revision: undefined })
+      ? canonical(withoutGeneratedDates({ ...doc, etag: undefined, revision: undefined }))
       : bundle
         ? canonical([...bundle].sort((a, b) => a.name.localeCompare(b.name)).map((f) => [f.name.replace(/^.*\//, ""), f.text]))
-        : r.body;
+        : parsedForHash
+          ? canonical(withoutGeneratedDates(parsedForHash))
+          : r.body;
     const sha256 = createHash("sha256").update(hashed).digest("hex");
     const changed = old.sha256 && old.sha256 !== sha256;
     // An overlay is applied to the fetched spec on every run. Its actions whose target no longer matches

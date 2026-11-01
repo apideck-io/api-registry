@@ -7,4 +7,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://api.baserow.io"
-    notes: "Paths start with /api. Self-hosted instances serve the same schema at https://{instance}/api/schema.json."
+    notes: "Paths start with /api, except five /assistant/... paths. Self-hosted instances serve the same schema at https://{instance}/api/schema.json."

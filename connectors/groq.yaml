@@ -1,5 +1,5 @@
 id: groq
 name: "Groq"
 apideck: false
-notes: "console.groq.com llms.txt and API reference checked; the spec is only embedded in the rendered page, and the SDK .stats.yml files carry no spec URL."
+notes: "The OpenAPI document is embedded only in the rendered API reference page (console.groq.com/docs/api-reference, inside Next.js page data); no raw URL is served and no supported extract applies. The .md version of the page carries no spec."
 specs: []

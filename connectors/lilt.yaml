@@ -1,5 +1,10 @@
 id: lilt
 name: "Lilt"
 apideck: false
-notes: "Checked lilt.com/docs/api, support.lilt.com and web search; no vendor spec file found."
-specs: []
+specs:
+  - name: "LILT API"
+    url: "https://support.lilt.com/api-reference/openapi-bundled.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.lilt.com"
+    notes: "Paths already include the /v2 prefix."

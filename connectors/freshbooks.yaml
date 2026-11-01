@@ -4,6 +4,6 @@ notes: "FreshBooks publishes a Postman collection only, linked from freshbooks.c
 specs:
   - name: "FreshBooks API Postman collection"
     url: "https://documenter.gw.postman.com/api/collections/3322108/S1ERwwza?segregateAuth=true&versionTag=latest"
-    format: postman-2.1
+    format: postman-2.0
     provenance: vendor
     server: "https://api.freshbooks.com"

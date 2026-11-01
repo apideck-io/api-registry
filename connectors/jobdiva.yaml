@@ -1,5 +1,11 @@
 id: jobdiva
 name: "JobDiva"
 apideck: false
-notes: "JobDiva publishes Swagger UI at api.jobdiva.com, but the Swagger UI and spec URLs return HTTP 401 without credentials, so no spec could be fetched."
-specs: []
+specs:
+  - name: "JobDiva API (Swagger)"
+    url: "https://api.jobdiva.com/v3/api-docs"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.jobdiva.com"
+    manual: login
+    notes: "Requires credentials to fetch; OpenAPI version not verified (v3/api-docs path suggests springdoc OpenAPI 3)."

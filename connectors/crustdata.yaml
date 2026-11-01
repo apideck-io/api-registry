@@ -1,5 +1,60 @@
 id: crustdata
 name: "Crustdata"
 apideck: false
-notes: "Crustdata lists OpenAPI YAML specs (account, batch, company, job, person, social_post, watch, web) under docs.crustdata.com/openapi-specs/2025-11-01/, but fetching them redirects to a login page."
-specs: []
+specs:
+  - name: "Crustdata account API (2025-11-01)"
+    url: "https://docs.crustdata.com/openapi-specs/2025-11-01/account.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.crustdata.com"
+    manual: login
+    notes: "Requires a Crustdata login to fetch; OpenAPI version and server not verified."
+  - name: "Crustdata batch API (2025-11-01)"
+    url: "https://docs.crustdata.com/openapi-specs/2025-11-01/batch.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.crustdata.com"
+    manual: login
+    notes: "Requires a Crustdata login to fetch; OpenAPI version and server not verified."
+  - name: "Crustdata company API (2025-11-01)"
+    url: "https://docs.crustdata.com/openapi-specs/2025-11-01/company.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.crustdata.com"
+    manual: login
+    notes: "Requires a Crustdata login to fetch; OpenAPI version and server not verified."
+  - name: "Crustdata job API (2025-11-01)"
+    url: "https://docs.crustdata.com/openapi-specs/2025-11-01/job.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.crustdata.com"
+    manual: login
+    notes: "Requires a Crustdata login to fetch; OpenAPI version and server not verified."
+  - name: "Crustdata person API (2025-11-01)"
+    url: "https://docs.crustdata.com/openapi-specs/2025-11-01/person.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.crustdata.com"
+    manual: login
+    notes: "Requires a Crustdata login to fetch; OpenAPI version and server not verified."
+  - name: "Crustdata social post API (2025-11-01)"
+    url: "https://docs.crustdata.com/openapi-specs/2025-11-01/social_post.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.crustdata.com"
+    manual: login
+    notes: "Requires a Crustdata login to fetch; OpenAPI version and server not verified."
+  - name: "Crustdata watch API (2025-11-01)"
+    url: "https://docs.crustdata.com/openapi-specs/2025-11-01/watch.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.crustdata.com"
+    manual: login
+    notes: "Requires a Crustdata login to fetch; OpenAPI version and server not verified."
+  - name: "Crustdata web API (2025-11-01)"
+    url: "https://docs.crustdata.com/openapi-specs/2025-11-01/web.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.crustdata.com"
+    manual: login
+    notes: "Requires a Crustdata login to fetch; OpenAPI version and server not verified."

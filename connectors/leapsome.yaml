@@ -1,5 +1,10 @@
 id: leapsome
 name: "Leapsome"
 apideck: false
-notes: "api.leapsome.com/v1/api-docs/ serves Swagger UI whose spec is embedded in swagger-ui-init.js; no standalone spec file URL (swagger.json, openapi.json) responds."
-specs: []
+specs:
+  - name: "Leapsome API"
+    url: "https://api.leapsome.com/v1/api-docs/swagger-ui-init.js"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.leapsome.com/v1"
+    extract: swagger-ui-init

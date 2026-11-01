@@ -33,3 +33,48 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://manage.g.alchemy.com"
+  - name: "Alchemy Aptos API"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/aptos/aptos.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://aptos-mainnet.g.alchemy.com/v2/{apiKey}"
+  - name: "Alchemy Ethereum Beacon API"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/eth-beacon/eth-beacon.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://eth-mainnetbeacon.g.alchemy.com/v2/{apiKey}"
+  - name: "Alchemy HyperCore API"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/hypercore/hypercore.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.g.alchemy.com/hypercore/v1"
+  - name: "Alchemy Tron HTTP API"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/tron-http/tron-http.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://tron-mainnet.g.alchemy.com/v2/{apiKey}"
+  - name: "Alchemy Tron Solidity HTTP API"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/tron-solidity-http/tron-solidity-http.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://tron-mainnet.g.alchemy.com/v2/{apiKey}"
+  - name: "Alchemy UTXO API (Bitcoin)"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/utxo/utxo.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{network}.g.alchemy.com/v2"
+  - name: "Alchemy UTXO API (Bitcoin Cash)"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/utxo-bitcoincash/utxo-bitcoincash.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{network}.g.alchemy.com/v2"
+  - name: "Alchemy UTXO API (Dogecoin)"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/utxo-dogecoin/utxo-dogecoin.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{network}.g.alchemy.com/v2"
+  - name: "Alchemy UTXO API (Litecoin)"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/utxo-litecoin/utxo-litecoin.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{network}.g.alchemy.com/v2"

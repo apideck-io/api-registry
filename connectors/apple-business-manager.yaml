@@ -1,5 +1,5 @@
 id: apple-business-manager
 name: "Apple Business Manager"
 apideck: false
-notes: "Apple's documentation page for the OpenAPI Specification (business.apple.com/docs/api/v1/oas/coming_soon) states it is coming soon."
+notes: "Apple's OpenAPI download page (business.apple.com/docs/api/v1/oas/coming_soon) returns 404 and no downloadable spec is linked from business.apple.com or the developer.apple.com API documentation."
 specs: []

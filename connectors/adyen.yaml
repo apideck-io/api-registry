@@ -1,7 +1,7 @@
 id: adyen
 name: "Adyen"
 apideck: false
-notes: "The vendor's GitHub repo Adyen/adyen-openapi holds about 150 versioned definitions (json/ and yaml/ folders), including webhooks and older API versions; the core current ones are listed. Spec servers are the test environment; live endpoints differ per account."
+notes: "The vendor's GitHub repo Adyen/adyen-openapi holds about 150 versioned definitions (json/ and yaml/ folders), including webhooks and older API versions; the main ones are listed, with lifecycle notes where the vendor marks one deprecated or legacy. Spec servers are the test environment; live endpoints differ per account."
 specs:
   - name: "Checkout API v72"
     url: "https://raw.githubusercontent.com/Adyen/adyen-openapi/main/json/CheckoutService-v72.json"
@@ -38,13 +38,13 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://pal-test.adyen.com/pal/servlet/Payout/v68"
-    notes: "Paths are relative to the server URL, which includes the version."
+    notes: "Deprecated by the vendor: new integrations pay out through the Transfers API. Paths are relative to the server URL, which includes the version."
   - name: "Recurring API v68"
     url: "https://raw.githubusercontent.com/Adyen/adyen-openapi/main/json/RecurringService-v68.json"
     format: openapi-3.1
     provenance: vendor
     server: "https://pal-test.adyen.com/pal/servlet/Recurring/v68"
-    notes: "Paths are relative to the server URL, which includes the version."
+    notes: "Legacy: the vendor recommends tokenization through the Checkout API (/storedPaymentMethods) instead. Paths are relative to the server URL, which includes the version."
   - name: "Disputes API v30"
     url: "https://raw.githubusercontent.com/Adyen/adyen-openapi/main/json/DisputeService-v30.json"
     format: openapi-3.1

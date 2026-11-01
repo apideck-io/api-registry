@@ -6,4 +6,5 @@ specs:
     url: "https://raw.githubusercontent.com/grafana/grafana/main/public/openapi3.json"
     format: openapi-3.0
     provenance: vendor
-    server: "https://{grafana-host}/api"
+    server: "{scheme}://{grafana-host}:{port}/api"
+    notes: "Self-hosted Grafana defaults to http on port 3000; Grafana Cloud stacks use https://{stack}.grafana.net/api."

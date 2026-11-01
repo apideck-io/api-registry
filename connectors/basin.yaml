@@ -1,5 +1,9 @@
 id: basin
 name: "Basin"
 apideck: false
-notes: "Docs (docs.usebasin.com) reference a Swagger-hosted API reference but no spec URL was found in the page or common paths."
-specs: []
+specs:
+  - name: "Basin API V1"
+    url: "https://usebasin.com/api_docs/v1/swagger.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://usebasin.com"
