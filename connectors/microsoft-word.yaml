@@ -1,0 +1,10 @@
+id: microsoft-word
+name: "Microsoft Word"
+apideck: false
+notes: "Part of Microsoft Graph; Word files are accessed as drive items via /me/drive/items."
+specs:
+  - name: "OData Service for namespace microsoft.graph"
+    url: "https://raw.githubusercontent.com/microsoftgraph/msgraph-metadata/master/openapi/v1.0/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://graph.microsoft.com/v1.0"

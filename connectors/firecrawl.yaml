@@ -1,0 +1,14 @@
+id: firecrawl
+name: "Firecrawl"
+apideck: false
+specs:
+  - name: "Firecrawl API v2"
+    url: "https://docs.firecrawl.dev/api-reference/v2-openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.firecrawl.dev/v2"
+  - name: "Firecrawl API v1"
+    url: "https://docs.firecrawl.dev/api-reference/v1-openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.firecrawl.dev/v1"

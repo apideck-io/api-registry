@@ -1,0 +1,40 @@
+id: paypal
+name: "PayPal"
+apideck: false
+notes: "PayPal publishes one spec per API (github.com/paypal/paypal-rest-api-specifications); the core ones are listed."
+specs:
+  - name: "Orders v2"
+    url: "https://raw.githubusercontent.com/paypal/paypal-rest-api-specifications/main/openapi/checkout_orders_v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api-m.paypal.com"
+  - name: "Payments v2"
+    url: "https://raw.githubusercontent.com/paypal/paypal-rest-api-specifications/main/openapi/payments_payment_v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api-m.paypal.com"
+  - name: "Subscriptions v1"
+    url: "https://raw.githubusercontent.com/paypal/paypal-rest-api-specifications/main/openapi/billing_subscriptions_v1.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api-m.paypal.com"
+  - name: "Invoices v2"
+    url: "https://raw.githubusercontent.com/paypal/paypal-rest-api-specifications/main/openapi/invoicing_v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api-m.paypal.com"
+  - name: "Catalog Products v1"
+    url: "https://raw.githubusercontent.com/paypal/paypal-rest-api-specifications/main/openapi/catalogs_products_v1.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api-m.paypal.com"
+  - name: "Payouts v1"
+    url: "https://raw.githubusercontent.com/paypal/paypal-rest-api-specifications/main/openapi/payments_payouts_batch_v1.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api-m.paypal.com"
+  - name: "Disputes v1"
+    url: "https://raw.githubusercontent.com/paypal/paypal-rest-api-specifications/main/openapi/customer_disputes_v1.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api-m.paypal.com"

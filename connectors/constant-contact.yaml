@@ -1,0 +1,5 @@
+id: constant-contact
+name: "Constant Contact"
+apideck: false
+notes: "No downloadable spec found. API v3 reference: https://developer.constantcontact.com/api_reference/index.html"
+specs: []

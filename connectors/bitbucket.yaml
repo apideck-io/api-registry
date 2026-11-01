@@ -1,0 +1,9 @@
+id: bitbucket
+name: "Bitbucket"
+apideck: false
+specs:
+  - name: "Bitbucket Cloud REST API"
+    url: "https://api.bitbucket.org/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.bitbucket.org/2.0"

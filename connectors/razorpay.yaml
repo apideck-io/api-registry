@@ -1,0 +1,5 @@
+id: razorpay
+name: "Razorpay"
+apideck: false
+notes: "No spec file on Razorpay's own domain or GitHub org. The API reference (https://razorpay.com/docs/api/) links Razorpay's Postman public workspace with the API collections."
+specs: []

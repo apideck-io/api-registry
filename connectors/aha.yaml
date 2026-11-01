@@ -1,0 +1,9 @@
+id: aha
+name: "Aha!"
+apideck: false
+specs:
+  - name: "Aha! API v1"
+    url: "https://www.aha.io/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{account-domain}.aha.io/api/v1"

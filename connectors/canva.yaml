@@ -1,0 +1,9 @@
+id: canva
+name: "Canva"
+apideck: false
+specs:
+  - name: "Canva Connect API"
+    url: "https://www.canva.dev/sources/connect/api/latest/api.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.canva.com/rest"

@@ -1,0 +1,9 @@
+id: cal-com
+name: "Cal.com"
+apideck: false
+specs:
+  - name: "Cal.com API v2"
+    url: "https://cal.com/docs/api-reference/v2/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.cal.com"

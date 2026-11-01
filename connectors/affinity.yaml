@@ -1,0 +1,9 @@
+id: affinity
+name: "Affinity"
+apideck: false
+specs:
+  - name: "Affinity API"
+    url: "https://developer.affinity.co/api-reference/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.affinity.co"

@@ -1,0 +1,5 @@
+id: surveymonkey
+name: "SurveyMonkey"
+apideck: false
+notes: "No published spec. API docs: https://developer.surveymonkey.com/api/v3/"
+specs: []

@@ -1,0 +1,9 @@
+id: vercel
+name: "Vercel"
+apideck: false
+specs:
+  - name: "Vercel REST API"
+    url: "https://openapi.vercel.sh/"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.vercel.com"

@@ -4,12 +4,12 @@ apideck: false
 specs:
   - name: "Customer.io Track API"
     url: "https://docs.customer.io/files/journeys-track.json"
-    format: openapi-3.0
+    format: openapi-3.1
     provenance: vendor
     server: "https://track.customer.io"
   - name: "Customer.io App API"
     url: "https://docs.customer.io/files/journeys-app.json"
-    format: openapi-3.0
+    format: openapi-3.1
     provenance: vendor
     server: "https://api.customer.io"
     notes: "EU region hosts: track-eu.customer.io and api-eu.customer.io."

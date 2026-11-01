@@ -1,0 +1,5 @@
+id: egnyte
+name: "Egnyte"
+apideck: false
+notes: "No published spec found. API docs: https://developers.egnyte.com/docs"
+specs: []

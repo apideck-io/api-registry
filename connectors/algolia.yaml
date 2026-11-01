@@ -1,0 +1,35 @@
+id: algolia
+name: "Algolia"
+apideck: false
+notes: "Algolia publishes one spec per API (github.com/algolia/api-clients-automation, specs/bundled); the core ones are listed."
+specs:
+  - name: "Search API"
+    url: "https://raw.githubusercontent.com/algolia/api-clients-automation/main/specs/bundled/search.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{appId}.algolia.net"
+  - name: "Analytics API"
+    url: "https://raw.githubusercontent.com/algolia/api-clients-automation/main/specs/bundled/analytics.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://analytics.{region}.algolia.com"
+  - name: "Recommend API"
+    url: "https://raw.githubusercontent.com/algolia/api-clients-automation/main/specs/bundled/recommend.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{appId}.algolia.net"
+  - name: "Ingestion API"
+    url: "https://raw.githubusercontent.com/algolia/api-clients-automation/main/specs/bundled/ingestion.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://data.{region}.algolia.com"
+  - name: "Query Suggestions API"
+    url: "https://raw.githubusercontent.com/algolia/api-clients-automation/main/specs/bundled/query-suggestions.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://query-suggestions.{region}.algolia.com"
+  - name: "A/B Testing API"
+    url: "https://raw.githubusercontent.com/algolia/api-clients-automation/main/specs/bundled/abtesting.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://analytics.{region}.algolia.com"

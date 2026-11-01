@@ -1,0 +1,5 @@
+id: harvest
+name: "Harvest"
+apideck: false
+notes: "No published spec. REST API reference: https://help.getharvest.com/api-v2/"
+specs: []

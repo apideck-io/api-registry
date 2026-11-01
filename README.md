@@ -1,6 +1,6 @@
 # API registry
 
-Machine-readable API specifications for the apps [Apideck](https://www.apideck.com) connects to: OpenAPI, Swagger, Google Discovery, AsyncAPI, OData, XSD, GraphQL and Postman. One entry per app, each spec verified every night.
+Machine-readable API specifications for the apps [Apideck](https://www.apideck.com) connects to, and for widely used apps it doesn't connect yet: OpenAPI, Swagger, Google Discovery, AsyncAPI, OData, XSD, GraphQL and Postman. One entry per app, each spec verified every night.
 
 The registry stores **links, not copies**. Most vendor specs carry licences that don't allow redistribution, so an entry points at the vendor's own published file. The only specs stored here are ones authored in this repo.
 
@@ -24,7 +24,7 @@ name: "Xero"
 specs:
   - name: "Xero Accounting API"
     url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero_accounting.yaml"
-    format: openapi-3.0       # openapi-3.0 | openapi-3.1 | swagger-2.0 | google-discovery | asyncapi-2 | postman-2.1 | odata-edmx | xsd | graphql
+    format: openapi-3.0       # openapi-3.0 | openapi-3.1 (also 3.2) | swagger-2.0 | google-discovery | asyncapi-2 | postman-2.1 | odata-edmx | xsd | graphql
     provenance: vendor        # vendor | third-party | community | fork
     server: "https://api.xero.com/api.xro/2.0"
     license: "MIT"            # optional; as the vendor states it
@@ -40,7 +40,7 @@ Two optional fields cover vendors that don't serve a plain file:
   - `graphql-introspection`: no SDL file, but the endpoint answers an anonymous introspection query (Wave, Access Financials)
 - `manual: login | bot-protection` records a spec CI can't fetch (it needs `notes` on how to get it).
 
-The registry covers apps beyond Apideck's catalog: the ones the agent-tool vendors cover too, so there's one place to find any app's spec. Those entries carry `apideck: false`; everything else about them is the same.
+The registry also covers widely used apps Apideck doesn't connect yet, so there's one place to find any app's spec. Those entries carry `apideck: false`; everything else about them is the same.
 
 An app whose vendor publishes no spec still gets an entry with `specs: []` and a `notes` line saying what exists instead. That records that we looked.
 
@@ -59,6 +59,10 @@ An app whose vendor publishes no spec still gets an entry with `specs: []` and a
   - A zip bundle sums its files and adds `files`.
 - `title`, `apiVersion`, `specVersion` and `server`
 - `changedOn`: the last date the file's hash changed
+- `formatMismatch`: set when the entry's `format` disagrees with the spec's own version
+- `specIssues`: set when an OpenAPI or Swagger file lacks a required field (`info.title`, `info.version`); the spec is still indexed
+
+The nightly pull request flags both with ⚠.
 
 ## GraphQL schemas
 

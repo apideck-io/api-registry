@@ -1,0 +1,5 @@
+id: loom
+name: "Loom"
+apideck: false
+notes: "No published REST API spec. Loom offers SDKs: https://developers.loom.com/"
+specs: []

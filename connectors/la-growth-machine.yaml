@@ -1,0 +1,9 @@
+id: la-growth-machine
+name: "La Growth Machine"
+apideck: false
+specs:
+  - name: "La Growth Machine API"
+    url: "https://developers.lagrowthmachine.com/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apiv2.lagrowthmachine.com/flow"

@@ -1,0 +1,9 @@
+id: vimeo
+name: "Vimeo"
+apideck: false
+specs:
+  - name: "Vimeo API"
+    url: "https://raw.githubusercontent.com/vimeo/openapi/master/api.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.vimeo.com"

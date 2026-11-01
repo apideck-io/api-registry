@@ -1,0 +1,22 @@
+id: lokalise
+name: "Lokalise"
+apideck: false
+specs:
+  - name: "Lokalise API v2 (default projects)"
+    url: "https://developers.lokalise.com/openapi/lokalise-api-without-branches.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.lokalise.com/api2"
+  - name: "Lokalise API v2 (projects with branches)"
+    url: "https://developers.lokalise.com/openapi/lokalise-api-with-branches.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.lokalise.com/api2"
+  - name: "Lokalise Vantage API"
+    url: "https://developers.lokalise.com/openapi/lokalise-vantage-api.yml"
+    format: openapi-3.1
+    provenance: vendor
+  - name: "Lokalise OTA API"
+    url: "https://developers.lokalise.com/openapi/ota-2.json"
+    format: openapi-3.0
+    provenance: vendor

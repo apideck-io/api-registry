@@ -1,0 +1,9 @@
+id: dropbox-sign
+name: "Dropbox Sign"
+apideck: false
+specs:
+  - name: "Dropbox Sign API"
+    url: "https://raw.githubusercontent.com/hellosign/hellosign-openapi/main/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.hellosign.com/v3"

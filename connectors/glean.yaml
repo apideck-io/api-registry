@@ -1,0 +1,14 @@
+id: glean
+name: "Glean"
+apideck: false
+specs:
+  - name: "Glean Client API"
+    url: "https://raw.githubusercontent.com/gleanwork/open-api/main/generated_specs/client_rest.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{instance}-be.glean.com"
+  - name: "Glean Indexing API"
+    url: "https://raw.githubusercontent.com/gleanwork/open-api/main/generated_specs/indexing.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{instance}-be.glean.com"

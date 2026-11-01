@@ -1,0 +1,9 @@
+id: mongodb-atlas
+name: "MongoDB Atlas"
+apideck: false
+specs:
+  - name: "Atlas Administration API v2"
+    url: "https://raw.githubusercontent.com/mongodb/atlas-sdk-go/main/openapi/atlas-api-transformed.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://cloud.mongodb.com"

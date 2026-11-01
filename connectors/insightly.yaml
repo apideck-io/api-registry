@@ -1,0 +1,5 @@
+id: insightly
+name: "Insightly"
+apideck: false
+notes: "No published spec found. API docs: https://api.insightly.com/v3.1/Help"
+specs: []

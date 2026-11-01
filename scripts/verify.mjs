@@ -370,13 +370,28 @@ function inspectDocument(format, body) {
   }
   if (format === "swagger-2.0" && String(doc.swagger) !== "2.0") throw new Error("no swagger: 2.0 root");
   if (format.startsWith("openapi-") && !String(doc.openapi ?? "").startsWith("3")) throw new Error("no openapi 3.x root");
-  // OpenAPI 3.1 allows a document with only webhooks or components; earlier versions require paths.
-  const pathsOptional = String(doc.openapi ?? "").startsWith("3.1") && (doc.webhooks || doc.components);
+  // OpenAPI 3.1 and later allow a document with only webhooks or components; earlier versions require paths.
+  const isMap = (v) => Boolean(v) && typeof v === "object" && !Array.isArray(v);
+  const pathsOptional = /^3\.[1-9]/.test(String(doc.openapi ?? "")) && (isMap(doc.webhooks) || isMap(doc.components));
   if ((!doc.paths || typeof doc.paths !== "object") && !pathsOptional) throw new Error("no paths");
   let n = 0;
-  for (const item of Object.values(doc.paths ?? {})) for (const m of METHODS) if (item?.[m]) n++;
+  // OpenAPI 3.2 adds the query method and additionalOperations (custom HTTP methods) on a path item.
+  for (const item of Object.values(doc.paths ?? {})) {
+    for (const m of [...METHODS, "query"]) if (item?.[m]) n++;
+    if (item?.additionalOperations && typeof item.additionalOperations === "object") n += Object.keys(item.additionalOperations).length;
+  }
   const server = doc.servers?.[0]?.url ?? (doc.host ? `${doc.schemes?.[0] ?? "https"}://${doc.host}${doc.basePath ?? ""}` : null);
-  return { operations: n, title: doc.info?.title, apiVersion: doc.info?.version, specVersion: doc.openapi ?? doc.swagger, server };
+  // OpenAPI and Swagger require info.title and info.version. A vendor file without them still describes its
+  // operations, so it's kept, and the gap is recorded and flagged in the nightly PR.
+  // Both must be non-empty strings (a JSON number such as version: 1 is not a valid info.version).
+  const problem = (k) => {
+    const v = doc.info?.[k];
+    if (v === undefined || v === null || v === "") return `no info.${k}`;
+    if (typeof v !== "string") return `info.${k} is a ${typeof v}, not a string`;
+    return v.trim() ? null : `info.${k} is blank`;
+  };
+  const issues = ["title", "version"].map(problem).filter(Boolean);
+  return { operations: n, title: doc.info?.title, apiVersion: doc.info?.version, specVersion: doc.openapi ?? doc.swagger, server, ...(issues.length ? { specIssues: issues.join(", ") } : {}) };
 }
 
 for (const e of entries) if (!ONLY || e.id === ONLY) for (const s of e.specs) if (!s.manual) uses.set(keyOf(s), (uses.get(keyOf(s)) ?? 0) + 1);
@@ -474,6 +489,15 @@ for (const e of entries) {
           title: s.name,
           apiVersion: versions.length === 1 ? versions[0] : versions.join(", ") || null,
           specVersion: parts[0]?.specVersion,
+          // Every module's version, so the format check covers all of them, not just the first.
+          specVersions: [...new Set(parts.map((x) => x.specVersion).filter(Boolean))],
+          // Missing required fields in any module, so the nightly PR flags them for bundles too.
+          ...(parts.some((x) => x.specIssues)
+            ? (() => {
+                const issues = parts.map((x, i) => (x.specIssues ? `${specFiles[i].name.replace(/^[^/]*\//, "")}: ${x.specIssues}` : null)).filter(Boolean);
+                return { specIssues: `${issues.length} of ${parts.length} modules: ${issues.slice(0, 10).join("; ")}${issues.length > 10 ? "; …" : ""}` };
+              })()
+            : {}),
           server: parts.find((x) => x.server)?.server,
         };
       } else info = inspect(s.format, r.body);
@@ -507,6 +531,13 @@ for (const e of entries) {
     // The entry's server is set by hand and wins; specs often carry placeholders (DefaultParameterValue,
     // {baseUrl}). The spec's own value is kept as specServer when they differ.
     if (s.server && info.server && info.server !== s.server) info.specServer = info.server;
+    // The entry's format must match the document: a 3.1 spec declared openapi-3.0 picks the wrong parser downstream.
+    // openapi-3.1 also covers 3.2, a backwards-compatible minor version (Shopware publishes 3.2).
+    const accepts = { "openapi-3.0": ["3.0"], "openapi-3.1": ["3.1", "3.2"], "swagger-2.0": ["2.0"] }[s.format];
+    const versions = info.specVersions ?? (info.specVersion ? [info.specVersion] : []);
+    const wrong = versions.filter((ver) => !accepts?.some((v) => String(ver).startsWith(v)));
+    if (accepts && wrong.length) info.formatMismatch = `declared ${s.format}, the spec says ${wrong.join(", ")}`;
+    delete info.specVersions;
     if (s.server) info.server = s.server;
     // A rebuilt zip changes its bytes (timestamps, compression) without any spec changing, so a bundle
     // is hashed on its files' names and contents.
@@ -565,7 +596,9 @@ for (const e of entries) {
       : [overlay?.unmatched?.length && `${overlay.unmatched.length} action(s) match nothing`, overlay?.redundant?.length && `${overlay.redundant.length} action(s) change nothing`].filter(Boolean);
     const stale =
       (problems.length ? ` ⚠ overlay: ${problems.join("; ")}` : "") +
-      (info.derivedError ? ` ⚠ SDL not parseable by graphql-js (${info.derivedError})${info.derived ? "; kept the last introspection result" : ""}` : "");
+      (info.derivedError ? ` ⚠ SDL not parseable by graphql-js (${info.derivedError})${info.derived ? "; kept the last introspection result" : ""}` : "") +
+      (info.formatMismatch ? ` ⚠ format: ${info.formatMismatch}` : "") +
+      (info.specIssues ? ` ⚠ spec: ${info.specIssues}` : "");
     console.log(`${mark} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations${stale}`);
   }
   out.connectors[e.id] = { name: e.name, ...(e.apideck === false ? { apideck: false } : {}), specs };

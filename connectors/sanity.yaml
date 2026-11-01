@@ -1,0 +1,40 @@
+id: sanity
+name: "Sanity"
+apideck: false
+notes: "Sanity publishes about 20 HTTP API specs; the core ones are listed."
+specs:
+  - name: "Query API"
+    url: "https://www.sanity.io/docs/http-reference/query.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{projectId}.api.sanity.io/{apiVersion}"
+  - name: "Mutation API"
+    url: "https://www.sanity.io/docs/http-reference/mutation.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{projectId}.api.sanity.io/{apiVersion}"
+  - name: "Actions API"
+    url: "https://www.sanity.io/docs/http-reference/actions.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{projectId}.api.sanity.io/{apiVersion}"
+  - name: "Doc API"
+    url: "https://www.sanity.io/docs/http-reference/doc.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{projectId}.api.sanity.io/{apiVersion}"
+  - name: "Assets API"
+    url: "https://www.sanity.io/docs/http-reference/assets.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{projectId}.api.sanity.io/{apiVersion}/assets"
+  - name: "Export API"
+    url: "https://www.sanity.io/docs/http-reference/export.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{projectId}.api.sanity.io/{apiVersion}"
+  - name: "Listen API"
+    url: "https://www.sanity.io/docs/http-reference/listen.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{projectId}.api.sanity.io/{apiVersion}"

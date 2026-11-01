@@ -1,0 +1,9 @@
+id: google-search-console
+name: "Google Search Console"
+apideck: false
+specs:
+  - name: "Search Console API v1"
+    url: "https://searchconsole.googleapis.com/$discovery/rest?version=v1"
+    format: google-discovery
+    provenance: vendor
+    server: "https://searchconsole.googleapis.com"

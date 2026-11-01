@@ -1,0 +1,9 @@
+id: elevenlabs
+name: "ElevenLabs"
+apideck: false
+specs:
+  - name: "ElevenLabs API"
+    url: "https://api.elevenlabs.io/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.elevenlabs.io"

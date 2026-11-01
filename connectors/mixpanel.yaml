@@ -40,12 +40,12 @@ specs:
     server: "https://mixpanel.com/api/app"
   - name: "Mixpanel Feature Flags API"
     url: "https://docs.mixpanel.com/openapi/feature-flags.openapi.yaml"
-    format: openapi-3.0
+    format: openapi-3.1
     provenance: vendor
     server: "https://mixpanel.com"
   - name: "Mixpanel Experiments API"
     url: "https://docs.mixpanel.com/openapi/experiments.openapi.yaml"
-    format: openapi-3.0
+    format: openapi-3.1
     provenance: vendor
     server: "https://mixpanel.com/api/app"
   - name: "Mixpanel Service Accounts API"

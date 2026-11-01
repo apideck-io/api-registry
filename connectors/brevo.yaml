@@ -1,0 +1,45 @@
+id: brevo
+name: "Brevo"
+apideck: false
+notes: "Brevo publishes one spec per API area (indexed at developers.brevo.com/openapi.json); the core ones are listed."
+specs:
+  - name: "Email API"
+    url: "https://developers.brevo.com/openapi/email-api.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.brevo.com/v3"
+  - name: "Transactional SMS"
+    url: "https://developers.brevo.com/openapi/transactional-sms.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.brevo.com/v3"
+  - name: "Marketing Campaigns"
+    url: "https://developers.brevo.com/openapi/marketing-campaigns.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.brevo.com/v3"
+  - name: "Contact Management"
+    url: "https://developers.brevo.com/openapi/contact-management.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.brevo.com/v3"
+  - name: "Sales CRM"
+    url: "https://developers.brevo.com/openapi/sales-crm.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.brevo.com/v3"
+  - name: "Ecommerce"
+    url: "https://developers.brevo.com/openapi/ecommerce.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.brevo.com/v3"
+  - name: "Events"
+    url: "https://developers.brevo.com/openapi/events.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.brevo.com/v3"
+  - name: "Conversations"
+    url: "https://developers.brevo.com/openapi/conversations.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.brevo.com/v3"

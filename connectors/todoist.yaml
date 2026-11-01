@@ -1,0 +1,9 @@
+id: todoist
+name: "Todoist"
+apideck: false
+specs:
+  - name: "Todoist API v1"
+    url: "https://developer.todoist.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.todoist.com"

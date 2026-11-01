@@ -1,0 +1,5 @@
+id: microsoft-power-bi
+name: "Microsoft Power BI"
+apideck: false
+notes: "No machine-readable spec found in Microsoft's public repos. REST API reference: https://learn.microsoft.com/en-us/rest/api/power-bi/"
+specs: []

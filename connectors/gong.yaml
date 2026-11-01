@@ -1,0 +1,5 @@
+id: gong
+name: "Gong"
+apideck: false
+notes: "No published spec file. API reference: https://gong.app.gong.io/settings/api/documentation (inside the Gong app)."
+specs: []

@@ -1,0 +1,9 @@
+id: signnow
+name: "SignNow"
+apideck: false
+specs:
+  - name: "SignNow API"
+    url: "https://docs.signnow.com/api/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.signnow.com"

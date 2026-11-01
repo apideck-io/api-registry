@@ -1,0 +1,9 @@
+id: webflow
+name: "Webflow"
+apideck: false
+specs:
+  - name: "Webflow Data API v2"
+    url: "https://raw.githubusercontent.com/webflow/openapi-spec/main/openapi/v2.yml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.webflow.com/v2"

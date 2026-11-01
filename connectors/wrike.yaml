@@ -1,0 +1,5 @@
+id: wrike
+name: "Wrike"
+apideck: false
+notes: "No downloadable spec found. API v4 reference: https://developers.wrike.com"
+specs: []

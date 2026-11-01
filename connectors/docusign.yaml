@@ -1,0 +1,25 @@
+id: docusign
+name: "DocuSign"
+apideck: false
+specs:
+  - name: "eSignature REST API v2.1"
+    url: "https://raw.githubusercontent.com/docusign/OpenAPI-Specifications/master/esignature.rest.swagger-v2.1.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://demo.docusign.net/restapi"
+    notes: "Demo host shown; production accounts use their account's base URI."
+  - name: "Admin API v2.1"
+    url: "https://raw.githubusercontent.com/docusign/OpenAPI-Specifications/master/admin.rest.swagger-v2.1.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api-d.docusign.net/management"
+  - name: "Rooms API v2"
+    url: "https://raw.githubusercontent.com/docusign/OpenAPI-Specifications/master/rooms.rest.swagger-v2.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://demo.rooms.docusign.com/restapi"
+  - name: "Click API v1"
+    url: "https://raw.githubusercontent.com/docusign/OpenAPI-Specifications/master/click.rest.swagger-v1.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://demo.docusign.net/clickapi"

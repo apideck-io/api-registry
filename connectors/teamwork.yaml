@@ -1,0 +1,10 @@
+id: teamwork
+name: "Teamwork"
+apideck: false
+notes: "Teamwork publishes Postman collections for API v1, v2 and v3 on its support site; v3 is listed."
+specs:
+  - name: "Teamwork.com API v3 (Postman collection)"
+    url: "https://support.teamwork.com/desk/file/11910911/Teamwork.com%20V.3.postman_collection.json"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://{site}.teamwork.com/projects/api/v3"

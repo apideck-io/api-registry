@@ -1,0 +1,9 @@
+id: ramp
+name: "Ramp"
+apideck: false
+specs:
+  - name: "Ramp Developer API"
+    url: "https://docs.ramp.com/openapi/developer-api.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.ramp.com"

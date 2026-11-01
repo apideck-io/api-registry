@@ -1,0 +1,9 @@
+id: sentry
+name: "Sentry"
+apideck: false
+specs:
+  - name: "Sentry API"
+    url: "https://raw.githubusercontent.com/getsentry/sentry-api-schema/main/openapi-derefed.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{region}.sentry.io"
