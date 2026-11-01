@@ -12,9 +12,23 @@ import { fileURLToPath } from "node:url";
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { parse as parseYaml } from "yaml";
+import { createRequire } from "node:module";
 import openapiFormat from "openapi-format";
 
 const { openapiOverlay, resolveJsonPathValue } = openapiFormat;
+// The JSONPath parser openapi-format applies overlays with, resolved through it rather than declared
+// twice, so validation accepts exactly what the nightly run can apply.
+const jsonpathly = createRequire(createRequire(import.meta.url).resolve("openapi-format"))("jsonpathly");
+// openapi-format rewrites RFC 9535 filters ([?@.x]) to the engine's form ([?(@.x)]) before parsing.
+const jsonPathSyntaxError = (target) => {
+  try {
+    jsonpathly.parse(target.replace(/\[\?(@|\$)([^\]]*)\]/g, "[?($1$2)]"));
+    return null;
+  } catch (e) {
+    return e.message.split("\n")[0].slice(0, 100);
+  }
+};
+const nonEmpty = (v) => typeof v === "string" && v.trim() !== "";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url)); // decoded, so paths with spaces work
 const args = process.argv.slice(2);
@@ -43,6 +57,7 @@ function overlayErrors(file, spec) {
   if (!existsSync(join(ROOT, file))) return [`overlay ${file} does not exist`];
   if (!OVERLAY_FORMATS.has(spec.format)) errs.push(`overlay applies to OpenAPI or Swagger specs, not ${spec.format}`);
   if (spec.extract) errs.push("overlay can't be combined with extract");
+  if (spec.manual) errs.push("overlay can't be combined with manual: the nightly check never fetches the spec to apply it");
   let doc;
   try {
     doc = parseYaml(readFileSync(join(ROOT, file), "utf8"));
@@ -50,14 +65,28 @@ function overlayErrors(file, spec) {
     return [...errs, `overlay ${file}: invalid YAML (${e.message})`];
   }
   if (!OVERLAY_VERSION.test(String(doc?.overlay ?? ""))) errs.push(`overlay ${file}: "overlay" must be a 1.0.x or 1.1.x version`);
-  if (!doc?.info?.title || !doc?.info?.version) errs.push(`overlay ${file}: info.title and info.version are required`);
+  if (!nonEmpty(doc?.info?.title) || !nonEmpty(String(doc?.info?.version ?? ""))) errs.push(`overlay ${file}: info.title and info.version are required strings`);
   if (doc?.extends && doc.extends !== spec.url) errs.push(`overlay ${file}: extends (${doc.extends}) must be the spec's url`);
   if (!Array.isArray(doc?.actions) || !doc.actions.length) errs.push(`overlay ${file}: actions must be a non-empty list`);
   (doc?.actions ?? []).forEach((a, i) => {
-    if (typeof a?.target !== "string" || !a.target.startsWith("$")) errs.push(`overlay ${file} actions[${i}]: target must be a JSONPath starting with $`);
-    if (a?.update === undefined && a?.remove !== true && a?.copy === undefined) errs.push(`overlay ${file} actions[${i}]: needs update, copy or remove: true`);
-    if (a?.copy !== undefined && !/^1\.1\./.test(String(doc.overlay))) errs.push(`overlay ${file} actions[${i}]: copy needs overlay 1.1.x`);
-    if (!a?.description) errs.push(`overlay ${file} actions[${i}]: description is required (say what the vendor's spec gets wrong)`);
+    const at = `overlay ${file} actions[${i}]`;
+    if (typeof a?.target !== "string" || !a.target.startsWith("$")) errs.push(`${at}: target must be a JSONPath starting with $`);
+    else {
+      const syntax = jsonPathSyntaxError(a.target);
+      if (syntax) errs.push(`${at}: target is not valid JSONPath (${syntax})`);
+    }
+    // One operation per action, with a payload of the right type.
+    const ops = ["update", "remove", "copy"].filter((k) => a?.[k] !== undefined);
+    if (!ops.length) errs.push(`${at}: needs update, copy or remove: true`);
+    if (ops.length > 1) errs.push(`${at}: give one of update, copy or remove, not ${ops.join(" and ")}`);
+    if (a?.update === null) errs.push(`${at}: update can't be null`);
+    if (a?.remove !== undefined && a.remove !== true) errs.push(`${at}: remove must be true`);
+    if (a?.copy !== undefined) {
+      if (typeof a.copy !== "string" || !a.copy.startsWith("$")) errs.push(`${at}: copy must be a JSONPath to the source node`);
+      else if (jsonPathSyntaxError(a.copy)) errs.push(`${at}: copy is not valid JSONPath`);
+      if (!/^1\.1\./.test(String(doc.overlay))) errs.push(`${at}: copy needs overlay 1.1.x`);
+    }
+    if (!nonEmpty(a?.description)) errs.push(`${at}: description is required (say what the vendor's spec gets wrong)`);
   });
   return errs;
 }
@@ -374,19 +403,23 @@ for (const e of entries) {
       try {
         const parseSpec = () => (/^\s*[{[]/.test(r.body) ? JSON.parse(r.body) : parseYaml(r.body, { maxAliasCount: 10000 }));
         const overlaySet = parseYaml(text);
-        const original = parseSpec();
-        const res = await openapiOverlay(parseSpec(), { overlaySet });
-        const unmatched = res.resultData.unusedActions.map((a) => a.target);
-        // An update whose target is unchanged by the whole overlay is redundant: the vendor already says
-        // what it adds (they fixed it), so the action can go.
-        const redundant = overlaySet.actions
-          .filter((a) => a.update !== undefined && !unmatched.includes(a.target))
-          .filter((a) => canonical(resolveJsonPathValue(original, a.target)) === canonical(resolveJsonPathValue(res.data, a.target)))
-          .map((a) => a.target);
+        // Applied one action at a time, so each is judged on its own effect: an action whose target matches
+        // nothing is unmatched (the vendor moved it), an update that leaves its target unchanged is
+        // redundant (the vendor already says it: they fixed it).
+        let current = parseSpec();
+        const unmatched = [];
+        const redundant = [];
+        for (const action of overlaySet.actions) {
+          const before = canonical(resolveJsonPathValue(current, action.target));
+          const res = await openapiOverlay(current, { overlaySet: { ...overlaySet, actions: [action] } });
+          if (res.resultData.unusedActions.length) unmatched.push(action.target);
+          else if (action.update !== undefined && before === canonical(resolveJsonPathValue(res.data, action.target))) redundant.push(action.target);
+          current = res.data;
+        }
         overlay = {
           file: s.overlay,
           sha256: createHash("sha256").update(text).digest("hex"),
-          actions: res.resultData.totalActions,
+          actions: overlaySet.actions.length,
           ...(unmatched.length ? { unmatched } : {}),
           ...(redundant.length ? { redundant } : {}),
         };
