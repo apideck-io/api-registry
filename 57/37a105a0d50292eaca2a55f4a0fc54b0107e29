@@ -1,0 +1,271 @@
+connectors/ably.yaml
+  s_eeda7bd9685d9d::t_6749db68807fb2 1-10
+connectors/adafruit.yaml
+  s_eeda7bd9685d9d::t_a4c7240a9f24ab 1-10
+connectors/agco.yaml
+  s_eeda7bd9685d9d::t_68ae0261b4cce2 1-10
+connectors/agentos.yaml
+  s_eeda7bd9685d9d::t_d155f1c384ccbb 1-15
+connectors/akeneo.yaml
+  s_eeda7bd9685d9d::t_98e597edeef847 1-11
+connectors/amadeus.yaml
+  s_eeda7bd9685d9d::t_d0640784f1bf60 1-191
+connectors/anchore.yaml
+  s_eeda7bd9685d9d::t_6a0e28ed6a6eb4 1-11
+connectors/apidapp.yaml
+  s_eeda7bd9685d9d::t_de383c426db96c 1-10
+connectors/apimatic.yaml
+  s_eeda7bd9685d9d::t_7a26a9461a2f36 1-10
+connectors/appcenter.yaml
+  s_eeda7bd9685d9d::t_5c62d31f4b77d5 1-10
+connectors/appveyor.yaml
+  s_eeda7bd9685d9d::t_8196e0bb9f07fc 1-10
+connectors/art19.yaml
+  s_eeda7bd9685d9d::t_754e99fbb69005 1-10
+connectors/authentiq.yaml
+  s_eeda7bd9685d9d::t_c7b88ac7ee98c9 1-10
+connectors/autotask.yaml
+  s_eeda7bd9685d9d::t_4ebca511b04ff2 1-10
+connectors/avaza.yaml
+  s_eeda7bd9685d9d::t_b9796c87f83d28 1-10
+connectors/axesso.yaml
+  s_eeda7bd9685d9d::t_230345fea7314e 1-10
+connectors/beezup.yaml
+  s_eeda7bd9685d9d::t_13efc00d6d5093 1-10
+connectors/big-red-cloud.yaml
+  s_eeda7bd9685d9d::t_bd187c9851841d 1-10
+connectors/bigoven.yaml
+  s_eeda7bd9685d9d::t_41957935d6b61f 1-10
+connectors/billbee.yaml
+  s_eeda7bd9685d9d::t_a710d0ab369b74 1-10
+connectors/bintable.yaml
+  s_eeda7bd9685d9d::t_5eaca4d0efc32c 1-10
+connectors/botify.yaml
+  s_eeda7bd9685d9d::t_0768402c1e189b 1-10
+connectors/brandlovers.yaml
+  s_eeda7bd9685d9d::t_b4c6758b470c42 1-10
+connectors/browshot.yaml
+  s_eeda7bd9685d9d::t_61802dbca1f922 1-10
+connectors/bulksms.yaml
+  s_eeda7bd9685d9d::t_08eb5cfbffdf5b 1-10
+connectors/bunq.yaml
+  s_eeda7bd9685d9d::t_45204f87f09f0d 1-11
+connectors/callcontrol.yaml
+  s_eeda7bd9685d9d::t_6296d58097226a 1-10
+connectors/callfire.yaml
+  s_eeda7bd9685d9d::t_d9b064de02137f 1-10
+connectors/cenit.yaml
+  s_eeda7bd9685d9d::t_d65b4eb11f0343 1-10
+connectors/cis-automotive.yaml
+  s_eeda7bd9685d9d::t_2732d036704c2b 1-11
+connectors/cloudmersive.yaml
+  s_eeda7bd9685d9d::t_e7bcf680ad8bde 1-11
+connectors/color-me-shop.yaml
+  s_eeda7bd9685d9d::t_17a38c34610fdb 1-10
+connectors/combell.yaml
+  s_eeda7bd9685d9d::t_37f3ae4ddace96 1-11
+connectors/configcat.yaml
+  s_eeda7bd9685d9d::t_1f35cc8e386106 1-10
+connectors/contribly.yaml
+  s_eeda7bd9685d9d::t_85eb76fb855d5b 1-10
+connectors/credas.yaml
+  s_eeda7bd9685d9d::t_4f215e90645e3a 1-11
+connectors/doqs.yaml
+  s_eeda7bd9685d9d::t_ecb4c0a0422ce5 1-10
+connectors/dracoon.yaml
+  s_eeda7bd9685d9d::t_44e94735d1cd84 1-11
+connectors/drchrono.yaml
+  s_eeda7bd9685d9d::t_b0ffb260e0612a 1-10
+connectors/elmah.yaml
+  s_eeda7bd9685d9d::t_aa035f1e6e507a 1-11
+connectors/envoice.yaml
+  s_eeda7bd9685d9d::t_dc83cce4163b73 1-10
+connectors/ex-libris.yaml
+  s_eeda7bd9685d9d::t_4dac26fab68bb7 1-10
+connectors/exavault.yaml
+  s_eeda7bd9685d9d::t_893e792b1fa818 1-10
+connectors/exchangerate-api.yaml
+  s_eeda7bd9685d9d::t_811a4f154f33d4 1-10
+connectors/extendsclass.yaml
+  s_eeda7bd9685d9d::t_d62d4f31d3a8f3 1-10
+connectors/facecheck.yaml
+  s_eeda7bd9685d9d::t_6716d6a0204e00 1-11
+connectors/faretrotter.yaml
+  s_eeda7bd9685d9d::t_82f46cb40e62fd 1-10
+connectors/fire-financial.yaml
+  s_eeda7bd9685d9d::t_56abb6aade70c2 1-10
+connectors/fitbit-plus.yaml
+  s_eeda7bd9685d9d::t_5acf1534adb2d3 1-10
+connectors/flickr.yaml
+  s_eeda7bd9685d9d::t_9eb51c4dbc7b08 1-10
+connectors/fulfillment.yaml
+  s_eeda7bd9685d9d::t_30ede8c9e87c9e 1-10
+connectors/furkot.yaml
+  s_eeda7bd9685d9d::t_1f005d1aded075 1-10
+connectors/getty-images.yaml
+  s_eeda7bd9685d9d::t_86a50375d5f33d 1-11
+connectors/giphy.yaml
+  s_eeda7bd9685d9d::t_b195c3ca6302a7 1-10
+connectors/gisgraphy.yaml
+  s_eeda7bd9685d9d::t_dd784405e40708 1-10
+connectors/go-upc.yaml
+  s_eeda7bd9685d9d::t_9e43beda55441d 1-10
+connectors/greip.yaml
+  s_eeda7bd9685d9d::t_8c0ca6fdc27fd9 1-10
+connectors/gsmtasks.yaml
+  s_eeda7bd9685d9d::t_777fc60381980c 1-11
+connectors/id4i.yaml
+  s_eeda7bd9685d9d::t_6fc648f9a91c65 1-10
+connectors/image-charts.yaml
+  s_eeda7bd9685d9d::t_b707f1e88b2d48 1-10
+connectors/import-io.yaml
+  s_eeda7bd9685d9d::t_02be5223a959e2 1-30
+connectors/increase.yaml
+  s_eeda7bd9685d9d::t_c5e256007bf7b0 1-10
+connectors/intellifi.yaml
+  s_eeda7bd9685d9d::t_a9ce44f1085b49 1-11
+connectors/interactivebrokers.yaml
+  s_eeda7bd9685d9d::t_9004bca5ba854b 1-10
+connectors/isendpro.yaml
+  s_eeda7bd9685d9d::t_5a8b71f3de771d 1-10
+connectors/ix-api.yaml
+  s_eeda7bd9685d9d::t_b316278f11020c 1-11
+connectors/json2video.yaml
+  s_eeda7bd9685d9d::t_749bbabc27b743 1-10
+connectors/jumpseller.yaml
+  s_eeda7bd9685d9d::t_080e10e718e376 1-10
+connectors/just-eat.yaml
+  s_eeda7bd9685d9d::t_d7a34a991db545 1-10
+connectors/keyserv.yaml
+  s_eeda7bd9685d9d::t_bf909725bcc894 1-10
+connectors/kumpeapps.yaml
+  s_eeda7bd9685d9d::t_169df77d788a2e 1-10
+connectors/languagetool.yaml
+  s_eeda7bd9685d9d::t_d5f7ef48b401c7 1-10
+connectors/linqr.yaml
+  s_eeda7bd9685d9d::t_7f1bdbb7f148e7 1-10
+connectors/lufthansa.yaml
+  s_eeda7bd9685d9d::t_415971c83a9b4e 1-15
+connectors/meteosource.yaml
+  s_eeda7bd9685d9d::t_9f1d480b3612b5 1-10
+connectors/musixmatch.yaml
+  s_eeda7bd9685d9d::t_36096bfbb6397b 1-10
+connectors/namsor.yaml
+  s_eeda7bd9685d9d::t_fdffca60071a39 1-10
+connectors/netatmo.yaml
+  s_eeda7bd9685d9d::t_dc766b8b5d76a9 1-10
+connectors/neutrino-api.yaml
+  s_eeda7bd9685d9d::t_1ba7fc9975e632 1-10
+connectors/nfusion-solutions.yaml
+  s_eeda7bd9685d9d::t_16b64483770814 1-10
+connectors/obono.yaml
+  s_eeda7bd9685d9d::t_a08dd3c426d3df 1-11
+connectors/onsched.yaml
+  s_eeda7bd9685d9d::t_c9e5e02d45c640 1-23
+connectors/open-banking-uk.yaml
+  s_eeda7bd9685d9d::t_f1611f05909137 1-34
+connectors/openstf.yaml
+  s_eeda7bd9685d9d::t_60e188c61a2744 1-11
+connectors/openuv.yaml
+  s_eeda7bd9685d9d::t_ff461c9cfecf39 1-10
+connectors/opto22.yaml
+  s_eeda7bd9685d9d::t_edaf1081fa850f 1-11
+connectors/pa-media.yaml
+  s_eeda7bd9685d9d::t_b3887c103db680 1-10
+connectors/papinet.yaml
+  s_eeda7bd9685d9d::t_f598f149230f65 1-10
+connectors/paypi-emailverify.yaml
+  s_eeda7bd9685d9d::t_a625c691931682 1-10
+connectors/pdfbroker.yaml
+  s_eeda7bd9685d9d::t_50336cc107448a 1-11
+connectors/pocketsmith.yaml
+  s_eeda7bd9685d9d::t_9bc66e2e20424c 1-10
+connectors/portfolio-optimizer.yaml
+  s_eeda7bd9685d9d::t_07c8ad29327b9a 1-10
+connectors/probely.yaml
+  s_eeda7bd9685d9d::t_ecdab02bfcdc51 1-10
+connectors/qualtrics.yaml
+  s_eeda7bd9685d9d::t_530f9730ded036 1-10
+connectors/quickchart.yaml
+  s_eeda7bd9685d9d::t_53f44b8aa99156 1-10
+connectors/red-hat.yaml
+  s_eeda7bd9685d9d::t_600c11354c83f5 1-10
+connectors/redirection.yaml
+  s_eeda7bd9685d9d::t_0e5ae8c8a062ed 1-10
+connectors/remove-bg.yaml
+  s_eeda7bd9685d9d::t_fd87d20800cdc4 1-10
+connectors/royalmail.yaml
+  s_eeda7bd9685d9d::t_0c131b29f4b525 1-11
+connectors/selectpdf.yaml
+  s_eeda7bd9685d9d::t_08365642327ac7 1-10
+connectors/shorten.yaml
+  s_eeda7bd9685d9d::t_9034677371355f 1-10
+connectors/shutterstock.yaml
+  s_eeda7bd9685d9d::t_7aec1680dbb72d 1-10
+connectors/signl4.yaml
+  s_eeda7bd9685d9d::t_bc11bb30e47a6b 1-10
+connectors/simplivpn.yaml
+  s_eeda7bd9685d9d::t_0077707861c544 1-11
+connectors/sinao.yaml
+  s_eeda7bd9685d9d::t_67000be5278366 1-10
+connectors/slideroom.yaml
+  s_eeda7bd9685d9d::t_1fdae741dbebc5 1-10
+connectors/sms77.yaml
+  s_eeda7bd9685d9d::t_1556a11915c0fc 1-10
+connectors/spinbot.yaml
+  s_eeda7bd9685d9d::t_f03eb56351d22c 1-10
+connectors/splunk-on-call.yaml
+  s_eeda7bd9685d9d::t_f3629e52590241 1-10
+connectors/spoonacular.yaml
+  s_eeda7bd9685d9d::t_cc6cef3ff708ef 1-10
+connectors/svix.yaml
+  s_eeda7bd9685d9d::t_57c9464d293373 1-10
+connectors/swiss-nextgen-banking.yaml
+  s_eeda7bd9685d9d::t_c6b9b9304c2cce 1-10
+connectors/symanto.yaml
+  s_eeda7bd9685d9d::t_6b9be3dfc465d1 1-10
+connectors/taggun.yaml
+  s_eeda7bd9685d9d::t_2742f4d9ec156f 1-10
+connectors/tradematic.yaml
+  s_eeda7bd9685d9d::t_9b799846c44672 1-10
+connectors/tyk.yaml
+  s_eeda7bd9685d9d::t_daf8d78d9ad009 1-11
+connectors/up-bank.yaml
+  s_eeda7bd9685d9d::t_eebfe9db5fb02b 1-10
+connectors/urlbox.yaml
+  s_eeda7bd9685d9d::t_76db22efe8d41c 1-10
+connectors/vectara.yaml
+  s_eeda7bd9685d9d::t_b4523def51c6d1 1-10
+connectors/velopayments.yaml
+  s_eeda7bd9685d9d::t_aea7f04f515886 1-11
+connectors/visual-crossing.yaml
+  s_eeda7bd9685d9d::t_339a6add07e453 1-10
+connectors/waterlinked.yaml
+  s_eeda7bd9685d9d::t_0021829dd5265b 1-11
+connectors/weatherbit.yaml
+  s_eeda7bd9685d9d::t_d24553d21d14a6 1-10
+connectors/webscraping-ai.yaml
+  s_eeda7bd9685d9d::t_0d1e6377614167 1-10
+connectors/who-hosts-this.yaml
+  s_eeda7bd9685d9d::t_031522b74fb6d1 1-10
+connectors/winsms.yaml
+  s_eeda7bd9685d9d::t_a2a06225eb2739 1-10
+connectors/xtrf.yaml
+  s_eeda7bd9685d9d::t_2fae564113ca56 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5737a105a0d50292eaca2a55f4a0fc54b0107e29",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
