@@ -1,0 +1,199 @@
+README.md
+  s_eeda7bd9685d9d::t_75af66f2662f2e 43
+connectors/1password.yaml
+  s_eeda7bd9685d9d::t_13f549786901ac 1-10
+connectors/affinity.yaml
+  s_eeda7bd9685d9d::t_383ac07e1747f3 1-9
+connectors/aha.yaml
+  s_eeda7bd9685d9d::t_66a759b88811dd 1-5
+connectors/aircall.yaml
+  s_eeda7bd9685d9d::t_7e1c95ce4cc255 1-5
+connectors/algolia.yaml
+  s_eeda7bd9685d9d::t_8a300921c12ab3 1-35
+connectors/amplitude.yaml
+  s_eeda7bd9685d9d::t_919c01332302c7 1-5
+connectors/bitbucket.yaml
+  s_eeda7bd9685d9d::t_eae13ab3214ca4 1-9
+connectors/bitly.yaml
+  s_eeda7bd9685d9d::t_d623f0614dffad 1-9
+connectors/braze.yaml
+  s_eeda7bd9685d9d::t_56cd9a4fcc5eda 1-5
+connectors/breezyhr.yaml
+  s_eeda7bd9685d9d::t_49c96304708c13 1-5
+connectors/brevo.yaml
+  s_eeda7bd9685d9d::t_88aefe5c9bac9f 1-45
+connectors/cal-com.yaml
+  s_eeda7bd9685d9d::t_64e776fdb3d541 1-9
+connectors/canva.yaml
+  s_eeda7bd9685d9d::t_0ad4dc43b65b98 1-9
+connectors/clickhouse.yaml
+  s_eeda7bd9685d9d::t_d7c51cad60e294 1-9
+connectors/cloudflare.yaml
+  s_eeda7bd9685d9d::t_2ded08ee33e64c 1-9
+connectors/constant-contact.yaml
+  s_eeda7bd9685d9d::t_db020a65935acf 1-5
+connectors/contentful.yaml
+  s_eeda7bd9685d9d::t_dbbfb193c71460 1-5
+connectors/databricks.yaml
+  s_eeda7bd9685d9d::t_55b53a368b8fe1 1-5
+connectors/dialpad.yaml
+  s_eeda7bd9685d9d::t_63e3eeacfaacd0 1-5
+connectors/discord-bot.yaml
+  s_eeda7bd9685d9d::t_645159a2eb3cb1 1-10
+connectors/discord.yaml
+  s_eeda7bd9685d9d::t_c85ec517e61259 1-9
+connectors/docusign.yaml
+  s_eeda7bd9685d9d::t_78174e22b96781 1-25
+connectors/dropbox-sign.yaml
+  s_eeda7bd9685d9d::t_e3bdcafdfa3a82 1-9
+connectors/e2b.yaml
+  s_eeda7bd9685d9d::t_9728cb8803e7d6 1-9
+connectors/egnyte.yaml
+  s_eeda7bd9685d9d::t_5398e424042458 1-5
+connectors/elevenlabs.yaml
+  s_eeda7bd9685d9d::t_d20a1a10305abc 1-9
+connectors/eventbrite.yaml
+  s_eeda7bd9685d9d::t_6f619045346822 1-5
+connectors/facebook.yaml
+  s_eeda7bd9685d9d::t_47373049a054de 1-5
+connectors/fathom.yaml
+  s_eeda7bd9685d9d::t_9fe2b418f682b5 1-9
+connectors/firecrawl.yaml
+  s_eeda7bd9685d9d::t_2c6b87d1dc64e8 1-14
+connectors/front.yaml
+  s_eeda7bd9685d9d::t_f5e2fba66238df 1-9
+connectors/glean.yaml
+  s_eeda7bd9685d9d::t_f71d5f8bcf89e9 1-14
+connectors/gong.yaml
+  s_eeda7bd9685d9d::t_e0e49eddc91380 1-5
+connectors/google-ads.yaml
+  s_eeda7bd9685d9d::t_35649e8424e608 1-9
+connectors/google-chat.yaml
+  s_eeda7bd9685d9d::t_4188fabd9d71ea 1-9
+connectors/google-meet.yaml
+  s_eeda7bd9685d9d::t_3a8405034ddc8c 1-9
+connectors/google-search-console.yaml
+  s_eeda7bd9685d9d::t_0c176f8c742a3a 1-9
+connectors/google-tasks.yaml
+  s_eeda7bd9685d9d::t_445ac759fbf439 1-9
+connectors/gorgias.yaml
+  s_eeda7bd9685d9d::t_9f8eeeb933c9f2 1-5
+connectors/grafana.yaml
+  s_eeda7bd9685d9d::t_c52595904c4878 1-9
+connectors/harvest.yaml
+  s_eeda7bd9685d9d::t_703c0375f76485 1-5
+connectors/highlevel.yaml
+  s_eeda7bd9685d9d::t_60f88bd131fccc 1-55
+connectors/incident-io.yaml
+  s_eeda7bd9685d9d::t_72d804192363cc 1-45
+connectors/insightly.yaml
+  s_eeda7bd9685d9d::t_e88c64e223ede3 1-5
+connectors/instagram.yaml
+  s_eeda7bd9685d9d::t_816fd3f9c5285d 1-5
+connectors/jotform.yaml
+  s_eeda7bd9685d9d::t_b39a54c579910a 1-5
+connectors/klaviyo.yaml
+  s_eeda7bd9685d9d::t_ff7daa3fd7d35c 1-14
+connectors/la-growth-machine.yaml
+  s_eeda7bd9685d9d::t_1b24106e128a6f 1-5
+connectors/lemlist.yaml
+  s_eeda7bd9685d9d::t_a8d0051e6450d9 1-9
+connectors/lokalise.yaml
+  s_eeda7bd9685d9d::t_ef37d17621b9be 1-22
+connectors/loom.yaml
+  s_eeda7bd9685d9d::t_deee042ade1ead 1-5
+connectors/lucid.yaml
+  s_eeda7bd9685d9d::t_a24d68021965df 1-19
+connectors/mailerlite.yaml
+  s_eeda7bd9685d9d::t_9d40757f417870 1-5
+connectors/make.yaml
+  s_eeda7bd9685d9d::t_6ed16749ea9185 1-5
+connectors/mercury.yaml
+  s_eeda7bd9685d9d::t_e6b115c610da87 1-5
+connectors/metabase.yaml
+  s_eeda7bd9685d9d::t_3d4b48da106694 1-9
+connectors/microsoft-power-bi.yaml
+  s_eeda7bd9685d9d::t_44954a0225da3c 1-5
+connectors/microsoft-powerpoint.yaml
+  s_eeda7bd9685d9d::t_1d88c56a7e1a18 1-10
+connectors/microsoft-word.yaml
+  s_eeda7bd9685d9d::t_77899954fc467d 1-10
+connectors/mongodb-atlas.yaml
+  s_eeda7bd9685d9d::t_b31038d2c9ec64 1-9
+connectors/onenote.yaml
+  s_eeda7bd9685d9d::t_670920c664e977 1-10
+connectors/openai.yaml
+  s_eeda7bd9685d9d::t_915f69626b66af 1-9
+connectors/paypal.yaml
+  s_eeda7bd9685d9d::t_3695dc367438a7 1-40
+connectors/ramp.yaml
+  s_eeda7bd9685d9d::t_73de39a5491195 1-9
+connectors/razorpay.yaml
+  s_eeda7bd9685d9d::t_9fa52de2af2f27 1-5
+connectors/render.yaml
+  s_eeda7bd9685d9d::t_5fb97570b3e233 1-9
+connectors/sanity.yaml
+  s_eeda7bd9685d9d::t_f3bc6caed8f8fd 1-40
+connectors/semrush.yaml
+  s_eeda7bd9685d9d::t_58a40d6947eb14 1-5
+connectors/sentry.yaml
+  s_eeda7bd9685d9d::t_4c256dd57e881b 1-9
+connectors/signnow.yaml
+  s_eeda7bd9685d9d::t_8354909b0b1867 1-9
+connectors/smartsheet.yaml
+  s_eeda7bd9685d9d::t_a8a6c7b0cd7544 1-19
+connectors/supabase.yaml
+  s_eeda7bd9685d9d::t_25922e228603fe 1-9
+connectors/surveymonkey.yaml
+  s_eeda7bd9685d9d::t_b651fa64fc26b1 1-5
+connectors/tableau.yaml
+  s_eeda7bd9685d9d::t_363c5e22dd35c8 1-5
+connectors/teamwork.yaml
+  s_eeda7bd9685d9d::t_8b215e6f3eca66 1-10
+connectors/ticktick.yaml
+  s_eeda7bd9685d9d::t_ae31db80dc878c 1-5
+connectors/tiktok-ads.yaml
+  s_eeda7bd9685d9d::t_87189b35c9175a 1-5
+connectors/tldv.yaml
+  s_eeda7bd9685d9d::t_9a6eda042ee795 1-5
+connectors/todoist.yaml
+  s_eeda7bd9685d9d::t_c3566df548c61d 1-9
+connectors/toggl.yaml
+  s_eeda7bd9685d9d::t_d9a4e39bb549a7 1-5
+connectors/vercel.yaml
+  s_eeda7bd9685d9d::t_93da9d28830e62 1-9
+connectors/vimeo.yaml
+  s_eeda7bd9685d9d::t_97fefd3abc98ba 1-9
+connectors/webex.yaml
+  s_eeda7bd9685d9d::t_cf6a804301153d 1-34
+connectors/webflow.yaml
+  s_eeda7bd9685d9d::t_6d6dbc7312b887 1-9
+connectors/workos.yaml
+  s_eeda7bd9685d9d::t_afce58ad6ddea8 1-9
+connectors/wrike.yaml
+  s_eeda7bd9685d9d::t_c226607c03c8f4 1-5
+connectors/zoho-desk.yaml
+  s_eeda7bd9685d9d::t_764b2ad7e8371b 1-45
+connectors/zoho-recruit.yaml
+  s_eeda7bd9685d9d::t_83e6a6ea39a008 1-5
+connectors/zoominfo.yaml
+  s_eeda7bd9685d9d::t_7dce4c03227bde 1-5
+index.json
+  s_eeda7bd9685d9d::t_a8bc4bd3bacffe 5163-6991
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b2a37d38e58df6c4a529d0e366df9cd376456fbc",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
