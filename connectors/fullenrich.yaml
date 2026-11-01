@@ -1,0 +1,10 @@
+id: fullenrich
+name: "FullEnrich"
+apideck: false
+specs:
+  - name: "FullEnrich API v2"
+    url: "https://docs.fullenrich.com/api/v2/reference/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.fullenrich.com/api/v2"
+    notes: "Server URL already includes /api/v2; v1 spec is at https://docs.fullenrich.com/api/v1/reference/openapi.yml (linked in llms.txt, redirected to HTML when fetched)."

@@ -1,0 +1,5 @@
+id: signwell
+name: "SignWell"
+apideck: false
+notes: "developers.signwell.com/llms.txt and endpoint pages checked; per-operation OpenAPI snippets are embedded in the .md pages but the full OpenAPI file is not served at a fetchable URL."
+specs: []

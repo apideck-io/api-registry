@@ -1,0 +1,10 @@
+id: avoma
+name: "Avoma"
+apideck: false
+specs:
+  - name: "Avoma API"
+    url: "https://dev.avoma.com/openapi.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.avoma.com"
+    notes: "Paths begin with /v1."

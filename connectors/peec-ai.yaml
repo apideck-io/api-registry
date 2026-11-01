@@ -1,0 +1,9 @@
+id: peec-ai
+name: "Peec AI"
+apideck: false
+specs:
+  - name: "Peec AI Customer API"
+    url: "https://api.peec.ai/customer/v1/openapi/json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.peec.ai/customer/v1"

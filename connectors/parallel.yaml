@@ -1,0 +1,9 @@
+id: parallel
+name: "Parallel"
+apideck: false
+specs:
+  - name: "Parallel API"
+    url: "https://docs.parallel.ai/public-openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.parallel.ai"

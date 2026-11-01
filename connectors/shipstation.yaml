@@ -1,0 +1,20 @@
+id: shipstation
+name: "ShipStation"
+apideck: false
+specs:
+  - name: "ShipStation API v2"
+    url: "https://docs.shipstation.com/_bundle/apis/@shipstation-v2/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.shipstation.com"
+  - name: "ShipEngine API (ShipStation docs)"
+    url: "https://docs.shipstation.com/_bundle/apis/@shipengine/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.shipengine.com"
+    notes: "Published on the ShipStation docs site; an older OpenAPI 3.0 copy is in the shipengine/shipengine-openapi repo."
+  - name: "ShipStation V1 API (Legacy)"
+    url: "https://docs.shipstation.com/_bundle/apis/@shipstation-v1/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://ssapi.shipstation.com"

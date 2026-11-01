@@ -1,0 +1,5 @@
+id: clockify
+name: "Clockify"
+apideck: false
+notes: "No machine-readable spec found. Checked clockify.me/developers-api (Swagger UI page that loads its definition from the authenticated API host), api.clockify.me/api/v1/api-docs and swagger.json (HTTP 401), docs.clockify.me/swagger.json (404), GitHub org search and a web search."
+specs: []

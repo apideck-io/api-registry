@@ -1,0 +1,10 @@
+id: replicate
+name: "Replicate"
+apideck: false
+specs:
+  - name: "Replicate HTTP API"
+    url: "https://api.replicate.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.replicate.com/v1"
+    notes: "Paths are relative to /v1."

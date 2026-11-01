@@ -1,0 +1,5 @@
+id: wiza
+name: "Wiza"
+apideck: false
+notes: "wiza.co docs and spec paths are behind bot protection (HTTP 403); could not be fetched."
+specs: []

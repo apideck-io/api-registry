@@ -7033,6 +7033,4466 @@
           "changedOn": "2026-11-01"
         }
       }
+    },
+    "agentmail": {
+      "name": "AgentMail",
+      "apideck": false,
+      "specs": {
+        "AgentMail API": {
+          "status": "ok",
+          "sha256": "a9792efe7bdfeba5515fbd8e511bc5ee7062933ca38e2c74ebe2c4f40acf4dc4",
+          "bytes": 410819,
+          "operations": 180,
+          "title": "API Reference",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.agentmail.to",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "apify": {
+      "name": "Apify",
+      "apideck": false,
+      "specs": {
+        "Apify API": {
+          "status": "ok",
+          "sha256": "95d46c7976c0f97460cb5b479692fc08dda8bc82078f65ced5be950b5d2dfe4e",
+          "bytes": 1134080,
+          "operations": 242,
+          "title": "Apify API",
+          "apiVersion": "v2-2026-10-29T100357Z",
+          "specVersion": "3.1.2",
+          "server": "https://api.apify.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "bright-data": {
+      "name": "Bright Data",
+      "apideck": false,
+      "specs": {
+        "Bright Data API": {
+          "status": "ok",
+          "sha256": "a3b390725beed623e343de4b5c4a9248dcdb30ffb487eba2f56cc35fc4a2b5bf",
+          "bytes": 107065,
+          "operations": 45,
+          "title": "Bright Data API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.brightdata.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "circleci": {
+      "name": "CircleCI",
+      "apideck": false,
+      "specs": {
+        "CircleCI API v2": {
+          "status": "ok",
+          "sha256": "e2d6decf7a0400e45014afbded08ab989d7fc33da36339550487ceb715674604",
+          "bytes": 337117,
+          "operations": 111,
+          "title": "CircleCI API",
+          "apiVersion": "v2",
+          "specVersion": "3.0.3",
+          "server": "https://circleci.com/api/v2",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "coda": {
+      "name": "Coda",
+      "apideck": false,
+      "specs": {
+        "Coda API v1": {
+          "status": "ok",
+          "sha256": "1998c42649d281f19010d283ea5e3f3b87b427ff0ffd387b079e3a7dfd203a02",
+          "bytes": 465119,
+          "operations": 125,
+          "title": "Superhuman Docs API",
+          "apiVersion": "1.6.0",
+          "specVersion": "3.0.0",
+          "server": "https://coda.io/apis/v1",
+          "specServer": "https://docs.superhuman.com/apis/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "daytona": {
+      "name": "Daytona",
+      "apideck": false,
+      "specs": {
+        "Daytona API": {
+          "status": "ok",
+          "sha256": "b366008fe15187432cc88cd86753ecd9c1aed59f544dca1ae402609534aea6d9",
+          "bytes": 513743,
+          "operations": 170,
+          "title": "Daytona",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.0",
+          "server": "https://app.daytona.io/api",
+          "specServer": "http://localhost:3000",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "hugging-face": {
+      "name": "Hugging Face",
+      "apideck": false,
+      "specs": {
+        "Hub API": {
+          "status": "ok",
+          "sha256": "cd7eaeba67f2ce565856791b670a7a609b0e610e9f5830a038e7a15d018cff70",
+          "bytes": 1210863,
+          "operations": 374,
+          "title": "Hub API Endpoints",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.1.0",
+          "server": "https://huggingface.co",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "instantly": {
+      "name": "Instantly",
+      "apideck": false,
+      "specs": {
+        "Instantly API v2": {
+          "status": "ok",
+          "sha256": "45c7ede72b24c15470ae986e7e79722145a0954ca4812d0506f5ed7a4a0c0433",
+          "bytes": 4465370,
+          "operations": 256,
+          "title": "API Explorer",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.instantly.ai",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "launchdarkly": {
+      "name": "LaunchDarkly",
+      "apideck": false,
+      "specs": {
+        "LaunchDarkly REST API": {
+          "status": "ok",
+          "sha256": "77812f37f49a620cd77ad19d144d8e655deda1e2e461441ca40bcdd49bec1203",
+          "bytes": 3141784,
+          "operations": 405,
+          "title": "LaunchDarkly REST API",
+          "apiVersion": "2.0",
+          "specVersion": "3.0.3",
+          "server": "https://app.launchdarkly.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "mistral-ai": {
+      "name": "Mistral AI",
+      "apideck": false,
+      "specs": {
+        "Mistral AI API": {
+          "status": "ok",
+          "sha256": "08a585fb75bcfa6ff968773134ee00060e0db283fc6b16f421f544e78ba8db92",
+          "bytes": 1427215,
+          "operations": 321,
+          "title": "Mistral AI API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.mistral.ai",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "new-relic": {
+      "name": "New Relic",
+      "apideck": false,
+      "specs": {
+        "NerdGraph (GraphQL)": {
+          "status": "manual: login"
+        }
+      }
+    },
+    "pinterest": {
+      "name": "Pinterest",
+      "apideck": false,
+      "specs": {
+        "Pinterest REST API v5": {
+          "status": "ok",
+          "sha256": "b698c180678a616bf1d635b374c086ba9cb2484117035c12f2b906eebe92a3e5",
+          "bytes": 2616421,
+          "operations": 266,
+          "title": "Pinterest REST API",
+          "apiVersion": "5.28.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.pinterest.com/v5",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "recurly": {
+      "name": "Recurly",
+      "apideck": false,
+      "specs": {
+        "Recurly V3 API": {
+          "status": "ok",
+          "sha256": "02c71da520aebb4108929ae5a5d47badbfd4eeb9e85fcab369d60dcd9e1e1aae",
+          "bytes": 1623510,
+          "operations": 201,
+          "title": "Recurly V3 API",
+          "apiVersion": "v2021-02-25",
+          "specVersion": "3.0.0",
+          "server": "https://v3.recurly.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "snyk": {
+      "name": "Snyk",
+      "apideck": false,
+      "specs": {
+        "Snyk REST API": {
+          "status": "ok",
+          "sha256": "3ab82500be952779ee26c668d2d2208bf374489e3d46b207626e612bc0166f27",
+          "bytes": 2466078,
+          "operations": 303,
+          "title": "Snyk API",
+          "apiVersion": "REST",
+          "specVersion": "3.0.3",
+          "server": "https://api.snyk.io/rest",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "twelve-data": {
+      "name": "Twelve Data",
+      "apideck": false,
+      "specs": {
+        "Twelve Data API": {
+          "status": "ok",
+          "sha256": "ddc6642016d9403b25cf538c74dbcef5c4f814128fd74ec283a50b1a1ef9ce84",
+          "bytes": 3447575,
+          "operations": 187,
+          "title": "Twelve Data API",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.1.0",
+          "server": "https://api.twelvedata.com",
+          "specServer": "https://api.twelvedata.com/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "browserbase": {
+      "name": "Browserbase",
+      "apideck": false,
+      "specs": {
+        "Browserbase API": {
+          "status": "ok",
+          "sha256": "3661c37195a7517cc5068d7813de4ca18dfc528e64f472b911cc1c081e7acd8e",
+          "bytes": 190048,
+          "operations": 71,
+          "title": "Browserbase API",
+          "apiVersion": "v1",
+          "specVersion": "3.0.0",
+          "server": "https://api.browserbase.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "chargebee": {
+      "name": "Chargebee",
+      "apideck": false,
+      "specs": {
+        "Chargebee API v2 (Product Catalog 2.0)": {
+          "status": "ok",
+          "sha256": "a92d203879cc3fd9814089e662d4ef384412e97017a9e97fed64627b07bdd5d5",
+          "bytes": 12803120,
+          "operations": 475,
+          "title": "Chargebee API",
+          "apiVersion": "2026-09-24.553c79154f0075cfbab35271eeff8b63a3ed6a86",
+          "specVersion": "3.1.0",
+          "server": "https://{site}.chargebee.com/api/v2",
+          "specServer": "{protocol}://{site}.{environment}:{port}/api/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Chargebee API v2 (Product Catalog 1.0)": {
+          "status": "ok",
+          "sha256": "5a2971b0862ef0da4e71a7d01acc7e32f0e933ddfeaaf263edcda0068930897e",
+          "bytes": 8867682,
+          "operations": 339,
+          "title": "Chargebee API",
+          "apiVersion": "2026-09-24.553c79154f0075cfbab35271eeff8b63a3ed6a86",
+          "specVersion": "3.1.0",
+          "server": "https://{site}.chargebee.com/api/v2",
+          "specServer": "{protocol}://{site}.{environment}:{port}/api/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Chargebee API v1 (legacy)": {
+          "status": "ok",
+          "sha256": "de3f003ed5187dd5967855e2dbc3583cdc359b8df403d7c61924235034561e52",
+          "bytes": 1804883,
+          "operations": 104,
+          "title": "Chargebee API",
+          "apiVersion": "2026-09-24.553c79154f0075cfbab35271eeff8b63a3ed6a86",
+          "specVersion": "3.1.0",
+          "server": "https://{site}.chargebee.com/api/v1",
+          "specServer": "{protocol}://{site}.{environment}:{port}/api/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "clerk": {
+      "name": "Clerk",
+      "apideck": false,
+      "specs": {
+        "Clerk Backend API": {
+          "status": "ok",
+          "sha256": "14e1998e7cbcd8c4510ff0686f557989ce1d717493c8d3721970dc6389a819e5",
+          "bytes": 725686,
+          "operations": 226,
+          "title": "Clerk Backend API",
+          "apiVersion": "2025-04-10",
+          "specVersion": "3.0.3",
+          "server": "https://api.clerk.com/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "discourse": {
+      "name": "Discourse",
+      "apideck": false,
+      "specs": {
+        "Discourse API": {
+          "status": "ok",
+          "sha256": "655f381c1c27cd5eb918feb8037881fb234643b95a7b3a6a34071701ed96269b",
+          "bytes": 722566,
+          "operations": 95,
+          "title": "Discourse API Documentation",
+          "apiVersion": "latest",
+          "specVersion": "3.1.0",
+          "server": "https://{defaultHost}",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "fly": {
+      "name": "Fly",
+      "apideck": false,
+      "specs": {
+        "Fly Machines API": {
+          "status": "ok",
+          "sha256": "0394571a4e33878bd7c2fbc506b43f402990d0b66ee3a9c8a58fe03b417ef17b",
+          "bytes": 299513,
+          "operations": 101,
+          "title": "Machines API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.machines.dev",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "gocardless": {
+      "name": "GoCardless",
+      "apideck": false,
+      "specs": {
+        "GoCardless API": {
+          "status": "ok",
+          "sha256": "03bccb777dfdb096233cd9670377d9f90c485a26f4881d9154085722d01ac241",
+          "bytes": 1631053,
+          "operations": 138,
+          "title": "GoCardless API",
+          "apiVersion": "2015-07-06",
+          "specVersion": "3.0.0",
+          "server": "https://api.gocardless.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "google-shopping": {
+      "name": "Google Shopping",
+      "apideck": false,
+      "specs": {
+        "Merchant API Products v1": {
+          "status": "ok",
+          "sha256": "ecb2ebea87dfc95e185350a76d035bf2891f6a1128f34fd6c2906d13439f6d22",
+          "bytes": 162418,
+          "operations": 5,
+          "title": "Merchant API",
+          "apiVersion": "products_v1",
+          "server": "https://merchantapi.googleapis.com/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "heygen": {
+      "name": "HeyGen",
+      "apideck": false,
+      "specs": {
+        "HeyGen API": {
+          "status": "ok",
+          "sha256": "45eb48b80814a5b5380b5bfa3ecb42124f2a62cc2ab03aae08c8a4ed691d57a0",
+          "bytes": 88080,
+          "operations": 53,
+          "title": "HeyGen API",
+          "apiVersion": "4.0.8",
+          "specVersion": "3.1.0",
+          "server": "https://api.heygen.com",
+          "changedOn": "2026-11-01"
+        },
+        "HeyGen External API": {
+          "status": "ok",
+          "sha256": "f69e9546a89d49fb630ad6d1b56c23a49000bfddc17b3d6d1041740d3c8edb3d",
+          "bytes": 1830486,
+          "operations": 184,
+          "title": "HeyGen External API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.heygen.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "honeycomb": {
+      "name": "Honeycomb",
+      "apideck": false,
+      "specs": {
+        "Honeycomb API": {
+          "status": "ok",
+          "sha256": "8972b20ab2a1a1cf716c808e5f35c2a6a3ed8d6e825fe81a1615fec93df7f62f",
+          "bytes": 361059,
+          "operations": 93,
+          "title": "Honeycomb API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.honeycomb.io",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "kit": {
+      "name": "Kit",
+      "apideck": false,
+      "specs": {
+        "Kit API v4": {
+          "status": "ok",
+          "sha256": "f04308f83b6324c0962182e7ee5c30c19d29c4581b57a8028df42a3dc0d5ca92",
+          "bytes": 740466,
+          "operations": 85,
+          "title": "Kit API",
+          "apiVersion": "4.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.kit.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "leadmagic": {
+      "name": "LeadMagic",
+      "apideck": false,
+      "specs": {
+        "LeadMagic API": {
+          "status": "ok",
+          "sha256": "638aeea63b7c38832428cf9588e289afa085971065d348d4eb373295cdfecf96",
+          "bytes": 206840,
+          "operations": 90,
+          "title": "LeadMagic API",
+          "apiVersion": "1.4.35",
+          "specVersion": "3.1.0",
+          "server": "https://api.leadmagic.io",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "neon": {
+      "name": "Neon",
+      "apideck": false,
+      "specs": {
+        "Neon API v2": {
+          "status": "ok",
+          "sha256": "fcc7b2c39f15df03adedf90aa7cde7f1f5e7729ae50b10fd9c7a959f3fb1f82d",
+          "bytes": 915734,
+          "operations": 193,
+          "title": "Neon API",
+          "apiVersion": "v2",
+          "specVersion": "3.0.3",
+          "server": "https://console.neon.tech/api/v2",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "outline": {
+      "name": "Outline",
+      "apideck": false,
+      "specs": {
+        "Outline API": {
+          "status": "ok",
+          "sha256": "45920d3294e51faef7cc4ded9894e098d0727eb5799f9cc5bf024888420aa4cc",
+          "bytes": 355284,
+          "operations": 153,
+          "title": "Outline API",
+          "apiVersion": "0.1.0",
+          "specVersion": "3.0.0",
+          "server": "https://app.getoutline.com/api",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "parallel": {
+      "name": "Parallel",
+      "apideck": false,
+      "specs": {
+        "Parallel API": {
+          "status": "ok",
+          "sha256": "0c1c1b0442ddb1a91b1cab3789ed04dc5d4577e6b54eb9b95a2dc0b576aed9af",
+          "bytes": 449593,
+          "operations": 38,
+          "title": "Parallel API",
+          "apiVersion": "0.1.2",
+          "specVersion": "3.1.0",
+          "server": "https://api.parallel.ai",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "peec-ai": {
+      "name": "Peec AI",
+      "apideck": false,
+      "specs": {
+        "Peec AI Customer API": {
+          "status": "ok",
+          "sha256": "0dd5427bbaa6a723da9d4389374d37d3a46c3ee16f97c14b1a3ecb13f4fe4f49",
+          "bytes": 738841,
+          "operations": 117,
+          "title": "Peec AI Customer API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.peec.ai/customer/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "pinecone": {
+      "name": "Pinecone",
+      "apideck": false,
+      "specs": {
+        "Control Plane API (2026-07)": {
+          "status": "ok",
+          "sha256": "17f6fce340859718c09ad9f6f24420db01762104d6bcf49b4c4919c6a05cc5e6",
+          "bytes": 210394,
+          "operations": 24,
+          "title": "Pinecone Control Plane API",
+          "apiVersion": "2026-07",
+          "specVersion": "3.0.3",
+          "server": "https://api.pinecone.io",
+          "changedOn": "2026-11-01"
+        },
+        "Data Plane API (2026-07)": {
+          "status": "ok",
+          "sha256": "e043e64d5067d169689881c400517cd9a84dbd4af52ebcdb385f8a0687d3e89a",
+          "bytes": 169966,
+          "operations": 29,
+          "title": "Pinecone Data Plane API",
+          "apiVersion": "2026-07",
+          "specVersion": "3.0.3",
+          "server": "https://{index_host}",
+          "changedOn": "2026-11-01"
+        },
+        "Inference API (2026-07)": {
+          "status": "ok",
+          "sha256": "2b146dbc83d4b329f5f17f1e1b0eef85498893f4b2026c8b2d8d7e8c28a3d9cb",
+          "bytes": 31271,
+          "operations": 4,
+          "title": "Pinecone Inference API",
+          "apiVersion": "2026-07",
+          "specVersion": "3.0.3",
+          "server": "https://api.pinecone.io",
+          "changedOn": "2026-11-01"
+        },
+        "Admin API (2026-07)": {
+          "status": "ok",
+          "sha256": "0626273373e1e31e95d33aa29e1e7369dce5e86b652361be644afe79bda837a6",
+          "bytes": 175703,
+          "operations": 35,
+          "title": "Pinecone Admin API",
+          "apiVersion": "2026-07",
+          "specVersion": "3.0.3",
+          "server": "https://api.pinecone.io",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "plain": {
+      "name": "Plain",
+      "apideck": false,
+      "specs": {
+        "Plain GraphQL API": {
+          "status": "manual: login"
+        }
+      }
+    },
+    "ringcentral": {
+      "name": "RingCentral",
+      "apideck": false,
+      "specs": {
+        "RingCentral Connect Platform API": {
+          "status": "ok",
+          "sha256": "2115f9a7a5c5dcaa648c560febbfdc2c0018781fdff1cfd32adbf74de1e729e9",
+          "bytes": 3997294,
+          "operations": 347,
+          "title": "RingCentral Connect Platform API",
+          "apiVersion": "1.0.46",
+          "specVersion": "3.0.1",
+          "server": "https://platform.ringcentral.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "shippo": {
+      "name": "Shippo",
+      "apideck": false,
+      "specs": {
+        "Shippo API": {
+          "status": "ok",
+          "sha256": "238934e08bbc4494f8904dd43db32ba03cce9b469227b4e40e119b8825fc1811",
+          "bytes": 954475,
+          "operations": 71,
+          "title": "Shippo external API.",
+          "apiVersion": "2018-02-08",
+          "specVersion": "3.1.0",
+          "server": "https://api.goshippo.com",
+          "changedOn": "2026-11-01"
+        },
+        "Address API v2": {
+          "status": "ok",
+          "sha256": "ed0a42534dd5411c7b5288e2c8607929e0467c015d76f009952820b47ac931b0",
+          "bytes": 52902,
+          "operations": 7,
+          "title": "Shippo Address API",
+          "apiVersion": "0.1",
+          "specVersion": "3.1.0",
+          "server": "https://api.goshippo.com",
+          "changedOn": "2026-11-01"
+        },
+        "Automations API": {
+          "status": "ok",
+          "sha256": "02471a096a3c99d38e96e302057fc38230e259643f60ce88eea3a1866d4008ba",
+          "bytes": 47370,
+          "operations": 4,
+          "title": "Automations API",
+          "apiVersion": "beta",
+          "specVersion": "3.1.0",
+          "server": "https://api.goshippo.com",
+          "changedOn": "2026-11-01"
+        },
+        "Estimate API": {
+          "status": "ok",
+          "sha256": "355fea90a3cfbf3fe84d8f235851240d901a27d588b497ba27d4f864f6e8d14c",
+          "bytes": 7977,
+          "operations": 1,
+          "title": "Estimate",
+          "apiVersion": "0.1.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.goshippo.com",
+          "changedOn": "2026-11-01"
+        },
+        "Reporting API": {
+          "status": "ok",
+          "sha256": "e472e9a9e2558bf0d6b4a0acb8e757047cd680f4f9fac0731f8934c4ae6c9461",
+          "bytes": 27139,
+          "operations": 5,
+          "title": "Reporting API",
+          "apiVersion": "0.1.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.goshippo.com",
+          "changedOn": "2026-11-01"
+        },
+        "Reports API": {
+          "status": "ok",
+          "sha256": "d5d6c4f5749dad57eaed9edec10b84210cddf77de66e3e6b654aa03e075a6a64",
+          "bytes": 8336,
+          "operations": 2,
+          "title": "Reports API",
+          "apiVersion": "v2",
+          "specVersion": "3.0.0",
+          "server": "https://api.goshippo.com",
+          "changedOn": "2026-11-01"
+        },
+        "Surcharges API": {
+          "status": "ok",
+          "sha256": "809a9971cdf1a970cef0373c2478cabe2df2374992b91c86eec9cef9cd09fbb1",
+          "bytes": 8726,
+          "operations": 2,
+          "title": "Shippo Shipping Surcharge Report API",
+          "apiVersion": "0.1.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.goshippo.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "grist": {
+      "name": "Grist",
+      "apideck": false,
+      "specs": {
+        "Grist API": {
+          "status": "ok",
+          "sha256": "f6d1d48fd1a001a4ea70b8e4edb9c3f5aa5a544ce517d8a1bcf6d67cbf344df2",
+          "bytes": 138304,
+          "operations": 120,
+          "title": "Grist API",
+          "apiVersion": "1.0.1",
+          "specVersion": "3.0.0",
+          "server": "https://{gristhost}/api",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "7shifts": {
+      "name": "7shifts",
+      "apideck": false,
+      "specs": {}
+    },
+    "accelo": {
+      "name": "Accelo",
+      "apideck": false,
+      "specs": {}
+    },
+    "adobe-commerce": {
+      "name": "Adobe Commerce",
+      "apideck": false,
+      "specs": {}
+    },
+    "adyen": {
+      "name": "Adyen",
+      "apideck": false,
+      "specs": {
+        "Checkout API v72": {
+          "status": "ok",
+          "sha256": "7dee554981f5cc22ddb377d09e4ebe69862c26fbe13666887d98cdb12d7cf8d1",
+          "bytes": 963691,
+          "operations": 31,
+          "title": "Adyen Checkout API",
+          "apiVersion": "72",
+          "specVersion": "3.1.0",
+          "server": "https://checkout-test.adyen.com/v72",
+          "changedOn": "2026-11-01"
+        },
+        "Management API v3": {
+          "status": "ok",
+          "sha256": "55cb8143ce0eb3dd08c74f560cd132b3b689150a2552c6f443c7c1f1cd8f2b7e",
+          "bytes": 1450908,
+          "operations": 166,
+          "title": "Management API",
+          "apiVersion": "3",
+          "specVersion": "3.1.0",
+          "server": "https://management-test.adyen.com/v3",
+          "changedOn": "2026-11-01"
+        },
+        "Configuration API (Balance Platform) v2": {
+          "status": "ok",
+          "sha256": "89a469ab11aab9343a7e25149542018b6a3421a4508960598ce78286bb74f81e",
+          "bytes": 816987,
+          "operations": 97,
+          "title": "Configuration API",
+          "apiVersion": "2",
+          "specVersion": "3.1.0",
+          "server": "https://balanceplatform-api-test.adyen.com/bcl/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Legal Entity Management API v4": {
+          "status": "ok",
+          "sha256": "19ce87e7a22d8f263f41a51f4fe0a92a5004a8c152420efce54f5b1e8b195504",
+          "bytes": 337420,
+          "operations": 34,
+          "title": "Legal Entity Management API",
+          "apiVersion": "4",
+          "specVersion": "3.1.0",
+          "server": "https://kyc-test.adyen.com/lem/v4",
+          "changedOn": "2026-11-01"
+        },
+        "Transfers API v4": {
+          "status": "ok",
+          "sha256": "21b62b189d7c1cf8890eda3cf1246ac51c52cdf3577b5e23f92395b1f2ce0c5d",
+          "bytes": 255578,
+          "operations": 12,
+          "title": "Transfers API",
+          "apiVersion": "4",
+          "specVersion": "3.1.0",
+          "server": "https://balanceplatform-api-test.adyen.com/btl/v4",
+          "changedOn": "2026-11-01"
+        },
+        "Payout API v68": {
+          "status": "ok",
+          "sha256": "4333cb145901e32916ebd3b2a441ddce22d76cc591c5bb5abbca16803d34343b",
+          "bytes": 104596,
+          "operations": 6,
+          "title": "Adyen Payout API",
+          "apiVersion": "68",
+          "specVersion": "3.1.0",
+          "server": "https://pal-test.adyen.com/pal/servlet/Payout/v68",
+          "changedOn": "2026-11-01"
+        },
+        "Recurring API v68": {
+          "status": "ok",
+          "sha256": "bba130248ed69fb535bd66498d930c68905e6b62c2a7fb04024b9d3d0f13cf77",
+          "bytes": 57143,
+          "operations": 6,
+          "title": "Adyen Recurring API",
+          "apiVersion": "68",
+          "specVersion": "3.1.0",
+          "server": "https://pal-test.adyen.com/pal/servlet/Recurring/v68",
+          "changedOn": "2026-11-01"
+        },
+        "Disputes API v30": {
+          "status": "ok",
+          "sha256": "2379cba0a5508a61f50503e796fa9b74ad328d0759953e7b8258e179980291d8",
+          "bytes": 38386,
+          "operations": 5,
+          "title": "Disputes API",
+          "apiVersion": "30",
+          "specVersion": "3.1.0",
+          "server": "https://ca-test.adyen.com/ca/services/DisputeService/v30",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "adyntel": {
+      "name": "Adyntel",
+      "apideck": false,
+      "specs": {}
+    },
+    "agencyzoom": {
+      "name": "AgencyZoom",
+      "apideck": false,
+      "specs": {}
+    },
+    "ahrefs": {
+      "name": "Ahrefs",
+      "apideck": false,
+      "specs": {
+        "Ahrefs API v3 (complete)": {
+          "status": "ok",
+          "sha256": "6a1019016501240ec578a86696f0681295444f72b0b1214a26f0d4f42325cb63",
+          "bytes": 2548678,
+          "operations": 160,
+          "title": "Ahrefs API",
+          "apiVersion": "3.0.0",
+          "specVersion": "3.2.0",
+          "server": "https://api.ahrefs.com",
+          "specServer": "https://api.ahrefs.com/v3",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "alchemy": {
+      "name": "Alchemy",
+      "apideck": false,
+      "specs": {
+        "Alchemy NFT API": {
+          "status": "ok",
+          "sha256": "78e11aef0eb4726030b1970849600086cda637e77bcdc05b91b650ead6bf272d",
+          "bytes": 242884,
+          "operations": 14,
+          "title": "🎨 NFT API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://{network}.g.alchemy.com/nft",
+          "changedOn": "2026-11-01"
+        },
+        "Alchemy Prices API": {
+          "status": "ok",
+          "sha256": "6085f3d107acd4abd4922930ac09a280b14ef17bb05d48cad55e6a51187ac36a",
+          "bytes": 45325,
+          "operations": 3,
+          "title": "📈 Prices API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.g.alchemy.com/prices/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Alchemy Data API": {
+          "status": "ok",
+          "sha256": "caa66c926101232da9d5989549bd21c122b7001e5b2c777241543d45796ec723",
+          "bytes": 212965,
+          "operations": 5,
+          "title": "🧠 Data",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.g.alchemy.com/data/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Alchemy Webhooks (Notify) API": {
+          "status": "ok",
+          "sha256": "2718ea8ba61319731f10fcd26f136d47a2b30ac962fb6bf66135ce094000f2ec",
+          "bytes": 84016,
+          "operations": 13,
+          "title": "🔔 Webhooks",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://dashboard.alchemy.com/api",
+          "changedOn": "2026-11-01"
+        },
+        "Alchemy Smart Wallets API": {
+          "status": "ok",
+          "sha256": "6942bc1f94b5a5b231818de1b615a12a0505663e25b5fd12791e5b5b626c0ce5",
+          "bytes": 29007,
+          "operations": 6,
+          "title": "👤 Smart Wallets",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.g.alchemy.com/signer/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Alchemy Gas Manager Admin API": {
+          "status": "ok",
+          "sha256": "2eca066e352d155261ccb992ede8f97ba692839ce7a077a6ed3e2900b685fe2d",
+          "bytes": 184749,
+          "operations": 10,
+          "title": "🪄 Gas Manager Admin API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://manage.g.alchemy.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "amplemarket": {
+      "name": "Amplemarket",
+      "apideck": false,
+      "specs": {
+        "Amplemarket API": {
+          "status": "ok",
+          "sha256": "0e048c272725d050e666d3eef8a828694e31f88d32ae22415dc1321aaf9b87dc",
+          "bytes": 426574,
+          "operations": 49,
+          "title": "Amplemarket API V1 Docs",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://api.amplemarket.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "apideck": false,
+      "specs": {}
+    },
+    "apaleo": {
+      "name": "Apaleo",
+      "apideck": false,
+      "specs": {
+        "apaleo Inventory API": {
+          "status": "ok",
+          "sha256": "4c1815241293cb25b5a41eb2708b09c1f0ba45552d26489bebd6fa63ca6ce910",
+          "bytes": 151914,
+          "operations": 35,
+          "title": "apaleo Inventory API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://api.apaleo.com",
+          "changedOn": "2026-11-01"
+        },
+        "apaleo Rate Plan API": {
+          "status": "ok",
+          "sha256": "27a382e1c47f49be503eaf76a3c0280e7f8a9d060565d41e26ce33dc5b88223c",
+          "bytes": 262866,
+          "operations": 45,
+          "title": "apaleo Rate Plan API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://api.apaleo.com",
+          "changedOn": "2026-11-01"
+        },
+        "apaleo Booking API": {
+          "status": "ok",
+          "sha256": "37ce9f0f69defa9dca387357f66edfeee2ef48494e3c3587460eac3761612ede",
+          "bytes": 545344,
+          "operations": 77,
+          "title": "apaleo Booking API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://api.apaleo.com",
+          "changedOn": "2026-11-01"
+        },
+        "apaleo Finance API": {
+          "status": "ok",
+          "sha256": "db12cc26bc90cba213ed7dbdd02c7deb33000fd84df23deb61c9217cae4fceec",
+          "bytes": 386765,
+          "operations": 65,
+          "title": "apaleo Finance API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://api.apaleo.com",
+          "changedOn": "2026-11-01"
+        },
+        "apaleo Settings API": {
+          "status": "ok",
+          "sha256": "5e49d161ff869935e1fbaab796067a79ae535cd1a0c2215ce7a8fb3533ddbd0e",
+          "bytes": 130818,
+          "operations": 35,
+          "title": "apaleo Settings API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://api.apaleo.com",
+          "changedOn": "2026-11-01"
+        },
+        "apaleo Account API": {
+          "status": "ok",
+          "sha256": "a7a0373179953d4d546f8bd18e42eeefd5fc2e48c7abf56278940e6f4533b542",
+          "bytes": 22019,
+          "operations": 6,
+          "title": "apaleo Account API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://api.apaleo.com",
+          "changedOn": "2026-11-01"
+        },
+        "apaleo Operations API": {
+          "status": "ok",
+          "sha256": "bc5c781244ba905dbe953b9d0abfbc0028152a33259e8c3ef52531e0f9d9a8b7",
+          "bytes": 39563,
+          "operations": 10,
+          "title": "apaleo Operations API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://api.apaleo.com",
+          "changedOn": "2026-11-01"
+        },
+        "apaleo Reports API": {
+          "status": "ok",
+          "sha256": "3ab9ffe988590b0e8cd21a42f462053cd756f17f32a18f354af17972cd4b862d",
+          "bytes": 71682,
+          "operations": 5,
+          "title": "apaleo Reports API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://api.apaleo.com",
+          "changedOn": "2026-11-01"
+        },
+        "apaleo Availability API": {
+          "status": "ok",
+          "sha256": "0968d7b410862e0517fb443b43ad53607cfe2d31d94677a5a3d1e9a97962ef69",
+          "bytes": 56497,
+          "operations": 7,
+          "title": "apaleo Availability API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://api.apaleo.com",
+          "changedOn": "2026-11-01"
+        },
+        "apaleo Logs API": {
+          "status": "ok",
+          "sha256": "38ad849d9c96adabc74f459a84944cd4d3e52f380b5520344bd5733e1ada8796",
+          "bytes": 60082,
+          "operations": 4,
+          "title": "apaleo logs API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://api.apaleo.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "attentive": {
+      "name": "Attentive",
+      "apideck": false,
+      "specs": {
+        "Attentive API V2": {
+          "status": "ok",
+          "sha256": "2f49ffff7d65e6465db19ef4db1790417a065b5abb912fbfeeb24ac26f9e77b2",
+          "bytes": 58539,
+          "operations": 13,
+          "title": "Attentive API V2",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.attentivemobile.com",
+          "specServer": "https://api.attentivemobile.com/",
+          "changedOn": "2026-11-01"
+        },
+        "Attentive API (V1)": {
+          "status": "ok",
+          "sha256": "49b442cf9858c132b300bb825338eca000daed58748d69604e8afec8ab19c0ae",
+          "bytes": 285214,
+          "operations": 22,
+          "title": "Attentive API",
+          "apiVersion": "",
+          "specVersion": "3.0.3",
+          "server": "https://api.attentivemobile.com/v1",
+          "specIssues": "no info.version",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "auth0": {
+      "name": "Auth0",
+      "apideck": false,
+      "specs": {
+        "Management API v2": {
+          "status": "ok",
+          "sha256": "b4f62707304064249f12a082b4d5b15539391c92f5102bae1955ae89a8274368",
+          "bytes": 7100649,
+          "operations": 490,
+          "title": "Auth0 Management API",
+          "apiVersion": "2.0",
+          "specVersion": "3.1.0",
+          "server": "https://{tenantDomain}/api/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Authentication API": {
+          "status": "ok",
+          "sha256": "deeeebd503a87784dececbbaea229be1f0591af79e57872a2c854f3a02b2be51",
+          "bytes": 183476,
+          "operations": 31,
+          "title": "Authentication API",
+          "apiVersion": "v1",
+          "specVersion": "3.1.0",
+          "server": "https://{yourDomain}",
+          "changedOn": "2026-11-01"
+        },
+        "My Account API": {
+          "status": "ok",
+          "sha256": "26b03681d5bb04e44ac91b2926cff66d15c9f1daf7e923fc0ce78368c7d4b786",
+          "bytes": 209890,
+          "operations": 23,
+          "title": "My Account",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://{host}/me/v1",
+          "changedOn": "2026-11-01"
+        },
+        "My Organization API": {
+          "status": "ok",
+          "sha256": "7ed7ac1d33810ee1cb13eb9af41ba7b35829561eb77f1b8ee35f44bf34f5b292",
+          "bytes": 501892,
+          "operations": 39,
+          "title": "My Organization API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://{tenantDomain}/my-org/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Event Catalog": {
+          "status": "ok",
+          "sha256": "5a66dc12910a7a51f9048b90c5c84fdda175bccfdb5a491c634789e71c883435",
+          "bytes": 2493479,
+          "operations": 0,
+          "title": "Event Catalog",
+          "apiVersion": "0.13.6",
+          "specVersion": "3.1.0",
+          "server": "https://{tenantDomain}",
+          "changedOn": "2026-11-01"
+        },
+        "Tenant Logs": {
+          "status": "ok",
+          "sha256": "6c48b4332c440f5799fb6bad816e4e0fcbefbe9641e879641450ee5df799abf6",
+          "bytes": 1430868,
+          "operations": 0,
+          "title": "Tenant Logs",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://{tenantDomain}",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "autodesk": {
+      "name": "Autodesk",
+      "apideck": false,
+      "specs": {
+        "Authentication (APS)": {
+          "status": "ok",
+          "sha256": "0c214956e7152ef0c8f8263b752b70322c4e8d50cad352bca004aed2baf25992",
+          "bytes": 45647,
+          "operations": 8,
+          "title": "Authentication",
+          "apiVersion": "2.0",
+          "specVersion": "3.0.1",
+          "server": "https://developer.api.autodesk.com",
+          "changedOn": "2026-11-01"
+        },
+        "Data Management (APS)": {
+          "status": "ok",
+          "sha256": "519e75250ad02c27e79549fa2d78f55cca817c793d0e6607c92c1c5138c8424d",
+          "bytes": 387713,
+          "operations": 41,
+          "title": "Data Management",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.1",
+          "server": "https://developer.api.autodesk.com",
+          "changedOn": "2026-11-01"
+        },
+        "Model Derivative (APS)": {
+          "status": "ok",
+          "sha256": "e2bafa32dbb12a779f23da0b5be382ff17280c6557a8d568845552e4c7490391",
+          "bytes": 141477,
+          "operations": 12,
+          "title": "Model Derivative",
+          "apiVersion": "2.0",
+          "specVersion": "3.0.1",
+          "server": "https://developer.api.autodesk.com",
+          "changedOn": "2026-11-01"
+        },
+        "Object Storage Service (APS)": {
+          "status": "ok",
+          "sha256": "4c696bf598e68d305fd5568d9e2986d26a98da07b6f5e6317a25d3735184c1cd",
+          "bytes": 155005,
+          "operations": 21,
+          "title": "oss",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.1",
+          "server": "https://developer.api.autodesk.com",
+          "changedOn": "2026-11-01"
+        },
+        "Webhooks (APS)": {
+          "status": "ok",
+          "sha256": "3fed2fc8a3bb8e34d64a04618b5023f5ee29f42d80a5b31ec4485c692564162c",
+          "bytes": 79819,
+          "operations": 12,
+          "title": "Webhooks",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.1",
+          "server": "https://developer.api.autodesk.com",
+          "changedOn": "2026-11-01"
+        },
+        "Secure Service Accounts (APS)": {
+          "status": "ok",
+          "sha256": "ba5a8936d3649c6f494e6a8902476107b33e2ab0f5a4f699be090c5dad0a8c21",
+          "bytes": 30236,
+          "operations": 10,
+          "title": "Secure Service Account",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.3",
+          "server": "https://developer.api.autodesk.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "autumn": {
+      "name": "Autumn",
+      "apideck": false,
+      "specs": {
+        "Autumn API v2": {
+          "status": "ok",
+          "sha256": "b9e9300f12469071bdb3b9b492912f213ed968502dc108ba5dd4ff8e4d0b1b1d",
+          "bytes": 299132,
+          "operations": 26,
+          "title": "Autumn API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.useautumn.com/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "auvik": {
+      "name": "Auvik",
+      "apideck": false,
+      "specs": {
+        "Auvik API": {
+          "status": "ok",
+          "sha256": "302e61b9c9380a0ec834db1738d355952b296e75d6825d95e12a26123d2d3ce5",
+          "bytes": 638282,
+          "operations": 50,
+          "title": "Auvik API",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://auvikapi.{region}.my.auvik.com",
+          "specServer": "https://auvikapi.us1.my.auvik.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "avoma": {
+      "name": "Avoma",
+      "apideck": false,
+      "specs": {
+        "Avoma API": {
+          "status": "ok",
+          "sha256": "f0d41a202b0f0ae4f96dab98457e45c636a7cdf924ffefc0718b64a79e782580",
+          "bytes": 346495,
+          "operations": 59,
+          "title": "Avoma APIs",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.avoma.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "baserow": {
+      "name": "Baserow",
+      "apideck": false,
+      "specs": {
+        "Baserow API": {
+          "status": "ok",
+          "sha256": "10936067e21f8a20c8cf3b27c2817e3e66a81a42083b00e03344ca4f65a7b023",
+          "bytes": 6925454,
+          "operations": 453,
+          "title": "Baserow API spec",
+          "apiVersion": "2.4.1",
+          "specVersion": "3.0.3",
+          "server": "https://api.baserow.io",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "basin": {
+      "name": "Basin",
+      "apideck": false,
+      "specs": {}
+    },
+    "beehiiv": {
+      "name": "Beehiiv",
+      "apideck": false,
+      "specs": {
+        "beehiiv API": {
+          "status": "ok",
+          "sha256": "d8768736dd784b7782f73126b2b01bab78ecc95480213869dbf2509515b69837",
+          "bytes": 588839,
+          "operations": 142,
+          "title": "API Reference",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.beehiiv.com/v2",
+          "changedOn": "2026-11-01"
+        },
+        "beehiiv Webhooks": {
+          "status": "ok",
+          "sha256": "cba9460420908480fd983a4356140171b18765ab287d31f7380f205e07a3f3ec",
+          "bytes": 31313,
+          "operations": 0,
+          "title": "Webhooks",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.beehiiv.com/v2",
+          "changedOn": "2026-11-01"
+        },
+        "beehiiv OAuth2": {
+          "status": "ok",
+          "sha256": "10fba1faf853f2c7fa46690a4bec7b7d9152da66d804e8d06f14ed803570a89a",
+          "bytes": 8997,
+          "operations": 5,
+          "title": "OAuth2",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.beehiiv.com/v2",
+          "specServer": "https://app.beehiiv.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "better-stack": {
+      "name": "Better Stack",
+      "apideck": false,
+      "specs": {}
+    },
+    "bettercontact": {
+      "name": "Bettercontact",
+      "apideck": false,
+      "specs": {}
+    },
+    "bigchange": {
+      "name": "BigChange",
+      "apideck": false,
+      "specs": {
+        "BigChange DX API": {
+          "status": "ok",
+          "sha256": "5306509f561614337302da532fc167a447afb54e9be0d71cb34eae0a64a01ae6",
+          "bytes": 1740180,
+          "operations": 248,
+          "title": "BigChange DX",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.4",
+          "server": "https://api.bigchange.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "bill-com": {
+      "name": "Bill.com",
+      "apideck": false,
+      "specs": {}
+    },
+    "bitwarden": {
+      "name": "Bitwarden",
+      "apideck": false,
+      "specs": {}
+    },
+    "blandai": {
+      "name": "Bland AI",
+      "apideck": false,
+      "specs": {}
+    },
+    "boldsign": {
+      "name": "Boldsign",
+      "apideck": false,
+      "specs": {
+        "BoldSign API": {
+          "status": "ok",
+          "sha256": "316b71bdaa94ed3abf05125b605749bd1d27eff348bd87d51beccd7efe07ed56",
+          "bytes": 1254393,
+          "operations": 87,
+          "title": "BoldSign API",
+          "apiVersion": "1",
+          "specVersion": "3.0.4",
+          "server": "https://api.boldsign.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "braintree": {
+      "name": "Braintree",
+      "apideck": false,
+      "specs": {
+        "Braintree GraphQL schema": {
+          "status": "ok",
+          "sha256": "7d500b033d941c62d440ac90e0554ba2bdeb7030a81b095a72742f11b91b1453",
+          "bytes": 531554,
+          "operations": 143,
+          "derivedError": "Interface field Node.id is not deprecated, so implementation field InStoreContext.id must not be dep",
+          "server": "https://payments.braintree-api.com/graphql",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "brandfetch": {
+      "name": "Brandfetch",
+      "apideck": false,
+      "specs": {
+        "Brandfetch API": {
+          "status": "ok",
+          "sha256": "3f6ce40b786d6ce05e6826a20ed1ee2d0bde230e7ee84a900fbb702c25e61b60",
+          "bytes": 234138,
+          "operations": 14,
+          "title": "Brandfetch API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.brandfetch.io",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "brave": {
+      "name": "Brave Search",
+      "apideck": false,
+      "specs": {}
+    },
+    "brex": {
+      "name": "Brex",
+      "apideck": false,
+      "specs": {
+        "Brex Team API": {
+          "status": "ok",
+          "sha256": "76616101e54a7c0f3f0993b2dd6b7aa1dc73b123cf9b903eaf7b36e80f6f8558",
+          "bytes": 77858,
+          "operations": 35,
+          "title": "Team API",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.brex.com",
+          "changedOn": "2026-11-01"
+        },
+        "Brex Payments API": {
+          "status": "ok",
+          "sha256": "a54432c16ba31160c632f1075a88ac8ba24d95c4a6b0716c34170d9b2566daaa",
+          "bytes": 44371,
+          "operations": 10,
+          "title": "Payments API",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.brex.com",
+          "changedOn": "2026-11-01"
+        },
+        "Brex Expenses API": {
+          "status": "ok",
+          "sha256": "ed51dbb5ef45663c6a615f3451c8a87a36097e3c99fb2f2d2856d97f6ee5d788",
+          "bytes": 79460,
+          "operations": 7,
+          "title": "Expenses API",
+          "apiVersion": "0.1",
+          "specVersion": "3.0.1",
+          "server": "https://api.brex.com",
+          "changedOn": "2026-11-01"
+        },
+        "Brex Budgets API": {
+          "status": "ok",
+          "sha256": "e93b1cd07aaf86d8f5191bf6fafc825aa37bd86e0af6d4d48c0af6c870d19dbf",
+          "bytes": 67534,
+          "operations": 17,
+          "title": "Budgets API",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.brex.com",
+          "changedOn": "2026-11-01"
+        },
+        "Brex Fields API": {
+          "status": "ok",
+          "sha256": "b1ba15754f284029471b20e01facabbbb72f27d8db1427a49ad2670fefa03725",
+          "bytes": 30120,
+          "operations": 10,
+          "title": "Fields API",
+          "apiVersion": "1.0.0-beta",
+          "specVersion": "3.0.1",
+          "server": "https://api.brex.com",
+          "changedOn": "2026-11-01"
+        },
+        "Brex Accounting API": {
+          "status": "ok",
+          "sha256": "19746ae84d48a83212bdb4c6c12897d0d01180d9b18b85e106eff7d175ac2770",
+          "bytes": 49430,
+          "operations": 6,
+          "title": "Accounting API",
+          "apiVersion": "1.0.0-alpha",
+          "specVersion": "3.0.0",
+          "server": "https://api.brex.com",
+          "changedOn": "2026-11-01"
+        },
+        "Brex Onboarding API": {
+          "status": "ok",
+          "sha256": "6cb7f9a219aa333e81995c523f425acfa2a8854edfe920c8c9be77297a820c61",
+          "bytes": 22451,
+          "operations": 5,
+          "title": "Onboarding API",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.brex.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "buffer": {
+      "name": "Buffer",
+      "apideck": false,
+      "specs": {}
+    },
+    "buildkite": {
+      "name": "Buildkite",
+      "apideck": false,
+      "specs": {}
+    },
+    "builtwith": {
+      "name": "BuiltWith",
+      "apideck": false,
+      "specs": {}
+    },
+    "canny": {
+      "name": "Canny",
+      "apideck": false,
+      "specs": {}
+    },
+    "capsule-crm": {
+      "name": "Capsule CRM",
+      "apideck": false,
+      "specs": {}
+    },
+    "cats": {
+      "name": "CATS",
+      "apideck": false,
+      "specs": {
+        "CATS API v3": {
+          "status": "ok",
+          "sha256": "dedbbade450d84d5b2b14b24cd33def8131cdb4ea9e9f2115845130da93cf1e7",
+          "bytes": 528478,
+          "operations": 224,
+          "title": "CATS API v3",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.catsone.com/v3",
+          "specServer": "https://api.catsone.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "cin7-core": {
+      "name": "Cin7 Core",
+      "apideck": false,
+      "specs": {}
+    },
+    "clay": {
+      "name": "Clay",
+      "apideck": false,
+      "specs": {}
+    },
+    "cleverreach": {
+      "name": "CleverReach",
+      "apideck": false,
+      "specs": {
+        "CleverReach REST API v3": {
+          "status": "ok",
+          "sha256": "000277be7e0bce137ba33dd1334b909eda16bbcca5f6505f7239418c8872a0c5",
+          "bytes": 154175,
+          "operations": 132,
+          "title": "CleverReach REST API",
+          "apiVersion": "3",
+          "specVersion": "2.0",
+          "server": "https://rest.cleverreach.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "clicksend": {
+      "name": "ClickSend",
+      "apideck": false,
+      "specs": {
+        "ClickSend REST API v3": {
+          "status": "ok",
+          "sha256": "316a4282846b0963de96b70bff997299a19a53abd1e07330a21cda4d3e943c97",
+          "bytes": 787865,
+          "operations": 205,
+          "title": "ClickSend REST API v3",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://rest.clicksend.com/v3",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "clockify": {
+      "name": "Clockify",
+      "apideck": false,
+      "specs": {}
+    },
+    "cloudtalk": {
+      "name": "CloudTalk",
+      "apideck": false,
+      "specs": {
+        "CloudTalk API": {
+          "status": "ok",
+          "sha256": "220d332910be1ddc844b00ae2fde2d122262358f862525360f718ef2118ca9ed",
+          "bytes": 650657,
+          "operations": 107,
+          "title": "CloudTalk API",
+          "apiVersion": "1.7",
+          "specVersion": "3.0.1",
+          "server": "https://my.cloudtalk.io/api",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "cohere": {
+      "name": "Cohere",
+      "apideck": false,
+      "specs": {
+        "Cohere API": {
+          "status": "ok",
+          "sha256": "25184037512d4149d2e2ded604bcf00d748a8fe23f979534020a9f0036fd2e71",
+          "bytes": 1140155,
+          "operations": 42,
+          "title": "API Reference",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.cohere.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "companycam": {
+      "name": "CompanyCam",
+      "apideck": false,
+      "specs": {
+        "CompanyCam Public API": {
+          "status": "ok",
+          "sha256": "631571924f79274407de3291127ade1616413fd303bbe88facfae942c4adca59",
+          "bytes": 1127298,
+          "operations": 172,
+          "title": "CompanyCam Public API",
+          "apiVersion": "v1",
+          "specVersion": "3.0.3",
+          "server": "https://app.companycam.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "contactout": {
+      "name": "ContactOut",
+      "apideck": false,
+      "specs": {}
+    },
+    "coupa": {
+      "name": "Coupa",
+      "apideck": false,
+      "specs": {}
+    },
+    "crunchbase": {
+      "name": "Crunchbase",
+      "apideck": false,
+      "specs": {}
+    },
+    "crustdata": {
+      "name": "Crustdata",
+      "apideck": false,
+      "specs": {}
+    },
+    "cursor": {
+      "name": "Cursor",
+      "apideck": false,
+      "specs": {
+        "Cursor API (origin)": {
+          "status": "ok",
+          "sha256": "e4ad793c7650754d38fb7d59374215fe731842d48d0b4c997afb10c3cf1f676a",
+          "bytes": 1040284,
+          "operations": 120,
+          "title": "Cursor Origin API",
+          "apiVersion": "v1alpha1",
+          "specVersion": "3.1.0",
+          "server": "https://api.cursor.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "demio": {
+      "name": "Demio",
+      "apideck": false,
+      "specs": {}
+    },
+    "deputy": {
+      "name": "Deputy",
+      "apideck": false,
+      "specs": {
+        "Deputy V2 API": {
+          "status": "ok",
+          "sha256": "78f0278f46080699d23a31f1dd8eda2d14bbe3ec7cdde3d0945920a5dfb52010",
+          "bytes": 598646,
+          "operations": 394,
+          "title": "Deputy V2 API",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.0",
+          "server": "https://{subdomain}.{region}.deputy.com/api",
+          "changedOn": "2026-11-01"
+        },
+        "Deputy V1 Resource API": {
+          "status": "ok",
+          "sha256": "5d8e440007861ea19e80b565805213f37e894d802b0a2f000de98e46843e197a",
+          "bytes": 717550,
+          "operations": 926,
+          "title": "Deputy V1 Resource API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://{subdomain}.{region}.deputy.com/api/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Deputy V1 Supervise API": {
+          "status": "ok",
+          "sha256": "faae6c86eabc4d1ad0c19042ab15fced55dbb21958899f23b75c2405a3c17d42",
+          "bytes": 112454,
+          "operations": 198,
+          "title": "Deputy V1 Supervise API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://{subdomain}.{region}.deputy.com/api/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Deputy V1 My API": {
+          "status": "ok",
+          "sha256": "4414687b8b3cf4ddfd5afbbb6d33c79a4bfc7553d60adfda54e94343c23b3d68",
+          "bytes": 64297,
+          "operations": 122,
+          "title": "Deputy V1 My API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://{subdomain}.{region}.deputy.com/api/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Deputy V2 Scoped API": {
+          "status": "ok",
+          "sha256": "bbc5ddc635ab848a8401285d64e34a8f8f2ff7465980c23ab3d3b72063d0256c",
+          "bytes": 3796,
+          "operations": 4,
+          "title": "Deputy V2 Scoped API",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.0",
+          "server": "https://{subdomain}.{region}.deputy.com/api",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "diffbot": {
+      "name": "Diffbot",
+      "apideck": false,
+      "specs": {
+        "Diffbot Extract APIs (community)": {
+          "status": "ok",
+          "sha256": "4d8ca5c6abadbf3f6384e9ac6f48f290214990034dd3614f76927442c7911ed8",
+          "bytes": 198273,
+          "operations": 11,
+          "title": "Extract APIs",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.diffbot.com/v3",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "dixa": {
+      "name": "Dixa",
+      "apideck": false,
+      "specs": {
+        "Dixa API v1": {
+          "status": "ok",
+          "sha256": "9e43c34d3212b418c7ef9177447ec777a2d6b6018e763d9af9840e81040f72eb",
+          "bytes": 398422,
+          "operations": 126,
+          "title": "Dixa API",
+          "apiVersion": "v1",
+          "specVersion": "3.0.3",
+          "server": "https://dev.dixa.io",
+          "changedOn": "2026-11-01"
+        },
+        "Dixa API beta": {
+          "status": "ok",
+          "sha256": "0c5f95fec26d3a822017231e3f84a5c5560558f6aaa22ab4eeae360bcf3ed5e1",
+          "bytes": 530893,
+          "operations": 141,
+          "title": "Dixa API",
+          "apiVersion": "beta",
+          "specVersion": "3.0.3",
+          "server": "https://dev.dixa.io",
+          "changedOn": "2026-11-01"
+        },
+        "Dixa Exports API": {
+          "status": "ok",
+          "sha256": "bd2b71e07899c47318bcf0e86029179a8144160a766fcd511829a8c38aac56c1",
+          "bytes": 17439,
+          "operations": 2,
+          "title": "Exports API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://exports.dixa.io",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "domo": {
+      "name": "Domo",
+      "apideck": false,
+      "specs": {}
+    },
+    "drata": {
+      "name": "Drata",
+      "apideck": false,
+      "specs": {}
+    },
+    "dynatrace": {
+      "name": "Dynatrace",
+      "apideck": false,
+      "specs": {}
+    },
+    "envoy": {
+      "name": "Envoy",
+      "apideck": false,
+      "specs": {}
+    },
+    "exist": {
+      "name": "Exist",
+      "apideck": false,
+      "specs": {}
+    },
+    "expensify": {
+      "name": "Expensify",
+      "apideck": false,
+      "specs": {}
+    },
+    "fairing": {
+      "name": "Fairing",
+      "apideck": false,
+      "specs": {}
+    },
+    "falai": {
+      "name": "Fal.ai",
+      "apideck": false,
+      "specs": {
+        "fal Platform API": {
+          "status": "ok",
+          "sha256": "a460b7281f358ba1e31728d6de63898fcc73703118255f678f3496ab51f5268c",
+          "bytes": 1927759,
+          "operations": 89,
+          "title": "Platform APIs",
+          "apiVersion": "v1",
+          "specVersion": "3.1.0",
+          "server": "https://api.fal.ai/v1",
+          "changedOn": "2026-11-01"
+        },
+        "fal Queue API": {
+          "status": "ok",
+          "sha256": "57d6ca53aa10c8d84e5c0b8a930670d23194dea2ce4e505f7a3bf930b3703d18",
+          "bytes": 41071,
+          "operations": 6,
+          "title": "Queue API",
+          "apiVersion": "v1",
+          "specVersion": "3.1.0",
+          "server": "https://queue.fal.run",
+          "changedOn": "2026-11-01"
+        },
+        "fal Sync API": {
+          "status": "ok",
+          "sha256": "7338781874af67e50078f26c640b4d89269650087a7f064f2e5f684250da1124",
+          "bytes": 27534,
+          "operations": 2,
+          "title": "Synchronous API",
+          "apiVersion": "v1",
+          "specVersion": "3.1.0",
+          "server": "https://fal.run",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "fieldglass": {
+      "name": "SAP Fieldglass",
+      "apideck": false,
+      "specs": {}
+    },
+    "findymail": {
+      "name": "Findymail",
+      "apideck": false,
+      "specs": {
+        "Findymail API (OpenAPI)": {
+          "status": "ok",
+          "sha256": "2f44e4fcea9b2617d4fca111b151d0ed9b60bca06c8a0f5f76cd35322f17c9a7",
+          "bytes": 175701,
+          "operations": 36,
+          "title": "Findymail API documentation",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://app.findymail.com",
+          "changedOn": "2026-11-01"
+        },
+        "Findymail API (Postman collection)": {
+          "status": "ok",
+          "sha256": "a806e44a4c380d92117a1579dfc3d56d7a3ec1f11f56892a60e15c91cea42302",
+          "bytes": 110296,
+          "operations": 36,
+          "title": "Findymail API documentation",
+          "server": "https://app.findymail.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "firebase": {
+      "name": "Firebase",
+      "apideck": false,
+      "specs": {
+        "Firebase Management API (v1beta1)": {
+          "status": "ok",
+          "sha256": "0987a1c47fc54754fded51e7f79c06ae1c06aef815c72b5fccb1f5a8c2654686",
+          "bytes": 143320,
+          "operations": 37,
+          "title": "Firebase Management API",
+          "apiVersion": "v1beta1",
+          "server": "https://firebase.googleapis.com",
+          "specServer": "https://firebase.googleapis.com/",
+          "changedOn": "2026-11-01"
+        },
+        "Firebase Hosting API (v1)": {
+          "status": "ok",
+          "sha256": "27fb4b87e32afef6a356d84472e08a882c6f3902067d19a79d439279c5f3ec64",
+          "bytes": 34221,
+          "operations": 5,
+          "title": "Firebase Hosting API",
+          "apiVersion": "v1",
+          "server": "https://firebasehosting.googleapis.com",
+          "specServer": "https://firebasehosting.googleapis.com/",
+          "changedOn": "2026-11-01"
+        },
+        "Firebase Cloud Messaging API (v1)": {
+          "status": "ok",
+          "sha256": "814b951a48296d84b797842cc417497a28b292f387da7e7183c14f52fc59dcbd",
+          "bytes": 68142,
+          "operations": 6,
+          "title": "Firebase Cloud Messaging API",
+          "apiVersion": "v1",
+          "server": "https://fcm.googleapis.com",
+          "specServer": "https://fcm.googleapis.com/",
+          "changedOn": "2026-11-01"
+        },
+        "Firebase Rules API (v1)": {
+          "status": "ok",
+          "sha256": "418d874a37b548008e42152866979e2e94e3c28ae49f4ad5ef7f655eb35327bd",
+          "bytes": 45162,
+          "operations": 11,
+          "title": "Firebase Rules API",
+          "apiVersion": "v1",
+          "server": "https://firebaserules.googleapis.com",
+          "specServer": "https://firebaserules.googleapis.com/",
+          "changedOn": "2026-11-01"
+        },
+        "Firebase Realtime Database Management API (v1beta)": {
+          "status": "ok",
+          "sha256": "cc5bd2fde8868382905053dc2c98b946975efc4774b5da2bf56c93c1c8a61f50",
+          "bytes": 21438,
+          "operations": 7,
+          "title": "Firebase Realtime Database Management API",
+          "apiVersion": "v1beta",
+          "server": "https://firebasedatabase.googleapis.com",
+          "specServer": "https://firebasedatabase.googleapis.com/",
+          "changedOn": "2026-11-01"
+        },
+        "Firebase App Check API (v1)": {
+          "status": "ok",
+          "sha256": "8b618510c39b71a3e2b847b1d09bcf3769f1c9ecb95f0679a77881ba350802d6",
+          "bytes": 149101,
+          "operations": 46,
+          "title": "Firebase App Check API",
+          "apiVersion": "v1",
+          "server": "https://firebaseappcheck.googleapis.com",
+          "specServer": "https://firebaseappcheck.googleapis.com/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "float": {
+      "name": "Float",
+      "apideck": false,
+      "specs": {}
+    },
+    "follow-up-boss": {
+      "name": "Follow Up Boss",
+      "apideck": false,
+      "specs": {
+        "Follow Up Boss API": {
+          "status": "ok",
+          "sha256": "46fd93b6fb97dcd38c02df91d71343cefb26eb1a92a9613bed7fec0bd6e02cee",
+          "bytes": 327583,
+          "operations": 156,
+          "title": "API Settings",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.followupboss.com/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "fullenrich": {
+      "name": "FullEnrich",
+      "apideck": false,
+      "specs": {
+        "FullEnrich API v2": {
+          "status": "ok",
+          "sha256": "29391d7e33f8e28b4eeaee48d9b223780d028e8128c9e33500c62690cdbb7088",
+          "bytes": 126090,
+          "operations": 10,
+          "title": "FullEnrich API Documentation",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://app.fullenrich.com/api/v2",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "gamma": {
+      "name": "Gamma",
+      "apideck": false,
+      "specs": {}
+    },
+    "gem": {
+      "name": "Gem ATS",
+      "apideck": false,
+      "specs": {
+        "Gem ATS API": {
+          "status": "ok",
+          "sha256": "a33b991485ba16e5950db7dce90b4d2f33fb0443365db9afa1d491386274bdf3",
+          "bytes": 161739,
+          "operations": 42,
+          "title": "Gem ATS API",
+          "apiVersion": "v0",
+          "specVersion": "3.0.2",
+          "server": "https://api.gem.com",
+          "changedOn": "2026-11-01"
+        },
+        "Gem CRM API": {
+          "status": "ok",
+          "sha256": "50a984e3c2b5050b1184cf4c67cb3829a2334dec3cb29656f5f712739e2411e5",
+          "bytes": 127663,
+          "operations": 46,
+          "title": "Gem CRM API",
+          "apiVersion": "v0",
+          "specVersion": "3.0.2",
+          "server": "https://api.gem.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "google-gemini": {
+      "name": "Google Gemini",
+      "apideck": false,
+      "specs": {
+        "Gemini API (Generative Language) discovery document": {
+          "status": "ok",
+          "sha256": "4f0480edeba031e8452a6ad83fd279a531ee6252989cd0b3ad832f4b6761d828",
+          "bytes": 387074,
+          "operations": 86,
+          "title": "Gemini API",
+          "apiVersion": "v1beta",
+          "server": "https://generativelanguage.googleapis.com",
+          "specServer": "https://generativelanguage.googleapis.com/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "groq": {
+      "name": "Groq",
+      "apideck": false,
+      "specs": {}
+    },
+    "gumroad": {
+      "name": "Gumroad",
+      "apideck": false,
+      "specs": {}
+    },
+    "halopsa": {
+      "name": "HaloPSA",
+      "apideck": false,
+      "specs": {
+        "Halo API v2": {
+          "status": "ok",
+          "sha256": "7ab00eba5990b99e6a90bb938b15997ef136f911de758455ec3e3c970e40daac",
+          "bytes": 5028386,
+          "operations": 1507,
+          "title": "Halo API",
+          "apiVersion": "v2",
+          "specVersion": "3.0.1",
+          "server": "https://{tenant}.halopsa.com/api",
+          "specServer": "/api",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "harness": {
+      "name": "Harness",
+      "apideck": false,
+      "specs": {}
+    },
+    "help-scout": {
+      "name": "Help Scout",
+      "apideck": false,
+      "specs": {}
+    },
+    "hex": {
+      "name": "Hex",
+      "apideck": false,
+      "specs": {
+        "Hex API": {
+          "status": "ok",
+          "sha256": "d5acc8b5392e790f87f0fc9441ac8dbe3291667d4ad24497b4c23b59fddaab4d",
+          "bytes": 421968,
+          "operations": 60,
+          "title": "Hex API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://app.hex.tech/api",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "heyreach": {
+      "name": "Heyreach",
+      "apideck": false,
+      "specs": {
+        "HeyReach API": {
+          "status": "ok",
+          "sha256": "cf5b6ef0897f9ff8dbb15786a916d67e1131f0188305d1bfd7a61a2fc139028d",
+          "bytes": 256166,
+          "operations": 88,
+          "title": "HeyReach API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.heyreach.io",
+          "specServer": "https://api",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "hitpay": {
+      "name": "HitPay",
+      "apideck": false,
+      "specs": {
+        "HitPay API": {
+          "status": "ok",
+          "sha256": "e5dab29ccbda02e9617fd4022559444829cd0ccf799ba44c47f1b7cddfa77af1",
+          "bytes": 750650,
+          "operations": 89,
+          "title": "HitPay API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.hit-pay.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "hive": {
+      "name": "Hive",
+      "apideck": false,
+      "specs": {}
+    },
+    "hr-partner": {
+      "name": "HR Partner",
+      "apideck": false,
+      "specs": {}
+    },
+    "icypeas": {
+      "name": "Icypeas",
+      "apideck": false,
+      "specs": {}
+    },
+    "ironclad": {
+      "name": "Ironclad",
+      "apideck": false,
+      "specs": {
+        "Ironclad Public API": {
+          "status": "ok",
+          "sha256": "a71f1cd664326693ecbfdf7e948a83f5a3267ea77667e49ba6ea8bf2570b5e5f",
+          "bytes": 300061,
+          "operations": 86,
+          "title": "Ironclad Public API",
+          "apiVersion": "1",
+          "specVersion": "3.1.0",
+          "server": "https://ironcladapp.com/public/api/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Ironclad OAuth 2.0 API": {
+          "status": "ok",
+          "sha256": "d038abd5a616734ad75316eb6b11f4916c68787637b67b822a87882fe92e5263",
+          "bytes": 17439,
+          "operations": 3,
+          "title": "Ironclad OAuth 2.0 API",
+          "apiVersion": "1",
+          "specVersion": "3.1.0",
+          "server": "https://ironcladapp.com/oauth",
+          "changedOn": "2026-11-01"
+        },
+        "Ironclad SCIM API": {
+          "status": "ok",
+          "sha256": "ee9d1adddc380ccd29d5a64e22a05ea3bc1e35216dce78790279e682cf603d0a",
+          "bytes": 50939,
+          "operations": 14,
+          "title": "Ironclad SCIM API",
+          "apiVersion": "1",
+          "specVersion": "3.1.0",
+          "server": "https://ironcladapp.com/scim/v2",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "iterable": {
+      "name": "Iterable",
+      "apideck": false,
+      "specs": {
+        "Iterable API": {
+          "status": "ok",
+          "sha256": "cca837e6271573efccef1c8e10a8fbcb2d0f2c2808e79a9ece8109cbab4fae1c",
+          "bytes": 308389,
+          "operations": 159,
+          "title": "Iterable API",
+          "apiVersion": "1.8",
+          "specVersion": "2.0",
+          "server": "https://api.iterable.com",
+          "specServer": "https://api.iterable.com/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "jamf-pro": {
+      "name": "Jamf Pro",
+      "apideck": false,
+      "specs": {
+        "Jamf Pro API": {
+          "status": "ok",
+          "sha256": "2db5e7d124b5e7d617e077082f66df93a96fc967247d26869b99c58d9adbbcb1",
+          "bytes": 1293988,
+          "operations": 803,
+          "title": "Jamf Pro API",
+          "apiVersion": "11.33.0",
+          "specVersion": "3.0.1",
+          "server": "https://{server}.jamfcloud.com/api",
+          "specServer": "https://yourServer.jamfcloud.com/api",
+          "changedOn": "2026-11-01"
+        },
+        "Jamf Classic API": {
+          "status": "ok",
+          "sha256": "28926b0da8d0ef20cb043a1811cb3689a25f04cf5f70cac13993deee39e76e21",
+          "bytes": 474929,
+          "operations": 613,
+          "title": "Classic API",
+          "apiVersion": "11.32.0",
+          "specVersion": "3.0.0",
+          "server": "https://{server}.jamfcloud.com/JSSResource",
+          "specServer": "https://yourServer.jamfcloud.com/JSSResource",
+          "changedOn": "2026-11-01"
+        },
+        "Jamf Title Editor API": {
+          "status": "ok",
+          "sha256": "8eb4769a685353cc58dad7256193ff3efea22877508a9d51a6239d3b2a78e964",
+          "bytes": 67453,
+          "operations": 90,
+          "title": "Title Editor",
+          "apiVersion": "2.0",
+          "specVersion": "3.1.0",
+          "server": "https://{server}.appcatalog.jamfcloud.com/v2",
+          "specServer": "https://yourServer.appcatalog.jamfcloud.com/v2",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "jazzhr": {
+      "name": "JazzHR",
+      "apideck": false,
+      "specs": {}
+    },
+    "jobber": {
+      "name": "Jobber",
+      "apideck": false,
+      "specs": {}
+    },
+    "jobdiva": {
+      "name": "JobDiva",
+      "apideck": false,
+      "specs": {}
+    },
+    "jobnimbus": {
+      "name": "JobNimbus",
+      "apideck": false,
+      "specs": {}
+    },
+    "judge-me": {
+      "name": "Judge.me",
+      "apideck": false,
+      "specs": {
+        "Judge.me API": {
+          "status": "ok",
+          "sha256": "2b83ea54767150fb22959d32d170a52d895a2901f786c59172f5d4c71462544c",
+          "bytes": 68656,
+          "operations": 34,
+          "specVersion": "3.0.0",
+          "server": "https://api.judge.me/api/v1",
+          "specIssues": "no info.title or info.version",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "keap": {
+      "name": "Keap",
+      "apideck": false,
+      "specs": {
+        "Keap REST API v2": {
+          "status": "ok",
+          "sha256": "dfd7f1b68a4e8a33ac3b38d4314b6592150cedcd74642db8f1b272cad1a7ba03",
+          "bytes": 9321532,
+          "operations": 403,
+          "title": "API Reference",
+          "server": "https://api.infusionsoft.com/crm",
+          "changedOn": "2026-11-01"
+        },
+        "Keap REST API v1": {
+          "status": "ok",
+          "sha256": "b3b884fda2b10c1fcdd92549b8b4b118686525c5752f579214415a0f3ea22595",
+          "bytes": 4251685,
+          "operations": 141,
+          "title": "API Reference",
+          "server": "https://api.infusionsoft.com/crm",
+          "changedOn": "2026-11-01"
+        },
+        "Keap Services API": {
+          "status": "ok",
+          "sha256": "9fa5e92aeefee5586b95c55207dd82ca90309d2b0afbbd9d10a16a1dab791610",
+          "bytes": 256015,
+          "operations": 45,
+          "title": "API Reference",
+          "server": "https://api.infusionsoft.com/services",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "keeper": {
+      "name": "Keeper",
+      "apideck": false,
+      "specs": {
+        "Keeper Partner Family License API": {
+          "status": "ok",
+          "sha256": "d6dfbaeba4f0bf2c66fa8c9c66038b11755a2a2553a74b529d80080597d19512",
+          "bytes": 3678,
+          "operations": 1,
+          "title": "Partner Family License API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://keepersecurity.com/bi_api/v1/services/partner",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "kintone": {
+      "name": "Kintone",
+      "apideck": false,
+      "specs": {
+        "kintone REST API": {
+          "status": "ok",
+          "sha256": "c96bb2aff752fb58900bde31cc0d18424650cd85dd734bb56efd7d17657ca90b",
+          "bytes": 1374518,
+          "operations": 204,
+          "title": "Kintone REST API",
+          "apiVersion": "2026.8.31",
+          "specVersion": "3.0.3",
+          "server": "https://{subdomain}.cybozu.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "klipfolio": {
+      "name": "Klipfolio",
+      "apideck": false,
+      "specs": {}
+    },
+    "lastpass": {
+      "name": "LastPass",
+      "apideck": false,
+      "specs": {}
+    },
+    "lattice": {
+      "name": "Lattice",
+      "apideck": false,
+      "specs": {}
+    },
+    "leadfeeder": {
+      "name": "Leadfeeder",
+      "apideck": false,
+      "specs": {}
+    },
+    "leapsome": {
+      "name": "Leapsome",
+      "apideck": false,
+      "specs": {}
+    },
+    "lightfield": {
+      "name": "Lightfield",
+      "apideck": false,
+      "specs": {}
+    },
+    "lilt": {
+      "name": "Lilt",
+      "apideck": false,
+      "specs": {}
+    },
+    "linkhut": {
+      "name": "Linkhut",
+      "apideck": false,
+      "specs": {}
+    },
+    "linkly": {
+      "name": "Linkly",
+      "apideck": false,
+      "specs": {
+        "Linkly API": {
+          "status": "ok",
+          "sha256": "968598ef7055154bf4111fbccf0183a4cfc9f29c5d1ea8d9cc77e95ccd3fa4d3",
+          "bytes": 142985,
+          "operations": 26,
+          "title": "Linkly URL Shortener API",
+          "apiVersion": "1.3",
+          "specVersion": "3.0.0",
+          "server": "https://api.linklyhq.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "lob": {
+      "name": "Lob",
+      "apideck": false,
+      "specs": {
+        "Lob API": {
+          "status": "ok",
+          "sha256": "dd725a9f981b653e3a35068ad95a1f83ede3a7c00a73f7cea2b37cfb30fed2f6",
+          "bytes": 994103,
+          "operations": 105,
+          "title": "Lob",
+          "apiVersion": "1.22.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.lob.com/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "loopsso": {
+      "name": "Loops.so",
+      "apideck": false,
+      "specs": {
+        "Loops API": {
+          "status": "ok",
+          "sha256": "6f432417f553fe382f433bbe962c09af8387659fecfb70cd80f01d003b3b0473",
+          "bytes": 418207,
+          "operations": 72,
+          "title": "Loops OpenAPI Spec",
+          "apiVersion": "1.22.8",
+          "specVersion": "3.1.0",
+          "server": "https://app.loops.so/api",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "lumaapi": {
+      "name": "Luma API",
+      "apideck": false,
+      "specs": {
+        "Luma Public API": {
+          "status": "ok",
+          "sha256": "51ca88b194afbb9ad3c01d82e93da363591a418b0fbfe4f59666dfd3b603078f",
+          "bytes": 233549,
+          "operations": 74,
+          "title": "Luma API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://public-api.luma.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "lusha": {
+      "name": "Lusha",
+      "apideck": false,
+      "specs": {
+        "Lusha API (v2 docs)": {
+          "status": "ok",
+          "sha256": "e9c2d125247ab89226eade32223d44064270ab18e07dfacffe4c5e7eb3d65d75",
+          "bytes": 410769,
+          "operations": 40,
+          "title": "Lusha API Documentation",
+          "apiVersion": "",
+          "specVersion": "3.0.3",
+          "server": "https://api.lusha.com",
+          "specIssues": "no info.version",
+          "changedOn": "2026-11-01"
+        },
+        "Lusha API": {
+          "status": "ok",
+          "sha256": "a6428370d50577a6b4fd973c81691f37312300b49911a65446c00f0e07e61599",
+          "bytes": 563586,
+          "operations": 72,
+          "title": "Lusha API Documentation",
+          "apiVersion": "",
+          "specVersion": "3.0.3",
+          "server": "https://api.lusha.com",
+          "specIssues": "no info.version",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "mailjet": {
+      "name": "Mailjet",
+      "apideck": false,
+      "specs": {
+        "Email API": {
+          "status": "ok",
+          "sha256": "78479795211068a5770cac7ff831bcfd279d1ca04ef01e56c6b6bdc3da107b17",
+          "bytes": 1841527,
+          "operations": 151,
+          "title": "Mailjet API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.mailjet.com",
+          "changedOn": "2026-11-01"
+        },
+        "Content API": {
+          "status": "ok",
+          "sha256": "467af3e80a662f6e6006a5d76fd211bec1e76de21145f9afe809801a00aa7c09",
+          "bytes": 76515,
+          "operations": 26,
+          "title": "Mailjet Content API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.mailjet.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "mailtrap": {
+      "name": "Mailtrap",
+      "apideck": false,
+      "specs": {
+        "Email sending (transactional and bulk)": {
+          "status": "ok",
+          "sha256": "06b08310520dd337e08d27b11195f4fd29b05a787468a221dd07c845e31075c0",
+          "bytes": 188104,
+          "operations": 27,
+          "title": "Email Sending",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://send.api.mailtrap.io",
+          "specServer": "https://mailtrap.io",
+          "changedOn": "2026-11-01"
+        },
+        "Contacts": {
+          "status": "ok",
+          "sha256": "f2a7724c28d1ad6cd5a0e9a7475ad808ff837182f93619041b9370e8e8ced574",
+          "bytes": 131047,
+          "operations": 20,
+          "title": "Contacts",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://mailtrap.io",
+          "changedOn": "2026-11-01"
+        },
+        "Sandbox": {
+          "status": "ok",
+          "sha256": "f55cea3e84625da16ae728002333e84f555bd1b3194a660e4a4134ee87a8fbdb",
+          "bytes": 205001,
+          "operations": 30,
+          "title": "Email Sandbox",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://mailtrap.io",
+          "changedOn": "2026-11-01"
+        },
+        "Sandbox sending": {
+          "status": "ok",
+          "sha256": "026859f582bd66fa1531fb0a4e3799138c95b46cc8bffb8e4d98aa7914358ce2",
+          "bytes": 41224,
+          "operations": 2,
+          "title": "Email Sandbox",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://sandbox.api.mailtrap.io",
+          "changedOn": "2026-11-01"
+        },
+        "Templates": {
+          "status": "ok",
+          "sha256": "14d9d903f16d5001bfe74fb72a375238ff10ea451bf65325708071293e574cd3",
+          "bytes": 72382,
+          "operations": 10,
+          "title": "Templates",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://mailtrap.io",
+          "changedOn": "2026-11-01"
+        },
+        "Account management": {
+          "status": "ok",
+          "sha256": "6c5f3c422ab3850a27a3872a7a2916b08e2137153888254f48091b540daa5b60",
+          "bytes": 91115,
+          "operations": 13,
+          "title": "Account Management",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://mailtrap.io",
+          "changedOn": "2026-11-01"
+        },
+        "Email campaigns": {
+          "status": "ok",
+          "sha256": "77cad20afbffe2436c7bd70f358f4ca20f5a7f7f00cb1058dcd8d3367beec609",
+          "bytes": 87653,
+          "operations": 11,
+          "title": "Email Campaigns",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://mailtrap.io",
+          "changedOn": "2026-11-01"
+        },
+        "Inbound": {
+          "status": "ok",
+          "sha256": "42577bc763e57d576272adff85472ef7c832aca1cf5444dfd5409431e6d37f89",
+          "bytes": 158805,
+          "operations": 24,
+          "title": "Inbound",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://mailtrap.io",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "manatal": {
+      "name": "Manatal",
+      "apideck": false,
+      "specs": {}
+    },
+    "marketo": {
+      "name": "Marketo",
+      "apideck": false,
+      "specs": {
+        "REST API (Lead Database)": {
+          "status": "ok",
+          "sha256": "de325567504f39c4e7474384dc261033fd3f536096e88da378ed30231404dd47",
+          "bytes": 366453,
+          "operations": 147,
+          "title": "Marketo Engage Rest API",
+          "apiVersion": "1.0",
+          "specVersion": "2.0",
+          "server": "https://{munchkinId}.mktorest.com",
+          "specServer": "https://localhost:8080/",
+          "changedOn": "2026-11-01"
+        },
+        "Asset API": {
+          "status": "ok",
+          "sha256": "a0f334687b3d99ae421a45cdda028e8de3ed6ade59db1fb8fd75f6822edf7fd0",
+          "bytes": 508267,
+          "operations": 220,
+          "title": "Marketo Engage Rest API",
+          "apiVersion": "1.0",
+          "specVersion": "2.0",
+          "server": "https://{munchkinId}.mktorest.com",
+          "specServer": "https://localhost:8080/",
+          "changedOn": "2026-11-01"
+        },
+        "Data Ingestion API": {
+          "status": "ok",
+          "sha256": "2f3ba3bc17bcb7de59f21650d756445e5212eb6024b237c57afe3d35d4d33242",
+          "bytes": 33923,
+          "operations": 7,
+          "title": "Marketo Data Ingestion API",
+          "apiVersion": "v1",
+          "specVersion": "3.0.1",
+          "server": "https://mkto-ingestion-api.adobe.io",
+          "changedOn": "2026-11-01"
+        },
+        "Identity API": {
+          "status": "ok",
+          "sha256": "f888b2672b2367a4763c99616239b982c1425943a4ec70fdc85fd0368885c64f",
+          "bytes": 5967,
+          "operations": 2,
+          "title": "Marketo Engage Rest API",
+          "apiVersion": "1.0",
+          "specVersion": "2.0",
+          "server": "https://{munchkinId}.mktorest.com",
+          "specServer": "https://localhost:8080/",
+          "changedOn": "2026-11-01"
+        },
+        "User API": {
+          "status": "ok",
+          "sha256": "ce79d278e9bfa0029d0087a70701aee232c205d81c1f839262a75e77586d46e3",
+          "bytes": 31479,
+          "operations": 12,
+          "title": "Marketo Engage Rest API",
+          "apiVersion": "1.0",
+          "specVersion": "2.0",
+          "server": "https://{munchkinId}.mktorest.com",
+          "specServer": "https://localhost:8080/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "maxio": {
+      "name": "Maxio",
+      "apideck": false,
+      "specs": {}
+    },
+    "meta-ads": {
+      "name": "Meta Ads",
+      "apideck": false,
+      "specs": {}
+    },
+    "mindbody": {
+      "name": "Mindbody",
+      "apideck": false,
+      "specs": {}
+    },
+    "minimax": {
+      "name": "MiniMax",
+      "apideck": false,
+      "specs": {
+        "MiniMax Text API (native)": {
+          "status": "ok",
+          "sha256": "f147d47e32cbe3bb961a82f84e8a261ecd9d49acffe5a33e0e3b43bfc2ee3659",
+          "bytes": 32093,
+          "operations": 1,
+          "title": "MiniMax Text API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.minimax.io",
+          "changedOn": "2026-11-01"
+        },
+        "MiniMax Text API (OpenAI-compatible)": {
+          "status": "ok",
+          "sha256": "0a51cdac775b071b9c0cae381c990964823ab257298dffa400792d4ddadc3bcc",
+          "bytes": 70206,
+          "operations": 1,
+          "title": "MiniMax Text API OpenAI",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.minimax.io",
+          "changedOn": "2026-11-01"
+        },
+        "MiniMax Text API (Anthropic-compatible)": {
+          "status": "ok",
+          "sha256": "991ca88cf11c273b13dca40b034e36ab6406a3bd6b966c8a99ced609f433e8d0",
+          "bytes": 64193,
+          "operations": 2,
+          "title": "MiniMax Text API Anthropic",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.minimax.io",
+          "changedOn": "2026-11-01"
+        },
+        "MiniMax Responses API": {
+          "status": "ok",
+          "sha256": "a8c51922e4530595537030fd5c0ab16a6faaf263e662bf753c588fe61169e5ea",
+          "bytes": 79832,
+          "operations": 2,
+          "title": "MiniMax Responses API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.minimax.io",
+          "changedOn": "2026-11-01"
+        },
+        "MiniMax T2A (speech) API": {
+          "status": "ok",
+          "sha256": "4e50553b9fab959a3617004a85b851af590498f7ef779eec276b79f73bd0b644",
+          "bytes": 38115,
+          "operations": 1,
+          "title": "MiniMax T2A API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.minimax.io",
+          "changedOn": "2026-11-01"
+        },
+        "MiniMax Voice Cloning API": {
+          "status": "ok",
+          "sha256": "c5eb057da3b0678046631a8e4563b3d9c60b2bf332cf34c0f2e179b8f63fc36b",
+          "bytes": 12826,
+          "operations": 1,
+          "title": "MiniMax Voice Cloning API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.minimax.io",
+          "changedOn": "2026-11-01"
+        },
+        "MiniMax Video Generation API": {
+          "status": "ok",
+          "sha256": "7088e5ab171ae108d9c00f1379d9da710aad9a4b22054585d6f2ae0ca2bfb709",
+          "bytes": 7296,
+          "operations": 2,
+          "title": "MiniMax API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.minimax.io",
+          "changedOn": "2026-11-01"
+        },
+        "MiniMax Music Generation API": {
+          "status": "ok",
+          "sha256": "fd08440baab07483daf7acbd2f5f662bd5b0dbe9a68ecbaf9b0101351080611d",
+          "bytes": 15337,
+          "operations": 2,
+          "title": "MiniMax Music Generation API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.minimax.io",
+          "changedOn": "2026-11-01"
+        },
+        "MiniMax File Management API": {
+          "status": "ok",
+          "sha256": "0afa634fb6f58dfcf0ca79875224b84d9d726adfb7b8baa26e4b46efe879f19b",
+          "bytes": 14205,
+          "operations": 5,
+          "title": "MiniMax File Management API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.minimax.io",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "mintlify": {
+      "name": "Mintlify",
+      "apideck": false,
+      "specs": {
+        "Mintlify External API": {
+          "status": "ok",
+          "sha256": "eec808e66c6ca7eda30b6c8d71ae055686a2d4e7530e6813a62c8410262db993",
+          "bytes": 20896,
+          "operations": 4,
+          "title": "Mintlify External API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.mintlify.com/v1",
+          "changedOn": "2026-11-01"
+        },
+        "Mintlify Admin API": {
+          "status": "ok",
+          "sha256": "3eb6a2a4ba24355359ff2fa6bc3ad940ebcf0e4b42e61cb256e6dbbe3702cccb",
+          "bytes": 32884,
+          "operations": 7,
+          "title": "Mintlify Admin API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.mintlify.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "missive": {
+      "name": "Missive",
+      "apideck": false,
+      "specs": {}
+    },
+    "mural": {
+      "name": "Mural",
+      "apideck": false,
+      "specs": {}
+    },
+    "netlify": {
+      "name": "Netlify",
+      "apideck": false,
+      "specs": {
+        "Netlify API": {
+          "status": "ok",
+          "sha256": "d0c6d4682def878415d13478114c7030c3e9ccf5d80d0211c8d4079f2eaa686a",
+          "bytes": 825596,
+          "operations": 188,
+          "title": "Netlify's API documentation",
+          "apiVersion": "2.63.1",
+          "specVersion": "2.0",
+          "server": "https://api.netlify.com/api/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "nocrmio": {
+      "name": "NoCRM.io",
+      "apideck": false,
+      "specs": {}
+    },
+    "nutshell": {
+      "name": "Nutshell",
+      "apideck": false,
+      "specs": {
+        "Nutshell API": {
+          "status": "ok",
+          "sha256": "ba516a9aecd8c3b87cb27856deaf2f2c51748441a81c71532f19c33117bd9fca",
+          "bytes": 159955,
+          "operations": 114,
+          "title": "Nutshell API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://app.nutshell.com/rest",
+          "specServer": "app.nutshell.com/rest",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "oceanio": {
+      "name": "Ocean.io",
+      "apideck": false,
+      "specs": {
+        "Ocean.io API v2": {
+          "status": "ok",
+          "sha256": "8e03040af8b748844f90cc46227e1f4979d4ed895e2e2cf171304219e5f30840",
+          "bytes": 278213,
+          "operations": 36,
+          "title": "Ocean.io API Documentation",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.ocean.io",
+          "changedOn": "2026-11-01"
+        },
+        "Ocean.io legacy API (Swagger UI)": {
+          "status": "ok",
+          "sha256": "f4d13a9ef84e69e1285eecb37a048c68332966100bbd8a1792982736f9532994",
+          "bytes": 782363,
+          "operations": 87,
+          "title": "daas-production-api-gateway",
+          "apiVersion": "2.0.0",
+          "specVersion": "2.0",
+          "server": "https://api.oceanio.com",
+          "specServer": "https://api.oceanio.com/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "omnisend": {
+      "name": "Omnisend",
+      "apideck": false,
+      "specs": {
+        "Omnisend API v3": {
+          "status": "ok",
+          "sha256": "a3d4d700b5e23e70b8c758a1776ac7d2a3ff746d549f7ac0e13318da92dc8461",
+          "bytes": 113787,
+          "operations": 42,
+          "title": "Omnisend API",
+          "apiVersion": "3.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.omnisend.com/v3",
+          "changedOn": "2026-11-01"
+        },
+        "Contacts API v5": {
+          "status": "ok",
+          "sha256": "80f2366ec58681460ce9f416954ea54f1b28cdbd4721f05de1b5c2bc20ad10a4",
+          "bytes": 13491,
+          "operations": 4,
+          "title": "Contacts API",
+          "apiVersion": "5.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.omnisend.com/v5",
+          "changedOn": "2026-11-01"
+        },
+        "Campaigns API v5": {
+          "status": "ok",
+          "sha256": "0531d3685fdbd92a24cde6611596bf0056e4421592954411ec2d6d5ac4ead1b9",
+          "bytes": 3228,
+          "operations": 1,
+          "title": "Campaigns API",
+          "apiVersion": "5.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.omnisend.com/v5",
+          "changedOn": "2026-11-01"
+        },
+        "Events API v5": {
+          "status": "ok",
+          "sha256": "b0a1c2fd851b052a7d3c61ada6b72939e2bb5d262e91c1e40f839e5b69ed1edb",
+          "bytes": 5627,
+          "operations": 1,
+          "title": "Events API",
+          "apiVersion": "5.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.omnisend.com/v5",
+          "changedOn": "2026-11-01"
+        },
+        "Products API v5": {
+          "status": "ok",
+          "sha256": "0a252fbc0e79864aeea606cc3b5c2f7030e4bf72812dbca3d5837935df8d4f54",
+          "bytes": 9451,
+          "operations": 5,
+          "title": "Products API",
+          "apiVersion": "5.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.omnisend.com/v5",
+          "changedOn": "2026-11-01"
+        },
+        "Product Categories API v5": {
+          "status": "ok",
+          "sha256": "57df04d59ebfd225a19d371344561ca4c10cd1e15b3abb18e8da05c06937b97e",
+          "bytes": 6698,
+          "operations": 5,
+          "title": "Product Categories API",
+          "apiVersion": "5.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.omnisend.com/v5",
+          "changedOn": "2026-11-01"
+        },
+        "Batches API v5": {
+          "status": "ok",
+          "sha256": "60c9537244336c87e2a17fff03050526efec561f4a493eeb56d7e2d0b231a9bd",
+          "bytes": 8368,
+          "operations": 4,
+          "title": "Batches API",
+          "apiVersion": "5.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.omnisend.com/v5",
+          "changedOn": "2026-11-01"
+        },
+        "Brands API v5": {
+          "status": "ok",
+          "sha256": "033b98b3559e7967593c44dfc01c6ee03854a97e3fa7623eec5c51290ec8271a",
+          "bytes": 2296,
+          "operations": 2,
+          "title": "Brands API",
+          "apiVersion": "5.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.omnisend.com/v5",
+          "changedOn": "2026-11-01"
+        },
+        "Automations API v5": {
+          "status": "ok",
+          "sha256": "5fcb8283dace00a2dc60b1beca31e831e687004581a876ce1358ab1f423b0a32",
+          "bytes": 2229,
+          "operations": 1,
+          "title": "Automations API",
+          "apiVersion": "5.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.omnisend.com/v5",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "openrouter": {
+      "name": "OpenRouter",
+      "apideck": false,
+      "specs": {
+        "OpenRouter API": {
+          "status": "ok",
+          "sha256": "d41174156be344f84e5077d0ec73ca3c0b924809f8069af807f0c6f700a4448f",
+          "bytes": 2728595,
+          "operations": 146,
+          "title": "OpenRouter API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://openrouter.ai/api/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "ordinal": {
+      "name": "Ordinal",
+      "apideck": false,
+      "specs": {}
+    },
+    "otterai": {
+      "name": "Otter.ai",
+      "apideck": false,
+      "specs": {}
+    },
+    "outreach": {
+      "name": "Outreach",
+      "apideck": false,
+      "specs": {
+        "Outreach REST API Reference": {
+          "status": "ok",
+          "sha256": "6fb343725ac9cf906a5ae23413f0140bfcb8c71ff294ef10999fb99bed06c2ba",
+          "bytes": 1333867,
+          "operations": 254,
+          "title": "Outreach REST API Reference",
+          "apiVersion": "",
+          "specVersion": "3.0.3",
+          "server": "https://api.outreach.io/api/v2",
+          "specIssues": "no info.version",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "paddle": {
+      "name": "Paddle",
+      "apideck": false,
+      "specs": {
+        "Paddle Billing API": {
+          "status": "ok",
+          "sha256": "bbc0c72039c8235659bf536271952cde67be512f32a31e95873fccd49b9793ef",
+          "bytes": 7937575,
+          "operations": 126,
+          "title": "Paddle API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.paddle.com",
+          "specServer": "https://sandbox-api.paddle.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "pandadoc": {
+      "name": "PandaDoc",
+      "apideck": false,
+      "specs": {
+        "PandaDoc API": {
+          "status": "ok",
+          "sha256": "316e45f96d1b2c25a8bf8e3d0cf4324f2e63afc9fb04bee762fa27192d49cf06",
+          "bytes": 988110,
+          "operations": 135,
+          "title": "PandaDoc Public API",
+          "apiVersion": "8.25.1",
+          "specVersion": "3.0.3",
+          "server": "https://api.pandadoc.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "paycor": {
+      "name": "Paycor",
+      "apideck": false,
+      "specs": {}
+    },
+    "perplexity": {
+      "name": "Perplexity",
+      "apideck": false,
+      "specs": {
+        "Perplexity API": {
+          "status": "ok",
+          "sha256": "0272f9419c98b4472bd9ae92ef9ca500c9ecb9a88a8a4d3e08ef2b4c9342a4f5",
+          "bytes": 299615,
+          "operations": 33,
+          "title": "Perplexity AI API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.perplexity.ai",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "pingone": {
+      "name": "PingOne",
+      "apideck": false,
+      "specs": {
+        "PingOne Platform API (combined)": {
+          "status": "ok",
+          "sha256": "741e59d602173ef331f020ca222d202e31b8945befa5c5bfb3b1f11b74da30eb",
+          "bytes": 426036,
+          "operations": 54,
+          "title": "PingOne Platform API",
+          "apiVersion": "2026.01.07-beta",
+          "specVersion": "3.1.1",
+          "server": "https://api.pingone.{tld}/{basePath}",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "pipeline-crm": {
+      "name": "Pipeline CRM",
+      "apideck": false,
+      "specs": {
+        "Pipeline CRM API v3": {
+          "status": "ok",
+          "sha256": "588351c4c69d69eeb9bcc94c9f8cc140c96a909ca2045226b42cb760ba06021f",
+          "bytes": 708430,
+          "operations": 291,
+          "title": "Pipeline CRM API",
+          "apiVersion": "v3",
+          "specVersion": "3.0.0",
+          "server": "https://api.pipelinecrm.com/api/v3",
+          "changedOn": "2026-11-01"
+        },
+        "Pipeline CRM API v3 Postman collection": {
+          "status": "ok",
+          "sha256": "5ba372038c4f04afc5e08c8057f700a4db70c60368a03e46c2581220c2fc70f4",
+          "bytes": 3543875,
+          "operations": 291,
+          "title": "Pipeline CRM API",
+          "server": "https://api.pipelinecrm.com/api/v3",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "plaid": {
+      "name": "Plaid",
+      "apideck": false,
+      "specs": {
+        "Plaid API": {
+          "status": "ok",
+          "sha256": "0914d09677392d647dd4c37740ea1b30bfdd33ac71a254c20c89822c9566c4be",
+          "bytes": 3342111,
+          "operations": 351,
+          "title": "The Plaid API",
+          "apiVersion": "2020-09-14_1.792.1",
+          "specVersion": "3.0.0",
+          "server": "https://production.plaid.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "postman": {
+      "name": "Postman",
+      "apideck": false,
+      "specs": {
+        "Postman API": {
+          "status": "ok",
+          "sha256": "115d79d61571c457bf6a345dc54b47b2d842d60f52f8e5fb77948117e01caeec",
+          "bytes": 1184955,
+          "operations": 283,
+          "title": "API Reference",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.postman.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "postmark": {
+      "name": "Postmark",
+      "apideck": false,
+      "specs": {
+        "Postmark Server API": {
+          "status": "ok",
+          "sha256": "fdae25f55e2ef5fb71997f1128cc4148d52e0e395aed04b4f8f9e1c86fdf44a2",
+          "bytes": 71284,
+          "operations": 43,
+          "title": "Postmark API",
+          "apiVersion": "1.0.0",
+          "specVersion": "2.0",
+          "server": "https://api.postmarkapp.com",
+          "specServer": "https://api.postmarkapp.com/",
+          "changedOn": "2026-11-01"
+        },
+        "Postmark Account API": {
+          "status": "ok",
+          "sha256": "bbbcda9432851b8d7d6781d9a090b9d8d70f4396a9288393f428bfa3d5c2102b",
+          "bytes": 28016,
+          "operations": 23,
+          "title": "Postmark Account-level API",
+          "apiVersion": "0.9.0",
+          "specVersion": "2.0",
+          "server": "https://api.postmarkapp.com",
+          "specServer": "https://api.postmarkapp.com/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "prismic": {
+      "name": "Prismic",
+      "apideck": false,
+      "specs": {}
+    },
+    "productboard": {
+      "name": "Productboard",
+      "apideck": false,
+      "specs": {
+        "Productboard API v2 - Notes": {
+          "status": "ok",
+          "sha256": "410db944a2d5491420a36b93909d9e4955e03cd93709785c117e6985321c01d6",
+          "bytes": 89652,
+          "operations": 12,
+          "title": "Notes",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.productboard.com/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Productboard API v2 - Entities": {
+          "status": "ok",
+          "sha256": "058d6953df7b4b654537745b691ca6e12d5411250b21dba8640980376fe3cbda",
+          "bytes": 131812,
+          "operations": 16,
+          "title": "Entities",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.productboard.com/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Productboard API v2 - Members": {
+          "status": "ok",
+          "sha256": "d8f5cc9ff91135bd95b4f78cd57affe5d85b4eb6612288a064ba601308c2416b",
+          "bytes": 28311,
+          "operations": 3,
+          "title": "Members",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.productboard.com/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Productboard API v2 - Teams": {
+          "status": "ok",
+          "sha256": "6adec6a024a41de2ce3a62cef976cf6e6dc0107e315056e0ff7a49f3af388761",
+          "bytes": 38989,
+          "operations": 7,
+          "title": "Teams",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.productboard.com/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Productboard API v2 - Webhooks": {
+          "status": "ok",
+          "sha256": "7111edaaba4ad9998396c9335a00bb508aed695129401be560da074d26f07a58",
+          "bytes": 26797,
+          "operations": 4,
+          "title": "Webhooks",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.productboard.com/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Productboard API v2 - Analytics": {
+          "status": "ok",
+          "sha256": "737004d792544743676430d0fd2ec4ba37f5c495fcbdffbf0ef435be41a1c238",
+          "bytes": 15549,
+          "operations": 1,
+          "title": "Analytics",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.productboard.com/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Productboard API v2 - Customer Scores": {
+          "status": "ok",
+          "sha256": "9da56aa30dff0f9c53977d38d96f069ad552009fe2e10f5ffbbe54326440a3b3",
+          "bytes": 13102,
+          "operations": 1,
+          "title": "Entities",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.productboard.com/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Productboard API v2 - Jira Integrations": {
+          "status": "ok",
+          "sha256": "2d93d07098df92e2dba352a1dce11f8e0182b4233cce4c71ab1215d8ff6bcae3",
+          "bytes": 22313,
+          "operations": 4,
+          "title": "Jira Integrations",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.productboard.com/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Productboard API v2 - Plugin Integrations": {
+          "status": "ok",
+          "sha256": "b6568422ec66389fee9f78f98ec1ad69b21641fa98960a15ec0688ddf04db240",
+          "bytes": 52553,
+          "operations": 10,
+          "title": "Plugin Integrations",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.productboard.com/v2",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "prospeo": {
+      "name": "Prospeo",
+      "apideck": false,
+      "specs": {}
+    },
+    "raindrop": {
+      "name": "Raindrop.io",
+      "apideck": false,
+      "specs": {}
+    },
+    "re-amaze": {
+      "name": "Re:amaze",
+      "apideck": false,
+      "specs": {}
+    },
+    "recall-ai": {
+      "name": "Recall.ai",
+      "apideck": false,
+      "specs": {}
+    },
+    "recruit-crm": {
+      "name": "Recruit CRM",
+      "apideck": false,
+      "specs": {}
+    },
+    "recruiterflow": {
+      "name": "Recruiterflow",
+      "apideck": false,
+      "specs": {
+        "Recruiterflow API": {
+          "status": "ok",
+          "sha256": "06c524b54c932f899998deb135cb5d04f40944fdfab87713e75612059d1e4e02",
+          "bytes": 299889,
+          "operations": 128,
+          "title": "Recruiterflow API Documentation",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.0.0",
+          "server": "https://recruiterflow.com/api",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "refiner": {
+      "name": "Refiner",
+      "apideck": false,
+      "specs": {}
+    },
+    "replicate": {
+      "name": "Replicate",
+      "apideck": false,
+      "specs": {
+        "Replicate HTTP API": {
+          "status": "ok",
+          "sha256": "4500bf86453ef1ab65a9e133929ce97f468cff9aa62ab7512d00fd588abb8b39",
+          "bytes": 92838,
+          "operations": 37,
+          "title": "Replicate HTTP API",
+          "apiVersion": "1.0.0-a1",
+          "specVersion": "3.1.0",
+          "server": "https://api.replicate.com/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "reply-io": {
+      "name": "Reply.io",
+      "apideck": false,
+      "specs": {
+        "Reply API v3": {
+          "status": "ok",
+          "sha256": "8f067d60f5dcc185a01a9d8491ced07c631ea1ccb9c4309c086009ed9582d882",
+          "bytes": 2391699,
+          "operations": 433,
+          "title": "Reply API",
+          "apiVersion": "3.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.reply.io",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "retell-ai": {
+      "name": "Retell AI",
+      "apideck": false,
+      "specs": {
+        "Retell API": {
+          "status": "ok",
+          "sha256": "de3a1d542da59f841782f681c5f561caec1e6a20b375babe9b518edbe37d998b",
+          "bytes": 578249,
+          "operations": 111,
+          "title": "Retell SDK",
+          "apiVersion": "3.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.retellai.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "roam": {
+      "name": "Roam",
+      "apideck": false,
+      "specs": {}
+    },
+    "rocketlane": {
+      "name": "Rocketlane",
+      "apideck": false,
+      "specs": {
+        "Rocketlane API": {
+          "status": "ok",
+          "sha256": "a002a499e6fcf969d61cd1c9aaec6f84e0ef76ebe19e29ed5f3adc18813dcb5c",
+          "bytes": 614766,
+          "operations": 91,
+          "title": "Rocketlane API",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.rocketlane.com/api",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "rocketreach": {
+      "name": "RocketReach",
+      "apideck": false,
+      "specs": {}
+    },
+    "rollbar": {
+      "name": "Rollbar",
+      "apideck": false,
+      "specs": {}
+    },
+    "rootly": {
+      "name": "Rootly",
+      "apideck": false,
+      "specs": {}
+    },
+    "salesloft": {
+      "name": "Salesloft",
+      "apideck": false,
+      "specs": {
+        "Salesloft API v2 (snapshot)": {
+          "status": "ok",
+          "sha256": "91df97d3694f6f9eb27d93c2e5d5b25f05791161f5e17063cc9b0c7bbd92bc60",
+          "bytes": 476728,
+          "operations": 118,
+          "title": "SalesLoft Platform",
+          "apiVersion": "v2",
+          "specVersion": "3.0.0",
+          "server": "https://api.salesloft.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "servicem8": {
+      "name": "ServiceM8",
+      "apideck": false,
+      "specs": {}
+    },
+    "shipstation": {
+      "name": "ShipStation",
+      "apideck": false,
+      "specs": {
+        "ShipStation API v2": {
+          "status": "ok",
+          "sha256": "0e589a321060bd59828328a22d6444906cf928f07ebee98e6e3a4dac2b7a20bf",
+          "bytes": 1348578,
+          "operations": 176,
+          "title": "ShipStation API v2",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.shipstation.com",
+          "changedOn": "2026-11-01"
+        },
+        "ShipEngine API (ShipStation docs)": {
+          "status": "ok",
+          "sha256": "484c51029ee19f5dc1cb3d707c8ecd524b99e69dfc2da68e2dd734815330e52d",
+          "bytes": 758815,
+          "operations": 143,
+          "title": "ShipEngine API",
+          "apiVersion": "1.1.202604070904",
+          "specVersion": "3.0.0",
+          "server": "https://api.shipengine.com",
+          "changedOn": "2026-11-01"
+        },
+        "ShipStation V1 API (Legacy)": {
+          "status": "ok",
+          "sha256": "2eaf70ceaa5d375de16a2feecce055b578184552915b21786ad7a49e12385eed",
+          "bytes": 129438,
+          "operations": 47,
+          "title": "ShipStation V1 API (Legacy)",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://ssapi.shipstation.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "signwell": {
+      "name": "SignWell",
+      "apideck": false,
+      "specs": {}
+    },
+    "smartrecruiters": {
+      "name": "SmartRecruiters",
+      "apideck": false,
+      "specs": {
+        "Candidates API": {
+          "status": "ok",
+          "sha256": "8fde9b33d46d579a6404915ca0a31cd71680a25a0a8263717cdbd0985f54c12b",
+          "bytes": 87129,
+          "operations": 40,
+          "title": "Candidates API",
+          "apiVersion": "1",
+          "specVersion": "3.0.1",
+          "server": "https://api.smartrecruiters.com",
+          "changedOn": "2026-11-01"
+        },
+        "Jobs API": {
+          "status": "ok",
+          "sha256": "d7e4e0f20115a5036aa209c51a5e78dc203b6faf547a083b128806b10bc46e84",
+          "bytes": 60077,
+          "operations": 29,
+          "title": "Jobs API",
+          "apiVersion": "1.1.0",
+          "specVersion": "3.0.2",
+          "server": "https://api.smartrecruiters.com",
+          "changedOn": "2026-11-01"
+        },
+        "Posting API": {
+          "status": "ok",
+          "sha256": "ff987ce4af89b95f7a307707d01ff83ffdea9e3affb28aedeee4b11dee0cb131",
+          "bytes": 13409,
+          "operations": 3,
+          "title": "Posting API - version 1",
+          "apiVersion": "1",
+          "specVersion": "3.1.0",
+          "server": "https://api.smartrecruiters.com",
+          "changedOn": "2026-11-01"
+        },
+        "Configuration API": {
+          "status": "ok",
+          "sha256": "65491281a1a606a4bc3f74fc48483b25ac939991f6ddb83a7757ae4ac9629798",
+          "bytes": 91662,
+          "operations": 62,
+          "title": "Configuration API",
+          "apiVersion": "1.2.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.smartrecruiters.com",
+          "changedOn": "2026-11-01"
+        },
+        "Users API": {
+          "status": "ok",
+          "sha256": "22cf1eb7cae75a6d4751d1acaf72738599a42942a7c18178b2032ba3449af9a3",
+          "bytes": 23352,
+          "operations": 14,
+          "title": "Users API",
+          "apiVersion": "1",
+          "specVersion": "3.0.1",
+          "server": "https://api.smartrecruiters.com/user-api/v201804",
+          "changedOn": "2026-11-01"
+        },
+        "Job Applications API": {
+          "status": "ok",
+          "sha256": "6ae11aa5c8217e084cd3460e95e1ee322bcc21c27586c88cd751ab53d8d6577c",
+          "bytes": 7462,
+          "operations": 4,
+          "title": "Job Applications API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.2",
+          "server": "https://api.smartrecruiters.com/job-applications-api/v202112",
+          "changedOn": "2026-11-01"
+        },
+        "Offers API": {
+          "status": "ok",
+          "sha256": "9e94f2223496c88bef745f884620041b1b4eb72865011c386f10267b89954bce",
+          "bytes": 11887,
+          "operations": 6,
+          "title": "Offers API - version 1",
+          "apiVersion": "1",
+          "specVersion": "3.0.1",
+          "server": "https://api.smartrecruiters.com",
+          "changedOn": "2026-11-01"
+        },
+        "Reporting API": {
+          "status": "ok",
+          "sha256": "c6a3adb80a12d963a57a1439a53e93ad2a1ff705181d66bc36d0b5af7054851e",
+          "bytes": 19802,
+          "operations": 8,
+          "title": "Reporting API",
+          "apiVersion": "201804",
+          "specVersion": "3.0.1",
+          "server": "https://api.smartrecruiters.com/reporting-api/v201804",
+          "changedOn": "2026-11-01"
+        },
+        "Webhooks API": {
+          "status": "ok",
+          "sha256": "65db9d36fd9c0726300aa6b091cf92991d70e9fc9322fc97a54d2047a170a8af",
+          "bytes": 65241,
+          "operations": 8,
+          "title": "Webhooks",
+          "apiVersion": "201914.64",
+          "specVersion": "3.0.2",
+          "server": "https://api.smartrecruiters.com/webhooks-api/v201907",
+          "changedOn": "2026-11-01"
+        },
+        "Interviews API": {
+          "status": "ok",
+          "sha256": "2da74f26fa8227e8d7136496855ff3cedea70abc97078918d3a0c0e1292da801",
+          "bytes": 22061,
+          "operations": 16,
+          "title": "Interviews",
+          "apiVersion": "1.1.0",
+          "specVersion": "3.0.2",
+          "server": "https://api.smartrecruiters.com/interviews-api/v201904",
+          "changedOn": "2026-11-01"
+        },
+        "Apply API": {
+          "status": "ok",
+          "sha256": "8e4cf290d3ff5f4239adc045fdb064cbad4ddf6ea5bbf7f407e47ca26eb303fa",
+          "bytes": 13471,
+          "operations": 3,
+          "title": "Apply API",
+          "apiVersion": "6.9.0-EXP-3704-apply-api-mq-tls-026e65b.1",
+          "specVersion": "3.0.1",
+          "server": "https://api.smartrecruiters.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "smugmug": {
+      "name": "SmugMug",
+      "apideck": false,
+      "specs": {}
+    },
+    "snapchat": {
+      "name": "Snapchat",
+      "apideck": false,
+      "specs": {}
+    },
+    "sophos-central": {
+      "name": "Sophos Central",
+      "apideck": false,
+      "specs": {}
+    },
+    "spendesk": {
+      "name": "Spendesk",
+      "apideck": false,
+      "specs": {
+        "Spendesk Public API": {
+          "status": "ok",
+          "sha256": "b0d9d8f401d028c36ad6b816daa6bdcd3aae6cb1ff5acc75444b057635c875fe",
+          "bytes": 608114,
+          "operations": 108,
+          "title": "Spendesk Public API",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://public-api.spendesk.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "splitwise": {
+      "name": "Splitwise",
+      "apideck": false,
+      "specs": {}
+    },
+    "squarespace": {
+      "name": "Squarespace",
+      "apideck": false,
+      "specs": {
+        "Squarespace Commerce API": {
+          "status": "ok",
+          "sha256": "5dd4b1b7cd387d7db65f2f25418dac62c822ded5d90f4d41bba152fa305db368",
+          "bytes": 346054,
+          "operations": 53,
+          "title": "Commerce API",
+          "apiVersion": "2",
+          "specVersion": "3.1.1",
+          "server": "https://api.squarespace.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "stack-exchange": {
+      "name": "Stack Exchange",
+      "apideck": false,
+      "specs": {
+        "Stack Exchange API 2.0 (community)": {
+          "status": "ok",
+          "sha256": "b10f4129a635123583ed6565c7ea31b813aa0c733114ce06d787e9a7d6c82099",
+          "bytes": 1068558,
+          "operations": 124,
+          "title": "StackExchange",
+          "apiVersion": "2.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.stackexchange.com/2.0",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "statsig": {
+      "name": "Statsig",
+      "apideck": false,
+      "specs": {
+        "Statsig Console API": {
+          "status": "ok",
+          "sha256": "a7f43412fb6b265c314102c8a0c4bb5ac1358986f81f51e24c3aa0f5d2437c52",
+          "bytes": 3911291,
+          "operations": 361,
+          "title": "Console API",
+          "apiVersion": "20240601.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://statsigapi.net",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "surecontact": {
+      "name": "SureContact",
+      "apideck": false,
+      "specs": {}
+    },
+    "tailscale": {
+      "name": "Tailscale",
+      "apideck": false,
+      "specs": {}
+    },
+    "talentlms": {
+      "name": "TalentLMS",
+      "apideck": false,
+      "specs": {}
+    },
+    "tally": {
+      "name": "Tally",
+      "apideck": false,
+      "specs": {
+        "Tally API": {
+          "status": "ok",
+          "sha256": "8b37e41e11fa79c8acfa071ee65b47f152681ccf501e6a3a8b385d7b7c889afc",
+          "bytes": 203529,
+          "operations": 38,
+          "title": "OpenAPI",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.tally.so",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "tavily": {
+      "name": "Tavily",
+      "apideck": false,
+      "specs": {
+        "Tavily API": {
+          "status": "ok",
+          "sha256": "c97103b0bfa3613e4cf64470ee0a78de1e50a88d7999c48507a8db871cb0e97b",
+          "bytes": 158587,
+          "operations": 10,
+          "title": "Tavily Search and Extract API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.tavily.com",
+          "specServer": "https://api.tavily.com/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "terraform": {
+      "name": "Terraform (HCP Terraform / Terraform Cloud API)",
+      "apideck": false,
+      "specs": {}
+    },
+    "theirstack": {
+      "name": "TheirStack",
+      "apideck": false,
+      "specs": {
+        "TheirStack API": {
+          "status": "ok",
+          "sha256": "9c983e4e2051b6445f64d6773a7c322002d632e649409c28f1a5a626a356beda",
+          "bytes": 455968,
+          "operations": 59,
+          "title": "TheirStack API Reference",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.theirstack.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "threads": {
+      "name": "Threads",
+      "apideck": false,
+      "specs": {}
+    },
+    "ticketmaster": {
+      "name": "Ticketmaster",
+      "apideck": false,
+      "specs": {
+        "Discovery API v2": {
+          "status": "ok",
+          "sha256": "d5a426e40d9ebbae74957c32026043c900d66652dc95603e6eafc515bf9f292d",
+          "bytes": 90144,
+          "operations": 13,
+          "title": "Discovery API",
+          "apiVersion": "v2",
+          "specVersion": "2.0",
+          "server": "https://app.ticketmaster.com",
+          "specServer": "https://www.ticketmaster.com/discovery/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Commerce API v2": {
+          "status": "ok",
+          "sha256": "57edbb615d615aaca42eff79e4a6bf20d53b1b041de05d99e91966a709dcd5df",
+          "bytes": 17768,
+          "operations": 1,
+          "title": "Commerce API",
+          "apiVersion": "v2",
+          "specVersion": "2.0",
+          "server": "https://app.ticketmaster.com",
+          "specServer": "https://www.ticketmaster.com/commerce/v2",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "timely": {
+      "name": "Timely",
+      "apideck": false,
+      "specs": {}
+    },
+    "tomba": {
+      "name": "Tomba",
+      "apideck": false,
+      "specs": {}
+    },
+    "twitch": {
+      "name": "Twitch",
+      "apideck": false,
+      "specs": {
+        "Twitch Helix API (unofficial)": {
+          "status": "ok",
+          "sha256": "8220cef29980d08826569b080e3dfdfd00646ba9881a568b2e63a577dffa9836",
+          "bytes": 1104609,
+          "operations": 149,
+          "title": "Twitch API Swagger UI (Unofficial)",
+          "apiVersion": "helix",
+          "specVersion": "3.0.0",
+          "server": "https://api.twitch.tv/helix",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "typefully": {
+      "name": "Typefully",
+      "apideck": false,
+      "specs": {
+        "Typefully API v2": {
+          "status": "ok",
+          "sha256": "be82e60e17d30b648c45e914bfc5eb671c5f234de3ff79bb73c23cb14f4d84cc",
+          "bytes": 185079,
+          "operations": 24,
+          "title": "Typefully Public API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.typefully.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "ukg-ready": {
+      "name": "UKG Ready",
+      "apideck": false,
+      "specs": {}
+    },
+    "unipile": {
+      "name": "Unipile",
+      "apideck": false,
+      "specs": {
+        "Unipile API v2": {
+          "status": "ok",
+          "sha256": "5c92966259d5a206e1d479933605015a079cb3f97adadb42633f0f1ea90f836e",
+          "bytes": 206550,
+          "operations": 26,
+          "title": "",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.unipile.com",
+          "specIssues": "no info.title",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "vincere": {
+      "name": "Vincere",
+      "apideck": false,
+      "specs": {}
+    },
+    "wakatime": {
+      "name": "WakaTime",
+      "apideck": false,
+      "specs": {}
+    },
+    "wealthbox": {
+      "name": "Wealthbox",
+      "apideck": false,
+      "specs": {}
+    },
+    "whatsapp-business": {
+      "name": "WhatsApp Business",
+      "apideck": false,
+      "specs": {
+        "WhatsApp Business messaging API v23.0": {
+          "status": "ok",
+          "sha256": "5c1973265369944b7cdfa3fa690985713575249042e2b7edd46be3ef9bd9b09d",
+          "bytes": 1095644,
+          "operations": 113,
+          "title": "Meta Graph API - Application Connected Client Businesses",
+          "apiVersion": "v23.0",
+          "specVersion": "3.1.0",
+          "server": "https://graph.facebook.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "wise": {
+      "name": "Wise",
+      "apideck": false,
+      "specs": {}
+    },
+    "wistia": {
+      "name": "Wistia",
+      "apideck": false,
+      "specs": {
+        "Wistia Data API": {
+          "status": "ok",
+          "sha256": "b86cb2a7b420e7a8553647a34d736f04d3d92a3ab771e3e7e81592e854953178",
+          "bytes": 1254628,
+          "operations": 139,
+          "title": "Data API",
+          "apiVersion": "2026.09.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.wistia.com/modern",
+          "changedOn": "2026-11-01"
+        },
+        "Wistia Analytics API": {
+          "status": "ok",
+          "sha256": "51b37cd3d37c5fff2213419e4a2fe5133ee6c8054db85c43a624fb4f038d3c26",
+          "bytes": 132286,
+          "operations": 17,
+          "title": "Analytics API",
+          "apiVersion": "2026.09.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.wistia.com/modern",
+          "changedOn": "2026-11-01"
+        },
+        "Wistia Stats API": {
+          "status": "ok",
+          "sha256": "33b0398af130df15800886f36ab38d89d8a02472fc21c2e3bd14e0dd366c6497",
+          "bytes": 45599,
+          "operations": 10,
+          "title": "Stats API",
+          "apiVersion": "2026.09.0",
+          "specVersion": "3.1.1",
+          "server": "https://api.wistia.com/modern",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "wiza": {
+      "name": "Wiza",
+      "apideck": false,
+      "specs": {}
+    },
+    "yandex": {
+      "name": "Yandex",
+      "apideck": false,
+      "specs": {}
+    },
+    "zigpoll": {
+      "name": "Zigpoll",
+      "apideck": false,
+      "specs": {}
+    },
+    "zoho-bigin": {
+      "name": "Zoho Bigin",
+      "apideck": false,
+      "specs": {}
+    },
+    "zoho-calendar": {
+      "name": "Zoho Calendar",
+      "apideck": false,
+      "specs": {}
+    },
+    "zoho-inventory": {
+      "name": "Zoho Inventory",
+      "apideck": false,
+      "specs": {
+        "Zoho Inventory API v1 (OpenAPI bundle, ZIP)": {
+          "status": "ok",
+          "sha256": "a0720b28d406cacbc22f587b8d8ead99b757c92effc22e079a4d33ee7583a889",
+          "bytes": 2287925,
+          "operations": 583,
+          "files": 40,
+          "title": "Zoho Inventory API v1 (OpenAPI bundle, ZIP)",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://www.zohoapis.com/inventory/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "zoho-invoice": {
+      "name": "Zoho Invoice",
+      "apideck": false,
+      "specs": {
+        "Zoho Invoice API v3 (OpenAPI bundle, ZIP)": {
+          "status": "ok",
+          "sha256": "a567764e604be6b0add38dc0e5f711456ec3da4c13db475e1a45d6c04587b844",
+          "bytes": 1016541,
+          "operations": 268,
+          "files": 20,
+          "title": "Zoho Invoice API v3 (OpenAPI bundle, ZIP)",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://www.zohoapis.com/invoice/v3",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "zoho-mail": {
+      "name": "Zoho Mail",
+      "apideck": false,
+      "specs": {
+        "Zoho Mail API - Accounts": {
+          "status": "ok",
+          "sha256": "edfd67ee3424529984301a2ebed1c99b0b57070e3d79ccee153ac6ceb8cd90fa",
+          "bytes": 69104,
+          "operations": 22,
+          "title": "Zoho Mail API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://mail.zoho.com",
+          "changedOn": "2026-11-01"
+        },
+        "Zoho Mail API - Folders": {
+          "status": "ok",
+          "sha256": "4691e8e23f6ec41f8e9dd63364b62f275dff6c6f09b7daa961b519979594e567",
+          "bytes": 26535,
+          "operations": 10,
+          "title": "Zoho Mail API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://mail.zoho.com",
+          "changedOn": "2026-11-01"
+        },
+        "Zoho Mail API - Messages": {
+          "status": "ok",
+          "sha256": "74b25e4b442c12914c8e553a15fda500ff9b09b25dc0e9c596d57e8f5e57a5f3",
+          "bytes": 87610,
+          "operations": 21,
+          "title": "Zoho Mail API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://mail.zoho.com",
+          "changedOn": "2026-11-01"
+        },
+        "Zoho Mail API - Threads": {
+          "status": "ok",
+          "sha256": "5805432a9f0538ca301c258b234dfd2e48a19a83ead99495da626e7c14c057f7",
+          "bytes": 32489,
+          "operations": 9,
+          "title": "Zoho Mail API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://mail.zoho.com",
+          "changedOn": "2026-11-01"
+        },
+        "Zoho Mail API - Labels": {
+          "status": "ok",
+          "sha256": "d69fe96984774f7683599a4037a1f93b5b3d88fc0d30ee1180b0d44b94d9e9f7",
+          "bytes": 14937,
+          "operations": 5,
+          "title": "Zoho Mail API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://mail.zoho.com",
+          "changedOn": "2026-11-01"
+        },
+        "Zoho Mail API - Organization": {
+          "status": "ok",
+          "sha256": "e4f77a77cb5cf586e0b5ab0290f9e5beaf37d031de4c2fd1f8e44b2a9d5fca40",
+          "bytes": 54052,
+          "operations": 9,
+          "title": "Zohomail cli",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.1",
+          "server": "https://mail.zoho.com",
+          "changedOn": "2026-11-01"
+        },
+        "Zoho Mail API - Users": {
+          "status": "ok",
+          "sha256": "bd68d4c74de4ef50cfb60a5bb651c5f562d64ec01f0328c88660a34e1463876c",
+          "bytes": 150372,
+          "operations": 24,
+          "title": "Zohomail cli",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.1",
+          "server": "https://mail.zoho.com",
+          "changedOn": "2026-11-01"
+        },
+        "Zoho Mail API - Domains": {
+          "status": "ok",
+          "sha256": "bc12d25a80f45a57256b6404c3a6f2307a2dac6d58ce541fa4e1c9d53354fdf3",
+          "bytes": 83937,
+          "operations": 23,
+          "title": "Zohomail cli",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.1",
+          "server": "https://mail.zoho.com",
+          "changedOn": "2026-11-01"
+        },
+        "Zoho Mail API - Groups": {
+          "status": "ok",
+          "sha256": "345c6e1de45cbf06fcb50e517f64d291a96e500de42a6d2d1a60b008aea249c8",
+          "bytes": 106607,
+          "operations": 17,
+          "title": "Zohomail cli",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.1",
+          "server": "https://mail.zoho.com",
+          "changedOn": "2026-11-01"
+        },
+        "Zoho Mail API - ToDo": {
+          "status": "ok",
+          "sha256": "69d3eee98a09055bef92425218b298e8c94bb656637da84b7a07c2611ad40242",
+          "bytes": 40080,
+          "operations": 21,
+          "title": "Zoho ToDo API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://mail.zoho.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "zuora": {
+      "name": "Zuora",
+      "apideck": false,
+      "specs": {
+        "Zuora API (full, compact)": {
+          "status": "ok",
+          "sha256": "f707a6a8ed81808890d519873b15d9129a80e0322ffc05bbde9bd56b852c58c3",
+          "bytes": 4371478,
+          "operations": 788,
+          "title": "API Reference (Compact: no descriptions, no examples)",
+          "apiVersion": "2026-10-30",
+          "specVersion": "3.0.0",
+          "server": "https://rest.zuora.com",
+          "specServer": "https://rest.test.zuora.com",
+          "changedOn": "2026-11-01"
+        },
+        "Order-to-Cash (detailed)": {
+          "status": "ok",
+          "sha256": "6354f2e3065820e89b70709400c6d4d9ee28d00dd19b7f7a91fa2bd7dcfc1a88",
+          "bytes": 9914421,
+          "operations": 590,
+          "title": "API Reference",
+          "apiVersion": "2026-10-30",
+          "specVersion": "3.0.0",
+          "server": "https://rest.zuora.com",
+          "specServer": "https://rest.test.zuora.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "anthropic-administrator": {
+      "name": "Anthropic Administrator",
+      "apideck": false,
+      "specs": {}
+    },
+    "apple-business-manager": {
+      "name": "Apple Business Manager",
+      "apideck": false,
+      "specs": {}
+    },
+    "azure-blob-storage": {
+      "name": "Azure Blob Storage",
+      "apideck": false,
+      "specs": {
+        "Azure Blob Storage data plane (2026-10-06)": {
+          "status": "ok",
+          "sha256": "9e1cad949b3eb97bf40ffbc7da5b2fa2653451a6b9302b625ff26b63ce1aa28f",
+          "bytes": 473518,
+          "operations": 0,
+          "title": "Azure Blob Storage",
+          "apiVersion": "2026-10-06",
+          "specVersion": "2.0",
+          "server": "https://{account}.blob.core.windows.net",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "builder-io": {
+      "name": "Builder.io",
+      "apideck": false,
+      "specs": {}
+    },
+    "dynamic-mockups": {
+      "name": "Dynamic Mockups",
+      "apideck": false,
+      "specs": {}
+    },
+    "epic-games": {
+      "name": "Epic Games",
+      "apideck": false,
+      "specs": {}
+    },
+    "google-cloud-storage": {
+      "name": "Google Cloud Storage",
+      "apideck": false,
+      "specs": {
+        "Cloud Storage JSON API v1": {
+          "status": "ok",
+          "sha256": "a23332eaea2657524d21fb06379da6f52981228a25cb6e664530ed40895f4ff0",
+          "bytes": 251359,
+          "operations": 87,
+          "title": "Cloud Storage JSON API",
+          "apiVersion": "v1",
+          "server": "https://storage.googleapis.com",
+          "specServer": "https://storage.googleapis.com/storage/v1/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "hackerrank-work": {
+      "name": "HackerRank Work",
+      "apideck": false,
+      "specs": {}
+    },
+    "ip-geolocation": {
+      "name": "IPGeolocation",
+      "apideck": false,
+      "specs": {
+        "IPGeolocation.io combined API": {
+          "status": "ok",
+          "sha256": "3a1848c9aaabab303ff65158d076a974a5a6c4b27acc63e4dc975f8bb5117e13",
+          "bytes": 303003,
+          "operations": 14,
+          "title": "IPGeolocation.io",
+          "apiVersion": "3.0",
+          "specVersion": "3.0.4",
+          "server": "https://api.ipgeolocation.io",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "microsoft-intune": {
+      "name": "Microsoft Intune",
+      "apideck": false,
+      "specs": {
+        "Microsoft Graph v1.0 (includes Intune deviceManagement / deviceAppManagement)": {
+          "status": "ok",
+          "sha256": "69de68b2c895bc608a58229e662e2b3eeb23524385516afc250ff0b8f165ff29",
+          "bytes": 44457302,
+          "operations": 17911,
+          "title": "OData Service for namespace microsoft.graph",
+          "apiVersion": "v1.0",
+          "specVersion": "3.0.4",
+          "server": "https://graph.microsoft.com/v1.0",
+          "changedOn": "2026-11-01"
+        },
+        "Microsoft Graph beta (includes Intune deviceManagement / deviceAppManagement)": {
+          "status": "ok",
+          "sha256": "1cc7badd129364daec0c97b37aa2785e5d4b299fceef866170d4f576c263caef",
+          "bytes": 70946657,
+          "operations": 29934,
+          "title": "OData Service for namespace microsoft.graph",
+          "apiVersion": "beta",
+          "specVersion": "3.0.4",
+          "server": "https://graph.microsoft.com/beta",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "people-data-labs": {
+      "name": "People Data Labs",
+      "apideck": false,
+      "specs": {
+        "People Data Labs API": {
+          "status": "ok",
+          "sha256": "c75f23548f5b9648bc4af485a031e78eb983fd521b9b523c4ced71120cf87ff1",
+          "bytes": 480678,
+          "operations": 21,
+          "title": "api.peopledatalabs.com",
+          "apiVersion": "5.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.peopledatalabs.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "readwise-reader": {
+      "name": "Readwise Reader",
+      "apideck": false,
+      "specs": {}
+    },
+    "request-tracker": {
+      "name": "RT (Request Tracker)",
+      "apideck": false,
+      "specs": {}
+    },
+    "sage-people": {
+      "name": "Sage People",
+      "apideck": false,
+      "specs": {}
+    },
+    "scrape-do": {
+      "name": "Scrape Do",
+      "apideck": false,
+      "specs": {}
+    },
+    "sec-edgar": {
+      "name": "SEC EDGAR",
+      "apideck": false,
+      "specs": {}
+    },
+    "trigger-dev": {
+      "name": "Trigger.dev",
+      "apideck": false,
+      "specs": {
+        "Trigger.dev v3 REST API": {
+          "status": "ok",
+          "sha256": "441161111493aaaceea11e0434920ce67d790aad2eb883968b28176b8a662c9f",
+          "bytes": 301377,
+          "operations": 85,
+          "title": "Trigger.dev v3 REST API",
+          "apiVersion": "2024-04",
+          "specVersion": "3.1.0",
+          "server": "https://api.trigger.dev",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "weights-and-biases": {
+      "name": "Weights & Biases",
+      "apideck": false,
+      "specs": {
+        "Weave Trace Server API": {
+          "status": "ok",
+          "sha256": "f7643c49bf2e6235d47bfb70d8ef944ace189d7344f260a2d15034c732ec4653",
+          "bytes": 321921,
+          "operations": 127,
+          "title": "FastAPI",
+          "apiVersion": "0.1.0",
+          "specVersion": "3.1.0",
+          "server": "https://trace.wandb.ai",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "windsor-ai": {
+      "name": "Windsor.ai",
+      "apideck": false,
+      "specs": {}
+    },
+    "wispr-flow": {
+      "name": "Wispr Flow",
+      "apideck": false,
+      "specs": {}
+    },
+    "wordpress-com": {
+      "name": "WordPress.com",
+      "apideck": false,
+      "specs": {}
     }
   }
 }

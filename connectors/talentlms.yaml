@@ -1,0 +1,5 @@
+id: talentlms
+name: "TalentLMS"
+apideck: false
+notes: "No machine-readable spec found. developers.talentlms.com serves HTML for /openapi.json and /reference, and no download link is published."
+specs: []

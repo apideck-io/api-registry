@@ -1,0 +1,10 @@
+id: recurly
+name: "Recurly"
+apideck: false
+specs:
+  - name: "Recurly V3 API"
+    url: "https://raw.githubusercontent.com/recurly/recurly-client-ruby/master/openapi/api.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://v3.recurly.com"
+    notes: "Published in the vendor's official client repository. EU region base URL: https://v3.eu.recurly.com"

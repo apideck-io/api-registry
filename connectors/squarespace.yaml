@@ -1,0 +1,10 @@
+id: squarespace
+name: "Squarespace"
+apideck: false
+specs:
+  - name: "Squarespace Commerce API"
+    url: "https://developers.squarespace.com/commerce-apis/latest/schema-processor-version-version-latest.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.squarespace.com"
+    notes: "Download link on the Commerce APIs schemas page; paths start with /v1."

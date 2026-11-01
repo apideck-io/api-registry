@@ -1,0 +1,10 @@
+id: companycam
+name: "CompanyCam"
+apideck: false
+specs:
+  - name: "CompanyCam Public API"
+    url: "https://developers.companycam.com/openapi/public_api_v1.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.companycam.com"
+    notes: "Paths begin with /public_api/v1."

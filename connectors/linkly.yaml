@@ -1,0 +1,10 @@
+id: linkly
+name: "Linkly"
+apideck: false
+specs:
+  - name: "Linkly API"
+    url: "https://api.linklyhq.com/api/openapi"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.linklyhq.com"
+    notes: "Paths begin with /api/v1."

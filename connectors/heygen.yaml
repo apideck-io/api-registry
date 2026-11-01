@@ -1,0 +1,14 @@
+id: heygen
+name: "HeyGen"
+apideck: false
+specs:
+  - name: "HeyGen API"
+    url: "https://developers.heygen.com/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.heygen.com"
+  - name: "HeyGen External API"
+    url: "https://developers.heygen.com/openapi/external-api.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.heygen.com"

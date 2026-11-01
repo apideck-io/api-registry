@@ -1,0 +1,10 @@
+id: people-data-labs
+name: "People Data Labs"
+apideck: false
+specs:
+  - name: "People Data Labs API"
+    url: "https://raw.githubusercontent.com/peopledatalabs/openAPI-specifications/main/pdl-specs.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.peopledatalabs.com"
+    notes: "Published in the vendor's GitHub org (openAPI-specifications)."

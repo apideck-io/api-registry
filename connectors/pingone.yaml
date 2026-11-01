@@ -1,0 +1,10 @@
+id: pingone
+name: "PingOne"
+apideck: false
+specs:
+  - name: "PingOne Platform API (combined)"
+    url: "https://raw.githubusercontent.com/pingidentity/pingone-openapi-specifications/main/specification/3.1/api/combined/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.pingone.{tld}/{basePath}"
+    notes: "Combined definition from Ping Identity's official GitHub repository; per-tag-group files are in the same repository under specification/3.1/api/by-tag-group/."

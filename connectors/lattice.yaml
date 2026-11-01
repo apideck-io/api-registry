@@ -1,0 +1,5 @@
+id: lattice
+name: "Lattice"
+apideck: false
+notes: "developers.lattice.com reference pages checked; the OpenAPI definitions are embedded in rendered pages and the site rate-limits direct fetches. No standalone file found."
+specs: []

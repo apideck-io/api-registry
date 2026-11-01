@@ -1,0 +1,5 @@
+id: capsule-crm
+name: "Capsule CRM"
+apideck: false
+notes: "No machine-readable spec found. Checked developer.capsulecrm.com (no spec or llms.txt at common paths), a GitHub org search and a web search; only third-party indexes reference specs."
+specs: []

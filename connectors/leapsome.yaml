@@ -1,0 +1,5 @@
+id: leapsome
+name: "Leapsome"
+apideck: false
+notes: "api.leapsome.com/v1/api-docs/ serves Swagger UI whose spec is embedded in swagger-ui-init.js; no standalone spec file URL (swagger.json, openapi.json) responds."
+specs: []

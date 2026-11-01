@@ -1,0 +1,5 @@
+id: drata
+name: "Drata"
+apideck: false
+notes: "Reference at developers.drata.com has the OpenAPI document embedded in the page data; no standalone spec URL found (checked /llms.txt, bundle paths, web search)."
+specs: []

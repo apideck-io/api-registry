@@ -1,0 +1,10 @@
+id: iterable
+name: "Iterable"
+apideck: false
+specs:
+  - name: "Iterable API"
+    url: "https://api.iterable.com/api-docs"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.iterable.com"
+    notes: "Swagger 2.0 definition (v1.8) that backs the interactive docs at api.iterable.com/api/docs."

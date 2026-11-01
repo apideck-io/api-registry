@@ -1,0 +1,5 @@
+id: jazzhr
+name: "JazzHR"
+apideck: false
+notes: "Checked the JazzHR API documentation pages and common swagger/openapi paths; no vendor-published spec found."
+specs: []

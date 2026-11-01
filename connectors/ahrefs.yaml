@@ -1,0 +1,10 @@
+id: ahrefs
+name: "Ahrefs"
+apideck: false
+specs:
+  - name: "Ahrefs API v3 (complete)"
+    url: "https://docs.ahrefs.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.ahrefs.com"
+    notes: "OpenAPI 3.2.0. Per-tool specs are indexed at https://docs.ahrefs.com/reference/index.json."

@@ -1,0 +1,5 @@
+id: mural
+name: "Mural"
+apideck: false
+notes: "The developer docs link to an OpenAPI spec at developers.mural.co/public/openapi/60959cbc7ff8b600451a3da6, but that URL currently redirects to /404; /.well-known/api-catalog is empty and /llms.txt does not exist. No fetchable spec found."
+specs: []

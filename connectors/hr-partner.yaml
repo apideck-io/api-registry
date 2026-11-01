@@ -1,0 +1,5 @@
+id: hr-partner
+name: "HR Partner"
+apideck: false
+notes: "Checked help.hrpartner.io, developer.hrpartner.io references and web search; no vendor-published spec found."
+specs: []

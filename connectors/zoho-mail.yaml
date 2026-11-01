@@ -1,0 +1,65 @@
+id: zoho-mail
+name: "Zoho Mail"
+apideck: false
+notes: "Published by Zoho at github.com/zoho/zohomail-oas (v1/); also includes signature, policy and logs specs."
+specs:
+  - name: "Zoho Mail API - Accounts"
+    url: "https://raw.githubusercontent.com/zoho/zohomail-oas/HEAD/v1/accounts.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://mail.zoho.com"
+    notes: "Spec declares no servers; use the regional mail.zoho.{dc} domain for the account's data centre."
+  - name: "Zoho Mail API - Folders"
+    url: "https://raw.githubusercontent.com/zoho/zohomail-oas/HEAD/v1/folders.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://mail.zoho.com"
+    notes: "Spec declares no servers; use the regional mail.zoho.{dc} domain for the account's data centre."
+  - name: "Zoho Mail API - Messages"
+    url: "https://raw.githubusercontent.com/zoho/zohomail-oas/HEAD/v1/messages.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://mail.zoho.com"
+    notes: "Spec declares no servers; use the regional mail.zoho.{dc} domain for the account's data centre."
+  - name: "Zoho Mail API - Threads"
+    url: "https://raw.githubusercontent.com/zoho/zohomail-oas/HEAD/v1/threads.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://mail.zoho.com"
+    notes: "Spec declares no servers; use the regional mail.zoho.{dc} domain for the account's data centre."
+  - name: "Zoho Mail API - Labels"
+    url: "https://raw.githubusercontent.com/zoho/zohomail-oas/HEAD/v1/labels.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://mail.zoho.com"
+    notes: "Spec declares no servers; use the regional mail.zoho.{dc} domain for the account's data centre."
+  - name: "Zoho Mail API - Organization"
+    url: "https://raw.githubusercontent.com/zoho/zohomail-oas/HEAD/v1/organization.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://mail.zoho.com"
+    notes: "Spec declares no servers; use the regional mail.zoho.{dc} domain for the account's data centre."
+  - name: "Zoho Mail API - Users"
+    url: "https://raw.githubusercontent.com/zoho/zohomail-oas/HEAD/v1/users.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://mail.zoho.com"
+    notes: "Spec declares no servers; use the regional mail.zoho.{dc} domain for the account's data centre."
+  - name: "Zoho Mail API - Domains"
+    url: "https://raw.githubusercontent.com/zoho/zohomail-oas/HEAD/v1/domains.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://mail.zoho.com"
+    notes: "Spec declares no servers; use the regional mail.zoho.{dc} domain for the account's data centre."
+  - name: "Zoho Mail API - Groups"
+    url: "https://raw.githubusercontent.com/zoho/zohomail-oas/HEAD/v1/groups.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://mail.zoho.com"
+    notes: "Spec declares no servers; use the regional mail.zoho.{dc} domain for the account's data centre."
+  - name: "Zoho Mail API - ToDo"
+    url: "https://raw.githubusercontent.com/zoho/zohomail-oas/HEAD/v1/todo.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://mail.zoho.com"
+    notes: "Spec declares no servers; use the regional mail.zoho.{dc} domain for the account's data centre."

@@ -1,0 +1,16 @@
+id: zuora
+name: "Zuora"
+apideck: false
+specs:
+  - name: "Zuora API (full, compact)"
+    url: "https://developer.zuora.com/yaml/apis/zuora-openapi-full-compact.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://rest.zuora.com"
+    notes: "Whole v1 API without descriptions or samples. Server hosts vary by tenant/region (rest.na.zuora.com, rest.eu.zuora.com, sandbox variants)."
+  - name: "Order-to-Cash (detailed)"
+    url: "https://developer.zuora.com/yaml/apis/zuora-openapi-for-otc.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://rest.zuora.com"
+    notes: "Includes descriptions and examples; a compact variant is zuora-openapi-for-otc-compact.yaml in the same folder."

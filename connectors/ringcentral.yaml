@@ -1,0 +1,10 @@
+id: ringcentral
+name: "RingCentral"
+apideck: false
+specs:
+  - name: "RingCentral Connect Platform API"
+    url: "https://raw.githubusercontent.com/ringcentral/ringcentral-api-docs/main/specs/ringcentral_openapi3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://platform.ringcentral.com"
+    notes: "Sandbox: https://platform.devtest.ringcentral.com"

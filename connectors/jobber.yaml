@@ -1,0 +1,5 @@
+id: jobber
+name: "Jobber"
+apideck: false
+notes: "Jobber's API is GraphQL at https://api.getjobber.com/api/graphql; the endpoint is behind bot protection and introspection requires authentication, so no schema could be fetched."
+specs: []

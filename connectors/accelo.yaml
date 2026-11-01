@@ -1,0 +1,5 @@
+id: accelo
+name: "Accelo"
+apideck: false
+notes: "Checked api.accelo.com and web search; no vendor-published spec found."
+specs: []

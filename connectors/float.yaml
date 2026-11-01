@@ -1,0 +1,5 @@
+id: float
+name: "Float"
+apideck: false
+notes: "Checked developer.float.com and docs.float.com; the reference is HTML only, no spec file found."
+specs: []

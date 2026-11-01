@@ -1,0 +1,35 @@
+id: alchemy
+name: "Alchemy"
+apideck: false
+notes: "Published from the github.com/alchemyplatform/docs repository (src/openapi). JSON-RPC (OpenRPC) definitions are in src/openrpc and are not listed."
+specs:
+  - name: "Alchemy NFT API"
+    url: "https://dev-docs.alchemy.com/alchemy/rest/nft.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{network}.g.alchemy.com/nft"
+  - name: "Alchemy Prices API"
+    url: "https://dev-docs.alchemy.com/alchemy/rest/prices.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.g.alchemy.com/prices/v1"
+  - name: "Alchemy Data API"
+    url: "https://dev-docs.alchemy.com/alchemy/rest/portfolio.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.g.alchemy.com/data/v1"
+  - name: "Alchemy Webhooks (Notify) API"
+    url: "https://dev-docs.alchemy.com/alchemy/rest/notify.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://dashboard.alchemy.com/api"
+  - name: "Alchemy Smart Wallets API"
+    url: "https://dev-docs.alchemy.com/alchemy/rest/accounts.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.g.alchemy.com/signer/v1"
+  - name: "Alchemy Gas Manager Admin API"
+    url: "https://dev-docs.alchemy.com/alchemy/rest/admin.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://manage.g.alchemy.com"

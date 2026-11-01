@@ -1,0 +1,5 @@
+id: envoy
+name: "Envoy"
+apideck: false
+notes: "Checked developers.envoy.com reference and web search; no standalone spec file published."
+specs: []

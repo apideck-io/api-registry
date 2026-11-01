@@ -1,0 +1,5 @@
+id: dynamic-mockups
+name: "Dynamic Mockups"
+apideck: false
+notes: "docs.dynamicmockups.com llms.txt and API pages checked; each page embeds its OpenAPI snippet in the Markdown, but no standalone spec file is served."
+specs: []

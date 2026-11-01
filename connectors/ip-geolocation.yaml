@@ -1,0 +1,10 @@
+id: ip-geolocation
+name: "IPGeolocation"
+apideck: false
+specs:
+  - name: "IPGeolocation.io combined API"
+    url: "https://raw.githubusercontent.com/IPGeolocation/openapi/main/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.ipgeolocation.io"
+    notes: "Combined spec for all v3 APIs. Per-API specs are in the same repo, e.g. ip-location-api/openapi.json, ip-security-api, asn-api, timezone-api, astronomy-api, user-agent-api, ip-abuse-contact-api. The repo's root openapi.json is a Postman collection."

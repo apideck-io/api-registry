@@ -1,0 +1,9 @@
+id: launchdarkly
+name: "LaunchDarkly"
+apideck: false
+specs:
+  - name: "LaunchDarkly REST API"
+    url: "https://app.launchdarkly.com/api/v2/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.launchdarkly.com"

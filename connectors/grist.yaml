@@ -1,0 +1,10 @@
+id: grist
+name: "Grist"
+apideck: false
+specs:
+  - name: "Grist API"
+    url: "https://raw.githubusercontent.com/gristlabs/grist-help/master/api/grist.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{gristhost}/api"
+    notes: "Maintained in the gristlabs/grist-help repository that backs the API reference."

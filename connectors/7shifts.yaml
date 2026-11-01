@@ -1,0 +1,5 @@
+id: 7shifts
+name: "7shifts"
+apideck: false
+notes: "Docs (developers.7shifts.com) are on a hosted docs platform; llms.txt lists no OpenAPI file. A vendor Postman collection exists only as a zip archive (https://storage.googleapis.com/cdn.7shifts.com/postman_collections/7shifts_postman_collection_v2023-04-01_v2.zip, contains Postman 2.1 JSON, 2023-04-01 API version), so it is not listed as a directly loadable spec. API base: https://api.7shifts.com."
+specs: []

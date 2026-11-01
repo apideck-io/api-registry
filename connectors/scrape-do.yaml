@@ -1,0 +1,5 @@
+id: scrape-do
+name: "Scrape Do"
+apideck: false
+notes: "Checked docs.scrape.do llms.txt, scrape.do/documentation and the full-text docs export; no OpenAPI file published."
+specs: []

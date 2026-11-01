@@ -1,0 +1,17 @@
+id: microsoft-intune
+name: "Microsoft Intune"
+apideck: false
+notes: "Intune has no separate spec; it is exposed through Microsoft Graph."
+specs:
+  - name: "Microsoft Graph v1.0 (includes Intune deviceManagement / deviceAppManagement)"
+    url: "https://raw.githubusercontent.com/microsoftgraph/msgraph-metadata/master/openapi/v1.0/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://graph.microsoft.com/v1.0"
+    notes: "About 44 MB; Intune operations are part of the full Graph description."
+  - name: "Microsoft Graph beta (includes Intune deviceManagement / deviceAppManagement)"
+    url: "https://raw.githubusercontent.com/microsoftgraph/msgraph-metadata/master/openapi/beta/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://graph.microsoft.com/beta"
+    notes: "About 71 MB; most Intune endpoints are served from beta."

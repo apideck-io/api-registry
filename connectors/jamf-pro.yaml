@@ -1,0 +1,21 @@
+id: jamf-pro
+name: "Jamf Pro"
+apideck: false
+notes: "Specs listed in the developer portal's /.well-known/api-catalog. The portal sits behind bot protection that intermittently challenges non-browser clients."
+specs:
+  - name: "Jamf Pro API"
+    url: "https://developer.jamf.com/jamf-pro/openapi/jamf-pro-api.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{server}.jamfcloud.com/api"
+    notes: "Per-customer host; also available from each instance at /api/schema."
+  - name: "Jamf Classic API"
+    url: "https://developer.jamf.com/jamf-pro/openapi/classic-api.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{server}.jamfcloud.com/JSSResource"
+  - name: "Jamf Title Editor API"
+    url: "https://developer.jamf.com/jamf-pro/openapi/title-editor.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{server}.appcatalog.jamfcloud.com/v2"

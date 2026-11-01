@@ -1,0 +1,5 @@
+id: expensify
+name: "Expensify"
+apideck: false
+notes: "integrations.expensify.com documentation checked; the Integration Server is a single JSON-job endpoint documented in prose, with no OpenAPI file published."
+specs: []

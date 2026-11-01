@@ -1,0 +1,10 @@
+id: statsig
+name: "Statsig"
+apideck: false
+specs:
+  - name: "Statsig Console API"
+    url: "https://api.statsig.com/openapi/20240601.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://statsigapi.net"
+    notes: "Paths include /console/v1; version 20240601 is the current published version."

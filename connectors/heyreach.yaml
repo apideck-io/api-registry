@@ -1,0 +1,11 @@
+id: heyreach
+name: "Heyreach"
+apideck: false
+notes: "The published spec has a malformed server entry (https://api) and its paths start with //api/public; the real host is api.heyreach.io."
+specs:
+  - name: "HeyReach API"
+    url: "https://docs.heyreach.io/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.heyreach.io"
+    notes: "Also available as YAML at https://docs.heyreach.io/openapi.yaml. Spec paths begin with //api/public."

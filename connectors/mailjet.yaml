@@ -1,0 +1,16 @@
+id: mailjet
+name: "Mailjet"
+apideck: false
+specs:
+  - name: "Email API"
+    url: "https://dev.mailjet.com/_bundle/openapi/openapi-mailjet.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.mailjet.com"
+    notes: "Listed in dev.mailjet.com/llms.txt."
+  - name: "Content API"
+    url: "https://dev.mailjet.com/_bundle/openapi/openapi-passport.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.mailjet.com"
+    notes: "Listed in dev.mailjet.com/llms.txt."

@@ -1,0 +1,53 @@
+id: adyen
+name: "Adyen"
+apideck: false
+notes: "The vendor's GitHub repo Adyen/adyen-openapi holds about 150 versioned definitions (json/ and yaml/ folders), including webhooks and older API versions; the core current ones are listed. Spec servers are the test environment; live endpoints differ per account."
+specs:
+  - name: "Checkout API v72"
+    url: "https://raw.githubusercontent.com/Adyen/adyen-openapi/main/json/CheckoutService-v72.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://checkout-test.adyen.com/v72"
+    notes: "Paths are relative to the server URL, which includes the version."
+  - name: "Management API v3"
+    url: "https://raw.githubusercontent.com/Adyen/adyen-openapi/main/json/ManagementService-v3.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://management-test.adyen.com/v3"
+    notes: "Paths are relative to the server URL, which includes the version."
+  - name: "Configuration API (Balance Platform) v2"
+    url: "https://raw.githubusercontent.com/Adyen/adyen-openapi/main/json/BalancePlatformService-v2.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://balanceplatform-api-test.adyen.com/bcl/v2"
+    notes: "Paths are relative to the server URL, which includes the version."
+  - name: "Legal Entity Management API v4"
+    url: "https://raw.githubusercontent.com/Adyen/adyen-openapi/main/json/LegalEntityService-v4.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://kyc-test.adyen.com/lem/v4"
+    notes: "Paths are relative to the server URL, which includes the version."
+  - name: "Transfers API v4"
+    url: "https://raw.githubusercontent.com/Adyen/adyen-openapi/main/json/TransferService-v4.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://balanceplatform-api-test.adyen.com/btl/v4"
+    notes: "Paths are relative to the server URL, which includes the version."
+  - name: "Payout API v68"
+    url: "https://raw.githubusercontent.com/Adyen/adyen-openapi/main/json/PayoutService-v68.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://pal-test.adyen.com/pal/servlet/Payout/v68"
+    notes: "Paths are relative to the server URL, which includes the version."
+  - name: "Recurring API v68"
+    url: "https://raw.githubusercontent.com/Adyen/adyen-openapi/main/json/RecurringService-v68.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://pal-test.adyen.com/pal/servlet/Recurring/v68"
+    notes: "Paths are relative to the server URL, which includes the version."
+  - name: "Disputes API v30"
+    url: "https://raw.githubusercontent.com/Adyen/adyen-openapi/main/json/DisputeService-v30.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://ca-test.adyen.com/ca/services/DisputeService/v30"
+    notes: "Paths are relative to the server URL, which includes the version."

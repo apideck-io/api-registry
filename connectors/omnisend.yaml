@@ -1,0 +1,59 @@
+id: omnisend
+name: "Omnisend"
+apideck: false
+notes: "Newer 2026-dated and preview definitions are also published on developers.omnisend.com."
+specs:
+  - name: "Omnisend API v3"
+    url: "https://dash.readme.com/api/v1/api-registry/b42jmls0kkny"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.omnisend.com/v3"
+    notes: "Definition behind developers.omnisend.com, served from the ReadMe API registry."
+  - name: "Contacts API v5"
+    url: "https://dash.readme.com/api/v1/api-registry/3rl28bvmqgq96id"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.omnisend.com/v5"
+    notes: "Definition behind developers.omnisend.com, served from the ReadMe API registry."
+  - name: "Campaigns API v5"
+    url: "https://dash.readme.com/api/v1/api-registry/28t2mn4jatkh"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.omnisend.com/v5"
+    notes: "Definition behind developers.omnisend.com, served from the ReadMe API registry."
+  - name: "Events API v5"
+    url: "https://dash.readme.com/api/v1/api-registry/er16adomufhkd8j"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.omnisend.com/v5"
+    notes: "Definition behind developers.omnisend.com, served from the ReadMe API registry."
+  - name: "Products API v5"
+    url: "https://dash.readme.com/api/v1/api-registry/4pa16zvmmv0vawwr"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.omnisend.com/v5"
+    notes: "Definition behind developers.omnisend.com, served from the ReadMe API registry."
+  - name: "Product Categories API v5"
+    url: "https://dash.readme.com/api/v1/api-registry/19uhg5hmn5zzrvp"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.omnisend.com/v5"
+    notes: "Definition behind developers.omnisend.com, served from the ReadMe API registry."
+  - name: "Batches API v5"
+    url: "https://dash.readme.com/api/v1/api-registry/l0vle3ml6f6ezt"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.omnisend.com/v5"
+    notes: "Definition behind developers.omnisend.com, served from the ReadMe API registry."
+  - name: "Brands API v5"
+    url: "https://dash.readme.com/api/v1/api-registry/azzp6h59msft9ca4"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.omnisend.com/v5"
+    notes: "Definition behind developers.omnisend.com, served from the ReadMe API registry."
+  - name: "Automations API v5"
+    url: "https://dash.readme.com/api/v1/api-registry/50x4i957mn5opzw9"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.omnisend.com/v5"
+    notes: "Definition behind developers.omnisend.com, served from the ReadMe API registry."

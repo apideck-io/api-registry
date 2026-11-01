@@ -1,0 +1,17 @@
+id: gem
+name: "Gem ATS"
+apideck: false
+notes: "Spec files are linked from the reference pages at api.gem.com."
+specs:
+  - name: "Gem ATS API"
+    url: "https://api.gem.com/ats/v0/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.gem.com"
+    notes: "Paths already include the /ats/v0 prefix."
+  - name: "Gem CRM API"
+    url: "https://api.gem.com/v0/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.gem.com"
+    notes: "Paths already include the /v0 prefix."

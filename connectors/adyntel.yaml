@@ -1,0 +1,5 @@
+id: adyntel
+name: "Adyntel"
+apideck: false
+notes: "Checked docs.adyntel.com llms.txt and openapi.json; endpoints are documented as pages, no spec file found."
+specs: []

@@ -1,0 +1,5 @@
+id: wealthbox
+name: "Wealthbox"
+apideck: false
+notes: "Checked dev.wealthbox.com and web search; no vendor-published spec found."
+specs: []

@@ -1,0 +1,50 @@
+id: minimax
+name: "MiniMax"
+apideck: false
+notes: "Specs are listed in platform.minimax.io/docs/llms.txt; further per-endpoint specs (image, voice design/management, speech-to-text, async T2A) are listed there too. Paths include /v1 and server is the host."
+specs:
+  - name: "MiniMax Text API (native)"
+    url: "https://platform.minimax.io/docs/api-reference/text/api/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.minimax.io"
+  - name: "MiniMax Text API (OpenAI-compatible)"
+    url: "https://platform.minimax.io/docs/api-reference/text/api/openapi-chat-openai.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.minimax.io"
+  - name: "MiniMax Text API (Anthropic-compatible)"
+    url: "https://platform.minimax.io/docs/api-reference/text/api/openapi-chat-anthropic.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.minimax.io"
+  - name: "MiniMax Responses API"
+    url: "https://platform.minimax.io/docs/api-reference/text/api/openapi-responses.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.minimax.io"
+  - name: "MiniMax T2A (speech) API"
+    url: "https://platform.minimax.io/docs/api-reference/speech/t2a/api/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.minimax.io"
+  - name: "MiniMax Voice Cloning API"
+    url: "https://platform.minimax.io/docs/api-reference/speech/voice-cloning/api/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.minimax.io"
+  - name: "MiniMax Video Generation API"
+    url: "https://platform.minimax.io/docs/api-reference/video/generation/api/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.minimax.io"
+  - name: "MiniMax Music Generation API"
+    url: "https://platform.minimax.io/docs/api-reference/music/api/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.minimax.io"
+  - name: "MiniMax File Management API"
+    url: "https://platform.minimax.io/docs/api-reference/file/management/api/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.minimax.io"

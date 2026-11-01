@@ -1,0 +1,5 @@
+id: vincere
+name: "Vincere"
+apideck: false
+notes: "No machine-readable spec found. Checked docs.vincere.io/llms.txt (access denied) and a web search for OpenAPI/Swagger; no public spec located."
+specs: []

@@ -1,0 +1,10 @@
+id: cohere
+name: "Cohere"
+apideck: false
+specs:
+  - name: "Cohere API"
+    url: "https://raw.githubusercontent.com/cohere-ai/cohere-developer-experience/main/cohere-openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.cohere.com"
+    notes: "Covers /v1 and /v2 endpoints; the file is synced into the cohere-developer-experience repo."

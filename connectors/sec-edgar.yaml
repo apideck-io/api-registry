@@ -1,0 +1,5 @@
+id: sec-edgar
+name: "SEC EDGAR"
+apideck: false
+notes: "The SEC publishes EDGAR data APIs as documentation pages; no OpenAPI/Swagger file found (the documentation page also blocks automated fetches)."
+specs: []

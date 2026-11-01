@@ -1,0 +1,5 @@
+id: surecontact
+name: "SureContact"
+apideck: false
+notes: "API reference is at api.surecontact.com/docs; common openapi/docs JSON paths returned 404 and no spec download link was found."
+specs: []

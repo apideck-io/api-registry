@@ -1,0 +1,15 @@
+id: pipeline-crm
+name: "Pipeline CRM"
+apideck: false
+notes: "Linked from the API docs at app.pipelinecrm.com/api/docs."
+specs:
+  - name: "Pipeline CRM API v3"
+    url: "https://app.pipelinecrm.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.pipelinecrm.com/api/v3"
+  - name: "Pipeline CRM API v3 Postman collection"
+    url: "https://app.pipelinecrm.com/openapi.postman_collection.json"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://api.pipelinecrm.com/api/v3"

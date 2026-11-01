@@ -1,0 +1,10 @@
+id: netlify
+name: "Netlify"
+apideck: false
+specs:
+  - name: "Netlify API"
+    url: "https://open-api.netlify.com/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.netlify.com/api/v1"
+    notes: "Official; source in the netlify/open-api repo."

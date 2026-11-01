@@ -1,0 +1,9 @@
+id: circleci
+name: "CircleCI"
+apideck: false
+specs:
+  - name: "CircleCI API v2"
+    url: "https://circleci.com/api/v2/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://circleci.com/api/v2"

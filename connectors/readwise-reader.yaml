@@ -1,0 +1,5 @@
+id: readwise-reader
+name: "Readwise Reader"
+apideck: false
+notes: "Checked readwise.io/reader_api and docs.readwise.io; documented as HTML pages only, no spec found."
+specs: []

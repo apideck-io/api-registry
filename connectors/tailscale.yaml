@@ -1,0 +1,5 @@
+id: tailscale
+name: "Tailscale"
+apideck: false
+notes: "Checked tailscale.com/api, the tailscale GitHub org and web search; the vendor documents the API without a published OpenAPI file."
+specs: []

@@ -1,0 +1,10 @@
+id: boldsign
+name: "Boldsign"
+apideck: false
+specs:
+  - name: "BoldSign API"
+    url: "https://api.boldsign.com/swagger/v1/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.boldsign.com"
+    notes: "Paths begin with /v1. Linked from the vendor docs as the Open API specification file."

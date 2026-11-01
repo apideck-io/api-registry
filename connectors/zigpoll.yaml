@@ -1,0 +1,5 @@
+id: zigpoll
+name: "Zigpoll"
+apideck: false
+notes: "apidocs.zigpoll.com is a ReadMe-hosted reference that references an OpenAPI definition internally, but no public spec URL could be fetched (candidate paths return the HTML shell). Left empty."
+specs: []

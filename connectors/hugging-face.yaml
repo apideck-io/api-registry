@@ -1,0 +1,9 @@
+id: hugging-face
+name: "Hugging Face"
+apideck: false
+specs:
+  - name: "Hub API"
+    url: "https://huggingface.co/.well-known/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://huggingface.co"

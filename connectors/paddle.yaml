@@ -1,0 +1,10 @@
+id: paddle
+name: "Paddle"
+apideck: false
+specs:
+  - name: "Paddle Billing API"
+    url: "https://raw.githubusercontent.com/PaddleHQ/paddle-openapi/main/v1/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.paddle.com"
+    notes: "Official PaddleHQ/paddle-openapi repo; includes webhooks. Sandbox at https://sandbox-api.paddle.com."

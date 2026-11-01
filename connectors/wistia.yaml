@@ -1,0 +1,20 @@
+id: wistia
+name: "Wistia"
+apideck: false
+notes: "Definitions behind the ReadMe-hosted docs at docs.wistia.com (v2026.09)."
+specs:
+  - name: "Wistia Data API"
+    url: "https://dash.readme.com/api/v1/api-registry/6yj3bd13mvu0z6d8"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.wistia.com/modern"
+  - name: "Wistia Analytics API"
+    url: "https://dash.readme.com/api/v1/api-registry/1fkw13muw9ypak"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.wistia.com/modern"
+  - name: "Wistia Stats API"
+    url: "https://dash.readme.com/api/v1/api-registry/wnc5rddmv002694"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.wistia.com/modern"

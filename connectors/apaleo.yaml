@@ -1,0 +1,55 @@
+id: apaleo
+name: "Apaleo"
+apideck: false
+notes: "Specs are listed in the Swagger UI at api.apaleo.com/swagger/index.html; that index also lists additional unversioned (v0) variants."
+specs:
+  - name: "apaleo Inventory API"
+    url: "https://api.apaleo.com/swagger/inventory-v1/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.apaleo.com"
+  - name: "apaleo Rate Plan API"
+    url: "https://api.apaleo.com/swagger/rateplan-v1/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.apaleo.com"
+  - name: "apaleo Booking API"
+    url: "https://api.apaleo.com/swagger/booking-v1/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.apaleo.com"
+  - name: "apaleo Finance API"
+    url: "https://api.apaleo.com/swagger/finance-v1/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.apaleo.com"
+  - name: "apaleo Settings API"
+    url: "https://api.apaleo.com/swagger/settings-v1/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.apaleo.com"
+  - name: "apaleo Account API"
+    url: "https://api.apaleo.com/swagger/account-v1/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.apaleo.com"
+  - name: "apaleo Operations API"
+    url: "https://api.apaleo.com/swagger/operations-v1/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.apaleo.com"
+  - name: "apaleo Reports API"
+    url: "https://api.apaleo.com/swagger/reports-v1/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.apaleo.com"
+  - name: "apaleo Availability API"
+    url: "https://api.apaleo.com/swagger/availability-v1/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.apaleo.com"
+  - name: "apaleo Logs API"
+    url: "https://api.apaleo.com/swagger/logs-v1/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.apaleo.com"

@@ -1,0 +1,5 @@
+id: splitwise
+name: "Splitwise"
+apideck: false
+notes: "Splitwise's spec (github.com/splitwise/api-docs, splitwise.yaml) is split across relative $ref files (paths/, schemas/, responses/), so it isn't a self-contained file the registry can read. API reference: https://dev.splitwise.com"
+specs: []

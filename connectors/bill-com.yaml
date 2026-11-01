@@ -1,0 +1,5 @@
+id: bill-com
+name: "Bill.com"
+apideck: false
+notes: "Checked developer.bill.com/llms.txt, reference pages and web search; no standalone OpenAPI file published."
+specs: []

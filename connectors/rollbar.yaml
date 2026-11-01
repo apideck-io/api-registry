@@ -1,0 +1,5 @@
+id: rollbar
+name: "Rollbar"
+apideck: false
+notes: "docs.rollbar.com/llms.txt and the reference pages checked; the OpenAPI definition is embedded in rendered pages only and is not served as a standalone file."
+specs: []

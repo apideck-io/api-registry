@@ -1,0 +1,5 @@
+id: harness
+name: "Harness"
+apideck: false
+notes: "The API reference at apidocs.harness.io offers a 'Download OpenAPI description' link (OpenAPI 3.0, /_bundle/index.yaml), but the file returned HTTP 500 on repeated attempts, so no verified URL is listed. Default server https://app.harness.io."
+specs: []

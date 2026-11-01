@@ -1,0 +1,61 @@
+id: smartrecruiters
+name: "SmartRecruiters"
+apideck: false
+notes: "About 30 further per-API definitions (assessments, approvals, messages, onboarding, etc.) are published on developers.smartrecruiters.com; core ones listed."
+specs:
+  - name: "Candidates API"
+    url: "https://dash.readme.com/api/v1/api-registry/s5mcd9nmu2lw7gl"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.smartrecruiters.com"
+  - name: "Jobs API"
+    url: "https://dash.readme.com/api/v1/api-registry/j001k24mub8mzm9"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.smartrecruiters.com"
+  - name: "Posting API"
+    url: "https://dash.readme.com/api/v1/api-registry/dx785mmt2o2jmg"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.smartrecruiters.com"
+  - name: "Configuration API"
+    url: "https://dash.readme.com/api/v1/api-registry/2628dbcmv6d45tq"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.smartrecruiters.com"
+  - name: "Users API"
+    url: "https://dash.readme.com/api/v1/api-registry/61kez9o9mugx49hu"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.smartrecruiters.com/user-api/v201804"
+  - name: "Job Applications API"
+    url: "https://dash.readme.com/api/v1/api-registry/1ivdp9xums8pbkku"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.smartrecruiters.com/job-applications-api/v202112"
+  - name: "Offers API"
+    url: "https://dash.readme.com/api/v1/api-registry/4cse7rd6muv2lkca"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.smartrecruiters.com"
+  - name: "Reporting API"
+    url: "https://dash.readme.com/api/v1/api-registry/34txc2tmuyaxt29"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.smartrecruiters.com/reporting-api/v201804"
+  - name: "Webhooks API"
+    url: "https://dash.readme.com/api/v1/api-registry/1tczxewmvp13pma"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.smartrecruiters.com/webhooks-api/v201907"
+  - name: "Interviews API"
+    url: "https://dash.readme.com/api/v1/api-registry/1fqdn9dmpnxuuzo"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.smartrecruiters.com/interviews-api/v201904"
+  - name: "Apply API"
+    url: "https://api.smartrecruiters.com/postings/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.smartrecruiters.com"
+    notes: "Served directly from the API host."

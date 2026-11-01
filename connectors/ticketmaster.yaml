@@ -1,0 +1,17 @@
+id: ticketmaster
+name: "Ticketmaster"
+apideck: false
+notes: "A Publish API v1 spec is in the same repository (publish-api/v1/api.json)."
+specs:
+  - name: "Discovery API v2"
+    url: "https://raw.githubusercontent.com/ticketmaster-api/ticketmaster-api.github.io/dev/_data/orgs/discovery-api/v2/api.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://app.ticketmaster.com"
+    notes: "Paths already include /discovery/v2; the file's host field points at www.ticketmaster.com, the documented base is app.ticketmaster.com. Published in the developer docs repository (github.com/ticketmaster-api)."
+  - name: "Commerce API v2"
+    url: "https://raw.githubusercontent.com/ticketmaster-api/ticketmaster-api.github.io/dev/_data/orgs/commerce-api/v2/api.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://app.ticketmaster.com"
+    notes: "Paths already include /commerce/v2."

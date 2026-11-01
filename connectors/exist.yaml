@@ -1,0 +1,5 @@
+id: exist
+name: "Exist"
+apideck: false
+notes: "developer.exist.io checked (/openapi.json, /llms.txt return 404); the API is documented in prose only."
+specs: []

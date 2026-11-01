@@ -1,0 +1,23 @@
+id: keap
+name: "Keap"
+apideck: false
+notes: "No OpenAPI file found on developer.keap.com; the vendor publishes Postman collections."
+specs:
+  - name: "Keap REST API v2"
+    url: "https://developer.keap.com/postman/keap.postman_collection.json"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://api.infusionsoft.com/crm"
+    notes: "Postman collection linked from developer.keap.com."
+  - name: "Keap REST API v1"
+    url: "https://developer.keap.com/postman/keap-v1.postman_collection.json"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://api.infusionsoft.com/crm"
+    notes: "Postman collection linked from developer.keap.com."
+  - name: "Keap Services API"
+    url: "https://developer.keap.com/postman/services.postman_collection.json"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://api.infusionsoft.com/services"
+    notes: "Postman collection linked from developer.keap.com."

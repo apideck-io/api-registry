@@ -1,0 +1,5 @@
+id: crustdata
+name: "Crustdata"
+apideck: false
+notes: "Crustdata lists OpenAPI YAML specs (account, batch, company, job, person, social_post, watch, web) under docs.crustdata.com/openapi-specs/2025-11-01/, but fetching them redirects to a login page."
+specs: []

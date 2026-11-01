@@ -1,0 +1,12 @@
+id: plain
+name: "Plain"
+apideck: false
+specs:
+  - name: "Plain GraphQL API"
+    url: "https://core-api.uk.plain.com/graphql/v1"
+    format: graphql
+    provenance: vendor
+    server: "https://core-api.uk.plain.com/graphql/v1"
+    extract: graphql-introspection
+    manual: login
+    notes: "Introspection requires an API key; GraphQL API documented at https://docs.plain.com/docs/graphql/introduction"

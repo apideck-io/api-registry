@@ -1,0 +1,5 @@
+id: crunchbase
+name: "Crunchbase"
+apideck: false
+notes: "Crunchbase documents an OpenAPI spec endpoint (https://api.crunchbase.com/v4/md/applications/crunchbase/openapi.json) but it requires an API user_key (HTTP 401 without it); a copy is shown on data.crunchbase.com reference pages. Not fetchable anonymously, so left empty."
+specs: []

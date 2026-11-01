@@ -1,0 +1,5 @@
+id: smugmug
+name: "SmugMug"
+apideck: false
+notes: "Checked the API v2 documentation and common swagger paths; no vendor-published spec found."
+specs: []

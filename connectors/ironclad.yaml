@@ -1,0 +1,23 @@
+id: ironclad
+name: "Ironclad"
+apideck: false
+notes: "Specs listed in the developer hub's /.well-known/api-catalog. The separate Clickwrap developer portal (clickwrap-developer.ironcladapp.com) was not checked for a spec."
+specs:
+  - name: "Ironclad Public API"
+    url: "https://developer.ironcladapp.com/openapi/ironclad-public-api.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://ironcladapp.com/public/api/v1"
+    notes: "EU instance: https://eu1.ironcladapp.com/public/api/v1."
+  - name: "Ironclad OAuth 2.0 API"
+    url: "https://developer.ironcladapp.com/openapi/ironclad-oauth-20-api.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://ironcladapp.com/oauth"
+    notes: "EU instance: https://eu1.ironcladapp.com/oauth."
+  - name: "Ironclad SCIM API"
+    url: "https://developer.ironcladapp.com/openapi/ironclad-scim-api.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://ironcladapp.com/scim/v2"
+    notes: "EU instance: https://eu1.ironcladapp.com/scim/v2."

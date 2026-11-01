@@ -1,0 +1,5 @@
+id: wise
+name: "Wise"
+apideck: false
+notes: "Wise's API reference (docs.wise.com/api-reference) offers a 'Download OpenAPI description' action in the page UI, but no fetchable spec URL could be found (spec-like paths return the HTML app shell). Left empty."
+specs: []

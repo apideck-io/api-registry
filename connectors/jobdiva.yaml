@@ -1,0 +1,5 @@
+id: jobdiva
+name: "JobDiva"
+apideck: false
+notes: "JobDiva publishes Swagger UI at api.jobdiva.com, but the Swagger UI and spec URLs return HTTP 401 without credentials, so no spec could be fetched."
+specs: []

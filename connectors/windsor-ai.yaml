@@ -1,0 +1,5 @@
+id: windsor-ai
+name: "Windsor.ai"
+apideck: false
+notes: "Checked windsor.ai llms.txt and the REST API documentation page; no spec file published."
+specs: []

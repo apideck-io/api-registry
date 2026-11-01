@@ -1,0 +1,10 @@
+id: nutshell
+name: "Nutshell"
+apideck: false
+specs:
+  - name: "Nutshell API"
+    url: "https://dash.readme.com/api/v1/api-registry/d9jyof2umvlb5azr"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.nutshell.com/rest"
+    notes: "OpenAPI definition behind developers.nutshell.com, served from the ReadMe API registry."

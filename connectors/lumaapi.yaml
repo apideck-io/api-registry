@@ -1,0 +1,10 @@
+id: lumaapi
+name: "Luma API"
+apideck: false
+specs:
+  - name: "Luma Public API"
+    url: "https://public-api.luma.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://public-api.luma.com"
+    notes: "Paths include the /v1 prefix."

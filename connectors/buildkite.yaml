@@ -1,0 +1,5 @@
+id: buildkite
+name: "Buildkite"
+apideck: false
+notes: "Buildkite REST API is documented as HTML; no official OpenAPI file found (GraphQL API is also available)."
+specs: []

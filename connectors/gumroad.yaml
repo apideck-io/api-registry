@@ -1,0 +1,5 @@
+id: gumroad
+name: "Gumroad"
+apideck: false
+notes: "Searched for a published OpenAPI/Swagger spec and checked the docs site (llms.txt, openapi.json paths); none found. API is documented as HTML at gumroad.com/api."
+specs: []

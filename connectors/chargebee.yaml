@@ -1,0 +1,21 @@
+id: chargebee
+name: "Chargebee"
+apideck: false
+notes: "YAML variants of each spec are in the same repo folder."
+specs:
+  - name: "Chargebee API v2 (Product Catalog 2.0)"
+    url: "https://raw.githubusercontent.com/chargebee/openapi/main/spec/chargebee_api_v2_pc_v2_spec.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{site}.chargebee.com/api/v2"
+  - name: "Chargebee API v2 (Product Catalog 1.0)"
+    url: "https://raw.githubusercontent.com/chargebee/openapi/main/spec/chargebee_api_v2_pc_v1_spec.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{site}.chargebee.com/api/v2"
+    notes: "For sites on Product Catalog 1.0"
+  - name: "Chargebee API v1 (legacy)"
+    url: "https://raw.githubusercontent.com/chargebee/openapi/main/spec/chargebee_api_v1_spec.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{site}.chargebee.com/api/v1"

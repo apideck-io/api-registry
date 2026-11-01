@@ -1,0 +1,15 @@
+id: mintlify
+name: "Mintlify"
+apideck: false
+specs:
+  - name: "Mintlify External API"
+    url: "https://mintlify.com/docs/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.mintlify.com/v1"
+  - name: "Mintlify Admin API"
+    url: "https://www.mintlify.com/docs/admin-openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.mintlify.com"
+    notes: "Paths start with /v1."

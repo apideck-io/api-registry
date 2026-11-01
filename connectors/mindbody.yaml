@@ -1,0 +1,5 @@
+id: mindbody
+name: "Mindbody"
+apideck: false
+notes: "Checked developers.mindbodyonline.com and common swagger paths on api.mindbodyonline.com; no vendor-published spec found."
+specs: []

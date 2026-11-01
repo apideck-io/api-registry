@@ -1,0 +1,5 @@
+id: basin
+name: "Basin"
+apideck: false
+notes: "Docs (docs.usebasin.com) reference a Swagger-hosted API reference but no spec URL was found in the page or common paths."
+specs: []

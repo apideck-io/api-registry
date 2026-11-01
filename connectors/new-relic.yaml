@@ -1,0 +1,12 @@
+id: new-relic
+name: "New Relic"
+apideck: false
+specs:
+  - name: "NerdGraph (GraphQL)"
+    url: "https://api.newrelic.com/graphql"
+    format: graphql
+    provenance: vendor
+    server: "https://api.newrelic.com/graphql"
+    extract: graphql-introspection
+    manual: login
+    notes: "Introspection requires a User API key."

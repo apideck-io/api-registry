@@ -1,0 +1,9 @@
+id: kit
+name: "Kit"
+apideck: false
+specs:
+  - name: "Kit API v4"
+    url: "https://developers.kit.com/api-reference/v4.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.kit.com"

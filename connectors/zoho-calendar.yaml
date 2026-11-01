@@ -1,0 +1,5 @@
+id: zoho-calendar
+name: "Zoho Calendar"
+apideck: false
+notes: "Checked zoho.com/calendar/help/api and web search; no spec file published."
+specs: []

@@ -1,0 +1,10 @@
+id: pandadoc
+name: "PandaDoc"
+apideck: false
+specs:
+  - name: "PandaDoc API"
+    url: "https://raw.githubusercontent.com/PandaDoc/pandadoc-openapi-specification/main/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.pandadoc.com"
+    notes: "Paths begin with /public/v1. Also available as YAML in the same repo."

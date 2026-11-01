@@ -1,0 +1,11 @@
+id: zoho-inventory
+name: "Zoho Inventory"
+apideck: false
+specs:
+  - name: "Zoho Inventory API v1 (OpenAPI bundle, ZIP)"
+    url: "https://www.zoho.com/inventory/api/v1/openapi-all.zip"
+    format: openapi-3.0
+    provenance: vendor
+    extract: zip-bundle
+    server: "https://www.zohoapis.com/inventory/v1"
+    notes: "ZIP archive of per-module OpenAPI 3.0.0 YAML files (items, contacts, sales orders, invoices, etc.), linked as 'Download OpenAPI Document' on the API docs page. Region-specific hosts exist."

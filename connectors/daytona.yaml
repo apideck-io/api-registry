@@ -1,0 +1,9 @@
+id: daytona
+name: "Daytona"
+apideck: false
+specs:
+  - name: "Daytona API"
+    url: "https://www.daytona.io/docs/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.daytona.io/api"

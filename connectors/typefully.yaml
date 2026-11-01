@@ -1,0 +1,10 @@
+id: typefully
+name: "Typefully"
+apideck: false
+specs:
+  - name: "Typefully API v2"
+    url: "https://api.typefully.com/v2/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.typefully.com"
+    notes: "Paths begin with /v2."

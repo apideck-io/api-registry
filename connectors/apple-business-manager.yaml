@@ -1,0 +1,5 @@
+id: apple-business-manager
+name: "Apple Business Manager"
+apideck: false
+notes: "Apple's documentation page for the OpenAPI Specification (business.apple.com/docs/api/v1/oas/coming_soon) states it is coming soon."
+specs: []

@@ -1,0 +1,10 @@
+id: auvik
+name: "Auvik"
+apideck: false
+specs:
+  - name: "Auvik API"
+    url: "https://auvikapi.us1.my.auvik.com/spec"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://auvikapi.{region}.my.auvik.com"
+    notes: "Spec served by the Redoc page at /docs; region hosts vary (us1, us2, eu1, ...)."

@@ -1,0 +1,16 @@
+id: oceanio
+name: "Ocean.io"
+apideck: false
+specs:
+  - name: "Ocean.io API v2"
+    url: "https://api.ocean.io/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.ocean.io"
+    notes: "Paths include the /v2 prefix."
+  - name: "Ocean.io legacy API (Swagger UI)"
+    url: "https://docs.oceanio.com/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.oceanio.com"
+    notes: "Older spec behind the legacy docs Swagger UI."

@@ -1,0 +1,10 @@
+id: cursor
+name: "Cursor"
+apideck: false
+specs:
+  - name: "Cursor API (origin)"
+    url: "https://cursor.com/docs/api/origin/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.cursor.com"
+    notes: "Linked from docs llms.txt; paths are under /v1/origin. Other Cursor APIs (Cloud Agents) are documented as pages at https://cursor.com/docs/cloud-agent/api/endpoints.md without a separate spec file found."

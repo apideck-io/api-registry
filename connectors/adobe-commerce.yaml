@@ -1,0 +1,5 @@
+id: adobe-commerce
+name: "Adobe Commerce"
+apideck: false
+notes: "Schema is generated per instance (GET /rest/all/schema?services=all, or /swagger in developer mode); no static vendor-hosted file found."
+specs: []

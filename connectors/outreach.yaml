@@ -1,0 +1,9 @@
+id: outreach
+name: "Outreach"
+apideck: false
+specs:
+  - name: "Outreach REST API Reference"
+    url: "https://api.outreach.io/api/v2/schema/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.outreach.io/api/v2"

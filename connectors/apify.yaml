@@ -1,0 +1,9 @@
+id: apify
+name: "Apify"
+apideck: false
+specs:
+  - name: "Apify API"
+    url: "https://docs.apify.com/api/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.apify.com"

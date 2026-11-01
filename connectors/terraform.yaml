@@ -1,0 +1,5 @@
+id: terraform
+name: "Terraform (HCP Terraform / Terraform Cloud API)"
+apideck: false
+notes: "No machine-readable spec found. Checked developer.hashicorp.com/terraform/cloud-docs/api-docs (HTML JSON:API docs), developer.hashicorp.com/llms.txt (404), the hashicorp GitHub org (openapi repos exist only for Nomad and Vault/SDK tooling) and a web search. Base URL https://app.terraform.io/api/v2."
+specs: []

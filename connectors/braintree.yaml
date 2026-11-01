@@ -1,0 +1,10 @@
+id: braintree
+name: "Braintree"
+apideck: false
+specs:
+  - name: "Braintree GraphQL schema"
+    url: "https://raw.githubusercontent.com/braintree/graphql-api/master/schema.graphql"
+    format: graphql
+    provenance: vendor
+    server: "https://payments.braintree-api.com/graphql"
+    notes: "Official braintree/graphql-api repo (SDL); sandbox at https://payments.sandbox.braintree-api.com/graphql."

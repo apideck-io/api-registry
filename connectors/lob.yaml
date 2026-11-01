@@ -1,0 +1,10 @@
+id: lob
+name: "Lob"
+apideck: false
+specs:
+  - name: "Lob API"
+    url: "https://raw.githubusercontent.com/lob/lob-openapi/main/dist/lob-api-bundled.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.lob.com/v1"
+    notes: "Paths are relative to the /v1 server URL."

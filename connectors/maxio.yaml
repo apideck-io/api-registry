@@ -1,0 +1,5 @@
+id: maxio
+name: "Maxio"
+apideck: false
+notes: "No machine-readable spec found. Checked developers.maxio.com/llms.txt (endpoint pages only, no spec link), GitHub org maxio-com (SDK repositories only) and a web search."
+specs: []

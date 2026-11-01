@@ -1,0 +1,5 @@
+id: tomba
+name: "Tomba"
+apideck: false
+notes: "docs.tomba.io/api/1.0.0/schema.yaml (OpenAPI 3.0.1, server https://api.tomba.io/v1) uses relative $ref files (paths/*.yaml) that return 404, so it is not self-contained; docs.tomba.io/openapi.md is a Markdown rendering only. No standalone spec fetched."
+specs: []

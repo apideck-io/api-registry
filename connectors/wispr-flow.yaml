@@ -1,0 +1,5 @@
+id: wispr-flow
+name: "Wispr Flow"
+apideck: false
+notes: "Checked docs.wisprflow.ai (llms.txt and help center) and api.wisprflow.ai /docs and /openapi.json (404); no public spec found."
+specs: []
