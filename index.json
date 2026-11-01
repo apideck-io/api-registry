@@ -50,7 +50,7 @@
           "status": "ok",
           "sha256": "e8253fcc6cc6fe7951008273a7ae65e9e41452e76a20084ec8aef43ad37c3b65",
           "bytes": 311298,
-          "operations": 80,
+          "operations": 86,
           "title": "WorkItemTracking",
           "apiVersion": "7.1",
           "specVersion": "2.0",
