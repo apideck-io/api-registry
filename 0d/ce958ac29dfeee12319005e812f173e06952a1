@@ -1,0 +1,35 @@
+connectors/chroma.yaml
+  s_eeda7bd9685d9d::t_8361600fe1ae1c 11
+connectors/comet-ml.yaml
+  s_eeda7bd9685d9d::t_99ca7e0425e656 10-11
+connectors/gemini.yaml
+  s_eeda7bd9685d9d::t_1dc9cd706578c0 6
+connectors/kraken.yaml
+  s_eeda7bd9685d9d::t_383316dd17e882 6
+connectors/mothership.yaml
+  s_eeda7bd9685d9d::t_4df65982e9b2cf 6
+connectors/orb.yaml
+  s_eeda7bd9685d9d::t_b63cc8e4e8d29b 6
+connectors/productive.yaml
+  s_eeda7bd9685d9d::t_0663e2e700da5c 6
+connectors/sandbox.yaml
+  s_eeda7bd9685d9d::t_3d57350be9c6dc 6,12,18,23,29,35,41,47,53,59,65,71,77,83,89
+connectors/supernotes.yaml
+  s_eeda7bd9685d9d::t_562c76f64edb70 6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0dce958ac29dfeee12319005e812f173e06952a1",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
