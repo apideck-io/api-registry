@@ -14,7 +14,7 @@ import { join } from "node:path";
 import { parse as parseYaml } from "yaml";
 import openapiFormat from "openapi-format";
 
-const { openapiOverlay } = openapiFormat;
+const { openapiOverlay, resolveJsonPathValue } = openapiFormat;
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url)); // decoded, so paths with spaces work
 const args = process.argv.slice(2);
@@ -55,7 +55,7 @@ function overlayErrors(file, spec) {
   if (!Array.isArray(doc?.actions) || !doc.actions.length) errs.push(`overlay ${file}: actions must be a non-empty list`);
   (doc?.actions ?? []).forEach((a, i) => {
     if (typeof a?.target !== "string" || !a.target.startsWith("$")) errs.push(`overlay ${file} actions[${i}]: target must be a JSONPath starting with $`);
-    if (a?.update === undefined && a?.remove !== true) errs.push(`overlay ${file} actions[${i}]: needs update or remove: true`);
+    if (a?.update === undefined && a?.remove !== true && a?.copy === undefined) errs.push(`overlay ${file} actions[${i}]: needs update, copy or remove: true`);
     if (!a?.description) errs.push(`overlay ${file} actions[${i}]: description is required (say what the vendor's spec gets wrong)`);
   });
   return errs;
@@ -371,13 +371,23 @@ for (const e of entries) {
     if (s.overlay) {
       const text = readFileSync(join(ROOT, s.overlay), "utf8");
       try {
-        const res = await openapiOverlay(parseYaml(r.body, { maxAliasCount: 10000 }), { overlaySet: parseYaml(text) });
+        const parseSpec = () => (/^\s*[{[]/.test(r.body) ? JSON.parse(r.body) : parseYaml(r.body, { maxAliasCount: 10000 }));
+        const overlaySet = parseYaml(text);
+        const original = parseSpec();
+        const res = await openapiOverlay(parseSpec(), { overlaySet });
         const unmatched = res.resultData.unusedActions.map((a) => a.target);
+        // An update whose target is unchanged by the whole overlay is redundant: the vendor already says
+        // what it adds (they fixed it), so the action can go.
+        const redundant = overlaySet.actions
+          .filter((a) => a.update !== undefined && !unmatched.includes(a.target))
+          .filter((a) => canonical(resolveJsonPathValue(original, a.target)) === canonical(resolveJsonPathValue(res.data, a.target)))
+          .map((a) => a.target);
         overlay = {
           file: s.overlay,
           sha256: createHash("sha256").update(text).digest("hex"),
           actions: res.resultData.totalActions,
           ...(unmatched.length ? { unmatched } : {}),
+          ...(redundant.length ? { redundant } : {}),
         };
       } catch (err) {
         overlay = { file: s.overlay, error: err.message.slice(0, 120) };
@@ -394,7 +404,10 @@ for (const e of entries) {
     };
     // Δ changed, + newly indexed, ↺ recovered from a failure, ✓ unchanged. The nightly PR body lists all but ✓.
     const mark = changed ? "Δ" : !old.sha256 ? "+" : old.status && old.status !== "ok" ? "↺" : "✓";
-    const stale = overlay?.unmatched?.length || overlay?.error ? ` ⚠ overlay: ${overlay.error ?? `${overlay.unmatched.length} action(s) match nothing`}` : "";
+    const problems = overlay?.error
+      ? [overlay.error]
+      : [overlay?.unmatched?.length && `${overlay.unmatched.length} action(s) match nothing`, overlay?.redundant?.length && `${overlay.redundant.length} action(s) change nothing`].filter(Boolean);
+    const stale = problems.length ? ` ⚠ overlay: ${problems.join("; ")}` : "";
     console.log(`${mark} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations${stale}`);
   }
   out.connectors[e.id] = { name: e.name, specs };

@@ -73,7 +73,7 @@ actions:
 
 - Overlays fix what the spec says about the API: a missing parameter, a wrong server, a duplicate operationId. How one product wires a connector (which setting fills a variable, allowed hosts) stays in that product.
 - Every action needs a `description` saying what the vendor's spec gets wrong. `extends`, when given, must be the spec's `url`. Overlays apply to OpenAPI and Swagger specs only.
-- The nightly check applies each overlay to the fetched spec and records it in `index.json` (`overlay.file`, `sha256`, `actions`). Actions whose target no longer matches anything are listed under `overlay.unmatched` and flagged with ⚠ in the nightly pull request: the vendor fixed the mistake (drop the action) or moved it (update the target).
+- The nightly check applies each overlay to the fetched spec and records it in `index.json` (`overlay.file`, `sha256`, `actions`). Actions whose target no longer matches anything are listed under `overlay.unmatched` (the vendor moved it: update the target), and updates that no longer change anything under `overlay.redundant` (the vendor fixed it: drop the action). Both are flagged with ⚠ in the nightly pull request.
 - The spec's own `sha256` is of the vendor's file, not the overlaid result, so drift still means the vendor changed something.
 
 Applied with [openapi-format](https://github.com/thim81/openapi-format), which supports Overlay 1.0 and 1.1.
