@@ -20,6 +20,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://api.sandbox.co.in"
+    notes: "Production host; the spec also names the test environment, test-api.sandbox.co.in."
   - name: "Income Tax Calculator API"
     url: "https://developer.sandbox.co.in/api-reference/it/calculator/openapi.json"
     format: openapi-3.1

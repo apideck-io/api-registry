@@ -8,8 +8,3 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{FUSION_HOST}/api"
-  - name: "Fusion Service swagger"
-    url: "https://doc.lucidworks.com/api-reference/4.2/service-swagger.json"
-    format: openapi-3.0
-    provenance: vendor
-    server: "https://{FUSION_HOST}:8764/api/apollo"

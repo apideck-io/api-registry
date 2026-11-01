@@ -8,6 +8,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{host}"
+    notes: "The spec's own placeholder: {host} is the customer's Flinks host."
   - name: "Flinks API (openapi-outbound)"
     url: "https://docs.flinks.io/openapi-outbound.yaml"
     format: openapi-3.0
@@ -18,11 +19,13 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://www.{baseurl}.com"
+    notes: "The spec's own placeholder: {baseurl} is the customer's Flinks Pay domain name (its description gives \"flinks\" as an example)."
   - name: "Flinks API (openapi-pay)"
     url: "https://docs.flinks.io/openapi-pay.yaml"
     format: openapi-3.0
     provenance: vendor
     server: "https://www.{baseurl}.com"
+    notes: "The spec's own placeholder: {baseurl} is the customer's Flinks Pay domain name (its description gives \"flinks\" as an example)."
   - name: "Flinks API (openapi-upload)"
     url: "https://docs.flinks.io/openapi-upload.yaml"
     format: openapi-3.0

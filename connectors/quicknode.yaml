@@ -3,11 +3,6 @@ name: "QuickNode"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://www.quicknode.com/docs)."
 specs:
-  - name: "Quicknode Agent API"
-    url: "https://www.quicknode.com/openapi.json"
-    format: openapi-3.1
-    provenance: vendor
-    server: "https://www.quicknode.com"
   - name: "Streams REST API"
     url: "https://api.quicknode.com/streams/rest/openapi.json"
     format: openapi-3.0
