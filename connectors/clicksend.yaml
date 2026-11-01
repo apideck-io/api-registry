@@ -1,0 +1,11 @@
+id: clicksend
+name: "ClickSend"
+apideck: false
+notes: "developers.clicksend.com does not expose a spec file at common paths (llms.txt lists guides only); no vendor-hosted spec found, so a community copy is listed."
+specs:
+  - name: "ClickSend REST API v3"
+    url: "https://api.apis.guru/v2/specs/clicksend.com/1.0.0/openapi.json"
+    format: openapi-3.0
+    provenance: community
+    server: "https://rest.clicksend.com/v3"
+    notes: "Converted from ClickSend's Apiary API description by the APIs.guru directory; not published on clicksend.com."

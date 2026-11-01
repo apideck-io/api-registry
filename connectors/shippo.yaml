@@ -1,0 +1,40 @@
+id: shippo
+name: "Shippo"
+apideck: false
+notes: "Invoice report spec also at https://docs.goshippo.com/api-reference/shipporeportinvoices/invoices-api.yaml"
+specs:
+  - name: "Shippo API"
+    url: "https://docs.goshippo.com/spec/shippoapi/public-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.goshippo.com"
+  - name: "Address API v2"
+    url: "https://docs.goshippo.com/api-reference/addressesapi/address_v2.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.goshippo.com"
+  - name: "Automations API"
+    url: "https://docs.goshippo.com/api-reference/automationsapi/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.goshippo.com"
+  - name: "Estimate API"
+    url: "https://docs.goshippo.com/api-reference/estimateapi/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.goshippo.com"
+  - name: "Reporting API"
+    url: "https://docs.goshippo.com/api-reference/reporting-api/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.goshippo.com"
+  - name: "Reports API"
+    url: "https://docs.goshippo.com/api-reference/shipporeports/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.goshippo.com"
+  - name: "Surcharges API"
+    url: "https://docs.goshippo.com/api-reference/surchargesapi/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.goshippo.com"

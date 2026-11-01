@@ -1,0 +1,10 @@
+id: tavily
+name: "Tavily"
+apideck: false
+specs:
+  - name: "Tavily API"
+    url: "https://docs.tavily.com/documentation/api-reference/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.tavily.com"
+    notes: "Linked from the docs llms.txt."

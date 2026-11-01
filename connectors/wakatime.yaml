@@ -1,0 +1,5 @@
+id: wakatime
+name: "WakaTime"
+apideck: false
+notes: "wakatime.com/developers and common spec paths (/api/v1/openapi.json, /swagger.json) checked; no vendor-published spec found."
+specs: []

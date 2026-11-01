@@ -1,0 +1,9 @@
+id: gocardless
+name: "GoCardless"
+apideck: false
+specs:
+  - name: "GoCardless API"
+    url: "https://docs.gocardless.com/openapi-schema-public.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.gocardless.com"

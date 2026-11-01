@@ -1,0 +1,5 @@
+id: blandai
+name: "Bland AI"
+apideck: false
+notes: "Checked the docs llms.txt, common openapi.json paths on docs.bland.ai and api.bland.ai, and the GitHub org; no vendor-published machine-readable spec found."
+specs: []

@@ -1,0 +1,9 @@
+id: instantly
+name: "Instantly"
+apideck: false
+specs:
+  - name: "Instantly API v2"
+    url: "https://api.instantly.ai/openapi/api_v2.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.instantly.ai"

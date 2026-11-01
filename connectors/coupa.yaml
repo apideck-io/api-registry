@@ -1,0 +1,5 @@
+id: coupa
+name: "Coupa"
+apideck: false
+notes: "No machine-readable spec found. Checked the Coupa developer docs (docs.coupa.com, compass.coupa.com Core API pages) and a web search for OpenAPI/Swagger; docs are HTML only, per-customer hosts of the form {instance}.coupahost.com."
+specs: []

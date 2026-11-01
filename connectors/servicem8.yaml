@@ -1,0 +1,5 @@
+id: servicem8
+name: "ServiceM8"
+apideck: false
+notes: "Checked developer.servicem8.com/llms.txt and web search; reference pages exist but no standalone spec file is published."
+specs: []

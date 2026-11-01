@@ -1,0 +1,9 @@
+id: brandfetch
+name: "Brandfetch"
+apideck: false
+specs:
+  - name: "Brandfetch API"
+    url: "https://docs.brandfetch.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.brandfetch.io"

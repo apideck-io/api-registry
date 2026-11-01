@@ -1,0 +1,10 @@
+id: azure-blob-storage
+name: "Azure Blob Storage"
+apideck: false
+specs:
+  - name: "Azure Blob Storage data plane (2026-10-06)"
+    url: "https://raw.githubusercontent.com/Azure/azure-rest-api-specs/main/specification/storage/data-plane/BlobStorage/stable/2026-10-06/blob.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://{account}.blob.core.windows.net"
+    notes: "Operations are defined under x-ms-paths; newer and older stable versions are in sibling folders."

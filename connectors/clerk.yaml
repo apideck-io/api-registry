@@ -1,0 +1,10 @@
+id: clerk
+name: "Clerk"
+apideck: false
+specs:
+  - name: "Clerk Backend API"
+    url: "https://raw.githubusercontent.com/clerk/openapi-specs/main/bapi/2025-04-10.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.clerk.com/v1"
+    notes: "Dated version; other versions and the Frontend API spec are in the same repo, https://github.com/clerk/openapi-specs"

@@ -1,0 +1,5 @@
+id: timely
+name: "Timely"
+apideck: false
+notes: "Docs at developer.timely.com (Scalar reference) embed an OpenAPI 3.1 document inside the page for logged-in viewers; no standalone spec URL found (checked /openapi.json, /openapi.yaml, /llms.txt, page source, web search)."
+specs: []

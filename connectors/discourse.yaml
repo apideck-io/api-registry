@@ -1,0 +1,9 @@
+id: discourse
+name: "Discourse"
+apideck: false
+specs:
+  - name: "Discourse API"
+    url: "https://docs.discourse.org/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{defaultHost}"

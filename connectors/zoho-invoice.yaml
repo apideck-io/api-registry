@@ -1,0 +1,11 @@
+id: zoho-invoice
+name: "Zoho Invoice"
+apideck: false
+specs:
+  - name: "Zoho Invoice API v3 (OpenAPI bundle, ZIP)"
+    url: "https://www.zoho.com/invoice/api/v3/openapi-all.zip"
+    format: openapi-3.0
+    provenance: vendor
+    extract: zip-bundle
+    server: "https://www.zohoapis.com/invoice/v3"
+    notes: "ZIP archive of per-module OpenAPI 3.0.0 YAML files (invoices, contacts, estimates, etc.), linked as 'Download OpenAPI Document' on the API docs page. Region-specific hosts exist (.eu, .in, .com.au, ...)."

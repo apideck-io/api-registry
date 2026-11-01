@@ -4,7 +4,7 @@ notes: "OData EDMX would be the better spec but is auth-gated."
 specs:
   - name: "Cezanne HR API (Postman)"
     url: "https://documenter.gw.postman.com/api/collections/2420781/6fbRhCt?segregateAuth=true&versionTag=latest"
-    format: postman-2.1
+    format: postman-2.0
     provenance: vendor
     server: "https://w3.cezanneondemand.com/CezanneOnDemand"
     notes: "Vendor-published Postman documenter collection behind https://api.cezannehr.com/ (collection 2420781-9455541d-0ac5-245d-9daa-ed3dc6fc7323). Documenter JSON declares Postman schema v2.0.0. 350 requests. Underlying API is OData (DataService.svc); $metadata at https://w3.cezanneondemand.com/CezanneOnDemand/DataService.svc/$metadata needs OAuth (401)."

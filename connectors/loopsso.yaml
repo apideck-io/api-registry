@@ -1,0 +1,10 @@
+id: loopsso
+name: "Loops.so"
+apideck: false
+specs:
+  - name: "Loops API"
+    url: "https://app.loops.so/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.loops.so/api"
+    notes: "Paths begin with /v1."

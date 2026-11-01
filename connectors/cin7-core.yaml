@@ -1,0 +1,5 @@
+id: cin7-core
+name: "Cin7 Core"
+apideck: false
+notes: "V2 docs are on Apiary (dearinventory.docs.apiary.io) as an API Blueprint description, not OpenAPI/Swagger; no OpenAPI file found. API base https://inventory.dearsystems.com/externalapi/v2."
+specs: []

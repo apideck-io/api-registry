@@ -1,0 +1,11 @@
+id: adyntel
+name: "Adyntel"
+apideck: false
+specs:
+  - name: "Adyntel API - existing endpoints"
+    url: "https://docs.adyntel.com/openapi-docs/existing-endpoints.md"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.adyntel.com"
+    extract: markdown-json-fence
+    notes: "One OpenAPI document per endpoint on a single Markdown page; their paths are merged."

@@ -1,0 +1,10 @@
+id: plaid
+name: "Plaid"
+apideck: false
+specs:
+  - name: "Plaid API"
+    url: "https://raw.githubusercontent.com/plaid/plaid-openapi/master/2020-09-14.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://production.plaid.com"
+    notes: "Official plaid/plaid-openapi repo; sandbox at https://sandbox.plaid.com."

@@ -1,0 +1,10 @@
+id: judge-me
+name: "Judge.me"
+apideck: false
+specs:
+  - name: "Judge.me API"
+    url: "https://judge.me/api/docs.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.judge.me/api/v1"
+    notes: "Loaded by the reference at judge.me/api/docs."

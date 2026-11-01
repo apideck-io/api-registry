@@ -1,0 +1,5 @@
+id: prismic
+name: "Prismic"
+apideck: false
+notes: "prismic.io/docs/llms.txt and the Asset API / Custom Types API reference pages checked; both are documented in prose with no OpenAPI file."
+specs: []

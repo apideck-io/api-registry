@@ -1,0 +1,10 @@
+id: outline
+name: "Outline"
+apideck: false
+specs:
+  - name: "Outline API"
+    url: "https://raw.githubusercontent.com/outline/openapi/main/spec3.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.getoutline.com/api"
+    notes: "Self-hosted: https://{domain}/api"

@@ -1,0 +1,5 @@
+id: anthropic-administrator
+name: "Anthropic Administrator"
+apideck: false
+notes: "Admin API documented at platform.claude.com/docs/en/api/admin as pages; checked for a published spec and found none fetchable."
+specs: []

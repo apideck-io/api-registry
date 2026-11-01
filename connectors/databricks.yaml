@@ -1,5 +1,5 @@
 id: databricks
 name: "Databricks"
 apideck: false
-notes: "No downloadable spec found. REST API reference (workspace and account): https://docs.databricks.com/api/workspace/introduction"
+notes: "No downloadable spec found. REST API references are HTML only: workspace https://docs.databricks.com/api/workspace/introduction and account https://docs.databricks.com/api/account/introduction"
 specs: []

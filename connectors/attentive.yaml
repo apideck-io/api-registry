@@ -1,0 +1,16 @@
+id: attentive
+name: "Attentive"
+apideck: false
+specs:
+  - name: "Attentive API V2"
+    url: "https://docs.attentive.com/openapi/attentive-api-bundled-v2.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.attentivemobile.com"
+    notes: "Paths begin with /v2. Served as JSON despite the .yaml extension."
+  - name: "Attentive API (V1)"
+    url: "https://docs.attentive.com/openapi/attentive-api-bundled.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.attentivemobile.com/v1"
+    notes: "Served as JSON despite the .yaml extension."

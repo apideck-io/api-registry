@@ -1,0 +1,80 @@
+id: alchemy
+name: "Alchemy"
+apideck: false
+notes: "Published from the github.com/alchemyplatform/docs repository (src/openapi). JSON-RPC (OpenRPC) definitions are in src/openrpc and are not listed."
+specs:
+  - name: "Alchemy NFT API"
+    url: "https://dev-docs.alchemy.com/alchemy/rest/nft.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{network}.g.alchemy.com/nft"
+  - name: "Alchemy Prices API"
+    url: "https://dev-docs.alchemy.com/alchemy/rest/prices.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.g.alchemy.com/prices/v1"
+  - name: "Alchemy Data API"
+    url: "https://dev-docs.alchemy.com/alchemy/rest/portfolio.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.g.alchemy.com/data/v1"
+  - name: "Alchemy Webhooks (Notify) API"
+    url: "https://dev-docs.alchemy.com/alchemy/rest/notify.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://dashboard.alchemy.com/api"
+  - name: "Alchemy Smart Wallets API"
+    url: "https://dev-docs.alchemy.com/alchemy/rest/accounts.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.g.alchemy.com/signer/v1"
+  - name: "Alchemy Gas Manager Admin API"
+    url: "https://dev-docs.alchemy.com/alchemy/rest/admin.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://manage.g.alchemy.com"
+  - name: "Alchemy Aptos API"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/aptos/aptos.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://aptos-mainnet.g.alchemy.com/v2/{apiKey}"
+  - name: "Alchemy Ethereum Beacon API"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/eth-beacon/eth-beacon.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://eth-mainnetbeacon.g.alchemy.com/v2/{apiKey}"
+  - name: "Alchemy HyperCore API"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/hypercore/hypercore.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.g.alchemy.com/hypercore/v1"
+  - name: "Alchemy Tron HTTP API"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/tron-http/tron-http.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://tron-mainnet.g.alchemy.com/v2/{apiKey}"
+  - name: "Alchemy Tron Solidity HTTP API"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/tron-solidity-http/tron-solidity-http.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://tron-mainnet.g.alchemy.com/v2/{apiKey}"
+  - name: "Alchemy UTXO API (Bitcoin)"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/utxo/utxo.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{network}.g.alchemy.com/v2"
+  - name: "Alchemy UTXO API (Bitcoin Cash)"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/utxo-bitcoincash/utxo-bitcoincash.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{network}.g.alchemy.com/v2"
+  - name: "Alchemy UTXO API (Dogecoin)"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/utxo-dogecoin/utxo-dogecoin.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{network}.g.alchemy.com/v2"
+  - name: "Alchemy UTXO API (Litecoin)"
+    url: "https://raw.githubusercontent.com/alchemyplatform/docs/main/src/openapi/utxo-litecoin/utxo-litecoin.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{network}.g.alchemy.com/v2"

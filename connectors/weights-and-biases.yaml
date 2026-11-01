@@ -1,0 +1,11 @@
+id: weights-and-biases
+name: "Weights & Biases"
+apideck: false
+notes: "Checked docs.wandb.ai/llms.txt and the trace server."
+specs:
+  - name: "Weave Trace Server API"
+    url: "https://trace.wandb.ai/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://trace.wandb.ai"
+    notes: "Served by the Weave trace server (title in the file is 'FastAPI'); 114 paths. The main W&B API is GraphQL and its schema needs authentication."

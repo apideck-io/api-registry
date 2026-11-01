@@ -1,0 +1,5 @@
+id: raindrop
+name: "Raindrop.io"
+apideck: false
+notes: "Checked developer.raindrop.io (GitBook docs, llms.txt) and common spec paths; no downloadable spec found."
+specs: []

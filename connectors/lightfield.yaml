@@ -1,0 +1,5 @@
+id: lightfield
+name: "Lightfield"
+apideck: false
+notes: "docs.lightfield.app llms.txt and API reference pages checked; the API reference is generated but no standalone spec file is linked or served."
+specs: []

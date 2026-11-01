@@ -1,0 +1,5 @@
+id: klipfolio
+name: "Klipfolio"
+apideck: false
+notes: "Checked apidocs.klipfolio.com (incl. llms.txt) and web search; no spec file published."
+specs: []

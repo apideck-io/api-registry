@@ -4,7 +4,7 @@ notes: "No OpenAPI publicly; API Explorer (https://developers.adp.com/apis/api-e
 specs:
   - name: "ADP WFN APIs (Postman)"
     url: "https://raw.githubusercontent.com/adpllc/marketplace-sample-payloads/master/wfn/ADP%20WFN%20APIs.postman_collection.json"
-    format: postman-2.1
+    format: postman-2.0
     provenance: vendor
     server: "https://api.adp.com"
     license: "Apache-2.0"

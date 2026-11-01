@@ -1,0 +1,11 @@
+id: drata
+name: "Drata"
+apideck: false
+specs:
+  - name: "Drata API V2"
+    url: "https://developers.drata.com/page-data/openapi/reference/v2/overview/page-data.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://public-api.drata.com/public/v2"
+    extract: redoc-state
+    notes: "Redocly portal page data; the spec is the redocStoreStr field's definition.data."

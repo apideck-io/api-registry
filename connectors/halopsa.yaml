@@ -1,0 +1,10 @@
+id: halopsa
+name: "HaloPSA"
+apideck: false
+specs:
+  - name: "Halo API v2"
+    url: "https://halo.halopsa.com/api/swagger/v2/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.halopsa.com/api"
+    notes: "Served from Halo's own tenant; every Halo tenant serves the same at /api/swagger/v2/swagger.json. Large (about 5 MB, 1000+ paths). Covers HaloITSM, HaloPSA and HaloCRM."

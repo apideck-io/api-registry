@@ -1,0 +1,11 @@
+id: bigchange
+name: "BigChange"
+apideck: false
+notes: "Docs portals (developers.bigchange.com, documentation.ops.bigchange.com) block or do not expose the spec; the API host serves it publicly."
+specs:
+  - name: "BigChange DX API"
+    url: "https://api.bigchange.com/swagger/v1/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.bigchange.com"
+    notes: "Served by the API host's Swagger UI at api.bigchange.com/swagger."

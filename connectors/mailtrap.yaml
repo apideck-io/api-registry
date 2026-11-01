@@ -1,0 +1,45 @@
+id: mailtrap
+name: "Mailtrap"
+apideck: false
+specs:
+  - name: "Email sending (transactional and bulk)"
+    url: "https://raw.githubusercontent.com/mailtrap/mailtrap-openapi/main/specs/email-sending.openapi.yml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://mailtrap.io"
+    notes: "Official mailtrap/mailtrap-openapi repo. Despite its name, the file covers sending setup on the account API (domains, suppressions, tracking opt-outs, email logs, webhooks) on mailtrap.io; the send endpoints on send.api.mailtrap.io and bulk.api.mailtrap.io are not in it."
+  - name: "Contacts"
+    url: "https://raw.githubusercontent.com/mailtrap/mailtrap-openapi/main/specs/contacts.openapi.yml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://mailtrap.io"
+  - name: "Sandbox"
+    url: "https://raw.githubusercontent.com/mailtrap/mailtrap-openapi/main/specs/sandbox.openapi.yml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://mailtrap.io"
+  - name: "Sandbox sending"
+    url: "https://raw.githubusercontent.com/mailtrap/mailtrap-openapi/main/specs/sandbox-sending.openapi.yml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://sandbox.api.mailtrap.io"
+  - name: "Templates"
+    url: "https://raw.githubusercontent.com/mailtrap/mailtrap-openapi/main/specs/templates.openapi.yml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://mailtrap.io"
+  - name: "Account management"
+    url: "https://raw.githubusercontent.com/mailtrap/mailtrap-openapi/main/specs/account-management.openapi.yml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://mailtrap.io"
+  - name: "Email campaigns"
+    url: "https://raw.githubusercontent.com/mailtrap/mailtrap-openapi/main/specs/email-campaigns.openapi.yml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://mailtrap.io"
+  - name: "Inbound"
+    url: "https://raw.githubusercontent.com/mailtrap/mailtrap-openapi/main/specs/inbound.openapi.yml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://mailtrap.io"

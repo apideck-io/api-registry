@@ -1,0 +1,5 @@
+id: contactout
+name: "ContactOut"
+apideck: false
+notes: "Checked api.contactout.com (reference page and llms.txt) and common spec paths; no downloadable spec found."
+specs: []

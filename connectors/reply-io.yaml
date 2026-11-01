@@ -1,0 +1,10 @@
+id: reply-io
+name: "Reply.io"
+apideck: false
+specs:
+  - name: "Reply API v3"
+    url: "https://docs.reply.io/api-reference/bundled.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.reply.io"
+    notes: "Linked from docs.reply.io OpenAPI/Postman page."

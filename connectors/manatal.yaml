@@ -1,0 +1,5 @@
+id: manatal
+name: "Manatal"
+apideck: false
+notes: "developers.manatal.com is a ReadMe site that lists OpenAPI definitions (manatal-open-api.json, manatal-career-page-api.json, manahook.json), but their registry entries return 404 and the site rate-limited direct file paths, so no verified URL is listed. The Open API base is https://open.manatal.com/open/v3."
+specs: []

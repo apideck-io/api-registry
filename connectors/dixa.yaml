@@ -1,0 +1,22 @@
+id: dixa
+name: "Dixa"
+apideck: false
+specs:
+  - name: "Dixa API v1"
+    url: "https://docs.dixa.io/openapi-specs/dixa-v1.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://dev.dixa.io"
+    notes: "Also as YAML at /openapi-specs/dixa-v1.yaml."
+  - name: "Dixa API beta"
+    url: "https://docs.dixa.io/openapi-specs/dixa-beta.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://dev.dixa.io"
+    notes: "Also as YAML at /openapi-specs/dixa-beta.yaml."
+  - name: "Dixa Exports API"
+    url: "https://docs.dixa.io/openapi-specs/exports.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://exports.dixa.io"
+    notes: "Also as YAML at /openapi-specs/exports.yaml."

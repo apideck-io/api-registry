@@ -1,0 +1,5 @@
+id: help-scout
+name: "Help Scout"
+apideck: false
+notes: "No machine-readable spec found. Checked developer.helpscout.com/llms.txt (documentation text only), the Mailbox API docs and a web search; no vendor spec found."
+specs: []

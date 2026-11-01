@@ -1,0 +1,10 @@
+id: leapsome
+name: "Leapsome"
+apideck: false
+specs:
+  - name: "Leapsome API"
+    url: "https://api.leapsome.com/v1/api-docs/swagger-ui-init.js"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.leapsome.com/v1"
+    extract: swagger-ui-init

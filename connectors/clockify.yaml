@@ -1,0 +1,10 @@
+id: clockify
+name: "Clockify"
+apideck: false
+specs:
+  - name: "Clockify API"
+    url: "https://docs.clockify.me/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.clockify.me/api"
+    notes: "Paths carry /v1; the spec declares servers per operation."

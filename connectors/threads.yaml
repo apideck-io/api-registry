@@ -1,0 +1,5 @@
+id: threads
+name: "Threads"
+apideck: false
+notes: "The vendor documents the API at developers.facebook.com/docs/threads and links a Postman collection hosted on postman.com; the collection could not be fetched as a plain file, so no spec is listed."
+specs: []

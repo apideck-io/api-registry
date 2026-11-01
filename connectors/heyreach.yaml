@@ -1,0 +1,11 @@
+id: heyreach
+name: "Heyreach"
+apideck: false
+notes: "The published spec has a malformed server entry (https://api), its path keys start with //api/public, and 13 of them carry a sample query string (GetById?accountId=<integer>). Every such query parameter is also declared on its operation, so a client should drop the leading slash and the ?… suffix. Not fixed by an overlay: OpenAPI Overlay 1.0 can't rename a path key without copying the whole path item, which would freeze 87 operations against the vendor's updates."
+specs:
+  - name: "HeyReach API"
+    url: "https://docs.heyreach.io/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.heyreach.io"
+    notes: "Also available as YAML at https://docs.heyreach.io/openapi.yaml. Spec paths begin with //api/public."

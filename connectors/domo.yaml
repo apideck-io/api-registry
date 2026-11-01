@@ -1,0 +1,5 @@
+id: domo
+name: "Domo"
+apideck: false
+notes: "Checked developer.domo.com and docs.domo.com llms.txt; the developer portal blocked automated fetches (HTTP 405) and no spec file could be retrieved."
+specs: []

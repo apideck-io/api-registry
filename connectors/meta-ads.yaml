@@ -1,0 +1,5 @@
+id: meta-ads
+name: "Meta Ads"
+apideck: false
+notes: "Meta's github.com/facebook/openapi currently contains only the WhatsApp Business messaging spec; no Marketing API spec found there or in search."
+specs: []

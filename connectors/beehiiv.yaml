@@ -1,0 +1,15 @@
+id: beehiiv
+name: "Beehiiv"
+apideck: false
+specs:
+  - name: "beehiiv API"
+    url: "https://developers.beehiiv.com/openapi/api-reference.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.beehiiv.com/v2"
+  - name: "beehiiv OAuth2"
+    url: "https://developers.beehiiv.com/openapi/oauth2.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.beehiiv.com"
+    notes: "OAuth 2.0 authorization endpoints, served from app.beehiiv.com."

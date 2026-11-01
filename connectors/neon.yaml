@@ -1,0 +1,9 @@
+id: neon
+name: "Neon"
+apideck: false
+specs:
+  - name: "Neon API v2"
+    url: "https://neon.com/api_spec/release/v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://console.neon.tech/api/v2"

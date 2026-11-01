@@ -1,0 +1,5 @@
+id: yandex
+name: "Yandex"
+apideck: false
+notes: "Name is ambiguous across many Yandex APIs; no single vendor-published spec identified."
+specs: []

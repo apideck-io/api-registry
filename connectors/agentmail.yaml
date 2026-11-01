@@ -1,0 +1,9 @@
+id: agentmail
+name: "AgentMail"
+apideck: false
+specs:
+  - name: "AgentMail API"
+    url: "https://docs.agentmail.to/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.agentmail.to"

@@ -1,0 +1,9 @@
+id: basin
+name: "Basin"
+apideck: false
+specs:
+  - name: "Basin API V1"
+    url: "https://usebasin.com/api_docs/v1/swagger.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://usebasin.com"

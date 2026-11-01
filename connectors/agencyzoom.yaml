@@ -1,0 +1,5 @@
+id: agencyzoom
+name: "AgencyZoom"
+apideck: false
+notes: "Docs reportedly at app.agencyzoom.com/openapi/ but the host returns HTTP 403 to non-browser clients; also found no spec on api.agencyzoom.* hosts. Could not verify or fetch a spec."
+specs: []

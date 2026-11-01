@@ -1,0 +1,16 @@
+id: lusha
+name: "Lusha"
+apideck: false
+specs:
+  - name: "Lusha API (v2 docs)"
+    url: "https://docs.lusha.com/v2/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.lusha.com"
+    notes: "Listed in docs.lusha.com/llms.txt."
+  - name: "Lusha API"
+    url: "https://docs.lusha.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.lusha.com"
+    notes: "Listed in docs.lusha.com/llms.txt."

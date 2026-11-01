@@ -1,0 +1,35 @@
+id: firebase
+name: "Firebase"
+apideck: false
+notes: "Google discovery documents for the core Firebase APIs; other Firebase APIs (e.g. Dynamic Links, App Distribution, Data Connect) have discovery documents at the same URL pattern."
+specs:
+  - name: "Firebase Management API (v1beta1)"
+    url: "https://firebase.googleapis.com/$discovery/rest?version=v1beta1"
+    format: google-discovery
+    provenance: vendor
+    server: "https://firebase.googleapis.com"
+  - name: "Firebase Hosting API (v1)"
+    url: "https://firebasehosting.googleapis.com/$discovery/rest?version=v1"
+    format: google-discovery
+    provenance: vendor
+    server: "https://firebasehosting.googleapis.com"
+  - name: "Firebase Cloud Messaging API (v1)"
+    url: "https://fcm.googleapis.com/$discovery/rest?version=v1"
+    format: google-discovery
+    provenance: vendor
+    server: "https://fcm.googleapis.com"
+  - name: "Firebase Rules API (v1)"
+    url: "https://firebaserules.googleapis.com/$discovery/rest?version=v1"
+    format: google-discovery
+    provenance: vendor
+    server: "https://firebaserules.googleapis.com"
+  - name: "Firebase Realtime Database Management API (v1beta)"
+    url: "https://firebasedatabase.googleapis.com/$discovery/rest?version=v1beta"
+    format: google-discovery
+    provenance: vendor
+    server: "https://firebasedatabase.googleapis.com"
+  - name: "Firebase App Check API (v1)"
+    url: "https://firebaseappcheck.googleapis.com/$discovery/rest?version=v1"
+    format: google-discovery
+    provenance: vendor
+    server: "https://firebaseappcheck.googleapis.com"

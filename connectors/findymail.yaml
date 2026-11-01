@@ -1,0 +1,15 @@
+id: findymail
+name: "Findymail"
+apideck: false
+specs:
+  - name: "Findymail API (OpenAPI)"
+    url: "https://app.findymail.com/docs/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.findymail.com"
+    notes: "Paths begin with /api."
+  - name: "Findymail API (Postman collection)"
+    url: "https://app.findymail.com/docs/collection.json"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://app.findymail.com"

@@ -1,0 +1,10 @@
+id: bright-data
+name: "Bright Data"
+apideck: false
+specs:
+  - name: "Bright Data API"
+    url: "https://docs.brightdata.com/api-reference/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.brightdata.com"
+    notes: "Pre-built scraper catalog is listed at https://docs.brightdata.com/scrapers.json."

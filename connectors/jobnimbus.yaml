@@ -1,0 +1,10 @@
+id: jobnimbus
+name: "JobNimbus"
+apideck: false
+specs:
+  - name: "JobNimbus Public API"
+    url: "https://documenter.getpostman.com/api/collections/3919598/S11PpG4x"
+    format: postman-2.0
+    provenance: vendor
+    server: "https://app.jobnimbus.com/api1"
+    notes: "Postman collection behind the vendor's Postman documenter page https://documenter.getpostman.com/view/3919598/S11PpG4x."

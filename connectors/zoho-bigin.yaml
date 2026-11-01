@@ -1,0 +1,5 @@
+id: zoho-bigin
+name: "Zoho Bigin"
+apideck: false
+notes: "Zoho's github.com/zoho/bigin-oas repository exists but contains only a README (no spec files); no Bigin OpenAPI page found on the Bigin developer docs."
+specs: []

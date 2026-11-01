@@ -1,0 +1,5 @@
+id: anthropic
+name: "Anthropic"
+apideck: false
+notes: "No standalone spec is published. The official SDK repositories' .stats.yml files give only an endpoint count, and platform.claude.com/llms.txt and /openapi.json expose no spec."
+specs: []

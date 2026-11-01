@@ -1,0 +1,10 @@
+id: rocketlane
+name: "Rocketlane"
+apideck: false
+specs:
+  - name: "Rocketlane API"
+    url: "https://dash.readme.com/api/v1/api-registry/cwu1almt9yh3tl"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.rocketlane.com/api"
+    notes: "Definition behind the developer docs at developer.rocketlane.com (ReadMe-hosted). Spec also lists https://api.nitro.run/api."

@@ -1,0 +1,10 @@
+id: diffbot
+name: "Diffbot"
+apideck: false
+specs:
+  - name: "Diffbot Extract APIs (community)"
+    url: "https://github.com/sigpwned/diffbot-openapi-spec/releases/download/v20230813.1/openapi.json"
+    format: openapi-3.0
+    provenance: community
+    server: "https://api.diffbot.com/v3"
+    notes: "Community-maintained conversion of Diffbot's documentation; Diffbot does not publish an OpenAPI file."

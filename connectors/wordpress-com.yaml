@@ -1,0 +1,5 @@
+id: wordpress-com
+name: "WordPress.com"
+apideck: false
+notes: "Developer docs at developer.wordpress.com publish endpoint reference as HTML (public-api.wordpress.com/rest/v1/help); no OpenAPI/Swagger file found."
+specs: []

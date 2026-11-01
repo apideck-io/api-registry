@@ -1,0 +1,11 @@
+id: twitch
+name: "Twitch"
+apideck: false
+notes: "dev.twitch.tv/llms.txt returned access denied; no vendor spec found."
+specs:
+  - name: "Twitch Helix API (unofficial)"
+    url: "https://raw.githubusercontent.com/DmitryScaletta/twitch-api-swagger/main/openapi.json"
+    format: openapi-3.0
+    provenance: community
+    server: "https://api.twitch.tv/helix"
+    notes: "Generated from the Twitch API reference pages by a community project; Twitch does not publish an OpenAPI file."

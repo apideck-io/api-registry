@@ -1,0 +1,5 @@
+id: rocketreach
+name: "RocketReach"
+apideck: false
+notes: "The docs (docs.rocketreach.co) embed an OpenAPI definition on each reference page but publish no standalone spec file or spec index in llms.txt."
+specs: []

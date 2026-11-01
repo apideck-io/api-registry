@@ -1,0 +1,5 @@
+id: recruit-crm
+name: "Recruit CRM"
+apideck: false
+notes: "Docs at docs.recruitcrm.io are a hosted Stoplight site; no download link, /openapi.json, /llms.txt or api.recruitcrm.io swagger path found. No spec fetched."
+specs: []

@@ -1,0 +1,5 @@
+id: gamma
+name: "Gamma"
+apideck: false
+notes: "Checked developers.gamma.app llms.txt, llms-full.txt and openapi.json; reference is published as docs pages only, no spec file found."
+specs: []

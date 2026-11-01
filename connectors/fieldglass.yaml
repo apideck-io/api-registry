@@ -1,0 +1,5 @@
+id: fieldglass
+name: "SAP Fieldglass"
+apideck: false
+notes: "SAP documents Fieldglass APIs in PDFs on help.sap.com and the SAP Business Accelerator Hub; no directly downloadable spec file was retrievable."
+specs: []

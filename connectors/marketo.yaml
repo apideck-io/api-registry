@@ -1,0 +1,31 @@
+id: marketo
+name: "Marketo"
+apideck: false
+specs:
+  - name: "REST API (Lead Database)"
+    url: "https://raw.githubusercontent.com/AdobeDocs/marketo-apis/main/static/swagger-mapi.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://{munchkinId}.mktorest.com"
+    notes: "Official Adobe docs repo. Host field is empty/localhost in the file; set it to your instance REST host."
+  - name: "Asset API"
+    url: "https://raw.githubusercontent.com/AdobeDocs/marketo-apis/main/static/swagger-asset.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://{munchkinId}.mktorest.com"
+    notes: "Same host note."
+  - name: "Data Ingestion API"
+    url: "https://raw.githubusercontent.com/AdobeDocs/marketo-apis/main/static/swagger-data-ingestion.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://mkto-ingestion-api.adobe.io"
+  - name: "Identity API"
+    url: "https://raw.githubusercontent.com/AdobeDocs/marketo-apis/main/static/swagger-identity.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://{munchkinId}.mktorest.com"
+  - name: "User API"
+    url: "https://raw.githubusercontent.com/AdobeDocs/marketo-apis/main/static/swagger-user.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://{munchkinId}.mktorest.com"

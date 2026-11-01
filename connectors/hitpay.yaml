@@ -1,0 +1,10 @@
+id: hitpay
+name: "HitPay"
+apideck: false
+specs:
+  - name: "HitPay API"
+    url: "https://docs.hitpayapp.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.hit-pay.com"
+    notes: "Spec also lists the sandbox server https://api.sandbox.hit-pay.com. Paths begin with /v1."

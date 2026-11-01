@@ -1,0 +1,14 @@
+id: postmark
+name: "Postmark"
+apideck: false
+specs:
+  - name: "Postmark Server API"
+    url: "https://postmarkapp.com/swagger/server.yml"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.postmarkapp.com"
+  - name: "Postmark Account API"
+    url: "https://postmarkapp.com/swagger/account.yml"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.postmarkapp.com"

@@ -1,0 +1,10 @@
+id: kintone
+name: "Kintone"
+apideck: false
+specs:
+  - name: "kintone REST API"
+    url: "https://raw.githubusercontent.com/kintone/openapi-spec/main/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{subdomain}.cybozu.com"
+    notes: "Official kintone/openapi-spec repo (MIT-0). Also available as openapi.yaml. Includes preview APIs."

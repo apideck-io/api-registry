@@ -1,0 +1,10 @@
+id: baserow
+name: "Baserow"
+apideck: false
+specs:
+  - name: "Baserow API"
+    url: "https://api.baserow.io/api/schema.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.baserow.io"
+    notes: "Paths start with /api, except five /assistant/... paths. Self-hosted instances serve the same schema at https://{instance}/api/schema.json."

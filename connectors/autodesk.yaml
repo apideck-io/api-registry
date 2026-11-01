@@ -1,0 +1,45 @@
+id: autodesk
+name: "Autodesk"
+apideck: false
+notes: "Autodesk Platform Services specs from the official autodesk-platform-services/aps-sdk-openapi repo, including the Construction (accountadmin, issues) specs in its subfolders."
+specs:
+  - name: "Authentication (APS)"
+    url: "https://raw.githubusercontent.com/autodesk-platform-services/aps-sdk-openapi/main/authentication/authentication.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://developer.api.autodesk.com"
+  - name: "Data Management (APS)"
+    url: "https://raw.githubusercontent.com/autodesk-platform-services/aps-sdk-openapi/main/datamanagement/datamanagement.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://developer.api.autodesk.com"
+  - name: "Model Derivative (APS)"
+    url: "https://raw.githubusercontent.com/autodesk-platform-services/aps-sdk-openapi/main/modelderivative/modelderivative.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://developer.api.autodesk.com"
+  - name: "Object Storage Service (APS)"
+    url: "https://raw.githubusercontent.com/autodesk-platform-services/aps-sdk-openapi/main/oss/oss.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://developer.api.autodesk.com"
+  - name: "Webhooks (APS)"
+    url: "https://raw.githubusercontent.com/autodesk-platform-services/aps-sdk-openapi/main/webhooks/webhooks.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://developer.api.autodesk.com"
+  - name: "Secure Service Accounts (APS)"
+    url: "https://raw.githubusercontent.com/autodesk-platform-services/aps-sdk-openapi/main/secureserviceaccount/secureServiceAccount.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://developer.api.autodesk.com"
+  - name: "Construction Account Admin (APS)"
+    url: "https://raw.githubusercontent.com/autodesk-platform-services/aps-sdk-openapi/main/construction/accountadmin/accountadmin.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://developer.api.autodesk.com"
+  - name: "Construction Issues (APS)"
+    url: "https://raw.githubusercontent.com/autodesk-platform-services/aps-sdk-openapi/main/construction/issues/Issues.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://developer.api.autodesk.com"

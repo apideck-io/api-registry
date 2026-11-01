@@ -1,0 +1,5 @@
+id: paycor
+name: "Paycor"
+apideck: false
+notes: "Paycor's developer portal (developers.paycor.com) is a single-page app; the spec requires developer portal access and returned no fetchable file."
+specs: []

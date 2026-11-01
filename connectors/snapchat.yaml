@@ -1,0 +1,5 @@
+id: snapchat
+name: "Snapchat"
+apideck: false
+notes: "No machine-readable spec found. Checked developers.snap.com Marketing (Ads) API docs and a web search; documentation is HTML only. Base URL https://adsapi.snapchat.com/v1."
+specs: []

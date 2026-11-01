@@ -1,0 +1,10 @@
+id: cloudtalk
+name: "CloudTalk"
+apideck: false
+specs:
+  - name: "CloudTalk API"
+    url: "https://developers.cloudtalk.io/api-reference/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://my.cloudtalk.io/api"
+    notes: "Linked from the developer docs llms.txt."

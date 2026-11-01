@@ -1,0 +1,10 @@
+id: autumn
+name: "Autumn"
+apideck: false
+specs:
+  - name: "Autumn API v2"
+    url: "https://raw.githubusercontent.com/useautumn/docs/main/mintlify/api/openapi-2.0.0.yml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.useautumn.com/v1"
+    notes: "From the vendor's docs repo (useautumn/docs). Earlier version at openapi-1.2.0.yml in the same folder; a Platform API (beta) spec is at https://docs.useautumn.com/api-reference/platform.yaml."

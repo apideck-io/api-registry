@@ -1,0 +1,5 @@
+id: epic-games
+name: "Epic Games"
+apideck: false
+notes: "dev.epicgames.com Web API reference checked; no OpenAPI file is published."
+specs: []

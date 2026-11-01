@@ -1,0 +1,9 @@
+id: perplexity
+name: "Perplexity"
+apideck: false
+specs:
+  - name: "Perplexity API"
+    url: "https://docs.perplexity.ai/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.perplexity.ai"

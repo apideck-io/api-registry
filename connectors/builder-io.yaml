@@ -1,0 +1,5 @@
+id: builder-io
+name: "Builder.io"
+apideck: false
+notes: "No machine-readable spec found (checked the docs site, its llms.txt and common openapi.json paths). The APIs are documented in HTML only: Content API https://www.builder.io/c/docs/content-api, Write API https://www.builder.io/c/docs/write-api and GraphQL Content API https://www.builder.io/c/docs/graphql-api."
+specs: []

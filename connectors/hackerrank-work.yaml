@@ -1,0 +1,5 @@
+id: hackerrank-work
+name: "HackerRank Work"
+apideck: false
+notes: "API docs at hackerrank.com/work/apidocs use an embedded Swagger UI; the spec URL could not be located and no public spec file was found."
+specs: []

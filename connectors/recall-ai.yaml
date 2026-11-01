@@ -1,0 +1,5 @@
+id: recall-ai
+name: "Recall.ai"
+apideck: false
+notes: "Checked docs.recall.ai/llms.txt, /openapi.json, /openapi.yaml, the recallai GitHub org and web search; no standalone spec file found."
+specs: []

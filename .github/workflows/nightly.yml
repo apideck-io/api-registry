@@ -30,7 +30,7 @@ jobs:
         run: |
           {
             echo 'body<<EOF'
-            echo 'Specs that changed (Δ), are new (+), recovered (↺), failed (✗) or have an overlay that no longer matches (⚠) in the nightly check:'
+            echo 'Specs that changed (Δ), are new (+), recovered (↺), failed (✗) or carry a warning (⚠: an overlay that no longer matches, a format that disagrees with the spec, missing or invalid info fields, or an SDL graphql-js rejects) in the nightly check:'
             echo
             grep -E '^(Δ|\+|↺|✗)|⚠' verify.log || echo 'None; index metadata only.'
             echo 'EOF'

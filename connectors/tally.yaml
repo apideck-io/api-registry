@@ -1,0 +1,9 @@
+id: tally
+name: "Tally"
+apideck: false
+specs:
+  - name: "Tally API"
+    url: "https://developers.tally.so/api-reference/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.tally.so"

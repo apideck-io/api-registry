@@ -1,0 +1,5 @@
+id: request-tracker
+name: "RT (Request Tracker)"
+apideck: false
+notes: "Best Practical documents RT REST2 in prose (docs.bestpractical.com/rt/latest/RT/REST2.html) and publishes no OpenAPI file; only an incomplete community spec exists."
+specs: []

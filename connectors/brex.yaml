@@ -1,0 +1,47 @@
+id: brex
+name: "Brex"
+apideck: false
+notes: "Spec files served by the developer portal under /_spec/openapi/. A Brex Postman workspace is also referenced at postman.com/brex-api/workspace/brex-developer."
+specs:
+  - name: "Brex Team API"
+    url: "https://developer.brex.com/_spec/openapi/team_api.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.brex.com"
+    notes: "Staging: https://api-staging.brex.com."
+  - name: "Brex Payments API"
+    url: "https://developer.brex.com/_spec/openapi/payments_api.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.brex.com"
+    notes: "Staging: https://api-staging.brex.com."
+  - name: "Brex Expenses API"
+    url: "https://developer.brex.com/_spec/openapi/expenses_api.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.brex.com"
+    notes: "Staging: https://api-staging.brex.com."
+  - name: "Brex Budgets API"
+    url: "https://developer.brex.com/_spec/openapi/budgets_api.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.brex.com"
+    notes: "Staging: https://api-staging.brex.com."
+  - name: "Brex Fields API"
+    url: "https://developer.brex.com/_spec/openapi/fields_api.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.brex.com"
+    notes: "Staging: https://api-staging.brex.com."
+  - name: "Brex Accounting API"
+    url: "https://developer.brex.com/_spec/openapi/accounting_api.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.brex.com"
+    notes: "Staging: https://api-staging.brex.com."
+  - name: "Brex Onboarding API"
+    url: "https://developer.brex.com/_spec/openapi/onboarding_api.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.brex.com"
+    notes: "Staging: https://api-staging.brex.com."

@@ -1,0 +1,10 @@
+id: salesloft
+name: "Salesloft"
+apideck: false
+specs:
+  - name: "Salesloft API v2 (snapshot)"
+    url: "https://api.apis.guru/v2/specs/salesloft.com/v2/openapi.json"
+    format: openapi-3.0
+    provenance: community
+    server: "https://api.salesloft.com"
+    notes: "Snapshot (2023-03) of the definition once published at developers.salesloft.com/v2_api_def.json, which no longer resolves; the vendor's swagger endpoint requires authentication. May be out of date."

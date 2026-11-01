@@ -1,0 +1,5 @@
+id: better-stack
+name: "Better Stack"
+apideck: false
+notes: "No machine-readable spec found. Checked betterstack.com/docs/uptime/api/ and its markdown index (JSON:API documentation only; /docs/llms.txt returns 404) and a web search. Uptime API base https://uptime.betterstack.com/api/v2."
+specs: []

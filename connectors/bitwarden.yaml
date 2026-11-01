@@ -1,0 +1,5 @@
+id: bitwarden
+name: "Bitwarden"
+apideck: false
+notes: "The Public API's OpenAPI document is embedded in the rendered page at bitwarden.com/help/api but is not served at a fetchable URL (candidate swagger.json paths return 404)."
+specs: []

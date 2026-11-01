@@ -1,0 +1,70 @@
+id: dynamic-mockups
+name: "Dynamic Mockups"
+apideck: false
+specs:
+  - name: "Embroidery Effect API"
+    url: "https://docs.dynamicmockups.com/api-reference/embroidery-effect-api.md"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.dynamicmockups.com/api/v1"
+    extract: markdown-json-fence
+  - name: "MockAnything AI API"
+    url: "https://docs.dynamicmockups.com/api-reference/mockanything-ai-api.md"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.dynamicmockups.com/api/v1"
+    extract: markdown-json-fence
+  - name: "MotionMockups AI API"
+    url: "https://docs.dynamicmockups.com/api-reference/motionmockups-ai-api.md"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.dynamicmockups.com/api/v1"
+    extract: markdown-json-fence
+  - name: "Render Mockup API"
+    url: "https://docs.dynamicmockups.com/api-reference/render-api.md"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.dynamicmockups.com/api/v1"
+    extract: markdown-json-fence
+  - name: "Batch Render Mockups API"
+    url: "https://docs.dynamicmockups.com/api-reference/batch-render-mockups-api.md"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.dynamicmockups.com/api/v1"
+    extract: markdown-json-fence
+  - name: "Get Mockups API"
+    url: "https://docs.dynamicmockups.com/api-reference/get-mockups-api.md"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.dynamicmockups.com/api/v1"
+    extract: markdown-json-fence
+  - name: "Collections API"
+    url: "https://docs.dynamicmockups.com/api-reference/get-collections-api.md"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.dynamicmockups.com/api/v1"
+    extract: markdown-json-fence
+  - name: "Render Collection API"
+    url: "https://docs.dynamicmockups.com/api-reference/bulk-render-mockups-api.md"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.dynamicmockups.com/api/v1"
+    extract: markdown-json-fence
+  - name: "Catalogs API"
+    url: "https://docs.dynamicmockups.com/api-reference/catalogs-api.md"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.dynamicmockups.com/api/v1"
+    extract: markdown-json-fence
+  - name: "Render Print Files API"
+    url: "https://docs.dynamicmockups.com/api-reference/render-print-files-api.md"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.dynamicmockups.com/api/v1"
+    extract: markdown-json-fence
+  - name: "Photoshop Files API"
+    url: "https://docs.dynamicmockups.com/api-reference/psd-upload-api.md"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.dynamicmockups.com/api/v1"
+    extract: markdown-json-fence

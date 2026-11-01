@@ -1,0 +1,19 @@
+id: falai
+name: "Fal.ai"
+apideck: false
+specs:
+  - name: "fal Platform API"
+    url: "https://fal.ai/docs/api-reference/platform-apis/openapi/v1.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.fal.ai/v1"
+  - name: "fal Queue API"
+    url: "https://fal.ai/docs/api-reference/inference-api/openapi/queue.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://queue.fal.run"
+  - name: "fal Sync API"
+    url: "https://fal.ai/docs/api-reference/inference-api/openapi/sync.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://fal.run"

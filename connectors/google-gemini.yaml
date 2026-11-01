@@ -1,0 +1,10 @@
+id: google-gemini
+name: "Google Gemini"
+apideck: false
+specs:
+  - name: "Gemini API (Generative Language) discovery document"
+    url: "https://generativelanguage.googleapis.com/$discovery/rest?version=v1beta"
+    format: google-discovery
+    provenance: vendor
+    server: "https://generativelanguage.googleapis.com"
+    notes: "Version v1beta; ?version=v1 gives the stable surface."

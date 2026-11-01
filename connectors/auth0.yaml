@@ -1,0 +1,25 @@
+id: auth0
+name: "Auth0"
+apideck: false
+notes: "Specs listed in the OpenAPI Specs section of auth0.com/docs/llms.txt."
+specs:
+  - name: "Management API v2"
+    url: "https://auth0.com/docs/oas/management/v2/management-api-oas.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{tenantDomain}/api/v2"
+  - name: "Authentication API"
+    url: "https://auth0.com/docs/oas/authentication/authentication-api-oas.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{yourDomain}"
+  - name: "My Account API"
+    url: "https://auth0.com/docs/oas/myaccount/myaccount-api-oas.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}/me/v1"
+  - name: "My Organization API"
+    url: "https://auth0.com/docs/oas/myorganization/myorganization-api-oas.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{tenantDomain}/my-org/v1"

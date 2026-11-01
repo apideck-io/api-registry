@@ -1,0 +1,5 @@
+id: sophos-central
+name: "Sophos Central"
+apideck: false
+notes: "Developer portal (developer.sophos.com) shows API references; no public download URL found, and Sophos community staff state specs are available only on the portal."
+specs: []

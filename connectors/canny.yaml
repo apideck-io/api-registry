@@ -1,0 +1,5 @@
+id: canny
+name: "Canny"
+apideck: false
+notes: "Checked developers.canny.io llms.txt and the API reference; no machine-readable spec published."
+specs: []

@@ -1,0 +1,5 @@
+id: brave
+name: "Brave Search"
+apideck: false
+notes: "api-dashboard.search.brave.com llms.txt and documentation checked; no OpenAPI file is published."
+specs: []

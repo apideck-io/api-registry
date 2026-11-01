@@ -1,0 +1,10 @@
+id: google-shopping
+name: "Google Shopping"
+apideck: false
+notes: "Merchant API has further sub-APIs (accounts, inventories, orders, etc.) with the same discovery URL pattern, version=<name>_v1."
+specs:
+  - name: "Merchant API Products v1"
+    url: "https://merchantapi.googleapis.com/$discovery/rest?version=products_v1"
+    format: google-discovery
+    provenance: vendor
+    server: "https://merchantapi.googleapis.com/"

@@ -1,0 +1,5 @@
+id: icypeas
+name: "Icypeas"
+apideck: false
+notes: "Checked api-doc.icypeas.com and a web search; no OpenAPI file published."
+specs: []

@@ -1,0 +1,5 @@
+id: lastpass
+name: "LastPass"
+apideck: false
+notes: "No vendor-published spec found; the Enterprise API is a single POST endpoint documented in prose."
+specs: []

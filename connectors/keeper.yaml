@@ -1,0 +1,10 @@
+id: keeper
+name: "Keeper"
+apideck: false
+specs:
+  - name: "Keeper Partner Family License API"
+    url: "https://4290574019-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LO5CAzpxoaEquZJBpYz%2Fuploads%2FCaJRKzPGRnaYYZ7Fwwun%2FFamilyPlan%20v2.yaml?alt=media&token=92eac47d-26ac-416b-95e6-1b2024d6265a"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://keepersecurity.com/bi_api/v1/services/partner"
+    notes: "Vendor-hosted YAML attached to the docs page for provisioning Family Plans; covers only the partner license provisioning API."

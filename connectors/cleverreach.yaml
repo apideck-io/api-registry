@@ -1,0 +1,10 @@
+id: cleverreach
+name: "CleverReach"
+apideck: false
+specs:
+  - name: "CleverReach REST API v3"
+    url: "https://rest.cleverreach.com/v3/explorer/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://rest.cleverreach.com"
+    notes: "Used by the API Explorer at rest.cleverreach.com/explorer/v3/."

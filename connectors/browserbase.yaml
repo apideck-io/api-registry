@@ -1,0 +1,9 @@
+id: browserbase
+name: "Browserbase"
+apideck: false
+specs:
+  - name: "Browserbase API"
+    url: "https://docs.browserbase.com/reference/api/openapi.v1.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.browserbase.com"

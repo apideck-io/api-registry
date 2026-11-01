@@ -1,0 +1,9 @@
+id: openrouter
+name: "OpenRouter"
+apideck: false
+specs:
+  - name: "OpenRouter API"
+    url: "https://openrouter.ai/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://openrouter.ai/api/v1"

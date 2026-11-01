@@ -1,0 +1,9 @@
+id: pinterest
+name: "Pinterest"
+apideck: false
+specs:
+  - name: "Pinterest REST API v5"
+    url: "https://raw.githubusercontent.com/pinterest/api-description/main/v5/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.pinterest.com/v5"

@@ -1,0 +1,5 @@
+id: roam
+name: "Roam"
+apideck: false
+notes: "No vendor-published spec found; Roam's backend API is documented only in prose."
+specs: []

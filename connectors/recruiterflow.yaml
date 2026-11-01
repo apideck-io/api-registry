@@ -1,0 +1,10 @@
+id: recruiterflow
+name: "Recruiterflow"
+apideck: false
+specs:
+  - name: "Recruiterflow API"
+    url: "https://recruiterflow.com/swagger.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://recruiterflow.com/api"
+    notes: "Spec loaded by the Swagger UI at recruiterflow.com/api; served as JSON despite the .yml extension. Spec has no servers block."

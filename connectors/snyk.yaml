@@ -1,0 +1,10 @@
+id: snyk
+name: "Snyk"
+apideck: false
+specs:
+  - name: "Snyk REST API"
+    url: "https://api.snyk.io/rest/openapi/2025-11-05"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.snyk.io/rest"
+    notes: "Versioned; list of available versions at https://api.snyk.io/rest/openapi"

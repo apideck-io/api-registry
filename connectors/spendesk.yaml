@@ -1,0 +1,10 @@
+id: spendesk
+name: "Spendesk"
+apideck: false
+specs:
+  - name: "Spendesk Public API"
+    url: "https://developer.spendesk.com/openapi/spendesk-public-api.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://public-api.spendesk.com"
+    notes: "Spec lists a demo server too: https://public-api.demo.spendesk.com. Vendor also publishes a Postman collection (see developer.spendesk.com/reference/postman)."

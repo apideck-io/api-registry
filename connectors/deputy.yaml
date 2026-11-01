@@ -1,0 +1,34 @@
+id: deputy
+name: "Deputy"
+apideck: false
+specs:
+  - name: "Deputy V2 API"
+    url: "https://dash.readme.com/api/v1/api-registry/15gnbf1xmoda582i"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{subdomain}.{region}.deputy.com/api"
+    notes: "OpenAPI definition behind the reference pages at developer.deputy.com, served from the ReadMe API registry."
+  - name: "Deputy V1 Resource API"
+    url: "https://dash.readme.com/api/v1/api-registry/xvpl11ktmohf75pw"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{subdomain}.{region}.deputy.com/api/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.deputy.com, served from the ReadMe API registry."
+  - name: "Deputy V1 Supervise API"
+    url: "https://dash.readme.com/api/v1/api-registry/adhjmodcidhb"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{subdomain}.{region}.deputy.com/api/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.deputy.com, served from the ReadMe API registry."
+  - name: "Deputy V1 My API"
+    url: "https://dash.readme.com/api/v1/api-registry/1fzr61gmodcj0p1"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{subdomain}.{region}.deputy.com/api/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.deputy.com, served from the ReadMe API registry."
+  - name: "Deputy V2 Scoped API"
+    url: "https://dash.readme.com/api/v1/api-registry/1elr3jmod9p56y"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{subdomain}.{region}.deputy.com/api"
+    notes: "OpenAPI definition behind the reference pages at developer.deputy.com, served from the ReadMe API registry."

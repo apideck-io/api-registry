@@ -1,0 +1,9 @@
+id: google-cloud-storage
+name: "Google Cloud Storage"
+apideck: false
+specs:
+  - name: "Cloud Storage JSON API v1"
+    url: "https://storage.googleapis.com/$discovery/rest?version=v1"
+    format: google-discovery
+    provenance: vendor
+    server: "https://storage.googleapis.com/storage/v1"

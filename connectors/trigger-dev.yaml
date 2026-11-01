@@ -1,0 +1,10 @@
+id: trigger-dev
+name: "Trigger.dev"
+apideck: false
+specs:
+  - name: "Trigger.dev v3 REST API"
+    url: "https://trigger.dev/docs/v3-openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.trigger.dev"
+    notes: "Paths include the /api/v1 prefix; linked from the docs llms.txt."

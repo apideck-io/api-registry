@@ -1,0 +1,11 @@
+id: cats
+name: "CATS"
+apideck: false
+notes: "Not linked from the docs page; found at the docs site root."
+specs:
+  - name: "CATS API v3"
+    url: "https://docs.catsone.com/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.catsone.com/v3"
+    notes: "The file declares server https://api.catsone.com but its description and examples use https://api.catsone.com/v3, which the paths are relative to."

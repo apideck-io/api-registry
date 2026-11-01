@@ -1,0 +1,5 @@
+id: ordinal
+name: "Ordinal"
+apideck: false
+notes: "The docs site publishes an OpenAPI document (docs.tryordinal.com/openapi.json) that describes only its documentation JSON API, not the Ordinal product API (https://app.tryordinal.com/api/v1); no product API spec found."
+specs: []

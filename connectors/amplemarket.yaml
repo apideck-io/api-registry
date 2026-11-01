@@ -1,0 +1,10 @@
+id: amplemarket
+name: "Amplemarket"
+apideck: false
+specs:
+  - name: "Amplemarket API"
+    url: "https://api.amplemarket.com/api-docs/v1/swagger.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.amplemarket.com"
+    notes: "Listed in docs.amplemarket.com/llms.txt."

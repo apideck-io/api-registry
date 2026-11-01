@@ -1,0 +1,10 @@
+id: hex
+name: "Hex"
+apideck: false
+specs:
+  - name: "Hex API"
+    url: "https://static.hex.site/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.hex.tech/api"
+    notes: "Linked from learn.hex.tech API reference; paths start with /v1."

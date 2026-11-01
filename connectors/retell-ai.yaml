@@ -1,0 +1,10 @@
+id: retell-ai
+name: "Retell AI"
+apideck: false
+specs:
+  - name: "Retell API"
+    url: "https://docs.retellai.com/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.retellai.com"
+    notes: "Listed in docs.retellai.com/llms.txt. An alternate bundle is at https://docs.retellai.com/openapi-final.yaml."

@@ -1,0 +1,9 @@
+id: coda
+name: "Coda"
+apideck: false
+specs:
+  - name: "Coda API v1"
+    url: "https://coda.io/apis/v1/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://coda.io/apis/v1"

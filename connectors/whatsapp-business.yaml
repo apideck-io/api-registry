@@ -1,0 +1,10 @@
+id: whatsapp-business
+name: "WhatsApp Business"
+apideck: false
+specs:
+  - name: "WhatsApp Business messaging API v23.0"
+    url: "https://raw.githubusercontent.com/facebook/openapi/main/business-messaging-api_v23.0.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://graph.facebook.com"
+    notes: "Published by Meta at github.com/facebook/openapi (MIT licensed); API use is subject to Meta's terms. Paths begin with /{Version}."

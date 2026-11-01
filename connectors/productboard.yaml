@@ -1,0 +1,50 @@
+id: productboard
+name: "Productboard"
+apideck: false
+notes: "v2 specs listed in the developer hub's /.well-known/api-catalog (JSON content served at .yaml URLs). The v1 API spec was not found."
+specs:
+  - name: "Productboard API v2 - Notes"
+    url: "https://developer.productboard.com/openapi/notes.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.productboard.com/v2"
+  - name: "Productboard API v2 - Entities"
+    url: "https://developer.productboard.com/openapi/entities.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.productboard.com/v2"
+  - name: "Productboard API v2 - Members"
+    url: "https://developer.productboard.com/openapi/members.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.productboard.com/v2"
+  - name: "Productboard API v2 - Teams"
+    url: "https://developer.productboard.com/openapi/teams.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.productboard.com/v2"
+  - name: "Productboard API v2 - Webhooks"
+    url: "https://developer.productboard.com/openapi/webhooks.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.productboard.com/v2"
+  - name: "Productboard API v2 - Analytics"
+    url: "https://developer.productboard.com/openapi/analytics.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.productboard.com/v2"
+  - name: "Productboard API v2 - Customer Scores"
+    url: "https://developer.productboard.com/openapi/customer-scores.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.productboard.com/v2"
+  - name: "Productboard API v2 - Jira Integrations"
+    url: "https://developer.productboard.com/openapi/jira-integrations.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.productboard.com/v2"
+  - name: "Productboard API v2 - Plugin Integrations"
+    url: "https://developer.productboard.com/openapi/plugin-integrations.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.productboard.com/v2"

@@ -1,0 +1,5 @@
+id: hive
+name: "Hive"
+apideck: false
+notes: "developers.hive.com/llms.txt and reference pages checked; the OpenAPI definitions exist inside the rendered docs but are not served at a fetchable URL."
+specs: []

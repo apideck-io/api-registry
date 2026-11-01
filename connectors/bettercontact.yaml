@@ -1,0 +1,10 @@
+id: bettercontact
+name: "Bettercontact"
+apideck: false
+specs:
+  - name: "BetterContact API"
+    url: "https://doc.bettercontact.rocks/api-reference/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.bettercontact.rocks/api/v2"
+    notes: "Linked from the docs' llms.txt (https://doc.bettercontact.rocks/llms.txt)."

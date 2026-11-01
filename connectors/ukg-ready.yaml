@@ -1,0 +1,5 @@
+id: ukg-ready
+name: "UKG Ready"
+apideck: false
+notes: "No machine-readable spec found. Checked developer.ukg.com (portal pages only, no UKG Ready spec link) and a web search; no public spec located."
+specs: []

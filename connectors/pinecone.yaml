@@ -1,0 +1,25 @@
+id: pinecone
+name: "Pinecone"
+apideck: false
+notes: "Earlier API versions are in the same repo, https://github.com/pinecone-io/pinecone-api"
+specs:
+  - name: "Control Plane API (2026-07)"
+    url: "https://raw.githubusercontent.com/pinecone-io/pinecone-api/refs/heads/main/2026-07/db_control_2026-07.oas.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.pinecone.io"
+  - name: "Data Plane API (2026-07)"
+    url: "https://raw.githubusercontent.com/pinecone-io/pinecone-api/refs/heads/main/2026-07/db_data_2026-07.oas.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{index_host}"
+  - name: "Inference API (2026-07)"
+    url: "https://raw.githubusercontent.com/pinecone-io/pinecone-api/refs/heads/main/2026-07/inference_2026-07.oas.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.pinecone.io"
+  - name: "Admin API (2026-07)"
+    url: "https://raw.githubusercontent.com/pinecone-io/pinecone-api/refs/heads/main/2026-07/admin_2026-07.oas.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.pinecone.io"

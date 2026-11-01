@@ -1,0 +1,11 @@
+id: stack-exchange
+name: "Stack Exchange"
+apideck: false
+notes: "Checked api.stackexchange.com for swagger/openapi paths and searched for a vendor spec; none found, so a community spec is listed."
+specs:
+  - name: "Stack Exchange API 2.0 (community)"
+    url: "https://api.apis.guru/v2/specs/stackexchange.com/2.0/openapi.json"
+    format: openapi-3.0
+    provenance: community
+    server: "https://api.stackexchange.com/2.0"
+    notes: "Community-maintained; Stack Exchange publishes API docs at api.stackexchange.com/docs but no machine-readable spec."

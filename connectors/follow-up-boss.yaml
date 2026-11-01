@@ -1,0 +1,10 @@
+id: follow-up-boss
+name: "Follow Up Boss"
+apideck: false
+specs:
+  - name: "Follow Up Boss API"
+    url: "https://docs.followupboss.com/openapi/58b53c341065f9c438aa1f7e"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.followupboss.com/v1"
+    notes: "Listed in the docs site's /.well-known/api-catalog."

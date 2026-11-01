@@ -1,0 +1,9 @@
+id: twelve-data
+name: "Twelve Data"
+apideck: false
+specs:
+  - name: "Twelve Data API"
+    url: "https://api.twelvedata.com/doc/swagger/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.twelvedata.com"

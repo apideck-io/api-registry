@@ -1,0 +1,5 @@
+id: demio
+name: "Demio"
+apideck: false
+notes: "Checked demio.com and the Apiary-hosted API docs (demio.docs.apiary.io); no OpenAPI file available."
+specs: []

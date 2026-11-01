@@ -1,0 +1,5 @@
+id: buffer
+name: "Buffer"
+apideck: false
+notes: "Searched for a published OpenAPI/Swagger spec and checked the docs site (llms.txt, openapi.json paths); none found."
+specs: []

@@ -24,7 +24,7 @@ name: "Xero"
 specs:
   - name: "Xero Accounting API"
     url: "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/xero_accounting.yaml"
-    format: openapi-3.0       # openapi-3.0 | openapi-3.1 (also 3.2) | swagger-2.0 | google-discovery | asyncapi-2 | postman-2.1 | odata-edmx | xsd | graphql
+    format: openapi-3.0       # openapi-3.0 | openapi-3.1 (also 3.2) | swagger-2.0 | google-discovery | asyncapi-2 | postman-2.0 | postman-2.1 | odata-edmx | xsd | graphql
     provenance: vendor        # vendor | third-party | community | fork
     server: "https://api.xero.com/api.xro/2.0"
     license: "MIT"            # optional; as the vendor states it
@@ -34,8 +34,8 @@ specs:
 Two optional fields cover vendors that don't serve a plain file:
 - `extract` says how the verifier gets the spec when the URL doesn't serve a plain file: it unwraps a wrapper, or for `graphql-introspection` it queries the endpoint:
   - `zip-bundle`: a zip of module files (Zoho Books)
-  - `markdown-json-fence`: JSON inside a Markdown code fence (Sage)
-  - `redoc-state`: embedded in a Redoc page's `__redoc_state` (Fortnox)
+  - `markdown-json-fence`: JSON inside a Markdown code fence (Sage); when a page holds several OpenAPI documents, they are merged (Adyntel) if they agree on version, servers and security and no path, method or component is defined two different ways; otherwise the spec fails
+  - `redoc-state`: embedded in a Redoc page's `__redoc_state` (Fortnox), or in the `redocStoreStr` field of a Redocly portal's page data (Drata)
   - `swagger-ui-init`: embedded as `swaggerDoc` in a swagger-ui-express init script (Minox)
   - `graphql-introspection`: no SDL file, but the endpoint answers an anonymous introspection query (Wave, Access Financials)
 - `manual: login | bot-protection` records a spec CI can't fetch (it needs `notes` on how to get it).
@@ -49,7 +49,7 @@ An app whose vendor publishes no spec still gets an entry with `specs: []` and a
 - `sha256`
 - `bytes`
 - `operations`, which counts differently per format:
-  - OpenAPI and Swagger: path × method
+  - OpenAPI and Swagger: path × method (including Azure's `x-ms-paths`, and OpenAPI 3.2's `query` method and `additionalOperations`)
   - Discovery: methods
   - AsyncAPI: publish and subscribe operations
   - Postman: requests
@@ -58,9 +58,9 @@ An app whose vendor publishes no spec still gets an entry with `specs: []` and a
   - GraphQL: fields on the root `Query` and `Mutation` types
   - A zip bundle sums its files and adds `files`.
 - `title`, `apiVersion`, `specVersion` and `server`
-- `changedOn`: the last date the file's hash changed
-- `formatMismatch`: set when the entry's `format` disagrees with the spec's own version
-- `specIssues`: set when an OpenAPI or Swagger file lacks a required field (`info.title`, `info.version`); the spec is still indexed
+- `changedOn`: the last date the file's hash changed. A parameter `default` holding an ISO timestamp is left out of the hash, since some vendors render the current date into their spec on every request
+- `formatMismatch`: set when the entry's `format` disagrees with the spec's own version (OpenAPI, Swagger, and a Postman collection's `info.schema`)
+- `specIssues`: set when an OpenAPI or Swagger file's `info.title` or `info.version` is missing, empty, blank (whitespace only) or not a string (in a JSON file, such as `"version": 1`; YAML values are read as text, so a YAML `version: 1` passes); the spec is still indexed
 
 The nightly pull request flags both with ⚠.
 
