@@ -33,7 +33,8 @@ jobs:
             echo 'Specs that changed (Δ), are new (+), recovered (↺), failed (✗) or carry a warning (⚠: an overlay that no longer matches, a format that disagrees with the spec, missing or invalid info fields, or an SDL graphql-js rejects) in the nightly check:'
             echo
             echo '````text'
-            grep -E '^(Δ|\+|↺|✗)|⚠' verify.log | tr -d '`' || echo 'None; index metadata only.'
+            # Not a pipe into ||: without pipefail its status would be tr's, so the fallback could never print.
+            if grep -qE '^(Δ|\+|↺|✗)|⚠' verify.log; then grep -E '^(Δ|\+|↺|✗)|⚠' verify.log | tr -d '`'; else echo 'None; index metadata only.'; fi
             echo '````'
             echo 'EOF'
           } >> "$GITHUB_OUTPUT"

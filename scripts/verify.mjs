@@ -332,7 +332,8 @@ function inspect(format, body) {
       const roots = [schema.queryType?.name, schema.mutationType?.name].filter(Boolean);
       const n = schema.types.filter((t) => roots.includes(t.name)).reduce((m, t) => m + (t.fields?.length ?? 0), 0);
       if (!n) throw new Error("the root types have no fields");
-      return { operations: n, introspection, ...flagged(scanText(sdlDescriptions(body), { positional: false })) };
+      // Parsed by graphql-js, so its descriptions are scanned from the schema rather than found by regex.
+      return { operations: n, introspection, ...flagged(scanText(introspection, { positional: false })) };
     } catch (err) {
       if (/no query root|no fields/.test(err.message)) throw err;
       // Not parseable by graphql-js: count fields as before, without a derived file, and say why.
