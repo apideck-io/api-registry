@@ -1,0 +1,85 @@
+README.md
+  s_eeda7bd9685d9d::t_49279c6f175699 22,43-44
+connectors/airtable.yaml
+  s_eeda7bd9685d9d::t_26054692d93a07 1-5
+connectors/apollo.yaml
+  s_eeda7bd9685d9d::t_acb6451e231f5f 1-10
+connectors/ashby.yaml
+  s_eeda7bd9685d9d::t_d3970600bb8fb7 1-5
+connectors/confluence.yaml
+  s_eeda7bd9685d9d::t_a2b12bd26188fe 1-15
+connectors/customer-io.yaml
+  s_eeda7bd9685d9d::t_180344bb01fb93 1-15
+connectors/datadog.yaml
+  s_eeda7bd9685d9d::t_fa7db2299533ef 1-15
+connectors/exa.yaml
+  s_eeda7bd9685d9d::t_d74a5dbe27d83b 1-9
+connectors/figma.yaml
+  s_eeda7bd9685d9d::t_9960fba208945d 1-9
+connectors/fireflies.yaml
+  s_eeda7bd9685d9d::t_ef75bbe293655b 1-11
+connectors/freshdesk.yaml
+  s_eeda7bd9685d9d::t_f2a803f4d77a87 1-5
+connectors/google-docs.yaml
+  s_eeda7bd9685d9d::t_d701f8d1c57e70 1-8
+connectors/google-forms.yaml
+  s_eeda7bd9685d9d::t_473451a018d3be 1-8
+connectors/google-maps.yaml
+  s_eeda7bd9685d9d::t_291d07b07023e0 1-9
+connectors/google-slides.yaml
+  s_eeda7bd9685d9d::t_aa518928407295 1-8
+connectors/granola.yaml
+  s_eeda7bd9685d9d::t_4f446f0fce2c5a 1-9
+connectors/linkedin.yaml
+  s_eeda7bd9685d9d::t_dc53d973f24b38 1-5
+connectors/microsoft-excel.yaml
+  s_eeda7bd9685d9d::t_ec1c46c5c4e242 1-10
+connectors/miro.yaml
+  s_eeda7bd9685d9d::t_5ede74a6ac289d 1-9
+connectors/mixpanel.yaml
+  s_eeda7bd9685d9d::t_177bbe5039a510 1-55
+connectors/pagerduty.yaml
+  s_eeda7bd9685d9d::t_6a22c7987f8f83 1-9
+connectors/posthog.yaml
+  s_eeda7bd9685d9d::t_6d4db9817bcf98 1-10
+connectors/pylon.yaml
+  s_eeda7bd9685d9d::t_724f8ec495fbc8 1-5
+connectors/reddit.yaml
+  s_eeda7bd9685d9d::t_a5a1659c142f74 1-5
+connectors/resend.yaml
+  s_eeda7bd9685d9d::t_071493f6ccbde2 1-9
+connectors/snowflake.yaml
+  s_eeda7bd9685d9d::t_295602fb9ecf23 1-60
+connectors/spotify.yaml
+  s_eeda7bd9685d9d::t_5ac326b88dc28b 1-10
+connectors/telegram.yaml
+  s_eeda7bd9685d9d::t_8b8cf1bd06df71 1-5
+connectors/trello.yaml
+  s_eeda7bd9685d9d::t_e0eb8095f9eeca 1-9
+connectors/x.yaml
+  s_eeda7bd9685d9d::t_e65ef50505655c 1-9
+connectors/youtube.yaml
+  s_eeda7bd9685d9d::t_ec8f270e78e7c2 1-8
+connectors/zoom.yaml
+  s_eeda7bd9685d9d::t_8f639db2549d1e 1-10
+index.json
+  s_eeda7bd9685d9d::t_ae171f82f44332 4465-5131
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_b88e05330e88f9 126-127
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "802a9c6c7b5a13b982a0211d9fc36e184ee684c9",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
