@@ -1,0 +1,21 @@
+README.md
+  s_eeda7bd9685d9d::t_19c949b6fde2af 52
+connectors/salesloft.yaml
+  s_eeda7bd9685d9d::t_3093a4e567d33d 8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "08432aacc16dcbcbb1ba59f8e20591e857fb8b6e",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
