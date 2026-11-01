@@ -9365,7 +9365,7 @@
           "operations": 34,
           "specVersion": "3.0.0",
           "server": "https://api.judge.me/api/v1",
-          "specIssues": "no info.title or info.version",
+          "specIssues": "no info.title, no info.version",
           "changedOn": "2026-11-01"
         }
       }
