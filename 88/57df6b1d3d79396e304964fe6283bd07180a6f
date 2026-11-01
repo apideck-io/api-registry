@@ -1,0 +1,199 @@
+connectors/acquia.yaml
+  s_eeda7bd9685d9d::t_72314f2014cbe6 1-10
+connectors/adbutler.yaml
+  s_eeda7bd9685d9d::t_57c7928c216e6c 1-10
+connectors/anymail-finder.yaml
+  s_eeda7bd9685d9d::t_c88f7438fea790 1-10
+connectors/api-video.yaml
+  s_eeda7bd9685d9d::t_98133c8806b161 1-10
+connectors/api2cart.yaml
+  s_eeda7bd9685d9d::t_3f27f3723d971e 1-15
+connectors/assemblyai.yaml
+  s_eeda7bd9685d9d::t_3092cf5820f7c7 1-10
+connectors/auto-dev.yaml
+  s_eeda7bd9685d9d::t_9cf26d3f3a8e62 1-10
+connectors/award-force.yaml
+  s_eeda7bd9685d9d::t_0ee6d4749078b2 1-20
+connectors/buddy.yaml
+  s_eeda7bd9685d9d::t_6ec40b403b6b6c 1-11
+connectors/carapi.yaml
+  s_eeda7bd9685d9d::t_9eb61f01ad580c 1-10
+connectors/checkly.yaml
+  s_eeda7bd9685d9d::t_eb97f0e7a3ab8f 1-10
+connectors/chroma.yaml
+  s_eeda7bd9685d9d::t_c638f4cd09a6cc 1-15
+connectors/colabra.yaml
+  s_eeda7bd9685d9d::t_b139ef5627eb29 1-10
+connectors/comet-ml.yaml
+  s_eeda7bd9685d9d::t_6f0c6ea2f175ac 1-11
+connectors/coop-pank.yaml
+  s_eeda7bd9685d9d::t_a4f81aee3814b3 1-10
+connectors/daily-co.yaml
+  s_eeda7bd9685d9d::t_01fc0166faacac 1-10
+connectors/datafold.yaml
+  s_eeda7bd9685d9d::t_c183fe15b229f7 1-15
+connectors/debounce.yaml
+  s_eeda7bd9685d9d::t_61f467b6552422 1-25
+connectors/descript.yaml
+  s_eeda7bd9685d9d::t_bf78297674ba52 1-10
+connectors/devcycle.yaml
+  s_eeda7bd9685d9d::t_a9f43b936f52b3 1-15
+connectors/ditto.yaml
+  s_eeda7bd9685d9d::t_d94213c1dbc289 1-15
+connectors/dune.yaml
+  s_eeda7bd9685d9d::t_bfeb093b81f616 1-15
+connectors/eden-ai.yaml
+  s_eeda7bd9685d9d::t_9f60bb8ad00ae3 1-15
+connectors/emptor.yaml
+  s_eeda7bd9685d9d::t_039d52eda6db59 1-10
+connectors/everflow.yaml
+  s_eeda7bd9685d9d::t_8ccec7c8d90596 1-460
+connectors/flinks.yaml
+  s_eeda7bd9685d9d::t_6016a3e146c130 1-40
+connectors/flotiq.yaml
+  s_eeda7bd9685d9d::t_19db13804c04f7 1-10
+connectors/footprint.yaml
+  s_eeda7bd9685d9d::t_82eb75cc3886d7 1-11
+connectors/fusionauth.yaml
+  s_eeda7bd9685d9d::t_86292b25ec4806 1-11
+connectors/gemini.yaml
+  s_eeda7bd9685d9d::t_6aabbb1dc2dc6c 1-15
+connectors/golden.yaml
+  s_eeda7bd9685d9d::t_f80d1d1d73b3e9 1-10
+connectors/growth-book.yaml
+  s_eeda7bd9685d9d::t_644af3d20c6523 1-10
+connectors/handwrytten.yaml
+  s_eeda7bd9685d9d::t_360319b055cced 1-10
+connectors/hyperping.yaml
+  s_eeda7bd9685d9d::t_1e10d34a6a8f2e 1-10
+connectors/infisical.yaml
+  s_eeda7bd9685d9d::t_4d7cab654cf770 1-10
+connectors/knock.yaml
+  s_eeda7bd9685d9d::t_4e7cb8eaad7b2b 1-10
+connectors/knot-api.yaml
+  s_eeda7bd9685d9d::t_806232620a4018 1-15
+connectors/kraken.yaml
+  s_eeda7bd9685d9d::t_d3f401911d1809 1-10
+connectors/listen-notes.yaml
+  s_eeda7bd9685d9d::t_c3c8a10270d3a4 1-10
+connectors/liveblocks.yaml
+  s_eeda7bd9685d9d::t_b94183eb74fa03 1-10
+connectors/loop.yaml
+  s_eeda7bd9685d9d::t_515811fe2b1f20 1-115
+connectors/lucidworks.yaml
+  s_eeda7bd9685d9d::t_0fc846dbc9ded8 1-15
+connectors/meetingpulse.yaml
+  s_eeda7bd9685d9d::t_6dc06d833073de 1-10
+connectors/microlink.yaml
+  s_eeda7bd9685d9d::t_178d0e41779f09 1-10
+connectors/middesk.yaml
+  s_eeda7bd9685d9d::t_f0e2ca4e228943 1-10
+connectors/modelscope.yaml
+  s_eeda7bd9685d9d::t_4fe5fc4439b267 1-10
+connectors/monei.yaml
+  s_eeda7bd9685d9d::t_99a8d160fb8aba 1-10
+connectors/mothership.yaml
+  s_eeda7bd9685d9d::t_0da47ec1bea2dd 1-11
+connectors/mx.yaml
+  s_eeda7bd9685d9d::t_5b5e463dd42d23 1-41
+connectors/ngrok.yaml
+  s_eeda7bd9685d9d::t_a05b230d0f50f8 1-10
+connectors/nhost.yaml
+  s_eeda7bd9685d9d::t_6fbc2e390a0ec1 1-15
+connectors/novu.yaml
+  s_eeda7bd9685d9d::t_61c24084499941 1-10
+connectors/opal.yaml
+  s_eeda7bd9685d9d::t_10d581c31f1db8 1-10
+connectors/openlayer.yaml
+  s_eeda7bd9685d9d::t_ec09506150eb50 1-10
+connectors/orb.yaml
+  s_eeda7bd9685d9d::t_e8956d768441f8 1-10
+connectors/paubox.yaml
+  s_eeda7bd9685d9d::t_72559f9cbb4230 1-20
+connectors/polygon-io.yaml
+  s_eeda7bd9685d9d::t_3d0f9453b63a15 1-10
+connectors/printify.yaml
+  s_eeda7bd9685d9d::t_a5d4271e0ddd6c 1-10
+connectors/prisma.yaml
+  s_eeda7bd9685d9d::t_9b6bdd148e9c35 1-10
+connectors/privy.yaml
+  s_eeda7bd9685d9d::t_e4dbcbfdd01faa 1-10
+connectors/productive.yaml
+  s_eeda7bd9685d9d::t_ac118ae6de4cc9 1-11
+connectors/promptlayer.yaml
+  s_eeda7bd9685d9d::t_9df7065becbf86 1-11
+connectors/quicknode.yaml
+  s_eeda7bd9685d9d::t_91105217bde261 1-33
+connectors/rightfoot.yaml
+  s_eeda7bd9685d9d::t_9f43d5ae5a9e18 1-10
+connectors/runpod.yaml
+  s_eeda7bd9685d9d::t_93a0dc2b5c1ef5 1-15
+connectors/sandbox.yaml
+  s_eeda7bd9685d9d::t_063890e54dca8d 1-94
+connectors/sendcloud.yaml
+  s_eeda7bd9685d9d::t_41a7d64a46859d 1-235
+connectors/showpad.yaml
+  s_eeda7bd9685d9d::t_e3a5b47e8fd5e1 1-15
+connectors/smsglobal.yaml
+  s_eeda7bd9685d9d::t_438a39813f65dd 1-10
+connectors/softr.yaml
+  s_eeda7bd9685d9d::t_a7d4f47332d073 1-10
+connectors/spaycial.yaml
+  s_eeda7bd9685d9d::t_50661bc4ecf425 1-10
+connectors/speakeasy.yaml
+  s_eeda7bd9685d9d::t_dff14f95bcaf84 1-10
+connectors/stackhawk.yaml
+  s_eeda7bd9685d9d::t_421770d3fabc71 1-10
+connectors/status-io.yaml
+  s_eeda7bd9685d9d::t_c3ac27ecef02d3 1-10
+connectors/sumup.yaml
+  s_eeda7bd9685d9d::t_336748ec0beca4 1-10
+connectors/supernotes.yaml
+  s_eeda7bd9685d9d::t_df7c79cc6ac8be 1-11
+connectors/swoogo.yaml
+  s_eeda7bd9685d9d::t_2b8237380b3545 1-10
+connectors/techwolf.yaml
+  s_eeda7bd9685d9d::t_3193c7d17cf84f 1-10
+connectors/teya.yaml
+  s_eeda7bd9685d9d::t_24a9c1bf53ae6c 1-15
+connectors/togai.yaml
+  s_eeda7bd9685d9d::t_782f9eac17ace5 1-10
+connectors/transloadit.yaml
+  s_eeda7bd9685d9d::t_bd32100a23944f 1-10
+connectors/truv.yaml
+  s_eeda7bd9685d9d::t_849bda1defaa44 1-10
+connectors/twelve-labs.yaml
+  s_eeda7bd9685d9d::t_7e63f5f3f82062 1-10
+connectors/upstash.yaml
+  s_eeda7bd9685d9d::t_65bb35e8e58178 1-10
+connectors/uptime-robot.yaml
+  s_eeda7bd9685d9d::t_55a78f8c5ed4ce 1-10
+connectors/warp.yaml
+  s_eeda7bd9685d9d::t_a2ec1de488d9d1 1-10
+connectors/weaviate-vector-database.yaml
+  s_eeda7bd9685d9d::t_fd79702bbaeefc 1-10
+connectors/wegift.yaml
+  s_eeda7bd9685d9d::t_3c2cc900ac3124 1-10
+connectors/yapily.yaml
+  s_eeda7bd9685d9d::t_e185069981e596 1-10
+connectors/zeal.yaml
+  s_eeda7bd9685d9d::t_0e795c6a854091 1-25
+connectors/zuplo.yaml
+  s_eeda7bd9685d9d::t_4856d3a1abf5d5 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8857df6b1d3d79396e304964fe6283bd07180a6f",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
