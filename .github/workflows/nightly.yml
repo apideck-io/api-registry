@@ -32,7 +32,9 @@ jobs:
             echo 'body<<EOF'
             echo 'Specs that changed (Δ), are new (+), recovered (↺), failed (✗) or carry a warning (⚠: an overlay that no longer matches, a format that disagrees with the spec, missing or invalid info fields, or an SDL graphql-js rejects) in the nightly check:'
             echo
-            grep -E '^(Δ|\+|↺|✗)|⚠' verify.log || echo 'None; index metadata only.'
+            echo '````text'
+            grep -E '^(Δ|\+|↺|✗)|⚠' verify.log | tr -d '`' || echo 'None; index metadata only.'
+            echo '````'
             echo 'EOF'
           } >> "$GITHUB_OUTPUT"
       # A spec whose servers or authentication changed, whose text reads like instructions to an AI, or
@@ -46,7 +48,10 @@ jobs:
             {
               echo 'note<<EOF'
               echo '**Needs review before merging:**'
-              grep -E '^✗.*\(newly failing\)$|⚠ (surface|text):' verify.log | sed 's/^/- /'
+              # Vendor text goes in a code block: it can't render, link or mention anyone.
+              echo '````text'
+              grep -E '^✗.*\(newly failing\)$|⚠ (surface|text):' verify.log | tr -d '`'
+              echo '````'
               echo 'EOF'
             } >> "$GITHUB_OUTPUT"
           else

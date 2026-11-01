@@ -2251,7 +2251,7 @@
           "operations": 234,
           "title": "Employment Hero API",
           "specVersion": "2.1.0",
-          "surface": "dc21c878d2115446",
+          "surface": "18da30330e5218c9",
           "server": "https://api.employmenthero.com/api",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
@@ -3960,7 +3960,7 @@
           "operations": 434,
           "title": "Lightspeed eCom",
           "specVersion": "2.1.0",
-          "surface": "46c230e77e5699d8",
+          "surface": "bfd4421988111372",
           "server": "https://{api_key}:{api_secret}@api.{cluster}.com/{language}/",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
@@ -4454,13 +4454,13 @@
       "specs": {
         "monday.com GraphQL schema (SDL)": {
           "status": "ok",
-          "sha256": "1ce2c220ad94682c36eb0c6286714470e1150a912e35af2d3bba3b1685d2cc42",
-          "fetchSha256": "1ce2c220ad94682c36eb0c6286714470e1150a912e35af2d3bba3b1685d2cc42",
+          "sha256": "813f8f48c0cd06cb3c8f744c5210baec8ed4635578752263418c327e0b3bb9e2",
+          "fetchSha256": "813f8f48c0cd06cb3c8f744c5210baec8ed4635578752263418c327e0b3bb9e2",
           "bytes": 680596,
           "operations": 335,
           "derived": {
             "file": "derived/graphql/0656071d10c32575.introspection.json",
-            "sha256": "4d240b6066fee458587a42df0cc331f3bd07f341c06e2425559cca0cb5b18b43",
+            "sha256": "f930f1f053c61f646d4d5c47d34b6c5c7b68919fe6426b5351284ac94298cfb4",
             "bytes": 3647425
           },
           "server": "https://api.monday.com/v2",
@@ -4491,13 +4491,13 @@
       "specs": {
         "MYOB AccountRight API Postman collection": {
           "status": "ok",
-          "sha256": "5419561b443f97b6b1e1db9bc3e6a9752fcbb98a70e40c898e824afff03365e4",
-          "fetchSha256": "5419561b443f97b6b1e1db9bc3e6a9752fcbb98a70e40c898e824afff03365e4",
+          "sha256": "00321ae900063ae9c521c973241f7d768301cd1d642adf0353516be2b126b3da",
+          "fetchSha256": "00321ae900063ae9c521c973241f7d768301cd1d642adf0353516be2b126b3da",
           "bytes": 7071274,
           "operations": 257,
           "title": "MYOB AccountRight",
           "specVersion": "2.0.0",
-          "surface": "867c9a2e6e17b7d3",
+          "surface": "1e5b7d34b7903ca5",
           "server": "https://api.myob.com/accountright",
           "changedOn": "2026-11-01",
           "surfaceChangedOn": "2026-11-01"
@@ -4901,7 +4901,7 @@
           "operations": 131,
           "title": "Teamtailor API",
           "specVersion": "2.0.0",
-          "surface": "58cf106f3ea709e1",
+          "surface": "8ad4a2d5c317ec4a",
           "server": "https://api.teamtailor.com/v1",
           "changedOn": "2026-10-31",
           "surfaceChangedOn": "2026-11-01"
@@ -10964,7 +10964,7 @@
           "operations": 403,
           "title": "API Reference",
           "specVersion": "2.1.0",
-          "surface": "955a9bdbaaff3530",
+          "surface": "8e3b24d8e1870283",
           "server": "https://api.infusionsoft.com/crm",
           "changedOn": "2026-11-01",
           "surfaceChangedOn": "2026-11-01"
@@ -10990,7 +10990,7 @@
           "operations": 45,
           "title": "API Reference",
           "specVersion": "2.1.0",
-          "surface": "88834deb1165a3a8",
+          "surface": "4e5f051c5cb96966",
           "server": "https://api.infusionsoft.com/services",
           "changedOn": "2026-11-01",
           "surfaceChangedOn": "2026-11-01"
@@ -11970,7 +11970,7 @@
           "operations": 291,
           "title": "Pipeline CRM API",
           "specVersion": "2.1.0",
-          "surface": "3bf270f971b98cd4",
+          "surface": "1817b0e5963beb27",
           "server": "https://api.pipelinecrm.com/api/v3",
           "changedOn": "2026-11-01",
           "surfaceChangedOn": "2026-11-01"

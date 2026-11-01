@@ -36,7 +36,7 @@ const TEXT_KEYS = new Set(["description", "summary", "title", "x-summary"]);
  * index.json); `hits` are every flagged text in full with where it sits, so a fingerprint of them changes when
  * text is added to an already-accepted description or copied to another place.
  */
-export function scanText(doc, { max = 500, positional = true } = {}) {
+export function scanText(doc, { max = 100000, positional = true } = {}) {
   const samples = [];
   const hits = [];
   const seen = new Set();
@@ -56,7 +56,9 @@ export function scanText(doc, { max = 500, positional = true } = {}) {
       }
       return;
     }
-    if (Array.isArray(v)) v.forEach((x, i) => walk(x, key, `${at}/${i}`, depth + 1));
+    // A list position isn't part of the place: a type or parameter added earlier would shift every later one.
+    // Copies still count, since each hit is kept (not deduplicated) in the fingerprint.
+    if (Array.isArray(v)) v.forEach((x) => walk(x, key, `${at}/*`, depth + 1));
     // A Postman description can be an object: { content, type }.
     else if (typeof v === "object") for (const [k, x] of Object.entries(v)) walk(x, TEXT_KEYS.has(key) && k === "content" ? key : k, `${at}/${k}`, depth + 1);
   };
@@ -112,7 +114,8 @@ export function surfaceOf(format, doc) {
     const walk = (items, at) =>
       items?.forEach((it, i) => {
         const here = `${at}/${it.name ?? i}`;
-        const u = it.request?.url;
+        // A request can be written as just its URL.
+        const u = typeof it.request === "string" ? it.request : it.request?.url;
         const raw = typeof u === "string" ? u : u?.raw ?? (Array.isArray(u?.host) ? u.host.join(".") : u?.host);
         if (raw) hosts.add(String(raw).replace(/^\w+:\/\//, "").split(/[/?#]/)[0]);
         // Auth set on a folder or a request overrides the collection's.
@@ -121,8 +124,10 @@ export function surfaceOf(format, doc) {
         walk(it.item, here);
       });
     walk(doc.item, "");
-    // A host is usually {{baseUrl}}: the collection variables are where it actually points.
-    const variables = (doc.variable ?? []).map((v) => [v?.key ?? v?.id, v?.value ?? null]).sort((a, b) => String(a[0]).localeCompare(String(b[0])));
+    // A host is usually {{baseUrl}}: the collection variables it names are where it actually points. Other
+    // variables (sample ids, dates) aren't servers or authentication.
+    const used = new Set([...hosts].flatMap((h) => [...h.matchAll(/\{\{\s*([^}\s]+)\s*\}\}/g)].map((m) => m[1])));
+    const variables = (doc.variable ?? []).filter((v) => used.has(v?.key ?? v?.id)).map((v) => [v?.key ?? v?.id, v?.value ?? null]).sort((a, b) => String(a[0]).localeCompare(String(b[0])));
     surface = { auth: doc.auth ?? null, nested: auth, hosts: [...hosts].sort(), variables };
   }
   return surface && createHash("sha256").update(canonical(surface)).digest("hex").slice(0, 16);
