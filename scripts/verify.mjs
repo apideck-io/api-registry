@@ -9,7 +9,7 @@
 import { createHash } from "node:crypto";
 import { inflateRawSync } from "node:zlib";
 import { fileURLToPath } from "node:url";
-import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, unlinkSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { parse as parseYaml } from "yaml";
 import { createRequire } from "node:module";
@@ -497,6 +497,9 @@ for (const e of entries) {
         writeFileSync(abs, text);
       }
       info.derived = { file, sha256: createHash("sha256").update(text).digest("hex"), bytes: Buffer.byteLength(text) };
+    } else if (info.derivedError && old.derived) {
+      // graphql-js stopped accepting the vendor's SDL: keep the last good introspection result, flagged.
+      info.derived = old.derived;
     }
     // The entry's server is set by hand and wins; specs often carry placeholders (DefaultParameterValue,
     // {baseUrl}). The spec's own value is kept as specServer when they differ.
@@ -557,13 +560,27 @@ for (const e of entries) {
     const problems = overlay?.error
       ? [overlay.error]
       : [overlay?.unmatched?.length && `${overlay.unmatched.length} action(s) match nothing`, overlay?.redundant?.length && `${overlay.redundant.length} action(s) change nothing`].filter(Boolean);
-    const stale = problems.length ? ` ⚠ overlay: ${problems.join("; ")}` : "";
+    const stale =
+      (problems.length ? ` ⚠ overlay: ${problems.join("; ")}` : "") +
+      (info.derivedError ? ` ⚠ SDL not parseable by graphql-js (${info.derivedError})${info.derived ? "; kept the last introspection result" : ""}` : "");
     console.log(`${mark} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations${stale}`);
   }
   out.connectors[e.id] = { name: e.name, specs };
 }
 // Entries removed from connectors/ leave the index too.
 for (const id of Object.keys(out.connectors)) if (!entries.some((e) => e.id === id)) delete out.connectors[id];
+
+// Derived files nothing in the index points at any more (a spec moved, an entry left) are removed. Only on a
+// full run: a run with --only can't see the other entries' files.
+if (!ONLY && existsSync(join(ROOT, "derived/graphql"))) {
+  const used = new Set(Object.values(out.connectors).flatMap((c) => Object.values(c.specs).map((s) => s.derived?.file)).filter(Boolean));
+  for (const f of readdirSync(join(ROOT, "derived/graphql"))) {
+    if (!used.has(`derived/graphql/${f}`)) {
+      unlinkSync(join(ROOT, "derived/graphql", f));
+      console.log(`- derived/graphql/${f}: no spec uses it any more, removed`);
+    }
+  }
+}
 
 writeFileSync(indexPath, JSON.stringify(out, null, 2) + "\n");
 console.log(`\nindex.json written; ${failures} spec(s) failed to fetch or parse.`);
