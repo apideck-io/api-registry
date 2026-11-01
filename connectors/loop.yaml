@@ -1,7 +1,7 @@
 id: loop
 name: "Loop"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.loopreturns.com)."
+notes: "Spec served by the vendor (found from its developer portal, https://docs.loopreturns.com"
 specs:
   - name: "Bulk Operations API"
     url: "https://docs.loopreturns.com/openapi/bulk-operations-api.yaml"

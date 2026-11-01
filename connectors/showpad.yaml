@@ -1,7 +1,7 @@
 id: showpad
 name: "Showpad"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.api.showpad.com/docs/apis/)."
+notes: "Spec served by the vendor (found from its developer portal, https://docs.api.showpad.com/docs/apis/"
 specs:
   - name: "Showpad API (openapi/openapi.v4)"
     url: "https://developer.showpad.com/openapi/openapi.v4.json"

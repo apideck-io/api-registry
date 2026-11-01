@@ -1,7 +1,7 @@
 id: lucidworks
 name: "Lucidworks"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://doc.lucidworks.com/index.html)."
+notes: "Spec served by the vendor (found from its developer portal, https://doc.lucidworks.com/index.html"
 specs:
   - name: "Fusion Admin APIs"
     url: "https://doc.lucidworks.com/api-reference/5.9/fusion-api-swagger.json"

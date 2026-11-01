@@ -1,7 +1,7 @@
 id: mothership
 name: "Mothership"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://developers.mothership.com)."
+notes: "Spec served by the vendor (found from its developer portal, https://developers.mothership.com"
 specs:
   - name: "API"
     url: "https://docs.mothership.com/openapi.json"

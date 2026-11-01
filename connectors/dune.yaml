@@ -1,7 +1,7 @@
 id: dune
 name: "Dune"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.dune.com)."
+notes: "Spec served by the vendor (found from its developer portal, https://docs.dune.com"
 specs:
   - name: "DuneAPI"
     url: "https://docs.dune.com/analytics-openapi.json"

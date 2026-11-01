@@ -1,7 +1,7 @@
 id: speakeasy
 name: "Speakeasy"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://www.speakeasyapi.dev/product#product-dev-portal)."
+notes: "Spec served by the vendor (found from its developer portal, https://www.speakeasyapi.dev/product"
 specs:
   - name: "Speakeasy API"
     url: "https://www.speakeasy.com/openapi.yaml"

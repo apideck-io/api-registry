@@ -1,7 +1,7 @@
 id: award-force
 name: "Award Force"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://apidocs.awardforce.com)."
+notes: "Spec served by the vendor (found from its developer portal, https://apidocs.awardforce.com"
 specs:
   - name: "Award Force API (openapi)"
     url: "https://docs.awardforce.com/openapi.json"
@@ -13,8 +13,3 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.us.cr4ce.com"
-  - name: "Award Force API (openapi)'"
-    url: "https://docs.awardforce.com/openapi.yaml"
-    format: openapi-3.0
-    provenance: vendor
-    server: "https://api.cr4ce.com"

@@ -1,7 +1,7 @@
 id: golden
 name: "Golden"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.golden.com/reference/golden-api-introduction)."
+notes: "Spec served by the vendor (found from its developer portal, https://docs.golden.com/reference/golden-api-introduction"
 specs:
   - name: "Golden API v2"
     url: "https://docs.golden.com/openapi.json"

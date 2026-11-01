@@ -1,7 +1,7 @@
 id: ditto
 name: "Ditto"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://developer.dittowords.com/)."
+notes: "Spec served by the vendor (found from its developer portal, https://developer.dittowords.com/"
 specs:
   - name: "Ditto API (openapi-legacy)"
     url: "https://developer.dittowords.com/openapi-legacy.json"

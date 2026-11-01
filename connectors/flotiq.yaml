@@ -1,7 +1,7 @@
 id: flotiq
 name: "Flotiq"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://flotiq.com/docs)."
+notes: "Spec served by the vendor (found from its developer portal, https://flotiq.com/docs"
 specs:
   - name: "Flotiq User API"
     url: "https://www.flotiq.com/openapi.json"

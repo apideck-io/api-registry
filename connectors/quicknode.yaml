@@ -1,7 +1,7 @@
 id: quicknode
 name: "QuickNode"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://www.quicknode.com/docs)."
+notes: "Spec served by the vendor (found from its developer portal, https://www.quicknode.com/docs"
 specs:
   - name: "Quicknode Agent API"
     url: "https://www.quicknode.com/openapi.json"

@@ -1,7 +1,7 @@
 id: upstash
 name: "Upstash"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.upstash.com)."
+notes: "Spec served by the vendor (found from its developer portal, https://docs.upstash.com"
 specs:
   - name: "Upstash Workflow REST API"
     url: "https://upstash.com/docs/workflow/openapi.yaml"

@@ -1,7 +1,7 @@
 id: smsglobal
 name: "SMSGlobal"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://www.smsglobal.com/developers)."
+notes: "Spec served by the vendor (found from its developer portal, https://www.smsglobal.com/developers"
 specs:
   - name: "SMSGLobal REST API"
     url: "https://www.smsglobal.com/openapi.json"

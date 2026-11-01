@@ -1,7 +1,7 @@
 id: prisma
 name: "Prisma"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://prisma.io/docs)."
+notes: "Spec served by the vendor (found from its developer portal, https://prisma.io/docs"
 specs:
   - name: "Prisma Postgres Management API"
     url: "https://www.prisma.io/openapi.json"

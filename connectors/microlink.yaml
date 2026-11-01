@@ -1,7 +1,7 @@
 id: microlink
 name: "Microlink"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://microlink.io/docs)."
+notes: "Spec served by the vendor (found from its developer portal, https://microlink.io/docs"
 specs:
   - name: "Microlink API"
     url: "https://microlink.io/openapi.json"

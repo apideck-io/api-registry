@@ -1,7 +1,7 @@
 id: polygon-io
 name: "Polygon.io"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://polygon.io/docs)."
+notes: "Spec served by the vendor (found from its developer portal, https://polygon.io/docs"
 specs:
   - name: "Massive API"
     url: "https://api.massive.com/openapi"

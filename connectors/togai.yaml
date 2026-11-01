@@ -1,7 +1,7 @@
 id: togai
 name: "Togai"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.togai.com)."
+notes: "Spec served by the vendor (found from its developer portal, https://docs.togai.com"
 specs:
   - name: "Togai Apis"
     url: "https://docs.togai.com/openapi.yaml"

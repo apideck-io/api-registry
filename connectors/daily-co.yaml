@@ -1,7 +1,7 @@
 id: daily-co
 name: "Daily.co"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.daily.co/docs/hipaa)."
+notes: "Spec served by the vendor (found from its developer portal, https://docs.daily.co/docs/hipaa"
 specs:
   - name: "Daily API"
     url: "https://docs.daily.co/openapi.json"

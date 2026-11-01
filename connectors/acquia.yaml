@@ -1,7 +1,7 @@
 id: acquia
 name: "Acquia"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://dev.acquia.com)."
+notes: "Spec served by the vendor (found from its developer portal, https://dev.acquia.com"
 specs:
   - name: "Acquia Content API"
     url: "https://dev.acquia.com/openapi/acquia-content-api.yaml"

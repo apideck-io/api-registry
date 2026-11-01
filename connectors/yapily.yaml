@@ -1,7 +1,7 @@
 id: yapily
 name: "Yapily"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.yapily.com)."
+notes: "Spec served by the vendor (found from its developer portal, https://docs.yapily.com"
 specs:
   - name: "Yapily API"
     url: "https://docs.yapily.com/openapi-converted.json"

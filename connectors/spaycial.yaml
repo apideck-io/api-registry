@@ -1,7 +1,7 @@
 id: spaycial
 name: "Spaycial"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://developer.spaycial.com)."
+notes: "Spec served by the vendor (found from its developer portal, https://developer.spaycial.com"
 specs:
   - name: "Spaycial REST API"
     url: "https://developer.spaycial.com/openapi.json"

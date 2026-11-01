@@ -1,7 +1,7 @@
 id: uptime-robot
 name: "Uptime Robot"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://uptimerobot.com/api)."
+notes: "Spec served by the vendor (found from its developer portal, https://uptimerobot.com/api"
 specs:
   - name: "UptimeRobot API"
     url: "https://cdn.uptimerobot.com/api/openapi.yaml"

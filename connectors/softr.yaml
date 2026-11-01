@@ -1,7 +1,7 @@
 id: softr
 name: "Softr"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.softr.io)."
+notes: "Spec served by the vendor (found from its developer portal, https://docs.softr.io"
 specs:
   - name: "Softr Database API"
     url: "https://docs.softr.io/openapi.yaml"

@@ -1,7 +1,7 @@
 id: hyperping
 name: "Hyperping"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://hyperping.io/docs)."
+notes: "Spec served by the vendor (found from its developer portal, https://hyperping.io/docs"
 specs:
   - name: "Hyperping API"
     url: "https://hyperping.com/openapi.json"

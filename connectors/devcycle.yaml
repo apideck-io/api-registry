@@ -1,7 +1,7 @@
 id: devcycle
 name: "DevCycle"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.devcycle.com)."
+notes: "Spec served by the vendor (found from its developer portal, https://docs.devcycle.com"
 specs:
   - name: "DevCycle Management API"
     url: "https://api.devcycle.com/openapi.json"

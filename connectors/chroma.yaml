@@ -1,7 +1,7 @@
 id: chroma
 name: "Chroma"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.trychroma.com)."
+notes: "Spec served by the vendor (found from its developer portal, https://docs.trychroma.com"
 specs:
   - name: "Chroma Sync Service"
     url: "https://docs.trychroma.com/sync.openapi.json"

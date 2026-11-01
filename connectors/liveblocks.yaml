@@ -1,7 +1,7 @@
 id: liveblocks
 name: "Liveblocks"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://liveblocks.io/docs)."
+notes: "Spec served by the vendor (found from its developer portal, https://liveblocks.io/docs"
 specs:
   - name: "Liveblocks API"
     url: "https://liveblocks.io/openapi.json"

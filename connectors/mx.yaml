@@ -1,23 +1,26 @@
 id: mx
 name: "MX"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.mx.com)."
+notes: "Spec served by the vendor (found from its developer portal, https://docs.mx.com"
 specs:
   - name: "Platform API 2026"
     url: "https://docs.mx.com/openapi/platform-api/v20260929.yaml"
     format: openapi-3.1
     provenance: vendor
-    server: "https://int-api.mx.com"
+    server: "https://api.mx.com"
+    notes: "Production server; the spec also lists int-api.mx.com."
   - name: "MX Platform API (platform-api/v20250224)"
     url: "https://docs.mx.com/openapi/platform-api/v20250224.yaml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://int-api.mx.com"
+    server: "https://api.mx.com"
+    notes: "Production server; the spec also lists int-api.mx.com."
   - name: "MX Platform API (platform-api/v20111101)"
     url: "https://docs.mx.com/openapi/platform-api/v20111101.yaml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://int-api.mx.com"
+    server: "https://api.mx.com"
+    notes: "Production server; the spec also lists int-api.mx.com."
   - name: "Nexus API"
     url: "https://docs.mx.com/openapi/nexus/v1.yaml"
     format: openapi-3.0
@@ -38,4 +41,5 @@ specs:
     url: "https://docs.mx.com/openapi/rewards/v1.yaml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://int-api.mx.com"
+    server: "https://api.mx.com"
+    notes: "Production server; the spec also lists int-api.mx.com."

@@ -1,7 +1,7 @@
 id: growth-book
 name: "Growth Book"
 apideck: false
-notes: "Spec served by the vendor (found from its developer portal, https://docs.growthbook.io)."
+notes: "Spec served by the vendor (found from its developer portal, https://docs.growthbook.io"
 specs:
   - name: "GrowthBook REST API"
     url: "https://docs.growthbook.io/openapi.yaml"
