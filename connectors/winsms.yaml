@@ -1,0 +1,10 @@
+id: winsms
+name: "WinSMS"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "WINSMS"
+    url: "https://www.winsms.co.za/api/restdocs/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.winsms.co.za/api/rest/v1"

@@ -1,0 +1,10 @@
+id: who-hosts-this
+name: "Who Hosts This"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Who Hosts This API"
+    url: "https://www.who-hosts-this.com/APISpecification"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://www.who-hosts-this.com/APIEndpoint"

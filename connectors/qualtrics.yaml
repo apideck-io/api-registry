@@ -1,0 +1,10 @@
+id: qualtrics
+name: "Qualtrics"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Qualtrics API"
+    url: "https://raw.githubusercontent.com/microsoft/powerplatform-qualtrics-api/main/Qualtrics%20Connector%20Spec%20-%20Swagger%202.0.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://fra1.qualtrics.com/API/v3"

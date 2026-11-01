@@ -1,0 +1,11 @@
+id: elmah
+name: "elmah.io"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "elmah.io API"
+    url: "https://api.elmah.io/swagger/docs/v3"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.elmah.io"
+    notes: "The spec declares no server; this is the host that serves it."

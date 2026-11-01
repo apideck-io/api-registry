@@ -1,0 +1,11 @@
+id: velopayments
+name: "Velo Payments"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Velo Payments APIs"
+    url: "https://raw.githubusercontent.com/velopaymentsapi/VeloOpenApi/master/spec/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.velopayments.com"
+    notes: "Production host; the spec lists the sandbox, api.sandbox.velopayments.com."

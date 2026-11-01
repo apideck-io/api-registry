@@ -1,0 +1,10 @@
+id: xtrf
+name: "XTRF"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "XTRF Home Portal API"
+    url: "https://presentation.s.xtrf.eu/home-api/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://presentation.s.xtrf.eu/home-api"

@@ -1,0 +1,10 @@
+id: quickchart
+name: "QuickChart"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "QuickChart API"
+    url: "https://quickchart.io/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://quickchart.io"

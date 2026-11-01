@@ -1,0 +1,10 @@
+id: up-bank
+name: "Up Bank"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Up API"
+    url: "https://raw.githubusercontent.com/up-banking/api/master/v1/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.up.com.au/api/v1"

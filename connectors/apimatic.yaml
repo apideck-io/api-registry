@@ -1,0 +1,10 @@
+id: apimatic
+name: "APIMatic"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "APIMATIC API Transformer"
+    url: "https://raw.githubusercontent.com/Mermade/open_api_specifications/master/APIMATIC%20API%20Transformer/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://apimatic.io/api/transform"

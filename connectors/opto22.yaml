@@ -1,0 +1,11 @@
+id: opto22
+name: "Opto 22 groov"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "groov View Public API"
+    url: "https://developer.opto22.com/static/generated/groov-rest-api/swagger.yaml"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://{groov-host}"
+    notes: "groov View runs on the customer's own device; the spec's host is the developer site."

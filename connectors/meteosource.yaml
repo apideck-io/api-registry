@@ -1,0 +1,10 @@
+id: meteosource
+name: "Meteosource"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Interactive documentation for your Premium plan"
+    url: "https://www.meteosource.com/api/v1/premium/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://www.meteosource.com/api/v1/premium"

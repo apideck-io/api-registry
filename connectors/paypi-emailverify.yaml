@@ -1,0 +1,10 @@
+id: paypi-emailverify
+name: "EmailVerify (PayPI)"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "EmailVerify"
+    url: "https://paypi-default-images.s3.eu-west-1.amazonaws.com/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://ev.apis.paypi.dev"

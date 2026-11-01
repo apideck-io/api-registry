@@ -1,0 +1,10 @@
+id: doqs
+name: "doqs.dev"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "doqs.dev | PDF filling API"
+    url: "https://api.doqs.dev/v1/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.doqs.dev/v1"

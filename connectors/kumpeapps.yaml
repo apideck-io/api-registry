@@ -1,0 +1,10 @@
+id: kumpeapps
+name: "KumpeApps"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "KumpeApps API"
+    url: "https://api.kumpeapps.com/python/swagger/swagger.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://restapi.kumpeapps.com/{version}"

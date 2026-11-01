@@ -1,0 +1,10 @@
+id: exchangerate-api
+name: "ExchangeRate-API"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "ExchangeRate-API"
+    url: "https://www.exchangerate-api.com/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.exchangerate-api.com/v4"

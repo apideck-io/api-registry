@@ -1,0 +1,11 @@
+id: intellifi
+name: "Intellifi"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Brain Web API"
+    url: "https://intellifi-nl.github.io/brain-rest-api-spec/openapi.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://intellifi-nl.github.io/brain-rest-api-spec/%7Bprotocol%7D://%7Bcustomer%7D.intellifi.%7Btld%7D/api"
+    notes: "The spec's server is relative; resolved against the host that serves the spec."

@@ -1,0 +1,11 @@
+id: openstf
+name: "Smartphone Test Farm"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Smartphone Test Farm"
+    url: "https://raw.githubusercontent.com/openstf/stf/master/lib/units/api/swagger/api_v1_generated.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://raw.githubusercontent.com"
+    notes: "The spec declares no server; this is the host that serves it."

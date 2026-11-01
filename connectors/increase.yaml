@@ -1,0 +1,10 @@
+id: increase
+name: "Increase"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Increase API"
+    url: "https://increase.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.increase.com"

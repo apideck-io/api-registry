@@ -1,0 +1,10 @@
+id: go-upc
+name: "Go-UPC"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Go-UPC Barcode-Lookup API"
+    url: "https://gist.githubusercontent.com/blizzrdof77/c3aa75284830179b44acc1aebd236e1a/raw/437d7bbb822f069efd700f1081a55f421bb3453d/go-upc-barcode-api-definition.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://go-upc.com/api/v1"

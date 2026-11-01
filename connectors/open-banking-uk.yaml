@@ -1,0 +1,34 @@
+id: open-banking-uk
+name: "Open Banking (UK)"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Open Data API"
+    url: "https://raw.githubusercontent.com/OpenBankingUK/opendata-api-spec-compiled/master/opendata-swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://developer.openbanking.org.uk/reference-implementation/open-banking/v1.3"
+  - name: "Account and Transaction API Specification"
+    url: "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/master/dist/openapi/account-info-openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://raw.githubusercontent.com/open-banking/v4.0/aisp"
+    notes: "The spec's server is relative; resolved against the host that serves the spec."
+  - name: "Event Notification API Specification - TPP Endpoints"
+    url: "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/master/dist/openapi/event-notifications-openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://raw.githubusercontent.com/open-banking/v4.0"
+    notes: "The spec's server is relative; resolved against the host that serves the spec."
+  - name: "Confirmation of Funds API Specification"
+    url: "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/master/dist/openapi/confirmation-funds-openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://raw.githubusercontent.com/open-banking/v4.0/cbpii"
+    notes: "The spec's server is relative; resolved against the host that serves the spec."
+  - name: "Payment Initiation API"
+    url: "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/master/dist/openapi/payment-initiation-openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://raw.githubusercontent.com/open-banking/v4.0/pisp"
+    notes: "The spec's server is relative; resolved against the host that serves the spec."

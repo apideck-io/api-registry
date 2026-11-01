@@ -1,0 +1,10 @@
+id: netatmo
+name: "Netatmo"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Netatmo"
+    url: "https://raw.githubusercontent.com/cbornet/netatmo-swagger-decl/master/spec/swagger.yaml"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.netatmo.net/api"

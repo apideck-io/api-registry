@@ -1,0 +1,15 @@
+id: lufthansa
+name: "Lufthansa"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "LH Public API"
+    url: "https://raw.githubusercontent.com/LufthansaOpenAPI/Swagger/master/LH_public_API_swagger_2_0.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.lufthansa.com/v1"
+  - name: "LH Partner API"
+    url: "https://raw.githubusercontent.com/LufthansaOpenAPI/Swagger4Partners/master/LH-OpenAPI-Partners-Swagger2.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.lufthansa.com/v1"

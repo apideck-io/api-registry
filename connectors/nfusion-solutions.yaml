@@ -1,0 +1,10 @@
+id: nfusion-solutions
+name: "nFusion Solutions"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "nFusion Solutions Market Data API"
+    url: "https://api.nfusionsolutions.biz/swagger/1/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.nfusionsolutions.biz"

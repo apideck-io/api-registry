@@ -1,0 +1,10 @@
+id: signl4
+name: "SIGNL4"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "SIGNL4 API"
+    url: "https://connect.signl4.com/api/docs/v1/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://connect.signl4.com/api"

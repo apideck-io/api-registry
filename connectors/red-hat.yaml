@@ -1,0 +1,10 @@
+id: red-hat
+name: "Red Hat"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Catalog Inventory"
+    url: "https://raw.githubusercontent.com/RedHatInsights/catalog_inventory-api/master/public/doc/openapi-3-v1.0.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://cloud.redhat.com/{basePath}"

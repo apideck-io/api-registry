@@ -1,0 +1,10 @@
+id: autotask
+name: "Datto Autotask PSA"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Datto|Autotask PSA Rest API"
+    url: "https://webservices5.autotask.net/ATServicesRest/swagger/docs/v1"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://webservices5.autotask.net/ATServicesRest"

@@ -1,0 +1,11 @@
+id: waterlinked
+name: "Water Linked"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "The Water Linked Underwater GPS API"
+    url: "https://demo.waterlinked.com/swagger/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "{scheme}://{device-host}"
+    notes: "Underwater GPS units serve this API on the local network (http by default); the spec's host is Water Linked's demo unit."

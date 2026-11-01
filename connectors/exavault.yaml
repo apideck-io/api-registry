@@ -1,0 +1,10 @@
+id: exavault
+name: "ExaVault"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "ExaVault"
+    url: "https://exavault-website.cdn.prismic.io/exavault-website/2d2d871e-394d-433e-9305-f38b6656f279_evapi_2.0_public.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://accountname.exavault.com/api/v2"

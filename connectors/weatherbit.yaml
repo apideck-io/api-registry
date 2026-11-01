@@ -1,0 +1,10 @@
+id: weatherbit
+name: "Weatherbit"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Weatherbit - Interactive Swagger UI Documentation"
+    url: "https://www.weatherbit.io/static/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.weatherbit.io/v2.0"

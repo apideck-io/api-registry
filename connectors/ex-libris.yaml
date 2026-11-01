@@ -1,0 +1,10 @@
+id: ex-libris
+name: "Ex Libris"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Ex Libris APIs"
+    url: "https://developers.exlibrisgroup.com/wp-content/uploads/alma/openapi/tasklists.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api-eu.hosted.exlibrisgroup.com"

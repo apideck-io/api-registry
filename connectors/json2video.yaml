@@ -1,0 +1,10 @@
+id: json2video
+name: "JSON2Video"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "JSON2Video API"
+    url: "https://json2video.com/docs/api/json2video-api.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.json2video.com/v2"

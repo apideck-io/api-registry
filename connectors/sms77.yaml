@@ -1,0 +1,10 @@
+id: sms77
+name: "sms77.io"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "sms77.io API"
+    url: "https://raw.githubusercontent.com/sms77io/api-schemes/master/json/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://gateway.seven.io/api"

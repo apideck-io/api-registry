@@ -1,0 +1,11 @@
+id: anchore
+name: "Anchore Engine"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Anchore Engine API Server"
+    url: "https://raw.githubusercontent.com/anchore/anchore-engine/master/anchore_engine/services/apiext/swagger/swagger.yaml"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://raw.githubusercontent.com"
+    notes: "The spec declares no server; this is the host that serves it."

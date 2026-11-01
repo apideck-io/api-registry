@@ -1,0 +1,11 @@
+id: getty-images
+name: "Getty Images"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Getty Images"
+    url: "https://api.gettyimages.com/swagger/v3/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.gettyimages.com"
+    notes: "The spec declares no server; this is the host that serves it."
