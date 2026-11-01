@@ -370,11 +370,15 @@ function inspectDocument(format, body) {
   }
   if (format === "swagger-2.0" && String(doc.swagger) !== "2.0") throw new Error("no swagger: 2.0 root");
   if (format.startsWith("openapi-") && !String(doc.openapi ?? "").startsWith("3")) throw new Error("no openapi 3.x root");
-  // OpenAPI 3.1 allows a document with only webhooks or components; earlier versions require paths.
-  const pathsOptional = String(doc.openapi ?? "").startsWith("3.1") && (doc.webhooks || doc.components);
+  // OpenAPI 3.1 and later allow a document with only webhooks or components; earlier versions require paths.
+  const pathsOptional = /^3\.[1-9]/.test(String(doc.openapi ?? "")) && (doc.webhooks || doc.components);
   if ((!doc.paths || typeof doc.paths !== "object") && !pathsOptional) throw new Error("no paths");
   let n = 0;
-  for (const item of Object.values(doc.paths ?? {})) for (const m of METHODS) if (item?.[m]) n++;
+  // OpenAPI 3.2 adds the query method and additionalOperations (custom HTTP methods) on a path item.
+  for (const item of Object.values(doc.paths ?? {})) {
+    for (const m of [...METHODS, "query"]) if (item?.[m]) n++;
+    if (item?.additionalOperations && typeof item.additionalOperations === "object") n += Object.keys(item.additionalOperations).length;
+  }
   const server = doc.servers?.[0]?.url ?? (doc.host ? `${doc.schemes?.[0] ?? "https"}://${doc.host}${doc.basePath ?? ""}` : null);
   return { operations: n, title: doc.info?.title, apiVersion: doc.info?.version, specVersion: doc.openapi ?? doc.swagger, server };
 }
