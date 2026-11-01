@@ -1,0 +1,10 @@
+id: jira-teams
+name: "Jira Teams"
+notes: "Apideck's connector page (https://developers.apideck.com/connectors/jira-teams) states the connector uses the Atlassian Teams Public API. The Jira Cloud platform API is a separate connector; see connectors/jira.yaml."
+specs:
+  - name: "Atlassian Teams Public REST API v1"
+    url: "https://developer.atlassian.com/platform/teams/swagger-public-api-v1.v3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.atlassian.com"
+    notes: "Linked from https://developer.atlassian.com/platform/teams/rest/. Also reachable via https://{site}.atlassian.net/gateway/api. Atlassian says new Teams features ship in GraphQL (Teams GraphQL API) rather than REST."

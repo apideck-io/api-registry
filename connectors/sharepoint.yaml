@@ -1,0 +1,10 @@
+id: sharepoint
+name: "SharePoint"
+notes: "SharePoint is reached through Microsoft Graph. The legacy SharePoint REST (_api) has no published spec; its per-tenant OData $metadata at https://{tenant}.sharepoint.com/_api/$metadata needs auth."
+specs:
+  - name: "Microsoft Graph v1.0 (SharePoint sites/drives)"
+    url: "https://raw.githubusercontent.com/microsoftgraph/msgraph-metadata/master/openapi/v1.0/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://graph.microsoft.com/v1.0"
+    notes: "OpenAPI 3.0.4, ~44 MB YAML (needs a large heap to parse) from Microsoft's official msgraph-metadata repo. 17,911 ops total across all of Graph; 3,049 under /sites and /drives (the SharePoint/file-storage surface). Beta at openapi/beta/openapi.yaml."

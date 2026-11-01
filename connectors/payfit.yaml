@@ -1,0 +1,10 @@
+id: payfit
+name: "PayFit"
+notes: "OpenAPI 3.0, 31 ops."
+specs:
+  - name: "PayFit Partner API"
+    url: "https://developers.payfit.io/openapi/partner-api.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://partner-api.payfit.com"
+    notes: "ReadMe-hosted, public download."

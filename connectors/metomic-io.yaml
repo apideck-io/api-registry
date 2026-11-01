@@ -1,0 +1,4 @@
+id: metomic-io
+name: "Metomic"
+notes: "No public spec. https://docs.metomic.io/ redirects to a GitBook space on app.gitbook.com that serves only a sign-in shell anonymously; no public OpenAPI or Postman URL was found."
+specs: []

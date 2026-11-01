@@ -1,0 +1,12 @@
+id: amazon-seller-central
+name: "Amazon Seller Central"
+notes: "Spec bundle from the official repo."
+specs:
+  - name: "Selling Partner API models"
+    url: "https://github.com/amzn/selling-partner-api-models/archive/refs/heads/main.zip"
+    format: swagger-2.0
+    extract: zip-bundle
+    provenance: vendor
+    server: "https://sellingpartnerapi-na.amazon.com"
+    license: "Apache-2.0"
+    notes: "Official amzn GitHub org. 73 Swagger 2.0 JSON files under models/ across 57 API models (some APIs have several versions, so 394 ops includes older versions). Example raw file: https://raw.githubusercontent.com/amzn/selling-partner-api-models/main/models/orders-api-model/ordersV0.json. Regional hosts: sellingpartnerapi-na/-eu/-fe.amazon.com. Repo pushed 2026-10-29."

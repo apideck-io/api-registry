@@ -1,0 +1,10 @@
+id: e-boekhouden
+name: "e-Boekhouden.nl"
+notes: "Both REST (OpenAPI) and legacy SOAP (WSDL) are vendor-published. e-Boekhouden SOAP API (legacy): https://soap.e-boekhouden.nl/soap.asmx?WSDL (WSDL for the legacy SOAP API, 20 operations in portType soapAppSoap. Recorded as format none per registry rules.)"
+specs:
+  - name: "e-Boekhouden REST API v1"
+    url: "https://api.e-boekhouden.nl/openapi/v1.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.e-boekhouden.nl/"
+    notes: "OpenAPI 3.1.1 served by the Scalar reference at https://api.e-boekhouden.nl/swagger (source url openapi/v1.json)."

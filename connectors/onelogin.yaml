@@ -1,0 +1,34 @@
+id: onelogin
+name: "OneLogin"
+notes: "Only partial Postman collections (59 requests); no Users/Roles/Groups collection and no OpenAPI. onelogin-node-sdk is openapi-generator output but the source spec is not in the repo. HTML docs: https://developers.onelogin.com/api-docs/2/."
+specs:
+  - name: "OneLogin API v2: Apps"
+    url: "https://onelogin-screenshots.s3.amazonaws.com/dev_site/postman/v2/Apps-API-OneLogin.json.postman_collection"
+    format: postman-2.1
+    provenance: vendor
+    notes: "Official collection linked from https://developers.onelogin.com/api-docs/2/getting-started/postman-collections/. Per-tenant server https://{subdomain}.onelogin.com."
+  - name: "OneLogin API v2: Authorization Servers"
+    url: "https://onelogin-screenshots.s3.amazonaws.com/dev_site/postman/v2/Authorization-Servers-OneLogin-API.json.postman_collection"
+    format: postman-2.1
+    provenance: vendor
+    notes: "Official collection linked from https://developers.onelogin.com/api-docs/2/getting-started/postman-collections/. Per-tenant server https://{subdomain}.onelogin.com."
+  - name: "OneLogin API v2: User Mappings"
+    url: "https://onelogin-screenshots.s3.amazonaws.com/dev_site/postman/v2/User-Mappings-OneLogin-API.json.postman_collection"
+    format: postman-2.1
+    provenance: vendor
+    notes: "Official collection linked from https://developers.onelogin.com/api-docs/2/getting-started/postman-collections/. Per-tenant server https://{subdomain}.onelogin.com."
+  - name: "OneLogin API v2: Vigilance AI"
+    url: "https://onelogin-screenshots.s3.amazonaws.com/dev_site/postman/v2/Vigilance-AI-OneLogin-API.json.postman_collection"
+    format: postman-2.1
+    provenance: vendor
+    notes: "Official collection linked from https://developers.onelogin.com/api-docs/2/getting-started/postman-collections/. Per-tenant server https://{subdomain}.onelogin.com."
+  - name: "OneLogin API v2: Access Tokens"
+    url: "https://onelogin-screenshots.s3.amazonaws.com/dev_site/postman/Access-Tokens-OneLogin-API.json.postman_collection"
+    format: postman-2.1
+    provenance: vendor
+    notes: "Official collection linked from https://developers.onelogin.com/api-docs/2/getting-started/postman-collections/. Per-tenant server https://{subdomain}.onelogin.com."
+  - name: "OneLogin API v2: SAML Assertion v2"
+    url: "https://onelogin-screenshots.s3.amazonaws.com/dev_site/postman/v2/SAML-Assertion-v2-OneLogin-API.json.postman_collection"
+    format: postman-2.1
+    provenance: vendor
+    notes: "Official collection linked from https://developers.onelogin.com/api-docs/2/getting-started/postman-collections/. Per-tenant server https://{subdomain}.onelogin.com."

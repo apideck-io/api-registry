@@ -1,0 +1,10 @@
+id: crisp
+name: "Crisp"
+notes: "Only machine-readable artifact is the vendor Postman collection."
+specs:
+  - name: "Crisp REST API v1 Postman collection"
+    url: "https://docs.crisp.chat/static/data/collections/rest-api-v1.postman"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://api.crisp.chat/v1"
+    notes: "Postman 2.1 collection linked from the official REST API reference (docs.crisp.chat/references/rest-api/v1/). Served as application/octet-stream with no file extension; parse as JSON. No OpenAPI published."

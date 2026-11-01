@@ -1,0 +1,18 @@
+id: jira-api-token
+name: "Jira (API Token)"
+notes: "Same API as jira (API-token basic auth variant)."
+specs:
+  - name: "Jira Cloud platform REST API v3"
+    url: "https://developer.atlassian.com/cloud/jira/platform/swagger-v3.v3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://your-domain.atlassian.net"
+    license: "Apache 2.0"
+    notes: "Per-tenant server (https://{site}.atlassian.net; OAuth 3LO uses https://api.atlassian.com/ex/jira/{cloudId}). apiVersion is a build snapshot string that changes on every publish."
+  - name: "Jira Software Cloud REST API"
+    url: "https://developer.atlassian.com/cloud/jira/software/swagger.v3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://your-domain.atlassian.net"
+    license: "Apache 2.0"
+    notes: "Agile/boards/sprints API. Per-tenant server."

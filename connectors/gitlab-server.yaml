@@ -1,0 +1,10 @@
+id: gitlab-server
+name: "GitLab server (on-prem)"
+notes: "Same API as gitlab; per-instance host."
+specs:
+  - name: "GitLab REST API v4"
+    url: "https://gitlab.com/gitlab-org/gitlab/-/raw/master/doc/api/openapi/openapi_v2.yaml"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://{instance}/api/v4"
+    notes: "Same API as gitlab; self-managed host per instance. Use the version-tagged path for a specific release."

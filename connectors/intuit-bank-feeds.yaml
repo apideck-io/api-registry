@@ -1,0 +1,4 @@
+id: intuit-bank-feeds
+name: "Intuit Bank Feeds"
+notes: "Nothing machine-readable publicly. Intuit Bank Feeds: https://developer.intuit.com/ (No public spec. Intuit Bank Feeds is a partner program where the financial institution exposes FDX-standard APIs that Intuit consumes; onboarding goes through Intuit partnerships. FDX API spec is distributed to Financial Data Exchange members only (login). QBO Accounting API has no banking endpoints (Intuit support confirms).)"
+specs: []

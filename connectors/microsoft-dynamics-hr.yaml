@@ -1,0 +1,11 @@
+id: microsoft-dynamics-hr
+name: "Microsoft Dynamics 365 Human Resources"
+notes: "Per-tenant, login-only EDMX."
+specs:
+  - name: "Dynamics 365 Finance & Operations / Human Resources OData metadata"
+    url: "https://{environment}.operations.dynamics.com/data/$metadata"
+    format: odata-edmx
+    provenance: vendor
+    server: "https://{environment}.operations.dynamics.com/data"
+    manual: login
+    notes: "Per-environment OData v4 EDMX; requires an Entra ID bearer token, so CI cannot fetch it. Get it by calling /data/$metadata on a tenant environment with an authenticated token. HR entities documented at https://learn.microsoft.com/en-us/dynamics365/human-resources/hr-developer-entities. Standalone Human Resources has been merged into Finance & Operations infrastructure."

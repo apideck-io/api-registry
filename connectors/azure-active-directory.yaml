@@ -1,0 +1,10 @@
+id: azure-active-directory
+name: "Microsoft Entra"
+notes: "Microsoft Graph, 17,911 ops."
+specs:
+  - name: "Microsoft Graph v1.0"
+    url: "https://raw.githubusercontent.com/microsoftgraph/msgraph-metadata/master/openapi/v1.0/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://graph.microsoft.com/v1.0"
+    notes: "Microsoft's official msgraph-metadata repo. The repository is MIT-licensed, but that covers the repo, not this document, which declares no info.license; so no license is recorded. ~44 MB YAML; needs a large heap to parse. CSDL also anonymously at https://graph.microsoft.com/v1.0/$metadata. Entra ID uses users/groups/directory paths of this spec."

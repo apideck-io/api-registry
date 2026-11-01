@@ -1,0 +1,10 @@
+id: webexpenses
+name: "Webexpenses"
+notes: "Regional hosts per data centre."
+specs:
+  - name: "Webexpenses API (GB)"
+    url: "https://docs.api.gb.webexpenses.com/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.gb.webexpenses.com"
+    notes: "Declares 3.0.3. Behind the Swagger UI at https://docs.api.gb.webexpenses.com/. Regional: AU copy at https://docs.api.au.webexpenses.com/openapi.yaml (server api.au.webexpenses.com)."

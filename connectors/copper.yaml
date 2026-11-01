@@ -1,0 +1,10 @@
+id: copper
+name: "Copper"
+notes: "No OpenAPI."
+specs:
+  - name: "Copper Developer API (Postman)"
+    url: "https://developer.copper.com/download/copper_postman_collection.json"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://api.copper.com/developer_api/v1"
+    notes: "Official download from developer.copper.com; Postman v2.1 schema; 83 requests. Environment file: https://developer.copper.com/download/copper_postman_environment.json."

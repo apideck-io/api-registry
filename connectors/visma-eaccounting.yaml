@@ -1,0 +1,9 @@
+id: visma-eaccounting
+name: "Visma eAccounting"
+specs:
+  - name: "Visma eAccounting API v2"
+    url: "https://eaccountingapi.vismaonline.com/openapi/v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://eaccountingapi.vismaonline.com/v2/"
+    notes: "Declares 3.0.4. Source behind the Scalar UI at https://eaccountingapi.vismaonline.com/scalar/v2 (old /swagger/docs/v2 is gone). Sandbox: eaccountingapi-sandbox.test.vismaonline.com."

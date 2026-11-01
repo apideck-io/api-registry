@@ -1,0 +1,10 @@
+id: factorialhr
+name: "Factorial"
+notes: "ReadMe registry URL not permanently stable."
+specs:
+  - name: "Factorial API"
+    url: "https://dash.readme.com/api/v1/api-registry/196w70epmvjk55pm"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.factorialhr.com"
+    notes: "Docs on ReadMe (apidoc.factorialhr.com), download disabled. Spec (factorial-api.yaml, version 2026-10-01, synced from GitHub via rdme) fetched from ReadMe's public API registry via oasPublicUrl '@factorial/v2026-10-01#196w70epmvjk55pm'. UUID changes on every re-sync (last 2026-10-30) and the API is date-versioned; re-resolve from any https://apidoc.factorialhr.com/reference/* page."

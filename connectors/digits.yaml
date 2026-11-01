@@ -1,0 +1,16 @@
+id: digits
+name: "Digits"
+notes: "ReadMe-hosted; registry URL is not permanently stable."
+specs:
+  - name: "Digits Connect API"
+    url: "https://dash.readme.com/api/v1/api-registry/1blm9j913mv8umier"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://connect.digits.com"
+    notes: "Docs on ReadMe (developer.digits.com), download button disabled. Spec obtained from ReadMe's public API registry via the page's oasPublicUrl '@digits-connect/v1.0#1blm9j913mv8umier' (source file openapi.yaml). The registry UUID changes when the vendor re-syncs; re-resolve from any non-OAuth https://developer.digits.com/reference/* page (oasPublicUrl in the hydrated JSON)."
+  - name: "Digits Connect API - OAuth"
+    url: "https://dash.readme.com/api/v1/api-registry/kad1ka16mp1ptba6"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://connect.digits.com"
+    notes: "OAuth-only definition (openapi-oauth.yaml). A third definition openapi-webhooks.yaml exists; its registry id was not resolved."

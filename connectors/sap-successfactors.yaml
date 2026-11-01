@@ -1,0 +1,32 @@
+id: sap-successfactors
+name: "SAP SuccessFactors"
+notes: "SAP publishes the vendor EDMX/OpenAPI per OData service on SAP Business Accelerator Hub (https://api.sap.com/products/SAPSuccessFactors/apis/all), which SAP's API reference guide calls the single source of truth. Downloads need an SAP login, so each service is recorded as manual and no operations are counted. Each tenant also serves its own $metadata at https://{api-server}/odata/v2/$metadata (authenticated; data-center-specific hosts such as api17.sapsf.com). The services below are the ones known to us; the hub lists many more."
+specs:
+  - name: "User Management (PLTUserManagement)"
+    url: "https://api.sap.com/api/PLTUserManagement/overview"
+    format: odata-edmx
+    provenance: vendor
+    server: "https://{api-server}/odata/v2"
+    manual: login
+    notes: "Sign in to api.sap.com, open the API, then API Specification → download EDMX or OpenAPI JSON. The overview page could not be fetched anonymously, so the service ID is taken from SAP documentation and is unverified here."
+  - name: "Employee Central - Employment Information (ECEmploymentInformation)"
+    url: "https://api.sap.com/api/ECEmploymentInformation/overview"
+    format: odata-edmx
+    provenance: vendor
+    server: "https://{api-server}/odata/v2"
+    manual: login
+    notes: "Sign in to api.sap.com, open the API, then API Specification → download EDMX or OpenAPI JSON. The overview page could not be fetched anonymously, so the service ID is taken from SAP documentation and is unverified here."
+  - name: "Employee Central - Employee Profile (ECEmployeeProfile)"
+    url: "https://api.sap.com/api/ECEmployeeProfile/overview"
+    format: odata-edmx
+    provenance: vendor
+    server: "https://{api-server}/odata/v2"
+    manual: login
+    notes: "Sign in to api.sap.com, open the API, then API Specification → download EDMX or OpenAPI JSON. The overview page could not be fetched anonymously, so the service ID is taken from SAP documentation and is unverified here."
+  - name: "Recruiting - Job Requisition (RCMJobRequisition)"
+    url: "https://api.sap.com/api/RCMJobRequisition/overview"
+    format: odata-edmx
+    provenance: vendor
+    server: "https://{api-server}/odata/v2"
+    manual: login
+    notes: "Sign in to api.sap.com, open the API, then API Specification → download EDMX or OpenAPI JSON. The overview page could not be fetched anonymously, so the service ID is taken from SAP documentation and is unverified here."

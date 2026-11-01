@@ -1,0 +1,94 @@
+id: keka
+name: "Keka HR"
+notes: "15 module specs found by sampling ~40 of ~230 endpoint pages (~231 ops total); further modules may exist."
+specs:
+  - name: "Keka Payroll"
+    url: "https://dash.readme.com/api/v1/api-registry/5q94st8ms8oxwyd"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{company}.{environment}.com/api/v1"
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api/v1 (environment keka or kekademo)."
+  - name: "Keka PSA"
+    url: "https://dash.readme.com/api/v1/api-registry/5q25qhms8mdrvp"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{company}.{environment}.com/api/v1"
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api/v1 (environment keka or kekademo)."
+  - name: "Keka Core Hr"
+    url: "https://dash.readme.com/api/v1/api-registry/101v32af1mfwh2dki"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{company}.{environment}.com/api/v1"
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api/v1 (environment keka or kekademo)."
+  - name: "Keka Keka Hire API"
+    url: "https://dash.readme.com/api/v1/api-registry/5q25123ms8rz228"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{company}.{environment}.com/api"
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api (environment keka or kekademo); unlike the other modules, the Hire paths carry their own version segment, so the base has no /v1."
+  - name: "Keka Attendance"
+    url: "https://dash.readme.com/api/v1/api-registry/9hrwd4mp3wl1l7"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{company}.{environment}.com/api/v1"
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api/v1 (environment keka or kekademo)."
+  - name: "Keka Expense"
+    url: "https://dash.readme.com/api/v1/api-registry/4fapz6px4mm04ts5a"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{company}.{environment}.com/api/v1"
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api/v1 (environment keka or kekademo)."
+  - name: "Keka PMS"
+    url: "https://dash.readme.com/api/v1/api-registry/9hrwk7mp3x0gtt"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{company}.{environment}.com/api/v1"
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api/v1 (environment keka or kekademo)."
+  - name: "Keka Document"
+    url: "https://dash.readme.com/api/v1/api-registry/1tx21bjmtlhqzcf"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{company}.{environment}.com/api/v1"
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api/v1 (environment keka or kekademo)."
+  - name: "Keka Assets"
+    url: "https://dash.readme.com/api/v1/api-registry/lbhf0a420m2ke2bri"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{company}.{environment}.com/api/v1"
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api/v1 (environment keka or kekademo)."
+  - name: "Keka Leave"
+    url: "https://dash.readme.com/api/v1/api-registry/1uzc21ilypgg5x9"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{company}.{environment}.com/api/v1"
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api/v1 (environment keka or kekademo)."
+  - name: "Keka Helpdesk"
+    url: "https://dash.readme.com/api/v1/api-registry/qj7h75omaey490c"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{company}.{environment}.com/api/v1"
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api/v1 (environment keka or kekademo)."
+  - name: "Keka BGV APIs"
+    url: "https://dash.readme.com/api/v1/api-registry/7py41lh3m5jvogfd"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{company}.{environment}.com/api/v1"
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api/v1 (environment keka or kekademo)."
+  - name: "Keka KEKA API"
+    url: "https://dash.readme.com/api/v1/api-registry/7t5s13mqqiyul3"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{company}.{environment}.com/api/v1"
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api/v1 (environment keka or kekademo)."
+  - name: "Keka Keka Hire API (2)"
+    url: "https://dash.readme.com/api/v1/api-registry/16f67iqo1wlx49wjur"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{company}.{environment}.com/api"
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api (environment keka or kekademo); unlike the other modules, the Hire paths carry their own version segment, so the base has no /v1."
+  - name: "Keka Requisition"
+    url: "https://dash.readme.com/api/v1/api-registry/3piglt1wy7s1"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{company}.{environment}.com/api/v1"
+    notes: "ReadMe-hosted (developers.keka.com), split into many per-module definitions under @keka/v1.0; fetched from ReadMe's public API registry via oasPublicUrl. UUIDs change on re-sync; re-resolve from https://developers.keka.com/reference/<endpoint> (index https://developers.keka.com/llms.txt). Server is per tenant: https://{company}.{environment}.com/api/v1 (environment keka or kekademo)."

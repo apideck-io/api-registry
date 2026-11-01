@@ -1,0 +1,17 @@
+id: ceridian-dayforce
+name: "Ceridian Dayforce"
+notes: "Dayforce's APIM portal (https://developers.dayforce.com) lists no APIs anonymously."
+specs:
+  - name: "Dayforce REST API (per tenant)"
+    url: "https://www.dayforcehcm.com/api/{clientName}/swagger/docs/v1"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://www.dayforcehcm.com/api/{clientName}/v1"
+    manual: login
+    notes: "Documented in the Dayforce RESTful Web Services Developer Guide. Requires a valid client namespace; unknown tenants return 'Please enter a valid company'. Format assumed Swagger 2.0 (ASP.NET Swashbuckle URL pattern), not verified."
+  - name: "Dayforce API (WSO2 copy)"
+    url: "https://raw.githubusercontent.com/wso2/api-specs/main/openapi/dayforce/dayforce/v1/openapi.yaml"
+    format: openapi-3.0
+    provenance: third-party
+    server: "https://ustest241-services.dayforcehcm.com/Api"
+    notes: "WSO2 api-specs repo; appears to be a converted copy of a tenant Swagger (server points at a Ceridian test tenant). 214 paths / 384 ops. The WSO2 repo is Apache-2.0, but that does not license Ceridian's API definition it reproduces, so no license is recorded."

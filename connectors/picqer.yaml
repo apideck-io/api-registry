@@ -1,0 +1,4 @@
+id: picqer
+name: "Picqer"
+notes: "No machine-readable spec. Picqer API docs: https://picqer.com/en/api (HTML docs only; official PHP client at https://github.com/picqer/picqer-php. Per-tenant base URL https://{subdomain}.picqer.com/api/v1/.)"
+specs: []

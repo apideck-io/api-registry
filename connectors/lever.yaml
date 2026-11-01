@@ -1,0 +1,4 @@
+id: lever
+name: "Lever"
+notes: "No public machine-readable spec. Lever API: https://hire.lever.co/developer/documentation (HTML docs only (single-page reference). The /developer/postman page is behind a Lever login; no OpenAPI found.)"
+specs: []

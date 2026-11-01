@@ -1,0 +1,28 @@
+id: magento
+name: "Magento"
+notes: "Swagger 2.0 admin spec is the relevant one (614 ops). Accs-schema.yaml (Adobe Commerce as a Cloud Service) also in repo."
+specs:
+  - name: "Adobe Commerce Admin REST (2.4.9)"
+    url: "https://raw.githubusercontent.com/AdobeDocs/commerce-webapi/main/src/openapi/admin-schema-2.4.9.yaml"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://{store}/rest/default"
+    notes: "Adobe's official docs repo (AdobeDocs/commerce-webapi), source for developer.adobe.com/commerce/webapi/reference/rest/paas. Server is per store (the spec declares http://example.com/rest/default); any Magento 2 instance also serves its own spec at {store}/rest/all/schema?services=all. Older versions 2.4.6-2.4.8 alongside."
+  - name: "Adobe Commerce Customer REST (2.4.9)"
+    url: "https://raw.githubusercontent.com/AdobeDocs/commerce-webapi/main/src/openapi/customer-schema-2.4.9.yaml"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://{store}/rest/default"
+    notes: "Customer-token scope."
+  - name: "Adobe Commerce Guest REST (2.4.9)"
+    url: "https://raw.githubusercontent.com/AdobeDocs/commerce-webapi/main/src/openapi/guest-schema-2.4.9.yaml"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://{store}/rest/default"
+    notes: "Anonymous scope."
+  - name: "Adobe Commerce GraphQL (2.4.8)"
+    url: "https://raw.githubusercontent.com/AdobeDocs/commerce-webapi/main/spectaql/schema_2-4-8.json"
+    format: graphql
+    provenance: vendor
+    server: "https://{store}/graphql"
+    notes: "Introspection JSON result used by the SpectaQL docs (55 Query + 162 Mutation). Storefront API, not used for admin sync."

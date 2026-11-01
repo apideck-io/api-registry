@@ -1,0 +1,9 @@
+id: bol-com
+name: "bol.com"
+specs:
+  - name: "bol.com Retailer API v10"
+    url: "https://api.bol.com/retailer/public/apispec/Retailer%20API%20-%20v10"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.bol.com"
+    notes: "60 paths / 69 ops. Spec has no servers block; base is https://api.bol.com (paths start /retailer/...). Shared/offer APIs have their own apispec names on the same endpoint."

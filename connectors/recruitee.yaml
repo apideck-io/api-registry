@@ -1,0 +1,16 @@
+id: recruitee
+name: "Recruitee"
+notes: "ReadMe registry URLs; per-endpoint Markdown with JSON fences also at https://docs.recruitee.com/reference/<slug>.md."
+specs:
+  - name: "Recruitee ATS API"
+    url: "https://dash.readme.com/api/v1/api-registry/11a9jt2km9gwrxo8"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.recruitee.com"
+    notes: "Spec behind docs.recruitee.com (ReadMe), fetched from ReadMe's public API registry by the UUID embedded in the docs page. UUID changes when the spec is re-uploaded. Documented subset only (18 ops); the full API at api.recruitee.com/c/{company_id} is larger."
+  - name: "Recruitee Careers Site API"
+    url: "https://dash.readme.com/api/v1/api-registry/eyujh63m8fyevl9"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{yourcompany}.recruitee.com/api"
+    notes: "Public careers-site API, per tenant subdomain."

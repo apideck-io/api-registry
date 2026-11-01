@@ -1,0 +1,10 @@
+id: alexishr
+name: "Simployer One"
+specs:
+  - name: "Simployer One (HRM One) API"
+    url: "https://docs.simployer.com/api-docs-json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.alexishr.com/v1"
+    license: "EUL"
+    notes: "NestJS-generated spec behind the Redoc page at https://docs.simployer.com/. Identical content also at https://api.alexishr.com/v1/docs-json (and /v1/docs-yaml). Former AlexisHR."

@@ -1,0 +1,10 @@
+id: google-contacts
+name: "Google Contacts"
+notes: "Fetchable vendor discovery doc."
+specs:
+  - name: "Google People API"
+    url: "https://people.googleapis.com/$discovery/rest?version=v1"
+    format: google-discovery
+    provenance: vendor
+    server: "https://people.googleapis.com/"
+    notes: "Contacts are served by the People API (the old Contacts API is retired). Revision 20261028."

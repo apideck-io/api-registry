@@ -1,0 +1,4 @@
+id: humaans-io
+name: "Humaans"
+notes: "No vendor spec. Humaans API: https://docs.humaans.io/api/ (Vendor publishes HTML docs only (no OpenAPI/Postman; /openapi.json and llms.txt 404). Community per-resource OpenAPI fragments exist at github.com/api-evangelist/humaans-io (e.g. openapi/humaans-io-people-api-openapi.yml) but are hand-assembled from the HTML docs and partial, so not recorded as the spec.)"
+specs: []

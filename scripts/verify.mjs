@@ -30,7 +30,8 @@ const ID = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 // Zoho Books ships its OpenAPI as a zip of per-module files.
 // Fortnox embeds its OpenAPI in a Redoc page (window.__redoc_state) with no raw file to link.
 // Some GraphQL APIs publish no SDL but answer an anonymous introspection query (Wave, Access Financials).
-const EXTRACT = new Set(["markdown-json-fence", "zip-bundle", "redoc-state", "graphql-introspection"]);
+// swagger-ui-express pages embed the spec as options.swaggerDoc in swagger-ui-init.js (Minox).
+const EXTRACT = new Set(["markdown-json-fence", "zip-bundle", "redoc-state", "graphql-introspection", "swagger-ui-init"]);
 // Full enough that changed argument types, return types, nullability, input fields or enum values show as drift.
 // Eight levels, as graphql-js uses: enough for [[Foo!]!]! and deeper wrappings.
 const TYPE_REF = "kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name } } } } } } }";
@@ -80,7 +81,7 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
     if (!PROVENANCE.has(s?.provenance)) errors.push(`${at}: provenance must be one of ${[...PROVENANCE].join(", ")}`);
     if (s?.extract && !EXTRACT.has(s.extract)) errors.push(`${at}: extract must be one of ${[...EXTRACT].join(", ")}`);
     // Null prototype, so a malformed value like `extract: toString` is a validation error, not a TypeError.
-    const extractFits = Object.assign(Object.create(null), { "graphql-introspection": ["graphql"], "redoc-state": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "markdown-json-fence": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "zip-bundle": ["openapi-3.0", "openapi-3.1", "swagger-2.0"] });
+    const extractFits = Object.assign(Object.create(null), { "graphql-introspection": ["graphql"], "swagger-ui-init": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "redoc-state": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "markdown-json-fence": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "zip-bundle": ["openapi-3.0", "openapi-3.1", "swagger-2.0"] });
     if (s?.extract && extractFits[s.extract] && !extractFits[s.extract].includes(s?.format)) errors.push(`${at}: extract ${s.extract} doesn't apply to format ${s?.format}`);
     if (s?.extract && !s?.url) errors.push(`${at}: extract applies to a fetched url; store an extracted spec as a plain path instead`);
     if (s?.manual && !MANUAL.has(s.manual)) errors.push(`${at}: manual must be one of ${[...MANUAL].join(", ")}`);
@@ -252,7 +253,7 @@ function inspect(format, body) {
   }
   // YAML is read with the failsafe schema so every scalar stays a string: unquoted `swagger: 2.0` or
   // `version: 1.10` would otherwise become the numbers 2 and 1.1.
-  const doc = body.trim().startsWith("{") ? JSON.parse(body) : parseYaml(body, { schema: "failsafe" });
+  const doc = body.trim().startsWith("{") ? JSON.parse(body) : parseYaml(body, { schema: "failsafe", maxAliasCount: 10000 });
   if (!doc || typeof doc !== "object") throw new Error("not a JSON or YAML document");
   if (format === "google-discovery") {
     if (!doc.discoveryVersion || !doc.resources) throw new Error("no discoveryVersion or resources");
@@ -322,6 +323,16 @@ for (const e of entries) {
         r.error = `bad __redoc_state: ${err.message.slice(0, 60)}`;
       }
     }
+    if (r.body && s.extract === "swagger-ui-init") {
+      const at = r.body.search(/["']?swaggerDoc["']?\s*:\s*\{/);
+      try {
+        r.body = at >= 0 ? balancedObject(r.body, r.body.indexOf("{", at)) : null;
+        if (!r.body) r.error = "no swaggerDoc in the init script";
+      } catch (err) {
+        r.body = null;
+        r.error = `bad swaggerDoc: ${err.message.slice(0, 60)}`;
+      }
+    }
     if (r.body && s.extract === "markdown-json-fence") {
       const m = r.body.match(/```json\s*\n([\s\S]*?)\n```/);
       r.body = m ? m[1] : null;
@@ -349,12 +360,28 @@ for (const e of entries) {
     try {
       if (bundle) {
         // One entry per module file; the bundle's count is their sum.
-        const parts = bundle.map((f) => inspect(s.format, f.text));
+        // A repository archive also holds JSON schemas, configs and examples: keep the files that are specs
+        // of the declared format, and fail only when none is.
+        const parts = [];
+        const skipped = [];
+        const specFiles = [];
+        for (const f of bundle) {
+          try {
+            parts.push(inspect(s.format, f.text));
+            specFiles.push(f);
+          } catch (err) {
+            // Not a spec of the declared format (a schema, a config), or a spec that doesn't parse: say which.
+            skipped.push(`${f.name.replace(/^[^/]*\//, "")}: ${String(err.message).slice(0, 60)}`);
+          }
+        }
+        bundle = specFiles; // hash and size only what was counted, so a changed README isn't "drift"
+        if (!parts.length) throw new Error(`no ${s.format} file among ${bundle.length} in the bundle`);
         const one = (k) => [...new Set(parts.map((x) => x[k]).filter(Boolean))];
         const versions = one("apiVersion");
         info = {
           operations: parts.reduce((n, x) => n + (x.operations ?? 0), 0),
-          files: bundle.length,
+          files: parts.length,
+          ...(skipped.length ? { skippedFiles: skipped.length, skipped: skipped.slice(0, 20) } : {}),
           // Each module has its own title; the bundle is named by the entry, with the module count beside it.
           title: s.name,
           apiVersion: versions.length === 1 ? versions[0] : versions.join(", ") || null,

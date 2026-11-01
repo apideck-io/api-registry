@@ -1,0 +1,10 @@
+id: etsy
+name: "Etsy"
+notes: "Fetchable vendor OpenAPI."
+specs:
+  - name: "Etsy Open API v3"
+    url: "https://www.etsy.com/openapi/generated/oas/3.0.0.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://openapi.etsy.com"
+    notes: "Official generated OAS from etsy.com."

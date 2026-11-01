@@ -1,0 +1,4 @@
+id: freshservice
+name: "Freshservice"
+notes: "No machine-readable vendor spec. Per-tenant subdomain. Freshservice API v2 docs: https://api.freshservice.com/ (No official spec: HTML docs only. api-evangelist/freshservice has 'best-effort' skeletal OpenAPI files generated from docs (e.g. https://raw.githubusercontent.com/api-evangelist/freshservice/refs/heads/main/openapi/freshservice-tickets-api-openapi.yml), each ~5 ops with untyped Object schemas; not worth registering.)"
+specs: []

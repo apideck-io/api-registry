@@ -1,0 +1,28 @@
+id: livechat
+name: "Livechat"
+notes: "Only peripheral APIs have OpenAPI. The core Agent Chat API, Customer Chat API and Configuration API (RPC-style, v3.6) are documented only as Markdown/MDX at https://platform.text.com/docs (same GitHub repo) with no machine-readable spec."
+specs:
+  - name: "LiveChat Global Accounts API"
+    url: "https://raw.githubusercontent.com/livechat/livechat-public-docs/master/src/configs/redoc/global-accounts-api/spec.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://accounts.livechat.com/v2"
+    notes: "Redoc spec in LiveChat's official public docs repo (livechat/livechat-public-docs). YAML uses many anchors; parsers need alias limits lifted."
+  - name: "LiveChat Customer Data Platform API"
+    url: "https://raw.githubusercontent.com/livechat/livechat-public-docs/master/src/configs/redoc/customer-data-platform-api/spec.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.text.com/cdp"
+    notes: "Same repo."
+  - name: "LiveChat Customer Accounts API v2"
+    url: "https://raw.githubusercontent.com/livechat/livechat-public-docs/master/src/configs/redoc/customer-accounts-api/specv2.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://accounts.livechat.com/v2/customer"
+    notes: "Same repo. v1 spec at customer-accounts-api/spec.yml (4 ops)."
+  - name: "Text API"
+    url: "https://raw.githubusercontent.com/livechat/livechat-public-docs/master/src/configs/redoc/text-api/spec.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.text.com/"
+    notes: "Same repo."

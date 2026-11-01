@@ -1,0 +1,10 @@
+id: onedrive
+name: "OneDrive"
+notes: "Same Microsoft Graph spec as azure-active-directory."
+specs:
+  - name: "Microsoft Graph v1.0"
+    url: "https://raw.githubusercontent.com/microsoftgraph/msgraph-metadata/master/openapi/v1.0/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://graph.microsoft.com/v1.0"
+    notes: "Microsoft's official msgraph-metadata repo. The repository is MIT-licensed, but that covers the repo, not this document, which declares no info.license; so no license is recorded. ~44 MB YAML; needs a large heap to parse. CSDL also anonymously at https://graph.microsoft.com/v1.0/$metadata. Same spec as azure-active-directory; OneDrive uses /drives, /me/drive and driveItem paths."

@@ -1,0 +1,11 @@
+id: adp-workforce-now
+name: "ADP Workforce Now"
+notes: "No OpenAPI publicly; API Explorer (https://developers.adp.com/apis/api-explorer/hcm-offrg-wfn) is HTML with sample payloads."
+specs:
+  - name: "ADP WFN APIs (Postman)"
+    url: "https://raw.githubusercontent.com/adpllc/marketplace-sample-payloads/master/wfn/ADP%20WFN%20APIs.postman_collection.json"
+    format: postman-2.1
+    provenance: vendor
+    server: "https://api.adp.com"
+    license: "Apache-2.0"
+    notes: "Official ADP GitHub org (adpllc). Collection declares Postman schema v2.0.0 (not 2.1). 89 requests. Calls require mutual TLS + OAuth client credentials. Repo also holds JSON sample payloads per domain under wfn/."
