@@ -1,0 +1,41 @@
+README.md
+  s_eeda7bd9685d9d::t_7078dcf78a13be 32
+connectors/dualentry.yaml
+  s_eeda7bd9685d9d::t_f7556ca1aac4ec 2
+connectors/kashflow.yaml
+  s_eeda7bd9685d9d::t_d9021aab4f8529 2
+connectors/myob-acumatica.yaml
+  s_eeda7bd9685d9d::t_5bcdd11aa322c8 6,9
+connectors/sage-intacct-rest.yaml
+  s_eeda7bd9685d9d::t_c10309420eec2a 3-11
+connectors/salesforce.yaml
+  s_eeda7bd9685d9d::t_b2a3b0cbc3d224 3-4
+index.json
+  s_a64aa0616b1356::t_56b2a397795fb0 1375,1585,1696,1722-1726
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_2bc28c048d9b17 82-83,222-223,226,230,245,249-251
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "88952e10f3300cbd5ee0b07b236ce3a13d969b7b",
+  "prompts": {},
+  "sessions": {
+    "s_a64aa0616b1356": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6f66ba3b-a380-4f33-af98-c0a8162c68c4",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}

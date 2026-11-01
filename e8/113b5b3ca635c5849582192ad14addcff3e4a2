@@ -1,0 +1,95 @@
+README.md
+  s_eeda7bd9685d9d::t_f526be2a47813e 31-37
+connectors/access-financials.yaml
+  s_eeda7bd9685d9d::t_cc0c894e00fa01 1-11
+connectors/acumatica.yaml
+  s_eeda7bd9685d9d::t_e4cee43245ab1f 1-11
+connectors/alegra.yaml
+  s_eeda7bd9685d9d::t_07ebc88f8b2e0a 1-4
+connectors/banqup.yaml
+  s_eeda7bd9685d9d::t_a9fdd149d53ef6 1-9
+connectors/campfire.yaml
+  s_eeda7bd9685d9d::t_b4a7c71daecea4 1-10
+connectors/clearbooks-uk.yaml
+  s_eeda7bd9685d9d::t_5839e47226eeb9 1-10
+connectors/datev-unternehmen-online.yaml
+  s_eeda7bd9685d9d::t_1d210f7a715837 1-36
+connectors/dualentry.yaml
+  s_eeda7bd9685d9d::t_85c45ace5ac37e 1-22
+connectors/exact-online-nl.yaml
+  s_eeda7bd9685d9d::t_1e9237952d520c 1-4
+connectors/exact-online-uk.yaml
+  s_eeda7bd9685d9d::t_1cccff8a92bc89 1-4
+connectors/exact-online.yaml
+  s_eeda7bd9685d9d::t_783c4a62427ecf 1-4
+connectors/fiken.yaml
+  s_eeda7bd9685d9d::t_8eec390f51716d 1-10
+connectors/fortnox.yaml
+  s_eeda7bd9685d9d::t_09425f2ccd8ea6 1-11
+connectors/freeagent.yaml
+  s_eeda7bd9685d9d::t_73b4f79eab8b9f 1-10
+connectors/holded.yaml
+  s_eeda7bd9685d9d::t_4ffdcead5d56b1 1-10
+connectors/intuit-enterprise-suite.yaml
+  s_eeda7bd9685d9d::t_99508efe401f76 1-4
+connectors/kashflow.yaml
+  s_eeda7bd9685d9d::t_fb55135165124f 1-10
+connectors/microsoft-dynamics.yaml
+  s_eeda7bd9685d9d::t_07fcea7ea458cb 1-11
+connectors/mrisoftware.yaml
+  s_eeda7bd9685d9d::t_58adfda03a13eb 1-4
+connectors/myob-acumatica.yaml
+  s_eeda7bd9685d9d::t_c2b38f78e0ba18 1-11
+connectors/navan.yaml
+  s_eeda7bd9685d9d::t_79c96a969cccdc 1-4
+connectors/odoo.yaml
+  s_eeda7bd9685d9d::t_ec42d1a896aff6 1-4
+connectors/pennylane.yaml
+  s_eeda7bd9685d9d::t_c3c6710239d429 1-10
+connectors/procountor-fi.yaml
+  s_eeda7bd9685d9d::t_ea9ddac0b6f791 1-10
+connectors/restaurant365.yaml
+  s_eeda7bd9685d9d::t_649b2fe5eff862 1-10
+connectors/rillet.yaml
+  s_eeda7bd9685d9d::t_e80d06f67fb32a 1-10
+connectors/sage-intacct-rest.yaml
+  s_eeda7bd9685d9d::t_f23ef52d936fa1 1-4
+connectors/salesforce.yaml
+  s_eeda7bd9685d9d::t_cb90d5e0bed03c 1-16
+connectors/sevdesk.yaml
+  s_eeda7bd9685d9d::t_b6377424ed2886 1-10
+connectors/snelstart.yaml
+  s_eeda7bd9685d9d::t_e6163a1265df28 1-4
+connectors/spiris.yaml
+  s_eeda7bd9685d9d::t_595a6799841c3a 1-10
+connectors/visma-netvisor.yaml
+  s_eeda7bd9685d9d::t_3ceeae7be88d90 1-11
+connectors/wafeq.yaml
+  s_eeda7bd9685d9d::t_b970c9b87f709c 1-4
+connectors/wave.yaml
+  s_eeda7bd9685d9d::t_03478596919c2e 1-11
+connectors/workday.yaml
+  s_eeda7bd9685d9d::t_5bba55d6295ba8 1-58
+connectors/yuki.yaml
+  s_eeda7bd9685d9d::t_20e8d71b45d859 1-4
+index.json
+  s_eeda7bd9685d9d::t_c3b5d834811be9 1200-1729
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_815e948aba5ee9 31-34,91-105,164-168,295-305
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e8113b5b3ca635c5849582192ad14addcff3e4a2",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
