@@ -1,0 +1,539 @@
+connectors/7shifts.yaml
+  s_eeda7bd9685d9d::t_2d3144ffbd4343 1-5
+connectors/accelo.yaml
+  s_eeda7bd9685d9d::t_64484b68910198 1-5
+connectors/adobe-commerce.yaml
+  s_eeda7bd9685d9d::t_f22b663de3db7d 1-5
+connectors/adp-workforce-now-next-gen.yaml
+  s_eeda7bd9685d9d::t_28a0edff29fe9c 1-5
+connectors/adyen.yaml
+  s_eeda7bd9685d9d::t_386154f44d599b 1-53
+connectors/adyntel.yaml
+  s_eeda7bd9685d9d::t_b9500b2e93a568 1-5
+connectors/agencyzoom.yaml
+  s_1216b7ab38d26c::t_bf63fb5be7b87e 1-5
+connectors/agentmail.yaml
+  s_eeda7bd9685d9d::t_5e1d3395a99092 1-9
+connectors/ahrefs.yaml
+  s_eeda7bd9685d9d::t_f66a50a7452c09 1-10
+connectors/alchemy.yaml
+  s_1216b7ab38d26c::t_4972fc304027e7 1-35
+connectors/amplemarket.yaml
+  s_eeda7bd9685d9d::t_5d6f2ea805e62d 1-10
+connectors/anthropic.yaml
+  s_eeda7bd9685d9d::t_aa30b653ddaa91 1-5
+connectors/anthropicadministrator.yaml
+  s_eeda7bd9685d9d::t_9cbaa168bc10dc 1-5
+connectors/apaleo.yaml
+  s_eeda7bd9685d9d::t_b5697a9824e9f5 1-55
+connectors/apify.yaml
+  s_eeda7bd9685d9d::t_4c68f861cb961f 1-9
+connectors/applebusinessmanager.yaml
+  s_eeda7bd9685d9d::t_be2b2b7d8aba4d 1-5
+connectors/attentive.yaml
+  s_eeda7bd9685d9d::t_3058f95cf61ec6 1-16
+connectors/auth0.yaml
+  s_eeda7bd9685d9d::t_b93ab2a80635d2 1-37
+connectors/autodesk.yaml
+  s_eeda7bd9685d9d::t_b14a1ec0cdcb98 1-35
+connectors/autumn.yaml
+  s_eeda7bd9685d9d::t_8ffba5927e1e6f 1-10
+connectors/auvik.yaml
+  s_eeda7bd9685d9d::t_389108d92e84c1 1-10
+connectors/avoma.yaml
+  s_eeda7bd9685d9d::t_908d1e9316addc 1-10
+connectors/azureblobstorage.yaml
+  s_eeda7bd9685d9d::t_e260605868738e 1-10
+connectors/baserow.yaml
+  s_eeda7bd9685d9d::t_cbfe73ef72ad74 1-10
+connectors/basin.yaml
+  s_eeda7bd9685d9d::t_6e3ee3817c1ba4 1-5
+connectors/beehiiv.yaml
+  s_eeda7bd9685d9d::t_67fed6912cb34c 1-21
+connectors/better-stack.yaml
+  s_eeda7bd9685d9d::t_1edec82c42a0b0 1-5
+connectors/bettercontact.yaml
+  s_eeda7bd9685d9d::t_ceb2dfc8bacfa3 1-5
+connectors/bigchange.yaml
+  s_1216b7ab38d26c::t_3d0ea4db7cc6e3 1-11
+connectors/bill-com.yaml
+  s_eeda7bd9685d9d::t_92b221e1afc52a 1-5
+connectors/bitwarden.yaml
+  s_eeda7bd9685d9d::t_fe414135026956 1-5
+connectors/blandai.yaml
+  s_eeda7bd9685d9d::t_e78df17f27d8f8 1-5
+connectors/boldsign.yaml
+  s_eeda7bd9685d9d::t_a98a09d6d287af 1-10
+connectors/braintree.yaml
+  s_eeda7bd9685d9d::t_bd38573041b30f 1-10
+connectors/brandfetch.yaml
+  s_eeda7bd9685d9d::t_18b8fcaffdc058 1-9
+connectors/brave.yaml
+  s_eeda7bd9685d9d::t_0ff8d60c8cc809 1-5
+connectors/brex.yaml
+  s_1216b7ab38d26c::t_94309d3399e0fe 1-47
+connectors/bright-data.yaml
+  s_eeda7bd9685d9d::t_1bb44fe882851a 1-10
+connectors/browserbase.yaml
+  s_eeda7bd9685d9d::t_40c69e0076fb69 1-9
+connectors/buffer.yaml
+  s_eeda7bd9685d9d::t_72d1ae7db8f835 1-5
+connectors/builderio.yaml
+  s_eeda7bd9685d9d::t_b01e2ac871d6c3 1-5
+connectors/buildkite.yaml
+  s_eeda7bd9685d9d::t_0fc92a7f7c722a 1-5
+connectors/builtwith.yaml
+  s_eeda7bd9685d9d::t_6a774050d9deb8 1-5
+connectors/bullhorn.yaml
+  s_1216b7ab38d26c::t_f73c8972fbf4c2 1-5
+connectors/canny.yaml
+  s_eeda7bd9685d9d::t_876003ae799951 1-5
+connectors/capsule-crm.yaml
+  s_eeda7bd9685d9d::t_51d708e91814d5 1-5
+connectors/cats.yaml
+  s_1216b7ab38d26c::t_381ff2d79a98f5 1-11
+connectors/chargebee.yaml
+  s_eeda7bd9685d9d::t_ab256154e711e5 1-21
+connectors/cin7-core.yaml
+  s_eeda7bd9685d9d::t_6773197a1266b6 1-5
+connectors/circleci.yaml
+  s_eeda7bd9685d9d::t_7378cffd097913 1-9
+connectors/clay.yaml
+  s_eeda7bd9685d9d::t_6723791a72056f 1-5
+connectors/clerk.yaml
+  s_eeda7bd9685d9d::t_b59422aa38acaf 1-10
+connectors/cleverreach.yaml
+  s_1216b7ab38d26c::t_4a95ec91eb04ed 1-10
+connectors/clicksend.yaml
+  s_eeda7bd9685d9d::t_38894026661a1d 1-11
+connectors/clockify.yaml
+  s_eeda7bd9685d9d::t_4bcaba001235ca 1-5
+connectors/cloudtalk.yaml
+  s_eeda7bd9685d9d::t_3028fb83929d5f 1-10
+connectors/coda.yaml
+  s_eeda7bd9685d9d::t_5db6026a14ba3d 1-9
+connectors/cohere.yaml
+  s_eeda7bd9685d9d::t_10202cce60b751 1-10
+connectors/companycam.yaml
+  s_eeda7bd9685d9d::t_82849a04b8b49b 1-10
+connectors/contactout.yaml
+  s_eeda7bd9685d9d::t_872ee40fa5db28 1-5
+connectors/coupa.yaml
+  s_eeda7bd9685d9d::t_b7382250f6ba3e 1-5
+connectors/crunchbase.yaml
+  s_eeda7bd9685d9d::t_8e309c16ba0b76 1-5
+connectors/crustdata.yaml
+  s_eeda7bd9685d9d::t_81762959255f7f 1-5
+connectors/cursor.yaml
+  s_eeda7bd9685d9d::t_0c84ee2afa4f27 1-10
+connectors/dayforce.yaml
+  s_eeda7bd9685d9d::t_d5e7d18161dff0 1-5
+connectors/daytona.yaml
+  s_eeda7bd9685d9d::t_92988015bbec32 1-9
+connectors/demio.yaml
+  s_eeda7bd9685d9d::t_12ce99efeb2f91 1-5
+connectors/deputy.yaml
+  s_eeda7bd9685d9d::t_593ba3f493934e 1-34
+connectors/diffbot.yaml
+  s_eeda7bd9685d9d::t_937dfdf3ba53af 1-10
+connectors/discourse.yaml
+  s_eeda7bd9685d9d::t_66953a0111f72b 1-9
+connectors/dixa.yaml
+  s_eeda7bd9685d9d::t_17fcfdd8ebb291 1-22
+connectors/domo.yaml
+  s_eeda7bd9685d9d::t_e02d234ffd97dc 1-5
+connectors/drata.yaml
+  s_eeda7bd9685d9d::t_355186904b3f77 1-5
+connectors/dynamicmockups.yaml
+  s_eeda7bd9685d9d::t_0204f8a2a9d339 1-5
+connectors/dynatrace.yaml
+  s_eeda7bd9685d9d::t_7deda15361ed51 1-5
+connectors/envoy.yaml
+  s_eeda7bd9685d9d::t_6b2951d6c4b4b5 1-5
+connectors/epicgames.yaml
+  s_eeda7bd9685d9d::t_b003898533614b 1-5
+connectors/exist.yaml
+  s_eeda7bd9685d9d::t_1535817c1edd5b 1-5
+connectors/expensify.yaml
+  s_eeda7bd9685d9d::t_cdeab4ba342f6c 1-5
+connectors/fairing.yaml
+  s_eeda7bd9685d9d::t_13794759524abb 1-5
+connectors/falai.yaml
+  s_eeda7bd9685d9d::t_6cfa42568d7e66 1-19
+connectors/fieldglass.yaml
+  s_eeda7bd9685d9d::t_425baacefec883 1-5
+connectors/findymail.yaml
+  s_eeda7bd9685d9d::t_23886ed052af35 1-15
+connectors/firebase.yaml
+  s_eeda7bd9685d9d::t_277b25220050bf 1-35
+connectors/float.yaml
+  s_eeda7bd9685d9d::t_cdd981deb704b6 1-5
+connectors/fly.yaml
+  s_eeda7bd9685d9d::t_2db99ad563c717 1-9
+connectors/follow-up-boss.yaml
+  s_1216b7ab38d26c::t_0ebe833d74243f 1-10
+connectors/fullenrich.yaml
+  s_eeda7bd9685d9d::t_77f6fd07871858 1-10
+connectors/gamma.yaml
+  s_eeda7bd9685d9d::t_0c80e9570bc5ed 1-5
+connectors/gem.yaml
+  s_eeda7bd9685d9d::t_cc7d268a7adfc6 1-17
+connectors/gocardless.yaml
+  s_eeda7bd9685d9d::t_3ccc5ac771ee17 1-9
+connectors/google-gemini.yaml
+  s_eeda7bd9685d9d::t_9b9ed40ef1ba6a 1-10
+connectors/google-shopping.yaml
+  s_eeda7bd9685d9d::t_5163dee20a0e70 1-10
+connectors/googlecloudstorage.yaml
+  s_eeda7bd9685d9d::t_665fc5c8ee4e41 1-9
+connectors/grist.yaml
+  s_eeda7bd9685d9d::t_402e7d74646a0b 1-10
+connectors/groq.yaml
+  s_eeda7bd9685d9d::t_08eeaa48ad8f30 1-5
+connectors/gumroad.yaml
+  s_eeda7bd9685d9d::t_84ef9cfdf3fcfb 1-5
+connectors/hackerrankwork.yaml
+  s_eeda7bd9685d9d::t_e48d26fdc5b3be 1-5
+connectors/halopsa.yaml
+  s_1216b7ab38d26c::t_04b7f564438236 1-10
+connectors/harness.yaml
+  s_eeda7bd9685d9d::t_59e18badc474bc 1-5
+connectors/help-scout.yaml
+  s_eeda7bd9685d9d::t_852879d98ea117 1-5
+connectors/hex.yaml
+  s_eeda7bd9685d9d::t_2336c70e76b5ff 1-10
+connectors/heygen.yaml
+  s_eeda7bd9685d9d::t_556e924c47cd67 1-14
+connectors/heyreach.yaml
+  s_eeda7bd9685d9d::t_fc71974ad37a93 1-11
+connectors/hitpay.yaml
+  s_eeda7bd9685d9d::t_1622c6ee0e04a6 1-10
+connectors/hive.yaml
+  s_eeda7bd9685d9d::t_1650df518f41de 1-5
+connectors/honeycomb.yaml
+  s_eeda7bd9685d9d::t_0865764a19071a 1-10
+connectors/hr-partner.yaml
+  s_eeda7bd9685d9d::t_ff3954adfc7cda 1-5
+connectors/hugging-face.yaml
+  s_eeda7bd9685d9d::t_2a95db884fb81a 1-9
+connectors/icypeas.yaml
+  s_eeda7bd9685d9d::t_01df0e8b5dc48a 1-5
+connectors/instantly.yaml
+  s_eeda7bd9685d9d::t_c4670f0dc85d4b 1-9
+connectors/ipgeolocation.yaml
+  s_eeda7bd9685d9d::t_5dd4f637b80fec 1-10
+connectors/ironclad.yaml
+  s_1216b7ab38d26c::t_75b1b999242511 1-23
+connectors/iterable.yaml
+  s_eeda7bd9685d9d::t_41b612ecd44142 1-10
+connectors/jamf-pro.yaml
+  s_1216b7ab38d26c::t_c3bb4bba51d9d4 1-21
+connectors/jazzhr.yaml
+  s_eeda7bd9685d9d::t_1b4a7a3199f379 1-5
+connectors/jobber.yaml
+  s_eeda7bd9685d9d::t_65847e9856e674 1-5
+connectors/jobdiva.yaml
+  s_eeda7bd9685d9d::t_d35a82e0ec0af0 1-5
+connectors/jobnimbus.yaml
+  s_eeda7bd9685d9d::t_75c091cba98e9c 1-5
+connectors/judge-me.yaml
+  s_eeda7bd9685d9d::t_3ca53fa9df8282 1-10
+connectors/keap.yaml
+  s_eeda7bd9685d9d::t_4121e5477c5f2e 1-23
+connectors/keeper.yaml
+  s_eeda7bd9685d9d::t_b95801133aeac3 1-10
+connectors/kintone.yaml
+  s_eeda7bd9685d9d::t_217b7cf25664a6 1-10
+connectors/kit.yaml
+  s_eeda7bd9685d9d::t_47be2c7e0114bd 1-9
+connectors/klipfolio.yaml
+  s_eeda7bd9685d9d::t_e67ce06cd0887f 1-5
+connectors/lastpass.yaml
+  s_eeda7bd9685d9d::t_f86959309469d8 1-5
+connectors/lattice.yaml
+  s_eeda7bd9685d9d::t_695fea11f0393c 1-5
+connectors/launchdarkly.yaml
+  s_eeda7bd9685d9d::t_2bda299fb2bf4d 1-9
+connectors/leadfeeder.yaml
+  s_eeda7bd9685d9d::t_28c96751f56f41 1-5
+connectors/leadmagic.yaml
+  s_eeda7bd9685d9d::t_d76971079863c3 1-9
+connectors/leapsome.yaml
+  s_eeda7bd9685d9d::t_fee6041810efd5 1-5
+connectors/lightfield.yaml
+  s_eeda7bd9685d9d::t_f4e087c89edfe4 1-5
+connectors/lilt.yaml
+  s_eeda7bd9685d9d::t_2c692924db5ad2 1-5
+connectors/linkhut.yaml
+  s_eeda7bd9685d9d::t_f29078158b1df9 1-5
+connectors/linkly.yaml
+  s_eeda7bd9685d9d::t_7783802f839b35 1-10
+connectors/lob.yaml
+  s_eeda7bd9685d9d::t_656f571ba5934c 1-10
+connectors/loopsso.yaml
+  s_eeda7bd9685d9d::t_6d445b6fb6dfd0 1-10
+connectors/lumaapi.yaml
+  s_eeda7bd9685d9d::t_2fa7afe22b51b9 1-10
+connectors/lusha.yaml
+  s_eeda7bd9685d9d::t_729883c484b01d 1-16
+connectors/mailjet.yaml
+  s_eeda7bd9685d9d::t_af8872f820e004 1-16
+connectors/mailtrap.yaml
+  s_eeda7bd9685d9d::t_ec8031d7a1c5ce 1-45
+connectors/manatal.yaml
+  s_eeda7bd9685d9d::t_6a5a10503952c8 1-5
+connectors/marketo.yaml
+  s_eeda7bd9685d9d::t_2bd295a67c0057 1-31
+connectors/maxio.yaml
+  s_eeda7bd9685d9d::t_f0b02f13e43c23 1-5
+connectors/meta-ads.yaml
+  s_1216b7ab38d26c::t_c107f34abcdc67 1-5
+connectors/microsoftintune.yaml
+  s_eeda7bd9685d9d::t_7158d402b94790 1-17
+connectors/mindbody.yaml
+  s_eeda7bd9685d9d::t_76a353475c63ff 1-5
+connectors/minimax.yaml
+  s_eeda7bd9685d9d::t_cacc197443cfff 1-50
+connectors/mintlify.yaml
+  s_eeda7bd9685d9d::t_b6663b9d3f36f2 1-15
+connectors/missive.yaml
+  s_eeda7bd9685d9d::t_aaf39918a0df27 1-5
+connectors/mistral-ai.yaml
+  s_eeda7bd9685d9d::t_1dc02e7d6de761 1-9
+connectors/mural.yaml
+  s_1216b7ab38d26c::t_d17c35dee82000 1-5
+connectors/neon.yaml
+  s_eeda7bd9685d9d::t_7b837ef764de1d 1-9
+connectors/netlify.yaml
+  s_eeda7bd9685d9d::t_48d438fe468bb4 1-10
+connectors/new-relic.yaml
+  s_eeda7bd9685d9d::t_01e04aa40e8a5c 1-12
+connectors/nocrmio.yaml
+  s_eeda7bd9685d9d::t_8a69ab263a968d 1-5
+connectors/nutshell.yaml
+  s_eeda7bd9685d9d::t_e9142585ca008b 1-10
+connectors/oceanio.yaml
+  s_eeda7bd9685d9d::t_9e86f16ab52069 1-16
+connectors/omnisend.yaml
+  s_eeda7bd9685d9d::t_bb2176b585a34e 1-59
+connectors/openrouter.yaml
+  s_eeda7bd9685d9d::t_8c7ac53f7a2afd 1-9
+connectors/ordinal.yaml
+  s_eeda7bd9685d9d::t_09d4a3c82fd219 1-5
+connectors/otterai.yaml
+  s_eeda7bd9685d9d::t_4debd792d07010 1-5
+connectors/outline.yaml
+  s_eeda7bd9685d9d::t_96d41032c57b15 1-10
+connectors/outreach.yaml
+  s_eeda7bd9685d9d::t_ff887fb6a5dfe7 1-9
+connectors/paddle.yaml
+  s_eeda7bd9685d9d::t_608b280e130976 1-10
+connectors/pandadoc.yaml
+  s_eeda7bd9685d9d::t_fd568047f60fd0 1-10
+connectors/parallel.yaml
+  s_eeda7bd9685d9d::t_210dc7ded43767 1-9
+connectors/paycor.yaml
+  s_eeda7bd9685d9d::t_2223698fe3d251 1-5
+connectors/peec-ai.yaml
+  s_eeda7bd9685d9d::t_b86f7cac4c0d6c 1-9
+connectors/peopledatalabs.yaml
+  s_eeda7bd9685d9d::t_4d20b4d7786c1a 1-10
+connectors/perplexity.yaml
+  s_eeda7bd9685d9d::t_af6a7a853e4bfc 1-9
+connectors/pinecone.yaml
+  s_eeda7bd9685d9d::t_34f7f3d119a020 1-25
+connectors/pingone.yaml
+  s_eeda7bd9685d9d::t_85111eb832b937 1-10
+connectors/pinterest.yaml
+  s_eeda7bd9685d9d::t_be4cd64c120032 1-9
+connectors/pipeline-crm.yaml
+  s_1216b7ab38d26c::t_2e78832da4c2e0 1-15
+connectors/plaid.yaml
+  s_eeda7bd9685d9d::t_3dea33e5dc7bc6 1-10
+connectors/plain.yaml
+  s_eeda7bd9685d9d::t_5e26c0d3512cbf 1-12
+connectors/postman.yaml
+  s_eeda7bd9685d9d::t_18794c88a500b7 1-10
+connectors/postmark.yaml
+  s_eeda7bd9685d9d::t_9389b60e0136a1 1-14
+connectors/prismic.yaml
+  s_eeda7bd9685d9d::t_6c8a33a5717fd3 1-5
+connectors/productboard.yaml
+  s_1216b7ab38d26c::t_4c792c9cf73b4b 1-50
+connectors/prospeo.yaml
+  s_eeda7bd9685d9d::t_aa0f69a979166e 1-5
+connectors/raindrop.yaml
+  s_eeda7bd9685d9d::t_84883eee15291b 1-5
+connectors/re-amaze.yaml
+  s_eeda7bd9685d9d::t_0f535847e8949f 1-5
+connectors/readwisereader.yaml
+  s_eeda7bd9685d9d::t_bfdaa772f23b71 1-5
+connectors/recall-ai.yaml
+  s_eeda7bd9685d9d::t_5b27401371d942 1-5
+connectors/recruit-crm.yaml
+  s_1216b7ab38d26c::t_47783b881e6461 1-5
+connectors/recruiterflow.yaml
+  s_eeda7bd9685d9d::t_625d1bdf631e3f 1-10
+connectors/recurly.yaml
+  s_eeda7bd9685d9d::t_4a4397a11d067a 1-10
+connectors/refiner.yaml
+  s_eeda7bd9685d9d::t_fc461ba0f372b6 1-5
+connectors/replicate.yaml
+  s_eeda7bd9685d9d::t_b763dbc69c7c53 1-10
+connectors/reply-io.yaml
+  s_eeda7bd9685d9d::t_fc5bba2cfe4a0d 1-10
+connectors/requesttracker.yaml
+  s_eeda7bd9685d9d::t_2735447d84dee3 1-5
+connectors/retell-ai.yaml
+  s_eeda7bd9685d9d::t_2985b1430f0549 1-10
+connectors/ringcentral.yaml
+  s_eeda7bd9685d9d::t_c346f8a014230d 1-10
+connectors/roam.yaml
+  s_eeda7bd9685d9d::t_f444697ee72f08 1-5
+connectors/rocketlane.yaml
+  s_1216b7ab38d26c::t_cf6190f929afe9 1-10
+connectors/rocketreach.yaml
+  s_eeda7bd9685d9d::t_e5e035013dd9e3 1-5
+connectors/rollbar.yaml
+  s_eeda7bd9685d9d::t_2eb196000da52f 1-5
+connectors/rootly.yaml
+  s_eeda7bd9685d9d::t_3a03018bdb4e6c 1-5
+connectors/sagepeople.yaml
+  s_eeda7bd9685d9d::t_90dac26530c03d 1-5
+connectors/salesforce-service-cloud.yaml
+  s_1216b7ab38d26c::t_18fe3b7e340ef6 1-5
+connectors/salesloft.yaml
+  s_eeda7bd9685d9d::t_3d7d8faf9db2ca 1-10
+connectors/scrapedo.yaml
+  s_eeda7bd9685d9d::t_d4b1805b10d1dc 1-5
+connectors/secedgar.yaml
+  s_eeda7bd9685d9d::t_73f37fccfc08f1 1-5
+connectors/servicem8.yaml
+  s_eeda7bd9685d9d::t_db3c8c9e354960 1-5
+connectors/shippo.yaml
+  s_eeda7bd9685d9d::t_8f7e75518a3832 1-40
+connectors/shipstation.yaml
+  s_eeda7bd9685d9d::t_ce063f16a5e2ec 1-20
+connectors/signwell.yaml
+  s_eeda7bd9685d9d::t_be0d0c76257cd4 1-5
+connectors/smartrecruiters.yaml
+  s_eeda7bd9685d9d::t_83250fa729d274 1-61
+connectors/smugmug.yaml
+  s_eeda7bd9685d9d::t_4b8bfbc3df2070 1-5
+connectors/snapchat.yaml
+  s_eeda7bd9685d9d::t_af35ee17867655 1-5
+connectors/snyk.yaml
+  s_eeda7bd9685d9d::t_a075a19e2133bf 1-10
+connectors/sophos-central.yaml
+  s_eeda7bd9685d9d::t_647ea7f0c9e2d5 1-5
+connectors/spendesk.yaml
+  s_eeda7bd9685d9d::t_aa085398c585b4 1-10
+connectors/splitwise.yaml
+  s_eeda7bd9685d9d::t_dd82fc99273d44 1-10
+connectors/squarespace.yaml
+  s_eeda7bd9685d9d::t_91cb83fcee33a8 1-10
+connectors/stack-exchange.yaml
+  s_1216b7ab38d26c::t_36d5427ab586e3 1-11
+connectors/statsig.yaml
+  s_eeda7bd9685d9d::t_2059fe2de51c28 1-10
+connectors/surecontact.yaml
+  s_eeda7bd9685d9d::t_4a564553ba1191 1-5
+connectors/tailscale.yaml
+  s_eeda7bd9685d9d::t_eb6331d839f46f 1-5
+connectors/talentlms.yaml
+  s_eeda7bd9685d9d::t_0b93afb996b3c8 1-5
+connectors/tally.yaml
+  s_eeda7bd9685d9d::t_948665d876f1c1 1-9
+connectors/tavily.yaml
+  s_eeda7bd9685d9d::t_2bf4becbeb2a4a 1-10
+connectors/terraform.yaml
+  s_eeda7bd9685d9d::t_443fc044c3754c 1-5
+connectors/theirstack.yaml
+  s_eeda7bd9685d9d::t_30588129d1663d 1-10
+connectors/threads.yaml
+  s_eeda7bd9685d9d::t_a574886ac00de0 1-5
+connectors/ticketmaster.yaml
+  s_eeda7bd9685d9d::t_e331b13e57779b 1-17
+connectors/timely.yaml
+  s_eeda7bd9685d9d::t_5627193df66efc 1-5
+connectors/tomba.yaml
+  s_1216b7ab38d26c::t_8b3804d3e0690b 1-5
+connectors/triggerdev.yaml
+  s_eeda7bd9685d9d::t_224c6e11133bce 1-10
+connectors/twelve-data.yaml
+  s_eeda7bd9685d9d::t_1987b0821c5cf1 1-9
+connectors/twitch.yaml
+  s_eeda7bd9685d9d::t_132e3346d4eb00 1-11
+connectors/typefully.yaml
+  s_eeda7bd9685d9d::t_1f89b368f75330 1-10
+connectors/ukg-ready.yaml
+  s_eeda7bd9685d9d::t_bb38b174117599 1-5
+connectors/unipile.yaml
+  s_eeda7bd9685d9d::t_2adb44a7da40aa 1-10
+connectors/vincere.yaml
+  s_eeda7bd9685d9d::t_1c35eae90a515a 1-5
+connectors/wakatime.yaml
+  s_eeda7bd9685d9d::t_391cc88c38c4b7 1-5
+connectors/wealthbox.yaml
+  s_eeda7bd9685d9d::t_1a38703c74e167 1-5
+connectors/weightsandbiases.yaml
+  s_eeda7bd9685d9d::t_c0ba6b2011bef5 1-11
+connectors/whatsapp-business.yaml
+  s_1216b7ab38d26c::t_e9de0fefa3ceca 1-10
+connectors/windsorai.yaml
+  s_eeda7bd9685d9d::t_b186d23c3d896d 1-5
+connectors/wise.yaml
+  s_eeda7bd9685d9d::t_5db3a350f4fff0 1-5
+connectors/wisprflow.yaml
+  s_eeda7bd9685d9d::t_f4d65efb7fd73a 1-5
+connectors/wistia.yaml
+  s_1216b7ab38d26c::t_707d9da16c89c8 1-20
+connectors/wiza.yaml
+  s_eeda7bd9685d9d::t_b5508901a43dad 1-5
+connectors/wordpresscom.yaml
+  s_eeda7bd9685d9d::t_b2ef1f46918472 1-5
+connectors/yandex.yaml
+  s_eeda7bd9685d9d::t_69ef6dfe806303 1-5
+connectors/zigpoll.yaml
+  s_eeda7bd9685d9d::t_002e2392916060 1-5
+connectors/zoho-bigin.yaml
+  s_1216b7ab38d26c::t_dc32c2389a5aa2 1-5
+connectors/zoho-calendar.yaml
+  s_eeda7bd9685d9d::t_7489c2de1c23fa 1-5
+connectors/zoho-inventory.yaml
+  s_eeda7bd9685d9d::t_4790f03e10d7c5 1-11
+connectors/zoho-invoice.yaml
+  s_eeda7bd9685d9d::t_2bc6b2a2dae12c 1-11
+connectors/zoho-mail.yaml
+  s_1216b7ab38d26c::t_ebb31b65de965f 1-65
+connectors/zoho.yaml
+  s_1216b7ab38d26c::t_e545642ab6c4dc 1-55
+connectors/zuora.yaml
+  s_eeda7bd9685d9d::t_304ab099758951 1-16
+index.json
+  s_eeda7bd9685d9d::t_ae4d30007c774c 7036-11653
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7261f530a1aeace61281f6ce6c9d1ede3b4a42d7",
+  "prompts": {},
+  "sessions": {
+    "s_1216b7ab38d26c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a14a97-820b-72f2-85b1-9bee130548e5",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
