@@ -56,6 +56,7 @@ function overlayErrors(file, spec) {
   (doc?.actions ?? []).forEach((a, i) => {
     if (typeof a?.target !== "string" || !a.target.startsWith("$")) errs.push(`overlay ${file} actions[${i}]: target must be a JSONPath starting with $`);
     if (a?.update === undefined && a?.remove !== true && a?.copy === undefined) errs.push(`overlay ${file} actions[${i}]: needs update, copy or remove: true`);
+    if (a?.copy !== undefined && !/^1\.1\./.test(String(doc.overlay))) errs.push(`overlay ${file} actions[${i}]: copy needs overlay 1.1.x`);
     if (!a?.description) errs.push(`overlay ${file} actions[${i}]: description is required (say what the vendor's spec gets wrong)`);
   });
   return errs;
