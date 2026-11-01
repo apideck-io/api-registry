@@ -1,0 +1,19 @@
+index.json
+  s_08c1e43ac6d8b4::t_00d741efa848b8 53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "64c91c97ddf0ce7a4f495f8b9bd97debe76bd390",
+  "prompts": {},
+  "sessions": {
+    "s_08c1e43ac6d8b4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a6e42ef9-2583-4170-a3fe-feeb2d681eea",
+        "model": "unknown"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
