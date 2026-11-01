@@ -1,0 +1,10 @@
+id: kraken
+name: "Kraken"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://www.kraken.com/redirect)."
+specs:
+  - name: "REST API"
+    url: "https://www.kraken.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.kraken.com/0"

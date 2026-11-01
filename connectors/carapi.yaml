@@ -1,0 +1,10 @@
+id: carapi
+name: "CarAPI"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://carapi.app/api)."
+specs:
+  - name: "Car API Documentation"
+    url: "https://carapi.app/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://carapi.app"

@@ -1,0 +1,15 @@
+id: knot-api
+name: "Knot API"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.knotapi.com/docs/card-on-file-switcher-quick-start)."
+specs:
+  - name: "Knot API (api-reference/openapi_secure)"
+    url: "https://docs.knotapi.com/api-reference/openapi_secure.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://secure.development.knotapi.com"
+  - name: "Knot API (api-reference/openapi)"
+    url: "https://docs.knotapi.com/api-reference/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://development.knotapi.com"

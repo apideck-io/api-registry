@@ -1,0 +1,10 @@
+id: truv
+name: "Truv"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.truv.com/docs/quickstart#setup-quickstart)."
+specs:
+  - name: "Truv API"
+    url: "https://docs.truv.com/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://prod.truv.com"

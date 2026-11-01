@@ -1,0 +1,460 @@
+id: everflow
+name: "Everflow"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://developers.everflow.io/)."
+specs:
+  - name: "Everflow Network API - Account Billing"
+    url: "https://developers.everflow.io/openapi/account-billing.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Actions"
+    url: "https://developers.everflow.io/openapi/actions.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Advertiser API - Offers"
+    url: "https://developers.everflow.io/openapi/advertiser-offers.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Advertiser API - Reporting"
+    url: "https://developers.everflow.io/openapi/advertiser-reporting.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Advertiser Users"
+    url: "https://developers.everflow.io/openapi/advertiser-users.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Advertisers (Additional Endpoints)"
+    url: "https://developers.everflow.io/openapi/advertisers-extras.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Advertisers"
+    url: "https://developers.everflow.io/openapi/advertisers.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Affiliate API - Categories"
+    url: "https://developers.everflow.io/openapi/affiliate-categories.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Affiliate API - Channels"
+    url: "https://developers.everflow.io/openapi/affiliate-channels.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Affiliate API - Coupon Codes"
+    url: "https://developers.everflow.io/openapi/affiliate-coupon-codes.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Affiliate API - Deals"
+    url: "https://developers.everflow.io/openapi/affiliate-deals.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Affiliate API - Encoding"
+    url: "https://developers.everflow.io/openapi/affiliate-encoding.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Affiliate API - Invoices"
+    url: "https://developers.everflow.io/openapi/affiliate-invoices.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Affiliate API - Offers"
+    url: "https://developers.everflow.io/openapi/affiliate-offers.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Affiliate API - Postbacks"
+    url: "https://developers.everflow.io/openapi/affiliate-postbacks.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Affiliate API - Product Feeds"
+    url: "https://developers.everflow.io/openapi/affiliate-product-feeds.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Affiliate API - Reporting"
+    url: "https://developers.everflow.io/openapi/affiliate-reporting.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Affiliate API - Session & User Info"
+    url: "https://developers.everflow.io/openapi/affiliate-session.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Affiliate Tiers"
+    url: "https://developers.everflow.io/openapi/affiliate-tiers.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Affiliate API - Traffic"
+    url: "https://developers.everflow.io/openapi/affiliate-traffic.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Affiliate Users"
+    url: "https://developers.everflow.io/openapi/affiliate-users.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Affiliates (Additional Endpoints)"
+    url: "https://developers.everflow.io/openapi/affiliates-extras.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Affiliates"
+    url: "https://developers.everflow.io/openapi/affiliates.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Offer Applications"
+    url: "https://developers.everflow.io/openapi/applications.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Audit Log"
+    url: "https://developers.everflow.io/openapi/audit-log.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Business Units"
+    url: "https://developers.everflow.io/openapi/business-units.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Categories"
+    url: "https://developers.everflow.io/openapi/categories.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Channels"
+    url: "https://developers.everflow.io/openapi/channels.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Conversion Domains"
+    url: "https://developers.everflow.io/openapi/conversion-domains.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Coupon Codes (Additional Endpoints)"
+    url: "https://developers.everflow.io/openapi/coupon-codes-extras.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Coupon Codes"
+    url: "https://developers.everflow.io/openapi/coupon-codes.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Creatives"
+    url: "https://developers.everflow.io/openapi/creatives.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Custom Caps"
+    url: "https://developers.everflow.io/openapi/custom-caps.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Custom Creative Settings"
+    url: "https://developers.everflow.io/openapi/custom-creatives-settings.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Custom Landing Pages"
+    url: "https://developers.everflow.io/openapi/custom-landing-pages.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Custom Payout/Revenue"
+    url: "https://developers.everflow.io/openapi/custom-payout-revenue.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Custom Scrub Rates"
+    url: "https://developers.everflow.io/openapi/custom-scrub-rates.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Customer Value"
+    url: "https://developers.everflow.io/openapi/customer-value.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Data Supplements"
+    url: "https://developers.everflow.io/openapi/data-supplements.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Employees"
+    url: "https://developers.everflow.io/openapi/employees.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - File Upload"
+    url: "https://developers.everflow.io/openapi/file-upload.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Integrations"
+    url: "https://developers.everflow.io/openapi/integrations.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Labels"
+    url: "https://developers.everflow.io/openapi/labels.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Marketplace API - API Keys"
+    url: "https://developers.everflow.io/openapi/marketplace-api-keys.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Marketplace API - Connections"
+    url: "https://developers.everflow.io/openapi/marketplace-connections.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Marketplace API - Marketplace Advertisers"
+    url: "https://developers.everflow.io/openapi/marketplace-demand-partners.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Marketplace API - Earnings"
+    url: "https://developers.everflow.io/openapi/marketplace-earnings.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Marketplace API - Offers"
+    url: "https://developers.everflow.io/openapi/marketplace-offers.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Marketplace API - Reporting"
+    url: "https://developers.everflow.io/openapi/marketplace-reporting.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow API - Metadata"
+    url: "https://developers.everflow.io/openapi/metadata.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Billing (Advertiser Invoices)"
+    url: "https://developers.everflow.io/openapi/network-billing-advertiser.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Billing (Affiliate Invoices)"
+    url: "https://developers.everflow.io/openapi/network-billing.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Network Info"
+    url: "https://developers.everflow.io/openapi/network-info.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Meta/Search"
+    url: "https://developers.everflow.io/openapi/network-meta.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Network Settings"
+    url: "https://developers.everflow.io/openapi/network-settings.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Notifications"
+    url: "https://developers.everflow.io/openapi/notifications.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Offer Groups (Additional Endpoints)"
+    url: "https://developers.everflow.io/openapi/offer-groups-extras.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Offer Groups"
+    url: "https://developers.everflow.io/openapi/offer-groups.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Offer URLs"
+    url: "https://developers.everflow.io/openapi/offer-urls.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Offer Visibility (Additional Endpoints)"
+    url: "https://developers.everflow.io/openapi/offer-visibility-extras.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Offer Visibility"
+    url: "https://developers.everflow.io/openapi/offer-visibility.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Offers (Additional Endpoints)"
+    url: "https://developers.everflow.io/openapi/offers-extras.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Offers"
+    url: "https://developers.everflow.io/openapi/offers.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Partner Postbacks (Additional Endpoints)"
+    url: "https://developers.everflow.io/openapi/partner-postbacks-extras.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Partner Postbacks"
+    url: "https://developers.everflow.io/openapi/partner-postbacks.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Report Schedules"
+    url: "https://developers.everflow.io/openapi/report-schedules.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Adjustment and Refund Reporting"
+    url: "https://developers.everflow.io/openapi/reporting-adjustments.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Aggregated Reporting"
+    url: "https://developers.everflow.io/openapi/reporting-aggregated.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Cap Reporting"
+    url: "https://developers.everflow.io/openapi/reporting-caps.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Click Reporting"
+    url: "https://developers.everflow.io/openapi/reporting-clicks.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Conversion Reporting"
+    url: "https://developers.everflow.io/openapi/reporting-conversions.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Dashboard Reporting"
+    url: "https://developers.everflow.io/openapi/reporting-dashboard.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Event Reporting"
+    url: "https://developers.everflow.io/openapi/reporting-events.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Reporting Exports"
+    url: "https://developers.everflow.io/openapi/reporting-exports.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Impression Reporting"
+    url: "https://developers.everflow.io/openapi/reporting-impressions.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Miscellaneous Reporting"
+    url: "https://developers.everflow.io/openapi/reporting-misc.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - On-Hold Conversion Reporting"
+    url: "https://developers.everflow.io/openapi/reporting-onhold.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Postback and Pixel Reporting"
+    url: "https://developers.everflow.io/openapi/reporting-postbacks.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Transaction Reporting"
+    url: "https://developers.everflow.io/openapi/reporting-transactions.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Roles"
+    url: "https://developers.everflow.io/openapi/roles.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Signup"
+    url: "https://developers.everflow.io/openapi/signup.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Smart Links"
+    url: "https://developers.everflow.io/openapi/smart-links.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Terms & Conditions"
+    url: "https://developers.everflow.io/openapi/terms-conditions.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Tiered Commissions"
+    url: "https://developers.everflow.io/openapi/tiered-commissions.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Tracking Domains"
+    url: "https://developers.everflow.io/openapi/tracking-domains.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Tracking Links"
+    url: "https://developers.everflow.io/openapi/tracking.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Traffic Controls"
+    url: "https://developers.everflow.io/openapi/traffic-controls.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Traffic Health"
+    url: "https://developers.everflow.io/openapi/traffic-health.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Traffic Sources"
+    url: "https://developers.everflow.io/openapi/traffic-sources.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Utilities"
+    url: "https://developers.everflow.io/openapi/utilities.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"
+  - name: "Everflow Network API - Webhooks"
+    url: "https://developers.everflow.io/openapi/webhooks.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.eflow.team/v1"

@@ -1,0 +1,10 @@
+id: twelve-labs
+name: "Twelve Labs"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.twelvelabs.io)."
+specs:
+  - name: "TwelveLabs API"
+    url: "https://docs.twelvelabs.io/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.twelvelabs.io/v1.3"

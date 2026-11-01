@@ -1,0 +1,10 @@
+id: warp
+name: "Warp"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.warp.dev/features/ai-command-search#:~:text=command%20search%20%2d%20warp%20documentation&text=ai%20command%20search%20converts%20natural,see%20how%20it%20works%20here).)."
+specs:
+  - name: "Warp Platform API"
+    url: "https://docs.warp.dev/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.warp.dev/api/v1"

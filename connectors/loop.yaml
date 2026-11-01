@@ -1,0 +1,115 @@
+id: loop
+name: "Loop"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.loopreturns.com)."
+specs:
+  - name: "Bulk Operations API"
+    url: "https://docs.loopreturns.com/openapi/bulk-operations-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Cart API (On-Store)"
+    url: "https://docs.loopreturns.com/openapi/carts-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Checkout+ API"
+    url: "https://docs.loopreturns.com/openapi/checkout-plus-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/storefront/v1"
+  - name: "Collections API"
+    url: "https://docs.loopreturns.com/openapi/collections-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Customers API"
+    url: "https://docs.loopreturns.com/openapi/customers-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Destinations API"
+    url: "https://docs.loopreturns.com/openapi/destinations-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Dispositioning API"
+    url: "https://docs.loopreturns.com/openapi/dispositioning-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Draft Returns API (openapi/draft-returns-hal-forms)"
+    url: "https://docs.loopreturns.com/openapi/draft-returns-hal-forms.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Draft Returns API (openapi/draft-returns)"
+    url: "https://docs.loopreturns.com/openapi/draft-returns.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-07"
+  - name: "Fraud Reports API"
+    url: "https://docs.loopreturns.com/openapi/fraud-reports-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Happy Returns Shipment API"
+    url: "https://docs.loopreturns.com/openapi/happy-returns-shipment-items-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "HQ API"
+    url: "https://docs.loopreturns.com/openapi/hq-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://hq.loopreturns.com"
+  - name: "Inventories API"
+    url: "https://docs.loopreturns.com/openapi/inventories-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Labels API"
+    url: "https://docs.loopreturns.com/openapi/labels-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Listings API"
+    url: "https://docs.loopreturns.com/openapi/listings-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Locations API"
+    url: "https://docs.loopreturns.com/openapi/locations-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Orders API (openapi/orders-api-2026-07)"
+    url: "https://docs.loopreturns.com/openapi/orders-api-2026-07.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-07"
+  - name: "Orders API (openapi/orders-api)"
+    url: "https://docs.loopreturns.com/openapi/orders-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Programmatic Webhooks API"
+    url: "https://docs.loopreturns.com/openapi/outgoing-webhooks-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Products API"
+    url: "https://docs.loopreturns.com/openapi/products-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Returns API"
+    url: "https://docs.loopreturns.com/openapi/returns-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/2026-10"
+  - name: "Ship by Loop - External Shipping Provider API"
+    url: "https://docs.loopreturns.com/openapi/ship-by-loop-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.loopreturns.com/api/{version}"

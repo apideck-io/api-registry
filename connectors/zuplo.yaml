@@ -1,0 +1,10 @@
+id: zuplo
+name: "Zuplo"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://zuplo.com/docs)."
+specs:
+  - name: "Zuplo Developer API"
+    url: "https://zuplo.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://developer-api-main-8600723.self.zuplo.com"

@@ -1,0 +1,11 @@
+id: comet-ml
+name: "Comet ML"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://www.comet.ml/docs)."
+specs:
+  - name: "API Reference"
+    url: "https://www.comet.com/docs/opik/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{comet-host}/api"
+    notes: "Comet can be self-hosted; the spec names a local development host."

@@ -1,0 +1,15 @@
+id: teya
+name: "Teya"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, http://developer.teya.com)."
+specs:
+  - name: "POSLink API"
+    url: "https://docs.teya.com/apis/poslink/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.teya.com"
+  - name: "Teya FX API"
+    url: "https://docs.teya.com/apis/dynamic-currency-conversion/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.teya.com"

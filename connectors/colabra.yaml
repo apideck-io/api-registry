@@ -1,0 +1,10 @@
+id: colabra
+name: "Colabra"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://colabra.app/docs)."
+specs:
+  - name: "Colabra REST API"
+    url: "https://www.colabra.ai/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.colabra.ai"

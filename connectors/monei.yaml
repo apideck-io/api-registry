@@ -1,0 +1,10 @@
+id: monei
+name: "MONEI"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.monei.com/docs/payment-methods/card)."
+specs:
+  - name: "MONEI API v1"
+    url: "https://js.monei.com/api/v1/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.monei.com/v1"

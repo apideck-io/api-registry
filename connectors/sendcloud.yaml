@@ -1,0 +1,235 @@
+id: sendcloud
+name: "Sendcloud"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://sendcloud.dev/)."
+specs:
+  - name: "Analytics"
+    url: "https://sendcloud.dev/.openapi/v3/analytics/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Authentication"
+    url: "https://sendcloud.dev/.openapi/v3/auth/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://account.sendcloud.com"
+  - name: "Brands"
+    url: "https://sendcloud.dev/.openapi/v3/brands/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Deutsche Post Carrier API"
+    url: "https://sendcloud.dev/.openapi/v3/carriers-dp/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Compat API"
+    url: "https://sendcloud.dev/.openapi/v3/compat/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Contracts API"
+    url: "https://sendcloud.dev/.openapi/v3/contracts/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Duties and Taxes API [BETA]"
+    url: "https://sendcloud.dev/.openapi/v3/duties-and-taxes/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Dynamic Checkout [BETA]"
+    url: "https://sendcloud.dev/.openapi/v3/dynamic-checkout/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Events API"
+    url: "https://sendcloud.dev/.openapi/v3/events/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Event Subscriptions API"
+    url: "https://sendcloud.dev/.openapi/v3/event-subscriptions/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Integrations"
+    url: "https://sendcloud.dev/.openapi/v3/integrations/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Invoice Items API"
+    url: "https://sendcloud.dev/.openapi/v3/invoice-items/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Invoices API"
+    url: "https://sendcloud.dev/.openapi/v3/invoices/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Orders"
+    url: "https://sendcloud.dev/.openapi/v3/orders/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Organization API"
+    url: "https://sendcloud.dev/.openapi/v3/organization/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Parcel documents API"
+    url: "https://sendcloud.dev/.openapi/v3/parcel-documents/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Parcel statuses API"
+    url: "https://sendcloud.dev/.openapi/v3/parcel-statuses/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Parcel Tracking API"
+    url: "https://sendcloud.dev/.openapi/v3/parcel-tracking/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Pickups API"
+    url: "https://sendcloud.dev/.openapi/v3/pickups/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Reporting"
+    url: "https://sendcloud.dev/.openapi/v3/reporting/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Returns (returns/openapi)"
+    url: "https://sendcloud.dev/.openapi/v3/returns/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Sender addresses API"
+    url: "https://sendcloud.dev/.openapi/v3/sender-addresses/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Service Points API"
+    url: "https://sendcloud.dev/.openapi/v3/service-points/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Ship an Order"
+    url: "https://sendcloud.dev/.openapi/v3/ship-an-order/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Shipments"
+    url: "https://sendcloud.dev/.openapi/v3/shipments/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Shipping Options API"
+    url: "https://sendcloud.dev/.openapi/v3/shipping-options/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Support API [BETA]"
+    url: "https://sendcloud.dev/.openapi/v3/support/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "User API"
+    url: "https://sendcloud.dev/.openapi/v3/user/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v3"
+  - name: "Air Waybill (AWB)"
+    url: "https://sendcloud.dev/.openapi/v2/air-waybill/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Contracts"
+    url: "https://sendcloud.dev/.openapi/v2/contracts/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Dynamic Checkout"
+    url: "https://sendcloud.dev/.openapi/v2/checkout/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Invoicing"
+    url: "https://sendcloud.dev/.openapi/v2/invoices/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Labels"
+    url: "https://sendcloud.dev/.openapi/v2/labels/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Parcel Documents"
+    url: "https://sendcloud.dev/.openapi/v2/parcel-documents/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Parcel status"
+    url: "https://sendcloud.dev/.openapi/v2/parcel-statuses/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Parcels"
+    url: "https://sendcloud.dev/.openapi/v2/parcels/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Pickups"
+    url: "https://sendcloud.dev/.openapi/v2/pickups/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Return portal"
+    url: "https://sendcloud.dev/.openapi/v2/return-portal/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Returns (returns/openapi)'"
+    url: "https://sendcloud.dev/.openapi/v2/returns/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Sender address"
+    url: "https://sendcloud.dev/.openapi/v2/sender-addresses/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Service points"
+    url: "https://sendcloud.dev/.openapi/v2/service-points/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://servicepoints.sendcloud.sc/api/v2"
+  - name: "Shipping methods"
+    url: "https://sendcloud.dev/.openapi/v2/shipping-methods/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Shipping price"
+    url: "https://sendcloud.dev/.openapi/v2/shipping-price/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Shipping products"
+    url: "https://sendcloud.dev/.openapi/v2/shipping-products/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Tracking parcels"
+    url: "https://sendcloud.dev/.openapi/v2/tracking/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"
+  - name: "Users"
+    url: "https://sendcloud.dev/.openapi/v2/users/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://panel.sendcloud.sc/api/v2"

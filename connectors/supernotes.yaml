@@ -1,0 +1,11 @@
+id: supernotes
+name: "Supernotes"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://api.supernotes.app/docs)."
+specs:
+  - name: "supernotes"
+    url: "https://api.supernotes.app/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.supernotes.app"
+    notes: "The spec declares no server; this is the vendor's API host."

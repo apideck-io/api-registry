@@ -1,0 +1,15 @@
+id: nhost
+name: "Nhost"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.nhost.io)."
+specs:
+  - name: "Nhost Authentication API"
+    url: "https://docs.nhost.io/openapi/auth.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{subdomain}.auth.{region}.nhost.run/v1"
+  - name: "Nhost Storage API"
+    url: "https://docs.nhost.io/openapi/storage.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{subdomain}.storage.{region}.nhost.run/v1"

@@ -1,0 +1,10 @@
+id: assemblyai
+name: "AssemblyAI"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.assemblyai.com)."
+specs:
+  - name: "AssemblyAI API"
+    url: "https://www.assemblyai.com/docs/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.assemblyai.com"

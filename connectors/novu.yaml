@@ -1,0 +1,10 @@
+id: novu
+name: "Novu"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.novu.co/overview/introduction)."
+specs:
+  - name: "Novu API"
+    url: "https://docs.novu.co/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.novu.co"
