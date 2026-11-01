@@ -11,6 +11,7 @@ connectors/<id>.yaml   one entry per app (hand-maintained)
 index.json             what the last check found per spec (generated: never edit)
 specs/                 the few specs authored here
 overlays/              fixes to vendor specs, as OpenAPI Overlay documents
+derived/graphql/       GraphQL SDL specs as introspection results (generated: never edit)
 scripts/verify.mjs     validates entries, checks every spec it can reach, writes index.json
 ```
 
@@ -55,6 +56,10 @@ An app whose vendor publishes no spec still gets an entry with `specs: []` and a
   - A zip bundle sums its files and adds `files`.
 - `title`, `apiVersion`, `specVersion` and `server`
 - `changedOn`: the last date the file's hash changed
+
+## GraphQL schemas
+
+A GraphQL spec is either an SDL file (Linear, Monday) or an endpoint that answers introspection (`extract: graphql-introspection`: Shopify, Wave). So consumers read one format, the nightly check parses every SDL spec with [graphql-js](https://github.com/graphql/graphql-js) and publishes it as an introspection result under `derived/graphql/`, named after the spec's URL (connectors sharing a schema share the file). `index.json` records it per spec as `derived: { file, sha256, bytes }`, and the operation count comes from that parse. If graphql-js can't parse a vendor's SDL, the fields are counted as before and `derivedError` says why. The vendor's own file is still what `sha256` hashes.
 
 ## Overlays
 

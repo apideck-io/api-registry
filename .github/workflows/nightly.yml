@@ -41,5 +41,7 @@ jobs:
           title: "Spec drift: ${{ github.run_id }}"
           commit-message: "index: nightly spec check"
           body: ${{ steps.summary.outputs.body }}
-          add-paths: index.json
+          add-paths: |
+            index.json
+            derived/**
           delete-branch: true

@@ -9,11 +9,12 @@
 import { createHash } from "node:crypto";
 import { inflateRawSync } from "node:zlib";
 import { fileURLToPath } from "node:url";
-import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { dirname, join } from "node:path";
 import { parse as parseYaml } from "yaml";
 import { createRequire } from "node:module";
 import openapiFormat from "openapi-format";
+import { buildASTSchema, introspectionFromSchema, parse as parseGraphQL } from "graphql";
 
 const { openapiOverlay, resolveJsonPathValue } = openapiFormat;
 // The JSONPath parser openapi-format applies overlays with, resolved through it rather than declared
@@ -292,6 +293,27 @@ function inspect(format, body) {
       if (!n) throw new Error("the root types have no fields");
       return { operations: n };
     }
+    // SDL is parsed with graphql-js and published as an introspection result (derived/), so consumers read
+    // one GraphQL format. assumeValidSDL: vendors' SDL often uses directives it doesn't declare.
+    try {
+      const introspection = introspectionFromSchema(buildASTSchema(parseGraphQL(body), { assumeValidSDL: true }), { descriptions: true });
+      const schema = introspection.__schema;
+      if (!schema.queryType?.name) throw new Error("no query root");
+      const roots = [schema.queryType?.name, schema.mutationType?.name].filter(Boolean);
+      const n = schema.types.filter((t) => roots.includes(t.name)).reduce((m, t) => m + (t.fields?.length ?? 0), 0);
+      if (!n) throw new Error("the root types have no fields");
+      return { operations: n, introspection };
+    } catch (err) {
+      if (/no query root|no fields/.test(err.message)) throw err;
+      // Not parseable by graphql-js: count fields as before, without a derived file, and say why.
+      return { ...countSdlFields(body), derivedError: err.message.split("\n")[0].slice(0, 100) };
+    }
+  }
+  return inspectDocument(format, body);
+}
+
+function countSdlFields(body) {
+  {
     // Strip descriptions, strings and comments, then argument lists (which can hold {…} defaults), so a
     // type body ends at its own closing brace and description lines aren't counted as fields.
     let sdl = body.replace(/"""[\s\S]*?"""/g, "").replace(/"(?:\\.|[^"\\])*"/g, '""').replace(/#.*$/gm, "");
@@ -312,6 +334,9 @@ function inspect(format, body) {
     if (!total) throw new Error("the root types have no fields");
     return { operations: total };
   }
+}
+
+function inspectDocument(format, body) {
   // YAML is read with the failsafe schema so every scalar stays a string: unquoted `swagger: 2.0` or
   // `version: 1.10` would otherwise become the numbers 2 and 1.1.
   const doc = body.trim().startsWith("{") ? JSON.parse(body) : parseYaml(body, { schema: "failsafe", maxAliasCount: 10000 });
@@ -459,8 +484,20 @@ for (const e of entries) {
     // Google Discovery docs come back with a different key order on each request and re-stamp etag and
     // revision on every publish, with no change to the API. Hash a key-sorted copy without those fields,
     // or the nightly job would open a drift PR every night.
-    const { doc, ...meta } = info;
+    const { doc, introspection, ...meta } = info;
     info = meta;
+    // A GraphQL SDL spec's introspection result, published for consumers; rewritten only when it changes.
+    if (introspection) {
+      // Named after the spec's URL, so connectors sharing a schema (linear, linear-multiworkspace) share a file.
+      const file = `derived/graphql/${createHash("sha256").update(s.url ?? s.path).digest("hex").slice(0, 16)}.introspection.json`;
+      const text = JSON.stringify(introspection) + "\n";
+      const abs = join(ROOT, file);
+      if (!existsSync(abs) || readFileSync(abs, "utf8") !== text) {
+        mkdirSync(dirname(abs), { recursive: true });
+        writeFileSync(abs, text);
+      }
+      info.derived = { file, sha256: createHash("sha256").update(text).digest("hex"), bytes: Buffer.byteLength(text) };
+    }
     // The entry's server is set by hand and wins; specs often carry placeholders (DefaultParameterValue,
     // {baseUrl}). The spec's own value is kept as specServer when they differ.
     if (s.server && info.server && info.server !== s.server) info.specServer = info.server;
