@@ -1,0 +1,37 @@
+connectors/cal-com.yaml
+  s_b5530286302508::t_c8c85027199899 6
+connectors/customer-io.yaml
+  s_b5530286302508::t_9f274082653f4d 7,12
+connectors/metabase.yaml
+  s_b5530286302508::t_56b4ebf83c3a61 8,10
+connectors/mixpanel.yaml
+  s_b5530286302508::t_9e648d5d95286e 43,48
+index.json
+  s_eeda7bd9685d9d::t_09a459b7dbf5b4 5435-5438,6272-6273
+scripts/verify.mjs
+  s_b5530286302508::t_6150110ee143be 510-512,571-572
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3667d3a3c6549829921be9ab6bda2bdad0716731",
+  "prompts": {},
+  "sessions": {
+    "s_b5530286302508": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f9dd8942-1a38-4993-b209-62caf197a7ca",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
