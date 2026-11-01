@@ -65,8 +65,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          # Fail closed: if the open PR can't be listed, or auto-merge can't be confirmed off, don't push.
           n=$(gh pr list --head nightly/spec-drift --state open --json number -q '.[0].number')
-          if [ -n "$n" ]; then gh pr merge "$n" --disable-auto || true; fi
+          if [ -n "$n" ]; then
+            gh pr merge "$n" --disable-auto || true
+            state=$(gh pr view "$n" --json autoMergeRequest -q '.autoMergeRequest')
+            if [ -n "$state" ] && [ "$state" != "null" ]; then echo "::error::Auto-merge is still on for PR #$n"; exit 1; fi
+          fi
       - uses: peter-evans/create-pull-request@v6
         id: pr
         with:
@@ -87,7 +92,11 @@ jobs:
         if: steps.pr.outputs.pull-request-number && steps.gate.outputs.review == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh pr merge "${{ steps.pr.outputs.pull-request-number }}" --disable-auto || true
+        run: |
+          n="${{ steps.pr.outputs.pull-request-number }}"
+          gh pr merge "$n" --disable-auto || true
+          state=$(gh pr view "$n" --json autoMergeRequest -q '.autoMergeRequest')
+          if [ -n "$state" ] && [ "$state" != "null" ]; then echo "::error::Auto-merge is still on for PR #$n"; exit 1; fi
       # Off unless the repository variable NIGHTLY_AUTOMERGE is "true": then a PR with nothing to review
       # merges itself (repository auto-merge must be allowed). Anything flagged above always waits.
       - name: Merge a PR with nothing to review
@@ -97,7 +106,9 @@ jobs:
         # The PR is reused night to night; one labelled needs-review on an earlier night still waits for a person.
         run: |
           n="${{ steps.pr.outputs.pull-request-number }}"
-          if gh pr view "$n" --json labels -q '.labels[].name' | grep -qx needs-review; then
+          # Fail closed: a label lookup that fails must not fall through to merging.
+          labels=$(gh pr view "$n" --json labels -q '.labels[].name') || { echo "::error::Could not read the labels of PR #$n"; exit 1; }
+          if printf '%s\n' "$labels" | grep -qx needs-review; then
             echo "PR #$n was flagged on an earlier night; leaving it for review."
           else
             # A PR opened with github.token starts no other workflows, so there may be no checks to wait for:

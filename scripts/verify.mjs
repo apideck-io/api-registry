@@ -302,11 +302,11 @@ async function loadUncached(spec) {
 function inspect(format, body) {
   if (format === "xsd") {
     if (!/<(xsd?:)?schema[\s>]/.test(body)) throw new Error("no xsd:schema root");
-    return { operations: (body.match(/<xsd?:element\s+name="[^"]+Rq"/g) ?? []).length };
+    return { operations: (body.match(/<xsd?:element\s+name="[^"]+Rq"/g) ?? []).length, ...flagged(scanText({ description: body }, { positional: false })) };
   }
   if (format === "odata-edmx") {
     if (!/<edmx:Edmx[\s>]/.test(body)) throw new Error("no edmx:Edmx root");
-    return { operations: (body.match(/<EntitySet\s/g) ?? []).length };
+    return { operations: (body.match(/<EntitySet\s/g) ?? []).length, ...flagged(scanText({ description: body }, { positional: false })) };
   }
   if (format === "graphql") {
     // SDL: count fields on the root Query and Mutation types. Introspection JSON: count their fields.
@@ -380,7 +380,8 @@ function inspectDocument(format, body) {
 
 // A failure that holds the nightly PR: the spec resolved last time, or has never been checked. One that was
 // already failing is listed but doesn't block every night until the vendor fixes it.
-const newlyFailing = (old) => !old.status || old.status === "ok";
+// A manual: status (login, bot protection) was never fetched, so a failure after it is new too.
+const newlyFailing = (old) => !old.status || old.status === "ok" || String(old.status).startsWith("manual");
 
 // What index.json keeps of flagged text: a few samples to read, and a fingerprint of all of it to compare.
 const flagged = ({ samples, hits }) => (hits.length ? { suspicious: samples, suspiciousSha: suspiciousFingerprint(hits) } : {});

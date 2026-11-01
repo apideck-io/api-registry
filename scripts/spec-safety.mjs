@@ -38,39 +38,47 @@ const TEXT_KEYS = new Set(["description", "summary", "title", "x-summary", "depr
  * index.json); `hits` are every flagged text in full with where it sits, so a fingerprint of them changes when
  * text is added to an already-accepted description or copied to another place.
  */
-export function scanText(doc, { max = 100000, positional = true } = {}) {
-  const samples = [];
-  const hits = [];
-  const seen = new Set();
-  // YAML anchors share objects, and a self-reference makes a cycle: each object is scanned once.
-  const visited = new WeakSet();
-  const walk = (v, key, at, depth) => {
-    if (hits.length >= max || depth > 1000 || v == null) return;
-    if (typeof v === "object") {
-      if (visited.has(v)) return;
-      visited.add(v);
-    }
+export function scanText(doc, { max = 10000, positional = true } = {}) {
+  // Each object's hits are collected once and replayed under every place it appears: a YAML alias reused in
+  // two places counts twice (adding or removing a copy changes the fingerprint), shared subtrees aren't
+  // rescanned, and a self-reference (an object already on the current path) stops the walk.
+  const cache = new WeakMap();
+  const onPath = new Set();
+  let total = 0;
+  const collect = (v, key, depth) => {
+    if (v == null || depth > 1000) return [];
     if (typeof v === "string") {
-      if (!TEXT_KEYS.has(key)) return;
+      if (!TEXT_KEYS.has(key)) return [];
       const hidden = HIDDEN_CHARS.test(v);
       const hit = INSTRUCTION_LIKE.find((re) => re.test(v));
-      if (!hidden && !hit) return;
-      hits.push(`${positional ? at : ""}\u0000${v}`);
-      const i = hit ? v.search(hit) : v.search(HIDDEN_CHARS);
-      const sample = (hidden ? "hidden characters: " : "") + v.slice(Math.max(0, i - 20), i + 60).replace(/\s+/g, " ").replace(HIDDEN_ALL, "\u2423");
-      if (!seen.has(sample) && samples.length < 3) {
-        seen.add(sample);
-        samples.push(sample);
-      }
-      return;
+      return hidden || hit ? [{ rel: "", text: v, hidden, hit }] : [];
     }
+    if (typeof v !== "object" || onPath.has(v)) return [];
+    const byKey = cache.get(v);
+    if (byKey?.has(key)) return byKey.get(key);
+    onPath.add(v);
+    const out = [];
     // A list position isn't part of the place: a type or parameter added earlier would shift every later one.
-    // Copies still count, since each hit is kept (not deduplicated) in the fingerprint.
-    if (Array.isArray(v)) v.forEach((x) => walk(x, key, `${at}/*`, depth + 1));
+    if (Array.isArray(v)) for (const x of v) for (const h of collect(x, key, depth + 1)) out.length < max && out.push({ ...h, rel: `/*${h.rel}` });
     // A Postman description can be an object: { content, type }.
-    else if (typeof v === "object") for (const [k, x] of Object.entries(v)) walk(x, TEXT_KEYS.has(key) && k === "content" ? key : k, `${at}/${k}`, depth + 1);
+    else
+      for (const [k, x] of Object.entries(v))
+        for (const h of collect(x, TEXT_KEYS.has(key) && k === "content" ? key : k, depth + 1)) out.length < max && out.push({ ...h, rel: `/${k}${h.rel}` });
+    onPath.delete(v);
+    if (!cache.has(v)) cache.set(v, new Map());
+    cache.get(v).set(key, out);
+    total += out.length;
+    return out;
   };
-  walk(doc, "", "", 0);
+  const found = collect(doc, "", 0).slice(0, max);
+  const hits = found.map((h) => `${positional ? h.rel : ""}\u0000${h.text}`);
+  const samples = [];
+  for (const h of found) {
+    const i = h.hit ? h.text.search(h.hit) : h.text.search(HIDDEN_CHARS);
+    const sample = (h.hidden ? "hidden characters: " : "") + h.text.slice(Math.max(0, i - 20), i + 60).replace(/\s+/g, " ").replace(HIDDEN_ALL, "\u2423");
+    if (!samples.includes(sample)) samples.push(sample);
+    if (samples.length >= 3) break;
+  }
   return { samples, hits };
 }
 
@@ -99,8 +107,13 @@ const canonical = (v, stack = new Set()) => {
 
 const METHODS = ["get", "put", "post", "delete", "options", "head", "patch", "trace", "query"];
 // Scope order in a security requirement means nothing, and some vendors (X) shuffle it on every request.
+// The requirements in the list are alternatives, so their order means nothing either.
 const security = (reqs) =>
-  Array.isArray(reqs) ? reqs.map((r) => Object.fromEntries(Object.entries(r ?? {}).map(([k, v]) => [k, Array.isArray(v) ? [...v].sort() : v]))) : (reqs ?? null);
+  Array.isArray(reqs)
+    ? reqs.map((r) => Object.fromEntries(Object.entries(r ?? {}).map(([k, v]) => [k, Array.isArray(v) ? [...v].sort() : v]))).sort((a, b) => canonical(a).localeCompare(canonical(b)))
+    : (reqs ?? null);
+// Tuples collected per path are sorted, so reordering paths in the file doesn't change the fingerprint.
+const sorted = (rows) => rows.sort((a, b) => canonical(a).localeCompare(canonical(b)));
 
 /** A short hash of where a spec's calls go and how they authenticate, or null for formats without one. */
 export function surfaceOf(format, doc) {
@@ -128,7 +141,8 @@ export function surfaceOf(format, doc) {
       }
       return cur;
     };
-    for (const [p, raw] of Object.entries(doc.paths ?? {})) {
+    // Webhooks (OpenAPI 3.1) are operations too, with their own servers and security.
+    for (const [p, raw] of [...Object.entries(doc.paths ?? {}), ...Object.entries(doc.webhooks ?? {}).map(([k, v]) => [`webhook:${k}`, v])]) {
       const item = deref(raw);
       if (!item || typeof item !== "object") continue;
       if (typeof item.$ref === "string") perPath.push([p, "$ref", item.$ref]);
@@ -139,7 +153,7 @@ export function surfaceOf(format, doc) {
         if (op?.security) perPath.push([p, m, "security", security(op.security)]);
       }
     }
-    surface = { servers: doc.servers ?? null, schemes: doc.components?.securitySchemes ?? null, security: security(doc.security), perPath };
+    surface = { servers: doc.servers ?? null, schemes: doc.components?.securitySchemes ?? null, security: security(doc.security), perPath: sorted(perPath) };
   } else if (format === "swagger-2.0") {
     const perOp = [];
     // An operation's own schemes override the document's (an http-only operation).
@@ -148,7 +162,10 @@ export function surfaceOf(format, doc) {
         if (item?.[m]?.security) perOp.push([p, m, security(item[m].security)]);
         if (item?.[m]?.schemes) perOp.push([p, m, "schemes", item[m].schemes]);
       }
-    surface = { host: doc.host ?? null, parameterizedHost: doc["x-ms-parameterized-host"] ?? null, basePath: doc.basePath ?? null, schemes: doc.schemes ?? null, definitions: doc.securityDefinitions ?? null, security: security(doc.security), perOp };
+    surface = { host: doc.host ?? null, parameterizedHost: doc["x-ms-parameterized-host"] ?? null, basePath: doc.basePath ?? null, schemes: doc.schemes ?? null, definitions: doc.securityDefinitions ?? null, security: security(doc.security), perOp: sorted(perOp) };
+  } else if (format === "asyncapi-2") {
+    // Brokers and how clients authenticate to them.
+    surface = { servers: doc.servers ?? null, schemes: doc.components?.securitySchemes ?? null };
   } else if (format === "google-discovery") {
     surface = {
       rootUrl: doc.rootUrl ?? null,
@@ -179,7 +196,8 @@ export function surfaceOf(format, doc) {
         // Scheme and host, from the raw URL and from the structured fields Postman actually sends: a switch
         // from https to http sends credentials in cleartext.
         if (typeof u === "string" || u?.raw) {
-          const m = /^([a-z][\w+.-]*:\/\/)?([^/?#]*)/i.exec(String(typeof u === "string" ? u : u.raw));
+          // The scheme can be a variable too ({{scheme}}://{{host}}).
+          const m = /^((?:[a-z][\w+.-]*|\{\{[^}]+\}\}):\/\/)?([^/?#]*)/i.exec(String(typeof u === "string" ? u : u.raw));
           hosts.add(`${(m[1] ?? "").toLowerCase()}${m[2]}`);
         }
         if (u && typeof u === "object" && (u.host || u.protocol || u.port)) {
