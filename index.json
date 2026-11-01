@@ -6769,7 +6769,7 @@
           "bytes": 224361,
           "operations": 36,
           "specVersion": "2.0",
-          "server": "https://api.track.toggl.com/reports/api/v3",
+          "server": "https://api.track.toggl.com",
           "changedOn": "2026-11-01"
         },
         "Toggl Webhooks API v1": {

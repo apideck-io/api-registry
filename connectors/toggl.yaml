@@ -12,7 +12,7 @@ specs:
     url: "https://engineering.toggl.com/assets/files/reports-c9bb77e23d0637e43ddfd60a0134437d.json"
     format: swagger-2.0
     provenance: vendor
-    server: "https://api.track.toggl.com/reports/api/v3"
+    server: "https://api.track.toggl.com"
   - name: "Toggl Webhooks API v1"
     url: "https://engineering.toggl.com/assets/files/webhooks-479d375ba167e9f885df9356e34a7c4e.json"
     format: swagger-2.0
