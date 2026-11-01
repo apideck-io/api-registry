@@ -1,0 +1,39 @@
+connectors/acquia.yaml
+  s_eeda7bd9685d9d::t_858627cf1d5a3c 11
+connectors/flinks.yaml
+  s_eeda7bd9685d9d::t_77fba494a3ab86 34,40,46
+connectors/loop.yaml
+  s_eeda7bd9685d9d::t_7148e08eb84ea5 115-116
+connectors/lucidworks.yaml
+  s_eeda7bd9685d9d::t_553940851f8790 11
+connectors/mothership.yaml
+  s_eeda7bd9685d9d::t_fe38fb933e92ef 11
+connectors/nhost.yaml
+  s_eeda7bd9685d9d::t_3e042631219ecb 11,17
+connectors/showpad.yaml
+  s_eeda7bd9685d9d::t_1eb0a2301ba908 11,17
+connectors/techwolf.yaml
+  s_eeda7bd9685d9d::t_a14db5c1bbadb3 11
+connectors/teya.yaml
+  s_eeda7bd9685d9d::t_236d3e9338b85e 4
+connectors/upstash.yaml
+  s_eeda7bd9685d9d::t_25ab41a557c7e7 11
+connectors/weaviate-vector-database.yaml
+  s_eeda7bd9685d9d::t_25ff61cfa6f1a7 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6e0aabb1fb7d24d3610170cb4d15047c9b1b1626",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
