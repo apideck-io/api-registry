@@ -1,0 +1,23 @@
+.github/workflows/nightly.yml
+  s_eeda7bd9685d9d::t_4380dad15358b6 103-105
+scripts/spec-safety.mjs
+  s_eeda7bd9685d9d::t_cf8559b5a57c6f 86-96,161-162
+index.json
+  s_eeda7bd9685d9d::t_727de06688e19e 4522-4523
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ded2322005c77acfc966aa1266b50126bf46db62",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
