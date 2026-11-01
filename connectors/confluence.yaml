@@ -1,0 +1,15 @@
+id: confluence
+name: "Confluence"
+apideck: false
+specs:
+  - name: "Confluence Cloud REST API v2"
+    url: "https://dac-static.atlassian.com/cloud/confluence/openapi-v2.v3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.atlassian.com/ex/confluence/{cloud_id}/wiki/api/v2"
+  - name: "Confluence Cloud REST API v1"
+    url: "https://developer.atlassian.com/cloud/confluence/swagger.v3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.atlassian.com/ex/confluence/{cloud_id}/wiki/rest/api"
+    notes: "v1 endpoints are being retired in favour of v2."

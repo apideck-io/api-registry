@@ -1,0 +1,5 @@
+id: freshdesk
+name: "Freshdesk"
+apideck: false
+notes: "No published spec. REST API reference: https://developers.freshdesk.com/api/ (per-account host https://{domain}.freshdesk.com/api/v2)."
+specs: []

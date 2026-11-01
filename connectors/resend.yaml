@@ -1,0 +1,9 @@
+id: resend
+name: "Resend"
+apideck: false
+specs:
+  - name: "Resend API"
+    url: "https://raw.githubusercontent.com/resend/resend-openapi/main/resend.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.resend.com"

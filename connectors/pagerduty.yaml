@@ -1,0 +1,9 @@
+id: pagerduty
+name: "PagerDuty"
+apideck: false
+specs:
+  - name: "PagerDuty REST API"
+    url: "https://raw.githubusercontent.com/PagerDuty/api-schema/main/reference/REST/openapiv3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.pagerduty.com"

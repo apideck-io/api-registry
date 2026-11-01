@@ -1,0 +1,15 @@
+id: datadog
+name: "Datadog"
+apideck: false
+specs:
+  - name: "Datadog API v1"
+    url: "https://raw.githubusercontent.com/DataDog/datadog-api-client-typescript/master/.generator/schemas/v1/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.datadoghq.com"
+    notes: "From Datadog's official client generator; per-region site hosts (datadoghq.eu, us3/us5 and others)."
+  - name: "Datadog API v2"
+    url: "https://raw.githubusercontent.com/DataDog/datadog-api-client-typescript/master/.generator/schemas/v2/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.datadoghq.com"

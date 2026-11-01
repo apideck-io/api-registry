@@ -1,0 +1,8 @@
+id: google-slides
+name: "Google Slides"
+apideck: false
+specs:
+  - name: "Google Slides API"
+    url: "https://slides.googleapis.com/$discovery/rest?version=v1"
+    format: google-discovery
+    provenance: vendor

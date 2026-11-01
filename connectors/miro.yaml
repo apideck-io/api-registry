@@ -1,0 +1,9 @@
+id: miro
+name: "Miro"
+apideck: false
+specs:
+  - name: "Miro REST API"
+    url: "https://raw.githubusercontent.com/miroapp/api-clients/main/packages/generator/spec.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.miro.com"

@@ -1,0 +1,5 @@
+id: linkedin
+name: "LinkedIn"
+apideck: false
+notes: "No public spec. LinkedIn's APIs (Marketing, Community Management, Sign In) are documented on Microsoft Learn and gated by partner programs."
+specs: []

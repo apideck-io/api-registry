@@ -1,0 +1,11 @@
+id: fireflies
+name: "Fireflies.ai"
+apideck: false
+specs:
+  - name: "Fireflies GraphQL API"
+    url: "https://api.fireflies.ai/graphql"
+    format: graphql
+    provenance: vendor
+    extract: graphql-introspection
+    manual: login
+    notes: "Introspection requires an API key (Bearer), so CI can't fetch it."

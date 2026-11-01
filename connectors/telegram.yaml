@@ -1,0 +1,5 @@
+id: telegram
+name: "Telegram"
+apideck: false
+notes: "No published spec for the Bot API (https://core.telegram.org/bots/api); community conversions exist."
+specs: []

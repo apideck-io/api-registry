@@ -1,0 +1,9 @@
+id: trello
+name: "Trello"
+apideck: false
+specs:
+  - name: "Trello REST API"
+    url: "https://developer.atlassian.com/cloud/trello/swagger.v3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.trello.com/1"

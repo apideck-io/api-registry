@@ -1,0 +1,9 @@
+id: figma
+name: "Figma"
+apideck: false
+specs:
+  - name: "Figma REST API"
+    url: "https://raw.githubusercontent.com/figma/rest-api-spec/main/openapi/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.figma.com"

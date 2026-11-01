@@ -1,0 +1,9 @@
+id: x
+name: "X (Twitter)"
+apideck: false
+specs:
+  - name: "X API v2"
+    url: "https://api.x.com/2/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.x.com"

@@ -1,0 +1,10 @@
+id: zoom
+name: "Zoom"
+apideck: false
+specs:
+  - name: "Zoom API v2"
+    url: "https://raw.githubusercontent.com/zoom/api/master/openapi.v2.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.zoom.us/v2"
+    notes: "Zoom's GitHub spec is an older Swagger 2.0 export; the developer portal offers newer per-product OpenAPI downloads behind its docs UI."

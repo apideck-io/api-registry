@@ -4462,6 +4462,673 @@
     "zoho-people": {
       "name": "Zoho People",
       "specs": {}
+    },
+    "posthog": {
+      "name": "PostHog",
+      "specs": {
+        "PostHog API": {
+          "status": "ok",
+          "sha256": "14f3bfb804669f88448414e3f3a436eef6e5fbfe0ad78fd10dcf5b83ebf36c21",
+          "bytes": 10744636,
+          "operations": 2531,
+          "title": "PostHog API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://us.posthog.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "pagerduty": {
+      "name": "PagerDuty",
+      "specs": {
+        "PagerDuty REST API": {
+          "status": "ok",
+          "sha256": "8910d83d22054d59aceaede9f7ff8ae02c27108af2050c03f01f33721b5df940",
+          "bytes": 2837286,
+          "operations": 473,
+          "title": "PagerDuty API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.0.2",
+          "server": "https://api.pagerduty.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "trello": {
+      "name": "Trello",
+      "specs": {
+        "Trello REST API": {
+          "status": "ok",
+          "sha256": "b07c97d06e93f7caff661a307e86f2b58c1f97591614ac8179f8e31bda27334b",
+          "bytes": 275361,
+          "operations": 261,
+          "title": "Trello REST API",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.0.0",
+          "server": "https://api.trello.com/1",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "datadog": {
+      "name": "Datadog",
+      "specs": {
+        "Datadog API v1": {
+          "status": "ok",
+          "sha256": "f6649daefd202fb78419f91532eb5a886a211631f5f6a68545f32e7e97031785",
+          "bytes": 1699799,
+          "operations": 235,
+          "title": "Datadog API V1 Collection",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.datadoghq.com",
+          "specServer": "https://{subdomain}.{site}",
+          "changedOn": "2026-11-01"
+        },
+        "Datadog API v2": {
+          "status": "ok",
+          "sha256": "8657b01aff06a678f497362f01cd1e4955818ac373bdf7f0b67f291c11bcc0cd",
+          "bytes": 9367658,
+          "operations": 1712,
+          "title": "Datadog API V2 Collection",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.datadoghq.com",
+          "specServer": "https://{subdomain}.{site}",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "confluence": {
+      "name": "Confluence",
+      "specs": {
+        "Confluence Cloud REST API v2": {
+          "status": "ok",
+          "sha256": "40535e2a2c01547d53d824d68299098c9073e5bf7ed98a71634706759becfa31",
+          "bytes": 735132,
+          "operations": 252,
+          "title": "The Confluence Cloud REST API v2",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://api.atlassian.com/ex/confluence/{cloud_id}/wiki/api/v2",
+          "specServer": "https://{your-domain}/wiki/api/v2",
+          "changedOn": "2026-11-01"
+        },
+        "Confluence Cloud REST API v1": {
+          "status": "ok",
+          "sha256": "f80279e4beace901a20174044ff3dc1cf047ea9486c3dd6eff57e33e4161bf12",
+          "bytes": 420370,
+          "operations": 130,
+          "title": "The Confluence Cloud REST API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.atlassian.com/ex/confluence/{cloud_id}/wiki/rest/api",
+          "specServer": "//your-domain.atlassian.net",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "microsoft-excel": {
+      "name": "Microsoft Excel",
+      "specs": {
+        "OData Service for namespace microsoft.graph": {
+          "status": "ok",
+          "sha256": "69de68b2c895bc608a58229e662e2b3eeb23524385516afc250ff0b8f165ff29",
+          "bytes": 44457302,
+          "operations": 17911,
+          "title": "OData Service for namespace microsoft.graph",
+          "apiVersion": "v1.0",
+          "specVersion": "3.0.4",
+          "server": "https://graph.microsoft.com/v1.0",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "resend": {
+      "name": "Resend",
+      "specs": {
+        "Resend API": {
+          "status": "ok",
+          "sha256": "e706637116ab3cf6b3ca99854c4cab4933a193c607b2b18b9d79c0cb16c68dd8",
+          "bytes": 373477,
+          "operations": 142,
+          "title": "Resend",
+          "apiVersion": "1.5.1",
+          "specVersion": "3.1.2",
+          "server": "https://api.resend.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "x": {
+      "name": "X (Twitter)",
+      "specs": {
+        "X API v2": {
+          "status": "ok",
+          "sha256": "eda7a71cb5221cc568dd51c943d994646ed27d5efd836f6fbd100b9301b4e93a",
+          "bytes": 1314742,
+          "operations": 257,
+          "title": "X API v2",
+          "apiVersion": "2.173",
+          "specVersion": "3.0.0",
+          "server": "https://api.x.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "zoom": {
+      "name": "Zoom",
+      "specs": {
+        "Zoom API v2": {
+          "status": "ok",
+          "sha256": "1b04394282bb3759744334835c5aa92fcafb57df71f27713f92e7f0532bd18b0",
+          "bytes": 481487,
+          "operations": 155,
+          "title": "Zoom API",
+          "apiVersion": "2.0.0",
+          "specVersion": "2.0",
+          "server": "https://api.zoom.us/v2",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "spotify": {
+      "name": "Spotify",
+      "specs": {
+        "Spotify Web API": {
+          "status": "ok",
+          "sha256": "ddeb078a50208d94c4538bd891bec0c9e67c9f3406617a2d887f0a482a4501f4",
+          "bytes": 285947,
+          "operations": 97,
+          "title": "Spotify Web API with fixes and improvements from sonallux",
+          "apiVersion": "2026.5.31",
+          "specVersion": "3.0.3",
+          "server": "https://api.spotify.com/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "figma": {
+      "name": "Figma",
+      "specs": {
+        "Figma REST API": {
+          "status": "ok",
+          "sha256": "490cc17e98f72b8e5eff8f3cfcf8df2e059a67d89993c607761c2e9d6234fb7f",
+          "bytes": 424419,
+          "operations": 59,
+          "title": "Figma API",
+          "apiVersion": "0.47.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.figma.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "miro": {
+      "name": "Miro",
+      "specs": {
+        "Miro REST API": {
+          "status": "ok",
+          "sha256": "f0e17b5b43c92ff2d85c7fbe9a84301e39df1d3c14e6738cd939a6d7142f44dd",
+          "bytes": 1065633,
+          "operations": 197,
+          "title": "Miro Developer Platform",
+          "apiVersion": "v2.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.miro.com",
+          "specServer": "https://api.miro.com/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "apollo": {
+      "name": "Apollo",
+      "specs": {
+        "Apollo REST API": {
+          "status": "ok",
+          "sha256": "2caa89ab8f3d7aaa866b68395b7e98fd951fc183e0c26bedd8b88d1dd56fe0da",
+          "bytes": 1277668,
+          "operations": 83,
+          "title": "apollo-rest-api",
+          "apiVersion": "1.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.apollo.io/api/v1",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "mixpanel": {
+      "name": "Mixpanel",
+      "specs": {
+        "Mixpanel Ingestion API": {
+          "status": "ok",
+          "sha256": "d89ed9e5f7c21bc86a6e66a368f78c546d1b8b344e06be2137bee71dc5adaca7",
+          "bytes": 68747,
+          "operations": 20,
+          "title": "Ingestion API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.2",
+          "server": "https://api.mixpanel.com",
+          "specServer": "https://{region}.mixpanel.com",
+          "changedOn": "2026-11-01"
+        },
+        "Mixpanel Query API": {
+          "status": "ok",
+          "sha256": "87a73df5e89eafefe3291c0c9609410ff970ba76e6583f375d471cc03a613e33",
+          "bytes": 64981,
+          "operations": 19,
+          "title": "Query API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.3",
+          "server": "https://mixpanel.com/api/query",
+          "specServer": "https://{regionAndDomain}.com/api/query",
+          "changedOn": "2026-11-01"
+        },
+        "Mixpanel Export API": {
+          "status": "ok",
+          "sha256": "eba1d63f3904d259bcb8d187ff2436628d02286882f51b6b3327fb44a61fac14",
+          "bytes": 4753,
+          "operations": 1,
+          "title": "Event Export API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.2",
+          "server": "https://data.mixpanel.com/api/2.0",
+          "specServer": "https://{server}.mixpanel.com/api/2.0",
+          "changedOn": "2026-11-01"
+        },
+        "Mixpanel Identity API": {
+          "status": "ok",
+          "sha256": "c87a9be52b8fc2a066f43d6d73eda7a3242f9de0648378a0457fa5fa8e548689",
+          "bytes": 9430,
+          "operations": 3,
+          "title": "Identity API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.2",
+          "server": "https://api.mixpanel.com",
+          "specServer": "https://{region}.mixpanel.com",
+          "changedOn": "2026-11-01"
+        },
+        "Mixpanel Annotations API": {
+          "status": "ok",
+          "sha256": "199a8c867a30629ed808af1b6c29ccc910e3956ce84db5c3abe24060ba693195",
+          "bytes": 15861,
+          "operations": 7,
+          "title": "Annotations API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.2",
+          "server": "https://mixpanel.com/api/app",
+          "specServer": "https://{regionAndDomain}.com/api/app",
+          "changedOn": "2026-11-01"
+        },
+        "Mixpanel Lexicon Schemas API": {
+          "status": "ok",
+          "sha256": "67009af4852112b6e09486060937fa2ab4813ae7bd2b2abc9028bdf719b5eb90",
+          "bytes": 19148,
+          "operations": 8,
+          "title": "Lexicon Schemas API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.2",
+          "server": "https://mixpanel.com/api/app",
+          "specServer": "https://{regionAndDomain}.com/api/app",
+          "changedOn": "2026-11-01"
+        },
+        "Mixpanel GDPR API": {
+          "status": "ok",
+          "sha256": "9c254ebcb55fa79a0ce3e1b5fdc2bf8c0e0d58cd1181bb21090657ec4d0284aa",
+          "bytes": 13203,
+          "operations": 5,
+          "title": "GDPR API",
+          "apiVersion": "3.0.0",
+          "specVersion": "3.0.2",
+          "server": "https://mixpanel.com/api/app",
+          "specServer": "https://{regionAndDomain}.com/api/app",
+          "changedOn": "2026-11-01"
+        },
+        "Mixpanel Feature Flags API": {
+          "status": "ok",
+          "sha256": "8831ea267cfd74e2f435e3e963c33084b161256560a48c45db9c08a4fec15879",
+          "bytes": 13603,
+          "operations": 2,
+          "title": "Feature Flags API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://mixpanel.com",
+          "specServer": "https://{regionAndDomain}.com",
+          "changedOn": "2026-11-01"
+        },
+        "Mixpanel Experiments API": {
+          "status": "ok",
+          "sha256": "c48a4eb87d43f5027f512d51531efb6dc05320ffafeaa9e419373af2ec8594fb",
+          "bytes": 22065,
+          "operations": 10,
+          "title": "Experiments API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://mixpanel.com/api/app",
+          "specServer": "https://{regionAndDomain}.com/api/app",
+          "changedOn": "2026-11-01"
+        },
+        "Mixpanel Service Accounts API": {
+          "status": "ok",
+          "sha256": "9a813c9ccf486c92a754749e44c637a842fbe9f8bcf6aa606bd9896859479735",
+          "bytes": 22994,
+          "operations": 7,
+          "title": "Service Accounts API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.2",
+          "server": "https://mixpanel.com/api/app",
+          "specServer": "https://{regionAndDomain}.com/api/app",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "snowflake": {
+      "name": "Snowflake",
+      "specs": {
+        "Snowflake SQL API": {
+          "status": "ok",
+          "sha256": "28b780dd056961e975b4e1ccffe72b04d96d713ad3aaf378d5a6dc0316586dce",
+          "bytes": 29936,
+          "operations": 3,
+          "title": "Snowflake SQL API",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://{account}.snowflakecomputing.com",
+          "specServer": "https://org-account.snowflakecomputing.com",
+          "changedOn": "2026-11-01"
+        },
+        "Snowflake Database API": {
+          "status": "ok",
+          "sha256": "c177503a537b1cda70c4422be4c7b350c32bb657b76fde3e29179d4bd50a138e",
+          "bytes": 41491,
+          "operations": 18,
+          "title": "Snowflake Database API",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.0.0",
+          "server": "https://{account}.snowflakecomputing.com",
+          "specServer": "https://org-account.snowflakecomputing.com",
+          "changedOn": "2026-11-01"
+        },
+        "Snowflake Schema API": {
+          "status": "ok",
+          "sha256": "55cb1ed07a87208e9bfd170c333670f1d9e95e979b94e8ed6d018155b8b90dfd",
+          "bytes": 27464,
+          "operations": 10,
+          "title": "Snowflake Schema API",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.0.0",
+          "server": "https://{account}.snowflakecomputing.com",
+          "specServer": "https://org-account.snowflakecomputing.com",
+          "changedOn": "2026-11-01"
+        },
+        "Snowflake Table API": {
+          "status": "ok",
+          "sha256": "dfeb7bc3dc3ae9f023d1ffedfb423acd11ce7fe3b74dc79fd4eb4ddb160cd3cb",
+          "bytes": 56200,
+          "operations": 22,
+          "title": "Snowflake Table API",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.0.0",
+          "server": "https://{account}.snowflakecomputing.com",
+          "specServer": "https://org-account.snowflakecomputing.com",
+          "changedOn": "2026-11-01"
+        },
+        "Snowflake View API": {
+          "status": "ok",
+          "sha256": "d0798ce6502634ee22625a1a6229b2ca494e94001b8b50594420e649343c86e6",
+          "bytes": 16430,
+          "operations": 7,
+          "title": "Snowflake View API",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.0.0",
+          "server": "https://{account}.snowflakecomputing.com",
+          "specServer": "https://org-account.snowflakecomputing.com",
+          "changedOn": "2026-11-01"
+        },
+        "Snowflake Warehouse API": {
+          "status": "ok",
+          "sha256": "bfc1bcd7b981c83f35ed32d34c367a694206e7849485c60a4dce172c05b915ab",
+          "bytes": 34685,
+          "operations": 15,
+          "title": "Snowflake Warehouse API",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.0.0",
+          "server": "https://{account}.snowflakecomputing.com",
+          "specServer": "https://org-account.snowflakecomputing.com",
+          "changedOn": "2026-11-01"
+        },
+        "Snowflake User API": {
+          "status": "ok",
+          "sha256": "c18785aebdbfc298e589ea971760c405f3b233597615efc5fbb0b10c07c35379",
+          "bytes": 26543,
+          "operations": 11,
+          "title": "Snowflake User API",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.0.0",
+          "server": "https://{account}.snowflakecomputing.com",
+          "specServer": "https://org-account.snowflakecomputing.com",
+          "changedOn": "2026-11-01"
+        },
+        "Snowflake Role API": {
+          "status": "ok",
+          "sha256": "3449df2f72bd72e7160adf4f5200933a58f69604b535d8dfd263f58c2b463e00",
+          "bytes": 30811,
+          "operations": 14,
+          "title": "Snowflake Role API",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.0.0",
+          "server": "https://{account}.snowflakecomputing.com",
+          "specServer": "https://org-account.snowflakecomputing.com",
+          "changedOn": "2026-11-01"
+        },
+        "Snowflake Task API": {
+          "status": "ok",
+          "sha256": "9dc282435a8aea6304d61a12ba78eb2c31f89d28f0581ba44d2d244f3fc04649",
+          "bytes": 42520,
+          "operations": 16,
+          "title": "Snowflake Task API",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.0.0",
+          "server": "https://{account}.snowflakecomputing.com",
+          "specServer": "https://org-account.snowflakecomputing.com",
+          "changedOn": "2026-11-01"
+        },
+        "Snowflake Stage API": {
+          "status": "ok",
+          "sha256": "85634e14fda822de7354f90fe9829f1b8a46d12efcecd2f45916185c6db6881e",
+          "bytes": 24149,
+          "operations": 6,
+          "title": "Snowflake Stage API",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.0.0",
+          "server": "https://{account}.snowflakecomputing.com",
+          "specServer": "https://org-account.snowflakecomputing.com",
+          "changedOn": "2026-11-01"
+        },
+        "Snowflake Cortex Analyst API": {
+          "status": "ok",
+          "sha256": "ddd74fa4c9bceb1c1a1d133b027d93b3b58d06172ddd243cda22f2e67133546a",
+          "bytes": 38714,
+          "operations": 9,
+          "title": "Cortex Analyst API",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.0.0",
+          "server": "https://{account}.snowflakecomputing.com",
+          "specServer": "https://org-account.snowflakecomputing.com",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "youtube": {
+      "name": "YouTube",
+      "specs": {
+        "YouTube Data API v3": {
+          "status": "ok",
+          "sha256": "b073bbf7ffe6f2e191438767dca9466ac6a5e9b5022608b9beda5350bde99b35",
+          "bytes": 524163,
+          "operations": 83,
+          "title": "YouTube Data API v3",
+          "apiVersion": "v3",
+          "server": "https://youtube.googleapis.com/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "google-docs": {
+      "name": "Google Docs",
+      "specs": {
+        "Google Docs API": {
+          "status": "ok",
+          "sha256": "d70ec28f16de9e699822718f3d380bb0afe760b974a57b0a6e5e7d2eb9325cd6",
+          "bytes": 276657,
+          "operations": 3,
+          "title": "Google Docs API",
+          "apiVersion": "v1",
+          "server": "https://docs.googleapis.com/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "google-slides": {
+      "name": "Google Slides",
+      "specs": {
+        "Google Slides API": {
+          "status": "ok",
+          "sha256": "71f183708af2eb11d6932e011a2cc5b5a1eff9a9e999bc9004117e8ed8e15fc1",
+          "bytes": 250487,
+          "operations": 5,
+          "title": "Google Slides API",
+          "apiVersion": "v1",
+          "server": "https://slides.googleapis.com/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "google-forms": {
+      "name": "Google Forms",
+      "specs": {
+        "Google Forms API": {
+          "status": "ok",
+          "sha256": "028b8b8b5c2353f6509e05db221c7a8c63a58ef022cce40f6e74add1151eb8a5",
+          "bytes": 69010,
+          "operations": 10,
+          "title": "Google Forms API",
+          "apiVersion": "v1",
+          "server": "https://forms.googleapis.com/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "google-maps": {
+      "name": "Google Maps",
+      "specs": {
+        "Places API (New)": {
+          "status": "ok",
+          "sha256": "b356fb5210c6bdb9781691b4db93fdee875745205be6c565bbbf6c15896b99af",
+          "bytes": 148873,
+          "operations": 5,
+          "title": "Places API (New)",
+          "apiVersion": "v1",
+          "server": "https://places.googleapis.com/",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "fireflies": {
+      "name": "Fireflies.ai",
+      "specs": {
+        "Fireflies GraphQL API": {
+          "status": "manual: login"
+        }
+      }
+    },
+    "exa": {
+      "name": "Exa",
+      "specs": {
+        "Exa API": {
+          "status": "ok",
+          "sha256": "de1e8f95c9a3c07e807ee0de4d8880816919a04e7e6a8518e319b6dcbaf64d25",
+          "bytes": 66386,
+          "operations": 7,
+          "title": "Exa Search API",
+          "apiVersion": "1.2.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.exa.ai",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "customer-io": {
+      "name": "Customer.io",
+      "specs": {
+        "Customer.io Track API": {
+          "status": "ok",
+          "sha256": "feaf130cdec7d8621a033d8519b48ef0455e9e968492fd249c3f4b1eba878f6d",
+          "bytes": 3578679,
+          "operations": 18,
+          "title": "Customer.io Track API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://track.customer.io",
+          "changedOn": "2026-11-01"
+        },
+        "Customer.io App API": {
+          "status": "ok",
+          "sha256": "394be8c27da309edef2c087dfc116d8ab07e2f83792609dacf02fb6a3b57a259",
+          "bytes": 14930063,
+          "operations": 149,
+          "title": "Customer.io App API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.customer.io",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "granola": {
+      "name": "Granola",
+      "specs": {
+        "Granola API": {
+          "status": "ok",
+          "sha256": "409b491fd084c2e7fdf681dc0b4c6d92b02c3ce8acae49e6327d3bf854aee39c",
+          "bytes": 102822,
+          "operations": 19,
+          "title": "Granola API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://public-api.granola.ai",
+          "changedOn": "2026-11-01"
+        }
+      }
+    },
+    "freshdesk": {
+      "name": "Freshdesk",
+      "specs": {}
+    },
+    "ashby": {
+      "name": "Ashby",
+      "specs": {}
+    },
+    "airtable": {
+      "name": "Airtable",
+      "specs": {}
+    },
+    "reddit": {
+      "name": "Reddit",
+      "specs": {}
+    },
+    "pylon": {
+      "name": "Pylon",
+      "specs": {}
+    },
+    "linkedin": {
+      "name": "LinkedIn",
+      "specs": {}
+    },
+    "telegram": {
+      "name": "Telegram",
+      "specs": {}
     }
   }
 }

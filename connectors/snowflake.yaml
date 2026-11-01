@@ -1,0 +1,60 @@
+id: snowflake
+name: "Snowflake"
+apideck: false
+notes: "Snowflake's REST API is split into one spec per resource (snowflakedb/snowflake-rest-api-specs); the core ones are listed."
+specs:
+  - name: "Snowflake SQL API"
+    url: "https://raw.githubusercontent.com/snowflakedb/snowflake-rest-api-specs/main/specifications/sqlapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{account}.snowflakecomputing.com"
+  - name: "Snowflake Database API"
+    url: "https://raw.githubusercontent.com/snowflakedb/snowflake-rest-api-specs/main/specifications/database.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{account}.snowflakecomputing.com"
+  - name: "Snowflake Schema API"
+    url: "https://raw.githubusercontent.com/snowflakedb/snowflake-rest-api-specs/main/specifications/schema.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{account}.snowflakecomputing.com"
+  - name: "Snowflake Table API"
+    url: "https://raw.githubusercontent.com/snowflakedb/snowflake-rest-api-specs/main/specifications/table.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{account}.snowflakecomputing.com"
+  - name: "Snowflake View API"
+    url: "https://raw.githubusercontent.com/snowflakedb/snowflake-rest-api-specs/main/specifications/view.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{account}.snowflakecomputing.com"
+  - name: "Snowflake Warehouse API"
+    url: "https://raw.githubusercontent.com/snowflakedb/snowflake-rest-api-specs/main/specifications/warehouse.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{account}.snowflakecomputing.com"
+  - name: "Snowflake User API"
+    url: "https://raw.githubusercontent.com/snowflakedb/snowflake-rest-api-specs/main/specifications/user.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{account}.snowflakecomputing.com"
+  - name: "Snowflake Role API"
+    url: "https://raw.githubusercontent.com/snowflakedb/snowflake-rest-api-specs/main/specifications/role.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{account}.snowflakecomputing.com"
+  - name: "Snowflake Task API"
+    url: "https://raw.githubusercontent.com/snowflakedb/snowflake-rest-api-specs/main/specifications/task.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{account}.snowflakecomputing.com"
+  - name: "Snowflake Stage API"
+    url: "https://raw.githubusercontent.com/snowflakedb/snowflake-rest-api-specs/main/specifications/stage.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{account}.snowflakecomputing.com"
+  - name: "Snowflake Cortex Analyst API"
+    url: "https://raw.githubusercontent.com/snowflakedb/snowflake-rest-api-specs/main/specifications/cortex-analyst.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{account}.snowflakecomputing.com"

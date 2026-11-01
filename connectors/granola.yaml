@@ -1,0 +1,9 @@
+id: granola
+name: "Granola"
+apideck: false
+specs:
+  - name: "Granola API"
+    url: "https://docs.granola.ai/api-reference/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://public-api.granola.ai"

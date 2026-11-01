@@ -1,0 +1,9 @@
+id: exa
+name: "Exa"
+apideck: false
+specs:
+  - name: "Exa API"
+    url: "https://raw.githubusercontent.com/exa-labs/openapi-spec/master/exa-openapi-spec.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.exa.ai"

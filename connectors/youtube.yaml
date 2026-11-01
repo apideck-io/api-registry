@@ -1,0 +1,8 @@
+id: youtube
+name: "YouTube"
+apideck: false
+specs:
+  - name: "YouTube Data API v3"
+    url: "https://youtube.googleapis.com/$discovery/rest?version=v3"
+    format: google-discovery
+    provenance: vendor
