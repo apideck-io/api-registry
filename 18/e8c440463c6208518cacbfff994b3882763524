@@ -1,0 +1,33 @@
+.github/workflows/nightly.yml
+  s_eeda7bd9685d9d::t_444421eedb5ab7 33,35
+README.md
+  s_eeda7bd9685d9d::t_e29b190a30a290 13,50-80
+connectors/square.yaml
+  s_eeda7bd9685d9d::t_57113a18f0cc12 9
+index.json
+  s_eeda7bd9685d9d::t_b457eef1583451 729-734
+overlays/square.yaml
+  s_eeda7bd9685d9d::t_dd9cccf68d78e8 1-16
+package-lock.json
+  s_eeda7bd9685d9d::t_e3395c4256b917 9,16-79
+package.json
+  s_eeda7bd9685d9d::t_8731fba9e2f872 10-11
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_6967a116179515 15-17,37-63,103,368-385,393,397-398
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "18e8c440463c6208518cacbfff994b3882763524",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
