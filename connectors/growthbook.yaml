@@ -1,5 +1,5 @@
 id: growthbook
-name: "Growth Book"
+name: "GrowthBook"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://docs.growthbook.io)."
 specs:

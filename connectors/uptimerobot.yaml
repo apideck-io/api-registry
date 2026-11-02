@@ -1,5 +1,5 @@
 id: uptimerobot
-name: "Uptime Robot"
+name: "UptimeRobot"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://uptimerobot.com/api)."
 specs:

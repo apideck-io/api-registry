@@ -8,4 +8,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "{scheme}://{fusionauth-host}:{port}"
-    notes: "FusionAuth is self-hosted; by default it serves http on port 9011."
+    notes: "FusionAuth is self-hosted: these placeholders are the registry's (the spec lists http://localhost:9011 and a sandbox). It serves http on port 9011 by default."
