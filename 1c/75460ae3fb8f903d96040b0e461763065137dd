@@ -1,0 +1,23 @@
+connectors/gemini-exchange.yaml
+  s_a5e6b117d3e39a::t_99385ac5962d36 1-2
+connectors/loop.yaml
+  s_a5e6b117d3e39a::t_52b83fe78ff1c5 50,90,116
+connectors/mx.yaml
+  s_a5e6b117d3e39a::t_7c5eb592d0d5cb 35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1c75460ae3fb8f903d96040b0e461763065137dd",
+  "prompts": {},
+  "sessions": {
+    "s_a5e6b117d3e39a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a9d08af2-4549-4800-91f6-e8014e6e3a92",
+        "model": "unknown"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
