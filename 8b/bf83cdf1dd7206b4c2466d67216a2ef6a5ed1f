@@ -1,0 +1,19 @@
+connectors/gsmtasks.yaml
+  s_b2f3728169f94b::t_944291590e7b9e 7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8bbf83cdf1dd7206b4c2466d67216a2ef6a5ed1f",
+  "prompts": {},
+  "sessions": {
+    "s_b2f3728169f94b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "147e8264-cdf8-4238-944f-3bd0b346b468",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
