@@ -289,6 +289,8 @@ const withoutGeneratedDates = (v) =>
 // A spec marked `volatile` differs on every request: its server generates the values in its examples, or shuffles
 // its scope lists and keys. It is hashed without examples and with lists in a fixed order, so only a change to the
 // API's shape registers. Changing an example goes unnoticed for these specs, which is why it's declared per spec.
+// In these maps the keys are names the vendor chose, so one called example is part of the API, not an example.
+const NAMED_MAPS = new Set(["paths", "webhooks", "pathItems", "properties", "patternProperties", "definitions", "schemas", "parameters", "responses", "requestBodies", "headers", "links", "callbacks", "securityDefinitions", "securitySchemes"]);
 const withoutVolatile = (v, key) => {
   if (Array.isArray(v)) {
     const items = v.map((x) => withoutVolatile(x));
@@ -298,8 +300,7 @@ const withoutVolatile = (v, key) => {
   // A nonce in an authorization URL is per request (Avalara generates one per download).
   if (key === "authorizationUrl" && typeof v === "string") return v.replace(/([?&]nonce=)[^&]*/g, "$1");
   if (!v || typeof v !== "object") return v;
-  // Under `properties`, a key named example is a schema property: part of the API's shape, so it stays.
-  return Object.fromEntries(Object.entries(v).filter(([k]) => key === "properties" || (k !== "example" && k !== "examples")).map(([k, x]) => [k, withoutVolatile(x, k)]));
+  return Object.fromEntries(Object.entries(v).filter(([k]) => NAMED_MAPS.has(key) || (k !== "example" && k !== "examples")).map(([k, x]) => [k, withoutVolatile(x, k)]));
 };
 // The first value stored under `key` anywhere in a parsed JSON document (depth-first).
 function findKey(v, key) {
