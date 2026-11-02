@@ -1,0 +1,51 @@
+connectors/api-video.yaml
+  s_eeda7bd9685d9d::t_ce1a541c4561f0 11
+connectors/gemini-exchange.yaml
+  s_eeda7bd9685d9d::t_9d8998ca56bb78 11,17
+connectors/growthbook.yaml
+  s_eeda7bd9685d9d::t_44f77d088252d4 11
+connectors/handwrytten.yaml
+  s_eeda7bd9685d9d::t_e6305f3026c402 11
+connectors/infisical.yaml
+  s_eeda7bd9685d9d::t_ea52324304d062 11
+connectors/loop.yaml
+  s_eeda7bd9685d9d::t_82462fc44d2243 11,17,28,34,40,46,52,63,69,80,86,92,98,109,115,121,127
+connectors/microlink.yaml
+  s_eeda7bd9685d9d::t_693f6da0c32814 11
+connectors/polygon-io.yaml
+  s_eeda7bd9685d9d::t_997ba5d26cc677 11
+connectors/printify.yaml
+  s_eeda7bd9685d9d::t_4c7b1f7e057ab4 11
+connectors/sandbox-co-in.yaml
+  s_eeda7bd9685d9d::t_52673634723151 1-2
+connectors/swoogo.yaml
+  s_1216b7ab38d26c::t_e5c45338cba264 11
+connectors/teya.yaml
+  s_eeda7bd9685d9d::t_4c0eeff0d29a41 11,17
+connectors/togai.yaml
+  s_eeda7bd9685d9d::t_c294f7d2d1b007 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "97455170c261ff953a468eebd470de0bd5bf9b38",
+  "prompts": {},
+  "sessions": {
+    "s_1216b7ab38d26c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a14a97-820b-72f2-85b1-9bee130548e5",
+        "model": "gpt-6-luna"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
