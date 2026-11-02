@@ -7,13 +7,15 @@ here, the overlays, index.json, and the scripts.
 
 It does not cover the API specifications the entries link to. Those belong to their publishers and stay under
 their publishers' terms. Files under derived/graphql/ are derived from vendors' schemas and stay under the same
-terms as those schemas.
+terms as those schemas. No license has been identified for monday.com's schema, so the redistribution status of
+the file made from it is unknown; it isn't covered by the license here.
 
 This registry is a database in which Apideck has made a substantial investment in obtaining, verifying and
 presenting its contents. Apideck reserves its database rights, including under Directive 96/9/EC, in addition to
 any copyright. The Elastic License 2.0 does not license those rights. Separately from it, Apideck permits using the
 registry's contents in your own products and tools. Extracting all or a substantial part of them to republish
-as a catalog, dataset or API is not permitted without Apideck's agreement.
+as a catalog, dataset or API is not permitted without Apideck's agreement, and neither is repeated, systematic
+extraction of smaller parts to the same end.
 
 Files under derived/graphql/ made from Linear's GraphQL schema are under this license:
 
