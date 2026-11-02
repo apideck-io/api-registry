@@ -175,6 +175,7 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
         if (!s?.notes) errors.push(`${at}: an auth-only spec needs notes saying it describes authentication only`);
         if (s?.path && existsSync(join(ROOT, s.path))) {
           const isObj = (v) => Boolean(v) && typeof v === "object" && !Array.isArray(v);
+          const httpsUrl = (v) => typeof v === "string" && /^https:\/\/[^\s/]+\S*$/.test(v);
           let spec;
           try {
             spec = parseYaml(readFileSync(join(ROOT, s.path), "utf8"));
@@ -189,15 +190,21 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
             if (!isObj(spec.components?.securitySchemes) || !Object.keys(spec.components.securitySchemes).length) errors.push(`${at}: an auth-only spec needs components.securitySchemes`);
             if (spec["x-auth-only"] !== true) errors.push(`${at}: an auth-only spec sets x-auth-only: true`);
             for (const [name, scheme] of Object.entries(spec.components?.securitySchemes ?? {})) {
-              if (!isObj(scheme) || !["apiKey", "http", "mutualTLS", "oauth2", "openIdConnect"].includes(scheme.type)) errors.push(`${at}: securitySchemes.${name} needs a type: apiKey, http, mutualTLS, oauth2 or openIdConnect`);
-              else if (scheme.type === "openIdConnect" && (typeof scheme.openIdConnectUrl !== "string" || !/^https:\/\//.test(scheme.openIdConnectUrl))) errors.push(`${at}: ${name} is openIdConnect and needs an https openIdConnectUrl`);
+              // Written here, so schemes are inline: a $ref would need resolving before any of this could check it.
+              if (isObj(scheme) && scheme.$ref !== undefined) errors.push(`${at}: securitySchemes.${name} is defined inline in an auth-only spec, not as a $ref`);
+              else if (!isObj(scheme) || !["apiKey", "http", "mutualTLS", "oauth2", "openIdConnect"].includes(scheme.type)) errors.push(`${at}: securitySchemes.${name} needs a type: apiKey, http, mutualTLS, oauth2 or openIdConnect`);
+              else if (scheme.type === "openIdConnect" && !httpsUrl(scheme.openIdConnectUrl)) errors.push(`${at}: ${name} is openIdConnect and needs an https openIdConnectUrl`);
+              else if (scheme.type === "apiKey" && (typeof scheme.name !== "string" || !scheme.name.trim() || !["query", "header", "cookie"].includes(scheme.in))) errors.push(`${at}: ${name} is apiKey and needs a name and in: query, header or cookie`);
+              else if (scheme.type === "http" && (typeof scheme.scheme !== "string" || !scheme.scheme.trim())) errors.push(`${at}: ${name} is http and needs a scheme (basic, bearer…)`);
               else if (scheme.type === "oauth2") {
                 if (!isObj(scheme.flows) || !Object.keys(scheme.flows).length) errors.push(`${at}: ${name} is oauth2 and needs flows`);
                 for (const [kind, flow] of Object.entries(isObj(scheme.flows) ? scheme.flows : {})) {
                   if (!["authorizationCode", "implicit", "clientCredentials", "password"].includes(kind)) errors.push(`${at}: ${name}.flows.${kind} is not an OAuth 2.0 flow`);
                   if (!isObj(flow?.scopes)) errors.push(`${at}: ${name}.flows.${kind} needs scopes (an empty map when the vendor lists none)`);
-                  if ((kind === "authorizationCode" || kind === "implicit") && !flow?.authorizationUrl) errors.push(`${at}: ${name}.flows.${kind} needs authorizationUrl`);
-                  if (kind !== "implicit" && !flow?.tokenUrl) errors.push(`${at}: ${name}.flows.${kind} needs tokenUrl`);
+                  else if (Object.values(flow.scopes).some((d) => typeof d !== "string")) errors.push(`${at}: ${name}.flows.${kind} scopes map each scope to a string description`);
+                  if ((kind === "authorizationCode" || kind === "implicit") && !httpsUrl(flow?.authorizationUrl)) errors.push(`${at}: ${name}.flows.${kind} needs an https authorizationUrl`);
+                  if (kind !== "implicit" && !httpsUrl(flow?.tokenUrl)) errors.push(`${at}: ${name}.flows.${kind} needs an https tokenUrl`);
+                  if (flow?.refreshUrl !== undefined && !httpsUrl(flow.refreshUrl)) errors.push(`${at}: ${name}.flows.${kind} refreshUrl must be https`);
                 }
               }
               // Values beyond the URLs, on any scheme type, are checked and cited too, or left out.
@@ -219,6 +226,7 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
               // A citation for a value the spec doesn't state is left over from an edit.
               const states = { tokenEndpointAuthMethod: schemes.some((sc) => sc["x-token-endpoint-auth-method"] !== undefined), pkce: schemes.some((sc) => sc["x-pkce-required"] !== undefined), scopes: flows.some((f) => Object.keys(f?.scopes ?? {}).length), openIdConnectUrl: schemes.some((sc) => sc.openIdConnectUrl), authorizationUrl: flows.some((f) => f?.authorizationUrl), tokenUrl: flows.some((f) => f?.tokenUrl) };
               for (const [k, set] of Object.entries(states)) if (spec["x-sources"][k] && !set) errors.push(`${at}: x-sources.${k} cites a value the spec doesn't set`);
+              for (const k of Object.keys(spec["x-sources"])) if (k !== "server" && !(k in states)) errors.push(`${at}: x-sources.${k} isn't a value an auth-only spec cites (server, ${Object.keys(states).join(", ")})`);
             }
             const listsScopes = Object.values(spec.components?.securitySchemes ?? {}).some((sc) => Object.values(sc?.flows ?? {}).some((f) => Object.keys(f?.scopes ?? {}).length));
             if (isObj(spec["x-sources"]) && listsScopes && !spec["x-sources"].scopes) errors.push(`${at}: x-sources.scopes is required when the spec lists scopes`);
