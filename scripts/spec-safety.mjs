@@ -132,9 +132,11 @@ const canonical = (v, stack = new Set()) => {
 const METHODS = ["get", "put", "post", "delete", "options", "head", "patch", "trace", "query"];
 // Scope order in a security requirement means nothing, and some vendors (X) shuffle it on every request.
 // The requirements in the list are alternatives, so their order means nothing either.
+// Repeating a requirement doesn't change what's required, so repeats don't count (XTRF serves a varying number).
+const unique = (rows) => [...new Map(rows.map((r) => [canonical(r), r])).values()];
 const security = (reqs) =>
   Array.isArray(reqs)
-    ? reqs.map((r) => Object.fromEntries(Object.entries(r ?? {}).map(([k, v]) => [k, Array.isArray(v) ? [...v].sort() : v]))).sort((a, b) => canonical(a).localeCompare(canonical(b)))
+    ? unique(reqs.map((r) => Object.fromEntries(Object.entries(r ?? {}).map(([k, v]) => [k, Array.isArray(v) ? [...v].sort() : v])))).sort((a, b) => canonical(a).localeCompare(canonical(b)))
     : (reqs ?? null);
 // Tuples collected per path are sorted, so reordering paths in the file doesn't change the fingerprint.
 const sorted = (rows) => rows.sort((a, b) => canonical(a).localeCompare(canonical(b)));
@@ -252,5 +254,5 @@ export function surfaceOf(format, doc) {
     const variables = vars.filter((v) => v && used.has(v.key ?? v.id)).map((v) => [v.key ?? v.id, v.value ?? null]).sort((a, b) => String(a[0]).localeCompare(String(b[0])) || canonical(a[1]).localeCompare(canonical(b[1])));
     surface = { auth: doc.auth ?? null, nested: auth, hosts: [...hosts].sort(), variables, scripts };
   }
-  return surface && createHash("sha256").update(canonical(surface)).digest("hex").slice(0, 16);
+  return surface && createHash("sha256").update(canonical(surface).replace(/([?&]nonce=)[^&"]*/g, "$1")).digest("hex").slice(0, 16);
 }

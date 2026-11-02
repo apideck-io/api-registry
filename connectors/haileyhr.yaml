@@ -6,4 +6,5 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://api.haileyhr.app"
-    notes: "Swagger UI at https://api.haileyhr.app/docs/index.html. Spec has no servers block; base URL https://api.haileyhr.app (demo https://api.demo.haileyhr.app)."
+    notes: "Swagger UI at https://api.haileyhr.app/docs/index.html. Spec has no servers block; base URL https://api.haileyhr.app (demo https://api.demo.haileyhr.app). Served differently on each request: it generates the IDs in its examples. Hashed in its volatile form (see Integrity in the README)."
+    volatile: true

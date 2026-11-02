@@ -8,4 +8,5 @@ specs:
     format: swagger-2.0
     provenance: vendor
     server: "https://pi-api.credas.co.uk"
-    notes: "The spec declares no server; this is the host that serves it."
+    notes: "The spec declares no server; this is the host that serves it. Served differently on each request: it generates the dates in its examples. Hashed in its volatile form (see Integrity in the README)."
+    volatile: true
