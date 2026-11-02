@@ -8,6 +8,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://api-retail-media.newtail.com.br"
+    notes: "Operations are split across hosts: https://api-retail-media.newtail.com.br serves 15 of 20; the spec routes the others to https://events.newtail-media.newtail.com.br (4 of 20 operations); https://newtail-media.newtail.com.br (1 of 20 operations). Use each operation's own server."
   - name: "Antifraud Provider API"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Antifraud%20Provider%20API.json"
     format: openapi-3.0
@@ -73,7 +74,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{accountName}.{environment}.com.br"
-    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.{environment}.com.br serves 8 of 9; the spec routes the others to https://{accountName}.myvtex.com (1 of 9 operations). Use each operation's own server."
   - name: "Card Token Vault API"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Card%20Token%20Vault%20API.json"
     format: openapi-3.0
@@ -181,7 +182,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{accountName}.{environment}.com.br/api/io/_v/api/intelligent-search"
-    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.{environment}.com.br/api/io/_v/api/intelligent-search serves 6 of 8; the spec routes the others to https://{storeDomain}/api/io/_v/api/intelligent-search (1 of 8 operations); https://{accountName}.{environment}.com.br/api/intelligent-search/v0 (1 of 8 operations). Use each operation's own server."
   - name: "Intelligent Search Events API - Headless"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Intelligent%20Search%20Events%20API%20-%20Headless.json"
     format: openapi-3.0
@@ -205,7 +206,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{accountName}.{environment}.com.br"
-    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.{environment}.com.br serves 55 of 59; the spec routes the others to https://logistics.{environment}.com.br/{accountName} (4 of 59 operations). Use each operation's own server."
   - name: "Marketplace APIs - Sent Offers"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Marketplace%20APIs%20-%20Sent%20Offers.json"
     format: openapi-3.0
@@ -295,6 +296,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://pcs.vtexcommercestable.com.br"
+    notes: "Operations are split across hosts: https://pcs.vtexcommercestable.com.br serves 5 of 6; the spec routes the others to https://vtexpayments.com.br (1 of 6 operations). Use each operation's own server."
   - name: "Payment Provider Protocol"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Payment%20Provider%20Protocol.json"
     format: openapi-3.0
@@ -306,24 +308,25 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{accountName}.vtexpayments.com.br"
-    notes: "The spec's own placeholder: {accountName}, set per account."
+    notes: "The spec's own placeholder: {accountName}, set per account. Operations are split across hosts: https://{accountName}.vtexpayments.com.br serves 24 of 25; the spec routes the others to https://api.vtexvault.com (1 of 25 operations). Use each operation's own server."
   - name: "Pick and Pack API"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Pick%20and%20Pack%20API.json"
     format: openapi-3.0
     provenance: vendor
-    server: "https://auth.pickingnpacking.com/prod"
+    server: "https://api.pick-and-pack.com/prod/v1"
+    notes: "Operations are split across hosts: https://api.pick-and-pack.com/prod/v1 serves 7 of 8; the spec routes the others to https://auth.pickingnpacking.com/prod (1 of 8 operations). Use each operation's own server."
   - name: "Pick and Pack Last Mile Protocol API"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Pick%20and%20Pack%20Last%20Mile%20Protocol%20API.json"
     format: openapi-3.0
     provenance: vendor
-    server: "https://auth.pickingnpacking.com/{environment}"
-    notes: "The spec's own placeholder: {environment}, set per account."
+    server: "https://api.pickingnpacking.com/{environment}/v1/tracking/hook"
+    notes: "The spec's own placeholder: {environment}, set per account. Operations are split across hosts: https://api.pickingnpacking.com/{environment}/v1/tracking/hook serves 7 of 13; the spec routes the others to https://{store_endpoint} (5 of 13 operations); https://auth.pickingnpacking.com/{environment} (1 of 13 operations). Use each operation's own server."
   - name: "Pick and Pack Order Changes API"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Pick%20and%20Pack%20Order%20Changes%20API.json"
     format: openapi-3.0
     provenance: vendor
-    server: "https://{accountName}.{environment}.com.br/vtex_pickandpack"
-    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+    server: "https://{accountName}.myvtex.com/pickpack/bin-location"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.myvtex.com/pickpack/bin-location serves 4 of 7; the spec routes the others to https://{accountName}.{environment}.com.br/vtex_pickandpack (2 of 7 operations); https://{accountName}.myvtex.com/pickpack/warehouses (1 of 7 operations). Use each operation's own server."
   - name: "Policies System API"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Policies%20System%20API.json"
     format: openapi-3.0
@@ -335,7 +338,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://api.vtex.com/{accountName}"
-    notes: "The spec's own placeholder: {accountName}, set per account."
+    notes: "The spec's own placeholder: {accountName}, set per account. Operations are split across hosts: https://api.vtex.com/{accountName} serves 10 of 17; the spec routes the others to https://api.vtex.com/{account}/pricing (7 of 17 operations). Use each operation's own server."
   - name: "Pricing Hub"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Pricing%20Hub.json"
     format: openapi-3.0
@@ -359,7 +362,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{accountName}.{environment}.com.br"
-    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.{environment}.com.br serves 24 of 31; the spec routes the others to https://rnb.{environment}.com.br/api/pricing/pvt (6 of 31 operations); http://example.com/.{environment}.com.br/api/rnb (1 of 31 operations). Use each operation's own server."
   - name: "Punchout API"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Punchout%20API.json"
     format: openapi-3.0
@@ -395,7 +398,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{accountName}.{environment}.com.br"
-    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.{environment}.com.br serves 13 of 15; the spec routes the others to https://entelperu.{environment}.com.br/api/catalog_system/pub/products/crossselling/accessories (2 of 15 operations). Use each operation's own server."
   - name: "Session Manager API"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Session%20Manager%20API.json"
     format: openapi-3.0
@@ -442,7 +445,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{accountName}.{environment}.com.br"
-    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.{environment}.com.br serves 13 of 17; the spec routes the others to https://{storeDomain} (4 of 17 operations). Use each operation's own server."
   - name: "VTEX Shipping Network API"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20VTEX%20Shipping%20Network%20API.json"
     format: openapi-3.0
