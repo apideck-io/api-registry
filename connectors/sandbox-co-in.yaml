@@ -1,5 +1,5 @@
-id: sandbox
-name: "Sandbox"
+id: sandbox-co-in
+name: "Sandbox (sandbox.co.in)"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://developer.sandbox.co.in/docs)."
 specs:

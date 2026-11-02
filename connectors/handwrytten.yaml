@@ -8,3 +8,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://api.handwrytten.com/v2"
+    notes: "The spec also lists api2.handwrytten.com."

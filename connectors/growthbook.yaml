@@ -8,3 +8,4 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.growthbook.io/api"
+    notes: "The spec also lists x."

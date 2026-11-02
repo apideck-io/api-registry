@@ -8,3 +8,4 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.swoogo.com/api/v1"
+    notes: "The spec also lists local.swoogo.com."

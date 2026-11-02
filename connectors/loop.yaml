@@ -8,11 +8,13 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "Cart API (On-Store)"
     url: "https://docs.loopreturns.com/openapi/carts-api.yaml"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "Checkout+ API"
     url: "https://docs.loopreturns.com/openapi/checkout-plus-api.yaml"
     format: openapi-3.1
@@ -23,26 +25,31 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "Customers API"
     url: "https://docs.loopreturns.com/openapi/customers-api.yaml"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "Destinations API"
     url: "https://docs.loopreturns.com/openapi/destinations-api.yaml"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "Dispositioning API"
     url: "https://docs.loopreturns.com/openapi/dispositioning-api.yaml"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "Draft Returns API (openapi/draft-returns-hal-forms)"
     url: "https://docs.loopreturns.com/openapi/draft-returns-hal-forms.yaml"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/unstable."
   - name: "Draft Returns API (openapi/draft-returns)"
     url: "https://docs.loopreturns.com/openapi/draft-returns.yaml"
     format: openapi-3.1
@@ -53,11 +60,13 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "Happy Returns Shipment API"
     url: "https://docs.loopreturns.com/openapi/happy-returns-shipment-items-api.yaml"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "HQ API"
     url: "https://docs.loopreturns.com/openapi/hq-api.yaml"
     format: openapi-3.1
@@ -68,21 +77,25 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "Labels API"
     url: "https://docs.loopreturns.com/openapi/labels-api.yaml"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "Listings API"
     url: "https://docs.loopreturns.com/openapi/listings-api.yaml"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "Locations API"
     url: "https://docs.loopreturns.com/openapi/locations-api.yaml"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "Orders API (openapi/orders-api-2026-07)"
     url: "https://docs.loopreturns.com/openapi/orders-api-2026-07.yaml"
     format: openapi-3.1
@@ -93,21 +106,25 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "Programmatic Webhooks API"
     url: "https://docs.loopreturns.com/openapi/outgoing-webhooks-api.yaml"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "Products API"
     url: "https://docs.loopreturns.com/openapi/products-api.yaml"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "Returns API"
     url: "https://docs.loopreturns.com/openapi/returns-api.yaml"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
+    notes: "The spec also lists https://api.loopreturns.com/api/2026-07, https://api.loopreturns.com/api/unstable."
   - name: "Ship by Loop - External Shipping Provider API"
     url: "https://docs.loopreturns.com/openapi/ship-by-loop-api.yaml"
     format: openapi-3.1
