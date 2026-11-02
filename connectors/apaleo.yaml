@@ -8,28 +8,28 @@ specs:
     format: swagger-2.0
     provenance: vendor
     server: "https://api.apaleo.com"
-    notes: "Served differently on each request: it generates the dates and times in its examples. Hashed in its volatile form (see Integrity in the README)."
+    notes: "Served differently on each request: it generates the dates and times in its examples. Hashed in its volatile form (see `fetchSha256` in the README)."
     volatile: true
   - name: "apaleo Rate Plan API"
     url: "https://api.apaleo.com/swagger/rateplan-v1/swagger.json"
     format: swagger-2.0
     provenance: vendor
     server: "https://api.apaleo.com"
-    notes: "Served differently on each request: it generates the dates and times in its examples. Hashed in its volatile form (see Integrity in the README)."
+    notes: "Served differently on each request: it generates the dates and times in its examples. Hashed in its volatile form (see `fetchSha256` in the README)."
     volatile: true
   - name: "apaleo Booking API"
     url: "https://api.apaleo.com/swagger/booking-v1/swagger.json"
     format: swagger-2.0
     provenance: vendor
     server: "https://api.apaleo.com"
-    notes: "Served differently on each request: it generates the dates and times in its examples. Hashed in its volatile form (see Integrity in the README)."
+    notes: "Served differently on each request: it generates the dates and times in its examples. Hashed in its volatile form (see `fetchSha256` in the README)."
     volatile: true
   - name: "apaleo Finance API"
     url: "https://api.apaleo.com/swagger/finance-v1/swagger.json"
     format: swagger-2.0
     provenance: vendor
     server: "https://api.apaleo.com"
-    notes: "Served differently on each request: it generates the dates and times in its examples. Hashed in its volatile form (see Integrity in the README)."
+    notes: "Served differently on each request: it generates the dates and times in its examples. Hashed in its volatile form (see `fetchSha256` in the README)."
     volatile: true
   - name: "apaleo Settings API"
     url: "https://api.apaleo.com/swagger/settings-v1/swagger.json"
@@ -46,7 +46,7 @@ specs:
     format: swagger-2.0
     provenance: vendor
     server: "https://api.apaleo.com"
-    notes: "Served differently on each request: it generates the dates and times in its examples. Hashed in its volatile form (see Integrity in the README)."
+    notes: "Served differently on each request: it generates the dates and times in its examples. Hashed in its volatile form (see `fetchSha256` in the README)."
     volatile: true
   - name: "apaleo Reports API"
     url: "https://api.apaleo.com/swagger/reports-v1/swagger.json"
@@ -63,5 +63,5 @@ specs:
     format: swagger-2.0
     provenance: vendor
     server: "https://api.apaleo.com"
-    notes: "Served differently on each request: it generates the dates and times in its examples. Hashed in its volatile form (see Integrity in the README)."
+    notes: "Served differently on each request: it generates the dates and times in its examples. Hashed in its volatile form (see `fetchSha256` in the README)."
     volatile: true

@@ -7,5 +7,5 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.twelvedata.com"
-    notes: "Served differently on each request: it changes its key order. Hashed in its volatile form (see Integrity in the README)."
+    notes: "Served differently on each request: it changes its key order. Hashed in its volatile form (see `fetchSha256` in the README)."
     volatile: true

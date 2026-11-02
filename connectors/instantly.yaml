@@ -7,5 +7,5 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.instantly.ai"
-    notes: "Served differently on each request: it generates the values in its examples. Hashed in its volatile form (see Integrity in the README)."
+    notes: "Served differently on each request: it generates the values in its examples. Hashed in its volatile form (see `fetchSha256` in the README)."
     volatile: true
