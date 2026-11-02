@@ -2,7 +2,7 @@ openapi: 3.1.0
 info:
   title: CrowdStrike API (authentication only)
   version: "0"
-  description: "Authentication only. This document describes how to authenticate with the CrowdStrike API: its host and its OAuth 2.0 client-credentials flow. It lists no endpoints. CrowdStrike publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: the token endpoint refuses a request with made-up client credentials (HTTP 401). The token URL shown is US-1's; other regions use the same path on their own host."
+  description: "Authentication only. This document describes how to authenticate with the CrowdStrike API: its host and its OAuth 2.0 client-credentials flow. It lists no endpoints. CrowdStrike publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: the token endpoint refuses a request with made-up client credentials (HTTP 401). The token URL shown is US-1's. Each region's token URL is /oauth2/token on that region's server, and each refused a request with made-up credentials (HTTP 401) on 2026-11-02."
 x-auth-only: true
 x-sources:
   server: https://developer.crowdstrike.com/falcon-mcp/getting-started/credentials/

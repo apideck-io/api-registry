@@ -7,4 +7,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{liferay-host}/o/headless-delivery/v1.0"
-    notes: "{liferay-host} is the customer instance. Spec covers Headless Delivery only (193 paths) and declares no servers or security; docs give basic auth for development and OAuth2 for production. Each instance also serves /o/openapi/openapi.json behind credentials."
+    notes: "{liferay-host} is the customer instance, served over HTTPS. A local default install is plain HTTP on port 8080 instead (http://localhost:8080/o/headless-delivery/v1.0). Spec covers Headless Delivery only (193 paths) and declares no servers or security; docs give basic auth for development and OAuth2 for production. Each instance also serves /o/openapi/openapi.json behind credentials."

@@ -10,6 +10,7 @@ x-sources:
   auth: https://developer.unbounce.com/getting_started/
   authorizationUrl: https://developer.unbounce.com/getting_started/
   tokenUrl: https://developer.unbounce.com/getting_started/
+  scopes: https://developer.unbounce.com/getting_started/
 servers:
   - url: https://api.unbounce.com
 paths: {}
@@ -25,7 +26,8 @@ components:
         authorizationCode:
           authorizationUrl: https://api.unbounce.com/oauth/authorize
           tokenUrl: https://api.unbounce.com/oauth/token
-          scopes: {}
+          scopes:
+            full: ""
 security:
   - basic: []
   - oauth2: []

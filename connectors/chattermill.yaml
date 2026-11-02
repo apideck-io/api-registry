@@ -7,4 +7,4 @@ specs:
     format: postman-2.0
     provenance: vendor
     server: "https://api.chattermill.com"
-    notes: "From the collection's 'Base URL' variable; request paths start with /v1 (e.g. /v1/projects). Bearer auth."
+    notes: "From the collection's 'Base URL' variable; request paths start with /v1 (e.g. /v1/projects), except one update endpoint under /api/v1. Bearer auth."

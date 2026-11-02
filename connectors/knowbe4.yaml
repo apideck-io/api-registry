@@ -8,10 +8,10 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://us.api.knowbe4.com"
-    notes: "US host; the spec also lists the EU one."
+    notes: "US host; the spec also lists the EU one. The spec has no info.version, so the nightly check's \"no info.version\" warning is expected."
   - name: "KnowBe4 Events API"
     url: "https://developer.knowbe4.com/echelon-swagger.yml"
     format: openapi-3.0
     provenance: vendor
     server: "https://api.events.knowbe4.com"
-    notes: "US host; the spec also lists the EU one."
+    notes: "US host; the spec also lists the EU one. The spec has no info.version, so the nightly check's \"no info.version\" warning is expected."

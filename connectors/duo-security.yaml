@@ -7,4 +7,4 @@ specs:
     format: postman-2.1
     provenance: vendor
     server: "https://{apihost}"
-    notes: "apihost is the account's api-XXXXXXXX.duosecurity.com hostname from the Duo Admin Panel. The repo also holds Auth, Accounts and other API collections."
+    notes: "apihost is the account's api-XXXXXXXX.duosecurity.com hostname from the Duo Admin Panel. Three requests in this collection are malformed (two with a broken apihost URL, one with no URL); the rest are usable. The repo also holds Auth, Accounts and other API collections."
