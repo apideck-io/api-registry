@@ -1,0 +1,9 @@
+id: checkout-com
+name: "Checkout.com"
+apideck: false
+specs:
+  - name: "Checkout.com API Reference"
+    url: "https://api-reference.checkout.com/v1/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{prefix}.api.checkout.com"

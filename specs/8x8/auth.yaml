@@ -1,0 +1,24 @@
+openapi: 3.1.0
+info:
+  title: 8x8 API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the 8x8 API: its host and its OAuth 2.0 client-credentials flow. It lists no endpoints. 8x8 publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: the token endpoint refuses a request with made-up client credentials (HTTP 401)."
+x-auth-only: true
+x-sources:
+  server: https://help.8x8.com/support/docs/how-to-generate-oauth-token-and-make-desired-api-call-via-postman
+  tokenUrl: https://help.8x8.com/docs/creating-keys-and-authenticating-with-the-8x8-analytics-for-contact-center-api
+  tokenEndpointAuthMethod: https://support-portal.8x8.com/helpcenter/viewArticle.html?c=1_40_42_49_137_&d=66ff5389-09e5-4003-b843-afb3ea76822e&hl=en
+servers:
+  - url: https://api.8x8.com
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://api.8x8.com/oauth/v2/token
+          scopes: {}
+      x-token-endpoint-auth-method: client_secret_basic
+security:
+  - oauth2: []

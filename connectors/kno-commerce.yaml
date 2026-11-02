@@ -1,0 +1,9 @@
+id: kno-commerce
+name: "Kno Commerce"
+apideck: false
+specs:
+  - name: "Kno Commerce REST API"
+    url: "https://kno-open-api-specs.nyc3.cdn.digitaloceanspaces.com/rest-api/latest/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app-api.knocommerce.com"

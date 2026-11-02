@@ -1,0 +1,10 @@
+id: revivn
+name: "Revivn"
+apideck: false
+specs:
+  - name: "Revivn API"
+    url: "https://api-docs.revivn.com/api/collections/23222891/2s935sohZ4?segregateAuth=true&versionTag=latest"
+    format: postman-2.0
+    provenance: vendor
+    server: "https://api.revivn.dev"
+    notes: "The Postman collection behind Revivn's API documentation (api-docs.revivn.com)."

@@ -1,0 +1,9 @@
+id: vanta
+name: "Vanta"
+apideck: false
+specs:
+  - name: "Manage Vanta"
+    url: "https://developer.vanta.com/reference/manage-vanta.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.vanta.com/v1"

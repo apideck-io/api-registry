@@ -1,0 +1,9 @@
+id: rydoo
+name: "Rydoo"
+apideck: false
+specs:
+  - name: "Rydoo API"
+    url: "https://api.rydoo.com/swagger/v2/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.rydoo.com"

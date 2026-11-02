@@ -1,0 +1,12 @@
+id: procore
+name: "Procore"
+apideck: false
+notes: "Procore publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Procore API (authentication only)"
+    path: "specs/procore/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.procore.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (procore.github.io)."

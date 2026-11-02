@@ -1,0 +1,24 @@
+openapi: 3.1.0
+info:
+  title: Availity API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Availity API: its host and its OAuth 2.0 client-credentials flow. It lists no endpoints. Availity publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: the token endpoint refuses a request with made-up client credentials (HTTP 401)."
+x-auth-only: true
+x-sources:
+  server: https://developer.availity.com/blog/2025/3/25/availity-api-guide
+  tokenUrl: https://developer.availity.com/partner/gettingstarted
+  tokenEndpointAuthMethod: https://developer.availity.com/blog/2025/3/25/availity-api-guide
+servers:
+  - url: https://api.availity.com
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://api.availity.com/availity/v1/token
+          scopes: {}
+      x-token-endpoint-auth-method: client_secret_post
+security:
+  - oauth2: []

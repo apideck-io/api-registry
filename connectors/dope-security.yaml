@@ -1,0 +1,10 @@
+id: dope-security
+name: "dope.security"
+apideck: false
+specs:
+  - name: "Flightdeck - dope.security - Public API specification"
+    url: "https://openapi.gitbook.com/o/lPbtStYDGVD1wGOlb9I1/spec/OpenAPIV113.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.flightdeck.dope.security/v1"
+    notes: "Served from dope.security's GitBook space, embedded in its public API specification page (inflight.dope.security)."
