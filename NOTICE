@@ -1,7 +1,7 @@
 API registry
-Copyright 2021-2026 Apideck
+Copyright 2021-2026 Apideck BV
 
-Apideck is the licensor of this repository under the Elastic License 2.0 (see LICENSE). The license covers the
+Apideck BV ("Apideck") is the licensor of this repository under the Elastic License 2.0 (see LICENSE). The license covers the
 work in this repository: the connector entries and their notes, the auth-only specs and other specs authored
 here, the overlays, index.json, and the scripts.
 
