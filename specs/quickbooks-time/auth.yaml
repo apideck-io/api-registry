@@ -8,6 +8,7 @@ x-sources:
   authorizationUrl: https://tsheetsteam.github.io/api_docs/#oauth2-0
   tokenUrl: https://tsheetsteam.github.io/api_docs/#oauth2-0
   server: https://tsheetsteam.github.io/api_docs/#base-url
+  tokenEndpointAuthMethod: https://tsheetsteam.github.io/api_docs/#oauth2-0
 servers:
   - url: https://rest.tsheets.com/api/v1
 paths: {}

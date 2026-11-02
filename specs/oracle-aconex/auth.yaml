@@ -8,6 +8,7 @@ x-sources:
   authorizationUrl: https://help.aconex.com/apis/implement-smart-construction-platform-oauth/
   tokenUrl: https://help.aconex.com/apis/implement-smart-construction-platform-oauth/
   server: https://help.aconex.com/apis/implement-smart-construction-platform-oauth/
+  tokenEndpointAuthMethod: https://help.aconex.com/apis/implement-smart-construction-platform-oauth/
 servers:
   - url: https://api.aconex.com/api
 paths: {}

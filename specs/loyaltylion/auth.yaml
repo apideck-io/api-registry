@@ -9,6 +9,7 @@ x-sources:
   tokenUrl: https://developers.loyaltylion.com/api-reference/authentication/oauth
   server: https://developers.loyaltylion.com/api-reference/authentication/oauth
   scopes: https://developers.loyaltylion.com/api-reference/authentication/oauth
+  tokenEndpointAuthMethod: https://developers.loyaltylion.com/api-reference/authentication/oauth
 servers:
   - url: https://api.loyaltylion.com/v2
 paths: {}

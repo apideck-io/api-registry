@@ -9,7 +9,7 @@ The registry stores **links, not copies**. Most vendor specs carry licences that
 ```
 connectors/<id>.yaml   one entry per app (hand-maintained)
 index.json             what the last check found per spec (generated: never edit)
-specs/                 the few specs authored here
+specs/                 specs authored here: a few full ones, and auth-only specs (specs/<id>/auth.yaml)
 overlays/              fixes to vendor specs, as OpenAPI Overlay documents
 derived/graphql/       GraphQL SDL specs as introspection results (generated: never edit)
 scripts/verify.mjs     validates entries, checks every spec it can reach, writes index.json
@@ -124,9 +124,11 @@ Many apps document OAuth and an API host but publish no spec. For those, the reg
     notes: "Authentication only: no endpoints. Written from Uber's developer documentation."
 ```
 
-- Every value comes from the vendor's own documentation, and the spec cites the page for each (`x-sources`).
+- Every value comes from the vendor's own documentation, or its official SDK where the docs don't print it, and the spec cites the page for each (`x-sources`: one URL per value, including `tokenEndpointAuthMethod` and `pkce` when those are set).
+- The spec sets `x-auth-only: true`, and its entry sets `coverage: auth-only`; validation rejects an entry that points at a marked file without declaring it, and a declared spec without the marker.
+- `scopes` is an empty map when the vendor lists none on a public page.
 - Before an auth-only spec is added, the vendor's docs site and API host are checked for a published spec at the usual locations (`/openapi.json`, `/swagger.json`, `/api-docs`…); one found there is linked instead. Its token endpoint must answer an invalid request with an OAuth error, and its authorization endpoint and API host must respond.
-- Where the vendor states it, the security scheme carries `x-token-endpoint-auth-method` (`client_secret_basic` or `client_secret_post`) and `x-pkce-required`. Where it doesn't, the field is left out rather than guessed.
+- Where the vendor's documentation or official SDK states it, the security scheme carries `x-token-endpoint-auth-method` (`client_secret_basic` or `client_secret_post`) and `x-pkce-required`. Where it doesn't, the field is left out rather than guessed.
 - `index.json` records `coverage: auth-only`. Consumers that need operations should skip these specs. A spec marked auth-only that lists any endpoints fails validation.
 - When the vendor publishes a real spec, it replaces the auth-only one.
 

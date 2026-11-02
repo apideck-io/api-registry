@@ -9,6 +9,7 @@ x-sources:
   tokenUrl: https://learn.microsoft.com/en-us/bingwebmaster/oauth2
   server: https://learn.microsoft.com/en-us/bingwebmaster/oauth2
   scopes: https://learn.microsoft.com/en-us/bingwebmaster/oauth2
+  tokenEndpointAuthMethod: https://learn.microsoft.com/en-us/bingwebmaster/oauth2
 servers:
   - url: https://www.bing.com/webmaster/api.svc/json
 paths: {}

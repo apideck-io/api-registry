@@ -9,6 +9,7 @@ x-sources:
   tokenUrl: https://onshape-public.github.io/docs/auth/oauth/
   server: https://onshape-public.github.io/docs/auth/oauth/
   scopes: https://cad.onshape.com/help/Content/Plans/my_account_developer.htm
+  tokenEndpointAuthMethod: https://onshape-public.github.io/docs/auth/oauth/
 servers:
   - url: https://cad.onshape.com/api
 paths: {}

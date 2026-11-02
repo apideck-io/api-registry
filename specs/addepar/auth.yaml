@@ -9,6 +9,7 @@ x-sources:
   tokenUrl: https://developers.addepar.com/docs/oauth
   server: https://developers.addepar.com/docs/urls
   scopes: https://developers.addepar.com/docs/oauth
+  tokenEndpointAuthMethod: https://developers.addepar.com/docs/oauth
 servers:
   - url: https://api.addepar.com
 paths: {}

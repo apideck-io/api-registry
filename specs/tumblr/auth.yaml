@@ -16,7 +16,6 @@ components:
   securitySchemes:
     oauth2:
       type: oauth2
-      x-token-endpoint-auth-method: client_secret_post
       flows:
         authorizationCode:
           authorizationUrl: https://www.tumblr.com/oauth2/authorize

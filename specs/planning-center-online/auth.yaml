@@ -9,6 +9,7 @@ x-sources:
   tokenUrl: https://api.planningcenteronline.com/docs/overview/authentication
   server: https://api.planningcenteronline.com/docs/overview/authentication
   scopes: https://api.planningcenteronline.com/docs/overview/authentication
+  tokenEndpointAuthMethod: https://api.planningcenteronline.com/docs/overview/authentication
 servers:
   - url: https://api.planningcenteronline.com
 paths: {}
