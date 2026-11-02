@@ -1,0 +1,12 @@
+id: wiseagent
+name: "Wise Agent"
+apideck: false
+notes: "Wise Agent publishes no API spec; the auth-only spec below is written here. API access is for approved partners."
+specs:
+  - name: "Wise Agent API (authentication only)"
+    path: "specs/wiseagent/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://sync.thewiseagent.com/http/webconnect.asp"
+    notes: "The API is a single RPC-style endpoint (webconnect.asp), called with a request parameter, not a base for paths. Authentication only: no endpoints. Written from the vendor's developer documentation (wiseagent.com)."

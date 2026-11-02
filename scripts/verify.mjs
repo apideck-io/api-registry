@@ -106,6 +106,9 @@ function overlayErrors(file, spec) {
   return errs;
 }
 
+// The index's coverage always follows the entry: a spec that stops being auth-only must not keep the mark.
+const withoutCoverage = ({ coverage, ...rest }) => rest;
+
 const METHODS = ["get", "put", "post", "delete", "patch", "head", "options", "trace"];
 
 // ---- validation ----
@@ -151,6 +154,57 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
     if (s?.manual && !MANUAL.has(s.manual)) errors.push(`${at}: manual must be one of ${[...MANUAL].join(", ")}`);
     if (s?.manual && !s?.notes) errors.push(`${at}: a spec CI can't fetch needs notes saying how to get it`);
     if (s?.overlay !== undefined) for (const m of overlayErrors(s.overlay, s)) errors.push(`${at}: ${m}`);
+    // An auth-only spec describes how to authenticate (servers, security schemes, scopes) and no endpoints:
+    // written here, from the vendor's own documentation, for an app that publishes no spec.
+    if (s?.coverage === undefined && s?.path && /\.(ya?ml|json)$/.test(s.path) && existsSync(join(ROOT, s.path))) {
+      let marked = false;
+      try {
+        marked = parseYaml(readFileSync(join(ROOT, s.path), "utf8"))?.["x-auth-only"] === true; // YAML parses JSON too
+      } catch {
+        marked = false; // not this check's concern: the fetch reports an unparseable spec
+      }
+      if (marked) errors.push(`${at}: ${s.path} is marked x-auth-only; declare coverage: auth-only`);
+    }
+    if (s?.coverage !== undefined) {
+      if (s.coverage !== "auth-only") errors.push(`${at}: coverage is only set to auth-only`);
+      else {
+        if (!s?.path?.startsWith("specs/")) errors.push(`${at}: an auth-only spec is authored here, as a path under specs/`);
+        if (s?.format !== "openapi-3.1") errors.push(`${at}: an auth-only spec is openapi-3.1 (3.1 allows a document with no paths)`);
+        if (!s?.notes) errors.push(`${at}: an auth-only spec needs notes saying it describes authentication only`);
+        if (s?.path && existsSync(join(ROOT, s.path))) {
+          const isObj = (v) => Boolean(v) && typeof v === "object" && !Array.isArray(v);
+          let spec;
+          try {
+            spec = parseYaml(readFileSync(join(ROOT, s.path), "utf8"));
+          } catch (e) {
+            errors.push(`${at}: ${s.path} is not valid YAML (${e.message})`);
+          }
+          if (spec !== undefined && !isObj(spec)) errors.push(`${at}: ${s.path} is not an OpenAPI document`);
+          else if (spec) {
+            for (const key of ["paths", "webhooks", "x-ms-paths"])
+              if (isObj(spec[key]) && Object.keys(spec[key]).length) errors.push(`${at}: an auth-only spec lists no endpoints; ${s.path} has ${Object.keys(spec[key]).length} under ${key}`);
+            if (!Array.isArray(spec.servers) || !spec.servers[0]?.url) errors.push(`${at}: an auth-only spec names the API's server`);
+            if (!isObj(spec.components?.securitySchemes) || !Object.keys(spec.components.securitySchemes).length) errors.push(`${at}: an auth-only spec needs components.securitySchemes`);
+            if (spec["x-auth-only"] !== true) errors.push(`${at}: an auth-only spec sets x-auth-only: true`);
+            for (const [name, scheme] of Object.entries(spec.components?.securitySchemes ?? {}))
+              if (scheme?.type === "oauth2")
+                for (const [kind, flow] of Object.entries(scheme.flows ?? {})) {
+                  if ((kind === "authorizationCode" || kind === "implicit") && !flow?.authorizationUrl) errors.push(`${at}: ${name}.flows.${kind} needs authorizationUrl`);
+                  if (kind !== "implicit" && !flow?.tokenUrl) errors.push(`${at}: ${name}.flows.${kind} needs tokenUrl`);
+                }
+            if (!isObj(spec["x-sources"])) errors.push(`${at}: an auth-only spec cites its sources in x-sources`);
+            else for (const [k, v] of Object.entries(spec["x-sources"])) if (typeof v !== "string" || !/^https:\/\/\S+$/.test(v)) errors.push(`${at}: x-sources.${k} must be one https URL`);
+            if (isObj(spec["x-sources"])) {
+              const flows = Object.values(spec.components?.securitySchemes ?? {}).flatMap((sc) => Object.values(sc?.flows ?? {}));
+              const needed = ["server", ...(flows.some((f) => f?.authorizationUrl) ? ["authorizationUrl"] : []), ...(flows.some((f) => f?.tokenUrl) ? ["tokenUrl"] : [])];
+              for (const k of needed) if (!spec["x-sources"][k]) errors.push(`${at}: x-sources.${k} is required`);
+            }
+            const listsScopes = Object.values(spec.components?.securitySchemes ?? {}).some((sc) => Object.values(sc?.flows ?? {}).some((f) => Object.keys(f?.scopes ?? {}).length));
+            if (isObj(spec["x-sources"]) && listsScopes && !spec["x-sources"].scopes) errors.push(`${at}: x-sources.scopes is required when the spec lists scopes`);
+          }
+        }
+      }
+    }
   });
   entries.push(doc);
 }
@@ -458,7 +512,7 @@ for (const e of entries) {
     const old = before[s.name] ?? {};
     // Recorded, never fetched: a login wall, or bot protection that refuses CI. Earlier figures stay.
     if (s.manual) {
-      specs[s.name] = { ...old, status: `manual: ${s.manual}` };
+      specs[s.name] = { ...withoutCoverage(old), ...(s.coverage ? { coverage: s.coverage } : {}), status: `manual: ${s.manual}` };
       continue;
     }
     const r = await load(s);
@@ -568,7 +622,7 @@ for (const e of entries) {
     if (r.body === "") r.error = "empty response";
     if (!r.body) {
       failures++;
-      specs[s.name] = { ...old, status: r.error ?? `HTTP ${r.status}` };
+      specs[s.name] = { ...withoutCoverage(old), ...(s.coverage ? { coverage: s.coverage } : {}), status: r.error ?? `HTTP ${r.status}` };
       console.log(`✗ ${e.id} · ${s.name}: ${specs[s.name].status}${newlyFailing(old) ? " (newly failing)" : ""}`);
       continue;
     }
@@ -624,7 +678,7 @@ for (const e of entries) {
       } else info = inspect(s.format, r.body);
     } catch (err) {
       failures++;
-      specs[s.name] = { ...old, status: `unparseable: ${err.message.slice(0, 80)}` };
+      specs[s.name] = { ...withoutCoverage(old), ...(s.coverage ? { coverage: s.coverage } : {}), status: `unparseable: ${err.message.slice(0, 80)}` };
       console.log(`✗ ${e.id} · ${s.name}: unparseable${newlyFailing(old) ? " (newly failing)" : ""}`);
       continue;
     }
@@ -736,6 +790,7 @@ for (const e of entries) {
       changedOn: changed || !old.sha256 ? today : old.changedOn,
       ...(surfaceChanged ? { surfaceChangedOn: today } : old.surfaceChangedOn && info.surface === old.surface ? { surfaceChangedOn: old.surfaceChangedOn } : {}),
       ...(overlay ? { overlay } : {}),
+      ...(s.coverage ? { coverage: s.coverage } : {}),
     };
     // Δ changed, + newly indexed, ↺ recovered from a failure, ✓ unchanged. The nightly PR body lists all but ✓.
     const mark = changed ? "Δ" : !old.sha256 ? "+" : old.status && old.status !== "ok" ? "↺" : "✓";

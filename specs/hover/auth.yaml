@@ -1,0 +1,25 @@
+openapi: 3.1.0
+info:
+  title: Hover API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Hover API: its host and its OAuth 2.0 endpoints. It lists no endpoints. Hover publishes no OpenAPI specification; every value here comes from the vendor's developer documentation, cited per value in x-sources. Checked 2026-11-02."
+x-auth-only: true
+x-sources:
+  authorizationUrl: https://developers.hover.to/docs/oauth-20-authentication
+  tokenUrl: https://developers.hover.to/reference/generate-access-token
+  server: https://developers.hover.to/docs/capture-requests-via-the-api
+servers:
+  - url: https://hover.to/api/v2
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      x-token-endpoint-auth-method: client_secret_post
+      flows:
+        authorizationCode:
+          authorizationUrl: https://hover.to/oauth/authorize
+          tokenUrl: https://hover.to/oauth/token
+          scopes: {}
+security:
+  - oauth2: []

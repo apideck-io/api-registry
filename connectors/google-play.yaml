@@ -1,0 +1,10 @@
+id: google-play
+name: "Google Play Developer API"
+apideck: false
+notes: "Google's Discovery document for the Android Publisher API."
+specs:
+  - name: "Google Play Android Developer API v3"
+    url: "https://androidpublisher.googleapis.com/$discovery/rest?version=v3"
+    format: google-discovery
+    provenance: vendor
+    server: "https://androidpublisher.googleapis.com"

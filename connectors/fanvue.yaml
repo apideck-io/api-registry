@@ -1,0 +1,9 @@
+id: fanvue
+name: "Fanvue"
+apideck: false
+specs:
+  - name: "Fanvue API"
+    url: "https://api.fanvue.com/docs/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.fanvue.com"

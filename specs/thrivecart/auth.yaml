@@ -1,0 +1,24 @@
+openapi: 3.1.0
+info:
+  title: ThriveCart API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the ThriveCart API: its host and its OAuth 2.0 endpoints. It lists no endpoints. ThriveCart publishes no OpenAPI specification; every value here comes from the vendor's own documentation (ThriveCart's official PHP SDK), cited per value in x-sources. Checked 2026-11-02."
+x-auth-only: true
+x-sources:
+  authorizationUrl: https://github.com/thrivecart/php-api/blob/master/src/Oauth.php
+  tokenUrl: https://github.com/thrivecart/php-api/blob/master/src/Oauth.php
+  server: https://github.com/thrivecart/php-api/blob/master/src/Api.php
+servers:
+  - url: https://thrivecart.com/api/external
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://thrivecart.com/authorization/new
+          tokenUrl: https://thrivecart.com/authorization/token
+          scopes: {}
+security:
+  - oauth2: []

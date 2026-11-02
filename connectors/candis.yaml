@@ -1,0 +1,12 @@
+id: candis
+name: "Candis"
+apideck: false
+notes: "Candis publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Candis API (authentication only)"
+    path: "specs/candis/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.candis.io/v1"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developer.candis.io)."

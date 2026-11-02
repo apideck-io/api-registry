@@ -1,0 +1,24 @@
+openapi: 3.1.0
+info:
+  title: CCH Axcess API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the CCH Axcess API: its host and its OAuth 2.0 endpoints. It lists no endpoints. CCH Axcess publishes no OpenAPI specification; every value here comes from the vendor's developer documentation, cited per value in x-sources. Checked 2026-11-02."
+x-auth-only: true
+x-sources:
+  authorizationUrl: https://login.cchaxcess.com/ps/auth/v1.0/core/.well-known/openid-configuration
+  tokenUrl: https://login.cchaxcess.com/ps/auth/v1.0/core/.well-known/openid-configuration
+  server: https://api.cchaxcess.com/api/AuthServiceHelp/v1.0/help/operations/Authenticate
+servers:
+  - url: https://api.cchaxcess.com/api
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://login.cchaxcess.com/ps/auth/v1.0/core/connect/authorize
+          tokenUrl: https://login.cchaxcess.com/ps/auth/v1.0/core/connect/token
+          scopes: {}
+security:
+  - oauth2: []

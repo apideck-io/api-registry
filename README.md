@@ -111,6 +111,25 @@ actions:
 
 Applied with [openapi-format](https://github.com/thim81/openapi-format), which supports Overlay 1.0 and 1.1.
 
+## Auth-only specs
+
+Many apps document OAuth and an API host but publish no spec. For those, the registry holds an **auth-only** spec, written here: an OpenAPI 3.1 document with the API's server, its security schemes (authorization and token URLs, scopes where the vendor lists them) and **no endpoints**. It tells a client how to connect, not what it can call.
+
+```yaml
+  - name: "Uber API (authentication only)"
+    path: specs/uber/auth.yaml
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    notes: "Authentication only: no endpoints. Written from Uber's developer documentation."
+```
+
+- Every value comes from the vendor's own documentation, and the spec cites the page for each (`x-sources`).
+- Before an auth-only spec is added, the vendor's docs site and API host are checked for a published spec at the usual locations (`/openapi.json`, `/swagger.json`, `/api-docs`…); one found there is linked instead. Its token endpoint must answer an invalid request with an OAuth error, and its authorization endpoint and API host must respond.
+- Where the vendor states it, the security scheme carries `x-token-endpoint-auth-method` (`client_secret_basic` or `client_secret_post`) and `x-pkce-required`. Where it doesn't, the field is left out rather than guessed.
+- `index.json` records `coverage: auth-only`. Consumers that need operations should skip these specs. A spec marked auth-only that lists any endpoints fails validation.
+- When the vendor publishes a real spec, it replaces the auth-only one.
+
 ## Provenance
 
 | Value | Meaning |

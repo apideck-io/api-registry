@@ -1,0 +1,12 @@
+id: oracle-aconex
+name: "Oracle Aconex"
+apideck: false
+notes: "Oracle Aconex publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Oracle Aconex API (authentication only)"
+    path: "specs/oracle-aconex/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.aconex.com/api"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (help.aconex.com)."

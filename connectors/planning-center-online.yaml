@@ -1,0 +1,12 @@
+id: planning-center-online
+name: "Planning Center"
+apideck: false
+notes: "Planning Center publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Planning Center API (authentication only)"
+    path: "specs/planning-center-online/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.planningcenteronline.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (api.planningcenteronline.com)."

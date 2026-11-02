@@ -1,0 +1,12 @@
+id: tremendous
+name: "Tremendous"
+apideck: false
+notes: "Tremendous publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Tremendous API (authentication only)"
+    path: "specs/tremendous/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.tremendous.com/api/v2"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developers.tremendous.com)."

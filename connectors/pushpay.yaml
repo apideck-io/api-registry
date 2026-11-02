@@ -1,0 +1,12 @@
+id: pushpay
+name: "Pushpay ChMS"
+apideck: false
+notes: "Pushpay ChMS publishes no API spec; the auth-only spec below is written here. API access is for approved partners."
+specs:
+  - name: "Pushpay ChMS API (authentication only)"
+    path: "specs/pushpay/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.ccbchurch.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (docs.pushpay.io)."

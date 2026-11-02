@@ -1,0 +1,24 @@
+openapi: 3.1.0
+info:
+  title: Reapit API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Reapit API: its host and its OAuth 2.0 endpoints. It lists no endpoints. Reapit publishes no OpenAPI specification; every value here comes from the vendor's developer documentation, cited per value in x-sources. Checked 2026-11-02."
+x-auth-only: true
+x-sources:
+  authorizationUrl: https://foundations-documentation.reapit.cloud/reapit-connect-updates
+  tokenUrl: https://foundations-documentation.reapit.cloud/reapit-connect-updates
+  server: https://foundations-documentation.reapit.cloud/api/api-documentation
+servers:
+  - url: https://platform.reapit.cloud
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://connect.reapit.cloud/oauth/authorize
+          tokenUrl: https://connect.reapit.cloud/oauth/token
+          scopes: {}
+security:
+  - oauth2: []

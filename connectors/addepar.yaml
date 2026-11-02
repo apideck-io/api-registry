@@ -1,0 +1,12 @@
+id: addepar
+name: "Addepar"
+apideck: false
+notes: "Addepar publishes no API spec; the auth-only spec below is written here. API access is for approved partners."
+specs:
+  - name: "Addepar API (authentication only)"
+    path: "specs/addepar/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.addepar.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developers.addepar.com)."

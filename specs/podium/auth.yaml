@@ -1,0 +1,43 @@
+openapi: 3.1.0
+info:
+  title: Podium API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Podium API: its host and its OAuth 2.0 endpoints and scopes. It lists no endpoints. Podium publishes no OpenAPI specification; every value here comes from the vendor's developer documentation, cited per value in x-sources. Checked 2026-11-02."
+x-auth-only: true
+x-sources:
+  authorizationUrl: https://docs.podium.com/docs/oauth
+  tokenUrl: https://docs.podium.com/docs/oauth
+  server: https://docs.podium.com/reference/authentication
+  scopes: https://docs.podium.com/docs/oauth-scopes
+servers:
+  - url: https://api.podium.com/v4
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      x-token-endpoint-auth-method: client_secret_post
+      flows:
+        authorizationCode:
+          authorizationUrl: https://api.podium.com/oauth/authorize
+          tokenUrl: https://api.podium.com/oauth/token
+          scopes:
+            write_appointments: Grant access to create appointments in the user's locations.
+            read_campaigns: Grant access to read campaign data for the user's locations.
+            write_campaign_messages: Grant access to write campaign messages for the user's locations.
+            write_contacts: Grant access to create, update, and delete contact data for the user's locations.
+            write_data_feed_event: Grant access to trigger data feed events for the user's locations.
+            read_feedback: Grant access to all feedback data for the user's locations.
+            read_locations: Grant access to the user's locations.
+            read_messages: Grant access to all messages for the user's locations.
+            write_messages: Grant access to write messages in the user's locations.
+            read_organizations: Grant access to the user's organization.
+            read_payments: Grant access to all payment data for the user's locations.
+            write_payments: Grant access to create payments for all the user's locations.
+            read_reviews: Grant access to all review data for the user's locations.
+            write_reviews: Grant access to create reviews data for all the user's locations.
+            read_users: Grant access to all user data for the user's locations.
+            read_contacts: Grant access to all contact data for the user's locations.
+            write_locations: Grant access to write locations.
+security:
+  - oauth2: []

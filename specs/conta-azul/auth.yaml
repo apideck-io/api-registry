@@ -1,0 +1,31 @@
+openapi: 3.1.0
+info:
+  title: Conta Azul API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Conta Azul API: its host and its OAuth 2.0 endpoints and scopes. It lists no endpoints. Conta Azul publishes no OpenAPI specification; every value here comes from the vendor's developer documentation, cited per value in x-sources. Checked 2026-11-02."
+x-auth-only: true
+x-sources:
+  authorizationUrl: https://developers.contaazul.com/requestingcode
+  tokenUrl: https://developers.contaazul.com/changecode
+  server: https://developers.contaazul.com/makingcalls
+  scopes: https://developers.contaazul.com/requestingcode
+servers:
+  - url: https://api-v2.contaazul.com
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: "Non-standard authorization URL: its path is in the fragment (#/oauth/authorize), and Conta Azul's docs put the query parameters after it (…/#/oauth/authorize?response_type=code&client_id=…). A client that adds parameters before the fragment, as RFC 6749 expects, never reaches the login page with them."
+      x-authorization-params-in-fragment: true
+      x-token-endpoint-auth-method: client_secret_basic
+      flows:
+        authorizationCode:
+          authorizationUrl: https://login.contaazul.com/#/oauth/authorize
+          tokenUrl: https://api-v2.contaazul.com/oauth/token
+          scopes:
+            openid: ""
+            profile: ""
+            aws.cognito.signin.user.admin: Fixed scope set; grants admin permission
+security:
+  - oauth2: []

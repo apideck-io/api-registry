@@ -1,0 +1,9 @@
+id: precisefp
+name: "PreciseFP"
+apideck: false
+specs:
+  - name: "PreciseFP Api"
+    url: "https://app.precisefp.com/docs/api/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://app.precisefp.com/api/v3"

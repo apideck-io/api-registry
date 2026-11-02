@@ -1,0 +1,12 @@
+id: read-ai
+name: "Read AI"
+apideck: false
+notes: "Read AI publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Read AI API (authentication only)"
+    path: "specs/read-ai/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.read.ai"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (support.read.ai)."

@@ -1,0 +1,12 @@
+id: bing-webmasters
+name: "Bing Webmaster Tools"
+apideck: false
+notes: "Bing Webmaster Tools publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Bing Webmaster Tools API (authentication only)"
+    path: "specs/bing-webmasters/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://www.bing.com/webmaster/api.svc/json"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (learn.microsoft.com)."

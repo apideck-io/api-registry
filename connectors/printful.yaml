@@ -1,0 +1,9 @@
+id: printful
+name: "Printful"
+apideck: false
+specs:
+  - name: "Printful API"
+    url: "https://developers.printful.com/docs/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.printful.com"

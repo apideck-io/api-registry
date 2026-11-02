@@ -1,0 +1,12 @@
+id: uber
+name: "Uber"
+apideck: false
+notes: "Uber publishes no API spec; the auth-only spec below is written here. API access is for approved partners."
+specs:
+  - name: "Uber API (authentication only)"
+    path: "specs/uber/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.uber.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developer.uber.com)."

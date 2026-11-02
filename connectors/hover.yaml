@@ -1,0 +1,12 @@
+id: hover
+name: "Hover"
+apideck: false
+notes: "Hover publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Hover API (authentication only)"
+    path: "specs/hover/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://hover.to/api/v2"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developers.hover.to)."

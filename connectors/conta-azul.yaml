@@ -1,0 +1,12 @@
+id: conta-azul
+name: "Conta Azul"
+apideck: false
+notes: "Conta Azul publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Conta Azul API (authentication only)"
+    path: "specs/conta-azul/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api-v2.contaazul.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developers.contaazul.com)."

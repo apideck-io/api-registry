@@ -1,0 +1,29 @@
+openapi: 3.1.0
+info:
+  title: Tumblr API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Tumblr API: its host and its OAuth 2.0 endpoints and scopes. It lists no endpoints. Tumblr publishes no OpenAPI specification; every value here comes from the vendor's developer documentation, cited per value in x-sources. Checked 2026-11-02."
+x-auth-only: true
+x-sources:
+  authorizationUrl: https://www.tumblr.com/docs/en/api/v2#oauth2-authorization
+  tokenUrl: https://www.tumblr.com/docs/en/api/v2#oauth2-authorization
+  server: https://www.tumblr.com/docs/en/api/v2
+  scopes: https://www.tumblr.com/docs/en/api/v2#oauth2-authorization
+servers:
+  - url: https://api.tumblr.com/v2
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      x-token-endpoint-auth-method: client_secret_post
+      flows:
+        authorizationCode:
+          authorizationUrl: https://www.tumblr.com/oauth2/authorize
+          tokenUrl: https://api.tumblr.com/v2/oauth2/token
+          scopes:
+            basic: ""
+            write: ""
+            offline_access: Required to receive a refresh token
+security:
+  - oauth2: []

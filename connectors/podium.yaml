@@ -1,0 +1,12 @@
+id: podium
+name: "Podium"
+apideck: false
+notes: "Podium publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Podium API (authentication only)"
+    path: "specs/podium/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.podium.com/v4"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (docs.podium.com)."

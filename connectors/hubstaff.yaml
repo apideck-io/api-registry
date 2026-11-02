@@ -1,0 +1,10 @@
+id: hubstaff
+name: "Hubstaff"
+apideck: false
+specs:
+  - name: "Hubstaff V2 API"
+    url: "https://api.hubstaff.com/v2/docs"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.hubstaff.com"
+    notes: "Served as JSON at the docs URL."

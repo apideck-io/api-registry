@@ -1,0 +1,9 @@
+id: sellsy
+name: "Sellsy"
+apideck: false
+specs:
+  - name: "Sellsy API"
+    url: "https://api.sellsy.com/doc/v2/dist/sellsy.v2.latest.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.sellsy.com/v2"

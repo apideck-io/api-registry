@@ -1,0 +1,12 @@
+id: grain
+name: "Grain"
+apideck: false
+notes: "Grain publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Grain API (authentication only)"
+    path: "specs/grain/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.grain.com/_/public-api/v2"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developers.grain.com)."

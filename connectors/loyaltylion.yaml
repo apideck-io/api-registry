@@ -1,0 +1,12 @@
+id: loyaltylion
+name: "LoyaltyLion"
+apideck: false
+notes: "LoyaltyLion publishes no API spec; the auth-only spec below is written here. API access is for approved partners."
+specs:
+  - name: "LoyaltyLion API (authentication only)"
+    path: "specs/loyaltylion/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.loyaltylion.com/v2"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developers.loyaltylion.com)."

@@ -1,0 +1,31 @@
+openapi: 3.1.0
+info:
+  title: Candis API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Candis API: its host and its OAuth 2.0 endpoints and scopes. It lists no endpoints. Candis publishes no OpenAPI specification; every value here comes from the vendor's developer documentation, cited per value in x-sources. Checked 2026-11-02."
+x-auth-only: true
+x-sources:
+  authorizationUrl: https://developer.candis.io/docs/how-to-authenticate
+  tokenUrl: https://developer.candis.io/docs/how-to-authenticate
+  server: https://developer.candis.io/reference/exports
+  scopes: https://developer.candis.io/docs/access-token-scopes
+servers:
+  - url: https://api.candis.io/v1
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      x-token-endpoint-auth-method: client_secret_basic
+      flows:
+        authorizationCode:
+          authorizationUrl: https://id.my.candis.io/auth/realms/candis/protocol/openid-connect/auth
+          tokenUrl: https://id.my.candis.io/auth/realms/candis/protocol/openid-connect/token
+          scopes:
+            exports: Export API (experimental)
+            core_data: Core Data API (experimental)
+            offline_access: Long-lived refresh tokens (~6-24 months)
+            email: Core scope, enabled by default
+            profile: Core scope, enabled by default
+security:
+  - oauth2: []
