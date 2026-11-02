@@ -1,0 +1,23 @@
+connectors/teamviewer.yaml
+  s_eeda7bd9685d9d::t_a80dbb9a7e482c 10-11
+specs/carta/auth.yaml
+  s_eeda7bd9685d9d::t_21a7e7a34d9239 5,11,23-102
+specs/unbounce/auth.yaml
+  s_eeda7bd9685d9d::t_4e12fdedbdc606 5,11-12,22-28,31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "08e0fef127761689fbd6303cd6daedd7efe17090",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
