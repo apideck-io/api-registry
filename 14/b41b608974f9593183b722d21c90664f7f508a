@@ -1,0 +1,25 @@
+LICENSE
+  s_eeda7bd9685d9d::t_2bedd7a41788c6 1-93
+NOTICE
+  s_eeda7bd9685d9d::t_5bef3e354a14ef 1-14
+README.md
+  s_eeda7bd9685d9d::t_4912ffa986089f 159-162
+package.json
+  s_eeda7bd9685d9d::t_39a9293cb68099 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "14b41b608974f9593183b722d21c90664f7f508a",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
