@@ -1,0 +1,10 @@
+id: rightfoot
+name: "Rightfoot"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.rightfoot.com)."
+specs:
+  - name: "Rightfoot API"
+    url: "https://docs.rightfoot.com/api-reference/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.rightfoot.com"

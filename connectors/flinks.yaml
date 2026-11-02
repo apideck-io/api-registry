@@ -1,0 +1,46 @@
+id: flinks
+name: "Flinks"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.flinks.io/docs)."
+specs:
+  - name: "Flinks Outbound Auth API"
+    url: "https://docs.flinks.io/openapi-outbound-auth.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{host}"
+    notes: "The spec's own placeholder: {host} is the customer's Flinks host."
+  - name: "Flinks API (openapi-outbound)"
+    url: "https://docs.flinks.io/openapi-outbound.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://ob.flinksapp.com"
+  - name: "Flinks EFT API (V2)"
+    url: "https://docs.flinks.io/openapi-pay-eft-v2.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://www.{baseurl}.com"
+    notes: "The spec's own placeholder: {baseurl} is the customer's Flinks Pay domain name (its description gives \"flinks\" as an example)."
+  - name: "Flinks API (openapi-pay)"
+    url: "https://docs.flinks.io/openapi-pay.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://www.{baseurl}.com"
+    notes: "The spec's own placeholder: {baseurl} is the customer's Flinks Pay domain name (its description gives \"flinks\" as an example)."
+  - name: "Flinks API (openapi-upload)"
+    url: "https://docs.flinks.io/openapi-upload.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{instance}-api.private.fin.ag"
+    notes: "The spec's own placeholder: {instance}, set per customer or account."
+  - name: "Flinks API (openapi-wealth)"
+    url: "https://docs.flinks.io/openapi-wealth.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{instanceWealth}-api.private.fin.ag"
+    notes: "The spec's own placeholder: {instanceWealth}, set per customer or account."
+  - name: "Flinks API (openapi)"
+    url: "https://docs.flinks.io/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{instance}-api.private.fin.ag"
+    notes: "The spec's own placeholder: {instance}, set per customer or account."

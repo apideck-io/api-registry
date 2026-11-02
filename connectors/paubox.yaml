@@ -1,0 +1,20 @@
+id: paubox
+name: "Paubox"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.paubox.com)."
+specs:
+  - name: "Paubox Forms API"
+    url: "https://docs.paubox.com/openapi-forms.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.paubox.com/v1/forms"
+  - name: "Paubox Email API"
+    url: "https://docs.paubox.com/openapi1.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.paubox.com/v1/email"
+  - name: "Paubox Marketing API"
+    url: "https://docs.paubox.com/openapi2.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.paubox.com/v1/marketing"

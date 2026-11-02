@@ -1,0 +1,11 @@
+id: swoogo
+name: "Swoogo"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://developer.swoogo.com/)."
+specs:
+  - name: "Swoogo API"
+    url: "https://developer.swoogo.com/api-reference/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.swoogo.com/api/v1"
+    notes: "Production server. The spec also lists https://local.swoogo.com/api/v1 (Local API server)."

@@ -1,0 +1,10 @@
+id: zeal
+name: "Zeal"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.zeal.com)."
+specs:
+  - name: "zeal-api"
+    url: "https://docs.zeal.com/openapi/zeal-api.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.zeal.com"

@@ -1,0 +1,11 @@
+id: mothership
+name: "Mothership"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://developers.mothership.com)."
+specs:
+  - name: "Mothership Freight API"
+    url: "https://docs.mothership.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.mothership.com/beta"
+    notes: "Production host; the spec also lists the sandbox, sandbox.api.mothership.com."

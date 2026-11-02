@@ -1,0 +1,17 @@
+id: showpad
+name: "Showpad"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.api.showpad.com/docs)."
+specs:
+  - name: "Showpad API (openapi/openapi.v4)"
+    url: "https://developer.showpad.com/openapi/openapi.v4.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{subdomain}.api.showpad.com/v4"
+    notes: "The spec's own placeholder: {subdomain}, set per customer or account."
+  - name: "Showpad API (openapi/openapi.v3)"
+    url: "https://developer.showpad.com/openapi/openapi.v3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{subdomain}.showpad.biz/api/v3"
+    notes: "The spec's own placeholder: {subdomain}, set per customer or account."

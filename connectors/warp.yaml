@@ -1,0 +1,10 @@
+id: warp
+name: "Warp"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.warp.dev)."
+specs:
+  - name: "Warp Platform API"
+    url: "https://docs.warp.dev/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.warp.dev/api/v1"

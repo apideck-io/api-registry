@@ -1,0 +1,10 @@
+id: stackhawk
+name: "StackHawk"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.stackhawk.com)."
+specs:
+  - name: "StackHawk Public API"
+    url: "https://docs.stackhawk.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.stackhawk.com"

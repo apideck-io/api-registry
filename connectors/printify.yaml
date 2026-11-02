@@ -1,0 +1,11 @@
+id: printify
+name: "Printify"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://developers.printify.com/)."
+specs:
+  - name: "Printify Public API"
+    url: "https://developers.printify.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.printify.com"
+    notes: "Production server. The spec also lists https://enterprise.printful.com/api/pfy/public."

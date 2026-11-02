@@ -1,0 +1,11 @@
+id: datafold
+name: "Datafold"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.datafold.com)."
+specs:
+  - name: "Datafold API"
+    url: "https://docs.datafold.com/openapi-public.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.datafold.com"
+    notes: "Regional hosts also exist: us.datafold.com and eub.datafold.com."

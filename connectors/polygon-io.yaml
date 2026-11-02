@@ -1,0 +1,11 @@
+id: polygon-io
+name: "Massive (formerly Polygon.io)"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://polygon.io/docs). Polygon.io is now Massive; the API moved to api.massive.com."
+specs:
+  - name: "Massive API"
+    url: "https://api.massive.com/openapi"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.massive.com"
+    notes: "Production server. The spec also lists https://api.staging.massive.com (Massive Platform API (Staging))."

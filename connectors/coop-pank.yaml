@@ -1,0 +1,11 @@
+id: coop-pank
+name: "Coop Pank"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://openbanking.cooppank.ee/)."
+specs:
+  - name: "Coop OpenBanking XS2A apis"
+    url: "https://openbanking.cooppank.ee/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://openbanking.cooppank.ee"
+    notes: "The spec allows http and https (http first); recorded over https."

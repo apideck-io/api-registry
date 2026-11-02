@@ -1,0 +1,10 @@
+id: meetingpulse
+name: "MeetingPulse"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://app.meet.ps/api)."
+specs:
+  - name: "MeetingPulse API"
+    url: "https://app.meet.ps/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.meet.ps/api"

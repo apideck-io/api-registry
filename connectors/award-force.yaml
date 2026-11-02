@@ -1,0 +1,16 @@
+id: award-force
+name: "Award Force"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://apidocs.awardforce.com)."
+specs:
+  - name: "Award Force API v1.0"
+    url: "https://docs.awardforce.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.cr4ce.com"
+  - name: "Award Force API v2.3"
+    url: "https://apidocs.awardforce.com/api-reference/openapi-v2_3.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.{region}.cr4ce.com"
+    notes: "Per region: {region} is us, eu, au, ca or hk, as the spec's servers list."

@@ -1,0 +1,10 @@
+id: anymail-finder
+name: "Anymail finder"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://anymailfinder.com/api)."
+specs:
+  - name: "Anymail finder API"
+    url: "https://api.anymailfinder.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.anymailfinder.com"

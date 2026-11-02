@@ -1,0 +1,10 @@
+id: descript
+name: "Descript"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://help.descript.com)."
+specs:
+  - name: "Descript API"
+    url: "https://help.descript.com/developers/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://descriptapi.com/v1"

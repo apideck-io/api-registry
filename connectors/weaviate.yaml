@@ -1,0 +1,11 @@
+id: weaviate
+name: "Weaviate"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://weaviate.io/developers)."
+specs:
+  - name: "Weaviate REST API"
+    url: "https://docs.weaviate.io/openapi.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "{protocol}://{WEAVIATE_HOSTNAME}:{PORT}/v1"
+    notes: "Weaviate is self-hosted or runs on Weaviate Cloud: {protocol}, {WEAVIATE_HOSTNAME} and {PORT} are the deployment's own, as the spec declares."

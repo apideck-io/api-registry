@@ -1,0 +1,11 @@
+id: techwolf
+name: "TechWolf"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://developers.techwolf.ai)."
+specs:
+  - name: "Skill Engine API"
+    url: "https://developers.techwolf.ai/reference/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{tenant_name}.{region}.techwolf.ai"
+    notes: "The spec's own placeholders: {tenant_name}, {region}, set per customer or account."

@@ -1,0 +1,10 @@
+id: privy
+name: "Privy"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://help.privy.com)."
+specs:
+  - name: "Privy API"
+    url: "https://help.privy.com/openapi/privy-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.privy.com/v1"

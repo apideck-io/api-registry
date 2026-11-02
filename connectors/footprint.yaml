@@ -1,0 +1,11 @@
+id: footprint
+name: "Footprint"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.onefootprint.com)."
+specs:
+  - name: "Footprint API"
+    url: "https://docs.onefootprint.com/llms/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.onefootprint.com"
+    notes: "The spec gives its server without a scheme (//api.onefootprint.com); this is it over https."

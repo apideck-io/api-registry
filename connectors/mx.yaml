@@ -1,0 +1,47 @@
+id: mx
+name: "MX"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.mx.com)."
+specs:
+  - name: "Platform API 2026"
+    url: "https://docs.mx.com/openapi/platform-api/v20260929.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.mx.com"
+    notes: "Production server; the spec also lists int-api.mx.com."
+  - name: "MX Platform API (platform-api/v20250224)"
+    url: "https://docs.mx.com/openapi/platform-api/v20250224.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.mx.com"
+    notes: "Production server; the spec also lists int-api.mx.com."
+  - name: "MX Platform API (platform-api/v20111101)"
+    url: "https://docs.mx.com/openapi/platform-api/v20111101.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.mx.com"
+    notes: "Production server; the spec also lists int-api.mx.com."
+  - name: "Nexus API"
+    url: "https://docs.mx.com/openapi/nexus/v1.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://data.moneydesktop.com"
+    notes: "Production server; the spec also lists int-data.moneydesktop.com (integration)."
+  - name: "Consent Management V4 API"
+    url: "https://docs.mx.com/openapi/consent-management/v4.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{baseurl}"
+    notes: "Per customer: {baseurl} is the client's MX host. The spec declares http://{baseurl}; this is it over https."
+  - name: "Audience API"
+    url: "https://docs.mx.com/openapi/audience/v1.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{your-domain}.access.mx.com"
+    notes: "Per customer: {your-domain} is the customer's MX access subdomain ({your-domain}.access.mx.com); the spec's host is a placeholder. The spec declares http://yourdomain.access.mx.com (http); recorded over https."
+  - name: "Rewards"
+    url: "https://docs.mx.com/openapi/rewards/v1.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.mx.com"
+    notes: "Production server; the spec also lists int-api.mx.com."

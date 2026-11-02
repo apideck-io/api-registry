@@ -1,0 +1,10 @@
+id: middesk
+name: "Middesk"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.middesk.com)."
+specs:
+  - name: "Middesk API"
+    url: "https://docs.middesk.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.middesk.com"

@@ -1,0 +1,15 @@
+id: dune
+name: "Dune"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.dune.com)."
+specs:
+  - name: "DuneAPI"
+    url: "https://docs.dune.com/analytics-openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.dune.com/api"
+  - name: "OpenAPI for Markets API"
+    url: "https://docs.dune.com/api-reference/markets/markets-openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.dune.com/api"

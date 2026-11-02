@@ -1,0 +1,10 @@
+id: speakeasy
+name: "Speakeasy"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://www.speakeasyapi.dev)."
+specs:
+  - name: "Speakeasy API"
+    url: "https://www.speakeasy.com/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.prod.speakeasy.com"

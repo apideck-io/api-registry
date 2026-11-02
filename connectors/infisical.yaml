@@ -1,0 +1,11 @@
+id: infisical
+name: "Infisical"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://infisical.com/docs)."
+specs:
+  - name: "Infisical API"
+    url: "https://infisical.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://us.infisical.com"
+    notes: "Production server (US). The spec also lists https://eu.infisical.com (Production server (EU)), http://localhost:8080 (Local server)."

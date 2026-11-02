@@ -1,0 +1,11 @@
+id: buddy
+name: "Buddy"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://buddy.works/docs)."
+specs:
+  - name: "Buddy API"
+    url: "https://buddy.works/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.buddy.works"
+    notes: "The spec declares no server; this is the vendor's API host."

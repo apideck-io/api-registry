@@ -1,0 +1,11 @@
+id: fusionauth
+name: "FusionAuth"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://fusionauth.io)."
+specs:
+  - name: "FusionAuth API"
+    url: "https://fusionauth.io/docs/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "{scheme}://{fusionauth-host}:{port}"
+    notes: "FusionAuth is self-hosted: these placeholders are the registry's (the spec lists http://localhost:9011 and a sandbox). It serves http on port 9011 by default."

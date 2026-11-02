@@ -1,0 +1,16 @@
+id: ditto
+name: "Ditto"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://developer.dittowords.com/)."
+specs:
+  - name: "Ditto API v1 (legacy)"
+    url: "https://developer.dittowords.com/openapi-legacy.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.dittowords.com/v1"
+    notes: "The previous version; the spec is published as openapi-legacy."
+  - name: "Ditto API v2"
+    url: "https://developer.dittowords.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.dittowords.com/v2"

@@ -1,0 +1,10 @@
+id: modelscope
+name: "ModelScope"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://www.modelscope.cn/docs)."
+specs:
+  - name: "ModelScope OpenAPI"
+    url: "https://www.modelscope.cn/.well-known/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://modelscope.cn/openapi/v1"

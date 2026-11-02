@@ -1,0 +1,11 @@
+id: growthbook
+name: "GrowthBook"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.growthbook.io)."
+specs:
+  - name: "GrowthBook REST API"
+    url: "https://docs.growthbook.io/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.growthbook.io/api"
+    notes: "Cloud host; the spec also lists self-hosted GrowthBook at https://{domain}/api."

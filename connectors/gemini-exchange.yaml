@@ -1,0 +1,17 @@
+id: gemini-exchange
+name: "Gemini (crypto exchange)"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.gemini.com)."
+specs:
+  - name: "Gemini Exchange REST API"
+    url: "https://developer.gemini.com/specs/openapi/rest.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.gemini.com"
+    notes: "Production server. The spec also lists https://api.sandbox.gemini.com (Sandbox server for testing)."
+  - name: "Gemini Prediction Markets API"
+    url: "https://developer.gemini.com/specs/openapi/prediction-markets.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.gemini.com"
+    notes: "Production server. The spec also lists https://api.sandbox.gemini.com (Sandbox)."

@@ -1,0 +1,10 @@
+id: openlayer
+name: "Openlayer"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://docs.openlayer.com)."
+specs:
+  - name: "Openlayer API"
+    url: "https://docs.openlayer.com/api-reference/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.openlayer.com/v1"

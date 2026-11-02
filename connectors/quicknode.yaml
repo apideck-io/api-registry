@@ -1,0 +1,29 @@
+id: quicknode
+name: "QuickNode"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://www.quicknode.com/docs)."
+specs:
+  - name: "Streams REST API"
+    url: "https://api.quicknode.com/streams/rest/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.quicknode.com"
+    notes: "The spec declares no server; this is the vendor's API host."
+  - name: "Webhooks REST API"
+    url: "https://api.quicknode.com/webhooks/rest/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.quicknode.com"
+    notes: "The spec declares no server; this is the vendor's API host."
+  - name: "Key value REST API"
+    url: "https://api.quicknode.com/kv/rest/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.quicknode.com"
+    notes: "The spec declares no server; this is the vendor's API host."
+  - name: "QuickNode Console API v0"
+    url: "https://www.quicknode.com/api-docs/v0/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.quicknode.com"
+    notes: "Production server. The spec's own server depends on how it is requested: www.quicknode.com or api.quicknode.com; the API is on api.quicknode.com."

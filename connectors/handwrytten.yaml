@@ -1,0 +1,11 @@
+id: handwrytten
+name: "Handwrytten"
+apideck: false
+notes: "Spec served by the vendor (found from its developer portal, https://www.handwrytten.com)."
+specs:
+  - name: "Handwrytten API"
+    url: "https://www.handwrytten.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.handwrytten.com/v2"
+    notes: "Production server (API v2). The spec also lists https://api2.handwrytten.com/api/v1/user (the v1 user endpoint on a second host)."
