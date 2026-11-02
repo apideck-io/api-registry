@@ -362,7 +362,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{accountName}.{environment}.com.br"
-    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.{environment}.com.br serves 24 of 31; the spec routes the others to https://rnb.{environment}.com.br/api/pricing/pvt (6 of 31 operations); http://example.com/.{environment}.com.br/api/rnb (1 of 31 operations). Use each operation's own server."
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.{environment}.com.br serves 24 of 31; the spec routes the others to https://rnb.{environment}.com.br/api/pricing/pvt (6 of 31 operations). Use each operation's own server. One operation's server in the spec is a malformed placeholder (http://example.com/.{environment}.com.br/api/rnb) and isn't usable as given."
   - name: "Punchout API"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Punchout%20API.json"
     format: openapi-3.0
