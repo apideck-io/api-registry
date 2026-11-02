@@ -1,0 +1,9 @@
+id: yokoy
+name: "Yokoy"
+apideck: false
+specs:
+  - name: "Yokoy API"
+    url: "https://api.yokoy.ai/v1/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.yokoy.ai/v1/organizations/{organizationId}"

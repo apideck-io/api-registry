@@ -1,0 +1,10 @@
+id: ninjaone-rmm
+name: "NinjaOne RMM"
+apideck: false
+specs:
+  - name: "NinjaOne Public API 2.0"
+    url: "https://app.ninjarmm.com/apidocs/NinjaRMM-API-v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{instance}"
+    notes: "{instance} is the spec's own placeholder for the account's regional NinjaOne host (for example app, eu or oc, as in app.ninjarmm.com)."

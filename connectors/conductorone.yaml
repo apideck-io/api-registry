@@ -1,0 +1,9 @@
+id: conductorone
+name: "ConductorOne"
+apideck: false
+specs:
+  - name: "C1 API"
+    url: "https://insulator.conductor.one/api/v1/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{tenantDomain}.conductor.one"

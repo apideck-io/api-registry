@@ -1,0 +1,10 @@
+id: firefish
+name: "Firefish"
+apideck: false
+specs:
+  - name: "Firefish API"
+    url: "https://developer.firefishsoftware.com/api/collections/25381032/2sA2xcaEyw?segregateAuth=true&versionTag=latest"
+    format: postman-2.0
+    provenance: vendor
+    server: "https://api.firefishsoftware.com"
+    notes: "The Postman collection behind Firefish's API documentation (developer.firefishsoftware.com)."

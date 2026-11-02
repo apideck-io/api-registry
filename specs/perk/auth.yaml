@@ -1,0 +1,37 @@
+openapi: 3.1.0
+info:
+  title: Perk API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Perk API: its host and its OAuth 2.0 authorization-code flow and scopes. It lists no endpoints. Perk publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: the token endpoint refuses a request with made-up client credentials (HTTP 401)."
+x-auth-only: true
+x-sources:
+  server: https://developers.perk.com/reference/oauth
+  tokenUrl: https://developers.perk.com/reference/oauth
+  authorizationUrl: https://developers.perk.com/reference/oauth
+  tokenEndpointAuthMethod: https://developers.perk.com/reference/oauth
+  scopes: https://developers.perk.com/docs/scopes
+servers:
+  - url: https://api.perk.com
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://app.travelperk.com/oauth2/authorize
+          tokenUrl: https://app.travelperk.com/accounts/oauth2/token/
+          scopes:
+            expenses:read: ""
+            trips:read: ""
+            bookings:read: ""
+            users:read: ""
+            companies:read: ""
+            costcenters:read: ""
+            costcenters:write: ""
+            scim:read: ""
+            scim:write: ""
+            scim:delete: ""
+      x-token-endpoint-auth-method: client_secret_post
+security:
+  - oauth2: []
