@@ -1,5 +1,5 @@
-id: loop
-name: "Loop"
+id: loop-returns
+name: "Loop Returns"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://docs.loopreturns.com)."
 specs:
