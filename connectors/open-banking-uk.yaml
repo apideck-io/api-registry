@@ -1,14 +1,8 @@
 id: open-banking-uk
 name: "Open Banking (UK)"
 apideck: false
-notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source). The Open Data API v1.3 spec (opendata-api-spec-compiled) is left out: it is retired."
 specs:
-  - name: "Open Data API"
-    url: "https://raw.githubusercontent.com/OpenBankingUK/opendata-api-spec-compiled/master/opendata-swagger.json"
-    format: swagger-2.0
-    provenance: vendor
-    server: "https://{aspsp-host}/open-banking/v1.3"
-    notes: "Each bank (ASPSP) implements the standard on its own host."
   - name: "Account and Transaction API Specification"
     url: "https://raw.githubusercontent.com/OpenBankingUK/read-write-api-specs/master/dist/openapi/account-info-openapi.yaml"
     format: openapi-3.0
