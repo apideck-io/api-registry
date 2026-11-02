@@ -149,7 +149,8 @@ const withoutAuthNonce = (v, key, seen = new WeakMap()) => {
   if (key === "authorizationUrl" && typeof v === "string") return v.replace(/([?&]nonce=)[^&#]*/g, "$1");
   if (!v || typeof v !== "object") return v;
   if (seen.has(v)) return seen.get(v);
-  const out = Array.isArray(v) ? [] : {};
+  // No prototype, so a key named __proto__ is kept as an ordinary key, as YAML and JSON parsers keep it.
+  const out = Array.isArray(v) ? [] : Object.create(null);
   seen.set(v, out);
   for (const [k, x] of Object.entries(v)) out[k] = withoutAuthNonce(x, Array.isArray(v) ? undefined : k, seen);
   return out;
