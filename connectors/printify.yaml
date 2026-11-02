@@ -8,4 +8,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://api.printify.com"
-    notes: "The spec also lists enterprise.printful.com."
+    notes: "Production server. The spec also lists https://enterprise.printful.com/api/pfy/public."

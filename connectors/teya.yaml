@@ -8,10 +8,10 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.teya.com"
-    notes: "The spec also lists api.teya.xyz."
+    notes: "Production server. The spec also lists https://api.teya.xyz (Staging Server)."
   - name: "Teya FX API"
     url: "https://docs.teya.com/apis/dynamic-currency-conversion/openapi.yaml"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.teya.com"
-    notes: "The spec also lists api.teya.xyz."
+    notes: "Production server. The spec also lists https://api.teya.xyz (Development Server)."

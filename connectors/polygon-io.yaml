@@ -8,4 +8,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://api.massive.com"
-    notes: "The spec also lists api.staging.massive.com."
+    notes: "Production server. The spec also lists https://api.staging.massive.com (Massive Platform API (Staging))."

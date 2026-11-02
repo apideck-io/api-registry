@@ -8,4 +8,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://ws.api.video"
-    notes: "The spec also lists sandbox.api.video."
+    notes: "Production server. The spec also lists https://sandbox.api.video (test server: videos are watermarked and deleted after 24 hours)."

@@ -8,4 +8,4 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.microlink.io"
-    notes: "The spec also lists pro.microlink.io."
+    notes: "Free endpoint (daily rate limit). The spec also lists https://pro.microlink.io (Pro endpoint: send x-api-key; higher limits)."

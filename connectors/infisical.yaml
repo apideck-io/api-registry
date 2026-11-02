@@ -8,4 +8,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://us.infisical.com"
-    notes: "The spec also lists eu.infisical.com."
+    notes: "Production server (US). The spec also lists https://eu.infisical.com (Production server (EU)), http://localhost:8080 (Local server)."

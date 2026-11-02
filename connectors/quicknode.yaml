@@ -26,4 +26,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://api.quicknode.com"
-    notes: "The spec's server varies by client (www.quicknode.com or api.quicknode.com); api.quicknode.com is the API host."
+    notes: "Production server. The spec's own server depends on how it is requested: www.quicknode.com or api.quicknode.com; the API is on api.quicknode.com."
