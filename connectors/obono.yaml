@@ -1,0 +1,11 @@
+id: obono
+name: "obono"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "obono RKSV API"
+    url: "https://app.obono.at/api/docs/api.yml"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://app.obono.at/api/v1"
+    notes: "The spec declares no server; this is the host that serves it."

@@ -1,0 +1,137 @@
+id: amadeus
+name: "Amadeus for Developers"
+apideck: false
+notes: "Amadeus for Developers specs from Amadeus' own GitHub organisation (amadeus4dev). Nine more specs in that repository (Airport On-Time Performance, Flight Inspiration Search and other analytics APIs, Tours and Activities, Safe Place) are left out: their endpoints answer 404 on api.amadeus.com."
+specs:
+  - name: "Airport & City Search"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/AirportCitySearch_v1_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Airport Nearest Relevant"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/AirportNearestRelevant_v1_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Airline Code Lookup API"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/AirlineCodeLookUp_v1_swagger_specification.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Branded Fares Upsell"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/BrandedFaresUpsell_v1_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Flight Availabilities Search"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/FlightAvailabilitiesSearch_v1_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Flight Choice Prediction"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/FlightChoicePrediction_v2_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v2"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Flight Check-in Links"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/FlightCheck-inLinks_v2_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v2"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Flight Create Orders"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/FlightCreateOrders_v1_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Flight Delay Prediction"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/FlightDelayPrediction_v1_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Flight Offers Price"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/FlightOffersPrice_v1_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Hotel Ratings"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/HotelRatings_v2_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v2"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Hotel Name Autocomplete"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/HotelNameAutocomplete_v1_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Flight Offers Search"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/FlightOffersSearch_v2_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v2"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Flight Order Management"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/FlightOrderManagement_v1_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Hotel Booking"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/HotelBooking_v1_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Flight Price Analysis API"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/FlightPriceAnalysis_v1_swagger_specification.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "On-Demand Flight Status"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/OnDemandFlightStatus_v2_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v2"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Points of Interest"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/PointsOfInterest_v1_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Hotel Search API"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/HotelSearch_v3_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v3"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Travel Recommendations API"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/TravelRecommendations_v1_swagger_specification.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Seatmap Display"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/SeatMapDisplay_v1_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
+  - name: "Trip Purpose Prediction"
+    url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/TripPurposePrediction_v1_swagger_specification.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.amadeus.com/v1"
+    notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."

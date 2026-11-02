@@ -1,0 +1,11 @@
+id: papinet
+name: "papiNet"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "papiNet API"
+    url: "https://raw.githubusercontent.com/papinet/papiNet-API/master/1.0.0/papiNet-API.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{member-host}"
+    notes: "papiNet is an industry standard each member implements on its own host; the spec's host is an example."

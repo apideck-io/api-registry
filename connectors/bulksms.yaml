@@ -1,0 +1,10 @@
+id: bulksms
+name: "BulkSMS"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "BulkSMS JSON REST API"
+    url: "https://developer.bulksms.com/json/v1/swagger.yaml"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.bulksms.com/v1"

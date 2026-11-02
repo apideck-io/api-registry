@@ -1,0 +1,10 @@
+id: art19
+name: "ART19"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "ART19 Content API Documentation"
+    url: "https://art19.com/swagger_json/external/content.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://art19.com"

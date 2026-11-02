@@ -1,0 +1,10 @@
+id: openuv
+name: "OpenUV"
+apideck: false
+notes: "Spec listed in the APIs.guru directory. A gist by an APIs.guru maintainer, not OpenUV."
+specs:
+  - name: "OpenUV - Global Real-Time UV Index Forecast API"
+    url: "https://gist.githubusercontent.com/MikeRalphson/77bb693d4cf9213909527b9cc4566609/raw/9febc5d16d8d162c93f3503510ce0808a8075d5b/openuv.yaml"
+    format: openapi-3.0
+    provenance: community
+    server: "https://api.openuv.io/api/v1"

@@ -1,0 +1,23 @@
+id: onsched
+name: "OnSched"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "OnSched API Utility"
+    url: "https://sandbox-api.onsched.com/swagger/utility/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.onsched.com"
+    notes: "Production host; the spec lists the sandbox, sandbox-api.onsched.com."
+  - name: "OnSched Consumer API"
+    url: "https://sandbox-api.onsched.com/swagger/consumer/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.onsched.com"
+    notes: "Production host; the spec lists the sandbox, sandbox-api.onsched.com."
+  - name: "OnSched Setup API"
+    url: "https://sandbox-api.onsched.com/swagger/setup/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.onsched.com"
+    notes: "Production host; the spec lists the sandbox, sandbox-api.onsched.com."

@@ -1,0 +1,15 @@
+id: agentos
+name: "agentOS (LetMC)"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "agentOS API V3, Maintenance Call Group"
+    url: "https://live-api.letmc.com/swagger/docs/v3-maintenance"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://live-api.letmc.com"
+  - name: "agentOS API V3, Diary Call Group"
+    url: "https://live-api.letmc.com/swagger/docs/v3-diary"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://live-api.letmc.com"

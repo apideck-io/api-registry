@@ -1,0 +1,10 @@
+id: shorten
+name: "Shorten.REST"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Shorten.REST API Documentation"
+    url: "https://docs.shorten.rest/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.shorten.rest"

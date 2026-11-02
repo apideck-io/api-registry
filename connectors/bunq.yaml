@@ -1,0 +1,11 @@
+id: bunq
+name: "bunq"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "bunq API"
+    url: "https://raw.githubusercontent.com/bunq/doc/master/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.bunq.com/v1"
+    notes: "Production host; sandbox at https://public-api.sandbox.bunq.com/v1 (the spec's default)."

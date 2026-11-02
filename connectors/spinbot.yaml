@@ -1,0 +1,10 @@
+id: spinbot
+name: "Spinbot"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Article Rewriter and Article Extractor API"
+    url: "https://spinbot.net/spinbot_api_swagger.yaml"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.spinbot.net"

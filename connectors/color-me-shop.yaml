@@ -1,0 +1,10 @@
+id: color-me-shop
+name: "Color Me Shop"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "カラーミーショップアプリストア API"
+    url: "https://api.shop-pro.jp/appstore//v1/open_api.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.shop-pro.jp"

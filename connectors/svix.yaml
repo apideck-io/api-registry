@@ -1,0 +1,11 @@
+id: svix
+name: "Svix"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Svix API"
+    url: "https://api.svix.com/api/v1/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.us.svix.com"
+    notes: "The spec lists regional servers: api.us.svix.com, api.eu.svix.com, api.ca.svix.com and api.au.svix.com; use the account's region."

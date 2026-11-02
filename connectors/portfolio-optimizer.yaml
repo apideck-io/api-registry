@@ -1,0 +1,10 @@
+id: portfolio-optimizer
+name: "Portfolio Optimizer"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Portfolio Optimizer"
+    url: "https://docs.portfoliooptimizer.io/openapi/portfoliooptimizer.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.portfoliooptimizer.io/v1"

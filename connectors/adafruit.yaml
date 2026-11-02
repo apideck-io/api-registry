@@ -1,0 +1,10 @@
+id: adafruit
+name: "Adafruit IO"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Adafruit IO REST API"
+    url: "https://raw.githubusercontent.com/adafruit/io-api/gh-pages/v2.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://io.adafruit.com/api/v2"

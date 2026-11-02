@@ -1,0 +1,10 @@
+id: urlbox
+name: "Urlbox"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Urlbox API"
+    url: "https://www.urlbox.io/.well-known/open-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.urlbox.com"

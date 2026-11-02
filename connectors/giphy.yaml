@@ -1,0 +1,10 @@
+id: giphy
+name: "GIPHY"
+apideck: false
+notes: "Spec listed in the APIs.guru directory. From an individual's repository (faragorn/open-api-specs), not GIPHY."
+specs:
+  - name: "Giphy API"
+    url: "https://raw.githubusercontent.com/faragorn/open-api-specs/master/specs/giphy_api/1.0/index.yml"
+    format: swagger-2.0
+    provenance: community
+    server: "https://api.giphy.com/v1"

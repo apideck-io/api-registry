@@ -1,0 +1,11 @@
+id: gsmtasks
+name: "GSMtasks"
+apideck: false
+notes: "Spec listed in the APIs.guru directory. Published from the oeklo GitHub account, which couldn't be confirmed as GSMtasks."
+specs:
+  - name: "GSMTasks Project API"
+    url: "https://raw.githubusercontent.com/oeklo/gsmtasks-schema/main/openapi.yaml"
+    format: openapi-3.0
+    provenance: community
+    server: "https://api.gsmtasks.com"
+    notes: "The spec declares no host; GSMtasks' API is on api.gsmtasks.com."

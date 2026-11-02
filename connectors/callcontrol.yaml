@@ -1,0 +1,10 @@
+id: callcontrol
+name: "Call Control"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Call Control API"
+    url: "https://www.callcontrol.com/js/swagger/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.callcontrol.com"

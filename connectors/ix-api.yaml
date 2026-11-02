@@ -1,0 +1,11 @@
+id: ix-api
+name: "IX-API"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "IX-API"
+    url: "https://docs.ix-api.net/v2/ix-api-latest.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{ixp-host}/api/v2"
+    notes: "IX-API is a standard each internet exchange implements on its own host."

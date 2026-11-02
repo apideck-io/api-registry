@@ -1,0 +1,10 @@
+id: isendpro
+name: "iSendPro"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "API iSendPro"
+    url: "https://apirest.isendpro.com/isendpro.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://apirest.isendpro.com/cgi-bin"

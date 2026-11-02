@@ -1,0 +1,11 @@
+id: qualtrics
+name: "Qualtrics"
+apideck: false
+notes: "Spec listed in the APIs.guru directory. Microsoft's Power Platform connector definition for Qualtrics (microsoft/powerplatform-qualtrics-api), not published by Qualtrics."
+specs:
+  - name: "Qualtrics API"
+    url: "https://raw.githubusercontent.com/microsoft/powerplatform-qualtrics-api/main/Qualtrics%20Connector%20Spec%20-%20Swagger%202.0.json"
+    format: swagger-2.0
+    provenance: third-party
+    server: "https://{datacenter-id}.qualtrics.com/API/v3"
+    notes: "Qualtrics accounts live on per-datacenter hosts; the connector definition fixes one (fra1)."

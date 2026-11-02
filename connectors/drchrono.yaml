@@ -1,0 +1,10 @@
+id: drchrono
+name: "DrChrono"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "DrChrono"
+    url: "https://drchrono.com/openapi-schema"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.drchrono.com"

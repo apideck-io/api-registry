@@ -1,0 +1,10 @@
+id: bigoven
+name: "BigOven"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "1,000,000+ Recipe and Grocery List API (v2)"
+    url: "https://api2.bigoven.com/swagger/docs/partner"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api2.bigoven.com"

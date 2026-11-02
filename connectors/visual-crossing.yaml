@@ -1,0 +1,10 @@
+id: visual-crossing
+name: "Visual Crossing"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Visual Crossing Weather API"
+    url: "https://www.visualcrossing.com/weather/specs/visualcrossing-weather-api-openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://weather.visualcrossing.com"

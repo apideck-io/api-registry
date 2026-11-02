@@ -1,0 +1,10 @@
+id: fire-financial
+name: "Fire Financial Services"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Fire Financial Services Business API"
+    url: "https://raw.githubusercontent.com/firefinancialservices/fire-business-api-openapi/master/fire-business-api-v1.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.fire.com/business"

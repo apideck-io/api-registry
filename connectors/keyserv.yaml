@@ -1,0 +1,10 @@
+id: keyserv
+name: "KeyServ"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "KeyServ"
+    url: "https://keyserv.solutions/v1/spec.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://keyserv.solutions"

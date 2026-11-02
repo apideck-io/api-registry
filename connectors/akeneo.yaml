@@ -1,0 +1,11 @@
+id: akeneo
+name: "Akeneo PIM"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Akeneo PIM REST API"
+    url: "https://raw.githubusercontent.com/akeneo/pim-api-docs/master/content/swagger/akeneo-web-api.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://{akeneo-host}"
+    notes: "Each Akeneo PIM is its own instance; the spec's server is Akeneo's demo."

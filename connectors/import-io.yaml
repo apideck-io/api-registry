@@ -1,0 +1,30 @@
+id: import-io
+name: "import.io"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "import.io (schedule)"
+    url: "https://api.docs.import.io/schedule/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://schedule.import.io"
+  - name: "import.io (data)"
+    url: "https://api.docs.import.io/data/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://data.import.io"
+  - name: "import.io (run)"
+    url: "https://api.docs.import.io/run/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://run.import.io"
+  - name: "import.io (rss)"
+    url: "https://api.docs.import.io/rss/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://rss.import.io"
+  - name: "import.io (extraction)"
+    url: "https://api.docs.import.io/extraction/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://extraction.import.io"

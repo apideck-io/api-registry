@@ -1,0 +1,10 @@
+id: vectara
+name: "Vectara"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "Vectara REST API"
+    url: "https://docs.vectara.com/vectara-oas.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.vectara.io"

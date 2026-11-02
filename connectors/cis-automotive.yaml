@@ -1,0 +1,11 @@
+id: cis-automotive
+name: "CIS Automotive"
+apideck: false
+notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+specs:
+  - name: "CIS Automotive API"
+    url: "https://api.autodealerdata.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.autodealerdata.com"
+    notes: "The spec declares no server; this is the host that serves it."
