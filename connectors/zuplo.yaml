@@ -8,4 +8,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://dev.zuplo.com"
-    notes: "Zuplo's public Developer API host. The spec's only server, developer-api-main-8600723.self.zuplo.com, is a build-specific deployment URL."
+    notes: "Production server (public Developer API host, despite the dev. hostname). The spec's only server is developer-api-main-8600723.self.zuplo.com, a build-specific deployment URL."
