@@ -1,0 +1,173 @@
+README.md
+  s_eeda7bd9685d9d::t_dbc2bc917839d6 114-131
+connectors/acuity-scheduling.yaml
+  s_eeda7bd9685d9d::t_860c80a195eff0 1-12
+connectors/addepar.yaml
+  s_eeda7bd9685d9d::t_2c52fbe4ae285e 1-12
+connectors/bing-webmasters.yaml
+  s_eeda7bd9685d9d::t_92e7d0348a28a0 1-12
+connectors/candis.yaml
+  s_eeda7bd9685d9d::t_3e1745b742a30f 1-12
+connectors/cch-axcess.yaml
+  s_eeda7bd9685d9d::t_4d73196d2dfa26 1-12
+connectors/cloudbeds.yaml
+  s_eeda7bd9685d9d::t_3d371bd3ab0e2a 1-12
+connectors/conta-azul.yaml
+  s_eeda7bd9685d9d::t_d9725406efc428 1-12
+connectors/fanvue.yaml
+  s_eeda7bd9685d9d::t_2fa2ebdf684935 1-12
+connectors/garmin.yaml
+  s_eeda7bd9685d9d::t_5763956afcbe46 1-12
+connectors/google-play.yaml
+  s_eeda7bd9685d9d::t_ee3c4f51aec222 1-12
+connectors/grain.yaml
+  s_eeda7bd9685d9d::t_f628583bebd6d5 1-12
+connectors/health-gorilla.yaml
+  s_eeda7bd9685d9d::t_ab8fd83f6299d6 1-12
+connectors/hover.yaml
+  s_eeda7bd9685d9d::t_3e7e38a4e3eaa5 1-12
+connectors/hubstaff.yaml
+  s_eeda7bd9685d9d::t_415d07ac413d0d 1-12
+connectors/liveswitch.yaml
+  s_eeda7bd9685d9d::t_1c6f756df8d2d5 1-12
+connectors/loyaltylion.yaml
+  s_eeda7bd9685d9d::t_bccbd982769248 1-12
+connectors/nooks.yaml
+  s_eeda7bd9685d9d::t_6985e3319a99bb 1-12
+connectors/onshape.yaml
+  s_eeda7bd9685d9d::t_01a22ee8d732c9 1-12
+connectors/oracle-aconex.yaml
+  s_eeda7bd9685d9d::t_18435377b9b684 1-12
+connectors/osu.yaml
+  s_eeda7bd9685d9d::t_c4905735e2ff3b 1-12
+connectors/oura.yaml
+  s_eeda7bd9685d9d::t_3ad8bff55bb237 1-12
+connectors/planning-center-online.yaml
+  s_eeda7bd9685d9d::t_f1e7e4f124ee4b 1-12
+connectors/podium.yaml
+  s_eeda7bd9685d9d::t_df05699a4b9717 1-12
+connectors/precisefp.yaml
+  s_eeda7bd9685d9d::t_dbf314093f3883 1-12
+connectors/printful.yaml
+  s_eeda7bd9685d9d::t_f0e52b3a865070 1-12
+connectors/pushpay.yaml
+  s_eeda7bd9685d9d::t_df227b9c0a5ea5 1-12
+connectors/quickbooks-time.yaml
+  s_eeda7bd9685d9d::t_72a88a5efb312b 1-12
+connectors/read-ai.yaml
+  s_eeda7bd9685d9d::t_5e07778ec1d48e 1-12
+connectors/reapit.yaml
+  s_eeda7bd9685d9d::t_525ed6e44ca0c5 1-12
+connectors/sellsy.yaml
+  s_eeda7bd9685d9d::t_573c7a78743d92 1-12
+connectors/strava.yaml
+  s_eeda7bd9685d9d::t_027ae31ddaa41c 1-12
+connectors/thrivecart.yaml
+  s_eeda7bd9685d9d::t_d2d092ef5472c7 1-12
+connectors/tremendous.yaml
+  s_eeda7bd9685d9d::t_8e4f430063dffc 1-12
+connectors/tumblr.yaml
+  s_eeda7bd9685d9d::t_a3671149879ee5 1-12
+connectors/uber.yaml
+  s_eeda7bd9685d9d::t_82378670e40d0e 1-12
+connectors/videoask.yaml
+  s_eeda7bd9685d9d::t_51fa07dd09a6e0 1-12
+connectors/whoop.yaml
+  s_eeda7bd9685d9d::t_dc718f085da797 1-12
+connectors/wiseagent.yaml
+  s_eeda7bd9685d9d::t_017a81b9896351 1-12
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_3db52378120bad 154-163,749,761
+specs/acuity-scheduling/auth.yaml
+  s_eeda7bd9685d9d::t_b1f351ea6e060e 1-27
+specs/addepar/auth.yaml
+  s_eeda7bd9685d9d::t_36529fb9f8a88b 1-48
+specs/bing-webmasters/auth.yaml
+  s_eeda7bd9685d9d::t_bfdd49d66ca3aa 1-28
+specs/candis/auth.yaml
+  s_eeda7bd9685d9d::t_1afcb4f9d2bac2 1-31
+specs/cch-axcess/auth.yaml
+  s_eeda7bd9685d9d::t_9aef0a8c194bbc 1-24
+specs/cloudbeds/auth.yaml
+  s_eeda7bd9685d9d::t_e11a6a479f628e 1-25
+specs/conta-azul/auth.yaml
+  s_eeda7bd9685d9d::t_28138863ecc257 1-29
+specs/fanvue/auth.yaml
+  s_eeda7bd9685d9d::t_67fde261764a9f 1-47
+specs/garmin/auth.yaml
+  s_eeda7bd9685d9d::t_19a78bbb1125f1 1-26
+specs/google-play/auth.yaml
+  s_eeda7bd9685d9d::t_ec3c871616f521 1-27
+specs/grain/auth.yaml
+  s_eeda7bd9685d9d::t_f64d477ac74fc9 1-28
+specs/health-gorilla/auth.yaml
+  s_eeda7bd9685d9d::t_7d815d08e70039 1-25
+specs/hover/auth.yaml
+  s_eeda7bd9685d9d::t_b3340b8dc24b58 1-25
+specs/hubstaff/auth.yaml
+  s_eeda7bd9685d9d::t_14e5490f9dcf57 1-33
+specs/liveswitch/auth.yaml
+  s_eeda7bd9685d9d::t_15d2be5f2b012f 1-53
+specs/loyaltylion/auth.yaml
+  s_eeda7bd9685d9d::t_fa75bf3864589b 1-35
+specs/nooks/auth.yaml
+  s_eeda7bd9685d9d::t_a22bfd6314132d 1-57
+specs/onshape/auth.yaml
+  s_eeda7bd9685d9d::t_d5e6ee43ee1e0e 1-32
+specs/oracle-aconex/auth.yaml
+  s_eeda7bd9685d9d::t_cf768ce8aae323 1-25
+specs/osu/auth.yaml
+  s_eeda7bd9685d9d::t_4f3a6db372df84 1-37
+specs/oura/auth.yaml
+  s_eeda7bd9685d9d::t_fb9550a41be288 1-34
+specs/planning-center-online/auth.yaml
+  s_eeda7bd9685d9d::t_05dd2b31c48d2a 1-36
+specs/podium/auth.yaml
+  s_eeda7bd9685d9d::t_b616a297fcef34 1-43
+specs/precisefp/auth.yaml
+  s_eeda7bd9685d9d::t_1d3ecaff253abd 1-24
+specs/printful/auth.yaml
+  s_eeda7bd9685d9d::t_ab5371cf8f2cc6 1-36
+specs/pushpay/auth.yaml
+  s_eeda7bd9685d9d::t_62b97202326749 1-25
+specs/quickbooks-time/auth.yaml
+  s_eeda7bd9685d9d::t_7ed6890636e64c 1-25
+specs/read-ai/auth.yaml
+  s_eeda7bd9685d9d::t_24defe7fb7bb78 1-26
+specs/reapit/auth.yaml
+  s_eeda7bd9685d9d::t_6e444bc5cb974e 1-24
+specs/sellsy/auth.yaml
+  s_eeda7bd9685d9d::t_d4c26b100243eb 1-25
+specs/strava/auth.yaml
+  s_eeda7bd9685d9d::t_98e39d72f45d31 1-33
+specs/thrivecart/auth.yaml
+  s_eeda7bd9685d9d::t_8c81cf57f7b86a 1-24
+specs/tremendous/auth.yaml
+  s_eeda7bd9685d9d::t_0376c0fb784666 1-29
+specs/tumblr/auth.yaml
+  s_eeda7bd9685d9d::t_a73e4c6b1a72ab 1-29
+specs/uber/auth.yaml
+  s_eeda7bd9685d9d::t_2de60f5b9236fa 1-25
+specs/videoask/auth.yaml
+  s_eeda7bd9685d9d::t_9c10bd82dff5b7 1-25
+specs/whoop/auth.yaml
+  s_eeda7bd9685d9d::t_e21cb0d5ab47d0 1-33
+specs/wiseagent/auth.yaml
+  s_eeda7bd9685d9d::t_e065e42344fcd6 1-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ca070dd0362c588402d50295d9fc78cd5110a1bc",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
