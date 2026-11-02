@@ -1,0 +1,9 @@
+id: liveswitch
+name: "LiveSwitch"
+apideck: false
+specs:
+  - name: "LiveSwitch Public API"
+    url: "https://public-api.production.liveswitch.com/swagger/v1/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://public-api.production.liveswitch.com"

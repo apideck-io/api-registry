@@ -1,0 +1,25 @@
+openapi: 3.1.0
+info:
+  title: Health Gorilla API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Health Gorilla API: its host and its OAuth 2.0 endpoints. It lists no endpoints. Health Gorilla publishes no OpenAPI specification; every value here comes from the vendor's developer documentation, cited per value in x-sources. Checked 2026-11-02."
+x-auth-only: true
+x-sources:
+  authorizationUrl: https://developer.healthgorilla.com/reference/oauth-20-authentication
+  tokenUrl: https://developer.healthgorilla.com/reference/oauth-20-authentication
+  server: https://developer.healthgorilla.com/reference/oauth-20-authentication
+servers:
+  - url: https://api.healthgorilla.com
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      x-token-endpoint-auth-method: client_secret_post
+      flows:
+        authorizationCode:
+          authorizationUrl: https://api.healthgorilla.com/oauth/authorize
+          tokenUrl: https://api.healthgorilla.com/oauth/token
+          scopes: {}
+security:
+  - oauth2: []

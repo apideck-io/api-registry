@@ -1,0 +1,12 @@
+id: onshape
+name: "Onshape"
+apideck: false
+notes: "Onshape publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Onshape API (authentication only)"
+    path: "specs/onshape/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://cad.onshape.com/api"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (onshape-public.github.io)."

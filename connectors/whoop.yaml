@@ -1,0 +1,10 @@
+id: whoop
+name: "WHOOP"
+apideck: false
+specs:
+  - name: "WHOOP API"
+    url: "https://api.prod.whoop.com/developer/doc/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.prod.whoop.com/developer"
+    notes: "WHOOP's spec has no info.version; the nightly check's \"no info.version\" warning is expected."

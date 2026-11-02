@@ -1,0 +1,32 @@
+openapi: 3.1.0
+info:
+  title: Onshape API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Onshape API: its host and its OAuth 2.0 endpoints and scopes. It lists no endpoints. Onshape publishes no OpenAPI specification; every value here comes from the vendor's developer documentation, cited per value in x-sources. Checked 2026-11-02."
+x-auth-only: true
+x-sources:
+  authorizationUrl: https://onshape-public.github.io/docs/auth/oauth/
+  tokenUrl: https://onshape-public.github.io/docs/auth/oauth/
+  server: https://onshape-public.github.io/docs/auth/oauth/
+  scopes: https://cad.onshape.com/help/Content/Plans/my_account_developer.htm
+servers:
+  - url: https://cad.onshape.com/api
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      x-token-endpoint-auth-method: client_secret_post
+      flows:
+        authorizationCode:
+          authorizationUrl: https://oauth.onshape.com/oauth/authorize
+          tokenUrl: https://oauth.onshape.com/oauth/token
+          scopes:
+            OAuth2ReadPII: Read your profile information
+            OAuth2Read: Read your documents
+            OAuth2Write: Write to your documents
+            OAuth2Delete: Delete your documents and workspaces
+            OAuth2Purchase: Request purchases on your behalf
+            OAuth2Share: Share and unshare documents on your behalf
+security:
+  - oauth2: []

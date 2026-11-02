@@ -1,0 +1,12 @@
+id: cch-axcess
+name: "CCH Axcess"
+apideck: false
+notes: "CCH Axcess publishes no API spec; the auth-only spec below is written here. API access is for approved partners."
+specs:
+  - name: "CCH Axcess API (authentication only)"
+    path: "specs/cch-axcess/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.cchaxcess.com/api"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (login.cchaxcess.com)."

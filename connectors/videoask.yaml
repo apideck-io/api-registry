@@ -1,0 +1,12 @@
+id: videoask
+name: "VideoAsk"
+apideck: false
+notes: "VideoAsk publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "VideoAsk API (authentication only)"
+    path: "specs/videoask/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.videoask.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developers.videoask.com)."

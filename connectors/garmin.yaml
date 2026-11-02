@@ -1,0 +1,12 @@
+id: garmin
+name: "Garmin Connect"
+apideck: false
+notes: "Garmin Connect publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Garmin Connect API (authentication only)"
+    path: "specs/garmin/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://apis.garmin.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developerportal.garmin.com)."

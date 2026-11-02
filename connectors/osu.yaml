@@ -1,0 +1,9 @@
+id: osu
+name: "osu!"
+apideck: false
+specs:
+  - name: "osu!web"
+    url: "https://osu.ppy.sh/docs/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://osu.ppy.sh/api/v2"

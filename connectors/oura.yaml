@@ -1,0 +1,10 @@
+id: oura
+name: "Oura"
+apideck: false
+specs:
+  - name: "Oura API"
+    url: "https://cloud.ouraring.com/v2/static/json/openapi-1.43.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.ouraring.com"
+    notes: "The file name carries the spec version; Oura's docs page (cloud.ouraring.com/v2/docs) links the current one."

@@ -1,0 +1,12 @@
+id: health-gorilla
+name: "Health Gorilla"
+apideck: false
+notes: "Health Gorilla publishes no API spec; the auth-only spec below is written here. API access is for approved partners."
+specs:
+  - name: "Health Gorilla API (authentication only)"
+    path: "specs/health-gorilla/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.healthgorilla.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developer.healthgorilla.com)."

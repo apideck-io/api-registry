@@ -1,0 +1,12 @@
+id: thrivecart
+name: "ThriveCart"
+apideck: false
+notes: "ThriveCart publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "ThriveCart API (authentication only)"
+    path: "specs/thrivecart/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://thrivecart.com/api/external"
+    notes: "Authentication only: no endpoints. Written from ThriveCart's official PHP SDK (github.com/thrivecart/php-api)."

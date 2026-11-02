@@ -1,0 +1,25 @@
+openapi: 3.1.0
+info:
+  title: Pushpay ChMS API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Pushpay ChMS API: its host and its OAuth 2.0 endpoints. It lists no endpoints. Pushpay ChMS publishes no OpenAPI specification; every value here comes from the vendor's developer documentation, cited per value in x-sources. Checked 2026-11-02."
+x-auth-only: true
+x-sources:
+  authorizationUrl: https://docs.pushpay.io/chms-v2/docs/getting-started
+  tokenUrl: https://docs.pushpay.io/chms-v2/docs/getting-started
+  server: https://docs.pushpay.io/chms-v2/docs/getting-started
+servers:
+  - url: https://api.ccbchurch.com
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      x-token-endpoint-auth-method: client_secret_post
+      flows:
+        authorizationCode:
+          authorizationUrl: https://oauth.ccbchurch.com/oauth/authorize
+          tokenUrl: https://api.ccbchurch.com/oauth/token
+          scopes: {}
+security:
+  - oauth2: []

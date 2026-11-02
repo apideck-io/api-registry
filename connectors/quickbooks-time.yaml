@@ -1,0 +1,12 @@
+id: quickbooks-time
+name: "QuickBooks Time"
+apideck: false
+notes: "QuickBooks Time publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "QuickBooks Time API (authentication only)"
+    path: "specs/quickbooks-time/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://rest.tsheets.com/api/v1"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (tsheetsteam.github.io)."

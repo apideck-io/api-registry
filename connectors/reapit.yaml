@@ -1,0 +1,12 @@
+id: reapit
+name: "Reapit"
+apideck: false
+notes: "Reapit publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Reapit API (authentication only)"
+    path: "specs/reapit/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://platform.reapit.cloud"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (foundations-documentation.reapit.cloud)."

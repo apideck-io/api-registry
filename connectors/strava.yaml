@@ -1,0 +1,9 @@
+id: strava
+name: "Strava"
+apideck: false
+specs:
+  - name: "Strava API v3"
+    url: "https://developers.strava.com/swagger/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://www.strava.com/api/v3"
