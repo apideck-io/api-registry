@@ -31,7 +31,7 @@ specs:
     notes: "..."              # optional
 ```
 
-Two optional fields cover vendors that don't serve a plain file:
+Optional fields cover vendors that don't serve a plain file, or serve a different one each time:
 - `extract` says how the verifier gets the spec when the URL doesn't serve a plain file: it unwraps a wrapper, or for `graphql-introspection` it queries the endpoint:
   - `zip-bundle`: a zip of module files (Zoho Books)
   - `markdown-json-fence`: JSON inside a Markdown code fence (Sage); when a page holds several OpenAPI documents, they are merged (Adyntel) if they agree on version, servers and security and no path, method or component is defined two different ways; otherwise the spec fails
@@ -39,6 +39,7 @@ Two optional fields cover vendors that don't serve a plain file:
   - `swagger-ui-init`: embedded as `swaggerDoc` in a swagger-ui-express init script (Minox)
   - `graphql-introspection`: no SDL file, but the endpoint answers an anonymous introspection query (Wave, Access Financials)
 - `manual: login | bot-protection` records a spec CI can't fetch (it needs `notes` on how to get it).
+- `volatile: true` marks a fetched OpenAPI or Swagger spec, with no `extract` or `manual`, that differs on every request: generated example values, or lists and keys in a changing order. It's hashed in a normalised form (see `fetchSha256` below), and its `notes` say what varies.
 
 The registry also covers widely used apps Apideck doesn't connect yet, so there's one place to find any app's spec. Those entries carry `apideck: false`; everything else about them is the same.
 

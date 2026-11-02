@@ -151,7 +151,11 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
     const extractFits = Object.assign(Object.create(null), { "graphql-introspection": ["graphql"], "swagger-ui-init": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "redoc-state": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "markdown-json-fence": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "zip-bundle": ["openapi-3.0", "openapi-3.1", "swagger-2.0"] });
     if (s?.extract && extractFits[s.extract] && !extractFits[s.extract].includes(s?.format)) errors.push(`${at}: extract ${s.extract} doesn't apply to format ${s?.format}`);
     if (s?.extract && !s?.url) errors.push(`${at}: extract applies to a fetched url; store an extracted spec as a plain path instead`);
-    if (s?.volatile !== undefined && (s.volatile !== true || !OVERLAY_FORMATS.has(s?.format) || s?.extract || s?.manual || !s?.url)) errors.push(`${at}: volatile is true, on a fetched OpenAPI or Swagger spec with no extract or manual`);
+    if (s?.volatile !== undefined) {
+      if (s.volatile !== true) errors.push(`${at}: volatile is only set to true`);
+      if (!OVERLAY_FORMATS.has(s?.format)) errors.push(`${at}: volatile applies to OpenAPI and Swagger specs, not ${s?.format}`);
+      if (s?.extract || s?.manual || !s?.url) errors.push(`${at}: volatile applies to a spec fetched from its url, with no extract or manual`);
+    }
     if (s?.volatile && !s?.notes) errors.push(`${at}: a volatile spec needs notes saying what varies`);
     if (s?.manual && !MANUAL.has(s.manual)) errors.push(`${at}: manual must be one of ${[...MANUAL].join(", ")}`);
     if (s?.manual && !s?.notes) errors.push(`${at}: a spec CI can't fetch needs notes saying how to get it`);
@@ -290,7 +294,7 @@ const withoutGeneratedDates = (v) =>
 // its scope lists and keys. It is hashed without examples and with lists in a fixed order, so only a change to the
 // API's shape registers. Changing an example goes unnoticed for these specs, which is why it's declared per spec.
 // In these maps the keys are names the vendor chose, so one called example is part of the API, not an example.
-const NAMED_MAPS = new Set(["paths", "webhooks", "pathItems", "properties", "patternProperties", "definitions", "schemas", "parameters", "responses", "requestBodies", "headers", "links", "callbacks", "securityDefinitions", "securitySchemes"]);
+const NAMED_MAPS = new Set(["paths", "webhooks", "pathItems", "properties", "patternProperties", "definitions", "schemas", "parameters", "responses", "requestBodies", "headers", "links", "callbacks", "securityDefinitions", "securitySchemes", "$defs", "dependentSchemas", "dependentRequired", "dependencies", "encoding", "mapping", "variables", "scopes"]);
 const withoutVolatile = (v, key) => {
   if (Array.isArray(v)) {
     const items = v.map((x) => withoutVolatile(x));
@@ -844,7 +848,8 @@ for (const e of entries) {
       ...(surfaceChanged ? { surfaceChangedOn: today } : old.surfaceChangedOn && info.surface === old.surface ? { surfaceChangedOn: old.surfaceChangedOn } : {}),
       ...(overlay ? { overlay } : {}),
       ...(s.coverage ? { coverage: s.coverage } : {}),
-      ...(s.volatile ? { hashForm: "volatile" } : {}),
+      // Only when the volatile form was hashed: an unparseable file falls back to its raw bytes.
+      ...(s.volatile && parsedForHash ? { hashForm: "volatile" } : {}),
     };
     // Δ changed, + newly indexed, ↺ recovered from a failure, ✓ unchanged. The nightly PR body lists all but ✓.
     const mark = changed ? "Δ" : !old.sha256 ? "+" : old.status && old.status !== "ok" ? "↺" : "✓";
@@ -856,6 +861,7 @@ for (const e of entries) {
       (info.derivedError ? ` ⚠ SDL not parseable by graphql-js (${info.derivedError})${info.derived ? "; kept the last introspection result" : ""}` : "") +
       (info.formatMismatch ? ` ⚠ format: ${info.formatMismatch}` : "") +
       (info.specIssues ? ` ⚠ spec: ${info.specIssues}` : "") +
+      (s.volatile && !parsedForHash ? " ⚠ volatile: didn't parse, so hashed as served" : "") +
       (surfaceChanged ? " ⚠ surface: servers or authentication changed" : "") +
       (surfaceNew ? " ⚠ surface: first check of its servers and authentication" : "") +
       (suspiciousNew ? ` ⚠ text: reads like instructions to an AI (${info.suspicious.map((x) => JSON.stringify(x)).join("; ")})` : "");
