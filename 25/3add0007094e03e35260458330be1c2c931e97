@@ -1,0 +1,19 @@
+connectors/import-io.yaml
+  s_3170cacdc29a7e::t_b481e476d043a6 6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "253add0007094e03e35260458330be1c2c931e97",
+  "prompts": {},
+  "sessions": {
+    "s_3170cacdc29a7e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74578db5-1fd2-4a9f-8295-95695feeb5cf",
+        "model": "unknown"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
