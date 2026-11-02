@@ -1,0 +1,189 @@
+connectors/15five.yaml
+  s_eeda7bd9685d9d::t_c957288f007945 1-5
+connectors/8x8.yaml
+  s_eeda7bd9685d9d::t_aaf7cafe4aa5ab 1-5
+connectors/acuity-scheduling.yaml
+  s_eeda7bd9685d9d::t_a6188e940cd33b 1-5
+connectors/agiloft.yaml
+  s_eeda7bd9685d9d::t_597454d660625a 1-5
+connectors/articulate.yaml
+  s_eeda7bd9685d9d::t_b70168a80159d2 1-5
+connectors/athenahealth.yaml
+  s_eeda7bd9685d9d::t_8b6fb54cd5250b 1-5
+connectors/avalara.yaml
+  s_eeda7bd9685d9d::t_dbfb46724b00dd 1-5
+connectors/bandwidth.yaml
+  s_eeda7bd9685d9d::t_49d9c1c40c5da8 1-5
+connectors/brighthr.yaml
+  s_eeda7bd9685d9d::t_d3c73aa8d20830 1-5
+connectors/buildium.yaml
+  s_eeda7bd9685d9d::t_999e9d2fe7da4d 1-5
+connectors/carta.yaml
+  s_eeda7bd9685d9d::t_0de89cdaefb1b7 1-5
+connectors/charthop.yaml
+  s_eeda7bd9685d9d::t_8003dbef846011 1-5
+connectors/chattermill.yaml
+  s_eeda7bd9685d9d::t_988c411538a414 1-5
+connectors/check.yaml
+  s_eeda7bd9685d9d::t_9dad1f07140738 1-5
+connectors/checkout-com.yaml
+  s_eeda7bd9685d9d::t_524b9957f8bbbc 1-5
+connectors/checkr.yaml
+  s_eeda7bd9685d9d::t_9fd46ad1694cb6 1-5
+connectors/clio.yaml
+  s_eeda7bd9685d9d::t_ae47a4f9df2fe6 1-5
+connectors/comeet.yaml
+  s_eeda7bd9685d9d::t_30bae66e27db1b 1-5
+connectors/commercetools.yaml
+  s_eeda7bd9685d9d::t_f741d87ce6f84e 1-5
+connectors/contentstack.yaml
+  s_eeda7bd9685d9d::t_7c96b952f0be6c 1-5
+connectors/crowdstrike.yaml
+  s_eeda7bd9685d9d::t_83fa5e1b9a9add 1-5
+connectors/dagster.yaml
+  s_eeda7bd9685d9d::t_b85f7271be4e58 1-5
+connectors/demodesk.yaml
+  s_eeda7bd9685d9d::t_d05288f4821b28 1-5
+connectors/docebo.yaml
+  s_eeda7bd9685d9d::t_ae4ac21a52bbee 1-5
+connectors/duo-security.yaml
+  s_eeda7bd9685d9d::t_d1002bf535c832 1-5
+connectors/easypost.yaml
+  s_eeda7bd9685d9d::t_aa4eb00925a10e 1-5
+connectors/expo.yaml
+  s_eeda7bd9685d9d::t_9a591ea4474f4c 1-5
+connectors/filevine.yaml
+  s_eeda7bd9685d9d::t_2d797a7df60e5a 1-5
+connectors/finastra.yaml
+  s_eeda7bd9685d9d::t_1b14ec800c8058 1-5
+connectors/fitbit.yaml
+  s_eeda7bd9685d9d::t_df52d189f618d8 1-5
+connectors/fountain.yaml
+  s_eeda7bd9685d9d::t_5e43371f6749e7 1-5
+connectors/ghost.yaml
+  s_eeda7bd9685d9d::t_198ffde923f610 1-5
+connectors/gladly.yaml
+  s_eeda7bd9685d9d::t_d9ed9714d087b8 1-5
+connectors/google-translate.yaml
+  s_eeda7bd9685d9d::t_0528b571191f7b 1-5
+connectors/grammarly.yaml
+  s_eeda7bd9685d9d::t_930cc3f28a7971 1-5
+connectors/hexnode.yaml
+  s_eeda7bd9685d9d::t_aa0c2c7d8163dd 1-5
+connectors/hotjar.yaml
+  s_eeda7bd9685d9d::t_0a6e4ac72666ad 1-5
+connectors/hover.yaml
+  s_eeda7bd9685d9d::t_e316c038da2cfc 1-5
+connectors/hr-cloud.yaml
+  s_eeda7bd9685d9d::t_daf8156687bd99 1-5
+connectors/intellihr.yaml
+  s_eeda7bd9685d9d::t_0fafdf1d3b79ae 1-5
+connectors/jobsoid.yaml
+  s_eeda7bd9685d9d::t_85fa78c4667178 1-5
+connectors/jupiterone.yaml
+  s_eeda7bd9685d9d::t_e9ea345e936d2c 1-5
+connectors/justcall.yaml
+  s_eeda7bd9685d9d::t_0d59d4e97d11c9 1-5
+connectors/kameleoon.yaml
+  s_eeda7bd9685d9d::t_1d60bc1e4e1352 1-5
+connectors/knowbe4.yaml
+  s_eeda7bd9685d9d::t_a8b69a84ef7d42 1-5
+connectors/lessonly.yaml
+  s_eeda7bd9685d9d::t_2b544b35612502 1-5
+connectors/liferay.yaml
+  s_eeda7bd9685d9d::t_b7cec536984c0e 1-5
+connectors/mattermost.yaml
+  s_eeda7bd9685d9d::t_2bcd86d05a6c66 1-5
+connectors/nexthink.yaml
+  s_eeda7bd9685d9d::t_6ba3121ff47896 1-5
+connectors/oneflow.yaml
+  s_eeda7bd9685d9d::t_d471c9429c3e6b 1-5
+connectors/ory.yaml
+  s_eeda7bd9685d9d::t_3511dc099b0ecd 1-5
+connectors/oyster-hr.yaml
+  s_eeda7bd9685d9d::t_9bf8d7c500b3eb 1-5
+connectors/pardot.yaml
+  s_eeda7bd9685d9d::t_d14d34eb83835d 1-5
+connectors/pave.yaml
+  s_eeda7bd9685d9d::t_3d1ffc570f9f9d 1-5
+connectors/pendo.yaml
+  s_eeda7bd9685d9d::t_927d5bb6525fc1 1-5
+connectors/phenom.yaml
+  s_eeda7bd9685d9d::t_0f788780821c62 1-5
+connectors/phrase.yaml
+  s_eeda7bd9685d9d::t_8d8489c509fc00 1-5
+connectors/pinpoint.yaml
+  s_eeda7bd9685d9d::t_384214b4497569 1-5
+connectors/planday.yaml
+  s_eeda7bd9685d9d::t_976860c38efca6 1-5
+connectors/procore.yaml
+  s_eeda7bd9685d9d::t_1eb1b9b97c0df4 1-5
+connectors/qlik.yaml
+  s_eeda7bd9685d9d::t_8ff0cd994e148d 1-5
+connectors/recharge.yaml
+  s_eeda7bd9685d9d::t_1ab3d5884932df 1-5
+connectors/retool.yaml
+  s_eeda7bd9685d9d::t_570536cc714478 1-5
+connectors/ringover.yaml
+  s_eeda7bd9685d9d::t_1966418aa9851f 1-5
+connectors/rydoo.yaml
+  s_eeda7bd9685d9d::t_7214391c24e030 1-5
+connectors/sellsy.yaml
+  s_eeda7bd9685d9d::t_22fee87613b77c 1-5
+connectors/simpro.yaml
+  s_eeda7bd9685d9d::t_bf648083156d53 1-5
+connectors/smartling.yaml
+  s_eeda7bd9685d9d::t_b7bc9bebfabec9 1-5
+connectors/splunk.yaml
+  s_eeda7bd9685d9d::t_15911e4a247289 1-5
+connectors/sps-commerce.yaml
+  s_eeda7bd9685d9d::t_0b8480abbf6c4a 1-5
+connectors/statamic.yaml
+  s_eeda7bd9685d9d::t_0365fe7f9266fd 1-5
+connectors/statista.yaml
+  s_eeda7bd9685d9d::t_fc9211e92df94c 1-5
+connectors/statuspage.yaml
+  s_eeda7bd9685d9d::t_d1554dba71356e 1-5
+connectors/talentlyft.yaml
+  s_eeda7bd9685d9d::t_e0c463c4f07d20 1-5
+connectors/talkdesk.yaml
+  s_eeda7bd9685d9d::t_8f0d310b0615df 1-5
+connectors/teamviewer.yaml
+  s_eeda7bd9685d9d::t_b3af788d1091f5 1-5
+connectors/tempo.yaml
+  s_eeda7bd9685d9d::t_d0f9dd7b9b745e 1-5
+connectors/tenable.yaml
+  s_eeda7bd9685d9d::t_49933a8af72673 1-5
+connectors/tremendous.yaml
+  s_eeda7bd9685d9d::t_266a0672b25cc4 1-5
+connectors/udemy.yaml
+  s_eeda7bd9685d9d::t_3ba10586cdb098 1-5
+connectors/unbounce.yaml
+  s_eeda7bd9685d9d::t_8e30af22aefc3c 1-5
+connectors/vanta.yaml
+  s_eeda7bd9685d9d::t_80e817f3a2e0d2 1-5
+connectors/veremark.yaml
+  s_eeda7bd9685d9d::t_edd429c44c7c5f 1-5
+connectors/videoask.yaml
+  s_eeda7bd9685d9d::t_f8e60072452b2a 1-5
+connectors/vtex.yaml
+  s_eeda7bd9685d9d::t_e8dc564a1f2ec4 1-5
+connectors/zenefits.yaml
+  s_eeda7bd9685d9d::t_8019da8d915182 1-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3fdf85e7a83fff11b1e00b8f555d87a3378ecaca",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
