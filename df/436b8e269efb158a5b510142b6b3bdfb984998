@@ -1,0 +1,23 @@
+connectors/interactive-brokers.yaml
+  s_eeda7bd9685d9d::t_ae8c3908d7cc9e 1
+connectors/open-banking-uk.yaml
+  s_eeda7bd9685d9d::t_5aaee395a48d40 4
+connectors/royal-mail.yaml
+  s_eeda7bd9685d9d::t_ef1fe7d1b10c47 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "df436b8e269efb158a5b510142b6b3bdfb984998",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
