@@ -7,4 +7,4 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://{host}"
-    notes: "Self-hosted or Meilisearch Cloud instance URL (spec lists http://localhost:7700). Auth: Authorization: Bearer <API key>."
+    notes: "{host} is the Meilisearch Cloud or self-hosted instance. A local default install serves plain HTTP on port 7700 instead (http://localhost:7700), as the spec lists. Auth: Authorization: Bearer <API key>."

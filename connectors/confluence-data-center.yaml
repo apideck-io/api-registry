@@ -7,4 +7,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{baseurl}/confluence"
-    notes: "Self-hosted instance URL (context path may differ). Spec security: HTTP basic; Data Center also accepts personal access tokens as Bearer."
+    notes: "{baseurl} is the self-hosted instance. A default install without a proxy serves plain HTTP on port 8090, and the /confluence context path can be changed or empty. Spec security: HTTP basic; Data Center also accepts personal access tokens as Bearer."

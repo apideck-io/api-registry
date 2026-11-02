@@ -2,11 +2,11 @@ openapi: 3.1.0
 info:
   title: Resova API (authentication only)
   version: "0"
-  description: "Authentication only. This document describes how to authenticate with the Resova API: its host and an API key sent in the X-API-KEY header. It lists no endpoints. Resova publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /items refuses a request without credentials (HTTP 401)."
+  description: "Authentication only. This document describes how to authenticate with the Resova API: its host and an API key sent in the X-API-KEY header. It lists no endpoints. Resova publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /items refuses a request without credentials (HTTP 401). Resova's docs name https://api.resova.eu for EU-datacentre accounts, but on 2026-11-02 that host served an expired certificate from a parking address, so it isn't listed as a server."
 x-auth-only: true
 x-checked-endpoint: /items
 x-sources:
-  server: https://developers.resova.com/reference/itemsindex.md
+  server: https://developers.resova.com/reference/region
   auth: https://developers.resova.com/reference/authentication
 servers:
   - url: https://api.resova.us/v1

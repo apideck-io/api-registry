@@ -9,4 +9,4 @@ specs:
     provenance: community
     coverage: auth-only
     server: "https://api.resova.us/v1"
-    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developers.resova.com)."
+    notes: "US data centre. The docs name api.resova.eu for EU accounts, but it served an expired certificate on 2026-11-02. Authentication only: no endpoints. Written from the vendor's developer documentation (developers.resova.com)."

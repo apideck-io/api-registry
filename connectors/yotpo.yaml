@@ -6,5 +6,5 @@ specs:
     url: "https://documenter.getpostman.com/api/collections/32783633/2sAXjJ6DR1?segregateAuth=true&versionTag=latest"
     format: postman-2.0
     provenance: vendor
-    server: "https://api.yotpo.com"
-    notes: "The collection also uses core-api.yotpo.com and developers.yotpo.com hosts."
+    server: "https://developers.yotpo.com"
+    notes: "Most of the collection's requests use developers.yotpo.com; a few use api.yotpo.com."

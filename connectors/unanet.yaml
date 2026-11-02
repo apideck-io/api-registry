@@ -7,4 +7,9 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://compass.cosential.com"
-    notes: "The v1 spec (39 paths, incomplete). The v2 spec is at https://compass.cosential.com/v2/swagger/v2/swagger.json (78 paths, server /v2)."
+    notes: "The v1 spec, which the vendor describes as incomplete."
+  - name: "Unanet CRM API v2"
+    url: "https://compass.cosential.com/v2/swagger/v2/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://compass.cosential.com/v2"

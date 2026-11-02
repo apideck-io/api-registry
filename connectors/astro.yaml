@@ -7,4 +7,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://api.astronomer.io/platform/v1beta1"
-    notes: "Bearer API token (scheme JWT/bearer in spec). Hint said MCP_OAUTH2; this is the REST Platform API."
+    notes: "Bearer API token (scheme JWT/bearer in spec). This is the REST Platform API."

@@ -7,4 +7,4 @@ specs:
     format: google-discovery
     provenance: vendor
     server: "https://health.googleapis.com"
-    notes: "Google OAuth 2.0; scopes are googlehealth.* (listed in the discovery doc auth.oauth2.scopes)."
+    notes: "Google OAuth 2.0; scopes are the googlehealth.* scopes and https://www.googleapis.com/auth/cloud-platform (listed in the discovery doc auth.oauth2.scopes)."

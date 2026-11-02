@@ -7,4 +7,4 @@ specs:
     format: postman-2.0
     provenance: vendor
     server: "https://api.checkbox.com/v1/{accountName}"
-    notes: "Regional hosts: api.checkbox.ca, api.ckbxeu.com, api.checkboxau.com, api.checkboxuk.com; on-prem uses its own URL. 159 requests."
+    notes: "US host. Other regions: api.checkbox.ca (Canada), api.ckbxeu.com (EU), api.checkboxau.com (Australia), api.checkboxuk.com (UK); on-premise installs use their own URL. {accountName} is the account name."

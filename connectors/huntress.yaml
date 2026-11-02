@@ -7,4 +7,5 @@ specs:
     format: swagger-2.0
     provenance: vendor
     server: "https://api.huntress.io"
-    notes: "Basic auth with API key:API secret (spec securityDefinitions basic_auth). 75 paths, paths prefixed /v1."
+    overlay: overlays/huntress.yaml
+    notes: "Basic auth with API key:API secret (spec securityDefinitions basic_auth; the overlay fixes the global requirement, which names basic). 75 paths, paths prefixed /v1."

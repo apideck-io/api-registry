@@ -7,4 +7,4 @@ specs:
     format: postman-2.0
     provenance: vendor
     server: "https://{sub_domain}.api.kandji.io"
-    notes: "Per-tenant subdomain; Bearer API token. Product renamed Iru Endpoint Management. 137 requests."
+    notes: "EU tenants use {sub_domain}.api.eu.kandji.io instead. Per-tenant subdomain; Bearer API token. Product renamed Iru Endpoint Management. 137 requests."

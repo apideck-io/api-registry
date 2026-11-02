@@ -1,0 +1,13 @@
+overlay: 1.0.0
+info:
+  title: "Huntress API: global security requirement"
+  version: 1.0.0
+actions:
+  - target: $.security
+    remove: true
+    description: The spec's global security names a scheme called basic, but the only one it defines is basic_auth, so clients apply no authentication. The broken requirement is removed first, because an update would append to it.
+  - target: $
+    update:
+      security:
+        - basic_auth: []
+    description: Requires the basic_auth scheme the spec defines, as Huntress's docs describe (API key and secret as basic credentials).

@@ -6,7 +6,7 @@ info:
 x-auth-only: true
 x-checked-endpoint: /validate
 x-sources:
-  server: https://docs.rapid7.com/insight/api-overview/
+  server: https://docs.rapid7.com/insight/product-apis/
   auth: https://docs.rapid7.com/insight/api-overview/
 servers:
   - url: https://us.api.insight.rapid7.com
