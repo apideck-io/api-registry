@@ -143,13 +143,15 @@ const sorted = (rows) => rows.sort((a, b) => canonical(a).localeCompare(canonica
 
 // A nonce in an authorization URL is generated per request (Avalara), so it isn't part of where calls go.
 // Only there: a changed token or server URL always counts.
-// A YAML anchor can refer back to itself here, so a value already on the way down is left as it is for canonical.
-const withoutAuthNonce = (v, key, stack = new Set()) => {
+// A YAML anchor can refer back to itself here. Each object is cloned once, and a reference back to it points to
+// the clone, so canonical still sees the cycle and every copy has its nonce blanked.
+const withoutAuthNonce = (v, key, seen = new WeakMap()) => {
   if (key === "authorizationUrl" && typeof v === "string") return v.replace(/([?&]nonce=)[^&#]*/g, "$1");
-  if (!v || typeof v !== "object" || stack.has(v)) return v;
-  stack.add(v);
-  const out = Array.isArray(v) ? v.map((x) => withoutAuthNonce(x, undefined, stack)) : Object.fromEntries(Object.entries(v).map(([k, x]) => [k, withoutAuthNonce(x, k, stack)]));
-  stack.delete(v);
+  if (!v || typeof v !== "object") return v;
+  if (seen.has(v)) return seen.get(v);
+  const out = Array.isArray(v) ? [] : {};
+  seen.set(v, out);
+  for (const [k, x] of Object.entries(v)) out[k] = withoutAuthNonce(x, Array.isArray(v) ? undefined : k, seen);
   return out;
 };
 
