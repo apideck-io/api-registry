@@ -1,0 +1,95 @@
+connectors/revivn.yaml
+  s_1f1ca60914a185::t_55dec2abd3d7de 1-12
+connectors/malwarebytes.yaml
+  s_1f1ca60914a185::t_419d97132c81a4 1-9
+specs/revivn/auth.yaml
+  s_1f1ca60914a185::t_0ff4221679bf2c 1-25
+connectors/checkout-com.yaml
+  s_1216b7ab38d26c::t_d3112a73dc1e1d 1-9
+specs/availity/auth.yaml
+  s_1216b7ab38d26c::t_f97c84e564f104 1-24
+connectors/transporeon-carrier.yaml
+  s_1216b7ab38d26c::t_67a0863a956564 1-9
+specs/8x8/auth.yaml
+  s_1216b7ab38d26c::t_4eb515e8bc08ea 1-24
+connectors/dope-security.yaml
+  s_1f1ca60914a185::t_7d10bf8f151ae5 1-12
+connectors/revolut-business.yaml
+  s_1f1ca60914a185::t_fddb9b22536383 1-9
+specs/adobe-umapi/auth.yaml
+  s_1216b7ab38d26c::t_eb5cd1972b802e 1-26
+connectors/perk.yaml
+  s_1216b7ab38d26c::t_bc7d2f2ad3226c 1-12
+connectors/yokoy.yaml
+  s_1216b7ab38d26c::t_9e9e0efdc0f2bf 1-9
+specs/bliro/auth.yaml
+  s_1216b7ab38d26c::t_88eac2fbfd4dcc 1-26
+specs/dope-security/auth.yaml
+  s_1f1ca60914a185::t_bf943d909f99c5 1-24
+connectors/tempo.yaml
+  s_1216b7ab38d26c::t_75e90ced8c9eb8 1-9
+connectors/ninjaone-rmm.yaml
+  s_1f1ca60914a185::t_603645f670d456 1-9
+connectors/rydoo.yaml
+  s_1f1ca60914a185::t_a2f31db4a3ef62 1-12
+connectors/kno-commerce.yaml
+  s_1f1ca60914a185::t_e06819211570ff 1-9
+connectors/availity.yaml
+  s_1216b7ab38d26c::t_3845e7aff60845 1-12
+connectors/conductorone.yaml
+  s_eeda7bd9685d9d::t_f9acd439faa61a 1-9
+specs/firefish/auth.yaml
+  s_1216b7ab38d26c::t_11151605288554 1-40
+connectors/roller.yaml
+  s_1f1ca60914a185::t_3511a5027e6729 1-9
+connectors/bliro.yaml
+  s_1216b7ab38d26c::t_adac0a7d4a0b21 1-12
+connectors/adobe-umapi.yaml
+  s_1216b7ab38d26c::t_2910bf18d5d181 1-12
+specs/rydoo/auth.yaml
+  s_1f1ca60914a185::t_5b83cccc68a9dc 1-33
+connectors/procore.yaml
+  s_1f1ca60914a185::t_c3b7df59a09046 1-12
+specs/perk/auth.yaml
+  s_1216b7ab38d26c::t_1c69141be54ccb 1-37
+connectors/firefish.yaml
+  s_1216b7ab38d26c::t_2b0a5564397140 1-12
+connectors/vanta.yaml
+  s_1216b7ab38d26c::t_67cd792ada1f14 1-9
+connectors/8x8.yaml
+  s_1216b7ab38d26c::t_92703bdec2e936 1-12
+specs/procore/auth.yaml
+  s_1f1ca60914a185::t_9b263ccfe961cd 1-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7a69a935e130c322be10de83137dd35de69f4d07",
+  "prompts": {},
+  "sessions": {
+    "s_1216b7ab38d26c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a14a97-820b-72f2-85b1-9bee130548e5",
+        "model": "gpt-6-luna"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_1f1ca60914a185": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6526c4fe-4f71-427e-af03-7eff8b144aa5",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
