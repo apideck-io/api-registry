@@ -1,0 +1,84 @@
+connectors/talentlyft.yaml
+  s_eeda7bd9685d9d::t_d08657b51bf4e3 1-10
+connectors/knowbe4.yaml
+  s_eeda7bd9685d9d::t_f4dc2036c6d450 1-11,14-15,17
+  s_eeda7bd9685d9d::t_576b88209c9d82 12-13,16
+specs/crowdstrike/auth.yaml
+  s_eeda7bd9685d9d::t_8996321fc89e8c 1-31
+connectors/tenable.yaml
+  s_eeda7bd9685d9d::t_dfb2187d9b73af 1-10
+connectors/hotjar.yaml
+  s_eeda7bd9685d9d::t_de278d61704911 1-12
+connectors/liferay.yaml
+  s_eeda7bd9685d9d::t_bcd655dbd07fa8 1-10
+connectors/retool.yaml
+  s_eeda7bd9685d9d::t_fc063aec602eb0 1-10
+connectors/carta.yaml
+  s_eeda7bd9685d9d::t_49205d7b05f7a0 1-12
+connectors/crowdstrike.yaml
+  s_eeda7bd9685d9d::t_dd9f4f5e4ad1e2 1-12
+specs/lessonly/auth.yaml
+  s_eeda7bd9685d9d::t_49d7d19066dd04 1-21
+connectors/duo-security.yaml
+  s_eeda7bd9685d9d::t_166c5376529df1 1-10
+connectors/teamviewer.yaml
+  s_eeda7bd9685d9d::t_1999f617ced21d 1-10
+connectors/unbounce.yaml
+  s_1216b7ab38d26c::t_865c6443f1d2e1 1-12
+connectors/smartling.yaml
+  s_eeda7bd9685d9d::t_ffc74daf49604f 1-9
+connectors/nexthink.yaml
+  s_eeda7bd9685d9d::t_55337a1c99aea4 1-10
+connectors/easypost.yaml
+  s_eeda7bd9685d9d::t_32e112a96faced 1-12
+connectors/chattermill.yaml
+  s_eeda7bd9685d9d::t_fab05b8cd43227 1-10
+connectors/checkr.yaml
+  s_eeda7bd9685d9d::t_71fd47fbb3fb60 1-10
+connectors/lessonly.yaml
+  s_eeda7bd9685d9d::t_c0ede898ce0c08 1-12
+specs/unbounce/auth.yaml
+  s_1216b7ab38d26c::t_f3b2d0343ed167 1-21
+specs/easypost/auth.yaml
+  s_eeda7bd9685d9d::t_6e8384d09e7c83 1-21
+connectors/intellihr.yaml
+  s_eeda7bd9685d9d::t_b108805760702a 1-9
+connectors/15five.yaml
+  s_eeda7bd9685d9d::t_c01562f14eacb9 1-10
+connectors/contentstack.yaml
+  s_eeda7bd9685d9d::t_1d753bada607cc 1-10
+specs/hotjar/auth.yaml
+  s_eeda7bd9685d9d::t_ba0c9002d93f84 1-24
+connectors/charthop.yaml
+  s_eeda7bd9685d9d::t_d989037c32b266 1-10
+connectors/statista.yaml
+  s_eeda7bd9685d9d::t_2d3bed4e61791e 1-10
+connectors/statuspage.yaml
+  s_eeda7bd9685d9d::t_28f3cf1ada26cc 1-11
+specs/carta/auth.yaml
+  s_eeda7bd9685d9d::t_7257c19a058910 1-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "be8b31ecd0ded58e00a35cf180932628d5a495e8",
+  "prompts": {},
+  "sessions": {
+    "s_1216b7ab38d26c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a14a97-820b-72f2-85b1-9bee130548e5",
+        "model": "gpt-6-luna"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
