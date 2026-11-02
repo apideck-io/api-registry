@@ -1,0 +1,21 @@
+connectors/growthbook.yaml
+  s_eeda7bd9685d9d::t_a39b15d7167b39 11
+connectors/quicknode.yaml
+  s_eeda7bd9685d9d::t_69b751460019ca 24,29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8dd72753d94bf6c4d7d36bcd1ef915f0427c9abe",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
