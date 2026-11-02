@@ -1,0 +1,56 @@
+specs/onshape/auth.yaml
+  s_0c171ff7d6a7f5::t_9cf969c2d198ad 26-31
+specs/tumblr/auth.yaml
+  s_0c171ff7d6a7f5::t_9192295649cc21 26
+specs/planning-center-online/auth.yaml
+  s_0c171ff7d6a7f5::t_fed21854fa8f6f 26-35
+specs/candis/auth.yaml
+  s_0c171ff7d6a7f5::t_0d851cff65001e 26-30
+NOTICE
+  s_0c171ff7d6a7f5::t_25f57e6ba1777b 13-16
+specs/loyaltylion/auth.yaml
+  s_0c171ff7d6a7f5::t_f6d066cab20f09 26-34
+specs/addepar/auth.yaml
+  s_0c171ff7d6a7f5::t_ff14d95975c51d 26-47
+specs/tremendous/auth.yaml
+  s_0c171ff7d6a7f5::t_096718fae443e1 26-28
+README.md
+  s_0c171ff7d6a7f5::t_cfec99c4da994b 129
+  s_eeda7bd9685d9d::t_822ddd0325dd37 162
+specs/conta-azul/auth.yaml
+  s_0c171ff7d6a7f5::t_d4a30dc84f0c86 30
+specs/podium/auth.yaml
+  s_0c171ff7d6a7f5::t_1451626d14c704 26-42
+specs/bing-webmasters/auth.yaml
+  s_0c171ff7d6a7f5::t_42f4951716f920 26-27
+specs/grain/auth.yaml
+  s_0c171ff7d6a7f5::t_ef43f435740544 26-27
+specs/wiseagent/auth.yaml
+  s_0c171ff7d6a7f5::t_129dd142b87e6f 24-29
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_5cde2f1800d7b2 204
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "06372b23326083cb9ef6288bdcd9d2e6e9652858",
+  "prompts": {},
+  "sessions": {
+    "s_0c171ff7d6a7f5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "journal",
+        "model": "unknown"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
