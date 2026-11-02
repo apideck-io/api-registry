@@ -1,0 +1,27 @@
+connectors/avalara.yaml
+  s_eeda7bd9685d9d::t_478418082138c4 4-10
+connectors/bandwidth.yaml
+  s_eeda7bd9685d9d::t_6ec62320628968 4-35
+connectors/clio.yaml
+  s_eeda7bd9685d9d::t_b3e1cf0bab20c6 4-11
+connectors/google-translate.yaml
+  s_eeda7bd9685d9d::t_b2954f0ad2c11e 4-10
+connectors/qlik.yaml
+  s_eeda7bd9685d9d::t_e7b5ee25844e3c 2,4-220
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "dfe9684021819308f6846132d49330be8e70b43e",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "unknown"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
