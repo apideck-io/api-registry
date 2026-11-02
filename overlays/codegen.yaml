@@ -1,0 +1,18 @@
+overlay: 1.0.0
+info:
+  title: "Codegen API: bearer authentication"
+  version: 1.0.0
+actions:
+  - target: $.components
+    update:
+      securitySchemes:
+        bearerAuth:
+          type: http
+          scheme: bearer
+          description: "An API token from Codegen's developer settings, sent as Authorization: Bearer <token> (https://docs.codegen.com/api-reference/authentication)."
+    description: The spec defines no security scheme, though every operation needs the bearer token Codegen's authentication page documents.
+  - target: $
+    update:
+      security:
+        - bearerAuth: []
+    description: Applies the bearer scheme to every operation, as Codegen's authentication page says.

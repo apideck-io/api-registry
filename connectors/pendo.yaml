@@ -9,4 +9,4 @@ specs:
     provenance: community
     coverage: auth-only
     server: "https://app.pendo.io"
-    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (engageapi.pendo.io)."
+    notes: "US region. Others: us1.app.pendo.io (US1), app.eu.pendo.io (EU), app.jpn.pendo.io (Japan), app.au.pendo.io (Australia); a key works only on its own region's host. Authentication only: no endpoints. Written from the vendor's developer documentation (engageapi.pendo.io)."

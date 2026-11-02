@@ -16,6 +16,6 @@ components:
     bearer:
       type: http
       scheme: bearer
-      description: Shop Private API Key from Account API page (partners also send X-Postscript-Shop-Token)
+      description: The Shop Private API Key from the Account API page. Partner apps authenticate differently (an extra X-Postscript-Shop-Token header); that flow isn't described here.
 security:
   - bearer: []

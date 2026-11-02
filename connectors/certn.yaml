@@ -8,5 +8,5 @@ specs:
     format: openapi-3.1
     provenance: community
     coverage: auth-only
-    server: "https://api.ca.certn.co"
-    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (centric-api-docs.certn.co)."
+    server: "https://api.{region}.certn.co"
+    notes: "{region} is ca, uk or au, the account's region. Authentication only: no endpoints. Written from the vendor's developer documentation (centric-api-docs.certn.co)."

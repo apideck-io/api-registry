@@ -6,4 +6,5 @@ specs:
     url: "https://api.public.ninety.io/v1/swagger-json"
     format: openapi-3.0
     provenance: vendor
-    server: "https://api.public.ninety.io/v1"
+    server: "https://api.public.ninety.io"
+    notes: "The spec's paths already carry the /v1 prefix, so the server is the bare host."

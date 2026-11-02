@@ -1,10 +1,10 @@
-id: pocket
-name: "Pocket"
+id: pocket-ai
+name: "Pocket AI"
 apideck: false
-notes: "Pocket publishes no API spec; the auth-only spec below is written here."
+notes: "Pocket AI publishes no API spec; the auth-only spec below is written here."
 specs:
-  - name: "Pocket API (authentication only)"
-    path: "specs/pocket/auth.yaml"
+  - name: "Pocket AI API (authentication only)"
+    path: "specs/pocket-ai/auth.yaml"
     format: openapi-3.1
     provenance: community
     coverage: auth-only

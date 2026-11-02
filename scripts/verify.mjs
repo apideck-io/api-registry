@@ -210,7 +210,7 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
               // Values beyond the URLs, on any scheme type, are checked and cited too, or left out.
               if (isObj(scheme)) {
                 const template = scheme["x-value-template"];
-                if (template !== undefined && (scheme.type !== "apiKey" || scheme.in !== "header" || typeof template !== "string" || !template.includes("{key}"))) errors.push(`${at}: ${name} x-value-template is for an apiKey header and contains {key}`);
+                if (template !== undefined && (scheme.type !== "apiKey" || scheme.in !== "header" || typeof template !== "string" || !template.includes("{key}") || /[\r\n\0]/.test(template))) errors.push(`${at}: ${name} x-value-template is for an apiKey header and contains {key}`);
                 const method = scheme["x-token-endpoint-auth-method"];
                 if (method !== undefined && !["client_secret_basic", "client_secret_post"].includes(method)) errors.push(`${at}: ${name} x-token-endpoint-auth-method is client_secret_basic or client_secret_post`);
                 if (method !== undefined && !spec["x-sources"]?.tokenEndpointAuthMethod) errors.push(`${at}: x-sources.tokenEndpointAuthMethod is required when ${name} sets x-token-endpoint-auth-method`);
@@ -227,7 +227,7 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
               for (const k of needed) if (!spec["x-sources"][k]) errors.push(`${at}: x-sources.${k} is required`);
               // An API-key or bearer scheme was checked against a real endpoint before it was added.
               if (!needed.includes("auth") && spec["x-checked-endpoint"] !== undefined) errors.push(`${at}: x-checked-endpoint is recorded for an apiKey or http scheme, and this spec has none`);
-              if (needed.includes("auth") && (typeof spec["x-checked-endpoint"] !== "string" || !/^\/\S*$/.test(spec["x-checked-endpoint"]))) errors.push(`${at}: an auth-only spec with an apiKey or http scheme records the endpoint it was checked against as x-checked-endpoint (a path starting with /)`);
+              if (needed.includes("auth") && (typeof spec["x-checked-endpoint"] !== "string" || !/^\/(?!\/)[^\s#]*$/.test(spec["x-checked-endpoint"]))) errors.push(`${at}: an auth-only spec with an apiKey or http scheme records the endpoint it was checked against as x-checked-endpoint (a path starting with /)`);
               // A citation for a value the spec doesn't state is left over from an edit.
               const states = { tokenEndpointAuthMethod: schemes.some((sc) => sc["x-token-endpoint-auth-method"] !== undefined), pkce: schemes.some((sc) => sc["x-pkce-required"] !== undefined), scopes: flows.some((f) => Object.keys(f?.scopes ?? {}).length), openIdConnectUrl: schemes.some((sc) => sc.openIdConnectUrl), auth: schemes.some((sc) => sc.type === "apiKey" || sc.type === "http"), authorizationUrl: flows.some((f) => f?.authorizationUrl), tokenUrl: flows.some((f) => f?.tokenUrl), refreshUrl: flows.some((f) => f?.refreshUrl) };
               for (const [k, set] of Object.entries(states)) if (spec["x-sources"][k] && !set) errors.push(`${at}: x-sources.${k} cites a value the spec doesn't set`);

@@ -1,9 +1,9 @@
 id: callrail
-name: "Callrail"
+name: "CallRail"
 apideck: false
-notes: "Callrail publishes no API spec; the auth-only spec below is written here."
+notes: "CallRail publishes no API spec; the auth-only spec below is written here."
 specs:
-  - name: "Callrail API (authentication only)"
+  - name: "CallRail API (authentication only)"
     path: "specs/callrail/auth.yaml"
     format: openapi-3.1
     provenance: community

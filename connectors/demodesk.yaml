@@ -1,5 +1,5 @@
 id: demodesk
-name: "DemoDesk"
+name: "Demodesk"
 apideck: false
 specs:
   - name: "Demodesk Public API"

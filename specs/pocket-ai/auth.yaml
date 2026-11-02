@@ -1,8 +1,8 @@
 openapi: 3.1.0
 info:
-  title: Pocket API (authentication only)
+  title: Pocket AI API (authentication only)
   version: "0"
-  description: "Authentication only. This document describes how to authenticate with the Pocket API: its host and a bearer token. It lists no endpoints. Pocket publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /public/recordings refuses a request without credentials (HTTP 401)."
+  description: "Authentication only. This document describes how to authenticate with the Pocket AI API: its host and a bearer token. It lists no endpoints. Pocket AI publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /public/recordings refuses a request without credentials (HTTP 401)."
 x-auth-only: true
 x-checked-endpoint: /public/recordings
 x-sources:

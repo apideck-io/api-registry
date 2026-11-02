@@ -9,7 +9,15 @@ x-sources:
   server: https://centric-api-docs.certn.co/reference/introduction.md
   auth: https://centric-api-docs.certn.co/reference/authentication.md
 servers:
-  - url: https://api.ca.certn.co
+  - url: https://api.{region}.certn.co
+    variables:
+      region:
+        default: ca
+        enum:
+          - ca
+          - uk
+          - au
+        description: "Your account's region: ca (Canada), uk (United Kingdom) or au (Australia)."
 paths: {}
 components:
   securitySchemes:
