@@ -187,17 +187,17 @@
       "specs": {
         "DigitalOcean API": {
           "status": "ok",
-          "sha256": "54df5b803435fc9e2c0e1ef09a70c61ca89e6efbf5ec4b66ba5384da0fd124a0",
-          "fetchSha256": "54df5b803435fc9e2c0e1ef09a70c61ca89e6efbf5ec4b66ba5384da0fd124a0",
-          "bytes": 4239887,
-          "operations": 866,
+          "sha256": "f12e07424ad68412628aa7ac1f16c42a10718e960ee2179d8bef745549d7b005",
+          "fetchSha256": "f12e07424ad68412628aa7ac1f16c42a10718e960ee2179d8bef745549d7b005",
+          "bytes": 4253454,
+          "operations": 868,
           "title": "DigitalOcean API",
           "apiVersion": "2.0",
           "specVersion": "3.0.0",
           "server": "https://api.digitalocean.com",
-          "surface": "80972f00785efab9",
-          "changedOn": "2026-10-31",
-          "surfaceChangedOn": "2026-11-01"
+          "surface": "4849a5c97e40d8a1",
+          "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02"
         }
       }
     },
@@ -455,17 +455,17 @@
       "specs": {
         "Service Management Public REST API": {
           "status": "ok",
-          "sha256": "511d6e039a28c094e7a369dc3f17b7dbd6d067ba6e2071d6c2b86d939f8d0e17",
-          "fetchSha256": "511d6e039a28c094e7a369dc3f17b7dbd6d067ba6e2071d6c2b86d939f8d0e17",
+          "sha256": "c15b58fe51a9754946efbf1988bfb345371380ef7e3ffdf3650bd56229a2e0c5",
+          "fetchSha256": "c15b58fe51a9754946efbf1988bfb345371380ef7e3ffdf3650bd56229a2e0c5",
           "bytes": 370437,
           "operations": 75,
           "title": "Service Management Public REST API",
-          "apiVersion": "1001.0.0-SNAPSHOT-d794cfb4c7554a89092e2f32783da3a72153f3f0",
+          "apiVersion": "1001.0.0-SNAPSHOT-25cde55b2229d7a79c3fdeb6b9d8abe3bc137957",
           "specVersion": "3.0.1",
           "server": "https://{your-domain}.atlassian.net",
           "surface": "121ad129af023e96",
           "specServer": "https://your-domain.atlassian.net",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -558,9 +558,9 @@
           "apiVersion": "3.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.mailgun.net",
-          "surface": "4ce336fa01405f1f",
+          "surface": "308c907fad961e73",
           "changedOn": "2026-10-31",
-          "surfaceChangedOn": "2026-11-01"
+          "surfaceChangedOn": "2026-11-02"
         }
       }
     },
@@ -1232,17 +1232,18 @@
       "specs": {
         "Support API": {
           "status": "ok",
-          "sha256": "809a093dd15caa57536520db2c7dd8a829e8e6c2a25c01b3f7af3f4e9b8d22e6",
-          "fetchSha256": "809a093dd15caa57536520db2c7dd8a829e8e6c2a25c01b3f7af3f4e9b8d22e6",
-          "bytes": 2471434,
+          "sha256": "5ff8bb4529fa1a26686278a0ee638def46e2d65f7564fe3305695537e831b2ae",
+          "fetchSha256": "5ff8bb4529fa1a26686278a0ee638def46e2d65f7564fe3305695537e831b2ae",
+          "bytes": 2484267,
           "operations": 676,
           "title": "Support API",
           "apiVersion": "2.0.0",
           "specVersion": "3.0.3",
           "server": "https://{subdomain}.zendesk.com",
-          "surface": "90b27bea129a134a",
+          "surface": "94279af2e05a5f24",
           "specServer": "https://{subdomain}.{domain}.com",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02"
         }
       }
     },
@@ -1455,16 +1456,16 @@
       "specs": {
         "Holded API (v2)": {
           "status": "ok",
-          "sha256": "db68018441fb92ac4c22461c7f2347b293fb67dc8eb58a71088367d0639012f0",
-          "fetchSha256": "db68018441fb92ac4c22461c7f2347b293fb67dc8eb58a71088367d0639012f0",
-          "bytes": 5491587,
+          "sha256": "b0aee5e11fd842ea24115e33df413f489ccfa777276ea415aaf21b3940a306cb",
+          "fetchSha256": "b0aee5e11fd842ea24115e33df413f489ccfa777276ea415aaf21b3940a306cb",
+          "bytes": 5494350,
           "operations": 366,
           "title": "Holded API",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.holded.com",
           "surface": "d5b9bf71f2d91098",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -1474,16 +1475,16 @@
       "specs": {
         "Bookkeeping & Invoicing/eAccounting API V2": {
           "status": "ok",
-          "sha256": "455e7bd775ae65870d2ab4b7bdeaefa52ff97578468db6244bc97a94f022841d",
-          "fetchSha256": "455e7bd775ae65870d2ab4b7bdeaefa52ff97578468db6244bc97a94f022841d",
-          "bytes": 955488,
+          "sha256": "bee68ce5eeb50313913d60bda5d58632d595c2d06160e4fc8217c37b07c50ca6",
+          "fetchSha256": "bee68ce5eeb50313913d60bda5d58632d595c2d06160e4fc8217c37b07c50ca6",
+          "bytes": 958011,
           "operations": 229,
           "title": "Bookkeeping & Invoicing/eAccounting API V2",
           "apiVersion": "v2",
           "specVersion": "3.0.4",
           "server": "https://eaccountingapi.vismaonline.com/v2/",
           "surface": "b3ce007d19bbd83f",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-02"
         }
       }
     },
@@ -1658,7 +1659,7 @@
       "name": "banqUP",
       "specs": {
         "Banqup (Unifiedpost) APIs v4": {
-          "status": "unparseable: Missing closing \"quote at line 9112, column 81:\n\n          description: \"status "
+          "status": "unparseable: Missing closing \"quote at line 9243, column 81:\n\n          description: \"status "
         }
       }
     },
@@ -2339,15 +2340,15 @@
       "specs": {
         "Employment Hero API Postman collection": {
           "status": "ok",
-          "sha256": "1f9909dbc294f4e23a219ec134b771a92f728bad590b86fd91a416a94acfd3d3",
-          "fetchSha256": "1f9909dbc294f4e23a219ec134b771a92f728bad590b86fd91a416a94acfd3d3",
-          "bytes": 291793,
-          "operations": 234,
+          "sha256": "8e1d25d580b7f14fbaf4e64ec4e912227c51791fd4680872bd3e3f104cb96847",
+          "fetchSha256": "8e1d25d580b7f14fbaf4e64ec4e912227c51791fd4680872bd3e3f104cb96847",
+          "bytes": 293032,
+          "operations": 235,
           "title": "Employment Hero API",
           "specVersion": "2.1.0",
           "surface": "5c0d0f30a71500fc",
           "server": "https://api.employmenthero.com/api",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -2609,11 +2610,11 @@
         },
         "GitLab GraphQL API": {
           "status": "ok",
-          "sha256": "90b9a7a2680f3c24b610b8c45884f10ac7ba4cda82a10f1f93cc76f8600389eb",
-          "bytes": 8645325,
-          "operations": 898,
+          "sha256": "0ca83d0a6a0dae6f9d551e5dbd03f7048e893cc20c4bbf7842826050d1fcfcd9",
+          "bytes": 8655593,
+          "operations": 900,
           "server": "https://gitlab.com/api/graphql",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-02"
         }
       }
     },
@@ -3159,16 +3160,16 @@
       "specs": {
         "Hailey HR API v1": {
           "status": "ok",
-          "sha256": "d0bc75380776e2ff22ae870cdd3a7384e3d9926af7dccf7ef85aa105e25d2f1c",
-          "fetchSha256": "d0bc75380776e2ff22ae870cdd3a7384e3d9926af7dccf7ef85aa105e25d2f1c",
-          "bytes": 163333,
+          "sha256": "d614d68bd4c73e2ba328e13e1fe8cf82a5deaafc1127a8d5a87d43adbc933cdc",
+          "bytes": 97279,
           "operations": 37,
           "title": "Hailey HR Api",
           "apiVersion": "v1",
           "specVersion": "3.0.1",
           "server": "https://api.haileyhr.app",
           "surface": "0e554c69c7ee3d7a",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-02",
+          "hashForm": "volatile"
         }
       }
     },
@@ -3458,17 +3459,17 @@
       "specs": {
         "Jira Cloud platform REST API v3": {
           "status": "ok",
-          "sha256": "30d96390297b247d3e734110a689c9314209021b00badacea12fdf2a34f97ad4",
-          "fetchSha256": "30d96390297b247d3e734110a689c9314209021b00badacea12fdf2a34f97ad4",
-          "bytes": 2511514,
+          "sha256": "c209e606ce0077d253c8b38a84fdd1e7cea96e949275fe889de826af1751eea7",
+          "fetchSha256": "c209e606ce0077d253c8b38a84fdd1e7cea96e949275fe889de826af1751eea7",
+          "bytes": 2511560,
           "operations": 630,
           "title": "The Jira Cloud platform REST API",
-          "apiVersion": "1001.0.0-SNAPSHOT-d794cfb4c7554a89092e2f32783da3a72153f3f0",
+          "apiVersion": "1001.0.0-SNAPSHOT-25cde55b2229d7a79c3fdeb6b9d8abe3bc137957",
           "specVersion": "3.0.1",
           "server": "https://api.atlassian.com/ex/jira/{cloud_id}",
           "surface": "a4d21cd3d2d8688d",
           "specServer": "https://your-domain.atlassian.net",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-01"
         },
         "Jira Software Cloud REST API": {
@@ -3493,16 +3494,16 @@
       "specs": {
         "Jira Cloud platform REST API v3": {
           "status": "ok",
-          "sha256": "30d96390297b247d3e734110a689c9314209021b00badacea12fdf2a34f97ad4",
-          "fetchSha256": "30d96390297b247d3e734110a689c9314209021b00badacea12fdf2a34f97ad4",
-          "bytes": 2511514,
+          "sha256": "c209e606ce0077d253c8b38a84fdd1e7cea96e949275fe889de826af1751eea7",
+          "fetchSha256": "c209e606ce0077d253c8b38a84fdd1e7cea96e949275fe889de826af1751eea7",
+          "bytes": 2511560,
           "operations": 630,
           "title": "The Jira Cloud platform REST API",
-          "apiVersion": "1001.0.0-SNAPSHOT-d794cfb4c7554a89092e2f32783da3a72153f3f0",
+          "apiVersion": "1001.0.0-SNAPSHOT-25cde55b2229d7a79c3fdeb6b9d8abe3bc137957",
           "specVersion": "3.0.1",
           "server": "https://your-domain.atlassian.net",
           "surface": "a4d21cd3d2d8688d",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-01"
         },
         "Jira Software Cloud REST API": {
@@ -3558,16 +3559,16 @@
         },
         "JumpCloud API v1": {
           "status": "ok",
-          "sha256": "8f9b745de6d70a77d2cb69e404f28968123895622f1aaf75b0178982a5fa294c",
-          "fetchSha256": "8f9b745de6d70a77d2cb69e404f28968123895622f1aaf75b0178982a5fa294c",
-          "bytes": 372737,
+          "sha256": "0762c7d17a261b967619f94b838ec46b9acb2d198387ecab57dea54d2de2b98f",
+          "fetchSha256": "0762c7d17a261b967619f94b838ec46b9acb2d198387ecab57dea54d2de2b98f",
+          "bytes": 373971,
           "operations": 61,
           "title": "JumpCloud API",
           "apiVersion": "1.0",
           "specVersion": "3.1.0",
           "server": "https://console.jumpcloud.com/api",
           "surface": "cf294d2ab95e90b2",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -3936,9 +3937,9 @@
       "specs": {
         "Remote API": {
           "status": "ok",
-          "sha256": "937b9decb9756a75d655353af9e2aef4d9291603c7a330e4292949163052167e",
-          "fetchSha256": "937b9decb9756a75d655353af9e2aef4d9291603c7a330e4292949163052167e",
-          "bytes": 3086622,
+          "sha256": "d1809874b4ea4b8ff16f08268de73f387f16a67758559d8b73c55b8ff8cabe43",
+          "fetchSha256": "d1809874b4ea4b8ff16f08268de73f387f16a67758559d8b73c55b8ff8cabe43",
+          "bytes": 3087309,
           "operations": 308,
           "title": "Remote API",
           "apiVersion": "0.1.0",
@@ -4624,17 +4625,17 @@
       "specs": {
         "monday.com GraphQL schema (SDL)": {
           "status": "ok",
-          "sha256": "60cf27d7941388f281af0c7369f3b5e960e622755896648a1d722d2134285390",
-          "fetchSha256": "60cf27d7941388f281af0c7369f3b5e960e622755896648a1d722d2134285390",
-          "bytes": 680791,
+          "sha256": "f7a4e9cd8fe242e645fd12684377baf939be7f0ca28c32b6d4da1df8f9a4eb08",
+          "fetchSha256": "f7a4e9cd8fe242e645fd12684377baf939be7f0ca28c32b6d4da1df8f9a4eb08",
+          "bytes": 680911,
           "operations": 335,
           "derived": {
             "file": "derived/graphql/0656071d10c32575.introspection.json",
-            "sha256": "1f458805877d74de41f8540b1bde68882ade6adb5fcb65aa85b88688c778eacb",
-            "bytes": 3647911
+            "sha256": "f69ab27230c64cf6f2b02733f4cda39e62742a797015753c03d74d1237d97a75",
+            "bytes": 3648322
           },
           "server": "https://api.monday.com/v2",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-02"
         }
       }
     },
@@ -4643,16 +4644,16 @@
       "specs": {
         "Moneybird API": {
           "status": "ok",
-          "sha256": "5aeb8eaa07b0135959b1888e6185295217faed829bc7cdd8fed813caac9f5816",
-          "fetchSha256": "5aeb8eaa07b0135959b1888e6185295217faed829bc7cdd8fed813caac9f5816",
-          "bytes": 3094399,
+          "sha256": "f75e22487626682e65963ab3b3d06ba00f422b6eded4ef6f5ebb7b6c037208c4",
+          "fetchSha256": "f75e22487626682e65963ab3b3d06ba00f422b6eded4ef6f5ebb7b6c037208c4",
+          "bytes": 3098678,
           "operations": 300,
           "title": "Moneybird API",
-          "apiVersion": "v2-20261030-5fe325240a",
+          "apiVersion": "v2-20261102-9496f597f3",
           "specVersion": "3.1.0",
           "server": "https://moneybird.com/api/v2",
           "surface": "b70642a49f9ec445",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -4662,8 +4663,8 @@
       "specs": {
         "MYOB AccountRight API Postman collection": {
           "status": "ok",
-          "sha256": "32b3fa15ff62b861486d2aa362d257daf4da17affd5e95a3726e310c15f6a4b7",
-          "fetchSha256": "32b3fa15ff62b861486d2aa362d257daf4da17affd5e95a3726e310c15f6a4b7",
+          "sha256": "a6259b6bdbfeff705bec8614f0d7f20efcb5137cefbec6327b4c5a93ba4d6ec7",
+          "fetchSha256": "a6259b6bdbfeff705bec8614f0d7f20efcb5137cefbec6327b4c5a93ba4d6ec7",
           "bytes": 7071274,
           "operations": 257,
           "title": "MYOB AccountRight",
@@ -5107,16 +5108,16 @@
       "specs": {
         "Visma eAccounting API v2": {
           "status": "ok",
-          "sha256": "455e7bd775ae65870d2ab4b7bdeaefa52ff97578468db6244bc97a94f022841d",
-          "fetchSha256": "455e7bd775ae65870d2ab4b7bdeaefa52ff97578468db6244bc97a94f022841d",
-          "bytes": 955488,
+          "sha256": "bee68ce5eeb50313913d60bda5d58632d595c2d06160e4fc8217c37b07c50ca6",
+          "fetchSha256": "bee68ce5eeb50313913d60bda5d58632d595c2d06160e4fc8217c37b07c50ca6",
+          "bytes": 958011,
           "operations": 229,
           "title": "Bookkeeping & Invoicing/eAccounting API V2",
           "apiVersion": "v2",
           "specVersion": "3.0.4",
           "server": "https://eaccountingapi.vismaonline.com/v2/",
           "surface": "b3ce007d19bbd83f",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-02"
         }
       }
     },
@@ -5262,7 +5263,7 @@
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://us.posthog.com",
-          "surface": "9a47f651f21f1bb9",
+          "surface": "bcbf3dfdc255f174",
           "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-02"
         }
@@ -5422,9 +5423,8 @@
       "specs": {
         "X API v2": {
           "status": "ok",
-          "sha256": "eb26932276c5a515892f8885359b872bcc7f56aac3a840878c3d24572a831620",
-          "fetchSha256": "eb26932276c5a515892f8885359b872bcc7f56aac3a840878c3d24572a831620",
-          "bytes": 1314742,
+          "sha256": "05ad884a5e8cd505ee38908cd1e46757f082cedf66e0c4497682965197c97b34",
+          "bytes": 740927,
           "operations": 257,
           "title": "X API v2",
           "apiVersion": "2.173",
@@ -5432,7 +5432,8 @@
           "server": "https://api.x.com",
           "surface": "ff17c21f69b9e70b",
           "changedOn": "2026-11-02",
-          "surfaceChangedOn": "2026-11-01"
+          "surfaceChangedOn": "2026-11-01",
+          "hashForm": "volatile"
         }
       }
     },
@@ -6002,7 +6003,7 @@
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.customer.io",
-          "surface": "e7886b182cc407f7",
+          "surface": "eb35cbd12a35699f",
           "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-02"
         }
@@ -6488,16 +6489,16 @@
         },
         "Ecommerce": {
           "status": "ok",
-          "sha256": "7c33a161c4f40aaad8e148f5aec1d3e595f3c05a0a9d01ec5e75d3d6cd025981",
-          "fetchSha256": "7c33a161c4f40aaad8e148f5aec1d3e595f3c05a0a9d01ec5e75d3d6cd025981",
-          "bytes": 113181,
+          "sha256": "df0d5ee455506b520b5430c71c378e05eb8f26ac82f5fae07f667f3cb5b02229",
+          "fetchSha256": "df0d5ee455506b520b5430c71c378e05eb8f26ac82f5fae07f667f3cb5b02229",
+          "bytes": 114378,
           "operations": 26,
           "title": "Ecommerce",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.brevo.com/v3",
           "surface": "60c3b4c713931d81",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-01"
         },
         "Events": {
@@ -6554,9 +6555,9 @@
       "specs": {
         "Canva Connect API": {
           "status": "ok",
-          "sha256": "0c62a9719345201a321f4cb20b667e3656fd7aabb126d4b35cae25875f85ff20",
-          "fetchSha256": "0c62a9719345201a321f4cb20b667e3656fd7aabb126d4b35cae25875f85ff20",
-          "bytes": 542203,
+          "sha256": "5b33a7d7d6aebbdc04388386e2dd3e2dde4492e7a548faa94d095f04013754a4",
+          "fetchSha256": "5b33a7d7d6aebbdc04388386e2dd3e2dde4492e7a548faa94d095f04013754a4",
+          "bytes": 543456,
           "operations": 67,
           "title": "Canva REST APIs",
           "apiVersion": "2024-06-18",
@@ -6593,17 +6594,17 @@
       "specs": {
         "Cloudflare API": {
           "status": "ok",
-          "sha256": "cda658b222f273d562d6178a32df6537168eb7bbad1a8bda50b64621db419b18",
-          "fetchSha256": "cda658b222f273d562d6178a32df6537168eb7bbad1a8bda50b64621db419b18",
-          "bytes": 27630274,
+          "sha256": "3bbc75d8edd5e208365a96b0e86936c5e4aaeda38f0bb3ec9afadd1b9e8c4a71",
+          "fetchSha256": "3bbc75d8edd5e208365a96b0e86936c5e4aaeda38f0bb3ec9afadd1b9e8c4a71",
+          "bytes": 27629458,
           "operations": 3763,
           "title": "Cloudflare API",
           "apiVersion": "4.0.0",
           "specVersion": "3.0.3",
           "server": "https://api.cloudflare.com/client/v4",
-          "surface": "796387d74ce28e8f",
-          "changedOn": "2026-11-01",
-          "surfaceChangedOn": "2026-11-01"
+          "surface": "3ab101eaff8bbe75",
+          "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02"
         }
       }
     },
@@ -8157,16 +8158,16 @@
       "specs": {
         "Vercel REST API": {
           "status": "ok",
-          "sha256": "ce41983d652d053ba18ad5c9a41579a0408259b0148b3dcc47806ce2e25453d0",
-          "fetchSha256": "ce41983d652d053ba18ad5c9a41579a0408259b0148b3dcc47806ce2e25453d0",
-          "bytes": 12049729,
+          "sha256": "c2940ffc90cd23ffd15d87b83c90ae9cf4d069f5d63ed3813a14df345da82c04",
+          "fetchSha256": "c2940ffc90cd23ffd15d87b83c90ae9cf4d069f5d63ed3813a14df345da82c04",
+          "bytes": 12053497,
           "operations": 479,
           "title": "Vercel API",
           "apiVersion": "0.0.1",
           "specVersion": "3.0.3",
           "server": "https://api.vercel.com",
           "surface": "7fa342ac39b4538f",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -8476,12 +8477,12 @@
       "specs": {
         "Apify API": {
           "status": "ok",
-          "sha256": "9d4c3de242aae2c3d75a06427cee4e334114abc41ece50f70f85e64bf306e297",
-          "fetchSha256": "9d4c3de242aae2c3d75a06427cee4e334114abc41ece50f70f85e64bf306e297",
+          "sha256": "cf3a2547a26031d05ce6d5166300acc5a2c5e48e5c47ae93fd74cbfa8c4b96f5",
+          "fetchSha256": "cf3a2547a26031d05ce6d5166300acc5a2c5e48e5c47ae93fd74cbfa8c4b96f5",
           "bytes": 1134216,
           "operations": 242,
           "title": "Apify API",
-          "apiVersion": "v2-2026-10-29T100357Z",
+          "apiVersion": "v2-2026-11-01T214220Z",
           "specVersion": "3.1.2",
           "server": "https://api.apify.com",
           "surface": "759936ac92bc8f5d",
@@ -8594,16 +8595,16 @@
       "specs": {
         "Instantly API v2": {
           "status": "ok",
-          "sha256": "85e0092dd50b2f4f3f803533f26d3c5d8a93d4afd496551fdacbe141a91040d8",
-          "fetchSha256": "85e0092dd50b2f4f3f803533f26d3c5d8a93d4afd496551fdacbe141a91040d8",
-          "bytes": 4465592,
+          "sha256": "01877d796537c7338e99c5040e86f4953ca6372fd89b3f828160631f9dfe7016",
+          "bytes": 1430799,
           "operations": 256,
           "title": "API Explorer",
           "apiVersion": "2.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.instantly.ai",
           "surface": "3611b8524f942b72",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-02",
+          "hashForm": "volatile"
         }
       }
     },
@@ -8719,9 +8720,8 @@
       "specs": {
         "Twelve Data API": {
           "status": "ok",
-          "sha256": "ddc6642016d9403b25cf538c74dbcef5c4f814128fd74ec283a50b1a1ef9ce84",
-          "fetchSha256": "ddc6642016d9403b25cf538c74dbcef5c4f814128fd74ec283a50b1a1ef9ce84",
-          "bytes": 3447575,
+          "sha256": "f3dcf04a4bc7837d817d0298d3f08ed4b77c793f0da881bdf2ca53f665d99422",
+          "bytes": 1993503,
           "operations": 187,
           "title": "Twelve Data API",
           "apiVersion": "0.0.1",
@@ -8729,7 +8729,8 @@
           "server": "https://api.twelvedata.com",
           "surface": "8f662ee2345cece3",
           "specServer": "https://api.twelvedata.com/",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-02",
+          "hashForm": "volatile"
         }
       }
     },
@@ -9679,9 +9680,8 @@
       "specs": {
         "apaleo Inventory API": {
           "status": "ok",
-          "sha256": "c3a51c85a0ec0003b301619936924426bc232b3f20945b28b7876229693c316b",
-          "fetchSha256": "c3a51c85a0ec0003b301619936924426bc232b3f20945b28b7876229693c316b",
-          "bytes": 151914,
+          "sha256": "812438c459963bbf5fea120ee1629196a49b54309b52d158c01abce2f15be83d",
+          "bytes": 83260,
           "operations": 35,
           "title": "apaleo Inventory API",
           "apiVersion": "v1",
@@ -9689,13 +9689,13 @@
           "server": "https://api.apaleo.com",
           "surface": "42bc14c850565e1b",
           "changedOn": "2026-11-02",
-          "surfaceChangedOn": "2026-11-01"
+          "surfaceChangedOn": "2026-11-01",
+          "hashForm": "volatile"
         },
         "apaleo Rate Plan API": {
           "status": "ok",
-          "sha256": "09e925b013161e0bb9b454eebc69e106fdf3f7942f8da01de0dde25ba6a67e45",
-          "fetchSha256": "09e925b013161e0bb9b454eebc69e106fdf3f7942f8da01de0dde25ba6a67e45",
-          "bytes": 262842,
+          "sha256": "ae39acaf60343828aa6a1bec7d91dc3ab4f8185debee80ae2a39ff5c6fa73886",
+          "bytes": 143467,
           "operations": 45,
           "title": "apaleo Rate Plan API",
           "apiVersion": "v1",
@@ -9703,13 +9703,13 @@
           "server": "https://api.apaleo.com",
           "surface": "4e94cd83a6bc9dfd",
           "changedOn": "2026-11-02",
-          "surfaceChangedOn": "2026-11-01"
+          "surfaceChangedOn": "2026-11-01",
+          "hashForm": "volatile"
         },
         "apaleo Booking API": {
           "status": "ok",
-          "sha256": "d13957819bf26df51b9db433e48e4bc31c0c0b52ddb36f4a7f76c3ef1218dc8c",
-          "fetchSha256": "d13957819bf26df51b9db433e48e4bc31c0c0b52ddb36f4a7f76c3ef1218dc8c",
-          "bytes": 545348,
+          "sha256": "13a5638b6ad6b825eda0636643ad17451afb23179efe2118a02f19b2bd6dfaf9",
+          "bytes": 283280,
           "operations": 77,
           "title": "apaleo Booking API",
           "apiVersion": "v1",
@@ -9717,13 +9717,13 @@
           "server": "https://api.apaleo.com",
           "surface": "f823cbd058754e9b",
           "changedOn": "2026-11-02",
-          "surfaceChangedOn": "2026-11-01"
+          "surfaceChangedOn": "2026-11-01",
+          "hashForm": "volatile"
         },
         "apaleo Finance API": {
           "status": "ok",
-          "sha256": "8584b79b370cb1c316a1a072e6a8756239c6275054b68d11e322c5e5b930bc70",
-          "fetchSha256": "8584b79b370cb1c316a1a072e6a8756239c6275054b68d11e322c5e5b930bc70",
-          "bytes": 386767,
+          "sha256": "ab20ba228e934b96b026c65307fd5cd79a190ff7bcd971283cc3682f62e4d1b7",
+          "bytes": 213246,
           "operations": 65,
           "title": "apaleo Finance API",
           "apiVersion": "v1",
@@ -9731,7 +9731,8 @@
           "server": "https://api.apaleo.com",
           "surface": "4025a1cbe6b03fde",
           "changedOn": "2026-11-02",
-          "surfaceChangedOn": "2026-11-01"
+          "surfaceChangedOn": "2026-11-01",
+          "hashForm": "volatile"
         },
         "apaleo Settings API": {
           "status": "ok",
@@ -9763,9 +9764,8 @@
         },
         "apaleo Operations API": {
           "status": "ok",
-          "sha256": "bc5c781244ba905dbe953b9d0abfbc0028152a33259e8c3ef52531e0f9d9a8b7",
-          "fetchSha256": "bc5c781244ba905dbe953b9d0abfbc0028152a33259e8c3ef52531e0f9d9a8b7",
-          "bytes": 39563,
+          "sha256": "46693791b2c02c063c08ee2e00dd38fc99080bdd075b5f7cf1f89baf3555a44a",
+          "bytes": 22957,
           "operations": 10,
           "title": "apaleo Operations API",
           "apiVersion": "v1",
@@ -9773,12 +9773,13 @@
           "server": "https://api.apaleo.com",
           "surface": "0e977ab2f9b6c2eb",
           "changedOn": "2026-11-02",
-          "surfaceChangedOn": "2026-11-01"
+          "surfaceChangedOn": "2026-11-01",
+          "hashForm": "volatile"
         },
         "apaleo Reports API": {
           "status": "ok",
-          "sha256": "c60dd06e7543da11016e2da40640b47463b996d075f41b099aa348bac9001039",
-          "fetchSha256": "c60dd06e7543da11016e2da40640b47463b996d075f41b099aa348bac9001039",
+          "sha256": "564b8e18207f46cc7af360c62f18bb25fea7598771baead488cdba18d1eda458",
+          "fetchSha256": "564b8e18207f46cc7af360c62f18bb25fea7598771baead488cdba18d1eda458",
           "bytes": 71682,
           "operations": 5,
           "title": "apaleo Reports API",
@@ -9791,8 +9792,8 @@
         },
         "apaleo Availability API": {
           "status": "ok",
-          "sha256": "0968d7b410862e0517fb443b43ad53607cfe2d31d94677a5a3d1e9a97962ef69",
-          "fetchSha256": "0968d7b410862e0517fb443b43ad53607cfe2d31d94677a5a3d1e9a97962ef69",
+          "sha256": "a14b85c71ed176e03b9b33403b6a7e6f842e4596f9224158cf16d4d067fffdea",
+          "fetchSha256": "a14b85c71ed176e03b9b33403b6a7e6f842e4596f9224158cf16d4d067fffdea",
           "bytes": 56497,
           "operations": 7,
           "title": "apaleo Availability API",
@@ -9800,14 +9801,13 @@
           "specVersion": "2.0",
           "server": "https://api.apaleo.com",
           "surface": "a09655b7d6745b08",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-01"
         },
         "apaleo Logs API": {
           "status": "ok",
-          "sha256": "2a54470636a7bb37f2d0f26be141b1251306718285b1ad23d8ea11c9dfa707ad",
-          "fetchSha256": "2a54470636a7bb37f2d0f26be141b1251306718285b1ad23d8ea11c9dfa707ad",
-          "bytes": 60082,
+          "sha256": "3e53f08bef9ca2c42b4b90693bd5167ea837d5e52a755793dd75a0c9dbdbbfe7",
+          "bytes": 35884,
           "operations": 4,
           "title": "apaleo logs API",
           "apiVersion": "v1",
@@ -9815,7 +9815,8 @@
           "server": "https://api.apaleo.com",
           "surface": "33e8f8ea9e03bb03",
           "changedOn": "2026-11-02",
-          "surfaceChangedOn": "2026-11-01"
+          "surfaceChangedOn": "2026-11-01",
+          "hashForm": "volatile"
         }
       }
     },
@@ -10462,17 +10463,17 @@
       "specs": {
         "CleverReach REST API v3": {
           "status": "ok",
-          "sha256": "000277be7e0bce137ba33dd1334b909eda16bbcca5f6505f7239418c8872a0c5",
-          "fetchSha256": "000277be7e0bce137ba33dd1334b909eda16bbcca5f6505f7239418c8872a0c5",
-          "bytes": 154175,
-          "operations": 132,
+          "sha256": "310b1a47f1acd31957c2d2ed58b28558d3ca30350398d88807efbd467b5176cf",
+          "fetchSha256": "310b1a47f1acd31957c2d2ed58b28558d3ca30350398d88807efbd467b5176cf",
+          "bytes": 162479,
+          "operations": 137,
           "title": "CleverReach REST API",
           "apiVersion": "3",
           "specVersion": "2.0",
           "server": "https://rest.cleverreach.com",
-          "surface": "d88dd55f308e3b1d",
-          "changedOn": "2026-11-01",
-          "surfaceChangedOn": "2026-11-01"
+          "surface": "99d7550e192349de",
+          "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02"
         }
       }
     },
@@ -11117,15 +11118,15 @@
       "specs": {
         "Gemini API (Generative Language) discovery document": {
           "status": "ok",
-          "sha256": "4f0480edeba031e8452a6ad83fd279a531ee6252989cd0b3ad832f4b6761d828",
-          "bytes": 387074,
+          "sha256": "52f10f00bb7377822eda79e308713da5575b502b80c8ff62afc01c7c2cdf550d",
+          "bytes": 387789,
           "operations": 86,
           "title": "Gemini API",
           "apiVersion": "v1beta",
           "server": "https://generativelanguage.googleapis.com",
           "surface": "47d98566837668c9",
           "specServer": "https://generativelanguage.googleapis.com/",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -11424,15 +11425,15 @@
       "specs": {
         "Keap REST API v2": {
           "status": "ok",
-          "sha256": "dfd7f1b68a4e8a33ac3b38d4314b6592150cedcd74642db8f1b272cad1a7ba03",
-          "fetchSha256": "dfd7f1b68a4e8a33ac3b38d4314b6592150cedcd74642db8f1b272cad1a7ba03",
-          "bytes": 9321532,
+          "sha256": "b01ddfd7cfa8243a0cd35459c61309bd266170221c714323cca6b0946dfdfc04",
+          "fetchSha256": "b01ddfd7cfa8243a0cd35459c61309bd266170221c714323cca6b0946dfdfc04",
+          "bytes": 9319785,
           "operations": 403,
           "title": "API Reference",
           "specVersion": "2.1.0",
           "surface": "312e6ee4d2be0532",
           "server": "https://api.infusionsoft.com/crm",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-01"
         },
         "Keap REST API v1": {
@@ -12595,16 +12596,16 @@
         },
         "Productboard API v2 - Entities": {
           "status": "ok",
-          "sha256": "058d6953df7b4b654537745b691ca6e12d5411250b21dba8640980376fe3cbda",
-          "fetchSha256": "058d6953df7b4b654537745b691ca6e12d5411250b21dba8640980376fe3cbda",
-          "bytes": 131812,
+          "sha256": "9a5ec787738d38c1a065d470c1fa719cdc0bedbd47069b3dd37f404499af5dbf",
+          "fetchSha256": "9a5ec787738d38c1a065d470c1fa719cdc0bedbd47069b3dd37f404499af5dbf",
+          "bytes": 132770,
           "operations": 16,
           "title": "Entities",
           "apiVersion": "2.0.0",
           "specVersion": "3.1.1",
           "server": "https://api.productboard.com/v2",
           "surface": "ac0efad499abcd58",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-01"
         },
         "Productboard API v2 - Members": {
@@ -13074,8 +13075,8 @@
         },
         "Apply API": {
           "status": "ok",
-          "sha256": "8e4cf290d3ff5f4239adc045fdb064cbad4ddf6ea5bbf7f407e47ca26eb303fa",
-          "fetchSha256": "8e4cf290d3ff5f4239adc045fdb064cbad4ddf6ea5bbf7f407e47ca26eb303fa",
+          "sha256": "2ad95b29220f031311b7c80353f25b843daa99ca1e1e9c99e2c04936421efea9",
+          "fetchSha256": "2ad95b29220f031311b7c80353f25b843daa99ca1e1e9c99e2c04936421efea9",
           "bytes": 13471,
           "operations": 3,
           "title": "Apply API",
@@ -13083,7 +13084,7 @@
           "specVersion": "3.0.1",
           "server": "https://api.smartrecruiters.com",
           "surface": "a2845b74982f6f65",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -13253,8 +13254,8 @@
       "specs": {
         "TheirStack API": {
           "status": "ok",
-          "sha256": "9c983e4e2051b6445f64d6773a7c322002d632e649409c28f1a5a626a356beda",
-          "fetchSha256": "9c983e4e2051b6445f64d6773a7c322002d632e649409c28f1a5a626a356beda",
+          "sha256": "681b67bfe5fbb9cf13ce60a0d4615d996685d9f8088f9540bc3b8b767dd87e7d",
+          "fetchSha256": "681b67bfe5fbb9cf13ce60a0d4615d996685d9f8088f9540bc3b8b767dd87e7d",
           "bytes": 455968,
           "operations": 59,
           "title": "TheirStack API Reference",
@@ -13262,7 +13263,7 @@
           "specVersion": "3.1.0",
           "server": "https://api.theirstack.com",
           "surface": "caaf5f93adf26f97",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-02",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -13911,7 +13912,7 @@
         "Cloud Storage JSON API v1": {
           "status": "ok",
           "sha256": "a23332eaea2657524d21fb06379da6f52981228a25cb6e664530ed40895f4ff0",
-          "bytes": 251359,
+          "bytes": 251357,
           "operations": 87,
           "title": "Cloud Storage JSON API",
           "apiVersion": "v1",
@@ -14181,16 +14182,17 @@
       "specs": {
         "Addepar API (authentication only)": {
           "status": "ok",
-          "sha256": "4697df67d0eeb15e46e11c9386e3725042e90b77c4ad7f2f61a1ecfdaa099301",
-          "fetchSha256": "4697df67d0eeb15e46e11c9386e3725042e90b77c4ad7f2f61a1ecfdaa099301",
-          "bytes": 2152,
+          "sha256": "18de9dda860506acea90e4d7ab5805b573a701df8db8a28b764d972ff0471223",
+          "fetchSha256": "18de9dda860506acea90e4d7ab5805b573a701df8db8a28b764d972ff0471223",
+          "bytes": 1728,
           "operations": 0,
           "title": "Addepar API (authentication only)",
           "apiVersion": "0",
           "specVersion": "3.1.0",
           "server": "https://api.addepar.com",
-          "surface": "83e1305cc2cf735d",
+          "surface": "5caf54f0f4a90309",
           "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02",
           "coverage": "auth-only"
         }
       }
@@ -14777,9 +14779,9 @@
       "specs": {
         "Admin APIs": {
           "status": "ok",
-          "sha256": "813e3429182959ade318a5b59515f22334dabc1d2dc16afcb07ba7ca2aa67240",
-          "fetchSha256": "813e3429182959ade318a5b59515f22334dabc1d2dc16afcb07ba7ca2aa67240",
-          "bytes": 1183277,
+          "sha256": "a62c4dc147a87b6977afcb68c62a1e797488d33c9856e30ce704811bebebf9b9",
+          "fetchSha256": "a62c4dc147a87b6977afcb68c62a1e797488d33c9856e30ce704811bebebf9b9",
+          "bytes": 1183474,
           "operations": 110,
           "title": "Admin APIs",
           "apiVersion": "0.0.1",
@@ -14874,7 +14876,7 @@
       "specs": {
         "Atlas API": {
           "status": "ok",
-          "sha256": "13b36a8303580fcab4d4595eda2679d555ec866b4e43a548ad54400ade481204",
+          "sha256": "b5e2f59f9cb46e1cb8904340671e42faaf9d03c77a09cf3edb026df83138f754",
           "bytes": 118993,
           "operations": 67,
           "title": "Atlas API",
@@ -14970,16 +14972,17 @@
       "specs": {
         "AvaTax API": {
           "status": "ok",
-          "sha256": "5d630ddfd819e3ae8b9be0f4a798bfd1de4c0695307384cf767a261749fa4ba3",
-          "fetchSha256": "5d630ddfd819e3ae8b9be0f4a798bfd1de4c0695307384cf767a261749fa4ba3",
-          "bytes": 4124158,
+          "sha256": "8e1944553ac99d8d6bbec937c2742450ce890fb0f42c65f69c1216959a9d1d87",
+          "bytes": 2591056,
           "operations": 497,
           "title": "AvaTax API",
           "apiVersion": "v2",
           "specVersion": "2.0",
           "server": "https://rest.avatax.com",
-          "surface": "af525f211e432790",
-          "changedOn": "2026-11-02"
+          "surface": "3b37e8694d117842",
+          "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02",
+          "hashForm": "volatile"
         }
       }
     },
@@ -15198,16 +15201,16 @@
       "specs": {
         "Big Red Cloud API": {
           "status": "ok",
-          "sha256": "cfaf48f06432336eb06a94c7335c4f1492d22aa6bf85ae5d8d29db0c69ccefce",
-          "fetchSha256": "cfaf48f06432336eb06a94c7335c4f1492d22aa6bf85ae5d8d29db0c69ccefce",
-          "bytes": 377919,
+          "sha256": "9fe0f3b27fdd5127a7b1c5a6e4e995be69f8ff2054b8275d60faafa136be1133",
+          "bytes": 146114,
           "operations": 139,
           "title": "Big Red Cloud API",
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://app.bigredcloud.com/api",
           "surface": "c789c4f98472c3f0",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-02",
+          "hashForm": "volatile"
         }
       }
     },
@@ -15255,16 +15258,17 @@
       "specs": {
         "Bing Webmaster Tools API (authentication only)": {
           "status": "ok",
-          "sha256": "dc8fa19c602a0b523966ed88b4056f3e63943e974dd755cf85e22255e37c989d",
-          "fetchSha256": "dc8fa19c602a0b523966ed88b4056f3e63943e974dd755cf85e22255e37c989d",
-          "bytes": 1421,
+          "sha256": "8a35630d048cb4abde853ce67d4885c32eaeee1760002101646abef4d25d15d9",
+          "fetchSha256": "8a35630d048cb4abde853ce67d4885c32eaeee1760002101646abef4d25d15d9",
+          "bytes": 1313,
           "operations": 0,
           "title": "Bing Webmaster Tools API (authentication only)",
           "apiVersion": "0",
           "specVersion": "3.1.0",
           "server": "https://www.bing.com/webmaster/api.svc/json",
-          "surface": "fb7f68a8fc067172",
+          "surface": "77129a0774958a74",
           "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02",
           "coverage": "auth-only"
         }
       }
@@ -15448,16 +15452,17 @@
       "specs": {
         "Candis API (authentication only)": {
           "status": "ok",
-          "sha256": "b8eeed4e42499fd89727ad8c42ef5fcb335ad6da46b4c9cd0d378b3f78920d69",
-          "fetchSha256": "b8eeed4e42499fd89727ad8c42ef5fcb335ad6da46b4c9cd0d378b3f78920d69",
-          "bytes": 1495,
+          "sha256": "4e666bc36886a926d1ec3bb19338f239a851dd4aec34efbf9f5638fdb446d58c",
+          "fetchSha256": "4e666bc36886a926d1ec3bb19338f239a851dd4aec34efbf9f5638fdb446d58c",
+          "bytes": 1352,
           "operations": 0,
           "title": "Candis API (authentication only)",
           "apiVersion": "0",
           "specVersion": "3.1.0",
           "server": "https://api.candis.io/v1",
-          "surface": "e158a5030e5c74ed",
+          "surface": "eae0a599ab808fc4",
           "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02",
           "coverage": "auth-only"
         }
       }
@@ -15604,8 +15609,8 @@
       "specs": {
         "Chorus API": {
           "status": "ok",
-          "sha256": "65d10633eab388b2c0c738dc24ce22ca621feb5ea4d3fc7d082ac75a61e78f10",
-          "fetchSha256": "65d10633eab388b2c0c738dc24ce22ca621feb5ea4d3fc7d082ac75a61e78f10",
+          "sha256": "37dba0e217675998b6488a2c898b61a1eb6390dff4ec69eaaa41599a23bac392",
+          "fetchSha256": "37dba0e217675998b6488a2c898b61a1eb6390dff4ec69eaaa41599a23bac392",
           "bytes": 271709,
           "operations": 83,
           "title": "Chorus API",
@@ -15893,16 +15898,17 @@
       "specs": {
         "Conta Azul API (authentication only)": {
           "status": "ok",
-          "sha256": "717a6aefe7fc6a8ac9b8cb136514ee846c5f6360494cbee71e45c6e4c3d58673",
-          "fetchSha256": "717a6aefe7fc6a8ac9b8cb136514ee846c5f6360494cbee71e45c6e4c3d58673",
-          "bytes": 1660,
+          "sha256": "75cef54b4c1333d79434fe9544530f7bed32d12873a6bc6bea49a9833fbdd7a5",
+          "fetchSha256": "75cef54b4c1333d79434fe9544530f7bed32d12873a6bc6bea49a9833fbdd7a5",
+          "bytes": 1622,
           "operations": 0,
           "title": "Conta Azul API (authentication only)",
           "apiVersion": "0",
           "specVersion": "3.1.0",
           "server": "https://api-v2.contaazul.com",
-          "surface": "7b2619ad53009513",
+          "surface": "73d3bcac1f19fcd7",
           "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02",
           "coverage": "auth-only"
         }
       }
@@ -15952,16 +15958,16 @@
       "specs": {
         "Credas API": {
           "status": "ok",
-          "sha256": "0765b24b48af49753e8645f1c9f3eddfd4aa91a8159ac8e99229b5478d8cb280",
-          "fetchSha256": "0765b24b48af49753e8645f1c9f3eddfd4aa91a8159ac8e99229b5478d8cb280",
-          "bytes": 232360,
+          "sha256": "401389b32bf2d71e910975f6fbee1673d5f0e8919b726a06651486ecb95a632c",
+          "bytes": 91292,
           "operations": 37,
           "title": "Credas API",
           "apiVersion": "v1",
           "specVersion": "2.0",
           "server": "https://pi-api.credas.co.uk",
           "surface": "16f0867105984cc9",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-02",
+          "hashForm": "volatile"
         }
       }
     },
@@ -16260,9 +16266,9 @@
       "specs": {
         "Document360 Customer API": {
           "status": "ok",
-          "sha256": "9b17316612090ee04c2fa265047fc9d8d0506a3db46cd2d91af807824fb64100",
-          "fetchSha256": "9b17316612090ee04c2fa265047fc9d8d0506a3db46cd2d91af807824fb64100",
-          "bytes": 1607779,
+          "sha256": "b815d53dd9ed1eed349d53222b96dce7b1998cf173f30c4bf9557a65f7a855c3",
+          "fetchSha256": "b815d53dd9ed1eed349d53222b96dce7b1998cf173f30c4bf9557a65f7a855c3",
+          "bytes": 1608058,
           "operations": 119,
           "title": "Document360 Customer API",
           "apiVersion": "2.0.0",
@@ -17877,8 +17883,8 @@
       "specs": {
         "Firstbase API Specification Beta": {
           "status": "ok",
-          "sha256": "1081a341c43b9f98d3606ddb11577eebc14b158bd74872c37e48bc7498fe9f48",
-          "fetchSha256": "1081a341c43b9f98d3606ddb11577eebc14b158bd74872c37e48bc7498fe9f48",
+          "sha256": "4d03c042557bbf79f89227c8085fee756a8d29f036af124338eae4746bc091ae",
+          "fetchSha256": "4d03c042557bbf79f89227c8085fee756a8d29f036af124338eae4746bc091ae",
           "bytes": 408724,
           "operations": 128,
           "title": "Firstbase API Specification Beta",
@@ -18352,16 +18358,17 @@
       "specs": {
         "Grain API (authentication only)": {
           "status": "ok",
-          "sha256": "35bb4589be279f84e0978436ed3cab7ac1cc70fc5a10045b9dbe068a11ce177c",
-          "fetchSha256": "35bb4589be279f84e0978436ed3cab7ac1cc70fc5a10045b9dbe068a11ce177c",
-          "bytes": 1287,
+          "sha256": "0b12c1a0e11315b4614e1de1937ac489d5c061e134b0aa8d9d58e6ea232244c1",
+          "fetchSha256": "0b12c1a0e11315b4614e1de1937ac489d5c061e134b0aa8d9d58e6ea232244c1",
+          "bytes": 1207,
           "operations": 0,
           "title": "Grain API (authentication only)",
           "apiVersion": "0",
           "specVersion": "3.1.0",
           "server": "https://api.grain.com/_/public-api/v2",
-          "surface": "38854bf9b6947af3",
+          "surface": "5f7697b0d28a4088",
           "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02",
           "coverage": "auth-only"
         }
       }
@@ -18604,9 +18611,9 @@
       "specs": {
         "Image-Charts": {
           "status": "ok",
-          "sha256": "90429e56914aede6b79b67411e3a8dbd2e8585d53ea0d4fff44fa58173e37b91",
-          "fetchSha256": "90429e56914aede6b79b67411e3a8dbd2e8585d53ea0d4fff44fa58173e37b91",
-          "bytes": 82911,
+          "sha256": "b74df370e66270d50721c6918644906c0535c7cb84a2bd0cc9b36af9a3e6540c",
+          "fetchSha256": "b74df370e66270d50721c6918644906c0535c7cb84a2bd0cc9b36af9a3e6540c",
+          "bytes": 94584,
           "operations": 2,
           "title": "Image-Charts",
           "apiVersion": "6.1.19",
@@ -19416,16 +19423,17 @@
       "specs": {
         "LoyaltyLion API (authentication only)": {
           "status": "ok",
-          "sha256": "abd2a30885b103f75dfc0d8e039efed45265b224fc09815b4df2de7bb17d99c7",
-          "fetchSha256": "abd2a30885b103f75dfc0d8e039efed45265b224fc09815b4df2de7bb17d99c7",
-          "bytes": 1759,
+          "sha256": "c4fbf63424cb6eedbdbaed209863930f7a8c47ab1be0911e197422dec1fd4078",
+          "fetchSha256": "c4fbf63424cb6eedbdbaed209863930f7a8c47ab1be0911e197422dec1fd4078",
+          "bytes": 1567,
           "operations": 0,
           "title": "LoyaltyLion API (authentication only)",
           "apiVersion": "0",
           "specVersion": "3.1.0",
           "server": "https://api.loyaltylion.com/v2",
-          "surface": "d4b020622398d485",
+          "surface": "2929d6cc2cd030ef",
           "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02",
           "coverage": "auth-only"
         }
       }
@@ -19526,8 +19534,8 @@
       "specs": {
         "Interactive documentation for your Premium plan": {
           "status": "ok",
-          "sha256": "d39a76347483cf78acea30aded4dde41f2279794c4b096931571de6cde55fab1",
-          "fetchSha256": "d39a76347483cf78acea30aded4dde41f2279794c4b096931571de6cde55fab1",
+          "sha256": "8781e8af0f9fa3c3b3c5b6badce853eebcc702e8ad8b4be3433811c74a6dcf9e",
+          "fetchSha256": "8781e8af0f9fa3c3b3c5b6badce853eebcc702e8ad8b4be3433811c74a6dcf9e",
           "bytes": 97443,
           "operations": 7,
           "title": "Documentation for your Premium plan",
@@ -19977,8 +19985,9 @@
           "apiVersion": "3.15.0",
           "specVersion": "3.0.0",
           "server": "https://api.novu.co",
-          "surface": "15c8ae6fd8345567",
-          "changedOn": "2026-11-02"
+          "surface": "625190f763a266fb",
+          "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02"
         }
       }
     },
@@ -20055,16 +20064,17 @@
       "specs": {
         "Onshape API (authentication only)": {
           "status": "ok",
-          "sha256": "7a5222fa32b36d3b50e695ced7db982fff2e5b2c2e34eaf34c92da6ac9bbc59f",
-          "fetchSha256": "7a5222fa32b36d3b50e695ced7db982fff2e5b2c2e34eaf34c92da6ac9bbc59f",
-          "bytes": 1517,
+          "sha256": "14f5f71379114f0cef05a13171a0bc7e9ac1cb926b0df804623550a9657824a3",
+          "fetchSha256": "14f5f71379114f0cef05a13171a0bc7e9ac1cb926b0df804623550a9657824a3",
+          "bytes": 1348,
           "operations": 0,
           "title": "Onshape API (authentication only)",
           "apiVersion": "0",
           "specVersion": "3.1.0",
           "server": "https://cad.onshape.com/api",
-          "surface": "06763188d973b8aa",
+          "surface": "3fe9aecfdcb5b0f5",
           "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02",
           "coverage": "auth-only"
         }
       }
@@ -20582,16 +20592,17 @@
       "specs": {
         "Planning Center API (authentication only)": {
           "status": "ok",
-          "sha256": "46d0f69d8f472938b8cdaba1bdaa32dad8e0feb960fa3b962a9141e5e08564c1",
-          "fetchSha256": "46d0f69d8f472938b8cdaba1bdaa32dad8e0feb960fa3b962a9141e5e08564c1",
-          "bytes": 1588,
+          "sha256": "152dce6559a64ecfe292a9e40cab5eb679009719570cfc7d2958ea684c561dd4",
+          "fetchSha256": "152dce6559a64ecfe292a9e40cab5eb679009719570cfc7d2958ea684c561dd4",
+          "bytes": 1535,
           "operations": 0,
           "title": "Planning Center API (authentication only)",
           "apiVersion": "0",
           "specVersion": "3.1.0",
           "server": "https://api.planningcenteronline.com",
-          "surface": "c94c23abdc755b96",
+          "surface": "f638796a2797ea57",
           "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02",
           "coverage": "auth-only"
         }
       }
@@ -20641,16 +20652,17 @@
       "specs": {
         "Podium API (authentication only)": {
           "status": "ok",
-          "sha256": "6a51790925c6058ec3645a27d8ce261d17c08a62433128a8efc9236f74b119db",
-          "fetchSha256": "6a51790925c6058ec3645a27d8ce261d17c08a62433128a8efc9236f74b119db",
-          "bytes": 2562,
+          "sha256": "80084bd5e412c188eea1299e6755c38b924b1bb1f685ab08efee0263d6d555eb",
+          "fetchSha256": "80084bd5e412c188eea1299e6755c38b924b1bb1f685ab08efee0263d6d555eb",
+          "bytes": 1633,
           "operations": 0,
           "title": "Podium API (authentication only)",
           "apiVersion": "0",
           "specVersion": "3.1.0",
           "server": "https://api.podium.com/v4",
-          "surface": "6fd0e416e3bcb5be",
+          "surface": "dad4cbd11be859f5",
           "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02",
           "coverage": "auth-only"
         }
       }
@@ -20855,9 +20867,9 @@
       "specs": {
         "Productive API": {
           "status": "ok",
-          "sha256": "34e449522e04a5d97157d96c64254c60f86a3183d17f01c508efdbb8792a77b1",
-          "fetchSha256": "34e449522e04a5d97157d96c64254c60f86a3183d17f01c508efdbb8792a77b1",
-          "bytes": 5036901,
+          "sha256": "fa3060fd01448738896bdc8df80c76c94c3a834b168fdfc6fdac7769a84a9c94",
+          "fetchSha256": "fa3060fd01448738896bdc8df80c76c94c3a834b168fdfc6fdac7769a84a9c94",
+          "bytes": 5404647,
           "operations": 814,
           "title": "API Documentation",
           "specVersion": "3.1.0",
@@ -21990,9 +22002,9 @@
         },
         "GST Compliance API": {
           "status": "ok",
-          "sha256": "e26bd350e3258324b99ab5d3a54b2d4b14d48ee0dd7f52c83d28f7f2c3ba6317",
-          "fetchSha256": "e26bd350e3258324b99ab5d3a54b2d4b14d48ee0dd7f52c83d28f7f2c3ba6317",
-          "bytes": 10836532,
+          "sha256": "6274f23bb6600ffb77dfd325163bcc3effd0cfd0695c678264e42ebaaf0fc288",
+          "fetchSha256": "6274f23bb6600ffb77dfd325163bcc3effd0cfd0695c678264e42ebaaf0fc288",
+          "bytes": 10863859,
           "operations": 169,
           "title": "in-co-sandbox-gst-compliance",
           "apiVersion": "1.0.0",
@@ -23580,8 +23592,8 @@
       "specs": {
         "Torii API Documentation": {
           "status": "ok",
-          "sha256": "4813f4ea743b4be4753a01ff3025ada36e7d4fe96a34c936b08b8aa7a5f84cc4",
-          "fetchSha256": "4813f4ea743b4be4753a01ff3025ada36e7d4fe96a34c936b08b8aa7a5f84cc4",
+          "sha256": "34350c1bea1b2920e8a498b70b92eadc5360b3e7395292e4506422fc2b513706",
+          "fetchSha256": "34350c1bea1b2920e8a498b70b92eadc5360b3e7395292e4506422fc2b513706",
           "bytes": 188322,
           "operations": 74,
           "title": "Torii API Documentation",
@@ -23656,16 +23668,17 @@
       "specs": {
         "Tremendous API (authentication only)": {
           "status": "ok",
-          "sha256": "a6047a486a055e97c5215835d5b1048efa70728bad79fdd5001e923cd07736f1",
-          "fetchSha256": "a6047a486a055e97c5215835d5b1048efa70728bad79fdd5001e923cd07736f1",
-          "bytes": 1470,
+          "sha256": "f0f6981019a9d495d272eecec2299a0d5856a0e1bf61efc062cf8a4682514022",
+          "fetchSha256": "f0f6981019a9d495d272eecec2299a0d5856a0e1bf61efc062cf8a4682514022",
+          "bytes": 1266,
           "operations": 0,
           "title": "Tremendous API (authentication only)",
           "apiVersion": "0",
           "specVersion": "3.1.0",
           "server": "https://api.tremendous.com/api/v2",
-          "surface": "b69c6df4ac26c0b6",
+          "surface": "32615eb959b32ec1",
           "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02",
           "coverage": "auth-only"
         }
       }
@@ -23715,16 +23728,17 @@
       "specs": {
         "Tumblr API (authentication only)": {
           "status": "ok",
-          "sha256": "1ee89cca3d2ebc325ee98e852ebce7311b5216a3ea39c69851e47189dc664248",
-          "fetchSha256": "1ee89cca3d2ebc325ee98e852ebce7311b5216a3ea39c69851e47189dc664248",
-          "bytes": 1142,
+          "sha256": "4218cda25ecc7f642cf2e85e980e38e3fd50f1c792f3ff7ac5b2791e77703be1",
+          "fetchSha256": "4218cda25ecc7f642cf2e85e980e38e3fd50f1c792f3ff7ac5b2791e77703be1",
+          "bytes": 1109,
           "operations": 0,
           "title": "Tumblr API (authentication only)",
           "apiVersion": "0",
           "specVersion": "3.1.0",
           "server": "https://api.tumblr.com/v2",
-          "surface": "05921f20cbbaded5",
+          "surface": "6debb2ad64719080",
           "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02",
           "coverage": "auth-only"
         }
       }
@@ -25182,8 +25196,8 @@
       "specs": {
         "WHOOP API": {
           "status": "ok",
-          "sha256": "dd6e4ecfa7f54e4bf5d7d75aa7e40b5b57de7bf3923dc92d35cca8162d4113f1",
-          "fetchSha256": "dd6e4ecfa7f54e4bf5d7d75aa7e40b5b57de7bf3923dc92d35cca8162d4113f1",
+          "sha256": "68ce357a022424af0e53518898416513c7b44e9d2ef56bdc50f7f721d96dbefb",
+          "fetchSha256": "68ce357a022424af0e53518898416513c7b44e9d2ef56bdc50f7f721d96dbefb",
           "bytes": 75851,
           "operations": 22,
           "title": "WHOOP API",
@@ -25220,16 +25234,17 @@
       "specs": {
         "Wise Agent API (authentication only)": {
           "status": "ok",
-          "sha256": "e22d919aa17c75ac05b40024f2120921004477eea7ded882b5c0249a57d33bae",
-          "fetchSha256": "e22d919aa17c75ac05b40024f2120921004477eea7ded882b5c0249a57d33bae",
-          "bytes": 1477,
+          "sha256": "0825ca996e1a2486ae68c6896877f79dba0f9190d06cdb95445d63bc50d70f25",
+          "fetchSha256": "0825ca996e1a2486ae68c6896877f79dba0f9190d06cdb95445d63bc50d70f25",
+          "bytes": 1243,
           "operations": 0,
           "title": "Wise Agent API (authentication only)",
           "apiVersion": "0",
           "specVersion": "3.1.0",
           "server": "https://sync.thewiseagent.com/http/webconnect.asp",
-          "surface": "3476cf13e5aaf4eb",
+          "surface": "e0e0b390cf49562c",
           "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02",
           "coverage": "auth-only"
         }
       }
@@ -25282,17 +25297,18 @@
       "specs": {
         "XTRF Home Portal API": {
           "status": "ok",
-          "sha256": "437a3713e192d5a12601069a7b2445670dc4fabf0e76ef1e09a668fb3a32884e",
-          "fetchSha256": "437a3713e192d5a12601069a7b2445670dc4fabf0e76ef1e09a668fb3a32884e",
-          "bytes": 578720,
+          "sha256": "33859454bebf864b873b2b0dea6f6a9060b9c2023471db60d327a0fc0ed12bf7",
+          "bytes": 277897,
           "operations": 342,
           "title": "XTRF Home Portal API",
           "apiVersion": "2.0",
           "specVersion": "3.0.1",
           "server": "https://{xtrf-host}/home-api",
-          "surface": "0f4ca6221e78e972",
+          "surface": "3e6faa101e01efe2",
           "specServer": "https://presentation.s.xtrf.eu/home-api",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-02",
+          "surfaceChangedOn": "2026-11-02",
+          "hashForm": "volatile"
         }
       }
     },
@@ -25389,6 +25405,1654 @@
           "server": "https://dev.zuplo.com",
           "surface": "02c8abb25c26058b",
           "specServer": "https://developer-api-main-8600723.self.zuplo.com",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "15five": {
+      "name": "15Five",
+      "apideck": false,
+      "specs": {
+        "15Five Public API": {
+          "status": "ok",
+          "sha256": "e7447893a219edee35312601b1b3c9953bb459571f752068761cc43af291735c",
+          "fetchSha256": "e7447893a219edee35312601b1b3c9953bb459571f752068761cc43af291735c",
+          "bytes": 323717,
+          "operations": 66,
+          "title": "15Five Public API",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.0",
+          "server": "https://my.15five.com",
+          "surface": "b963c4db26799cd6",
+          "specServer": "https://my.15five.com/",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "8x8": {
+      "name": "8x8",
+      "apideck": false,
+      "specs": {
+        "8x8 API (authentication only)": {
+          "status": "ok",
+          "sha256": "5df675575118c71a94870f39a7000e6c77b8cd48eb0d652ac1a2969220d8ab39",
+          "fetchSha256": "5df675575118c71a94870f39a7000e6c77b8cd48eb0d652ac1a2969220d8ab39",
+          "bytes": 1193,
+          "operations": 0,
+          "title": "8x8 API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://api.8x8.com",
+          "surface": "c41f3296da435fc3",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "apple-app-store": {
+      "name": "Apple App Store",
+      "apideck": false,
+      "specs": {
+        "Apple App Store API": {
+          "status": "ok",
+          "sha256": "13a443c16b6a7674a834af1bbd81d60bbe88bc724e79a43e03cf4888ebc62f9f",
+          "bytes": 7524600,
+          "operations": 1303,
+          "files": 1,
+          "title": "Apple App Store API",
+          "apiVersion": "4.5.1",
+          "specVersion": "3.0.1",
+          "server": "https://api.appstoreconnect.apple.com",
+          "surface": "4a6fee6d0f79f20e",
+          "specServer": "https://api.appstoreconnect.apple.com/",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "aspire": {
+      "name": "Aspire",
+      "apideck": false,
+      "specs": {
+        "Aspire.ExternalApi": {
+          "status": "ok",
+          "sha256": "2edf975f6f6613c20aa189baa7f9ecc5a124b76bc70eceb9e5722dca708ad4ea",
+          "fetchSha256": "2edf975f6f6613c20aa189baa7f9ecc5a124b76bc70eceb9e5722dca708ad4ea",
+          "bytes": 698166,
+          "operations": 166,
+          "title": "Aspire.ExternalApi",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.0",
+          "server": "https://cloud-api.youraspire.com",
+          "surface": "a8c131fd5462662c",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "astro": {
+      "name": "Astro",
+      "apideck": false,
+      "specs": {
+        "Astro Platform API": {
+          "status": "ok",
+          "sha256": "bdf0c42b83d023a09cca080d1b93b02a90e1e935372096e23f6ab8c772fa422f",
+          "fetchSha256": "bdf0c42b83d023a09cca080d1b93b02a90e1e935372096e23f6ab8c772fa422f",
+          "bytes": 281044,
+          "operations": 45,
+          "title": "Astro Platform API",
+          "apiVersion": "v1beta1",
+          "specVersion": "3.0.3",
+          "server": "https://api.astronomer.io/platform/v1beta1",
+          "surface": "ff6b70cd85392c6a",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "availity": {
+      "name": "Availity",
+      "apideck": false,
+      "specs": {
+        "Availity API (authentication only)": {
+          "status": "ok",
+          "sha256": "851135b6843a1ad525fc53795474ca328365f6dda93c2191ef3e5c61f842ee2c",
+          "fetchSha256": "851135b6843a1ad525fc53795474ca328365f6dda93c2191ef3e5c61f842ee2c",
+          "bytes": 1077,
+          "operations": 0,
+          "title": "Availity API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://api.availity.com",
+          "surface": "f63b64b2ebb9a69e",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "back-market": {
+      "name": "Back Market",
+      "apideck": false,
+      "specs": {
+        "Back Market - API Guidelines": {
+          "status": "ok",
+          "sha256": "c8a685d6771d3d769c188045c6fef45d7dbe20192f8bbe3b877ce54f9bf90e31",
+          "fetchSha256": "c8a685d6771d3d769c188045c6fef45d7dbe20192f8bbe3b877ce54f9bf90e31",
+          "bytes": 228772,
+          "operations": 40,
+          "title": "Back Market - API Guidelines",
+          "apiVersion": "0.1.1",
+          "specVersion": "3.0.3",
+          "server": "https://www.backmarket.fr",
+          "surface": "e4c646011a12c18f",
+          "specServer": "https://preprod.backmarket.co.jp",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "billit": {
+      "name": "Billit",
+      "apideck": false,
+      "specs": {
+        "Billit.API": {
+          "status": "ok",
+          "sha256": "26cf5341ec89a3fcd2fd2dc2cadb46ac52b193de3bac78519f5472152eed7b4b",
+          "fetchSha256": "26cf5341ec89a3fcd2fd2dc2cadb46ac52b193de3bac78519f5472152eed7b4b",
+          "bytes": 93874,
+          "operations": 88,
+          "title": "Billit.API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://api.billit.be",
+          "surface": "1e0232154a8c2f82",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "bliro": {
+      "name": "Bliro",
+      "apideck": false,
+      "specs": {
+        "Bliro API": {
+          "status": "ok",
+          "sha256": "310f7b0a8f1c5a69a7074621adc151028bbb00ba9a2dca8ae9109b2cab566ad8",
+          "bytes": 346598,
+          "operations": 92,
+          "title": "Bliro API Docs",
+          "apiVersion": "2026-10-22",
+          "specVersion": "3.0.0",
+          "server": "https://api.bliro.io",
+          "surface": "972ac398a841f9f1",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "carta": {
+      "name": "Carta",
+      "apideck": false,
+      "specs": {
+        "Carta API (authentication only)": {
+          "status": "ok",
+          "sha256": "b7c65fa4069dc7fe6a2333e8476b326033eac292636e607ab75d363c2c310e98",
+          "fetchSha256": "b7c65fa4069dc7fe6a2333e8476b326033eac292636e607ab75d363c2c310e98",
+          "bytes": 4649,
+          "operations": 0,
+          "title": "Carta API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://api.carta.com",
+          "surface": "57b5c95be69de17e",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "charthop": {
+      "name": "ChartHop",
+      "apideck": false,
+      "specs": {
+        "ChartHop API": {
+          "status": "ok",
+          "sha256": "e487d45ac256fe1b6c03dcb8cf8ac9c4a082d72f82f4b03071e51fc86cbc9997",
+          "fetchSha256": "e487d45ac256fe1b6c03dcb8cf8ac9c4a082d72f82f4b03071e51fc86cbc9997",
+          "bytes": 2236994,
+          "operations": 781,
+          "title": "ChartHop API",
+          "apiVersion": "V1.0.0",
+          "specVersion": "2.0",
+          "server": "https://api.charthop.com",
+          "surface": "58f7d0c191872c56",
+          "specServer": "https://localhost",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "chattermill": {
+      "name": "Chattermill",
+      "apideck": false,
+      "specs": {
+        "Chattermill API": {
+          "status": "ok",
+          "sha256": "4513d8a093db0b372eaf7241220f1acf2b27263549c76ce3670e920bd6f541cf",
+          "fetchSha256": "4513d8a093db0b372eaf7241220f1acf2b27263549c76ce3670e920bd6f541cf",
+          "bytes": 47400,
+          "operations": 22,
+          "title": "Chattermill API",
+          "specVersion": "2.0.0",
+          "surface": "5faa067988c393b1",
+          "server": "https://api.chattermill.com",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "checkbox": {
+      "name": "Checkbox",
+      "apideck": false,
+      "specs": {
+        "Checkbox 8 API": {
+          "status": "ok",
+          "sha256": "f088c8227358893e842f4346896cbfbdd7cf09a088590a75d83167fb2dea994d",
+          "fetchSha256": "f088c8227358893e842f4346896cbfbdd7cf09a088590a75d83167fb2dea994d",
+          "bytes": 598571,
+          "operations": 159,
+          "title": "Checkbox 8 API",
+          "specVersion": "2.0.0",
+          "surface": "0cda169f5c461b98",
+          "server": "https://api.checkbox.com/v1/{accountName}",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "checkout-com": {
+      "name": "Checkout.com",
+      "apideck": false,
+      "specs": {
+        "Checkout.com API Reference": {
+          "status": "ok",
+          "sha256": "87521d035338dc445bb60969b4b3266cd948fe547767d95f628b297164abd219",
+          "fetchSha256": "87521d035338dc445bb60969b4b3266cd948fe547767d95f628b297164abd219",
+          "bytes": 3968807,
+          "operations": 236,
+          "title": "Checkout.com API Reference",
+          "apiVersion": "v1.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://{prefix}.api.checkout.com",
+          "surface": "1a5e1b69cd781037",
+          "specServer": "https://{prefix}.api.sandbox.checkout.com",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "checkr": {
+      "name": "Checkr",
+      "apideck": false,
+      "specs": {
+        "Checkr.com API Docs": {
+          "status": "ok",
+          "sha256": "27d4f350cc61792217e9cb573abaa083bbbaa4045a1a74fb7667f4999bad60cf",
+          "fetchSha256": "27d4f350cc61792217e9cb573abaa083bbbaa4045a1a74fb7667f4999bad60cf",
+          "bytes": 576314,
+          "operations": 121,
+          "title": "Checkr.com API Docs",
+          "apiVersion": "v1",
+          "specVersion": "3.0.0",
+          "server": "https://api.checkr.com/v1",
+          "surface": "00088055ff99faa8",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "conductorone": {
+      "name": "ConductorOne",
+      "apideck": false,
+      "specs": {
+        "C1 API": {
+          "status": "ok",
+          "sha256": "24f4cdf36af8f12e1831561e50f94b36a8fb8ad9ee8518c7543851c27c71099f",
+          "fetchSha256": "24f4cdf36af8f12e1831561e50f94b36a8fb8ad9ee8518c7543851c27c71099f",
+          "bytes": 4054773,
+          "operations": 838,
+          "title": "C1 API",
+          "apiVersion": "0.1.0-alpha",
+          "specVersion": "3.1.0",
+          "server": "https://{tenantDomain}.conductor.one",
+          "surface": "6b283076cf6f6e1e",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "confluence-data-center": {
+      "name": "Confluence Data Center",
+      "apideck": false,
+      "specs": {
+        "Confluence Data Center": {
+          "status": "ok",
+          "sha256": "7308f30d8a3d8c8aca8ccfcc350403dad5f75231a3357f4ab883b1ea27952a27",
+          "fetchSha256": "7308f30d8a3d8c8aca8ccfcc350403dad5f75231a3357f4ab883b1ea27952a27",
+          "bytes": 478549,
+          "operations": 166,
+          "title": "Confluence Data Center",
+          "apiVersion": "10.0.0",
+          "specVersion": "3.0.1",
+          "server": "https://{baseurl}/confluence",
+          "surface": "50af90754474b5d7",
+          "specServer": "http://{baseurl}/confluence",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "contentstack": {
+      "name": "Contentstack",
+      "apideck": false,
+      "specs": {
+        "Contentstack Content Management API OpenAPI Specification": {
+          "status": "ok",
+          "sha256": "7975e48c887af0b8b10b52c29f06e2338d9c48dd5a014e809ccec4544af88652",
+          "fetchSha256": "7975e48c887af0b8b10b52c29f06e2338d9c48dd5a014e809ccec4544af88652",
+          "bytes": 538236,
+          "operations": 221,
+          "title": "Contentstack Content Management API OpenAPI Specification",
+          "apiVersion": "3.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.contentstack.io",
+          "surface": "0fc94eef7b2464cc",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "crowdstrike": {
+      "name": "CrowdStrike",
+      "apideck": false,
+      "specs": {
+        "CrowdStrike API (authentication only)": {
+          "status": "ok",
+          "sha256": "55caa96048128873c6f045c695a3f65b14557ad5eba688150e644ec7df355f5c",
+          "fetchSha256": "55caa96048128873c6f045c695a3f65b14557ad5eba688150e644ec7df355f5c",
+          "bytes": 1510,
+          "operations": 0,
+          "title": "CrowdStrike API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://api.crowdstrike.com",
+          "surface": "e9288e7051edfc4a",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "datto-rmm": {
+      "name": "Datto RMM (Password Grant)",
+      "apideck": false,
+      "specs": {
+        "Datto RMM API": {
+          "status": "ok",
+          "sha256": "df7749bfb9e45e89b2c0f39148d5b8f63ef74dd87cacb65aed6af551ca967a73",
+          "bytes": 153251,
+          "operations": 66,
+          "title": "Datto RMM API",
+          "apiVersion": "2.0.0 (Build 327_23edc53faf0e2df27c90c4efc06a6fec725868e9)",
+          "specVersion": "3.1.0",
+          "server": "https://{platform}-api.centrastage.net/api",
+          "surface": "960a6f4c3781a42d",
+          "specServer": "https://pinotage-api.centrastage.net/api",
+          "changedOn": "2026-11-02",
+          "hashForm": "volatile"
+        }
+      }
+    },
+    "dope-security": {
+      "name": "dope.security",
+      "apideck": false,
+      "specs": {
+        "Flightdeck - dope.security - Public API specification": {
+          "status": "ok",
+          "sha256": "cc31cac2483a15e57537395644c872ae3859911646ebd495755bd3dea3fab326",
+          "fetchSha256": "cc31cac2483a15e57537395644c872ae3859911646ebd495755bd3dea3fab326",
+          "bytes": 96432,
+          "operations": 26,
+          "title": "Flightdeck - dope.security - Public API specification",
+          "apiVersion": "1.0.3",
+          "specVersion": "3.0.3",
+          "server": "https://api.flightdeck.dope.security/v1",
+          "surface": "c621f975573febee",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "duo-security": {
+      "name": "Duo Security",
+      "apideck": false,
+      "specs": {
+        "Duo Admin API": {
+          "status": "ok",
+          "sha256": "53b616cddb4952aff6b5007183d9f223e847ca11e07dc76c2b2208fc5457c50a",
+          "fetchSha256": "53b616cddb4952aff6b5007183d9f223e847ca11e07dc76c2b2208fc5457c50a",
+          "bytes": 700147,
+          "operations": 161,
+          "title": "Duo Admin API",
+          "specVersion": "2.1.0",
+          "surface": "58c7ea8607d80fb4",
+          "server": "https://{apihost}",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "easypost": {
+      "name": "EasyPost",
+      "apideck": false,
+      "specs": {
+        "EasyPost API (authentication only)": {
+          "status": "ok",
+          "sha256": "e495cfbc812ac2db090d676f556d976aa22767fe59eff9b0a7a6ae731fd92241",
+          "fetchSha256": "e495cfbc812ac2db090d676f556d976aa22767fe59eff9b0a7a6ae731fd92241",
+          "bytes": 849,
+          "operations": 0,
+          "title": "EasyPost API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://api.easypost.com/v2",
+          "surface": "b3bd951bc7bf44c2",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "evaluagent": {
+      "name": "EvaluAgent",
+      "apideck": false,
+      "specs": {
+        "EvaluAgent API": {
+          "status": "ok",
+          "sha256": "795af3399f17fb96a5a0200a222b8003ea5c39340ce46602b937492c66e9bbaf",
+          "bytes": 260200,
+          "operations": 69,
+          "title": "EvaluAgent API",
+          "apiVersion": "1.0.6",
+          "specVersion": "3.0.0",
+          "server": "https://api.evaluagent.com/v1",
+          "surface": "2ef1404faae4fe9d",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "extensiv": {
+      "name": "Extensiv",
+      "apideck": false,
+      "specs": {
+        "CartRover API": {
+          "status": "ok",
+          "sha256": "ba9a3a020b58e8d6d6c113863de104f7d74f58d75a854e2f044c7849607eca0e",
+          "fetchSha256": "ba9a3a020b58e8d6d6c113863de104f7d74f58d75a854e2f044c7849607eca0e",
+          "bytes": 434808,
+          "operations": 64,
+          "title": "CartRover API",
+          "specVersion": "2.0.0",
+          "surface": "ea0e3a41b0176c2a",
+          "server": "https://api.cartrover.com",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "figjam": {
+      "name": "FigJam",
+      "apideck": false,
+      "specs": {
+        "Figma API": {
+          "status": "ok",
+          "sha256": "490cc17e98f72b8e5eff8f3cfcf8df2e059a67d89993c607761c2e9d6234fb7f",
+          "fetchSha256": "490cc17e98f72b8e5eff8f3cfcf8df2e059a67d89993c607761c2e9d6234fb7f",
+          "bytes": 424419,
+          "operations": 59,
+          "title": "Figma API",
+          "apiVersion": "0.47.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.figma.com",
+          "surface": "eeb01e3bab493e27",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "firefish": {
+      "name": "Firefish",
+      "apideck": false,
+      "specs": {
+        "Firefish API": {
+          "status": "ok",
+          "sha256": "182528ef073c08007a0228b1149cfcc34bfccaadfe13fc7420f5e99cf408e1cb",
+          "fetchSha256": "182528ef073c08007a0228b1149cfcc34bfccaadfe13fc7420f5e99cf408e1cb",
+          "bytes": 3056917,
+          "operations": 105,
+          "title": "Firefish Public API Live Documentation",
+          "specVersion": "2.0.0",
+          "surface": "5bacae65d56635bc",
+          "server": "https://api.firefishsoftware.com",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "formstack-documents": {
+      "name": "Formstack Documents",
+      "apideck": false,
+      "specs": {
+        "Formstack Documents API (authentication only)": {
+          "status": "ok",
+          "sha256": "bd160eab0e86a4112d3a43221d444894891d806e2cd654f32d572012470bbd82",
+          "fetchSha256": "bd160eab0e86a4112d3a43221d444894891d806e2cd654f32d572012470bbd82",
+          "bytes": 864,
+          "operations": 0,
+          "title": "Formstack Documents API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://www.webmerge.me/api",
+          "surface": "e22d9ad95a8522e8",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "google-health": {
+      "name": "Google Health",
+      "apideck": false,
+      "specs": {
+        "Google Health API": {
+          "status": "ok",
+          "sha256": "c6c6739705ecad591ee53e5d23603e12f79fa5a19eb5386e59911a26b3220ce7",
+          "bytes": 302903,
+          "operations": 27,
+          "title": "Google Health API",
+          "apiVersion": "v4",
+          "server": "https://health.googleapis.com",
+          "surface": "61c8f83d3c3632fc",
+          "specServer": "https://health.googleapis.com/",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "helpscout-docs": {
+      "name": "Help Scout Docs",
+      "apideck": false,
+      "specs": {
+        "Help Scout Docs API (authentication only)": {
+          "status": "ok",
+          "sha256": "0c4b13d095b6a0bef3d74f5bd14dc8a408deec1bf70bb3e818bd06464be3de88",
+          "fetchSha256": "0c4b13d095b6a0bef3d74f5bd14dc8a408deec1bf70bb3e818bd06464be3de88",
+          "bytes": 877,
+          "operations": 0,
+          "title": "Help Scout Docs API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://docsapi.helpscout.net",
+          "surface": "6e1f5a7123150858",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "hotjar": {
+      "name": "Hotjar",
+      "apideck": false,
+      "specs": {
+        "Hotjar API (authentication only)": {
+          "status": "ok",
+          "sha256": "9e78ba84cead5763450de85772cf2ba4888d72160b3fdb12668e414bcd451ab8",
+          "fetchSha256": "9e78ba84cead5763450de85772cf2ba4888d72160b3fdb12668e414bcd451ab8",
+          "bytes": 1112,
+          "operations": 0,
+          "title": "Hotjar API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://api.hotjar.io",
+          "surface": "78401fa23984241c",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "huntress": {
+      "name": "Huntress",
+      "apideck": false,
+      "specs": {
+        "Huntress API Reference": {
+          "status": "ok",
+          "sha256": "f593a257b4cc78d8a5ae3f28b2d1930fa4ec71175cb65c86bf6bdf4f09dbc354",
+          "fetchSha256": "f593a257b4cc78d8a5ae3f28b2d1930fa4ec71175cb65c86bf6bdf4f09dbc354",
+          "bytes": 250648,
+          "operations": 103,
+          "title": "Huntress API Reference",
+          "apiVersion": "1.0.0",
+          "specVersion": "2.0",
+          "server": "https://api.huntress.io",
+          "surface": "07b97ad4a28e84e7",
+          "changedOn": "2026-11-02",
+          "overlay": {
+            "file": "overlays/huntress.yaml",
+            "sha256": "c2904734d5acf64e5fcd07e973f9783d0d84e96ee405100a7f7d0c69341b3201",
+            "actions": 2
+          }
+        }
+      }
+    },
+    "intellihr": {
+      "name": "intelliHR",
+      "apideck": false,
+      "specs": {
+        "intelliHR Public API": {
+          "status": "ok",
+          "sha256": "75626b3b089877bb85d3d64bb8c05a540a9afaf01b605abfc113b4517f0f02aa",
+          "fetchSha256": "75626b3b089877bb85d3d64bb8c05a540a9afaf01b605abfc113b4517f0f02aa",
+          "bytes": 971155,
+          "operations": 137,
+          "title": "intelliHR Public API",
+          "apiVersion": "V1",
+          "specVersion": "3.0.3",
+          "server": "https://api.intellihr.io/v1",
+          "surface": "f33285bf362d46c8",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "itglue": {
+      "name": "IT Glue",
+      "apideck": false,
+      "specs": {
+        "IT Glue API (authentication only)": {
+          "status": "ok",
+          "sha256": "ea9a4cf04d27648e8b76ef6e558de30de9799ac15aaed9b2a9eff41e015c2772",
+          "fetchSha256": "ea9a4cf04d27648e8b76ef6e558de30de9799ac15aaed9b2a9eff41e015c2772",
+          "bytes": 1207,
+          "operations": 0,
+          "title": "IT Glue API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://api.itglue.com",
+          "surface": "5e6c9a574a65aadb",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "jiminny": {
+      "name": "Jiminny",
+      "apideck": false,
+      "specs": {
+        "CustomerApi": {
+          "status": "ok",
+          "sha256": "95d29b55953cc84044458b7735f8c4521d4192895936ea7f2c6627a1c5d00321",
+          "fetchSha256": "95d29b55953cc84044458b7735f8c4521d4192895936ea7f2c6627a1c5d00321",
+          "bytes": 108055,
+          "operations": 26,
+          "title": "CustomerApi",
+          "apiVersion": "1.3.0",
+          "specVersion": "3.0.0",
+          "server": "https://app.jiminny.com/customer/api/v1",
+          "surface": "6057acbfa12f7a32",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "juniper-mist": {
+      "name": "Juniper Mist",
+      "apideck": false,
+      "specs": {
+        "Mist API": {
+          "status": "ok",
+          "sha256": "811a3f6bac824c5ef6842ed701d68db973e7cb03cee720c81877735ccc039166",
+          "fetchSha256": "811a3f6bac824c5ef6842ed701d68db973e7cb03cee720c81877735ccc039166",
+          "bytes": 4319211,
+          "operations": 1072,
+          "title": "Mist API",
+          "apiVersion": "2610.1.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.mist.com",
+          "surface": "2b3f17638897b3c3",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "kandji": {
+      "name": "Kandji",
+      "apideck": false,
+      "specs": {
+        "Iru Endpoint Management API": {
+          "status": "ok",
+          "sha256": "1e35675566b2066b3f786ac9f8eb156b65dbfe27882e11f7c43bc006701a2921",
+          "fetchSha256": "1e35675566b2066b3f786ac9f8eb156b65dbfe27882e11f7c43bc006701a2921",
+          "bytes": 1024303,
+          "operations": 137,
+          "title": "Iru Endpoint Management API",
+          "specVersion": "2.0.0",
+          "surface": "584b83860dc3b1b9",
+          "server": "https://{sub_domain}.api.kandji.io",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "kno-commerce": {
+      "name": "Kno Commerce",
+      "apideck": false,
+      "specs": {
+        "Kno Commerce REST API": {
+          "status": "ok",
+          "sha256": "a746ddce97aa3318ed21480ced05fbcbe9390c3dba0a286f732a5a413fdfc1e3",
+          "fetchSha256": "a746ddce97aa3318ed21480ced05fbcbe9390c3dba0a286f732a5a413fdfc1e3",
+          "bytes": 28625,
+          "operations": 9,
+          "title": "Kno Commerce REST API",
+          "apiVersion": "1.3.0",
+          "specVersion": "3.0.3",
+          "server": "https://app-api.knocommerce.com",
+          "surface": "0cdba5ec1c9eb07c",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "knowbe4": {
+      "name": "KnowBe4",
+      "apideck": false,
+      "specs": {
+        "KnowBe4 Reporting API": {
+          "status": "ok",
+          "sha256": "237e6b7ed455d44eca9f463b4975818b26c9276f108597cffcdae473f6c83364",
+          "fetchSha256": "237e6b7ed455d44eca9f463b4975818b26c9276f108597cffcdae473f6c83364",
+          "bytes": 76776,
+          "operations": 24,
+          "title": "KnowBe4 API Reference Guide",
+          "specVersion": "3.0.1",
+          "server": "https://us.api.knowbe4.com",
+          "specIssues": "no info.version",
+          "surface": "bfdf2246e13199d5",
+          "changedOn": "2026-11-02"
+        },
+        "KnowBe4 Events API": {
+          "status": "ok",
+          "sha256": "4c5a539fce39ab58127851ad47621435566642942e1f0118064055db58a61f6c",
+          "fetchSha256": "4c5a539fce39ab58127851ad47621435566642942e1f0118064055db58a61f6c",
+          "bytes": 48604,
+          "operations": 12,
+          "title": "KnowBe4 API Reference Guide",
+          "specVersion": "3.0.1",
+          "server": "https://api.events.knowbe4.com",
+          "specIssues": "no info.version",
+          "surface": "bc8413ecd1c7b4f5",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "konnektive": {
+      "name": "Konnektive",
+      "apideck": false,
+      "specs": {
+        "Konnektive CRM APIs": {
+          "status": "ok",
+          "sha256": "6de02cf9e2818ab7a20f38d8c0809abd228917999fc078b45fc0cc5f71830429",
+          "fetchSha256": "6de02cf9e2818ab7a20f38d8c0809abd228917999fc078b45fc0cc5f71830429",
+          "bytes": 1298044,
+          "operations": 93,
+          "title": "Konnektive CRM APIs",
+          "specVersion": "2.0.0",
+          "surface": "d8070452ece7aa4d",
+          "server": "https://api.konnektive.com",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "lessonly": {
+      "name": "Lessonly",
+      "apideck": false,
+      "specs": {
+        "Lessonly API (authentication only)": {
+          "status": "ok",
+          "sha256": "0db0f43e40ca5d707ba23d7b8a598f6c92ab0b5f0632e20cb202e7d39febc446",
+          "fetchSha256": "0db0f43e40ca5d707ba23d7b8a598f6c92ab0b5f0632e20cb202e7d39febc446",
+          "bytes": 816,
+          "operations": 0,
+          "title": "Lessonly API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://api.lessonly.com/api/v1",
+          "surface": "c83f302897f51483",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "liferay": {
+      "name": "Liferay",
+      "apideck": false,
+      "specs": {
+        "Headless Delivery": {
+          "status": "ok",
+          "sha256": "23a933a435da3ae39fbe3ad3816bb0cd64c725d53dd1f84ed4b6a283d107d86c",
+          "fetchSha256": "23a933a435da3ae39fbe3ad3816bb0cd64c725d53dd1f84ed4b6a283d107d86c",
+          "bytes": 732080,
+          "operations": 383,
+          "title": "Headless Delivery",
+          "apiVersion": "v1.0",
+          "specVersion": "3.0.1",
+          "server": "https://{liferay-host}/o/headless-delivery/v1.0",
+          "surface": "544c32aacaf23f89",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "listmonk": {
+      "name": "Listmonk",
+      "apideck": false,
+      "specs": {
+        "Listmonk": {
+          "status": "ok",
+          "sha256": "119b8736bb0197dae9711d01ad4358ea75bbff2c6da6b63e7ed20f727dce1408",
+          "fetchSha256": "119b8736bb0197dae9711d01ad4358ea75bbff2c6da6b63e7ed20f727dce1408",
+          "bytes": 81445,
+          "operations": 72,
+          "title": "Listmonk",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://{domain}/api",
+          "surface": "796862f5ca7e973f",
+          "specServer": "http://localhost:9000/api",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "listrak": {
+      "name": "Listrak",
+      "apideck": false,
+      "specs": {
+        "Listrak Email REST API": {
+          "status": "ok",
+          "sha256": "05f42948db63587c625d232e54e1347ea68c9b2db082af676a9396c617dba6c2",
+          "fetchSha256": "05f42948db63587c625d232e54e1347ea68c9b2db082af676a9396c617dba6c2",
+          "bytes": 443815,
+          "operations": 83,
+          "title": "Listrak Email REST API",
+          "apiVersion": "v1",
+          "specVersion": "2.0",
+          "server": "https://api.listrak.com/email",
+          "surface": "56de1abea734068c",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "malwarebytes": {
+      "name": "Malwarebytes",
+      "apideck": false,
+      "specs": {
+        "ThreatDown APIs": {
+          "status": "ok",
+          "sha256": "724f7889027013121e34ff25817ad4a50502ef546bdca6dd7f212236855cf6b9",
+          "fetchSha256": "724f7889027013121e34ff25817ad4a50502ef546bdca6dd7f212236855cf6b9",
+          "bytes": 5360613,
+          "operations": 438,
+          "title": "ThreatDown APIs",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.threatdown.com",
+          "surface": "8dd5524432b40baa",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "meilisearch": {
+      "name": "Meilisearch",
+      "apideck": false,
+      "specs": {
+        "meilisearch": {
+          "status": "ok",
+          "sha256": "1ad722d18c2cbea2b7940ea430aa79523606d17d7061bbc3681e659549c9c5a4",
+          "fetchSha256": "1ad722d18c2cbea2b7940ea430aa79523606d17d7061bbc3681e659549c9c5a4",
+          "bytes": 833876,
+          "operations": 143,
+          "title": "meilisearch",
+          "apiVersion": "1.56.0",
+          "specVersion": "3.1.0",
+          "server": "https://{host}",
+          "surface": "c34371c6875654fa",
+          "specServer": "http://localhost:7700",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "microsoft-people": {
+      "name": "Microsoft People",
+      "apideck": false,
+      "specs": {
+        "OData Service for namespace microsoft.graph": {
+          "status": "ok",
+          "sha256": "69de68b2c895bc608a58229e662e2b3eeb23524385516afc250ff0b8f165ff29",
+          "fetchSha256": "69de68b2c895bc608a58229e662e2b3eeb23524385516afc250ff0b8f165ff29",
+          "bytes": 44457302,
+          "operations": 17911,
+          "title": "OData Service for namespace microsoft.graph",
+          "apiVersion": "v1.0",
+          "specVersion": "3.0.4",
+          "server": "https://graph.microsoft.com/v1.0",
+          "surface": "34794b607df27b9b",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "microsoft-planner": {
+      "name": "Microsoft Planner",
+      "apideck": false,
+      "specs": {
+        "OData Service for namespace microsoft.graph": {
+          "status": "ok",
+          "sha256": "69de68b2c895bc608a58229e662e2b3eeb23524385516afc250ff0b8f165ff29",
+          "fetchSha256": "69de68b2c895bc608a58229e662e2b3eeb23524385516afc250ff0b8f165ff29",
+          "bytes": 44457302,
+          "operations": 17911,
+          "title": "OData Service for namespace microsoft.graph",
+          "apiVersion": "v1.0",
+          "specVersion": "3.0.4",
+          "server": "https://graph.microsoft.com/v1.0",
+          "surface": "34794b607df27b9b",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "n-able-n-central": {
+      "name": "N-able N-central",
+      "apideck": false,
+      "specs": {
+        "N-central API-Service": {
+          "status": "ok",
+          "sha256": "98594ffa75e9dee049cf9c178f17ea354475314c903d7dd1f4e49ea7ee9b5b69",
+          "fetchSha256": "98594ffa75e9dee049cf9c178f17ea354475314c903d7dd1f4e49ea7ee9b5b69",
+          "bytes": 197715,
+          "operations": 71,
+          "title": "N-central API-Service",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.1",
+          "server": "https://{serverUrl}",
+          "surface": "7a5ba54e6db22bc0",
+          "specServer": "https://{custom-server}/",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "netsapiens": {
+      "name": "NetSapiens",
+      "apideck": false,
+      "specs": {
+        "NetSapiens API v2": {
+          "status": "ok",
+          "sha256": "ac748d08f701cf286a51332dd9da4577f793865e8d4ffe69da298efc3b18512b",
+          "fetchSha256": "ac748d08f701cf286a51332dd9da4577f793865e8d4ffe69da298efc3b18512b",
+          "bytes": 6472229,
+          "operations": 1166,
+          "title": "NetSapiens API v2",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://{server}/ns-api/v2",
+          "surface": "df651fccb5c1873a",
+          "suspicious": [
+            "hidden characters: r this parameter. - ␣`login_name_and_password` allows for username/password logi"
+          ],
+          "suspiciousSha": "e14e67678adc09ce",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "nextcloud": {
+      "name": "Next Cloud OCS",
+      "apideck": false,
+      "specs": {
+        "core": {
+          "status": "ok",
+          "sha256": "831d2d15b412d5b30133fe5e476068944f45d53edf3e5f75701ac92ccbf23ee2",
+          "fetchSha256": "831d2d15b412d5b30133fe5e476068944f45d53edf3e5f75701ac92ccbf23ee2",
+          "bytes": 469837,
+          "operations": 69,
+          "title": "core",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.0.3",
+          "server": "https://{domain}",
+          "surface": "91ffcad8f99f7952",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "nexthink": {
+      "name": "Nexthink",
+      "apideck": false,
+      "specs": {
+        "NQL API": {
+          "status": "ok",
+          "sha256": "1aa56467e105cb996f3cda9c76a9d826a98473723c63e6dac29210c0f22700bb",
+          "fetchSha256": "1aa56467e105cb996f3cda9c76a9d826a98473723c63e6dac29210c0f22700bb",
+          "bytes": 21574,
+          "operations": 5,
+          "title": "NQL API",
+          "apiVersion": "1.2.0",
+          "specVersion": "3.0.1",
+          "server": "https://{instance}.api.{region}.nexthink.cloud",
+          "surface": "0ab0631a90056a3c",
+          "specServer": "https://instance.api.region.nexthink.cloud",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "ninjaone-rmm": {
+      "name": "NinjaOne RMM",
+      "apideck": false,
+      "specs": {
+        "NinjaOne Public API 2.0": {
+          "status": "ok",
+          "sha256": "5ce571d1bb71f55fae52daf3fcb41fc0b3e1408f7693137520b02e6d45bded1f",
+          "fetchSha256": "5ce571d1bb71f55fae52daf3fcb41fc0b3e1408f7693137520b02e6d45bded1f",
+          "bytes": 2369784,
+          "operations": 315,
+          "title": "NinjaOne Public API 2.0",
+          "apiVersion": "2.0.9-draft",
+          "specVersion": "3.0.1",
+          "server": "https://{instance}",
+          "surface": "e99f5a3d3e1d930c",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "omni": {
+      "name": "Omni Analytics",
+      "apideck": false,
+      "specs": {
+        "Omni API": {
+          "status": "ok",
+          "sha256": "34af3064474715bcf418353124d35e25db5159b3f87de4d32b1e947912aae26b",
+          "fetchSha256": "34af3064474715bcf418353124d35e25db5159b3f87de4d32b1e947912aae26b",
+          "bytes": 1897566,
+          "operations": 247,
+          "title": "Omni API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://{instance}.omniapp.co/api",
+          "surface": "5eba428a53500452",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "perk": {
+      "name": "Perk",
+      "apideck": false,
+      "specs": {
+        "Perk API (authentication only)": {
+          "status": "ok",
+          "sha256": "9fb58409f60179364a8df72f8dcf45037046d02afcd9c2c50ccf1ae6625a5efd",
+          "fetchSha256": "9fb58409f60179364a8df72f8dcf45037046d02afcd9c2c50ccf1ae6625a5efd",
+          "bytes": 1503,
+          "operations": 0,
+          "title": "Perk API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://api.perk.com",
+          "surface": "5c38b5b0d4e4560d",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "pleo": {
+      "name": "Pleo",
+      "apideck": false,
+      "specs": {
+        "Export API": {
+          "status": "ok",
+          "sha256": "bd6edcfc1444644b97d4af95ad8e292500d1eccf7facae4aed26351a5ebe71a9",
+          "fetchSha256": "bd6edcfc1444644b97d4af95ad8e292500d1eccf7facae4aed26351a5ebe71a9",
+          "bytes": 248162,
+          "operations": 30,
+          "title": "Export API",
+          "apiVersion": "33.15.0",
+          "specVersion": "3.0.1",
+          "server": "https://external.pleo.io",
+          "surface": "e62cee82f158015f",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "procore": {
+      "name": "Procore",
+      "apideck": false,
+      "specs": {
+        "Procore API (authentication only)": {
+          "status": "ok",
+          "sha256": "a31bc0a0a34092a8b027db7a669fac00039ee4c99cb98061b3dfd7b7ed5e650e",
+          "fetchSha256": "a31bc0a0a34092a8b027db7a669fac00039ee4c99cb98061b3dfd7b7ed5e650e",
+          "bytes": 1051,
+          "operations": 0,
+          "title": "Procore API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://api.procore.com",
+          "surface": "3de18f3c07ab7e9d",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "pverify": {
+      "name": "pVerify",
+      "apideck": false,
+      "specs": {
+        "pVerify API Documentation": {
+          "status": "ok",
+          "sha256": "0455ba0fc1d1faa86cbae2a9867ba27fe0a5c362a720822ce7fbb7b5ced93059",
+          "fetchSha256": "0455ba0fc1d1faa86cbae2a9867ba27fe0a5c362a720822ce7fbb7b5ced93059",
+          "bytes": 477241,
+          "operations": 26,
+          "title": "pVerify API Documentation",
+          "specVersion": "2.0.0",
+          "surface": "6643253d46dbb03f",
+          "server": "https://api.pverify.com",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "rapid7": {
+      "name": "Rapid7",
+      "apideck": false,
+      "specs": {
+        "Rapid7 API (authentication only)": {
+          "status": "ok",
+          "sha256": "c9bcb0a9fd308236c5a5b21e6561b820c6a3b782b2bfb47b69158fa6c077236c",
+          "fetchSha256": "c9bcb0a9fd308236c5a5b21e6561b820c6a3b782b2bfb47b69158fa6c077236c",
+          "bytes": 1412,
+          "operations": 0,
+          "title": "Rapid7 API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://us.api.insight.rapid7.com",
+          "surface": "97be07b84a7afc41",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "resova": {
+      "name": "Resova",
+      "apideck": false,
+      "specs": {
+        "Resova API (authentication only)": {
+          "status": "ok",
+          "sha256": "af53c073d4ba2f41ae0f9ae6325251391a6949d9d85e991a1f911920d489eae7",
+          "fetchSha256": "af53c073d4ba2f41ae0f9ae6325251391a6949d9d85e991a1f911920d489eae7",
+          "bytes": 1109,
+          "operations": 0,
+          "title": "Resova API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://api.resova.us/v1",
+          "surface": "7b8cc3d77a67ffb0",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "retool": {
+      "name": "Retool",
+      "apideck": false,
+      "specs": {
+        "Retool API": {
+          "status": "ok",
+          "sha256": "ea45aac2d07895954cbd9dc1e169abcb0015937cd0c20ecaa8414ee6ebf969fc",
+          "fetchSha256": "ea45aac2d07895954cbd9dc1e169abcb0015937cd0c20ecaa8414ee6ebf969fc",
+          "bytes": 703890,
+          "operations": 160,
+          "title": "Retool API",
+          "apiVersion": "4.87.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.retool.com/api/v2",
+          "surface": "127dae12fa3d1840",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "revivn": {
+      "name": "Revivn",
+      "apideck": false,
+      "specs": {
+        "Revivn API": {
+          "status": "ok",
+          "sha256": "1fe4e4856309a359c6f7cc25441a7ddc3d94e0d5bef393dc7fa161fd8b81cfbe",
+          "fetchSha256": "1fe4e4856309a359c6f7cc25441a7ddc3d94e0d5bef393dc7fa161fd8b81cfbe",
+          "bytes": 126025,
+          "operations": 16,
+          "title": "Revivn API V1",
+          "specVersion": "2.0.0",
+          "surface": "bd8355c0c41d8bda",
+          "server": "https://api.revivn.dev",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "revolut-business": {
+      "name": "Revolut Business",
+      "apideck": false,
+      "specs": {
+        "Business API": {
+          "status": "ok",
+          "sha256": "eb46809c4c173e569cf5c129022530257e292a45cc519dd9c37773446c27f9db",
+          "fetchSha256": "eb46809c4c173e569cf5c129022530257e292a45cc519dd9c37773446c27f9db",
+          "bytes": 724246,
+          "operations": 101,
+          "title": "Business API",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.1",
+          "server": "https://b2b.revolut.com/api/1.0",
+          "surface": "e7f2d51ee8c04271",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "roller": {
+      "name": "Roller",
+      "apideck": false,
+      "specs": {
+        "REST API": {
+          "status": "ok",
+          "sha256": "24d4a0e2a44d9fd6e0823345195c2a988548ffa8cf8ec40dd485294ae8acecb5",
+          "fetchSha256": "24d4a0e2a44d9fd6e0823345195c2a988548ffa8cf8ec40dd485294ae8acecb5",
+          "bytes": 145177,
+          "operations": 63,
+          "title": "REST API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.roller.app",
+          "surface": "9beab979e80785f1",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "rydoo": {
+      "name": "Rydoo",
+      "apideck": false,
+      "specs": {
+        "Rydoo API": {
+          "status": "ok",
+          "sha256": "cedd9ea97f75badfd52d778e2e6cf0b52cffcd7f0b27089a7e65fe2efe6c6a6c",
+          "fetchSha256": "cedd9ea97f75badfd52d778e2e6cf0b52cffcd7f0b27089a7e65fe2efe6c6a6c",
+          "bytes": 929402,
+          "operations": 275,
+          "title": "Rydoo API",
+          "apiVersion": "v2",
+          "specVersion": "3.0.1",
+          "server": "https://api.rydoo.com",
+          "surface": "250eb437b79b39e6",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "shipbob": {
+      "name": "ShipBob (Personal Access Token)",
+      "apideck": false,
+      "specs": {
+        "API Reference": {
+          "status": "ok",
+          "sha256": "d418cbc41263761d602c0c2741bfa5208f8d93c25831eacdbaee5ac45dd9fc31",
+          "fetchSha256": "d418cbc41263761d602c0c2741bfa5208f8d93c25831eacdbaee5ac45dd9fc31",
+          "bytes": 433808,
+          "operations": 89,
+          "title": "API Reference",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.0",
+          "server": "https://api.shipbob.com",
+          "surface": "072ff01a2540bd27",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "smartling": {
+      "name": "Smartling",
+      "apideck": false,
+      "specs": {
+        "Smartling REST API Reference": {
+          "status": "ok",
+          "sha256": "b9aac7eaded99538560e345e081e337b940f8a9d2b7051ec5af34a47c4eb5e9a",
+          "fetchSha256": "b9aac7eaded99538560e345e081e337b940f8a9d2b7051ec5af34a47c4eb5e9a",
+          "bytes": 637108,
+          "operations": 99,
+          "title": "Smartling REST API Reference",
+          "apiVersion": "2.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.smartling.com",
+          "surface": "6faf764de378c9e4",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "snipe-it": {
+      "name": "Snipe-IT",
+      "apideck": false,
+      "specs": {
+        "snipe-it-rest-api": {
+          "status": "ok",
+          "sha256": "40bce4f608c5385faa55c91f1e763b811b120f8d3a68084005eb0b81441a75b1",
+          "fetchSha256": "40bce4f608c5385faa55c91f1e763b811b120f8d3a68084005eb0b81441a75b1",
+          "bytes": 328519,
+          "operations": 144,
+          "title": "snipe-it-rest-api",
+          "apiVersion": "8.2.0",
+          "specVersion": "3.1.0",
+          "server": "https://{hostname}/api/v1",
+          "surface": "e0d4c24f1ed5c10a",
+          "specServer": "https://develop.snipeitapp.com/api/v1",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "statista": {
+      "name": "Statista",
+      "apideck": false,
+      "specs": {
+        "The Statista Discovery API": {
+          "status": "ok",
+          "sha256": "2279b27d1463c6bfc0a745aefa1a6f14b27d840a621d7e8fad367307e7beb7b8",
+          "fetchSha256": "2279b27d1463c6bfc0a745aefa1a6f14b27d840a621d7e8fad367307e7beb7b8",
+          "bytes": 45334,
+          "operations": 7,
+          "title": "The Statista Discovery API",
+          "apiVersion": "2.8.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.statista.ai",
+          "surface": "2e7815368457a661",
+          "specServer": "https://api.statista.ai/",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "statuspage": {
+      "name": "Statuspage",
+      "apideck": false,
+      "specs": {
+        "Statuspage API": {
+          "status": "ok",
+          "sha256": "924c121bdd44e1a98f823b0dfa58ebafd7ed9e9176d650ea6b72111da4aae9e9",
+          "bytes": 241286,
+          "operations": 112,
+          "title": "Statuspage API",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.statuspage.io/v1",
+          "surface": "210d75f311c3e2ae",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "talentlyft": {
+      "name": "TalentLyft",
+      "apideck": false,
+      "specs": {
+        "Customers API": {
+          "status": "ok",
+          "sha256": "ccfce0a3ba0299a866eb7779fbbc54d284f470b9fcc1f43676e757b2a4904ce5",
+          "fetchSha256": "ccfce0a3ba0299a866eb7779fbbc54d284f470b9fcc1f43676e757b2a4904ce5",
+          "bytes": 567349,
+          "operations": 110,
+          "title": "Customers API",
+          "apiVersion": "v2",
+          "specVersion": "3.0.1",
+          "server": "https://api.talentlyft.com",
+          "surface": "f3598759755e0304",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "teamviewer": {
+      "name": "TeamViewer",
+      "apideck": false,
+      "specs": {
+        "TeamViewer Web API": {
+          "status": "ok",
+          "sha256": "07dbce12e7bc6695195347a1de2d6b3c7ff944b481b9d431386adc14a18ec660",
+          "bytes": 887805,
+          "operations": 252,
+          "title": "TeamViewer Web API",
+          "apiVersion": "v1",
+          "specVersion": "3.0.3",
+          "server": "https://webapi.teamviewer.com",
+          "surface": "f4641d2f1a40482e",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "tempo": {
+      "name": "Tempo",
+      "apideck": false,
+      "specs": {
+        "REST API documentation": {
+          "status": "ok",
+          "sha256": "5e35330c995bbede6090af9d3b02b339c6e0eaba7a443f108f699da15ce443b3",
+          "fetchSha256": "5e35330c995bbede6090af9d3b02b339c6e0eaba7a443f108f699da15ce443b3",
+          "bytes": 559477,
+          "operations": 254,
+          "title": "REST API documentation",
+          "apiVersion": "4.0",
+          "specVersion": "3.0.1",
+          "server": "https://api.tempo.io",
+          "surface": "931bc70dc8fe5cd3",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "tenable": {
+      "name": "Tenable",
+      "apideck": false,
+      "specs": {
+        "Vulnerability Management": {
+          "status": "ok",
+          "sha256": "812b4e71eaa7a9896cf7edc0d3a5baa343f44660425f44ea19dfdba2523655c2",
+          "fetchSha256": "812b4e71eaa7a9896cf7edc0d3a5baa343f44660425f44ea19dfdba2523655c2",
+          "bytes": 1245580,
+          "operations": 151,
+          "title": "Vulnerability Management",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.1.2",
+          "server": "https://cloud.tenable.com",
+          "surface": "949b1216d205ea00",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "trakstar-hire": {
+      "name": "Trakstar Hire",
+      "apideck": false,
+      "specs": {
+        "Trakstar Hire API (authentication only)": {
+          "status": "ok",
+          "sha256": "4c246efb87b7b9c12af6aad8ef2210ba48684fb297417b855ac2a34bc0938d3c",
+          "fetchSha256": "4c246efb87b7b9c12af6aad8ef2210ba48684fb297417b855ac2a34bc0938d3c",
+          "bytes": 922,
+          "operations": 0,
+          "title": "Trakstar Hire API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://api.recruiterbox.com/v2",
+          "surface": "c0478de911a03352",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "transporeon-carrier": {
+      "name": "Transporeon Carrier Interface",
+      "apideck": false,
+      "specs": {
+        "Transporeon OpenAPI for Carriers": {
+          "status": "ok",
+          "sha256": "a7401b8785d0b758f21a1b4923b374c6dbeaecc1556d71ce640266572d764607",
+          "fetchSha256": "a7401b8785d0b758f21a1b4923b374c6dbeaecc1556d71ce640266572d764607",
+          "bytes": 171454,
+          "operations": 36,
+          "title": "Transporeon OpenAPI for Carriers",
+          "apiVersion": "1.68.0",
+          "specVersion": "3.1.0",
+          "server": "https://xp.transporeon.com/carrier_interface/openapi",
+          "surface": "3f3fe835d3192c06",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "trigify": {
+      "name": "Trigify IO",
+      "apideck": false,
+      "specs": {
+        "Trigify API": {
+          "status": "ok",
+          "sha256": "68ceee20529ca0a84d9d012274493e33ebe5355e87fabf0cda92410f9afff407",
+          "fetchSha256": "68ceee20529ca0a84d9d012274493e33ebe5355e87fabf0cda92410f9afff407",
+          "bytes": 316560,
+          "operations": 148,
+          "title": "Trigify API",
+          "apiVersion": "0.0.1",
+          "specVersion": "3.1.0",
+          "server": "https://api.trigify.io",
+          "surface": "739013abf5acaa3e",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "tripletex": {
+      "name": "Tripletex",
+      "apideck": false,
+      "specs": {
+        "Tripletex API": {
+          "status": "ok",
+          "sha256": "99165180e9fb146cdf48125601f00fcb5d2d36e9313eb9286fd8b4d75ae9a2c8",
+          "fetchSha256": "99165180e9fb146cdf48125601f00fcb5d2d36e9313eb9286fd8b4d75ae9a2c8",
+          "bytes": 4837186,
+          "operations": 817,
+          "title": "Tripletex API",
+          "apiVersion": "2.75.20",
+          "specVersion": "3.0.1",
+          "server": "https://tripletex.no/v2",
+          "surface": "7436f2b7d6811a3e",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "unanet": {
+      "name": "Unanet",
+      "apideck": false,
+      "specs": {
+        "Compass Endpoints": {
+          "status": "ok",
+          "sha256": "d64a8f53c4fdb6fc18d58d20211a0c39c16510d7d233e770b5e4509fe960407a",
+          "fetchSha256": "d64a8f53c4fdb6fc18d58d20211a0c39c16510d7d233e770b5e4509fe960407a",
+          "bytes": 295769,
+          "operations": 109,
+          "title": "Compass Endpoints",
+          "apiVersion": "1.0",
+          "specVersion": "3.0.3",
+          "server": "https://compass.cosential.com",
+          "surface": "ed51888485c9d390",
+          "specServer": "/",
+          "changedOn": "2026-11-02"
+        },
+        "Unanet CRM API v2": {
+          "status": "ok",
+          "sha256": "ab736445102136131d46a14700bf6707f1d46be48cb3f3215215cdc2fab44ac7",
+          "fetchSha256": "ab736445102136131d46a14700bf6707f1d46be48cb3f3215215cdc2fab44ac7",
+          "bytes": 496027,
+          "operations": 101,
+          "title": "CRM API",
+          "apiVersion": "26.10.4.10807",
+          "specVersion": "3.0.4",
+          "server": "https://compass.cosential.com/v2",
+          "surface": "07bbaef09aee8994",
+          "specServer": "/v2",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "unbounce": {
+      "name": "Unbounce",
+      "apideck": false,
+      "specs": {
+        "Unbounce API (authentication only)": {
+          "status": "ok",
+          "sha256": "5f4099eb6de63b3259d5a285f08787dc466888ca01df7ddcad91051bab2f2448",
+          "fetchSha256": "5f4099eb6de63b3259d5a285f08787dc466888ca01df7ddcad91051bab2f2448",
+          "bytes": 1376,
+          "operations": 0,
+          "title": "Unbounce API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://api.unbounce.com",
+          "surface": "ed3da3ca687d2984",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "vanta": {
+      "name": "Vanta",
+      "apideck": false,
+      "specs": {
+        "Manage Vanta": {
+          "status": "ok",
+          "sha256": "5537358d49db989887eff10b26ba953071f9620a0baa2be48693bbbbc562080f",
+          "fetchSha256": "5537358d49db989887eff10b26ba953071f9620a0baa2be48693bbbbc562080f",
+          "bytes": 1293072,
+          "operations": 288,
+          "title": "Manage Vanta",
+          "apiVersion": "1.0.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.vanta.com/v1",
+          "surface": "0f2ca54b678c0915",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "workramp": {
+      "name": "WorkRamp",
+      "apideck": false,
+      "specs": {
+        "WorkRamp API (authentication only)": {
+          "status": "ok",
+          "sha256": "1025d5df7d0923a936482efd558fb2f04627ce4f53a0f67cf952f0f5ecbc1e6b",
+          "fetchSha256": "1025d5df7d0923a936482efd558fb2f04627ce4f53a0f67cf952f0f5ecbc1e6b",
+          "bytes": 867,
+          "operations": 0,
+          "title": "WorkRamp API (authentication only)",
+          "apiVersion": "0",
+          "specVersion": "3.1.0",
+          "server": "https://app.workramp.com/api/v1",
+          "surface": "f0a5e0653fa40393",
+          "changedOn": "2026-11-02",
+          "coverage": "auth-only"
+        }
+      }
+    },
+    "yokoy": {
+      "name": "Yokoy",
+      "apideck": false,
+      "specs": {
+        "Yokoy API": {
+          "status": "ok",
+          "sha256": "ad261cd86e688a5dd0e5f99fdcb1b81002016eef439a54742e142b0549d8b4a7",
+          "fetchSha256": "ad261cd86e688a5dd0e5f99fdcb1b81002016eef439a54742e142b0549d8b4a7",
+          "bytes": 284574,
+          "operations": 109,
+          "title": "Yokoy API",
+          "apiVersion": "1.42.0",
+          "specVersion": "3.0.0",
+          "server": "https://api.yokoy.ai/v1/organizations/{organizationId}",
+          "surface": "fe005bbc4fa2a0c9",
+          "changedOn": "2026-11-02"
+        }
+      }
+    },
+    "yotpo": {
+      "name": "Yotpo",
+      "apideck": false,
+      "specs": {
+        "Yotpo Developers API": {
+          "status": "ok",
+          "sha256": "8aeaab4678fd94fcf9310af2c7a124cd81bab2f6c568a54d3b70ddf32c4a214a",
+          "fetchSha256": "8aeaab4678fd94fcf9310af2c7a124cd81bab2f6c568a54d3b70ddf32c4a214a",
+          "bytes": 79934,
+          "operations": 68,
+          "title": "Yotpo Developers API",
+          "specVersion": "2.0.0",
+          "surface": "05b3269071b60e1d",
+          "server": "https://developers.yotpo.com",
           "changedOn": "2026-11-02"
         }
       }
