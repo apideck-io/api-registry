@@ -221,10 +221,10 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
             if (isObj(spec["x-sources"])) {
               const flows = Object.values(spec.components?.securitySchemes ?? {}).flatMap((sc) => Object.values(sc?.flows ?? {}));
               const schemes = Object.values(spec.components?.securitySchemes ?? {}).filter(isObj);
-              const needed = ["server", ...(flows.some((f) => f?.authorizationUrl) ? ["authorizationUrl"] : []), ...(flows.some((f) => f?.tokenUrl) ? ["tokenUrl"] : []), ...(schemes.some((sc) => sc.openIdConnectUrl) ? ["openIdConnectUrl"] : [])];
+              const needed = ["server", ...(flows.some((f) => f?.authorizationUrl) ? ["authorizationUrl"] : []), ...(flows.some((f) => f?.tokenUrl) ? ["tokenUrl"] : []), ...(schemes.some((sc) => sc.openIdConnectUrl) ? ["openIdConnectUrl"] : []), ...(flows.some((f) => f?.refreshUrl) ? ["refreshUrl"] : [])];
               for (const k of needed) if (!spec["x-sources"][k]) errors.push(`${at}: x-sources.${k} is required`);
               // A citation for a value the spec doesn't state is left over from an edit.
-              const states = { tokenEndpointAuthMethod: schemes.some((sc) => sc["x-token-endpoint-auth-method"] !== undefined), pkce: schemes.some((sc) => sc["x-pkce-required"] !== undefined), scopes: flows.some((f) => Object.keys(f?.scopes ?? {}).length), openIdConnectUrl: schemes.some((sc) => sc.openIdConnectUrl), authorizationUrl: flows.some((f) => f?.authorizationUrl), tokenUrl: flows.some((f) => f?.tokenUrl) };
+              const states = { tokenEndpointAuthMethod: schemes.some((sc) => sc["x-token-endpoint-auth-method"] !== undefined), pkce: schemes.some((sc) => sc["x-pkce-required"] !== undefined), scopes: flows.some((f) => Object.keys(f?.scopes ?? {}).length), openIdConnectUrl: schemes.some((sc) => sc.openIdConnectUrl), authorizationUrl: flows.some((f) => f?.authorizationUrl), tokenUrl: flows.some((f) => f?.tokenUrl), refreshUrl: flows.some((f) => f?.refreshUrl) };
               for (const [k, set] of Object.entries(states)) if (spec["x-sources"][k] && !set) errors.push(`${at}: x-sources.${k} cites a value the spec doesn't set`);
               for (const k of Object.keys(spec["x-sources"])) if (k !== "server" && !(k in states)) errors.push(`${at}: x-sources.${k} isn't a value an auth-only spec cites (server, ${Object.keys(states).join(", ")})`);
             }
