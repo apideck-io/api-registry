@@ -8,6 +8,7 @@ x-sources:
   authorizationUrl: https://developers.cloudbeds.com/docs/alternative-oauth-20-authentication-method
   tokenUrl: https://developers.cloudbeds.com/reference/post_access-token-2
   server: https://developers.cloudbeds.com/reference/post_access-token-2
+  tokenEndpointAuthMethod: https://developers.cloudbeds.com/reference/post_access-token-2
 servers:
   - url: https://api.cloudbeds.com/api/v1.3
 paths: {}

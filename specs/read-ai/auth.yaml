@@ -15,8 +15,6 @@ components:
   securitySchemes:
     oauth2:
       type: oauth2
-      x-token-endpoint-auth-method: client_secret_basic
-      x-pkce-required: true
       flows:
         authorizationCode:
           authorizationUrl: https://authn.read.ai/oauth2/auth

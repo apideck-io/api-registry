@@ -8,6 +8,7 @@ x-sources:
   authorizationUrl: https://developers.hover.to/docs/oauth-20-authentication
   tokenUrl: https://developers.hover.to/reference/generate-access-token
   server: https://developers.hover.to/docs/capture-requests-via-the-api
+  tokenEndpointAuthMethod: https://developers.hover.to/reference/generate-access-token
 servers:
   - url: https://hover.to/api/v2
 paths: {}

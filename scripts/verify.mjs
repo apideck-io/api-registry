@@ -156,7 +156,7 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
     if (s?.overlay !== undefined) for (const m of overlayErrors(s.overlay, s)) errors.push(`${at}: ${m}`);
     // An auth-only spec describes how to authenticate (servers, security schemes, scopes) and no endpoints:
     // written here, from the vendor's own documentation, for an app that publishes no spec.
-    if (s?.coverage === undefined && s?.path && /\.(ya?ml|json)$/.test(s.path) && existsSync(join(ROOT, s.path))) {
+    if (s?.coverage === undefined && s?.path && existsSync(join(ROOT, s.path))) {
       let marked = false;
       try {
         marked = parseYaml(readFileSync(join(ROOT, s.path), "utf8"))?.["x-auth-only"] === true; // YAML parses JSON too
@@ -182,16 +182,24 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
           if (spec !== undefined && !isObj(spec)) errors.push(`${at}: ${s.path} is not an OpenAPI document`);
           else if (spec) {
             for (const key of ["paths", "webhooks", "x-ms-paths"])
-              if (isObj(spec[key]) && Object.keys(spec[key]).length) errors.push(`${at}: an auth-only spec lists no endpoints; ${s.path} has ${Object.keys(spec[key]).length} under ${key}`);
-            if (!Array.isArray(spec.servers) || !spec.servers[0]?.url) errors.push(`${at}: an auth-only spec names the API's server`);
+              if (spec[key] !== undefined && (!isObj(spec[key]) || Object.keys(spec[key]).length)) errors.push(`${at}: an auth-only spec lists no endpoints; ${s.path} has ${key} that isn't an empty map`);
+            if (!Array.isArray(spec.servers) || typeof spec.servers[0]?.url !== "string" || !spec.servers[0].url.trim()) errors.push(`${at}: an auth-only spec names the API's server`);
             if (!isObj(spec.components?.securitySchemes) || !Object.keys(spec.components.securitySchemes).length) errors.push(`${at}: an auth-only spec needs components.securitySchemes`);
             if (spec["x-auth-only"] !== true) errors.push(`${at}: an auth-only spec sets x-auth-only: true`);
             for (const [name, scheme] of Object.entries(spec.components?.securitySchemes ?? {}))
-              if (scheme?.type === "oauth2")
-                for (const [kind, flow] of Object.entries(scheme.flows ?? {})) {
+              if (!isObj(scheme) || !scheme.type) errors.push(`${at}: securitySchemes.${name} needs a type`);
+              else if (scheme.type === "oauth2") {
+                if (!isObj(scheme.flows) || !Object.keys(scheme.flows).length) errors.push(`${at}: ${name} is oauth2 and needs flows`);
+                for (const [kind, flow] of Object.entries(isObj(scheme.flows) ? scheme.flows : {})) {
+                  if (!["authorizationCode", "implicit", "clientCredentials", "password"].includes(kind)) errors.push(`${at}: ${name}.flows.${kind} is not an OAuth 2.0 flow`);
+                  if (!isObj(flow?.scopes)) errors.push(`${at}: ${name}.flows.${kind} needs scopes (an empty map when the vendor lists none)`);
                   if ((kind === "authorizationCode" || kind === "implicit") && !flow?.authorizationUrl) errors.push(`${at}: ${name}.flows.${kind} needs authorizationUrl`);
                   if (kind !== "implicit" && !flow?.tokenUrl) errors.push(`${at}: ${name}.flows.${kind} needs tokenUrl`);
                 }
+                // Values beyond the URLs are cited too, or left out.
+                if (scheme["x-token-endpoint-auth-method"] !== undefined && !spec["x-sources"]?.tokenEndpointAuthMethod) errors.push(`${at}: x-sources.tokenEndpointAuthMethod is required when ${name} sets x-token-endpoint-auth-method`);
+                if (scheme["x-pkce-required"] !== undefined && !spec["x-sources"]?.pkce) errors.push(`${at}: x-sources.pkce is required when ${name} sets x-pkce-required`);
+              }
             if (!isObj(spec["x-sources"])) errors.push(`${at}: an auth-only spec cites its sources in x-sources`);
             else for (const [k, v] of Object.entries(spec["x-sources"])) if (typeof v !== "string" || !/^https:\/\/\S+$/.test(v)) errors.push(`${at}: x-sources.${k} must be one https URL`);
             if (isObj(spec["x-sources"])) {

@@ -8,6 +8,7 @@ x-sources:
   authorizationUrl: https://developer.healthgorilla.com/reference/oauth-20-authentication
   tokenUrl: https://developer.healthgorilla.com/reference/oauth-20-authentication
   server: https://developer.healthgorilla.com/reference/oauth-20-authentication
+  tokenEndpointAuthMethod: https://developer.healthgorilla.com/reference/oauth-20-authentication
 servers:
   - url: https://api.healthgorilla.com
 paths: {}

@@ -8,6 +8,7 @@ x-sources:
   authorizationUrl: https://docs.pushpay.io/chms-v2/docs/getting-started
   tokenUrl: https://docs.pushpay.io/chms-v2/docs/getting-started
   server: https://docs.pushpay.io/chms-v2/docs/getting-started
+  tokenEndpointAuthMethod: https://docs.pushpay.io/chms-v2/docs/getting-started
 servers:
   - url: https://api.ccbchurch.com
 paths: {}

@@ -9,6 +9,7 @@ x-sources:
   tokenUrl: https://developers.grain.com/endpoints.html
   server: https://developers.grain.com/overview.html
   scopes: https://developers.grain.com/authentication.html
+  tokenEndpointAuthMethod: https://developers.grain.com/endpoints.html
 servers:
   - url: https://api.grain.com/_/public-api/v2
 paths: {}

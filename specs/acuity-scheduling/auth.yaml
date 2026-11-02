@@ -9,6 +9,7 @@ x-sources:
   tokenUrl: https://developers.acuityscheduling.com/docs/oauth2
   server: https://developers.acuityscheduling.com/docs/oauth2
   scopes: https://developers.acuityscheduling.com/docs/oauth2
+  tokenEndpointAuthMethod: https://developers.acuityscheduling.com/docs/oauth2
 servers:
   - url: https://acuityscheduling.com/api/v1
 paths: {}

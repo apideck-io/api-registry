@@ -9,6 +9,7 @@ x-sources:
   tokenUrl: https://developers.contaazul.com/changecode
   server: https://developers.contaazul.com/makingcalls
   scopes: https://developers.contaazul.com/requestingcode
+  tokenEndpointAuthMethod: https://developers.contaazul.com/changecode
 servers:
   - url: https://api-v2.contaazul.com
 paths: {}

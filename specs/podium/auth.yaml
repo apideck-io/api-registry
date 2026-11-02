@@ -9,6 +9,7 @@ x-sources:
   tokenUrl: https://docs.podium.com/docs/oauth
   server: https://docs.podium.com/reference/authentication
   scopes: https://docs.podium.com/docs/oauth-scopes
+  tokenEndpointAuthMethod: https://docs.podium.com/docs/oauth
 servers:
   - url: https://api.podium.com/v4
 paths: {}

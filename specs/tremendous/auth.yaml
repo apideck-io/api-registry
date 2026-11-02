@@ -9,6 +9,7 @@ x-sources:
   tokenUrl: https://developers.tremendous.com/docs/oauth-20
   server: https://developers.tremendous.com/docs/production-api-access
   scopes: https://developers.tremendous.com/docs/oauth-20
+  tokenEndpointAuthMethod: https://developers.tremendous.com/docs/oauth-20
 servers:
   - url: https://api.tremendous.com/api/v2
 paths: {}
