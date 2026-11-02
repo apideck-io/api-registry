@@ -1,0 +1,10 @@
+id: timetastic
+name: "Timetastic"
+apideck: false
+specs:
+  - name: "Timetastic API"
+    url: "https://app.timetastic.co.uk/swagger/v1/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.timetastic.co.uk"
+    notes: "The spec sets no server; it is served by the API host itself."

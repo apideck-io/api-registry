@@ -1,0 +1,9 @@
+id: lumos
+name: "Lumos"
+apideck: false
+specs:
+  - name: "Lumos"
+    url: "https://api.lumos.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.lumos.com"

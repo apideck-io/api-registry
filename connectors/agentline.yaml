@@ -1,0 +1,9 @@
+id: agentline
+name: "AgentLine"
+apideck: false
+specs:
+  - name: "AgentLine — Prepaid Phone Service for AI Agents"
+    url: "https://api.agentline.cloud/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.agentline.cloud"

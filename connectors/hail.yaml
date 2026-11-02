@@ -1,0 +1,9 @@
+id: hail
+name: "Hail"
+apideck: false
+specs:
+  - name: "Hail"
+    url: "https://api.hail.so/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.hail.so"

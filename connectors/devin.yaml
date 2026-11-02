@@ -1,0 +1,22 @@
+id: devin
+name: "Devin"
+apideck: false
+specs:
+  - name: "Devin API v3"
+    url: "https://docs.devin.ai/v3-openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.devin.ai"
+    notes: "The spec sets no server; api.devin.ai is the host the v1 spec names."
+  - name: "Devin API v2"
+    url: "https://docs.devin.ai/v2-openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.devin.ai"
+    notes: "The spec sets no server; api.devin.ai is the host the v1 spec names."
+  - name: "Devin External API"
+    url: "https://docs.devin.ai/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.devin.ai"
+    notes: "The original v1 External API; v3 is current."

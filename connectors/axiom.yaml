@@ -1,0 +1,14 @@
+id: axiom
+name: "Axiom"
+apideck: false
+specs:
+  - name: "Axiom API v2"
+    url: "https://docs.axiom.co/openapi/v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.axiom.co/v2"
+  - name: "Axiom API v1"
+    url: "https://docs.axiom.co/openapi/v1.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.axiom.co/v1"
