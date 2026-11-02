@@ -3,12 +3,12 @@ name: "RunPod"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://docs.runpod.io)."
 specs:
-  - name: "Runpod REST API"
+  - name: "Runpod API (api.runpod.io, /v2)"
     url: "https://docs.runpod.io/api-reference-v2/openapi.json"
     format: openapi-3.1
     provenance: vendor
     server: "https://api.runpod.io"
-  - name: "Runpod API"
+  - name: "Runpod REST API v1 (rest.runpod.io)"
     url: "https://docs.runpod.io/api-reference/openapi.json"
     format: openapi-3.0
     provenance: vendor

@@ -12,5 +12,5 @@ specs:
     url: "https://apidocs.awardforce.com/api-reference/openapi-v2_3.yaml"
     format: openapi-3.1
     provenance: vendor
-    server: "https://api.us.cr4ce.com"
-    notes: "Regional servers: api.us.cr4ce.com, api.eu.cr4ce.com, api.au.cr4ce.com, api.ca.cr4ce.com and api.hk.cr4ce.com; use the account's region."
+    server: "https://api.{region}.cr4ce.com"
+    notes: "Per region: {region} is us, eu, au, ca or hk, as the spec's servers list."

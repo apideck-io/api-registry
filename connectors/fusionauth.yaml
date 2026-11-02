@@ -7,5 +7,5 @@ specs:
     url: "https://fusionauth.io/docs/openapi.yaml"
     format: openapi-3.0
     provenance: vendor
-    server: "https://{fusionauth-host}"
-    notes: "FusionAuth is self-hosted (port 9011 by default)."
+    server: "{scheme}://{fusionauth-host}:{port}"
+    notes: "FusionAuth is self-hosted; by default it serves http on port 9011."

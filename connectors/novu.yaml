@@ -8,3 +8,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://api.novu.co"
+    notes: "US host; the spec also lists the EU region, eu.api.novu.co."
