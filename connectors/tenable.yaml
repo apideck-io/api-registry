@@ -1,0 +1,10 @@
+id: tenable
+name: "Tenable"
+apideck: false
+specs:
+  - name: "Vulnerability Management"
+    url: "https://developer.tenable.com/openapi/vulnerability-management.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://cloud.tenable.com"
+    notes: "Header X-ApiKeys: accessKey=ACCESS_KEY;secretKey=SECRET_KEY (two values in one header). Vulnerability Management only (119 paths); 10 other product specs are on the same page, including tenable-platform-settings.json (115 paths)."

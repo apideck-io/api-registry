@@ -1,0 +1,17 @@
+id: knowbe4
+name: "KnowBe4"
+apideck: false
+notes: "API access depends on the KnowBe4 plan."
+specs:
+  - name: "KnowBe4 Reporting API"
+    url: "https://developer.knowbe4.com/elvis-swagger.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://us.api.knowbe4.com"
+    notes: "US host; the spec also lists the EU one. The spec has no info.version, so the nightly check's \"no info.version\" warning is expected."
+  - name: "KnowBe4 Events API"
+    url: "https://developer.knowbe4.com/echelon-swagger.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.events.knowbe4.com"
+    notes: "US host; the spec also lists the EU one. The spec has no info.version, so the nightly check's \"no info.version\" warning is expected."

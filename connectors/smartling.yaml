@@ -1,0 +1,9 @@
+id: smartling
+name: "Smartling"
+apideck: false
+specs:
+  - name: "Smartling REST API Reference"
+    url: "https://api-reference.smartling.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.smartling.com"

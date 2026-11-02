@@ -1,0 +1,10 @@
+id: checkr
+name: "Checkr"
+apideck: false
+specs:
+  - name: "Checkr.com API Docs"
+    url: "https://api.redocly.com/registry/bundle/checkr/Checkr%20Public%20API/v1/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.checkr.com/v1"
+    notes: "File sits on api.redocly.com but is the spec the vendor's own docs page references. Basic auth, secret key as username with empty password. Production keys need Checkr to enable live Reports."

@@ -1,0 +1,10 @@
+id: nexthink
+name: "Nexthink"
+apideck: false
+specs:
+  - name: "NQL API"
+    url: "https://openapi.gitbook.com/o/w4JBmMClboTMZK5blByo/spec/documentation.api%20nql.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{instance}.api.{region}.nexthink.cloud"
+    notes: "{instance} is the customer instance; {region} is us, eu, pac or meta. NQL API only (4 paths); Act, Engage, Enrichment and Workflow have separate specs in the same GitBook space. Bearer JWT from a per-tenant token host: https://{instance}-login.{region}.nexthink.cloud/oauth2/default/v1/token, client credentials with Basic auth (https://docs.nexthink.com/api/getting-authentication-token)."

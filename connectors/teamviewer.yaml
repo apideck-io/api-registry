@@ -1,0 +1,11 @@
+id: teamviewer
+name: "TeamViewer"
+apideck: false
+specs:
+  - name: "TeamViewer Web API"
+    url: "https://webapi.teamviewer.com/api/v1/docs/swagger-ui-init.js"
+    format: openapi-3.0
+    provenance: vendor
+    extract: swagger-ui-init
+    server: "https://webapi.teamviewer.com"
+    notes: "The spec's paths already carry the /api/v1 prefix, so the server is the bare host."

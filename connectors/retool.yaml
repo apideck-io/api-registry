@@ -1,0 +1,10 @@
+id: retool
+name: "Retool"
+apideck: false
+specs:
+  - name: "Retool API"
+    url: "https://api.retool.com/api/v2/spec"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.retool.com/api/v2"
+    notes: "Cloud host. Self-hosted instances use https://{instance}/api/v2. Bearer API key with permission scopes. Plan requirements were not checked."

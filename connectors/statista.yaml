@@ -1,0 +1,10 @@
+id: statista
+name: "Statista"
+apideck: false
+specs:
+  - name: "The Statista Discovery API"
+    url: "https://raw.githubusercontent.com/statista-oss/api-docs/main/api-reference/openapi.discovery.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.statista.ai"
+    notes: "x-api-key header. Key is issued on request through the docs site (https://docs.platform.statista.ai/api-reference/introduction). Discovery API only (7 paths); openapi.data.yaml and openapi.research.yaml sit alongside it. The statista-oss org lists statista.com as its site."
