@@ -32,7 +32,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{baseurl}"
-    notes: "Per customer: {baseurl} is the client's MX host (the spec declares it over http)."
+    notes: "Per customer: {baseurl} is the client's MX host. The spec declares http://{baseurl}; this is it over https."
   - name: "Audience API"
     url: "https://docs.mx.com/openapi/audience/v1.yaml"
     format: openapi-3.0

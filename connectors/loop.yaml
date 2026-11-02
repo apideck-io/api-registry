@@ -47,8 +47,7 @@ specs:
     url: "https://docs.loopreturns.com/openapi/draft-returns.yaml"
     format: openapi-3.1
     provenance: vendor
-    server: "https://api.loopreturns.com/api/2026-10"
-    notes: "Pinned to 2026-10, the newest dated version the spec allows (also v1, latest and unstable), as the other Loop APIs use."
+    server: "https://api.loopreturns.com/api/2026-07"
   - name: "Fraud Reports API"
     url: "https://docs.loopreturns.com/openapi/fraud-reports-api.yaml"
     format: openapi-3.1
@@ -88,8 +87,7 @@ specs:
     url: "https://docs.loopreturns.com/openapi/orders-api-2026-07.yaml"
     format: openapi-3.1
     provenance: vendor
-    server: "https://api.loopreturns.com/api/2026-10"
-    notes: "Pinned to 2026-10, the newest dated version the spec allows (also v1, latest and unstable), as the other Loop APIs use."
+    server: "https://api.loopreturns.com/api/2026-07"
   - name: "Orders API (openapi/orders-api)"
     url: "https://docs.loopreturns.com/openapi/orders-api.yaml"
     format: openapi-3.1
@@ -115,4 +113,4 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.loopreturns.com/api/2026-10"
-    notes: "Pinned to 2026-10, the newest dated version the spec allows (also v1, latest and unstable), as the other Loop APIs use."
+    notes: "Pinned to 2026-10, the newest dated version the spec allows (v1, latest, 2026-07, 2026-10, unstable)."
