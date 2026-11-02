@@ -1,0 +1,9 @@
+id: transporeon-carrier
+name: "Transporeon Carrier Interface"
+apideck: false
+specs:
+  - name: "Transporeon OpenAPI for Carriers"
+    url: "https://xch.transporeon.com/carrier_interface/openapi/v1/swagger.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://xp.transporeon.com/carrier_interface/openapi"

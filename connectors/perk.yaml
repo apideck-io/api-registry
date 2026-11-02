@@ -1,0 +1,12 @@
+id: perk
+name: "Perk"
+apideck: false
+notes: "Perk publishes no API spec; the auth-only spec below is written here. API access is for approved partners or specific plans."
+specs:
+  - name: "Perk API (authentication only)"
+    path: "specs/perk/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.perk.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developers.perk.com)."

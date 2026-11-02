@@ -1,0 +1,12 @@
+id: 8x8
+name: "8x8"
+apideck: false
+notes: "8x8 publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "8x8 API (authentication only)"
+    path: "specs/8x8/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.8x8.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (help.8x8.com)."

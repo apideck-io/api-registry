@@ -1,0 +1,12 @@
+id: adobe-umapi
+name: "Adobe User Management API"
+apideck: false
+notes: "Adobe User Management API publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Adobe User Management API (authentication only)"
+    path: "specs/adobe-umapi/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://usermanagement.adobe.io/v2/usermanagement"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (adobe-apiplatform.github.io)."

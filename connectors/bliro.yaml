@@ -1,0 +1,10 @@
+id: bliro
+name: "Bliro"
+apideck: false
+specs:
+  - name: "Bliro API"
+    url: "https://api.bliro.io/docs/swagger-ui-init.js"
+    format: openapi-3.0
+    provenance: vendor
+    extract: swagger-ui-init
+    server: "https://api.bliro.io"

@@ -1,0 +1,26 @@
+openapi: 3.1.0
+info:
+  title: Adobe User Management API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Adobe User Management API: its host and its OAuth 2.0 client-credentials flow. It lists no endpoints. Adobe User Management API publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: the token endpoint refuses a request with made-up client credentials (HTTP 400)."
+x-auth-only: true
+x-sources:
+  server: https://adobe-apiplatform.github.io/umapi-documentation/en/api/getUsersWithPage.html
+  tokenUrl: https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html
+  scopes: https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html
+servers:
+  - url: https://usermanagement.adobe.io/v2/usermanagement
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://ims-na1.adobelogin.com/ims/token/v2
+          scopes:
+            openid: OpenID
+            AdobeID: Adobe ID
+            user_management_sdk: User Management API access
+security:
+  - oauth2: []

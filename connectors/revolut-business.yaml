@@ -1,0 +1,9 @@
+id: revolut-business
+name: "Revolut Business"
+apideck: false
+specs:
+  - name: "Business API"
+    url: "https://raw.githubusercontent.com/revolut-engineering/revolut-openapi/master/yaml/business.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://b2b.revolut.com/api/1.0"

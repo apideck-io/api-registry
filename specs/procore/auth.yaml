@@ -1,0 +1,24 @@
+openapi: 3.1.0
+info:
+  title: Procore API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Procore API: its host and its OAuth 2.0 authorization-code flow. It lists no endpoints. Procore publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: the token endpoint refuses a request with made-up client credentials (HTTP 401)."
+x-auth-only: true
+x-sources:
+  server: https://procore.github.io/documentation/tutorial-mpz
+  tokenUrl: https://procore.github.io/documentation/tutorial-mpz
+  authorizationUrl: https://procore.github.io/documentation/tutorial-mpz
+servers:
+  - url: https://api.procore.com
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://login.procore.com/oauth/authorize
+          tokenUrl: https://login.procore.com/oauth/token
+          scopes: {}
+security:
+  - oauth2: []

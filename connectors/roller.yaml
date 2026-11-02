@@ -1,0 +1,9 @@
+id: roller
+name: "Roller"
+apideck: false
+specs:
+  - name: "REST API"
+    url: "https://raw.githubusercontent.com/rollersoftware/public-api-documentation/master/reference/rest-api.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.roller.app"

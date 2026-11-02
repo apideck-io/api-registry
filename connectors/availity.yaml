@@ -1,0 +1,12 @@
+id: availity
+name: "Availity"
+apideck: false
+notes: "Availity publishes no API spec; the auth-only spec below is written here. API access is for approved partners or specific plans."
+specs:
+  - name: "Availity API (authentication only)"
+    path: "specs/availity/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.availity.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developer.availity.com)."

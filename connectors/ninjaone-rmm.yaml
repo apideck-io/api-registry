@@ -1,0 +1,9 @@
+id: ninjaone-rmm
+name: "NinjaOne RMM"
+apideck: false
+specs:
+  - name: "NinjaOne Public API 2.0"
+    url: "https://app.ninjarmm.com/apidocs/NinjaRMM-API-v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{instance}"

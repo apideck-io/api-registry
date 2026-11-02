@@ -1,0 +1,9 @@
+id: tempo
+name: "Tempo"
+apideck: false
+specs:
+  - name: "REST API documentation"
+    url: "https://apidocs.tempo.io/tempo-openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.tempo.io"
