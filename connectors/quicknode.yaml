@@ -21,8 +21,9 @@ specs:
     provenance: vendor
     server: "https://api.quicknode.com"
     notes: "The spec declares no server; this is the vendor's API host."
-  - name: "API V0"
+  - name: "QuickNode Console API v0"
     url: "https://www.quicknode.com/api-docs/v0/swagger.json"
     format: openapi-3.0
     provenance: vendor
     server: "https://api.quicknode.com"
+    notes: "The spec's server varies by client (www.quicknode.com or api.quicknode.com); api.quicknode.com is the API host."

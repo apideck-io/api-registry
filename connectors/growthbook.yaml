@@ -8,4 +8,4 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://api.growthbook.io/api"
-    notes: "The spec also lists x."
+    notes: "Cloud host; the spec also lists self-hosted GrowthBook at https://{domain}/api."
