@@ -1,0 +1,21 @@
+connectors/loop-returns.yaml
+  s_eeda7bd9685d9d::t_6a54d49c581352 1-2
+connectors/zuplo.yaml
+  s_eeda7bd9685d9d::t_e1498a7b90b739 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7f93cf2001f7731e684623e801726cf8e9a684d7",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
