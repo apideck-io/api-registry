@@ -1,0 +1,89 @@
+connectors/agentcard.yaml
+  s_eeda7bd9685d9d::t_96cae0b07bb7fd 1-9
+connectors/agentline.yaml
+  s_eeda7bd9685d9d::t_3b0e31cfcc302c 1-9
+connectors/anarlog.yaml
+  s_eeda7bd9685d9d::t_366d19f2073b6f 1-10
+connectors/atlas-so.yaml
+  s_eeda7bd9685d9d::t_893fb948d92cb3 1-9
+connectors/axiom.yaml
+  s_eeda7bd9685d9d::t_5b3d7bde7f57fb 1-9
+connectors/bird.yaml
+  s_eeda7bd9685d9d::t_0720b87e8d0a3f 1-10
+connectors/contentstack.yaml
+  s_eeda7bd9685d9d::t_338d839bcf7abe 1-9
+connectors/devin.yaml
+  s_eeda7bd9685d9d::t_450b71f31662ae 1-9
+connectors/discolike.yaml
+  s_eeda7bd9685d9d::t_fb1099f7f282c1 1-10
+connectors/embat.yaml
+  s_eeda7bd9685d9d::t_c5957737e8138c 1-10
+connectors/epost-klara.yaml
+  s_eeda7bd9685d9d::t_8d2dca1267d6c3 1-9
+connectors/fiber-ai.yaml
+  s_eeda7bd9685d9d::t_de3fb35621495e 1-9
+connectors/finta.yaml
+  s_eeda7bd9685d9d::t_73d8509f258e2f 1-9
+connectors/firstbase.yaml
+  s_eeda7bd9685d9d::t_06782876efa1f6 1-10
+connectors/glyphic.yaml
+  s_eeda7bd9685d9d::t_ead2e432a79819 1-10
+connectors/guru.yaml
+  s_eeda7bd9685d9d::t_f5aa9254da373d 1-9
+connectors/hail.yaml
+  s_eeda7bd9685d9d::t_7d1e2b916cf958 1-9
+connectors/ids-fulfillment.yaml
+  s_eeda7bd9685d9d::t_06fca62919bd03 1-10
+connectors/livetennisapi.yaml
+  s_eeda7bd9685d9d::t_74c65a29593c99 1-9
+connectors/lumos.yaml
+  s_eeda7bd9685d9d::t_655fc8758226ae 1-9
+connectors/open-hands.yaml
+  s_eeda7bd9685d9d::t_b7fb20a6bda9cb 1-10
+connectors/publora.yaml
+  s_eeda7bd9685d9d::t_8a040dbae2cea1 1-9
+connectors/redo.yaml
+  s_eeda7bd9685d9d::t_e715329879d375 1-9
+connectors/rock-gym-pro.yaml
+  s_eeda7bd9685d9d::t_1e5813c28c55ef 1-10
+connectors/scrollstash.yaml
+  s_eeda7bd9685d9d::t_deb08a556c778b 1-9
+connectors/shopvox.yaml
+  s_eeda7bd9685d9d::t_b6dc2aad7af46f 1-9
+connectors/streak.yaml
+  s_eeda7bd9685d9d::t_9d2657d9acb338 1-9
+connectors/the-swarm.yaml
+  s_eeda7bd9685d9d::t_6e68c10be01c10 1-9
+connectors/timetastic.yaml
+  s_eeda7bd9685d9d::t_3c7b71691eb587 1-10
+connectors/trading-economics.yaml
+  s_eeda7bd9685d9d::t_e4633f96344de8 1-10
+connectors/workpath.yaml
+  s_b5530286302508::t_0c34ca33909007 1-9
+connectors/xai.yaml
+  s_eeda7bd9685d9d::t_edf8d89c099d95 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "eb1aacb982286d10cd13375ab9dfd410c9c74b2a",
+  "prompts": {},
+  "sessions": {
+    "s_b5530286302508": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f9dd8942-1a38-4993-b209-62caf197a7ca",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
