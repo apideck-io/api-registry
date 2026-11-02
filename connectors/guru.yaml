@@ -7,3 +7,4 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://api.getguru.com"
+    notes: "The spec's paths already carry the /api/v1 prefix, so the server is the bare host."
