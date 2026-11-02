@@ -2,12 +2,13 @@ openapi: 3.1.0
 info:
   title: Carta API (authentication only)
   version: "0"
-  description: "Authentication only. This document describes how to authenticate with the Carta API: its host and its OAuth 2.0 authorization-code flow. It lists no endpoints. Carta publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: the token endpoint refuses a request with made-up client credentials (HTTP 401). Carta lists many scopes at docs.carta.com; they aren't repeated here."
+  description: "Authentication only. This document describes how to authenticate with the Carta API: its host and its OAuth 2.0 authorization-code and client-credentials flows, and scope names. It lists no endpoints. Carta publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: the token endpoint refuses a request with made-up client credentials (HTTP 401)."
 x-auth-only: true
 x-sources:
   server: https://docs.carta.com/api-platform/guides/references/endpoints-configuration
   tokenUrl: https://docs.carta.com/api-platform/guides/references/endpoints-configuration
   authorizationUrl: https://docs.carta.com/api-platform/guides/references/endpoints-configuration
+  scopes: https://docs.carta.com/api-platform/guides/references/scopes
 servers:
   - url: https://api.carta.com
 paths: {}
@@ -19,6 +20,85 @@ components:
         authorizationCode:
           authorizationUrl: https://login.app.carta.com/o/authorize/
           tokenUrl: https://login.app.carta.com/o/access_token/
-          scopes: {}
+          scopes:
+            read_compensation_benchmarks: ""
+            read_corporation_info: ""
+            read_draftissuers: ""
+            read_investor_capitalizationtables: ""
+            read_investor_cashbalances: ""
+            read_investor_firms: ""
+            read_investor_fundperformance: ""
+            read_investor_funds: ""
+            read_investor_investments: ""
+            read_investor_partners: ""
+            read_investor_securities: ""
+            read_investor_stakeholdercapitalizationtable: ""
+            read_issuer_capitalizationtablesummary: ""
+            read_issuer_draftsecurities: ""
+            read_issuer_info: ""
+            read_issuer_interests: ""
+            read_issuer_securities: ""
+            read_issuer_securitiestemplates: ""
+            read_issuer_shareclasses: ""
+            read_issuer_stakeholdercapitalizationtable: ""
+            read_issuer_stakeholders: ""
+            read_issuer_valuations: ""
+            read_opencaptables: ""
+            read_portfolio_fundinvestmentdocuments: ""
+            read_portfolio_info: ""
+            read_portfolio_issuervaluations: ""
+            read_portfolio_securities: ""
+            read_portfolio_transactions: ""
+            read_user_info: ""
+            readwrite_draftissuers: ""
+            readwrite_file_upload: ""
+            readwrite_investor_capitalcalls: ""
+            readwrite_investor_carriedinterest: ""
+            readwrite_investor_managementfees: ""
+            readwrite_issuer_draftsecurities: ""
+            readwrite_issuer_secondarytransactions: ""
+            readwrite_issuer_securities: ""
+            readwrite_opencaptables: ""
+        clientCredentials:
+          tokenUrl: https://login.app.carta.com/o/access_token/
+          scopes:
+            read_compensation_benchmarks: ""
+            read_corporation_info: ""
+            read_draftissuers: ""
+            read_investor_capitalizationtables: ""
+            read_investor_cashbalances: ""
+            read_investor_firms: ""
+            read_investor_fundperformance: ""
+            read_investor_funds: ""
+            read_investor_investments: ""
+            read_investor_partners: ""
+            read_investor_securities: ""
+            read_investor_stakeholdercapitalizationtable: ""
+            read_issuer_capitalizationtablesummary: ""
+            read_issuer_draftsecurities: ""
+            read_issuer_info: ""
+            read_issuer_interests: ""
+            read_issuer_securities: ""
+            read_issuer_securitiestemplates: ""
+            read_issuer_shareclasses: ""
+            read_issuer_stakeholdercapitalizationtable: ""
+            read_issuer_stakeholders: ""
+            read_issuer_valuations: ""
+            read_opencaptables: ""
+            read_portfolio_fundinvestmentdocuments: ""
+            read_portfolio_info: ""
+            read_portfolio_issuervaluations: ""
+            read_portfolio_securities: ""
+            read_portfolio_transactions: ""
+            read_user_info: ""
+            readwrite_draftissuers: ""
+            readwrite_file_upload: ""
+            readwrite_investor_capitalcalls: ""
+            readwrite_investor_carriedinterest: ""
+            readwrite_investor_managementfees: ""
+            readwrite_issuer_draftsecurities: ""
+            readwrite_issuer_secondarytransactions: ""
+            readwrite_issuer_securities: ""
+            readwrite_opencaptables: ""
 security:
   - oauth2: []
