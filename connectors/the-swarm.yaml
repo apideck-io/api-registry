@@ -1,0 +1,9 @@
+id: the-swarm
+name: "The Swarm"
+apideck: false
+specs:
+  - name: "Swarm API"
+    url: "https://docs.theswarm.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://bee.theswarm.com"

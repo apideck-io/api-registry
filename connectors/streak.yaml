@@ -1,0 +1,9 @@
+id: streak
+name: "Streak"
+apideck: false
+specs:
+  - name: "Streak API"
+    url: "https://api.streak.com/api/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.streak.com/api"

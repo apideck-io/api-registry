@@ -1,0 +1,10 @@
+id: xai
+name: "xAI"
+apideck: false
+specs:
+  - name: "xAI's REST API"
+    url: "https://docs.x.ai/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.x.ai"
+    notes: "The spec sets no server; it is served on xAI's docs site and the API host is api.x.ai."

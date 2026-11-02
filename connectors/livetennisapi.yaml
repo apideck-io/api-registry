@@ -1,0 +1,9 @@
+id: livetennisapi
+name: "Live Tennis API"
+apideck: false
+specs:
+  - name: "Live Tennis API"
+    url: "https://docs.livetennisapi.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.livetennisapi.com/api/public/v1"

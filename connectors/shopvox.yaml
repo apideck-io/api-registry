@@ -1,0 +1,9 @@
+id: shopvox
+name: "ShopVox"
+apideck: false
+specs:
+  - name: "shopVOX Public API"
+    url: "https://developers.shopvox.com/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.shopvox.com/v1"

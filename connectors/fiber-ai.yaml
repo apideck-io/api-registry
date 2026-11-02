@@ -1,0 +1,9 @@
+id: fiber-ai
+name: "Fiber AI"
+apideck: false
+specs:
+  - name: "Fiber AI API"
+    url: "https://api.fiber.ai/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.fiber.ai"

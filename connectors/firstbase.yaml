@@ -1,0 +1,10 @@
+id: firstbase
+name: "Firstbase"
+apideck: false
+specs:
+  - name: "Firstbase API Specification Beta"
+    url: "https://apipub.firstbasehq.com/v3/api-docs"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://apipub.firstbasehq.com"
+    notes: "The spec's only server is relative (/), so it resolves to the API host that serves it."

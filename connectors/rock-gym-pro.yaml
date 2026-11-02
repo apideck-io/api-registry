@@ -1,0 +1,10 @@
+id: rock-gym-pro
+name: "Rock Gym Pro"
+apideck: false
+specs:
+  - name: "Rock Gym Pro API"
+    url: "https://api.rockgympro.com/openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.rockgympro.com"
+    notes: "The spec sets no server; it is served by the API host itself."

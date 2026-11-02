@@ -1,0 +1,10 @@
+id: discolike
+name: "DiscoLike"
+apideck: false
+specs:
+  - name: "DiscoLike API"
+    url: "https://api.discolike.com/v1/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.discolike.com/v1"
+    notes: "The spec sets no server; it is served by the API host itself."

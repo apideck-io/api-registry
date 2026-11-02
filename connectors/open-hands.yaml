@@ -1,0 +1,10 @@
+id: open-hands
+name: "Open Hands"
+apideck: false
+specs:
+  - name: "OpenHands"
+    url: "https://app.all-hands.dev/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://app.all-hands.dev"
+    notes: "The spec sets no server; it is served by the API host itself."

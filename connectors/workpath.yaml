@@ -1,0 +1,9 @@
+id: workpath
+name: "Workpath"
+apideck: false
+specs:
+  - name: "Connect API"
+    url: "https://connect.workpath.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://connect.workpath.com/api/v3"

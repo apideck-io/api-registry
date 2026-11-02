@@ -1,0 +1,10 @@
+id: anarlog
+name: "Anarlog"
+apideck: false
+specs:
+  - name: "Anarlog API"
+    url: "https://api.anarlog.so/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.anarlog.so"
+    notes: "The spec sets no server; it is served by the API host itself."

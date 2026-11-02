@@ -1,0 +1,9 @@
+id: finta
+name: "Finta"
+apideck: false
+specs:
+  - name: "Finta API"
+    url: "https://api.finta.io/v1/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.finta.io/v1"

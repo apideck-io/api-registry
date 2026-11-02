@@ -1,0 +1,10 @@
+id: trading-economics
+name: "Trading Economics"
+apideck: false
+specs:
+  - name: "Trading Economics API"
+    url: "https://api.tradingeconomics.com/swagger/v1/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.tradingeconomics.com"
+    notes: "The spec sets no server; it is served by the API host itself."

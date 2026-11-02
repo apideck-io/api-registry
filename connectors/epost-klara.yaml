@@ -1,0 +1,9 @@
+id: epost-klara
+name: "ePost (KLARA)"
+apideck: false
+specs:
+  - name: "KLARA Public API"
+    url: "https://api.klara.ch/openapi/v1.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.klara.ch"

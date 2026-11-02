@@ -1,0 +1,10 @@
+id: embat
+name: "Embat"
+apideck: false
+specs:
+  - name: "Embat API"
+    url: "https://api.embat.io/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.embat.io"
+    notes: "The spec sets no server; it is served by the API host itself."

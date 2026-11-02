@@ -1,0 +1,9 @@
+id: publora
+name: "Publora"
+apideck: false
+specs:
+  - name: "Publora API"
+    url: "https://docs.publora.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.publora.com/api/v1"

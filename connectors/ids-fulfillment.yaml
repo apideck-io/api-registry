@@ -1,0 +1,10 @@
+id: ids-fulfillment
+name: "IDS Fulfillment"
+apideck: false
+specs:
+  - name: "IDS Public API"
+    url: "https://api.idsfulfillment.com/swagger/v1/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.idsfulfillment.com"
+    notes: "The spec sets no server; it is served by the API host itself."

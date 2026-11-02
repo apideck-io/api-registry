@@ -1,0 +1,9 @@
+id: redo
+name: "Redo"
+apideck: false
+specs:
+  - name: "Redo API"
+    url: "https://api.getredo.com/v2.2/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.getredo.com/v2.2"

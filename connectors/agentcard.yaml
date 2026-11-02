@@ -1,0 +1,9 @@
+id: agentcard
+name: "Agentcard"
+apideck: false
+specs:
+  - name: "Agentcard API"
+    url: "https://docs.agentcard.com/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.agentcard.sh"
