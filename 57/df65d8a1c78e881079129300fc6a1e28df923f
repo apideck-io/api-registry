@@ -1,0 +1,21 @@
+connectors/amadeus.yaml
+  s_eeda7bd9685d9d::t_518dab591d86ea 79
+connectors/opto22.yaml
+  s_eeda7bd9685d9d::t_c9a461537f5b16 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "57df65d8a1c78e881079129300fc6a1e28df923f",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
