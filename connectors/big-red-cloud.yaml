@@ -8,3 +8,5 @@ specs:
     format: swagger-2.0
     provenance: vendor
     server: "https://app.bigredcloud.com/api"
+    notes: "Served differently on each request: it generates the timestamps in its examples. Hashed in its volatile form (see `fetchSha256` in the README)."
+    volatile: true

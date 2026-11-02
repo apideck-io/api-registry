@@ -31,7 +31,7 @@ specs:
     notes: "..."              # optional
 ```
 
-Two optional fields cover vendors that don't serve a plain file:
+Optional fields cover vendors that don't serve a plain file, or serve a different one each time:
 - `extract` says how the verifier gets the spec when the URL doesn't serve a plain file: it unwraps a wrapper, or for `graphql-introspection` it queries the endpoint:
   - `zip-bundle`: a zip of module files (Zoho Books)
   - `markdown-json-fence`: JSON inside a Markdown code fence (Sage); when a page holds several OpenAPI documents, they are merged (Adyntel) if they agree on version, servers and security and no path, method or component is defined two different ways; otherwise the spec fails
@@ -39,6 +39,7 @@ Two optional fields cover vendors that don't serve a plain file:
   - `swagger-ui-init`: embedded as `swaggerDoc` in a swagger-ui-express init script (Minox)
   - `graphql-introspection`: no SDL file, but the endpoint answers an anonymous introspection query (Wave, Access Financials)
 - `manual: login | bot-protection` records a spec CI can't fetch (it needs `notes` on how to get it).
+- `volatile: true` marks a fetched OpenAPI or Swagger spec, with no `extract` or `manual`, that differs on every request: generated example values, or lists and keys in a changing order. It's hashed in a normalised form (see `fetchSha256` below), and its `notes` say what varies.
 
 The registry also covers widely used apps Apideck doesn't connect yet, so there's one place to find any app's spec. Those entries carry `apideck: false`; everything else about them is the same.
 
@@ -61,7 +62,7 @@ An app whose vendor publishes no spec still gets an entry with `specs: []` and a
 - `changedOn`: the last date the file's hash changed. A parameter `default` holding an ISO timestamp is left out of the hash, since some vendors render the current date into their spec on every request
 - `formatMismatch`: set when the entry's `format` disagrees with the spec's own version (OpenAPI, Swagger, and a Postman collection's `info.schema`)
 - `specIssues`: set when an OpenAPI or Swagger file's `info.title` or `info.version` is missing, empty, blank (whitespace only) or not a string (in a JSON file, such as `"version": 1`; YAML values are read as text, so a YAML `version: 1` passes); the spec is still indexed
-- `fetchSha256`: the hash of the exact bytes served at the spec's URL, before any unwrapping. A consumer that downloads the URL compares its own bytes with this, so it uses the file this check saw. It is left out for extracted specs (`extract`: the page around the spec carries build hashes, so `sha256`, of the extracted spec, is what to compare) and where the bytes differ between requests and `sha256` is of a normalised form instead: Google Discovery documents (key-sorted, without `etag` and `revision`, generated date defaults replaced), zip bundles (their spec files' names and contents) and specs with generated date defaults (parsed, key-sorted, dates replaced). A consumer checks those against `sha256` with the same normalisation. GraphQL introspection answers aren't recorded: they come from the vendor's live endpoint.
+- `fetchSha256`: the hash of the exact bytes served at the spec's URL, before any unwrapping. A consumer that downloads the URL compares its own bytes with this, so it uses the file this check saw. It is left out for extracted specs (`extract`: the page around the spec carries build hashes, so `sha256`, of the extracted spec, is what to compare) and where the bytes differ between requests and `sha256` is of a normalised form instead: Google Discovery documents (key-sorted, without `etag` and `revision`, generated date defaults replaced), zip bundles (their spec files' names and contents) and specs with generated date defaults (parsed, key-sorted, dates replaced). A consumer checks those against `sha256` with the same normalisation. A spec marked `volatile: true` differs on every request, because its server generates the values in its examples or shuffles its lists. `index.json` records `hashForm: volatile` for it, and `sha256` is of a parsed, key-sorted copy with generated date defaults replaced, every `example` and `examples` key removed (except where that's a name the vendor chose, such as a schema or a property), lists of strings sorted, `security` lists sorted and deduplicated, and any `nonce` value in an `authorizationUrl` blanked. Its `bytes` is the size of that form, since the served size varies too. So a change to one of its examples isn't detected. GraphQL introspection answers aren't recorded: they come from the vendor's live endpoint.
 - `suspicious` and `suspiciousSha`: up to three samples of text that reads like instructions to an AI or hides itself with bidirectional overrides, and a fingerprint of every such text (GraphQL descriptions included); a changed fingerprint holds the nightly PR
 - `surface`: a short fingerprint of where calls go and how they authenticate (servers, host, security schemes and requirements); `surfaceChangedOn` is the last date it changed
 

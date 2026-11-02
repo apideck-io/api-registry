@@ -8,3 +8,5 @@ specs:
     format: swagger-2.0
     provenance: vendor
     server: "https://rest.avatax.com"
+    notes: "Served differently on each request: it generates values in its examples and a nonce in its authorization URL. Hashed in its volatile form (see `fetchSha256` in the README)."
+    volatile: true

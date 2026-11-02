@@ -151,6 +151,12 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
     const extractFits = Object.assign(Object.create(null), { "graphql-introspection": ["graphql"], "swagger-ui-init": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "redoc-state": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "markdown-json-fence": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "zip-bundle": ["openapi-3.0", "openapi-3.1", "swagger-2.0"] });
     if (s?.extract && extractFits[s.extract] && !extractFits[s.extract].includes(s?.format)) errors.push(`${at}: extract ${s.extract} doesn't apply to format ${s?.format}`);
     if (s?.extract && !s?.url) errors.push(`${at}: extract applies to a fetched url; store an extracted spec as a plain path instead`);
+    if (s?.volatile !== undefined) {
+      if (s.volatile !== true) errors.push(`${at}: volatile is only set to true`);
+      if (!OVERLAY_FORMATS.has(s?.format)) errors.push(`${at}: volatile applies to OpenAPI and Swagger specs, not ${s?.format}`);
+      if (s?.extract || s?.manual || !s?.url) errors.push(`${at}: volatile applies to a spec fetched from its url, with no extract or manual`);
+    }
+    if (s?.volatile && !s?.notes) errors.push(`${at}: a volatile spec needs notes saying what varies`);
     if (s?.manual && !MANUAL.has(s.manual)) errors.push(`${at}: manual must be one of ${[...MANUAL].join(", ")}`);
     if (s?.manual && !s?.notes) errors.push(`${at}: a spec CI can't fetch needs notes saying how to get it`);
     if (s?.overlay !== undefined) for (const m of overlayErrors(s.overlay, s)) errors.push(`${at}: ${m}`);
@@ -284,6 +290,22 @@ const withoutGeneratedDates = (v) =>
   : v && typeof v === "object"
     ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, k === "default" && typeof x === "string" && ISO_TIMESTAMP.test(x) ? "<generated date>" : withoutGeneratedDates(x)]))
     : v;
+// A spec marked `volatile` differs on every request: its server generates the values in its examples, or shuffles
+// its scope lists and keys. It is hashed without examples and with lists in a fixed order, so only a change to the
+// API's shape registers. Changing an example goes unnoticed for these specs, which is why it's declared per spec.
+// In these maps the keys are names the vendor chose, so one called example is part of the API, not an example.
+const NAMED_MAPS = new Set(["paths", "webhooks", "pathItems", "properties", "patternProperties", "definitions", "schemas", "parameters", "responses", "requestBodies", "headers", "links", "callbacks", "securityDefinitions", "securitySchemes", "$defs", "dependentSchemas", "dependentRequired", "dependencies", "encoding", "mapping", "variables", "scopes"]);
+const withoutVolatile = (v, key) => {
+  if (Array.isArray(v)) {
+    const items = v.map((x) => withoutVolatile(x));
+    if (key === "security") return [...new Map(items.map((x) => [canonical(x), x])).values()].sort((a, b) => (canonical(a) < canonical(b) ? -1 : canonical(a) > canonical(b) ? 1 : 0)); // not locale-dependent: two runners must agree
+    return items.every((x) => typeof x === "string") ? [...items].sort() : items;
+  }
+  // A nonce in an authorization URL is per request (Avalara generates one per download).
+  if (key === "authorizationUrl" && typeof v === "string") return v.replace(/([?&]nonce=)[^&#]*/g, "$1");
+  if (!v || typeof v !== "object") return v;
+  return Object.fromEntries(Object.entries(v).filter(([k]) => NAMED_MAPS.has(key) || (k !== "example" && k !== "examples")).map(([k, x]) => [k, withoutVolatile(x, NAMED_MAPS.has(key) ? undefined : k)])); // a name in a map says nothing about its value
+};
 // The first value stored under `key` anywhere in a parsed JSON document (depth-first).
 function findKey(v, key) {
   if (!v || typeof v !== "object") return undefined;
@@ -752,7 +774,7 @@ for (const e of entries) {
     // is hashed on its files' names and contents.
     // A spec carrying a generated date (see withoutGeneratedDates) is hashed on a parsed, key-sorted copy;
     // every other file on its exact bytes, as before.
-    const generatedDates = !doc && !bundle && OVERLAY_FORMATS.has(s.format) && GENERATED_DATE_DEFAULT.test(r.body);
+    const generatedDates = !doc && !bundle && OVERLAY_FORMATS.has(s.format) && (s.volatile || GENERATED_DATE_DEFAULT.test(r.body));
     let parsedForHash = null;
     if (generatedDates) {
       try {
@@ -766,7 +788,7 @@ for (const e of entries) {
       : bundle
         ? canonical([...bundle].sort((a, b) => a.name.localeCompare(b.name)).map((f) => [f.name.replace(/^.*\//, ""), f.text]))
         : parsedForHash
-          ? canonical(withoutGeneratedDates(parsedForHash))
+          ? canonical(s.volatile ? withoutVolatile(withoutGeneratedDates(parsedForHash)) : withoutGeneratedDates(parsedForHash))
           : r.body;
     const sha256 = createHash("sha256").update(hashed).digest("hex");
     // Only where the served bytes are stable: a Discovery document, a zip bundle, a spec with generated dates
@@ -819,12 +841,15 @@ for (const e of entries) {
       sha256,
       ...(fetchSha256 ? { fetchSha256 } : {}),
       // For a bundle, the size of its files: the archive's own size changes when it is merely rebuilt.
-      bytes: bundle ? bundle.reduce((n, f) => n + Buffer.byteLength(f.text), 0) : Buffer.byteLength(r.body),
+      // For a volatile spec, the size of its hashed form: its served size changes per request.
+      bytes: bundle ? bundle.reduce((n, f) => n + Buffer.byteLength(f.text), 0) : s.volatile ? Buffer.byteLength(hashed) : Buffer.byteLength(r.body),
       ...Object.fromEntries(Object.entries(info).filter(([, v]) => v != null)),
       changedOn: changed || !old.sha256 ? today : old.changedOn,
       ...(surfaceChanged ? { surfaceChangedOn: today } : old.surfaceChangedOn && info.surface === old.surface ? { surfaceChangedOn: old.surfaceChangedOn } : {}),
       ...(overlay ? { overlay } : {}),
       ...(s.coverage ? { coverage: s.coverage } : {}),
+      // Only when the volatile form was hashed: an unparseable file falls back to its raw bytes.
+      ...(s.volatile && parsedForHash ? { hashForm: "volatile" } : {}),
     };
     // Δ changed, + newly indexed, ↺ recovered from a failure, ✓ unchanged. The nightly PR body lists all but ✓.
     const mark = changed ? "Δ" : !old.sha256 ? "+" : old.status && old.status !== "ok" ? "↺" : "✓";
@@ -836,6 +861,7 @@ for (const e of entries) {
       (info.derivedError ? ` ⚠ SDL not parseable by graphql-js (${info.derivedError})${info.derived ? "; kept the last introspection result" : ""}` : "") +
       (info.formatMismatch ? ` ⚠ format: ${info.formatMismatch}` : "") +
       (info.specIssues ? ` ⚠ spec: ${info.specIssues}` : "") +
+      (s.volatile && !parsedForHash ? " ⚠ volatile: didn't parse, so hashed as served" : "") +
       (surfaceChanged ? " ⚠ surface: servers or authentication changed" : "") +
       (surfaceNew ? " ⚠ surface: first check of its servers and authentication" : "") +
       (suspiciousNew ? ` ⚠ text: reads like instructions to an AI (${info.suspicious.map((x) => JSON.stringify(x)).join("; ")})` : "");

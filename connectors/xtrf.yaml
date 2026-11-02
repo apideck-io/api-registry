@@ -8,4 +8,5 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{xtrf-host}/home-api"
-    notes: "One XTRF instance per customer; the spec's host is XTRF's presentation instance."
+    notes: "One XTRF instance per customer; the spec's host is XTRF's presentation instance. Served differently on each request: it changes the order and number of its security entries. Hashed in its volatile form (see `fetchSha256` in the README)."
+    volatile: true
