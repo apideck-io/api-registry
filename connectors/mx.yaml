@@ -38,7 +38,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{your-domain}.access.mx.com"
-    notes: "Per customer: {your-domain} is the customer's MX access subdomain ({your-domain}.access.mx.com); the spec's host is a placeholder."
+    notes: "Per customer: {your-domain} is the customer's MX access subdomain ({your-domain}.access.mx.com); the spec's host is a placeholder. The spec declares http://yourdomain.access.mx.com (http); recorded over https."
   - name: "Rewards"
     url: "https://docs.mx.com/openapi/rewards/v1.yaml"
     format: openapi-3.0
