@@ -156,7 +156,7 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
     if (s?.overlay !== undefined) for (const m of overlayErrors(s.overlay, s)) errors.push(`${at}: ${m}`);
     // An auth-only spec describes how to authenticate (servers, security schemes, scopes) and no endpoints:
     // written here, from the vendor's own documentation, for an app that publishes no spec.
-    if (s?.coverage === undefined && s?.path && existsSync(join(ROOT, s.path))) {
+    if (s?.coverage === undefined && s?.path && /\.(ya?ml|json)$/.test(s.path) && existsSync(join(ROOT, s.path))) {
       let marked = false;
       try {
         marked = parseYaml(readFileSync(join(ROOT, s.path), "utf8"))?.["x-auth-only"] === true; // YAML parses JSON too
@@ -169,6 +169,8 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
       if (s.coverage !== "auth-only") errors.push(`${at}: coverage is only set to auth-only`);
       else {
         if (!s?.path?.startsWith("specs/")) errors.push(`${at}: an auth-only spec is authored here, as a path under specs/`);
+        // Only YAML and JSON can carry the x-auth-only marker the check above looks for.
+        if (s?.path && !/\.(ya?ml|json)$/.test(s.path)) errors.push(`${at}: an auth-only spec is a .yaml, .yml or .json file`);
         if (s?.format !== "openapi-3.1") errors.push(`${at}: an auth-only spec is openapi-3.1 (3.1 allows a document with no paths)`);
         if (!s?.notes) errors.push(`${at}: an auth-only spec needs notes saying it describes authentication only`);
         if (s?.path && existsSync(join(ROOT, s.path))) {
@@ -186,8 +188,9 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
             if (!Array.isArray(spec.servers) || typeof spec.servers[0]?.url !== "string" || !spec.servers[0].url.trim()) errors.push(`${at}: an auth-only spec names the API's server`);
             if (!isObj(spec.components?.securitySchemes) || !Object.keys(spec.components.securitySchemes).length) errors.push(`${at}: an auth-only spec needs components.securitySchemes`);
             if (spec["x-auth-only"] !== true) errors.push(`${at}: an auth-only spec sets x-auth-only: true`);
-            for (const [name, scheme] of Object.entries(spec.components?.securitySchemes ?? {}))
-              if (!isObj(scheme) || !scheme.type) errors.push(`${at}: securitySchemes.${name} needs a type`);
+            for (const [name, scheme] of Object.entries(spec.components?.securitySchemes ?? {})) {
+              if (!isObj(scheme) || !["apiKey", "http", "mutualTLS", "oauth2", "openIdConnect"].includes(scheme.type)) errors.push(`${at}: securitySchemes.${name} needs a type: apiKey, http, mutualTLS, oauth2 or openIdConnect`);
+              else if (scheme.type === "openIdConnect" && (typeof scheme.openIdConnectUrl !== "string" || !/^https:\/\//.test(scheme.openIdConnectUrl))) errors.push(`${at}: ${name} is openIdConnect and needs an https openIdConnectUrl`);
               else if (scheme.type === "oauth2") {
                 if (!isObj(scheme.flows) || !Object.keys(scheme.flows).length) errors.push(`${at}: ${name} is oauth2 and needs flows`);
                 for (const [kind, flow] of Object.entries(isObj(scheme.flows) ? scheme.flows : {})) {
@@ -196,16 +199,26 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
                   if ((kind === "authorizationCode" || kind === "implicit") && !flow?.authorizationUrl) errors.push(`${at}: ${name}.flows.${kind} needs authorizationUrl`);
                   if (kind !== "implicit" && !flow?.tokenUrl) errors.push(`${at}: ${name}.flows.${kind} needs tokenUrl`);
                 }
-                // Values beyond the URLs are cited too, or left out.
-                if (scheme["x-token-endpoint-auth-method"] !== undefined && !spec["x-sources"]?.tokenEndpointAuthMethod) errors.push(`${at}: x-sources.tokenEndpointAuthMethod is required when ${name} sets x-token-endpoint-auth-method`);
+              }
+              // Values beyond the URLs, on any scheme type, are checked and cited too, or left out.
+              if (isObj(scheme)) {
+                const method = scheme["x-token-endpoint-auth-method"];
+                if (method !== undefined && !["client_secret_basic", "client_secret_post"].includes(method)) errors.push(`${at}: ${name} x-token-endpoint-auth-method is client_secret_basic or client_secret_post`);
+                if (method !== undefined && !spec["x-sources"]?.tokenEndpointAuthMethod) errors.push(`${at}: x-sources.tokenEndpointAuthMethod is required when ${name} sets x-token-endpoint-auth-method`);
+                if (scheme["x-pkce-required"] !== undefined && typeof scheme["x-pkce-required"] !== "boolean") errors.push(`${at}: ${name} x-pkce-required is true or false`);
                 if (scheme["x-pkce-required"] !== undefined && !spec["x-sources"]?.pkce) errors.push(`${at}: x-sources.pkce is required when ${name} sets x-pkce-required`);
               }
+            }
             if (!isObj(spec["x-sources"])) errors.push(`${at}: an auth-only spec cites its sources in x-sources`);
             else for (const [k, v] of Object.entries(spec["x-sources"])) if (typeof v !== "string" || !/^https:\/\/\S+$/.test(v)) errors.push(`${at}: x-sources.${k} must be one https URL`);
             if (isObj(spec["x-sources"])) {
               const flows = Object.values(spec.components?.securitySchemes ?? {}).flatMap((sc) => Object.values(sc?.flows ?? {}));
-              const needed = ["server", ...(flows.some((f) => f?.authorizationUrl) ? ["authorizationUrl"] : []), ...(flows.some((f) => f?.tokenUrl) ? ["tokenUrl"] : [])];
+              const schemes = Object.values(spec.components?.securitySchemes ?? {}).filter(isObj);
+              const needed = ["server", ...(flows.some((f) => f?.authorizationUrl) ? ["authorizationUrl"] : []), ...(flows.some((f) => f?.tokenUrl) ? ["tokenUrl"] : []), ...(schemes.some((sc) => sc.openIdConnectUrl) ? ["openIdConnectUrl"] : [])];
               for (const k of needed) if (!spec["x-sources"][k]) errors.push(`${at}: x-sources.${k} is required`);
+              // A citation for a value the spec doesn't state is left over from an edit.
+              const states = { tokenEndpointAuthMethod: schemes.some((sc) => sc["x-token-endpoint-auth-method"] !== undefined), pkce: schemes.some((sc) => sc["x-pkce-required"] !== undefined), scopes: flows.some((f) => Object.keys(f?.scopes ?? {}).length), openIdConnectUrl: schemes.some((sc) => sc.openIdConnectUrl), authorizationUrl: flows.some((f) => f?.authorizationUrl), tokenUrl: flows.some((f) => f?.tokenUrl) };
+              for (const [k, set] of Object.entries(states)) if (spec["x-sources"][k] && !set) errors.push(`${at}: x-sources.${k} cites a value the spec doesn't set`);
             }
             const listsScopes = Object.values(spec.components?.securitySchemes ?? {}).some((sc) => Object.values(sc?.flows ?? {}).some((f) => Object.keys(f?.scopes ?? {}).length));
             if (isObj(spec["x-sources"]) && listsScopes && !spec["x-sources"].scopes) errors.push(`${at}: x-sources.scopes is required when the spec lists scopes`);
