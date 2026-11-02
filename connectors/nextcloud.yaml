@@ -1,0 +1,10 @@
+id: nextcloud
+name: "Next Cloud OCS"
+apideck: false
+specs:
+  - name: "core"
+    url: "https://raw.githubusercontent.com/nextcloud/server/master/core/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{domain}"
+    notes: "Self-hosted Nextcloud domain. Paths include /ocs/v2.php/...; basic auth (user + app password); OCS requests need the 'OCS-APIRequest: true' header. This is core only: each app ships its own openapi.json."

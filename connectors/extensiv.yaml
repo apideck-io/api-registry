@@ -1,0 +1,10 @@
+id: extensiv
+name: "Extensiv"
+apideck: false
+specs:
+  - name: "CartRover API"
+    url: "https://developers.cartrover.com/api/collections/38801492/2sB34oDHpn?segregateAuth=true&versionTag=latest"
+    format: postman-2.0
+    provenance: vendor
+    server: "https://api.cartrover.com"
+    notes: "Basic auth api_user:api_key; separate key sets for Cart, Merchant, Warehouse levels. 64 requests."

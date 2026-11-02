@@ -1,0 +1,22 @@
+openapi: 3.1.0
+info:
+  title: IT Glue API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the IT Glue API: its host and an API key sent in the x-api-key header. It lists no endpoints. IT Glue publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /organizations refuses a request without credentials (HTTP 401)."
+x-auth-only: true
+x-checked-endpoint: /organizations
+x-sources:
+  server: https://api.itglue.com/developer/
+  auth: https://api.itglue.com/developer/
+servers:
+  - url: https://api.itglue.com
+paths: {}
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: Admin-generated API key (ITG.…), revoked after 90 days unused
+security:
+  - apiKey: []

@@ -1,0 +1,9 @@
+id: listrak
+name: "Listrak"
+apideck: false
+specs:
+  - name: "Listrak Email REST API"
+    url: "https://api.listrak.com/email/swagger/docs/v1"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.listrak.com/email"

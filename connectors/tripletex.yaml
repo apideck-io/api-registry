@@ -1,0 +1,10 @@
+id: tripletex
+name: "Tripletex"
+apideck: false
+specs:
+  - name: "Tripletex API"
+    url: "https://tripletex.no/v2/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://tripletex.no/v2"
+    notes: "Test environment: api-test.tripletex.tech."

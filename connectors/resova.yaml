@@ -1,0 +1,12 @@
+id: resova
+name: "Resova"
+apideck: false
+notes: "Resova publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Resova API (authentication only)"
+    path: "specs/resova/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.resova.us/v1"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developers.resova.com)."

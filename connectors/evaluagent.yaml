@@ -1,0 +1,11 @@
+id: evaluagent
+name: "EvaluAgent"
+apideck: false
+specs:
+  - name: "EvaluAgent API"
+    url: "https://docs.evaluagent.com/"
+    format: openapi-3.0
+    provenance: vendor
+    extract: redoc-state
+    server: "https://api.evaluagent.com/v1"
+    notes: "EU default; regional: https://api.us-east.evaluagent.com/v1, https://api.aus.evaluagent.com/v1. HTTP Basic with API key:secret. 44 paths."

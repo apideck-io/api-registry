@@ -1,0 +1,10 @@
+id: shipbob
+name: "ShipBob (Personal Access Token)"
+apideck: false
+specs:
+  - name: "API Reference"
+    url: "https://developer.shipbob.com/openapi/api-reference.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.shipbob.com"
+    notes: "Sandbox: https://sandbox-api.shipbob.com. The PAT is sent as Bearer. Several version specs are listed (api-reference.json ... -6.json)."

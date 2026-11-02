@@ -1,0 +1,10 @@
+id: kandji
+name: "Kandji"
+apideck: false
+specs:
+  - name: "Iru Endpoint Management API"
+    url: "https://api-docs.kandji.io/api/collections/15284493/TzCTZkBe?segregateAuth=true&versionTag=latest"
+    format: postman-2.0
+    provenance: vendor
+    server: "https://{sub_domain}.api.kandji.io"
+    notes: "Per-tenant subdomain; Bearer API token. Product renamed Iru Endpoint Management. 137 requests."

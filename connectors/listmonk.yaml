@@ -1,0 +1,10 @@
+id: listmonk
+name: "Listmonk"
+apideck: false
+specs:
+  - name: "Listmonk"
+    url: "https://listmonk.app/docs/swagger/collections.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{domain}/api"
+    notes: "Self-hosted; spec server is localhost:9000/api. Basic auth with API user:token (or Authorization: token user:token)."

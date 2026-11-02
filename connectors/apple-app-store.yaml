@@ -1,0 +1,11 @@
+id: apple-app-store
+name: "Apple App Store"
+apideck: false
+specs:
+  - name: "Apple App Store API"
+    url: "https://developer.apple.com/sample-code/app-store-connect/app-store-connect-openapi-specification.zip"
+    format: openapi-3.0
+    provenance: vendor
+    extract: zip-bundle
+    server: "https://api.appstoreconnect.apple.com"
+    notes: "Zip contains openapi.oas.json (OpenAPI 3.0.1, 1001 paths)."

@@ -1,0 +1,10 @@
+id: trigify
+name: "Trigify IO"
+apideck: false
+specs:
+  - name: "Trigify API"
+    url: "https://api.trigify.io/docs"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.trigify.io"
+    notes: "The spec has no servers block. x-api-key header (keys start with trig_) or Bearer. Needs an active subscription."

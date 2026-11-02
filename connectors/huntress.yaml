@@ -1,0 +1,10 @@
+id: huntress
+name: "Huntress"
+apideck: false
+specs:
+  - name: "Huntress API Reference"
+    url: "https://api.huntress.io/docs"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.huntress.io"
+    notes: "Basic auth with API key:API secret (spec securityDefinitions basic_auth). 75 paths, paths prefixed /v1."

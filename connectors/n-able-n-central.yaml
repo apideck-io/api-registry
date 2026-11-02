@@ -1,0 +1,10 @@
+id: n-able-n-central
+name: "N-able N-central"
+apideck: false
+specs:
+  - name: "N-central API-Service"
+    url: "https://dash.readme.com/api/v1/api-registry/1dj042am31wkifs"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{serverUrl}"
+    notes: "Your N-central server FQDN. Every server also has Swagger UI at /api-explorer. The spec is the vendor's readme.io API registry (61 paths)."

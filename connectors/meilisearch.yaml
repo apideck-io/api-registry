@@ -1,0 +1,10 @@
+id: meilisearch
+name: "Meilisearch"
+apideck: false
+specs:
+  - name: "meilisearch"
+    url: "https://www.meilisearch.com/docs/assets/release-assets/meilisearch-openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{host}"
+    notes: "Self-hosted or Meilisearch Cloud instance URL (spec lists http://localhost:7700). Auth: Authorization: Bearer <API key>."

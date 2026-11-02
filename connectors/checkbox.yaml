@@ -1,0 +1,10 @@
+id: checkbox
+name: "Checkbox"
+apideck: false
+specs:
+  - name: "Checkbox 8 API"
+    url: "https://apidocs.checkbox.com/api/collections/3565672/RWaHxUgU?segregateAuth=true&versionTag=latest"
+    format: postman-2.0
+    provenance: vendor
+    server: "https://api.checkbox.com/v1/{accountName}"
+    notes: "Regional hosts: api.checkbox.ca, api.ckbxeu.com, api.checkboxau.com, api.checkboxuk.com; on-prem uses its own URL. 159 requests."

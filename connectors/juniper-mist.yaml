@@ -1,0 +1,10 @@
+id: juniper-mist
+name: "Juniper Mist"
+apideck: false
+specs:
+  - name: "Mist API"
+    url: "https://raw.githubusercontent.com/mistsys/mist_openapi/master/mist.openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.mist.com"
+    notes: "Regional cloud hosts are listed in the spec's servers (api.eu.mist.com, api.gc1.mist.com, ...). Auth: Authorization: Token <API token>. Test: GET /api/v1/self."

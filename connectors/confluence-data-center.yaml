@@ -1,0 +1,10 @@
+id: confluence-data-center
+name: "Confluence Data Center"
+apideck: false
+specs:
+  - name: "Confluence Data Center"
+    url: "https://developer.atlassian.com/server/confluence/10.0.0.swagger.v3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{baseurl}/confluence"
+    notes: "Self-hosted instance URL (context path may differ). Spec security: HTTP basic; Data Center also accepts personal access tokens as Bearer."
