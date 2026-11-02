@@ -8,10 +8,10 @@ specs:
     format: openapi-3.1
     provenance: vendor
     server: "https://secure.production.knotapi.com"
-    notes: "Production host; the spec lists a development/deployment host."
+    notes: "Production server. The spec lists https://secure.development.knotapi.com (development server)."
   - name: "Knot API (api-reference/openapi)"
     url: "https://docs.knotapi.com/api-reference/openapi.json"
     format: openapi-3.1
     provenance: vendor
     server: "https://production.knotapi.com"
-    notes: "Production host; the spec lists a development/deployment host."
+    notes: "Production server. The spec lists https://development.knotapi.com (development server)."

@@ -8,4 +8,4 @@ specs:
     format: swagger-2.0
     provenance: vendor
     server: "{protocol}://{WEAVIATE_HOSTNAME}:{PORT}/v1"
-    notes: "The spec's own placeholders: {protocol}, {WEAVIATE_HOSTNAME}, {PORT}, set per customer or account."
+    notes: "Weaviate is self-hosted or runs on Weaviate Cloud: {protocol}, {WEAVIATE_HOSTNAME} and {PORT} are the deployment's own, as the spec declares."
