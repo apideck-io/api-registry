@@ -1,0 +1,49 @@
+connectors/api-video.yaml
+  s_b5530286302508::t_1666bbc348400c 11
+connectors/gemini-exchange.yaml
+  s_eeda7bd9685d9d::t_a2a12058f1d8ce 11,17
+connectors/handwrytten.yaml
+  s_eeda7bd9685d9d::t_5d9f91109eacb9 11
+connectors/infisical.yaml
+  s_eeda7bd9685d9d::t_8e46c239dfc9c6 11
+connectors/loop.yaml
+  s_eeda7bd9685d9d::t_1d21fc0f8d8cd9 11,17,28,34,40,46,52,63,69,80,86,92,98,109,115,121,127
+connectors/microlink.yaml
+  s_b5530286302508::t_eb04541293cd31 11
+connectors/polygon-io.yaml
+  s_eeda7bd9685d9d::t_5409a0913b53cc 11
+connectors/printify.yaml
+  s_b5530286302508::t_d8bcbed41af6e7 11
+connectors/quicknode.yaml
+  s_b5530286302508::t_edfe4d834b879e 29
+connectors/swoogo.yaml
+  s_eeda7bd9685d9d::t_846d76e83b7699 11
+connectors/teya.yaml
+  s_eeda7bd9685d9d::t_b5a309f087a599 11,17
+connectors/togai.yaml
+  s_eeda7bd9685d9d::t_2cd6434c8a8596 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e561e5773c927592aad9b391797a1086f52dabc2",
+  "prompts": {},
+  "sessions": {
+    "s_b5530286302508": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f9dd8942-1a38-4993-b209-62caf197a7ca",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
