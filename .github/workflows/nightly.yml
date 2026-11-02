@@ -29,15 +29,13 @@ jobs:
         id: summary
         run: |
           {
-            echo 'body<<EOF'
             echo 'Specs that changed (Δ), are new (+), recovered (↺), failed (✗) or carry a warning (⚠: an overlay that no longer matches, a format that disagrees with the spec, missing or invalid info fields, or an SDL graphql-js rejects) in the nightly check:'
             echo
             echo '````text'
             # Not a pipe into ||: without pipefail its status would be tr's, so the fallback could never print.
             if grep -qE '^(Δ|\+|↺|✗)|⚠' verify.log; then grep -E '^(Δ|\+|↺|✗)|⚠' verify.log | tr -d '`'; else echo 'None; index metadata only.'; fi
             echo '````'
-            echo 'EOF'
-          } >> "$GITHUB_OUTPUT"
+          } > summary.md
       # A spec whose servers or authentication changed, whose text reads like instructions to an AI, or
       # that failed, is held for a person: the PR is labelled and says why. index.json is the hash
       # consumers trust, so a merge is what makes a changed file trusted.
@@ -47,17 +45,31 @@ jobs:
           if grep -qE '^✗.*\(newly failing\)$|⚠ (surface|text):' verify.log; then
             echo 'review=true' >> "$GITHUB_OUTPUT"
             {
-              echo 'note<<EOF'
               echo '**Needs review before merging:**'
               # Vendor text goes in a code block: it can't render, link or mention anyone.
               echo '````text'
               grep -E '^✗.*\(newly failing\)$|⚠ (surface|text):' verify.log | tr -d '`'
               echo '````'
-              echo 'EOF'
-            } >> "$GITHUB_OUTPUT"
+            } > note.md
           else
             echo 'review=false' >> "$GITHUB_OUTPUT"
-            echo 'note=No servers, authentication or instruction-like text changed.' >> "$GITHUB_OUTPUT"
+            echo 'No servers, authentication or instruction-like text changed.' > note.md
+          fi
+      # The body is a file, not a step output: a night that indexes hundreds of specs lists more than an
+      # argument can hold (the action failed with "Argument list too long"), and a PR body holds at most
+      # 65,536 characters. A longer list is cut at a line, and the body says where the full list is.
+      - name: Write the PR body
+        run: |
+          { cat note.md; echo; cat summary.md; } > body.full.md
+          limit=60000
+          if [ "$(wc -c < body.full.md)" -le "$limit" ]; then
+            mv body.full.md pr-body.md
+          else
+            head -c "$limit" body.full.md | sed '$d' > pr-body.md
+            total=$(wc -l < body.full.md); kept=$(wc -l < pr-body.md)
+            # Close an open code block before the note.
+            if [ $(( $(grep -c '^````' pr-body.md) % 2 )) -eq 1 ]; then echo '````' >> pr-body.md; fi
+            printf '\n_%s more lines not shown; the full list is in the [run log](%s/%s/actions/runs/%s)._\n' "$((total - kept))" "${{ github.server_url }}" "${{ github.repository }}" "${{ github.run_id }}" >> pr-body.md
           fi
       # Before pushing a flagged night: cancel auto-merge on the open PR, so the push can't complete it.
       - name: Hold the open PR before pushing
@@ -78,10 +90,7 @@ jobs:
           branch: nightly/spec-drift
           title: "Spec drift: ${{ github.run_id }}"
           commit-message: "index: nightly spec check"
-          body: |
-            ${{ steps.gate.outputs.note }}
-
-            ${{ steps.summary.outputs.body }}
+          body-path: pr-body.md
           labels: ${{ steps.gate.outputs.review == 'true' && 'needs-review' || 'spec-drift' }}
           add-paths: |
             index.json
