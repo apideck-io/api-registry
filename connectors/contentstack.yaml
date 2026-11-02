@@ -1,0 +1,10 @@
+id: contentstack
+name: "Contentstack"
+apideck: false
+specs:
+  - name: "Contentstack Content Management API OpenAPI Specification"
+    url: "https://assets.contentstack.io/v3/assets/blt02f7b45378b008ee/blt85399a97399b4ecf/cma-openapi-3.json?v=3.0.1&disposition=download"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.contentstack.io"
+    notes: "North America; other regions use e.g. eu-api.contentstack.com."

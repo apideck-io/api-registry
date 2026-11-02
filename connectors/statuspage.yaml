@@ -1,0 +1,11 @@
+id: statuspage
+name: "Statuspage"
+apideck: false
+specs:
+  - name: "Statuspage API"
+    url: "https://developer.statuspage.io/"
+    format: openapi-3.0
+    provenance: vendor
+    extract: redoc-state
+    server: "https://api.statuspage.io/v1"
+    notes: "The spec is embedded in Statuspage's Redoc page."

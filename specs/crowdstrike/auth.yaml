@@ -1,0 +1,31 @@
+openapi: 3.1.0
+info:
+  title: CrowdStrike API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the CrowdStrike API: its host and its OAuth 2.0 client-credentials flow. It lists no endpoints. CrowdStrike publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: the token endpoint refuses a request with made-up client credentials (HTTP 401). The token URL shown is US-1's; other regions use the same path on their own host."
+x-auth-only: true
+x-sources:
+  server: https://developer.crowdstrike.com/falcon-mcp/getting-started/credentials/
+  tokenUrl: https://developer.crowdstrike.com/api-reference/collections/oauth2/
+  tokenEndpointAuthMethod: https://developer.crowdstrike.com/api-reference/collections/oauth2/
+servers:
+  - url: https://api.crowdstrike.com
+    description: US-1
+  - url: https://api.us-2.crowdstrike.com
+    description: US-2
+  - url: https://api.eu-1.crowdstrike.com
+    description: EU-1
+  - url: https://api.laggar.gcw.crowdstrike.com
+    description: US-GOV
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://api.crowdstrike.com/oauth2/token
+          scopes: {}
+      x-token-endpoint-auth-method: client_secret_post
+security:
+  - oauth2: []

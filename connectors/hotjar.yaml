@@ -1,0 +1,12 @@
+id: hotjar
+name: "Hotjar"
+apideck: false
+notes: "Hotjar publishes no API spec; the auth-only spec below is written here. API access is for approved partners or specific plans."
+specs:
+  - name: "Hotjar API (authentication only)"
+    path: "specs/hotjar/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.hotjar.io"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (help.hotjar.com)."

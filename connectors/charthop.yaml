@@ -1,0 +1,10 @@
+id: charthop
+name: "ChartHop"
+apideck: false
+specs:
+  - name: "ChartHop API"
+    url: "https://api.charthop.com/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.charthop.com"
+    notes: "The spec's host field says 'localhost' and it declares no securityDefinitions; the server is taken from where the vendor serves the API. Apps and their API authorization token are issued by ChartHop after a support request and approval."

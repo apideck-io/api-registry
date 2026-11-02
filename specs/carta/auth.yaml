@@ -1,0 +1,24 @@
+openapi: 3.1.0
+info:
+  title: Carta API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Carta API: its host and its OAuth 2.0 authorization-code flow. It lists no endpoints. Carta publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: the token endpoint refuses a request with made-up client credentials (HTTP 401). Carta lists many scopes at docs.carta.com; they aren't repeated here."
+x-auth-only: true
+x-sources:
+  server: https://docs.carta.com/api-platform/guides/references/endpoints-configuration
+  tokenUrl: https://docs.carta.com/api-platform/guides/references/endpoints-configuration
+  authorizationUrl: https://docs.carta.com/api-platform/guides/references/endpoints-configuration
+servers:
+  - url: https://api.carta.com
+paths: {}
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://login.app.carta.com/o/authorize/
+          tokenUrl: https://login.app.carta.com/o/access_token/
+          scopes: {}
+security:
+  - oauth2: []

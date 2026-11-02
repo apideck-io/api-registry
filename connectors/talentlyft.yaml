@@ -1,0 +1,10 @@
+id: talentlyft
+name: "TalentLyft"
+apideck: false
+specs:
+  - name: "Customers API"
+    url: "https://api.talentlyft.com/swagger/v2/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.talentlyft.com"
+    notes: "Spec declares no servers; host inferred from the spec URL and paths start with /v2. Authorization header with \"Bearer <token>\" (https://developers.talentlyft.com/authorization-types). This is the private Customer API (74 paths)."

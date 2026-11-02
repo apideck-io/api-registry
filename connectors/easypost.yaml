@@ -1,0 +1,12 @@
+id: easypost
+name: "EasyPost"
+apideck: false
+notes: "EasyPost publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "EasyPost API (authentication only)"
+    path: "specs/easypost/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.easypost.com/v2"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (docs.easypost.com)."

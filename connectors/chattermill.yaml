@@ -1,0 +1,10 @@
+id: chattermill
+name: "Chattermill"
+apideck: false
+specs:
+  - name: "Chattermill API"
+    url: "https://apidocs.chattermill.com/api/collections/957224/7TT8V8s?segregateAuth=true&versionTag=latest"
+    format: postman-2.0
+    provenance: vendor
+    server: "https://api.chattermill.com"
+    notes: "From the collection's 'Base URL' variable; request paths start with /v1 (e.g. /v1/projects). Bearer auth."

@@ -1,0 +1,10 @@
+id: 15five
+name: "15Five"
+apideck: false
+specs:
+  - name: "15Five Public API"
+    url: "https://my.15five.com/api/public/spec/"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://my.15five.com"
+    notes: "Spec's production server. 15Five help says the endpoint is my.15five.com unless the account has a unique subdomain. Spec declares http bearer; an older vendor coreapi page shows a bare 'Authorization: <TOKEN>'."

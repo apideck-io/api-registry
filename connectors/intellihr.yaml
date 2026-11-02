@@ -1,0 +1,9 @@
+id: intellihr
+name: "intelliHR"
+apideck: false
+specs:
+  - name: "intelliHR Public API"
+    url: "https://developers.intellihr.io/docs/v1/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.intellihr.io/v1"

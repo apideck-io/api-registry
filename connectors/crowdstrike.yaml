@@ -1,0 +1,12 @@
+id: crowdstrike
+name: "CrowdStrike"
+apideck: false
+notes: "CrowdStrike publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "CrowdStrike API (authentication only)"
+    path: "specs/crowdstrike/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.crowdstrike.com"
+    notes: "US-1 host; US-2, EU-1 and US-GOV are listed in the spec. Authentication only: no endpoints. Written from the vendor's developer documentation (developer.crowdstrike.com)."

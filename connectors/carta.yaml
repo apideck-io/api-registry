@@ -1,0 +1,12 @@
+id: carta
+name: "Carta"
+apideck: false
+notes: "Carta publishes no API spec; the auth-only spec below is written here. API access is for approved partners or specific plans."
+specs:
+  - name: "Carta API (authentication only)"
+    path: "specs/carta/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.carta.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (docs.carta.com)."
