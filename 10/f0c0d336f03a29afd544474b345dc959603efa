@@ -1,0 +1,19 @@
+connectors/mx.yaml
+  s_1216b7ab38d26c::t_6c53de497a33d2 41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "10f0c0d336f03a29afd544474b345dc959603efa",
+  "prompts": {},
+  "sessions": {
+    "s_1216b7ab38d26c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a14a97-820b-72f2-85b1-9bee130548e5",
+        "model": "gpt-6-luna"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
