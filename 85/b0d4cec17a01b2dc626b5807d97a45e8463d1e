@@ -1,0 +1,29 @@
+package.json
+  s_eeda7bd9685d9d::t_39a9293cb68099 4
+package-lock.json
+  s_eeda7bd9685d9d::t_36142e288fb5d0 15
+  s_eeda7bd9685d9d::t_8a746188b41d81 16
+README.md
+  s_eeda7bd9685d9d::t_4912ffa986089f 159-162
+LICENSE
+  s_eeda7bd9685d9d::t_2bedd7a41788c6 1-93
+NOTICE
+  s_eeda7bd9685d9d::t_5bef3e354a14ef 1-14
+  s_eeda7bd9685d9d::t_ed2080e8aa4acb 15-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "85b0d4cec17a01b2dc626b5807d97a45e8463d1e",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
