@@ -1,0 +1,10 @@
+id: aspire
+name: "Aspire"
+apideck: false
+specs:
+  - name: "Aspire.ExternalApi"
+    url: "https://cloud-api.youraspire.com/swagger/v1/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://cloud-api.youraspire.com"
+    notes: "Sandbox: https://cloudsandbox-api.youraspire.com. Spec 113 paths, Bearer JWT."

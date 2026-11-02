@@ -1,0 +1,12 @@
+id: helpscout-docs
+name: "Help Scout Docs"
+apideck: false
+notes: "Help Scout Docs publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Help Scout Docs API (authentication only)"
+    path: "specs/helpscout-docs/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://docsapi.helpscout.net"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developer.helpscout.com)."

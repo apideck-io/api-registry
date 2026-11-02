@@ -1,0 +1,10 @@
+id: jiminny
+name: "Jiminny"
+apideck: false
+specs:
+  - name: "CustomerApi"
+    url: "https://jiminny.github.io/customer-api-docs/swagger.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.jiminny.com/customer/api/v1"
+    notes: "EU: https://app.jiminny.eu/customer/api/v1. Bearer team API token (also accepted as api_token query). Test GET /me."

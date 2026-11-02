@@ -1,0 +1,12 @@
+id: trakstar-hire
+name: "Trakstar Hire"
+apideck: false
+notes: "Trakstar Hire publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Trakstar Hire API (authentication only)"
+    path: "specs/trakstar-hire/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.recruiterbox.com/v2"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developers.recruiterbox.com)."

@@ -1,0 +1,10 @@
+id: netsapiens
+name: "NetSapiens"
+apideck: false
+specs:
+  - name: "NetSapiens API v2"
+    url: "https://dash.readme.com/api/v1/api-registry/c0rxrwqamvwyeq06"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{server}/ns-api/v2"
+    notes: "{server} is the reseller/platform API host (spec default ns-api.com). Bearer auth with an API key or JWT; the spec also documents /tokens (password grant) and /apikeys. The spec is the vendor's readme.io API registry (712 paths)."

@@ -1,0 +1,10 @@
+id: billit
+name: "Billit"
+apideck: false
+specs:
+  - name: "Billit.API"
+    url: "https://api.billit.be/swagger/docs/v1"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.billit.be"
+    notes: "Spec declares no securityDefinitions. Auth per docs: `ApiKey` header (or OAuth access token in Authorization) plus `PartyID` header naming the company (https://docs.billit.be/docs/header-values). API key only allowed for non-commercial/own integrations; commercial integrations must use OAuth."

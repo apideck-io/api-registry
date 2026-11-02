@@ -1,0 +1,10 @@
+id: snipe-it
+name: "Snipe-IT"
+apideck: false
+specs:
+  - name: "snipe-it-rest-api"
+    url: "https://snipe-it.readme.io/openapi/snipe-it-rest-api.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{hostname}/api/v1"
+    notes: "{hostname} is the self-hosted Snipe-IT host (the spec shows develop.snipeitapp.com). A local development install serves plain HTTP on port 8000 instead. Bearer personal access token; the spec declares no securitySchemes."

@@ -1,0 +1,10 @@
+id: pleo
+name: "Pleo"
+apideck: false
+specs:
+  - name: "Export API"
+    url: "https://developers.pleo.io/reference/Export%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://external.pleo.io"
+    notes: "Pleo publishes one spec per API (Export, Tags, Tax Code, Vendors, Chart of Accounts, Webhook Subscriptions, ... listed in llms.txt; /openapi.json has only the accounts API). Bearer JWT (OAuth) or basic auth with an API key as the username. Staging: external.staging.pleo.io."

@@ -1,0 +1,10 @@
+id: back-market
+name: "Back Market"
+apideck: false
+specs:
+  - name: "Back Market - API Guidelines"
+    url: "https://api.backmarket.dev/bundled_openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://www.backmarket.fr"
+    notes: "Platform-specific hosts listed in spec servers (e.g. www.backmarket.fr / .com / .co.jp and preprod.*). Auth header `Authorization: Basic <token>` (token used verbatim). Accept-Language and a BM-{Company}-{Integration} User-Agent are also required."

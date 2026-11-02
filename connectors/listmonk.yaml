@@ -1,0 +1,10 @@
+id: listmonk
+name: "Listmonk"
+apideck: false
+specs:
+  - name: "Listmonk"
+    url: "https://listmonk.app/docs/swagger/collections.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{domain}/api"
+    notes: "{domain} is the self-hosted instance. A local default install serves plain HTTP on port 9000 instead (http://localhost:9000/api), as the spec lists. Basic auth with API user:token (or Authorization: token user:token)."

@@ -1,0 +1,11 @@
+id: datto-rmm
+name: "Datto RMM (Password Grant)"
+apideck: false
+specs:
+  - name: "Datto RMM API"
+    url: "https://pinotage-api.centrastage.net/api/v3/api-docs"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{platform}-api.centrastage.net/api"
+    notes: "platform = pinotage, merlot, concord, vidal, zinfandel, syrah etc. 62 paths; spec has no securitySchemes. Served differently on each request: it changes its key order. Hashed in its volatile form (see `fetchSha256` in the README)."
+    volatile: true

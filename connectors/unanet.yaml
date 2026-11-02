@@ -1,0 +1,15 @@
+id: unanet
+name: "Unanet"
+apideck: false
+specs:
+  - name: "Compass Endpoints"
+    url: "https://compass.cosential.com/Content/compass-openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://compass.cosential.com"
+    notes: "The v1 spec, which the vendor describes as incomplete."
+  - name: "Unanet CRM API v2"
+    url: "https://compass.cosential.com/v2/swagger/v2/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://compass.cosential.com/v2"

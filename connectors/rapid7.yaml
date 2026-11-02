@@ -1,0 +1,12 @@
+id: rapid7
+name: "Rapid7"
+apideck: false
+notes: "Rapid7 publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Rapid7 API (authentication only)"
+    path: "specs/rapid7/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://us.api.insight.rapid7.com"
+    notes: "US host; a key works only on its region's host, and the spec lists all seven (us, us2, us3, eu, ca, au, ap). Authentication only: no endpoints. Written from the vendor's developer documentation (docs.rapid7.com)."

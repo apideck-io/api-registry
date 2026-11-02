@@ -1,0 +1,12 @@
+id: itglue
+name: "IT Glue"
+apideck: false
+notes: "IT Glue publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "IT Glue API (authentication only)"
+    path: "specs/itglue/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.itglue.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (api.itglue.com)."

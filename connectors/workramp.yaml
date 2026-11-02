@@ -1,0 +1,12 @@
+id: workramp
+name: "WorkRamp"
+apideck: false
+notes: "WorkRamp publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "WorkRamp API (authentication only)"
+    path: "specs/workramp/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://app.workramp.com/api/v1"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developers.workramp.com)."

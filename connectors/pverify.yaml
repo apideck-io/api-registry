@@ -1,0 +1,10 @@
+id: pverify
+name: "pVerify"
+apideck: false
+specs:
+  - name: "pVerify API Documentation"
+    url: "https://postman.pverify.com/api/collections/6948370/2s7ZE4NR6P?segregateAuth=true&versionTag=latest"
+    format: postman-2.0
+    provenance: vendor
+    server: "https://api.pverify.com"
+    notes: "Test environment: https://testapi.pverify.com"

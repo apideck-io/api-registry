@@ -1,0 +1,10 @@
+id: figjam
+name: "FigJam"
+apideck: false
+specs:
+  - name: "Figma API"
+    url: "https://raw.githubusercontent.com/figma/rest-api-spec/main/openapi/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.figma.com"
+    notes: "FigJam uses the Figma REST API. X-Figma-Token (PAT) or OAuth2 (authorizationUrl https://www.figma.com/oauth)."

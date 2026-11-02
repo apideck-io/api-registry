@@ -1,0 +1,9 @@
+id: konnektive
+name: "Konnektive"
+apideck: false
+specs:
+  - name: "Konnektive CRM APIs"
+    url: "https://apidocs.konnektive.com/api/collections/6575778/S11C1P9R?segregateAuth=true&versionTag=latest"
+    format: postman-2.0
+    provenance: vendor
+    server: "https://api.konnektive.com"

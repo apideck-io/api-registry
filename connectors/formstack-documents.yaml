@@ -1,0 +1,12 @@
+id: formstack-documents
+name: "Formstack Documents"
+apideck: false
+notes: "Formstack Documents publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Formstack Documents API (authentication only)"
+    path: "specs/formstack-documents/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://www.webmerge.me/api"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (www.webmerge.me)."
