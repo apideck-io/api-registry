@@ -8,3 +8,4 @@ specs:
     format: swagger-2.0
     provenance: vendor
     server: "https://api.languagetoolplus.com/v2"
+    notes: "The spec's own host and base path (api.languagetoolplus.com/v2), which serves LanguageTool's API."

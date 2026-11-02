@@ -7,5 +7,5 @@ specs:
     url: "https://uk.api.just-eat.io/docs/openapi.json"
     format: openapi-3.0
     provenance: vendor
-    server: "https://uk.api.just-eat.io"
-    notes: "The spec lists regional servers: uk.api.just-eat.io, i18n.api.just-eat.io and aus.api.just-eat.io; use the market's."
+    server: "https://{region}.api.just-eat.io"
+    notes: "Per market: {region} is uk, i18n or aus, as the spec's servers list."

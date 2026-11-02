@@ -27,7 +27,7 @@ specs:
     provenance: vendor
     server: "https://api.amadeus.com/v1"
     notes: "Production host. The spec names a test environment, test.api.amadeus.com, which no longer resolves."
-  - name: "Flight Availibilities Search"
+  - name: "Flight Availabilities Search"
     url: "https://raw.githubusercontent.com/amadeus4dev/amadeus-open-api-specification/main/spec/json/FlightAvailabilitiesSearch_v1_swagger_specification.json"
     format: swagger-2.0
     provenance: vendor

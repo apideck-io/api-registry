@@ -1,11 +1,11 @@
 id: swiss-nextgen-banking
 name: "Swiss NextGen Banking"
 apideck: false
-notes: "Spec served by the vendor at the URL below (found through the APIs.guru directory, which records each spec's original source)."
+notes: "Spec from the Swiss NextGen Banking API-Framework project (openbankingproject-ch on GitHub), a community standard rather than one API owner's."
 specs:
   - name: "Swiss NextGen Banking API-Framework"
     url: "https://raw.githubusercontent.com/openbankingproject-ch/obp-apis/master/swiss-ng-api.yaml"
     format: openapi-3.0
-    provenance: vendor
+    provenance: community
     server: "https://{bank-host}"
     notes: "A framework each bank implements on its own host; the spec lists the project's development host, api.dev.openbankingproject.ch."
