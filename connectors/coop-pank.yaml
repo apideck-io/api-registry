@@ -8,3 +8,4 @@ specs:
     format: swagger-2.0
     provenance: vendor
     server: "https://openbanking.cooppank.ee"
+    notes: "The spec allows http and https (http first); recorded over https."
