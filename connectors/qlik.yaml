@@ -1,0 +1,220 @@
+id: qlik
+name: "Qlik Cloud"
+apideck: false
+notes: "REST specs served on qlik.dev. Each tenant has its own host: {tenant} is the tenant name and {region} its region (eu, us, ap…)."
+specs:
+  - name: "users"
+    url: "https://qlik.dev/specs/rest/users.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "groups"
+    url: "https://qlik.dev/specs/rest/groups.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "spaces"
+    url: "https://qlik.dev/specs/rest/spaces.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "apps"
+    url: "https://qlik.dev/specs/rest/apps.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "items"
+    url: "https://qlik.dev/specs/rest/items.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "reloads"
+    url: "https://qlik.dev/specs/rest/reloads.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "tenants"
+    url: "https://qlik.dev/specs/rest/tenants.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "licenses"
+    url: "https://qlik.dev/specs/rest/licenses.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "api-keys"
+    url: "https://qlik.dev/specs/rest/api-keys.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "audits"
+    url: "https://qlik.dev/specs/rest/audits.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "automations"
+    url: "https://qlik.dev/specs/rest/automations.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "data-files"
+    url: "https://qlik.dev/specs/rest/data-files.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "identity-providers"
+    url: "https://qlik.dev/specs/rest/identity-providers.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "roles"
+    url: "https://qlik.dev/specs/rest/roles.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "webhooks"
+    url: "https://qlik.dev/specs/rest/webhooks.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "reports"
+    url: "https://qlik.dev/specs/rest/reports.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "collections"
+    url: "https://qlik.dev/specs/rest/collections.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "questions"
+    url: "https://qlik.dev/specs/rest/questions.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "oauth-clients"
+    url: "https://qlik.dev/specs/rest/oauth-clients.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "extensions"
+    url: "https://qlik.dev/specs/rest/extensions.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "themes"
+    url: "https://qlik.dev/specs/rest/themes.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "brands"
+    url: "https://qlik.dev/specs/rest/brands.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "csp-origins"
+    url: "https://qlik.dev/specs/rest/csp-origins.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "quotas"
+    url: "https://qlik.dev/specs/rest/quotas.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "automation-connections"
+    url: "https://qlik.dev/specs/rest/automation-connections.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "data-connections"
+    url: "https://qlik.dev/specs/rest/data-connections.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "data-credentials"
+    url: "https://qlik.dev/specs/rest/data-credentials.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "data-alerts"
+    url: "https://qlik.dev/specs/rest/data-alerts.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "reload-tasks"
+    url: "https://qlik.dev/specs/rest/reload-tasks.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "sharing-tasks"
+    url: "https://qlik.dev/specs/rest/sharing-tasks.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "notes"
+    url: "https://qlik.dev/specs/rest/notes.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "transports"
+    url: "https://qlik.dev/specs/rest/transports.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "web-integrations"
+    url: "https://qlik.dev/specs/rest/web-integrations.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "web-notifications"
+    url: "https://qlik.dev/specs/rest/web-notifications.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "glossaries"
+    url: "https://qlik.dev/specs/rest/glossaries.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "lineage-graphs"
+    url: "https://qlik.dev/specs/rest/lineage-graphs.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "ml"
+    url: "https://qlik.dev/specs/rest/ml.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "conditions"
+    url: "https://qlik.dev/specs/rest/conditions.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "data-sets"
+    url: "https://qlik.dev/specs/rest/data-sets.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "data-qualities"
+    url: "https://qlik.dev/specs/rest/data-qualities.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "oauth-tokens"
+    url: "https://qlik.dev/specs/rest/oauth-tokens.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "tasks"
+    url: "https://qlik.dev/specs/rest/tasks.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"
+  - name: "consumption"
+    url: "https://qlik.dev/specs/rest/consumption.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{tenant}.{region}.qlikcloud.com"

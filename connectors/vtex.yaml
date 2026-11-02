@@ -1,0 +1,459 @@
+id: vtex
+name: "VTEX"
+apideck: false
+notes: "Specs from VTEX's own repository, vtex/openapi-schemas (API reference: https://developers.vtex.com/docs/api-reference)."
+specs:
+  - name: "Ads API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Ads%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api-retail-media.newtail.com.br"
+    notes: "Operations are split across hosts: https://api-retail-media.newtail.com.br serves most operations; the spec routes the others to https://events.newtail-media.newtail.com.br; https://newtail-media.newtail.com.br. Use each operation's own server."
+  - name: "Antifraud Provider API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Antifraud%20Provider%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{providerApiEndpoint}"
+    notes: "The spec's own placeholder: {providerApiEndpoint}, set per account."
+  - name: "Audience API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Audience%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Authenticator API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Authenticator%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "B2B Addresses API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20B2B%20Addresses%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "B2B Buyer Data API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20B2B%20Buyer%20Data%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "B2B Contracts API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20B2B%20Contracts%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "B2B Password Migration Protocol"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20B2B%20Password%20Migration%20Protocol.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{middlewareEndpoint}"
+    notes: "The spec's own placeholder: {middlewareEndpoint}, set per account."
+  - name: "Budgets API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Budgets%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Bulk Pricing API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Bulk%20Pricing%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Buyer Organizations"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Buyer%20Organizations.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Buying Policies API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Buying%20Policies%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.{environment}.com.br serves most operations; the spec routes the others to https://{accountName}.myvtex.com. Use each operation's own server."
+  - name: "Card Token Vault API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Card%20Token%20Vault%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.vtexcommercestable.com.br"
+    notes: "The spec's own placeholder: {accountName}, set per account."
+  - name: "Catalog API Seller Portal"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Catalog%20API%20Seller%20Portal.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Catalog API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Catalog%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Checkout API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Checkout%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Checkout Custom Card Payment API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Checkout%20Custom%20Card%20Payment%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Custom Fields API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Custom%20Fields%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Customer Credit API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Customer%20Credit%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Data Subject Rights"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Data%20Subject%20Rights.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.vtex.com"
+    notes: "The spec lists http://api.vtex.com; the API is served over HTTPS at the same host."
+  - name: "Default Values API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Default%20Values%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Delivery Promise Notification API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Delivery%20Promise%20Notification%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Delivery Promise Suggestions API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Delivery%20Promise%20Suggestions%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "External Promotions Protocol API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20External%20Promotions%20Protocol%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{providerApiEndpoint}"
+    notes: "The spec's own placeholder: {providerApiEndpoint}, set per account."
+  - name: "GiftCard Hub API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20GiftCard%20Hub%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Giftcard API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Giftcard%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br/api"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Giftcard Provider Protocol"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Giftcard%20Provider%20Protocol.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{providerApiEndpoint}"
+    notes: "The spec's own placeholder: {providerApiEndpoint}, set per account."
+  - name: "Headless CMS API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Headless%20CMS%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.myvtex.com"
+    notes: "The spec's own placeholder: {accountName}, set per account."
+  - name: "Intelligent Search API - v1"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Intelligent%20Search%20API%20-%20v1.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br/api/intelligent-search/v1"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Intelligent Search API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Intelligent%20Search%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br/api/io/_v/api/intelligent-search"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.{environment}.com.br/api/io/_v/api/intelligent-search serves most operations; the spec routes the others to https://{storeDomain}/api/io/_v/api/intelligent-search; https://{accountName}.{environment}.com.br/api/intelligent-search/v0. Use each operation's own server."
+  - name: "Intelligent Search Events API - Headless"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Intelligent%20Search%20Events%20API%20-%20Headless.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://sp.vtex.com/event-api/v1/{accountName}"
+    notes: "The spec's own placeholder: {accountName}, set per account."
+  - name: "Legacy CMS Portal API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Legacy%20CMS%20Portal%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.vtexcommercestable.com.br"
+    notes: "The spec's own placeholder: {accountName}, set per account."
+  - name: "License Manager API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20License%20Manager%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Logistics API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Logistics%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.{environment}.com.br serves most operations; the spec routes the others to https://logistics.{environment}.com.br/{accountName}. Use each operation's own server."
+  - name: "Marketplace APIs - Sent Offers"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Marketplace%20APIs%20-%20Sent%20Offers.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.vtexcommercestable.com.br"
+    notes: "The spec's own placeholder: {accountName}, set per account."
+  - name: "Marketplace APIs - Suggestions"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Marketplace%20APIs%20-%20Suggestions.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.vtex.com/{accountName}"
+    notes: "The spec's own placeholder: {accountName}, set per account."
+  - name: "Marketplace APIs"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Marketplace%20APIs.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br/api"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Marketplace Protocol - External Marketplace Mapper"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Marketplace%20Protocol%20-%20External%20Marketplace%20Mapper.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.vtexcommercestable.com.br"
+    notes: "The spec's own placeholder: {accountName}, set per account."
+  - name: "Marketplace Protocol - External Marketplace Orders"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Marketplace%20Protocol%20-%20External%20Marketplace%20Orders.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Marketplace Protocol - External Seller Fulfillment"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Marketplace%20Protocol%20-%20External%20Seller%20Fulfillment.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{fulfillmentEndpoint}"
+    notes: "The spec's own placeholder: {fulfillmentEndpoint}, set per account."
+  - name: "Marketplace Protocol - External Seller Marketplace"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Marketplace%20Protocol%20-%20External%20Seller%20Marketplace.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{marketplaceServicesEndpoint}"
+    notes: "The spec's own placeholder: {marketplaceServicesEndpoint}, set per account."
+  - name: "Master Data API - v2"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Master%20Data%20API%20-%20v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "MasterData API - v10.2"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20MasterData%20API%20-%20v10.2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Message Center API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Message%20Center%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Operational Capacity API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Operational%20Capacity%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Orders API PII version"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Orders%20API%20PII%20version.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Orders API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Orders%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Organization Units API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Organization%20Units%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Payment Policies API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Payment%20Policies%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://pcs.vtexcommercestable.com.br"
+    notes: "Operations are split across hosts: https://pcs.vtexcommercestable.com.br serves most operations; the spec routes the others to https://vtexpayments.com.br. Use each operation's own server."
+  - name: "Payment Provider Protocol"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Payment%20Provider%20Protocol.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{providerApiEndpoint}"
+    notes: "The spec's own placeholder: {providerApiEndpoint}, set per account."
+  - name: "Payments Gateway API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Payments%20Gateway%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.vtexpayments.com.br"
+    notes: "The spec's own placeholder: {accountName}, set per account. Operations are split across hosts: https://{accountName}.vtexpayments.com.br serves most operations; the spec routes the others to https://api.vtexvault.com. Use each operation's own server."
+  - name: "Pick and Pack API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Pick%20and%20Pack%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.pick-and-pack.com/prod/v1"
+    notes: "Operations are split across hosts: https://api.pick-and-pack.com/prod/v1 serves most operations; the spec routes the others to https://auth.pickingnpacking.com/prod. Use each operation's own server."
+  - name: "Pick and Pack Last Mile Protocol API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Pick%20and%20Pack%20Last%20Mile%20Protocol%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.pickingnpacking.com/{environment}/v1/tracking/hook"
+    notes: "The spec's own placeholder: {environment}, set per account. Operations are split across hosts: https://api.pickingnpacking.com/{environment}/v1/tracking/hook serves most operations; the spec routes the others to https://{store_endpoint}; https://auth.pickingnpacking.com/{environment}. Use each operation's own server."
+  - name: "Pick and Pack Order Changes API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Pick%20and%20Pack%20Order%20Changes%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.myvtex.com/pickpack/bin-location"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.myvtex.com/pickpack/bin-location serves most operations; the spec routes the others to https://{accountName}.{environment}.com.br/vtex_pickandpack; https://{accountName}.myvtex.com/pickpack/warehouses. Use each operation's own server."
+  - name: "Policies System API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Policies%20System%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Pricing API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Pricing%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.vtex.com/{accountName}"
+    notes: "The spec's own placeholder: {accountName}, set per account. For some operations the spec sets the server https://api.vtex.com/{account}/pricing, which doubles /pricing with their paths; use the main server for all of them."
+  - name: "Pricing Hub"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Pricing%20Hub.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://prchub.{environment}.com.br"
+    notes: "The spec's own placeholder: {environment}, set per account."
+  - name: "Profile System"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Profile%20System.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Promotions & Taxes API - v2"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Promotions%20%26%20Taxes%20API%20-%20v2.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Promotions & Taxes API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Promotions%20%26%20Taxes%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.{environment}.com.br serves most operations; the spec routes the others to https://rnb.{environment}.com.br/api/pricing/pvt. Use each operation's own server. One operation's server in the spec is a malformed placeholder (http://example.com/.{environment}.com.br/api/rnb) and isn't usable as given."
+  - name: "Punchout API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Punchout%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{storeHost}"
+    notes: "The spec's own placeholder: {storeHost}, set per account."
+  - name: "Recommendations BFF API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Recommendations%20BFF%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.{environment}.com.br"
+    notes: "The spec's own placeholder: {environment}, set per account."
+  - name: "Reviews and Ratings API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Reviews%20and%20Ratings%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.myvtex.com"
+    notes: "The spec's own placeholder: {accountName}, set per account."
+  - name: "SKU Bindings API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20SKU%20Bindings%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br/api"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "SSL Certificates API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20SSL%20Certificates%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Search API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Search%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. For some operations the spec sets a server naming one store's account (entelperu) and repeating the operation's path; it isn't usable as given. Use the main server with your own account."
+  - name: "Session Manager API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Session%20Manager%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Shopee Integration API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Shopee%20Integration%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Storefront Roles API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Storefront%20Roles%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Subscriptions API v3"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Subscriptions%20API%20v3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "Tracking"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Tracking.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.vtextracking.com/receiver"
+  - name: "User Rights API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20User%20Rights%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "VTEX Do API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20VTEX%20Do%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br/api/do"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."
+  - name: "VTEX ID API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20VTEX%20ID%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.{environment}.com.br serves most operations; the spec routes the others to https://{storeDomain}. Use each operation's own server."
+  - name: "VTEX Shipping Network API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20VTEX%20Shipping%20Network%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.io.vtex.com"
+  - name: "mTLS API"
+    url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20mTLS%20API.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{accountName}.{environment}.com.br"
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account."

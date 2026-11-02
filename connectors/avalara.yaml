@@ -1,0 +1,10 @@
+id: avalara
+name: "Avalara"
+apideck: false
+notes: "AvaTax's Swagger file, served by the AvaTax API itself. It sets no host; production is rest.avatax.com and the sandbox is sandbox-rest.avatax.com."
+specs:
+  - name: "AvaTax API"
+    url: "https://rest.avatax.com/swagger/v2/swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://rest.avatax.com"

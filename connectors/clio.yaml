@@ -1,0 +1,11 @@
+id: clio
+name: "Clio"
+apideck: false
+notes: "Served on Clio's developer documentation site."
+specs:
+  - name: "Clio API Documentation"
+    url: "https://docs.developers.clio.com/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.clio.com/api/v4"
+    notes: "The spec also lists https://eu.app.clio.com/api/v4, https://ca.app.clio.com/api/v4, https://au.app.clio.com/api/v4."

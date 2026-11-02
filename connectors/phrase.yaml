@@ -1,0 +1,11 @@
+id: phrase
+name: "Phrase"
+apideck: false
+notes: "Spec from Phrase's own repository, phrase/openapi (compiled)."
+specs:
+  - name: "Phrase Strings API Reference"
+    url: "https://raw.githubusercontent.com/phrase/openapi/main/doc/compiled.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.phrase.com/v2"
+    notes: "EU data centre. The spec also lists https://api.us.app.phrase.com/v2 for US accounts."

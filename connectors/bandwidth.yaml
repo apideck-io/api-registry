@@ -1,0 +1,35 @@
+id: bandwidth
+name: "Bandwidth"
+apideck: false
+notes: "Specs served on Bandwidth's developer site (dev.bandwidth.com/spec/)."
+specs:
+  - name: "Messaging"
+    url: "https://dev.bandwidth.com/spec/messaging.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://messaging.bandwidth.com/api/v2"
+  - name: "Voice"
+    url: "https://dev.bandwidth.com/spec/voice.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://voice.bandwidth.com/api/v2"
+  - name: "Insights"
+    url: "https://dev.bandwidth.com/spec/insights.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://insights.bandwidth.com/api"
+  - name: "Phone Number Lookup"
+    url: "https://dev.bandwidth.com/spec/phone-number-lookup.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://numbers.bandwidth.com/api/v1"
+  - name: "Multi-Factor Authentication"
+    url: "https://dev.bandwidth.com/spec/multi-factor-auth.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://mfa.bandwidth.com/api/v1"
+  - name: "Bandwidth RTC"
+    url: "https://dev.bandwidth.com/spec/brtc.yml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.bandwidth.com/v2"

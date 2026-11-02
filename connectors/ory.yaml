@@ -1,0 +1,23 @@
+id: ory
+name: "Ory"
+apideck: false
+notes: "Specs from Ory's own repositories: Kratos (identities), Hydra (OAuth2 and OpenID Connect) and Keto (permissions)."
+specs:
+  - name: "Ory Identities API (Kratos)"
+    url: "https://raw.githubusercontent.com/ory/kratos/master/spec/api.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{project-slug}.projects.oryapis.com"
+    notes: "The spec declares no server. On Ory Network each project has its own URL ({project-slug}); self-hosted deployments serve the same paths on their own host."
+  - name: "Ory OAuth2 and OpenID Connect API (Hydra)"
+    url: "https://raw.githubusercontent.com/ory/hydra/master/spec/api.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{project-slug}.projects.oryapis.com"
+    notes: "The spec declares no server. On Ory Network each project has its own URL ({project-slug}); self-hosted deployments serve the same paths on their own host."
+  - name: "Ory Permissions API (Keto)"
+    url: "https://raw.githubusercontent.com/ory/keto/master/spec/api.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://{project-slug}.projects.oryapis.com"
+    notes: "The spec declares no server. On Ory Network each project has its own URL ({project-slug}); self-hosted deployments serve the same paths on their own host."
