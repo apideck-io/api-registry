@@ -1,0 +1,10 @@
+id: fitbit
+name: "Fitbit"
+apideck: false
+notes: "Spec served on Fitbit's developer site (Web API Explorer)."
+specs:
+  - name: "Fitbit Web API Explorer"
+    url: "https://dev.fitbit.com/build/reference/web-api/explore/fitbit-web-api-swagger.json"
+    format: swagger-2.0
+    provenance: vendor
+    server: "https://api.fitbit.com"
