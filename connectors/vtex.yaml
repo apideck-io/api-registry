@@ -338,7 +338,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://api.vtex.com/{accountName}"
-    notes: "The spec's own placeholder: {accountName}, set per account. Operations are split across hosts: https://api.vtex.com/{accountName} serves 10 of 17; the spec routes the others to https://api.vtex.com/{account}/pricing (7 of 17 operations). Use each operation's own server."
+    notes: "The spec's own placeholder: {accountName}, set per account. For 7 of 17 operations the spec sets the server https://api.vtex.com/{account}/pricing, which doubles /pricing with their paths; use the main server for all of them."
   - name: "Pricing Hub"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Pricing%20Hub.json"
     format: openapi-3.0
@@ -398,7 +398,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://{accountName}.{environment}.com.br"
-    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. Operations are split across hosts: https://{accountName}.{environment}.com.br serves 13 of 15; the spec routes the others to https://entelperu.{environment}.com.br/api/catalog_system/pub/products/crossselling/accessories (2 of 15 operations). Use each operation's own server."
+    notes: "The spec's own placeholders: {accountName}, {environment}, set per account. For 2 of 15 operations the spec sets a server naming one store's account (entelperu) and repeating the operation's path; it isn't usable as given. Use the main server with your own account."
   - name: "Session Manager API"
     url: "https://raw.githubusercontent.com/vtex/openapi-schemas/master/VTEX%20-%20Session%20Manager%20API.json"
     format: openapi-3.0
