@@ -1,0 +1,55 @@
+connectors/checkbox.yaml
+  s_eeda7bd9685d9d::t_6156a0b4e5d2a2 10
+connectors/meilisearch.yaml
+  s_eeda7bd9685d9d::t_76c1480c8476a4 10
+connectors/huntress.yaml
+  s_eeda7bd9685d9d::t_44109a9c2b2d80 10-11
+connectors/nextcloud.yaml
+  s_eeda7bd9685d9d::t_5cfdf072391804 10
+connectors/kandji.yaml
+  s_eeda7bd9685d9d::t_ae9c20402aab3e 10
+connectors/confluence-data-center.yaml
+  s_eeda7bd9685d9d::t_a692c571b3ea0b 10
+overlays/huntress.yaml
+  s_eeda7bd9685d9d::t_38e9a9740bc1bf 1-13
+connectors/tripletex.yaml
+  s_eeda7bd9685d9d::t_646d5633f38ee4 10
+connectors/microsoft-people.yaml
+  s_eeda7bd9685d9d::t_90450320533987 10
+connectors/listmonk.yaml
+  s_eeda7bd9685d9d::t_aa1b8913a27b86 10
+connectors/yotpo.yaml
+  s_eeda7bd9685d9d::t_be42baea5d061a 9-10
+specs/resova/auth.yaml
+  s_eeda7bd9685d9d::t_509317c3f6bd00 5,9
+connectors/google-health.yaml
+  s_eeda7bd9685d9d::t_bea4a5508631fb 10
+connectors/resova.yaml
+  s_eeda7bd9685d9d::t_053f92d4dda287 12
+specs/rapid7/auth.yaml
+  s_eeda7bd9685d9d::t_a3aa98d3fe243c 9
+connectors/snipe-it.yaml
+  s_eeda7bd9685d9d::t_6bdc87eba4db61 10
+connectors/datto-rmm.yaml
+  s_eeda7bd9685d9d::t_ae6075a5bd4bb3 10-11
+specs/itglue/auth.yaml
+  s_eeda7bd9685d9d::t_0da498f05be6ef 5,9,13-17
+connectors/unanet.yaml
+  s_eeda7bd9685d9d::t_45edf17da05868 10-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "764261cb8eeb1bfecac1d67ad59acae5cc5fe40e",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
