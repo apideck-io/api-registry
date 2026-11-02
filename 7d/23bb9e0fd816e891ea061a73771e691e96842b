@@ -1,0 +1,115 @@
+connectors/apple-app-store.yaml
+  s_eeda7bd9685d9d::t_69c2c89bc9a22c 1-11
+connectors/aspire.yaml
+  s_eeda7bd9685d9d::t_c4998512167851 1-10
+connectors/astro.yaml
+  s_eeda7bd9685d9d::t_d6b28890d62dab 1-10
+connectors/back-market.yaml
+  s_eeda7bd9685d9d::t_410d245a0dadfb 1-10
+connectors/billit.yaml
+  s_eeda7bd9685d9d::t_95a73a8caa7a9c 1-10
+connectors/checkbox.yaml
+  s_eeda7bd9685d9d::t_1804bac5a6f811 1-10
+connectors/confluence-data-center.yaml
+  s_eeda7bd9685d9d::t_92c15f9641bac2 1-10
+connectors/datto-rmm.yaml
+  s_eeda7bd9685d9d::t_527e3d66cb5df9 1-10
+connectors/evaluagent.yaml
+  s_eeda7bd9685d9d::t_e4da6c89318f4a 1-11
+connectors/extensiv.yaml
+  s_eeda7bd9685d9d::t_65207799eb9a44 1-10
+connectors/figjam.yaml
+  s_eeda7bd9685d9d::t_c9bc676b5c4994 1-10
+connectors/formstack-documents.yaml
+  s_eeda7bd9685d9d::t_c79742d0969732 1-12
+connectors/google-health.yaml
+  s_eeda7bd9685d9d::t_fd8682e0574d80 1-10
+connectors/helpscout-docs.yaml
+  s_eeda7bd9685d9d::t_060b89311e7a35 1-12
+connectors/huntress.yaml
+  s_eeda7bd9685d9d::t_d566131924dc6f 1-10
+connectors/itglue.yaml
+  s_eeda7bd9685d9d::t_520eb107a50af8 1-12
+connectors/jiminny.yaml
+  s_eeda7bd9685d9d::t_4d07b5cfb0586a 1-10
+connectors/juniper-mist.yaml
+  s_eeda7bd9685d9d::t_1ccf9e693c5abe 1-10
+connectors/kandji.yaml
+  s_eeda7bd9685d9d::t_ae9c20402aab3e 1-10
+connectors/konnektive.yaml
+  s_eeda7bd9685d9d::t_81b46d98fc5a41 1-9
+connectors/listmonk.yaml
+  s_eeda7bd9685d9d::t_f58fbd4d3d96ed 1-10
+connectors/listrak.yaml
+  s_eeda7bd9685d9d::t_19d04d464a515b 1-9
+connectors/meilisearch.yaml
+  s_eeda7bd9685d9d::t_22b7cade17ba9e 1-10
+connectors/microsoft-entra-id.yaml
+  s_eeda7bd9685d9d::t_6f1091f0a7d67f 1-10
+connectors/microsoft-people.yaml
+  s_eeda7bd9685d9d::t_1012e880fbcbf1 1-10
+connectors/microsoft-planner.yaml
+  s_eeda7bd9685d9d::t_0a555a4e98e2e5 1-10
+connectors/n-able-n-central.yaml
+  s_eeda7bd9685d9d::t_72cf1953fdba3c 1-10
+connectors/netsapiens.yaml
+  s_eeda7bd9685d9d::t_2ed1edd1b3276c 1-10
+connectors/nextcloud.yaml
+  s_eeda7bd9685d9d::t_25f9e8c1f56ff9 1-10
+connectors/omni.yaml
+  s_eeda7bd9685d9d::t_f7426c0bec59cd 1-10
+connectors/pleo.yaml
+  s_eeda7bd9685d9d::t_d1912f6491d45f 1-10
+connectors/pverify.yaml
+  s_eeda7bd9685d9d::t_8561dd44d4f141 1-10
+connectors/rapid7.yaml
+  s_eeda7bd9685d9d::t_78b7dd03d4ab3f 1-12
+connectors/resova.yaml
+  s_eeda7bd9685d9d::t_053f92d4dda287 1-12
+connectors/shipbob.yaml
+  s_eeda7bd9685d9d::t_0ee693e6f721da 1-10
+connectors/snipe-it.yaml
+  s_eeda7bd9685d9d::t_afc880fc82bfc1 1-10
+connectors/trakstar-hire.yaml
+  s_eeda7bd9685d9d::t_2d9841d71c3112 1-12
+connectors/trigify.yaml
+  s_eeda7bd9685d9d::t_33f98e099ac2b6 1-10
+connectors/tripletex.yaml
+  s_eeda7bd9685d9d::t_bee200dc7ddc50 1-10
+connectors/unanet.yaml
+  s_eeda7bd9685d9d::t_806d88d1083982 1-10
+connectors/workramp.yaml
+  s_eeda7bd9685d9d::t_fd35127a59c5cc 1-12
+connectors/yotpo.yaml
+  s_eeda7bd9685d9d::t_95c6d3bdb0bb71 1-10
+specs/formstack-documents/auth.yaml
+  s_eeda7bd9685d9d::t_d0eff3a2acae96 1-21
+specs/helpscout-docs/auth.yaml
+  s_eeda7bd9685d9d::t_5238efa197c604 1-21
+specs/itglue/auth.yaml
+  s_eeda7bd9685d9d::t_8b904eb86ed7c2 1-22
+specs/rapid7/auth.yaml
+  s_eeda7bd9685d9d::t_b4485fe849017c 1-22
+specs/resova/auth.yaml
+  s_eeda7bd9685d9d::t_509317c3f6bd00 1-22
+specs/trakstar-hire/auth.yaml
+  s_eeda7bd9685d9d::t_6eda8fd29b891b 1-21
+specs/workramp/auth.yaml
+  s_eeda7bd9685d9d::t_8a8808ad08a072 1-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7d23bb9e0fd816e891ea061a73771e691e96842b",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
