@@ -1,0 +1,81 @@
+README.md
+  s_eeda7bd9685d9d::t_bc611a84ddee3b 12,127-129
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_25409ddc243605 159,185-186,190-195,199-202
+specs/acuity-scheduling/auth.yaml
+  s_eeda7bd9685d9d::t_0a239fc4c2d19c 12
+specs/addepar/auth.yaml
+  s_e93f9c972b7c55::t_bdbb222a3de366 12
+specs/bing-webmasters/auth.yaml
+  s_bf1fb2ea9a69c0::t_87f5e44f065830 12
+specs/candis/auth.yaml
+  s_1216b7ab38d26c::t_ddf1558044ca71 12
+specs/cloudbeds/auth.yaml
+  s_1216b7ab38d26c::t_5cc25007e005f2 11
+specs/conta-azul/auth.yaml
+  s_1216b7ab38d26c::t_970c202f9750ef 12
+specs/garmin/auth.yaml
+  s_1216b7ab38d26c::t_3eb99d9dcdf2d0 11
+specs/grain/auth.yaml
+  s_1216b7ab38d26c::t_4a08a7ecd7491e 12
+specs/health-gorilla/auth.yaml
+  s_eeda7bd9685d9d::t_044887e4de6ca6 11
+specs/hover/auth.yaml
+  s_bf1fb2ea9a69c0::t_74e4672c46d514 11
+specs/loyaltylion/auth.yaml
+  s_bf1fb2ea9a69c0::t_fe4abdc01dc723 12
+specs/onshape/auth.yaml
+  s_bf1fb2ea9a69c0::t_73c295540e2f16 12
+specs/oracle-aconex/auth.yaml
+  s_bf1fb2ea9a69c0::t_22d173966161fb 11
+specs/planning-center-online/auth.yaml
+  s_bf1fb2ea9a69c0::t_fdfb531235a52c 12
+specs/podium/auth.yaml
+  s_bf1fb2ea9a69c0::t_732a4057ef6569 12
+specs/pushpay/auth.yaml
+  s_eeda7bd9685d9d::t_0eddbb68b308b5 11
+specs/quickbooks-time/auth.yaml
+  s_eeda7bd9685d9d::t_fe059a99a202e9 11
+specs/tremendous/auth.yaml
+  s_1216b7ab38d26c::t_3f18e6803a3ce4 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3097a03de0ecf7e05f7a0901daa5079bb1619d4c",
+  "prompts": {},
+  "sessions": {
+    "s_1216b7ab38d26c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a14a97-820b-72f2-85b1-9bee130548e5",
+        "model": "gpt-6-luna"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_bf1fb2ea9a69c0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3a5ec7f5-0a88-4c1c-9a5d-059bcf57a06c",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_e93f9c972b7c55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4cfb586c-6fdb-4165-8aae-011de4eeaea5",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
