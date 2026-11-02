@@ -1,0 +1,35 @@
+connectors/anymail-finder.yaml
+  s_eeda7bd9685d9d::t_0a31d4584d106e 6
+connectors/award-force.yaml
+  s_eeda7bd9685d9d::t_38730daedafa73 15-16
+connectors/ditto.yaml
+  s_eeda7bd9685d9d::t_be640a0bdcbdff 6,11-12
+connectors/fusionauth.yaml
+  s_eeda7bd9685d9d::t_235b4ac1559fd6 10-11
+connectors/mx.yaml
+  s_eeda7bd9685d9d::t_fb1b0cbc3caf4e 41
+connectors/novu.yaml
+  s_eeda7bd9685d9d::t_1f1642d8769a05 11
+connectors/opik.yaml
+  s_eeda7bd9685d9d::t_429996c31378d7 1-2,4,11
+connectors/runpod.yaml
+  s_eeda7bd9685d9d::t_384afa528c5056 6,11
+connectors/smsglobal.yaml
+  s_eeda7bd9685d9d::t_052b2a37cea377 6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "fec2ee0102d4832793d1e75705ab089ab10f3c11",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
