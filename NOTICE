@@ -1,0 +1,40 @@
+API registry
+Copyright 2021-2026 Apideck
+
+Apideck is the licensor of this repository under the Elastic License 2.0 (see LICENSE). The license covers the
+work in this repository: the connector entries and their notes, the auth-only specs and other specs authored
+here, the overlays, index.json, and the scripts.
+
+It does not cover the API specifications the entries link to. Those belong to their publishers and stay under
+their publishers' terms. Files under derived/graphql/ are derived from vendors' schemas and stay under the same
+terms as those schemas.
+
+This registry is a database in which Apideck has made a substantial investment in obtaining, verifying and
+presenting its contents. Apideck reserves its database rights, including under Directive 96/9/EC, in addition to
+any copyright. The Elastic License 2.0 does not license those rights. Separately from it, Apideck permits using the
+registry's contents in your own products and tools. Extracting all or a substantial part of them to republish
+as a catalog, dataset or API is not permitted without Apideck's agreement.
+
+Files under derived/graphql/ made from Linear's GraphQL schema are under this license:
+
+MIT License
+
+Copyright (c) 2019 Linear
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

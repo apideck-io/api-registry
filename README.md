@@ -156,3 +156,7 @@ A nightly workflow runs `verify` and opens a pull request when any spec changed,
 ## Contributing
 
 Add or fix `connectors/<id>.yaml` and open a pull request. Prefer the vendor's raw file URL, for example `raw.githubusercontent.com` rather than a GitHub page. Don't edit `index.json`; the nightly check owns it.
+
+## License
+
+The registry's own work (entries, notes, auth-only and other specs authored here, overlays, `index.json` and scripts) is under the [Elastic License 2.0](LICENSE): you can read and use it, and build on it, but you can't offer it to others as a hosted or managed service, or remove its notices. The API specifications the entries link to, and the files under `derived/graphql/` made from them, stay under their publishers' terms. Contributions are accepted under the same license. See [NOTICE](NOTICE), which also reserves Apideck's database rights.
