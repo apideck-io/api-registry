@@ -1,0 +1,21 @@
+connectors/knot-api.yaml
+  s_eeda7bd9685d9d::t_eacd0999209f08 11,17
+connectors/weaviate.yaml
+  s_eeda7bd9685d9d::t_915b8d12fa6335 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "45778144b80c410ad3ceb079bc6027b5e7610fa6",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
