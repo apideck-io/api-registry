@@ -1,0 +1,9 @@
+id: torii
+name: "Torii"
+apideck: false
+specs:
+  - name: "Torii API Documentation"
+    url: "https://developers.toriihq.com/openapi/torii-api-documentation.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.toriihq.com/v1.0"

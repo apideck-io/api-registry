@@ -1,0 +1,29 @@
+openapi: 3.1.0
+info:
+  title: Discogs API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Discogs API: its host and a personal access token, sent in the token query parameter or the Authorization header. It lists no endpoints. Discogs publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /oauth/identity refuses a request without credentials (HTTP 401)."
+x-auth-only: true
+x-checked-endpoint: /oauth/identity
+x-sources:
+  server: https://www.discogs.com/developers
+  auth: https://www.discogs.com/developers
+servers:
+  - url: https://api.discogs.com
+paths: {}
+components:
+  securitySchemes:
+    tokenHeader:
+      type: apiKey
+      in: header
+      name: Authorization
+      x-value-template: Discogs token={key}
+      description: Generate a token in Developer Settings.
+    tokenQuery:
+      type: apiKey
+      in: query
+      name: token
+      description: The same token as a query parameter; prefer the header, which keeps it out of URLs and logs.
+security:
+  - tokenHeader: []
+  - tokenQuery: []

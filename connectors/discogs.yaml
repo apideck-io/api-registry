@@ -1,0 +1,12 @@
+id: discogs
+name: "Discogs"
+apideck: false
+notes: "Discogs publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Discogs API (authentication only)"
+    path: "specs/discogs/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.discogs.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (www.discogs.com)."

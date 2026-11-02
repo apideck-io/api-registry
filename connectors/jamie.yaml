@@ -1,0 +1,12 @@
+id: jamie
+name: "Jamie"
+apideck: false
+notes: "Jamie publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Jamie API (authentication only)"
+    path: "specs/jamie/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://beta-api.meetjamie.ai"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (docs.meetjamie.ai)."

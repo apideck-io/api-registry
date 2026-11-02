@@ -1,0 +1,9 @@
+id: document360
+name: "Document360"
+apideck: false
+specs:
+  - name: "Document360 Customer API"
+    url: "https://apihub.document360.io/swagger/v2/swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://apihub.document360.io"

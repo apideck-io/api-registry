@@ -1,0 +1,12 @@
+id: recharge
+name: "Recharge"
+apideck: false
+notes: "Recharge publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Recharge API (authentication only)"
+    path: "specs/recharge/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.rechargeapps.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developer.rechargepayments.com)."

@@ -1,0 +1,9 @@
+id: zorus
+name: "Zorus"
+apideck: false
+specs:
+  - name: "Zorus.Api"
+    url: "https://developer.zorustech.com/api/docs/v1/zorus-api.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://developer.zorustech.com"

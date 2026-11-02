@@ -1,0 +1,9 @@
+id: valley
+name: "Valley"
+apideck: false
+specs:
+  - name: "Valley Public API"
+    url: "https://api.joinvalley.co/docs/json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.joinvalley.co"

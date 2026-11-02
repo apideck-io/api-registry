@@ -1,0 +1,12 @@
+id: aimfox
+name: "Aimfox"
+apideck: false
+notes: "Aimfox publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Aimfox API (authentication only)"
+    path: "specs/aimfox/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.aimfox.com/api/v3"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (docs.aimfox.com)."

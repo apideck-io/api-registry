@@ -1,0 +1,12 @@
+id: zero
+name: "Zero"
+apideck: false
+notes: "Zero publishes no API spec; the auth-only spec below is written here. API access is for approved partners or specific plans."
+specs:
+  - name: "Zero API (authentication only)"
+    path: "specs/zero/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.zero.inc"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (docs.zero.inc)."

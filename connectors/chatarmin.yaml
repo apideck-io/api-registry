@@ -1,0 +1,12 @@
+id: chatarmin
+name: "Chatarmin"
+apideck: false
+notes: "Chatarmin publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Chatarmin API (authentication only)"
+    path: "specs/chatarmin/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.chatarmin.com/api/public"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (apidocs.chatarmin.com)."

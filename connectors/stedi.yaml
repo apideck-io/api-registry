@@ -1,0 +1,9 @@
+id: stedi
+name: "Stedi (Healthcare)"
+apideck: false
+specs:
+  - name: "Stedi Healthcare"
+    url: "https://raw.githubusercontent.com/stedi/openapi/main/healthcare.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://healthcare.us.stedi.com/2024-04-01"

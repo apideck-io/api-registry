@@ -1,0 +1,22 @@
+openapi: 3.1.0
+info:
+  title: WeJam AI API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the WeJam AI API: its host and an API key sent in the X-API-KEY header. It lists no endpoints. WeJam AI publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /api/v1/data-exports/users?page=1&limit=1 refuses a request without credentials (HTTP 401)."
+x-auth-only: true
+x-checked-endpoint: /api/v1/data-exports/users?page=1&limit=1
+x-sources:
+  server: https://docs.wejam.ai/external/coach/help-and-reference/data-export-api
+  auth: https://docs.wejam.ai/external/coach/help-and-reference/data-export-api
+servers:
+  - url: https://api.wejam.ai
+paths: {}
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: X-API-KEY
+      description: auth.wejam.ai/org/api_keys (org Owner)
+security:
+  - apiKey: []

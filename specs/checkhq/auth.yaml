@@ -1,0 +1,21 @@
+openapi: 3.1.0
+info:
+  title: Check API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Check API: its host and a bearer token. It lists no endpoints. Check publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /companies refuses a request without credentials (HTTP 403)."
+x-auth-only: true
+x-checked-endpoint: /companies
+x-sources:
+  server: https://docs.checkhq.com/reference/getting-started-1
+  auth: https://docs.checkhq.com/reference/authentication
+servers:
+  - url: https://api.checkhq.com
+paths: {}
+components:
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+      description: "Contact Check for a sandbox key; live key only after Check verifies the integration (sandbox: https://sandbox.checkhq.com)"
+security:
+  - bearer: []

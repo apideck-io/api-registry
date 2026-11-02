@@ -1,0 +1,9 @@
+id: anrok
+name: "Anrok"
+apideck: false
+specs:
+  - name: "Anrok API"
+    url: "https://apidocs.anrok.com/openapi.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.anrok.com"

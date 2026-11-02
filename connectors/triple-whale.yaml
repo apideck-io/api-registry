@@ -1,0 +1,12 @@
+id: triple-whale
+name: "Triple Whale"
+apideck: false
+notes: "Triple Whale publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Triple Whale API (authentication only)"
+    path: "specs/triple-whale/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.triplewhale.com/api/v2"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (triplewhale.readme.io)."

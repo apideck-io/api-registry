@@ -1,0 +1,12 @@
+id: arcsite
+name: "ArcSite"
+apideck: false
+notes: "ArcSite publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "ArcSite API (authentication only)"
+    path: "specs/arcsite/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.arcsite.com/v1"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (dev.arcsite.com)."

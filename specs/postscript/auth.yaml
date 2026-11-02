@@ -1,0 +1,21 @@
+openapi: 3.1.0
+info:
+  title: Postscript API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Postscript API: its host and a bearer token. It lists no endpoints. Postscript publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /api/v2/me refuses a request without credentials (HTTP 401)."
+x-auth-only: true
+x-checked-endpoint: /api/v2/me
+x-sources:
+  server: https://developers.postscript.io/reference/verify-identity
+  auth: https://developers.postscript.io/docs/api-authentication
+servers:
+  - url: https://api.postscript.io
+paths: {}
+components:
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+      description: The Shop Private API Key from the Account API page. Partner apps authenticate differently (an extra X-Postscript-Shop-Token header); that flow isn't described here.
+security:
+  - bearer: []

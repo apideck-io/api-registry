@@ -1,0 +1,21 @@
+openapi: 3.1.0
+info:
+  title: Podscribe API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Podscribe API: its host and a bearer token. It lists no endpoints. Podscribe publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /api/public/episode/search?search=example refuses a request without credentials (HTTP 403)."
+x-auth-only: true
+x-checked-endpoint: /api/public/episode/search?search=example
+x-sources:
+  server: https://developers.podscribe.com/api/
+  auth: https://developers.podscribe.com/api/
+servers:
+  - url: https://backend.podscribe.ai
+paths: {}
+components:
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+      description: Issued by your Podscribe contact
+security:
+  - bearer: []

@@ -1,0 +1,12 @@
+id: twenty-crm
+name: "Twenty CRM"
+apideck: false
+notes: "Twenty generates its OpenAPI spec per workspace (api.twenty.com/open-api/core, complete only with a workspace token), so no public spec lists its endpoints; the auth-only spec below is written here."
+specs:
+  - name: "Twenty CRM API (authentication only)"
+    path: "specs/twenty-crm/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.twenty.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (docs.twenty.com)."

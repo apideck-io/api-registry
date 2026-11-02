@@ -1,0 +1,9 @@
+id: pave
+name: "Pave"
+apideck: false
+specs:
+  - name: "Pave External API"
+    url: "https://developers.pave.com/_bundle/apis/index.yaml?download"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.pave.com"

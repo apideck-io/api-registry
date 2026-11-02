@@ -1,0 +1,9 @@
+id: appstle-subscriptions
+name: "Appstle Subscriptions"
+apideck: false
+specs:
+  - name: "Admin APIs"
+    url: "https://developers.appstle.com/subscription/admin-api-swagger.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://subscription-admin.appstle.com"

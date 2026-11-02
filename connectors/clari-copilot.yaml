@@ -1,0 +1,9 @@
+id: clari-copilot
+name: "Clari Copilot"
+apideck: false
+specs:
+  - name: "rest-api"
+    url: "https://api-doc.copilot.clari.com/spec.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://rest-api.copilot.clari.com"

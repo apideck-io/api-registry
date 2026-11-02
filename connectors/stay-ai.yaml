@@ -1,0 +1,12 @@
+id: stay-ai
+name: "Stay AI"
+apideck: false
+notes: "Stay AI publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Stay AI API (authentication only)"
+    path: "specs/stay-ai/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.retextion.com/api/v2"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (docs.stay.ai)."

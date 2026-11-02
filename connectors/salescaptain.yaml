@@ -1,0 +1,9 @@
+id: salescaptain
+name: "SalesCaptain"
+apideck: false
+specs:
+  - name: "SalesCaptain API Documentation Service"
+    url: "https://docs.salescaptain.com/api-reference/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.salescaptain.com"

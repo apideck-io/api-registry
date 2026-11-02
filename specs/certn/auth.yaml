@@ -1,0 +1,31 @@
+openapi: 3.1.0
+info:
+  title: Certn API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Certn API: its host and an API key sent in the Authorization header. It lists no endpoints. Certn publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /api/public/cases/ refuses a request without credentials (HTTP 401)."
+x-auth-only: true
+x-checked-endpoint: /api/public/cases/
+x-sources:
+  server: https://centric-api-docs.certn.co/reference/introduction.md
+  auth: https://centric-api-docs.certn.co/reference/authentication.md
+servers:
+  - url: https://api.{region}.certn.co
+    variables:
+      region:
+        default: ca
+        enum:
+          - ca
+          - uk
+          - au
+        description: "Your account's region: ca (Canada), uk (United Kingdom) or au (Australia)."
+paths: {}
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: Client Portal > Integrations; header value is 'Api-Key <key>'; per-region bases (api.ca / api.uk / api.au.certn.co); keys expire after 1 year
+      x-value-template: Api-Key {key}
+security:
+  - apiKey: []

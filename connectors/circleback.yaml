@@ -1,0 +1,9 @@
+id: circleback
+name: "Circleback"
+apideck: false
+specs:
+  - name: "Circleback Public API"
+    url: "https://circleback.ai/docs/api/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://circleback.ai/api"

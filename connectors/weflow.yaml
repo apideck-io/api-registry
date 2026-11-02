@@ -1,0 +1,12 @@
+id: weflow
+name: "Weflow"
+apideck: false
+notes: "Weflow publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Weflow API (authentication only)"
+    path: "specs/weflow/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.getweflow.app/api/v1"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (help.weflow.ai)."

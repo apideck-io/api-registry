@@ -1,0 +1,23 @@
+openapi: 3.1.0
+info:
+  title: CallRail API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the CallRail API: its host and an API key sent in the Authorization header. It lists no endpoints. CallRail publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /a.json refuses a request without credentials (HTTP 401)."
+x-auth-only: true
+x-checked-endpoint: /a.json
+x-sources:
+  server: https://apidocs.callrail.com/
+  auth: https://apidocs.callrail.com/
+servers:
+  - url: https://api.callrail.com/v3
+paths: {}
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: Integrations > API Keys > Create New API v3 Key; header value must be literally Token token="KEY"
+      x-value-template: Token token="{key}"
+security:
+  - apiKey: []
