@@ -23,15 +23,15 @@ components:
           authorizationUrl: https://api.planningcenteronline.com/oauth/authorize
           tokenUrl: https://api.planningcenteronline.com/oauth/token
           scopes:
-            api: API
-            calendar: Calendar
-            check_ins: Check-Ins
-            giving: Giving
-            groups: Groups
-            home: Home
-            people: People
-            publishing: Publishing
-            registrations: Registrations
-            services: Services
+            api: ""
+            calendar: ""
+            check_ins: ""
+            giving: ""
+            groups: ""
+            home: ""
+            people: ""
+            publishing: ""
+            registrations: ""
+            services: ""
 security:
   - oauth2: []

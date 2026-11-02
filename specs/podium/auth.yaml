@@ -23,22 +23,22 @@ components:
           authorizationUrl: https://api.podium.com/oauth/authorize
           tokenUrl: https://api.podium.com/oauth/token
           scopes:
-            write_appointments: Grant access to create appointments in the user's locations.
-            read_campaigns: Grant access to read campaign data for the user's locations.
-            write_campaign_messages: Grant access to write campaign messages for the user's locations.
-            write_contacts: Grant access to create, update, and delete contact data for the user's locations.
-            write_data_feed_event: Grant access to trigger data feed events for the user's locations.
-            read_feedback: Grant access to all feedback data for the user's locations.
-            read_locations: Grant access to the user's locations.
-            read_messages: Grant access to all messages for the user's locations.
-            write_messages: Grant access to write messages in the user's locations.
-            read_organizations: Grant access to the user's organization.
-            read_payments: Grant access to all payment data for the user's locations.
-            write_payments: Grant access to create payments for all the user's locations.
-            read_reviews: Grant access to all review data for the user's locations.
-            write_reviews: Grant access to create reviews data for all the user's locations.
-            read_users: Grant access to all user data for the user's locations.
-            read_contacts: Grant access to all contact data for the user's locations.
-            write_locations: Grant access to write locations.
+            write_appointments: ""
+            read_campaigns: ""
+            write_campaign_messages: ""
+            write_contacts: ""
+            write_data_feed_event: ""
+            read_feedback: ""
+            read_locations: ""
+            read_messages: ""
+            write_messages: ""
+            read_organizations: ""
+            read_payments: ""
+            write_payments: ""
+            read_reviews: ""
+            write_reviews: ""
+            read_users: ""
+            read_contacts: ""
+            write_locations: ""
 security:
   - oauth2: []

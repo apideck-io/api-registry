@@ -23,7 +23,7 @@ components:
           authorizationUrl: https://www.bing.com/webmasters/OAuth/authorize
           tokenUrl: https://www.bing.com/webmasters/oauth/token
           scopes:
-            webmaster.read: Read access to the user's Bing Webmaster Tools data
-            webmaster.manage: Read and write access to the user's Bing Webmaster Tools data
+            webmaster.read: ""
+            webmaster.manage: ""
 security:
   - oauth2: []

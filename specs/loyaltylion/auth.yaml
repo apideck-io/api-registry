@@ -23,14 +23,14 @@ components:
           authorizationUrl: https://app.loyaltylion.com/oauth/authorize
           tokenUrl: https://app.loyaltylion.com/oauth/access-token
           scopes:
-            read_customers: Read customers, points, tiers, rewards, activities
-            write_customers: Read/write customers
-            read_unsubscribes: Read loyalty email unsubscribes
-            write_unsubscribes: Read/write unsubscribes
-            read_orders: Read orders
-            write_orders: Read/write orders
-            write_configuration: Modify program configuration
-            read_reviews: Read reviews
-            write_reviews: Read/write reviews
+            read_customers: ""
+            write_customers: ""
+            read_unsubscribes: ""
+            write_unsubscribes: ""
+            read_orders: ""
+            write_orders: ""
+            write_configuration: ""
+            read_reviews: ""
+            write_reviews: ""
 security:
   - oauth2: []

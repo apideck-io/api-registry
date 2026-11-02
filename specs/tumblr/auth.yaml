@@ -23,6 +23,6 @@ components:
           scopes:
             basic: ""
             write: ""
-            offline_access: Required to receive a refresh token
+            offline_access: ""
 security:
   - oauth2: []

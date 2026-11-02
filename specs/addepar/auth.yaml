@@ -23,27 +23,27 @@ components:
           authorizationUrl: https://id.addepar.com/oauth2/authorize
           tokenUrl: https://api.addepar.com/public/oauth2/token
           scopes:
-            PROFILE: Read-only name, email, user ID and firm ID
-            PORTFOLIO: Read-only portfolio data
-            TRANSACTIONS: Read-only transactions
-            TRANSACTIONS_WRITE: Read/write transactions
-            FILES: Read-only files
-            FILES_WRITE: Read/write files
-            GROUPS: Read-only groups
-            GROUPS_WRITE: Read/write groups
-            ENTITIES: Read-only entities
-            ENTITIES_WRITE: Read/write entities
-            POSITIONS: Read-only positions
-            POSITIONS_WRITE: Read/write positions
-            USERS: Read-only users/contacts
-            USERS_WRITE: Read/write users/contacts
-            TEAMS: Read-only teams
-            TEAMS_WRITE: Read/write teams
-            AUDIT_TRAIL: Read-only audit logs
-            REPORTS_WRITE: Report generation
-            BENCHMARKS_READ: Read-only benchmarks
-            BENCHMARKS_WRITE: Read/write benchmarks
-            BILLING_READ: Read-only billable portfolios
-            BILLING_WRITE: Read/write billable portfolios
+            PROFILE: ""
+            PORTFOLIO: ""
+            TRANSACTIONS: ""
+            TRANSACTIONS_WRITE: ""
+            FILES: ""
+            FILES_WRITE: ""
+            GROUPS: ""
+            GROUPS_WRITE: ""
+            ENTITIES: ""
+            ENTITIES_WRITE: ""
+            POSITIONS: ""
+            POSITIONS_WRITE: ""
+            USERS: ""
+            USERS_WRITE: ""
+            TEAMS: ""
+            TEAMS_WRITE: ""
+            AUDIT_TRAIL: ""
+            REPORTS_WRITE: ""
+            BENCHMARKS_READ: ""
+            BENCHMARKS_WRITE: ""
+            BILLING_READ: ""
+            BILLING_WRITE: ""
 security:
   - oauth2: []

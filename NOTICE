@@ -10,6 +10,10 @@ their publishers' terms. Files under derived/graphql/ are derived from vendors' 
 terms as those schemas. No license has been identified for monday.com's schema, so the redistribution status of
 the file made from it is unknown; it isn't covered by the license here.
 
+Vendor names, API details, and any text taken from vendors' documentation or specs remain theirs, including
+where they appear in the entries, the auth-only specs or index.json. Apideck claims only its own writing, and the
+selection, verification and arrangement of the registry.
+
 This registry is a database in which Apideck has made a substantial investment in obtaining, verifying and
 presenting its contents. Apideck reserves its database rights, including under Directive 96/9/EC, in addition to
 any copyright. The Elastic License 2.0 does not license those rights. Separately from it, Apideck permits using the
