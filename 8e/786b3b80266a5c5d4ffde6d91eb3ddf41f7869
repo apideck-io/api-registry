@@ -1,0 +1,43 @@
+README.md
+  s_eeda7bd9685d9d::t_9f6acd915d77ad 64
+connectors/apaleo.yaml
+  s_eeda7bd9685d9d::t_9fcbccbeb7d553 11-12,18-19,25-26,32-33,49-50,66-67
+connectors/avalara.yaml
+  s_eeda7bd9685d9d::t_86f66f2d446d2c 11-12
+connectors/credas.yaml
+  s_eeda7bd9685d9d::t_6a4fad169ac6f9 11-12
+connectors/big-red-cloud.yaml
+  s_eeda7bd9685d9d::t_5e796a0c0f3463 11-12
+connectors/haileyhr.yaml
+  s_eeda7bd9685d9d::t_1c83651efb581e 9-10
+connectors/twelve-data.yaml
+  s_eeda7bd9685d9d::t_4f246652f149ee 10-11
+connectors/x.yaml
+  s_eeda7bd9685d9d::t_27ee05ae4fedf5 10-11
+connectors/xtrf.yaml
+  s_eeda7bd9685d9d::t_39c7989cf1bd1f 11-12
+scripts/spec-safety.mjs
+  s_eeda7bd9685d9d::t_7ee2d9da7bad63 135-136,139,257
+connectors/instantly.yaml
+  s_eeda7bd9685d9d::t_a458fccf95edcb 10-11
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_b40863fdbb4ab5 839
+  s_eeda7bd9685d9d::t_b85d374fde3078 840
+  s_eeda7bd9685d9d::t_7e56befa83d5c6 154-155,289-303,772,786,846
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8e786b3b80266a5c5d4ffde6d91eb3ddf41f7869",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
