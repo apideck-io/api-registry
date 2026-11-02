@@ -1,0 +1,33 @@
+connectors/daily.yaml
+  s_eeda7bd9685d9d::t_e8c15c05653ebc 1
+connectors/growthbook.yaml
+  s_eeda7bd9685d9d::t_2f900a3153cf8a 1
+connectors/listennotes.yaml
+  s_eeda7bd9685d9d::t_cee3972e600ea1 1
+connectors/runa.yaml
+  s_eeda7bd9685d9d::t_ecb34c735b2dbb 1-2
+connectors/runpod.yaml
+  s_eeda7bd9685d9d::t_5486f5e61b347e 2
+connectors/twelvelabs.yaml
+  s_eeda7bd9685d9d::t_ad1095e2c74f49 1
+connectors/uptimerobot.yaml
+  s_eeda7bd9685d9d::t_ecda16b21bdd6f 1
+connectors/weaviate.yaml
+  s_eeda7bd9685d9d::t_24dd8a97bbd20d 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2f99e926142298e56f04de330d912738969f8586",
+  "prompts": {},
+  "sessions": {
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
