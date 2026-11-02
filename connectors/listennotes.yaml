@@ -1,4 +1,4 @@
-id: listen-notes
+id: listennotes
 name: "Listen Notes"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://www.listennotes.com/api)."

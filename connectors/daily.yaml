@@ -1,4 +1,4 @@
-id: daily-co
+id: daily
 name: "Daily.co"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://docs.daily.co/docs)."

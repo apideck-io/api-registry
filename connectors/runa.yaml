@@ -1,5 +1,5 @@
-id: wegift
-name: "WeGift"
+id: runa
+name: "Runa (formerly WeGift)"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://developer.wegift.io/)."
 specs:

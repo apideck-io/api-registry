@@ -1,4 +1,4 @@
-id: weaviate-vector-database
+id: weaviate
 name: "Weaviate"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://weaviate.io/developers)."

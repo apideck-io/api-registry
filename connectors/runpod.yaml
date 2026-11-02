@@ -1,5 +1,5 @@
 id: runpod
-name: "RunPod"
+name: "Runpod"
 apideck: false
 notes: "Spec served by the vendor (found from its developer portal, https://docs.runpod.io)."
 specs:
