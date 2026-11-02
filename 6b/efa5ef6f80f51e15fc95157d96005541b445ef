@@ -1,0 +1,27 @@
+connectors/fusionauth.yaml
+  s_90911ac1b5054c::t_9e640e08b6db4b 11
+connectors/growthbook.yaml
+  s_90911ac1b5054c::t_68a3ee111b04c0 2
+connectors/loop.yaml
+  s_90911ac1b5054c::t_3447d4a106881e 50-51,91-92,117-118
+connectors/twelvelabs.yaml
+  s_90911ac1b5054c::t_db646fa57667bc 2
+connectors/uptimerobot.yaml
+  s_90911ac1b5054c::t_5f8fd71c42e926 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6befa5ef6f80f51e15fc95157d96005541b445ef",
+  "prompts": {},
+  "sessions": {
+    "s_90911ac1b5054c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5ac7f47d-daa6-4c4b-856f-846e3ff53802",
+        "model": "unknown"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
