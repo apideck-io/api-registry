@@ -1,0 +1,35 @@
+connectors/apaleo.yaml
+  s_41ab55e21f9f54::t_94fc27c28894cc 11,18,25,32,49,66
+connectors/avalara.yaml
+  s_41ab55e21f9f54::t_6bdae3a78249f4 11
+connectors/big-red-cloud.yaml
+  s_41ab55e21f9f54::t_4285e3d419927b 11
+connectors/credas.yaml
+  s_41ab55e21f9f54::t_4b2c7662032fa4 11
+connectors/haileyhr.yaml
+  s_41ab55e21f9f54::t_2673a1af43cf8b 9
+connectors/instantly.yaml
+  s_41ab55e21f9f54::t_d75a5814e08ecb 10
+connectors/twelve-data.yaml
+  s_41ab55e21f9f54::t_a9c1be04b895cc 10
+connectors/x.yaml
+  s_41ab55e21f9f54::t_da316d276ca31d 10
+connectors/xtrf.yaml
+  s_41ab55e21f9f54::t_ee9c032351c9d4 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e371a42f24bf3982f1cb9298286f7eec11b047fc",
+  "prompts": {},
+  "sessions": {
+    "s_41ab55e21f9f54": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d3bea157-a784-40da-b7fc-c5a88b29c9f6",
+        "model": "unknown"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
