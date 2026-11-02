@@ -1,0 +1,186 @@
+connectors/freepik.yaml
+  s_eeda7bd9685d9d::t_50bc7ea33e7cd4 1-10
+connectors/podscribe.yaml
+  s_eeda7bd9685d9d::t_d5e39b159e66d0 1-12
+connectors/store-leads.yaml
+  s_eeda7bd9685d9d::t_b7aaab706f7340 1-9
+connectors/ringover.yaml
+  s_1216b7ab38d26c::t_30d73099fe6076 1-9
+connectors/circle-so.yaml
+  s_eeda7bd9685d9d::t_242c531210971c 1-9
+specs/prive/auth.yaml
+  s_eeda7bd9685d9d::t_f4b8ed431bba92 1-21
+connectors/attention.yaml
+  s_eeda7bd9685d9d::t_a5233bb7e6be76 1-9
+connectors/checkhq.yaml
+  s_eeda7bd9685d9d::t_e4c54e03afb73f 1-12
+connectors/appstle-subscriptions.yaml
+  s_eeda7bd9685d9d::t_7402ca3208fed7 1-9
+connectors/weflow.yaml
+  s_eeda7bd9685d9d::t_dc9cfc624056a7 1-12
+specs/certn/auth.yaml
+  s_eeda7bd9685d9d::t_eae413c021d383 1-23
+connectors/pocket.yaml
+  s_eeda7bd9685d9d::t_a433227a4949a5 1-12
+connectors/demodesk.yaml
+  s_eeda7bd9685d9d::t_8ebaa20ce8bf2f 1-9
+specs/arcsite/auth.yaml
+  s_eeda7bd9685d9d::t_193397bc086d80 1-21
+specs/pendo/auth.yaml
+  s_eeda7bd9685d9d::t_cec4dfa2d1ecf2 1-22
+specs/zero/auth.yaml
+  s_eeda7bd9685d9d::t_f59d1501bf5743 1-21
+connectors/aimfox.yaml
+  s_eeda7bd9685d9d::t_52b393dc344b19 1-12
+connectors/valley.yaml
+  s_eeda7bd9685d9d::t_9ef58fb26f5ded 1-9
+connectors/zorus.yaml
+  s_eeda7bd9685d9d::t_8348b50f3844f5 1-9
+connectors/skio.yaml
+  s_eeda7bd9685d9d::t_a77b9f91c60275 1-12
+connectors/anrok.yaml
+  s_eeda7bd9685d9d::t_6bd8a99a31491b 1-9
+specs/upsales/auth.yaml
+  s_eeda7bd9685d9d::t_5b3e6ec504b5fd 1-22
+specs/discogs-token/auth.yaml
+  s_1216b7ab38d26c::t_c7748131ba79dd 1-22
+connectors/readwise.yaml
+  s_1216b7ab38d26c::t_19e9fc5c7c8a61 1-12
+specs/callrail/auth.yaml
+  s_eeda7bd9685d9d::t_1e42328e2ab629 1-23
+connectors/chorus.yaml
+  s_eeda7bd9685d9d::t_09b139e8a90d92 1-9
+connectors/momentum-io.yaml
+  s_eeda7bd9685d9d::t_34202de72c981c 1-9
+specs/scavio/auth.yaml
+  s_eeda7bd9685d9d::t_88d047ee459ad9 1-21
+connectors/triple-whale.yaml
+  s_eeda7bd9685d9d::t_dacd3e9a423508 1-12
+connectors/smartlead-ai.yaml
+  s_eeda7bd9685d9d::t_7891a96940e96a 1-12
+connectors/twenty-crm.yaml
+  s_eeda7bd9685d9d::t_2ff4b3d63cc550 1-12
+connectors/certn.yaml
+  s_eeda7bd9685d9d::t_6b91a1d68527a7 1-12
+specs/wejam/auth.yaml
+  s_eeda7bd9685d9d::t_a7a0170ff78495 1-22
+connectors/discogs-token.yaml
+  s_1216b7ab38d26c::t_07bce93b5e11f9 1-12
+README.md
+  s_eeda7bd9685d9d::t_2024cf4089fb82 116,130
+specs/podscribe/auth.yaml
+  s_eeda7bd9685d9d::t_e7dff2ab7f492a 1-21
+connectors/circleback.yaml
+  s_eeda7bd9685d9d::t_3d916898fe2fd9 1-9
+connectors/zero.yaml
+  s_eeda7bd9685d9d::t_181de5627073b5 1-12
+connectors/modjo-ai.yaml
+  s_eeda7bd9685d9d::t_f9fe65fdc32aab 1-9
+connectors/postscript.yaml
+  s_eeda7bd9685d9d::t_681376f8750ea3 1-12
+connectors/chatarmin.yaml
+  s_eeda7bd9685d9d::t_f5e6572eca4b6a 1-12
+connectors/epc-gov.yaml
+  s_eeda7bd9685d9d::t_2aedcd1e073bcd 1-9
+specs/skio/auth.yaml
+  s_eeda7bd9685d9d::t_40aa3e72dd2175 1-23
+specs/chatarmin/auth.yaml
+  s_eeda7bd9685d9d::t_c4ac7eeff5441a 1-21
+connectors/scavio.yaml
+  s_eeda7bd9685d9d::t_0052a81f18eb13 1-12
+connectors/arcsite.yaml
+  s_eeda7bd9685d9d::t_edb6ada034f4b0 1-12
+connectors/wappalyzer.yaml
+  s_eeda7bd9685d9d::t_7df478ae4de84f 1-12
+specs/autosana/auth.yaml
+  s_eeda7bd9685d9d::t_fcbaa3b3c17e81 1-22
+connectors/jamie.yaml
+  s_eeda7bd9685d9d::t_08f8ef9fee2229 1-12
+specs/pocket/auth.yaml
+  s_eeda7bd9685d9d::t_32e34a2ffa1355 1-21
+specs/wappalyzer/auth.yaml
+  s_eeda7bd9685d9d::t_26329d357e57e6 1-22
+specs/readwise/auth.yaml
+  s_eeda7bd9685d9d::t_a29fcf3e1978ea 1-23
+connectors/cyberimpact.yaml
+  s_eeda7bd9685d9d::t_c09466d0ac9dce 1-9
+connectors/recharge.yaml
+  s_1216b7ab38d26c::t_16b110e85b9a17 1-12
+connectors/stay-ai.yaml
+  s_eeda7bd9685d9d::t_aac4eb61067e32 1-12
+connectors/ninety-io.yaml
+  s_eeda7bd9685d9d::t_d33731bf95c6a6 1-9
+connectors/codegen.yaml
+  s_eeda7bd9685d9d::t_0b3ddd7972f144 1-9
+connectors/autosana.yaml
+  s_eeda7bd9685d9d::t_8daeabca60f5ce 1-12
+specs/aimfox/auth.yaml
+  s_eeda7bd9685d9d::t_c6d126d39d43a5 1-21
+specs/twenty-crm/auth.yaml
+  s_eeda7bd9685d9d::t_0f8cf36ec39dd4 1-21
+specs/stay-ai/auth.yaml
+  s_eeda7bd9685d9d::t_7a622ac308a13a 1-22
+specs/triple-whale/auth.yaml
+  s_eeda7bd9685d9d::t_d7f0b7f956cee7 1-22
+connectors/pave.yaml
+  s_eeda7bd9685d9d::t_b418283d39aaf9 1-9
+connectors/salescaptain.yaml
+  s_1216b7ab38d26c::t_46354e1a259025 1-9
+connectors/document360.yaml
+  s_eeda7bd9685d9d::t_18469953fd0cc1 1-9
+specs/smartlead-ai/auth.yaml
+  s_eeda7bd9685d9d::t_23110490833ae9 1-21
+connectors/callrail.yaml
+  s_eeda7bd9685d9d::t_ce6b8248992a7a 1-12
+connectors/prive.yaml
+  s_eeda7bd9685d9d::t_ac06b3b30aabaf 1-12
+connectors/wejam.yaml
+  s_eeda7bd9685d9d::t_af0b2ddbcead71 1-12
+specs/weflow/auth.yaml
+  s_eeda7bd9685d9d::t_adaac8917b0d35 1-21
+specs/postscript/auth.yaml
+  s_eeda7bd9685d9d::t_a7f2f24b083916 1-21
+connectors/upsales.yaml
+  s_eeda7bd9685d9d::t_a73fc8f62b7a16 1-12
+connectors/clari-copilot.yaml
+  s_eeda7bd9685d9d::t_57612867ded32c 1-9
+connectors/stedi.yaml
+  s_eeda7bd9685d9d::t_9f8077d302cd23 1-9
+specs/checkhq/auth.yaml
+  s_eeda7bd9685d9d::t_a37e5611b4abc9 1-21
+specs/jamie/auth.yaml
+  s_eeda7bd9685d9d::t_acf68768edfdf4 1-22
+connectors/pendo.yaml
+  s_eeda7bd9685d9d::t_6ffdc42455c90f 1-12
+scripts/verify.mjs
+  s_eeda7bd9685d9d::t_5e21974e823a12 226,228-230,232
+  s_eeda7bd9685d9d::t_2661a7a3851580 212-213
+specs/recharge/auth.yaml
+  s_1216b7ab38d26c::t_f1383a7220da87 1-22
+connectors/torii.yaml
+  s_eeda7bd9685d9d::t_88a241ddca6bc8 1-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "cbddabb8b6705e15884537af34bc3da0606412c4",
+  "prompts": {},
+  "sessions": {
+    "s_1216b7ab38d26c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a14a97-820b-72f2-85b1-9bee130548e5",
+        "model": "gpt-6-luna"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    },
+    "s_eeda7bd9685d9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2af217b0-1182-4a9d-9c58-9106b4774cf3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
