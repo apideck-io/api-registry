@@ -1,0 +1,12 @@
+id: pocket
+name: "Pocket"
+apideck: false
+notes: "Pocket publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Pocket API (authentication only)"
+    path: "specs/pocket/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://public.heypocketai.com/api/v1"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (docs.heypocketai.com)."

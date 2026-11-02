@@ -1,0 +1,12 @@
+id: scavio
+name: "Scavio"
+apideck: false
+notes: "Scavio publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Scavio API (authentication only)"
+    path: "specs/scavio/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.scavio.dev"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (scavio.dev)."

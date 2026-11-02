@@ -1,0 +1,12 @@
+id: prive
+name: "Prive"
+apideck: false
+notes: "Prive publishes no API spec; the auth-only spec below is written here. API access is for approved partners or specific plans."
+specs:
+  - name: "Prive API (authentication only)"
+    path: "specs/prive/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://subs.api.tryprive.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developers.tryprive.com)."

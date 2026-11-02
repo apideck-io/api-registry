@@ -1,0 +1,22 @@
+openapi: 3.1.0
+info:
+  title: Upsales API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Upsales API: its host and an API key sent in the token query parameter. It lists no endpoints. Upsales publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /phoneCall refuses a request without credentials (HTTP 401)."
+x-auth-only: true
+x-checked-endpoint: /phoneCall
+x-sources:
+  server: https://support.upsales.com/hc/en-us/articles/360013328937-How-to-integrate-the-Upsales-API
+  auth: https://support.upsales.com/hc/en-us/articles/360013328937-How-to-integrate-the-Upsales-API
+servers:
+  - url: https://integration.upsales.com/api/v2
+paths: {}
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: query
+      name: token
+      description: Settings > Account > Security > API-keys (admin)
+security:
+  - apiKey: []

@@ -1,0 +1,9 @@
+id: ringover
+name: "Ringover"
+apideck: false
+specs:
+  - name: "Ringover Public API"
+    url: "https://developer.ringover.com/web/openapi_public.yml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://public-api.ringover.com/v2"

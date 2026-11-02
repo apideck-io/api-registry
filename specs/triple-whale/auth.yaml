@@ -1,0 +1,22 @@
+openapi: 3.1.0
+info:
+  title: Triple Whale API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Triple Whale API: its host and an API key sent in the x-api-key header. It lists no endpoints. Triple Whale publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /users/api-keys/me refuses a request without credentials (HTTP 401)."
+x-auth-only: true
+x-checked-endpoint: /users/api-keys/me
+x-sources:
+  server: https://triplewhale.readme.io/reference/troubleshooting-common-triple-whale-api-errors
+  auth: https://triplewhale.readme.io/reference/troubleshooting-common-triple-whale-api-errors
+servers:
+  - url: https://api.triplewhale.com/api/v2
+paths: {}
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: Data > APIs > Generate
+security:
+  - apiKey: []

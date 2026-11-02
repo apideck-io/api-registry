@@ -1,0 +1,9 @@
+id: circle-so
+name: "Circle.so"
+apideck: false
+specs:
+  - name: "Admin API V2"
+    url: "https://api-headless.circle.so/api/admin/v2/swagger.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://app.circle.so"

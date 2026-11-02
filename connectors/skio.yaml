@@ -1,0 +1,12 @@
+id: skio
+name: "Skio"
+apideck: false
+notes: "Skio publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Skio API (authentication only)"
+    path: "specs/skio/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.skio.com/public-rest-api-http"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (code.skio.com)."

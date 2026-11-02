@@ -1,0 +1,12 @@
+id: pendo
+name: "Pendo"
+apideck: false
+notes: "Pendo publishes no API spec; the auth-only spec below is written here. API access is for approved partners or specific plans."
+specs:
+  - name: "Pendo API (authentication only)"
+    path: "specs/pendo/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://app.pendo.io"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (engageapi.pendo.io)."

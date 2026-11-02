@@ -1,0 +1,10 @@
+id: freepik
+name: "Freepik"
+apideck: false
+specs:
+  - name: "Magnific API"
+    url: "https://storage.googleapis.com/fc-freepik-pro-rev1-eu-api-specs/magnific-api-v1-openapi.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.magnific.com"
+    notes: "The spec file Freepik's API reference (docs.freepik.com) links, hosted in Freepik's storage bucket. It is titled Magnific API and names the host api.magnific.com."

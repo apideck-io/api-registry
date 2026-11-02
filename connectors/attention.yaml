@@ -1,0 +1,9 @@
+id: attention
+name: "Attention"
+apideck: false
+specs:
+  - name: "Attention Service V2"
+    url: "https://docs.attention.com/api-reference/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.attention.tech/v2"

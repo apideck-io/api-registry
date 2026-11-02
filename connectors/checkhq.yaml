@@ -1,0 +1,12 @@
+id: checkhq
+name: "Check"
+apideck: false
+notes: "Check publishes no API spec; the auth-only spec below is written here. API access is for approved partners or specific plans."
+specs:
+  - name: "Check API (authentication only)"
+    path: "specs/checkhq/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.checkhq.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (docs.checkhq.com)."

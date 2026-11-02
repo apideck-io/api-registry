@@ -1,0 +1,12 @@
+id: wappalyzer
+name: "Wappalyzer"
+apideck: false
+notes: "Wappalyzer publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Wappalyzer API (authentication only)"
+    path: "specs/wappalyzer/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.wappalyzer.com/v2"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (www.wappalyzer.com)."

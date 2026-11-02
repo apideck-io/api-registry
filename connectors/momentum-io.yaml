@@ -1,0 +1,9 @@
+id: momentum-io
+name: "Momentum"
+apideck: false
+specs:
+  - name: "Momentum API"
+    url: "https://docs.momentum.io/api/openapi-spec.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.momentum.io"

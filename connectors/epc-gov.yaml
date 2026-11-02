@@ -1,0 +1,9 @@
+id: epc-gov
+name: "Energy Performance Certificates (Gov.UK)"
+apideck: false
+specs:
+  - name: "Energy Performance of Buildings Data API"
+    url: "https://raw.githubusercontent.com/communitiesuk/epb-data-warehouse/main/api/api.yml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.get-energy-performance-data.communities.gov.uk"

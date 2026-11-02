@@ -1,0 +1,12 @@
+id: autosana
+name: "Autosana"
+apideck: false
+notes: "Autosana publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Autosana API (authentication only)"
+    path: "specs/autosana/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://backend.autosana.ai"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (docs.autosana.ai)."

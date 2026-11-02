@@ -1,0 +1,22 @@
+openapi: 3.1.0
+info:
+  title: Pendo API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Pendo API: its host and an API key sent in the x-pendo-integration-key header. It lists no endpoints. Pendo publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /api/v1/page refuses a request without credentials (HTTP 403)."
+x-auth-only: true
+x-checked-endpoint: /api/v1/page
+x-sources:
+  server: https://engageapi.pendo.io/
+  auth: https://engageapi.pendo.io/
+servers:
+  - url: https://app.pendo.io
+paths: {}
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-pendo-integration-key
+      description: Settings > Integrations > Integration Keys (admin only)
+security:
+  - apiKey: []

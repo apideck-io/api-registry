@@ -1,0 +1,21 @@
+openapi: 3.1.0
+info:
+  title: Smartlead.ai API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Smartlead.ai API: its host and an API key sent in the api_key query parameter. It lists no endpoints. Smartlead.ai publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /campaigns/ refuses a request without credentials (HTTP 401)."
+x-auth-only: true
+x-checked-endpoint: /campaigns/
+x-sources:
+  server: https://api.smartlead.ai/reference/authentication
+  auth: https://api.smartlead.ai/reference/authentication
+servers:
+  - url: https://server.smartlead.ai/api/v1
+paths: {}
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: query
+      name: api_key
+security:
+  - apiKey: []

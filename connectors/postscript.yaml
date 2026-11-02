@@ -1,0 +1,12 @@
+id: postscript
+name: "Postscript"
+apideck: false
+notes: "Postscript publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Postscript API (authentication only)"
+    path: "specs/postscript/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.postscript.io"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developers.postscript.io)."

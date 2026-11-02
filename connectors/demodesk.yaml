@@ -1,0 +1,9 @@
+id: demodesk
+name: "DemoDesk"
+apideck: false
+specs:
+  - name: "Demodesk Public API"
+    url: "https://demodesk.com/api/docs/v2/generated.yaml"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://demodesk.com/api/v2"

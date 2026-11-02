@@ -1,0 +1,9 @@
+id: store-leads
+name: "Store Leads"
+apideck: false
+specs:
+  - name: "Store Leads"
+    url: "https://storeleads.app/specification/api/swagger.yaml"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://storeleads.app"

@@ -1,0 +1,9 @@
+id: ninety-io
+name: "Ninety.io"
+apideck: false
+specs:
+  - name: "Ninety Public API"
+    url: "https://api.public.ninety.io/v1/swagger-json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.public.ninety.io/v1"

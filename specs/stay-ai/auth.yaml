@@ -1,0 +1,22 @@
+openapi: 3.1.0
+info:
+  title: Stay AI API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Stay AI API: its host and an API key sent in the X-RETEXTION-ACCESS-TOKEN header. It lists no endpoints. Stay AI publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /subscriptions refuses a request without credentials (HTTP 401)."
+x-auth-only: true
+x-checked-endpoint: /subscriptions
+x-sources:
+  server: https://docs.stay.ai/reference/query-all-subscriptions
+  auth: https://docs.stay.ai/reference/query-all-subscriptions
+servers:
+  - url: https://api.retextion.com/api/v2
+paths: {}
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: X-RETEXTION-ACCESS-TOKEN
+      description: Merchant Portal > Settings > API Keys
+security:
+  - apiKey: []

@@ -1,0 +1,12 @@
+id: wejam
+name: "WeJam AI"
+apideck: false
+notes: "WeJam AI publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "WeJam AI API (authentication only)"
+    path: "specs/wejam/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.wejam.ai"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (docs.wejam.ai)."

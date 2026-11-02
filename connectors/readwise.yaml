@@ -1,0 +1,12 @@
+id: readwise
+name: "Readwise"
+apideck: false
+notes: "Readwise publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Readwise API (authentication only)"
+    path: "specs/readwise/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://readwise.io/api/v2"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (readwise.io)."

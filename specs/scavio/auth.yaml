@@ -1,0 +1,21 @@
+openapi: 3.1.0
+info:
+  title: Scavio API (authentication only)
+  version: "0"
+  description: "Authentication only. This document describes how to authenticate with the Scavio API: its host and a bearer token. It lists no endpoints. Scavio publishes no OpenAPI specification; every value here comes from the vendor's own documentation, cited per value in x-sources. Checked 2026-11-02: /api/v1/google/customsearch?q=test refuses a request without credentials (HTTP 401)."
+x-auth-only: true
+x-checked-endpoint: /api/v1/google/customsearch?q=test
+x-sources:
+  server: https://scavio.dev/docs/api-reference
+  auth: https://scavio.dev/docs/api-reference
+servers:
+  - url: https://api.scavio.dev
+paths: {}
+components:
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+      description: dashboard.scavio.dev API Keys (sk_live_)
+security:
+  - bearer: []

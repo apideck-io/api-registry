@@ -1,0 +1,12 @@
+id: discogs-token
+name: "Discogs (Personal Access Token)"
+apideck: false
+notes: "Discogs (Personal Access Token) publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Discogs (Personal Access Token) API (authentication only)"
+    path: "specs/discogs-token/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.discogs.com"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (www.discogs.com)."

@@ -1,0 +1,9 @@
+id: modjo-ai
+name: "Modjo AI"
+apideck: false
+specs:
+  - name: "Modjo Public API"
+    url: "https://api.modjo.ai/v2/open-api.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.modjo.ai/v2"

@@ -1,0 +1,12 @@
+id: certn
+name: "Certn"
+apideck: false
+notes: "Certn publishes no API spec; the auth-only spec below is written here."
+specs:
+  - name: "Certn API (authentication only)"
+    path: "specs/certn/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://api.ca.certn.co"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (centric-api-docs.certn.co)."

@@ -1,0 +1,9 @@
+id: chorus
+name: "Chorus"
+apideck: false
+specs:
+  - name: "Chorus API"
+    url: "https://chorus.ai/api/openapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://chorus.ai"

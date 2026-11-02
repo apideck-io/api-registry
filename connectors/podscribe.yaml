@@ -1,0 +1,12 @@
+id: podscribe
+name: "Podscribe"
+apideck: false
+notes: "Podscribe publishes no API spec; the auth-only spec below is written here. API access is for approved partners or specific plans."
+specs:
+  - name: "Podscribe API (authentication only)"
+    path: "specs/podscribe/auth.yaml"
+    format: openapi-3.1
+    provenance: community
+    coverage: auth-only
+    server: "https://backend.podscribe.ai"
+    notes: "Authentication only: no endpoints. Written from the vendor's developer documentation (developers.podscribe.com)."
