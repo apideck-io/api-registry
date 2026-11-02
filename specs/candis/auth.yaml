@@ -23,10 +23,10 @@ components:
           authorizationUrl: https://id.my.candis.io/auth/realms/candis/protocol/openid-connect/auth
           tokenUrl: https://id.my.candis.io/auth/realms/candis/protocol/openid-connect/token
           scopes:
-            exports: Export API (experimental)
-            core_data: Core Data API (experimental)
-            offline_access: Long-lived refresh tokens (~6-24 months)
-            email: Core scope, enabled by default
-            profile: Core scope, enabled by default
+            exports: ""
+            core_data: ""
+            offline_access: ""
+            email: ""
+            profile: ""
 security:
   - oauth2: []

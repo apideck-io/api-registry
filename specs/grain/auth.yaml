@@ -23,7 +23,7 @@ components:
           authorizationUrl: https://grain.com/_/public-api/oauth2/authorize
           tokenUrl: https://api.grain.com/_/public-api/oauth2/token
           scopes:
-            personal: Same access as the authorizing user (default)
-            workspace: Workspace-wide access; not on all plans
+            personal: ""
+            workspace: ""
 security:
   - oauth2: []

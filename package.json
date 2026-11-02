@@ -1,6 +1,7 @@
 {
   "name": "@apideck/api-registry",
   "private": true,
+  "license": "Elastic-2.0",
   "type": "module",
   "description": "A manifest of machine-readable API specifications per connector, verified nightly.",
   "scripts": {

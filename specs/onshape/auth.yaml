@@ -23,11 +23,11 @@ components:
           authorizationUrl: https://oauth.onshape.com/oauth/authorize
           tokenUrl: https://oauth.onshape.com/oauth/token
           scopes:
-            OAuth2ReadPII: Read your profile information
-            OAuth2Read: Read your documents
-            OAuth2Write: Write to your documents
-            OAuth2Delete: Delete your documents and workspaces
-            OAuth2Purchase: Request purchases on your behalf
-            OAuth2Share: Share and unshare documents on your behalf
+            OAuth2ReadPII: ""
+            OAuth2Read: ""
+            OAuth2Write: ""
+            OAuth2Delete: ""
+            OAuth2Purchase: ""
+            OAuth2Share: ""
 security:
   - oauth2: []

@@ -201,7 +201,7 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
                 for (const [kind, flow] of Object.entries(isObj(scheme.flows) ? scheme.flows : {})) {
                   if (!["authorizationCode", "implicit", "clientCredentials", "password"].includes(kind)) errors.push(`${at}: ${name}.flows.${kind} is not an OAuth 2.0 flow`);
                   if (!isObj(flow?.scopes)) errors.push(`${at}: ${name}.flows.${kind} needs scopes (an empty map when the vendor lists none)`);
-                  else if (Object.values(flow.scopes).some((d) => typeof d !== "string")) errors.push(`${at}: ${name}.flows.${kind} scopes map each scope to a string description`);
+                  else if (Object.values(flow.scopes).some((d) => d !== "")) errors.push(`${at}: ${name}.flows.${kind} lists scopes by name, with empty descriptions: the vendor's wording stays the vendor's`);
                   if ((kind === "authorizationCode" || kind === "implicit") && !httpsUrl(flow?.authorizationUrl)) errors.push(`${at}: ${name}.flows.${kind} needs an https authorizationUrl`);
                   if (kind !== "implicit" && !httpsUrl(flow?.tokenUrl)) errors.push(`${at}: ${name}.flows.${kind} needs an https tokenUrl`);
                   if (flow?.refreshUrl !== undefined && !httpsUrl(flow.refreshUrl)) errors.push(`${at}: ${name}.flows.${kind} refreshUrl must be https`);

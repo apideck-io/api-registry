@@ -27,6 +27,6 @@ components:
           scopes:
             openid: ""
             profile: ""
-            aws.cognito.signin.user.admin: Fixed scope set; grants admin permission
+            aws.cognito.signin.user.admin: ""
 security:
   - oauth2: []

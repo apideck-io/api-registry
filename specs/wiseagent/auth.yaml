@@ -21,11 +21,11 @@ components:
           authorizationUrl: https://sync.wiseagent.com/WiseAuth/auth
           tokenUrl: https://sync.wiseagent.com/WiseAuth/token
           scopes:
-            profile: Read profile information including Email, Name, Company
-            team: Read or Update inside team members / update inside team assignments
-            marketing: Read or Update marketing programs
-            contacts: Read, Update, or Create contacts.
-            properties: Read or Update properties.
-            calendar: Read or Update Calendar/Planner.
+            profile: ""
+            team: ""
+            marketing: ""
+            contacts: ""
+            properties: ""
+            calendar: ""
 security:
   - oauth2: []

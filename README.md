@@ -126,7 +126,7 @@ Many apps document their authentication and an API host but publish no spec. For
 
 - Every value comes from the vendor's own documentation, or its official SDK where the docs don't print it, and the spec cites the page for each (`x-sources`: one URL per value, including `tokenEndpointAuthMethod` and `pkce` when those are set).
 - The spec sets `x-auth-only: true`, and its entry sets `coverage: auth-only`; validation rejects an entry that points at a marked file without declaring it, and a declared spec without the marker.
-- `scopes` is an empty map when the vendor lists none on a public page.
+- `scopes` is an empty map when the vendor lists none on a public page. Scopes are listed by name only, with empty descriptions: the vendor's documentation is where to read what each one does, and its wording stays the vendor's.
 - An API-key or HTTP (bearer, basic) scheme cites the page that documents it as `x-sources.auth`. Before it is added, a documented read-only endpoint must refuse a request without credentials (401 or 403); the spec records that request (a path relative to the server, with a query string where the endpoint needs one) as `x-checked-endpoint`. When the vendor wants a prefixed header value (`Authorization: Token <key>`), the apiKey scheme carries it as `x-value-template` (`Token {key}`).
 - Before an auth-only spec is added, the vendor's docs site and API host are checked for a published spec at the usual locations (`/openapi.json`, `/swagger.json`, `/api-docs`…); one found there is linked instead. Its token endpoint must answer an invalid request with an OAuth error, and its authorization endpoint and API host must respond.
 - Where the vendor's documentation or official SDK states it, the security scheme carries `x-token-endpoint-auth-method` (`client_secret_basic` or `client_secret_post`) and `x-pkce-required`. Where it doesn't, the field is left out rather than guessed.
@@ -156,3 +156,7 @@ A nightly workflow runs `verify` and opens a pull request when any spec changed,
 ## Contributing
 
 Add or fix `connectors/<id>.yaml` and open a pull request. Prefer the vendor's raw file URL, for example `raw.githubusercontent.com` rather than a GitHub page. Don't edit `index.json`; the nightly check owns it.
+
+## License
+
+The registry's own work (entries, notes, auth-only and other specs authored here, overlays, `index.json` and scripts) is under the [Elastic License 2.0](LICENSE): you can read and use it, and build on it, but you can't offer it to others as a hosted or managed service, or remove its notices. Separately, Apideck's database rights don't allow extracting a substantial part to republish as a catalog, dataset or API. The API specifications the entries link to, and the files under `derived/graphql/` made from them, stay under their publishers' terms, except that no license has been identified for monday.com's schema, so the status of the file made from it is unknown. By submitting a contribution, you grant Apideck BV a perpetual, worldwide, royalty-free, sublicensable license to use and distribute it, including under this license, and confirm you have the right to. See [NOTICE](NOTICE), which also reserves Apideck's database rights.

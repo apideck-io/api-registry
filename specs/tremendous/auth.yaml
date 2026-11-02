@@ -23,8 +23,8 @@ components:
           authorizationUrl: https://api.tremendous.com/oauth/authorize
           tokenUrl: https://api.tremendous.com/oauth/token
           scopes:
-            default: "Access to most core resources: orders, rewards, products, campaigns, funding sources, invoices, fields."
-            team_management: Access to organizations, members, and webhooks endpoints.
-            fraud_prevention: Access to fraud reviews and configuration rules.
+            default: ""
+            team_management: ""
+            fraud_prevention: ""
 security:
   - oauth2: []
