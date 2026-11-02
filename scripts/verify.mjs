@@ -151,7 +151,7 @@ for (const file of readdirSync(join(ROOT, "connectors")).filter((f) => f.endsWit
     const extractFits = Object.assign(Object.create(null), { "graphql-introspection": ["graphql"], "swagger-ui-init": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "redoc-state": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "markdown-json-fence": ["openapi-3.0", "openapi-3.1", "swagger-2.0"], "zip-bundle": ["openapi-3.0", "openapi-3.1", "swagger-2.0"] });
     if (s?.extract && extractFits[s.extract] && !extractFits[s.extract].includes(s?.format)) errors.push(`${at}: extract ${s.extract} doesn't apply to format ${s?.format}`);
     if (s?.extract && !s?.url) errors.push(`${at}: extract applies to a fetched url; store an extracted spec as a plain path instead`);
-    if (s?.volatile !== undefined && (s.volatile !== true || !OVERLAY_FORMATS.has(s?.format) || s?.extract || !s?.url)) errors.push(`${at}: volatile is true, on a fetched OpenAPI or Swagger spec with no extract`);
+    if (s?.volatile !== undefined && (s.volatile !== true || !OVERLAY_FORMATS.has(s?.format) || s?.extract || s?.manual || !s?.url)) errors.push(`${at}: volatile is true, on a fetched OpenAPI or Swagger spec with no extract or manual`);
     if (s?.volatile && !s?.notes) errors.push(`${at}: a volatile spec needs notes saying what varies`);
     if (s?.manual && !MANUAL.has(s.manual)) errors.push(`${at}: manual must be one of ${[...MANUAL].join(", ")}`);
     if (s?.manual && !s?.notes) errors.push(`${at}: a spec CI can't fetch needs notes saying how to get it`);
@@ -294,13 +294,13 @@ const NAMED_MAPS = new Set(["paths", "webhooks", "pathItems", "properties", "pat
 const withoutVolatile = (v, key) => {
   if (Array.isArray(v)) {
     const items = v.map((x) => withoutVolatile(x));
-    if (key === "security") return [...new Map(items.map((x) => [canonical(x), x])).values()].sort((a, b) => canonical(a).localeCompare(canonical(b)));
+    if (key === "security") return [...new Map(items.map((x) => [canonical(x), x])).values()].sort((a, b) => (canonical(a) < canonical(b) ? -1 : canonical(a) > canonical(b) ? 1 : 0)); // not locale-dependent: two runners must agree
     return items.every((x) => typeof x === "string") ? [...items].sort() : items;
   }
   // A nonce in an authorization URL is per request (Avalara generates one per download).
-  if (key === "authorizationUrl" && typeof v === "string") return v.replace(/([?&]nonce=)[^&]*/g, "$1");
+  if (key === "authorizationUrl" && typeof v === "string") return v.replace(/([?&]nonce=)[^&#]*/g, "$1");
   if (!v || typeof v !== "object") return v;
-  return Object.fromEntries(Object.entries(v).filter(([k]) => NAMED_MAPS.has(key) || (k !== "example" && k !== "examples")).map(([k, x]) => [k, withoutVolatile(x, k)]));
+  return Object.fromEntries(Object.entries(v).filter(([k]) => NAMED_MAPS.has(key) || (k !== "example" && k !== "examples")).map(([k, x]) => [k, withoutVolatile(x, NAMED_MAPS.has(key) ? undefined : k)])); // a name in a map says nothing about its value
 };
 // The first value stored under `key` anywhere in a parsed JSON document (depth-first).
 function findKey(v, key) {
