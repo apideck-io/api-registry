@@ -38,16 +38,16 @@
       "specs": {
         "Asana": {
           "status": "ok",
-          "sha256": "e4867e9cd131efa48ae91297e14b0ddd045c1ac767a90a9d84a3ce99ca07f73a",
-          "fetchSha256": "e4867e9cd131efa48ae91297e14b0ddd045c1ac767a90a9d84a3ce99ca07f73a",
-          "bytes": 3480616,
+          "sha256": "c397f12d0ab4a899c759ca2f4072e95cdc1f11d17fef1b55764c822e4ce9e910",
+          "fetchSha256": "c397f12d0ab4a899c759ca2f4072e95cdc1f11d17fef1b55764c822e4ce9e910",
+          "bytes": 3483123,
           "operations": 271,
           "title": "Asana",
           "apiVersion": "1.0",
           "specVersion": "3.0.0",
           "server": "https://app.asana.com/api/1.0",
           "surface": "9dedf1e88677c98f",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -114,17 +114,17 @@
       "specs": {
         "Calendly API": {
           "status": "ok",
-          "sha256": "7ae64d8a092612e1306cc9a44d8c35e90fc5d385c1710fe883823c677693575d",
-          "fetchSha256": "7ae64d8a092612e1306cc9a44d8c35e90fc5d385c1710fe883823c677693575d",
-          "bytes": 554101,
-          "operations": 82,
+          "sha256": "d3a0659abe957f5f52eeed6b83ca880a87044dd11af6cddf1d1d21301f9bea60",
+          "fetchSha256": "d3a0659abe957f5f52eeed6b83ca880a87044dd11af6cddf1d1d21301f9bea60",
+          "bytes": 563963,
+          "operations": 83,
           "title": "Calendly API",
           "apiVersion": "2.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.calendly.com",
-          "surface": "323010404f1eeb01",
-          "changedOn": "2026-10-31",
-          "surfaceChangedOn": "2026-11-01"
+          "surface": "81ac8de794f0b0d5",
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         }
       }
     },
@@ -187,17 +187,17 @@
       "specs": {
         "DigitalOcean API": {
           "status": "ok",
-          "sha256": "f12e07424ad68412628aa7ac1f16c42a10718e960ee2179d8bef745549d7b005",
-          "fetchSha256": "f12e07424ad68412628aa7ac1f16c42a10718e960ee2179d8bef745549d7b005",
-          "bytes": 4253454,
-          "operations": 868,
+          "sha256": "5f1156a780a769db54abb39183c8b5f1c39a8ba7bf111726f408110965bcaf6f",
+          "fetchSha256": "5f1156a780a769db54abb39183c8b5f1c39a8ba7bf111726f408110965bcaf6f",
+          "bytes": 4281270,
+          "operations": 873,
           "title": "DigitalOcean API",
           "apiVersion": "2.0",
           "specVersion": "3.0.0",
           "server": "https://api.digitalocean.com",
-          "surface": "4849a5c97e40d8a1",
-          "changedOn": "2026-11-02",
-          "surfaceChangedOn": "2026-11-02"
+          "surface": "5de66b83a1880139",
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         }
       }
     },
@@ -242,16 +242,16 @@
       "specs": {
         "GitHub v3 REST API": {
           "status": "ok",
-          "sha256": "d5271db96080c9a4a0537c124bfc85022c42cf7283feff5335429bdce10e5127",
-          "fetchSha256": "d5271db96080c9a4a0537c124bfc85022c42cf7283feff5335429bdce10e5127",
-          "bytes": 78368989,
+          "sha256": "765a01cd8b739227c886ae29692493ff6580ed9cfd8b68410a0c68236ef28858",
+          "fetchSha256": "765a01cd8b739227c886ae29692493ff6580ed9cfd8b68410a0c68236ef28858",
+          "bytes": 78368775,
           "operations": 1254,
           "title": "GitHub v3 REST API",
           "apiVersion": "1.1.4",
           "specVersion": "3.0.3",
           "server": "https://api.github.com",
           "surface": "00c85168029538e1",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -511,16 +511,16 @@
       "specs": {
         "Loket API": {
           "status": "ok",
-          "sha256": "d6f5bd87bd9d39d2735fa2493e7ee3d76f8eec317b888e066a7a0a33f03228de",
-          "fetchSha256": "d6f5bd87bd9d39d2735fa2493e7ee3d76f8eec317b888e066a7a0a33f03228de",
-          "bytes": 4682315,
+          "sha256": "32170564148f3b5cc8a9aaebb97402474c79460c37df2d93c2c00d1062fc2cf9",
+          "fetchSha256": "32170564148f3b5cc8a9aaebb97402474c79460c37df2d93c2c00d1062fc2cf9",
+          "bytes": 4690026,
           "operations": 1089,
           "title": "Loket API",
           "apiVersion": "V2",
           "specVersion": "3.1.0",
           "server": "https://api.loket.nl",
           "surface": "667cafa5efa09b28",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -874,16 +874,16 @@
       "specs": {
         "Telnyx API": {
           "status": "ok",
-          "sha256": "7df03f766ad9daa5f6dcf172ace127056868a9bfbb941eb792d887d8db900132",
-          "fetchSha256": "7df03f766ad9daa5f6dcf172ace127056868a9bfbb941eb792d887d8db900132",
-          "bytes": 6512594,
+          "sha256": "c064630000a49a23ac3e4e534dcef622b66c22ec5a1e042d4eb987070e4c8dff",
+          "fetchSha256": "c064630000a49a23ac3e4e534dcef622b66c22ec5a1e042d4eb987070e4c8dff",
+          "bytes": 6519725,
           "operations": 1507,
           "title": "Telnyx API",
           "apiVersion": "2.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.telnyx.com/v2",
           "surface": "0d611bd1faff4278",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -1075,75 +1075,75 @@
       "specs": {
         "Xero Accounting API": {
           "status": "ok",
-          "sha256": "1afca0717bb0d323210c0f88f3802684c068059f6e5161ee24ddde7ee6294a64",
-          "fetchSha256": "1afca0717bb0d323210c0f88f3802684c068059f6e5161ee24ddde7ee6294a64",
-          "bytes": 933096,
+          "sha256": "ee145b5b922c2aa478659641859c5522b4470dc93998c06e8f6245c462d211dd",
+          "fetchSha256": "ee145b5b922c2aa478659641859c5522b4470dc93998c06e8f6245c462d211dd",
+          "bytes": 933379,
           "operations": 235,
           "title": "Xero Accounting API",
-          "apiVersion": "19.1.0",
+          "apiVersion": "20.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.xero.com/api.xro/2.0",
           "surface": "dc76b0ad5b01b4fc",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "Xero Assets API": {
           "status": "ok",
-          "sha256": "33ae6b5d42674611263f2f77d1d9826e7406a8b96938358f0aa42367595642d2",
-          "fetchSha256": "33ae6b5d42674611263f2f77d1d9826e7406a8b96938358f0aa42367595642d2",
+          "sha256": "b4c80efd1a2b1b176ec14a30a5e723c493c30b764b50b8859078e5d8fd86685d",
+          "fetchSha256": "b4c80efd1a2b1b176ec14a30a5e723c493c30b764b50b8859078e5d8fd86685d",
           "bytes": 37955,
           "operations": 6,
           "title": "Xero Assets API",
-          "apiVersion": "19.1.0",
+          "apiVersion": "20.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.xero.com/assets.xro/1.0",
           "surface": "1a3ec7ded0b95d1b",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-03"
         },
         "Xero Files API": {
           "status": "ok",
-          "sha256": "4200a3862498935b5cc64fde6c79a01e1063ba145ac08f94fb38512740b2a0fc",
-          "fetchSha256": "4200a3862498935b5cc64fde6c79a01e1063ba145ac08f94fb38512740b2a0fc",
+          "sha256": "0fdd536d091873694c3b6bc6289c12b91902752153c305bae0456e21ed55e8e5",
+          "fetchSha256": "0fdd536d091873694c3b6bc6289c12b91902752153c305bae0456e21ed55e8e5",
           "bytes": 31954,
           "operations": 18,
           "title": "Xero Files API",
-          "apiVersion": "19.1.0",
+          "apiVersion": "20.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.xero.com/files.xro/1.0",
           "surface": "26d3f461134055ee",
           "specServer": "https://api.xero.com/files.xro/1.0/",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "Xero Projects API": {
           "status": "ok",
-          "sha256": "4626306130835ae05bdd7341e60f20f25325da97a7357735095a8a9f35c4348f",
-          "fetchSha256": "4626306130835ae05bdd7341e60f20f25325da97a7357735095a8a9f35c4348f",
+          "sha256": "b2284402c34d8f9f0b7792263a06491a4fd1115bbc0ff2e2b970f34dce1e82d9",
+          "fetchSha256": "b2284402c34d8f9f0b7792263a06491a4fd1115bbc0ff2e2b970f34dce1e82d9",
           "bytes": 50878,
           "operations": 16,
           "title": "Xero Projects API",
-          "apiVersion": "19.1.0",
+          "apiVersion": "20.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.xero.com/projects.xro/2.0",
           "surface": "267ff2d7e4d3a882",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "Xero Bank Feeds API": {
           "status": "ok",
-          "sha256": "e4bb3b98b2efd37627f1e4d2c850dfd544588cb97214491ceccd78f54dec5366",
-          "fetchSha256": "e4bb3b98b2efd37627f1e4d2c850dfd544588cb97214491ceccd78f54dec5366",
+          "sha256": "cf5f75fea7f5df9713f27e474cac2c89e1a767cbb814882fca0bb8016cdf7f91",
+          "fetchSha256": "cf5f75fea7f5df9713f27e474cac2c89e1a767cbb814882fca0bb8016cdf7f91",
           "bytes": 35419,
           "operations": 7,
           "title": "Xero Bank Feeds API",
-          "apiVersion": "19.1.0",
+          "apiVersion": "20.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.xero.com/bankfeeds.xro/1.0",
           "surface": "7d4c1fa9db8f1bb4",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-03"
         },
         "Xero Bank Feeds API v2": {
-          "status": "ok",
+          "status": "unparseable: Missing closing 'quote at line 37, column 1:\n\n        A `page` beyond the end of",
           "sha256": "7b83382640300f9dffe4c6f331586f7dd362025596c36f08edc2a1c8bf17d000",
           "fetchSha256": "7b83382640300f9dffe4c6f331586f7dd362025596c36f08edc2a1c8bf17d000",
           "bytes": 52869,
@@ -1158,72 +1158,72 @@
         },
         "Xero Payroll UK": {
           "status": "ok",
-          "sha256": "a0d663634e4a71308169f88b8428ae7436128fb43dca21ca74374f281156c36b",
-          "fetchSha256": "a0d663634e4a71308169f88b8428ae7436128fb43dca21ca74374f281156c36b",
+          "sha256": "8b58550e970d9d95b6767748bdf3a8e0c3f7ac40598e478131d683817ad17fd0",
+          "fetchSha256": "8b58550e970d9d95b6767748bdf3a8e0c3f7ac40598e478131d683817ad17fd0",
           "bytes": 263894,
           "operations": 69,
           "title": "Xero Payroll UK",
-          "apiVersion": "19.1.0",
+          "apiVersion": "20.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.xero.com/payroll.xro/2.0",
           "surface": "4a25a67cf5011be8",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "Xero Payroll AU": {
           "status": "ok",
-          "sha256": "a2edef22468c88aab2caebf30f6eea90b575a65f6eb42216e3b415cc8d0f9ba9",
-          "fetchSha256": "a2edef22468c88aab2caebf30f6eea90b575a65f6eb42216e3b415cc8d0f9ba9",
+          "sha256": "7f5bfbea1617745e871cc48b4674cf20856b0ff2377b1b79b56c01a7fd95acc4",
+          "fetchSha256": "7f5bfbea1617745e871cc48b4674cf20856b0ff2377b1b79b56c01a7fd95acc4",
           "bytes": 189836,
           "operations": 32,
           "title": "Xero Payroll AU API",
-          "apiVersion": "19.1.0",
+          "apiVersion": "20.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.xero.com/payroll.xro/1.0",
           "surface": "16faa6d288907aeb",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "Xero Payroll AU v2": {
           "status": "ok",
-          "sha256": "679e6269ee3f5091ee28786ed31616f25bf26ab75db4577943cb44e09ae6f421",
-          "fetchSha256": "679e6269ee3f5091ee28786ed31616f25bf26ab75db4577943cb44e09ae6f421",
+          "sha256": "529b89b75e646d0e65d4ca118cda56035e7a62b179a4465b15cb6d1daa6a8c79",
+          "fetchSha256": "529b89b75e646d0e65d4ca118cda56035e7a62b179a4465b15cb6d1daa6a8c79",
           "bytes": 31761,
           "operations": 9,
           "title": "Xero Payroll AU API 2.0",
-          "apiVersion": "19.1.0",
+          "apiVersion": "20.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.xero.com/payroll.xro/2.0",
           "surface": "39b14c13cb5d6246",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "Xero Payroll NZ": {
           "status": "ok",
-          "sha256": "b7d7baf62607c89e878217cbc924e67cad15dc75abc0ebb1ddc3d6aaf3f7b6d7",
-          "fetchSha256": "b7d7baf62607c89e878217cbc924e67cad15dc75abc0ebb1ddc3d6aaf3f7b6d7",
+          "sha256": "1849b1888bc43b9795551ce10eae208a08cbfea827ec8a815198d3748f385bca",
+          "fetchSha256": "1849b1888bc43b9795551ce10eae208a08cbfea827ec8a815198d3748f385bca",
           "bytes": 299437,
           "operations": 71,
           "title": "Xero Payroll NZ",
-          "apiVersion": "19.1.0",
+          "apiVersion": "20.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.xero.com/payroll.xro/2.0",
           "surface": "664ad6ba351935ea",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "Xero OAuth 2 Identity Service API": {
           "status": "ok",
-          "sha256": "eea0725c67bd6603ff318e1b9c25699fc607aa075a0c1255721ade7d3563f0ea",
-          "fetchSha256": "eea0725c67bd6603ff318e1b9c25699fc607aa075a0c1255721ade7d3563f0ea",
+          "sha256": "ebd126de191400c48917c4cf0bac26182e0149f533ee1e2b8503d9334dd9fce5",
+          "fetchSha256": "ebd126de191400c48917c4cf0bac26182e0149f533ee1e2b8503d9334dd9fce5",
           "bytes": 5329,
           "operations": 2,
           "title": "Xero OAuth 2 Identity Service API",
-          "apiVersion": "19.1.0",
+          "apiVersion": "20.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.xero.com",
           "surface": "2ecb365bf48c37e5",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -1573,16 +1573,16 @@
       "specs": {
         "Pennylane Company API v2": {
           "status": "ok",
-          "sha256": "6c72a445a9a9db3a7c289e9687fa1412d1444fd3111b1db72839c4566c912a3a",
-          "fetchSha256": "6c72a445a9a9db3a7c289e9687fa1412d1444fd3111b1db72839c4566c912a3a",
-          "bytes": 1981971,
+          "sha256": "1e7db7f127f015b6f08f89fe9eb70b2d7f1f4a52ffbb23f5ec6cc11725137f4c",
+          "fetchSha256": "1e7db7f127f015b6f08f89fe9eb70b2d7f1f4a52ffbb23f5ec6cc11725137f4c",
+          "bytes": 1982749,
           "operations": 183,
           "title": "Company V2",
           "apiVersion": "2.0",
           "specVersion": "3.0.1",
           "server": "https://app.pennylane.com",
           "surface": "920fb8f5abdd9ec8",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -1719,16 +1719,16 @@
       "specs": {
         "Rillet Accounting API": {
           "status": "ok",
-          "sha256": "a55132c5100436971fcd0904d8a989e82b50f49faacc442337b7c9e34bbf8e12",
-          "fetchSha256": "a55132c5100436971fcd0904d8a989e82b50f49faacc442337b7c9e34bbf8e12",
-          "bytes": 487380,
-          "operations": 195,
+          "sha256": "c393d010200554e6bcfdb04e0c58ae0c32df13bc8e3ee2bf52e9344330a59d79",
+          "fetchSha256": "c393d010200554e6bcfdb04e0c58ae0c32df13bc8e3ee2bf52e9344330a59d79",
+          "bytes": 477517,
+          "operations": 189,
           "title": "Rillet Accounting API",
           "apiVersion": "v4.0",
           "specVersion": "3.1.0",
           "server": "https://api.rillet.com",
           "surface": "36e638654492acb0",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -1736,7 +1736,7 @@
       "name": "Workday",
       "specs": {
         "Workday REST common v1": {
-          "status": "ok",
+          "status": "HTTP 404",
           "sha256": "552c76e77cd607b93a62e1e997cee111e731ed1452c47bf1b8f291a544036db2",
           "fetchSha256": "552c76e77cd607b93a62e1e997cee111e731ed1452c47bf1b8f291a544036db2",
           "bytes": 226759,
@@ -1750,7 +1750,7 @@
           "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST staffing v7": {
-          "status": "ok",
+          "status": "HTTP 404",
           "sha256": "84ffc55c9717381c2a3edf6a45bc0b1989ad54f49e620c93fd07ad946792b3fd",
           "fetchSha256": "84ffc55c9717381c2a3edf6a45bc0b1989ad54f49e620c93fd07ad946792b3fd",
           "bytes": 715504,
@@ -1764,7 +1764,7 @@
           "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST person v4": {
-          "status": "ok",
+          "status": "HTTP 404",
           "sha256": "3dea274e2608a0b1c30bafe4bff371dc936f3c23580b9780b5e204f6fc705aff",
           "fetchSha256": "3dea274e2608a0b1c30bafe4bff371dc936f3c23580b9780b5e204f6fc705aff",
           "bytes": 626671,
@@ -1778,7 +1778,7 @@
           "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST accountsPayable v1": {
-          "status": "ok",
+          "status": "HTTP 404",
           "sha256": "c2418c1036493d8fee11bb0bbfc0b8f5d23d7e918208bceb0da94d3300dce851",
           "fetchSha256": "c2418c1036493d8fee11bb0bbfc0b8f5d23d7e918208bceb0da94d3300dce851",
           "bytes": 102687,
@@ -1792,7 +1792,7 @@
           "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST customerAccounts v1": {
-          "status": "ok",
+          "status": "HTTP 404",
           "sha256": "2258ebcd72f435eb0a82dc8e89b9502e6be052d58562e35944225410b0fd3615",
           "fetchSha256": "2258ebcd72f435eb0a82dc8e89b9502e6be052d58562e35944225410b0fd3615",
           "bytes": 85317,
@@ -1806,7 +1806,7 @@
           "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST procurement v5": {
-          "status": "ok",
+          "status": "HTTP 404",
           "sha256": "6224ca95429f76d5987b7b493961ddb4c94fbc61ed824268ec6da794269dc92e",
           "fetchSha256": "6224ca95429f76d5987b7b493961ddb4c94fbc61ed824268ec6da794269dc92e",
           "bytes": 623370,
@@ -1820,7 +1820,7 @@
           "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST expense v1": {
-          "status": "ok",
+          "status": "HTTP 404",
           "sha256": "75f11a63f6fcaa41b79cc2f7d707f46caae64b51fa130a54be8a76334a29e19b",
           "fetchSha256": "75f11a63f6fcaa41b79cc2f7d707f46caae64b51fa130a54be8a76334a29e19b",
           "bytes": 82170,
@@ -1834,7 +1834,7 @@
           "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST coreAccounting v1": {
-          "status": "ok",
+          "status": "HTTP 404",
           "sha256": "a0b0a0bb67e47d6e82c8cf4b8c7dbf93cd6f909bf2448a5aee236de826ae632e",
           "fetchSha256": "a0b0a0bb67e47d6e82c8cf4b8c7dbf93cd6f909bf2448a5aee236de826ae632e",
           "bytes": 18257,
@@ -1848,7 +1848,7 @@
           "surfaceChangedOn": "2026-11-01"
         },
         "Workday REST revenue v1": {
-          "status": "ok",
+          "status": "HTTP 404",
           "sha256": "750a6210662957c4fce34429069d9a7c8ec55259c67bdbb66df688d1e7d74f9e",
           "fetchSha256": "750a6210662957c4fce34429069d9a7c8ec55259c67bdbb66df688d1e7d74f9e",
           "bytes": 52514,
@@ -1872,42 +1872,42 @@
       "specs": {
         "DualEntry Public API v2": {
           "status": "ok",
-          "sha256": "08bd120a0301713c03dccc4e30c7917189ce39a442a4a53a6f94296c713908a1",
-          "fetchSha256": "08bd120a0301713c03dccc4e30c7917189ce39a442a4a53a6f94296c713908a1",
-          "bytes": 2882923,
-          "operations": 313,
+          "sha256": "a3c3aad3cd1e462d3afb1dd4ab58c224355556876bbc86476c5ffafaa921e2c2",
+          "fetchSha256": "a3c3aad3cd1e462d3afb1dd4ab58c224355556876bbc86476c5ffafaa921e2c2",
+          "bytes": 2937458,
+          "operations": 314,
           "title": "DualEntry Public API",
           "apiVersion": "2.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.dualentry.com",
           "surface": "4b7915ab8dc2abd3",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-03"
         },
         "DualEntry Public API v1": {
           "status": "ok",
-          "sha256": "a68fa7b9d2916a3880d05027b7207dd15bd1245154c70bd3b8cba49b7d153578",
-          "fetchSha256": "a68fa7b9d2916a3880d05027b7207dd15bd1245154c70bd3b8cba49b7d153578",
-          "bytes": 2145890,
-          "operations": 213,
+          "sha256": "83b54c061108a151e703f5405701b533a1c56ba25ba78a61e8c5c0daa6b0dd77",
+          "fetchSha256": "83b54c061108a151e703f5405701b533a1c56ba25ba78a61e8c5c0daa6b0dd77",
+          "bytes": 2198165,
+          "operations": 214,
           "title": "DualEntry Public API",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.dualentry.com",
           "surface": "4b7915ab8dc2abd3",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-03"
         },
         "DualEntry Public API v3-alpha": {
           "status": "ok",
-          "sha256": "6af56e4af1d3613ecc7712830bce11cc80a08dd5090bb8895e0ffac76c4458b5",
-          "fetchSha256": "6af56e4af1d3613ecc7712830bce11cc80a08dd5090bb8895e0ffac76c4458b5",
-          "bytes": 3061032,
-          "operations": 326,
+          "sha256": "694ab9267340571201a7bec1b6d8d8abec23e2a6745fe9d131caa9e5060e7678",
+          "fetchSha256": "694ab9267340571201a7bec1b6d8d8abec23e2a6745fe9d131caa9e5060e7678",
+          "bytes": 3097855,
+          "operations": 327,
           "title": "DualEntry Public API",
           "apiVersion": "3.0.0-alpha",
           "specVersion": "3.1.0",
           "server": "https://api.dualentry.com",
           "surface": "4b7915ab8dc2abd3",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -2079,17 +2079,17 @@
       "specs": {
         "Deel API (combined endpoints)": {
           "status": "ok",
-          "sha256": "e90b8d8a6279a96c8400880544168b28faab9202d26423335166edc786092b1f",
-          "fetchSha256": "e90b8d8a6279a96c8400880544168b28faab9202d26423335166edc786092b1f",
-          "bytes": 7063174,
-          "operations": 541,
+          "sha256": "a6ead3363981e5b3a51c4292166fe9d6151371693a4884b7cdcf015b26dd21b2",
+          "fetchSha256": "a6ead3363981e5b3a51c4292166fe9d6151371693a4884b7cdcf015b26dd21b2",
+          "bytes": 7185852,
+          "operations": 557,
           "title": "Endpoints",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.letsdeel.com/rest",
-          "surface": "9b4285d220a74f67",
-          "changedOn": "2026-10-31",
-          "surfaceChangedOn": "2026-11-01"
+          "surface": "38af29add10e479b",
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         }
       }
     },
@@ -2133,8 +2133,8 @@
       "specs": {
         "e-Boekhouden REST API v1": {
           "status": "ok",
-          "sha256": "7fe71fa587987e80de2dc19bb11844fb190d542bdf3423b87a8816e201abd780",
-          "fetchSha256": "7fe71fa587987e80de2dc19bb11844fb190d542bdf3423b87a8816e201abd780",
+          "sha256": "5dfee96126f7fd1d1fb72c4b56342b3d865920fcfc432fe57993ff8cd491e404",
+          "fetchSha256": "5dfee96126f7fd1d1fb72c4b56342b3d865920fcfc432fe57993ff8cd491e404",
           "bytes": 578380,
           "operations": 41,
           "title": "e-Boekhouden API",
@@ -2142,7 +2142,7 @@
           "specVersion": "3.1.1",
           "server": "https://api.e-boekhouden.nl/",
           "surface": "5429e8361b3187a1",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -2152,16 +2152,18 @@
       "specs": {
         "Visma e-conomic OpenAPI Projects v2": {
           "status": "ok",
-          "sha256": "6e52414a229d826dcdede1335bc3c983f5d3fa5ff1ca7ae38dfd0dec5a921e34",
-          "fetchSha256": "6e52414a229d826dcdede1335bc3c983f5d3fa5ff1ca7ae38dfd0dec5a921e34",
-          "bytes": 576020,
+          "sha256": "78810a31433ecf6957ccd20bb41f4bfc3fb077279773e16a9346b42b2ac59249",
+          "fetchSha256": "78810a31433ecf6957ccd20bb41f4bfc3fb077279773e16a9346b42b2ac59249",
+          "bytes": 577094,
           "operations": 98,
           "title": "Visma e-conomic OpenAPI Projects v2",
-          "apiVersion": "1.1.0",
+          "apiVersion": "1.1.1",
           "specVersion": "3.1.1",
           "server": "https://apis.e-conomic.com/projectsapi/v1.1.0/",
-          "surface": "1c43541550dd7884",
-          "changedOn": "2026-10-31"
+          "surface": "185d0984723914ba",
+          "specServer": "https://apis.e-conomic.com/projectsapi/v1.1.1/",
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         },
         "Visma e-conomic OpenAPI Customers": {
           "status": "ok",
@@ -2415,17 +2417,17 @@
       "specs": {
         "folk External API": {
           "status": "ok",
-          "sha256": "abb289c319170f37b4360b6a6f7424433cac700303af1ce2c1540bbff56c63d5",
-          "fetchSha256": "abb289c319170f37b4360b6a6f7424433cac700303af1ce2c1540bbff56c63d5",
-          "bytes": 1223431,
-          "operations": 87,
+          "sha256": "c6818f3ba60ddfdea349825918535e0014531bb0af27b9cb12ba632d166b2c91",
+          "fetchSha256": "c6818f3ba60ddfdea349825918535e0014531bb0af27b9cb12ba632d166b2c91",
+          "bytes": 1317141,
+          "operations": 94,
           "title": "Folk External API",
           "apiVersion": "2025-06-09",
           "specVersion": "3.1.0",
           "server": "https://api.folk.app",
-          "surface": "106e303e411297f8",
-          "changedOn": "2026-10-31",
-          "surfaceChangedOn": "2026-11-01"
+          "surface": "a83288b13449bbc8",
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         }
       }
     },
@@ -2558,17 +2560,17 @@
       "specs": {
         "GitHub Enterprise Cloud REST API": {
           "status": "ok",
-          "sha256": "4d2e30f8adbdaa4d79ed3c8bd55ecb4c26b28ea01d8de053639183775e642cba",
-          "fetchSha256": "4d2e30f8adbdaa4d79ed3c8bd55ecb4c26b28ea01d8de053639183775e642cba",
-          "bytes": 15311703,
-          "operations": 1548,
+          "sha256": "941f0650b074faa8be42ad4cb55d4ba498bf2d45ffb70614d098d925651191ac",
+          "fetchSha256": "941f0650b074faa8be42ad4cb55d4ba498bf2d45ffb70614d098d925651191ac",
+          "bytes": 15339020,
+          "operations": 1551,
           "title": "GitHub v3 REST API",
           "apiVersion": "1.1.4",
           "specVersion": "3.0.3",
           "server": "https://api.{subdomain}.ghe.com",
           "surface": "00c85168029538e1",
           "specServer": "https://api.github.com",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -2577,16 +2579,16 @@
       "specs": {
         "GitHub Enterprise Server 3.22 REST API": {
           "status": "ok",
-          "sha256": "d60341a2bba849aefd6e7b7275763e6da8ef90581f0d957e19d8d8a6c4d79770",
-          "fetchSha256": "d60341a2bba849aefd6e7b7275763e6da8ef90581f0d957e19d8d8a6c4d79770",
-          "bytes": 11839071,
+          "sha256": "eb0eeac95ac1e1569b49d937618986ad97a77874a8467dce831b13b5cd2155f3",
+          "fetchSha256": "eb0eeac95ac1e1569b49d937618986ad97a77874a8467dce831b13b5cd2155f3",
+          "bytes": 11838948,
           "operations": 1105,
           "title": "GitHub v3 REST API",
           "apiVersion": "1.1.4",
           "specVersion": "3.0.3",
           "server": "{protocol}://{hostname}/api/v3",
           "surface": "a5fce7ee54bc2afa",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -2610,11 +2612,11 @@
         },
         "GitLab GraphQL API": {
           "status": "ok",
-          "sha256": "0ca83d0a6a0dae6f9d551e5dbd03f7048e893cc20c4bbf7842826050d1fcfcd9",
-          "bytes": 8655593,
-          "operations": 900,
+          "sha256": "25db124e1aa93a86a20cf57bf434dd14e17f72566cf92ef5c03a670d06a1c6bd",
+          "bytes": 8650958,
+          "operations": 902,
           "server": "https://gitlab.com/api/graphql",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -2701,16 +2703,16 @@
       "specs": {
         "ActiveCampaign API v3": {
           "status": "ok",
-          "sha256": "bd541be3d0a50a1b448ec8259397efd69aec95bb0cb9f3bc834ff9ce2e876f3e",
-          "fetchSha256": "bd541be3d0a50a1b448ec8259397efd69aec95bb0cb9f3bc834ff9ce2e876f3e",
-          "bytes": 5258050,
-          "operations": 1483,
+          "sha256": "0082478a16dfc1b5e86e2eae39c3a1e633ff791b997e9ff50fd5b97f9dc8cb8a",
+          "fetchSha256": "0082478a16dfc1b5e86e2eae39c3a1e633ff791b997e9ff50fd5b97f9dc8cb8a",
+          "bytes": 2287860,
+          "operations": 544,
           "title": "v3",
           "apiVersion": "3",
           "specVersion": "3.1.0",
           "server": "https://{youraccountname}.api-us1.com/api/3",
           "surface": "9597729a1611b02c",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "ActiveCampaign Partners API": {
@@ -2855,17 +2857,17 @@
       "specs": {
         "Attio REST API": {
           "status": "ok",
-          "sha256": "fc8fc24c05aa50e777cd856bfad82d5de9208cae70c8f650b0c1df4386daefd4",
-          "fetchSha256": "fc8fc24c05aa50e777cd856bfad82d5de9208cae70c8f650b0c1df4386daefd4",
-          "bytes": 1130089,
-          "operations": 97,
+          "sha256": "7d2c7472b3786b1a37fed4c86262865fdb24f9adb5f1d687438626a164793559",
+          "fetchSha256": "7d2c7472b3786b1a37fed4c86262865fdb24f9adb5f1d687438626a164793559",
+          "bytes": 1140195,
+          "operations": 99,
           "title": "Attio API",
           "apiVersion": "2.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.attio.com",
-          "surface": "691131ee34fb0a3a",
-          "changedOn": "2026-10-31",
-          "surfaceChangedOn": "2026-11-01"
+          "surface": "dcdd8dbcabdf4d1c",
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         }
       }
     },
@@ -3032,17 +3034,17 @@
       "specs": {
         "Close API": {
           "status": "ok",
-          "sha256": "3b2b1f316d91b2aba183bce00192056d8882daf1f3dc280ff07ae0a4fc2161fa",
-          "fetchSha256": "3b2b1f316d91b2aba183bce00192056d8882daf1f3dc280ff07ae0a4fc2161fa",
-          "bytes": 1068831,
-          "operations": 303,
+          "sha256": "0ad1262a6b89bf1e86f5b2ca73f0bcfb2da51ef9afbaff8befc160d252549c79",
+          "fetchSha256": "0ad1262a6b89bf1e86f5b2ca73f0bcfb2da51ef9afbaff8befc160d252549c79",
+          "bytes": 1129110,
+          "operations": 307,
           "title": "API Endpoints",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.close.com/api/v1",
-          "surface": "a90d8de75912d1bc",
-          "changedOn": "2026-10-31",
-          "surfaceChangedOn": "2026-11-01"
+          "surface": "f957943395990789",
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         }
       }
     },
@@ -3578,15 +3580,15 @@
       "specs": {
         "Justworks Partner API v1": {
           "status": "ok",
-          "sha256": "f1d413b4182258bf567985aefef2f219de462c7fc8889d920730c4c01d85db4a",
-          "bytes": 148362,
+          "sha256": "0609756583829f5b7c2a1de85761a8e9706600eb8383655548d9c7c627568b26",
+          "bytes": 148582,
           "operations": 25,
           "title": "Justworks API",
-          "apiVersion": "1.56.0",
+          "apiVersion": "1.60.1",
           "specVersion": "3.0.0",
           "server": "https://public-api.justworks.com",
           "surface": "1640d4b56270fa90",
-          "changedOn": "2026-10-31",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -3937,16 +3939,16 @@
       "specs": {
         "Remote API": {
           "status": "ok",
-          "sha256": "d1809874b4ea4b8ff16f08268de73f387f16a67758559d8b73c55b8ff8cabe43",
-          "fetchSha256": "d1809874b4ea4b8ff16f08268de73f387f16a67758559d8b73c55b8ff8cabe43",
-          "bytes": 3087309,
+          "sha256": "891a5de32dbd8d7db732a06c4fe282b3b2185a32a269214dd290af22fabb71dc",
+          "fetchSha256": "891a5de32dbd8d7db732a06c4fe282b3b2185a32a269214dd290af22fabb71dc",
+          "bytes": 3089531,
           "operations": 308,
           "title": "Remote API",
           "apiVersion": "0.1.0",
           "specVersion": "3.0.0",
           "server": "https://gateway.remote.com/",
           "surface": "ecf0bcfff85df205",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -4057,11 +4059,11 @@
       "specs": {
         "Shopify Admin GraphQL API": {
           "status": "ok",
-          "sha256": "7409984730ccf705753fb76dcdc159bdb660287c92209dd6452204602e3ab8ff",
-          "bytes": 3240630,
+          "sha256": "90d3c6feb470d57a8a20c919e594298b26e295a6fde5927a0127a30a8195aedf",
+          "bytes": 3241424,
           "operations": 835,
           "server": "https://{shop}.myshopify.com/admin/api/2026-10/graphql.json",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -4070,11 +4072,11 @@
       "specs": {
         "Shopify Admin GraphQL API": {
           "status": "ok",
-          "sha256": "7409984730ccf705753fb76dcdc159bdb660287c92209dd6452204602e3ab8ff",
-          "bytes": 3240630,
+          "sha256": "90d3c6feb470d57a8a20c919e594298b26e295a6fde5927a0127a30a8195aedf",
+          "bytes": 3241424,
           "operations": 835,
           "server": "https://{shop}.myshopify.com/admin/api/2026-10/graphql.json",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -4134,17 +4136,17 @@
       "specs": {
         "Linear GraphQL schema (SDL)": {
           "status": "ok",
-          "sha256": "99d9d750824578cf8bceecda0b556b9b885c07404fe7d32222e679b5962d1dce",
-          "fetchSha256": "99d9d750824578cf8bceecda0b556b9b885c07404fe7d32222e679b5962d1dce",
-          "bytes": 1384632,
+          "sha256": "73fac69ae08c0cf8329bbc85a3728a9e24e6e66116ac2f5d6aebbef922b30daf",
+          "fetchSha256": "73fac69ae08c0cf8329bbc85a3728a9e24e6e66116ac2f5d6aebbef922b30daf",
+          "bytes": 1388637,
           "operations": 574,
           "derived": {
             "file": "derived/graphql/9ea1cd4a37bb0243.introspection.json",
-            "sha256": "15d3db1f56e0fc5bf84a476ecb0b04106193ecf45c39666e160d1db36d7b1db5",
-            "bytes": 6215027
+            "sha256": "78e51bb5cb1fcd6d4aa22a46f30f5ec05e04eb3d57891894f14137f8d1730d4e",
+            "bytes": 6231630
           },
           "server": "https://api.linear.app/graphql",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -4153,17 +4155,17 @@
       "specs": {
         "Linear GraphQL schema (SDL)": {
           "status": "ok",
-          "sha256": "99d9d750824578cf8bceecda0b556b9b885c07404fe7d32222e679b5962d1dce",
-          "fetchSha256": "99d9d750824578cf8bceecda0b556b9b885c07404fe7d32222e679b5962d1dce",
-          "bytes": 1384632,
+          "sha256": "73fac69ae08c0cf8329bbc85a3728a9e24e6e66116ac2f5d6aebbef922b30daf",
+          "fetchSha256": "73fac69ae08c0cf8329bbc85a3728a9e24e6e66116ac2f5d6aebbef922b30daf",
+          "bytes": 1388637,
           "operations": 574,
           "derived": {
             "file": "derived/graphql/9ea1cd4a37bb0243.introspection.json",
-            "sha256": "15d3db1f56e0fc5bf84a476ecb0b04106193ecf45c39666e160d1db36d7b1db5",
-            "bytes": 6215027
+            "sha256": "78e51bb5cb1fcd6d4aa22a46f30f5ec05e04eb3d57891894f14137f8d1730d4e",
+            "bytes": 6231630
           },
           "server": "https://api.linear.app/graphql",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -4298,16 +4300,16 @@
         },
         "Lucca legacy: Lucca Timesheet API (not v3)": {
           "status": "ok",
-          "sha256": "22e9c4d97adf3d56ab41de322b7d91c3cbfbf8c355540d6d5181e826249d14ea",
-          "fetchSha256": "22e9c4d97adf3d56ab41de322b7d91c3cbfbf8c355540d6d5181e826249d14ea",
-          "bytes": 29011,
-          "operations": 7,
+          "sha256": "4283b97900473dbe00c92f48cee4bf14010db0e2cc8329d67395ef45dd9e358e",
+          "fetchSha256": "4283b97900473dbe00c92f48cee4bf14010db0e2cc8329d67395ef45dd9e358e",
+          "bytes": 43204,
+          "operations": 11,
           "title": "Lucca Timesheet API (not v3)",
           "apiVersion": "1.0",
           "specVersion": "3.1.0",
           "server": "https://{host}",
           "surface": "e761d6f26d92aca8",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-03"
         },
         "Lucca legacy: Lucca Project API (not v3)": {
           "status": "ok",
@@ -4544,16 +4546,16 @@
       "specs": {
         "Bird API": {
           "status": "ok",
-          "sha256": "2404976eea7deef0addd178ea0e972c336dc309d9d4ee6106697bd2da8bb3981",
-          "fetchSha256": "2404976eea7deef0addd178ea0e972c336dc309d9d4ee6106697bd2da8bb3981",
-          "bytes": 7114283,
+          "sha256": "d38f9ff45b551259b21b9ccfbfdec30a3ba5611aed4afd2546602b7393823075",
+          "fetchSha256": "d38f9ff45b551259b21b9ccfbfdec30a3ba5611aed4afd2546602b7393823075",
+          "bytes": 7116462,
           "operations": 514,
           "title": "Bird API",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://{region}.platform.bird.com",
           "surface": "fef2588aa90baed5",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "Legacy MessageBird SMS API": {
@@ -4625,17 +4627,17 @@
       "specs": {
         "monday.com GraphQL schema (SDL)": {
           "status": "ok",
-          "sha256": "f7a4e9cd8fe242e645fd12684377baf939be7f0ca28c32b6d4da1df8f9a4eb08",
-          "fetchSha256": "f7a4e9cd8fe242e645fd12684377baf939be7f0ca28c32b6d4da1df8f9a4eb08",
-          "bytes": 680911,
+          "sha256": "074a148fe13c5f7264ca29e00c7a60967516efc6af0fcdb95e109ded5671e9ae",
+          "fetchSha256": "074a148fe13c5f7264ca29e00c7a60967516efc6af0fcdb95e109ded5671e9ae",
+          "bytes": 681232,
           "operations": 335,
           "derived": {
             "file": "derived/graphql/0656071d10c32575.introspection.json",
-            "sha256": "f69ab27230c64cf6f2b02733f4cda39e62742a797015753c03d74d1237d97a75",
-            "bytes": 3648322
+            "sha256": "d66d7076a0e1a4efb6c80b6befd6a0d2ac42e32d0a97d6be8c81d27176b93562",
+            "bytes": 3649733
           },
           "server": "https://api.monday.com/v2",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -4644,16 +4646,16 @@
       "specs": {
         "Moneybird API": {
           "status": "ok",
-          "sha256": "f75e22487626682e65963ab3b3d06ba00f422b6eded4ef6f5ebb7b6c037208c4",
-          "fetchSha256": "f75e22487626682e65963ab3b3d06ba00f422b6eded4ef6f5ebb7b6c037208c4",
-          "bytes": 3098678,
+          "sha256": "624e64cf39ba6882217390c42124442ad56e65cafc464891a401c789870672e0",
+          "fetchSha256": "624e64cf39ba6882217390c42124442ad56e65cafc464891a401c789870672e0",
+          "bytes": 3098700,
           "operations": 300,
           "title": "Moneybird API",
-          "apiVersion": "v2-20261102-9496f597f3",
+          "apiVersion": "v2-20261102-5a838624f2",
           "specVersion": "3.1.0",
           "server": "https://moneybird.com/api/v2",
           "surface": "b70642a49f9ec445",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -4663,15 +4665,15 @@
       "specs": {
         "MYOB AccountRight API Postman collection": {
           "status": "ok",
-          "sha256": "a6259b6bdbfeff705bec8614f0d7f20efcb5137cefbec6327b4c5a93ba4d6ec7",
-          "fetchSha256": "a6259b6bdbfeff705bec8614f0d7f20efcb5137cefbec6327b4c5a93ba4d6ec7",
+          "sha256": "73939a5913734b9d613d4768dff578244cfaeb4602a40d9c4f57c9de6bb6a111",
+          "fetchSha256": "73939a5913734b9d613d4768dff578244cfaeb4602a40d9c4f57c9de6bb6a111",
           "bytes": 7071274,
           "operations": 257,
           "title": "MYOB AccountRight",
           "specVersion": "2.0.0",
           "surface": "d654267dd159aa50",
           "server": "https://api.myob.com/accountright",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -5056,16 +5058,16 @@
       "specs": {
         "Teamleader Focus API": {
           "status": "ok",
-          "sha256": "46c0fd3d8c30a0a69fbd5705b167314f8b13bd2728a78fea85588d212e60ca62",
-          "fetchSha256": "46c0fd3d8c30a0a69fbd5705b167314f8b13bd2728a78fea85588d212e60ca62",
+          "sha256": "62b830241ac17acb0ce1a7d7dec5a77785f2a55216ea90f74e870679dd79f463",
+          "fetchSha256": "62b830241ac17acb0ce1a7d7dec5a77785f2a55216ea90f74e870679dd79f463",
           "bytes": 1090924,
           "operations": 292,
           "title": "Teamleader API",
-          "apiVersion": "1.232.0",
+          "apiVersion": "1.235.0",
           "specVersion": "3.0.0",
           "server": "https://api.focus.teamleader.eu",
           "surface": "f58a6aa508908b73",
-          "changedOn": "2026-10-31"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -5255,17 +5257,17 @@
       "specs": {
         "PostHog API": {
           "status": "ok",
-          "sha256": "fdcdef81561418e6a1b8c93f5c9a14fc5e21af40a1a8f678506b8a138b82cbba",
-          "fetchSha256": "fdcdef81561418e6a1b8c93f5c9a14fc5e21af40a1a8f678506b8a138b82cbba",
-          "bytes": 10767865,
-          "operations": 2536,
+          "sha256": "dfd04483a77d54494099d2c4a166c658237aa4c2865408d55e91dcaa63cf1ef2",
+          "fetchSha256": "dfd04483a77d54494099d2c4a166c658237aa4c2865408d55e91dcaa63cf1ef2",
+          "bytes": 10830046,
+          "operations": 2546,
           "title": "PostHog API",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://us.posthog.com",
-          "surface": "bcbf3dfdc255f174",
-          "changedOn": "2026-11-02",
-          "surfaceChangedOn": "2026-11-02"
+          "surface": "7d975ba436260829",
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         }
       }
     },
@@ -5314,9 +5316,9 @@
       "specs": {
         "Datadog API v1": {
           "status": "ok",
-          "sha256": "f6649daefd202fb78419f91532eb5a886a211631f5f6a68545f32e7e97031785",
-          "fetchSha256": "f6649daefd202fb78419f91532eb5a886a211631f5f6a68545f32e7e97031785",
-          "bytes": 1699799,
+          "sha256": "a0c0937570cd06a6dd6ce3083eb3c5ac7472186602b1d440c3839af1c1223187",
+          "fetchSha256": "a0c0937570cd06a6dd6ce3083eb3c5ac7472186602b1d440c3839af1c1223187",
+          "bytes": 1706673,
           "operations": 235,
           "title": "Datadog API V1 Collection",
           "apiVersion": "1.0",
@@ -5324,13 +5326,13 @@
           "server": "https://api.datadoghq.com",
           "surface": "f134a99f6388ce37",
           "specServer": "https://{subdomain}.{site}",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "Datadog API v2": {
           "status": "ok",
-          "sha256": "85abb1b72a539b9f906828ce458bdc38597b7b93d54d33a3f272310102b35917",
-          "bytes": 9367658,
+          "sha256": "a9bdd8d64dbe9bba20897d237b8cc7a55ebbf77d7bdf1c38bbc5b6b958e0ae6a",
+          "bytes": 9373986,
           "operations": 1712,
           "title": "Datadog API V2 Collection",
           "apiVersion": "1.0",
@@ -5338,7 +5340,7 @@
           "server": "https://api.datadoghq.com",
           "surface": "e9b07190622f6b41",
           "specServer": "https://{subdomain}.{site}",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -5423,15 +5425,15 @@
       "specs": {
         "X API v2": {
           "status": "ok",
-          "sha256": "05ad884a5e8cd505ee38908cd1e46757f082cedf66e0c4497682965197c97b34",
-          "bytes": 740927,
+          "sha256": "ca8c01a1251eb368ad87556ddba6782a5cf000ba59a348555ee449a2ee13d7d6",
+          "bytes": 743732,
           "operations": 257,
           "title": "X API v2",
           "apiVersion": "2.173",
           "specVersion": "3.0.0",
           "server": "https://api.x.com",
           "surface": "ff17c21f69b9e70b",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01",
           "hashForm": "volatile"
         }
@@ -5523,16 +5525,16 @@
       "specs": {
         "Apollo REST API": {
           "status": "ok",
-          "sha256": "2caa89ab8f3d7aaa866b68395b7e98fd951fc183e0c26bedd8b88d1dd56fe0da",
-          "fetchSha256": "2caa89ab8f3d7aaa866b68395b7e98fd951fc183e0c26bedd8b88d1dd56fe0da",
-          "bytes": 1277668,
-          "operations": 83,
+          "sha256": "c6ad3198f6596cb81b5540d1ecbc2f2bd4260b64bfe06a092efa828b8f76a836",
+          "fetchSha256": "c6ad3198f6596cb81b5540d1ecbc2f2bd4260b64bfe06a092efa828b8f76a836",
+          "bytes": 1300927,
+          "operations": 85,
           "title": "apollo-rest-api",
           "apiVersion": "1.0",
           "specVersion": "3.1.0",
           "server": "https://api.apollo.io/api/v1",
           "surface": "a08f4898f896fcf7",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -5934,14 +5936,14 @@
       "specs": {
         "Places API (New)": {
           "status": "ok",
-          "sha256": "b356fb5210c6bdb9781691b4db93fdee875745205be6c565bbbf6c15896b99af",
-          "bytes": 148873,
+          "sha256": "2e04d4fd2fc40a0bd4c43171a89318a5ce687c2b508a3037287d3508c4cd9249",
+          "bytes": 148978,
           "operations": 5,
           "title": "Places API (New)",
           "apiVersion": "v1",
           "server": "https://places.googleapis.com/",
           "surface": "e9adb9ad8d57fcc3",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -5981,30 +5983,30 @@
       "specs": {
         "Customer.io Track API": {
           "status": "ok",
-          "sha256": "b6a220fa98db6577436e8192c9c23b71ca9892cede2ee5b0fbdb7ec5cc7206e5",
-          "fetchSha256": "b6a220fa98db6577436e8192c9c23b71ca9892cede2ee5b0fbdb7ec5cc7206e5",
-          "bytes": 3582098,
+          "sha256": "3622cf9af1a3241de1c7548d4454729f060a1cf23c7a7dfbd6a5fe718103b2d8",
+          "fetchSha256": "3622cf9af1a3241de1c7548d4454729f060a1cf23c7a7dfbd6a5fe718103b2d8",
+          "bytes": 3582183,
           "operations": 18,
           "title": "Customer.io Track API",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://track.customer.io",
           "surface": "73d3e31711edc216",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "Customer.io App API": {
           "status": "ok",
-          "sha256": "1e605e8b8b47035444bb4860a0aeb04297d2217327207afa679cb33443acd015",
-          "fetchSha256": "1e605e8b8b47035444bb4860a0aeb04297d2217327207afa679cb33443acd015",
-          "bytes": 14966465,
+          "sha256": "dec097b54a70bc988702ecddb3547ba5b64ef05caf423bf0d90bdaf9b19416b1",
+          "fetchSha256": "dec097b54a70bc988702ecddb3547ba5b64ef05caf423bf0d90bdaf9b19416b1",
+          "bytes": 14967206,
           "operations": 151,
           "title": "Customer.io App API",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.customer.io",
           "surface": "eb35cbd12a35699f",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-02"
         }
       }
@@ -6239,16 +6241,16 @@
       "specs": {
         "Bitbucket Cloud REST API": {
           "status": "ok",
-          "sha256": "4d7538c4063e7b7b41b8defd3c9d2ca39fcac7ea661d019eb323f14e90f302af",
-          "fetchSha256": "4d7538c4063e7b7b41b8defd3c9d2ca39fcac7ea661d019eb323f14e90f302af",
-          "bytes": 903152,
+          "sha256": "f7880c7f7a28e895f9782646f7e151fcde570b2054b0ffaca66af5045da04363",
+          "fetchSha256": "f7880c7f7a28e895f9782646f7e151fcde570b2054b0ffaca66af5045da04363",
+          "bytes": 903376,
           "operations": 300,
           "title": "Bitbucket API",
           "apiVersion": "2.0",
           "specVersion": "2.0",
           "server": "https://api.bitbucket.org/2.0",
           "surface": "027440aa2f0cb5b4",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -6489,16 +6491,16 @@
         },
         "Ecommerce": {
           "status": "ok",
-          "sha256": "df0d5ee455506b520b5430c71c378e05eb8f26ac82f5fae07f667f3cb5b02229",
-          "fetchSha256": "df0d5ee455506b520b5430c71c378e05eb8f26ac82f5fae07f667f3cb5b02229",
-          "bytes": 114378,
+          "sha256": "7de767e0f8cb15e374ed32a3296bbcc44ae5ce3211183ef90b2c82408b8b9902",
+          "fetchSha256": "7de767e0f8cb15e374ed32a3296bbcc44ae5ce3211183ef90b2c82408b8b9902",
+          "bytes": 114731,
           "operations": 26,
           "title": "Ecommerce",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.brevo.com/v3",
           "surface": "60c3b4c713931d81",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "Events": {
@@ -6536,16 +6538,16 @@
       "specs": {
         "Cal.com API v2": {
           "status": "ok",
-          "sha256": "d5f2dd5f993590b95a3654182cd302bc1001c3d4ec5c6aac3a2b5807df3f9ebf",
-          "fetchSha256": "d5f2dd5f993590b95a3654182cd302bc1001c3d4ec5c6aac3a2b5807df3f9ebf",
-          "bytes": 2286394,
+          "sha256": "99f8dd24937d6f0b073f29532ae96a45427ca1f819b86d2b5f55237245145d06",
+          "fetchSha256": "99f8dd24937d6f0b073f29532ae96a45427ca1f819b86d2b5f55237245145d06",
+          "bytes": 2286448,
           "operations": 420,
           "title": "Cal.com API v2",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.cal.com",
           "surface": "d00d153bdc5ba52c",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -6594,17 +6596,17 @@
       "specs": {
         "Cloudflare API": {
           "status": "ok",
-          "sha256": "3bbc75d8edd5e208365a96b0e86936c5e4aaeda38f0bb3ec9afadd1b9e8c4a71",
-          "fetchSha256": "3bbc75d8edd5e208365a96b0e86936c5e4aaeda38f0bb3ec9afadd1b9e8c4a71",
-          "bytes": 27629458,
+          "sha256": "3649f4af00fe93dcaac315ca5a97a8573e0b7e16671678c1981f75b482e7807c",
+          "fetchSha256": "3649f4af00fe93dcaac315ca5a97a8573e0b7e16671678c1981f75b482e7807c",
+          "bytes": 27633745,
           "operations": 3763,
           "title": "Cloudflare API",
           "apiVersion": "4.0.0",
           "specVersion": "3.0.3",
           "server": "https://api.cloudflare.com/client/v4",
-          "surface": "3ab101eaff8bbe75",
-          "changedOn": "2026-11-02",
-          "surfaceChangedOn": "2026-11-02"
+          "surface": "8f5af70565d29ee7",
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         }
       }
     },
@@ -6798,16 +6800,16 @@
       "specs": {
         "ElevenLabs API": {
           "status": "ok",
-          "sha256": "b402c33b07b44113faa2afd2e828027f0f9be11789a708db3bccb98c21c486dc",
-          "fetchSha256": "b402c33b07b44113faa2afd2e828027f0f9be11789a708db3bccb98c21c486dc",
-          "bytes": 2552920,
-          "operations": 478,
+          "sha256": "c8007d021be3fb54a643e10ae332bd91d731f3060d997e6430693c391b9c2ace",
+          "fetchSha256": "c8007d021be3fb54a643e10ae332bd91d731f3060d997e6430693c391b9c2ace",
+          "bytes": 2397092,
+          "operations": 438,
           "title": "ElevenLabs API Documentation",
           "apiVersion": "1.0",
           "specVersion": "3.1.0",
           "server": "https://api.elevenlabs.io",
           "surface": "544c32aacaf23f89",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -6880,16 +6882,16 @@
       "specs": {
         "Front Core API": {
           "status": "ok",
-          "sha256": "dd4d7d51814441749a13cbf83a996f24f93f37685d1bb66d8db0b02b60a3ae93",
-          "fetchSha256": "dd4d7d51814441749a13cbf83a996f24f93f37685d1bb66d8db0b02b60a3ae93",
-          "bytes": 509135,
+          "sha256": "dd0b45ae7f1a90ca0d9bd4df2323cf55cbdcbe409de4e7b52b911ee553deee9a",
+          "fetchSha256": "dd0b45ae7f1a90ca0d9bd4df2323cf55cbdcbe409de4e7b52b911ee553deee9a",
+          "bytes": 509165,
           "operations": 246,
           "title": "Core API",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.0",
           "server": "https://api2.frontapp.com",
           "surface": "eae01b22c2c3a981",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -6899,8 +6901,8 @@
       "specs": {
         "Glean Client API": {
           "status": "ok",
-          "sha256": "9f2076d3eb4326508cce4121f1dca29c56f7302515c0dfed3748599e1137d991",
-          "fetchSha256": "9f2076d3eb4326508cce4121f1dca29c56f7302515c0dfed3748599e1137d991",
+          "sha256": "51a9c02237c04e51ba94b53c42103453208fee7d5b1231d8b891ac3f89a6d63f",
+          "fetchSha256": "51a9c02237c04e51ba94b53c42103453208fee7d5b1231d8b891ac3f89a6d63f",
           "bytes": 422631,
           "operations": 72,
           "title": "Glean Client API",
@@ -6908,20 +6910,20 @@
           "specVersion": "3.0.0",
           "server": "https://{instance}-be.glean.com",
           "surface": "90f0366f9ab88b02",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         },
         "Glean Indexing API": {
           "status": "ok",
-          "sha256": "730028529694b6b9a760d8a64a081ace11a243c18b2ee2fd9a01da1aaa0e112c",
-          "fetchSha256": "730028529694b6b9a760d8a64a081ace11a243c18b2ee2fd9a01da1aaa0e112c",
-          "bytes": 119216,
+          "sha256": "c2727931c613ef850cde44c95fc240a9835718700dc74448f2df7be90ca287dd",
+          "fetchSha256": "c2727931c613ef850cde44c95fc240a9835718700dc74448f2df7be90ca287dd",
+          "bytes": 119240,
           "operations": 45,
           "title": "Glean Indexing API",
           "apiVersion": "0.9.0",
           "specVersion": "3.0.0",
           "server": "https://{instance}-be.glean.com",
           "surface": "6a42c47fbdc91122",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -6955,15 +6957,15 @@
       "specs": {
         "Google Chat API v1": {
           "status": "ok",
-          "sha256": "7aa066fbc2b2c3c67e271a88372f1bfc4db0e6013f0c660e771599daa1605125",
-          "bytes": 473878,
+          "sha256": "5983efc8a487759faed795e1e5eeabda78c751d687965757aabed004449ddd8e",
+          "bytes": 474389,
           "operations": 55,
           "title": "Google Chat API",
           "apiVersion": "v1",
           "server": "https://chat.googleapis.com",
           "surface": "18485648ddc15834",
           "specServer": "https://chat.googleapis.com/",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -7012,15 +7014,15 @@
       "specs": {
         "Google Tasks API v1": {
           "status": "ok",
-          "sha256": "9530192d24a3262f8fc1d41adb8b958ebbb43855c0e1136281b242e82fcc45f2",
-          "bytes": 32656,
+          "sha256": "f8ea32dabc10fcbfe2d495be872eb3167de5cfbd100768eb7788a8ecade4d8de",
+          "bytes": 32131,
           "operations": 14,
           "title": "Google Tasks API",
           "apiVersion": "v1",
           "server": "https://tasks.googleapis.com",
           "surface": "8adfe617c926f2f3",
           "specServer": "https://tasks.googleapis.com/",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -7384,16 +7386,16 @@
       "specs": {
         "lemlist API v2": {
           "status": "ok",
-          "sha256": "7aae39c0bc100392cda9d60e8eab43b8fa76b9490f496b01fd3d8a3c0441f212",
-          "fetchSha256": "7aae39c0bc100392cda9d60e8eab43b8fa76b9490f496b01fd3d8a3c0441f212",
-          "bytes": 1648971,
-          "operations": 228,
+          "sha256": "5b11f3062e3a70a744b2b082dc0b38b43f1d3993f4e94c22fe9ad2757252ad74",
+          "fetchSha256": "5b11f3062e3a70a744b2b082dc0b38b43f1d3993f4e94c22fe9ad2757252ad74",
+          "bytes": 1718415,
+          "operations": 234,
           "title": "lemlist API",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.lemlist.com/api",
           "surface": "afe9ae564a2c617d",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -7645,9 +7647,9 @@
       "specs": {
         "OpenAI API": {
           "status": "ok",
-          "sha256": "2a5a4093fcaccd2ffcd5a689feb62076f85d9f125ecfc636d74efb93d5515846",
-          "fetchSha256": "2a5a4093fcaccd2ffcd5a689feb62076f85d9f125ecfc636d74efb93d5515846",
-          "bytes": 4269666,
+          "sha256": "c18e6d2a2006f8d48bf7062f503660ab83ccc71266c37cfb6027a79944bd605f",
+          "fetchSha256": "c18e6d2a2006f8d48bf7062f503660ab83ccc71266c37cfb6027a79944bd605f",
+          "bytes": 4269530,
           "operations": 376,
           "title": "OpenAI API",
           "apiVersion": "2.3.0",
@@ -7659,7 +7661,7 @@
             "00}` to prevent the <|endoftext|> token from being generated. "
           ],
           "suspiciousSha": "f877638333bd21b6",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -7816,16 +7818,16 @@
       "specs": {
         "Render Public API": {
           "status": "ok",
-          "sha256": "dbb2c4fd6e8bdb7a4ed4775d2bc30ea23a1edb94884e2775b655b16d95c1b101",
-          "fetchSha256": "dbb2c4fd6e8bdb7a4ed4775d2bc30ea23a1edb94884e2775b655b16d95c1b101",
-          "bytes": 417448,
-          "operations": 244,
+          "sha256": "6ac5d3d473625d5e8d921e3a008f500afa400c1f14e25c1f55efc657f6fdbf44",
+          "fetchSha256": "6ac5d3d473625d5e8d921e3a008f500afa400c1f14e25c1f55efc657f6fdbf44",
+          "bytes": 432906,
+          "operations": 252,
           "title": "Render Public API",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.2",
           "server": "https://api.render.com/v1",
           "surface": "38d2449fdcbfba23",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -7939,16 +7941,16 @@
       "specs": {
         "Sentry API": {
           "status": "ok",
-          "sha256": "4b436a2314f1a7462424cdeae416c3eefef7815f87835dee6e9b7a3c98c30fdf",
-          "fetchSha256": "4b436a2314f1a7462424cdeae416c3eefef7815f87835dee6e9b7a3c98c30fdf",
-          "bytes": 4528706,
+          "sha256": "cab0118c4829c82266403fdbdf36c673adb8f24f8cf18819c5afee34529da3ad",
+          "fetchSha256": "cab0118c4829c82266403fdbdf36c673adb8f24f8cf18819c5afee34529da3ad",
+          "bytes": 4691831,
           "operations": 273,
           "title": "API Reference",
           "apiVersion": "v0",
           "specVersion": "3.0.3",
           "server": "https://{region}.sentry.io",
           "surface": "0d04308ae9b50b66",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -7959,16 +7961,16 @@
       "specs": {
         "SignNow API": {
           "status": "ok",
-          "sha256": "bbb1988bf7ffff3ba416506dae9c074f530ad6fbdc3a80bcaf69efb5f4a2da81",
-          "fetchSha256": "bbb1988bf7ffff3ba416506dae9c074f530ad6fbdc3a80bcaf69efb5f4a2da81",
-          "bytes": 4923299,
+          "sha256": "528576fcc5f8bbb904a6796658b2ee6cc63e3a0d4cedd11768d52ff5772a1acf",
+          "fetchSha256": "528576fcc5f8bbb904a6796658b2ee6cc63e3a0d4cedd11768d52ff5772a1acf",
+          "bytes": 4932766,
           "operations": 353,
           "title": "SignNow API",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.3",
           "server": "https://api.signnow.com",
           "surface": "f032540b6f74c050",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -8091,9 +8093,9 @@
       "specs": {
         "Todoist API v1": {
           "status": "ok",
-          "sha256": "3c8cae93e5cc8aa2754bf32faf29cb2382c6f59d6267cbe1f711baede0694e4d",
-          "fetchSha256": "3c8cae93e5cc8aa2754bf32faf29cb2382c6f59d6267cbe1f711baede0694e4d",
-          "bytes": 1482439,
+          "sha256": "c328c87efd12a8893cc31752ee7d0278ce896a65aed166e993e64f5bb7ebb994",
+          "fetchSha256": "c328c87efd12a8893cc31752ee7d0278ce896a65aed166e993e64f5bb7ebb994",
+          "bytes": 1482849,
           "operations": 124,
           "title": "Todoist API",
           "apiVersion": "1",
@@ -8101,7 +8103,7 @@
           "server": "https://api.todoist.com",
           "surface": "e677440bccd01e29",
           "specServer": "https://api.todoist.com/",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -8158,17 +8160,17 @@
       "specs": {
         "Vercel REST API": {
           "status": "ok",
-          "sha256": "c2940ffc90cd23ffd15d87b83c90ae9cf4d069f5d63ed3813a14df345da82c04",
-          "fetchSha256": "c2940ffc90cd23ffd15d87b83c90ae9cf4d069f5d63ed3813a14df345da82c04",
-          "bytes": 12053497,
-          "operations": 479,
+          "sha256": "60686c0e1f6ab527bd648994144852f6adbf719c061109e7a8452bce38ab9e82",
+          "fetchSha256": "60686c0e1f6ab527bd648994144852f6adbf719c061109e7a8452bce38ab9e82",
+          "bytes": 12170579,
+          "operations": 482,
           "title": "Vercel API",
           "apiVersion": "0.0.1",
           "specVersion": "3.0.3",
           "server": "https://api.vercel.com",
-          "surface": "7fa342ac39b4538f",
-          "changedOn": "2026-11-02",
-          "surfaceChangedOn": "2026-11-01"
+          "surface": "d6288b17eeab5099",
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         }
       }
     },
@@ -8284,16 +8286,16 @@
       "specs": {
         "WorkOS API": {
           "status": "ok",
-          "sha256": "5d96085de0a3a68fa1fb499f34e8631f042ceaad539bea21f50951750480602f",
-          "fetchSha256": "5d96085de0a3a68fa1fb499f34e8631f042ceaad539bea21f50951750480602f",
-          "bytes": 1070328,
+          "sha256": "fe41ce9da899aefecc2b75aa950009e3aef05d6c4ec39be3f5bb7ee89c532c96",
+          "fetchSha256": "fe41ce9da899aefecc2b75aa950009e3aef05d6c4ec39be3f5bb7ee89c532c96",
+          "bytes": 1069798,
           "operations": 269,
           "title": "WorkOS",
           "apiVersion": "1.0",
           "specVersion": "3.1.1",
           "server": "https://api.workos.com",
           "surface": "c3f44e5a1729afa3",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -8516,16 +8518,16 @@
       "specs": {
         "CircleCI API v2": {
           "status": "ok",
-          "sha256": "e2d6decf7a0400e45014afbded08ab989d7fc33da36339550487ceb715674604",
-          "fetchSha256": "e2d6decf7a0400e45014afbded08ab989d7fc33da36339550487ceb715674604",
-          "bytes": 337117,
+          "sha256": "7ca19d112f007c1b3b20d257b959c112455751966be1571cd566a442b3ffec04",
+          "fetchSha256": "7ca19d112f007c1b3b20d257b959c112455751966be1571cd566a442b3ffec04",
+          "bytes": 337195,
           "operations": 111,
           "title": "CircleCI API",
           "apiVersion": "v2",
           "specVersion": "3.0.3",
           "server": "https://circleci.com/api/v2",
           "surface": "2b76fb61d8ba2467",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -8536,9 +8538,9 @@
       "specs": {
         "Coda API v1": {
           "status": "ok",
-          "sha256": "1998c42649d281f19010d283ea5e3f3b87b427ff0ffd387b079e3a7dfd203a02",
-          "fetchSha256": "1998c42649d281f19010d283ea5e3f3b87b427ff0ffd387b079e3a7dfd203a02",
-          "bytes": 465119,
+          "sha256": "6835047d84fd884ce8a1429b0a74b6bbcfaea3b1896785089c524e15bc4ed09d",
+          "fetchSha256": "6835047d84fd884ce8a1429b0a74b6bbcfaea3b1896785089c524e15bc4ed09d",
+          "bytes": 465336,
           "operations": 125,
           "title": "Superhuman Docs API",
           "apiVersion": "1.6.0",
@@ -8546,7 +8548,7 @@
           "server": "https://coda.io/apis/v1",
           "surface": "d306dfa8ed87f5ee",
           "specServer": "https://docs.superhuman.com/apis/v1",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -8595,15 +8597,15 @@
       "specs": {
         "Instantly API v2": {
           "status": "ok",
-          "sha256": "01877d796537c7338e99c5040e86f4953ca6372fd89b3f828160631f9dfe7016",
-          "bytes": 1430799,
-          "operations": 256,
+          "sha256": "1bb42d5a63d5612e64b18ed6ab41f998cb01cb73e016285a362761c77184244a",
+          "bytes": 1535754,
+          "operations": 268,
           "title": "API Explorer",
           "apiVersion": "2.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.instantly.ai",
           "surface": "3611b8524f942b72",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "hashForm": "volatile"
         }
       }
@@ -8614,16 +8616,16 @@
       "specs": {
         "LaunchDarkly REST API": {
           "status": "ok",
-          "sha256": "77812f37f49a620cd77ad19d144d8e655deda1e2e461441ca40bcdd49bec1203",
-          "fetchSha256": "77812f37f49a620cd77ad19d144d8e655deda1e2e461441ca40bcdd49bec1203",
-          "bytes": 3141784,
+          "sha256": "036b4c4965b836fc244b0c141948f26af90b451beee46582cbb21bd380027c68",
+          "fetchSha256": "036b4c4965b836fc244b0c141948f26af90b451beee46582cbb21bd380027c68",
+          "bytes": 3147314,
           "operations": 405,
           "title": "LaunchDarkly REST API",
           "apiVersion": "2.0",
           "specVersion": "3.0.3",
           "server": "https://app.launchdarkly.com",
           "surface": "b8339e6286de4248",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -8720,8 +8722,8 @@
       "specs": {
         "Twelve Data API": {
           "status": "ok",
-          "sha256": "f3dcf04a4bc7837d817d0298d3f08ed4b77c793f0da881bdf2ca53f665d99422",
-          "bytes": 1993503,
+          "sha256": "5276b25d1298b4c75fed447bb00878153594972e04019648260897ae2a9baf1a",
+          "bytes": 2015307,
           "operations": 187,
           "title": "Twelve Data API",
           "apiVersion": "0.0.1",
@@ -8729,7 +8731,7 @@
           "server": "https://api.twelvedata.com",
           "surface": "8f662ee2345cece3",
           "specServer": "https://api.twelvedata.com/",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "hashForm": "volatile"
         }
       }
@@ -8740,16 +8742,16 @@
       "specs": {
         "Browserbase API": {
           "status": "ok",
-          "sha256": "3661c37195a7517cc5068d7813de4ca18dfc528e64f472b911cc1c081e7acd8e",
-          "fetchSha256": "3661c37195a7517cc5068d7813de4ca18dfc528e64f472b911cc1c081e7acd8e",
-          "bytes": 190048,
+          "sha256": "99aad3147ad551aab8538e1431977964b9b67aac2a754cb412b696947b6ad46d",
+          "fetchSha256": "99aad3147ad551aab8538e1431977964b9b67aac2a754cb412b696947b6ad46d",
+          "bytes": 189891,
           "operations": 71,
           "title": "Browserbase API",
           "apiVersion": "v1",
           "specVersion": "3.0.0",
           "server": "https://api.browserbase.com",
           "surface": "7613dea35a332efc",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -8759,47 +8761,47 @@
       "specs": {
         "Chargebee API v2 (Product Catalog 2.0)": {
           "status": "ok",
-          "sha256": "a92d203879cc3fd9814089e662d4ef384412e97017a9e97fed64627b07bdd5d5",
-          "fetchSha256": "a92d203879cc3fd9814089e662d4ef384412e97017a9e97fed64627b07bdd5d5",
-          "bytes": 12803120,
-          "operations": 475,
+          "sha256": "48c18b92abcb196c6b6f059184599257e8c7c7ef3408b426dc33715fa6129d97",
+          "fetchSha256": "48c18b92abcb196c6b6f059184599257e8c7c7ef3408b426dc33715fa6129d97",
+          "bytes": 13272705,
+          "operations": 492,
           "title": "Chargebee API",
-          "apiVersion": "2026-09-24.553c79154f0075cfbab35271eeff8b63a3ed6a86",
+          "apiVersion": "2026-10-30.cb3d093ad931f2f4afcb3dcfd76caf9b6db37f79",
           "specVersion": "3.1.0",
           "server": "https://{site}.chargebee.com/api/v2",
-          "surface": "8cfcaacb5c5aaf59",
+          "surface": "4d0620640a6bd748",
           "specServer": "{protocol}://{site}.{environment}:{port}/api/v2",
-          "changedOn": "2026-11-01",
-          "surfaceChangedOn": "2026-11-01"
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         },
         "Chargebee API v2 (Product Catalog 1.0)": {
           "status": "ok",
-          "sha256": "5a2971b0862ef0da4e71a7d01acc7e32f0e933ddfeaaf263edcda0068930897e",
-          "fetchSha256": "5a2971b0862ef0da4e71a7d01acc7e32f0e933ddfeaaf263edcda0068930897e",
-          "bytes": 8867682,
-          "operations": 339,
+          "sha256": "d15c41b9445a6220f5a70dbb7a628fbb3f7a5e69bd3757a3ed6d334e4ca1ee53",
+          "fetchSha256": "d15c41b9445a6220f5a70dbb7a628fbb3f7a5e69bd3757a3ed6d334e4ca1ee53",
+          "bytes": 9026488,
+          "operations": 345,
           "title": "Chargebee API",
-          "apiVersion": "2026-09-24.553c79154f0075cfbab35271eeff8b63a3ed6a86",
+          "apiVersion": "2026-10-30.cb3d093ad931f2f4afcb3dcfd76caf9b6db37f79",
           "specVersion": "3.1.0",
           "server": "https://{site}.chargebee.com/api/v2",
-          "surface": "a05c20bad4319274",
+          "surface": "1a06a17cf6ee73f1",
           "specServer": "{protocol}://{site}.{environment}:{port}/api/v2",
-          "changedOn": "2026-11-01",
-          "surfaceChangedOn": "2026-11-01"
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         },
         "Chargebee API v1 (legacy)": {
           "status": "ok",
-          "sha256": "de3f003ed5187dd5967855e2dbc3583cdc359b8df403d7c61924235034561e52",
-          "fetchSha256": "de3f003ed5187dd5967855e2dbc3583cdc359b8df403d7c61924235034561e52",
-          "bytes": 1804883,
+          "sha256": "99a355b07565f9772b668734df449faa355adb5d5fa83ee6dbfbf17da8b95adc",
+          "fetchSha256": "99a355b07565f9772b668734df449faa355adb5d5fa83ee6dbfbf17da8b95adc",
+          "bytes": 1810293,
           "operations": 104,
           "title": "Chargebee API",
-          "apiVersion": "2026-09-24.553c79154f0075cfbab35271eeff8b63a3ed6a86",
+          "apiVersion": "2026-10-30.cb3d093ad931f2f4afcb3dcfd76caf9b6db37f79",
           "specVersion": "3.1.0",
           "server": "https://{site}.chargebee.com/api/v1",
           "surface": "5cdf7fdf1c5b09fd",
           "specServer": "{protocol}://{site}.{environment}:{port}/api/v1",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -8938,17 +8940,17 @@
       "specs": {
         "Honeycomb API": {
           "status": "ok",
-          "sha256": "8972b20ab2a1a1cf716c808e5f35c2a6a3ed8d6e825fe81a1615fec93df7f62f",
-          "fetchSha256": "8972b20ab2a1a1cf716c808e5f35c2a6a3ed8d6e825fe81a1615fec93df7f62f",
-          "bytes": 361059,
-          "operations": 93,
+          "sha256": "9227bc91433e4948ff18735e71a8e25d7cb481d775c243d62730e0ed01b45fc7",
+          "fetchSha256": "9227bc91433e4948ff18735e71a8e25d7cb481d775c243d62730e0ed01b45fc7",
+          "bytes": 393994,
+          "operations": 108,
           "title": "Honeycomb API",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.honeycomb.io",
-          "surface": "59da8efb76a4cf0a",
-          "changedOn": "2026-11-01",
-          "surfaceChangedOn": "2026-11-01"
+          "surface": "29ed5c6a2767dd46",
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         }
       }
     },
@@ -9016,16 +9018,16 @@
       "specs": {
         "Outline API": {
           "status": "ok",
-          "sha256": "45920d3294e51faef7cc4ded9894e098d0727eb5799f9cc5bf024888420aa4cc",
-          "fetchSha256": "45920d3294e51faef7cc4ded9894e098d0727eb5799f9cc5bf024888420aa4cc",
-          "bytes": 355284,
+          "sha256": "6c0a793e1908bf809568a2766317d204a7dbce38eeddbef15e120970ee024f28",
+          "fetchSha256": "6c0a793e1908bf809568a2766317d204a7dbce38eeddbef15e120970ee024f28",
+          "bytes": 355658,
           "operations": 153,
           "title": "Outline API",
           "apiVersion": "0.1.0",
           "specVersion": "3.0.0",
           "server": "https://app.getoutline.com/api",
           "surface": "3f041d372e47f5fd",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -9054,16 +9056,16 @@
       "specs": {
         "Peec AI Customer API": {
           "status": "ok",
-          "sha256": "0dd5427bbaa6a723da9d4389374d37d3a46c3ee16f97c14b1a3ecb13f4fe4f49",
-          "fetchSha256": "0dd5427bbaa6a723da9d4389374d37d3a46c3ee16f97c14b1a3ecb13f4fe4f49",
-          "bytes": 738841,
+          "sha256": "9fdffdff48a53b3f843d7e1a859c96ca734a5456fd2c1d6022ba0dd1005c3755",
+          "fetchSha256": "9fdffdff48a53b3f843d7e1a859c96ca734a5456fd2c1d6022ba0dd1005c3755",
+          "bytes": 738735,
           "operations": 117,
           "title": "Peec AI Customer API",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.3",
           "server": "https://api.peec.ai/customer/v1",
           "surface": "2d6d45992643fd78",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -9074,55 +9076,55 @@
       "specs": {
         "Control Plane API (2026-07)": {
           "status": "ok",
-          "sha256": "17f6fce340859718c09ad9f6f24420db01762104d6bcf49b4c4919c6a05cc5e6",
-          "fetchSha256": "17f6fce340859718c09ad9f6f24420db01762104d6bcf49b4c4919c6a05cc5e6",
-          "bytes": 210394,
-          "operations": 24,
+          "sha256": "8727520ad1a802225d5f48b78264ef7ea921af279cd7398884d0f234218f2418",
+          "fetchSha256": "8727520ad1a802225d5f48b78264ef7ea921af279cd7398884d0f234218f2418",
+          "bytes": 236651,
+          "operations": 28,
           "title": "Pinecone Control Plane API",
           "apiVersion": "2026-07",
           "specVersion": "3.0.3",
           "server": "https://api.pinecone.io",
           "surface": "b0d89e32386d715c",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         },
         "Data Plane API (2026-07)": {
           "status": "ok",
-          "sha256": "e043e64d5067d169689881c400517cd9a84dbd4af52ebcdb385f8a0687d3e89a",
-          "fetchSha256": "e043e64d5067d169689881c400517cd9a84dbd4af52ebcdb385f8a0687d3e89a",
-          "bytes": 169966,
+          "sha256": "7c0c34e61aa0aeca7457156ca7a9d05bfe2a95ef2578037e9f79e210dc257b8b",
+          "fetchSha256": "7c0c34e61aa0aeca7457156ca7a9d05bfe2a95ef2578037e9f79e210dc257b8b",
+          "bytes": 167038,
           "operations": 29,
           "title": "Pinecone Data Plane API",
           "apiVersion": "2026-07",
           "specVersion": "3.0.3",
           "server": "https://{index_host}",
           "surface": "f5370ab91242af6b",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         },
         "Inference API (2026-07)": {
           "status": "ok",
-          "sha256": "2b146dbc83d4b329f5f17f1e1b0eef85498893f4b2026c8b2d8d7e8c28a3d9cb",
-          "fetchSha256": "2b146dbc83d4b329f5f17f1e1b0eef85498893f4b2026c8b2d8d7e8c28a3d9cb",
-          "bytes": 31271,
+          "sha256": "6f5302b6f720e9ed4ec81f29c0f635b9fcce1d4c352d17bbdac1471e3dc3cd71",
+          "fetchSha256": "6f5302b6f720e9ed4ec81f29c0f635b9fcce1d4c352d17bbdac1471e3dc3cd71",
+          "bytes": 31766,
           "operations": 4,
           "title": "Pinecone Inference API",
           "apiVersion": "2026-07",
           "specVersion": "3.0.3",
           "server": "https://api.pinecone.io",
           "surface": "b0d89e32386d715c",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         },
         "Admin API (2026-07)": {
           "status": "ok",
-          "sha256": "0626273373e1e31e95d33aa29e1e7369dce5e86b652361be644afe79bda837a6",
-          "fetchSha256": "0626273373e1e31e95d33aa29e1e7369dce5e86b652361be644afe79bda837a6",
-          "bytes": 175703,
+          "sha256": "9d17e80e9b401f2023d0aba5a720e59c5220614e5cf01da23698b50ecad18e1b",
+          "fetchSha256": "9d17e80e9b401f2023d0aba5a720e59c5220614e5cf01da23698b50ecad18e1b",
+          "bytes": 173723,
           "operations": 35,
           "title": "Pinecone Admin API",
           "apiVersion": "2026-07",
           "specVersion": "3.0.3",
           "server": "https://api.pinecone.io",
           "surface": "9baadde05f4dc8d2",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -9160,16 +9162,16 @@
       "specs": {
         "Shippo API": {
           "status": "ok",
-          "sha256": "238934e08bbc4494f8904dd43db32ba03cce9b469227b4e40e119b8825fc1811",
-          "fetchSha256": "238934e08bbc4494f8904dd43db32ba03cce9b469227b4e40e119b8825fc1811",
-          "bytes": 954475,
+          "sha256": "fe34bc277598a7d50af2873ab427b07256b9b0fb602e4fa223603cdca5719f82",
+          "fetchSha256": "fe34bc277598a7d50af2873ab427b07256b9b0fb602e4fa223603cdca5719f82",
+          "bytes": 954382,
           "operations": 71,
           "title": "Shippo external API.",
           "apiVersion": "2018-02-08",
           "specVersion": "3.1.0",
           "server": "https://api.goshippo.com",
           "surface": "e552d8f0c2530fea",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         },
         "Address API v2": {
           "status": "ok",
@@ -9406,7 +9408,7 @@
       "apideck": false,
       "specs": {
         "Adyntel API - existing endpoints": {
-          "status": "ok",
+          "status": "HTTP 401",
           "sha256": "a7abb290f08c33e78edc26bcd235fa5996f56c60d24c2e72443df69bdabbf36d",
           "bytes": 20394,
           "operations": 10,
@@ -9430,16 +9432,16 @@
       "specs": {
         "Ahrefs API v3 (complete)": {
           "status": "ok",
-          "sha256": "6a1019016501240ec578a86696f0681295444f72b0b1214a26f0d4f42325cb63",
-          "fetchSha256": "6a1019016501240ec578a86696f0681295444f72b0b1214a26f0d4f42325cb63",
-          "bytes": 2548678,
+          "sha256": "667fedfff126969fe920ff2275ff1ad5153c79654014e166f1d29ca9c771862d",
+          "fetchSha256": "667fedfff126969fe920ff2275ff1ad5153c79654014e166f1d29ca9c771862d",
+          "bytes": 2610331,
           "operations": 160,
           "title": "Ahrefs API",
           "apiVersion": "3.0.0",
           "specVersion": "3.2.0",
           "server": "https://api.ahrefs.com/v3",
           "surface": "4ae28b455cfd37f5",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -9489,16 +9491,16 @@
         },
         "Alchemy Webhooks (Notify) API": {
           "status": "ok",
-          "sha256": "2718ea8ba61319731f10fcd26f136d47a2b30ac962fb6bf66135ce094000f2ec",
-          "fetchSha256": "2718ea8ba61319731f10fcd26f136d47a2b30ac962fb6bf66135ce094000f2ec",
-          "bytes": 84016,
+          "sha256": "b00f6f67c7feaca767ad1b6155c80255cc8c2d597be9d087331be173aa7d1518",
+          "fetchSha256": "b00f6f67c7feaca767ad1b6155c80255cc8c2d597be9d087331be173aa7d1518",
+          "bytes": 83661,
           "operations": 13,
           "title": "🔔 Webhooks",
           "apiVersion": "1.0",
           "specVersion": "3.1.0",
           "server": "https://dashboard.alchemy.com/api",
           "surface": "e1c0fdf03183d1ef",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         },
         "Alchemy Smart Wallets API": {
           "status": "ok",
@@ -9778,8 +9780,8 @@
         },
         "apaleo Reports API": {
           "status": "ok",
-          "sha256": "564b8e18207f46cc7af360c62f18bb25fea7598771baead488cdba18d1eda458",
-          "fetchSha256": "564b8e18207f46cc7af360c62f18bb25fea7598771baead488cdba18d1eda458",
+          "sha256": "d2b3291e632b33dc38f6cd2f361b5bd867050e0856bd68d9fe54ceefb7d3529c",
+          "fetchSha256": "d2b3291e632b33dc38f6cd2f361b5bd867050e0856bd68d9fe54ceefb7d3529c",
           "bytes": 71682,
           "operations": 5,
           "title": "apaleo Reports API",
@@ -9787,7 +9789,7 @@
           "specVersion": "2.0",
           "server": "https://api.apaleo.com",
           "surface": "6a6c87b5e56da6e1",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "apaleo Availability API": {
@@ -9862,15 +9864,15 @@
       "specs": {
         "Management API v2": {
           "status": "ok",
-          "sha256": "71c23e8a229a0b667f2ccb0eaa371510ccc4a2d37f5944fe496b9cb898a80f37",
-          "bytes": 7100649,
+          "sha256": "48226e8f9985b2bb956c79fc3ab8c38e3652077ee4719cfe7c5d95947bf5d449",
+          "bytes": 7100933,
           "operations": 490,
           "title": "Auth0 Management API",
           "apiVersion": "2.0",
           "specVersion": "3.1.0",
           "server": "https://{tenantDomain}/api/v2",
           "surface": "8726e1072afcbae0",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "Authentication API": {
@@ -9903,16 +9905,16 @@
         },
         "My Organization API": {
           "status": "ok",
-          "sha256": "7ed7ac1d33810ee1cb13eb9af41ba7b35829561eb77f1b8ee35f44bf34f5b292",
-          "fetchSha256": "7ed7ac1d33810ee1cb13eb9af41ba7b35829561eb77f1b8ee35f44bf34f5b292",
-          "bytes": 501892,
+          "sha256": "19b887b409475108172bb8d22a2ff0288b5a1115b9fe85f1516bcb37600733cf",
+          "fetchSha256": "19b887b409475108172bb8d22a2ff0288b5a1115b9fe85f1516bcb37600733cf",
+          "bytes": 503326,
           "operations": 39,
           "title": "My Organization API",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://{tenantDomain}/my-org/v1",
           "surface": "9c0fe183fd06b420",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -10118,9 +10120,9 @@
       "specs": {
         "Basin API V1": {
           "status": "ok",
-          "sha256": "9e6932285c878449100be311ec4156661dacd044ee1c84d9b5ed0eb7f2257625",
-          "fetchSha256": "9e6932285c878449100be311ec4156661dacd044ee1c84d9b5ed0eb7f2257625",
-          "bytes": 87802,
+          "sha256": "712629578911d1feed94908546544c55d4a539525a4b2524d655ad6ba8cec343",
+          "fetchSha256": "712629578911d1feed94908546544c55d4a539525a4b2524d655ad6ba8cec343",
+          "bytes": 87796,
           "operations": 29,
           "title": "API V1",
           "apiVersion": "v1",
@@ -10128,7 +10130,7 @@
           "server": "https://usebasin.com",
           "surface": "2d4da208d8bd5922",
           "specServer": "https://usebasin.com/",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -10197,16 +10199,16 @@
       "specs": {
         "BigChange DX API": {
           "status": "ok",
-          "sha256": "5306509f561614337302da532fc167a447afb54e9be0d71cb34eae0a64a01ae6",
-          "fetchSha256": "5306509f561614337302da532fc167a447afb54e9be0d71cb34eae0a64a01ae6",
-          "bytes": 1740180,
-          "operations": 248,
+          "sha256": "b262bfdb1dd09520d6482894b49512898685a322e61f3f23aaadc3b60e1882de",
+          "fetchSha256": "b262bfdb1dd09520d6482894b49512898685a322e61f3f23aaadc3b60e1882de",
+          "bytes": 1761639,
+          "operations": 251,
           "title": "BigChange DX",
           "apiVersion": "1.0",
           "specVersion": "3.0.4",
           "server": "https://api.bigchange.com",
           "surface": "acb04b04b0d1e85e",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -10759,16 +10761,16 @@
       "specs": {
         "Dixa API v1": {
           "status": "ok",
-          "sha256": "9e43c34d3212b418c7ef9177447ec777a2d6b6018e763d9af9840e81040f72eb",
-          "fetchSha256": "9e43c34d3212b418c7ef9177447ec777a2d6b6018e763d9af9840e81040f72eb",
-          "bytes": 398422,
+          "sha256": "9bf5f646dea959a45e1afd748042ae02ebf05110e36dd519a82fd8e4aac9a8cd",
+          "fetchSha256": "9bf5f646dea959a45e1afd748042ae02ebf05110e36dd519a82fd8e4aac9a8cd",
+          "bytes": 398831,
           "operations": 126,
           "title": "Dixa API",
           "apiVersion": "v1",
           "specVersion": "3.0.3",
           "server": "https://dev.dixa.io",
           "surface": "f5ceaca748690c36",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "Dixa API beta": {
@@ -11177,16 +11179,16 @@
       "specs": {
         "Hex API": {
           "status": "ok",
-          "sha256": "d5acc8b5392e790f87f0fc9441ac8dbe3291667d4ad24497b4c23b59fddaab4d",
-          "fetchSha256": "d5acc8b5392e790f87f0fc9441ac8dbe3291667d4ad24497b4c23b59fddaab4d",
-          "bytes": 421968,
+          "sha256": "f90d095c2bc73671418c69473fb29a69f2489560e090d2d4a92dbcbc3b53fa36",
+          "fetchSha256": "f90d095c2bc73671418c69473fb29a69f2489560e090d2d4a92dbcbc3b53fa36",
+          "bytes": 443520,
           "operations": 60,
           "title": "Hex API",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.3",
           "server": "https://app.hex.tech/api",
           "surface": "c97257fef6274f3c",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -11216,16 +11218,16 @@
       "specs": {
         "HitPay API": {
           "status": "ok",
-          "sha256": "e5dab29ccbda02e9617fd4022559444829cd0ccf799ba44c47f1b7cddfa77af1",
-          "fetchSha256": "e5dab29ccbda02e9617fd4022559444829cd0ccf799ba44c47f1b7cddfa77af1",
-          "bytes": 750650,
-          "operations": 89,
+          "sha256": "fac86c13e845d255f46481dc061bf0c3ae44c109d0223e3abec5f6684c83a083",
+          "fetchSha256": "fac86c13e845d255f46481dc061bf0c3ae44c109d0223e3abec5f6684c83a083",
+          "bytes": 785330,
+          "operations": 95,
           "title": "HitPay API",
           "apiVersion": "1.0",
           "specVersion": "3.1.1",
           "server": "https://api.hit-pay.com",
           "surface": "f4ebcca2fd6cfddd",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -11425,15 +11427,15 @@
       "specs": {
         "Keap REST API v2": {
           "status": "ok",
-          "sha256": "b01ddfd7cfa8243a0cd35459c61309bd266170221c714323cca6b0946dfdfc04",
-          "fetchSha256": "b01ddfd7cfa8243a0cd35459c61309bd266170221c714323cca6b0946dfdfc04",
-          "bytes": 9319785,
+          "sha256": "dfd7f1b68a4e8a33ac3b38d4314b6592150cedcd74642db8f1b272cad1a7ba03",
+          "fetchSha256": "dfd7f1b68a4e8a33ac3b38d4314b6592150cedcd74642db8f1b272cad1a7ba03",
+          "bytes": 9321532,
           "operations": 403,
           "title": "API Reference",
           "specVersion": "2.1.0",
           "surface": "312e6ee4d2be0532",
           "server": "https://api.infusionsoft.com/crm",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         },
         "Keap REST API v1": {
@@ -11684,9 +11686,9 @@
         },
         "Lusha API": {
           "status": "ok",
-          "sha256": "a6428370d50577a6b4fd973c81691f37312300b49911a65446c00f0e07e61599",
-          "fetchSha256": "a6428370d50577a6b4fd973c81691f37312300b49911a65446c00f0e07e61599",
-          "bytes": 563586,
+          "sha256": "c69d8534921bbbce190cd58c6e7ea4af177a47e1091e8d43e2ed4cd1688475b8",
+          "fetchSha256": "c69d8534921bbbce190cd58c6e7ea4af177a47e1091e8d43e2ed4cd1688475b8",
+          "bytes": 564807,
           "operations": 72,
           "title": "Lusha API Documentation",
           "apiVersion": "",
@@ -11694,7 +11696,7 @@
           "server": "https://api.lusha.com",
           "specIssues": "no info.version",
           "surface": "35eb2c8554891eae",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -12166,7 +12168,7 @@
       "apideck": false,
       "specs": {
         "Ocean.io API v2": {
-          "status": "ok",
+          "status": "timeout",
           "sha256": "8e03040af8b748844f90cc46227e1f4979d4ed895e2e2cf171304219e5f30840",
           "fetchSha256": "8e03040af8b748844f90cc46227e1f4979d4ed895e2e2cf171304219e5f30840",
           "bytes": 278213,
@@ -12333,16 +12335,16 @@
       "specs": {
         "OpenRouter API": {
           "status": "ok",
-          "sha256": "3032013dfb6b1ffe7582e56de70a4539c68d203dd344b0a01af2aa8357ce34bf",
-          "fetchSha256": "3032013dfb6b1ffe7582e56de70a4539c68d203dd344b0a01af2aa8357ce34bf",
-          "bytes": 2728367,
+          "sha256": "33c53c85504e0f3a314d834a179c731597493d24ad68d4f0ba0193824184012e",
+          "fetchSha256": "33c53c85504e0f3a314d834a179c731597493d24ad68d4f0ba0193824184012e",
+          "bytes": 2729603,
           "operations": 146,
           "title": "OpenRouter API",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://openrouter.ai/api/v1",
           "surface": "1aa7ad824a6beed8",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -12429,16 +12431,16 @@
       "specs": {
         "Perplexity API": {
           "status": "ok",
-          "sha256": "0272f9419c98b4472bd9ae92ef9ca500c9ecb9a88a8a4d3e08ef2b4c9342a4f5",
-          "fetchSha256": "0272f9419c98b4472bd9ae92ef9ca500c9ecb9a88a8a4d3e08ef2b4c9342a4f5",
-          "bytes": 299615,
+          "sha256": "f8fe8c43ef1e043483fd1eb33d133214e7cc571745b8aea54e2b176f62376af7",
+          "fetchSha256": "f8fe8c43ef1e043483fd1eb33d133214e7cc571745b8aea54e2b176f62376af7",
+          "bytes": 298632,
           "operations": 33,
           "title": "Perplexity AI API",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.perplexity.ai",
           "surface": "025d39cd78138983",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -12800,16 +12802,16 @@
       "specs": {
         "Retell API": {
           "status": "ok",
-          "sha256": "f8ba293428aa8c301d25ec1e63d0bd13209c40505820874726a48a0199f082b4",
-          "fetchSha256": "f8ba293428aa8c301d25ec1e63d0bd13209c40505820874726a48a0199f082b4",
-          "bytes": 578577,
+          "sha256": "52a7ef885ceb2b329f121129773101d439a65c106a1c266091ef238c9cd61d7e",
+          "fetchSha256": "52a7ef885ceb2b329f121129773101d439a65c106a1c266091ef238c9cd61d7e",
+          "bytes": 578715,
           "operations": 111,
           "title": "Retell SDK",
           "apiVersion": "3.0.0",
           "specVersion": "3.0.3",
           "server": "https://api.retellai.com",
           "surface": "5172496f51dffd40",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -13173,16 +13175,16 @@
       "specs": {
         "Statsig Console API": {
           "status": "ok",
-          "sha256": "a7f43412fb6b265c314102c8a0c4bb5ac1358986f81f51e24c3aa0f5d2437c52",
-          "fetchSha256": "a7f43412fb6b265c314102c8a0c4bb5ac1358986f81f51e24c3aa0f5d2437c52",
-          "bytes": 3911291,
+          "sha256": "605b784f2a7dc2a5fc027c4b5f73cbc2c742ad9c9ce253084bdbaa79c3cdb479",
+          "fetchSha256": "605b784f2a7dc2a5fc027c4b5f73cbc2c742ad9c9ce253084bdbaa79c3cdb479",
+          "bytes": 3926266,
           "operations": 361,
           "title": "Console API",
           "apiVersion": "20240601.0.0",
           "specVersion": "3.0.0",
           "server": "https://statsigapi.net",
           "surface": "82e250eff5ee15a6",
-          "changedOn": "2026-11-01",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -13254,16 +13256,16 @@
       "specs": {
         "TheirStack API": {
           "status": "ok",
-          "sha256": "681b67bfe5fbb9cf13ce60a0d4615d996685d9f8088f9540bc3b8b767dd87e7d",
-          "fetchSha256": "681b67bfe5fbb9cf13ce60a0d4615d996685d9f8088f9540bc3b8b767dd87e7d",
-          "bytes": 455968,
+          "sha256": "2e6829699374c36aa02324e97e6e41adeefffb79f7f572408468fe33fb6a3bc2",
+          "fetchSha256": "2e6829699374c36aa02324e97e6e41adeefffb79f7f572408468fe33fb6a3bc2",
+          "bytes": 457800,
           "operations": 59,
           "title": "TheirStack API Reference",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.theirstack.com",
           "surface": "caaf5f93adf26f97",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "surfaceChangedOn": "2026-11-01"
         }
       }
@@ -13370,9 +13372,9 @@
       "specs": {
         "Unipile API v2": {
           "status": "ok",
-          "sha256": "5c92966259d5a206e1d479933605015a079cb3f97adadb42633f0f1ea90f836e",
-          "fetchSha256": "5c92966259d5a206e1d479933605015a079cb3f97adadb42633f0f1ea90f836e",
-          "bytes": 206550,
+          "sha256": "c6e7e543a09ec3c32ffabf5f57609944e43e506ca40c958224dfd9a215098418",
+          "fetchSha256": "c6e7e543a09ec3c32ffabf5f57609944e43e506ca40c958224dfd9a215098418",
+          "bytes": 206670,
           "operations": 26,
           "title": "",
           "apiVersion": "1.0.0",
@@ -13380,7 +13382,7 @@
           "server": "https://api.unipile.com",
           "specIssues": "no info.title",
           "surface": "544c32aacaf23f89",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -13767,7 +13769,7 @@
       "apideck": false,
       "specs": {
         "Embroidery Effect API": {
-          "status": "ok",
+          "status": "HTTP 401",
           "sha256": "847703855eced40b8026eda0001756d5d58253ba7c886e6165be49758bc06c06",
           "bytes": 2296,
           "operations": 1,
@@ -13779,7 +13781,7 @@
           "changedOn": "2026-11-01"
         },
         "MockAnything AI API": {
-          "status": "ok",
+          "status": "HTTP 401",
           "sha256": "3bfcdc3901a10e8522c61e58dc64a7312598b9cfb9707d67cc79d4d114d89672",
           "bytes": 25136,
           "operations": 5,
@@ -13791,7 +13793,7 @@
           "changedOn": "2026-11-01"
         },
         "MotionMockups AI API": {
-          "status": "ok",
+          "status": "HTTP 401",
           "sha256": "b04fa44e7c3bd809113fda27e23aa2455e41e37682bc58a00b642cc71dac4236",
           "bytes": 7087,
           "operations": 3,
@@ -13803,7 +13805,7 @@
           "changedOn": "2026-11-01"
         },
         "Render Mockup API": {
-          "status": "ok",
+          "status": "HTTP 401",
           "sha256": "d586bb7202b76eaba3c5975385c68be245a564e41706780498d16685be0f623a",
           "bytes": 8016,
           "operations": 1,
@@ -13815,7 +13817,7 @@
           "changedOn": "2026-11-01"
         },
         "Batch Render Mockups API": {
-          "status": "ok",
+          "status": "HTTP 401",
           "sha256": "151aa114ff0f2437126dbe5ac90d625b611a5b82ec086ef4c183e3856f0788a5",
           "bytes": 9110,
           "operations": 1,
@@ -13827,7 +13829,7 @@
           "changedOn": "2026-11-01"
         },
         "Get Mockups API": {
-          "status": "ok",
+          "status": "HTTP 401",
           "sha256": "fa9ce9d1a89b9e89bb05f7ca772eb7ff8917f9fdc21c22b5af949160f988c359",
           "bytes": 4739,
           "operations": 2,
@@ -13839,7 +13841,7 @@
           "changedOn": "2026-11-01"
         },
         "Collections API": {
-          "status": "ok",
+          "status": "HTTP 401",
           "sha256": "0703bf0cadb4e1c8e4865c484c4642aad5672ad16fc567e60b67dafdd7e610cf",
           "bytes": 4563,
           "operations": 2,
@@ -13851,7 +13853,7 @@
           "changedOn": "2026-11-01"
         },
         "Render Collection API": {
-          "status": "ok",
+          "status": "HTTP 401",
           "sha256": "60c1077f0d8479ba6a716f4f7d85d6f82fc22259c9c7916094ff80efbcf11b25",
           "bytes": 1898,
           "operations": 1,
@@ -13863,7 +13865,7 @@
           "changedOn": "2026-11-01"
         },
         "Catalogs API": {
-          "status": "ok",
+          "status": "HTTP 401",
           "sha256": "1a13b3d5a4c499640fd9f3d2aefe0c15687c291af44e7794e622cfcfd41a8736",
           "bytes": 3653,
           "operations": 2,
@@ -13875,7 +13877,7 @@
           "changedOn": "2026-11-01"
         },
         "Render Print Files API": {
-          "status": "ok",
+          "status": "HTTP 401",
           "sha256": "f779ed647b0b9390ccda2b43ec7607acf837a1c208461b7914f0a489892eff17",
           "bytes": 5536,
           "operations": 1,
@@ -13887,7 +13889,7 @@
           "changedOn": "2026-11-01"
         },
         "Photoshop Files API": {
-          "status": "ok",
+          "status": "HTTP 401",
           "sha256": "f63da9c15b68b059ff75d56a340180f4d0f9ba640d0079604bbd4cbee2ef0389",
           "bytes": 3915,
           "operations": 2,
@@ -14052,16 +14054,16 @@
       "specs": {
         "Weave Trace Server API": {
           "status": "ok",
-          "sha256": "f7643c49bf2e6235d47bfb70d8ef944ace189d7344f260a2d15034c732ec4653",
-          "fetchSha256": "f7643c49bf2e6235d47bfb70d8ef944ace189d7344f260a2d15034c732ec4653",
-          "bytes": 321921,
-          "operations": 127,
+          "sha256": "a82df7183a7e51d32e8c4a8de0a5928ef6789c3aa8240d14fd586b6f871edcd4",
+          "fetchSha256": "a82df7183a7e51d32e8c4a8de0a5928ef6789c3aa8240d14fd586b6f871edcd4",
+          "bytes": 327988,
+          "operations": 129,
           "title": "FastAPI",
           "apiVersion": "0.1.0",
           "specVersion": "3.1.0",
           "server": "https://trace.wandb.ai",
           "surface": "f777c325ca5b4404",
-          "changedOn": "2026-11-01"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -14241,16 +14243,16 @@
       "specs": {
         "AgentLine — Prepaid Phone Service for AI Agents": {
           "status": "ok",
-          "sha256": "6ec875dfb6cb69e3e7e92b2061320f9ed0b04c21e875cc2fe0c184a81158a259",
-          "fetchSha256": "6ec875dfb6cb69e3e7e92b2061320f9ed0b04c21e875cc2fe0c184a81158a259",
-          "bytes": 117223,
+          "sha256": "fadebeaf09d07ce78969253bd69dc2745e9114976e8d6c1ff88da645631e88a6",
+          "fetchSha256": "fadebeaf09d07ce78969253bd69dc2745e9114976e8d6c1ff88da645631e88a6",
+          "bytes": 117263,
           "operations": 88,
           "title": "AgentLine — Prepaid Phone Service for AI Agents",
           "apiVersion": "0.3.0",
           "specVersion": "3.1.0",
           "server": "https://api.agentline.cloud",
           "surface": "6e2be7af9b112bc1",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -14703,16 +14705,17 @@
       "specs": {
         "Anymail finder API": {
           "status": "ok",
-          "sha256": "dfe5ea2a83820a5300b84f533c406400a629c8e56858460e6c639ea695586965",
-          "fetchSha256": "dfe5ea2a83820a5300b84f533c406400a629c8e56858460e6c639ea695586965",
-          "bytes": 43517,
-          "operations": 17,
+          "sha256": "f411ca56477ced9c146dab9aaf4c35b8077bf632834bd46b678b49c8d120d1b6",
+          "fetchSha256": "f411ca56477ced9c146dab9aaf4c35b8077bf632834bd46b678b49c8d120d1b6",
+          "bytes": 39753,
+          "operations": 14,
           "title": "Anymail finder Api",
           "apiVersion": "5.1",
           "specVersion": "3.0.0",
           "server": "https://api.anymailfinder.com",
-          "surface": "e97c56facef9f9a4",
-          "changedOn": "2026-11-02"
+          "surface": "64da691146a05bfd",
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         }
       }
     },
@@ -14779,16 +14782,16 @@
       "specs": {
         "Admin APIs": {
           "status": "ok",
-          "sha256": "a62c4dc147a87b6977afcb68c62a1e797488d33c9856e30ce704811bebebf9b9",
-          "fetchSha256": "a62c4dc147a87b6977afcb68c62a1e797488d33c9856e30ce704811bebebf9b9",
-          "bytes": 1183474,
+          "sha256": "62de3f40e5c196fc945e864152380d2a732945c66d3ba95a9e50d0e4fd647e31",
+          "fetchSha256": "62de3f40e5c196fc945e864152380d2a732945c66d3ba95a9e50d0e4fd647e31",
+          "bytes": 1184764,
           "operations": 110,
           "title": "Admin APIs",
           "apiVersion": "0.0.1",
           "specVersion": "3.0.1",
           "server": "https://subscription-admin.appstle.com",
           "surface": "725f4195eec043d0",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -14876,7 +14879,7 @@
       "specs": {
         "Atlas API": {
           "status": "ok",
-          "sha256": "b5e2f59f9cb46e1cb8904340671e42faaf9d03c77a09cf3edb026df83138f754",
+          "sha256": "c836237d00a4225b8e59bcbab5a2f9ca045dc8f4019cb883b15576e287c16da2",
           "bytes": 118993,
           "operations": 67,
           "title": "Atlas API",
@@ -14884,7 +14887,7 @@
           "specVersion": "3.1.0",
           "server": "https://api.atlas.so",
           "surface": "bd3b9ebef9188521",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -15064,17 +15067,18 @@
       "specs": {
         "Axiom API v2": {
           "status": "ok",
-          "sha256": "d289f009e31675978746e8b955ece3a32f4cba8d2bc800058302e4817a50a58f",
-          "fetchSha256": "d289f009e31675978746e8b955ece3a32f4cba8d2bc800058302e4817a50a58f",
-          "bytes": 167858,
-          "operations": 80,
+          "sha256": "b2378258407e8bafb53e3d4ccbdea42892bad8f00dc70c9b473099a9ee8095d2",
+          "fetchSha256": "b2378258407e8bafb53e3d4ccbdea42892bad8f00dc70c9b473099a9ee8095d2",
+          "bytes": 186024,
+          "operations": 87,
           "title": "Axiom",
           "apiVersion": "2.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.axiom.co/v2",
-          "surface": "710c2e8786b29a8c",
+          "surface": "46cc9daf6089f65f",
           "specServer": "https://api.axiom.co/v2/",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         },
         "Axiom API v1": {
           "status": "ok",
@@ -15591,15 +15595,15 @@
       "specs": {
         "Checkly Public API": {
           "status": "ok",
-          "sha256": "419bc9d14980176c05270c92db3ef55c7bfbf303d9bfd7678b2ce64971a5f9d9",
-          "bytes": 1012504,
+          "sha256": "035edebb3f881002039823aa838b3d6c69592b2de353c743879b3da540aa37a0",
+          "bytes": 1013119,
           "operations": 239,
           "title": "Checkly Public API",
           "apiVersion": "v1",
           "specVersion": "3.0.0",
           "server": "https://api.checklyhq.com",
           "surface": "fc8701c0bf0c2fd8",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -15609,8 +15613,8 @@
       "specs": {
         "Chorus API": {
           "status": "ok",
-          "sha256": "37dba0e217675998b6488a2c898b61a1eb6390dff4ec69eaaa41599a23bac392",
-          "fetchSha256": "37dba0e217675998b6488a2c898b61a1eb6390dff4ec69eaaa41599a23bac392",
+          "sha256": "71f9faf8bc1e6c68aae0622e48063453c42fcd35385a4d90ed479d54987600a6",
+          "fetchSha256": "71f9faf8bc1e6c68aae0622e48063453c42fcd35385a4d90ed479d54987600a6",
           "bytes": 271709,
           "operations": 83,
           "title": "Chorus API",
@@ -15619,7 +15623,7 @@
           "server": "https://chorus.ai",
           "surface": "ab369f5b833ba140",
           "specServer": "/",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -15681,16 +15685,16 @@
       "specs": {
         "Circleback Public API": {
           "status": "ok",
-          "sha256": "9e7ccf4455c4c26caeea8e0c617956e10bc1b2a03793de6fae7c4b35b1c9c937",
-          "fetchSha256": "9e7ccf4455c4c26caeea8e0c617956e10bc1b2a03793de6fae7c4b35b1c9c937",
-          "bytes": 105869,
+          "sha256": "cde879ba579303d14abe38fee648d22e011a1e10936e71fcfa419c78529797bf",
+          "fetchSha256": "cde879ba579303d14abe38fee648d22e011a1e10936e71fcfa419c78529797bf",
+          "bytes": 105988,
           "operations": 29,
           "title": "Circleback Public API",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://circleback.ai/api",
           "surface": "3d26fdb066ced46a",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -15738,16 +15742,16 @@
       "specs": {
         "Clio API Documentation": {
           "status": "ok",
-          "sha256": "c2e44500e5e5eca18267c9f96f727c17826f916602f3b8147bdd20d667418ffd",
-          "fetchSha256": "c2e44500e5e5eca18267c9f96f727c17826f916602f3b8147bdd20d667418ffd",
-          "bytes": 3352364,
+          "sha256": "73770595be5296ba416bb0b8d39bb3c2b3ddee5060ec06e8d04d8e37ac689881",
+          "fetchSha256": "73770595be5296ba416bb0b8d39bb3c2b3ddee5060ec06e8d04d8e37ac689881",
+          "bytes": 3357636,
           "operations": 318,
           "title": "Clio API Documentation",
           "apiVersion": "v4",
           "specVersion": "3.0.0",
           "server": "https://app.clio.com/api/v4",
           "surface": "7c2c34a466dbe607",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -16389,16 +16393,16 @@
         },
         "Eden AI API V3": {
           "status": "ok",
-          "sha256": "ef152c70a243fe0efc4784b0f866a0504bd8a35c66384ce5316179556d546e1e",
-          "fetchSha256": "ef152c70a243fe0efc4784b0f866a0504bd8a35c66384ce5316179556d546e1e",
-          "bytes": 207522,
+          "sha256": "20ddfd49a3f413fc0a3568eea4cc5d4abca2ae64b3393d65187a040c82b77ef7",
+          "fetchSha256": "20ddfd49a3f413fc0a3568eea4cc5d4abca2ae64b3393d65187a040c82b77ef7",
+          "bytes": 214022,
           "operations": 57,
           "title": "Eden AI API V3",
           "apiVersion": "3.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.edenai.run",
           "surface": "a675ff1223144221",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -17883,9 +17887,9 @@
       "specs": {
         "Firstbase API Specification Beta": {
           "status": "ok",
-          "sha256": "4d03c042557bbf79f89227c8085fee756a8d29f036af124338eae4746bc091ae",
-          "fetchSha256": "4d03c042557bbf79f89227c8085fee756a8d29f036af124338eae4746bc091ae",
-          "bytes": 408724,
+          "sha256": "4e6607f028aaa61422dda89e4e525deb23a2c678dd80851c02c2bb3721fcaeb5",
+          "fetchSha256": "4e6607f028aaa61422dda89e4e525deb23a2c678dd80851c02c2bb3721fcaeb5",
+          "bytes": 412319,
           "operations": 128,
           "title": "Firstbase API Specification Beta",
           "apiVersion": "0.1.0",
@@ -17893,7 +17897,7 @@
           "server": "https://apipub.firstbasehq.com",
           "surface": "031d47ec31ff8d70",
           "specServer": "/",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -18057,9 +18061,9 @@
       "specs": {
         "Footprint API": {
           "status": "ok",
-          "sha256": "649119a199943de6ced969167762844f212295e58897dede52f095220cf892a5",
-          "fetchSha256": "649119a199943de6ced969167762844f212295e58897dede52f095220cf892a5",
-          "bytes": 615225,
+          "sha256": "9cdc98ccc57bf51c1350a2f7eb9151074b9f32261f9b7bb2ee95d24f56711dd4",
+          "fetchSha256": "9cdc98ccc57bf51c1350a2f7eb9151074b9f32261f9b7bb2ee95d24f56711dd4",
+          "bytes": 614825,
           "operations": 85,
           "title": "Footprint API",
           "specVersion": "3.0.0",
@@ -18067,7 +18071,7 @@
           "specIssues": "no info.version",
           "surface": "00e2ca14a3fbc298",
           "specServer": "//api.onefootprint.com",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -18077,16 +18081,16 @@
       "specs": {
         "Magnific API": {
           "status": "ok",
-          "sha256": "b5958188f141d13ffe38d6d2f2aa86f4d84c8fc213bd1d9f018bc68d6e6f668d",
-          "fetchSha256": "b5958188f141d13ffe38d6d2f2aa86f4d84c8fc213bd1d9f018bc68d6e6f668d",
-          "bytes": 1400313,
-          "operations": 526,
+          "sha256": "9342d89d9ac2ddac6de0be140b3134bc108776e0498fb53ed945d979c3335813",
+          "fetchSha256": "9342d89d9ac2ddac6de0be140b3134bc108776e0498fb53ed945d979c3335813",
+          "bytes": 1428815,
+          "operations": 538,
           "title": "Magnific API",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.magnific.com",
           "surface": "853ff8c7f5c99122",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -18264,16 +18268,17 @@
       "specs": {
         "Airspeed API": {
           "status": "ok",
-          "sha256": "2d4ce3e39aeded4b0603ac9a87f9190cb2178b42b576e8f736b96c63d5ccfc5e",
-          "fetchSha256": "2d4ce3e39aeded4b0603ac9a87f9190cb2178b42b576e8f736b96c63d5ccfc5e",
-          "bytes": 35808,
-          "operations": 13,
+          "sha256": "6ec6a32aa851273956529868efc2b99f7becb0d1b296c9e78d0db13337046049",
+          "fetchSha256": "6ec6a32aa851273956529868efc2b99f7becb0d1b296c9e78d0db13337046049",
+          "bytes": 38532,
+          "operations": 14,
           "title": "Airspeed API",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.glyphic.ai",
-          "surface": "0c2919961c8a6286",
-          "changedOn": "2026-11-02"
+          "surface": "6bb80e835c9fa579",
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         }
       }
     },
@@ -18379,16 +18384,17 @@
       "specs": {
         "Greip API": {
           "status": "ok",
-          "sha256": "d5aa0ccd9a4adbe73662acbf637b741a353572b60c13eb5e9195a62c9e47a9cc",
-          "fetchSha256": "d5aa0ccd9a4adbe73662acbf637b741a353572b60c13eb5e9195a62c9e47a9cc",
-          "bytes": 48124,
+          "sha256": "5ef5b288383abb8d21f90f016c8ca0fe6f7cad8ac1c7e1bd96b7633bb9879587",
+          "fetchSha256": "5ef5b288383abb8d21f90f016c8ca0fe6f7cad8ac1c7e1bd96b7633bb9879587",
+          "bytes": 57444,
           "operations": 15,
           "title": "Greip API",
           "apiVersion": "2.0.0",
-          "specVersion": "3.0.3",
+          "specVersion": "3.1.0",
           "server": "https://v2.greipapi.com",
           "surface": "886875e9154ca227",
-          "changedOn": "2026-11-02"
+          "formatMismatch": "declared openapi-3.0, the spec says 3.1.0",
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -18398,16 +18404,16 @@
       "specs": {
         "GrowthBook REST API": {
           "status": "ok",
-          "sha256": "290099a59fbb83cf0ee04f96f7d702ae15979e68c37ba7c7dd61b5b36545d49a",
-          "fetchSha256": "290099a59fbb83cf0ee04f96f7d702ae15979e68c37ba7c7dd61b5b36545d49a",
-          "bytes": 3670010,
-          "operations": 442,
+          "sha256": "9f9e476a99a87e67d67d6069d4e4f6f66f095b57c7ab9ea602a5161bc81aaa36",
+          "fetchSha256": "9f9e476a99a87e67d67d6069d4e4f6f66f095b57c7ab9ea602a5161bc81aaa36",
+          "bytes": 3699009,
+          "operations": 453,
           "title": "GrowthBook REST API",
           "apiVersion": "5.1.0",
           "specVersion": "3.1.0",
           "server": "https://api.growthbook.io/api",
           "surface": "8ede2638732f85b1",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -18436,8 +18442,8 @@
       "specs": {
         "Guru API": {
           "status": "ok",
-          "sha256": "819dabf3bb8f2b0b903df0b4dbaa37074bb6341895ccc1750d822809d59ed0aa",
-          "fetchSha256": "819dabf3bb8f2b0b903df0b4dbaa37074bb6341895ccc1750d822809d59ed0aa",
+          "sha256": "4445399975fbcd988dd8458303a93f77272fd744b7de95f41b803248e8905f8c",
+          "fetchSha256": "4445399975fbcd988dd8458303a93f77272fd744b7de95f41b803248e8905f8c",
           "bytes": 735832,
           "operations": 253,
           "title": "Guru API",
@@ -18446,7 +18452,7 @@
           "server": "https://api.getguru.com",
           "surface": "6296a0c9a85e0e76",
           "specServer": "https://api.getguru.com/",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -18534,8 +18540,8 @@
       "specs": {
         "Hubstaff V2 API": {
           "status": "ok",
-          "sha256": "8be1239f82a1971de16410edd2a918fd956f798df989bee237832c21524661a4",
-          "fetchSha256": "8be1239f82a1971de16410edd2a918fd956f798df989bee237832c21524661a4",
+          "sha256": "4aeac99ed18db77e8b502e06a8b77fe9c01be542ba6eb9275933f25e36c4c083",
+          "fetchSha256": "4aeac99ed18db77e8b502e06a8b77fe9c01be542ba6eb9275933f25e36c4c083",
           "bytes": 533266,
           "operations": 180,
           "title": "Hubstaff V2 API",
@@ -18543,7 +18549,7 @@
           "specVersion": "2.0",
           "server": "https://api.hubstaff.com",
           "surface": "fdee1f898b4e57b9",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -18611,9 +18617,9 @@
       "specs": {
         "Image-Charts": {
           "status": "ok",
-          "sha256": "b74df370e66270d50721c6918644906c0535c7cb84a2bd0cc9b36af9a3e6540c",
-          "fetchSha256": "b74df370e66270d50721c6918644906c0535c7cb84a2bd0cc9b36af9a3e6540c",
-          "bytes": 94584,
+          "sha256": "de7e3fd5c8419f97c8aa54165ceb477d238bae49539fc7028436d0f78437d652",
+          "fetchSha256": "de7e3fd5c8419f97c8aa54165ceb477d238bae49539fc7028436d0f78437d652",
+          "bytes": 95412,
           "operations": 2,
           "title": "Image-Charts",
           "apiVersion": "6.1.19",
@@ -18621,7 +18627,7 @@
           "server": "https://image-charts.com",
           "surface": "1ca72b586f8e8a25",
           "specServer": "https://image-charts.com/",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -18712,16 +18718,16 @@
       "specs": {
         "Increase API": {
           "status": "ok",
-          "sha256": "0dedc17aa0b72092a917773d2d6c733d5ccc29d9e193ebd8d0078ae3411a91f0",
-          "fetchSha256": "0dedc17aa0b72092a917773d2d6c733d5ccc29d9e193ebd8d0078ae3411a91f0",
-          "bytes": 4346172,
+          "sha256": "4c6e8c48851e73ecda387698cd2a2a3fdfe26e144b5533f06347b7fbcac8e812",
+          "fetchSha256": "4c6e8c48851e73ecda387698cd2a2a3fdfe26e144b5533f06347b7fbcac8e812",
+          "bytes": 4344709,
           "operations": 250,
           "title": "Increase API",
           "apiVersion": "0.0.1",
           "specVersion": "3.1.0",
           "server": "https://api.increase.com",
           "surface": "561a6161a048ed5b",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -18731,16 +18737,16 @@
       "specs": {
         "Infisical API": {
           "status": "ok",
-          "sha256": "f78ca25737c6e812979f8f143b57a39d605234d76163aecd9f6b569917d83cbe",
-          "fetchSha256": "f78ca25737c6e812979f8f143b57a39d605234d76163aecd9f6b569917d83cbe",
-          "bytes": 14775379,
-          "operations": 2533,
+          "sha256": "fb1c2450b2fe272b09d6f7c06deed4a08997f8167bc5fa3f4aeb7ea3b3727f38",
+          "fetchSha256": "fb1c2450b2fe272b09d6f7c06deed4a08997f8167bc5fa3f4aeb7ea3b3727f38",
+          "bytes": 14893322,
+          "operations": 2557,
           "title": "Infisical API",
           "apiVersion": "0.0.1",
           "specVersion": "3.0.3",
           "server": "https://us.infisical.com",
           "surface": "c2847b6f77ab2f2d",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -18866,16 +18872,16 @@
       "specs": {
         "Jumpseller API": {
           "status": "ok",
-          "sha256": "7b6f7030a0f74dfb780e3da39d973ae86443fcce7a97fee54f2ae28e2c0f4950",
-          "fetchSha256": "7b6f7030a0f74dfb780e3da39d973ae86443fcce7a97fee54f2ae28e2c0f4950",
-          "bytes": 959158,
+          "sha256": "09f991a20d7469827d19bfa656e5eb483ca0aa772323dbf4a05d666754380bc4",
+          "fetchSha256": "09f991a20d7469827d19bfa656e5eb483ca0aa772323dbf4a05d666754380bc4",
+          "bytes": 961071,
           "operations": 186,
           "title": "Jumpseller API",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.3",
           "server": "https://api.jumpseller.com/v1",
           "surface": "e0cb35153bcb2ef8",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -19143,16 +19149,16 @@
         },
         "Cart API (On-Store)": {
           "status": "ok",
-          "sha256": "fde9ebefceb26476b3fc190a9f445382f8134863d2d7c7549f933468d2d355d5",
-          "fetchSha256": "fde9ebefceb26476b3fc190a9f445382f8134863d2d7c7549f933468d2d355d5",
-          "bytes": 12598,
+          "sha256": "fcdd1b876dab7e50f8eefb2c18079f5695c33bad4153c8c04a3dfedd00086c71",
+          "fetchSha256": "fcdd1b876dab7e50f8eefb2c18079f5695c33bad4153c8c04a3dfedd00086c71",
+          "bytes": 12742,
           "operations": 4,
           "title": "Cart API (On-Store)",
           "apiVersion": "v1",
           "specVersion": "3.1.0",
           "server": "https://api.loopreturns.com/api/2026-10",
           "surface": "3d6115ba56e10a98",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         },
         "Checkout+ API": {
           "status": "ok",
@@ -19444,16 +19450,16 @@
       "specs": {
         "Fusion Admin APIs": {
           "status": "ok",
-          "sha256": "561b56efd0a01c29dfcc112fd06092c4ae2792ef7903b4e8ef6d9cec55d6a9a8",
-          "fetchSha256": "561b56efd0a01c29dfcc112fd06092c4ae2792ef7903b4e8ef6d9cec55d6a9a8",
-          "bytes": 352588,
+          "sha256": "f7f5b14556b48b1d1a76108061a9243eb468d2a2f6c48a934a7ed30018ee0a6d",
+          "fetchSha256": "f7f5b14556b48b1d1a76108061a9243eb468d2a2f6c48a934a7ed30018ee0a6d",
+          "bytes": 352586,
           "operations": 213,
           "title": "Fusion Admin APIs",
           "apiVersion": "5.9",
           "specVersion": "3.0.1",
           "server": "https://{FUSION_HOST}/api",
           "surface": "c7d62a1190554e54",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -19514,9 +19520,9 @@
       "specs": {
         "MeetingPulse API": {
           "status": "ok",
-          "sha256": "dc29466adc0ebcdf428c806a67932b1a4e086f90bb632fb0ce1633db99687fd9",
-          "fetchSha256": "dc29466adc0ebcdf428c806a67932b1a4e086f90bb632fb0ce1633db99687fd9",
-          "bytes": 285771,
+          "sha256": "8f906b0935a61b36ba4798c4cb50eeb4ceb842a5579efc7cd1c0c20856a922bc",
+          "fetchSha256": "8f906b0935a61b36ba4798c4cb50eeb4ceb842a5579efc7cd1c0c20856a922bc",
+          "bytes": 286357,
           "operations": 59,
           "title": "MeetingPulse API",
           "apiVersion": "1.1.0",
@@ -19524,7 +19530,7 @@
           "server": "https://app.meet.ps/api",
           "surface": "179b3979322e7b9d",
           "specServer": "https://app.meet.ps/api/",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -19667,9 +19673,9 @@
       "specs": {
         "Mothership Freight API": {
           "status": "ok",
-          "sha256": "c40e4c5fae29d0dc3ef87a9db4801f09de02419ee13e37126b3cc6a979cb23e2",
-          "fetchSha256": "c40e4c5fae29d0dc3ef87a9db4801f09de02419ee13e37126b3cc6a979cb23e2",
-          "bytes": 109550,
+          "sha256": "ed338bff086175ee1665bed5e3d2db12272f9b4df89469b772d3cba83d9c9440",
+          "fetchSha256": "ed338bff086175ee1665bed5e3d2db12272f9b4df89469b772d3cba83d9c9440",
+          "bytes": 110056,
           "operations": 31,
           "title": "API",
           "apiVersion": "0.9",
@@ -19677,7 +19683,7 @@
           "server": "https://api.mothership.com/beta",
           "surface": "82a3f1bf29828753",
           "specServer": "https://sandbox.api.mothership.com/beta",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -19958,16 +19964,17 @@
       "specs": {
         "Nooks Sequencing API": {
           "status": "ok",
-          "sha256": "2301f92d5e5c75347ee1d6d293dcc5744720779f50bf6612a12395f32ba8afcd",
-          "fetchSha256": "2301f92d5e5c75347ee1d6d293dcc5744720779f50bf6612a12395f32ba8afcd",
-          "bytes": 355457,
+          "sha256": "384ecd93448f5be097cdaa28d8c9ad763fd3e303f7904c28eff336a41e9b1cff",
+          "fetchSha256": "384ecd93448f5be097cdaa28d8c9ad763fd3e303f7904c28eff336a41e9b1cff",
+          "bytes": 361448,
           "operations": 49,
           "title": "Nooks Sequencing API",
           "apiVersion": "0.1.0",
           "specVersion": "3.1.0",
           "server": "https://partner-api.nooks.in/v1",
-          "surface": "4c2a9187e2be6ad1",
-          "changedOn": "2026-11-02"
+          "surface": "4f6ccd7e6b4519d4",
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         }
       }
     },
@@ -20307,16 +20314,16 @@
       "specs": {
         "Orb API": {
           "status": "ok",
-          "sha256": "018ba56303a258a1e15de911d4830cb6e7ddbe16d851332731fac5e9c7fdb4d0",
-          "fetchSha256": "018ba56303a258a1e15de911d4830cb6e7ddbe16d851332731fac5e9c7fdb4d0",
-          "bytes": 4434012,
+          "sha256": "9787a07bb1f9c14c1e51f1dbe36d1ca76c98e5bb0a2addb2b7a0cc5c7bc72c26",
+          "fetchSha256": "9787a07bb1f9c14c1e51f1dbe36d1ca76c98e5bb0a2addb2b7a0cc5c7bc72c26",
+          "bytes": 4434752,
           "operations": 160,
           "title": "API Reference",
           "apiVersion": "1.0",
           "specVersion": "3.1.0",
           "server": "https://api.withorb.com/v1",
           "surface": "bce952a37647aadf",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -20847,17 +20854,18 @@
       "specs": {
         "Probely Developers": {
           "status": "ok",
-          "sha256": "e29879bff01b94bbed90fb3c07324cc54df3f40f4adb3f41bb696a5d22fb7194",
-          "fetchSha256": "e29879bff01b94bbed90fb3c07324cc54df3f40f4adb3f41bb696a5d22fb7194",
-          "bytes": 1601033,
-          "operations": 410,
+          "sha256": "0b2f6cbe644d28500bf7ee742e5366deef7f253f38e8743e8b77919b7a4cffc1",
+          "fetchSha256": "0b2f6cbe644d28500bf7ee742e5366deef7f253f38e8743e8b77919b7a4cffc1",
+          "bytes": 1825202,
+          "operations": 464,
           "title": "Snyk API & Web's API Reference Documentation",
           "apiVersion": "1.2.0",
           "specVersion": "3.0.3",
           "server": "https://api.probely.com",
-          "surface": "ac4a5b835baf7da9",
+          "surface": "388e613544e1fa8c",
           "specServer": "https://api.probely.com/",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         }
       }
     },
@@ -20867,16 +20875,16 @@
       "specs": {
         "Productive API": {
           "status": "ok",
-          "sha256": "fa3060fd01448738896bdc8df80c76c94c3a834b168fdfc6fdac7769a84a9c94",
-          "fetchSha256": "fa3060fd01448738896bdc8df80c76c94c3a834b168fdfc6fdac7769a84a9c94",
-          "bytes": 5404647,
+          "sha256": "5a2bdceb4acf6639812f1d4d6476c145cf41d944b2a1f5ed486f17e9aaef88e0",
+          "fetchSha256": "5a2bdceb4acf6639812f1d4d6476c145cf41d944b2a1f5ed486f17e9aaef88e0",
+          "bytes": 5407314,
           "operations": 814,
           "title": "API Documentation",
           "specVersion": "3.1.0",
           "server": "https://api.productive.io",
           "specIssues": "no info.version",
           "surface": "c94e7f3c34cc0e3d",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -22560,29 +22568,29 @@
         },
         "Shipments (v3)": {
           "status": "ok",
-          "sha256": "fad3b495f9c108f27852598097343a3f5df93522bc2a23d21b22baab0beae917",
-          "fetchSha256": "fad3b495f9c108f27852598097343a3f5df93522bc2a23d21b22baab0beae917",
-          "bytes": 281929,
+          "sha256": "3c4e73989109d60a2bfab1caa4c85742480a83f22bc6ffdb1b7df80d6daa656b",
+          "fetchSha256": "3c4e73989109d60a2bfab1caa4c85742480a83f22bc6ffdb1b7df80d6daa656b",
+          "bytes": 282676,
           "operations": 10,
           "title": "Shipments",
           "apiVersion": "3.0.0",
           "specVersion": "3.1.0",
           "server": "https://panel.sendcloud.sc/api/v3",
           "surface": "a607715a46724bd1",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         },
         "Shipping Options API (v3)": {
           "status": "ok",
-          "sha256": "f7b5979300292f14d339a4a256403967641ce75eda00cc63bf79bc994f5dd5bc",
-          "fetchSha256": "f7b5979300292f14d339a4a256403967641ce75eda00cc63bf79bc994f5dd5bc",
-          "bytes": 101854,
+          "sha256": "69208e9720cc3ccb1adf44c03e8bea6a640c27be9426eb70321eebea5ce5c4ff",
+          "fetchSha256": "69208e9720cc3ccb1adf44c03e8bea6a640c27be9426eb70321eebea5ce5c4ff",
+          "bytes": 102140,
           "operations": 2,
           "title": "Shipping Options API",
           "apiVersion": "3.0.0",
           "specVersion": "3.1.0",
           "server": "https://panel.sendcloud.sc/api/v3",
           "surface": "9ab6a70688fc90c7",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         },
         "Support API [BETA] (v3)": {
           "status": "ok",
@@ -23172,7 +23180,7 @@
       "apideck": false,
       "specs": {
         "spoonacular API": {
-          "status": "ok",
+          "status": "timeout",
           "sha256": "bc2fbe4e8981ce284881d7223b3a523cc358918cbbb9793d836aac5c5c1890ea",
           "fetchSha256": "bc2fbe4e8981ce284881d7223b3a523cc358918cbbb9793d836aac5c5c1890ea",
           "bytes": 1168010,
@@ -23192,16 +23200,16 @@
       "specs": {
         "StackHawk Public API": {
           "status": "ok",
-          "sha256": "abae127ec4eacdd03e96745a81a00273ca2a1ab76402c33876a7db53d54cd24f",
-          "fetchSha256": "abae127ec4eacdd03e96745a81a00273ca2a1ab76402c33876a7db53d54cd24f",
-          "bytes": 340471,
+          "sha256": "8e10c864fd67c34a7fc4da6ebbcc58e35378ad4286a076ad47b7a38ca462839f",
+          "fetchSha256": "8e10c864fd67c34a7fc4da6ebbcc58e35378ad4286a076ad47b7a38ca462839f",
+          "bytes": 340813,
           "operations": 69,
           "title": "StackHawk Public API",
           "apiVersion": "0.0.1",
           "specVersion": "3.0.1",
           "server": "https://api.stackhawk.com",
           "surface": "cdadb4f8a116cf1d",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -23365,9 +23373,9 @@
       "specs": {
         "Svix API": {
           "status": "ok",
-          "sha256": "5aa9bfed25a4f5622089cc9fc62d50fb58234b1a259498fcc9dd595f0ad7763c",
-          "fetchSha256": "5aa9bfed25a4f5622089cc9fc62d50fb58234b1a259498fcc9dd595f0ad7763c",
-          "bytes": 2064541,
+          "sha256": "09a9eb965b117e4e125c2407ff71befb7baf31e5f07a7088bfef334419355dae",
+          "fetchSha256": "09a9eb965b117e4e125c2407ff71befb7baf31e5f07a7088bfef334419355dae",
+          "bytes": 2083282,
           "operations": 141,
           "title": "Svix API",
           "apiVersion": "1.960.0",
@@ -23375,7 +23383,7 @@
           "server": "https://api.us.svix.com",
           "surface": "e6656174b7110386",
           "specServer": "https://api.eu.svix.com",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -23709,16 +23717,16 @@
       "specs": {
         "Truv API": {
           "status": "ok",
-          "sha256": "64de38c55f456b9a8620c2097aa0ef975320e8d9b5c5950d4cfa74918b3baf49",
-          "fetchSha256": "64de38c55f456b9a8620c2097aa0ef975320e8d9b5c5950d4cfa74918b3baf49",
-          "bytes": 827667,
+          "sha256": "e20fd88e9371d915c2486b4645865d12ca0a67316c31c94bc37dc527699b1b50",
+          "fetchSha256": "e20fd88e9371d915c2486b4645865d12ca0a67316c31c94bc37dc527699b1b50",
+          "bytes": 933996,
           "operations": 104,
           "title": "Truv API",
           "apiVersion": "v1",
           "specVersion": "3.0.1",
           "server": "https://prod.truv.com",
           "surface": "3308674a78da9df7",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -23749,16 +23757,16 @@
       "specs": {
         "TwelveLabs API": {
           "status": "ok",
-          "sha256": "680ff007c057a6d79329267744912490c6bd2b0252beb16c3b4f54c0b63aa904",
-          "fetchSha256": "680ff007c057a6d79329267744912490c6bd2b0252beb16c3b4f54c0b63aa904",
-          "bytes": 713998,
+          "sha256": "e6789d02d5317d260d77cb257becbbee0e803eee7cab3b935c28292a9bb7b8f1",
+          "fetchSha256": "e6789d02d5317d260d77cb257becbbee0e803eee7cab3b935c28292a9bb7b8f1",
+          "bytes": 714950,
           "operations": 107,
           "title": "TwelveLabs API",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://api.twelvelabs.io/v1.3",
           "surface": "7dd27d112c14e8ee",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -23885,16 +23893,16 @@
       "specs": {
         "UptimeRobot API": {
           "status": "ok",
-          "sha256": "228a38c9ac64621b565fa917784f0f398e00b059667957412788b1270167d8a7",
-          "fetchSha256": "228a38c9ac64621b565fa917784f0f398e00b059667957412788b1270167d8a7",
-          "bytes": 348808,
+          "sha256": "191b37343aa3f6592f385d657540fdec2a04be5bd1e9f29e049d72830b4ec474",
+          "fetchSha256": "191b37343aa3f6592f385d657540fdec2a04be5bd1e9f29e049d72830b4ec474",
+          "bytes": 348984,
           "operations": 64,
           "title": "UptimeRobot API",
           "apiVersion": "3.0",
           "specVersion": "3.0.0",
           "server": "https://api.uptimerobot.com/v3",
           "surface": "77f6d4a166ba5c97",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -25196,16 +25204,16 @@
       "specs": {
         "WHOOP API": {
           "status": "ok",
-          "sha256": "68ce357a022424af0e53518898416513c7b44e9d2ef56bdc50f7f721d96dbefb",
-          "fetchSha256": "68ce357a022424af0e53518898416513c7b44e9d2ef56bdc50f7f721d96dbefb",
-          "bytes": 75851,
+          "sha256": "232a350381651cdc78a8043a115282272d64e6199f87b6e2318759c474a2a423",
+          "fetchSha256": "232a350381651cdc78a8043a115282272d64e6199f87b6e2318759c474a2a423",
+          "bytes": 76425,
           "operations": 22,
           "title": "WHOOP API",
           "specVersion": "3.0.1",
           "server": "https://api.prod.whoop.com/developer",
           "specIssues": "no info.version",
           "surface": "6d311110c03211d1",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -25705,16 +25713,16 @@
       "specs": {
         "C1 API": {
           "status": "ok",
-          "sha256": "24f4cdf36af8f12e1831561e50f94b36a8fb8ad9ee8518c7543851c27c71099f",
-          "fetchSha256": "24f4cdf36af8f12e1831561e50f94b36a8fb8ad9ee8518c7543851c27c71099f",
-          "bytes": 4054773,
-          "operations": 838,
+          "sha256": "c834a4246a890debfca703554aeaaacaf4fe003b81ce3cfb35b13f0d4c8390db",
+          "fetchSha256": "c834a4246a890debfca703554aeaaacaf4fe003b81ce3cfb35b13f0d4c8390db",
+          "bytes": 4078372,
+          "operations": 845,
           "title": "C1 API",
           "apiVersion": "0.1.0-alpha",
           "specVersion": "3.1.0",
           "server": "https://{tenantDomain}.conductor.one",
           "surface": "6b283076cf6f6e1e",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -26011,16 +26019,16 @@
       "specs": {
         "Huntress API Reference": {
           "status": "ok",
-          "sha256": "f593a257b4cc78d8a5ae3f28b2d1930fa4ec71175cb65c86bf6bdf4f09dbc354",
-          "fetchSha256": "f593a257b4cc78d8a5ae3f28b2d1930fa4ec71175cb65c86bf6bdf4f09dbc354",
-          "bytes": 250648,
+          "sha256": "68777a5f06f3f1c0e52d292d65d1aedfffda9562717bac8e8a6c236d4cfe06fb",
+          "fetchSha256": "68777a5f06f3f1c0e52d292d65d1aedfffda9562717bac8e8a6c236d4cfe06fb",
+          "bytes": 250675,
           "operations": 103,
           "title": "Huntress API Reference",
           "apiVersion": "1.0.0",
           "specVersion": "2.0",
           "server": "https://api.huntress.io",
           "surface": "07b97ad4a28e84e7",
-          "changedOn": "2026-11-02",
+          "changedOn": "2026-11-03",
           "overlay": {
             "file": "overlays/huntress.yaml",
             "sha256": "c2904734d5acf64e5fcd07e973f9783d0d84e96ee405100a7f7d0c69341b3201",
@@ -26296,17 +26304,17 @@
       "specs": {
         "meilisearch": {
           "status": "ok",
-          "sha256": "1ad722d18c2cbea2b7940ea430aa79523606d17d7061bbc3681e659549c9c5a4",
-          "fetchSha256": "1ad722d18c2cbea2b7940ea430aa79523606d17d7061bbc3681e659549c9c5a4",
+          "sha256": "0c9972d7dbbb53725e36cc10aa66c0ee1ae7621ecb7895fd9760c55c79b97459",
+          "fetchSha256": "0c9972d7dbbb53725e36cc10aa66c0ee1ae7621ecb7895fd9760c55c79b97459",
           "bytes": 833876,
           "operations": 143,
           "title": "meilisearch",
-          "apiVersion": "1.56.0",
+          "apiVersion": "1.56.1",
           "specVersion": "3.1.0",
           "server": "https://{host}",
           "surface": "c34371c6875654fa",
           "specServer": "http://localhost:7700",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -26455,16 +26463,17 @@
       "specs": {
         "Omni API": {
           "status": "ok",
-          "sha256": "34af3064474715bcf418353124d35e25db5159b3f87de4d32b1e947912aae26b",
-          "fetchSha256": "34af3064474715bcf418353124d35e25db5159b3f87de4d32b1e947912aae26b",
-          "bytes": 1897566,
-          "operations": 247,
+          "sha256": "43290040f88f54008946c18147330b45850709b7aa006cde64d5daabd666684d",
+          "fetchSha256": "43290040f88f54008946c18147330b45850709b7aa006cde64d5daabd666684d",
+          "bytes": 1906078,
+          "operations": 248,
           "title": "Omni API",
           "apiVersion": "1.0.0",
           "specVersion": "3.1.0",
           "server": "https://{instance}.omniapp.co/api",
-          "surface": "5eba428a53500452",
-          "changedOn": "2026-11-02"
+          "surface": "a2464326840dfb9f",
+          "changedOn": "2026-11-03",
+          "surfaceChangedOn": "2026-11-03"
         }
       }
     },
@@ -26666,16 +26675,16 @@
       "specs": {
         "Rydoo API": {
           "status": "ok",
-          "sha256": "cedd9ea97f75badfd52d778e2e6cf0b52cffcd7f0b27089a7e65fe2efe6c6a6c",
-          "fetchSha256": "cedd9ea97f75badfd52d778e2e6cf0b52cffcd7f0b27089a7e65fe2efe6c6a6c",
-          "bytes": 929402,
+          "sha256": "f3d4e7a5eaaef15815df8278cfc46bb6fd30dc738798e64f7978770d35c12a41",
+          "fetchSha256": "f3d4e7a5eaaef15815df8278cfc46bb6fd30dc738798e64f7978770d35c12a41",
+          "bytes": 927997,
           "operations": 275,
           "title": "Rydoo API",
           "apiVersion": "v2",
           "specVersion": "3.0.1",
           "server": "https://api.rydoo.com",
           "surface": "250eb437b79b39e6",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -26914,16 +26923,16 @@
       "specs": {
         "Tripletex API": {
           "status": "ok",
-          "sha256": "99165180e9fb146cdf48125601f00fcb5d2d36e9313eb9286fd8b4d75ae9a2c8",
-          "fetchSha256": "99165180e9fb146cdf48125601f00fcb5d2d36e9313eb9286fd8b4d75ae9a2c8",
-          "bytes": 4837186,
+          "sha256": "769bba8bd8974276c1596d6bcfc1adede159dab830bcae716e14fd402d3a0b83",
+          "fetchSha256": "769bba8bd8974276c1596d6bcfc1adede159dab830bcae716e14fd402d3a0b83",
+          "bytes": 4862676,
           "operations": 817,
           "title": "Tripletex API",
-          "apiVersion": "2.75.20",
+          "apiVersion": "2.75.21",
           "specVersion": "3.0.1",
           "server": "https://tripletex.no/v2",
           "surface": "7436f2b7d6811a3e",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
@@ -26987,16 +26996,16 @@
       "specs": {
         "Manage Vanta": {
           "status": "ok",
-          "sha256": "5537358d49db989887eff10b26ba953071f9620a0baa2be48693bbbbc562080f",
-          "fetchSha256": "5537358d49db989887eff10b26ba953071f9620a0baa2be48693bbbbc562080f",
-          "bytes": 1293072,
+          "sha256": "9d97b124cd4c26537351e5bf811eb57047757d19ce960f19308083bcafddfaa2",
+          "fetchSha256": "9d97b124cd4c26537351e5bf811eb57047757d19ce960f19308083bcafddfaa2",
+          "bytes": 1304239,
           "operations": 288,
           "title": "Manage Vanta",
           "apiVersion": "1.0.0",
           "specVersion": "3.0.0",
           "server": "https://api.vanta.com/v1",
           "surface": "0f2ca54b678c0915",
-          "changedOn": "2026-11-02"
+          "changedOn": "2026-11-03"
         }
       }
     },
