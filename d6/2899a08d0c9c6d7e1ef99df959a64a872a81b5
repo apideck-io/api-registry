@@ -1,0 +1,27 @@
+connectors/alegra.yaml
+  s_87ddffce31e316::t_2afd1842545ad6 3-76
+connectors/ebay.yaml
+  s_87ddffce31e316::t_9dd22fb03eb62f 9-80
+connectors/wafeq.yaml
+  s_87ddffce31e316::t_c53bce863b7897 3-9
+connectors/walmart.yaml
+  s_87ddffce31e316::t_81ca094bae6e4d 3-172
+connectors/workable.yaml
+  s_87ddffce31e316::t_1eaa88368fcce0 3-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d62899a08d0c9c6d7e1ef99df959a64a872a81b5",
+  "prompts": {},
+  "sessions": {
+    "s_87ddffce31e316": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5963ec43-361e-4143-a64b-25d7f7bbb76f",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
