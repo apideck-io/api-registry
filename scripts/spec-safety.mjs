@@ -156,8 +156,9 @@ const withoutAuthNonce = (v, key, seen = new WeakMap()) => {
   return out;
 };
 
-/** A short hash of where a spec's calls go and how they authenticate, or null for formats without one. */
-export function surfaceOf(format, doc) {
+/** Where a spec's calls go and how they authenticate, as a canonical object (before hashing), or null for
+ *  formats without one. */
+export function surfaceDetail(format, doc) {
   let surface = null;
   if (format.startsWith("openapi-")) {
     const perPath = [];
@@ -269,5 +270,74 @@ export function surfaceOf(format, doc) {
     const variables = vars.filter((v) => v && used.has(v.key ?? v.id)).map((v) => [v.key ?? v.id, v.value ?? null]).sort((a, b) => String(a[0]).localeCompare(String(b[0])) || canonical(a[1]).localeCompare(canonical(b[1])));
     surface = { auth: doc.auth ?? null, nested: auth, hosts: [...hosts].sort(), variables, scripts };
   }
-  return surface && createHash("sha256").update(canonical(withoutAuthNonce(surface))).digest("hex").slice(0, 16);
+  return surface && withoutAuthNonce(surface);
+}
+
+/** The fingerprint of surfaceDetail: what the index stores, and compares night to night. */
+export function surfaceOf(format, doc) {
+  const detail = surfaceDetail(format, doc);
+  return detail && surfaceHash(detail);
+}
+
+export const surfaceHash = (detail) => createHash("sha256").update(canonical(detail)).digest("hex").slice(0, 16);
+
+// The surface as sorted text rows, one per server, scheme, requirement or per-operation override, so two nights
+// can be compared row by row and a reviewer sees what changed ("servers[0]: …"), not only that the fingerprint
+// moved. A list of plain values is one row; a list of objects one row per item, with its position (which server
+// comes first is the default, so order counts, as it does in the fingerprint); a list of tuples one row each.
+// Vendor text is escaped: a name with a line break must not start a line of its own in the nightly PR body.
+const esc = (t) => JSON.stringify(String(t)).slice(1, -1);
+// Characters a reviewer can't see, or that reorder what they see (bidi overrides, invisible tags, line separators),
+// are shown escaped, so a row can't display a different host or scheme than the one in the spec.
+const visible = (row) =>
+  row.replace(/[\u0000-\u001f\u007f-\u009f\u00ad\u034f\u061c\u115f\u1160\u17b4\u17b5\u180e\u200b-\u200f\u2028-\u202e\u2060-\u2064\u2066-\u2069\u3164\ufe00-\ufe0f\ufeff\uffa0]|[\u{e0000}-\u{e007f}]/gu, (c) => `\\u{${c.codePointAt(0).toString(16)}}`);
+const key = (k) => (/^[A-Za-z0-9_$-]+$/.test(k) ? k : `[${JSON.stringify(k)}]`);
+export function surfaceRows(detail) {
+  const rows = [];
+  const walk = (v, at, stack) => {
+    if (v === null || typeof v !== "object") return rows.push(`${at}: ${JSON.stringify(v)}`);
+    if (stack.has(v)) return rows.push(`${at}: [cycle]`);
+    if (Array.isArray(v)) {
+      if (v.every((x) => x === null || typeof x !== "object")) return rows.push(`${at}: ${canonical(v)}`);
+      // A per-operation tuple (path, method, what, value) reads as words: "/v2/notes post security [...]".
+      v.forEach((x, i) =>
+        rows.push(
+          Array.isArray(x)
+            ? `${at}: ${x.map((p) => (typeof p !== "string" ? canonical(p) : /\s/.test(p) || /^(null|true|false|-?\d)/.test(p) ? JSON.stringify(p) : esc(p))).join(" ")}`
+            : // A server list is ordered (the first is the default); other lists (security requirements) are
+              // sorted sets, where a position would make one new entry re-number every one after it.
+              /(^|\.)servers$/.test(at)
+              ? `${at}[${i}]: ${canonical(x)}`
+              : `${at}[]: ${canonical(x)}`,
+        ),
+      );
+      return;
+    }
+    const keys = Object.keys(v).filter((k) => v[k] !== undefined).sort();
+    if (!keys.length) return rows.push(`${at}: {}`);
+    stack.add(v);
+    for (const k of keys) walk(v[k], at ? `${at}.${key(k)}` : key(k), stack);
+    stack.delete(v);
+  };
+  walk(detail, "", new Set());
+  return [...new Set(rows.map(visible))].sort();
+}
+
+/** The rows that went and came between two nights, "- " and "+ ", at most max of them (shared between the two,
+ *  so additions aren't hidden behind removals), long rows cut. */
+export function surfaceDiff(before, after, max = 15) {
+  const was = new Set(before), now = new Set(after);
+  const gone = before.filter((r) => !now.has(r)).map((r) => `- ${r}`);
+  const came = after.filter((r) => !was.has(r)).map((r) => `+ ${r}`);
+  if (!gone.length && !came.length) return ["(only the order of entries, or repeated entries, changed)"];
+  const cut = (r) => (r.length > 240 ? `${r.slice(0, 239)}…` : r);
+  const half = Math.ceil(max / 2);
+  const keepGone = Math.min(gone.length, Math.max(half, max - came.length));
+  const keepCame = Math.min(came.length, max - keepGone);
+  const hidden = gone.length - keepGone + came.length - keepCame;
+  // A long row is cut, unless that would make a removed row and an added one read the same.
+  const kept = [...gone.slice(0, keepGone), ...came.slice(0, keepCame)];
+  const cuts = kept.map((r) => cut(r).slice(2));
+  const shown = kept.map((r, i) => (cuts.filter((c) => c === cuts[i]).length > 1 ? r : cut(r)));
+  return shown.concat(hidden ? [`… ${hidden} more`] : []);
 }

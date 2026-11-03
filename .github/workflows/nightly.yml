@@ -33,7 +33,8 @@ jobs:
             echo
             echo '````text'
             # Not a pipe into ||: without pipefail its status would be tr's, so the fallback could never print.
-            if grep -qE '^(Δ|\+|↺|✗)|⚠' verify.log; then grep -E '^(Δ|\+|↺|✗)|⚠' verify.log | tr -d '`'; else echo 'None; index metadata only.'; fi
+            # Without the "  ↳" rows: they carry vendor text, and are listed in the review note above.
+            if grep -qE '^(Δ|\+|↺|✗)|⚠' verify.log; then grep -v '^  ↳ ' verify.log | grep -E '^(Δ|\+|↺|✗)|⚠' | tr -d '`'; else echo 'None; index metadata only.'; fi
             echo '````'
           } > summary.md
       # A spec whose servers or authentication changed, whose text reads like instructions to an AI, or
@@ -48,7 +49,11 @@ jobs:
               echo '**Needs review before merging:**'
               # Vendor text goes in a code block: it can't render, link or mention anyone.
               echo '````text'
-              grep -E '^✗.*\(newly failing\)$|⚠ (surface|text):' verify.log | tr -d '`'
+              # Each surface change with the rows that changed under it (derived/surface/), so the reviewer sees what
+              # to judge. Only here, and at most 150 rows (about 36 KB), so the change list after this note still fits
+              # in the PR body. The "  ↳" rows are matched first: they carry vendor text, which must never count as a
+              # spec line of its own.
+              awk '/^  ↳ / { if (keep && n < 150) { print; n++ } else if (keep && n == 150) { print "  ↳ … more changed rows in the run log"; n++ } next } /^✗.*\(newly failing\)$|⚠ (surface|text):/ { print; keep = /⚠ surface:/; next } { keep = 0 }' verify.log | tr -d '`'
               echo '````'
             } > note.md
           else

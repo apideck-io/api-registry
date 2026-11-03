@@ -15,7 +15,7 @@ import { parse as parseYaml } from "yaml";
 import { createRequire } from "node:module";
 import openapiFormat from "openapi-format";
 import { buildASTSchema, introspectionFromSchema, parse as parseGraphQL } from "graphql";
-import { scanText, sdlDescriptions, suspiciousFingerprint, surfaceOf, xmlTexts } from "./spec-safety.mjs";
+import { scanText, sdlDescriptions, suspiciousFingerprint, surfaceDetail, surfaceDiff, surfaceHash, surfaceRows, xmlTexts } from "./spec-safety.mjs";
 
 const { openapiOverlay, resolveJsonPathValue } = openapiFormat;
 // The JSONPath parser openapi-format applies overlays with, resolved through it rather than declared
@@ -484,8 +484,10 @@ function inspectDocument(format, body) {
   if (!doc || typeof doc !== "object") throw new Error("not a JSON or YAML document");
   const info = inspectParsed(format, doc);
   // Where calls go and how they authenticate, and any text aimed at a model (scripts/spec-safety.mjs).
-  const surface = surfaceOf(format, doc);
-  return { ...info, ...(surface ? { surface } : {}), ...flagged(scanText(doc)) };
+  // The detail behind the fingerprint goes to derived/surface/, so a changed fingerprint can be shown row by row.
+  const detail = surfaceDetail(format, doc);
+  const surface = detail && surfaceHash(detail);
+  return { ...info, ...(surface ? { surface, surfaceDetail: detail } : {}), ...flagged(scanText(doc)) };
 }
 
 // A failure that holds the nightly PR: the spec resolved last time, or has never been checked. One that was
@@ -559,6 +561,8 @@ const today = new Date().toISOString().slice(0, 10);
 // No "checked on" stamps: index.json changes only when a spec does, so the nightly job opens a PR only on drift.
 const out = { connectors: { ...prev.connectors } };
 let failures = 0;
+// derived/surface/ files as they were before this run wrote any (see where they are written).
+const surfaceAtStart = new Map();
 
 for (const e of entries) {
   if (ONLY && e.id !== ONLY) continue;
@@ -566,6 +570,8 @@ for (const e of entries) {
   const specs = {};
   for (const s of e.specs) {
     const old = before[s.name] ?? {};
+    // Rows that changed in this spec's servers or authentication, printed under its line (derived/surface/).
+    let surfaceLines = [];
     // Recorded, never fetched: a login wall, or bot protection that refuses CI. Earlier figures stay.
     if (s.manual) {
       specs[s.name] = { ...withoutCoverage(old), ...(s.coverage ? { coverage: s.coverage } : {}), status: `manual: ${s.manual}` };
@@ -725,7 +731,21 @@ for (const e of entries) {
           // One fingerprint for the bundle: every module's, in file order.
           // By base name, as sha256 is: a rebuilt archive may list or nest the same files differently.
           ...(parts.some((x) => x.surface)
-            ? { surface: createHash("sha256").update(parts.map((x, i) => [specFiles[i].name.replace(/^.*\//, ""), x.surface ?? "-", specFiles[i].name]).sort((a, b) => a[0].localeCompare(b[0]) || a[2].localeCompare(b[2])).map((x) => `${x[0]}=${x[1]}`).join(",")).digest("hex").slice(0, 16) }
+            ? {
+                surface: createHash("sha256").update(parts.map((x, i) => [specFiles[i].name.replace(/^.*\//, ""), x.surface ?? "-", specFiles[i].name]).sort((a, b) => a[0].localeCompare(b[0]) || a[2].localeCompare(b[2])).map((x) => `${x[0]}=${x[1]}`).join(",")).digest("hex").slice(0, 16),
+                // Each module's detail under its path, so a changed row says which module it is in.
+                // Keyed by base name, as the fingerprint is (a re-nested archive is no change); the full path only
+                // where two modules share a base name, without the archive's top folder (a zipball stamps it per build).
+                surfaceDetail: (() => {
+                  const base = (n) => n.replace(/^.*\//, "");
+                  const count = new Map();
+                  for (const f of specFiles) count.set(base(f.name), (count.get(base(f.name)) ?? 0) + 1);
+                  const keys = specFiles.map((f) => (count.get(base(f.name)) > 1 ? f.name.replace(/^[^/]*\//, "") : base(f.name)));
+                  // Still the same key (a file at the top and one in a folder): the full path, so none is lost.
+                  const unique = keys.map((k, i) => (keys.indexOf(k) === keys.lastIndexOf(k) ? k : specFiles[i].name));
+                  return Object.fromEntries(parts.map((x, i) => [unique[i], x.surfaceDetail ?? null]));
+                })(),
+              }
             : {}),
           ...(parts.some((x) => x.suspicious)
             ? { suspicious: parts.flatMap((x) => x.suspicious ?? []).slice(0, 3), suspiciousSha: suspiciousFingerprint(parts.flatMap((x, i) => (x.suspiciousSha ? [`${specFiles[i].name.replace(/^.*\//, "")}=${x.suspiciousSha}`] : []))) }
@@ -741,8 +761,36 @@ for (const e of entries) {
     // Google Discovery docs come back with a different key order on each request and re-stamp etag and
     // revision on every publish, with no change to the API. Hash a key-sorted copy without those fields,
     // or the nightly job would open a drift PR every night.
-    const { doc, introspection, ...meta } = info;
+    const { doc, introspection, surfaceDetail: detail, ...meta } = info;
     info = meta;
+    // The surface as rows (derived/surface/), kept beside the fingerprint so a nightly PR can say what changed in a
+    // spec's servers or authentication instead of only that the 16-character hash moved. Rewritten only when it
+    // changes; the rows from the previous night are read first, to diff against.
+    if (detail) {
+      // One file per spec (connector and spec name), not per URL: two entries can serve different surfaces.
+      const file = `derived/surface/${createHash("sha256").update(`${e.id}\n${s.name}`).digest("hex").slice(0, 16)}.json`;
+      const rows = surfaceRows(detail);
+      const text = JSON.stringify(rows, null, 1) + "\n";
+      const abs = join(ROOT, file);
+      // As the file was when this run started, read once, so tonight's rows are always diffed against last night's.
+      if (!surfaceAtStart.has(file)) {
+        let rowsThen = null;
+        try {
+          if (existsSync(abs)) rowsThen = JSON.parse(readFileSync(abs, "utf8"));
+        } catch {
+          rowsThen = null; // an unreadable file is replaced, and the change shown without a diff
+        }
+        surfaceAtStart.set(file, rowsThen);
+      }
+      const lastRows = surfaceAtStart.get(file);
+      if (info.surface !== old.surface && old.surface)
+        surfaceLines = Array.isArray(lastRows) ? surfaceDiff(lastRows, rows) : ["(no earlier detail stored; recorded tonight, so the next change shows a diff)"];
+      if (!existsSync(abs) || readFileSync(abs, "utf8") !== text) {
+        mkdirSync(dirname(abs), { recursive: true });
+        writeFileSync(abs, text);
+      }
+      info.surfaceFile = file;
+    }
     // A GraphQL SDL spec's introspection result, published for consumers; rewritten only when it changes.
     if (introspection) {
       // Named after the spec's URL, so connectors sharing a schema (linear, linear-multiworkspace) share a file.
@@ -866,6 +914,8 @@ for (const e of entries) {
       (surfaceNew ? " ⚠ surface: first check of its servers and authentication" : "") +
       (suspiciousNew ? ` ⚠ text: reads like instructions to an AI (${info.suspicious.map((x) => JSON.stringify(x)).join("; ")})` : "");
     console.log(`${mark} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations${stale}`);
+    // What changed in the servers or authentication, row by row (the nightly PR body includes these lines).
+    if (surfaceChanged) for (const line of surfaceLines) console.log(`  ↳ ${line}`);
   }
   out.connectors[e.id] = { name: e.name, ...(e.apideck === false ? { apideck: false } : {}), specs };
 }
@@ -874,6 +924,15 @@ for (const id of Object.keys(out.connectors)) if (!entries.some((e) => e.id === 
 
 // Derived files nothing in the index points at any more (a spec moved, an entry left) are removed. Only on a
 // full run: a run with --only can't see the other entries' files.
+if (!ONLY && existsSync(join(ROOT, "derived/surface"))) {
+  const used = new Set(Object.values(out.connectors).flatMap((c) => Object.values(c.specs).map((s) => s.surfaceFile)).filter(Boolean));
+  for (const f of readdirSync(join(ROOT, "derived/surface")).filter((n) => n.endsWith(".json"))) {
+    if (!used.has(`derived/surface/${f}`)) {
+      unlinkSync(join(ROOT, "derived/surface", f));
+      console.log(`- derived/surface/${f}: no spec uses it any more, removed`);
+    }
+  }
+}
 if (!ONLY && existsSync(join(ROOT, "derived/graphql"))) {
   const used = new Set(Object.values(out.connectors).flatMap((c) => Object.values(c.specs).map((s) => s.derived?.file)).filter(Boolean));
   for (const f of readdirSync(join(ROOT, "derived/graphql")).filter((n) => n.endsWith(".introspection.json"))) {
