@@ -1,0 +1,11 @@
+id: bexio
+name: "bexio"
+apideck: false
+specs:
+  - name: "bexio API"
+    url: "https://docs.bexio.com/"
+    format: openapi-3.0
+    provenance: vendor
+    extract: redoc-state
+    server: "https://api.bexio.com"
+    notes: "Swiss SME accounting and business software. The full OpenAPI 3.0.2 definition is embedded in the Redoc page at docs.bexio.com; there is no separate download. OpenID Connect or bearer token (personal access token). 310 operations across contacts, items, sales documents, accounting, banking and more."
