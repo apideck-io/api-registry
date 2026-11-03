@@ -1,4 +1,9 @@
 id: wafeq
 name: "Wafeq"
-notes: "No downloadable full spec. One could be rebuilt from per-page fragments, but that would not be a published vendor artifact. Wafeq Public API (ReadMe): https://developer.wafeq.com/reference"
-specs: []
+specs:
+  - name: "Wafeq Public API"
+    url: "https://dash.readme.com/api/v1/api-registry/hwa6lemvq83s4n"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.wafeq.com/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.wafeq.com, served from the ReadMe API registry. The registry id changes when Wafeq re-uploads it."

@@ -6,3 +6,75 @@ specs:
     format: asyncapi-2
     provenance: community
     notes: "Authored in this repo in 2021 from eBay's notification docs; kept as a stored copy."
+  - name: "eBay Sell Account v1 API"
+    url: "https://developer.ebay.com/api-docs/master/sell/account/openapi/3/sell_account_v1_oas3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.ebay.com/sell/account/v1"
+    notes: "OpenAPI 3 contract eBay publishes for download on the API's reference overview (developer.ebay.com/api-docs/sell/account)."
+  - name: "eBay Sell Analytics API"
+    url: "https://developer.ebay.com/api-docs/master/sell/analytics/openapi/3/sell_analytics_v1_oas3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.ebay.com/sell/analytics/v1"
+    notes: "OpenAPI 3 contract eBay publishes for download on the API's reference overview (developer.ebay.com/api-docs/sell/analytics)."
+  - name: "eBay Sell Finances API"
+    url: "https://developer.ebay.com/api-docs/master/sell/finances/openapi/3/sell_finances_v1_oas3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://apiz.ebay.com/sell/finances/v1"
+    notes: "OpenAPI 3 contract eBay publishes for download on the API's reference overview (developer.ebay.com/api-docs/sell/finances)."
+  - name: "eBay Sell Fulfillment API"
+    url: "https://developer.ebay.com/api-docs/master/sell/fulfillment/openapi/3/sell_fulfillment_v1_oas3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.ebay.com/sell/fulfillment/v1"
+    notes: "OpenAPI 3 contract eBay publishes for download on the API's reference overview (developer.ebay.com/api-docs/sell/fulfillment)."
+  - name: "eBay Sell Inventory API"
+    url: "https://developer.ebay.com/api-docs/master/sell/inventory/openapi/3/sell_inventory_v1_oas3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.ebay.com/sell/inventory/v1"
+    notes: "OpenAPI 3 contract eBay publishes for download on the API's reference overview (developer.ebay.com/api-docs/sell/inventory)."
+  - name: "eBay Sell Logistics (beta) API"
+    url: "https://developer.ebay.com/api-docs/master/sell/logistics/openapi/3/sell_logistics_v1_oas3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.ebay.com/sell/logistics/v1_beta"
+    notes: "OpenAPI 3 contract eBay publishes for download on the API's reference overview (developer.ebay.com/api-docs/sell/logistics)."
+  - name: "eBay Sell Marketing API"
+    url: "https://developer.ebay.com/api-docs/master/sell/marketing/openapi/3/sell_marketing_v1_oas3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.ebay.com/sell/marketing/v1"
+    notes: "OpenAPI 3 contract eBay publishes for download on the API's reference overview (developer.ebay.com/api-docs/sell/marketing)."
+  - name: "eBay Sell Metadata API"
+    url: "https://developer.ebay.com/api-docs/master/sell/metadata/openapi/3/sell_metadata_v1_oas3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.ebay.com/sell/metadata/v1"
+    notes: "OpenAPI 3 contract eBay publishes for download on the API's reference overview (developer.ebay.com/api-docs/sell/metadata)."
+  - name: "eBay Sell Negotiation API"
+    url: "https://developer.ebay.com/api-docs/master/sell/negotiation/openapi/3/sell_negotiation_v1_oas3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.ebay.com/sell/negotiation/v1"
+    notes: "OpenAPI 3 contract eBay publishes for download on the API's reference overview (developer.ebay.com/api-docs/sell/negotiation)."
+  - name: "eBay Sell Recommendation API"
+    url: "https://developer.ebay.com/api-docs/master/sell/recommendation/openapi/3/sell_recommendation_v1_oas3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.ebay.com/sell/recommendation/v1"
+    notes: "OpenAPI 3 contract eBay publishes for download on the API's reference overview (developer.ebay.com/api-docs/sell/recommendation)."
+  - name: "eBay Sell Store API"
+    url: "https://developer.ebay.com/api-docs/master/sell/stores/openapi/3/sell_stores_v1_oas3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.ebay.com/sell/stores/v1"
+    notes: "OpenAPI 3 contract eBay publishes for download on the API's reference overview (developer.ebay.com/api-docs/sell/stores)."
+  - name: "eBay Sell Feed API"
+    url: "https://developer.ebay.com/api-docs/master/sell/feed/openapi/3/sell_feed_v1_oas3.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.ebay.com/sell/feed/v1"
+    notes: "OpenAPI 3 contract eBay publishes for download on the API's reference overview (developer.ebay.com/api-docs/sell/feed)."

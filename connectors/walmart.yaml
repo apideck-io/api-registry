@@ -1,4 +1,172 @@
 id: walmart
 name: "Walmart"
-notes: "Publishes one OpenAPI block per endpoint on ReadMe reference pages (.md), with no whole-file download; not a full API spec, so not indexed. Only per-endpoint fragments are reachable."
-specs: []
+notes: "Walmart US Marketplace publishes one OpenAPI definition per API area behind developer.walmart.com/us-marketplace/reference (listed in the page's apiRegistries). The ReadMe registry id of an area changes when Walmart re-uploads it; rediscover it from that page."
+specs:
+  - name: "Walmart Marketplace Assortment recommendations overview"
+    url: "https://dash.readme.com/api/v1/api-registry/40x312wmvzy0y0z"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Item Management"
+    url: "https://dash.readme.com/api/v1/api-registry/206d9amt1yl57f"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Inventory Management"
+    url: "https://dash.readme.com/api/v1/api-registry/22eckdhmr9igu74"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Disputes Management"
+    url: "https://dash.readme.com/api/v1/api-registry/8p3xm33mj3exh1b"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Feed Management"
+    url: "https://dash.readme.com/api/v1/api-registry/1ll8566gmsf4pry5"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Insights Management"
+    url: "https://dash.readme.com/api/v1/api-registry/d7xjqfjmsi2tzdi"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Lag Time"
+    url: "https://dash.readme.com/api/v1/api-registry/1zzm8322midmdp55"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Notifications Management"
+    url: "https://dash.readme.com/api/v1/api-registry/9r21x31mqtwfz9u"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace On-request Report Management"
+    url: "https://dash.readme.com/api/v1/api-registry/11merd114dmvsfpd40"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Price Management"
+    url: "https://dash.readme.com/api/v1/api-registry/hwa6kymvqxt6zq"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Promotion Management"
+    url: "https://dash.readme.com/api/v1/api-registry/4adnhtkmtsuxvmx"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Reviews Acceleration"
+    url: "https://dash.readme.com/api/v1/api-registry/1dyxmsvmruw59jp"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Settings Management"
+    url: "https://dash.readme.com/api/v1/api-registry/1hmzcklmshvsx6g"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Ship With Walmart"
+    url: "https://dash.readme.com/api/v1/api-registry/353bb13mt23xk0r"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Utilities Management"
+    url: "https://dash.readme.com/api/v1/api-registry/2pmj1rmfee8qqv"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Simplified Shipping Settings management"
+    url: "https://dash.readme.com/api/v1/api-registry/xq1xxrtmv9uya0g"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Authentication & Authorization Management"
+    url: "https://dash.readme.com/api/v1/api-registry/a9esg267mowj5di6"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Order Management"
+    url: "https://dash.readme.com/api/v1/api-registry/1n18gg21mvzs3l7k"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Returns Management"
+    url: "https://dash.readme.com/api/v1/api-registry/16fdhuump2rm1l6"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Fulfillment Management"
+    url: "https://dash.readme.com/api/v1/api-registry/13jlxk77mv614oyq"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Payments"
+    url: "https://dash.readme.com/api/v1/api-registry/2ey1umu35ckzn"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Recommendations API"
+    url: "https://dash.readme.com/api/v1/api-registry/er71zz33pmr9ig743"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Payment Reports"
+    url: "https://dash.readme.com/api/v1/api-registry/a5jqmuztf03w"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Claims"
+    url: "https://dash.readme.com/api/v1/api-registry/79bqa2jmfedtkpg"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Walmart+"
+    url: "https://dash.readme.com/api/v1/api-registry/f8nmpc10mhp40c1m"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Advertising"
+    url: "https://dash.readme.com/api/v1/api-registry/mr9kmmqzd85v3"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Simulations API"
+    url: "https://dash.readme.com/api/v1/api-registry/1jfaw5ymqbastk5"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://sandbox.walmartapis.com/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."
+  - name: "Walmart Marketplace Rich media management"
+    url: "https://dash.readme.com/api/v1/api-registry/b85t6gbmshu71jg"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://marketplace.walmartapis.com"
+    notes: "OpenAPI definition behind the reference pages at developer.walmart.com/us-marketplace, served from the ReadMe API registry."

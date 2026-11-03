@@ -1,4 +1,10 @@
 id: workable
 name: "Workable"
-notes: "Publishes one OpenAPI block per endpoint on ReadMe reference pages (.md), with no whole-file download; not a full API spec, so not indexed. Only per-endpoint fragments are reachable."
-specs: []
+notes: "workable.readme.io also serves smaller 'public' and 'root' definitions; the account-root one recorded here covers the account-level SPI v3 endpoints."
+specs:
+  - name: "Workable SPI v3 (account)"
+    url: "https://dash.readme.com/api/v1/api-registry/2esdx1wmp712zs9"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://{subdomain}.workable.com/spi/v3"
+    notes: "OpenAPI definition behind the reference pages at workable.readme.io, served from the ReadMe API registry. The registry id changes when Workable re-uploads it."
