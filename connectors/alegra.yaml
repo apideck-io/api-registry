@@ -1,4 +1,76 @@
 id: alegra
 name: "Alegra"
-notes: "No single raw spec. Vendor ReadMe docs only expose per-operation OpenAPI fragments. Alegra API (ReadMe reference): https://developer.alegra.com/llms.txt"
-specs: []
+notes: "Alegra publishes one OpenAPI definition per module behind developer.alegra.com/reference (listed in the page's apiRegistries). Recorded here: the accounting API on api.alegra.com. Not recorded: the payroll product (payroll-calculator-api.alegra.com), the reports and records services on other hosts, an MCP server definition and an internal API. ReadMe registry ids change when Alegra re-uploads a module."
+specs:
+  - name: "Alegra Gastos"
+    url: "https://dash.readme.com/api/v1/api-registry/1f2ik2ily52lfxu"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.alegra.com/api/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.alegra.com, served from the ReadMe API registry."
+  - name: "Alegra Inventario"
+    url: "https://dash.readme.com/api/v1/api-registry/3vhlvgmdt19st0"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.alegra.com/api/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.alegra.com, served from the ReadMe API registry."
+  - name: "Alegra Vendedores"
+    url: "https://dash.readme.com/api/v1/api-registry/clbf6ldunnw8g"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.alegra.com/api/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.alegra.com, served from the ReadMe API registry."
+  - name: "Alegra Contactos"
+    url: "https://dash.readme.com/api/v1/api-registry/4kh2l2bmeio9bux"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.alegra.com/api/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.alegra.com, served from the ReadMe API registry."
+  - name: "Alegra Contabilidad"
+    url: "https://dash.readme.com/api/v1/api-registry/1l93uw23m73fq03x"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.alegra.com/api/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.alegra.com, served from the ReadMe API registry."
+  - name: "Alegra Bancos"
+    url: "https://dash.readme.com/api/v1/api-registry/g15r9gum5n2mtuw"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.alegra.com/api/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.alegra.com, served from the ReadMe API registry."
+  - name: "Alegra Ingresos"
+    url: "https://dash.readme.com/api/v1/api-registry/4jm978fumf1gyiuy"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.alegra.com/api/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.alegra.com, served from the ReadMe API registry."
+  - name: "Alegra Historiales"
+    url: "https://dash.readme.com/api/v1/api-registry/jcl4vl7jhyxql"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.alegra.com/api/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.alegra.com, served from the ReadMe API registry."
+  - name: "Alegra Suscripciones a Webhooks"
+    url: "https://dash.readme.com/api/v1/api-registry/ebgq17m8q0c64l"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.alegra.com/api/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.alegra.com, served from the ReadMe API registry."
+  - name: "Alegra API de cargos adicionales / Propina"
+    url: "https://dash.readme.com/api/v1/api-registry/68dsj62tm36ezo8x"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.alegra.com/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.alegra.com, served from the ReadMe API registry."
+  - name: "Alegra Configuraciones"
+    url: "https://dash.readme.com/api/v1/api-registry/jqf810m61e5zyw"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.alegra.com/api/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.alegra.com, served from the ReadMe API registry."
+  - name: "Alegra Percepciones"
+    url: "https://dash.readme.com/api/v1/api-registry/2v16pk71nm5vjs8ik"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://api.alegra.com/api/v1"
+    notes: "OpenAPI definition behind the reference pages at developer.alegra.com, served from the ReadMe API registry."
