@@ -290,7 +290,7 @@ const esc = (t) => JSON.stringify(String(t)).slice(1, -1);
 // Characters a reviewer can't see, or that reorder what they see (bidi overrides, invisible tags, line separators),
 // are shown escaped, so a row can't display a different host or scheme than the one in the spec.
 const visible = (row) =>
-  row.replace(/[\u0000-\u001f\u007f-\u009f\u00ad\u034f\u061c\u115f\u1160\u17b4\u17b5\u180e\u200b-\u200f\u2028-\u202e\u2060-\u2064\u2066-\u2069\u3164\ufe00-\ufe0f\ufeff\uffa0]|[\u{e0000}-\u{e007f}]/gu, (c) => `\\u{${c.codePointAt(0).toString(16)}}`);
+  row.replace(/[\u0000-\u001f\u007f-\u009f\u00ad\u034f\u061c\u115f\u1160\u17b4\u17b5\u180e\u200b-\u200f\u2028-\u202e\u2060-\u2064\u2066-\u2069\u3164\ufe00-\ufe0f\ufeff\uffa0]|[\u{e0000}-\u{e007f}\u{e0100}-\u{e01ef}]/gu, (c) => `\\u{${c.codePointAt(0).toString(16)}}`);
 const key = (k) => (/^[A-Za-z0-9_$-]+$/.test(k) ? k : `[${JSON.stringify(k)}]`);
 export function surfaceRows(detail) {
   const rows = [];
