@@ -61,7 +61,7 @@ specs:
     format: openapi-3.0
     provenance: vendor
     server: "https://api.alegra.com/v1"
-    notes: "OpenAPI definition behind the reference pages at developer.alegra.com, served from the ReadMe API registry."
+    notes: "OpenAPI definition behind the reference pages at developer.alegra.com, served from the ReadMe API registry. Server recorded as the vendor publishes it (/v1, where the other modules use /api/v1); not verified against a live account."
   - name: "Alegra Configuraciones"
     url: "https://dash.readme.com/api/v1/api-registry/jqf810m61e5zyw"
     format: openapi-3.0
