@@ -1,0 +1,490 @@
+connectors/geneea.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/motaword.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/malga.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/packetfabric.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/fountain.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/pay-com.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/hypatos.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/rivery-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/lambdalabs.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/finshark.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/measureone.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/qualpay.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/starkbank.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/tripadd.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/paccurate-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/nocodb.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 9-10
+  s_dc3e991cde2235::t_606547808c1898 1-8
+connectors/pdfblocks.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/beam-lending.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/secoda-co.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/oysterhr.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/ducky.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/uploadthing.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/lago.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/moderntreasury.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/nuapay.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/miso.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/inmobile.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/kill-bill.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-9
+connectors/prolific-co.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/appwrite.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/edge.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/apacta.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/biztoc.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/clarifai.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/proovid.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/storecove.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/procurify.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-11
+connectors/validifi.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/wowza.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/openapi-generator-tech.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/d7sms.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/dots.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/cloudrf.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/golioth-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/spaceinvoices.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/traccar.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/baremetrics.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/vegapay.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/chaingateway.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/finley.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/helcim.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/megaapi.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/cornerstoneondemand.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/clickfunnels.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/chatkitty.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/connexpay.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/billsby.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/lambdatest.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/jobsoid.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/netlicensing.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/notabene.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/dwolla.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/banksapi-de.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/btcpay-server.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/cisco.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/cyberark.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/griffin-bank.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-11
+connectors/ideal-postcodes.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/partna.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/rated.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/slopepay.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/tavus.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/tribepad.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/gitea-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/truora.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/blazemeter.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/text-request.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/volt-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/clayhr.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/spotdraft.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/bity.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/pinpointhq.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/surfly.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/thesmsworks.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/2-c-2-p.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/innoship.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/tilled.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/peach-payments.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/klarna.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/unit-co.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/yodlee.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/redkik.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/resistant-ai.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/seel.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/bossinsights.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/buttondown-email.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/localizely.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/kombo-dev.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/readme.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/clever-cloud.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/seomonitor.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/epidemic-sound.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/shotstack-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/wealthos.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/token-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/cisco-meraki.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/getresponse.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/sqala.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/wallester.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/afterbanks.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/verifiable.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/godaddy.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-11
+connectors/moffin.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/airwallex.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/30-k.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/adatree-au.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/pdfgeneratorapi.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/api2pdf.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/rebilly.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/relysia.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/spectrocoin.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/visier.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/linkcy.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/hetzner.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/logisticsos.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/monto.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/nfe-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/apptigent.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/learnifier.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/pipeliner.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/lithic.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/mambu.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/engrain.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/keycloak-org.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/mailbox-validator.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/pappers.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/rook.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/relynk.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/sakari-sms.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/simplyrets.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/stormglass.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/qdrant-tech.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/unstructured.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/gridbees.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/vantage-sh.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/swaggerhub.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/stoplight-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/formance.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/ibanapi.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/ilert.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-11
+connectors/softledger.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/bluesnap.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/statsocial.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/payfactory.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/coalesce.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/ongoody.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/hathora.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/seyna.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/smart-me.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/datumbox.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/fordefi.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/marketdata.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/weavy.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/finicity.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/wannme.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/echelon.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/beamable.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/onna.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/bl-ink.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/edrv-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/proliant.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/temporal-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/belvo-co.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/codat-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/contract-p.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/tramitapp.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/dataflowkit.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/hsbc.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/crowd-4-cash.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/xyte.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/sumsub.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/prefect-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/enode-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/infermedica.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/openalpr.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/crusoe.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/1forge.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/fastspring.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/leaflink.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-11
+connectors/currency-alliance.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/getstream-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/terminal-telematics.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/uploadcare.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/baseten.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/graphhopper.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/realcube.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/revenium.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/vatapi.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/visiblethread.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/clearblade.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/gladly.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/crowdsec.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/roaring.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/wefitter.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/layer-2-financial.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/drivewealth.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/zoomconnect.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/calorieninjas.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 9-10
+connectors/ebury.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/radix-ai.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/suprsend.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-8
+connectors/browse-ai.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/jiko-io.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/browsercat.yaml
+  s_dc3e991cde2235::t_723d4d74cfc14f 1-10
+connectors/apache-airflow.yaml
+  s_dc3e991cde2235::t_11987a78fee9b5 8
+connectors/cycat.yaml
+  s_dc3e991cde2235::t_15c3cc2ab262a7 8
+connectors/deep-art-effects.yaml
+  s_dc3e991cde2235::t_92ca49689ecb24 9-11
+connectors/domains-index.yaml
+  s_dc3e991cde2235::t_fdc9381615ddf5 9-10
+connectors/forgejo.yaml
+  s_dc3e991cde2235::t_2e3ce0c5862284 6,8-10
+connectors/highways-england.yaml
+  s_dc3e991cde2235::t_270ba3680b0c95 9-10
+connectors/hm-land-registry.yaml
+  s_dc3e991cde2235::t_cafd5e65dd2139 2
+connectors/httpbin.yaml
+  s_dc3e991cde2235::t_8e633f47ddb459 8-10
+connectors/kubernetes.yaml
+  s_dc3e991cde2235::t_862960fd1484ba 8
+connectors/langfuse.yaml
+  s_dc3e991cde2235::t_56a26e50f138fd 9-10
+connectors/mineskin.yaml
+  s_dc3e991cde2235::t_a4e9fb116864b6 8
+connectors/nookipedia.yaml
+  s_dc3e991cde2235::t_5bd73019dd326a 8
+connectors/ollama.yaml
+  s_dc3e991cde2235::t_c093aa08a4200f 8
+connectors/orthanc.yaml
+  s_dc3e991cde2235::t_5326996092fb97 8
+connectors/oxford-dictionaries.yaml
+  s_dc3e991cde2235::t_394b30fb12bc13 9
+connectors/peertube.yaml
+  s_dc3e991cde2235::t_95dd2fd41c22a2 8
+connectors/swagger-generator.yaml
+  s_dc3e991cde2235::t_5b783ada99e21d 8-9
+connectors/tcgdex.yaml
+  s_dc3e991cde2235::t_640cf9f818e72c 8
+connectors/the-blue-alliance.yaml
+  s_dc3e991cde2235::t_87dd91b2816eb1 8
+connectors/trash-nothing.yaml
+  s_dc3e991cde2235::t_0d88a6c2ff14b3 2,5
+connectors/uk-parliament.yaml
+  s_dc3e991cde2235::t_ab07dac5eee2c3 2
+connectors/vocadb.yaml
+  s_dc3e991cde2235::t_5a2dd9aa5b5945 8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "bd01673f00a1a5db90d5390c8365f76ffddcf329",
+  "prompts": {},
+  "sessions": {
+    "s_dc3e991cde2235": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1aba2-9e29-7cc0-99f9-5f6120de71eb",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
