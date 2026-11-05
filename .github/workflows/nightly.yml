@@ -29,7 +29,7 @@ jobs:
         id: summary
         run: |
           {
-            echo 'Specs that changed (Δ), are new (+), recovered (↺), failed (✗) or carry a warning (⚠: an overlay that no longer matches, a format that disagrees with the spec, missing or invalid info fields, an SDL graphql-js rejects, or scopes: only operation-level security requirements changed, using schemes already there, listed without holding the PR) in the nightly check:'
+            echo 'Specs that changed (Δ), are new (+), recovered (↺), failed (✗) or carry a warning (⚠: an overlay that no longer matches, a format that disagrees with the spec, missing or invalid info fields, an SDL graphql-js rejects, or scopes: only operation-level security requirements or declared OAuth scopes changed, using schemes already there, listed without holding the PR) in the nightly check:'
             echo
             echo '````text'
             # Not a pipe into ||: without pipefail its status would be tr's, so the fallback could never print.
@@ -53,21 +53,21 @@ jobs:
               # to judge. Only here, and at most 150 rows (about 36 KB; with the 60 scope rows below, about 51 KB), so the change list after this note still fits
               # in the PR body. The "  ↳" rows are matched first: they carry vendor text, which must never count as a
               # spec line of its own.
-              awk '/^  ↳ / { if (keep && n < 150) { print; n++ } else if (keep && n == 150) { print "  ↳ … more changed rows in the run log"; n++ } next } /^✗.*\(newly failing\)$|⚠ (surface|text):/ { print; keep = /⚠ surface:/; next } { keep = 0 }' verify.log | tr -d '`'
+              awk '/^  ↳ / { if (keep && n < 150) { print; n++ } else if (keep && n == 150) { print "  ↳ … more changed rows in the run log"; n++ } next } /^✗.*\(newly failing\)$|⚠ (surface|text):/ { print; keep = /⚠ (surface|scopes):/; next } { keep = 0 }' verify.log | tr -d '`'
               echo '````'
             } > note.md
           else
             echo 'review=false' >> "$GITHUB_OUTPUT"
             echo 'No servers, security schemes or instruction-like text changed, and no operation changed how it authenticates.' > note.md
           fi
-          # Scope changes don't hold the PR, but whoever merges it sees which scopes changed on which operations
+          # Scope changes don't hold the PR (a spec held for its text has its rows in the note above instead), but whoever merges it sees which scopes changed on which operations
           # (at most 60 lines, spec lines included; a body over the limit is cut from the change list, which the run log has in full).
-          if grep -v '^  ↳ ' verify.log | grep -q '⚠ scopes:'; then
+          if grep -v '^  ↳ ' verify.log | grep '⚠ scopes:' | grep -vq '⚠ text:'; then
             {
               echo
-              echo '**Operation-level security changes, same schemes (listed, not held):**'
+              echo '**Operation-level security changes, same schemes (these alone do not hold the PR):**'
               echo '````text'
-              awk '/^  ↳ / { if (keep && n < 60) { print; n++ } else if (keep && n == 60) { print "… more in the run log"; n++ } next } /⚠ scopes:/ { keep = n < 60; if (keep) { print; n++ } else if (n == 60) { print "… more in the run log"; n++ } next } { keep = 0 }' verify.log | tr -d '`'
+              awk '/^  ↳ / { if (keep && n < 60) { print; n++ } else if (keep && n == 60) { print "… more in the run log"; n++ } next } /⚠ scopes:/ && !/⚠ text:/ { keep = n < 60; if (keep) { print; n++ } else if (n == 60) { print "… more in the run log"; n++ } next } { keep = 0 }' verify.log | tr -d '`'
               echo '````'
             } >> note.md
           fi

@@ -457,12 +457,18 @@ function routineIn(removed, added, lastRows) {
   const known = knownSchemes(lastRows);
   // An operation without its own requirement uses the document's; when there is one, an operation that gains its own
   // (new, or one that inherited until tonight) must keep its shape, or it changed how that operation authenticates.
-  const docAlts = lastRows.map(docRequirement).filter(Boolean);
+  // A document-level row that doesn't parse (a scope shown with a \\u{…} escape) leaves the inherited shape unknown.
+  const docRows = lastRows.filter((r) => r.startsWith("security[]: "));
+  const docAlts = docRows.map(docRequirement);
+  if (docAlts.some((x) => !x)) return false;
   const inherited = docAlts.length ? shape(docAlts) : null;
   const addedOps = new Set();
   for (const r of added) {
     const p = parseScopeRow(r);
-    if (!p || !p.req.length || p.req.some((x) => !x || typeof x !== "object" || !Object.keys(x).length)) return false;
+    // Each alternative names at least one scheme, and each scheme a list of scope strings: anything else (null, an
+    // object, a bare string) isn't a scope change, whatever the scheme names.
+    const valid = (x) => x && typeof x === "object" && !Array.isArray(x) && Object.keys(x).length && Object.values(x).every((v) => Array.isArray(v) && v.every((s) => typeof s === "string"));
+    if (!p || !p.req.length || !p.req.every(valid)) return false;
     const was = before.has(p.op) ? before.get(p.op) : inherited;
     if (was !== null ? was !== shape(p.req) : p.req.some((x) => Object.keys(x).some((n) => !known.has(n)))) return false;
     addedOps.add(p.op);
