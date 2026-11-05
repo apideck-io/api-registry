@@ -1,0 +1,8 @@
+id: ollama
+name: Ollama
+apideck: false
+specs:
+- name: Ollama
+  url: https://raw.githubusercontent.com/ollama/ollama/main/docs/openapi.yaml
+  format: openapi-3.1
+  provenance: community

@@ -1,0 +1,8 @@
+id: us-veterans-affairs
+name: US Department of Veterans Affairs — Benefits Intake
+apideck: false
+specs:
+- name: US Department of Veterans Affairs — Benefits Intake
+  url: https://api.va.gov/services/vba_documents/docs/v1/api
+  format: openapi-3.0
+  provenance: vendor

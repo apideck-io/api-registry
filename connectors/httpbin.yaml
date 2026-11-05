@@ -1,0 +1,8 @@
+id: httpbin
+name: httpbin
+apideck: false
+specs:
+- name: httpbin
+  url: https://httpbin.org/spec.json
+  format: swagger-2.0
+  provenance: community

@@ -1,0 +1,8 @@
+id: opendatasoft
+name: Opendatasoft
+apideck: false
+specs:
+- name: Opendatasoft
+  url: https://public.opendatasoft.com/api/v2/swagger.json
+  format: openapi-3.0
+  provenance: vendor

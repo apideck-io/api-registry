@@ -1,0 +1,8 @@
+id: bng2latlong
+name: bng2latlong
+apideck: false
+specs:
+- name: bng2latlong
+  url: https://www.getthedata.com/bng2latlong/openapi
+  format: openapi-3.0
+  provenance: community

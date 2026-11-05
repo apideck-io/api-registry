@@ -1,0 +1,8 @@
+id: daymet
+name: Daymet Single Pixel Extraction Tool
+apideck: false
+specs:
+- name: Daymet Single Pixel Extraction Tool API
+  url: https://daymet.ornl.gov/single-pixel/static/swagger.json
+  format: swagger-2.0
+  provenance: vendor

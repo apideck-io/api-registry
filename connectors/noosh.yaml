@@ -1,0 +1,8 @@
+id: noosh
+name: Noosh API application
+apideck: false
+specs:
+- name: Noosh API application
+  url: https://api.noosh.com/api/swagger.json
+  format: swagger-2.0
+  provenance: vendor

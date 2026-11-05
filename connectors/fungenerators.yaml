@@ -1,0 +1,8 @@
+id: fungenerators
+name: FunGenerators Barcode
+apideck: false
+specs:
+- name: FunGenerators Barcode
+  url: https://fungenerators.com/yaml/barcode.yaml
+  format: openapi-3.0
+  provenance: vendor

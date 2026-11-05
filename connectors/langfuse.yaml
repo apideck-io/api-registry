@@ -1,0 +1,8 @@
+id: langfuse
+name: Langfuse
+apideck: false
+specs:
+- name: Langfuse
+  url: https://cloud.langfuse.com/generated/api/openapi.yml
+  format: openapi-3.0
+  provenance: vendor

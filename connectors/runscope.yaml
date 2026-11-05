@@ -1,0 +1,8 @@
+id: runscope
+name: Runscope
+apideck: false
+specs:
+- name: Runscope API
+  url: https://raw.githubusercontent.com/Runscope/runscope-api-examples/master/schemas/runscope-swagger-v2.json
+  format: swagger-2.0
+  provenance: vendor

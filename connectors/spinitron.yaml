@@ -1,0 +1,8 @@
+id: spinitron
+name: Spinitron v2
+apideck: false
+specs:
+- name: Spinitron v2 API
+  url: https://raw.githubusercontent.com/spinitron/v2api/master/spinitron.yaml
+  format: openapi-3.0
+  provenance: vendor

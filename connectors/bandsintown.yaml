@@ -1,0 +1,8 @@
+id: bandsintown
+name: Bandsintown
+apideck: false
+specs:
+- name: Bandsintown API
+  url: https://api.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0/swagger.yaml
+  format: swagger-2.0
+  provenance: vendor

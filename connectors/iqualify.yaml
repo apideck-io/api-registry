@@ -1,0 +1,8 @@
+id: iqualify
+name: iQualify Management
+apideck: false
+specs:
+- name: iQualify Management API
+  url: https://api.iqualify.com/v1/management.json
+  format: openapi-3.0
+  provenance: vendor

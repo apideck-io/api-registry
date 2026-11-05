@@ -1,0 +1,8 @@
+id: shipengine
+name: ShipEngine
+apideck: false
+specs:
+- name: ShipEngine API
+  url: https://raw.githubusercontent.com/ShipEngine/shipengine-openapi/master/openapi.yaml
+  format: openapi-3.0
+  provenance: vendor

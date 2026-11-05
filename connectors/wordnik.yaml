@@ -1,0 +1,8 @@
+id: wordnik
+name: Wordnik
+apideck: false
+specs:
+- name: Wordnik
+  url: https://developer.wordnik.com/api-docs/swagger.json
+  format: swagger-2.0
+  provenance: vendor

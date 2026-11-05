@@ -1,0 +1,8 @@
+id: zeno-media
+name: Zeno Media Aggregators
+apideck: false
+specs:
+- name: Zeno Media Aggregators
+  url: https://api.zeno.fm/v3/api-docs
+  format: openapi-3.1
+  provenance: vendor

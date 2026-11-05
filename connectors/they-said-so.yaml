@@ -1,0 +1,8 @@
+id: they-said-so
+name: They Said So Quotes
+apideck: false
+specs:
+- name: They Said So Quotes API
+  url: https://quotes.rest/yaml/theysaidso.quotes.openapi.yaml?v1.1
+  format: openapi-3.0
+  provenance: vendor

@@ -1,0 +1,8 @@
+id: open-meteo
+name: Open-Meteo
+apideck: false
+specs:
+- name: Open-Meteo
+  url: https://raw.githubusercontent.com/open-meteo/open-meteo/main/openapi/forecast.yml
+  format: openapi-3.1
+  provenance: vendor

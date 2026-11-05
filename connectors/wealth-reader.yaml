@@ -1,0 +1,8 @@
+id: wealth-reader
+name: Wealth Reader
+apideck: false
+specs:
+- name: Wealth Reader API
+  url: https://api.swaggerhub.com/apis/Wealth-Reader/api/1.0.0
+  format: openapi-3.0
+  provenance: vendor

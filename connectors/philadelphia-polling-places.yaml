@@ -1,0 +1,8 @@
+id: philadelphia-polling-places
+name: Philadelphia Polling Places
+apideck: false
+specs:
+- name: Philadelphia Polling Places
+  url: https://raw.githubusercontent.com/CityOfPhiladelphia/phlapi/gh-pages/pollingplaces/swagger.json
+  format: swagger-2.0
+  provenance: vendor

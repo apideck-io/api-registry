@@ -1,0 +1,8 @@
+id: the-blue-alliance
+name: The Blue Alliance API v3
+apideck: false
+specs:
+- name: The Blue Alliance API v3
+  url: https://www.thebluealliance.com/swagger/api_v3.json
+  format: openapi-3.1
+  provenance: community

@@ -1,0 +1,8 @@
+id: setlist-fm
+name: setlist.fm
+apideck: false
+specs:
+- name: setlist.fm API
+  url: https://api.setlist.fm/docs/1.0/ui/swagger.json
+  format: swagger-2.0
+  provenance: vendor

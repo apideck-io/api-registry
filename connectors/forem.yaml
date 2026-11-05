@@ -1,0 +1,8 @@
+id: forem
+name: DEV / Forem
+apideck: false
+specs:
+- name: DEV / Forem
+  url: https://raw.githubusercontent.com/forem/forem/main/swagger/v1/api_v1.json
+  format: openapi-3.0
+  provenance: vendor

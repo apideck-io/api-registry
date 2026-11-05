@@ -1,0 +1,8 @@
+id: uk-parliament
+name: Bills
+apideck: false
+specs:
+- name: Bills API
+  url: https://bills-api.parliament.uk/swagger/v1/swagger.json
+  format: openapi-3.0
+  provenance: vendor

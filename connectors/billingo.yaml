@@ -1,0 +1,8 @@
+id: billingo
+name: Billingo API v3
+apideck: false
+specs:
+- name: Billingo API v3
+  url: https://api.swaggerhub.com/apis/Billingo/Billingo/3.0.7
+  format: openapi-3.0
+  provenance: vendor

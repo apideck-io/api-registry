@@ -1,0 +1,8 @@
+id: figshare
+name: Figshare
+apideck: false
+specs:
+- name: Figshare API
+  url: https://docs.figshare.com/swagger.json
+  format: openapi-3.0
+  provenance: vendor

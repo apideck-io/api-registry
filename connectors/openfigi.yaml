@@ -1,0 +1,8 @@
+id: openfigi
+name: OpenFIGI
+apideck: false
+specs:
+- name: OpenFIGI API
+  url: https://api.openfigi.com/schema
+  format: openapi-3.0
+  provenance: vendor

@@ -1,0 +1,8 @@
+id: highways-england
+name: Highways England
+apideck: false
+specs:
+- name: Highways England API
+  url: https://webtris.highwaysengland.co.uk/api/swagger/docs/v1
+  format: swagger-2.0
+  provenance: vendor

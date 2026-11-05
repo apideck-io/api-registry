@@ -1,0 +1,8 @@
+id: embl-ebi-crossbar
+name: EMBL-EBI CROssBAR
+apideck: false
+specs:
+- name: EMBL-EBI CROssBAR
+  url: https://www.ebi.ac.uk/Tools/crossbar/v2/api-docs
+  format: swagger-2.0
+  provenance: vendor

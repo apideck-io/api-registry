@@ -1,0 +1,8 @@
+id: mailboxvalidator
+name: MailboxValidator Free Email Checker
+apideck: false
+specs:
+- name: MailboxValidator Free Email Checker
+  url: https://api.swaggerhub.com/apis/mailboxvalidator/MailboxValidator-Free-Email-Checker/1.0.0
+  format: openapi-3.0
+  provenance: vendor

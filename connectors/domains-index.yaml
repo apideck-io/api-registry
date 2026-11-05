@@ -1,0 +1,8 @@
+id: domains-index
+name: Domains-Index
+apideck: false
+specs:
+- name: Domains-Index API
+  url: https://api.domains-index.com/v1/swagger.json
+  format: swagger-2.0
+  provenance: vendor

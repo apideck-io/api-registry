@@ -1,0 +1,8 @@
+id: bc-data-catalogue
+name: British Columbia Data Catalogue
+apideck: false
+specs:
+- name: British Columbia Data Catalogue
+  url: https://raw.githubusercontent.com/bcgov/api-specs/master/bcdc/bcdc.json
+  format: openapi-3.0
+  provenance: vendor
