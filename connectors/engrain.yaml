@@ -2,9 +2,10 @@ id: engrain
 name: Engrain
 apideck: false
 specs:
-- name: Engrain API
+- name: Engrain SightMap API
   url: https://raw.githubusercontent.com/konfig-sdks/openapi-examples/main/engrain/sight-map/openapi.yaml
   format: openapi-3.0
   provenance: third-party
-  notes: Konfig-maintained specification snapshot. This is a third-party source, not a claim of current vendor publication.
-    Confirm current API coverage before integration.
+  notes: 'Konfig-maintained specification snapshot. This is a third-party source, not a claim of current vendor publication.
+    Confirm current API coverage before integration. Scope: Engrain SightMap API only; this document does not claim coverage
+    of every product or API from the provider.'

@@ -2,9 +2,10 @@ id: validifi
 name: ValidiFI
 apideck: false
 specs:
-- name: ValidiFI API
+- name: ValidiFI Bank Login API
   url: https://raw.githubusercontent.com/konfig-sdks/openapi-examples/main/validifi/bank-login/openapi.yaml
   format: openapi-3.0
   provenance: third-party
-  notes: Konfig-maintained specification snapshot. This is a third-party source, not a claim of current vendor publication.
-    Confirm current API coverage before integration.
+  notes: 'Konfig-maintained specification snapshot. This is a third-party source, not a claim of current vendor publication.
+    Confirm current API coverage before integration. Scope: ValidiFI Bank Login API only; this document does not claim coverage
+    of every product or API from the provider.'

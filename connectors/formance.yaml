@@ -2,7 +2,8 @@ id: formance
 name: Formance
 apideck: false
 specs:
-- name: Formance API
+- name: Formance Ledger API
   url: https://raw.githubusercontent.com/formancehq/ledger/main/openapi.yml
   format: openapi-3.0
   provenance: vendor
+  notes: 'Scope: Formance Ledger API only; this document does not claim coverage of every product or API from the provider.'
