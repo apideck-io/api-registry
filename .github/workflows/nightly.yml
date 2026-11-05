@@ -58,14 +58,15 @@ jobs:
             } > note.md
           else
             echo 'review=false' >> "$GITHUB_OUTPUT"
-            echo 'No servers, security schemes or instruction-like text changed, and no operation changed how it authenticates.' > note.md
+            echo 'No servers or instruction-like text changed, and no operation changed which schemes it uses (scope changes, if any, are listed below).' > note.md
           fi
           # Scope changes don't hold the PR (a spec held for its text has its rows in the note above instead), but whoever merges it sees which scopes changed on which operations
-          # (at most 60 lines, spec lines included; a body over the limit is cut from the change list, which the run log has in full).
+          # (at most 60 lines, spec lines included). A body over the limit is cut from the end: the change list first, and on a
+          # night with many held specs this section too. The run log has all of it.
           if grep -v '^  ↳ ' verify.log | grep '⚠ scopes:' | grep -vq '⚠ text:'; then
             {
               echo
-              echo '**Operation-level security changes, same schemes (these alone do not hold the PR):**'
+              echo '**Operation-level security and declared OAuth scope changes, same schemes (these alone do not hold the PR):**'
               echo '````text'
               awk '/^  ↳ / { if (keep && n < 60) { print; n++ } else if (keep && n == 60) { print "… more in the run log"; n++ } next } /⚠ scopes:/ && !/⚠ text:/ { keep = n < 60; if (keep) { print; n++ } else if (n == 60) { print "… more in the run log"; n++ } next } { keep = 0 }' verify.log | tr -d '`'
               echo '````'

@@ -436,7 +436,14 @@ function routineIn(removed, added, lastRows) {
   // "perPath: []" ("perOp: []") is the empty list before any operation had its own requirement: the first one replaces it.
   // Likewise "….scopes: {}", a flow (or definition) with no scopes yet, which its first scope replaces.
   const noScopesYet = new RegExp(`^(?:schemes\\.${SCHEME_NAME}\\.flows\\.[A-Za-z0-9_$-]+|definitions\\.${SCHEME_NAME})\\.scopes: \\{\\}$`);
-  removed = removed.filter((r) => r !== "perPath: []" && r !== "perOp: []" && !noScopesYet.test(r) && !(declared(r) && !addedKeys.has(keyOf(r))));
+  // A scope row only goes with its flow still there tonight: a whole flow removed is held.
+  const gone = new Set(removed);
+  const tonight = [...lastRows.filter((r) => !gone.has(r)), ...added];
+  const flowStays = (r) => {
+    const m = /^(.*?)\.scopes(?:\.|: )/.exec(r);
+    return !!m && tonight.some((x) => x.startsWith(`${m[1]}.`) && !x.startsWith(`${m[1]}.scopes`));
+  };
+  removed = removed.filter((r) => r !== "perPath: []" && r !== "perOp: []" && !((noScopesYet.test(r) || (declared(r) && !addedKeys.has(keyOf(r)))) && flowStays(r)));
   added = added.filter((r) => {
     // A flow's last scope dropped leaves "….scopes: {}" behind.
     if (noScopesYet.test(r) && lastRows.some((x) => x.startsWith(r.slice(0, -": {}".length) + "."))) return false;
@@ -452,7 +459,7 @@ function routineIn(removed, added, lastRows) {
   for (const r of removed) {
     const p = parseScopeRow(r);
     if (!p) return false;
-    before.set(p.op, shape(p.req));
+    before.set(p.op, p.req);
   }
   const known = knownSchemes(lastRows);
   // An operation without its own requirement uses the document's; when there is one, an operation that gains its own
@@ -469,7 +476,15 @@ function routineIn(removed, added, lastRows) {
     // object, a bare string) isn't a scope change, whatever the scheme names.
     const valid = (x) => x && typeof x === "object" && !Array.isArray(x) && Object.keys(x).length && Object.values(x).every((v) => Array.isArray(v) && v.every((s) => typeof s === "string"));
     if (!p || !p.req.length || !p.req.every(valid)) return false;
-    const was = before.has(p.op) ? before.get(p.op) : inherited;
+    // A scheme that required scopes and now requires none (where no alternative already did) lets any token through:
+    // that loosens access, so it's held.
+    // Compared with what the operation had: its own requirement, or the document's it inherited.
+    const old = before.has(p.op) ? before.get(p.op) : docAlts;
+    if (old.length) {
+      const loosened = p.req.some((x) => Object.entries(x).some(([n, v]) => !v.length && !old.some((o) => shape([o]) === shape([x]) && Array.isArray(o[n]) && !o[n].length)));
+      if (loosened) return false;
+    }
+    const was = before.has(p.op) ? shape(before.get(p.op)) : inherited;
     if (was !== null ? was !== shape(p.req) : p.req.some((x) => Object.keys(x).some((n) => !known.has(n)))) return false;
     addedOps.add(p.op);
   }
