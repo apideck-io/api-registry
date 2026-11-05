@@ -1,0 +1,51 @@
+connectors/mambu.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5,9-11
+connectors/appwrite.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5,9-11
+connectors/pdfgeneratorapi.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5,9-10
+connectors/engrain.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5,9-11
+connectors/godaddy.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5,9-12
+connectors/hsbc.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5,9-11
+connectors/adatree-au.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5,9-11
+connectors/rivery-io.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5,9-10
+connectors/griffin-bank.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 10-11
+connectors/30-k.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5,9-11
+connectors/formance.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5,9
+connectors/cornerstoneondemand.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5,9-11
+connectors/visier.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5,9-11
+connectors/validifi.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5,9-11
+connectors/cyberark.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5,9-11
+connectors/cisco-meraki.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5-6,8
+connectors/klarna.yaml
+  s_dc3e991cde2235::t_22a158270d6e16 5,9-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "10386982c134beafc23e8b439d4c026315e68023",
+  "prompts": {},
+  "sessions": {
+    "s_dc3e991cde2235": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1aba2-9e29-7cc0-99f9-5f6120de71eb",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
