@@ -1,0 +1,12 @@
+[
+ "basePath: \"/api/rest/v1\"",
+ "definitions.api_key.description: \"API Key - supports user-based or site-wide API keys\"",
+ "definitions.api_key.in: \"header\"",
+ "definitions.api_key.name: \"X-FilesAPI-Key\"",
+ "definitions.api_key.type: \"apiKey\"",
+ "host: \"app.files.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: null",
+ "security: null"
+]

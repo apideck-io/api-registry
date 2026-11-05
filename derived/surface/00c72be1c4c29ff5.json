@@ -37,6 +37,7 @@
  "perPath: /checkout/cart/line-item patch security [{\"ApiKey\":[]}]",
  "perPath: /checkout/cart/line-item post security [{\"ApiKey\":[]}]",
  "perPath: /checkout/cart/line-item/delete post security [{\"ApiKey\":[]}]",
+ "perPath: /checkout/cart/reorder/{orderId} post security [{\"ApiKey\":[],\"ContextToken\":[]}]",
  "perPath: /checkout/gateway get security [{\"ApiKey\":[]}]",
  "perPath: /checkout/order post security [{\"ApiKey\":[],\"ContextToken\":[]}]",
  "perPath: /cms/{id} get security [{\"ApiKey\":[]}]",

@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.auth.scheme: \"basic\"",
+ "schemes.auth.type: \"http\"",
+ "security[]: {\"auth\":[]}",
+ "servers[0]: {\"url\":\"https://api.fastspring.com\"}"
+]

@@ -1,0 +1,14 @@
+[
+ "perPath: /assets/render/{id} get security [{\"DeveloperKey\":[]}]",
+ "perPath: /assets/{id} delete security [{\"DeveloperKey\":[]}]",
+ "perPath: /assets/{id} get security [{\"DeveloperKey\":[]}]",
+ "perPath: /render post security [{\"DeveloperKey\":[]}]",
+ "perPath: /render/{id} get security [{\"DeveloperKey\":[]}]",
+ "schemes.DeveloperKey.description: \"Set the **x-api-key** header with your provided key for the correct environment (v1 or stage). Include the header in all calls to the API that are secured with a key.\"",
+ "schemes.DeveloperKey.in: \"header\"",
+ "schemes.DeveloperKey.name: \"x-api-key\"",
+ "schemes.DeveloperKey.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.shotstack.io/{version}\",\"variables\":{\"version\":{\"default\":\"v1\",\"description\":\"Set the stage to `v1` for production usage without watermarks. Set to `stage` to use the development sandbox.\",\"enum\":[\"v1\",\"stage\"]}}}",
+ "servers[1]: {\"url\":\"https://api.shotstack.io/serve/{version}\",\"variables\":{\"version\":{\"default\":\"v1\",\"description\":\"Set the stage to `v1` for production usage. Set to `stage` to use the development sandbox.\",\"enum\":[\"v1\",\"stage\"]}}}"
+]

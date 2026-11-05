@@ -1,0 +1,13 @@
+[
+ "perPath: []",
+ "schemes.basicAuth.description: \"Basic HTTP authorization with _email_ and _password_\"",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "servers[0]: {\"description\":\"Demo Server 1\",\"url\":\"https://demo.traccar.org/api\"}",
+ "servers[1]: {\"description\":\"Demo Server 2\",\"url\":\"https://demo2.traccar.org/api\"}",
+ "servers[2]: {\"description\":\"Demo Server 3\",\"url\":\"https://demo3.traccar.org/api\"}",
+ "servers[3]: {\"description\":\"Demo Server 4\",\"url\":\"https://demo4.traccar.org/api\"}",
+ "servers[4]: {\"description\":\"Subscription Server\",\"url\":\"https://server.traccar.org/api\"}",
+ "servers[5]: {\"description\":\"Other Server\",\"url\":\"http://{host}:{port}/api\",\"variables\":{\"host\":{\"default\":\"localhost\"},\"port\":{\"default\":\"8082\",\"enum\":[\"8082\",\"80\"]}}}"
+]

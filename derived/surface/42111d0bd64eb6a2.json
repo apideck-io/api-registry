@@ -1,0 +1,15 @@
+[
+ "perPath: /v1/batch/embeddings post security [{\"HTTPBearer\":[]}]",
+ "perPath: /v1/batch/{batch_id} delete security [{\"HTTPBearer\":[]}]",
+ "perPath: /v1/batch/{batch_id} get security [{\"HTTPBearer\":[]}]",
+ "perPath: /v1/batch/{batch_id}/errors get security [{\"HTTPBearer\":[]}]",
+ "perPath: /v1/batch/{batch_id}/output get security [{\"HTTPBearer\":[]}]",
+ "perPath: /v1/batches get security [{\"HTTPBearer\":[]}]",
+ "perPath: /v1/chat/completions post security [{\"HTTPBearer\":[]}]",
+ "perPath: /v1/embeddings post security [{\"HTTPBearer\":[]}]",
+ "perPath: /v1/rerank post security [{\"HTTPBearer\":[]}]",
+ "schemes.HTTPBearer.scheme: \"bearer\"",
+ "schemes.HTTPBearer.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.jina.ai\"}"
+]

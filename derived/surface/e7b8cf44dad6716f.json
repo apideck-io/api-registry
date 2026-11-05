@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"url\":\"https://{instance}.bl.ink/api/v4\",\"variables\":{\"instance\":{\"default\":\"app\",\"description\":\"Subdomain that an instance of BL.INK has been installed on.\"}}}"
+]

@@ -1,0 +1,12 @@
+[
+ "perPath: []",
+ "schemes.accessToken.in: \"query\"",
+ "schemes.accessToken.name: \"access-token\"",
+ "schemes.accessToken.type: \"apiKey\"",
+ "schemes.httpBearer.bearerFormat: \"JWT\"",
+ "schemes.httpBearer.scheme: \"bearer\"",
+ "schemes.httpBearer.type: \"http\"",
+ "security[]: {\"accessToken\":[]}",
+ "security[]: {\"httpBearer\":[]}",
+ "servers[0]: {\"url\":\"https://spinitron.com/api\"}"
+]

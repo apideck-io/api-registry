@@ -1,0 +1,13 @@
+[
+ "perPath: /chrome/url get security [{\"QueryApiKey\":[]}]",
+ "perPath: /wkhtmltopdf/url get security [{\"QueryApiKey\":[]}]",
+ "perPath: /zebra get security [{\"QueryApiKey\":[]}]",
+ "schemes.HeaderApiKey.in: \"header\"",
+ "schemes.HeaderApiKey.name: \"Authorization\"",
+ "schemes.HeaderApiKey.type: \"apiKey\"",
+ "schemes.QueryApiKey.in: \"query\"",
+ "schemes.QueryApiKey.name: \"apikey\"",
+ "schemes.QueryApiKey.type: \"apiKey\"",
+ "security[]: {\"HeaderApiKey\":[]}",
+ "servers[0]: {\"description\":\"Api2Pdf.com API\",\"url\":\"https://v2018.api2pdf.com\"}"
+]

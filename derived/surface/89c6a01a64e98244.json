@@ -1,0 +1,12 @@
+[
+ "basePath: \"/v1\"",
+ "definitions.apikey.description: \"Enter your API key\"",
+ "definitions.apikey.in: \"header\"",
+ "definitions.apikey.name: \"apikey\"",
+ "definitions.apikey.type: \"apiKey\"",
+ "host: \"vatapi.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"apikey\":[]}"
+]

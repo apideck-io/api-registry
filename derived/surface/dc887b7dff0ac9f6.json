@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.oauth.description: \"OAuth2 password grant - see the documentation in the oAuth2 Authentication section\"",
+ "schemes.oauth.flows.password.scopes: {}",
+ "schemes.oauth.flows.password.tokenUrl: \"/oauth\"",
+ "schemes.oauth.type: \"oauth2\"",
+ "security[]: {\"oauth\":[]}",
+ "servers[0]: {\"description\":\"Sandbox server - start here and make test payments through our model banks.\\n\",\"url\":\"https://api.sandbox.volt.io\"}",
+ "servers[1]: {\"description\":\"Production server - when you're ready to make live payments, connect to Volt's banking network.\\n\",\"url\":\"https://api.volt.io\"}"
+]

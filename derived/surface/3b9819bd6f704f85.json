@@ -1,0 +1,10 @@
+[
+ "perPath: /token post security [{\"basicAuth\":[]}]",
+ "schemes.clientCredentials.flows.clientCredentials.scopes: {}",
+ "schemes.clientCredentials.flows.clientCredentials.tokenUrl: \"/token\"",
+ "schemes.clientCredentials.flows.clientCredentials.x-speakeasy-token-endpoint-authentication: \"client_secret_basic\"",
+ "schemes.clientCredentials.type: \"oauth2\"",
+ "security[]: {\"clientCredentials\":[]}",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://api.dwolla.com\"}",
+ "servers[1]: {\"description\":\"Sandbox server\",\"url\":\"https://api-sandbox.dwolla.com\"}"
+]

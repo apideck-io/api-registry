@@ -1,0 +1,18 @@
+[
+ "perPath: []",
+ "schemes.JWT.description: \"JWT should be always provided when stream-auth-type=jwt.\\n\\nUsing JWT auth request could be authenticated as user or as server-side.\\n\\nWhen using user authentication permission checking is going to be applied to requests based on the user that is\\nperforming a request.\\n\\nThe `authorization` header should be a JWT string signed using the secret attached to the API key used to perform\\nrequests.\\n\\n**WARNING** all client-side official SDK do not ship with token generation; this is to make sure that the API secret is not\\nshared with an untrusted party such as a browser or a iOS/Android application. Tokens **must** be generated server-side.\\nIf you wish, you can configure your application to ignore authentication (see `disable_auth_check`)\\nThe JWT string must include only the user_id claim and can include any built-in JWT claim such as iat, exp as well.\\n\"",
+ "schemes.JWT.in: \"header\"",
+ "schemes.JWT.name: \"Authorization\"",
+ "schemes.JWT.type: \"apiKey\"",
+ "schemes.api_key.description: \"Application API key should be always set in order to authenticate the request.\"",
+ "schemes.api_key.in: \"query\"",
+ "schemes.api_key.name: \"api_key\"",
+ "schemes.api_key.type: \"apiKey\"",
+ "schemes.stream-auth-type.description: \"Stream-Auth-Type should be always set in order to authenticate the request. Possible\\nvalues: `jwt` or `anonymous`.\\n\\n`jwt` allows you to authenticate as a user. With this auth type you should also provide valid JWT in Authorization\\nheader.\\n\\n`anonymous` allows you to authenticate as anonymous user. Please note that most advanced features are not available\\nto anonymous users.\"",
+ "schemes.stream-auth-type.in: \"header\"",
+ "schemes.stream-auth-type.name: \"Stream-Auth-Type\"",
+ "schemes.stream-auth-type.type: \"apiKey\"",
+ "security[]: {\"JWT\":[],\"api_key\":[],\"stream-auth-type\":[]}",
+ "security[]: {\"api_key\":[],\"stream-auth-type\":[]}",
+ "servers[0]: {\"description\":\"Stream API\",\"url\":\"https://chat.stream-io-api.com\"}"
+]

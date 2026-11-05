@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.[\"Security Scheme\"].in: \"header\"",
+ "schemes.[\"Security Scheme\"].name: \"Authorization\"",
+ "schemes.[\"Security Scheme\"].type: \"apiKey\"",
+ "security[]: {\"Security Scheme\":[]}",
+ "servers[0]: {\"description\":\"Generated server url\",\"url\":\"https://rest-demo.wannme.com/integration/v2\"}"
+]

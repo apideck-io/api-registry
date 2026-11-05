@@ -1,0 +1,15 @@
+[
+ "perPath: / post security [{\"basicAuth\":[]}]",
+ "perPath: /devices get security [{\"basicAuth\":[]}]",
+ "perPath: /locations get security [{\"basicAuth\":[]}]",
+ "perPath: /os-browsers get security [{\"basicAuth\":[]}]",
+ "perPath: /profiles get security [{\"basicAuth\":[]}]",
+ "perPath: /resolutions get security [{\"basicAuth\":[]}]",
+ "perPath: /stop/{test_id} put security [{\"basicAuth\":[]}]",
+ "perPath: /{test_id} get security [{\"basicAuth\":[]}]",
+ "perPath: /{test_id}/zip get security [{\"basicAuth\":[]}]",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.lambdatest.com/screenshots/v1\"}"
+]

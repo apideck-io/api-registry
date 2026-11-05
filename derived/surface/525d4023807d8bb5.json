@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.apikey.description: \"API key to make authenticated requests.\"",
+ "schemes.apikey.in: \"query\"",
+ "schemes.apikey.name: \"apikey\"",
+ "schemes.apikey.type: \"apiKey\"",
+ "security[]: {\"apikey\":[]}",
+ "servers[0]: {\"url\":\"https://public.opendatasoft.com/api/explore/v2.0\"}"
+]

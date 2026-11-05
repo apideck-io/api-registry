@@ -1,0 +1,14 @@
+[
+ "basePath: \"/seo/api\"",
+ "definitions.ApiKeyAuth.in: \"query\"",
+ "definitions.ApiKeyAuth.name: \"apiKey\"",
+ "definitions.ApiKeyAuth.type: \"apiKey\"",
+ "host: \"www.sheerseo.com\"",
+ "parameterizedHost: null",
+ "perOp: /rank-collect post [{\"ApiKeyAuth\":[]}]",
+ "perOp: /rank-submit post [{\"ApiKeyAuth\":[]}]",
+ "perOp: /serp-collect post [{\"ApiKeyAuth\":[]}]",
+ "perOp: /serp-submit post [{\"ApiKeyAuth\":[]}]",
+ "schemes: [\"https\"]",
+ "security: null"
+]

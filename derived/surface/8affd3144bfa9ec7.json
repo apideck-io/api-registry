@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"url\":\"https://us-east.api.pipelinersales.com/api/v100/rest/spaces/{space_id}\"}",
+ "servers[1]: {\"url\":\"https://eu-central.api.pipelinersales.com/api/v100/rest/spaces/{space_id}\"}",
+ "servers[2]: {\"url\":\"https://ca-central.api.pipelinersales.com/api/v100/rest/spaces/{space_id}\"}",
+ "servers[3]: {\"url\":\"https://ap-southeast.api.pipelinersales.com/api/v100/rest/spaces/{space_id}\"}"
+]

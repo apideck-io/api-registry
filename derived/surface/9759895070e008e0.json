@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.x-paycom-api-key.in: \"header\"",
+ "schemes.x-paycom-api-key.name: \"x-paycom-api-key\"",
+ "schemes.x-paycom-api-key.type: \"apiKey\"",
+ "security[]: {\"x-paycom-api-key\":[]}",
+ "servers[0]: {\"description\":\"Test mode (Sandbox)\",\"url\":\"https://api.sandbox.pay.com\"}",
+ "servers[1]: {\"description\":\"Live mode (Production)\",\"url\":\"https://api.pay.com\"}"
+]

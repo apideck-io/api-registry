@@ -29,6 +29,7 @@
  "perPath: /v1/email-messages/{emailMessageId} post security [{\"apiKey\":[]}]",
  "perPath: /v1/email-messages/{emailMessageId}/guardian get security [{\"apiKey\":[]}]",
  "perPath: /v1/email-messages/{emailMessageId}/preview post security [{\"apiKey\":[]}]",
+ "perPath: /v1/email-messages/{emailMessageId}/render post security [{\"apiKey\":[]}]",
  "perPath: /v1/event-patterns get security [{\"apiKey\":[]}]",
  "perPath: /v1/event-patterns/by-name/{eventName} get security [{\"apiKey\":[]}]",
  "perPath: /v1/event-patterns/{eventPatternId} get security [{\"apiKey\":[]}]",

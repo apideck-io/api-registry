@@ -1,0 +1,9 @@
+[
+ "basePath: \"/Tools/crossbar\"",
+ "definitions: null",
+ "host: \"www.ebi.ac.uk\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: null",
+ "security: null"
+]

@@ -1,0 +1,9 @@
+[
+ "basePath: \"/\"",
+ "definitions: null",
+ "host: \"httpbin.org\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

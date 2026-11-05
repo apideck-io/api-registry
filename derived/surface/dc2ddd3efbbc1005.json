@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"SwaggerHub API Auto Mocking\",\"url\":\"https://virtserver.swaggerhub.com/Wealth-Reader/api/1.0.0\"}",
+ "servers[1]: {\"description\":\"Dummy server (legacy placeholder only)\",\"url\":\"https://dummy.wealthreader.com\"}"
+]

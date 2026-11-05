@@ -1,0 +1,11 @@
+[
+ "perPath: /food/branded/barcode.php get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /food/branded/name.php get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /food/branded/search.php get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /food/ingredient/search.php get security [{\"ApiKeyAuth\":[]}]",
+ "schemes.ApiKeyAuth.in: \"query\"",
+ "schemes.ApiKeyAuth.name: \"api_key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production server (uses live data)\",\"url\":\"https://chompthis.com/api/v2\"}"
+]

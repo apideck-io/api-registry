@@ -1,0 +1,22 @@
+[
+ "basePath: \"/pg\"",
+ "definitions.basicAuth.type: \"basic\"",
+ "host: \"api-test.qualpay.com\"",
+ "parameterizedHost: null",
+ "perOp: /ardef post [{\"basicAuth\":[]}]",
+ "perOp: /auth post [{\"basicAuth\":[]}]",
+ "perOp: /batchClose post [{\"basicAuth\":[]}]",
+ "perOp: /capture/{pgIdOrig} post [{\"basicAuth\":[]}]",
+ "perOp: /credit post [{\"basicAuth\":[]}]",
+ "perOp: /emailReceipt/{pgId} post [{\"basicAuth\":[]}]",
+ "perOp: /expireToken post [{\"basicAuth\":[]}]",
+ "perOp: /force post [{\"basicAuth\":[]}]",
+ "perOp: /recharge/{pgIdOrig} post [{\"basicAuth\":[]}]",
+ "perOp: /refund/{pgIdOrig} post [{\"basicAuth\":[]}]",
+ "perOp: /sale post [{\"basicAuth\":[]}]",
+ "perOp: /tokenize post [{\"basicAuth\":[]}]",
+ "perOp: /verify post [{\"basicAuth\":[]}]",
+ "perOp: /void/{pgIdOrig} post [{\"basicAuth\":[]}]",
+ "schemes: null",
+ "security: null"
+]

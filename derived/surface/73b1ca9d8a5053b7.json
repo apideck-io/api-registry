@@ -1,0 +1,20 @@
+[
+ "perPath: /v2/submission post security [{\"OAuth2\":[\"submissions.write\"]}]",
+ "perPath: /v2/submission/{submission_id} delete security [{\"OAuth2\":[\"submissions.write\"]}]",
+ "perPath: /v2/submission/{submission_id}/characteristics put security [{\"OAuth2\":[\"submissions.write\"]}]",
+ "perPath: /v2/submission/{submission_id}/classification get security [{\"OAuth2\":[\"submissions.read\"]}]",
+ "perPath: /v2/submission/{submission_id}/content get security [{\"OAuth2\":[\"submissions.read\"]}]",
+ "perPath: /v2/submission/{submission_id}/decision get security [{\"OAuth2\":[\"submissions.read\"]}]",
+ "perPath: /v2/submission/{submission_id}/feedback get security [{\"OAuth2\":[\"submissions.read\"]}]",
+ "perPath: /v2/submission/{submission_id}/feedback put security [{\"OAuth2\":[\"submissions.write\"]}]",
+ "perPath: /v2/submission/{submission_id}/fraud get security [{\"OAuth2\":[\"submissions.read\"]}]",
+ "perPath: /v2/submission/{submission_id}/quality get security [{\"OAuth2\":[\"submissions.read\"]}]",
+ "perPath: /v2/submission/{submission_id}/report get security [{\"OAuth2\":[\"submissions.read\"]}]",
+ "schemes.OAuth2.description: \"The standard [client credentials](https://developer.okta.com/docs/guides/implement-grant-type/clientcreds/main/#about-the-client-credentials-grant) flow:\\n\\n1. Client makes a [request](https://developer.okta.com/docs/guides/implement-grant-type/clientcreds/main/#request-for-token) to authorization server using client credentials\\n```\\nBASIC_AUTH=$(echo -n $CLIENT_ID:$CLIENT_SECRET | base64)\\ncurl --request POST \\\\\\n  --url 'https://eu.id.resistant.ai/oauth2/aus2un1hkrKhPjir4417/v1/token' \\\\\\n  --header 'accept: application/json' \\\\\\n  --header \\\"authorization: Basic $BASIC_AUTH\\\" \\\\\\n  --header 'content-type: application/x-www-form-urlencoded' \\\\\\n  --data 'grant_type=client_credentials&scope=submissions.read submissions.write'\\n```\\n2. If the credentials are valid, authorization server responds with an access token\\n```\\n{\\n  \\\"access_token\\\": \\\"eyJhbG[...]1LQ\\\",\\n  \\\"token_type\\\": \\\"Bearer\\\",\\n  \\\"expires_in\\\": 3600,\\n  \\\"scope\\\": \\\"submissions.read submissions.write\\\"\\n}\\n```\\n3. Client uses the access token to make subsequent API requests with Authorization header\\n```\\nAuthorization: Bearer eyJhbG[...]1LQ\\n```\\n\\nPlease note that Token URL is specific for a given environment. Correct URL is in the corresponding environment documentation.\\n\"",
+ "schemes.OAuth2.flows.clientCredentials.scopes.[\"submissions.read\"]: \"Read analysis results for a submission\"",
+ "schemes.OAuth2.flows.clientCredentials.scopes.[\"submissions.write\"]: \"Create a new submission\"",
+ "schemes.OAuth2.flows.clientCredentials.tokenUrl: \"https://eu.id.resistant.ai/oauth2/aus2un1hkrKhPjir4417/v1/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.documents.resistant.ai\"}"
+]

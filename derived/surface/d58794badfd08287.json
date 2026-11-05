@@ -1,0 +1,9 @@
+[
+ "basePath: null",
+ "definitions: null",
+ "host: \"timetableapi.ptv.vic.gov.au\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\",\"http\"]",
+ "security: null"
+]

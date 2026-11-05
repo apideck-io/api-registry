@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.description: \"API key auth header - Get your key from https://mineskin.org/apikey\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.mineskin.org\"}"
+]

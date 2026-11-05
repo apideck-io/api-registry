@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.accessTokenHeader.in: \"header\"",
+ "schemes.accessTokenHeader.name: \"Authorization\"",
+ "schemes.accessTokenHeader.type: \"apiKey\"",
+ "schemes.accessTokenQuery.in: \"query\"",
+ "schemes.accessTokenQuery.name: \"access_token\"",
+ "schemes.accessTokenQuery.type: \"apiKey\"",
+ "security[]: {\"accessTokenHeader\":[],\"accessTokenQuery\":[]}",
+ "servers[0]: {\"url\":\"https://api.spaceinvoices.com\"}"
+]

@@ -1,0 +1,6 @@
+[
+ "perPath: /v1/forecast * [{\"url\":\"https://api.open-meteo.com\"},{\"url\":\"https://customer-api.open-meteo.com\"}]",
+ "schemes: null",
+ "security: null",
+ "servers: null"
+]

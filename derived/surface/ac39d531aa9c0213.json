@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"url\":\"https://sandbox.api.starkbank.com\"}",
+ "servers[1]: {\"url\":\"https://api.starkbank.com\"}"
+]

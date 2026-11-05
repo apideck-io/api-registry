@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"API Server\",\"url\":\"https://api.ideal-postcodes.co.uk/v1\",\"variables\":{}}"
+]

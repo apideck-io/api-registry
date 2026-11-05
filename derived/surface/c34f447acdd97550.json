@@ -1,0 +1,9 @@
+[
+ "basePath: \"/api\"",
+ "definitions: null",
+ "host: \"generator.swagger.io\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

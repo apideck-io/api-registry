@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.bearerFormat: \"JWT\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.s.unit.sh\"}"
+]

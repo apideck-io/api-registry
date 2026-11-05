@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.X-Api-Key.in: \"header\"",
+ "schemes.X-Api-Key.name: \"X-Api-Key\"",
+ "schemes.X-Api-Key.type: \"apiKey\"",
+ "schemes.X-Client-ID.in: \"header\"",
+ "schemes.X-Client-ID.name: \"X-Client-Id\"",
+ "schemes.X-Client-ID.type: \"apiKey\"",
+ "security[]: {\"X-Api-Key\":[],\"X-Client-ID\":[]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.malga.io\"}"
+]

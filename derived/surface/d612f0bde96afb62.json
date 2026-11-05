@@ -1,0 +1,23 @@
+[
+ "perPath: /v1/me get security [{\"bearer\":[]}]",
+ "perPath: /v1/order_batches get security [{\"bearer\":[]}]",
+ "perPath: /v1/order_batches post security [{\"bearer\":[]}]",
+ "perPath: /v1/order_batches/{id} get security [{\"bearer\":[]}]",
+ "perPath: /v1/order_batches/{id}/orders get security [{\"bearer\":[]}]",
+ "perPath: /v1/order_batches/{id}/recipients get security [{\"bearer\":[]}]",
+ "perPath: /v1/orders get security [{\"bearer\":[]}]",
+ "perPath: /v1/orders/{id} get security [{\"bearer\":[]}]",
+ "perPath: /v1/orders/{id}/cancel post security [{\"bearer\":[]}]",
+ "perPath: /v1/orders/{id}/update_expiration post security [{\"bearer\":[]}]",
+ "perPath: /v1/payment_methods get security [{\"bearer\":[]}]",
+ "perPath: /v1/products get security [{\"bearer\":[]}]",
+ "perPath: /v1/webhooks post security [{\"bearer\":[]}]",
+ "perPath: /v1/webhooks/{id} delete security [{\"bearer\":[]}]",
+ "perPath: /v1/workspaces get security [{\"bearer\":[]}]",
+ "schemes.bearer.description: \"Your Goody API key.\"",
+ "schemes.bearer.scheme: \"bearer\"",
+ "schemes.bearer.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.ongoody.com\"}",
+ "servers[1]: {\"description\":\"Sandbox\",\"url\":\"https://api.sandbox.ongoody.com\"}"
+]

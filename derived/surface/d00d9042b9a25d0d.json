@@ -1,0 +1,22 @@
+[
+ "perPath: /v1/company get security [{\"bearer_auth\":[\"read\"]}]",
+ "perPath: /v1/departments get security [{\"bearer_auth\":[\"read\"]}]",
+ "perPath: /v1/engagements get security [{\"bearer_auth\":[\"read\"]}]",
+ "perPath: /v1/engagements/{id} get security [{\"bearer_auth\":[\"read\"]}]",
+ "perPath: /v1/expenses post security [{\"bearer_auth\":[\"manage\"]}]",
+ "perPath: /v1/expenses/{id} get security [{\"bearer_auth\":[\"read\"]}]",
+ "perPath: /v1/expenses/{id}/approve post security [{\"bearer_auth\":[\"manage\"]}]",
+ "perPath: /v1/expenses/{id}/decline post security [{\"bearer_auth\":[\"manage\"]}]",
+ "perPath: /v1/meta/operations/{operation_key} get security [{\"bearer_auth\":[\"read\"]}]",
+ "perPath: /v1/payroll get security [{\"bearer_auth\":[\"read\"]}]",
+ "perPath: /v1/payroll/{id} get security [{\"bearer_auth\":[\"read\"]}]",
+ "perPath: /v1/time_off/entitlements get security [{\"bearer_auth\":[\"read\"]}]",
+ "perPath: /v1/time_off/requests get security [{\"bearer_auth\":[\"read\"]}]",
+ "perPath: /v1/time_off/requests/{id} get security [{\"bearer_auth\":[\"read\"]}]",
+ "perPath: /v1/time_off/requests/{id}/approve post security [{\"bearer_auth\":[\"manage\"]}]",
+ "perPath: /v1/time_off/requests/{id}/reject post security [{\"bearer_auth\":[\"manage\"]}]",
+ "schemes.bearer_auth.scheme: \"bearer\"",
+ "schemes.bearer_auth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.oysterhr.com\"}"
+]

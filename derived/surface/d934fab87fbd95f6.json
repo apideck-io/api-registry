@@ -1,0 +1,12 @@
+[
+ "perPath: []",
+ "schemes.basic.description: \"username and password\"",
+ "schemes.basic.scheme: \"basic\"",
+ "schemes.basic.type: \"http\"",
+ "schemes.token.in: \"header\"",
+ "schemes.token.name: \"Authorization\"",
+ "schemes.token.type: \"apiKey\"",
+ "security[]: {\"basic\":[]}",
+ "security[]: {\"token\":[]}",
+ "servers[0]: {\"url\":\"//cfportal.contract-p.fit/api\"}"
+]

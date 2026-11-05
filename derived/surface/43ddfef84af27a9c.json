@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.description: \"You must specify the scheme 'Api-Key' in the Authorization header. For example, `Authorization: Api-Key <Your_Api_Key>`\"",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"Authorization\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.baseten.co\"}"
+]

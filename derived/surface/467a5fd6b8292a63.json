@@ -1,0 +1,9 @@
+[
+ "basePath: \"/forex-quotes\"",
+ "definitions: null",
+ "host: \"1forge.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\",\"http\"]",
+ "security: null"
+]

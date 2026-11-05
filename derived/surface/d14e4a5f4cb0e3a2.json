@@ -1,0 +1,11 @@
+[
+ "perPath: /auth/oauth2/introspect get security []",
+ "perPath: /auth/oauth2/revoke post security [{\"basicAuth\":[]}]",
+ "perPath: /auth/oauth2/token post security [{\"basicAuth\":[]}]",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "schemes.httpBearer.scheme: \"bearer\"",
+ "schemes.httpBearer.type: \"http\"",
+ "security[]: {\"httpBearer\":[]}",
+ "servers[0]: {\"url\":\"https://banksapi.io\",\"variables\":{}}"
+]

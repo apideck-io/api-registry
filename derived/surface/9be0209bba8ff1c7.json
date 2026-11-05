@@ -1,0 +1,21 @@
+[
+ "basePath: \"/v3.0\"",
+ "definitions.bearerAuth.description: \"Provide a bearer token in the Authorization header, e.g.\\n`Authorization: Bearer <token>`. Obtain one via the `oauth` or\\n`oauthDistrict` flows below or via the Clever UI.\\n\"",
+ "definitions.bearerAuth.in: \"header\"",
+ "definitions.bearerAuth.name: \"Authorization\"",
+ "definitions.bearerAuth.type: \"apiKey\"",
+ "definitions.oauth.authorizationUrl: \"https://clever.com/oauth/authorize\"",
+ "definitions.oauth.description: \"Redirect the user to authorizationUrl, then exchange the returned\\ncode at tokenUrl (via HTTP Basic Auth with your client ID/secret)\\nfor an access token. Issues an SSO bearer token, scoped to the\\nsigned-in user. Does not provide full Data API/roster access.\\n\"",
+ "definitions.oauth.flow: \"accessCode\"",
+ "definitions.oauth.tokenUrl: \"https://clever.com/oauth/tokens\"",
+ "definitions.oauth.type: \"oauth2\"",
+ "definitions.oauthDistrict.description: \"Authenticate directly against tokenUrl via HTTP Basic Auth with\\nyour app's client ID/secret to get an access token. Add a\\n`district=<id>` query param to scope the token to that district.\\nIssues a district-app token in access_code field, scoped to that district's shared data.\\n\"",
+ "definitions.oauthDistrict.flow: \"application\"",
+ "definitions.oauthDistrict.tokenUrl: \"https://clever.com/oauth/tokens\"",
+ "definitions.oauthDistrict.type: \"oauth2\"",
+ "host: \"api.clever.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"bearerAuth\":[]}"
+]

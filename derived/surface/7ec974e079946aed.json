@@ -1,0 +1,11 @@
+[
+ "basePath: \"/\"",
+ "definitions.authenticationToken.in: \"header\"",
+ "definitions.authenticationToken.name: \"Authentication-Token\"",
+ "definitions.authenticationToken.type: \"apiKey\"",
+ "host: \"api.stormglass.io\"",
+ "parameterizedHost: null",
+ "perOp: /forecast get [{\"authenticationToken\":[]}]",
+ "schemes: [\"https\"]",
+ "security: null"
+]

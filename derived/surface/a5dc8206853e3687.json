@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Find your API key in [your dashboard](https://dashboard.pdfblocks.com/users/sign_in), or [get a free API key](https://www.pdfblocks.com/try-free).\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"X-Api-Key\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"description\":\"Global endpoint (default).\",\"url\":\"https://api.pdfblocks.com\"}",
+ "servers[1]: {\"description\":\"European-only endpoint.\",\"url\":\"https://eu.api.pdfblocks.com\"}"
+]

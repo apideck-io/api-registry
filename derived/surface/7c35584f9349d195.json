@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"Moffin Sandbox\",\"url\":\"https://sandbox.moffin.mx\"}",
+ "servers[1]: {\"description\":\"Moffin Production\",\"url\":\"https://app.moffin.mx\"}"
+]

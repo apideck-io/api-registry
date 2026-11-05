@@ -1,0 +1,12 @@
+[
+ "perPath: []",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"apiKey\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "schemes.apiSecret.in: \"header\"",
+ "schemes.apiSecret.name: \"apiSecret\"",
+ "schemes.apiSecret.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "security[]: {\"apiSecret\":[]}",
+ "servers[0]: {\"url\":\"//api.ote-godaddy.com\"}"
+]

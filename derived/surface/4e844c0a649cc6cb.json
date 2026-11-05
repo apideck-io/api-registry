@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"Real environment\",\"url\":\"https://api.currencyalliance.com/public/v3.0\"}",
+ "servers[1]: {\"description\":\"Sandbox environment\",\"url\":\"https://sandbox.api.currencyalliance.com/public/v3.0\"}"
+]

@@ -1,0 +1,17 @@
+[
+ "basePath: null",
+ "definitions.ApiKeyHeaderAuth.in: \"header\"",
+ "definitions.ApiKeyHeaderAuth.name: \"X-Api-Key\"",
+ "definitions.ApiKeyHeaderAuth.type: \"apiKey\"",
+ "definitions.ApiKeyQueryAuth.in: \"query\"",
+ "definitions.ApiKeyQueryAuth.name: \"api_key\"",
+ "definitions.ApiKeyQueryAuth.type: \"apiKey\"",
+ "definitions.apiKey.in: \"query\"",
+ "definitions.apiKey.name: \"api_key\"",
+ "definitions.apiKey.type: \"apiKey\"",
+ "host: null",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: null",
+ "security[]: {\"ApiKeyHeaderAuth\":[],\"ApiKeyQueryAuth\":[],\"apiKey\":[]}"
+]

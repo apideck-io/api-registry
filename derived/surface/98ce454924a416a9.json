@@ -40,6 +40,7 @@
  "perPath: /segments get security [{\"bearerAuth\":[]}]",
  "perPath: /segments/{id} get security [{\"bearerAuth\":[]}]",
  "perPath: /segments/{id}/contacts get security [{\"bearerAuth\":[]}]",
+ "perPath: /segments/{id}/counts get security [{\"bearerAuth\":[]}]",
  "schemes.bearerAuth.bearerFormat: \"API token or OAuth access token\"",
  "schemes.bearerAuth.description: \"Send either an API token or an OAuth access token as\\n`Authorization: Bearer <token>`. See the Authentication page for details.\\n\"",
  "schemes.bearerAuth.scheme: \"bearer\"",

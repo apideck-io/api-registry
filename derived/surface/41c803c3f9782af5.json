@@ -1,0 +1,13 @@
+[
+ "basePath: \"/\"",
+ "definitions.basicAuth.description: \"HTTP Basic Authentication. Works over `HTTPS` only\"",
+ "definitions.basicAuth.type: \"basic\"",
+ "host: \"api.simplyrets.com\"",
+ "parameterizedHost: null",
+ "perOp: /openhouses get [{\"basicAuth\":[]}]",
+ "perOp: /openhouses/{openHouseKey} get [{\"basicAuth\":[]}]",
+ "perOp: /properties get [{\"basicAuth\":[]}]",
+ "perOp: /properties/{mlsId} get [{\"basicAuth\":[]}]",
+ "schemes: [\"https\"]",
+ "security: null"
+]

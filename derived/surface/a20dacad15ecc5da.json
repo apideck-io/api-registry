@@ -1,0 +1,20 @@
+[
+ "basePath: null",
+ "definitions.Authorization.in: \"header\"",
+ "definitions.Authorization.name: \"Authorization\"",
+ "definitions.Authorization.type: \"apiKey\"",
+ "host: \"publicapi.payments.service.gov.uk\"",
+ "parameterizedHost: null",
+ "perOp: /v1/payments get [{\"Authorization\":[]}]",
+ "perOp: /v1/payments post [{\"Authorization\":[]}]",
+ "perOp: /v1/payments/{paymentId} get [{\"Authorization\":[]}]",
+ "perOp: /v1/payments/{paymentId}/cancel post [{\"Authorization\":[]}]",
+ "perOp: /v1/payments/{paymentId}/capture post [{\"Authorization\":[]}]",
+ "perOp: /v1/payments/{paymentId}/events get [{\"Authorization\":[]}]",
+ "perOp: /v1/payments/{paymentId}/refunds get [{\"Authorization\":[]}]",
+ "perOp: /v1/payments/{paymentId}/refunds post [{\"Authorization\":[]}]",
+ "perOp: /v1/payments/{paymentId}/refunds/{refundId} get [{\"Authorization\":[]}]",
+ "perOp: /v1/refunds get [{\"Authorization\":[]}]",
+ "schemes: [\"https\"]",
+ "security: null"
+]

@@ -1,0 +1,20 @@
+[
+ "basePath: \"/partner\"",
+ "definitions.api_key.in: \"header\"",
+ "definitions.api_key.name: \"x-api-key\"",
+ "definitions.api_key.type: \"apiKey\"",
+ "definitions.partner_id.in: \"header\"",
+ "definitions.partner_id.name: \"hhPartnerId\"",
+ "definitions.partner_id.type: \"apiKey\"",
+ "host: \"apis.hubhopper.com\"",
+ "parameterizedHost: null",
+ "perOp: /categories get [{\"api_key\":[],\"partner_id\":[]}]",
+ "perOp: /categories/{categoryId} get [{\"api_key\":[],\"partner_id\":[]}]",
+ "perOp: /categories/{categoryId}/podcasts get [{\"api_key\":[],\"partner_id\":[]}]",
+ "perOp: /podcasts get [{\"api_key\":[],\"partner_id\":[]}]",
+ "perOp: /podcasts/{podcastId} get [{\"api_key\":[],\"partner_id\":[]}]",
+ "perOp: /podcasts/{podcastId}/episodes get [{\"api_key\":[],\"partner_id\":[]}]",
+ "perOp: /util/languages get [{\"api_key\":[],\"partner_id\":[]}]",
+ "schemes: [\"https\"]",
+ "security: null"
+]

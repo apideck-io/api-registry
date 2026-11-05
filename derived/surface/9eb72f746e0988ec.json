@@ -1,0 +1,9 @@
+[
+ "basePath: \"/api\"",
+ "definitions: null",
+ "host: \"webtris.highwaysengland.co.uk\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

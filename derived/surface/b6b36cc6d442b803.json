@@ -1,0 +1,13 @@
+[
+ "perPath: []",
+ "schemes.BasicAuth.description: \"Provide Basic Authentiation with an arbitrary username and your api key as password, e.g. some_value_to_be_ignored:your_api_key_here\"",
+ "schemes.BasicAuth.scheme: \"basic\"",
+ "schemes.BasicAuth.type: \"http\"",
+ "schemes.QueryParameter.description: \"Specify your apikey in the url as https://api.inmobile.com/some/path?apikey=your_api_key_here. This method is only recommended if basic authorization is not possible.\"",
+ "schemes.QueryParameter.in: \"query\"",
+ "schemes.QueryParameter.name: \"apikey\"",
+ "schemes.QueryParameter.type: \"apiKey\"",
+ "security[]: {\"BasicAuth\":[]}",
+ "security[]: {\"QueryParameter\":[]}",
+ "servers[0]: {\"url\":\"https://api.inmobile.com\"}"
+]

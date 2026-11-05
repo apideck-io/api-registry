@@ -186,6 +186,7 @@
  "perPath: /{administration_id}/purchase_transactions{format} get security [{\"bearerAuth\":[\"bank\"]}]",
  "perPath: /{administration_id}/recurring_sales_invoices/synchronization{format} get security [{\"bearerAuth\":[\"sales_invoices\"]}]",
  "perPath: /{administration_id}/recurring_sales_invoices/synchronization{format} post security [{\"bearerAuth\":[\"sales_invoices\"]}]",
+ "perPath: /{administration_id}/recurring_sales_invoices/{id}/deactivate{format} patch security [{\"bearerAuth\":[\"sales_invoices\"]}]",
  "perPath: /{administration_id}/recurring_sales_invoices/{id}{format} delete security [{\"bearerAuth\":[\"sales_invoices\"]}]",
  "perPath: /{administration_id}/recurring_sales_invoices/{id}{format} get security [{\"bearerAuth\":[\"sales_invoices\"]}]",
  "perPath: /{administration_id}/recurring_sales_invoices/{id}{format} patch security [{\"bearerAuth\":[\"sales_invoices\"]}]",

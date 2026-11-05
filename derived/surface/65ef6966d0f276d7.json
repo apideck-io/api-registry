@@ -1,0 +1,9 @@
+[
+ "basePath: \"/v3\"",
+ "definitions: null",
+ "host: \"api.openalpr.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

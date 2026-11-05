@@ -1,0 +1,17 @@
+[
+ "perPath: []",
+ "schemes.xc-auth.description: \"Auth Token is a JWT Token generated based on the logged-in user. By default, the token is only valid for 10 hours. However, you can change the value by defining it using environment variable `NC_JWT_EXPIRES_IN`.\"",
+ "schemes.xc-auth.in: \"header\"",
+ "schemes.xc-auth.name: \"Auth Token \"",
+ "schemes.xc-auth.type: \"apiKey\"",
+ "schemes.xc-shared-base-id.description: \"Shared base uuid\"",
+ "schemes.xc-shared-base-id.in: \"header\"",
+ "schemes.xc-shared-base-id.name: \"Shared Base ID\"",
+ "schemes.xc-shared-base-id.type: \"apiKey\"",
+ "schemes.xc-shared-erd-id.description: \"Shared ERD uuid\"",
+ "schemes.xc-shared-erd-id.in: \"header\"",
+ "schemes.xc-shared-erd-id.name: \"Shared ERD ID\"",
+ "schemes.xc-shared-erd-id.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"http://localhost:8080\"}"
+]

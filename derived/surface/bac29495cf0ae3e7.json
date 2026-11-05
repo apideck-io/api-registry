@@ -1,0 +1,9 @@
+[
+ "perPath: /search get security [{\"api_key\":[]}]",
+ "perPath: /searchperpackage get security [{\"api_key\":[]}]",
+ "schemes.api_key.in: \"header\"",
+ "schemes.api_key.name: \"x-dcs-apikey\"",
+ "schemes.api_key.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://codesearch.debian.net/api/v1\"}"
+]

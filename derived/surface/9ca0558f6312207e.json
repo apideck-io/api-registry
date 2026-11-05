@@ -1,0 +1,15 @@
+[
+ "perPath: /events post security []",
+ "perPath: /heartbeats/{key} get security []",
+ "perPath: /heartbeats/{key} head security []",
+ "perPath: /heartbeats/{key} post security []",
+ "perPath: /integrations get security []",
+ "perPath: /numbers get security []",
+ "perPath: /series/{key} post security []",
+ "schemes.apiKey.description: \"The Bearer API key of your user <a href='/api-docs/#section/Authentication'>more info</a>.\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"Authorization\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"/api\"}"
+]

@@ -1,0 +1,6 @@
+[
+ "perPath: /query post security [{\"api_key\":[]},{\"bearer\":[]}]",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.relynk.io/v2.0.0\"}"
+]

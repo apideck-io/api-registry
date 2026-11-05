@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"unstructured-api-key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "schemes.ApiKeyAuth.x-speakeasy-example: \"YOUR_API_KEY\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Hosted API\",\"url\":\"https://api.unstructured.io\",\"x-speakeasy-server-id\":\"prod\"}",
+ "servers[1]: {\"description\":\"Development server\",\"url\":\"http://localhost:8000\",\"x-speakeasy-server-id\":\"local\"}"
+]

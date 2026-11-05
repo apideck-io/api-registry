@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.bearerFormat: \"string\"",
+ "schemes.ApiKeyAuth.scheme: \"bearer\"",
+ "schemes.ApiKeyAuth.type: \"http\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Base URL for all US cloud based workspaces.\",\"url\":\"https://api.secoda.co\"}",
+ "servers[1]: {\"description\":\"Base URL for all EU cloud based workspaces.\",\"url\":\"https://eapi.secoda.co\"}",
+ "servers[2]: {\"description\":\"Base URL for all APAC cloud based workspaces.\",\"url\":\"https://aapi.secoda.co\"}",
+ "servers[3]: {\"description\":\"Base URL for On Premise Secoda workspaces.\",\"url\":\"https://{customer_domain}.secoda.co/api/v1\",\"variables\":{\"customer_domain\":{\"default\":\"customer_domain\",\"description\":\"The specific domain set up for your On Premise Secoda workspace.\"}}}"
+]

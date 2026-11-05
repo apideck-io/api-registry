@@ -1,0 +1,6 @@
+[
+ "perPath: /v4/Insights post security [{}]",
+ "schemes: {}",
+ "security: null",
+ "servers[0]: {\"url\":\"https://{{domain}}\"}"
+]

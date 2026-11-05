@@ -1,0 +1,10 @@
+[
+ "perPath: /ai-apply/job-feeds/{job_feed_id}/bulk-import post security [{\"ApiKey\":[]}]",
+ "schemes.ApiKey.description: \"Create an API key on the [Secrets](https://app.kombo.dev/secrets) page in the Kombo dashboard.\"",
+ "schemes.ApiKey.scheme: \"bearer\"",
+ "schemes.ApiKey.type: \"http\"",
+ "security[]: {\"ApiKey\":[]}",
+ "servers[0]: {\"description\":\"Kombo EU API\",\"url\":\"https://api.kombo.dev/v1\"}",
+ "servers[1]: {\"description\":\"Kombo US API\",\"url\":\"https://api.us.kombo.dev/v1\"}",
+ "servers[2]: {\"description\":\"Kombo CA API\",\"url\":\"https://api.ca.kombo.dev/v1\"}"
+]

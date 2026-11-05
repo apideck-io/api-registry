@@ -1,0 +1,11 @@
+[
+ "perPath: /v0/ping get security []",
+ "perPath: /v0/roles get security []",
+ "perPath: /v0/roles/{role-id} get security []",
+ "schemes.api-key-auth.description: \"API token authentication.\\nIt should follow the format: `GriffinAPIKey g-test-MyKey-XXXXXXX`\"",
+ "schemes.api-key-auth.in: \"header\"",
+ "schemes.api-key-auth.name: \"Authorization\"",
+ "schemes.api-key-auth.type: \"apiKey\"",
+ "security[]: {\"api-key-auth\":[]}",
+ "servers[0]: {\"url\":\"https://api.griffin.com\"}"
+]

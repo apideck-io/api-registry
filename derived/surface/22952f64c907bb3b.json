@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.basicAuth.description: \"Belvo employs **basic authentication** using your secret keys. Just use your secretId as the `username` and secretPassword as the `password`. For example:\\n\\n```text Authentication example\\ncurl \\\\\\n    -u =BASE64-SECRET_ID=:=BASE64-SECRET_PASSWORD=\\n    https://sandbox.belvo.com/api/\\n```\\n\\nFor information on how to get your API keys, check out our [Get Started in 5 Minutes](https://developers.belvo.com/docs/get-started-in-5-minutes) DevPortal article.\"",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "servers[0]: {\"description\":\"Sandbox\",\"url\":\"https://sandbox.belvo.com\"}",
+ "servers[1]: {\"description\":\"Development\",\"url\":\"https://development.belvo.com\"}"
+]

@@ -1,0 +1,17 @@
+[
+ "perPath: /heartbeat get security []",
+ "perPath: /v1/heartbeat get security []",
+ "perPath: /version get security []",
+ "schemes.ApiKeyHeader.description: \"**Default.** Send the API key as the value of the `Authorization` header, either bare (`Authorization: <your_api_key>`) or with the Bearer scheme (`Authorization: Bearer <your_api_key>`). Works on every endpoint, GET and POST alike.\\n\"",
+ "schemes.ApiKeyHeader.in: \"header\"",
+ "schemes.ApiKeyHeader.name: \"Authorization\"",
+ "schemes.ApiKeyHeader.type: \"apiKey\"",
+ "schemes.ApiKeyQuery.description: \"Alternative to the `Authorization` header. Send the API key as `?api_key=...` in the query string, or as `api_key` form data on a POST request. If a key is supplied both ways on the same request, the query/form value takes precedence over the header.\\n\"",
+ "schemes.ApiKeyQuery.in: \"query\"",
+ "schemes.ApiKeyQuery.name: \"api_key\"",
+ "schemes.ApiKeyQuery.type: \"apiKey\"",
+ "security[]: {\"ApiKeyHeader\":[]}",
+ "security[]: {\"ApiKeyQuery\":[]}",
+ "servers[0]: {\"description\":\"Hosted service\",\"url\":\"https://api.ibanapi.com\"}",
+ "servers[1]: {\"description\":\"Self-hosted default (port configurable via APP_PORT)\",\"url\":\"http://localhost:8080\"}"
+]

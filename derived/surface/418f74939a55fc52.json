@@ -1,0 +1,11 @@
+[
+ "basePath: \"/api/v1\"",
+ "definitions.api_key.in: \"header\"",
+ "definitions.api_key.name: \"apiKey\"",
+ "definitions.api_key.type: \"apiKey\"",
+ "host: \"api.visiblethread.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"api_key\":[]}"
+]

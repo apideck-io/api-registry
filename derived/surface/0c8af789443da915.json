@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.basic.description: \"Basic HTTP Authentication\"",
+ "schemes.basic.scheme: \"basic\"",
+ "schemes.basic.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://smart-me.com:443\"}"
+]

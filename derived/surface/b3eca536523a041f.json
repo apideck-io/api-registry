@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.basicAuth.description: \"Basic authentication where the username is the 'client_uuid' and the password is the client's secret.\\n\"",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://api.rook-connect.com\"}",
+ "servers[1]: {\"description\":\"Sandbox Server\",\"url\":\"https://api.rook-connect.review\"}"
+]

@@ -1,0 +1,17 @@
+[
+ "basePath: \"/v1\"",
+ "definitions.api_key.in: \"header\"",
+ "definitions.api_key.name: \"x-api-key\"",
+ "definitions.api_key.type: \"apiKey\"",
+ "definitions.sigv4.in: \"header\"",
+ "definitions.sigv4.name: \"Authorization\"",
+ "definitions.sigv4.type: \"apiKey\"",
+ "definitions.sigv4.x-amazon-apigateway-authtype: \"awsSigv4\"",
+ "host: \"api.deeparteffects.com\"",
+ "parameterizedHost: null",
+ "perOp: /noauth/result get [{\"api_key\":[]}]",
+ "perOp: /noauth/styles get [{\"api_key\":[]}]",
+ "perOp: /noauth/upload post [{\"api_key\":[]}]",
+ "schemes: [\"https\"]",
+ "security: null"
+]

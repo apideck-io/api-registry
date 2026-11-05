@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-OPENFIGI-APIKEY\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "security[]: {}",
+ "servers[0]: {\"description\":\"Production Tier\",\"url\":\"https://api.openfigi.com/{basePath}\",\"variables\":{\"basePath\":{\"default\":\"v3\",\"enum\":[\"v3\",\"v2\"]}}}"
+]

@@ -1,0 +1,9 @@
+[
+ "basePath: \"/api\"",
+ "definitions: null",
+ "host: \"stream-api.betfair.com:443\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"http\"]",
+ "security: null"
+]

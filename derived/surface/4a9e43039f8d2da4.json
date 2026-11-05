@@ -1,0 +1,9 @@
+[
+ "basePath: \"/polling-places/v1\"",
+ "definitions: null",
+ "host: \"api.phila.gov\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"http\"]",
+ "security: null"
+]

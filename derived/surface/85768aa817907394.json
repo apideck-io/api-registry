@@ -1,0 +1,12 @@
+[
+ "perPath: []",
+ "schemes.APIKeyAuth.description: \"The word \\\"Basic\\\" followed by a space and your API Key as base64encoded. Contact support@monto.ai to obtain an API key.\"",
+ "schemes.APIKeyAuth.in: \"header\"",
+ "schemes.APIKeyAuth.name: \"Authorization\"",
+ "schemes.APIKeyAuth.type: \"apiKey\"",
+ "security[]: {\"APIKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.monto.ai\"}",
+ "servers[1]: {\"description\":\"Test\",\"url\":\"https://test-api.monto.ai\"}",
+ "servers[2]: {\"description\":\"Local\",\"url\":\"http://localhost:3030\"}",
+ "servers[3]: {\"description\":\"Local (ssl)\",\"url\":\"https://localhost\"}"
+]

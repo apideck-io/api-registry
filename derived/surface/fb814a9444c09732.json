@@ -1,0 +1,14 @@
+[
+ "basePath: \"/app\"",
+ "definitions.email.in: \"header\"",
+ "definitions.email.name: \"email\"",
+ "definitions.email.type: \"apiKey\"",
+ "definitions.token.in: \"header\"",
+ "definitions.token.name: \"token\"",
+ "definitions.token.type: \"apiKey\"",
+ "host: \"www.zoomconnect.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

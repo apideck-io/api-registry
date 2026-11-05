@@ -1,0 +1,9 @@
+[
+ "basePath: null",
+ "definitions: null",
+ "host: \"learnifier.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"http\"]",
+ "security: null"
+]
