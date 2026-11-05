@@ -1,0 +1,22 @@
+[
+ "perPath: /api/accounts/{accountId}/folders get security [{\"iam-oauth2-schema\":[\"ZohoMail.folders.ALL\",\"ZohoMail.folders.READ\"]}]",
+ "perPath: /api/accounts/{accountId}/folders post security [{\"iam-oauth2-schema\":[\"ZohoMail.folders.ALL\",\"ZohoMail.folders.CREATE\"]}]",
+ "perPath: /api/accounts/{accountId}/folders/{folderIdToDisableImapView} put security [{\"iam-oauth2-schema\":[\"ZohoMail.folders.ALL\",\"ZohoMail.folders.UPDATE\"]}]",
+ "perPath: /api/accounts/{accountId}/folders/{folderIdToEmpty} put security [{\"iam-oauth2-schema\":[\"ZohoMail.folders.ALL\",\"ZohoMail.folders.UPDATE\"]}]",
+ "perPath: /api/accounts/{accountId}/folders/{folderIdToEnableImapView} put security [{\"iam-oauth2-schema\":[\"ZohoMail.folders.ALL\",\"ZohoMail.folders.UPDATE\"]}]",
+ "perPath: /api/accounts/{accountId}/folders/{folderIdToMove} put security [{\"iam-oauth2-schema\":[\"ZohoMail.folders.ALL\",\"ZohoMail.folders.UPDATE\"]}]",
+ "perPath: /api/accounts/{accountId}/folders/{folderIdToRead} put security [{\"iam-oauth2-schema\":[\"ZohoMail.folders.ALL\",\"ZohoMail.folders.UPDATE\"]}]",
+ "perPath: /api/accounts/{accountId}/folders/{folderIdToRename} put security [{\"iam-oauth2-schema\":[\"ZohoMail.folders.ALL\",\"ZohoMail.folders.UPDATE\"]}]",
+ "perPath: /api/accounts/{accountId}/folders/{folderId} delete security [{\"iam-oauth2-schema\":[\"ZohoMail.folders.ALL\",\"ZohoMail.folders.DELETE\"]}]",
+ "perPath: /api/accounts/{accountId}/folders/{folderId} get security [{\"iam-oauth2-schema\":[\"ZohoMail.folders.ALL\",\"ZohoMail.folders.READ\"]}]",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.authorizationUrl: \"https://accounts.zoho.com/oauth/v2/auth\"",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.scopes.[\"ZohoMail.folders.ALL\"]: \"Full access to folders.\"",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.scopes.[\"ZohoMail.folders.CREATE\"]: \"Create access to folder.\"",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.scopes.[\"ZohoMail.folders.DELETE\"]: \"Update access to folder\"",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.scopes.[\"ZohoMail.folders.READ\"]: \"Read access to folder\"",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.scopes.[\"ZohoMail.folders.UPDATE\"]: \"Update access to folder\"",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.tokenUrl: \"https://accounts.zoho.com/oauth/v2/token\"",
+ "schemes.iam-oauth2-schema.type: \"oauth2\"",
+ "security: null",
+ "servers: null"
+]

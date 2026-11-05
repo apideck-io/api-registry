@@ -1,0 +1,13 @@
+[
+ "perPath: /tasks get security [{\"basic\":[]}]",
+ "perPath: /tasks/people/{id} get security [{\"basic\":[]}]",
+ "perPath: /tasks/{taskId}/complete post security [{\"basic\":[]}]",
+ "perPath: webhook:taskAssign post security []",
+ "perPath: webhook:taskChangedStatus post security []",
+ "schemes.basic.description: \"Basic HTTP authentication using service user credentials\"",
+ "schemes.basic.scheme: \"basic\"",
+ "schemes.basic.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.hibob.com/v1\"}",
+ "servers[1]: {\"description\":\"Sandbox\",\"url\":\"https://api.sandbox.hibob.com/v1\"}"
+]

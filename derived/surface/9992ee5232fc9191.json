@@ -1,0 +1,10 @@
+[
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/cloud-platform\"].description: \"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/firebase.messaging\"].description: \"Send messages and manage messaging subscriptions for your Firebase applications\"",
+ "baseUrl: \"https://fcm.googleapis.com/\"",
+ "batchPath: \"batch\"",
+ "endpoints: null",
+ "mtlsRootUrl: \"https://fcm.mtls.googleapis.com/\"",
+ "rootUrl: \"https://fcm.googleapis.com/\"",
+ "servicePath: \"\""
+]

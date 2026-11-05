@@ -1,0 +1,22 @@
+[
+ "perPath: /v3/abuse get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /v3/asn get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /v3/astronomy get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /v3/astronomy/timeSeries get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /v3/getip get security []",
+ "perPath: /v3/ipgeo get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /v3/ipgeo-bulk post security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /v3/security get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /v3/security-bulk post security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /v3/timezone get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /v3/timezone/convert get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /v3/user-agent get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /v3/user-agent post security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /v3/user-agent-bulk post security [{\"ApiKeyAuth\":[]}]",
+ "schemes.ApiKeyAuth.description: \"API key passed as the `apiKey` query parameter. Get yours from the\\n[IPGeolocation dashboard](https://app.ipgeolocation.io/). For client-side\\nusage, consider using Request Origin (CORS) authentication instead to\\navoid exposing your key.\\n\"",
+ "schemes.ApiKeyAuth.in: \"query\"",
+ "schemes.ApiKeyAuth.name: \"apiKey\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"IPGeolocation.io production server\",\"url\":\"https://api.ipgeolocation.io\"}"
+]

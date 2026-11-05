@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearer.description: \"Settings > Connections > API keys\"",
+ "schemes.bearer.scheme: \"bearer\"",
+ "schemes.bearer.type: \"http\"",
+ "security[]: {\"bearer\":[]}",
+ "servers[0]: {\"url\":\"https://api.zero.inc\"}"
+]

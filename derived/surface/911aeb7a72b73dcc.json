@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"VTEX server URL.\",\"url\":\"https://api.{environment}.com.br\",\"variables\":{\"environment\":{\"default\":\"vtexcommercestable\",\"description\":\"Environment to use. Used as part of the URL.\",\"enum\":[\"vtexcommercestable\",\"vtexcommercebeta\"]}}}"
+]

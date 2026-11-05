@@ -1,0 +1,11 @@
+[
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/meetings.space.created\"].description: \"Create, edit, and see information about your Google Meet conferences created by the app.\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/meetings.space.readonly\"].description: \"Read information about any of your Google Meet conferences\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/meetings.space.settings\"].description: \"Edit, and see settings for all of your Google Meet calls.\"",
+ "baseUrl: \"https://meet.googleapis.com/\"",
+ "batchPath: \"batch\"",
+ "endpoints: null",
+ "mtlsRootUrl: \"https://meet.mtls.googleapis.com/\"",
+ "rootUrl: \"https://meet.googleapis.com/\"",
+ "servicePath: \"\""
+]

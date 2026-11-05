@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.BearerAuth.description: \"Authentication using a Bearer token. The token should be a valid Sanity API token with appropriate permissions for the actions being performed.\\n\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Parameterized base URL for Sanity API endpoints\",\"url\":\"https://{projectId}.api.sanity.io/{apiVersion}\",\"variables\":{\"apiVersion\":{\"default\":\"v2025-02-19\",\"description\":\"The version of the API to use. This should match the version specified in the info.version field.\"},\"projectId\":{\"default\":\"your-project-id\",\"description\":\"Your Sanity project ID. This can be found in your project settings or in the URL when accessing your project in the Sanity management interface.\"}}}"
+]

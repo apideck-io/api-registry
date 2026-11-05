@@ -1,0 +1,9 @@
+[
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/adwords\"].description: \"See, edit, create, and delete your Google Ads accounts and data.\"",
+ "baseUrl: \"https://googleads.googleapis.com/\"",
+ "batchPath: \"batch\"",
+ "endpoints: null",
+ "mtlsRootUrl: \"https://googleads.mtls.googleapis.com/\"",
+ "rootUrl: \"https://googleads.googleapis.com/\"",
+ "servicePath: \"\""
+]

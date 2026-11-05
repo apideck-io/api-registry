@@ -1,0 +1,7 @@
+[
+ "auth: null",
+ "hosts: [\"https://{{api-domain}}\"]",
+ "nested: []",
+ "scripts: []",
+ "variables: []"
+]

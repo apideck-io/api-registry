@@ -1,0 +1,9 @@
+[
+ "perPath: /detect_language post security [{\"OAuth2 Bearer Token\":[]},{\"Personal Access Token\":[]}]",
+ "schemes.[\"OAuth2 Bearer Token\"].scheme: \"bearer\"",
+ "schemes.[\"OAuth2 Bearer Token\"].type: \"http\"",
+ "schemes.[\"Personal Access Token\"].scheme: \"basic\"",
+ "schemes.[\"Personal Access Token\"].type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Main production server URL\",\"url\":\"https://api.text.com/\"}"
+]

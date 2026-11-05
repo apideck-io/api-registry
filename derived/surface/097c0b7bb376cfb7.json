@@ -1,0 +1,12 @@
+[
+ "perPath: []",
+ "schemes.oauth2.flows.clientCredentials.scopes: {}",
+ "schemes.oauth2.flows.clientCredentials.tokenUrl: \"https://api.crowdstrike.com/oauth2/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "schemes.oauth2.x-token-endpoint-auth-method: \"client_secret_post\"",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"description\":\"US-1\",\"url\":\"https://api.crowdstrike.com\"}",
+ "servers[1]: {\"description\":\"US-2\",\"url\":\"https://api.us-2.crowdstrike.com\"}",
+ "servers[2]: {\"description\":\"EU-1\",\"url\":\"https://api.eu-1.crowdstrike.com\"}",
+ "servers[3]: {\"description\":\"US-GOV\",\"url\":\"https://api.laggar.gcw.crowdstrike.com\"}"
+]

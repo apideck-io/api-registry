@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.BearerAuth.description: \"API key from your incident.io dashboard (Settings → API keys)\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.incident.io\"}"
+]

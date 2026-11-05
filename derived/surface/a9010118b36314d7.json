@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.OAuth2.description: \"API Client Key: pass as 'c' query parameter or 'Authorization: Client {key}' header\"",
+ "schemes.OAuth2.in: \"query\"",
+ "schemes.OAuth2.name: \"c\"",
+ "schemes.OAuth2.type: \"apiKey\"",
+ "security[]: {\"OAuth2\":[]}",
+ "servers: null"
+]

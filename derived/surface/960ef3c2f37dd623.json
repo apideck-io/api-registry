@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"Authorization\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Production data\",\"url\":\"https://reveal.api.albacross.com\"}",
+ "servers[1]: {\"description\":\"Staging data\",\"url\":\"https://reveal.api.albakaos.com\"}"
+]

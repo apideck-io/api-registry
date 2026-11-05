@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://authn.read.ai/oauth2/auth\"",
+ "schemes.oauth2.flows.authorizationCode.scopes: {}",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://authn.read.ai/oauth2/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"url\":\"https://api.read.ai\"}"
+]

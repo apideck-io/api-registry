@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: {}",
+ "security[]: {}",
+ "servers[0]: {\"url\":\"https://{youraccountname}.api-us1.com/api/2\",\"variables\":{\"youraccountname\":{\"default\":\"youraccountname\"}}}"
+]

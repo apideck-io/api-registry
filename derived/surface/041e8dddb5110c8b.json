@@ -1,0 +1,14 @@
+[
+ "perPath: []",
+ "schemes.oauth2.description: \"Non-standard authorization URL: its path is in the fragment (#/oauth/authorize), and Conta Azul's docs put the query parameters after it (…/#/oauth/authorize?response_type=code&client_id=…). A client that adds parameters before the fragment, as RFC 6749 expects, never reaches the login page with them.\"",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://login.contaazul.com/#/oauth/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"aws.cognito.signin.user.admin\"]: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.openid: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.profile: \"\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://api-v2.contaazul.com/oauth/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "schemes.oauth2.x-authorization-params-in-fragment: \"true\"",
+ "schemes.oauth2.x-token-endpoint-auth-method: \"client_secret_basic\"",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"url\":\"https://api-v2.contaazul.com\"}"
+]

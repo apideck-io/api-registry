@@ -1,0 +1,18 @@
+[
+ "perPath: /v3/accounting/integration post security [{\"oauth2\":[\"accounting.integration.write\"]}]",
+ "perPath: /v3/accounting/integration/{integration_id}/disconnect post security [{\"oauth2\":[\"accounting.integration.write\"]}]",
+ "perPath: /v3/accounting/integration/{integration_id}/reactivate post security [{\"oauth2\":[\"accounting.integration.write\"]}]",
+ "perPath: /v3/accounting/records get security [{\"oauth2\":[\"accounting.record.read\",\"accounting.record.write\"]}]",
+ "perPath: /v3/accounting/records/export-results post security [{\"oauth2\":[\"accounting.record.write\"]}]",
+ "perPath: /v3/accounting/records/{record_id} get security [{\"oauth2\":[\"accounting.record.read\",\"accounting.record.write\"]}]",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://accounts-api.staging.brexapps.com/oauth2/defaultv1/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"accounting.integration.read\"]: \"View accounting integration\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"accounting.integration.write\"]: \"View and manage accounting integration\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"accounting.record.read\"]: \"View accounting records\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"accounting.record.write\"]: \"View and manage accounting records\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://accounts-api.staging.brexapps.com/oauth2/defaultv1/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.brex.com\"}",
+ "servers[1]: {\"description\":\"Staging (Note: This is not a sandbox. It will not work with customer tokens.)\",\"url\":\"https://api-staging.brex.com\"}"
+]

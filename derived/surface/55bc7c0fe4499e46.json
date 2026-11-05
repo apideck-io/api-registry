@@ -1,0 +1,9 @@
+[
+ "perPath: webhook:balance_check.run.completed post security []",
+ "perPath: webhook:balance_threshold_alert post security []",
+ "schemes.BearerAuth.description: \"Authentication to the API is performed via Bearer Token Authentication. Provide your API key as the bearer token in the Authorization header.\\n\\nAll API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.\\n\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.rightfoot.com\"}"
+]

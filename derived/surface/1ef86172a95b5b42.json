@@ -1,0 +1,14 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.description: \"API key used to authorize requests. Learn about how to create API keys at [Alma REST APIs](https://developers.exlibrisgroup.com/alma/apis/#defining)\"",
+ "schemes.ApiKeyAuth.in: \"query\"",
+ "schemes.ApiKeyAuth.name: \"apikey\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api-eu.hosted.exlibrisgroup.com\"}",
+ "servers[1]: {\"url\":\"https://api-na.hosted.exlibrisgroup.com\"}",
+ "servers[2]: {\"url\":\"https://api-ap.hosted.exlibrisgroup.com\"}",
+ "servers[3]: {\"url\":\"https://api-aps.hosted.exlibrisgroup.com\"}",
+ "servers[4]: {\"url\":\"https://api-cn.hosted.exlibrisgroup.com.cn\"}",
+ "servers[5]: {\"url\":\"https://api-ca.hosted.exlibrisgroup.com\"}"
+]

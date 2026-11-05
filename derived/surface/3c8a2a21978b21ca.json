@@ -1,0 +1,15 @@
+[
+ "perPath: /networks/affiliates/{affiliateId}/trackingdomains get security [{\"API Key\":[]}]",
+ "perPath: /networks/affiliates/{affiliateId}/trackingdomains post security [{\"API Key\":[]}]",
+ "perPath: /networks/affiliates/{affiliateId}/trackingdomains put security [{\"API Key\":[]}]",
+ "perPath: /networks/affiliates/{affiliateId}/trackingdomains/{affiliateTrackingDomainId} delete security [{\"API Key\":[]}]",
+ "perPath: /networks/affiliates/{affiliateId}/trackingdomains/{affiliateTrackingDomainId} get security [{\"API Key\":[]}]",
+ "perPath: /networks/domains/tracking get security [{\"API Key\":[]}]",
+ "perPath: /networks/domains/tracking/{domainId} get security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The Everflow API key generated from the Control Center > Security.\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.eflow.team/v1\"}"
+]

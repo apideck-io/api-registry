@@ -1,0 +1,23 @@
+[
+ "perPath: /hiring/application-form-answers/search post security [{\"Basic\":[]}]",
+ "perPath: /hiring/applications/search post security [{\"Basic\":[]}]",
+ "perPath: /hiring/candidate-educations/search post security [{\"Basic\":[]}]",
+ "perPath: /hiring/candidate-experiences/search post security [{\"Basic\":[]}]",
+ "perPath: /hiring/candidate-languages/search post security [{\"Basic\":[]}]",
+ "perPath: /hiring/candidate-professional-associations-memberships/search post security [{\"Basic\":[]}]",
+ "perPath: /hiring/candidate-qualifications-licenses/search post security [{\"Basic\":[]}]",
+ "perPath: /hiring/candidate-skills/search post security [{\"Basic\":[]}]",
+ "perPath: /hiring/candidate-volunteer-experiences/search post security [{\"Basic\":[]}]",
+ "perPath: /hiring/candidates/search post security [{\"Basic\":[]}]",
+ "perPath: /hiring/evaluation-scorecard-templates/search post security [{\"Basic\":[]}]",
+ "perPath: /hiring/evaluations/search post security [{\"Basic\":[]}]",
+ "perPath: /hiring/interviews/search post security [{\"Basic\":[]}]",
+ "perPath: /hiring/job-openings/search post security [{\"Basic\":[]}]",
+ "perPath: /hiring/offers/search post security [{\"Basic\":[]}]",
+ "schemes.Basic.description: \"Basic HTTP authentication using service user credentials\"",
+ "schemes.Basic.scheme: \"basic\"",
+ "schemes.Basic.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.hibob.com/v1\"}",
+ "servers[1]: {\"description\":\"Sandbox\",\"url\":\"https://api.sandbox.hibob.com/v1\"}"
+]

@@ -1,0 +1,10 @@
+[
+ "perPath: /apiHub/coreHR/v2/companies/{companyId}/employees get security [{\"JWTAuthorization\":[]}]",
+ "perPath: /apiHub/coreHR/v2/companies/{companyId}/employees/{employeeId} get security [{\"JWTAuthorization\":[]}]",
+ "schemes.JWTAuthorization.bearerFormat: \"JWT\"",
+ "schemes.JWTAuthorization.description: \"Paste JWT here.\"",
+ "schemes.JWTAuthorization.scheme: \"bearer\"",
+ "schemes.JWTAuthorization.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://dc1demogwext.paylocity.com\"}"
+]

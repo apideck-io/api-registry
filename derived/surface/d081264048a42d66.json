@@ -1,0 +1,7 @@
+[
+ "auth: null",
+ "hosts: [\"https://oauth.employmenthero.com\",\"{{base_url}}\"]",
+ "nested: []",
+ "scripts: []",
+ "variables: base_url https://api.employmenthero.com/api"
+]

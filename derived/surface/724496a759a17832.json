@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.public-api-v2-key.scheme: \"bearer\"",
+ "schemes.public-api-v2-key.type: \"http\"",
+ "security[]: {\"public-api-v2-key\":[]}",
+ "servers[0]: {\"url\":\"https://api.homerun.co/v2\"}"
+]

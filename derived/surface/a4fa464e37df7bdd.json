@@ -1,0 +1,18 @@
+[
+ "perPath: /applications/{applicationId}/token post security [{\"bearerAuth\":[\"spark:applications_token\"]}]",
+ "schemes.bearer-key.bearerFormat: \"JWT\"",
+ "schemes.bearer-key.description: \"e.g. Bearer YOUR_AUTHORIZATION_TOKEN\"",
+ "schemes.bearer-key.scheme: \"bearer\"",
+ "schemes.bearer-key.type: \"http\"",
+ "schemes.bearerAuth.description: \"OAuth 2.0 Bearer token authentication\"",
+ "schemes.bearerAuth.flows.authorizationCode.authorizationUrl: \"https://webexapis.com/v1/authorize\"",
+ "schemes.bearerAuth.flows.authorizationCode.scopes.[\"spark:applications_token\"]: \"Create access tokens for Service Apps\"",
+ "schemes.bearerAuth.flows.authorizationCode.tokenUrl: \"https://webexapis.com/v1/access_token\"",
+ "schemes.bearerAuth.type: \"oauth2\"",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"/\"",
+ "schemes.oauth2.flows.authorizationCode.scopes: {}",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"/\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security: null",
+ "servers: null"
+]

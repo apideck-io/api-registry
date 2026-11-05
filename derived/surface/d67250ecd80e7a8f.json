@@ -1,0 +1,14 @@
+[
+ "perPath: /v1/files post [{\"url\":\"https://files.stripe.com/\"}]",
+ "perPath: /v1/quotes/{quote}/pdf get [{\"url\":\"https://files.stripe.com/\"}]",
+ "schemes.basicAuth.description: \"Basic HTTP authentication. Allowed headers-- Authorization: Basic <api_key> | Authorization: Basic <base64 hash of `api_key:`>\"",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "schemes.bearerAuth.bearerFormat: \"auth-scheme\"",
+ "schemes.bearerAuth.description: \"Bearer HTTP authentication. Allowed headers-- Authorization: Bearer <api_key>\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.stripe.com/\"}"
+]

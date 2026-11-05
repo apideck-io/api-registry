@@ -1,0 +1,13 @@
+[
+ "perPath: /v1/companies/{companyIdentifier}/departments get security [{\"key\":[]},{}]",
+ "perPath: /v1/companies/{companyIdentifier}/postings get security [{\"key\":[]},{\"oauth\":[\"internal_postings_read\"]},{}]",
+ "perPath: /v1/companies/{companyIdentifier}/postings/{postingId} get security [{\"key\":[]},{\"oauth\":[\"internal_postings_read\"]},{}]",
+ "schemes.key.in: \"header\"",
+ "schemes.key.name: \"x-smarttoken\"",
+ "schemes.key.type: \"apiKey\"",
+ "schemes.oauth.flows.clientCredentials.scopes.internal_postings_read: \"Access company postings\"",
+ "schemes.oauth.flows.clientCredentials.tokenUrl: \"https://api.smartrecruiters.com/identity/oauth/token\"",
+ "schemes.oauth.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.smartrecruiters.com\"}"
+]

@@ -1,0 +1,22 @@
+[
+ "perPath: /crawl post security [{\"bearerAuth\":[]}]",
+ "perPath: /extract post security [{\"bearerAuth\":[]}]",
+ "perPath: /feedback post security [{\"bearerAuth\":[]}]",
+ "perPath: /logs post security [{\"bearerAuth\":[]}]",
+ "perPath: /map post security [{\"bearerAuth\":[]}]",
+ "perPath: /org-usage post security [{\"ownerBearerAuth\":[]}]",
+ "perPath: /research post security [{\"bearerAuth\":[]}]",
+ "perPath: /research/{request_id} get security [{\"bearerAuth\":[]}]",
+ "perPath: /search post security [{\"bearerAuth\":[]}]",
+ "perPath: /usage get security [{\"bearerAuth\":[]}]",
+ "schemes.bearerAuth.bearerFormat: \"JWT\"",
+ "schemes.bearerAuth.description: \"Bearer authentication header in the form Bearer <token>, where <token> is your Tavily API key (e.g., Bearer tvly-YOUR_API_KEY).\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "schemes.ownerBearerAuth.bearerFormat: \"JWT\"",
+ "schemes.ownerBearerAuth.description: \"Bearer authentication header in the form Bearer <token>. The token must be the **organization owner's personal API key** (from the owner's own personal account, not an organization key).\"",
+ "schemes.ownerBearerAuth.scheme: \"bearer\"",
+ "schemes.ownerBearerAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.tavily.com/\"}"
+]

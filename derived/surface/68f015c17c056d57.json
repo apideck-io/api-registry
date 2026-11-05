@@ -1,0 +1,15 @@
+[
+ "perPath: /store get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.stores\"]}]",
+ "perPath: /store/categories get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.stores\"]}]",
+ "perPath: /store/categories post security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.stores\"]}]",
+ "perPath: /store/categories/move_category post security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.stores\"]}]",
+ "perPath: /store/categories/{category_id} delete security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.stores\"]}]",
+ "perPath: /store/categories/{category_id} put security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.stores\"]}]",
+ "perPath: /store/tasks get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.stores\"]}]",
+ "perPath: /store/tasks/{task_id} get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.stores\"]}]",
+ "schemes.api_auth.description: \"The security definitions for this API. Please check individual operations for applicable scopes.\"",
+ "schemes.api_auth.flows: {}",
+ "schemes.api_auth.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.ebay.com{basePath}\",\"variables\":{\"basePath\":{\"default\":\"/sell/stores/v1\"}}}"
+]

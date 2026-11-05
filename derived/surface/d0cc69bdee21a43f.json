@@ -1,0 +1,15 @@
+[
+ "perPath: /advertisers/dashboard/summary post security [{\"API Key\":[]}]",
+ "perPath: /advertisers/reporting/clicks/{transactionId} get security [{\"API Key\":[]}]",
+ "perPath: /advertisers/reporting/conversions post security [{\"API Key\":[]}]",
+ "perPath: /advertisers/reporting/conversions/export post security [{\"API Key\":[]}]",
+ "perPath: /advertisers/reporting/conversions/{conversionId} get security [{\"API Key\":[]}]",
+ "perPath: /advertisers/reporting/entity post security [{\"API Key\":[]}]",
+ "perPath: /advertisers/reporting/entity/table post security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The advertiser's API key generated from the Advertiser Portal. Uses the same X-Eflow-Api-Key header as other Everflow APIs, but the key belongs to the advertiser user rather than the network admin.\\n\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://api.eflow.team/v1\"}"
+]

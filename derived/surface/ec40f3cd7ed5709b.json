@@ -1,0 +1,12 @@
+[
+ "perPath: /api/atlas/v2/unauth/controlPlaneIPAddresses get security []",
+ "schemes.DigestAuth.scheme: \"digest\"",
+ "schemes.DigestAuth.type: \"http\"",
+ "schemes.ServiceAccounts.description: \"Learn more about [Service Accounts](https://www.mongodb.com/docs/atlas/api/service-accounts-overview).\"",
+ "schemes.ServiceAccounts.flows.clientCredentials.scopes: {}",
+ "schemes.ServiceAccounts.flows.clientCredentials.tokenUrl: \"https://cloud.mongodb.com/api/oauth/token\"",
+ "schemes.ServiceAccounts.type: \"oauth2\"",
+ "security[]: {\"DigestAuth\":[]}",
+ "security[]: {\"ServiceAccounts\":[]}",
+ "servers[0]: {\"url\":\"https://cloud.mongodb.com\"}"
+]

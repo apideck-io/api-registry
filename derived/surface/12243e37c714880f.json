@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.description: \"Your Lusha API key. You can find this in your Lusha dashboard under API settings.\\n\\nInclude this key in the `api_key` header for all requests.\\n\"",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"api_key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://api.lusha.com\"}"
+]

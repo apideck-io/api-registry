@@ -1,0 +1,14 @@
+[
+ "perPath: /hr/v2/employees/{employeeId}/onboarding/export get security [{\"OAuth2ScopedAuthenticator\":[]}]",
+ "perPath: /hr/v2/employees/{employeeId}/pay-details/export get security [{\"OAuth2ScopedAuthenticator\":[]}]",
+ "perPath: /hr/v2/onboarding/bulk-export get security [{\"OAuth2ScopedAuthenticator\":[]}]",
+ "perPath: /management/v2/auth/user-info get security [{\"OAuth2ScopedAuthenticator\":[]}]",
+ "schemes.ApiToken.in: \"header\"",
+ "schemes.ApiToken.name: \"OAuth\"",
+ "schemes.ApiToken.type: \"apiKey\"",
+ "schemes.JWTInternalToken.in: \"header\"",
+ "schemes.JWTInternalToken.name: \"Bearer\"",
+ "schemes.JWTInternalToken.type: \"apiKey\"",
+ "security[]: {\"ApiToken\":[]}",
+ "servers[0]: {\"description\":\"Deputy tenant\",\"url\":\"https://{subdomain}.{region}.deputy.com/api\",\"variables\":{\"region\":{\"default\":\"deputy\",\"description\":\"Deputy region: au, eu, na, or deputy (AU default)\",\"enum\":[\"au\",\"eu\",\"na\",\"deputy\"]},\"subdomain\":{\"default\":\"your-subdomain\",\"description\":\"Your Deputy tenant subdomain\"}}}"
+]

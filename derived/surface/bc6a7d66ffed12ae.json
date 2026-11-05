@@ -1,0 +1,6 @@
+[
+ "perPath: /repos/{owner}/{repo}/releases/{release_id}/assets post [{\"description\":\"The URL origin (protocol + host name + port) is included in `upload_url` returned in the response of the \\\"Create a release\\\" endpoint\",\"url\":\"https://uploads.github.com\"}]",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.github.com\"}"
+]

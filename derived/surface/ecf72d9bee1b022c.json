@@ -1,0 +1,10 @@
+[
+ "perPath: /affiliates/billings/affiliates/invoices/{invoiceId} get security [{\"API Key\":[]}]",
+ "perPath: /affiliates/billings/affiliates/invoicestable post security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The affiliate's API key generated from the Affiliate Portal. Uses the X-Eflow-Api-Key header.\\n\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://api.eflow.team/v1\"}"
+]

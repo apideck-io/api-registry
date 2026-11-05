@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"API key from Settings > General Settings > Developer; caller IP must be whitelisted\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"X-API-KEY\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://api.resova.us/v1\"}"
+]

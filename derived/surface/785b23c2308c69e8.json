@@ -1,0 +1,11 @@
+[
+ "basePath: \"/v1\"",
+ "definitions.api_key.in: \"query\"",
+ "definitions.api_key.name: \"api_key\"",
+ "definitions.api_key.type: \"apiKey\"",
+ "host: \"api.giphy.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"api_key\":[]}"
+]

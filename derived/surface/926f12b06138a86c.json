@@ -1,0 +1,18 @@
+[
+ "perPath: /api/accounts/{accountIdRemoveAllLabelsFromThread}/updatethread put security [{\"iam-oauth2-schema\":[\"ZohoMail.messages.ALL\",\"ZohoMail.messages.UPDATE\"]}]",
+ "perPath: /api/accounts/{accountIdToApplyLabelToThread}/updatethread put security [{\"iam-oauth2-schema\":[\"ZohoMail.messages.ALL\",\"ZohoMail.messages.UPDATE\"]}]",
+ "perPath: /api/accounts/{accountIdToFlagThread}/updatethread put security [{\"iam-oauth2-schema\":[\"ZohoMail.messages.ALL\",\"ZohoMail.messages.UPDATE\"]}]",
+ "perPath: /api/accounts/{accountIdToMarkThreadNotSpam}/updatethread put security [{\"iam-oauth2-schema\":[\"ZohoMail.messages.ALL\",\"ZohoMail.messages.UPDATE\"]}]",
+ "perPath: /api/accounts/{accountIdToMarkThreadSpam}/updatethread put security [{\"iam-oauth2-schema\":[\"ZohoMail.messages.ALL\",\"ZohoMail.messages.UPDATE\"]}]",
+ "perPath: /api/accounts/{accountIdToMarkThreadUnread}/updatethread put security [{\"iam-oauth2-schema\":[\"ZohoMail.messages.ALL\",\"ZohoMail.messages.UPDATE\"]}]",
+ "perPath: /api/accounts/{accountIdToMarkThread}/updatethread put security [{\"iam-oauth2-schema\":[\"ZohoMail.messages.ALL\",\"ZohoMail.messages.UPDATE\"]}]",
+ "perPath: /api/accounts/{accountIdToMoveThread}/updatethread put security [{\"iam-oauth2-schema\":[\"ZohoMail.messages.ALL\",\"ZohoMail.messages.UPDATE\"]}]",
+ "perPath: /api/accounts/{accountIdToRemoveLabelFromThread}/updatethread put security [{\"iam-oauth2-schema\":[\"ZohoMail.messages.ALL\",\"ZohoMail.messages.UPDATE\"]}]",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.authorizationUrl: \"https://accounts.zoho.com/oauth/v2/auth\"",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.scopes.[\"ZohoMail.messages.ALL\"]: \"Full access to messages\"",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.scopes.[\"ZohoMail.messages.UPDATE\"]: \"Update access to messages\"",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.tokenUrl: \"https://accounts.zoho.com/oauth/v2/token\"",
+ "schemes.iam-oauth2-schema.type: \"oauth2\"",
+ "security: null",
+ "servers: null"
+]

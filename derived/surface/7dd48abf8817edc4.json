@@ -1,0 +1,14 @@
+[
+ "perPath: /public/consent post security [{\"PublicApiKeyAuth\":[]}]",
+ "schemes.ApiKeyAuth.description: \"Private API key for server-side API access\"",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"ApiKey\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "schemes.PublicApiKeyAuth.description: \"Public API key, only accepted on POST /public/consent\"",
+ "schemes.PublicApiKeyAuth.in: \"header\"",
+ "schemes.PublicApiKeyAuth.name: \"ApiKey\"",
+ "schemes.PublicApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Production (Current channel)\",\"url\":\"https://consent.iubenda.com\"}",
+ "servers[1]: {\"description\":\"Beta channel\",\"url\":\"https://consent.iubenda.com/beta\"}"
+]

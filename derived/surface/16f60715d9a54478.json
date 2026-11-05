@@ -1,0 +1,9 @@
+[
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/devstorage.read_only\"].description: \"View your data in Google Cloud Storage\"",
+ "baseUrl: \"https://generativelanguage.googleapis.com/\"",
+ "batchPath: \"batch\"",
+ "endpoints[]: {\"description\":\"Regional Endpoint\",\"endpointUrl\":\"https://generativelanguage.us.rep.googleapis.com/\",\"location\":\"us\"}",
+ "mtlsRootUrl: \"https://generativelanguage.mtls.googleapis.com/\"",
+ "rootUrl: \"https://generativelanguage.googleapis.com/\"",
+ "servicePath: \"\""
+]

@@ -1,0 +1,13 @@
+[
+ "perPath: []",
+ "schemes.BearerAuth.description: \"OAuth 2.0 access token or Deputy Permanent Token.\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "schemes.OAuth2.flows.authorizationCode.authorizationUrl: \"https://once.deputy.com/my/oauth/login\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.longlife_refresh_token: \"Extended session\"",
+ "schemes.OAuth2.flows.authorizationCode.tokenUrl: \"https://once.deputy.com/my/oauth/access_token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "security[]: {\"OAuth2\":[]}",
+ "servers[0]: {\"description\":\"Deputy tenant\",\"url\":\"https://{subdomain}.{region}.deputy.com/api/v1\",\"variables\":{\"region\":{\"default\":\"deputy\",\"enum\":[\"au\",\"eu\",\"na\",\"deputy\"]},\"subdomain\":{\"default\":\"your-subdomain\"}}}"
+]

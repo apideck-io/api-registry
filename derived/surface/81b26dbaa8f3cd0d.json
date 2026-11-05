@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"Flinks Outbound Auth Server\",\"url\":\"https://{host}\",\"variables\":{\"host\":{\"default\":\"{host}\",\"description\":\"Host URL\"}}}"
+]

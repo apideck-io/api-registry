@@ -1,0 +1,8 @@
+[
+ "perPath: /workflow-version-execution-results get security [{\"ApiKeyAuth\":[]}]",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-API-KEY\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers: null"
+]

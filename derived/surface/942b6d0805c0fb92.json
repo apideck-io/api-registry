@@ -1,0 +1,11 @@
+[
+ "perPath: webhook:podcastDeleted post security []",
+ "perPath: webhook:podcastsSubmitAccepted post security []",
+ "perPath: webhook:podcastsSubmitRejected post security []",
+ "schemes.ListenApiKey.description: \"Get your API key at https://www.listennotes.com/api/dashboard/. Team keys act as the API admin.\"",
+ "schemes.ListenApiKey.in: \"header\"",
+ "schemes.ListenApiKey.name: \"X-ListenAPI-Key\"",
+ "schemes.ListenApiKey.type: \"apiKey\"",
+ "security[]: {\"ListenApiKey\":[]}",
+ "servers[0]: {\"description\":\"API Production Server\",\"url\":\"https://listen-api.listennotes.com/api/v2\"}"
+]

@@ -1,0 +1,19 @@
+[
+ "perPath: /docs/folders/metadata get security [{\"Basic\":[]}]",
+ "perPath: /docs/people/{id} get security [{\"Basic\":[]}]",
+ "perPath: /docs/people/{id}/confidential post security [{\"Basic\":[]}]",
+ "perPath: /docs/people/{id}/confidential/upload post security [{\"Basic\":[]}]",
+ "perPath: /docs/people/{id}/confidential/{docId} delete security [{\"Basic\":[]}]",
+ "perPath: /docs/people/{id}/custom/{folderId} post security [{\"Basic\":[]}]",
+ "perPath: /docs/people/{id}/folders/{folderId}/upload post security [{\"Basic\":[]}]",
+ "perPath: /docs/people/{id}/folders/{folderId}/{docId} delete security [{\"Basic\":[]}]",
+ "perPath: /docs/people/{id}/shared post security [{\"Basic\":[]}]",
+ "perPath: /docs/people/{id}/shared/upload post security [{\"Basic\":[]}]",
+ "perPath: /docs/people/{id}/shared/{docId} delete security [{\"Basic\":[]}]",
+ "perPath: webhook:documentsESignCompleted post security []",
+ "schemes.Basic.scheme: \"basic\"",
+ "schemes.Basic.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.hibob.com/v1\"}",
+ "servers[1]: {\"description\":\"Sandbox\",\"url\":\"https://api.sandbox.hibob.com/v1\"}"
+]

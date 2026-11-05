@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearer.description: \"dashboard.scavio.dev API Keys (sk_live_)\"",
+ "schemes.bearer.scheme: \"bearer\"",
+ "schemes.bearer.type: \"http\"",
+ "security[]: {\"bearer\":[]}",
+ "servers[0]: {\"url\":\"https://api.scavio.dev\"}"
+]

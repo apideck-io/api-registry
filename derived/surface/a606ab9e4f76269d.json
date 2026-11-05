@@ -1,0 +1,13 @@
+[
+ "perPath: []",
+ "schemes.basicAuth.description: \"If using HTTP Basic auth, pass the Secret Key as the username and leave the password blank:\\n```bash\\ncurl https://api.growthbook.io/api/v1/features   -u secret_abc123DEF456:\\n# The \\\":\\\" at the end stops curl from asking for a password\\n```\\n\"",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "schemes.bearerAuth.description: \"If using Bearer auth, pass the Secret Key as the token:\\n```bash\\ncurl https://api.growthbook.io/api/v1/features   -H \\\"Authorization: Bearer secret_abc123DEF456\\\"\\n```\\n\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"GrowthBook Cloud\",\"url\":\"https://api.growthbook.io/api\"}",
+ "servers[1]: {\"description\":\"Self-hosted GrowthBook\",\"url\":\"https://{domain}/api\",\"variables\":{\"domain\":{\"default\":\"localhost:3100\",\"description\":\"Your self-hosted GrowthBook host (and port)\"}}}"
+]

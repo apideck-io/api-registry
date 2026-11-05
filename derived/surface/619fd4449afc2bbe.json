@@ -1,0 +1,21 @@
+[
+ "perPath: /orders post security [{\"write\":[]}]",
+ "perPath: /orders put security [{\"write\":[]}]",
+ "perPath: /orders/{id} put security [{\"write\":[]}]",
+ "schemes.orders.description: \"API Scope: \\\"Orders\\\"\"",
+ "schemes.orders.in: \"header\"",
+ "schemes.orders.name: \"X-Authorization\"",
+ "schemes.orders.type: \"apiKey\"",
+ "schemes.orders.x-scope: \"Orders\"",
+ "schemes.read.description: \"API Scope: \\\"Order (read)\\\"\"",
+ "schemes.read.in: \"header\"",
+ "schemes.read.name: \"X-Authorization\"",
+ "schemes.read.type: \"apiKey\"",
+ "schemes.read.x-scope: \"Order (Read)\"",
+ "schemes.write.description: \"API Scope: \\\"Order (write)\\\"\"",
+ "schemes.write.in: \"header\"",
+ "schemes.write.name: \"X-Authorization\"",
+ "schemes.write.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"2026-07\",\"url\":\"https://api.loopreturns.com/api/2026-07\"}"
+]

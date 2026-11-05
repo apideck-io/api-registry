@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Settings > Account > Security > API-keys (admin)\"",
+ "schemes.apiKey.in: \"query\"",
+ "schemes.apiKey.name: \"token\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://integration.upsales.com/api/v2\"}"
+]

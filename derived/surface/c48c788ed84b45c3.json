@@ -1,0 +1,14 @@
+[
+ "perPath: /auth post security [{\"apiKey\":[]}]",
+ "perPath: /auth-jwt post security [{\"apiKey\":[]}]",
+ "perPath: /lookup post security [{\"apiKey\":[]}]",
+ "perPath: /otp post security [{\"apiKey\":[]}]",
+ "perPath: /sign-payload post security [{\"apiKey\":[]}]",
+ "perPath: /whoami post security [{\"apiKey\":[]}]",
+ "schemes.apiKey.description: \"Bearer token authentication. Use 'Bearer <apiKey>' as the value.\"",
+ "schemes.apiKey.scheme: \"bearer\"",
+ "schemes.apiKey.type: \"http\"",
+ "schemes.apiKey.x-default: \"Bearer API_KEY\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://api.g.alchemy.com/signer/v1\"}"
+]

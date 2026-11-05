@@ -1,0 +1,15 @@
+[
+ "perPath: /account/account_numbers get security [{\"bearerAuth\":[]}]",
+ "perPath: /account/account_owners get security [{\"bearerAuth\":[]}]",
+ "perPath: /account/check_balance post security [{\"bearerAuth\":[]}]",
+ "perPath: /account/transactions get security [{\"bearerAuth\":[]}]",
+ "perPath: /payment_account get security [{\"bearerAuth\":[]}]",
+ "schemes.basicAuth.description: \"To authenticate with the Platform API, include your Base64-encoded `client_id` and `api_key` in the Authorization header of every request:\\n\\n```\\n-H 'Authorization: Basic BASE_64_ENCODING_OF{client_id:api_key}'\\n```\\n\"",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "servers[0]: {\"url\":\"https://int-api.mx.com\"}",
+ "servers[1]: {\"url\":\"https://api.mx.com\"}"
+]

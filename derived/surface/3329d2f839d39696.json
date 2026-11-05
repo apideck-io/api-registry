@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearer.description: \"Issued by your Podscribe contact\"",
+ "schemes.bearer.scheme: \"bearer\"",
+ "schemes.bearer.type: \"http\"",
+ "security[]: {\"bearer\":[]}",
+ "servers[0]: {\"url\":\"https://backend.podscribe.ai\"}"
+]

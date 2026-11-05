@@ -1,0 +1,19 @@
+[
+ "perPath: []",
+ "schemes.Api-Key.in: \"header\"",
+ "schemes.Api-Key.name: \"Api-Key\"",
+ "schemes.Api-Key.type: \"apiKey\"",
+ "schemes.OAuth2.flows.authorizationCode.authorizationUrl: \"https://authentication.gettyimages.com/oauth2/auth\"",
+ "schemes.OAuth2.flows.authorizationCode.refreshUrl: \"https://authentication.gettyimages.com/oauth2/token\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes: {}",
+ "schemes.OAuth2.flows.authorizationCode.tokenUrl: \"https://authentication.gettyimages.com/oauth2/token\"",
+ "schemes.OAuth2.flows.clientCredentials.scopes: {}",
+ "schemes.OAuth2.flows.clientCredentials.tokenUrl: \"https://authentication.gettyimages.com/oauth2/token\"",
+ "schemes.OAuth2.flows.password.refreshUrl: \"https://authentication.gettyimages.com/oauth2/token\"",
+ "schemes.OAuth2.flows.password.scopes: {}",
+ "schemes.OAuth2.flows.password.tokenUrl: \"https://authentication.gettyimages.com/oauth2/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security[]: {\"Api-Key\":[]}",
+ "security[]: {\"OAuth2\":[]}",
+ "servers: null"
+]

@@ -1,0 +1,15 @@
+[
+ "perPath: /networks/custom/payoutrevenue get security [{\"API Key\":[]}]",
+ "perPath: /networks/custom/payoutrevenue patch security [{\"API Key\":[]}]",
+ "perPath: /networks/custom/payoutrevenue post security [{\"API Key\":[]}]",
+ "perPath: /networks/custom/payoutrevenue/{settingId} delete security [{\"API Key\":[]}]",
+ "perPath: /networks/custom/payoutrevenue/{settingId} get security [{\"API Key\":[]}]",
+ "perPath: /networks/custom/payoutrevenue/{settingId} put security [{\"API Key\":[]}]",
+ "perPath: /networks/custom/payoutrevenuetable post security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The Everflow API key generated from the Control Center > Security.\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.eflow.team/v1\"}"
+]

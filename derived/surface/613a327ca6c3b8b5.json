@@ -1,0 +1,13 @@
+[
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/drive\"].description: \"See, edit, create, and delete all of your Google Drive files\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/drive.file\"].description: \"See, edit, create, and delete only the specific Google Drive files you use with this app\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/drive.readonly\"].description: \"See and download all your Google Drive files\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/spreadsheets\"].description: \"See, edit, create, and delete all your Google Sheets spreadsheets\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/spreadsheets.readonly\"].description: \"See all your Google Sheets spreadsheets\"",
+ "baseUrl: \"https://sheets.googleapis.com/\"",
+ "batchPath: \"batch\"",
+ "endpoints: null",
+ "mtlsRootUrl: \"https://sheets.mtls.googleapis.com/\"",
+ "rootUrl: \"https://sheets.googleapis.com/\"",
+ "servicePath: \"\""
+]

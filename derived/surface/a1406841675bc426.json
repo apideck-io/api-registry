@@ -1,0 +1,23 @@
+[
+ "perPath: /commercial-authorizations/{orderAuthId}/callback * [{\"description\":\"VTEX server URL for the accept or deny rule endpoint.\",\"url\":\"https://{accountName}.myvtex.com\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}]",
+ "perPath: /{accountName}/authorization-dimensions * [{\"description\":\"VTEX server URL.\",\"url\":\"https://api.vtexcommercestable.com.br\"}]",
+ "perPath: /{accountName}/authorization-dimensions/{dimensionId} * [{\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.{environment}.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"},\"environment\":{\"default\":\"vtexcommercestable\",\"description\":\"Environment to use. Used as part of the URL.\",\"enum\":[\"vtexcommercestable\"]}}}]",
+ "perPath: /{accountName}/authorization-dimensions/{dimensionId}/rules * [{\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.{environment}.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"},\"environment\":{\"default\":\"vtexcommercestable\",\"description\":\"Environment to use. Used as part of the URL.\",\"enum\":[\"vtexcommercestable\"]}}}]",
+ "perPath: /{accountName}/authorization-dimensions/{dimensionId}/rules/{ruleId} * [{\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.{environment}.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"},\"environment\":{\"default\":\"vtexcommercestable\",\"description\":\"Environment to use. Used as part of the URL.\",\"enum\":[\"vtexcommercestable\"]}}}]",
+ "schemes.VtexIdclientAutCookie.description: \"[User token](https://developers.vtex.com/docs/guides/api-authentication-using-user-tokens), valid for 24 hours.\"",
+ "schemes.VtexIdclientAutCookie.in: \"header\"",
+ "schemes.VtexIdclientAutCookie.name: \"VtexIdclientAutCookie\"",
+ "schemes.VtexIdclientAutCookie.type: \"apiKey\"",
+ "schemes.appKey.description: \"Unique identifier of the [API key](https://developers.vtex.com/docs/guides/api-authentication-using-api-keys).\"",
+ "schemes.appKey.in: \"header\"",
+ "schemes.appKey.name: \"X-VTEX-API-AppKey\"",
+ "schemes.appKey.type: \"apiKey\"",
+ "schemes.appToken.description: \"Secret token of the [API key](https://developers.vtex.com/docs/guides/api-authentication-using-api-keys).\"",
+ "schemes.appToken.in: \"header\"",
+ "schemes.appToken.name: \"X-VTEX-API-AppToken\"",
+ "schemes.appToken.type: \"apiKey\"",
+ "security[]: {\"VtexIdclientAutCookie\":[]}",
+ "security[]: {\"appKey\":[],\"appToken\":[]}",
+ "servers[0]: {\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.{environment}.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"},\"environment\":{\"default\":\"vtexcommercestable\",\"description\":\"Environment to use. Used as part of the URL.\",\"enum\":[\"vtexcommercestable\"]}}}",
+ "servers[1]: {\"description\":\"VTEX server URL for the accept or deny rule endpoint.\",\"url\":\"https://{accountName}.myvtex.com\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}"
+]

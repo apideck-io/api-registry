@@ -1,0 +1,9 @@
+[
+ "auth.bearer[]: {\"key\":\"token\",\"type\":\"string\",\"value\":\"{{bearerToken}}\"}",
+ "auth.type: \"bearer\"",
+ "hosts: [\"{{baseUrl}}\"]",
+ "nested: []",
+ "scripts: []",
+ "variables: baseUrl https://api.pipelinecrm.com/api/v3",
+ "variables: bearerToken "
+]

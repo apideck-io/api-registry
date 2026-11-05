@@ -1,0 +1,13 @@
+[
+ "perPath: /api/authenticator/v1/punchout/authenticated/start post security [{\"appKey\":[],\"appToken\":[]}]",
+ "schemes.appKey.description: \"Unique identifier of the [API key](https://developers.vtex.com/docs/guides/api-authentication-using-api-keys).\"",
+ "schemes.appKey.in: \"header\"",
+ "schemes.appKey.name: \"X-VTEX-API-AppKey\"",
+ "schemes.appKey.type: \"apiKey\"",
+ "schemes.appToken.description: \"Secret token of the [API key](https://developers.vtex.com/docs/guides/api-authentication-using-api-keys).\"",
+ "schemes.appToken.in: \"header\"",
+ "schemes.appToken.name: \"X-VTEX-API-AppToken\"",
+ "schemes.appToken.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Store host URL.\",\"url\":\"https://{storeHost}\",\"variables\":{\"storeHost\":{\"default\":\"apiexamples.com\",\"description\":\"Store host.\"}}}"
+]

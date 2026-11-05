@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "schemes.oauth.description: \"This API uses OAuth2 with the Client Credential flow.\\nClient Credentials must be sent in the BODY, not the headers.\\nFor an example of how to implement this, refer to the [c1TokenSource.Token()](https://github.com/ConductorOne/conductorone-sdk-go/blob/3375fe7c0126d17e7ec4e711693dee7b791023aa/token_source.go#L101-L187) function.\"",
+ "schemes.oauth.flows.clientCredentials.scopes: {}",
+ "schemes.oauth.flows.clientCredentials.tokenUrl: \"/auth/v1/token\"",
+ "schemes.oauth.type: \"oauth2\"",
+ "security[]: {\"bearerAuth\":[],\"oauth\":[]}",
+ "servers[0]: {\"description\":\"The C1 API server for the current tenant.\",\"url\":\"https://{tenantDomain}.conductor.one\",\"variables\":{\"tenantDomain\":{\"default\":\"example\",\"description\":\"The domain of the tenant to use for this request.\"}}}"
+]

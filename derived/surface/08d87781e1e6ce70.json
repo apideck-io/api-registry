@@ -1,0 +1,22 @@
+[
+ "basePath: \"/api\"",
+ "definitions.apiToken.description: \"API token can be acquired from https://ci.appveyor.com/api-keys\\nThis value must be passed to the server in the `Authorization` header as `\\\"Bearer <token>\\\"`.  Since [bearer token authentication support is not explicitly supported in OpenAPI 2.0](https://github.com/OAI/OpenAPI-Specification/issues/583), client code will vary.  Clients created with [swagger-codegen](https://github.com/swagger-api/swagger-codegen) should set `apiKeyPrefix` to `\\\"Bearer\\\"` and set `apiKey` to the token.  Other clients may need to set `apiKey` to the string `\\\"Bearer <token>\\\"`.\\nNote that this should be [fixed in OpenAPI 3.0](https://github.com/OAI/OpenAPI-Specification/pull/807)), whenever that becomes available and supported.\\n#### User-Level API Keys\\nTo use a user-level API key (prefixed with \\\"v2.\\\"), `basePath` must be changed to `/api/account/{accountName}` where `{accountName}` is the name of the account for which requests will be made.\"",
+ "definitions.apiToken.in: \"header\"",
+ "definitions.apiToken.name: \"Authorization\"",
+ "definitions.apiToken.type: \"apiKey\"",
+ "host: \"ci.appveyor.com\"",
+ "parameterizedHost: null",
+ "perOp: /buildjobs/{jobId}/artifacts get []",
+ "perOp: /buildjobs/{jobId}/artifacts/{artifactFileName} get []",
+ "perOp: /buildjobs/{jobId}/log get []",
+ "perOp: /projects/status/{badgeRepoProvider}/{repoAccountName}/{repoSlug} get []",
+ "perOp: /projects/status/{statusBadgeId} get []",
+ "perOp: /projects/status/{statusBadgeId}/branch/{buildBranch} get []",
+ "perOp: /projects/{accountName}/{projectSlug} get []",
+ "perOp: /projects/{accountName}/{projectSlug}/artifacts/{artifactFileName} get []",
+ "perOp: /projects/{accountName}/{projectSlug}/branch/{buildBranch} get []",
+ "perOp: /projects/{accountName}/{projectSlug}/build/{buildVersion} get []",
+ "perOp: /projects/{accountName}/{projectSlug}/history get []",
+ "schemes: [\"https\"]",
+ "security[]: {\"apiToken\":[]}"
+]

@@ -1,0 +1,15 @@
+[
+ "perPath: /flags get security [{\"ProjectSecret\":[]},{\"ServiceAccount\":[]}]",
+ "perPath: /flags/definitions get security [{\"ProjectSecret\":[]},{\"ServiceAccount\":[]}]",
+ "schemes.OAuthToken.description: \"OAuth Token\"",
+ "schemes.OAuthToken.scheme: \"bearer\"",
+ "schemes.OAuthToken.type: \"http\"",
+ "schemes.ProjectSecret.description: \"Project Secret\"",
+ "schemes.ProjectSecret.scheme: \"basic\"",
+ "schemes.ProjectSecret.type: \"http\"",
+ "schemes.ServiceAccount.description: \"Service Account\"",
+ "schemes.ServiceAccount.scheme: \"basic\"",
+ "schemes.ServiceAccount.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Mixpanel's feature flags API server.\",\"url\":\"https://{regionAndDomain}.com\",\"variables\":{\"regionAndDomain\":{\"default\":\"api.mixpanel\",\"description\":\"The server location to be used:\\n  * `api.mixpanel` - The default (US) servers used for most projects\\n  * `api-eu.mixpanel` - EU servers if you are enrolled in EU Data Residency\\n  * `api-in.mixpanel` - India servers if you are enrolled in India Data Residency\\n\",\"enum\":[\"api.mixpanel\",\"api-eu.mixpanel\",\"api-in.mixpanel\"]}}}"
+]

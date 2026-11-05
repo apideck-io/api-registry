@@ -1,0 +1,22 @@
+[
+ "perPath: []",
+ "schemes.api_key_header.description: \"Project API tokens are not supported for API v2. Use a personal API token.\"",
+ "schemes.api_key_header.in: \"header\"",
+ "schemes.api_key_header.name: \"Circle-Token\"",
+ "schemes.api_key_header.type: \"apiKey\"",
+ "schemes.api_key_query.description: \"DEPRECATED - we will remove this option in the future. Project API tokens are not supported for API v2. Use a personal API token.\"",
+ "schemes.api_key_query.in: \"query\"",
+ "schemes.api_key_query.name: \"circle-token\"",
+ "schemes.api_key_query.type: \"apiKey\"",
+ "schemes.basic_auth.description: \"HTTP basic authentication. The username should be set as the circle-token value, and the password should be left blank. Note that project tokens are currently not supported on API v2.\"",
+ "schemes.basic_auth.scheme: \"basic\"",
+ "schemes.basic_auth.type: \"http\"",
+ "schemes.bearer_auth.description: \"(Recommended) Bearer token authentication as defined in RFC 6750. Project API tokens are not supported for API v2. Use a personal API token.\"",
+ "schemes.bearer_auth.scheme: \"bearer\"",
+ "schemes.bearer_auth.type: \"http\"",
+ "security[]: {\"api_key_header\":[]}",
+ "security[]: {\"api_key_query\":[]}",
+ "security[]: {\"basic_auth\":[]}",
+ "security[]: {\"bearer_auth\":[]}",
+ "servers[0]: {\"url\":\"https://circleci.com/api/v2\"}"
+]

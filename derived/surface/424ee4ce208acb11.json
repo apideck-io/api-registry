@@ -1,0 +1,18 @@
+[
+ "perPath: /api/v1/tasks get security [{\"deprecated-iam-oauth2-schema\":[\"Desk.tasks.READ\"]},{\"iam-oauth2-schema\":[\"Desk.activities.tasks.READ\"]}]",
+ "perPath: /api/v1/tasks post security [{\"deprecated-iam-oauth2-schema\":[\"Desk.tasks.CREATE\"]},{\"iam-oauth2-schema\":[\"Desk.activities.tasks.CREATE\"]}]",
+ "perPath: /api/v1/tasks/count get security [{\"deprecated-iam-oauth2-schema\":[\"Desk.tasks.READ\"]},{\"iam-oauth2-schema\":[\"Desk.activities.tasks.READ\"]}]",
+ "perPath: /api/v1/tasks/deleteSpam post security [{\"iam-oauth2-schema\":[\"Desk.activities.tasks.DELETE\"]}]",
+ "perPath: /api/v1/tasks/emptySpam post security [{\"iam-oauth2-schema\":[\"Desk.activities.tasks.DELETE\"]}]",
+ "perPath: /api/v1/tasks/moveToTrash post security [{\"deprecated-iam-oauth2-schema\":[\"Desk.tasks.DELETE\"]},{\"iam-oauth2-schema\":[\"Desk.activities.tasks.DELETE\"]}]",
+ "perPath: /api/v1/tasks/updateMany post security [{\"deprecated-iam-oauth2-schema\":[\"Desk.tasks.UPDATE\"]},{\"iam-oauth2-schema\":[\"Desk.activities.tasks.UPDATE\"]}]",
+ "perPath: /api/v1/tasks/{taskId} get security [{\"deprecated-iam-oauth2-schema\":[\"Desk.tasks.READ\"]},{\"iam-oauth2-schema\":[\"Desk.activities.tasks.READ\"]}]",
+ "perPath: /api/v1/tasks/{taskId} patch security [{\"deprecated-iam-oauth2-schema\":[\"Desk.tasks.UPDATE\"]},{\"iam-oauth2-schema\":[\"Desk.activities.tasks.UPDATE\"]}]",
+ "perPath: /api/v1/tickets/{ticketId}/tasks get security [{\"deprecated-iam-oauth2-schema\":[\"Desk.tasks.READ\",\"Desk.tickets.READ\"]},{\"iam-oauth2-schema\":[\"Desk.activities.tasks.READ\"]}]",
+ "schemes.cookie-auth.$ref: \"./Common.json#/components/securitySchemes/cookie-auth\"",
+ "schemes.deprecated-iam-oauth2-schema.$ref: \"./Common.json#/components/securitySchemes/deprecated-iam-oauth2-schema\"",
+ "schemes.iam-oauth2-schema.$ref: \"./Common.json#/components/securitySchemes/iam-oauth2-schema\"",
+ "schemes.org-oauth.$ref: \"./Common.json#/components/securitySchemes/org-oauth\"",
+ "security: null",
+ "servers: null"
+]

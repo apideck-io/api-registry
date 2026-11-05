@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.authorisation.description: \"Given a valid access token, you can now use a Bearer Token to authenticate your requests.\\nTo do so you have to preface your access token with Bearer and send it in the HTTP Authorization header.\\nIt should look something like this: `Authorization: Bearer <ACCESS_TOKEN>`\\n\"",
+ "schemes.authorisation.flows.authorizationCode.authorizationUrl: \"https://id.teya.com/oauth/v2/oauth-authorize\"",
+ "schemes.authorisation.flows.authorizationCode.scopes: {}",
+ "schemes.authorisation.flows.authorizationCode.tokenUrl: \"https://id.teya.com/oauth/v2/oauth-token\"",
+ "schemes.authorisation.type: \"oauth2\"",
+ "security[]: {\"authorisation\":[]}",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://api.teya.com\"}",
+ "servers[1]: {\"description\":\"Staging Server\",\"url\":\"https://api.teya.xyz\"}"
+]

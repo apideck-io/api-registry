@@ -1,0 +1,16 @@
+[
+ "perPath: /.well-known/webhooks/public-key * [{\"url\":\"https://connect.workpath.com\"}]",
+ "perPath: /.well-known/webhooks/public-key get security []",
+ "perPath: /kpis/{id}/actuals post [{\"description\":\"\",\"url\":\"https://connect.workpath.com/api/v3\"}]",
+ "perPath: /kpis/{id}/actuals post security [{\"JWT\":[]}]",
+ "perPath: /kpis/{id}/forecasts post [{\"description\":\"\",\"url\":\"https://connect.workpath.com/api/v3\"}]",
+ "perPath: /kpis/{id}/forecasts post security [{\"JWT\":[]}]",
+ "perPath: /kpis/{id}/targets post [{\"description\":\"\",\"url\":\"https://connect.workpath.com/api/v3\"}]",
+ "perPath: /kpis/{id}/targets post security [{\"JWT\":[]}]",
+ "schemes.JWT.bearerFormat: \"JWT\"",
+ "schemes.JWT.description: \"The token of an API client. Admins create API clients in Workpath under Settings → Integrations → API clients.\"",
+ "schemes.JWT.scheme: \"bearer\"",
+ "schemes.JWT.type: \"http\"",
+ "security[]: {\"JWT\":[]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://connect.workpath.com/api/v3\"}"
+]

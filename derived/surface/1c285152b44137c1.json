@@ -1,0 +1,12 @@
+[
+ "perPath: /v3/oauth/authorize get security []",
+ "perPath: /v3/{customerId}/BankingServices/GenerateAuthorizeToken post security []",
+ "perPath: /v3/{customerId}/partnerdata/authsecret/{nameofpartner} get security []",
+ "perPath: /v3/{customerId}/partnerdata/{LoginId}/{AccountId} get security []",
+ "schemes.XApiKey.description: \"Optional security feature (must be enabled by Flinks). Contact your Flinks representative to activate.\"",
+ "schemes.XApiKey.in: \"header\"",
+ "schemes.XApiKey.name: \"x-api-key\"",
+ "schemes.XApiKey.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Flinks API Environment\",\"url\":\"https://{instance}-api.private.fin.ag\",\"variables\":{\"instance\":{\"default\":\"toolbox\",\"description\":\"The environment instance (e.g., toolbox, sandbox, production)\"}}}"
+]

@@ -1,0 +1,10 @@
+[
+ "perPath: /advertisers/offers get security [{\"API Key\":[]}]",
+ "perPath: /advertisers/offers/{offerId} get security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The advertiser's API key generated from the Advertiser Portal. Uses the same X-Eflow-Api-Key header as other Everflow APIs, but the key belongs to the advertiser user rather than the network admin.\\n\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://api.eflow.team/v1\"}"
+]

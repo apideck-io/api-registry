@@ -1,0 +1,7 @@
+[
+ "perPath: /api/credentials/revoke post security []",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Hub\",\"url\":\"https://huggingface.co\"}"
+]

@@ -1,0 +1,14 @@
+[
+ "perPath: / * [{\"url\":\"https://disposable.debounce.io\"}]",
+ "perPath: / get security []",
+ "perPath: /v1/ * [{\"url\":\"https://api.debounce.io\"}]",
+ "perPath: /v1/balance/ * [{\"url\":\"https://api.debounce.io\"}]",
+ "perPath: /v1/status/ * [{\"url\":\"https://bulk.debounce.io\"}]",
+ "perPath: /v1/upload/ * [{\"url\":\"https://bulk.debounce.io\"}]",
+ "schemes.ApiKeyQuery.description: \"API key for authentication\"",
+ "schemes.ApiKeyQuery.in: \"query\"",
+ "schemes.ApiKeyQuery.name: \"api\"",
+ "schemes.ApiKeyQuery.type: \"apiKey\"",
+ "security[]: {\"ApiKeyQuery\":[]}",
+ "servers[0]: {\"url\":\"https://api.debounce.io\"}"
+]

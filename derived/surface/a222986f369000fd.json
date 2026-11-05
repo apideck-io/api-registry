@@ -1,0 +1,11 @@
+[
+ "basePath: null",
+ "definitions.api_key.in: \"header\"",
+ "definitions.api_key.name: \"Ocp-Apim-Subscription-Key\"",
+ "definitions.api_key.type: \"apiKey\"",
+ "host: \"api.beezup.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

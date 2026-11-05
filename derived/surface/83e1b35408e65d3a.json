@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"Your Lucca account URL.\",\"url\":\"https://{host}\",\"variables\":{\"host\":{\"default\":\"example.ilucca.net\",\"description\":\"The URL of your dedicated Lucca account: `{account}.{env}.{region}`.\\n\\nAccount reflects your company name. Env indicates the environment. Region depends on your server location.\\n\\n**Please, use your test or sandbox environments (and not your production env.) for testing purposes.**\\n\\nEnvironments:\\n- `ilucca`: production environment for customers.\\n- `ilucca-test`: test environment for customers.\\n- `ilucca-demo`: demo environment for prospects.\\n\\nRegions:\\n- `.ch` for Swiss located accounts.\\n- `.net` for the others.\\n\\nRegarding sandboxes, the pattern differs: `https://{account}-{sandboxName}.sandbox.{server}.luccasoftware.com`, where:\\n- `{sandboxName}` is automatically generated upon creation.\\n- `{server}` may be \\\"eu1\\\", \\\"eu2\\\" or \\\"ch1\\\".\"}}}"
+]

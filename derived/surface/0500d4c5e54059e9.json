@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"Replace accountname with your account name\",\"url\":\"https://accountname.exavault.com/api/v2\"}"
+]

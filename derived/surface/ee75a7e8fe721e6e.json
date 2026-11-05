@@ -1,0 +1,17 @@
+[
+ "perPath: []",
+ "schemes.oAuth2AuthCode.description: \"For more information, see https://developers.miro.com/reference/authorization-flow-for-expiring-tokens\"",
+ "schemes.oAuth2AuthCode.flows.authorizationCode.authorizationUrl: \"https://miro.com/oauth/authorize\"",
+ "schemes.oAuth2AuthCode.flows.authorizationCode.scopes.[\"boards:read\"]: \"Retrieve information about boards, board members, or items\"",
+ "schemes.oAuth2AuthCode.flows.authorizationCode.scopes.[\"boards:write\"]: \"Create, update, or delete boards, board members, or items\"",
+ "schemes.oAuth2AuthCode.flows.authorizationCode.scopes.[\"microphone:listen\"]: \"Access a user's microphone to record audio in an iFrame\"",
+ "schemes.oAuth2AuthCode.flows.authorizationCode.scopes.[\"organizations:read\"]: \"Read information about the organization, such as name, plan, number of licenses, organization settings, or organization members.\"",
+ "schemes.oAuth2AuthCode.flows.authorizationCode.scopes.[\"organizations:teams:read\"]: \"Read team information, such as the list of teams, team settings, team members, for an organization.\"",
+ "schemes.oAuth2AuthCode.flows.authorizationCode.scopes.[\"organizations:teams:write\"]: \"Create or delete teams, update team information, team settings, team members, for an organization.\"",
+ "schemes.oAuth2AuthCode.flows.authorizationCode.scopes.[\"screen:record\"]: \"Access a user's screen to record it in an iFrame\"",
+ "schemes.oAuth2AuthCode.flows.authorizationCode.scopes.[\"webcam:record\"]: \"Allows an iFrame to access a user's camera to record video\"",
+ "schemes.oAuth2AuthCode.flows.authorizationCode.tokenUrl: \"https://api.miro.com/v1/oauth/token\"",
+ "schemes.oAuth2AuthCode.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.miro.com/\"}"
+]

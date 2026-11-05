@@ -1,0 +1,9 @@
+[
+ "basePath: \"/3.0\"",
+ "definitions.basicAuth.type: \"basic\"",
+ "host: \"server.api.mailchimp.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"basicAuth\":[]}"
+]

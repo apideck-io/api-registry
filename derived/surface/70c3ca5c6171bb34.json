@@ -1,0 +1,23 @@
+[
+ "perPath: /api/v1/tickets/{requestId}/threads/{threadId}/originalContent get security [{\"iam-oauth2-schema\":[\"Desk.tickets.READ\"]}]",
+ "perPath: /api/v1/tickets/{ticketId}/conversations get security [{\"iam-oauth2-schema\":[\"Desk.tickets.READ\"]}]",
+ "perPath: /api/v1/tickets/{ticketId}/draftReply post security [{\"iam-oauth2-schema\":[\"Desk.tickets.UPDATE\"]}]",
+ "perPath: /api/v1/tickets/{ticketId}/draftReply/{threadId} delete security [{\"iam-oauth2-schema\":[\"Desk.tickets.DELETE\"]}]",
+ "perPath: /api/v1/tickets/{ticketId}/draftReply/{threadId} patch security [{\"iam-oauth2-schema\":[\"Desk.tickets.UPDATE\"]}]",
+ "perPath: /api/v1/tickets/{ticketId}/latestThread get security [{\"iam-oauth2-schema\":[\"Desk.tickets.READ\"]}]",
+ "perPath: /api/v1/tickets/{ticketId}/resendFailedThread post security [{\"iam-oauth2-schema\":[\"Desk.tickets.UPDATE\"]}]",
+ "perPath: /api/v1/tickets/{ticketId}/sendDraft post security [{\"iam-oauth2-schema\":[\"Desk.tickets.UPDATE\"]}]",
+ "perPath: /api/v1/tickets/{ticketId}/sendReply post security [{\"iam-oauth2-schema\":[\"Desk.tickets.UPDATE\"]}]",
+ "perPath: /api/v1/tickets/{ticketId}/threads get security [{\"iam-oauth2-schema\":[\"Desk.tickets.READ\"]}]",
+ "perPath: /api/v1/tickets/{ticketId}/threads/{threadId} get security [{\"iam-oauth2-schema\":[\"Desk.tickets.READ\"]}]",
+ "perPath: /api/v1/tickets/{ticketId}/threads/{threadId}/attachments/{attachmentId} delete security [{\"iam-oauth2-schema\":[\"Desk.tickets.UPDATE\"]}]",
+ "perPath: /api/v1/tickets/{ticketId}/threads/{threadId}/attachments/{attachmentId}/content get security [{\"iam-oauth2-schema\":[\"Desk.tickets.READ\"]}]",
+ "perPath: /api/v1/tickets/{ticketId}/threads/{threadId}/fullContent get security [{\"iam-oauth2-schema\":[\"Desk.tickets.READ\"]}]",
+ "perPath: /api/v1/tickets/{ticketId}/threads/{threadId}/sendForReview post security [{\"iam-oauth2-schema\":[\"Desk.tickets.UPDATE\"]}]",
+ "schemes.cookie-auth.$ref: \"./Common.json#/components/securitySchemes/cookie-auth\"",
+ "schemes.iam-oauth2-schema.$ref: \"./Common.json#/components/securitySchemes/iam-oauth2-schema\"",
+ "schemes.jwt-oauth.$ref: \"./Common.json#/components/securitySchemes/jwt-oauth\"",
+ "schemes.org-oauth.$ref: \"./Common.json#/components/securitySchemes/org-oauth\"",
+ "security: null",
+ "servers: null"
+]

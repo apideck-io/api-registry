@@ -1,0 +1,12 @@
+[
+ "perPath: /adserve get [{\"description\":\"AdButler's ad serving access URL.\",\"url\":\"https://servedbyadbutler.com\"}]",
+ "perPath: /adserve get security []",
+ "perPath: /adserve post [{\"description\":\"AdButler's ad serving access URL.\",\"url\":\"https://servedbyadbutler.com\"}]",
+ "perPath: /adserve post security []",
+ "schemes.[\"Administrator API Key\"].description: \"AdButler uses secret API keys to allow access to the API. You can register a new AdButler API key by visiting the AdButler API Settings page (Settings → API Settings). The API Settings page also lets you manage your existing API keys. Never share your secret API keys on public websites or in the client-side code.\\n\\nYou must include secret API key in all your API requests. API requests without the secret API key will fail. Language bindings take care of that for you once you initialize them with your secret API key.\\n\\nAdButler's API uses a variation of basic authentication. To prove who you are, an Authorization header must be included in the request:\\n\\n```\\nAuthorization: Basic YOUR_API_KEY\\n```\\n\\n__Send the key exactly as it appears on the API Settings page.__ This is where AdButler differs from standard HTTP basic authentication, which expects a base64 encoded `user:password` pair. Do not base64 encode the key, and do not put it in quotes. A base64 encoded key is rejected with `403 Invalid API key`, which reads as a problem with the key itself rather than with how it was encoded.\\n\\nThis is another incentive to use the appropriate language bindings whenever possible. Always send requests over HTTPS. Language bindings does that for you automatically. Requests over HTTP will fail and you run the risk of exposing your secret API key. If you believe that your secret API key has been compromised, then go to AdButler API Settings page and delete the compromised API key and create a new one.\"",
+ "schemes.[\"Administrator API Key\"].in: \"header\"",
+ "schemes.[\"Administrator API Key\"].name: \"Authorization\"",
+ "schemes.[\"Administrator API Key\"].type: \"apiKey\"",
+ "security[]: {\"Administrator API Key\":[]}",
+ "servers[0]: {\"url\":\"https://api.adbutler.com/v2\"}"
+]

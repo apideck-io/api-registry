@@ -1,0 +1,11 @@
+[
+ "perPath: /messages post security [{\"basicAuth\":[]},{\"bearerAuth\":[]}]",
+ "perPath: /messages/{message_uuid} patch security [{\"bearerAuth\":[]}]",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "schemes.bearerAuth.bearerFormat: \"JWT\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"API Server\",\"url\":\"https://{api-region}.nexmo.com/v1\",\"variables\":{\"api-region\":{\"default\":\"api\",\"description\":\"The region where the API request is sent.\",\"enum\":[\"api\",\"api-eu\",\"api-us\",\"api-ap\"]}}}"
+]

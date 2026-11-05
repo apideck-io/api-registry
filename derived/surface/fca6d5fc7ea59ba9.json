@@ -1,0 +1,18 @@
+[
+ "perPath: /authorization/credentials get security [{\"VtexIdclientAutCookie\":[]}]",
+ "perPath: /authorization/token post security [{\"VtexIdclientAutCookie\":[]}]",
+ "perPath: /authorizationCode get security [{\"VtexIdclientAutCookie\":[]}]",
+ "perPath: /manifest get security []",
+ "perPath: /pre-analysis post security [{\"VtexIdclientAutCookie\":[]}]",
+ "perPath: /redirect get security [{\"VtexIdclientAutCookie\":[]}]",
+ "perPath: /transactions post security [{\"VtexIdclientAutCookie\":[]}]",
+ "perPath: /transactions/{transactionId} put security [{\"VtexIdclientAutCookie\":[]}]",
+ "perPath: /transactions/{transactions.Id} delete security [{\"VtexIdclientAutCookie\":[]}]",
+ "perPath: /transactions/{transactions.id} get security [{\"VtexIdclientAutCookie\":[]}]",
+ "schemes.VtexIdclientAutCookie.description: \"[User token](https://developers.vtex.com/docs/guides/api-authentication-using-user-tokens), valid for 24 hours.\"",
+ "schemes.VtexIdclientAutCookie.in: \"header\"",
+ "schemes.VtexIdclientAutCookie.name: \"VtexIdclientAutCookie\"",
+ "schemes.VtexIdclientAutCookie.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Anti-fraud provider endpoint URL.\",\"url\":\"https://{providerApiEndpoint}\",\"variables\":{\"providerApiEndpoint\":{\"default\":\"{providerApiEndpoint}\",\"description\":\"Anti-fraud provider endpoint URL.\"}}}"
+]

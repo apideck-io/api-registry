@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearer.description: \"Admin user's API key as Bearer\"",
+ "schemes.bearer.scheme: \"bearer\"",
+ "schemes.bearer.type: \"http\"",
+ "security[]: {\"bearer\":[]}",
+ "servers[0]: {\"url\":\"https://app.workramp.com/api/v1\"}"
+]

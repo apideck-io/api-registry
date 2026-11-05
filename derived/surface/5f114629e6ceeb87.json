@@ -1,0 +1,10 @@
+[
+ "basePath: null",
+ "definitions.basic.description: \"Basic HTTP Authentication\"",
+ "definitions.basic.type: \"basic\"",
+ "host: \"localhost:54707\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"http\"]",
+ "security: null"
+]

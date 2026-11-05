@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.bearer_auth.scheme: \"bearer\"",
+ "schemes.bearer_auth.type: \"http\"",
+ "security[]: {\"bearer_auth\":[]}",
+ "servers[0]: {\"url\":\"https://api.up.com.au/api/v1\"}"
+]

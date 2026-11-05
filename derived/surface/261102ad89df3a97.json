@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.apiKeyAuth.description: \"API key to authenticate requests to the Luma API. Generate an API key on your Luma dashboard.\"",
+ "schemes.apiKeyAuth.in: \"header\"",
+ "schemes.apiKeyAuth.name: \"x-luma-api-key\"",
+ "schemes.apiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"apiKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://public-api.luma.com\"}"
+]

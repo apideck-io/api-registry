@@ -1,0 +1,12 @@
+[
+ "perPath: /time get security []",
+ "schemes.basicAuth.description: \"Basic Authentication using an [API key](https://www.ably.io/documentation/core-features/authentication#basic-authentication).\"",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "schemes.bearerAuth.description: \"Token Authentication using an [Ably Token](https://www.ably.io/documentation/core-features/authentication#basic-authentication), or optionally an [Ably JWT](https://www.ably.io/documentation/core-features/authentication#ably-jwt-process).\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://rest.ably.io\"}"
+]

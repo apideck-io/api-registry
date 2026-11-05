@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "security[]: {}",
+ "servers[0]: {\"description\":\"Sanity API base URL\",\"url\":\"https://{projectId}.api.sanity.io/{apiVersion}\",\"variables\":{\"apiVersion\":{\"default\":\"v2025-02-19\",\"description\":\"API version\"},\"projectId\":{\"default\":\"projectId\",\"description\":\"Project ID\"}}}",
+ "servers[1]: {\"description\":\"Sanity API CDN base URL (edge-cached results, `published` and `raw` perspectives only)\",\"url\":\"https://{projectId}.apicdn.sanity.io/{apiVersion}\",\"variables\":{\"apiVersion\":{\"default\":\"v2025-02-19\",\"description\":\"API version\"},\"projectId\":{\"default\":\"projectId\",\"description\":\"Project ID\"}}}"
+]

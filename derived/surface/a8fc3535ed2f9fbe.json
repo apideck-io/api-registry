@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: []",
+ "servers[0]: {\"description\":\"test\",\"url\":\"https://test-api.sandbox.co.in\"}",
+ "servers[1]: {\"description\":\"prod\",\"url\":\"https://api.sandbox.co.in\"}"
+]

@@ -1,0 +1,15 @@
+[
+ "auth: null",
+ "hosts: [\"https://api.pverify.com\",\"https://apis.pverify.com\",\"https://premium.pverify.com\"]",
+ "nested: \"/Eligibility & Benefits/Eligibility/GetEligibility271#request\" {\"isInherited\":false,\"type\":\"noauth\"}",
+ "nested: \"/Patient Demographic Validator/PatientFinderInquiryResults#request\" {\"isInherited\":false,\"type\":\"noauth\"}",
+ "scripts:  prerequest [\"\"]",
+ "scripts:  test [\"\"]",
+ "scripts: \"/Claim Status Inquiry\" prerequest [\"\"]",
+ "scripts: \"/Claim Status Inquiry\" test [\"\"]",
+ "scripts: \"/Patient Cost Estimator\" prerequest [\"\"]",
+ "scripts: \"/Patient Cost Estimator\" test [\"\"]",
+ "scripts: /Authentication prerequest [\"\"]",
+ "scripts: /Authentication test [\"\"]",
+ "variables: []"
+]

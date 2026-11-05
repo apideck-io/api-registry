@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.accessToken.description: \"Access token required for authenticating API requests.\\n\\nTo obtain a token, call `POST https://marketplace.walmartapis.com/v3/token` with your client ID and client secret using the OAuth 2.0 client credentials grant type. Refer to the [Token API documentation](https://developer.walmart.com/us-marketplace/docs/get-an-access-token) for details.\\n\\nPass the resulting token in the `WM_SEC.ACCESS_TOKEN` header with every API request.\"",
+ "schemes.accessToken.in: \"header\"",
+ "schemes.accessToken.name: \"WM_SEC.ACCESS_TOKEN\"",
+ "schemes.accessToken.type: \"apiKey\"",
+ "security[]: {\"accessToken\":[]}",
+ "servers[0]: {\"description\":\"Refers to the URL used for accessing the production server.\",\"url\":\"https://marketplace.walmartapis.com\"}",
+ "servers[1]: {\"description\":\"Refers to the URL used for accessing the sandbox server.\",\"url\":\"https://sandbox.walmartapis.com\"}"
+]

@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.Bearer.description: \"Please enter JWT with Bearer into field\"",
+ "schemes.Bearer.in: \"header\"",
+ "schemes.Bearer.name: \"Authorization\"",
+ "schemes.Bearer.type: \"apiKey\"",
+ "security[]: {\"Bearer\":[]}",
+ "servers: null"
+]

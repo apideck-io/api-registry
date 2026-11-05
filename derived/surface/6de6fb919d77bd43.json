@@ -1,0 +1,9 @@
+[
+ "perPath: /v1/render/sync post security [{\"SecretKey\":[]}]",
+ "schemes.SecretKey.bearerFormat: \"JWT\"",
+ "schemes.SecretKey.description: \"The Urlbox API uses your secret API key to authenticate. To find your secret key, login to the Urlbox dashboard at https://urlbox.com/dashboard.\\n\"",
+ "schemes.SecretKey.scheme: \"bearer\"",
+ "schemes.SecretKey.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.urlbox.com\"}"
+]

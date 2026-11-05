@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.APIToken.scheme: \"bearer\"",
+ "schemes.APIToken.type: \"http\"",
+ "security[]: {\"APIToken\":[]}",
+ "servers[0]: {\"url\":\"https://{instance}-be.glean.com\",\"variables\":{\"instance\":{\"default\":\"instance-name\",\"description\":\"The instance name (typically the email domain without the TLD) that determines the deployment backend.\"}}}"
+]

@@ -1,0 +1,23 @@
+[
+ "perPath: /affiliates/dashboard/summary post security [{\"API Key\":[]}]",
+ "perPath: /affiliates/reporting/clicks/stream post security [{\"API Key\":[]}]",
+ "perPath: /affiliates/reporting/clicks/{transactionId} get security [{\"API Key\":[]}]",
+ "perPath: /affiliates/reporting/conversions post security [{\"API Key\":[]}]",
+ "perPath: /affiliates/reporting/conversions/export post security [{\"API Key\":[]}]",
+ "perPath: /affiliates/reporting/conversions/{conversionId} get security [{\"API Key\":[]}]",
+ "perPath: /affiliates/reporting/daily post security [{\"API Key\":[]}]",
+ "perPath: /affiliates/reporting/entity post security [{\"API Key\":[]}]",
+ "perPath: /affiliates/reporting/entity/table post security [{\"API Key\":[]}]",
+ "perPath: /affiliates/reporting/entity/table/export post security [{\"API Key\":[]}]",
+ "perPath: /affiliates/reporting/offer post security [{\"API Key\":[]}]",
+ "perPath: /affiliates/reporting/onhold post security [{\"API Key\":[]}]",
+ "perPath: /affiliates/reporting/onhold/summary post security [{\"API Key\":[]}]",
+ "perPath: /affiliates/reporting/onhold/{onHoldId} get security [{\"API Key\":[]}]",
+ "perPath: /affiliates/reporting/postconversions post security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The affiliate's API key generated from the Affiliate Portal. Uses the same X-Eflow-Api-Key header as the Network API, but the key belongs to the affiliate user rather than the network admin.\\n\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://api.eflow.team/v1\"}"
+]

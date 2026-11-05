@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.fiken_api_oauth.flows.authorizationCode.authorizationUrl: \"https://fiken.no/oauth/authorize\"",
+ "schemes.fiken_api_oauth.flows.authorizationCode.scopes: {}",
+ "schemes.fiken_api_oauth.flows.authorizationCode.tokenUrl: \"https://fiken.no/oauth/token\"",
+ "schemes.fiken_api_oauth.type: \"oauth2\"",
+ "security[]: {\"fiken_api_oauth\":[]}",
+ "servers[0]: {\"url\":\"https://api.fiken.no/api/v2\"}"
+]

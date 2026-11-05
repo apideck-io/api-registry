@@ -1,0 +1,16 @@
+[
+ "perPath: /accounts/{account_id}/machine_translation_locale_provider_mappings delete security [{\"Basic\":[]},{\"OAuthExplicit\":[\"write\"]},{\"OAuthImplicit\":[\"write\"]},{\"Token\":[]}]",
+ "perPath: /accounts/{account_id}/machine_translation_locale_provider_mappings post security [{\"Basic\":[]},{\"OAuthExplicit\":[\"write\"]},{\"OAuthImplicit\":[\"write\"]},{\"Token\":[]}]",
+ "perPath: /accounts/{account_id}/machine_translation_settings get security [{\"Basic\":[]},{\"OAuthExplicit\":[\"read\"]},{\"OAuthImplicit\":[\"read\"]},{\"Token\":[]}]",
+ "perPath: /accounts/{account_id}/machine_translation_settings patch security [{\"Basic\":[]},{\"OAuthExplicit\":[\"write\"]},{\"OAuthImplicit\":[\"write\"]},{\"Token\":[]}]",
+ "schemes.Basic.scheme: \"basic\"",
+ "schemes.Basic.type: \"http\"",
+ "schemes.Token.description: \"Enter your token in the format `token TOKEN`\"",
+ "schemes.Token.in: \"header\"",
+ "schemes.Token.name: \"Authorization\"",
+ "schemes.Token.type: \"apiKey\"",
+ "security[]: {\"Basic\":[]}",
+ "security[]: {\"Token\":[]}",
+ "servers[0]: {\"description\":\"EU production server\",\"url\":\"https://api.phrase.com/v2\"}",
+ "servers[1]: {\"description\":\"US production server\",\"url\":\"https://api.us.app.phrase.com/v2\"}"
+]

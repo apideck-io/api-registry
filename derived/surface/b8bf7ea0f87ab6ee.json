@@ -1,0 +1,7 @@
+[
+ "perPath: /{webhook-endpoint} get security []",
+ "perPath: /{webhook-endpoint} post security []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"url\":\"https://{domain}\",\"variables\":{\"domain\":{\"default\":\"your-domain.com\"}}}"
+]

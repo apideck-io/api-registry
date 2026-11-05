@@ -1,0 +1,22 @@
+[
+ "perPath: /billing_activity * [{\"description\":\"Production\",\"url\":\"https://api.ebay.com{basePath}\",\"variables\":{\"basePath\":{\"default\":\"/sell/finances/v1\"}}}]",
+ "perPath: /billing_activity get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.finances\"]}]",
+ "perPath: /order_earnings get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.finances.earnings.read\"]}]",
+ "perPath: /order_earnings/{order_id} get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.finances.earnings.read\"]}]",
+ "perPath: /order_earnings_summary get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.finances.earnings.read\"]}]",
+ "perPath: /payout get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.finances\"]}]",
+ "perPath: /payout/{payout_Id} get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.finances\"]}]",
+ "perPath: /payout_summary get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.finances\"]}]",
+ "perPath: /seller_funds_summary get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.finances\"]}]",
+ "perPath: /transaction get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.finances\"]}]",
+ "perPath: /transaction_summary get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.finances\"]}]",
+ "perPath: /transfer/{transfer_Id} get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.finances\"]}]",
+ "schemes.api_auth.description: \"The security definitions for this API. Please check individual operations for applicable scopes.\"",
+ "schemes.api_auth.flows.authorizationCode.authorizationUrl: \"https://auth.ebay.com/oauth2/authorize\"",
+ "schemes.api_auth.flows.authorizationCode.scopes.[\"https://api.ebay.com/oauth/api_scope/sell.finances\"]: \"View and manage your payment and order information to display this information to you and allow you to initiate refunds using the third party application\"",
+ "schemes.api_auth.flows.authorizationCode.tokenUrl: \"https://api.ebay.com/identity/v1/oauth2/token\"",
+ "schemes.api_auth.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://apiz.ebay.com{basePath}\",\"variables\":{\"basePath\":{\"default\":\"/sell/finances/v1\"}}}",
+ "servers[1]: {\"description\":\"Production\",\"url\":\"https://api.ebay.com{basePath}\",\"variables\":{\"basePath\":{\"default\":\"/sell/finances/v1\"}}}"
+]

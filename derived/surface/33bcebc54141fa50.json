@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Create in your Wappalyzer account (lookup needs Business plan)\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"x-api-key\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://api.wappalyzer.com/v2\"}"
+]

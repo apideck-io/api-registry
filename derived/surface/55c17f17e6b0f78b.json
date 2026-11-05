@@ -1,0 +1,19 @@
+[
+ "perPath: /oauth2/access_token post security []",
+ "schemes.apiKey.description: \"The `Authorization` header must contain the API key. The value should be prefixed with `API-Key` followed by a space and the actual API key.\\n\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"Authorization\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "schemes.apiKey.x-default: \"API-Key 3039ba033eb1410caa0a2227158d63c9d6502cd8\"",
+ "schemes.oauth2.description: \"Send the authenticating user to the PandaDoc OAuth2 request URL. We recommend a button or a link titled\\n\\\"Connect to PandaDoc\\\" if you are connecting users from a custom application. Users will see the \\\"Authorize Application\\\" screen.\\nWhen the user clicks \\\"Authorize\\\", PandaDoc redirects the user back to your site with an authorization code inside the URL.\\nThe authorization code is valid for 60 seconds and can be used only once, so exchange it for an access token immediately.\\n\\nhttps://app.pandadoc.com/oauth2/authorize?client_id={client_id}&redirect_uri={redirect_uri}&scope=read%20write&response_type=code\\n\\nRequest `read`, `write`, or both as space-separated `read write`. `read+write` is deprecated.\\n\\n`client_id` and `redirect_uri` values should match your application settings.\\n\"",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://app.pandadoc.com/oauth2/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.refreshUrl: \"https://api.pandadoc.com/oauth2/access_token\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"read+write\"]: \"Deprecated. Use space-separated `read write` instead.\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.read: \"View templates and document details.\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.write: \"Create, send, delete, and download documents.\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://api.pandadoc.com/oauth2/access_token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security[]: {\"apiKey\":[]}",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"description\":\"Public API\",\"url\":\"https://api.pandadoc.com\"}"
+]

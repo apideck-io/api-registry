@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.apiKeyHeader.in: \"header\"",
+ "schemes.apiKeyHeader.name: \"x-api-key\"",
+ "schemes.apiKeyHeader.type: \"apiKey\"",
+ "security[]: {\"apiKeyHeader\":[]}",
+ "servers[0]: {\"url\":\"https://api.symanto.net\"}"
+]

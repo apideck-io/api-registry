@@ -1,0 +1,14 @@
+[
+ "perPath: []",
+ "schemes.BearerAuth.bearerFormat: \"JWT\"",
+ "schemes.BearerAuth.description: \"Bearer token authentication\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "schemes.HeaderAuth.description: \"API token in Api-Token header\"",
+ "schemes.HeaderAuth.in: \"header\"",
+ "schemes.HeaderAuth.name: \"Api-Token\"",
+ "schemes.HeaderAuth.type: \"apiKey\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "security[]: {\"HeaderAuth\":[]}",
+ "servers[0]: {\"description\":\"Mailtrap API\",\"url\":\"https://mailtrap.io\"}"
+]

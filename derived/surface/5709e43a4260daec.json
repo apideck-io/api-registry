@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.description: \"The Authorization header expects a Bearer token. Use an admin API key. This is a server-side secret key. Generate one on the [API keys page](https://app.mintlify.com/settings/organization/api-keys) in your dashboard.\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.mintlify.com\"}"
+]

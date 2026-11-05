@@ -1,0 +1,15 @@
+[
+ "perPath: /VisualCrossingWebServices/rest/services/timeline/{location} * [{\"url\":\"https://weather.visualcrossing.com\"}]",
+ "perPath: /VisualCrossingWebServices/rest/services/timeline/{location} get [{\"url\":\"https://weather.visualcrossing.com\"}]",
+ "perPath: /VisualCrossingWebServices/rest/services/timeline/{location}/{startdate} * [{\"url\":\"https://weather.visualcrossing.com\"}]",
+ "perPath: /VisualCrossingWebServices/rest/services/timeline/{location}/{startdate} get [{\"url\":\"https://weather.visualcrossing.com\"}]",
+ "perPath: /VisualCrossingWebServices/rest/services/timeline/{location}/{startdate}/{enddate} * [{\"url\":\"https://weather.visualcrossing.com\"}]",
+ "perPath: /VisualCrossingWebServices/rest/services/timeline/{location}/{startdate}/{enddate} get [{\"url\":\"https://weather.visualcrossing.com\"}]",
+ "perPath: /VisualCrossingWebServices/rest/services/weatherdata/forecast * [{\"url\":\"https://weather.visualcrossing.com\"}]",
+ "perPath: /VisualCrossingWebServices/rest/services/weatherdata/forecast get [{\"url\":\"https://weather.visualcrossing.com\"}]",
+ "perPath: /VisualCrossingWebServices/rest/services/weatherdata/history * [{\"url\":\"https://weather.visualcrossing.com\"}]",
+ "perPath: /VisualCrossingWebServices/rest/services/weatherdata/history get [{\"url\":\"https://weather.visualcrossing.com\"}]",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"url\":\"https://weather.visualcrossing.com\"}"
+]

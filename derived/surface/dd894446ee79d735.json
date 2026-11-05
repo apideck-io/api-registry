@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.Bearer.description: \"JWT Authorization header using the Bearer scheme.\"",
+ "schemes.Bearer.scheme: \"bearer\"",
+ "schemes.Bearer.type: \"http\"",
+ "security[]: {\"Bearer\":[]}",
+ "servers[0]: {\"url\":\"/v2\"}"
+]

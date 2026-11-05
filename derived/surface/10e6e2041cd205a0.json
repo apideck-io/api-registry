@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "servers[0]: {\"url\":\"https://int-api.mx.com\"}",
+ "servers[1]: {\"url\":\"https://api.mx.com\"}"
+]

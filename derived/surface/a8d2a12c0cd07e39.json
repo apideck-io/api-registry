@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.description: \"An API Key is required to call Pinecone APIs. Get yours from the [console](https://app.pinecone.io/).\"",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"Api-Key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Production API endpoints\",\"url\":\"https://api.pinecone.io\"}"
+]

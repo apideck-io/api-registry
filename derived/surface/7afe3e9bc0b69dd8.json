@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.ApiKey.description: \"Authenticate using your LastPass API key. Set the `Authorization` header to `Api-Key <your-lpkey>`.\\n\\nExample: `Api-Key lpkey_XXXXXXXXXXXX_YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY`\\n\\nGenerate your API key in the LastPass Admin Console under **Advanced → LastPass API**.\\n\"",
+ "schemes.ApiKey.in: \"header\"",
+ "schemes.ApiKey.name: \"Authorization\"",
+ "schemes.ApiKey.type: \"apiKey\"",
+ "security[]: {\"ApiKey\":[]}",
+ "servers[0]: {\"url\":\"https://api.lastpass.com/business\"}"
+]

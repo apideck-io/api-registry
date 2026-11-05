@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Settings > API Keys\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"X-API-Key\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://backend.autosana.ai\"}"
+]

@@ -1,0 +1,17 @@
+[
+ "perPath: /collections get security [{\"APIToken\":[]}]",
+ "perPath: /resumable_upload_url post [{\"url\":\"resumable_upload_url\"}]",
+ "perPath: /resumable_upload_url post security []",
+ "perPath: /resumable_upload_url put [{\"url\":\"resumable_upload_url\"}]",
+ "perPath: /resumable_upload_url put security []",
+ "perPath: /upload_url put [{\"url\":\"upload_url\"}]",
+ "perPath: /upload_url put security []",
+ "perPath: /webhooks * [{\"url\":\"https://brandfolder.com/api/v1\"}]",
+ "perPath: /webhooks/send post [{\"url\":\"https://brandfolder.com/api/v1\"}]",
+ "perPath: /webhooks/{webhook_id} * [{\"url\":\"https://brandfolder.com/api/v1\"}]",
+ "schemes.APIToken.description: \"API Token.\"",
+ "schemes.APIToken.scheme: \"bearer\"",
+ "schemes.APIToken.type: \"http\"",
+ "security[]: {\"APIToken\":[]}",
+ "servers[0]: {\"url\":\"https://brandfolder.com/api/v4\"}"
+]

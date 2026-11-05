@@ -1,0 +1,12 @@
+[
+ "perPath: /projects/{projectId} delete security [{\"apiKey\":[]},{\"bearerAuth\":[]}]",
+ "perPath: /projects/{projectId} patch security [{\"apiKey\":[]},{\"bearerAuth\":[]}]",
+ "perPath: /tests/{testId}/evaluate post security [{\"apiKey\":[]},{\"bearerAuth\":[]}]",
+ "perPath: /tests/{testId}/results get security [{\"apiKey\":[]},{\"bearerAuth\":[]}]",
+ "perPath: /versions/{projectVersionId} get security [{\"apiKey\":[]},{\"bearerAuth\":[]}]",
+ "schemes.bearerAuth.description: \"Bearer authentication header of the form `Bearer <token>`, where `<token>` is your workspace API key. See [Find your API key](https://www.openlayer.com/docs/workspace-and-projects/find-your-api-key) for more information.\\n\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Our prod backend\",\"url\":\"https://api.openlayer.com/v1\"}"
+]

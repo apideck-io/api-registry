@@ -1,0 +1,15 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Insight platform API key\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"X-Api-Key\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"description\":\"US\",\"url\":\"https://us.api.insight.rapid7.com\"}",
+ "servers[1]: {\"description\":\"US2\",\"url\":\"https://us2.api.insight.rapid7.com\"}",
+ "servers[2]: {\"description\":\"US3\",\"url\":\"https://us3.api.insight.rapid7.com\"}",
+ "servers[3]: {\"description\":\"EU\",\"url\":\"https://eu.api.insight.rapid7.com\"}",
+ "servers[4]: {\"description\":\"CA\",\"url\":\"https://ca.api.insight.rapid7.com\"}",
+ "servers[5]: {\"description\":\"AU\",\"url\":\"https://au.api.insight.rapid7.com\"}",
+ "servers[6]: {\"description\":\"AP\",\"url\":\"https://ap.api.insight.rapid7.com\"}"
+]

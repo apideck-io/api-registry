@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.BasicAuth.scheme: \"basic\"",
+ "schemes.BasicAuth.type: \"http\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"BasicAuth\":[]}",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Producción\",\"url\":\"https://api.alegra.com/api/v1\"}"
+]

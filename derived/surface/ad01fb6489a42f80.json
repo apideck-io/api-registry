@@ -1,0 +1,12 @@
+[
+ "perPath: []",
+ "schemes.ShippoToken.description: \"Shippo API token, sent as `Authorization: ShippoToken <API_TOKEN>`.\"",
+ "schemes.ShippoToken.in: \"header\"",
+ "schemes.ShippoToken.name: \"Authorization\"",
+ "schemes.ShippoToken.type: \"apiKey\"",
+ "schemes.ShippoToken.x-default: \"ShippoToken \"",
+ "schemes.ShippoToken.x-token-format: \"ShippoToken {token}\"",
+ "schemes.ShippoToken.x-token-prefix: \"ShippoToken\"",
+ "security[]: {\"ShippoToken\":[]}",
+ "servers[0]: {\"description\":\"Shippo API\",\"url\":\"https://api.goshippo.com\"}"
+]

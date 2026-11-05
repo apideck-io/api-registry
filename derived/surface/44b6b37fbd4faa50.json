@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyQuery.description: \"API key for authentication\"",
+ "schemes.ApiKeyQuery.in: \"query\"",
+ "schemes.ApiKeyQuery.name: \"api\"",
+ "schemes.ApiKeyQuery.type: \"apiKey\"",
+ "security[]: {\"ApiKeyQuery\":[]}",
+ "servers[0]: {\"url\":\"https://bulk.debounce.io\"}"
+]

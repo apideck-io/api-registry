@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.api_key.description: \"The API Key with format `Token token=<API_KEY>`\"",
+ "schemes.api_key.in: \"header\"",
+ "schemes.api_key.name: \"Authorization\"",
+ "schemes.api_key.type: \"apiKey\"",
+ "security[]: {\"api_key\":[]}",
+ "servers[0]: {\"description\":\"PagerDuty V2 API.\",\"url\":\"https://api.pagerduty.com\"}"
+]

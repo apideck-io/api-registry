@@ -1,0 +1,22 @@
+[
+ "perPath: /agent/models get security [{\"bearerAuth\":[]}]",
+ "perPath: /edit_in_descript/schema post security [{\"bearerAuth\":[]}]",
+ "perPath: /export/transcript post security [{\"bearerAuth\":[]}]",
+ "perPath: /jobs get security [{\"bearerAuth\":[]}]",
+ "perPath: /jobs/agent post security [{\"bearerAuth\":[]}]",
+ "perPath: /jobs/import/drive_media post security [{\"bearerAuth\":[]}]",
+ "perPath: /jobs/import/project_media post security [{\"bearerAuth\":[]}]",
+ "perPath: /jobs/publish post security [{\"bearerAuth\":[]}]",
+ "perPath: /jobs/{job_id} delete security [{\"bearerAuth\":[]}]",
+ "perPath: /jobs/{job_id} get security [{\"bearerAuth\":[]}]",
+ "perPath: /projects get security [{\"bearerAuth\":[]}]",
+ "perPath: /projects/{project_id} get security [{\"bearerAuth\":[]}]",
+ "perPath: /published_projects/{publishedProjectSlug} get security [{\"bearerAuth\":[]}]",
+ "perPath: /search get security [{\"bearerAuth\":[]}]",
+ "perPath: /status get security [{\"bearerAuth\":[]}]",
+ "schemes.bearerAuth.description: \"Personal API token created in Descript Settings → API Tokens. See the Authentication section for details.\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://descriptapi.com/v1\"}"
+]

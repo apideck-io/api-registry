@@ -1,0 +1,13 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Settings > Integrations > Integration Keys (admin only)\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"x-pendo-integration-key\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"description\":\"US\",\"url\":\"https://app.pendo.io\"}",
+ "servers[1]: {\"description\":\"US1\",\"url\":\"https://us1.app.pendo.io\"}",
+ "servers[2]: {\"description\":\"EU\",\"url\":\"https://app.eu.pendo.io\"}",
+ "servers[3]: {\"description\":\"Japan\",\"url\":\"https://app.jpn.pendo.io\"}",
+ "servers[4]: {\"description\":\"Australia\",\"url\":\"https://app.au.pendo.io\"}"
+]

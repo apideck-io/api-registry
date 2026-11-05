@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.APIKeyHeader.in: \"header\"",
+ "schemes.APIKeyHeader.name: \"Authorization\"",
+ "schemes.APIKeyHeader.type: \"apiKey\"",
+ "schemes.APIKeyHeader.x-default: \"ShippoToken \"",
+ "security[]: {\"APIKeyHeader\":[]}",
+ "servers[0]: {\"url\":\"https://api.goshippo.com\"}"
+]

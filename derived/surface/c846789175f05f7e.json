@@ -1,0 +1,7 @@
+[
+ "auth: null",
+ "hosts: [\"{{security-token-service}}\",\"{{service-root}}\"]",
+ "nested: []",
+ "scripts: []",
+ "variables: []"
+]

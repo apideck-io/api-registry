@@ -1,0 +1,8 @@
+[
+ "perPath: /v1/apps/accesstokens post security []",
+ "schemes.bearerAuth.bearerFormat: \"API Access Token\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://api.fire.com/business\"}"
+]

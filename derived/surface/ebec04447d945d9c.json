@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.BearerAuth.description: \"An [access token](https://docs.pinecone.io/guides/organizations/manage-service-accounts#retrieve-an-access-token) must be provided in the `Authorization` header using the `Bearer` scheme.\\n\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Production API endpoints\",\"url\":\"https://api.pinecone.io\"}"
+]

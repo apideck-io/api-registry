@@ -1,0 +1,16 @@
+[
+ "basePath: \"/\"",
+ "definitions.api_key.in: \"query\"",
+ "definitions.api_key.name: \"api_key\"",
+ "definitions.api_key.type: \"apiKey\"",
+ "host: \"free.gisgraphy.com\"",
+ "parameterizedHost: null",
+ "perOp: /addressparser/parse get [{\"api_key\":[]}]",
+ "perOp: /fulltext/search get [{\"api_key\":[]}]",
+ "perOp: /geocoding/geocode get [{\"api_key\":[]}]",
+ "perOp: /geoloc/search get [{\"api_key\":[]}]",
+ "perOp: /reversegeocoding/reversegeocode get [{\"api_key\":[]}]",
+ "perOp: /street/find get [{\"api_key\":[]}]",
+ "schemes: [\"http\",\"https\"]",
+ "security: null"
+]

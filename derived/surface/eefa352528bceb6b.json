@@ -1,0 +1,13 @@
+[
+ "perPath: /brand/{brand_domain}/return-portal get security []",
+ "perPath: /brand/{brand_domain}/return-portal/incoming post security [{\"JWTtoken\":[]}]",
+ "perPath: /brand/{brand_domain}/return-portal/label/download get security [{\"JWTtoken\":[]}]",
+ "perPath: /brand/{brand_domain}/return-portal/label/polling get security [{\"JWTtoken\":[]}]",
+ "perPath: /brand/{brand_domain}/return-portal/outgoing get security []",
+ "perPath: /brand/{brand_domain}/return-portal/uploads post security [{\"JWTtoken\":[]}]",
+ "schemes.JWTtoken.description: \"The JWT generated when starting the Return Portal process\"",
+ "schemes.JWTtoken.scheme: \"bearer\"",
+ "schemes.JWTtoken.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Sendcloud Production\",\"url\":\"https://panel.sendcloud.sc/api/v2\"}"
+]

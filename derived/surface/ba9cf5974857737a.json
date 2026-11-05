@@ -1,0 +1,15 @@
+[
+ "perPath: []",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://oauth.onshape.com/oauth/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.OAuth2Delete: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.OAuth2Purchase: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.OAuth2Read: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.OAuth2ReadPII: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.OAuth2Share: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.OAuth2Write: \"\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://oauth.onshape.com/oauth/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "schemes.oauth2.x-token-endpoint-auth-method: \"client_secret_post\"",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"url\":\"https://cad.onshape.com/api\"}"
+]

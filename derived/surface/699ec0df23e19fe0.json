@@ -1,0 +1,14 @@
+[
+ "perPath: /json/api/v1/all/app * [{\"url\":\"https://storeleads.app\"}]",
+ "perPath: /json/api/v1/all/app get [{\"url\":\"https://storeleads.app\"}]",
+ "perPath: /json/api/v1/all/app/{appIdentifier} * [{\"url\":\"https://storeleads.app\"}]",
+ "perPath: /json/api/v1/all/app/{appIdentifier} get [{\"url\":\"https://storeleads.app\"}]",
+ "perPath: /json/api/v1/all/domain * [{\"url\":\"https://storeleads.app\"}]",
+ "perPath: /json/api/v1/all/domain get [{\"url\":\"https://storeleads.app\"}]",
+ "perPath: /json/api/v1/all/domain/{domainName} * [{\"url\":\"https://storeleads.app\"}]",
+ "perPath: /json/api/v1/all/domain/{domainName} get [{\"url\":\"https://storeleads.app\"}]",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://storeleads.app\"}"
+]

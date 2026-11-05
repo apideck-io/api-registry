@@ -1,0 +1,9 @@
+[
+ "perPath: /docs get security []",
+ "perPath: /openapi.json get security []",
+ "schemes.ApiKey.bearerFormat: \"Bearer\"",
+ "schemes.ApiKey.scheme: \"bearer\"",
+ "schemes.ApiKey.type: \"http\"",
+ "security[]: {\"ApiKey\":[]}",
+ "servers[0]: {\"url\":\"https://rest.runpod.io/v1\"}"
+]

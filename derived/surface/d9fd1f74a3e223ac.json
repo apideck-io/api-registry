@@ -1,0 +1,14 @@
+[
+ "perPath: /destinations get security [{\"api_key\":[]}]",
+ "perPath: /destinations post security [{\"api_key\":[]}]",
+ "perPath: /destinations/{id} delete security [{\"api_key\":[]}]",
+ "perPath: /destinations/{id} get security [{\"api_key\":[]}]",
+ "perPath: /destinations/{id} put security [{\"api_key\":[]}]",
+ "schemes.api_key.in: \"header\"",
+ "schemes.api_key.name: \"X-Authorization\"",
+ "schemes.api_key.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"2026-10 (Stable)\",\"url\":\"https://api.loopreturns.com/api/2026-10\"}",
+ "servers[1]: {\"description\":\"2026-07\",\"url\":\"https://api.loopreturns.com/api/2026-07\"}",
+ "servers[2]: {\"description\":\"Unstable (Preview)\",\"url\":\"https://api.loopreturns.com/api/unstable\"}"
+]

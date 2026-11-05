@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.Bearer.description: \"You can authenticate requests with a JWT Authorization header using the Bearer scheme (Example: 'Bearer 12345abcdef')\"",
+ "schemes.Bearer.in: \"header\"",
+ "schemes.Bearer.name: \"Authorization\"",
+ "schemes.Bearer.type: \"apiKey\"",
+ "security[]: {\"Bearer\":[]}",
+ "servers: null"
+]

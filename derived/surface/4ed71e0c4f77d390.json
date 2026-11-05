@@ -1,0 +1,16 @@
+[
+ "basePath: null",
+ "definitions.oauth2.authorizationUrl: \"https://account.hubstaff.com/authorizations/new\"",
+ "definitions.oauth2.description: \"Hubstaff Account OpenID Connect Authentication\"",
+ "definitions.oauth2.flow: \"accessCode\"",
+ "definitions.oauth2.scopes.[\"hubstaff:read\"]: \"Read only access to the Hubstaff API\"",
+ "definitions.oauth2.scopes.[\"hubstaff:write\"]: \"Write only access to the Hubstaff API\"",
+ "definitions.oauth2.tokenUrl: \"https://account.hubstaff.com/access_tokens\"",
+ "definitions.oauth2.type: \"oauth2\"",
+ "definitions.oauth2.x-nonce: true",
+ "host: \"api.hubstaff.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"oauth2\":[\"hubstaff:read\",\"hubstaff:write\"]}"
+]

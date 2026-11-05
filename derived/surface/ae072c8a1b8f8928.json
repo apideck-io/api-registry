@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://connect.reapit.cloud/oauth/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.scopes: {}",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://connect.reapit.cloud/oauth/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"url\":\"https://platform.reapit.cloud\"}"
+]

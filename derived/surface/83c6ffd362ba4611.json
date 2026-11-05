@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.sec0.in: \"header\"",
+ "schemes.sec0.name: \"Authorization\"",
+ "schemes.sec0.type: \"apiKey\"",
+ "schemes.sec0.x-bearer-format: \"bearer\"",
+ "security[]: {\"sec0\":[]}",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://ironcladapp.com/scim/v2\"}",
+ "servers[1]: {\"description\":\"EU Production server\",\"url\":\"https://eu1.ironcladapp.com/scim/v2\"}",
+ "servers[2]: {\"description\":\"Demo server\",\"url\":\"https://demo.ironcladapp.com/scim/v2\"}"
+]

@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Admin-generated API key (ITG.…), revoked after 90 days unused\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"x-api-key\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"description\":\"US\",\"url\":\"https://api.itglue.com\"}",
+ "servers[1]: {\"description\":\"EU\",\"url\":\"https://api.eu.itglue.com\"}",
+ "servers[2]: {\"description\":\"Australia\",\"url\":\"https://api.au.itglue.com\"}"
+]

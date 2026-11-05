@@ -1,0 +1,14 @@
+[
+ "basePath: \"/api/v1\"",
+ "definitions.X-User-Access-Key.in: \"header\"",
+ "definitions.X-User-Access-Key.name: \"X-User-Access-Key\"",
+ "definitions.X-User-Access-Key.type: \"apiKey\"",
+ "definitions.X-User-Access-Token.in: \"header\"",
+ "definitions.X-User-Access-Token.name: \"X-User-Access-Token\"",
+ "definitions.X-User-Access-Token.type: \"apiKey\"",
+ "host: \"cenit.io\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"X-User-Access-Key\":[],\"X-User-Access-Token\":[]}"
+]

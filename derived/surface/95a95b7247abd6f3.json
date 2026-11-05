@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.serviceKey.description: \"A service key created inside Proof, sent as `Authorization: Bearer sk_...`. Keys are scoped and bound to one environment.\\n\"",
+ "schemes.serviceKey.scheme: \"bearer\"",
+ "schemes.serviceKey.type: \"http\"",
+ "security[]: {\"serviceKey\":[]}",
+ "servers[0]: {\"url\":\"https://api.geodynamics.dev/proof\"}"
+]

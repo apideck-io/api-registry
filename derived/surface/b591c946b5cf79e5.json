@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearer.description: \"Pocket Settings > Developer > API Keys (pk_...)\"",
+ "schemes.bearer.scheme: \"bearer\"",
+ "schemes.bearer.type: \"http\"",
+ "security[]: {\"bearer\":[]}",
+ "servers[0]: {\"url\":\"https://public.heypocketai.com/api/v1\"}"
+]

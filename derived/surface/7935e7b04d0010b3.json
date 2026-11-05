@@ -1,0 +1,8 @@
+[
+ "perPath: /v1/bookings get security [{\"OAuth2\":[]}]",
+ "schemes.OAuth2.flows.clientCredentials.scopes.[\"bookings:read\"]: \"Grants read access\"",
+ "schemes.OAuth2.flows.clientCredentials.tokenUrl: \"https://app.navan.com/ta-auth/oauth/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security: null",
+ "servers: null"
+]

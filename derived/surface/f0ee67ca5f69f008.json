@@ -1,0 +1,15 @@
+[
+ "perPath: /confirmThirdParty post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "perPath: /declineThirdParty post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "perPath: /payout post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "perPath: /storeDetail post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "perPath: /storeDetailAndSubmitThirdParty post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "perPath: /submitThirdParty post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-API-Key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "schemes.BasicAuth.scheme: \"basic\"",
+ "schemes.BasicAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://pal-test.adyen.com/pal/servlet/Payout/v68\"}"
+]

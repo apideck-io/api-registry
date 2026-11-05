@@ -1,0 +1,12 @@
+[
+ "perPath: /authenticate post security [{\"bearerAuth\":[]}]",
+ "schemes.apiKeyAuth.in: \"header\"",
+ "schemes.apiKeyAuth.name: \"X-API-Key\"",
+ "schemes.apiKeyAuth.type: \"apiKey\"",
+ "schemes.bearerAuth.bearerFormat: \"Bearer <credential>\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Api endpoint\",\"url\":\"https://api.togai.com/\"}",
+ "servers[1]: {\"description\":\"Sandbox api endpoint\",\"url\":\"https://sandbox-api.togai.com/\"}"
+]

@@ -1,0 +1,18 @@
+[
+ "basePath: null",
+ "definitions.oauth2.authorizationUrl: \"https://identity.apaleo.com/connect/authorize\"",
+ "definitions.oauth2.flow: \"implicit\"",
+ "definitions.oauth2.scopes.[\"reservations.import\"]: \"Import reservations\"",
+ "definitions.oauth2.scopes.admin: \"Full access\"",
+ "definitions.oauth2.type: \"oauth2\"",
+ "host: null",
+ "parameterizedHost: null",
+ "perOp: /account/v1/account-actions/current/set-live put [{\"oauth2\":[\"account.manage\",\"admin\"]}]",
+ "perOp: /account/v1/account-actions/current/suspend put [{\"oauth2\":[\"account.manage\",\"admin\"]}]",
+ "perOp: /account/v1/accounts get [{\"oauth2\":[\"accounts.read\"]}]",
+ "perOp: /account/v1/accounts post [{\"oauth2\":[\"account.create\"]}]",
+ "perOp: /account/v1/accounts/current get [{\"oauth2\":[]}]",
+ "perOp: /account/v1/accounts/current put [{\"oauth2\":[\"account.manage\",\"admin\"]}]",
+ "schemes: null",
+ "security: null"
+]

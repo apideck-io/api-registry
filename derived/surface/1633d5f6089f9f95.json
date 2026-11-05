@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"Authorization\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "schemes.ApiKeyAuth.x-bearer-format: \"bearer\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.toriihq.com/v1.0\"}"
+]

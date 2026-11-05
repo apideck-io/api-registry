@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://grain.com/_/public-api/oauth2/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.personal: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.workspace: \"\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://api.grain.com/_/public-api/oauth2/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "schemes.oauth2.x-token-endpoint-auth-method: \"client_secret_post\"",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"url\":\"https://api.grain.com/_/public-api/v2\"}"
+]

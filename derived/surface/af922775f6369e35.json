@@ -1,0 +1,23 @@
+[
+ "perPath: /grants get security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]},{\"clientKey\":[]}]",
+ "perPath: /grants post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]},{\"clientKey\":[]}]",
+ "perPath: /grants/{id} get security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]},{\"clientKey\":[]}]",
+ "perPath: /transactions get security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]},{\"clientKey\":[]}]",
+ "perPath: /transactions/{id} get security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]},{\"clientKey\":[]}]",
+ "perPath: /transfers get security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]},{\"clientKey\":[]}]",
+ "perPath: /transfers post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]},{\"clientKey\":[]}]",
+ "perPath: /transfers/approve post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]},{\"clientKey\":[]}]",
+ "perPath: /transfers/cancel post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]},{\"clientKey\":[]}]",
+ "perPath: /transfers/{id} get security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]},{\"clientKey\":[]}]",
+ "perPath: /transfers/{transferId}/returns post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]},{\"clientKey\":[]}]",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-API-Key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "schemes.BasicAuth.scheme: \"basic\"",
+ "schemes.BasicAuth.type: \"http\"",
+ "schemes.clientKey.in: \"query\"",
+ "schemes.clientKey.name: \"clientKey\"",
+ "schemes.clientKey.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://balanceplatform-api-test.adyen.com/btl/v4\"}"
+]

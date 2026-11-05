@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"The production API server\",\"url\":\"https://api.intercom.io\"}",
+ "servers[1]: {\"description\":\"The european API server\",\"url\":\"https://api.eu.intercom.io\"}",
+ "servers[2]: {\"description\":\"The australian API server\",\"url\":\"https://api.au.intercom.io\"}"
+]

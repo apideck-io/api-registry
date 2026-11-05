@@ -1,0 +1,18 @@
+[
+ "perPath: /v3/shipping/labels post security [{\"accessToken\":[]}]",
+ "perPath: /v3/shipping/labels/carriers get security [{\"accessToken\":[]}]",
+ "perPath: /v3/shipping/labels/carriers/{carrierShortName}/package-types get security [{\"accessToken\":[]}]",
+ "perPath: /v3/shipping/labels/carriers/{carrierShortName}/trackings/{trackingNo} get security [{\"accessToken\":[]}]",
+ "perPath: /v3/shipping/labels/purchase-orders/{purchaseOrderId} get security [{\"accessToken\":[]}]",
+ "perPath: /v3/shipping/labels/shipping-estimates post security [{\"accessToken\":[]}]",
+ "perPath: /v3/shipping/scan-form get security [{\"accessToken\":[]}]",
+ "perPath: /v3/shipping/scan-form post security [{\"accessToken\":[]}]",
+ "perPath: /v3/shipping/ship-nodes/{shipNodeId}/ship-on-date get security [{\"accessToken\":[]}]",
+ "schemes.accessToken.description: \"Access token from POST /v3/token (client_credentials grant).\"",
+ "schemes.accessToken.in: \"header\"",
+ "schemes.accessToken.name: \"WM_SEC.ACCESS_TOKEN\"",
+ "schemes.accessToken.type: \"apiKey\"",
+ "security[]: {\"accessToken\":[]}",
+ "servers[0]: {\"description\":\"Production URL\",\"url\":\"https://marketplace.walmartapis.com\"}",
+ "servers[1]: {\"description\":\"Sandbox URL\",\"url\":\"https://sandbox.walmartapis.com\"}"
+]

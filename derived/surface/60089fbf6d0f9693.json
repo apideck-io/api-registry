@@ -1,0 +1,8 @@
+[
+ "[\"openapi.oas.json\"].perPath: []",
+ "[\"openapi.oas.json\"].schemes.itc-bearer-token.bearerFormat: \"JWT\"",
+ "[\"openapi.oas.json\"].schemes.itc-bearer-token.scheme: \"bearer\"",
+ "[\"openapi.oas.json\"].schemes.itc-bearer-token.type: \"http\"",
+ "[\"openapi.oas.json\"].security[]: {\"itc-bearer-token\":[]}",
+ "[\"openapi.oas.json\"].servers[0]: {\"url\":\"https://api.appstoreconnect.apple.com/\"}"
+]

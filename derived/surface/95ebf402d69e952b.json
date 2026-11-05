@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.description: \"Avoma uses bearer token for authentication of the client. For now, you will have to contact [Avoma Support](mailto:help@avoma.com) to get one issued for you.\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Avoma APIs\",\"url\":\"https://api.avoma.com\"}"
+]

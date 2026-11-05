@@ -1,0 +1,9 @@
+[
+ "basePath: \"/\"",
+ "definitions: null",
+ "host: \"api.taggun.io\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

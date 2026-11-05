@@ -1,0 +1,11 @@
+[
+ "basePath: \"/rest/default\"",
+ "definitions.api_key.in: \"header\"",
+ "definitions.api_key.name: \"api_key\"",
+ "definitions.api_key.type: \"apiKey\"",
+ "host: \"example.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"http\"]",
+ "security: null"
+]

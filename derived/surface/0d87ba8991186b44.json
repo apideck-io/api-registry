@@ -1,0 +1,10 @@
+[
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/tasks\"].description: \"Create, edit, organize, and delete all your tasks\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/tasks.readonly\"].description: \"View your tasks\"",
+ "baseUrl: \"https://tasks.googleapis.com/\"",
+ "batchPath: \"batch\"",
+ "endpoints: null",
+ "mtlsRootUrl: \"https://tasks.mtls.googleapis.com/\"",
+ "rootUrl: \"https://tasks.googleapis.com/\"",
+ "servicePath: \"\""
+]

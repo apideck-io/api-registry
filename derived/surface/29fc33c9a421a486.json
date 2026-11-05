@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Production API\",\"url\":\"https://api.gocardless.com\"}"
+]

@@ -1,0 +1,8 @@
+[
+ "perPath: /route/calculate get [{\"url\":\"https://api.loket-acc.nl/geolocation\"}]",
+ "perPath: /v2/providers/employers/payrolladministrations/payrolltaxreturns/{payrolltaxreturnId}/report * [{\"description\":\"Production server Payroll Tax Return Microservice\",\"url\":\"https://api.loket.nl/payrolltaxreturn\"}]",
+ "schemes: null",
+ "security: []",
+ "servers[0]: {\"description\":\"Production environment\",\"url\":\"https://api.loket.nl\"}",
+ "servers[1]: {\"description\":\"Acceptance environment\",\"url\":\"https://api.loket-acc.nl\"}"
+]

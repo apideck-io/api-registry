@@ -1,0 +1,12 @@
+[
+ "basePath: \"/v2\"",
+ "definitions.apiKey.description: \"API Key Authentication\"",
+ "definitions.apiKey.in: \"header\"",
+ "definitions.apiKey.name: \"Authorization\"",
+ "definitions.apiKey.type: \"apiKey\"",
+ "host: \"api.kashflow.com:443\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

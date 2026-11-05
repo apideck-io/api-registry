@@ -1,0 +1,16 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.bearerFormat: \"JWT\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"/as/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.refreshUrl: \"/as/token\"",
+ "schemes.oauth2.flows.authorizationCode.scopes: {}",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"/as/token\"",
+ "schemes.oauth2.flows.clientCredentials.scopes: {}",
+ "schemes.oauth2.flows.clientCredentials.tokenUrl: \"/as/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"url\":\"https://api.pingone.{tld}/{basePath}\",\"variables\":{\"basePath\":{\"default\":\"v1\"},\"tld\":{\"default\":\"com\",\"enum\":[\"eu\",\"com\",\"asia\",\"com.au\",\"ca\",\"sg\"]}}}"
+]

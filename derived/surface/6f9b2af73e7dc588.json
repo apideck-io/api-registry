@@ -1,0 +1,9 @@
+[
+ "perPath: /api/{version}/audience/{id_or_slug}/count get security [{\"bearerAuth\":[]}]",
+ "perPath: /api/{version}/audience/{id_or_slug}/list get security [{\"bearerAuth\":[]}]",
+ "perPath: /api/{version}/audiences get security [{\"bearerAuth\":[]}]",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"http://yourdomain.access.mx.com\"}"
+]

@@ -1,0 +1,12 @@
+[
+ "perPath: /attributes get security [{\"sec0\":[]}]",
+ "perPath: /attributes patch security [{\"sec0\":[]}]",
+ "perPath: /contractors/id_upload_link post security []",
+ "perPath: /employees/id_upload_link post security []",
+ "schemes.sec0.in: \"header\"",
+ "schemes.sec0.name: \"Authorization\"",
+ "schemes.sec0.type: \"apiKey\"",
+ "schemes.sec0.x-bearer-format: \"bearer\"",
+ "security[]: {\"sec0\":[]}",
+ "servers[0]: {\"url\":\"https://api.zeal.com\"}"
+]

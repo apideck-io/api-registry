@@ -1,0 +1,12 @@
+[
+ "basePath: \"/api/transform\"",
+ "definitions.api-key.in: \"query\"",
+ "definitions.api-key.name: \"apikey\"",
+ "definitions.api-key.type: \"apiKey\"",
+ "definitions.basic.type: \"basic\"",
+ "host: \"apimatic.io\"",
+ "parameterizedHost: null",
+ "perOp: /transform post []",
+ "schemes: [\"https\"]",
+ "security: []"
+]

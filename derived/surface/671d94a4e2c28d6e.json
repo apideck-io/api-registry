@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Integrations > API Keys > Create New API v3 Key; header value must be literally Token token=\\\"KEY\\\"\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"Authorization\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "schemes.apiKey.x-value-template: \"Token token=\\\"{key}\\\"\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://api.callrail.com/v3\"}"
+]

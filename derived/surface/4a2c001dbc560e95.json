@@ -1,0 +1,9 @@
+[
+ "perPath: /user-provided-meeting * [{\"url\":\"https://receiver.momentum.io/\"}]",
+ "schemes.ApiKeyAuth.description: \"API key for authenticating requests\"",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-API-Key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.momentum.io\"}"
+]

@@ -1,0 +1,11 @@
+[
+ "basePath: \"/tradingapi/v1\"",
+ "definitions.cookieAuth.in: \"header\"",
+ "definitions.cookieAuth.name: \"portal\"",
+ "definitions.cookieAuth.type: \"apiKey\"",
+ "host: \"www.interactivebrokers.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"cookieAuth\":[]}"
+]

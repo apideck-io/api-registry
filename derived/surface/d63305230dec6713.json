@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.sec0.in: \"header\"",
+ "schemes.sec0.name: \"Authorization\"",
+ "schemes.sec0.type: \"apiKey\"",
+ "schemes.sec0.x-bearer-format: \"\"",
+ "schemes.sec0.x-default: \"Bearer\"",
+ "security[]: {\"sec0\":[]}",
+ "servers[0]: {\"url\":\"https://{subdomain}.workable.com/spi/v3\",\"variables\":{\"subdomain\":{\"default\":\"subdomain\"}}}"
+]

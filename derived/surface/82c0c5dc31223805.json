@@ -1,0 +1,11 @@
+[
+ "basePath: \"/\"",
+ "definitions.key.in: \"query\"",
+ "definitions.key.name: \"key\"",
+ "definitions.key.type: \"apiKey\"",
+ "host: \"api.spinbot.net\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"key\":[]}"
+]

@@ -1,0 +1,14 @@
+[
+ "perPath: /events get security [{\"api-key\":[]}]",
+ "perPath: /events post security [{\"api-key\":[]}]",
+ "perPath: /events/batch post security [{\"api-key\":[]}]",
+ "schemes.api-key.description: \"The API key should be passed in the request headers as `api-key` for authentication.\"",
+ "schemes.api-key.in: \"header\"",
+ "schemes.api-key.name: \"api-key\"",
+ "schemes.api-key.type: \"apiKey\"",
+ "schemes.oauth2.description: \"OAuth 2.0 client_credentials (machine-to-machine) grant. Exchange your app's client_id/client_secret for a short-lived Bearer token.\"",
+ "schemes.oauth2.scheme: \"bearer\"",
+ "schemes.oauth2.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"https://api.brevo.com/v3\",\"url\":\"https://api.brevo.com/v3\"}"
+]

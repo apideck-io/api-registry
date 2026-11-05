@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.ApiToken.description: \"Your ActiveCampaign API token\"",
+ "schemes.ApiToken.in: \"header\"",
+ "schemes.ApiToken.name: \"Api-Token\"",
+ "schemes.ApiToken.type: \"apiKey\"",
+ "security[]: {\"ApiToken\":[]}",
+ "servers[0]: {\"description\":\"US-based Users\",\"url\":\"https://{yourAccountName}.api-us1.com/api/3\",\"variables\":{\"yourAccountName\":{\"default\":\"yourAccountName\"}}}"
+]

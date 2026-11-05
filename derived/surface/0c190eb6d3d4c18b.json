@@ -1,0 +1,13 @@
+[
+ "perPath: /v2/reporting/reports get security [{\"ShippoTokenAuth\":[]}]",
+ "perPath: /v2/reporting/reports/{report_type} get security [{\"ShippoTokenAuth\":[]}]",
+ "perPath: /v2/reporting/runs get security [{\"ShippoTokenAuth\":[]}]",
+ "perPath: /v2/reporting/runs post security [{\"ShippoTokenAuth\":[]}]",
+ "perPath: /v2/reporting/runs/{run_id} get security [{\"ShippoTokenAuth\":[]}]",
+ "schemes.ShippoTokenAuth.description: \"Shippo API token header, for example `ShippoToken shippo_live_xxxx`.\"",
+ "schemes.ShippoTokenAuth.in: \"header\"",
+ "schemes.ShippoTokenAuth.name: \"Authorization\"",
+ "schemes.ShippoTokenAuth.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.goshippo.com\"}"
+]

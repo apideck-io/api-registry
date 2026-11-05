@@ -1,0 +1,18 @@
+[
+ "perPath: []",
+ "schemes.VtexIdclientAutCookie.description: \"[User token](https://developers.vtex.com/docs/guides/api-authentication-using-user-tokens), valid for 24 hours.\"",
+ "schemes.VtexIdclientAutCookie.in: \"header\"",
+ "schemes.VtexIdclientAutCookie.name: \"VtexIdclientAutCookie\"",
+ "schemes.VtexIdclientAutCookie.type: \"apiKey\"",
+ "schemes.appKey.description: \"Unique identifier of the [API key](https://developers.vtex.com/docs/guides/api-authentication-using-api-keys).\"",
+ "schemes.appKey.in: \"header\"",
+ "schemes.appKey.name: \"X-VTEX-API-AppKey\"",
+ "schemes.appKey.type: \"apiKey\"",
+ "schemes.appToken.description: \"Secret token of the [API key](https://developers.vtex.com/docs/guides/api-authentication-using-api-keys).\"",
+ "schemes.appToken.in: \"header\"",
+ "schemes.appToken.name: \"X-VTEX-API-AppToken\"",
+ "schemes.appToken.type: \"apiKey\"",
+ "security[]: {\"VtexIdclientAutCookie\":[]}",
+ "security[]: {\"appKey\":[],\"appToken\":[]}",
+ "servers[0]: {\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.vtexcommercestable.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}"
+]

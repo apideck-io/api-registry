@@ -1,0 +1,10 @@
+[
+ "perPath: /employees/photos/ * [{\"url\":\"https://{subdomain}.bamboohr.com\",\"variables\":{\"subdomain\":{\"default\":\"mycompany\",\"description\":\"The subdomain used to access your account (If you access BambooHR at https://mycompany.bamboohr.com, then the subdomain is \\\"mycompany\\\")\"}}}]",
+ "perPath: /employees/photos/ get security []",
+ "perPath: /v1/login post security []",
+ "schemes.apiKey.description: \"Requests to the BambooHR API are authenticated by sending an \\\"API Key\\\" for the user to be authenticated as the HTTP Basic username.  The password is ignored, but is commonly shown as \\\"x\\\" in the documentation.\\n\\nSee https://documentation.bamboohr.com/docs#section-authentication\"",
+ "schemes.apiKey.scheme: \"basic\"",
+ "schemes.apiKey.type: \"http\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://api.bamboohr.com/api/gateway.php/{subdomain}\",\"variables\":{\"subdomain\":{\"default\":\"mycompany\",\"description\":\"The subdomain used to access your account (If you access BambooHR at https://mycompany.bamboohr.com, then the subdomain is \\\"mycompany\\\")\"}}}"
+]

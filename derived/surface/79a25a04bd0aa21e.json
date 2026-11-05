@@ -1,0 +1,17 @@
+[
+ "perPath: /allowlists get security [{\"api_key\":[]}]",
+ "perPath: /allowlists post security [{\"api_key\":[]}]",
+ "perPath: /allowlists/{id} delete security [{\"api_key\":[]}]",
+ "perPath: /allowlists/{id} get security [{\"api_key\":[]}]",
+ "perPath: /blocklists get security [{\"api_key\":[]}]",
+ "perPath: /blocklists post security [{\"api_key\":[]}]",
+ "perPath: /blocklists/{id} delete security [{\"api_key\":[]}]",
+ "perPath: /blocklists/{id} get security [{\"api_key\":[]}]",
+ "schemes.api_key.in: \"header\"",
+ "schemes.api_key.name: \"X-Authorization\"",
+ "schemes.api_key.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"2026-10 (Stable)\",\"url\":\"https://api.loopreturns.com/api/2026-10\"}",
+ "servers[1]: {\"description\":\"2026-07\",\"url\":\"https://api.loopreturns.com/api/2026-07\"}",
+ "servers[2]: {\"description\":\"Unstable (Preview)\",\"url\":\"https://api.loopreturns.com/api/unstable\"}"
+]

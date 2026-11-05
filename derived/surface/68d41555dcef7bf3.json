@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.basic.description: \"API key as username, API secret as password\"",
+ "schemes.basic.scheme: \"basic\"",
+ "schemes.basic.type: \"http\"",
+ "security[]: {\"basic\":[]}",
+ "servers[0]: {\"url\":\"https://www.webmerge.me/api\"}"
+]

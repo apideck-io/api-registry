@@ -1,0 +1,18 @@
+[
+ "perPath: /v1/auth/access_token get security [{}]",
+ "schemes.APIKey.description: \"The API Key for the workspace\"",
+ "schemes.APIKey.in: \"header\"",
+ "schemes.APIKey.name: \"x-api-key\"",
+ "schemes.APIKey.type: \"apiKey\"",
+ "schemes.Bearer.description: \"The Bearer token for the workspace\"",
+ "schemes.Bearer.scheme: \"bearer\"",
+ "schemes.Bearer.type: \"http\"",
+ "schemes.WorkspaceIdentifier.description: \"The API Key for the workspace\"",
+ "schemes.WorkspaceIdentifier.in: \"header\"",
+ "schemes.WorkspaceIdentifier.name: \"x-workspace-identifier\"",
+ "schemes.WorkspaceIdentifier.type: \"apiKey\"",
+ "security[]: {\"APIKey\":[]}",
+ "security[]: {\"Bearer\":[]}",
+ "security[]: {\"WorkspaceIdentifier\":[]}",
+ "servers[0]: {\"url\":\"https://api.prod.speakeasy.com\",\"x-speakeasy-server-id\":\"prod\"}"
+]

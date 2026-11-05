@@ -1,0 +1,9 @@
+[
+ "basePath: \"/\"",
+ "definitions: null",
+ "host: \"api.victorops.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

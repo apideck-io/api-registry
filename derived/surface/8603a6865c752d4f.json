@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.http.bearerFormat: \"JWT\"",
+ "schemes.http.scheme: \"bearer\"",
+ "schemes.http.type: \"http\"",
+ "security[]: {\"http\":[]}",
+ "servers[0]: {\"url\":\"https://api2.frontapp.com\"}"
+]

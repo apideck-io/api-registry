@@ -1,0 +1,18 @@
+[
+ "perPath: /networks/customervalue/datapoints get security [{\"API Key\":[]}]",
+ "perPath: /networks/customervalue/datapoints post security [{\"API Key\":[]}]",
+ "perPath: /networks/customervalue/datapoints put security [{\"API Key\":[]}]",
+ "perPath: /networks/customervalue/datapoints/{dataPointId} delete security [{\"API Key\":[]}]",
+ "perPath: /networks/customervalue/datapoints/{dataPointId} get security [{\"API Key\":[]}]",
+ "perPath: /networks/customervalue/rules get security [{\"API Key\":[]}]",
+ "perPath: /networks/customervalue/rules post security [{\"API Key\":[]}]",
+ "perPath: /networks/customervalue/rules put security [{\"API Key\":[]}]",
+ "perPath: /networks/customervalue/rules/{ruleId} delete security [{\"API Key\":[]}]",
+ "perPath: /networks/customervalue/rules/{ruleId} get security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The Everflow API key generated from the Control Center > Security.\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.eflow.team/v1\"}"
+]

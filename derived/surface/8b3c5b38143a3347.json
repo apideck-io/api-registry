@@ -1,0 +1,12 @@
+[
+ "perPath: /v1/features post security [{\"bearerAuth\":[]}]",
+ "perPath: /v1/track post security [{\"bearerAuth\":[]}]",
+ "perPath: /v1/variables post security [{\"bearerAuth\":[]}]",
+ "perPath: /v1/variables/{key} post security [{\"bearerAuth\":[]}]",
+ "schemes.bearerAuth.description: \"Enter your DevCycle SDK token\"",
+ "schemes.bearerAuth.in: \"header\"",
+ "schemes.bearerAuth.name: \"Authorization\"",
+ "schemes.bearerAuth.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://bucketing-api.devcycle.com/\"}"
+]

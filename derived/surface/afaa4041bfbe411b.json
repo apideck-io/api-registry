@@ -1,0 +1,10 @@
+[
+ "auth.oauth2[]: {\"key\":\"accessTokenUrl\",\"value\":\"https://api.infusionsoft.com/token\"}",
+ "auth.oauth2[]: {\"key\":\"authUrl\",\"value\":\"https://accounts.infusionsoft.com/app/oauth/authorize\"}",
+ "auth.oauth2[]: {\"key\":\"grant_type\",\"value\":\"authorization_code\"}",
+ "auth.type: \"oauth2\"",
+ "hosts: [\"{{baseUrl}}\"]",
+ "nested: []",
+ "scripts: []",
+ "variables: baseUrl https://api.infusionsoft.com/crm"
+]

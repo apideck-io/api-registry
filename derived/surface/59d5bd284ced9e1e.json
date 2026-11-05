@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Recharge API token edit page (needs read_store scope)\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"X-Recharge-Access-Token\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://api.rechargeapps.com\"}"
+]

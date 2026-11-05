@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.bearerFormat: \"API Key\"",
+ "schemes.bearerAuth.description: \"Use your Bright Data API Key as a Bearer token in the Authorization header.\\n\\n**How to authenticate:**\\n1. Obtain your API Key from the Bright Data account settings at https://brightdata.com/cp/setting/users\\n2. Include the API Key in the Authorization header of your requests\\n3. Format: `Authorization: Bearer YOUR_API_KEY`\\n\\n**Example:**\\n```\\nAuthorization: Bearer b5648e1096c6442f60a6c4bbbe73f8d2234d3d8324554bd6a7ec8f3f251f07df\\n```\\n\\nLearn how to get your Bright Data API key: https://docs.brightdata.com/api-reference/authentication\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.brightdata.com\"}"
+]

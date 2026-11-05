@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.Bearer.bearerFormat: \"Bearer\"",
+ "schemes.Bearer.description: \"The Checkly Public API uses API keys to authenticate requests. You can get the API Key <a href=\\\"https://app.checklyhq.com/settings/user/api-keys\\\" target=\\\"_blank\\\">here</a>.</br>Your API key is like a password: <br>keep it secure!</br></br>Authentication to the API is performed using the Bearer auth method in the Authorization header and using the account ID.</br></br>For example, set <b>Authorization</b> header while using cURL: <code>curl -H \\\"Authorization: Bearer [apiKey]\\\" \\\"X-Checkly-Account: [accountId]\\\"</code></br>\"",
+ "schemes.Bearer.scheme: \"bearer\"",
+ "schemes.Bearer.type: \"http\"",
+ "security[]: {\"Bearer\":[]}",
+ "servers[0]: {\"url\":\"https://api.checklyhq.com\"}"
+]

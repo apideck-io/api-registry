@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"url\":\"https://{tenant}.{region}.qlikcloud.com\",\"variables\":{\"region\":{\"default\":\"us\",\"description\":\"The region the tenant is hosted in\"},\"tenant\":{\"default\":\"your-tenant\",\"description\":\"Name of the tenant that will be called\"}}}"
+]

@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.VtexIdclientAutCookie.description: \"[User token](https://developers.vtex.com/docs/guides/api-authentication-using-user-tokens), valid for 24 hours.\"",
+ "schemes.VtexIdclientAutCookie.in: \"header\"",
+ "schemes.VtexIdclientAutCookie.name: \"VtexIdclientAutCookie\"",
+ "schemes.VtexIdclientAutCookie.type: \"apiKey\"",
+ "security[]: {\"VtexIdclientAutCookie\":[]}",
+ "servers[0]: {\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.{environment}.com\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"},\"environment\":{\"default\":\"myvtex\",\"description\":\"Environment to use. Used as part of the URL.\",\"enum\":[\"myvtex\"]}}}"
+]

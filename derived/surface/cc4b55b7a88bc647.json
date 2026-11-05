@@ -1,0 +1,13 @@
+[
+ "perPath: []",
+ "schemes.basic.description: \"API key as username, empty password; send Accept: application/vnd.unbounce.api.v0.4+json\"",
+ "schemes.basic.scheme: \"basic\"",
+ "schemes.basic.type: \"http\"",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://api.unbounce.com/oauth/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.full: \"\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://api.unbounce.com/oauth/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security[]: {\"basic\":[]}",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"url\":\"https://api.unbounce.com\"}"
+]

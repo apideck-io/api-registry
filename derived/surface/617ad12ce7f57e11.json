@@ -1,0 +1,12 @@
+[
+ "basePath: \"/\"",
+ "definitions.[\"api_key\\\"\"].[\"in\\\"\"]: \"query\"",
+ "definitions.[\"api_key\\\"\"].[\"name\\\"\"]: \"_apikey\"",
+ "definitions.[\"api_key\\\"\"].[\"type\\\"\"]: \"apiKey\"",
+ "host: \"data.import.io\"",
+ "parameterizedHost: null",
+ "perOp: /extractor/{extractorId}/csv/latest get [{\"api_key\":[]}]",
+ "perOp: /extractor/{extractorId}/json/latest get [{\"api_key\":[]}]",
+ "schemes: [\"https\"]",
+ "security: null"
+]

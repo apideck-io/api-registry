@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://constructionandengineering.oraclecloud.com/auth/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.scopes: {}",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://constructionandengineering.oraclecloud.com/auth/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "schemes.oauth2.x-token-endpoint-auth-method: \"client_secret_basic\"",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"url\":\"https://api.aconex.com/api\"}"
+]

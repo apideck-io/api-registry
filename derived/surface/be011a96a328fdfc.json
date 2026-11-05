@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.Shippo_Token.description: \"Enter your shippo token with the ShippoToken prefix.\\n\\nExample: `ShippoToken shippo_live_xxxx`\\n\"",
+ "schemes.Shippo_Token.in: \"header\"",
+ "schemes.Shippo_Token.name: \"Authorization\"",
+ "schemes.Shippo_Token.type: \"apiKey\"",
+ "schemes.Shippo_Token.x-default: \"ShippoToken shippo_test_d41a6f04796998570c521a50828eae8e3cccf0eb\"",
+ "security[]: {\"Shippo_Token\":[]}",
+ "servers[0]: {\"url\":\"https://api.goshippo.com\"}"
+]

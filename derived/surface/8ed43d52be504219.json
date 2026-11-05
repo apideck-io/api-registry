@@ -1,0 +1,12 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.description: \"Include your API key in the `X-Api-Key` header of every request.\\n\"",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-Api-Key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.fathom.ai/external/v1\"}"
+]

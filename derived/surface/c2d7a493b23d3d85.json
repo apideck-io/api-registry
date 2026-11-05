@@ -1,0 +1,16 @@
+[
+ "perPath: []",
+ "schemes.BearerAuth.description: \"The Neon API requires an API key to authorize your requests, which you can enter below.\\nRefer to our documentation to find out how to generate and use [API keys](https://neon.com/docs/manage/api-keys).\\n\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "schemes.CookieAuth.in: \"cookie\"",
+ "schemes.CookieAuth.name: \"zenith\"",
+ "schemes.CookieAuth.type: \"apiKey\"",
+ "schemes.TokenCookieAuth.in: \"cookie\"",
+ "schemes.TokenCookieAuth.name: \"keycloak_token\"",
+ "schemes.TokenCookieAuth.type: \"apiKey\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "security[]: {\"CookieAuth\":[]}",
+ "security[]: {\"TokenCookieAuth\":[]}",
+ "servers[0]: {\"url\":\"https://console.neon.tech/api/v2\"}"
+]

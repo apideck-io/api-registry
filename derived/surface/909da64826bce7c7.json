@@ -1,0 +1,14 @@
+[
+ "perPath: []",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://sync.wiseagent.com/WiseAuth/auth\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.calendar: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.contacts: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.marketing: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.profile: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.properties: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.team: \"\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://sync.wiseagent.com/WiseAuth/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"url\":\"https://sync.thewiseagent.com/http/webconnect.asp\"}"
+]

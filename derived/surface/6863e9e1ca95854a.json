@@ -1,0 +1,16 @@
+[
+ "basePath: null",
+ "definitions.oauth2.authorizationUrl: \"https://identity.apaleo.com/connect/authorize\"",
+ "definitions.oauth2.flow: \"implicit\"",
+ "definitions.oauth2.scopes.[\"reservations.import\"]: \"Import reservations\"",
+ "definitions.oauth2.scopes.admin: \"Full access\"",
+ "definitions.oauth2.type: \"oauth2\"",
+ "host: null",
+ "parameterizedHost: null",
+ "perOp: /logs/v1/booking/reservation get [{\"oauth2\":[\"admin\",\"logs.read\"]}]",
+ "perOp: /logs/v1/finance/folio get [{\"oauth2\":[\"admin\",\"logs.read\"]}]",
+ "perOp: /logs/v1/finance/night-audit get [{\"oauth2\":[\"admin\",\"logs.read\"]}]",
+ "perOp: /logs/v1/finance/transactions-export get [{\"oauth2\":[\"admin\",\"logs.read\"]}]",
+ "schemes: null",
+ "security: null"
+]

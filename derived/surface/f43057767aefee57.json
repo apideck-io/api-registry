@@ -1,0 +1,14 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Your Algolia API key with the necessary permissions to make the request.\\nPermissions are controlled through access control lists (ACL) and access restrictions.\\nThe required ACL to make a request is listed in each endpoint's reference.\\n\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"x-algolia-api-key\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "schemes.appId.description: \"Your Algolia application ID.\"",
+ "schemes.appId.in: \"header\"",
+ "schemes.appId.name: \"x-algolia-application-id\"",
+ "schemes.appId.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[],\"appId\":[]}",
+ "servers[0]: {\"url\":\"https://analytics.{region}.algolia.com\",\"variables\":{\"region\":{\"default\":\"us\",\"description\":\"The region where your Algolia application is hosted.\",\"enum\":[\"us\",\"de\"]}}}",
+ "servers[1]: {\"url\":\"https://analytics.algolia.com\"}"
+]

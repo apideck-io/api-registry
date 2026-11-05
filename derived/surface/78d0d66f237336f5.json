@@ -1,0 +1,14 @@
+[
+ "basePath: \"/\"",
+ "definitions.[\"api_key\\\"\"].[\"in\\\"\"]: \"query\"",
+ "definitions.[\"api_key\\\"\"].[\"name\\\"\"]: \"_apikey\"",
+ "definitions.[\"api_key\\\"\"].[\"type\\\"\"]: \"apiKey\"",
+ "host: \"schedule.import.io\"",
+ "parameterizedHost: null",
+ "perOp: /extractor get [{\"api_key\":[]}]",
+ "perOp: /extractor post [{\"api_key\":[]}]",
+ "perOp: /extractor/{extractorId}/ delete [{\"api_key\":[]}]",
+ "perOp: /extractor/{extractorId}/ get [{\"api_key\":[]}]",
+ "schemes: [\"https\"]",
+ "security: null"
+]

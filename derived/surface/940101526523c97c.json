@@ -1,0 +1,13 @@
+[
+ "perPath: /networks/labels delete security [{\"API Key\":[]}]",
+ "perPath: /networks/labels get security [{\"API Key\":[]}]",
+ "perPath: /networks/labels post security [{\"API Key\":[]}]",
+ "perPath: /networks/labels put security [{\"API Key\":[]}]",
+ "perPath: /networks/labels/{label} get security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The Everflow API key generated from the Control Center > Security.\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.eflow.team/v1\"}"
+]

@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.ApiKey.in: \"header\"",
+ "schemes.ApiKey.name: \"Authorization\"",
+ "schemes.ApiKey.type: \"apiKey\"",
+ "security[]: {\"ApiKey\":[]}",
+ "servers[0]: {\"description\":\"AssemblyAI API\",\"url\":\"https://api.assemblyai.com\",\"x-fern-server-name\":\"Default\"}"
+]

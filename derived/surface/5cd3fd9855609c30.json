@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://ironcladapp.com/oauth\"}",
+ "servers[1]: {\"description\":\"EU Production server\",\"url\":\"https://eu1.ironcladapp.com/oauth\"}",
+ "servers[2]: {\"description\":\"Demo server\",\"url\":\"https://demo.ironcladapp.com/oauth\"}"
+]

@@ -1,0 +1,23 @@
+[
+ "perPath: /sso/authorize get security []",
+ "perPath: /sso/jwks/{clientId} get security []",
+ "perPath: /sso/logout get [{\"url\":\"https://auth.workos.com\"}]",
+ "perPath: /sso/logout get security []",
+ "perPath: /sso/logout/authorize post [{\"url\":\"https://auth.workos.com\"}]",
+ "perPath: /sso/profile get security [{\"access_token\":[]}]",
+ "perPath: /sso/token post security []",
+ "perPath: /user_management/authorize get security []",
+ "perPath: /user_management/authorize/device post security []",
+ "perPath: /user_management/sessions/logout get security []",
+ "schemes.access_token.bearerFormat: \"JWT\"",
+ "schemes.access_token.description: \"An SSO access token returned from the Get a Profile and Token endpoint.\"",
+ "schemes.access_token.scheme: \"bearer\"",
+ "schemes.access_token.type: \"http\"",
+ "schemes.bearer.bearerFormat: \"JWT\"",
+ "schemes.bearer.description: \"Your WorkOS API key prefixed with `sk_`. Pass it as a Bearer token: `Authorization: Bearer sk_example_123456789`.\"",
+ "schemes.bearer.scheme: \"bearer\"",
+ "schemes.bearer.type: \"http\"",
+ "security[]: {\"bearer\":[]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.workos.com\"}",
+ "servers[1]: {\"description\":\"Staging\",\"url\":\"https://api.workos-test.com\"}"
+]

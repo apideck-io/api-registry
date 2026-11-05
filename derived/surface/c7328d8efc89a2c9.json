@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.default.description: \"You can retrieve your token by visiting <a href=\\\"/user/api-tokens\\\">API page</a>.\"",
+ "schemes.default.scheme: \"bearer\"",
+ "schemes.default.type: \"http\"",
+ "security[]: {\"default\":[]}",
+ "servers[0]: {\"url\":\"https://app.findymail.com\"}"
+]

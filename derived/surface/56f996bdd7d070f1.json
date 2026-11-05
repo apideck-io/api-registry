@@ -1,0 +1,16 @@
+[
+ "perPath: /api/v1/add-file post security [{\"x-chroma-token\":[]}]",
+ "perPath: /api/v1/invocations get security [{\"x-chroma-token\":[]}]",
+ "perPath: /api/v1/invocations/{invocation_id} get security [{\"x-chroma-token\":[]}]",
+ "perPath: /api/v1/invocations/{invocation_id} put security [{\"x-chroma-token\":[]}]",
+ "perPath: /api/v1/sources get security [{\"x-chroma-token\":[]}]",
+ "perPath: /api/v1/sources post security [{\"x-chroma-token\":[]}]",
+ "perPath: /api/v1/sources/{source_id} delete security [{\"x-chroma-token\":[]}]",
+ "perPath: /api/v1/sources/{source_id} get security [{\"x-chroma-token\":[]}]",
+ "perPath: /api/v1/sources/{source_id}/invocations post security [{\"x-chroma-token\":[]}]",
+ "schemes.x-chroma-token.in: \"header\"",
+ "schemes.x-chroma-token.name: \"x-chroma-token\"",
+ "schemes.x-chroma-token.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://sync.trychroma.com\"}"
+]

@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://oauth.loopreturns.com/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"ship_by_loop:write\"]: \"Submit services, orders, and errors for Ship by Loop shipments\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://oauth.loopreturns.com/oauth/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security[]: {\"oauth2\":[\"ship_by_loop:write\"]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.loopreturns.com/api/{version}\",\"variables\":{\"version\":{\"default\":\"latest\",\"description\":\"`v2` is not a valid version segment — a request to `/api/v2/...` returns a 404. Use one of the values listed below instead.\",\"enum\":[\"v1\",\"latest\",\"2026-07\",\"2026-10\",\"unstable\"]}}}"
+]

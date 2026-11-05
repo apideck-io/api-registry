@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.AccessKey.description: \"Use word \\\"AccessKey\\\" + API Key. Example value: \\\"AccessKey w223tVQTcLO4ufBTuJxjvzwJ22\\\"\"",
+ "schemes.AccessKey.in: \"header\"",
+ "schemes.AccessKey.name: \"Authorization\"",
+ "schemes.AccessKey.type: \"apiKey\"",
+ "security[]: {\"AccessKey\":[]}",
+ "servers[0]: {\"url\":\"https://rest.messagebird.com/messages\"}"
+]

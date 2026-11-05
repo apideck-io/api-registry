@@ -1,0 +1,21 @@
+[
+ "perPath: /v1/authenticate post security [{\"basicAuth\":[]}]",
+ "perPath: /v1/password/reset post security []",
+ "perPath: /v1/payorLinks post security [{\"oAuthVeloBackOffice\":[]}]",
+ "perPath: /v1/supportedCountries get security []",
+ "perPath: /v2/currencies get security []",
+ "perPath: /v2/supportedCountries get security []",
+ "schemes.OAuth2.description: \"This API uses OAuth 2 with the Client Credentials grant flow. [More info](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials)\"",
+ "schemes.OAuth2.flows.clientCredentials.scopes.[\" \"]: \"Scopes not required\"",
+ "schemes.OAuth2.flows.clientCredentials.tokenUrl: \"https://api.sandbox.velopayments.com/v1/login\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "schemes.oAuthVeloBackOffice.description: \"This API uses OAuth 2 with the implicit grant flow. Authenticated user must have backoffice role [More info](https://api.example.com/docs/auth)\"",
+ "schemes.oAuthVeloBackOffice.flows.clientCredentials.scopes.[\" \"]: \"Scopes not required\"",
+ "schemes.oAuthVeloBackOffice.flows.clientCredentials.tokenUrl: \"https://api.sandbox.velopayments.com/oauth/token\"",
+ "schemes.oAuthVeloBackOffice.type: \"oauth2\"",
+ "security[]: {\"OAuth2\":[]}",
+ "servers[0]: {\"description\":\"Velo Payments Sandbox for testing\",\"url\":\"https://api.sandbox.velopayments.com/\"}",
+ "servers[1]: {\"description\":\"Velo Payments Production URL\",\"url\":\"https://api.payouts.velopayments.com\"}"
+]

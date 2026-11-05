@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Production server url\",\"url\":\"https://api.rillet.com\"}",
+ "servers[1]: {\"description\":\"Test server url\",\"url\":\"https://sandbox.api.rillet.com\"}"
+]

@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"Codegen API\",\"url\":\"https://api.codegen.com\"}"
+]

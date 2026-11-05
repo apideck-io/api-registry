@@ -1,0 +1,23 @@
+[
+ "perPath: /goals/goal-cycles/metadata get security [{\"Basic\":[]}]",
+ "perPath: /goals/goal-cycles/search post security [{\"Basic\":[]}]",
+ "perPath: /goals/goal-types/metadata get security [{\"Basic\":[]}]",
+ "perPath: /goals/goal-types/search post security [{\"Basic\":[]}]",
+ "perPath: /goals/goals post security [{\"Basic\":[]}]",
+ "perPath: /goals/goals/key-results/metadata get security [{\"Basic\":[]}]",
+ "perPath: /goals/goals/key-results/search post security [{\"Basic\":[]}]",
+ "perPath: /goals/goals/metadata get security [{\"Basic\":[]}]",
+ "perPath: /goals/goals/search post security [{\"Basic\":[]}]",
+ "perPath: /goals/goals/{goalId} delete security [{\"Basic\":[]}]",
+ "perPath: /goals/goals/{goalId} patch security [{\"Basic\":[]}]",
+ "perPath: /goals/goals/{goalId}/key-results patch security [{\"Basic\":[]}]",
+ "perPath: /goals/goals/{goalId}/key-results post security [{\"Basic\":[]}]",
+ "perPath: /goals/goals/{goalId}/key-results/progress patch security [{\"Basic\":[]}]",
+ "perPath: /goals/goals/{goalId}/key-results/{keyResultId} delete security [{\"Basic\":[]}]",
+ "perPath: /goals/goals/{goalId}/status patch security [{\"Basic\":[]}]",
+ "schemes.Basic.scheme: \"basic\"",
+ "schemes.Basic.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.hibob.com/v1\"}",
+ "servers[1]: {\"description\":\"Sandbox\",\"url\":\"https://api.sandbox.hibob.com/v1\"}"
+]

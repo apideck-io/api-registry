@@ -1,0 +1,22 @@
+[
+ "perPath: /v2/checkout/orders post security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/orders/deprecating-jssdk-migration-for-limited-merchants\",\"https://uri.paypal.com/services/payments/payment\"]}]",
+ "perPath: /v2/checkout/orders/order-update-callback post security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/payment\"]}]",
+ "perPath: /v2/checkout/orders/{id} get security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/orders/deprecating-jssdk-migration-for-limited-merchants\",\"https://uri.paypal.com/services/payments/payment\"]}]",
+ "perPath: /v2/checkout/orders/{id} patch security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/orders/deprecating-jssdk-migration-for-limited-merchants\",\"https://uri.paypal.com/services/payments/payment\"]}]",
+ "perPath: /v2/checkout/orders/{id}/authorize post security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/orders/deprecating-jssdk-migration-for-limited-merchants\",\"https://uri.paypal.com/services/payments/payment\"]}]",
+ "perPath: /v2/checkout/orders/{id}/capture post security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/orders/deprecating-jssdk-migration-for-limited-merchants\",\"https://uri.paypal.com/services/payments/payment\"]}]",
+ "perPath: /v2/checkout/orders/{id}/confirm-payment-source post security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/initiatepayment\",\"https://uri.paypal.com/services/payments/orders/client_sdk_orders_api\",\"https://uri.paypal.com/services/payments/payment\"]}]",
+ "perPath: /v2/checkout/orders/{id}/track post security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/payment\"]}]",
+ "perPath: /v2/checkout/orders/{id}/trackers/{tracker_id} patch security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/payment\"]}]",
+ "schemes.Oauth2.description: \"Oauth 2.0 authentication\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/initiatepayment\"]: \"Initiates payments and checkout workflows.\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/orders/client_sdk_orders_api\"]: \"Enables secure client-side integration on confirm payment source endpoint\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/orders/deprecating-jssdk-migration-for-limited-merchants\"]: \"Allows client-side integration on Create, Get, Patch, Authorize & Capture Order endpoints.\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/orders/provision-card\"]: \"Manage card provisioning merchants.\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/payment\"]: \"Manage payments and checkout workflow.\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/payment/reference-transaction\"]: \"Permission to initiate reference transaction\"",
+ "schemes.Oauth2.flows.clientCredentials.tokenUrl: \"https://api-m.paypal.com/v1/oauth2/token\"",
+ "schemes.Oauth2.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Server for https scheme.\",\"url\":\"https://api-m.paypal.com\"}"
+]

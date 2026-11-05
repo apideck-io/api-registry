@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production URL\",\"url\":\"https://marketplace.walmartapis.com\"}",
+ "servers[1]: {\"description\":\"Sandbox URL\",\"url\":\"https://sandbox.walmartapis.com\"}"
+]

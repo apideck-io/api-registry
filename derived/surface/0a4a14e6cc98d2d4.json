@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.ApiKey.description: \"Prefix the value with \\\"ApiKey\\\" to indicate the custom authorization type\"",
+ "schemes.ApiKey.in: \"header\"",
+ "schemes.ApiKey.name: \"Authorization\"",
+ "schemes.ApiKey.type: \"apiKey\"",
+ "security[]: {\"ApiKey\":[]}",
+ "servers[0]: {\"description\":\"Default\",\"url\":\"/\"}"
+]

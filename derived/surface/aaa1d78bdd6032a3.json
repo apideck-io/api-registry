@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "schemes.bearerAuth.x-fern-audiences: [\"public\"]",
+ "schemes.bearerAuth.x-fern-bearer.env: \"CO_API_KEY\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"production\",\"url\":\"https://api.cohere.com\"}"
+]

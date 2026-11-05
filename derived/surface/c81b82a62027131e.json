@@ -1,0 +1,18 @@
+[
+ "perPath: []",
+ "schemes.apiKeyHeader.description: \"API key sent as the `X-API-Key` request header.\"",
+ "schemes.apiKeyHeader.in: \"header\"",
+ "schemes.apiKeyHeader.name: \"X-API-Key\"",
+ "schemes.apiKeyHeader.type: \"apiKey\"",
+ "schemes.apiKeyQuery.description: \"API key sent as the `apiKey` query parameter.\"",
+ "schemes.apiKeyQuery.in: \"query\"",
+ "schemes.apiKeyQuery.name: \"apiKey\"",
+ "schemes.apiKeyQuery.type: \"apiKey\"",
+ "schemes.bearerAuth.description: \"API key sent as `Authorization: Bearer <key>`.\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"apiKeyHeader\":[]}",
+ "security[]: {\"apiKeyQuery\":[]}",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Production API gateway\",\"url\":\"https://api.auto.dev\"}"
+]

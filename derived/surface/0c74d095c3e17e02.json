@@ -1,0 +1,10 @@
+[
+ "perPath: /partners/marketplace/demands post security [{\"API Key\":[]}]",
+ "perPath: /partners/marketplace/demands/{demandId} get security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The marketplace partner's API key. Uses the X-Eflow-Api-Key header. The key belongs to the marketplace partner user.\\n\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://api.eflow.team/v1\"}"
+]

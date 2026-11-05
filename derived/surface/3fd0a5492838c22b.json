@@ -1,0 +1,22 @@
+[
+ "perPath: /v1/Exports * [{\"url\":\"https://bulkexports.twilio.com\"}]",
+ "perPath: /v1/Exports/Jobs/{JobSid} * [{\"url\":\"https://bulkexports.twilio.com\"}]",
+ "perPath: /v1/Exports/Jobs/{JobSid} delete security [{\"accountSid_authToken\":[]}]",
+ "perPath: /v1/Exports/Jobs/{JobSid} get security [{\"accountSid_authToken\":[]}]",
+ "perPath: /v1/Exports/{ResourceType} * [{\"url\":\"https://bulkexports.twilio.com\"}]",
+ "perPath: /v1/Exports/{ResourceType} get security [{\"accountSid_authToken\":[]}]",
+ "perPath: /v1/Exports/{ResourceType}/Configuration * [{\"url\":\"https://bulkexports.twilio.com\"}]",
+ "perPath: /v1/Exports/{ResourceType}/Configuration get security [{\"accountSid_authToken\":[]}]",
+ "perPath: /v1/Exports/{ResourceType}/Configuration post security [{\"accountSid_authToken\":[]}]",
+ "perPath: /v1/Exports/{ResourceType}/Days * [{\"url\":\"https://bulkexports.twilio.com\"}]",
+ "perPath: /v1/Exports/{ResourceType}/Days get security [{\"accountSid_authToken\":[]}]",
+ "perPath: /v1/Exports/{ResourceType}/Days/{Day} * [{\"url\":\"https://bulkexports.twilio.com\"}]",
+ "perPath: /v1/Exports/{ResourceType}/Days/{Day} get security [{\"accountSid_authToken\":[]}]",
+ "perPath: /v1/Exports/{ResourceType}/Jobs * [{\"url\":\"https://bulkexports.twilio.com\"}]",
+ "perPath: /v1/Exports/{ResourceType}/Jobs get security [{\"accountSid_authToken\":[]}]",
+ "perPath: /v1/Exports/{ResourceType}/Jobs post security [{\"accountSid_authToken\":[]}]",
+ "schemes.accountSid_authToken.scheme: \"basic\"",
+ "schemes.accountSid_authToken.type: \"http\"",
+ "security[]: {\"accountSid_authToken\":[]}",
+ "servers[0]: {\"url\":\"https://bulkexports.twilio.com\"}"
+]

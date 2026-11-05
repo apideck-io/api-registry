@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.api_key.description: \"Enter the API key as the username and set the password to an empty string. You can locate and manage your API keys from the [API Credentials](https://app.recurly.com/go/developer/api_keys) page.\"",
+ "schemes.api_key.scheme: \"basic\"",
+ "schemes.api_key.type: \"http\"",
+ "security[]: {\"api_key\":[]}",
+ "servers[0]: {\"url\":\"https://v3.recurly.com\"}",
+ "servers[1]: {\"url\":\"https://v3.eu.recurly.com\"}"
+]

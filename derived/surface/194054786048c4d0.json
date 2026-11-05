@@ -1,0 +1,15 @@
+[
+ "perPath: /networks/affiliates get security [{\"API Key\":[]}]",
+ "perPath: /networks/affiliates patch security [{\"API Key\":[]}]",
+ "perPath: /networks/affiliates post security [{\"API Key\":[]}]",
+ "perPath: /networks/affiliates/{affiliateId} get security [{\"API Key\":[]}]",
+ "perPath: /networks/affiliates/{affiliateId} put security [{\"API Key\":[]}]",
+ "perPath: /networks/affiliatestable post security [{\"API Key\":[]}]",
+ "perPath: /networks/pending/affiliates patch security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The Everflow API key generated from the Control Center > Security.\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://api.eflow.team/v1\"}"
+]

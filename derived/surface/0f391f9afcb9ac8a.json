@@ -1,0 +1,16 @@
+[
+ "perPath: /postings/{uuid}/candidates post security [{\"key\":[]},{\"oauth\":[\"candidate_applications_manage\"]}]",
+ "perPath: /postings/{uuid}/candidates/{candidateId}/status get security [{\"key\":[]},{\"oauth\":[\"candidate_applications_manage\"]}]",
+ "perPath: /postings/{uuid}/configuration get security [{\"key\":[]},{\"oauth\":[\"candidate_applications_manage\"]}]",
+ "schemes.key.in: \"header\"",
+ "schemes.key.name: \"x-smarttoken\"",
+ "schemes.key.type: \"apiKey\"",
+ "schemes.oauth.flows.authorizationCode.authorizationUrl: \"https://www.smartrecruiters.com/identity/oauth/allow\"",
+ "schemes.oauth.flows.authorizationCode.scopes.candidate_applications_manage: \"Create application and read application status on behalf of a candidate\"",
+ "schemes.oauth.flows.authorizationCode.tokenUrl: \"https://api.smartrecruiters.com/identity/oauth/token\"",
+ "schemes.oauth.flows.clientCredentials.scopes.candidate_applications_manage: \"Create application and read application status on behalf of a candidate\"",
+ "schemes.oauth.flows.clientCredentials.tokenUrl: \"https://api.smartrecruiters.com/identity/oauth/token\"",
+ "schemes.oauth.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.smartrecruiters.com\"}"
+]

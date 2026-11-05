@@ -1,0 +1,20 @@
+[
+ "perPath: /oauth2/register/{id} delete security [{\"bearer\":[]}]",
+ "perPath: /oauth2/register/{id} get security [{\"bearer\":[]}]",
+ "perPath: /oauth2/register/{id} put security [{\"bearer\":[]}]",
+ "perPath: /oauth2/revoke post security [{\"basic\":[]},{\"oauth2\":[]}]",
+ "perPath: /oauth2/token post security [{\"basic\":[]},{\"oauth2\":[]}]",
+ "perPath: /userinfo get security [{\"oauth2\":[]}]",
+ "schemes.basic.scheme: \"basic\"",
+ "schemes.basic.type: \"http\"",
+ "schemes.bearer.scheme: \"bearer\"",
+ "schemes.bearer.type: \"http\"",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://hydra.demo.ory.sh/oauth2/auth\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.offline: \"A scope required when requesting refresh tokens (alias for `offline_access`)\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.offline_access: \"A scope required when requesting refresh tokens\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.openid: \"Request an OpenID Connect ID Token\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://hydra.demo.ory.sh/oauth2/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security: null",
+ "servers: null"
+]

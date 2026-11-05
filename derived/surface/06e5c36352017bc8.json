@@ -1,0 +1,19 @@
+[
+ "perPath: []",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://app.travelperk.com/oauth2/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"bookings:read\"]: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"companies:read\"]: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"costcenters:read\"]: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"costcenters:write\"]: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"expenses:read\"]: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"scim:delete\"]: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"scim:read\"]: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"scim:write\"]: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"trips:read\"]: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"users:read\"]: \"\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://app.travelperk.com/accounts/oauth2/token/\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "schemes.oauth2.x-token-endpoint-auth-method: \"client_secret_post\"",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"url\":\"https://api.perk.com\"}"
+]

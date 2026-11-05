@@ -1,0 +1,15 @@
+[
+ "perPath: /v1/auth/cli/browser-complete get security []",
+ "perPath: /v1/auth/cli/callback get security []",
+ "perPath: /v1/auth/cli/poll get security []",
+ "perPath: /v1/auth/cli/start post security []",
+ "perPath: /v1/auth/login/start post security []",
+ "perPath: /v1/auth/magic-code/start post security []",
+ "perPath: /v1/auth/magic-code/verify post security []",
+ "perPath: /v1/auth/refresh post security []",
+ "perPath: /v1/auth/service-account/token post security []",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Production API host\",\"url\":\"https://api.colabra.ai\"}"
+]

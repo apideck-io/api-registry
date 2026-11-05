@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.token.description: \"authorization token\"",
+ "schemes.token.in: \"query\"",
+ "schemes.token.name: \"token\"",
+ "schemes.token.type: \"apiKey\"",
+ "security[]: {\"token\":[]}",
+ "servers[0]: {\"url\":\"https://api.nfusionsolutions.biz\"}"
+]

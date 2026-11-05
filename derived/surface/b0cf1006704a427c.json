@@ -1,0 +1,9 @@
+[
+ "perPath: /v1/Users/{Sid} * [{\"url\":\"https://frontline-api.twilio.com\"}]",
+ "perPath: /v1/Users/{Sid} get security [{\"accountSid_authToken\":[]}]",
+ "perPath: /v1/Users/{Sid} post security [{\"accountSid_authToken\":[]}]",
+ "schemes.accountSid_authToken.scheme: \"basic\"",
+ "schemes.accountSid_authToken.type: \"http\"",
+ "security[]: {\"accountSid_authToken\":[]}",
+ "servers[0]: {\"url\":\"https://frontline-api.twilio.com\"}"
+]

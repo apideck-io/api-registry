@@ -1,0 +1,13 @@
+[
+ "perPath: []",
+ "schemes.AccessKey.description: \"Client Access Key\"",
+ "schemes.AccessKey.in: \"header\"",
+ "schemes.AccessKey.name: \"X-Access-Secret\"",
+ "schemes.AccessKey.type: \"apiKey\"",
+ "schemes.ClientID.description: \"Client ID\"",
+ "schemes.ClientID.in: \"header\"",
+ "schemes.ClientID.name: \"X-Access-Client-Id\"",
+ "schemes.ClientID.type: \"apiKey\"",
+ "security[]: {\"AccessKey\":[],\"ClientID\":[]}",
+ "servers[0]: {\"url\":\"https://prod.truv.com\"}"
+]

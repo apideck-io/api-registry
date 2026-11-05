@@ -1,0 +1,9 @@
+[
+ "basePath: \"/act.web.api\"",
+ "definitions: null",
+ "host: \"apimta.act.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

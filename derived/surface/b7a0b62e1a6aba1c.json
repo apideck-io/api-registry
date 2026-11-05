@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.JWT.bearerFormat: \"JWT\"",
+ "schemes.JWT.description: \"Personal Access Token — generate one at https://app.ninety.io/settings/user/developer-settings\"",
+ "schemes.JWT.scheme: \"bearer\"",
+ "schemes.JWT.type: \"http\"",
+ "security[]: {\"JWT\":[]}",
+ "servers: []"
+]

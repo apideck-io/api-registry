@@ -1,0 +1,21 @@
+[
+ "perPath: /client/back-in-stock-subscriptions post security []",
+ "perPath: /client/event-bulk-create post security []",
+ "perPath: /client/events post security []",
+ "perPath: /client/geofences get security []",
+ "perPath: /client/ip-allowlists/{id} get security []",
+ "perPath: /client/profiles post security []",
+ "perPath: /client/push-token-unregister post security []",
+ "perPath: /client/push-tokens post security []",
+ "perPath: /client/review-values-reports get security []",
+ "perPath: /client/reviews get security []",
+ "perPath: /client/reviews post security []",
+ "perPath: /client/subscriptions post security []",
+ "schemes.Klaviyo-API-Key.description: \"Private key authentication for /api/ endpoints is performed by setting the `Authorization` header to `Klaviyo-API-Key your-private-api-key`<br>For more information please visit https://developers.klaviyo.com/en/v2026-10-15/reference/api-overview#authentication\"",
+ "schemes.Klaviyo-API-Key.in: \"header\"",
+ "schemes.Klaviyo-API-Key.name: \"Authorization\"",
+ "schemes.Klaviyo-API-Key.type: \"apiKey\"",
+ "schemes.Klaviyo-API-Key.x-default: \"Klaviyo-API-Key your-private-api-key\"",
+ "security[]: {\"Klaviyo-API-Key\":[]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://a.klaviyo.com\"}"
+]

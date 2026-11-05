@@ -1,0 +1,18 @@
+[
+ "basePath: null",
+ "definitions.oauth2.description: \"Authenticate to OAuth2 using Client Credentials flow\"",
+ "definitions.oauth2.flow: \"application\"",
+ "definitions.oauth2.scopes.scim: \"SCIM scope\"",
+ "definitions.oauth2.tokenUrl: \"https://api.fourth.com/oauth/connect/token\"",
+ "definitions.oauth2.type: \"oauth2\"",
+ "host: null",
+ "parameterizedHost: null",
+ "perOp: /scim/Me get [{\"oauth2\":[\"scim\"]}]",
+ "perOp: /scim/ResourceTypes get [{\"oauth2\":[\"scim\"]}]",
+ "perOp: /scim/Schemas get [{\"oauth2\":[\"scim\"]}]",
+ "perOp: /scim/ServiceProviderConfig get [{\"oauth2\":[\"scim\"]}]",
+ "perOp: /scim/Users get [{\"oauth2\":[\"scim\"]}]",
+ "perOp: /scim/Users/{identifier} get [{\"oauth2\":[\"scim\"]}]",
+ "schemes: [\"https\"]",
+ "security: null"
+]

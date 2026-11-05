@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"Production environment\",\"url\":\"https://api.dualentry.com\"}"
+]

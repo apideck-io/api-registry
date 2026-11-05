@@ -1,0 +1,22 @@
+[
+ "perPath: /api get security [{\"bearerAuth\":[]}]",
+ "perPath: /api/{entityType}/{bundle} get security [{\"bearerAuth\":[]},{}]",
+ "perPath: /api/{entityType}/{bundle} post security [{\"bearerAuth\":[]}]",
+ "perPath: /api/{entityType}/{bundle}/{uuid} delete security [{\"bearerAuth\":[]}]",
+ "perPath: /api/{entityType}/{bundle}/{uuid} get security [{\"bearerAuth\":[]},{}]",
+ "perPath: /api/{entityType}/{bundle}/{uuid} patch security [{\"bearerAuth\":[]}]",
+ "perPath: /api/{entityType}/{bundle}/{uuid}/relationships/{field} get security [{\"bearerAuth\":[]},{}]",
+ "perPath: /api/{entityType}/{bundle}/{uuid}/{field} get security [{\"bearerAuth\":[]},{}]",
+ "schemes.bearerAuth.bearerFormat: \"JWT\"",
+ "schemes.bearerAuth.description: \"`Authorization: Bearer <token>` with one space after Bearer. Tokens come from POST /oauth/token. Not required for published-content GETs when the site's `Public access` (`API > JSON:API`) is Yes.\\n\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://your-site.example.com/oauth/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"content:administer\"]: \"Create, update, and delete entries over JSON:API.\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://your-site.example.com/oauth/token\"",
+ "schemes.oauth2.flows.clientCredentials.scopes.[\"content:administer\"]: \"Create, update, and delete entries over JSON:API.\"",
+ "schemes.oauth2.flows.clientCredentials.tokenUrl: \"https://your-site.example.com/oauth/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Your site's base URL, the canonical ACQUIA_SITE_URL environment variable, with no trailing slash. Source CMS serves JSON:API under /api; headless Cloud Platform sites serve it under /jsonapi.\\n\",\"url\":\"{siteUrl}\",\"variables\":{\"siteUrl\":{\"default\":\"https://your-site.example.com\",\"description\":\"The ACQUIA_SITE_URL environment variable (no trailing slash).\"}}}"
+]

@@ -1,0 +1,18 @@
+[
+ "perPath: /batches get security [{\"ApiKeyAuth\":[]},{\"Bearer\":[\"contacts.read\",\"events.read\",\"products.read\"]}]",
+ "perPath: /batches post security [{\"ApiKeyAuth\":[]},{\"Bearer\":[\"contacts.write\",\"events.write\",\"products.write\"]}]",
+ "perPath: /batches/{batchID} get security [{\"ApiKeyAuth\":[]},{\"Bearer\":[\"contacts.read\",\"events.read\",\"products.read\"]}]",
+ "perPath: /batches/{batchID}/items get security [{\"ApiKeyAuth\":[]},{\"Bearer\":[\"contacts.read\",\"events.read\",\"products.read\"]}]",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-API-KEY\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "schemes.Bearer.flows.clientCredentials.scopes.[\"contacts.read\"]: \"Allows reading contact batches\"",
+ "schemes.Bearer.flows.clientCredentials.scopes.[\"contacts.write\"]: \"Allows modifying contacts\"",
+ "schemes.Bearer.flows.clientCredentials.scopes.[\"events.write\"]: \"Allows sending events\"",
+ "schemes.Bearer.flows.clientCredentials.scopes.[\"products.read\"]: \"Allows reading product batches\"",
+ "schemes.Bearer.flows.clientCredentials.scopes.[\"products.write\"]: \"Allows modifying products\"",
+ "schemes.Bearer.flows.clientCredentials.tokenUrl: \"https://app.omnisend.com/oauth2/token\"",
+ "schemes.Bearer.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.omnisend.com/v5\"}"
+]

@@ -1,0 +1,22 @@
+[
+ "perPath: []",
+ "schemes.apiKeyQuery.description: \"Legacy: the user's `api_key` as a query parameter, together with an `app_key`. Existing integrations keep working; prefer an API token, or at least the header form, so no credential appears in a URL.\"",
+ "schemes.apiKeyQuery.in: \"query\"",
+ "schemes.apiKeyQuery.name: \"api_key\"",
+ "schemes.apiKeyQuery.type: \"apiKey\"",
+ "schemes.appKeyHeader.description: \"The registered integration's `app_key`, sent as a header. Needed alongside a JWT or a legacy `api_key`; API tokens need no `app_key`.\"",
+ "schemes.appKeyHeader.in: \"header\"",
+ "schemes.appKeyHeader.name: \"app-key\"",
+ "schemes.appKeyHeader.type: \"apiKey\"",
+ "schemes.appKeyQuery.description: \"Legacy: the registered integration's `app_key` as a query parameter. Existing integrations keep working; prefer the `app-key` header.\"",
+ "schemes.appKeyQuery.in: \"query\"",
+ "schemes.appKeyQuery.name: \"app_key\"",
+ "schemes.appKeyQuery.type: \"apiKey\"",
+ "schemes.bearerAuth.description: \"An API token (`pcrm_live_...`), a JWT, or a legacy `api_key`, sent as `Authorization: Bearer <credential>`. The three are told apart by shape.\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"apiKeyQuery\":[],\"appKeyQuery\":[]}",
+ "security[]: {\"appKeyHeader\":[],\"bearerAuth\":[]}",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.pipelinecrm.com/api/v3\"}"
+]

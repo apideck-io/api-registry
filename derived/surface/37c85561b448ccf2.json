@@ -1,0 +1,15 @@
+[
+ "perPath: /apiHub/payroll/v1/companies/{companyId}/employees/{employeeId}/payStatements get security [{\"JWTAuthorization\":[]}]",
+ "perPath: /apiHub/payroll/v1/companies/{companyId}/employees/{employeeId}/payStatements/{payStatementId} get security [{\"JWTAuthorization\":[]}]",
+ "perPath: /apiHub/payroll/v1/companies/{companyId}/payPeriods/{payPeriodId}/employees get security [{\"JWTAuthorization\":[]}]",
+ "perPath: /apiHub/payroll/v1/companies/{companyId}/paySchedules get security [{\"JWTAuthorization\":[]}]",
+ "perPath: /apiHub/payroll/v1/companies/{companyId}/payrollReadiness/snapshots post security [{\"JWTAuthorization\":[]}]",
+ "perPath: /apiHub/payroll/v1/companies/{companyId}/payrollReadiness/snapshots/{snapshotId} get security [{\"JWTAuthorization\":[]}]",
+ "perPath: /apiHub/payroll/v1/companies/{companyId}/payrollReadiness/snapshots/{snapshotId}/exportData get security [{\"JWTAuthorization\":[]}]",
+ "schemes.JWTAuthorization.bearerFormat: \"JWT\"",
+ "schemes.JWTAuthorization.description: \"Paste JWT here.\"",
+ "schemes.JWTAuthorization.scheme: \"bearer\"",
+ "schemes.JWTAuthorization.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://dc1demogwext.paylocity.com\"}"
+]

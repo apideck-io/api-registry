@@ -1,0 +1,12 @@
+[
+ "basePath: \"/APIEndpoint\"",
+ "definitions.QueryKey.description: \"Simple api key authentication. API Keys available at https://www.who-hosts-this.com/API\"",
+ "definitions.QueryKey.in: \"query\"",
+ "definitions.QueryKey.name: \"key\"",
+ "definitions.QueryKey.type: \"apiKey\"",
+ "host: \"www.who-hosts-this.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"QueryKey\":[]}"
+]

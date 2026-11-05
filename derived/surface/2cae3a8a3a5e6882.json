@@ -1,0 +1,9 @@
+[
+ "basePath: null",
+ "definitions: null",
+ "host: \"localhost\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\",\"http\"]",
+ "security: null"
+]

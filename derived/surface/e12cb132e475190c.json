@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.api-key.in: \"header\"",
+ "schemes.api-key.name: \"api-key\"",
+ "schemes.api-key.type: \"apiKey\"",
+ "security[]: {\"api-key\":[\"read : write\"]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.rocketlane.com/api\"}",
+ "servers[1]: {\"description\":\"Staging\",\"url\":\"https://api.nitro.run/api\"}",
+ "servers[2]: {\"description\":\"Orbits\",\"url\":\"https://project.api.orbits.run/api\"}"
+]

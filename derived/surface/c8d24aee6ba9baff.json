@@ -1,0 +1,14 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.bearerFormat: \"JWT\"",
+ "schemes.bearerAuth.description: \"QStash authentication token\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "schemes.bearerAuthQuery.description: \"QStash authentication token passed as a query parameter\"",
+ "schemes.bearerAuthQuery.in: \"query\"",
+ "schemes.bearerAuthQuery.name: \"qstash_token\"",
+ "schemes.bearerAuthQuery.type: \"apiKey\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "security[]: {\"bearerAuthQuery\":[]}",
+ "servers[0]: {\"description\":\"Regional\",\"url\":\"https://qstash-{region}.upstash.io\",\"variables\":{\"region\":{\"default\":\"eu-central-1\",\"enum\":[\"us-east-1\",\"eu-central-1\"]}}}"
+]

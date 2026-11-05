@@ -1,0 +1,21 @@
+[
+ "perPath: /auth/refresh post security []",
+ "perPath: /auth/token post security []",
+ "schemes.Bearer.bearerFormat: \"JWT\"",
+ "schemes.Bearer.scheme: \"bearer\"",
+ "schemes.Bearer.type: \"http\"",
+ "schemes.OAuth.description: \"\\nThis API uses OAuth 2.\\nWe suggest to use the scope: `ix-api` but\\nit is up to the implementers to decide the details.\\nThis includes what flows to support.\\n\"",
+ "schemes.OAuth.flows.authorizationCode.authorizationUrl: \"https://auth.example-ix/see-implementation-guide\"",
+ "schemes.OAuth.flows.authorizationCode.scopes.ix-api: \"access the IX-API\"",
+ "schemes.OAuth.flows.authorizationCode.tokenUrl: \"https://auth.example-ix/see-implementation-guide\"",
+ "schemes.OAuth.flows.clientCredentials.scopes.ix-api: \"access the IX-API\"",
+ "schemes.OAuth.flows.clientCredentials.tokenUrl: \"https://auth.example-ix/see-implementation-guide\"",
+ "schemes.OAuth.flows.implicit.authorizationUrl: \"https://auth.example-ix/see-implementation-guide\"",
+ "schemes.OAuth.flows.implicit.scopes.ix-api: \"access the IX-API\"",
+ "schemes.OAuth.flows.password.scopes.ix-api: \"access the IX-API\"",
+ "schemes.OAuth.flows.password.tokenUrl: \"https://auth.example-ix/see-implementation-guide\"",
+ "schemes.OAuth.type: \"oauth2\"",
+ "security[]: {\"Bearer\":[]}",
+ "security[]: {\"OAuth\":[\"ix-api\"]}",
+ "servers[0]: {\"url\":\"/api/v2\"}"
+]

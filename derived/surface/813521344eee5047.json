@@ -1,0 +1,11 @@
+[
+ "basePath: \"/api/v1\"",
+ "definitions.netlifyAuth.authorizationUrl: \"https://app.netlify.com/authorize\"",
+ "definitions.netlifyAuth.flow: \"implicit\"",
+ "definitions.netlifyAuth.type: \"oauth2\"",
+ "host: \"api.netlify.com\"",
+ "parameterizedHost: null",
+ "perOp: /ai-gateway/providers get []",
+ "schemes: [\"https\"]",
+ "security[]: {\"netlifyAuth\":[]}"
+]

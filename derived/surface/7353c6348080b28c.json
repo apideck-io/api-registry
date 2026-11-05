@@ -1,0 +1,21 @@
+[
+ "perPath: /account/users delete security [{\"bearerAuth\":[]}]",
+ "perPath: /geo/ip get security [{\"bearerAuth\":[]}]",
+ "perPath: /geo/ip/bulk get security [{\"bearerAuth\":[]}]",
+ "perPath: /lookup/asn/{asn} get security [{\"bearerAuth\":[]}]",
+ "perPath: /lookup/bin/{bin} get security [{\"bearerAuth\":[]}]",
+ "perPath: /lookup/countries/{country_code} get security [{\"bearerAuth\":[]}]",
+ "perPath: /lookup/domains/{domain} get security [{\"bearerAuth\":[]}]",
+ "perPath: /lookup/iban/{iban} get security [{\"bearerAuth\":[]}]",
+ "perPath: /lookup/ip/{ip} get security [{\"bearerAuth\":[]}]",
+ "perPath: /score/email/{email} get security [{\"bearerAuth\":[]}]",
+ "perPath: /score/ip/{ip} get security [{\"bearerAuth\":[]}]",
+ "perPath: /score/payments post security [{\"bearerAuth\":[]}]",
+ "perPath: /score/phone/{phone} get security [{\"bearerAuth\":[]}]",
+ "perPath: /score/text post security [{\"bearerAuth\":[]}]",
+ "schemes.bearerAuth.description: \"Send your API key as a Bearer token.\\n\\nExample:\\n> Authorization: Bearer <api-key>\\n\\nAPI v2 does not accept `key` in the query string or JSON body.\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"API v2 (recommended)\",\"url\":\"https://v2.greipapi.com\"}"
+]

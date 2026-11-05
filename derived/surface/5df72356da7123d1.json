@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.increase.com\"}",
+ "servers[1]: {\"url\":\"https://sandbox.increase.com\"}"
+]

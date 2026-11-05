@@ -1,0 +1,8 @@
+[
+ "perPath: /health get security []",
+ "schemes.bearerAuth.description: \"API key authentication using Bearer token\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://api.finta.io/v1\"}"
+]

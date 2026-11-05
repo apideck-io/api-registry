@@ -1,0 +1,14 @@
+[
+ "perPath: []",
+ "schemes.apiKeyQuery.description: \"The same team-level API token passed as a query parameter.\"",
+ "schemes.apiKeyQuery.in: \"query\"",
+ "schemes.apiKeyQuery.name: \"api_token\"",
+ "schemes.apiKeyQuery.type: \"apiKey\"",
+ "schemes.bearerAuth.description: \"Opaque team-level API token (80 random characters, not a JWT), issued once from the Jiminny app. Also accepted as a POST body field api_token.\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"apiKeyQuery\":[]}",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Production US app server (uses live data)\",\"url\":\"https://app.jiminny.com/customer/api/v1\"}",
+ "servers[1]: {\"description\":\"Production EU app server (uses live data)\",\"url\":\"https://app.jiminny.eu/customer/api/v1\"}"
+]

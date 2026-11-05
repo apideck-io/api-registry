@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.OAuth2.description: \"JWT-based access to api.bol.com\"",
+ "schemes.OAuth2.in: \"header\"",
+ "schemes.OAuth2.scheme: \"bearer\"",
+ "schemes.OAuth2.type: \"http\"",
+ "security[]: {\"OAuth2\":[]}",
+ "servers: null"
+]

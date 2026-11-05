@@ -1,0 +1,9 @@
+[
+ "perPath: /v2/authentication post security []",
+ "schemes.BearerJWT.bearerFormat: \"JWT\"",
+ "schemes.BearerJWT.scheme: \"bearer\"",
+ "schemes.BearerJWT.type: \"http\"",
+ "security[]: {\"BearerJWT\":[]}",
+ "servers[0]: {\"description\":\"Production endpoint with live company data.\",\"url\":\"https://api.hrworks.de\"}",
+ "servers[1]: {\"description\":\"Test endpoint with dummy data.\",\"url\":\"https://api.demo-hrworks.de\"}"
+]

@@ -1,0 +1,12 @@
+[
+ "perPath: []",
+ "schemes.oAuth2ClientCredentials.description: \"\\nRefer to [these](https://developer.brex.com/docs/partner_authentication/) docs on how to use client credentials.\\n\"",
+ "schemes.oAuth2ClientCredentials.flows.clientCredentials.scopes.[\"https://onboarding.brexapis.com/referrals\"]: \"View and manage referral data.\"",
+ "schemes.oAuth2ClientCredentials.flows.clientCredentials.scopes.offline_access: \"offline access\"",
+ "schemes.oAuth2ClientCredentials.flows.clientCredentials.scopes.openid: \"openid\"",
+ "schemes.oAuth2ClientCredentials.flows.clientCredentials.tokenUrl: \"https://accounts-api.brex.com/oauth2/default/v1/token\"",
+ "schemes.oAuth2ClientCredentials.type: \"oauth2\"",
+ "security[]: {\"oAuth2ClientCredentials\":[]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.brex.com\"}",
+ "servers[1]: {\"description\":\"Staging (Note: This is not a sandbox. It will not work with customer tokens.)\",\"url\":\"https://api-staging.brex.com\"}"
+]

@@ -1,0 +1,8 @@
+[
+ "perPath: /offers/ get security []",
+ "perPath: /offers/{id} get security []",
+ "perPath: /offers/{offer_slug}/candidates post security []",
+ "schemes: {}",
+ "security[]: {}",
+ "servers[0]: {\"url\":\"https://{yourcompany}.recruitee.com/api\",\"variables\":{\"yourcompany\":{\"default\":\"yourcompany\"}}}"
+]

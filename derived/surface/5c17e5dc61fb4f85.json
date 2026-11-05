@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.TokenAuth.description: \"Token-based authentication. Use format: \\\"Token token=YOUR_API_KEY\\\" where YOUR_API_KEY is your API key\"",
+ "schemes.TokenAuth.in: \"header\"",
+ "schemes.TokenAuth.name: \"authorization\"",
+ "schemes.TokenAuth.type: \"apiKey\"",
+ "security[]: {\"TokenAuth\":[]}",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://api.paubox.com/v1/marketing\"}"
+]

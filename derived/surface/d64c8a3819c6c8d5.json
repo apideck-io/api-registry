@@ -1,0 +1,9 @@
+[
+ "perPath: /oauth2/token post security [{\"basic\":[]}]",
+ "schemes.basic.scheme: \"basic\"",
+ "schemes.basic.type: \"http\"",
+ "schemes.bearer.scheme: \"bearer\"",
+ "schemes.bearer.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://account.sendcloud.com\"}"
+]

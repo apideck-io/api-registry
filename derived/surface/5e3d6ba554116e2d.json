@@ -1,0 +1,15 @@
+[
+ "perPath: /createPermit post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "perPath: /disable post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "perPath: /disablePermit post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "perPath: /listRecurringDetails post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "perPath: /notifyShopper post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "perPath: /scheduleAccountUpdater post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-API-Key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "schemes.BasicAuth.scheme: \"basic\"",
+ "schemes.BasicAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://pal-test.adyen.com/pal/servlet/Recurring/v68\"}"
+]

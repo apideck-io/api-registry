@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.ApiKey.description: \"Username and apiKey as the password\"",
+ "schemes.ApiKey.scheme: \"basic\"",
+ "schemes.ApiKey.type: \"http\"",
+ "security[]: {\"ApiKey\":[]}",
+ "servers[0]: {\"url\":\"https://auvikapi.us1.my.auvik.com\"}"
+]

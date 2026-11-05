@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"An API key that will be supplied in a named header.\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"Authorization\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "schemes.apiKey.x-default: \"Bearer API_KEY\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.g.alchemy.com/prices/v1\"}"
+]

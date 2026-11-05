@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.BearerAuth.bearerFormat: \"JWT\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.knock.app\",\"variables\":{}}"
+]

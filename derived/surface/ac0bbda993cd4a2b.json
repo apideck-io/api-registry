@@ -1,0 +1,12 @@
+[
+ "perPath: /ips get security []",
+ "schemes.JWT.bearerFormat: \"JWT\"",
+ "schemes.JWT.scheme: \"bearer\"",
+ "schemes.JWT.type: \"http\"",
+ "schemes.Token.description: \"You must use the API Token found under the \\\"API tokens\\\" screen of your organization\\n[in the manager](https://redirection.io/manager).\\nThis token must be used in the `Authorization` header, as below:\\n```\\nAuthorization: Bearer TOKEN\\n```\"",
+ "schemes.Token.in: \"header\"",
+ "schemes.Token.name: \"Authorization\"",
+ "schemes.Token.type: \"apiKey\"",
+ "security[]: {\"Token\":[]}",
+ "servers[0]: {\"description\":\"The public redirection.io API endpoint\",\"url\":\"https://api.redirection.io/\"}"
+]

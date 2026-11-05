@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.OAuth2.flows.clientCredentials.scopes: {}",
+ "schemes.OAuth2.flows.clientCredentials.tokenUrl: \"https://accounts.salesloft.com/oauth/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.salesloft.com\"}"
+]

@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.authentication.scheme: \"bearer\"",
+ "schemes.authentication.type: \"http\"",
+ "security[]: {\"authentication\":[]}",
+ "servers[0]: {\"url\":\"https://api.ngrok.com\"}"
+]

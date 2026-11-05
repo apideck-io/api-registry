@@ -1,0 +1,11 @@
+[
+ "auth: null",
+ "hosts: [\"{{resourceurl}}\"]",
+ "nested: []",
+ "scripts: \"/Credit Notes/API Credit Note POST precedingSalesVoucherId\" test [\"\"]",
+ "scripts: \"/Invoices/API Invoice POST pursue\" test [\"\"]",
+ "scripts: \"/Order Confirmations/API Order Confirmations POST pursue\" test [\"\"]",
+ "scripts: \"/Profile/API Profile GET\" test [\"const jsonData = pm.response.json();\\r\",\"pm.environment.set('organizationId', jsonData['organizationId']);\\r\",\"pm.environment.set('userId', jsonData['created']['userId']);\"]",
+ "scripts: \"/Quotations/API Quotation POST\" test [\"pm.test(\\\"Status code is 201\\\", function () {\",\"    var jsonData = pm.response.json();\",\"    pm.response.to.have.status(201);\",\"    pm.environment.set(\\\"invoiceId\\\", jsonData.id); // id from action result\",\"    console.log(\\\"created invoice has id \\\" + pm.environment.get(\\\"invoiceId\\\"));\",\"});\",\"\"]",
+ "variables: []"
+]

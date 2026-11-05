@@ -1,0 +1,11 @@
+[
+ "basePath: \"/v1\"",
+ "definitions.DjangoRestToken.in: \"header\"",
+ "definitions.DjangoRestToken.name: \"Authorization\"",
+ "definitions.DjangoRestToken.type: \"apiKey\"",
+ "host: \"api.botify.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"DjangoRestToken\":[]}"
+]

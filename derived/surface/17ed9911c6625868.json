@@ -1,0 +1,17 @@
+[
+ "perPath: /v1/auth/github-actions/token post security []",
+ "schemes.Bearer.bearerFormat: \"JWT\"",
+ "schemes.Bearer.description: \"OAuth2 token for API authentication\"",
+ "schemes.Bearer.scheme: \"bearer\"",
+ "schemes.Bearer.type: \"http\"",
+ "schemes.OAuth2.description: \"OAuth2 authentication\"",
+ "schemes.OAuth2.flows.authorizationCode.authorizationUrl: \"https://auth.prisma.io/authorize\"",
+ "schemes.OAuth2.flows.authorizationCode.refreshUrl: \"https://auth.prisma.io/token\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.[\"workspace:admin\"]: \"Full access to workspace resources\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.offline_access: \"Offline access\"",
+ "schemes.OAuth2.flows.authorizationCode.tokenUrl: \"https://auth.prisma.io/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security[]: {\"Bearer\":[]}",
+ "security[]: {\"OAuth2\":[\"offline_access\",\"workspace:admin\"]}",
+ "servers[0]: {\"url\":\"https://api.prisma.io\"}"
+]

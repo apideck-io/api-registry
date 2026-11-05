@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.ApiKey.in: \"header\"",
+ "schemes.ApiKey.name: \"Authorization\"",
+ "schemes.ApiKey.type: \"apiKey\"",
+ "security[]: {\"ApiKey\":[\"read\",\"write\"]}",
+ "servers[0]: {\"description\":\" Default\",\"url\":\"https://app.launchdarkly.com\"}",
+ "servers[1]: {\"description\":\" Federal\",\"url\":\"https://app.launchdarkly.us\"}"
+]

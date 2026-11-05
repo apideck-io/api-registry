@@ -1,0 +1,12 @@
+[
+ "perPath: []",
+ "schemes.basicAuth.description: \"API key from Cursor Dashboard, supplied as the Basic\\nAuthentication username with an empty password.\\n\"",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "schemes.bearerAuth.description: \"API key from Cursor Dashboard, supplied via\\n`Authorization: Bearer <key>`. Equivalent to Basic Auth.\\n\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://api.cursor.com\"}"
+]
