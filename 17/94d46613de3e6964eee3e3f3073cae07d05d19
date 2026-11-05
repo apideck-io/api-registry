@@ -1,0 +1,217 @@
+connectors/advicement.yaml
+  s_dc3e991cde2235::t_677ead3112b636 1-8
+connectors/apache-airflow.yaml
+  s_dc3e991cde2235::t_62bd5e8e083f59 1-8
+connectors/authentik.yaml
+  s_dc3e991cde2235::t_97e4b81e7135c5 1-8
+connectors/bandsintown.yaml
+  s_dc3e991cde2235::t_62f23fe53793d2 1-8
+connectors/bc-data-catalogue.yaml
+  s_dc3e991cde2235::t_0a49358bdb4976 1-8
+connectors/betfair.yaml
+  s_dc3e991cde2235::t_cec997cdeab623 1-9
+connectors/billingo.yaml
+  s_dc3e991cde2235::t_ce2a2e44079b3f 1-8
+connectors/binance.yaml
+  s_dc3e991cde2235::t_6ecfa12b672ed3 1-8
+connectors/bng2latlong.yaml
+  s_dc3e991cde2235::t_8bb4ffde8ccee3 1-8
+connectors/bungie.yaml
+  s_dc3e991cde2235::t_c025a288019b86 1-8
+connectors/calorieninjas.yaml
+  s_dc3e991cde2235::t_8e3c27464ebef0 1-10
+connectors/canada-holidays.yaml
+  s_dc3e991cde2235::t_bae187b6362b13 1-8
+connectors/car-registration.yaml
+  s_dc3e991cde2235::t_df0735bae785ec 1-8
+connectors/chomp.yaml
+  s_dc3e991cde2235::t_af4672bc228d65 1-8
+connectors/circl-hashlookup.yaml
+  s_dc3e991cde2235::t_1c4837179547ca 1-8
+connectors/clever.yaml
+  s_dc3e991cde2235::t_856e369b5e76f1 1-8
+connectors/climate-fieldview.yaml
+  s_dc3e991cde2235::t_e9b4dc72fb6b59 1-8
+connectors/codat.yaml
+  s_dc3e991cde2235::t_1e67aa12db8eed 1-8
+connectors/college-football-data.yaml
+  s_dc3e991cde2235::t_4c984d54b858fc 1-8
+connectors/cycat.yaml
+  s_dc3e991cde2235::t_8fe249c4c4c75d 1-8
+connectors/d7networks.yaml
+  s_dc3e991cde2235::t_09102cd100ce71 1-8
+connectors/daymet.yaml
+  s_dc3e991cde2235::t_2817c76e7c4031 1-8
+connectors/debian-code-search.yaml
+  s_dc3e991cde2235::t_46d9ea57dc7765 1-8
+connectors/deep-art-effects.yaml
+  s_dc3e991cde2235::t_430f6081cf31a4 1-10
+connectors/deepgram.yaml
+  s_dc3e991cde2235::t_f9d429db18f46c 1-8
+connectors/deepinfra.yaml
+  s_dc3e991cde2235::t_253cb0392f595b 1-8
+connectors/digitalnz.yaml
+  s_dc3e991cde2235::t_bc148057d05b3d 1-8
+connectors/docker.yaml
+  s_dc3e991cde2235::t_8aaad67eba2fe6 1-8
+connectors/docspring.yaml
+  s_dc3e991cde2235::t_d0bf9e19a2f265 1-8
+connectors/domains-index.yaml
+  s_dc3e991cde2235::t_389a479d989b66 1-8
+connectors/embl-ebi-crossbar.yaml
+  s_dc3e991cde2235::t_27d6620751f616 1-8
+connectors/figshare.yaml
+  s_dc3e991cde2235::t_b7ed8b97ee151b 1-8
+connectors/files-com.yaml
+  s_dc3e991cde2235::t_5c9a932c78500b 1-8
+connectors/forem.yaml
+  s_dc3e991cde2235::t_f9d4e1d33a435e 1-8
+connectors/forgejo.yaml
+  s_dc3e991cde2235::t_fca7ecc1ca57b8 1-8
+connectors/fungenerators.yaml
+  s_dc3e991cde2235::t_a0f5e7142f5a64 1-8
+connectors/georg.yaml
+  s_dc3e991cde2235::t_01243352dd0ea9 1-8
+connectors/gitea.yaml
+  s_dc3e991cde2235::t_8b65a0917cd9b5 1-8
+connectors/gov-uk-pay.yaml
+  s_dc3e991cde2235::t_53bc62193c0f65 1-8
+connectors/hetzner-cloud.yaml
+  s_dc3e991cde2235::t_6a4f4fdb9d981d 1-8
+connectors/highways-england.yaml
+  s_dc3e991cde2235::t_4b3d27b2e9b214 1-8
+connectors/hm-land-registry.yaml
+  s_dc3e991cde2235::t_c0e85747e81bbf 1-10
+connectors/httpbin.yaml
+  s_dc3e991cde2235::t_38ffab83a04791 1-8
+connectors/hubhopper.yaml
+  s_dc3e991cde2235::t_dd6dc84322142d 1-8
+connectors/immich.yaml
+  s_dc3e991cde2235::t_e1255c2b5dbf3a 1-8
+connectors/ip2location.yaml
+  s_dc3e991cde2235::t_1caa99ef5978be 1-8
+connectors/iqualify.yaml
+  s_dc3e991cde2235::t_18714244987ce6 1-8
+connectors/jellyfin.yaml
+  s_dc3e991cde2235::t_4dfb2c263793b5 1-8
+connectors/jina-ai.yaml
+  s_dc3e991cde2235::t_1ee67abfab86c5 1-8
+connectors/keycloak.yaml
+  s_dc3e991cde2235::t_dec0d88aec9abc 1-8
+connectors/kubernetes.yaml
+  s_dc3e991cde2235::t_b7e15fe1a06962 1-8
+connectors/lambda.yaml
+  s_dc3e991cde2235::t_6e6aed7929f8e5 1-8
+connectors/langfuse.yaml
+  s_dc3e991cde2235::t_11850348302e6a 1-8
+connectors/linode.yaml
+  s_dc3e991cde2235::t_665632ebe63282 1-8
+connectors/mailboxvalidator.yaml
+  s_dc3e991cde2235::t_a4125f540e4521 1-8
+connectors/mineskin.yaml
+  s_dc3e991cde2235::t_20958a66a07f66 1-8
+connectors/new-york-times.yaml
+  s_dc3e991cde2235::t_484481e82614b1 1-8
+connectors/nookipedia.yaml
+  s_dc3e991cde2235::t_254ee26392b196 1-8
+connectors/noosh.yaml
+  s_dc3e991cde2235::t_c475df57e5dbd2 1-8
+connectors/ollama.yaml
+  s_dc3e991cde2235::t_574d6d82290aaa 1-8
+connectors/open-meteo.yaml
+  s_dc3e991cde2235::t_99d111801b3c41 1-8
+connectors/open-states.yaml
+  s_dc3e991cde2235::t_11bf62d67ee9e5 1-8
+connectors/openapi-generator.yaml
+  s_dc3e991cde2235::t_46e15d6f29eec9 1-8
+connectors/opencage.yaml
+  s_dc3e991cde2235::t_22128f9c9cc493 1-8
+connectors/opendatasoft.yaml
+  s_dc3e991cde2235::t_e022a3984fc62f 1-8
+connectors/openfec.yaml
+  s_dc3e991cde2235::t_c471f0d27446ae 1-8
+connectors/openfigi.yaml
+  s_dc3e991cde2235::t_c965f2296a4b9c 1-8
+connectors/orthanc.yaml
+  s_dc3e991cde2235::t_8b3f29f825d913 1-8
+connectors/osf.yaml
+  s_dc3e991cde2235::t_58db4fbca4ac87 1-8
+connectors/oxford-dictionaries.yaml
+  s_dc3e991cde2235::t_24467c598d64f0 1-8
+connectors/peertube.yaml
+  s_dc3e991cde2235::t_1664a6e7ee8950 1-8
+connectors/philadelphia-polling-places.yaml
+  s_dc3e991cde2235::t_c2413acfa6252e 1-8
+connectors/planetscale.yaml
+  s_dc3e991cde2235::t_1be38d52afe9f8 1-8
+connectors/prefect.yaml
+  s_dc3e991cde2235::t_518c730382d818 1-8
+connectors/ptv.yaml
+  s_dc3e991cde2235::t_c39e34f96fb94b 1-8
+connectors/qdrant.yaml
+  s_dc3e991cde2235::t_f645e295e45ddb 1-8
+connectors/randommer.yaml
+  s_dc3e991cde2235::t_b4f8242e382781 1-8
+connectors/request-baskets.yaml
+  s_dc3e991cde2235::t_2cb91af67dab8c 1-8
+connectors/runscope.yaml
+  s_dc3e991cde2235::t_29fdef8b0ea195 1-8
+connectors/schooldigger.yaml
+  s_dc3e991cde2235::t_1068375a3dd470 1-8
+connectors/setlist-fm.yaml
+  s_dc3e991cde2235::t_52735173796774 1-8
+connectors/sheerseo.yaml
+  s_dc3e991cde2235::t_d401ffa8c34e17 1-8
+connectors/shipengine.yaml
+  s_dc3e991cde2235::t_4982a427d79cb9 1-8
+connectors/spinitron.yaml
+  s_dc3e991cde2235::t_40fa1af596459b 1-8
+connectors/stream.yaml
+  s_dc3e991cde2235::t_39fe7e4d1469da 1-8
+connectors/swagger-generator.yaml
+  s_dc3e991cde2235::t_ceaa7ffb7e9dd4 1-8
+connectors/tcgdex.yaml
+  s_dc3e991cde2235::t_85afd0e83e88d4 1-8
+connectors/temporal.yaml
+  s_dc3e991cde2235::t_2899b05835d816 1-8
+connectors/the-blue-alliance.yaml
+  s_dc3e991cde2235::t_5b49c652e195b8 1-8
+connectors/they-said-so.yaml
+  s_dc3e991cde2235::t_7422f474329907 1-8
+connectors/transport-for-london.yaml
+  s_dc3e991cde2235::t_891c740a38dff5 1-8
+connectors/trash-nothing.yaml
+  s_dc3e991cde2235::t_4123641a919298 1-8
+connectors/tvmaze.yaml
+  s_dc3e991cde2235::t_5aca6a48d1f1bd 1-8
+connectors/uk-parliament.yaml
+  s_dc3e991cde2235::t_babe3594fc8ca4 1-8
+connectors/us-veterans-affairs.yaml
+  s_dc3e991cde2235::t_bdf745005ab206 1-8
+connectors/vocadb.yaml
+  s_dc3e991cde2235::t_6bf5350c14d82c 1-8
+connectors/wealth-reader.yaml
+  s_dc3e991cde2235::t_553bff1faf175e 1-8
+connectors/wikimedia.yaml
+  s_dc3e991cde2235::t_89d574f8798e73 1-8
+connectors/wordnik.yaml
+  s_dc3e991cde2235::t_8cc4a973df86b4 1-8
+connectors/zeno-media.yaml
+  s_dc3e991cde2235::t_437f9833709f11 1-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1794d46613de3e6964eee3e3f3073cae07d05d19",
+  "prompts": {},
+  "sessions": {
+    "s_dc3e991cde2235": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1aba2-9e29-7cc0-99f9-5f6120de71eb",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
