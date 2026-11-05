@@ -1,8 +1,0 @@
-id: qdrant
-name: Qdrant
-apideck: false
-specs:
-- name: Qdrant
-  url: https://raw.githubusercontent.com/qdrant/qdrant/master/docs/redoc/master/openapi.json
-  format: openapi-3.0
-  provenance: vendor

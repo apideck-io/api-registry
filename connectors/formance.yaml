@@ -1,0 +1,8 @@
+id: formance
+name: Formance
+apideck: false
+specs:
+- name: Formance API
+  url: https://raw.githubusercontent.com/formancehq/ledger/main/openapi.yml
+  format: openapi-3.0
+  provenance: vendor

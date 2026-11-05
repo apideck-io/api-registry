@@ -1,0 +1,10 @@
+id: revenium
+name: Revenium
+apideck: false
+specs:
+- name: Revenium API
+  url: https://raw.githubusercontent.com/konfig-sdks/openapi-examples/main/revenium/openapi.yaml
+  format: openapi-3.0
+  provenance: third-party
+  notes: Konfig-maintained specification snapshot. This is a third-party source, not a claim of current vendor publication.
+    Confirm current API coverage before integration.

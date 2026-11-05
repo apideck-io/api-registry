@@ -6,3 +6,5 @@ specs:
   url: https://webtris.highwaysengland.co.uk/api/swagger/docs/v1
   format: swagger-2.0
   provenance: vendor
+  notes: WebTRIS traffic-sensor API only, published under the former Highways England brand. The source has a blank info.title;
+    the registry retains that metadata warning.

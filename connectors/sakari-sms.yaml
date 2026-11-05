@@ -1,0 +1,10 @@
+id: sakari-sms
+name: Sakari
+apideck: false
+specs:
+- name: Sakari API
+  url: https://api.apis.guru/v2/specs/sakari.io/1.0.1/openapi.json
+  format: openapi-3.0
+  provenance: community
+  notes: APIs.guru community-maintained specification. Confirm current API coverage against the vendor documentation before
+    integration.

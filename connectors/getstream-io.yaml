@@ -1,0 +1,8 @@
+id: getstream-io
+name: Stream
+apideck: false
+specs:
+- name: Stream Chat API
+  url: https://stream-openapi.s3.us-east-1.amazonaws.com/chat/openapi-latest.yaml
+  format: openapi-3.0
+  provenance: vendor

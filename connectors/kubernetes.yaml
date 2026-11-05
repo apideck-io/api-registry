@@ -5,4 +5,4 @@ specs:
 - name: Kubernetes
   url: https://raw.githubusercontent.com/kubernetes/kubernetes/master/api/openapi-spec/swagger.json
   format: swagger-2.0
-  provenance: community
+  provenance: vendor

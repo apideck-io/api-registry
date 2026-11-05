@@ -1,8 +1,8 @@
 id: trash-nothing
-name: trash nothing
+name: Trash Nothing
 apideck: false
 specs:
-- name: trash nothing
+- name: Trash Nothing API
   url: https://trashnothing.com/api/v1.4/trashnothing-openapi.yaml
   format: swagger-2.0
   provenance: vendor

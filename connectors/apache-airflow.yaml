@@ -5,4 +5,4 @@ specs:
 - name: Airflow
   url: https://raw.githubusercontent.com/apache/airflow/main/airflow-core/src/airflow/api_fastapi/core_api/openapi/v2-rest-api-generated.yaml
   format: openapi-3.1
-  provenance: community
+  provenance: vendor

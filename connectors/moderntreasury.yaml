@@ -1,0 +1,8 @@
+id: moderntreasury
+name: Modern Treasury
+apideck: false
+specs:
+- name: Modern Treasury API
+  url: https://raw.githubusercontent.com/Modern-Treasury/modern-treasury-openapi/master/openapi/mt_openapi_spec_v1.yaml
+  format: openapi-3.0
+  provenance: vendor

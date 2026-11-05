@@ -6,3 +6,4 @@ specs:
   url: https://developer.oxforddictionaries.com/swagger/spec/public_doc_guest.json
   format: swagger-2.0
   provenance: vendor
+  notes: The vendor Swagger document has a blank info.title; the registry retains that source metadata warning.

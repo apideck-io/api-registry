@@ -5,4 +5,5 @@ specs:
 - name: Swagger Generator
   url: https://generator.swagger.io/api/swagger.json
   format: swagger-2.0
-  provenance: community
+  provenance: vendor
+  notes: The Swagger project’s own code-generator service API, not a business-data API.

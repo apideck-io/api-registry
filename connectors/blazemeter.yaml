@@ -1,0 +1,10 @@
+id: blazemeter
+name: BlazeMeter
+apideck: false
+specs:
+- name: BlazeMeter API
+  url: https://api.apis.guru/v2/specs/blazemeter.com/4/swagger.json
+  format: swagger-2.0
+  provenance: community
+  notes: APIs.guru community-maintained specification. Confirm current API coverage against the vendor documentation before
+    integration.

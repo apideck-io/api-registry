@@ -3,6 +3,8 @@ name: Forgejo
 apideck: false
 specs:
 - name: Forgejo
-  url: https://codeberg.org/forgejo/forgejo/raw/branch/forgejo/templates/swagger/v1_json.tmpl
+  url: https://codeberg.org/swagger.v1.json
   format: swagger-2.0
-  provenance: community
+  provenance: third-party
+  notes: Rendered API document from the Codeberg Forgejo deployment. Its version and server configuration describe that instance,
+    not all Forgejo installations.

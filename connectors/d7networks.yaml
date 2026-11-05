@@ -1,8 +1,0 @@
-id: d7networks
-name: D7SMS
-apideck: false
-specs:
-- name: D7SMS
-  url: https://api.swaggerhub.com/apis/Direct7Networks/D7SMS/1.0.2
-  format: swagger-2.0
-  provenance: vendor

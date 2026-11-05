@@ -5,4 +5,4 @@ specs:
 - name: Orthanc API
   url: https://orthanc.uclouvain.be/api/orthanc-openapi.json
   format: openapi-3.0
-  provenance: community
+  provenance: vendor

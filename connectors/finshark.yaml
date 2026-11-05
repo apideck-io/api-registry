@@ -1,0 +1,8 @@
+id: finshark
+name: Finshark
+apideck: false
+specs:
+- name: Finshark API
+  url: https://oas.finshark.io/openapi.yaml
+  format: openapi-3.0
+  provenance: vendor

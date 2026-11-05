@@ -1,0 +1,10 @@
+id: ideal-postcodes
+name: Ideal Postcodes
+apideck: false
+specs:
+- name: Ideal Postcodes API
+  url: https://api.apis.guru/v2/specs/ideal-postcodes.co.uk/3.7.0/openapi.json
+  format: openapi-3.0
+  provenance: community
+  notes: APIs.guru community-maintained specification. Confirm current API coverage against the vendor documentation before
+    integration.

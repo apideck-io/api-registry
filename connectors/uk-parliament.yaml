@@ -1,5 +1,5 @@
 id: uk-parliament
-name: Bills
+name: UK Parliament
 apideck: false
 specs:
 - name: Bills API

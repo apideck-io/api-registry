@@ -6,3 +6,5 @@ specs:
   url: https://cloud.langfuse.com/generated/api/openapi.yml
   format: openapi-3.0
   provenance: vendor
+  notes: The vendor-generated document omits info.version; the registry retains that metadata warning rather than inventing
+    a version.

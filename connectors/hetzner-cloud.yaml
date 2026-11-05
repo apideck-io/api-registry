@@ -1,8 +1,0 @@
-id: hetzner-cloud
-name: Hetzner Cloud
-apideck: false
-specs:
-- name: Hetzner Cloud
-  url: https://docs.hetzner.cloud/cloud.spec.json
-  format: openapi-3.1
-  provenance: vendor

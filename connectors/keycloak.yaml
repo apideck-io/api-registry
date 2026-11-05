@@ -1,8 +1,0 @@
-id: keycloak
-name: Keycloak
-apideck: false
-specs:
-- name: Keycloak
-  url: https://www.keycloak.org/docs-api/latest/rest-api/openapi.json
-  format: openapi-3.0
-  provenance: vendor

@@ -6,5 +6,5 @@ specs:
   url: https://api.apis.guru/v2/specs/calorieninjas.com/1.0.0/openapi.json
   format: openapi-3.0
   provenance: community
-  notes: APIs.guru mirror. The vendor document at https://www.calorieninjas.com/openapi.json
-    contains a trailing comma and fails strict JSON parsing (checked 2026-11-05).
+  notes: APIs.guru mirror. The vendor document at https://www.calorieninjas.com/openapi.json contains a trailing comma and
+    fails strict JSON parsing (checked 2026-11-05).

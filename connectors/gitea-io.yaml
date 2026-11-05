@@ -1,0 +1,8 @@
+id: gitea-io
+name: Gitea
+apideck: false
+specs:
+- name: Gitea
+  url: https://raw.githubusercontent.com/go-gitea/gitea/main/templates/swagger/v1-openapi3.generated.json
+  format: openapi-3.0
+  provenance: vendor

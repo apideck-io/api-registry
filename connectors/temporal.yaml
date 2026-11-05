@@ -1,8 +1,0 @@
-id: temporal
-name: Temporal
-apideck: false
-specs:
-- name: Temporal
-  url: https://raw.githubusercontent.com/temporalio/api/master/openapi/openapiv2.json
-  format: swagger-2.0
-  provenance: vendor

@@ -1,0 +1,8 @@
+id: lambdalabs
+name: Lambda
+apideck: false
+specs:
+- name: Lambda
+  url: https://cloud.lambdalabs.com/api/v1/openapi.json
+  format: openapi-3.1
+  provenance: vendor

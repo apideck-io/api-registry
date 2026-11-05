@@ -1,5 +1,5 @@
 id: hm-land-registry
-name: Deed
+name: HM Land Registry
 apideck: false
 specs:
 - name: Deed API

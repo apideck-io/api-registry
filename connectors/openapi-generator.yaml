@@ -1,8 +1,0 @@
-id: openapi-generator
-name: OpenAPI Generator Online
-apideck: false
-specs:
-- name: OpenAPI Generator Online
-  url: https://api.openapi-generator.tech/api-docs
-  format: swagger-2.0
-  provenance: community

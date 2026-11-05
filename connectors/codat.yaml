@@ -1,8 +1,0 @@
-id: codat
-name: Codat Accounting
-apideck: false
-specs:
-- name: Codat Accounting
-  url: https://raw.githubusercontent.com/codatio/oas/main/json/Codat-Accounting.json
-  format: openapi-3.1
-  provenance: vendor

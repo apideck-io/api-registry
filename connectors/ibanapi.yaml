@@ -1,0 +1,8 @@
+id: ibanapi
+name: IBANAPI
+apideck: false
+specs:
+- name: IBANAPI API
+  url: https://ibanapi.com/openapi.yaml
+  format: openapi-3.0
+  provenance: vendor

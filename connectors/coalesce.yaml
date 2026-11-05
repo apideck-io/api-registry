@@ -1,0 +1,10 @@
+id: coalesce
+name: Coalesce
+apideck: false
+specs:
+- name: Coalesce API
+  url: https://raw.githubusercontent.com/konfig-sdks/openapi-examples/main/coalesce/openapi.yaml
+  format: openapi-3.0
+  provenance: third-party
+  notes: Konfig-maintained specification snapshot. This is a third-party source, not a claim of current vendor publication.
+    Confirm current API coverage before integration.

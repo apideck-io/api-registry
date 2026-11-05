@@ -1,0 +1,10 @@
+id: 2-c-2-p
+name: 2C2P
+apideck: false
+specs:
+- name: 2C2P API
+  url: https://raw.githubusercontent.com/konfig-sdks/openapi-examples/main/2-c-2-p/openapi.yaml
+  format: openapi-3.0
+  provenance: third-party
+  notes: Konfig-maintained specification snapshot. This is a third-party source, not a claim of current vendor publication.
+    Confirm current API coverage before integration.

@@ -1,0 +1,8 @@
+id: tavus
+name: Tavus
+apideck: false
+specs:
+- name: Tavus API
+  url: https://docs.tavus.io/openapi.yaml
+  format: openapi-3.0
+  provenance: vendor

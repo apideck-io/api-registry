@@ -5,4 +5,4 @@ specs:
 - name: Nookipedia
   url: https://api.nookipedia.com/static/doc.yaml
   format: openapi-3.0
-  provenance: community
+  provenance: vendor

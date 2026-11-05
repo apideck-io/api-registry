@@ -1,0 +1,8 @@
+id: kombo-dev
+name: Kombo
+apideck: false
+specs:
+- name: Kombo API
+  url: https://docs.kombo.dev/openapi.json
+  format: openapi-3.1
+  provenance: vendor

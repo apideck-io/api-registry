@@ -5,4 +5,4 @@ specs:
 - name: TCGdex API
   url: https://api.tcgdex.net/v2/openapi.yaml
   format: openapi-3.1
-  provenance: community
+  provenance: vendor
