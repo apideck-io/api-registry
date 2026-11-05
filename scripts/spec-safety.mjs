@@ -341,3 +341,74 @@ export function surfaceDiff(before, after, max = 15) {
   const shown = kept.map((r, i) => (cuts.filter((c) => c === cuts[i]).length > 1 ? r : cut(r)));
   return shown.concat(hidden ? [`… ${hidden} more`] : []);
 }
+
+// A surface row that is one operation's own security requirement: OpenAPI "perPath: <path> <method> security [...]"
+// or Swagger 2 "perOp: <path> <method> [...]". New endpoints and changed scopes produce these every night; they are
+// listed, but only changes to servers, security schemes or document-level security hold the nightly PR.
+const OP_METHODS = "get|put|post|delete|options|head|patch|trace|query";
+// The path is one token: bare, or a JSON string when it holds a space (surfaceRows quotes those), so a path can't
+// carry " get security [" into a server row. The requirement must be a JSON array that ends the row.
+const PATH_TOKEN = String.raw`("(?:[^"\\]|\\.)*"|[^\s"]+)`;
+const OPENAPI_SCOPE = new RegExp(`^perPath: ${PATH_TOKEN} (?:${OP_METHODS}) security (\\[.*\\])$`);
+const SWAGGER_SCOPE = new RegExp(`^perOp: ${PATH_TOKEN} (?:${OP_METHODS}) (\\[.*\\])$`);
+/** An operation's own security row, parsed: its operation ("<path> <method>") and requirement, or null. */
+function parseScopeRow(row) {
+  const m = OPENAPI_SCOPE.exec(row) ?? SWAGGER_SCOPE.exec(row);
+  if (!m) return null;
+  try {
+    const req = JSON.parse(m[2]);
+    if (!Array.isArray(req)) return null;
+    const method = row.slice(0, row.length - m[2].length).trim().split(" ").filter((t) => t !== "security").at(-1);
+    return { op: `${m[1]} ${method}`, req };
+  } catch {
+    return null;
+  }
+}
+
+// The scheme names a requirement uses ([{"oauth2":["read"]},{"apiKey":[]}] -> oauth2,apiKey), sorted.
+const schemeNames = (req) => [...new Set(req.flatMap((x) => Object.keys(x)))].sort().join(",");
+
+// Scheme names last night's rows knew: defined (schemes.<name>…), or used by the document or an operation.
+function knownSchemes(lastRows) {
+  const known = new Set();
+  for (const r of lastRows) {
+    const def = /^schemes\.(\[("(?:[^"\\]|\\.)*")\]|[A-Za-z0-9_$-]+)/.exec(r);
+    if (def) known.add(def[2] ? JSON.parse(def[2]) : def[1]);
+    const p = parseScopeRow(r);
+    if (p) for (const x of p.req) for (const k of Object.keys(x)) known.add(k);
+    const doc = /^security\[\]: (\{.*\})$/.exec(r);
+    if (doc) {
+      try {
+        for (const k of Object.keys(JSON.parse(doc[1]))) known.add(k);
+      } catch {
+        // not a requirement row: ignored
+      }
+    }
+  }
+  return known;
+}
+
+/** Whether a night's surface change is routine: only the scopes inside operations' own security requirements
+ *  changed, never which schemes they use. A changed operation must keep the same scheme names; a new one may only use
+ *  schemes last night already knew; an empty requirement or a {} alternative (no auth) never counts; and an
+ *  operation that loses its own requirement without a new one falls back to the document's, which may be none.
+ *  Anything else (servers, schemes, document security, an operation's own servers) is held for a person. */
+export function routineScopeChange(removed, added, lastRows = []) {
+  if (!removed.length && !added.length) return false;
+  const before = new Map();
+  for (const r of removed) {
+    const p = parseScopeRow(r);
+    if (!p) return false;
+    before.set(p.op, schemeNames(p.req));
+  }
+  const known = knownSchemes(lastRows);
+  const addedOps = new Set();
+  for (const r of added) {
+    const p = parseScopeRow(r);
+    if (!p || !p.req.length || p.req.some((x) => !x || typeof x !== "object" || !Object.keys(x).length)) return false;
+    const names = schemeNames(p.req);
+    if (before.has(p.op) ? before.get(p.op) !== names : names.split(",").some((n) => !known.has(n))) return false;
+    addedOps.add(p.op);
+  }
+  return [...before.keys()].every((op) => addedOps.has(op));
+}

@@ -15,7 +15,7 @@ import { parse as parseYaml } from "yaml";
 import { createRequire } from "node:module";
 import openapiFormat from "openapi-format";
 import { buildASTSchema, introspectionFromSchema, parse as parseGraphQL } from "graphql";
-import { scanText, sdlDescriptions, suspiciousFingerprint, surfaceDetail, surfaceDiff, surfaceHash, surfaceRows, xmlTexts } from "./spec-safety.mjs";
+import { routineScopeChange, scanText, sdlDescriptions, suspiciousFingerprint, surfaceDetail, surfaceDiff, surfaceHash, surfaceRows, xmlTexts } from "./spec-safety.mjs";
 
 const { openapiOverlay, resolveJsonPathValue } = openapiFormat;
 // The JSONPath parser openapi-format applies overlays with, resolved through it rather than declared
@@ -572,6 +572,9 @@ for (const e of entries) {
     const old = before[s.name] ?? {};
     // Rows that changed in this spec's servers or authentication, printed under its line (derived/surface/).
     let surfaceLines = [];
+    // True when every changed row is an operation's own security requirement (a new or changed endpoint's
+    // scopes): listed, but it doesn't hold the PR. Servers, schemes and document-level security still do.
+    let surfaceRoutine = false;
     // Recorded, never fetched: a login wall, or bot protection that refuses CI. Earlier figures stay.
     if (s.manual) {
       specs[s.name] = { ...withoutCoverage(old), ...(s.coverage ? { coverage: s.coverage } : {}), status: `manual: ${s.manual}` };
@@ -784,7 +787,17 @@ for (const e of entries) {
       }
       const lastRows = surfaceAtStart.get(file);
       if (info.surface !== old.surface && old.surface)
+      {
         surfaceLines = Array.isArray(lastRows) ? surfaceDiff(lastRows, rows) : ["(no earlier detail stored; recorded tonight, so the next change shows a diff)"];
+        if (Array.isArray(lastRows)) {
+          const was = new Set(lastRows), now = new Set(rows);
+          surfaceRoutine = routineScopeChange(
+            lastRows.filter((r) => !now.has(r)),
+            rows.filter((r) => !was.has(r)),
+            lastRows,
+          );
+        }
+      }
       if (!existsSync(abs) || readFileSync(abs, "utf8") !== text) {
         mkdirSync(dirname(abs), { recursive: true });
         writeFileSync(abs, text);
@@ -910,7 +923,8 @@ for (const e of entries) {
       (info.formatMismatch ? ` ⚠ format: ${info.formatMismatch}` : "") +
       (info.specIssues ? ` ⚠ spec: ${info.specIssues}` : "") +
       (s.volatile && !parsedForHash ? " ⚠ volatile: didn't parse, so hashed as served" : "") +
-      (surfaceChanged ? " ⚠ surface: servers or authentication changed" : "") +
+      (surfaceChanged && !surfaceRoutine ? " ⚠ surface: servers or authentication changed" : "") +
+      (surfaceChanged && surfaceRoutine ? " ⚠ scopes: only operations' own security requirements changed (listed, not held)" : "") +
       (surfaceNew ? " ⚠ surface: first check of its servers and authentication" : "") +
       (suspiciousNew ? ` ⚠ text: reads like instructions to an AI (${info.suspicious.map((x) => JSON.stringify(x)).join("; ")})` : "");
     console.log(`${mark} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations${stale}`);
