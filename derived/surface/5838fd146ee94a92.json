@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"API key configured for the account. The header name defaults to `Authorization` but is configurable per account, and the value may carry a configurable prefix such as `Bearer `. HTTP Basic authentication is not supported: VTEX never sends Basic credentials.\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"Authorization\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"description\":\"External promotions provider endpoint URL.\",\"url\":\"https://{providerApiEndpoint}\",\"variables\":{\"providerApiEndpoint\":{\"default\":\"provider.example.com\",\"description\":\"External promotions provider endpoint host, optionally followed by a path prefix (for example `provider.example.com/api/v1`). VTEX calls `calculatePromotion` and `notifyUsage` relative to this URL.\"}}}"
+]

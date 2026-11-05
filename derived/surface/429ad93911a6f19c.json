@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.BrowserbaseAuth.description: \"Your [Browserbase API Key](https://www.browserbase.com/settings).\"",
+ "schemes.BrowserbaseAuth.in: \"header\"",
+ "schemes.BrowserbaseAuth.name: \"X-BB-API-Key\"",
+ "schemes.BrowserbaseAuth.type: \"apiKey\"",
+ "security[]: {\"BrowserbaseAuth\":[]}",
+ "servers[0]: {\"description\":\"Public endpoint\",\"url\":\"https://api.browserbase.com\",\"variables\":{}}"
+]

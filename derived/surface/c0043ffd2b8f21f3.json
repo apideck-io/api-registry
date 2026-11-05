@@ -1,0 +1,20 @@
+[
+ "perPath: /accounts get security [{\"oauth2\":[\"Account\"]},{\"openIdConnect\":[\"Account\"]}]",
+ "perPath: /accounts/{accountId} get security [{\"oauth2\":[\"Account\"]},{\"openIdConnect\":[\"Account\"]}]",
+ "perPath: /accounts/{accountId}/contact get security [{\"oauth2\":[\"Customer\"]},{\"openIdConnect\":[\"Customer\"]}]",
+ "perPath: /accounts/{accountId}/payment-networks get security [{\"oauth2\":[\"Account\"]},{\"openIdConnect\":[\"Account\"]}]",
+ "perPath: /accounts/{accountId}/transactions get security [{\"oauth2\":[\"Transactions\"]},{\"openIdConnect\":[\"Transactions\"]}]",
+ "perPath: /customers/current get security [{\"oauth2\":[]},{\"openIdConnect\":[]}]",
+ "schemes.oauth2.description: \"This API uses an [OAuth 2.0 authorization code flow](https://plaid.com/core-exchange/docs/authentication/oauth-flow) and accepts the resulting access token as a bearer token. For example, `curl -H 'Authorization: Bearer <ACCESS&#95;TOKEN>'`.\\n\"",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://www.your-organization.com/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.Account: \"(optional) Read account data\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.Customer: \"(optional) Read customer data\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.Transactions: \"(optional) Read transaction data\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://www.your-organization.com/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "schemes.openIdConnect.description: \"This API uses an [OpenID Connect (OIDC) authentication flow](https://plaid.com/core-exchange/docs/authentication) and accepts the resulting [access token](https://plaid.com/core-exchange/docs/authentication) as a bearer token. For example, `curl -H 'Authorization: Bearer <ACCESS&#95;TOKEN>'`.\\n\"",
+ "schemes.openIdConnect.openIdConnectUrl: \"https://www.your-organization.com/.well-known/openid-configuration\"",
+ "schemes.openIdConnect.type: \"openIdConnect\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Financial Data Exchange V6.4.0 Core API\",\"url\":\"https://api.your-organization.com/fdx/v6\"}"
+]

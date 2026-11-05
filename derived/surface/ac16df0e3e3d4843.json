@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.bearerFormat: \"JWT\"",
+ "schemes.bearerAuth.description: \"`HTTP: Bearer Auth`\\n - Security Scheme Type: http\\n - HTTP Authorization Scheme: Bearer API_key, used to authenticate your account. View it in [Account Management > API Keys](https://platform.minimax.io/user-center/basic-information/interface-key)\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.minimax.io\"}"
+]

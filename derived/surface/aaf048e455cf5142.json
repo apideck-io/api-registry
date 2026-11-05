@@ -1,0 +1,13 @@
+[
+ "perPath: []",
+ "schemes.X-AgreementGrantToken.description: \"Agreement grant token needed to access the endpoints.\"",
+ "schemes.X-AgreementGrantToken.in: \"header\"",
+ "schemes.X-AgreementGrantToken.name: \"X-AgreementGrantToken\"",
+ "schemes.X-AgreementGrantToken.type: \"apiKey\"",
+ "schemes.X-AppSecretToken.description: \"Application secret token needed to access the endpoints.\"",
+ "schemes.X-AppSecretToken.in: \"header\"",
+ "schemes.X-AppSecretToken.name: \"X-AppSecretToken\"",
+ "schemes.X-AppSecretToken.type: \"apiKey\"",
+ "security[]: {\"X-AgreementGrantToken\":[],\"X-AppSecretToken\":[]}",
+ "servers[0]: {\"url\":\"https://apis.e-conomic.com/webhooksapi/v1.0.0/\"}"
+]

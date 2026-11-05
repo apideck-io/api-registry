@@ -1,0 +1,15 @@
+[
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/tagmanager.delete.containers\"].description: \"Delete your Google Tag Manager containers\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/tagmanager.edit.containers\"].description: \"Manage your Google Tag Manager container and its subcomponents, excluding versioning and publishing\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/tagmanager.edit.containerversions\"].description: \"Manage your Google Tag Manager container versions\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/tagmanager.manage.accounts\"].description: \"View and manage your Google Tag Manager accounts\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/tagmanager.manage.users\"].description: \"Manage user permissions of your Google Tag Manager account and container\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/tagmanager.publish\"].description: \"Publish your Google Tag Manager container versions\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/tagmanager.readonly\"].description: \"View your Google Tag Manager container and its subcomponents\"",
+ "baseUrl: \"https://tagmanager.googleapis.com/\"",
+ "batchPath: \"batch\"",
+ "endpoints: null",
+ "mtlsRootUrl: \"https://tagmanager.mtls.googleapis.com/\"",
+ "rootUrl: \"https://tagmanager.googleapis.com/\"",
+ "servicePath: \"\""
+]

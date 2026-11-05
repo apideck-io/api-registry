@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.api_keys.description: \"Generate your secret API key in the app settings.\\n\"",
+ "schemes.api_keys.in: \"header\"",
+ "schemes.api_keys.name: \"api-key\"",
+ "schemes.api_keys.type: \"apiKey\"",
+ "security[]: {\"api_keys\":[]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.shipstation.com\"}"
+]

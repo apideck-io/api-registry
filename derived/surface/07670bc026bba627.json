@@ -1,0 +1,15 @@
+[
+ "perPath: /products get security [{\"ApiKeyAuth\":[]},{\"Bearer\":[\"products.read\"]}]",
+ "perPath: /products post security [{\"ApiKeyAuth\":[]},{\"Bearer\":[\"products.write\"]}]",
+ "perPath: /products/{productID} delete security [{\"ApiKeyAuth\":[]},{\"Bearer\":[\"products.write\"]}]",
+ "perPath: /products/{productID} get security [{\"ApiKeyAuth\":[]},{\"Bearer\":[\"products.read\"]}]",
+ "perPath: /products/{productID} put security [{\"ApiKeyAuth\":[]},{\"Bearer\":[\"products.write\"]}]",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-API-KEY\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "schemes.Bearer.flows.clientCredentials.scopes: {}",
+ "schemes.Bearer.flows.clientCredentials.tokenUrl: \"https://app.omnisend.com/oauth2/token\"",
+ "schemes.Bearer.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.omnisend.com/v5\"}"
+]

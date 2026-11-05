@@ -1,0 +1,10 @@
+[
+ "basePath: null",
+ "definitions.basic_auth.desc: \"Base 64 encoded string of your Huntress Account API key and API secret.\"",
+ "definitions.basic_auth.type: \"basic\"",
+ "host: \"api.huntress.io\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"basic\":[\"basic_auth\"]}"
+]

@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.sessionToken.description: \"### MX Session Token \\n- Request an API token using the read API token endpoint in the MX SSO API.\\n- Exchange an API token for a session token. \\n  - A session token is obtained by sending a POST request to /sessions\\n  - The session token will be used in each request made for the user. It should be passed in an `MD-SESSION-TOKEN` HTTP header as shown below.\\n  - This session token is valid for 30 minutes from the time it was created. The 30 minute expiration counter is refreshed with each call.\\n  - If you send a request with an expired session token you'll receive an error code of `4011`.\\n\\n```\\ncurl -i https://int-data.moneydesktop.com/accounts \\\\\\n-H 'MD-SESSION-TOKEN: CWforZl1Vn2vC_v6H4rnQRT1DoWpDouJAV-_5TBmiQRAtA8rsOG_BoajTiOSsL0A3bd-bmHXlA-eQzc9ywItKg' \\\\\\n-H 'Content-Type: application/vnd.mx.nexus.v1+json' \\\\\\n-H 'Accept: application/vnd.mx.nexus.v1+json'\\n```\\n\\nIn documentation code examples, replace `<API_KEY_VALUE>` with the session token.\\n\"",
+ "schemes.sessionToken.in: \"header\"",
+ "schemes.sessionToken.name: \"MD-SESSION-TOKEN\"",
+ "schemes.sessionToken.type: \"apiKey\"",
+ "security[]: {\"sessionToken\":[]}",
+ "servers[0]: {\"url\":\"https://int-data.moneydesktop.com/\"}",
+ "servers[1]: {\"url\":\"https://data.moneydesktop.com/\"}"
+]

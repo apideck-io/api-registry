@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.appKey.in: \"header\"",
+ "schemes.appKey.name: \"X-VTEX-API-AppKey\"",
+ "schemes.appKey.type: \"apiKey\"",
+ "schemes.appToken.in: \"header\"",
+ "schemes.appToken.name: \"X-VTEX-API-AppToken\"",
+ "schemes.appToken.type: \"apiKey\"",
+ "security[]: {\"appKey\":[],\"appToken\":[]}",
+ "servers[0]: {\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.vtexcommercestable.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}"
+]

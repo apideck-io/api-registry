@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.bearer.bearerFormat: \"JWT\"",
+ "schemes.bearer.description: \"Enter the access token only.\"",
+ "schemes.bearer.scheme: \"bearer\"",
+ "schemes.bearer.type: \"http\"",
+ "security[]: {\"bearer\":[]}",
+ "servers[0]: {\"url\":\"https://api.bigchange.com\"}"
+]

@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Client Portal > Integrations; header value is 'Api-Key <key>'; per-region bases (api.ca / api.uk / api.au.certn.co); keys expire after 1 year\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"Authorization\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "schemes.apiKey.x-value-template: \"Api-Key {key}\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://api.{region}.certn.co\",\"variables\":{\"region\":{\"default\":\"ca\",\"description\":\"Your account's region: ca (Canada), uk (United Kingdom) or au (Australia).\",\"enum\":[\"ca\",\"uk\",\"au\"]}}}"
+]

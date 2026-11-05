@@ -1,0 +1,22 @@
+[
+ "perPath: /subscriptions get security [{\"key\":[]},{\"oauth\":[\"webhooks_manage\",\"webhooks_read\"]}]",
+ "perPath: /subscriptions post security [{\"key\":[]},{\"oauth\":[\"webhooks_manage\",\"webhooks_write\"]}]",
+ "perPath: /subscriptions/{id} delete security [{\"key\":[]},{\"oauth\":[\"webhooks_delete\",\"webhooks_manage\"]}]",
+ "perPath: /subscriptions/{id} get security [{\"key\":[]},{\"oauth\":[\"webhooks_manage\",\"webhooks_read\"]}]",
+ "perPath: /subscriptions/{id}/activation put security [{\"key\":[]},{\"oauth\":[\"webhooks_manage\",\"webhooks_write\"]}]",
+ "perPath: /subscriptions/{id}/callbacks-log get security [{\"key\":[]},{\"oauth\":[\"webhooks_manage\",\"webhooks_read\"]}]",
+ "perPath: /subscriptions/{id}/secret-key get security [{\"key\":[]},{\"oauth\":[\"webhooks_manage\",\"webhooks_read\"]}]",
+ "perPath: /subscriptions/{id}/secret-key post security [{\"key\":[]},{\"oauth\":[\"webhooks_manage\",\"webhooks_write\"]}]",
+ "schemes.key.in: \"header\"",
+ "schemes.key.name: \"x-smarttoken\"",
+ "schemes.key.type: \"apiKey\"",
+ "schemes.oauth.flows.authorizationCode.authorizationUrl: \"https://www.smartrecruiters.com/identity/oauth/allow\"",
+ "schemes.oauth.flows.authorizationCode.scopes.webhooks_delete: \"Delete webhook subscription\"",
+ "schemes.oauth.flows.authorizationCode.scopes.webhooks_manage: \"View, create and delete webhook subscriptions\"",
+ "schemes.oauth.flows.authorizationCode.scopes.webhooks_read: \"View webhook subscriptions\"",
+ "schemes.oauth.flows.authorizationCode.scopes.webhooks_write: \"Create a new webhook subscription\"",
+ "schemes.oauth.flows.authorizationCode.tokenUrl: \"https://api.smartrecruiters.com/identity/oauth/token\"",
+ "schemes.oauth.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.smartrecruiters.com/webhooks-api/v201907\"}"
+]

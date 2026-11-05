@@ -1,0 +1,10 @@
+[
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/webmasters\"].description: \"View and manage Search Console data for your verified sites\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/webmasters.readonly\"].description: \"View Search Console data for your verified sites\"",
+ "baseUrl: \"https://searchconsole.googleapis.com/\"",
+ "batchPath: \"batch\"",
+ "endpoints: null",
+ "mtlsRootUrl: \"https://searchconsole.mtls.googleapis.com/\"",
+ "rootUrl: \"https://searchconsole.googleapis.com/\"",
+ "servicePath: \"\""
+]

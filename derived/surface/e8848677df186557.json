@@ -1,0 +1,9 @@
+[
+ "basePath: \"/cgi-bin\"",
+ "definitions: null",
+ "host: \"apirest.isendpro.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\",\"http\"]",
+ "security: null"
+]

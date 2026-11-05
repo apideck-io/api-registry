@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Your API key, free or paid. Use the `https://pro.microlink.io` server. Do not send this header to the free endpoint (that returns EPRO).\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"x-api-key\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "security[]: {}",
+ "servers[0]: {\"description\":\"Free endpoint. Daily rate limit.\",\"url\":\"https://api.microlink.io\"}",
+ "servers[1]: {\"description\":\"Pro endpoint. Send `x-api-key`. Higher limits and Pro parameters.\",\"url\":\"https://pro.microlink.io\"}"
+]

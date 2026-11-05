@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.swagopenapi.flows.clientCredentials.scopes.api_xpd2: \"api_xpd2 is a scope used by xpenditure\"",
+ "schemes.swagopenapi.flows.clientCredentials.scopes.openid: \"openid is a scope used by xpenditure\"",
+ "schemes.swagopenapi.flows.clientCredentials.tokenUrl: \"https://accounts.rydoo.com/connect/token\"",
+ "schemes.swagopenapi.type: \"oauth2\"",
+ "security[]: {\"swagopenapi\":[\"api_xpd2\",\"openid\"]}",
+ "servers[0]: {\"url\":\"https://api.rydoo.com\"}"
+]

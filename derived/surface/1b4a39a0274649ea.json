@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Refers to the URL used for accessing the production server.\",\"url\":\"https://marketplace.walmartapis.com\"}",
+ "servers[1]: {\"description\":\"Refers to the URL used for accessing the sandbox server.\",\"url\":\"https://sandbox.walmartapis.com\"}"
+]

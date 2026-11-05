@@ -1,0 +1,11 @@
+[
+ "basePath: \"/api/common/v1\"",
+ "definitions.OAuth2.authorizationUrl: \"https://<tenantAuthorizationHostname>\"",
+ "definitions.OAuth2.flow: \"implicit\"",
+ "definitions.OAuth2.type: \"oauth2\"",
+ "host: \"<tenantHostname>\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

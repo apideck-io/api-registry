@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.Bearer.scheme: \"bearer\"",
+ "schemes.Bearer.type: \"http\"",
+ "security[]: {\"Bearer\":[]}",
+ "servers[0]: {\"url\":\"https://users.lucid.app/scim/v2\"}"
+]

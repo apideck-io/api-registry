@@ -1,0 +1,9 @@
+[
+ "basePath: null",
+ "definitions: null",
+ "host: \"openbanking.cooppank.ee\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"http\",\"https\"]",
+ "security: null"
+]

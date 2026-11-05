@@ -1,0 +1,13 @@
+[
+ "basePath: null",
+ "definitions.oidc.authorizationUrl: \"http://to-be-configured-in-the-application-config\"",
+ "definitions.oidc.description: \"OIDC (OpenConnect ID - based on OAuth2)\"",
+ "definitions.oidc.flow: \"implicit\"",
+ "definitions.oidc.type: \"oauth2\"",
+ "host: null",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"oidc\":[]}",
+ "security[]: {}"
+]

@@ -1,0 +1,9 @@
+[
+ "perPath: /bulk/progress get security []",
+ "schemes.ApiKeyAuth.description: \"Your LeadMagic API key. Header name is case-insensitive (X-API-Key, X-API-KEY, x-api-key all work).\"",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-API-Key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Production API Server\",\"url\":\"https://api.leadmagic.io\"}"
+]

@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.api-key.description: \"API Key generated within the Pave App\"",
+ "schemes.api-key.in: \"header\"",
+ "schemes.api-key.name: \"x-api-key\"",
+ "schemes.api-key.type: \"apiKey\"",
+ "security[]: {\"api-key\":[]}",
+ "servers[0]: {\"description\":\"Pave Production Server\",\"url\":\"https://api.pave.com\"}"
+]

@@ -1,0 +1,21 @@
+[
+ "perPath: /channel/whatsapp/channels/whatsapp/template get security [{\"tokenAuth\":[]}]",
+ "perPath: /channel/whatsapp/channels/whatsapp/template/{id} delete security [{\"tokenAuth\":[]}]",
+ "perPath: /channel/whatsapp/channels/whatsapp/template/{id} get security [{\"tokenAuth\":[]}]",
+ "perPath: /channel/whatsapp/channels/whatsapp/template/{id} put security [{\"tokenAuth\":[]}]",
+ "perPath: /channel/whatsapp/channels/whatsapp/template/{id}/send post security [{\"tokenAuth\":[]}]",
+ "perPath: /channel/whatsapp/flow-execution get security [{\"tokenAuth\":[]}]",
+ "perPath: /channel/whatsapp/flow-execution-contact get security [{\"tokenAuth\":[]}]",
+ "perPath: /channel/whatsapp/flow-execution-contact/{id} get security [{\"tokenAuth\":[]}]",
+ "perPath: /channel/whatsapp/flow-execution/{id} get security [{\"tokenAuth\":[]}]",
+ "perPath: /channel/whatsapp/flow/{id}/run post security [{\"tokenAuth\":[]}]",
+ "perPath: /channel/whatsapp/inbox/conversation get security [{\"tokenAuth\":[]}]",
+ "perPath: /channel/whatsapp/inbox/conversation/{id}/update patch security [{\"tokenAuth\":[]}]",
+ "perPath: /channel/whatsapp/inbox/conversation/{id}/update put security [{\"tokenAuth\":[]}]",
+ "schemes.sec0.in: \"header\"",
+ "schemes.sec0.name: \"Api-Token\"",
+ "schemes.sec0.type: \"apiKey\"",
+ "schemes.sec0.x-default: \"\"",
+ "security[]: {\"sec0\":[]}",
+ "servers[0]: {\"url\":\"https://{youraccountname}.api-us1.com/api/3\",\"variables\":{\"youraccountname\":{\"default\":\"youraccountname\"}}}"
+]

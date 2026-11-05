@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "security[]: {}",
+ "servers[0]: {\"description\":\"Sanity project base URL\",\"url\":\"https://{projectId}.api.sanity.io/{apiVersion}\",\"variables\":{\"apiVersion\":{\"default\":\"v2025-02-19\",\"description\":\"API version\"},\"projectId\":{\"default\":\"your-project-id\",\"description\":\"Sanity project ID\"}}}"
+]

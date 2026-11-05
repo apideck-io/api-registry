@@ -1,0 +1,6 @@
+[
+ "perPath: /xml/{customer_subdomain}/lucca.xml get security []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"The URL of the Lucca Recruitment world endpoint. This endpoint is designed for\\nthird-party job boards and aggregators to retrieve active job offers from\\nLucca customers.\\n\\nThis endpoint is publicly accessible and does not require authentication, but it \\nonly returns job offers from companies that have explicitly opted in to share \\ntheir job data with external platforms.\",\"url\":\"https://jobs.world.luccasoftware.com\"}"
+]

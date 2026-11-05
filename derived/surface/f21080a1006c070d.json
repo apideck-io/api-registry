@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.HeaderApiKeyAuth.description: \"Personal Auth token generated for user in Headless CMS application\"",
+ "schemes.HeaderApiKeyAuth.in: \"header\"",
+ "schemes.HeaderApiKeyAuth.name: \"X-AUTH-TOKEN\"",
+ "schemes.HeaderApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"HeaderApiKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Flotiq Live\",\"url\":\"https://api.flotiq.com\"}"
+]

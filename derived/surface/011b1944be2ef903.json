@@ -1,0 +1,12 @@
+[
+ "perPath: []",
+ "schemes.FlinksAuthKey.in: \"header\"",
+ "schemes.FlinksAuthKey.name: \"flinks-auth-key\"",
+ "schemes.FlinksAuthKey.type: \"apiKey\"",
+ "schemes.OptionalApiKey.description: \"Optional security feature (must be enabled by Flinks). Contact your Flinks representative to activate.\"",
+ "schemes.OptionalApiKey.in: \"header\"",
+ "schemes.OptionalApiKey.name: \"x-api-key\"",
+ "schemes.OptionalApiKey.type: \"apiKey\"",
+ "security: []",
+ "servers[0]: {\"description\":\"Flinks Upload API\",\"url\":\"https://{instance}-api.private.fin.ag\",\"variables\":{\"instance\":{\"default\":\"toolbox\",\"description\":\"The environment instance (e.g., toolbox, sandbox)\"}}}"
+]

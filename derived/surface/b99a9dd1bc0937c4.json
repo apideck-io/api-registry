@@ -1,0 +1,9 @@
+[
+ "basePath: \"/restapi\"",
+ "definitions: {}",
+ "host: \"www.docusign.net\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

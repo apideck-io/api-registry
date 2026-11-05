@@ -1,0 +1,17 @@
+[
+ "perPath: /webhooks/rest/v1/webhooks delete security [{\"x-api-key\":[]}]",
+ "perPath: /webhooks/rest/v1/webhooks get security [{\"x-api-key\":[]}]",
+ "perPath: /webhooks/rest/v1/webhooks/enabled_count get security [{\"x-api-key\":[]}]",
+ "perPath: /webhooks/rest/v1/webhooks/template/{templateId} post security [{\"x-api-key\":[]}]",
+ "perPath: /webhooks/rest/v1/webhooks/{id} delete security [{\"x-api-key\":[]}]",
+ "perPath: /webhooks/rest/v1/webhooks/{id} get security [{\"x-api-key\":[]}]",
+ "perPath: /webhooks/rest/v1/webhooks/{id} patch security [{\"x-api-key\":[]}]",
+ "perPath: /webhooks/rest/v1/webhooks/{id}/activate post security [{\"x-api-key\":[]}]",
+ "perPath: /webhooks/rest/v1/webhooks/{id}/pause post security [{\"x-api-key\":[]}]",
+ "perPath: /webhooks/rest/v1/webhooks/{webhookId}/template/{templateId} patch security [{\"x-api-key\":[]}]",
+ "schemes.x-api-key.in: \"header\"",
+ "schemes.x-api-key.name: \"x-api-key\"",
+ "schemes.x-api-key.type: \"apiKey\"",
+ "security: null",
+ "servers: []"
+]

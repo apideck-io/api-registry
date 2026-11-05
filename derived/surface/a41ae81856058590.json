@@ -1,0 +1,12 @@
+[
+ "perPath: []",
+ "schemes.ExternalOAuth.$ref: \"common.yaml#/components/securitySchemes/ExternalOAuth\"",
+ "schemes.KeyPair.$ref: \"common.yaml#/components/securitySchemes/KeyPair\"",
+ "schemes.ProgrammaticAccessToken.$ref: \"common.yaml#/components/securitySchemes/ProgrammaticAccessToken\"",
+ "schemes.SnowflakeOAuth.$ref: \"common.yaml#/components/securitySchemes/SnowflakeOAuth\"",
+ "security[]: {\"ExternalOAuth\":[]}",
+ "security[]: {\"KeyPair\":[]}",
+ "security[]: {\"ProgrammaticAccessToken\":[]}",
+ "security[]: {\"SnowflakeOAuth\":[]}",
+ "servers[0]: {\"description\":\"Snowflake REST Server\",\"url\":\"https://org-account.snowflakecomputing.com\"}"
+]

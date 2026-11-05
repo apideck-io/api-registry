@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.apiKey.in: \"query\"",
+ "schemes.apiKey.name: \"api_key\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://server.smartlead.ai/api/v1\"}"
+]

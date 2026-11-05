@@ -1,0 +1,10 @@
+[
+ "perPath: /invoicingcheckoutservice/v1/checkouts * [{\"description\":\"Sandbox API server\",\"url\":\"https://sandbox.dev.clover.com\"}]",
+ "schemes.OAuth2.flows.authorizationCode.authorizationUrl: \"https://sandbox.dev.clover.com/oauth/authorize\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes: {}",
+ "schemes.OAuth2.flows.authorizationCode.tokenUrl: \"https://sandbox.dev.clover.com/oauth/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security[]: {\"OAuth2\":[]}",
+ "servers[0]: {\"description\":\"SCL Sandbox API server (Default)\",\"url\":\"https://scl-sandbox.dev.clover.com\"}",
+ "servers[1]: {\"description\":\"API Sandbox server (Use for Hosted Checkout)\",\"url\":\"https://apisandbox.dev.clover.com\"}"
+]

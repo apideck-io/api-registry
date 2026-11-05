@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.description: \"Authenticate every request with a Bearer token. Pass your Reply API key in the\\n`Authorization` header:\\n\\n```\\nAuthorization: Bearer <your-api-key>\\n```\\n\\nGet your API key from the Reply dashboard: **Settings → API Key**.\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.reply.io\"}"
+]

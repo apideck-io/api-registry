@@ -1,0 +1,22 @@
+[
+ "perPath: []",
+ "schemes.oauth2_auth.flows.authorizationCode.authorizationUrl: \"https://oauth.seven.io/authorize\"",
+ "schemes.oauth2_auth.flows.authorizationCode.scopes.analytics: \"analytics\"",
+ "schemes.oauth2_auth.flows.authorizationCode.scopes.balance: \"balance\"",
+ "schemes.oauth2_auth.flows.authorizationCode.scopes.contacts: \"contacts\"",
+ "schemes.oauth2_auth.flows.authorizationCode.scopes.hooks: \"hooks\"",
+ "schemes.oauth2_auth.flows.authorizationCode.scopes.journal: \"journal\"",
+ "schemes.oauth2_auth.flows.authorizationCode.scopes.lookup: \"lookup\"",
+ "schemes.oauth2_auth.flows.authorizationCode.scopes.pricing: \"pricing\"",
+ "schemes.oauth2_auth.flows.authorizationCode.scopes.rcs: \"rcs\"",
+ "schemes.oauth2_auth.flows.authorizationCode.scopes.sms: \"sms\"",
+ "schemes.oauth2_auth.flows.authorizationCode.scopes.status: \"status\"",
+ "schemes.oauth2_auth.flows.authorizationCode.scopes.subaccounts: \"subaccounts\"",
+ "schemes.oauth2_auth.flows.authorizationCode.scopes.validate_for_voice: \"validate_for_voice\"",
+ "schemes.oauth2_auth.flows.authorizationCode.scopes.voice: \"voice\"",
+ "schemes.oauth2_auth.flows.authorizationCode.scopes.waba: \"waba\"",
+ "schemes.oauth2_auth.flows.authorizationCode.tokenUrl: \"https://oauth.seven.io/token\"",
+ "schemes.oauth2_auth.type: \"oauth2\"",
+ "security[]: {\"oauth2_auth\":[]}",
+ "servers[0]: {\"url\":\"https://gateway.seven.io/api\"}"
+]

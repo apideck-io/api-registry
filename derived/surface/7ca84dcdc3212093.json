@@ -1,0 +1,11 @@
+[
+ "basePath: \"/v2\"",
+ "definitions.global.in: \"query\"",
+ "definitions.global.name: \"access_token\"",
+ "definitions.global.type: \"apiKey\"",
+ "host: \"api.zoom.us\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"global\":[]}"
+]

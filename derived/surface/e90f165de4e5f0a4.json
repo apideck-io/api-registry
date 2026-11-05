@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.oauth2.flows.implicit.authorizationUrl: \"https://login.kekad.com/connect/authorize\"",
+ "schemes.oauth2.flows.implicit.scopes.kekaapi: \"Keka API\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"description\":\"Production server (uses live data)\",\"url\":\"https://{company}.{environment}.com/api/v1\",\"variables\":{\"environment\":{\"default\":\"keka\",\"enum\":[\"keka\",\"kekademo\"]}}}"
+]

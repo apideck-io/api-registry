@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.oauth2.description: \"Auth0 Client Credentials authentication.\\n\\nAuthorized clients in Auth0 must request a token from the token endpoint, passing\\nyour `client_id`, `client_secret`, `grant_type: client_credentials`, and\\n`audience: https://hq.loopreturns.com/api`.\\nInclude the returned access token as a Bearer token on all requests.\\n\"",
+ "schemes.oauth2.flows.clientCredentials.scopes: {}",
+ "schemes.oauth2.flows.clientCredentials.tokenUrl: \"https://loopreturns-orgs-production.us.auth0.com/oauth/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"url\":\"https://hq.loopreturns.com\"}"
+]

@@ -1,0 +1,9 @@
+[
+ "perPath: /v1/oauth/authorize get security []",
+ "schemes.BearerAuth.bearerFormat: \"JWT\"",
+ "schemes.BearerAuth.description: \"OAuth 2.0 Bearer token. Include the access token in the Authorization header:\\n`Authorization: Bearer <access_token>`\\n\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://connect.digits.com\"}"
+]

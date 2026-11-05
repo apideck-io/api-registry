@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.apiKeyBearer.scheme: \"bearer\"",
+ "schemes.apiKeyBearer.type: \"http\"",
+ "schemes.apiKeyQuery.in: \"query\"",
+ "schemes.apiKeyQuery.name: \"key\"",
+ "schemes.apiKeyQuery.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://quickchart.io\"}"
+]

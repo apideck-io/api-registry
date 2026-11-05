@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.http.description: \"The Anrok API uses API keys to authenticate requests. You can view and manage your API keys in [Anrok](https://app.anrok.com/-/api-keys). Use an Authorization header in the format `Bearer {apiKey}` to authenticate Anrok API requests.\\n\"",
+ "schemes.http.scheme: \"Bearer\"",
+ "schemes.http.type: \"http\"",
+ "security[]: {\"http\":[]}",
+ "servers[0]: {\"url\":\"https://api.anrok.com\"}"
+]

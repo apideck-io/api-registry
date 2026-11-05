@@ -1,0 +1,8 @@
+[
+ "auth: null",
+ "hosts: [\"https://api.shoplightspeed.com\",\"https://{{cluster}}\"]",
+ "nested: \"/Order/Update an order#request\" {\"basic\":[{\"key\":\"password\",\"type\":\"string\",\"value\":\"\"},{\"key\":\"username\",\"type\":\"string\",\"value\":\"d946f52c06465b45eae7d1276bf61ebf\"}],\"type\":\"basic\"}",
+ "scripts:  prerequest [\"\"]",
+ "scripts:  test [\"\"]",
+ "variables: cluster "
+]

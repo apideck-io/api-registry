@@ -1,0 +1,14 @@
+[
+ "basePath: null",
+ "definitions.api_key.description: \"Pass your api_key in the header (recommended) or as a URL parameter. For the URL parameter, use api_key. For the header, send it as a header value for: X-BigOven-API-Key\"",
+ "definitions.api_key.in: \"header\"",
+ "definitions.api_key.name: \"X-BigOven-API-Key\"",
+ "definitions.api_key.type: \"apiKey\"",
+ "definitions.basic.description: \"Basic HTTP Authentication is used for those endpoint calls where you want to act as a BigOven user -- e.g., to get the list of favorites of a signed-in user, or add items to their grocery list.\"",
+ "definitions.basic.type: \"basic\"",
+ "host: \"api2.bigoven.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.[\"API Key\"].scheme: \"bearer\"",
+ "schemes.[\"API Key\"].type: \"http\"",
+ "security[]: {\"API Key\":[]}",
+ "servers[0]: {\"description\":\"production\",\"url\":\"https://my.15five.com/\"}"
+]

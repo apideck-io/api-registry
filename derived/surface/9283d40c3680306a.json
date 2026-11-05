@@ -1,0 +1,19 @@
+[
+ "perPath: /component-folders get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /component-folders/{api_id}/components get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /components get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /components put security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /components/file post security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /project-folders get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /project-folders/{folder_id}/projects get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /projects get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /projects/{id} get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /projects/{id}/components get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /variables get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /variants get security [{\"ApiKeyAuth\":[]}]",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"Authorization\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.dittowords.com/v1\"}"
+]

@@ -1,0 +1,17 @@
+[
+ "perPath: /candidates/{id}/jobs/{jobId}/offers get security [{\"key\":[]},{\"oauth\":[\"candidates_offers_read\"]}]",
+ "perPath: /candidates/{id}/jobs/{jobId}/offers/{offerId} get security [{\"key\":[]},{\"oauth\":[\"candidates_offers_read\"]}]",
+ "perPath: /candidates/{id}/jobs/{jobId}/offers/{offerId}/approvals/latest get security [{\"key\":[]},{\"oauth\":[\"candidates_offers_read\"]}]",
+ "perPath: /offers get security [{\"key\":[]},{\"oauth\":[\"candidates_offers_read\"]}]",
+ "perPath: /offers/{offerId}/documents get security [{\"key\":[]},{\"oauth\":[\"candidates_offers_read\"]}]",
+ "perPath: /offers/{offerId}/documents/{documentId} get security [{\"key\":[]},{\"oauth\":[\"candidates_offers_read\"]}]",
+ "schemes.key.in: \"header\"",
+ "schemes.key.name: \"x-smarttoken\"",
+ "schemes.key.type: \"apiKey\"",
+ "schemes.oauth.flows.authorizationCode.authorizationUrl: \"https://www.smartrecruiters.com/identity/oauth/allow\"",
+ "schemes.oauth.flows.authorizationCode.scopes.candidates_offers_read: \"Access Offer Terms\"",
+ "schemes.oauth.flows.authorizationCode.tokenUrl: \"https://api.smartrecruiters.com/identity/oauth/token\"",
+ "schemes.oauth.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.smartrecruiters.com\"}"
+]

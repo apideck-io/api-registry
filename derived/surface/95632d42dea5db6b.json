@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.permanentToken.bearerFormat: \"YouTrack permanent token\"",
+ "schemes.permanentToken.scheme: \"bearer\"",
+ "schemes.permanentToken.type: \"http\"",
+ "security[]: {\"permanentToken\":[]}",
+ "servers[0]: {\"url\":\"https://youtrack.jetbrains.com:443/api\"}"
+]

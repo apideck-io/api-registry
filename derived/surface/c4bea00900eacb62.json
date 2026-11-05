@@ -1,0 +1,7 @@
+[
+ "perPath: /inference/nvidia/v2/hardware get security [{\"HTTPBearer\":[]}]",
+ "schemes.HTTPBearer.scheme: \"bearer\"",
+ "schemes.HTTPBearer.type: \"http\"",
+ "security: null",
+ "servers: null"
+]

@@ -1,0 +1,11 @@
+[
+ "perPath: /webhooks/subscriptions get security [{\"BasicAuth\":[]}]",
+ "perPath: /webhooks/subscriptions post security [{\"BasicAuth\":[]}]",
+ "perPath: /webhooks/subscriptions/{id} delete security [{\"BasicAuth\":[]}]",
+ "perPath: /webhooks/subscriptions/{id} get security [{\"BasicAuth\":[]}]",
+ "perPath: /webhooks/subscriptions/{id} put security [{\"BasicAuth\":[]}]",
+ "schemes.BasicAuth.scheme: \"basic\"",
+ "schemes.BasicAuth.type: \"http\"",
+ "security[]: {\"BasicAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.alegra.com/api/v1\"}"
+]

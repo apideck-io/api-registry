@@ -1,0 +1,15 @@
+[
+ "perPath: /Connections get security [{\"OAuth2\":[]}]",
+ "perPath: /Connections/{id} delete security [{\"OAuth2\":[]}]",
+ "schemes.BasicAuth.scheme: \"basic\"",
+ "schemes.BasicAuth.type: \"http\"",
+ "schemes.OAuth2.description: \"For more information\"",
+ "schemes.OAuth2.flows.authorizationCode.authorizationUrl: \"https://login.xero.com/identity/connect/authorize\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.email: \"Grant read-only access to your email\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.openid: \"Grant read-only access to your open id\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.profile: \"your profile information\"",
+ "schemes.OAuth2.flows.authorizationCode.tokenUrl: \"https://identity.xero.com/connect/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Xero Identity service API\",\"url\":\"https://api.xero.com\"}"
+]

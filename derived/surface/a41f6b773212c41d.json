@@ -1,0 +1,13 @@
+[
+ "perPath: /api/public/v0/auth_token post security [{\"basicAuth\":[]}]",
+ "schemes.appId.description: \"Heap application ID included in request body as app_id field\"",
+ "schemes.appId.in: \"header\"",
+ "schemes.appId.name: \"app_id\"",
+ "schemes.appId.type: \"apiKey\"",
+ "schemes.basicAuth.description: \"Basic Auth with app_id as username and api_key as password\"",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "security[]: {\"appId\":[]}",
+ "servers[0]: {\"description\":\"Heap US Server\",\"url\":\"https://heapanalytics.com\"}",
+ "servers[1]: {\"description\":\"Heap EU Server\",\"url\":\"https://c.eu.heap-api.com\"}"
+]

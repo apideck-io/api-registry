@@ -1,0 +1,16 @@
+[
+ "basePath: \"/api/v2\"",
+ "definitions.api_key.in: \"header\"",
+ "definitions.api_key.name: \"x-mailerlite-apikey\"",
+ "definitions.api_key.type: \"apiKey\"",
+ "host: \"api.mailerlite.com\"",
+ "parameterizedHost: null",
+ "perOp: /webhooks get [{\"api_key\":[]}]",
+ "perOp: /webhooks post [{\"api_key\":[]}]",
+ "perOp: /webhooks/count get [{\"api_key\":[]}]",
+ "perOp: /webhooks/{webhookId} delete [{\"api_key\":[]}]",
+ "perOp: /webhooks/{webhookId} get [{\"api_key\":[]}]",
+ "perOp: /webhooks/{webhookId} put [{\"api_key\":[]}]",
+ "schemes: [\"http\",\"https\"]",
+ "security: null"
+]

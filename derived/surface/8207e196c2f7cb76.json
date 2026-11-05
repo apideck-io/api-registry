@@ -1,0 +1,15 @@
+[
+ "perPath: /api/segments get security [{\"vtex_segment\":[],\"vtex_session\":[]}]",
+ "perPath: /api/sessions get security [{\"vtex_segment\":[],\"vtex_session\":[]}]",
+ "perPath: /api/sessions patch security [{\"vtex_segment\":[],\"vtex_session\":[]}]",
+ "schemes.vtex_segment.description: \"Token that identifies the user's segment, shared with other users with similar navigation parameters. Obtained [when a new session is created](https://developers.vtex.com/docs/api-reference/session-manager-api#post-/api/sessions).\"",
+ "schemes.vtex_segment.in: \"cookie\"",
+ "schemes.vtex_segment.name: \"vtex_segment\"",
+ "schemes.vtex_segment.type: \"apiKey\"",
+ "schemes.vtex_session.description: \"Token that identifies the user's individual session. Obtained [when a new session is created](https://developers.vtex.com/docs/api-reference/session-manager-api#post-/api/sessions).\"",
+ "schemes.vtex_session.in: \"cookie\"",
+ "schemes.vtex_session.name: \"vtex_session\"",
+ "schemes.vtex_session.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.{environment}.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL\"},\"environment\":{\"default\":\"vtexcommercestable\",\"description\":\"Environment to use. Used as part of the URL.\",\"enum\":[\"vtexcommercestable\"]}}}"
+]

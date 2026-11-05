@@ -1,0 +1,12 @@
+[
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/cloud-platform\"].description: \"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/cloud-platform.read-only\"].description: \"View your data across Google Cloud services and see the email address of your Google Account\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/firebase\"].description: \"View and administer all your Firebase data and settings\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/firebase.readonly\"].description: \"View all your Firebase data and settings\"",
+ "baseUrl: \"https://firebasehosting.googleapis.com/\"",
+ "batchPath: \"batch\"",
+ "endpoints: null",
+ "mtlsRootUrl: \"https://firebasehosting.mtls.googleapis.com/\"",
+ "rootUrl: \"https://firebasehosting.googleapis.com/\"",
+ "servicePath: \"\""
+]

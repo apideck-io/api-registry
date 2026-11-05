@@ -1,0 +1,15 @@
+[
+ "perPath: /job-catalog/job-families get security [{\"Basic\":[]}]",
+ "perPath: /job-catalog/job-families/metadata get security [{\"Basic\":[]}]",
+ "perPath: /job-catalog/job-family-groups get security [{\"Basic\":[]}]",
+ "perPath: /job-catalog/job-family-groups/metadata get security [{\"Basic\":[]}]",
+ "perPath: /job-catalog/job-profiles/metadata get security [{\"Basic\":[]}]",
+ "perPath: /job-catalog/job-profiles/search post security [{\"Basic\":[]}]",
+ "perPath: /job-catalog/job-roles get security [{\"Basic\":[]}]",
+ "perPath: /job-catalog/job-roles/metadata get security [{\"Basic\":[]}]",
+ "schemes.Basic.scheme: \"basic\"",
+ "schemes.Basic.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.hibob.com/v1\"}",
+ "servers[1]: {\"description\":\"Sandbox\",\"url\":\"https://api.sandbox.hibob.com/v1\"}"
+]

@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"description\":\"US Server\",\"url\":\"https://us.api.knowbe4.com\",\"variables\":{\"basePath\":{\"default\":\"https://us.api.knowbe4.com\"}}}",
+ "servers[1]: {\"description\":\"EU Server\",\"url\":\"https://eu.api.knowbe4.com\",\"variables\":{\"basePath\":{\"default\":\"https://eu.api.knowbe4.com\"}}}"
+]

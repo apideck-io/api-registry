@@ -1,0 +1,12 @@
+[
+ "perPath: /networks/reporting/caps/customsetting post security [{\"API Key\":[]}]",
+ "perPath: /networks/reporting/caps/offer post security [{\"API Key\":[]}]",
+ "perPath: /networks/reporting/caps/offer/summary post security [{\"API Key\":[]}]",
+ "perPath: /networks/reporting/caps/offergroup post security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The Everflow API key generated from the Control Center > Security.\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://api.eflow.team/v1\"}"
+]

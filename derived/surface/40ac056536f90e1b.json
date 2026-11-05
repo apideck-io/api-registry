@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"url\":\"https://{network}.g.alchemy.com/v2\",\"variables\":{\"network\":{\"default\":\"litecoin-mainnet\",\"enum\":[\"litecoin-mainnet\",\"litecoin-testnet\"]}}}"
+]

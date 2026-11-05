@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.APIKeyHeader.in: \"header\"",
+ "schemes.APIKeyHeader.name: \"X-API-Key\"",
+ "schemes.APIKeyHeader.type: \"apiKey\"",
+ "security[]: {\"APIKeyHeader\":[]}",
+ "servers[0]: {\"url\":\"https://api.remove.bg/v1.0\"}"
+]

@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"No authentication endpoint. Returns latest exchange rates and some metadata.\",\"url\":\"https://api.exchangerate-api.com/v4\"}"
+]

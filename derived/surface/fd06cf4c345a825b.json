@@ -1,0 +1,13 @@
+[
+ "perPath: []",
+ "schemes.authorizationHeader.description: \"Enter the token with the `apikey ` prefix, e.g. \\\"apikey abcde12345\\\".\"",
+ "schemes.authorizationHeader.in: \"header\"",
+ "schemes.authorizationHeader.name: \"Authorization\"",
+ "schemes.authorizationHeader.type: \"apiKey\"",
+ "schemes.queryParameter.in: \"query\"",
+ "schemes.queryParameter.name: \"apikey\"",
+ "schemes.queryParameter.type: \"apiKey\"",
+ "security[]: {\"authorizationHeader\":[\"[]\"]}",
+ "security[]: {\"queryParameter\":[\"[]\"]}",
+ "servers[0]: {\"url\":\"https://api.twelvedata.com/\"}"
+]

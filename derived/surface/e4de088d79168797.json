@@ -1,0 +1,13 @@
+[
+ "perPath: /api_tokens get [{\"url\":\"https://api.rm.smartsheet.com/api\"}]",
+ "perPath: /api_tokens post [{\"url\":\"https://api.rm.smartsheet.com/api\"}]",
+ "perPath: /api_tokens/renew/{id} post [{\"url\":\"https://api.rm.smartsheet.com/api\"}]",
+ "perPath: /api_tokens/{id} delete [{\"url\":\"https://api.rm.smartsheet.com/api\"}]",
+ "perPath: /api_tokens/{id} put [{\"url\":\"https://api.rm.smartsheet.com/api\"}]",
+ "schemes.AuthToken.description: \"Auth token for authentication.\"",
+ "schemes.AuthToken.in: \"header\"",
+ "schemes.AuthToken.name: \"auth\"",
+ "schemes.AuthToken.type: \"apiKey\"",
+ "security[]: {\"AuthToken\":[]}",
+ "servers[0]: {\"url\":\"https://api.rm.smartsheet.com/api/v1\"}"
+]

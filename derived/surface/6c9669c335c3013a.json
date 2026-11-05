@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.bearerFormat: \"Token\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://ev.apis.paypi.dev\"}"
+]

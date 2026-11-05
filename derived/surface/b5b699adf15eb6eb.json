@@ -1,0 +1,9 @@
+[
+ "perPath: /v2/oauth/token post security []",
+ "schemes.Authorization_Token.description: \"API token required for authentication. Two types of tokens are supported:\\n**Personal API Key** Obtain from ClickUp's settings page under 'Apps' and add it to the header as `Authorization: pk_...`\\n**OAuth2 Access Token** Generated through the OAuth2 flow and add it to the header as `Authorization: Bearer {access_token}`\"",
+ "schemes.Authorization_Token.in: \"header\"",
+ "schemes.Authorization_Token.name: \"Authorization\"",
+ "schemes.Authorization_Token.type: \"apiKey\"",
+ "security[]: {\"Authorization_Token\":[]}",
+ "servers[0]: {\"description\":\"ClickUp\",\"url\":\"https://api.clickup.com/api\",\"variables\":{}}"
+]

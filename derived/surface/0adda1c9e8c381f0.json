@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.asap.bearerFormat: \"JWT\"",
+ "schemes.asap.description: \"Include an ASAP token in the `Authorization` header as a Bearer token\"",
+ "schemes.asap.scheme: \"bearer\"",
+ "schemes.asap.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.atlassian.com\"}"
+]

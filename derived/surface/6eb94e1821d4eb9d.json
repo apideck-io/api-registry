@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.basic.description: \"Username = company subdomain, password = API key\"",
+ "schemes.basic.scheme: \"basic\"",
+ "schemes.basic.type: \"http\"",
+ "security[]: {\"basic\":[]}",
+ "servers[0]: {\"url\":\"https://api.lessonly.com/api/v1\"}"
+]

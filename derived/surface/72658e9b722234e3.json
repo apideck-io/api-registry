@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.secretKey.bearerFormat: \"JWT\"",
+ "schemes.secretKey.scheme: \"bearer\"",
+ "schemes.secretKey.type: \"http\"",
+ "security[]: {\"secretKey\":[]}",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://api.useautumn.com/v1\"}"
+]

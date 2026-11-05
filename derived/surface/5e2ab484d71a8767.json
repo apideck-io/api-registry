@@ -1,0 +1,14 @@
+[
+ "basePath: null",
+ "definitions.access_token_header.in: \"header\"",
+ "definitions.access_token_header.name: \"PRIVATE-TOKEN\"",
+ "definitions.access_token_header.type: \"apiKey\"",
+ "definitions.access_token_query.in: \"query\"",
+ "definitions.access_token_query.name: \"private_token\"",
+ "definitions.access_token_query.type: \"apiKey\"",
+ "host: \"gitlab.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: null",
+ "security: null"
+]

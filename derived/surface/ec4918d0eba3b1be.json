@@ -1,0 +1,22 @@
+[
+ "perPath: /activity get security [{\"ConnectToken\":[]}]",
+ "perPath: /health get [{\"url\":\"http://localhost:8080\"}]",
+ "perPath: /heartbeat get [{\"url\":\"http://localhost:8080\"}]",
+ "perPath: /metrics get [{\"url\":\"http://localhost:8080\"}]",
+ "perPath: /vaults get security [{\"ConnectToken\":[]}]",
+ "perPath: /vaults/{vaultUuid} get security [{\"ConnectToken\":[]}]",
+ "perPath: /vaults/{vaultUuid}/items get security [{\"ConnectToken\":[]}]",
+ "perPath: /vaults/{vaultUuid}/items post security [{\"ConnectToken\":[]}]",
+ "perPath: /vaults/{vaultUuid}/items/{itemUuid} delete security [{\"ConnectToken\":[]}]",
+ "perPath: /vaults/{vaultUuid}/items/{itemUuid} get security [{\"ConnectToken\":[]}]",
+ "perPath: /vaults/{vaultUuid}/items/{itemUuid} patch security [{\"ConnectToken\":[]}]",
+ "perPath: /vaults/{vaultUuid}/items/{itemUuid} put security [{\"ConnectToken\":[]}]",
+ "perPath: /vaults/{vaultUuid}/items/{itemUuid}/files get security [{\"ConnectToken\":[]}]",
+ "perPath: /vaults/{vaultUuid}/items/{itemUuid}/files/{fileUuid} get security [{\"ConnectToken\":[]}]",
+ "perPath: /vaults/{vaultUuid}/items/{itemUuid}/files/{fileUuid}/content get security [{\"ConnectToken\":[]}]",
+ "schemes.ConnectToken.bearerFormat: \"JWT\"",
+ "schemes.ConnectToken.scheme: \"bearer\"",
+ "schemes.ConnectToken.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"http://localhost:8080/v1\"}"
+]

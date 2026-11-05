@@ -1,0 +1,12 @@
+[
+ "perPath: /api/{version}/consent_management get security [{\"bearerAuth\":[]}]",
+ "perPath: /api/{version}/consent_management/{ConsentPublicId}/accounts put security [{\"bearerAuth\":[]}]",
+ "perPath: /api/{version}/consent_management/{ConsentPublicId}/accounts/{AccountId} put security [{\"bearerAuth\":[]}]",
+ "perPath: /api/{version}/consent_management/{ConsentPublicId}/disable_app_sharing put security [{\"bearerAuth\":[]}]",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "servers[0]: {\"url\":\"http://{baseurl}\"}"
+]

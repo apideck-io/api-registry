@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.basic.description: \"In order to use basic authorization, provide username:password Base64 encoded in the 'Authorization' header.\"",
+ "schemes.basic.scheme: \"basic\"",
+ "schemes.basic.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"http://{baseurl}/confluence\",\"variables\":{\"baseurl\":{\"default\":\"example.com:7990\",\"description\":\"Address of your Confluence instance\"}}}"
+]

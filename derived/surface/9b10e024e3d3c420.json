@@ -1,0 +1,22 @@
+[
+ "perPath: /v2/companies/search post security [{\"apiKeyAuth\":[]},{\"oauth2\":[\"api.read\"]}]",
+ "perPath: /v2/files/search post security [{\"apiKeyAuth\":[]},{\"oauth2\":[\"api.read\"]}]",
+ "perPath: /v2/lists/{listId}/list-entries/search post security [{\"apiKeyAuth\":[]},{\"oauth2\":[\"api.read\"]}]",
+ "perPath: /v2/notes/search post security [{\"apiKeyAuth\":[]},{\"oauth2\":[\"api.read\"]}]",
+ "perPath: /v2/persons/search post security [{\"apiKeyAuth\":[]},{\"oauth2\":[\"api.read\"]}]",
+ "perPath: /v2/semantic-search post security [{\"apiKeyAuth\":[]},{\"oauth2\":[\"api.read\"]}]",
+ "schemes.apiKeyAuth.description: \"A static Affinity API key, presented as a bearer token.\"",
+ "schemes.apiKeyAuth.scheme: \"bearer\"",
+ "schemes.apiKeyAuth.type: \"http\"",
+ "schemes.oauth2.description: \"OAuth 2.0 authorization code flow used to obtain a bearer token to access the Affinity API on a user's behalf.\"",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://login.affinity.co/auth/oauth2/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"api.read\"]: \"Read-only access to Affinity APIs on your behalf\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"mcp.read\"]: \"Read access to data in Affinity via the MCP server\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.api: \"Access to all Affinity APIs on your behalf\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.mcp: \"Read and write data in Affinity via the MCP server\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.offline_access: \"Continuous access to your Affinity data while logged out\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://login.affinity.co/auth/oauth2/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security[]: {\"apiKeyAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.affinity.co\"}"
+]

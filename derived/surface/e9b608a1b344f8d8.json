@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.basicAuth.description: \"HTTP Basic Authentication using ShipStation API Key and Secret\"",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://ssapi.shipstation.com\"}"
+]

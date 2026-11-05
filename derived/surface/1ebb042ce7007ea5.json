@@ -1,0 +1,15 @@
+[
+ "perPath: /analytics/member-activities get security [{\"BearerAuth\":[\"analytics:read\"]}]",
+ "schemes.BearerAuth.bearerFormat: \"JWT\"",
+ "schemes.BearerAuth.description: \"API token authentication. Use your API token as the value of the Authorization header\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "schemes.OAuth2.description: \"OAuth 2.0 authentication. Use this for user-authorized access to Productboard API.\"",
+ "schemes.OAuth2.flows.authorizationCode.authorizationUrl: \"https://app.productboard.com/oauth/authorize\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.[\"analytics:read\"]: \"Read access to analytics data\"",
+ "schemes.OAuth2.flows.authorizationCode.tokenUrl: \"https://app.productboard.com/oauth/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "security[]: {\"OAuth2\":[\"analytics:read\"]}",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://api.productboard.com/v2\"}"
+]

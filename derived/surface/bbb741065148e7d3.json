@@ -1,0 +1,7 @@
+[
+ "perPath: /authentication post security []",
+ "perPath: /register post security []",
+ "schemes: {}",
+ "security: null",
+ "servers[0]: {\"description\":\"Middleware endpoint URL.\",\"url\":\"https://{middlewareEndpoint}\",\"variables\":{\"middlewareEndpoint\":{\"default\":\"auth-middleware.example.com\",\"description\":\"Your authentication middleware endpoint URL (e.g., auth-middleware.example.com).\"}}}"
+]

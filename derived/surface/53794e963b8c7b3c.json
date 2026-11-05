@@ -1,0 +1,17 @@
+[
+ "perPath: /api/accounts/{accountId}/labels get security [{\"iam-oauth2-schema\":[\"ZohoMail.tags.ALL\",\"ZohoMail.tags.READ\"]}]",
+ "perPath: /api/accounts/{accountId}/labels post security [{\"iam-oauth2-schema\":[\"ZohoMail.tags.ALL\",\"ZohoMail.tags.CREATE\"]}]",
+ "perPath: /api/accounts/{accountId}/labels/{labelId} delete security [{\"iam-oauth2-schema\":[\"ZohoMail.tags.ALL\",\"ZohoMail.tags.DELETE\"]}]",
+ "perPath: /api/accounts/{accountId}/labels/{labelId} get security [{\"iam-oauth2-schema\":[\"ZohoMail.tags.ALL\",\"ZohoMail.tags.READ\"]}]",
+ "perPath: /api/accounts/{accountId}/labels/{labelId} put security [{\"iam-oauth2-schema\":[\"ZohoMail.tags.ALL\",\"ZohoMail.tags.UPDATE\"]}]",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.authorizationUrl: \"https://accounts.zoho.com/oauth/v2/auth\"",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.scopes.[\"ZohoMail.tags.ALL\"]: \"Full access to labels\"",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.scopes.[\"ZohoMail.tags.CREATE\"]: \"Create access to labels\"",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.scopes.[\"ZohoMail.tags.DELETE\"]: \"Delete access to labels\"",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.scopes.[\"ZohoMail.tags.READ\"]: \"Read access to labels\"",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.scopes.[\"ZohoMail.tags.UPDATE\"]: \"Update access to labels\"",
+ "schemes.iam-oauth2-schema.flows.authorizationCode.tokenUrl: \"https://accounts.zoho.com/oauth/v2/token\"",
+ "schemes.iam-oauth2-schema.type: \"oauth2\"",
+ "security: null",
+ "servers: null"
+]

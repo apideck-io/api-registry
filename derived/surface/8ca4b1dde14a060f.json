@@ -1,0 +1,8 @@
+[
+ "perPath: /schedules post security [{\"basicAuth\":[]}]",
+ "perPath: /schedules/{scheduleId} patch security [{\"basicAuth\":[]}]",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.lemlist.com/api\"}"
+]

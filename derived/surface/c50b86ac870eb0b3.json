@@ -1,0 +1,23 @@
+[
+ "perPath: /api/v1/accounts get security [{\"deprecated-iam-oauth2-schema\":[\"Desk.contacts.READ\"]},{\"iam-oauth2-schema\":[\"Desk.accounts.READ\"]}]",
+ "perPath: /api/v1/accounts post security [{\"deprecated-iam-oauth2-schema\":[\"Desk.contacts.CREATE\"]},{\"iam-oauth2-schema\":[\"Desk.accounts.CREATE\"]}]",
+ "perPath: /api/v1/accounts/count get security [{\"deprecated-iam-oauth2-schema\":[\"Desk.contacts.READ\"]},{\"iam-oauth2-schema\":[\"Desk.accounts.READ\"]}]",
+ "perPath: /api/v1/accounts/moveToTrash post security [{\"deprecated-iam-oauth2-schema\":[\"Desk.contacts.DELETE\"]},{\"iam-oauth2-schema\":[\"Desk.accounts.DELETE\"]}]",
+ "perPath: /api/v1/accounts/updateMany post security [{\"deprecated-iam-oauth2-schema\":[\"Desk.contacts.UPDATE\"]},{\"iam-oauth2-schema\":[\"Desk.accounts.UPDATE\"]}]",
+ "perPath: /api/v1/accounts/{accountId} get security [{\"deprecated-iam-oauth2-schema\":[\"Desk.contacts.READ\"]},{\"iam-oauth2-schema\":[\"Desk.accounts.READ\"]}]",
+ "perPath: /api/v1/accounts/{accountId} patch security [{\"deprecated-iam-oauth2-schema\":[\"Desk.contacts.UPDATE\"]},{\"iam-oauth2-schema\":[\"Desk.accounts.UPDATE\"]}]",
+ "perPath: /api/v1/accounts/{accountId}/associateProducts post security [{\"deprecated-iam-oauth2-schema\":[\"Desk.contacts.UPDATE\"]},{\"iam-oauth2-schema\":[\"Desk.accounts.UPDATE\"]}]",
+ "perPath: /api/v1/accounts/{accountId}/contracts get security [{\"deprecated-iam-oauth2-schema\":[\"Desk.settings.READ\"]},{\"iam-oauth2-schema\":[\"Desk.contracts.READ\"]}]",
+ "perPath: /api/v1/accounts/{accountId}/history get security [{\"deprecated-iam-oauth2-schema\":[\"Desk.contacts.READ\"]},{\"iam-oauth2-schema\":[\"Desk.accounts.READ\",\"Desk.tickets.READ\"]}]",
+ "perPath: /api/v1/accounts/{accountId}/merge post security [{\"deprecated-iam-oauth2-schema\":[\"Desk.contacts.UPDATE\"]},{\"iam-oauth2-schema\":[\"Desk.accounts.UPDATE\"]}]",
+ "perPath: /api/v1/accounts/{accountId}/statistics get security [{\"deprecated-iam-oauth2-schema\":[\"Desk.contacts.READ\"]},{\"iam-oauth2-schema\":[\"Desk.accounts.READ\"]}]",
+ "perPath: /api/v1/accounts/{accountId}/tickets get security [{\"deprecated-iam-oauth2-schema\":[\"Desk.search.READ\"]},{\"iam-oauth2-schema\":[\"Desk.tickets.READ\"]}]",
+ "perPath: /api/v1/contacts/{contactId}/accounts get security [{\"deprecated-iam-oauth2-schema\":[\"Desk.contacts.READ\"]},{\"iam-oauth2-schema\":[\"Desk.accounts.READ\"]}]",
+ "perPath: /api/v1/products/{productId}/accounts get security [{\"deprecated-iam-oauth2-schema\":[\"Desk.contacts.READ\",\"Desk.settings.READ\"]},{\"iam-oauth2-schema\":[\"Desk.accounts.READ\"]}]",
+ "schemes.cookie-auth.$ref: \"./Common.json#/components/securitySchemes/cookie-auth\"",
+ "schemes.deprecated-iam-oauth2-schema.$ref: \"./Common.json#/components/securitySchemes/deprecated-iam-oauth2-schema\"",
+ "schemes.iam-oauth2-schema.$ref: \"./Common.json#/components/securitySchemes/iam-oauth2-schema\"",
+ "schemes.org-oauth.$ref: \"./Common.json#/components/securitySchemes/org-oauth\"",
+ "security: null",
+ "servers: null"
+]

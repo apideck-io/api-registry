@@ -1,0 +1,12 @@
+[
+ "basePath: \"/api\"",
+ "definitions.api_key.description: \"All request are required to pass a `X-Auth-Token` header.\"",
+ "definitions.api_key.in: \"header\"",
+ "definitions.api_key.name: \"X-Auth-Token\"",
+ "definitions.api_key.type: \"apiKey\"",
+ "host: \"subdomain.sage.hr\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

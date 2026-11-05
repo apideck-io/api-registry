@@ -1,0 +1,23 @@
+[
+ "perPath: /v2/actor-builds/{buildId} get security []",
+ "perPath: /v2/actor-builds/{buildId}/openapi.json get security []",
+ "perPath: /v2/actors/{actorId}/builds/default get security []",
+ "perPath: /v2/actors/{actorId}/builds/{buildId} get security []",
+ "perPath: /v2/actors/{actorId}/builds/{buildId}/openapi.json get security []",
+ "perPath: /v2/browser-info delete security []",
+ "perPath: /v2/browser-info get security []",
+ "perPath: /v2/browser-info post security []",
+ "perPath: /v2/browser-info put security []",
+ "perPath: /v2/logs/{buildOrRunId} get security [{\"apiKey\":[]},{\"httpBearer\":[]},{}]",
+ "perPath: /v2/tools/decode-and-verify post security []",
+ "schemes.apiKey.description: \"API token provided as a query parameter (e.g., `?token=your_token`—less secure).\\n\\nUse your API token to authenticate requests. You can find it on the [Integrations page](https://console.apify.com/account#/integrations) in Apify Console.\\n\\n:::danger Security\\n\\nDo not share your API token (or account password) with untrusted parties.\\n\\n:::\\n\\n_When is authentication required?_\\n- _Required_ for private Actors, tasks, or resources (e.g., builds of private Actors).\\n- _Required_ when using named formats for IDs (e.g., `username~store-name` for stores or `username~queue-name` for queues).\\n- _Optional_ for public Actors or resources (e.g., builds of public Actors can be queried without a token).\\n\\nFor more information, see our [integrations documentation](https://docs.apify.com/platform/integrations).\"",
+ "schemes.apiKey.in: \"query\"",
+ "schemes.apiKey.name: \"token\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "schemes.httpBearer.description: \"Bearer token provided in the `Authorization` header (e.g., `Authorization: Bearer your_token`—recommended). For details, see the [`Authorization` header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) on MDN.\\n\\nUse your API token to authenticate requests. You can find it on the [Integrations page](https://console.apify.com/account#/integrations) in Apify Console. This method is more secure than query parameters, as headers are not logged in browser history or server logs.\\n\\n:::danger Security\\n\\nDo not share your API token (or account password) with untrusted parties.\\n\\n:::\\n\\n_When is authentication required?_\\n- _Required_ for private Actors, tasks, or resources (e.g., builds of private Actors).\\n- _Required_ when using named formats for IDs (e.g., `username~store-name` for stores or `username~queue-name` for queues).\\n- _Optional_ for public Actors or resources (e.g., builds of public Actors can be queried without a token).\\n\\nFor more information, see our [integrations documentation](https://docs.apify.com/platform/integrations).\"",
+ "schemes.httpBearer.scheme: \"bearer\"",
+ "schemes.httpBearer.type: \"http\"",
+ "security[]: {\"apiKey\":[]}",
+ "security[]: {\"httpBearer\":[]}",
+ "servers[0]: {\"url\":\"https://api.apify.com\",\"variables\":{}}"
+]

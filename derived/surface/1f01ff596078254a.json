@@ -1,0 +1,11 @@
+[
+ "perPath: /form-26as/pdf/classify post security []",
+ "perPath: /it/ocr/form-16 post security []",
+ "perPath: /it/ocr/form-16/pdf post security []",
+ "perPath: /it/ocr/form-16/pdf/classify post security []",
+ "perPath: /it/ocr/form-26as/pdf post security []",
+ "schemes: {}",
+ "security[]: {}",
+ "servers[0]: {\"description\":\"test\",\"url\":\"https://test-api.sandbox.co.in\"}",
+ "servers[1]: {\"description\":\"prod\",\"url\":\"https://api.sandbox.co.in\"}"
+]

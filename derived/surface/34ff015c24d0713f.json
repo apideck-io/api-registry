@@ -1,0 +1,14 @@
+[
+ "perPath: /affiliates/alloffers get security [{\"API Key\":[]}]",
+ "perPath: /affiliates/offers/{offerId} get security [{\"API Key\":[]}]",
+ "perPath: /affiliates/offers/{offerId}/impressionurl/{urlId} get security [{\"API Key\":[]}]",
+ "perPath: /affiliates/offers/{offerId}/url/{urlId} get security [{\"API Key\":[]}]",
+ "perPath: /affiliates/offersrunnable get security [{\"API Key\":[]}]",
+ "perPath: /affiliates/offerstable post security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The affiliate's API key generated from the Affiliate Portal. Uses the X-Eflow-Api-Key header.\\n\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://api.eflow.team/v1\"}"
+]

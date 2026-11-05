@@ -1,0 +1,16 @@
+[
+ "basePath: \"/\"",
+ "definitions.api-key.description: \"One of your API keys\"",
+ "definitions.api-key.in: \"header\"",
+ "definitions.api-key.name: \"api-key\"",
+ "definitions.api-key.type: \"apiKey\"",
+ "definitions.user-id.description: \"Your user ID\"",
+ "definitions.user-id.in: \"header\"",
+ "definitions.user-id.name: \"user-id\"",
+ "definitions.user-id.type: \"apiKey\"",
+ "host: \"neutrinoapi.net\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"api-key\":[],\"user-id\":[]}"
+]

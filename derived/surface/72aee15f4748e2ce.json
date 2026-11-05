@@ -1,0 +1,17 @@
+[
+ "perPath: /streams/rest/v1/streams delete security [{\"x-api-key\":[]}]",
+ "perPath: /streams/rest/v1/streams get security [{\"x-api-key\":[]}]",
+ "perPath: /streams/rest/v1/streams post security [{\"x-api-key\":[]}]",
+ "perPath: /streams/rest/v1/streams/enabled_count get security [{\"x-api-key\":[]}]",
+ "perPath: /streams/rest/v1/streams/test_filter post security [{\"x-api-key\":[]}]",
+ "perPath: /streams/rest/v1/streams/{id} delete security [{\"x-api-key\":[]}]",
+ "perPath: /streams/rest/v1/streams/{id} get security [{\"x-api-key\":[]}]",
+ "perPath: /streams/rest/v1/streams/{id} patch security [{\"x-api-key\":[]}]",
+ "perPath: /streams/rest/v1/streams/{id}/activate post security [{\"x-api-key\":[]}]",
+ "perPath: /streams/rest/v1/streams/{id}/pause post security [{\"x-api-key\":[]}]",
+ "schemes.x-api-key.in: \"header\"",
+ "schemes.x-api-key.name: \"x-api-key\"",
+ "schemes.x-api-key.type: \"apiKey\"",
+ "security: null",
+ "servers: []"
+]

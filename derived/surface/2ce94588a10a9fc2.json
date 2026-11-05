@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Send your fal API key in the `Authorization` header with the `Key` prefix, for example `Authorization: Key $FAL_KEY`. Public models also accept requests without a key. See [Authentication](https://fal.ai/docs/documentation/model-apis/authentication/key-based).\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"Authorization\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"description\":\"Synchronous API. The backup host is https://falrun.com.\",\"url\":\"https://fal.run\"}"
+]

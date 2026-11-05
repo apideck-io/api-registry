@@ -1,0 +1,9 @@
+[
+ "basePath: \"/commerce/v2\"",
+ "definitions: null",
+ "host: \"www.ticketmaster.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: null",
+ "security: null"
+]

@@ -1,0 +1,7 @@
+[
+ "auth: null",
+ "hosts: [\"https://api.yotpo.com\",\"https://developers.yotpo.com\"]",
+ "nested: []",
+ "scripts: []",
+ "variables: []"
+]

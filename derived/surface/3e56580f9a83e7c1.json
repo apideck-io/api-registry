@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"US region Production Server\",\"url\":\"https://app.clio.com/api/v4\"}",
+ "servers[1]: {\"description\":\"Europe region Production Server\",\"url\":\"https://eu.app.clio.com/api/v4\"}",
+ "servers[2]: {\"description\":\"Canada region Production Server\",\"url\":\"https://ca.app.clio.com/api/v4\"}",
+ "servers[3]: {\"description\":\"Australia region Production Server\",\"url\":\"https://au.app.clio.com/api/v4\"}"
+]

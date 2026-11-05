@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.Bearer.description: \"Enter your Authentication Token in textbox\"",
+ "schemes.Bearer.in: \"header\"",
+ "schemes.Bearer.name: \"Authorization\"",
+ "schemes.Bearer.type: \"apiKey\"",
+ "security[]: {\"Bearer\":[]}",
+ "servers: null"
+]

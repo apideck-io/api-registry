@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.X-AUTH-ACCESS-TOKEN.in: \"header\"",
+ "schemes.X-AUTH-ACCESS-TOKEN.name: \"X-AUTH-ACCESS-TOKEN\"",
+ "schemes.X-AUTH-ACCESS-TOKEN.type: \"apiKey\"",
+ "security[]: {\"X-AUTH-ACCESS-TOKEN\":[]}",
+ "servers[0]: {\"url\":\"https://presentation.s.xtrf.eu/home-api\"}"
+]

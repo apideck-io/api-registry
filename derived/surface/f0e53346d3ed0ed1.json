@@ -1,0 +1,9 @@
+[
+ "perPath: /public/interstitial get security []",
+ "schemes.bearerAuth.bearerFormat: \"sk_<environment>_<secret value>\"",
+ "schemes.bearerAuth.description: \"Secret key, obtained under \\\"API Keys\\\" in the Clerk Dashboard.\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.clerk.com/v1\"}"
+]

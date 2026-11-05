@@ -1,0 +1,23 @@
+[
+ "perPath: /v0/activity_logs get security [{\"bearerAuth\":[]}]",
+ "perPath: /v0/activity_logs/filters get security [{\"bearerAuth\":[]}]",
+ "perPath: /v0/activity_logs/{id} get security [{\"bearerAuth\":[]}]",
+ "perPath: /v0/teams get security [{\"bearerAuth\":[]}]",
+ "perPath: /v0/teams post security [{\"bearerAuth\":[]}]",
+ "perPath: /v0/teams/{id} delete security [{\"bearerAuth\":[]}]",
+ "perPath: /v0/teams/{id} get security [{\"bearerAuth\":[]}]",
+ "perPath: /v0/teams/{id}/endpoints get security [{\"bearerAuth\":[]}]",
+ "perPath: /v0/teams/{id}/endpoints patch security [{\"bearerAuth\":[]}]",
+ "perPath: /v0/teams/{id}/members post security [{\"bearerAuth\":[]}]",
+ "perPath: /v0/teams/{id}/members/{user_id} delete security [{\"bearerAuth\":[]}]",
+ "perPath: /v0/teams/{id}/members/{user_id}/resend_invite post security [{\"bearerAuth\":[]}]",
+ "schemes.api_key.in: \"header\"",
+ "schemes.api_key.name: \"x-api-key\"",
+ "schemes.api_key.type: \"apiKey\"",
+ "schemes.bearer_auth.bearerFormat: \"JWT\"",
+ "schemes.bearer_auth.scheme: \"bearer\"",
+ "schemes.bearer_auth.type: \"http\"",
+ "security[]: {\"api_key\":[]}",
+ "security[]: {\"bearer_auth\":[]}",
+ "servers[0]: {\"url\":\"https://api.quicknode.com\"}"
+]

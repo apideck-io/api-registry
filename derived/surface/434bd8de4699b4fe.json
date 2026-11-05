@@ -1,0 +1,16 @@
+[
+ "basePath: null",
+ "definitions.ApiKeyAuth.in: \"header\"",
+ "definitions.ApiKeyAuth.name: \"x-api-key\"",
+ "definitions.ApiKeyAuth.type: \"apiKey\"",
+ "host: \"api.shorten.rest\"",
+ "parameterizedHost: null",
+ "perOp: /aliases delete [{\"ApiKeyAuth\":[]}]",
+ "perOp: /aliases get [{\"ApiKeyAuth\":[]}]",
+ "perOp: /aliases post [{\"ApiKeyAuth\":[]}]",
+ "perOp: /aliases put [{\"ApiKeyAuth\":[]}]",
+ "perOp: /aliases/all get [{\"ApiKeyAuth\":[]}]",
+ "perOp: /clicks get [{\"ApiKeyAuth\":[]}]",
+ "schemes: [\"https\"]",
+ "security: null"
+]

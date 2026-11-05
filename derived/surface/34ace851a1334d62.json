@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.BasicAuth.scheme: \"basic\"",
+ "schemes.BasicAuth.type: \"http\"",
+ "security[]: {\"BasicAuth\":[]}",
+ "servers[0]: {\"description\":\"Production API server.\",\"url\":\"https://api.alegra.com/api/v1\"}"
+]

@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.description: \"API key from https://app.hyperping.io/project/developers\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Production API server\",\"url\":\"https://api.hyperping.io\"}"
+]

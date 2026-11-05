@@ -1,0 +1,10 @@
+[
+ "perPath: /conversations/{id}/trigger-native-integration post security [{\"APIKeyHeader\":[]}]",
+ "perPath: /crm/query post security [{\"APIKeyHeader\":[]}]",
+ "perPath: /integration-workflows get security [{\"APIKeyHeader\":[]}]",
+ "schemes.APIKeyHeader.in: \"header\"",
+ "schemes.APIKeyHeader.name: \"Authorization\"",
+ "schemes.APIKeyHeader.type: \"apiKey\"",
+ "security[]: {\"APIKeyHeader\":[]}",
+ "servers[0]: {\"url\":\"https://api.attention.tech/v2\"}"
+]

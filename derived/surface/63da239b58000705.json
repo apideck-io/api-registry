@@ -1,0 +1,12 @@
+[
+ "perPath: /health get security []",
+ "schemes.apiKeyHeader.in: \"header\"",
+ "schemes.apiKeyHeader.name: \"X-API-Key\"",
+ "schemes.apiKeyHeader.type: \"apiKey\"",
+ "schemes.bearerAuth.description: \"Direct API key: Authorization: Bearer <key>\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"apiKeyHeader\":[]}",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.livetennisapi.com/api/public/v1\"}"
+]

@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.BearerAuth.bearerFormat: \"JWT\"",
+ "schemes.BearerAuth.description: \"Bearer token obtained from the /api/v1/authorize endpoint.\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Flinks Pay Production\",\"url\":\"https://www.{baseurl}.com\",\"variables\":{\"baseurl\":{\"default\":\"{baseurl}\",\"description\":\"The base URI for the environment (e.g. flinks)\"}}}"
+]

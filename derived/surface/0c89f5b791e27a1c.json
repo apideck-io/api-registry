@@ -1,0 +1,15 @@
+[
+ "perPath: []",
+ "schemes.tokenHeader.description: \"Generate a token in Developer Settings.\"",
+ "schemes.tokenHeader.in: \"header\"",
+ "schemes.tokenHeader.name: \"Authorization\"",
+ "schemes.tokenHeader.type: \"apiKey\"",
+ "schemes.tokenHeader.x-value-template: \"Discogs token={key}\"",
+ "schemes.tokenQuery.description: \"The same token as a query parameter; prefer the header, which keeps it out of URLs and logs.\"",
+ "schemes.tokenQuery.in: \"query\"",
+ "schemes.tokenQuery.name: \"token\"",
+ "schemes.tokenQuery.type: \"apiKey\"",
+ "security[]: {\"tokenHeader\":[]}",
+ "security[]: {\"tokenQuery\":[]}",
+ "servers[0]: {\"url\":\"https://api.discogs.com\"}"
+]

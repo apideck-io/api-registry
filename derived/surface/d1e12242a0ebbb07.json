@@ -1,0 +1,13 @@
+[
+ "perPath: /v1/catalogs/products get security [{\"Oauth2\":[\"https://uri.paypal.com/services/subscriptions\"]}]",
+ "perPath: /v1/catalogs/products post security [{\"Oauth2\":[\"https://uri.paypal.com/services/subscriptions\"]}]",
+ "perPath: /v1/catalogs/products/{product_id} get security [{\"Oauth2\":[\"https://uri.paypal.com/services/subscriptions\"]}]",
+ "perPath: /v1/catalogs/products/{product_id} patch security [{\"Oauth2\":[\"https://uri.paypal.com/services/subscriptions\"]}]",
+ "schemes.Oauth2.description: \"Oauth 2.0 authentication\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/subscriptions\"]: \"Create and manage products\"",
+ "schemes.Oauth2.flows.clientCredentials.tokenUrl: \"/v1/oauth2/token\"",
+ "schemes.Oauth2.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"description\":\"PayPal Sandbox Environment\",\"url\":\"https://api-m.sandbox.paypal.com\"}",
+ "servers[1]: {\"description\":\"PayPal Live Environment\",\"url\":\"https://api-m.paypal.com\"}"
+]

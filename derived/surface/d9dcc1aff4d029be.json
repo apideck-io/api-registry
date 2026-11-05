@@ -1,0 +1,9 @@
+[
+ "basePath: \"/v1\"",
+ "definitions: null",
+ "host: \"test.api.amadeus.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

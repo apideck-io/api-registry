@@ -1,0 +1,16 @@
+[
+ "perPath: []",
+ "schemes.basicAuth.description: \"Basic authentication with ServiceNow username and password.\"",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "schemes.oauth2.description: \"OAuth 2.0 authorization code or resource owner password credentials flow.\"",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://{instance}.service-now.com/oauth_auth.do\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.useraccount: \"Access to user account resources\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://{instance}.service-now.com/oauth_token.do\"",
+ "schemes.oauth2.flows.password.scopes.useraccount: \"Access to user account resources\"",
+ "schemes.oauth2.flows.password.tokenUrl: \"https://{instance}.service-now.com/oauth_token.do\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security[]: {\"basicAuth\":[]}",
+ "security[]: {\"oauth2\":[\"useraccount\"]}",
+ "servers[0]: {\"description\":\"ServiceNow instance REST API endpoint\",\"url\":\"https://{instance}.service-now.com/api\",\"variables\":{\"instance\":{\"default\":\"your-instance\",\"description\":\"Your ServiceNow instance name\"}}}"
+]

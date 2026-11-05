@@ -1,0 +1,20 @@
+[
+ "perPath: /webhooks get security [{\"api_key\":[]},{\"oauth2\":[\"developer_tools\"]}]",
+ "perPath: /webhooks post security [{\"api_key\":[]},{\"oauth2\":[\"developer_tools\"]}]",
+ "perPath: /webhooks/sample get security [{\"api_key\":[]},{\"oauth2\":[\"developer_tools\"]}]",
+ "perPath: /webhooks/{id} delete security [{\"api_key\":[]},{\"oauth2\":[\"developer_tools\"]}]",
+ "perPath: /webhooks/{id} patch security [{\"api_key\":[]},{\"oauth2\":[\"developer_tools\"]}]",
+ "perPath: /webhooks/{id} put security [{\"api_key\":[]},{\"oauth2\":[\"developer_tools\"]}]",
+ "schemes.api_key.in: \"header\"",
+ "schemes.api_key.name: \"X-Authorization\"",
+ "schemes.api_key.type: \"apiKey\"",
+ "schemes.oauth2.description: \"OAuth 2.0 authorization\"",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://oauth.loopreturns.com/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.developer_tools: \"Access to developer tools including webhooks\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://oauth.loopreturns.com/oauth/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"description\":\"2026-10 (Stable)\",\"url\":\"https://api.loopreturns.com/api/2026-10\"}",
+ "servers[1]: {\"description\":\"2026-07\",\"url\":\"https://api.loopreturns.com/api/2026-07\"}",
+ "servers[2]: {\"description\":\"Unstable (Preview)\",\"url\":\"https://api.loopreturns.com/api/unstable\"}"
+]

@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"Sandbox environment\",\"url\":\"https://sandbox-api.kenjo.io/api/v1\"}",
+ "servers[1]: {\"description\":\"Production environment\",\"url\":\"https://api.kenjo.io/api/v1\"}"
+]

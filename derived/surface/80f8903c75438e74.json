@@ -1,0 +1,13 @@
+[
+ "perPath: /services get security [{\"Authorization\":[]}]",
+ "perPath: /services post security [{\"Authorization\":[]}]",
+ "perPath: /services/invoice get security [{\"Authorization\":[]}]",
+ "perPath: /services/routes get security [{\"Authorization\":[]}]",
+ "perPath: /services/routes post security [{\"Authorization\":[]}]",
+ "perPath: /services/{idDeliveryService} get security [{\"Authorization\":[]}]",
+ "schemes.Authorization.description: \"To use the endpoints, please login through the [Asynchronous login](https://developers.vtex.com/docs/api-reference/tracking#post-/auth) endpoint, and copy the access token in the response.\"",
+ "schemes.Authorization.scheme: \"bearer\"",
+ "schemes.Authorization.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.vtextracking.com/receiver\"}"
+]

@@ -1,0 +1,14 @@
+[
+ "basePath: \"/1\"",
+ "definitions.oauth.flow: \"password\"",
+ "definitions.oauth.scopes.full: \"Full access\"",
+ "definitions.oauth.tokenUrl: \"https://api.contriby.com/1/token\"",
+ "definitions.oauth.type: \"oauth2\"",
+ "host: \"api.contribly.com\"",
+ "parameterizedHost: null",
+ "perOp: /contributions post [{\"oauth\":[\"full\"]}]",
+ "perOp: /media post [{\"oauth\":[\"full\"]}]",
+ "perOp: /verify post [{\"oauth\":[\"full\"]}]",
+ "schemes: [\"https\"]",
+ "security: null"
+]

@@ -1,0 +1,14 @@
+[
+ "perPath: /networks/creatives get security [{\"API Key\":[]}]",
+ "perPath: /networks/creatives post security [{\"API Key\":[]}]",
+ "perPath: /networks/creatives/{creativeId} get security [{\"API Key\":[]}]",
+ "perPath: /networks/creatives/{creativeId} put security [{\"API Key\":[]}]",
+ "perPath: /networks/creativestable post security [{\"API Key\":[]}]",
+ "perPath: /networks/patch/offers/creative/apply patch security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The Everflow API key generated from the Control Center > Security.\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.eflow.team/v1\"}"
+]

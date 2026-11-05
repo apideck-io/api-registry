@@ -1,0 +1,13 @@
+[
+ "perPath: []",
+ "schemes.furkot_auth_access_code.flows.authorizationCode.authorizationUrl: \"/oauth/authorize\"",
+ "schemes.furkot_auth_access_code.flows.authorizationCode.scopes.[\"read:trips\"]: \"list trips and stops info\"",
+ "schemes.furkot_auth_access_code.flows.authorizationCode.tokenUrl: \"/pub/api/access_token\"",
+ "schemes.furkot_auth_access_code.type: \"oauth2\"",
+ "schemes.furkot_auth_implicit.flows.implicit.authorizationUrl: \"/oauth/authorize\"",
+ "schemes.furkot_auth_implicit.flows.implicit.scopes.[\"read:trips\"]: \"list trips and stops info\"",
+ "schemes.furkot_auth_implicit.type: \"oauth2\"",
+ "security[]: {\"furkot_auth_access_code\":[\"read:trips\"]}",
+ "security[]: {\"furkot_auth_implicit\":[\"read:trips\"]}",
+ "servers[0]: {\"url\":\"https://trips.furkot.com/pub/api\"}"
+]

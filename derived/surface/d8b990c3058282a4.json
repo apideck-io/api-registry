@@ -1,0 +1,21 @@
+[
+ "perPath: /order/link post security [{\"api_key\":[]}]",
+ "perPath: /order/qr post security [{\"api_key\":[]}]",
+ "perPath: /warehouse/reporting/asn get security [{\"api_key\":[]}]",
+ "perPath: /warehouse/return/details get security [{\"api_key\":[]}]",
+ "perPath: /warehouse/return/list get security [{\"api_key\":[]}]",
+ "perPath: /warehouse/return/{id}/cancel post security [{\"api_key\":[]}]",
+ "perPath: /warehouse/return/{id}/close post security [{\"api_key\":[]}]",
+ "perPath: /warehouse/return/{id}/flag post security [{\"api_key\":[]}]",
+ "perPath: /warehouse/return/{id}/note post security [{\"api_key\":[]}]",
+ "perPath: /warehouse/return/{id}/notes get security [{\"api_key\":[]}]",
+ "perPath: /warehouse/return/{id}/process post security [{\"api_key\":[]}]",
+ "perPath: /warehouse/return/{id}/remove post security [{\"api_key\":[]}]",
+ "schemes.api_key.in: \"header\"",
+ "schemes.api_key.name: \"X-Authorization\"",
+ "schemes.api_key.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"2026-10 (Stable)\",\"url\":\"https://api.loopreturns.com/api/2026-10\"}",
+ "servers[1]: {\"description\":\"2026-07\",\"url\":\"https://api.loopreturns.com/api/2026-07\"}",
+ "servers[2]: {\"description\":\"Unstable (Preview)\",\"url\":\"https://api.loopreturns.com/api/unstable\"}"
+]

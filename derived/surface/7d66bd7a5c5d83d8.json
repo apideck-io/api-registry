@@ -1,0 +1,11 @@
+[
+ "basePath: \"/\"",
+ "definitions.api_token.in: \"header\"",
+ "definitions.api_token.name: \"Shortcut-Token\"",
+ "definitions.api_token.type: \"apiKey\"",
+ "host: \"api.app.shortcut.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security[]: {\"api_token\":[]}"
+]

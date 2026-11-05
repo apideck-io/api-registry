@@ -1,0 +1,10 @@
+[
+ "perPath: /v3/settings/psprisksignalsprofile post security [{\"accessToken\":[]}]",
+ "schemes.accessToken.description: \"Access token required to authenticate API requests. For the PSP risk signals endpoint, the token is seller-scoped and obtained through the Solution Provider authorization-code flow. After the seller authorizes your application, exchange the authorization code for an access token at `POST https://marketplace.walmartapis.com/v3/token`. Walmart derives the seller identity from the token, so do not include a seller identifier in the request.\"",
+ "schemes.accessToken.in: \"header\"",
+ "schemes.accessToken.name: \"WM_SEC.ACCESS_TOKEN\"",
+ "schemes.accessToken.type: \"apiKey\"",
+ "security[]: {\"basicScheme\":[]}",
+ "servers[0]: {\"description\":\"Refers to the URL used for accessing the production server.\",\"url\":\"https://marketplace.walmartapis.com\"}",
+ "servers[1]: {\"description\":\"Refers to the URL used for accessing the sandbox server.\",\"url\":\"https://sandbox.walmartapis.com\"}"
+]

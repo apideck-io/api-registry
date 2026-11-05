@@ -1,0 +1,16 @@
+[
+ "perPath: /job-applications/{jobApplicationId} delete security [{\"key\":[]},{\"oauth\":[\"job_applications_manage\"]}]",
+ "perPath: /job-applications/{jobApplicationId} get security [{\"key\":[]},{\"oauth\":[\"job_applications_read\"]}]",
+ "perPath: /job-applications/{jobApplicationId}/consent-request post security [{\"key\":[]},{\"oauth\":[\"job_applications_manage\"]}]",
+ "perPath: /job-applications/{jobApplicationId}/consents get security [{\"key\":[]},{\"oauth\":[\"job_applications_read\"]}]",
+ "schemes.key.in: \"header\"",
+ "schemes.key.name: \"x-smarttoken\"",
+ "schemes.key.type: \"apiKey\"",
+ "schemes.oauth.flows.authorizationCode.authorizationUrl: \"https://www.smartrecruiters.com/identity/oauth/allow\"",
+ "schemes.oauth.flows.authorizationCode.scopes.job_applications_manage: \"Manage Job Applications\"",
+ "schemes.oauth.flows.authorizationCode.scopes.job_applications_read: \"Access Job Applications\"",
+ "schemes.oauth.flows.authorizationCode.tokenUrl: \"https://api.smartrecruiters.com/identity/oauth/token\"",
+ "schemes.oauth.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.smartrecruiters.com/job-applications-api/v202112\"}"
+]

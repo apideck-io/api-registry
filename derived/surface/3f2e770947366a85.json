@@ -1,0 +1,22 @@
+[
+ "perPath: /api/forms get security [{\"bearerAuth\":[]}]",
+ "perPath: /api/forms post security [{\"bearerAuth\":[]}]",
+ "perPath: /api/forms/copy post security [{\"bearerAuth\":[]}]",
+ "perPath: /api/forms/stats get security [{\"bearerAuth\":[]}]",
+ "perPath: /api/forms/{form_id} get security [{\"bearerAuth\":[]}]",
+ "perPath: /api/forms/{form_id} put security [{\"bearerAuth\":[]}]",
+ "perPath: /api/forms/{form_id}/archive post security [{\"bearerAuth\":[]}]",
+ "perPath: /api/forms/{form_id}/submissions get security [{\"bearerAuth\":[]}]",
+ "perPath: /api/forms/{form_id}/submissions post security []",
+ "perPath: /api/forms/{form_id}/submissions/submission-csv get security [{\"bearerAuth\":[]}]",
+ "perPath: /api/forms/{form_id}/submissions/submission-csv/{submission_id} get security [{\"bearerAuth\":[]}]",
+ "perPath: /api/forms/{form_id}/submissions/{submission_id}/signature/{field_name} get security [{\"bearerAuth\":[]}]",
+ "perPath: /api/forms/{form_id}/submissions/{submission_id}/submission-pdf get security [{\"bearerAuth\":[]}]",
+ "perPath: /api/forms/{form_id}/unarchive post security [{\"bearerAuth\":[]}]",
+ "perPath: /public/form_data/{form_id} get security []",
+ "schemes.bearerAuth.description: \"Paubox API key sent as `Authorization: Bearer YOUR_API_KEY`. API keys are created in the Paubox dashboard and must have the \\\"forms\\\" scope; a key without the forms scope receives 401 Unauthorized. A valid key used against a resource that belongs to a different customer receives 403 Forbidden.\\n\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Paubox Forms API\",\"url\":\"https://api.paubox.com/v1/forms\"}"
+]

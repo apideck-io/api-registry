@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.description: \"An [API key](#overview--api-key) is required to benefit from [higher API limits](#overview--api-limits).\\n\"",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-API-Key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.portfoliooptimizer.io/v1\"}",
+ "servers[1]: {\"url\":\"https://eu-west-1.api.portfoliooptimizer.io/v1\"}"
+]

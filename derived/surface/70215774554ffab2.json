@@ -1,0 +1,18 @@
+[
+ "perPath: /analyze get security [{\"tokenscheme\":[]}]",
+ "perPath: /article get security [{\"tokenscheme\":[]}]",
+ "perPath: /custom get security [{\"tokenscheme\":[]}]",
+ "perPath: /custom post security [{\"tokenscheme\":[]}]",
+ "perPath: /discussion get security [{\"tokenscheme\":[]}]",
+ "perPath: /event get security [{\"tokenscheme\":[]}]",
+ "perPath: /image get security [{\"tokenscheme\":[]}]",
+ "perPath: /job get security [{\"tokenscheme\":[]}]",
+ "perPath: /list get security [{\"tokenscheme\":[]}]",
+ "perPath: /product get security [{\"tokenscheme\":[]}]",
+ "perPath: /video get security [{\"tokenscheme\":[]}]",
+ "schemes.tokenscheme.in: \"query\"",
+ "schemes.tokenscheme.name: \"token\"",
+ "schemes.tokenscheme.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.diffbot.com/v3\"}"
+]

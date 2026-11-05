@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.apiKeyAuth.in: \"header\"",
+ "schemes.apiKeyAuth.name: \"x-api-key\"",
+ "schemes.apiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"apiKeyAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.doqs.dev/v1\"}"
+]

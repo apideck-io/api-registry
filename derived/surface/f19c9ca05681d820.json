@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"Global auth server.\",\"url\":\"https://accounts.world.luccasoftware.com\"}"
+]

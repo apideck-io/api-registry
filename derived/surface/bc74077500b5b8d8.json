@@ -1,0 +1,20 @@
+[
+ "perPath: /api/accounts/search post security [{\"bearer_auth\":[]}]",
+ "perPath: /api/company_enrichments post security [{\"bearer_auth\":[]}]",
+ "perPath: /api/individual_reveals post security [{\"bearer_auth\":[]}]",
+ "perPath: /api/individual_reveals/{id} get security [{\"bearer_auth\":[]}]",
+ "perPath: /api/lists post security [{\"bearer_auth\":[]}]",
+ "perPath: /api/lists/{id} get security [{\"bearer_auth\":[]}]",
+ "perPath: /api/lists/{id}/contacts get security [{\"bearer_auth\":[]}]",
+ "perPath: /api/meta/credits get security [{\"bearer_auth\":[]}]",
+ "perPath: /api/meta/location_autocomplete get security [{\"bearer_auth\":[]}]",
+ "perPath: /api/meta/technology_autocomplete get security [{\"bearer_auth\":[]}]",
+ "perPath: /api/prospects/continue_search post security [{\"bearer_auth\":[]}]",
+ "perPath: /api/prospects/create_prospect_list post security [{\"bearer_auth\":[]}]",
+ "perPath: /api/prospects/search post security [{\"bearer_auth\":[]}]",
+ "schemes.bearer_auth.description: \"Enter your bearer token (your API key) in the **Authorization** header in the format `Bearer {token}`\"",
+ "schemes.bearer_auth.scheme: \"bearer\"",
+ "schemes.bearer_auth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://wiza.co\",\"variables\":{\"defaultHost\":{\"default\":\"wiza.co\"}}}"
+]

@@ -1,0 +1,14 @@
+[
+ "perPath: /networks/advertiser/signup post security [{\"API Key\":[]}]",
+ "perPath: /networks/advertisers/{advertiserId}/signup get security [{\"API Key\":[]}]",
+ "perPath: /networks/affiliate/signup get security [{\"API Key\":[]}]",
+ "perPath: /networks/affiliate/signup post security [{\"API Key\":[]}]",
+ "perPath: /networks/affiliates/{affiliateId}/signup get security [{\"API Key\":[]}]",
+ "perPath: /networks/affiliates/{affiliateId}/signup put security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The Everflow API key generated from the Control Center > Security.\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.eflow.team/v1\"}"
+]

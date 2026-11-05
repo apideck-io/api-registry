@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.OAuth2.description: \"See [**authentication**](https://docs.roller.app/docs/api/authentication).\"",
+ "schemes.OAuth2.flows.clientCredentials.refreshUrl: \"\"",
+ "schemes.OAuth2.flows.clientCredentials.scopes: {}",
+ "schemes.OAuth2.flows.clientCredentials.tokenUrl: \"https://api.roller.app/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security[]: {\"OAuth2\":[]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.roller.app\"}",
+ "servers[1]: {\"description\":\"Playground (Test Environment)\",\"url\":\"https://api.play.roller.app\"}"
+]

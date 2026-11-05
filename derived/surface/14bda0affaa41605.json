@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"auth.wejam.ai/org/api_keys (org Owner)\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"X-API-KEY\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://api.wejam.ai\"}"
+]

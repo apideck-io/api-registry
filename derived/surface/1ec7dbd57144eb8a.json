@@ -1,0 +1,17 @@
+[
+ "perPath: /groups/{group_id}/export post security [{\"TokenAuth\":[]}]",
+ "perPath: /groups/{group_id}/export/{export_id} get security [{\"TokenAuth\":[]}]",
+ "perPath: /groups/{group_id}/jobs/export/{export_id} get security [{\"TokenAuth\":[]}]",
+ "perPath: /orgs/{org_id}/export post security [{\"TokenAuth\":[]}]",
+ "perPath: /orgs/{org_id}/export/{export_id} get security [{\"TokenAuth\":[]}]",
+ "perPath: /orgs/{org_id}/jobs/export/{export_id} get security [{\"TokenAuth\":[]}]",
+ "schemes.APIToken.description: \"API key value must be prefixed with \\\\\\\"Token \\\\\\\".\"",
+ "schemes.APIToken.in: \"header\"",
+ "schemes.APIToken.name: \"Authorization\"",
+ "schemes.APIToken.type: \"apiKey\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"APIToken\":[]}",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Snyk REST API\",\"url\":\"https://api.snyk.io/rest\"}"
+]

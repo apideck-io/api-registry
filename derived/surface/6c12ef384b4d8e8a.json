@@ -1,0 +1,12 @@
+[
+ "perPath: /campaigns get security [{\"ApiKeyAuth\":[]},{\"Bearer\":[\"campaigns.read\"]}]",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-API-KEY\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "schemes.Bearer.flows.clientCredentials.scopes.[\"campaigns.read\"]: \"Read access to campaigns\"",
+ "schemes.Bearer.flows.clientCredentials.scopes.[\"campaigns.write\"]: \"Write access to campaigns\"",
+ "schemes.Bearer.flows.clientCredentials.tokenUrl: \"https://app.omnisend.com/oauth2/token\"",
+ "schemes.Bearer.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.omnisend.com/v5\"}"
+]

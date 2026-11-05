@@ -1,0 +1,19 @@
+[
+ "basePath: \"/api\"",
+ "definitions.api_key.in: \"query\"",
+ "definitions.api_key.name: \"api_key\"",
+ "definitions.api_key.type: \"apiKey\"",
+ "host: null",
+ "parameterizedHost: null",
+ "perOp: /v1/data-store/devices get [{\"api_key\":[]}]",
+ "perOp: /v1/data-store/devices/{id}/tags get [{\"api_key\":[]}]",
+ "perOp: /v1/data-store/read post [{\"api_key\":[]}]",
+ "perOp: /v1/data-store/read/{id} get [{\"api_key\":[]}]",
+ "perOp: /v1/data-store/tags get [{\"api_key\":[]}]",
+ "perOp: /v1/data-store/write/{id} post [{\"api_key\":[]}]",
+ "perOp: /v1/logging/groovLogs.json get [{\"api_key\":[]}]",
+ "perOp: /v1/logging/groovLogs.txt get [{\"api_key\":[]}]",
+ "perOp: /whoami get [{\"api_key\":[]}]",
+ "schemes: [\"https\"]",
+ "security: null"
+]

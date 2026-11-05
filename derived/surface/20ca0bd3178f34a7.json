@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"HyperCore REST base URL.\",\"url\":\"https://api.g.alchemy.com/hypercore/v1\"}"
+]

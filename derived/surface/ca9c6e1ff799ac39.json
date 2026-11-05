@@ -1,0 +1,14 @@
+[
+ "perPath: /contacts get security [{\"ApiKeyAuth\":[]},{\"Bearer\":[\"contacts.read\"]}]",
+ "perPath: /contacts post security [{\"ApiKeyAuth\":[]},{\"Bearer\":[\"contacts.write\"]}]",
+ "perPath: /contacts/{contactID} get security [{\"ApiKeyAuth\":[]},{\"Bearer\":[\"contacts.read\"]}]",
+ "perPath: /contacts/{contactID} patch security [{\"ApiKeyAuth\":[]},{\"Bearer\":[\"contacts.write\"]}]",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-API-KEY\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "schemes.Bearer.flows.clientCredentials.scopes: {}",
+ "schemes.Bearer.flows.clientCredentials.tokenUrl: \"https://app.omnisend.com/oauth2/token\"",
+ "schemes.Bearer.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.omnisend.com/v5\"}"
+]

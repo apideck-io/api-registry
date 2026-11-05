@@ -1,0 +1,14 @@
+[
+ "basePath: null",
+ "definitions.apiKey.description: \"ApiKey Authentication\"",
+ "definitions.apiKey.in: \"header\"",
+ "definitions.apiKey.name: \"ApiKey\"",
+ "definitions.apiKey.type: \"apiKey\"",
+ "definitions.basic.description: \"Basic HTTP Authentication\"",
+ "definitions.basic.type: \"basic\"",
+ "host: \"live-api.letmc.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

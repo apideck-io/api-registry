@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.description: \"Origin API credentials are sent as `Authorization: Bearer` tokens: an app JWT for app-level endpoints, or an installation access token (`oit_...`) for installation-scoped endpoints.\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.cursor.com\"}"
+]

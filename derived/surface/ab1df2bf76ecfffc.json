@@ -1,0 +1,12 @@
+[
+ "perPath: []",
+ "schemes.AgendrixHmac.description: \"HMAC-SHA256 signature: `appkey:signature:nonce:timestamp`\"",
+ "schemes.AgendrixHmac.in: \"header\"",
+ "schemes.AgendrixHmac.name: \"X-AGX-Authentication\"",
+ "schemes.AgendrixHmac.type: \"apiKey\"",
+ "schemes.Bearer.description: \"Organisation API token: `Authorization: Bearer <token>`\"",
+ "schemes.Bearer.scheme: \"bearer\"",
+ "schemes.Bearer.type: \"http\"",
+ "security: null",
+ "servers: null"
+]

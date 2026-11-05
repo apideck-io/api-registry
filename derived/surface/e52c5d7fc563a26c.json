@@ -1,0 +1,10 @@
+[
+ "perPath: /analyze post security [{\"api_key\":[]}]",
+ "perPath: /session/{sessionId} get security [{\"api_key\":[]}]",
+ "schemes.api_key.description: \"Merchant API key. See [Authentication](https://docs.loopreturns.com/api-reference/authentication)\\nfor setup, scopes, and error handling.\\n\"",
+ "schemes.api_key.in: \"header\"",
+ "schemes.api_key.name: \"X-Authorization\"",
+ "schemes.api_key.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.loopreturns.com/storefront/v1\"}"
+]

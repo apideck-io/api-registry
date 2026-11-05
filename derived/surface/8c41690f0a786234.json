@@ -1,0 +1,22 @@
+[
+ "basePath: null",
+ "definitions.oauth2.authorizationUrl: \"https://identity.apaleo.com/connect/authorize\"",
+ "definitions.oauth2.flow: \"implicit\"",
+ "definitions.oauth2.scopes.[\"reservations.import\"]: \"Import reservations\"",
+ "definitions.oauth2.scopes.admin: \"Full access\"",
+ "definitions.oauth2.type: \"oauth2\"",
+ "host: null",
+ "parameterizedHost: null",
+ "perOp: /operations/v1/maintenances get [{\"oauth2\":[\"admin\",\"maintenances.manage\",\"maintenances.read\"]}]",
+ "perOp: /operations/v1/maintenances post [{\"oauth2\":[\"admin\",\"maintenances.create\",\"maintenances.manage\"]}]",
+ "perOp: /operations/v1/maintenances/$count get [{\"oauth2\":[\"admin\",\"maintenances.manage\",\"maintenances.read\"]}]",
+ "perOp: /operations/v1/maintenances/bulk post [{\"oauth2\":[\"admin\",\"maintenances.create\",\"setup.manage\"]}]",
+ "perOp: /operations/v1/maintenances/{id} delete [{\"oauth2\":[\"admin\",\"maintenances.delete\",\"maintenances.manage\"]}]",
+ "perOp: /operations/v1/maintenances/{id} get [{\"oauth2\":[\"admin\",\"maintenances.manage\",\"maintenances.read\"]}]",
+ "perOp: /operations/v1/maintenances/{id} head [{\"oauth2\":[\"admin\",\"maintenances.manage\",\"maintenances.read\"]}]",
+ "perOp: /operations/v1/maintenances/{id} patch [{\"oauth2\":[\"admin\",\"maintenances.manage\"]}]",
+ "perOp: /operations/v1/night-audit put [{\"oauth2\":[\"admin\",\"operations.manage\",\"operations.trigger-night-audit\"]}]",
+ "perOp: /operations/v1/units-condition put [{\"oauth2\":[\"admin\",\"operations.change-room-state\"]}]",
+ "schemes: null",
+ "security: null"
+]

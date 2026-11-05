@@ -1,0 +1,11 @@
+[
+ "perPath: /v2/reports/surcharges get security [{\"Shippo_Token\":[]}]",
+ "perPath: /v2/reports/surcharges/{file_id} get security [{\"Shippo_Token\":[]}]",
+ "schemes.Shippo_Token.description: \"\\nEnter your shippo token with the ShippoToken prefix.\\n\\nExample: `ShippoToken shippo_live_xxxx`\\n\"",
+ "schemes.Shippo_Token.in: \"header\"",
+ "schemes.Shippo_Token.name: \"Authorization\"",
+ "schemes.Shippo_Token.type: \"apiKey\"",
+ "schemes.Shippo_Token.x-default: \"ShippoToken \"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.goshippo.com\"}"
+]

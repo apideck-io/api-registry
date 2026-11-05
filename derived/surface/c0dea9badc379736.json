@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.scheme: \"bearer\"",
+ "schemes.ApiKeyAuth.type: \"http\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Instantly API Server\",\"url\":\"https://api.instantly.ai\"}"
+]

@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "servers[0]: {\"url\":\"https://yourServer.jamfcloud.com/JSSResource\"}"
+]

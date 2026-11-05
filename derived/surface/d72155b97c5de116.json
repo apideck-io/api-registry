@@ -1,0 +1,12 @@
+[
+ "basePath: null",
+ "definitions.apiKey.description: \"API Key Authentication\"",
+ "definitions.apiKey.in: \"header\"",
+ "definitions.apiKey.name: \"apiKey\"",
+ "definitions.apiKey.type: \"apiKey\"",
+ "host: \"api.callcontrol.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

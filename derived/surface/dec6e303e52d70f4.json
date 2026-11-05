@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Data > APIs > Generate\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"x-api-key\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://api.triplewhale.com/api/v2\"}"
+]

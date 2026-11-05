@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.openuv.io/api/{version}\",\"variables\":{\"version\":{\"default\":\"v1\"}}}"
+]

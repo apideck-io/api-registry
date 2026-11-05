@@ -1,0 +1,17 @@
+[
+ "perPath: /leads/visitors/{provider}/{audienceId} post security [{\"apiKeyQuery\":[]}]",
+ "schemes.apiKeyHeader.description: \"Your API key in the `x-api-key` header.\"",
+ "schemes.apiKeyHeader.in: \"header\"",
+ "schemes.apiKeyHeader.name: \"x-api-key\"",
+ "schemes.apiKeyHeader.type: \"apiKey\"",
+ "schemes.apiKeyQuery.description: \"Deprecated, exposes the key in logs. Kept for the website visitor webhooks, whose providers only accept a URL.\"",
+ "schemes.apiKeyQuery.in: \"query\"",
+ "schemes.apiKeyQuery.name: \"apikey\"",
+ "schemes.apiKeyQuery.type: \"apiKey\"",
+ "schemes.bearerAuth.description: \"Your API key in `Authorization: Bearer YOUR_API_KEY` (recommended).\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"apiKeyHeader\":[]}",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://apiv2.lagrowthmachine.com/flow\"}"
+]

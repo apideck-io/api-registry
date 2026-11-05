@@ -1,0 +1,21 @@
+[
+ "perPath: /v1/call_bots post security [{\"APIKeyHeader\":[]}]",
+ "perPath: /v1/call_tags/ get security [{\"APIKeyHeader\":[]}]",
+ "perPath: /v1/calls/ get security [{\"APIKeyHeader\":[]}]",
+ "perPath: /v1/calls/removed get security [{\"APIKeyHeader\":[]}]",
+ "perPath: /v1/calls/{call_id} get security [{\"APIKeyHeader\":[]}]",
+ "perPath: /v1/calls/{call_id}/media get security [{\"APIKeyHeader\":[]}]",
+ "perPath: /v1/calls/{call_id}/snippets get security [{\"APIKeyHeader\":[]}]",
+ "perPath: /v1/forecasting/config/ get security [{\"APIKeyHeader\":[]}]",
+ "perPath: /v1/forecasting/submissions/ get security [{\"APIKeyHeader\":[]}]",
+ "perPath: /v1/playbooks/ get security [{\"APIKeyHeader\":[]}]",
+ "perPath: /v1/playbooks/{playbook_id} get security [{\"APIKeyHeader\":[]}]",
+ "perPath: /v1/playbooks/{playbook_id}/versions get security [{\"APIKeyHeader\":[]}]",
+ "perPath: /v1/playbooks/{playbook_id}/versions/{version_id} get security [{\"APIKeyHeader\":[]}]",
+ "perPath: /v1/test/ping get security [{\"APIKeyHeader\":[]}]",
+ "schemes.APIKeyHeader.in: \"header\"",
+ "schemes.APIKeyHeader.name: \"X-API-Key\"",
+ "schemes.APIKeyHeader.type: \"apiKey\"",
+ "security: null",
+ "servers: null"
+]

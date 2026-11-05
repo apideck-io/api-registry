@@ -1,0 +1,19 @@
+[
+ "perPath: /AssetTypes get security [{\"OAuth2\":[\"assets\",\"assets.read\"]}]",
+ "perPath: /AssetTypes post security [{\"OAuth2\":[\"assets\"]}]",
+ "perPath: /Assets get security [{\"OAuth2\":[\"assets\",\"assets.read\"]}]",
+ "perPath: /Assets post security [{\"OAuth2\":[\"assets\"]}]",
+ "perPath: /Assets/{id} get security [{\"OAuth2\":[\"assets\",\"assets.read\"]}]",
+ "perPath: /Settings get security [{\"OAuth2\":[\"assets\",\"assets.read\"]}]",
+ "schemes.OAuth2.description: \"For more information\"",
+ "schemes.OAuth2.flows.authorizationCode.authorizationUrl: \"https://login.xero.com/identity/connect/authorize\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.[\"assets.read\"]: \"Grant read-only access to fixed assets\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.assets: \"Grant read-write access to fixed assets\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.email: \"Grant read-only access to your email\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.openid: \"Grant read-only access to your open id\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.profile: \"your profile information\"",
+ "schemes.OAuth2.flows.authorizationCode.tokenUrl: \"https://identity.xero.com/connect/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Xero API servers\",\"url\":\"https://api.xero.com/assets.xro/1.0\"}"
+]

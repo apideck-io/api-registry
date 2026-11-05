@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.oAuth.flows.implicit.authorizationUrl: \"https://login.windows.net/common/oauth2/authorize?resource=https://api.businesscentral.dynamics.com\"",
+ "schemes.oAuth.flows.implicit.scopes.[\"Financials.ReadWrite.All\"]: \"financials.read.write.all\"",
+ "schemes.oAuth.type: \"oauth2\"",
+ "security[]: {\"oAuth\":[\"Financials.ReadWrite.All\"]}",
+ "servers[0]: {\"description\":\"(v1.0) \\\"Sandbox\\\"\",\"url\":\"https://api.businesscentral.dynamics.com/v2.0/sandbox/api/v1.0\"}",
+ "servers[1]: {\"description\":\"(v1.0) \\\"Production\\\"\",\"url\":\"https://api.businesscentral.dynamics.com/v2.0/production/api/v1.0\"}"
+]

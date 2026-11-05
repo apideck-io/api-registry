@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.OAuth2.description: \"OAuth2 client credentials. For information on obtaining credentials, see [Credentials Management](https://dev.bandwidth.com/docs/account/credentials/management/).\"",
+ "schemes.OAuth2.flows.clientCredentials.scopes: {}",
+ "schemes.OAuth2.flows.clientCredentials.tokenUrl: \"https://api.bandwidth.com/api/v1/oauth2/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security[]: {\"OAuth2\":[]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://voice.bandwidth.com/api/v2\"}"
+]

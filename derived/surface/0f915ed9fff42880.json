@@ -1,0 +1,18 @@
+[
+ "perPath: []",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://app.loyaltylion.com/oauth/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.read_customers: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.read_orders: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.read_reviews: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.read_unsubscribes: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.write_configuration: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.write_customers: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.write_orders: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.write_reviews: \"\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.write_unsubscribes: \"\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://app.loyaltylion.com/oauth/access-token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "schemes.oauth2.x-token-endpoint-auth-method: \"client_secret_post\"",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"url\":\"https://api.loyaltylion.com/v2\"}"
+]

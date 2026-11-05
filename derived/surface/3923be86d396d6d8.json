@@ -1,0 +1,17 @@
+[
+ "perPath: /air_quality get security [{\"APIKeyHeader\":[]},{\"AuthorizationHeader\":[]}]",
+ "perPath: /find_places get security [{\"APIKeyHeader\":[]},{\"AuthorizationHeader\":[]}]",
+ "perPath: /find_places_prefix get security [{\"APIKeyHeader\":[]},{\"AuthorizationHeader\":[]}]",
+ "perPath: /map get security [{\"APIKeyHeader\":[]},{\"AuthorizationHeader\":[]}]",
+ "perPath: /nearest_place get security [{\"APIKeyHeader\":[]},{\"AuthorizationHeader\":[]}]",
+ "perPath: /point get security [{\"APIKeyHeader\":[]},{\"AuthorizationHeader\":[]}]",
+ "perPath: /time_machine get security [{\"APIKeyHeader\":[]},{\"AuthorizationHeader\":[]}]",
+ "schemes.APIKeyHeader.in: \"header\"",
+ "schemes.APIKeyHeader.name: \"X-API-Key\"",
+ "schemes.APIKeyHeader.type: \"apiKey\"",
+ "schemes.AuthorizationHeader.in: \"header\"",
+ "schemes.AuthorizationHeader.name: \"Authorization\"",
+ "schemes.AuthorizationHeader.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://www.meteosource.com/api/v1/premium\"}"
+]

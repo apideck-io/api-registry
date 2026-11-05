@@ -1,0 +1,23 @@
+[
+ "perPath: /balance get security [{\"ApiKeyAuth\":[\"read:balance\"]}]",
+ "perPath: /order get security [{\"ApiKeyAuth\":[\"read:order\"]}]",
+ "perPath: /order post security [{\"ApiKeyAuth\":[\"create:order\"]}]",
+ "perPath: /order-item/{order_item_id}/fulfilment post [{\"description\":\"Production\",\"url\":\"https://api.runa.io/v2\"}]",
+ "perPath: /order-item/{order_item_id}/fulfilment post security [{\"ApiKeyAuth\":[\"create:fulfilment\"]}]",
+ "perPath: /order/estimate post security [{\"ApiKeyAuth\":[\"read:order\"]}]",
+ "perPath: /order/{id} get security [{\"ApiKeyAuth\":[\"read:order\"]}]",
+ "perPath: /ping get security [{\"ApiKeyAuth\":[\"read:ping\"]}]",
+ "perPath: /product get security [{\"ApiKeyAuth\":[\"read:product\"]}]",
+ "perPath: /product/categories get security [{\"ApiKeyAuth\":[\"read:product\"]}]",
+ "perPath: /product/countries get security [{\"ApiKeyAuth\":[\"read:product\"]}]",
+ "perPath: /product/{product_code} get security [{\"ApiKeyAuth\":[\"read:product\"]}]",
+ "perPath: webhook:order.completion post security []",
+ "perPath: webhook:product.update post security []",
+ "schemes.ApiKeyAuth.description: \"Your API key. See the [API key](/getting-started/api-key) page on details of how to generate and store your keys.\"",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-Api-Key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Playground\",\"url\":\"https://playground.runa.io/v2\"}",
+ "servers[1]: {\"description\":\"Production\",\"url\":\"https://api.runa.io/v2\"}"
+]

@@ -1,0 +1,14 @@
+[
+ "perPath: []",
+ "schemes.Bearer.description: \"Format 'Bearer' [space] [TOKEN]. Ex: 'Bearer eyJhbGciOiJIUzI1N'\"",
+ "schemes.Bearer.in: \"header\"",
+ "schemes.Bearer.name: \"Authorization\"",
+ "schemes.Bearer.type: \"apiKey\"",
+ "schemes.X-API-KEY.description: \"Format [API-KEY]. Ex: 'abcdef12345'\"",
+ "schemes.X-API-KEY.in: \"header\"",
+ "schemes.X-API-KEY.name: \"X-API-KEY\"",
+ "schemes.X-API-KEY.type: \"apiKey\"",
+ "security[]: {\"Bearer\":[]}",
+ "security[]: {\"X-API-KEY\":[]}",
+ "servers[0]: {\"url\":\"https://api.boldsign.com\"}"
+]

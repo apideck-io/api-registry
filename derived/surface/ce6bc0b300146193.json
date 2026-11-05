@@ -1,0 +1,13 @@
+[
+ "perPath: /account/account_numbers get security [{\"bearerAuth\":[]}]",
+ "perPath: /account/check_balance post security [{\"bearerAuth\":[]}]",
+ "perPath: /account/transactions get security [{\"bearerAuth\":[]}]",
+ "perPath: /payment_account get security [{\"bearerAuth\":[]}]",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "servers[0]: {\"url\":\"https://int-api.mx.com\"}",
+ "servers[1]: {\"url\":\"https://api.mx.com\"}"
+]

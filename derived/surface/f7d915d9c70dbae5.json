@@ -1,0 +1,17 @@
+[
+ "perPath: /account/credits get security [{\"BearerAuth\":[]}]",
+ "perPath: /account/keys/verify get security [{\"BearerAuth\":[]}]",
+ "perPath: /company/lookup post security [{\"BearerAuth\":[]}]",
+ "perPath: /company/search post security [{\"BearerAuth\":[]}]",
+ "perPath: /contact/enrich/bulk post security [{\"BearerAuth\":[]}]",
+ "perPath: /contact/enrich/bulk/{enrichment_id} get security [{\"BearerAuth\":[]}]",
+ "perPath: /contact/reverse/email/bulk post security [{\"BearerAuth\":[]}]",
+ "perPath: /contact/reverse/email/bulk/{enrichment_id} get security [{\"BearerAuth\":[]}]",
+ "perPath: /people/lookup post security [{\"BearerAuth\":[]}]",
+ "perPath: /people/search post security [{\"BearerAuth\":[]}]",
+ "schemes.BearerAuth.bearerFormat: \"string\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://app.fullenrich.com/api/v2\"}"
+]

@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.accessToken.description: \"Access token required for authenticating API requests. Obtain via POST /v3/token using client credentials, then pass it in the WM_SEC.ACCESS_TOKEN header with every request.\"",
+ "schemes.accessToken.in: \"header\"",
+ "schemes.accessToken.name: \"WM_SEC.ACCESS_TOKEN\"",
+ "schemes.accessToken.type: \"apiKey\"",
+ "security[]: {\"accessToken\":[]}",
+ "servers[0]: {\"description\":\"Production URL\",\"url\":\"https://marketplace.walmartapis.com\"}",
+ "servers[1]: {\"description\":\"Sandbox URL\",\"url\":\"https://sandbox.walmartapis.com\"}"
+]

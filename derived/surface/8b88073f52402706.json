@@ -1,0 +1,18 @@
+[
+ "perPath: []",
+ "schemes.basic.description: \"HTTP basic authentication (for those APIs that support it).\"",
+ "schemes.basic.scheme: \"basic\"",
+ "schemes.basic.type: \"http\"",
+ "schemes.bearer-token.description: \"A Chorus token or a signed JWT.\"",
+ "schemes.bearer-token.scheme: \"bearer\"",
+ "schemes.bearer-token.type: \"http\"",
+ "schemes.x-ziaccesstoken.description: \"A ZoomInfo access token.\"",
+ "schemes.x-ziaccesstoken.in: \"header\"",
+ "schemes.x-ziaccesstoken.name: \"x-ziaccesstoken\"",
+ "schemes.x-ziaccesstoken.type: \"apiKey\"",
+ "security[]: {\"basic\":[]}",
+ "security[]: {\"bearer-token\":[]}",
+ "security[]: {\"x-ziaccesstoken\":[]}",
+ "servers[0]: {\"url\":\"/\"}",
+ "servers[1]: {\"url\":\"https://chorus.ai\"}"
+]

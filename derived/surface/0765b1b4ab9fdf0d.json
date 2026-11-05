@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.Authorization.description: \"Add your token in the format: \\\"Bearer your_token\\\"\"",
+ "schemes.Authorization.in: \"header\"",
+ "schemes.Authorization.name: \"Authorization\"",
+ "schemes.Authorization.type: \"apiKey\"",
+ "security[]: {\"Authorization\":[]}",
+ "servers[0]: {\"url\":\"https://webapi.teamviewer.com\"}"
+]

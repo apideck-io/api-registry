@@ -1,0 +1,20 @@
+[
+ "perPath: /networks/traffic/access get security [{\"API Key\":[]}]",
+ "perPath: /networks/traffic/assignments/{domainUrl}/summary get security [{\"API Key\":[]}]",
+ "perPath: /networks/traffic/blacklistincidents/domains/{blacklistIncidentIdentifier} get security [{\"API Key\":[]}]",
+ "perPath: /networks/traffic/blacklistincidents/ipaddresses/{blacklistIncidentIdentifier} get security [{\"API Key\":[]}]",
+ "perPath: /networks/traffic/domains/{domainUrl}/situation post security [{\"API Key\":[]}]",
+ "perPath: /networks/traffic/incidents/{incidentIdentifier} get security [{\"API Key\":[]}]",
+ "perPath: /networks/traffic/isptrends get security [{\"API Key\":[]}]",
+ "perPath: /networks/traffic/mismatches/{networkTrackingDomainId} post security [{\"API Key\":[]}]",
+ "perPath: /networks/traffic/situation post security [{\"API Key\":[]}]",
+ "perPath: /networks/traffic/situation/domains post security [{\"API Key\":[]}]",
+ "perPath: /networks/traffic/tasks get security [{\"API Key\":[]}]",
+ "perPath: /networks/traffic/tasks/{taskIdentifier} get security [{\"API Key\":[]}]",
+ "perPath: /networks/traffic/usage/domains post security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.eflow.team/v1\"}"
+]

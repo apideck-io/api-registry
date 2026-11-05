@@ -1,0 +1,18 @@
+[
+ "perPath: /v1/expenses get security [{\"OAuth2\":[\"expenses.card\",\"expenses.card.readonly\"]}]",
+ "perPath: /v1/expenses/card get security [{\"OAuth2\":[\"expenses.card\",\"expenses.card.readonly\"]}]",
+ "perPath: /v1/expenses/card/{expense_id} get security [{\"OAuth2\":[\"expenses.card\",\"expenses.card.readonly\"]}]",
+ "perPath: /v1/expenses/card/{expense_id} put security [{\"OAuth2\":[\"expenses.card\"]}]",
+ "perPath: /v1/expenses/{id} get security [{\"OAuth2\":[\"expenses.card\",\"expenses.card.readonly\"]}]",
+ "schemes.OAuth2.description: \"OAuth2 security scheme\"",
+ "schemes.OAuth2.flows.authorizationCode.authorizationUrl: \"https://accounts-api.brex.com/oauth2/default/v1/authorize\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.[\"expenses.card\"]: \"View and manage card expenses data\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.[\"expenses.card.readonly\"]: \"View card expenses data\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.offline_access: \"offline access\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.openid: \"openid\"",
+ "schemes.OAuth2.flows.authorizationCode.tokenUrl: \"https://accounts-api.brex.com/oauth2/default/v1/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security[]: {\"OAuth2\":[]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.brex.com\"}",
+ "servers[1]: {\"description\":\"Staging (Note: This is not a sandbox. It will not work with customer tokens.)\",\"url\":\"https://api-staging.brex.com\"}"
+]

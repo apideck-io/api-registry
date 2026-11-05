@@ -1,0 +1,11 @@
+[
+ "perPath: /networks/affiliates/{affiliateId}/offers/visibility patch security [{\"API Key\":[]}]",
+ "perPath: /networks/offers/{offerId}/visibility get security [{\"API Key\":[]}]",
+ "perPath: /networks/offers/{offerId}/visibility put security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The Everflow API key generated from the Control Center > Security.\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.eflow.team/v1\"}"
+]

@@ -1,0 +1,14 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"[Recommended] API key, passed in the `x-api-key` request header.\\nSee [Create API Keys](https://docs.apollo.io/docs/create-api-key).\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"x-api-key\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "schemes.bearerAuth.bearerFormat: \"JWT\"",
+ "schemes.bearerAuth.description: \"OAuth 2.0 access token, used by Apollo partners building integrations.\\nSee the [OAuth 2.0 authorization flow](https://docs.apollo.io/docs/use-oauth-20-authorization-flow-to-access-apollo-user-information-partners).\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"apiKey\":[]}",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.apollo.io/api/v1\"}"
+]

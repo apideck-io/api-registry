@@ -1,0 +1,23 @@
+[
+ "perPath: /simulations/items get security [{\"apiKey\":[]}]",
+ "perPath: /simulations/items post security [{\"access_token\":[]}]",
+ "perPath: /simulations/orders/{purchaseOrderId}/deliver post security [{\"walmartAccessToken\":[]}]",
+ "schemes.WM_SEC_ACCESS_TOKEN.description: \"Walmart API security access token.\"",
+ "schemes.WM_SEC_ACCESS_TOKEN.in: \"header\"",
+ "schemes.WM_SEC_ACCESS_TOKEN.name: \"WM_SEC.ACCESS_TOKEN\"",
+ "schemes.WM_SEC_ACCESS_TOKEN.type: \"apiKey\"",
+ "schemes.access_token.description: \"Walmart API security access token.\"",
+ "schemes.access_token.in: \"header\"",
+ "schemes.access_token.name: \"WM_SEC.ACCESS_TOKEN\"",
+ "schemes.access_token.type: \"apiKey\"",
+ "schemes.apiKey.description: \"Walmart API security access token.\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"WM_SEC.ACCESS_TOKEN\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "schemes.walmartAccessToken.description: \"Walmart API security access token.\"",
+ "schemes.walmartAccessToken.in: \"header\"",
+ "schemes.walmartAccessToken.name: \"WM_SEC.ACCESS_TOKEN\"",
+ "schemes.walmartAccessToken.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Sandbox URL\",\"url\":\"https://sandbox.walmartapis.com/v1\"}"
+]

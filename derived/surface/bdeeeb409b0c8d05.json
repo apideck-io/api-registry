@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://exports.dixa.io\"}"
+]

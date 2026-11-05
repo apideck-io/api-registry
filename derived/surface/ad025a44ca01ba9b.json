@@ -1,0 +1,9 @@
+[
+ "perPath: /tds/reports/txt get security []",
+ "perPath: /tds/reports/txt post security []",
+ "perPath: /tds/reports/txt/search post security []",
+ "schemes: {}",
+ "security: []",
+ "servers[0]: {\"url\":\"https://test-api.sandbox.co.in\"}",
+ "servers[1]: {\"url\":\"https://api.sandbox.co.in\"}"
+]

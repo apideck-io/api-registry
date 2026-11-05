@@ -1,0 +1,23 @@
+[
+ "perPath: /files/{reportFileId} get security [{\"key\":[]},{\"oauth\":[\"reporting_read\"]}]",
+ "perPath: /files/{reportFileId}/data get security [{\"key\":[]},{\"oauth\":[\"reporting_read\"]}]",
+ "perPath: /reports get security [{\"key\":[]},{\"oauth\":[\"reporting_read\"]}]",
+ "perPath: /reports/{reportId} get security [{\"key\":[]},{\"oauth\":[\"reporting_read\"]}]",
+ "perPath: /reports/{reportId}/files get security [{\"key\":[]},{\"oauth\":[\"reporting_read\"]}]",
+ "perPath: /reports/{reportId}/files post security [{\"key\":[]},{\"oauth\":[\"reporting_write\"]}]",
+ "perPath: /reports/{reportId}/files/recent get security [{\"key\":[]},{\"oauth\":[\"reporting_read\"]}]",
+ "perPath: /reports/{reportId}/files/recent/data get security [{\"key\":[]},{\"oauth\":[\"reporting_read\"]}]",
+ "schemes.key.in: \"header\"",
+ "schemes.key.name: \"x-smarttoken\"",
+ "schemes.key.type: \"apiKey\"",
+ "schemes.oauth.flows.authorizationCode.authorizationUrl: \"https://www.smartrecruiters.com/identity/oauth/allow\"",
+ "schemes.oauth.flows.authorizationCode.scopes.reporting_read: \"Get analytics reports and download report files\"",
+ "schemes.oauth.flows.authorizationCode.scopes.reporting_write: \"Manage/execute analytics reports\"",
+ "schemes.oauth.flows.authorizationCode.tokenUrl: \"https://api.smartrecruiters.com/identity/oauth/token\"",
+ "schemes.oauth.flows.clientCredentials.scopes.reporting_read: \"Get analytics reports and download report files\"",
+ "schemes.oauth.flows.clientCredentials.scopes.reporting_write: \"Manage/execute analytics reports\"",
+ "schemes.oauth.flows.clientCredentials.tokenUrl: \"https://api.smartrecruiters.com/identity/oauth/token\"",
+ "schemes.oauth.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.smartrecruiters.com/reporting-api/v201804\"}"
+]

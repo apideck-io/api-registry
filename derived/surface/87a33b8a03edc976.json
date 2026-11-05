@@ -1,0 +1,23 @@
+[
+ "perPath: /_action/app-system/secret/rotate post security [{\"oAuth\":[\"admin\"]}]",
+ "perPath: /_action/integration/{integrationId}/mcp-allowlist post security [{\"oAuth\":[\"write\"]}]",
+ "perPath: /_action/mcp/capabilities get security [{\"oAuth\":[\"write\"]}]",
+ "perPath: /_action/mcp/tools get security [{\"oAuth\":[\"write\"]}]",
+ "perPath: /_action/user/{userId}/mcp-allowlist post security [{\"oAuth\":[\"write\"]}]",
+ "perPath: /app-system/privileges/requested get security [{\"oAuth\":[\"admin\"]}]",
+ "perPath: /app-system/{appName}/privileges patch security [{\"oAuth\":[\"admin\"]}]",
+ "perPath: /app-system/{appName}/privileges/accepted get security [{\"oAuth\":[\"admin\"]}]",
+ "perPath: /oauth/authorize get security []",
+ "schemes.oAuth.description: \"Authentication using OAuth 2.0\"",
+ "schemes.oAuth.flows.authorizationCode.authorizationUrl: \"http://localhost:8000/api/oauth/authorize\"",
+ "schemes.oAuth.flows.authorizationCode.scopes.write: \"Full write access\"",
+ "schemes.oAuth.flows.authorizationCode.tokenUrl: \"http://localhost:8000/api/oauth/token\"",
+ "schemes.oAuth.flows.clientCredentials.scopes.write: \"Full write access\"",
+ "schemes.oAuth.flows.clientCredentials.tokenUrl: \"http://localhost:8000/api/oauth/token\"",
+ "schemes.oAuth.flows.password.scopes.admin: \"Admin scope for administrative operations\"",
+ "schemes.oAuth.flows.password.scopes.write: \"Full write access\"",
+ "schemes.oAuth.flows.password.tokenUrl: \"/api/oauth/token\"",
+ "schemes.oAuth.type: \"oauth2\"",
+ "security[]: {\"oAuth\":[\"write\"]}",
+ "servers[0]: {\"url\":\"/api\"}"
+]

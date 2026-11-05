@@ -1,0 +1,9 @@
+[
+ "perPath: /v1/creations/recent get security [{\"magnificApiKey\":[]}]",
+ "schemes.magnificApiKey.description: \"Your Magnific API key. Required for authentication. [Learn how to obtain an API key](https://docs.magnific.com/quickstart)\\n\"",
+ "schemes.magnificApiKey.in: \"header\"",
+ "schemes.magnificApiKey.name: \"x-magnific-api-key\"",
+ "schemes.magnificApiKey.type: \"apiKey\"",
+ "security[]: {\"magnificApiKey\":[]}",
+ "servers[0]: {\"description\":\"B2B API Production V1\",\"url\":\"https://api.magnific.com\"}"
+]

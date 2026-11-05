@@ -1,0 +1,19 @@
+[
+ "perPath: /FeedConnections get security [{\"OAuth2\":[\"bankfeeds\"]}]",
+ "perPath: /FeedConnections post security [{\"OAuth2\":[\"bankfeeds\"]}]",
+ "perPath: /FeedConnections/DeleteRequests post security [{\"OAuth2\":[\"bankfeeds\"]}]",
+ "perPath: /FeedConnections/{id} get security [{\"OAuth2\":[\"bankfeeds\"]}]",
+ "perPath: /Statements get security [{\"OAuth2\":[\"bankfeeds\"]}]",
+ "perPath: /Statements post security [{\"OAuth2\":[\"bankfeeds\"]}]",
+ "perPath: /Statements/{statementId} get security [{\"OAuth2\":[\"bankfeeds\"]}]",
+ "schemes.OAuth2.description: \"For more information visit https://developer.xero.com/documentation/oauth2/overview\"",
+ "schemes.OAuth2.flows.authorizationCode.authorizationUrl: \"https://login.xero.com/identity/connect/authorize\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.bankfeeds: \"Grant read-write access to bankfeeds\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.email: \"Grant read-only access to your email\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.openid: \"Grant read-only access to your open id\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.profile: \"your profile information\"",
+ "schemes.OAuth2.flows.authorizationCode.tokenUrl: \"https://identity.xero.com/connect/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Xero Bank Feeds API base url\",\"url\":\"https://api.xero.com/bankfeeds.xro/1.0\"}"
+]

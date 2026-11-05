@@ -1,0 +1,20 @@
+[
+ "perPath: /identity_transfer post security [{\"OAuth2 Agent Bearer Token\":[]},{\"OAuth2 Bearer Token\":[]}]",
+ "perPath: /info get security [{\"OAuth2 Bearer Token\":[]}]",
+ "perPath: /token delete security [{\"OAuth2 Bearer Token\":[]}]",
+ "perPath: /token post security [{\"Cookie Auth\":[]},{\"OAuth2 Agent Bearer Token\":[]},{}]",
+ "perPath: /{organization_id}/{group_id}/token/ post security [{\"Cookie Auth\":[]},{\"OAuth2 Agent Bearer Token\":[]},{}]",
+ "schemes.[\"Cookie Auth\"].in: \"cookie\"",
+ "schemes.[\"Cookie Auth\"].name: [\"__lc_cid\",\"__lc_cst\"]",
+ "schemes.[\"Cookie Auth\"].type: \"apiKey\"",
+ "schemes.[\"OAuth2 Agent Bearer Token\"].description: \"This API uses OAuth2 for agents with the Implicit grant flow. <a href=\\\"https://platform.text.com/docs/authorization/oauth-authorization/#implicit-grant\\\">Learn about the implicit grant flow.</a>\"",
+ "schemes.[\"OAuth2 Agent Bearer Token\"].flows.authorizationCode.authorizationUrl: \"https://accounts.livechat.com\"",
+ "schemes.[\"OAuth2 Agent Bearer Token\"].flows.authorizationCode.tokenUrl: \"https://accounts.livechat.com/token\"",
+ "schemes.[\"OAuth2 Agent Bearer Token\"].flows.implicit.authorizationUrl: \"https://accounts.livechat.com\"",
+ "schemes.[\"OAuth2 Agent Bearer Token\"].type: \"oauth2\"",
+ "schemes.[\"OAuth2 Bearer Token\"].description: \"This API uses OAuth2 tokens.\"",
+ "schemes.[\"OAuth2 Bearer Token\"].flows.implicit.authorizationUrl: \"https://accounts.livechat.com/v2/customer\"",
+ "schemes.[\"OAuth2 Bearer Token\"].type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Main production server URL\",\"url\":\"https://accounts.livechat.com/v2/customer\"}"
+]

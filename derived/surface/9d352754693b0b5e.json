@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.Bearer.description: \"Please insert an API access token.\"",
+ "schemes.Bearer.scheme: \"Bearer\"",
+ "schemes.Bearer.type: \"http\"",
+ "security[]: {\"Bearer\":[]}",
+ "servers[0]: {\"url\":\"/api\"}"
+]

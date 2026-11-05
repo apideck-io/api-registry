@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://api.meetcampfire.com\"}"
+]

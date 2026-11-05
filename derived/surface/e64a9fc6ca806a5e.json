@@ -1,0 +1,13 @@
+[
+ "perPath: []",
+ "schemes.apiKeyAuth.description: \"Anthropic-compatible API Key auth. Send x-api-key: <API_KEY>. Authorization: Bearer <API_KEY> is recommended.\"",
+ "schemes.apiKeyAuth.in: \"header\"",
+ "schemes.apiKeyAuth.name: \"x-api-key\"",
+ "schemes.apiKeyAuth.type: \"apiKey\"",
+ "schemes.bearerAuth.description: \"Bearer API Key auth. Send Authorization: Bearer <API_KEY>. If Authorization and x-api-key are both present, Authorization takes precedence.\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"apiKeyAuth\":[]}",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.minimax.io\"}"
+]

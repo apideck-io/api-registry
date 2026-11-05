@@ -1,0 +1,15 @@
+[
+ "perPath: /api/v2/public/entities/ get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /api/v2/public/entities/{id}/ get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /api/v2/public/queries/permalink/{permalink}/ get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /api/v2/public/queries/{id}/results/ get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /api/v2/public/schema/entityTypes/ get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /api/v2/public/schema/entityTypes/{id}/ get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /api/v2/public/schema/predicates/ get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /api/v2/public/schema/predicates/{id}/ get security [{\"ApiKeyAuth\":[]}]",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"apikey\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Golden Public API V2\",\"url\":\"https://golden.com/\"}"
+]

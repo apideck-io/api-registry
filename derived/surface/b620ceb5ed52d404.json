@@ -1,0 +1,17 @@
+[
+ "perPath: /token delete security [{\"Bearer\":[]}]",
+ "perPath: /token post security [{\"Basic\":[]}]",
+ "perPath: /token/refresh post security [{\"Bearer\":[]}]",
+ "schemes.Basic.description: \"HTTP Basic Auth using API Key & Secret\"",
+ "schemes.Basic.scheme: \"basic\"",
+ "schemes.Basic.type: \"http\"",
+ "schemes.Bearer.bearerFormat: \"JWT\"",
+ "schemes.Bearer.description: \"HTTP bearer token authentication\"",
+ "schemes.Bearer.scheme: \"bearer\"",
+ "schemes.Bearer.type: \"http\"",
+ "security[]: {\"Basic\":[]}",
+ "security[]: {\"Bearer\":[]}",
+ "servers[0]: {\"description\":\"Customers on our EU cluster\",\"url\":\"https://api.evaluagent.com/v1\"}",
+ "servers[1]: {\"description\":\"Customers on our Australian cluster\",\"url\":\"https://api.aus.evaluagent.com/v1\"}",
+ "servers[2]: {\"description\":\"Customers on our North American (US-East) cluster\",\"url\":\"https://api.us-east.evaluagent.com/v1\"}"
+]

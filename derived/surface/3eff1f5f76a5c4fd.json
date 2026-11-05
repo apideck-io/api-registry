@@ -1,0 +1,12 @@
+[
+ "perPath: /company/reports get security [{\"basic\":[]}]",
+ "perPath: /company/reports/download/{reportName} get security [{\"basic\":[]}]",
+ "perPath: /company/reports/{reportId}/download get security [{\"basic\":[]}]",
+ "perPath: /company/reports/{reportId}/download-async get security [{\"basic\":[]}]",
+ "schemes.basic.description: \"Basic HTTP authentication using service user credentials\"",
+ "schemes.basic.scheme: \"basic\"",
+ "schemes.basic.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.hibob.com/v1\"}",
+ "servers[1]: {\"description\":\"Sandbox\",\"url\":\"https://api.sandbox.hibob.com/v1\"}"
+]

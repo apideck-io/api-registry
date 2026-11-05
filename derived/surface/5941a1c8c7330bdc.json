@@ -1,0 +1,11 @@
+[
+ "basePath: \"/\"",
+ "definitions.api_key.in: \"header\"",
+ "definitions.api_key.name: \"Api-Key\"",
+ "definitions.api_key.type: \"apiKey\"",
+ "host: \"api.iterable.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: null",
+ "security[]: {\"api_key\":[]}"
+]

@@ -1,0 +1,14 @@
+[
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/drive\"].description: \"See, edit, create, and delete all of your Google Drive files\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/drive.file\"].description: \"See, edit, create, and delete only the specific Google Drive files you use with this app\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/drive.readonly\"].description: \"See and download all your Google Drive files\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/forms.body\"].description: \"See, edit, create, and delete all your Google Forms forms\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/forms.body.readonly\"].description: \"See all your Google Forms forms\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/forms.responses.readonly\"].description: \"See all responses to your Google Forms forms\"",
+ "baseUrl: \"https://forms.googleapis.com/\"",
+ "batchPath: \"batch\"",
+ "endpoints: null",
+ "mtlsRootUrl: \"https://forms.mtls.googleapis.com/\"",
+ "rootUrl: \"https://forms.googleapis.com/\"",
+ "servicePath: \"\""
+]

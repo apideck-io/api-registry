@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.UserSecurity.scheme: \"basic\"",
+ "schemes.UserSecurity.type: \"http\"",
+ "security[]: {\"UserSecurity\":[]}",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://cloud.redhat.com/{basePath}\",\"variables\":{\"basePath\":{\"default\":\"/api/catalog-inventory/v1.0\"}}}",
+ "servers[1]: {\"description\":\"Development Server\",\"url\":\"http://localhost:{port}/{basePath}\",\"variables\":{\"basePath\":{\"default\":\"/api/catalog-inventory/v1.0\"},\"port\":{\"default\":\"3000\"}}}"
+]

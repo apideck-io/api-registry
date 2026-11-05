@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.api_key.bearerFormat: \"string\"",
+ "schemes.api_key.description: \"Authentication header containing API key (find it in dashboard). The format is \\\"Bearer YOUR_API_KEY\\\"\"",
+ "schemes.api_key.scheme: \"bearer\"",
+ "schemes.api_key.type: \"http\"",
+ "security[]: {\"api_key\":[]}",
+ "servers[0]: {\"description\":\"The production server.\",\"url\":\"https://api.retellai.com\"}"
+]

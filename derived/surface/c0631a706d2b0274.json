@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.apiKey.in: \"query\"",
+ "schemes.apiKey.name: \"apiKey\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"description\":\"Massive Platform API\",\"url\":\"https://api.massive.com\"}",
+ "servers[1]: {\"description\":\"Massive Platform API (Staging)\",\"url\":\"https://api.staging.massive.com\"}"
+]

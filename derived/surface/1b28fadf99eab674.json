@@ -1,0 +1,12 @@
+[
+ "perPath: /v1/auth post security []",
+ "perPath: /v1/auth/anonymous post security []",
+ "perPath: /v1/meetings/{meetingId} get security []",
+ "perPath: /v1/meetings/{meetingId}/pulse/metadata get security []",
+ "perPath: /v1/meetings/{meetingId}/pulse/metadata put security []",
+ "schemes.bearerAuth.bearerFormat: \"JWT\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://app.meet.ps/api/\"}"
+]

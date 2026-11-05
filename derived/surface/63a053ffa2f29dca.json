@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.Authorization.in: \"header\"",
+ "schemes.Authorization.scheme: \"bearer\"",
+ "schemes.Authorization.type: \"http\"",
+ "schemes.api_key.scheme: \"bearer\"",
+ "schemes.api_key.type: \"http\"",
+ "security[]: {\"Authorization\":[]}",
+ "servers[0]: {\"description\":\"Commerce API\",\"url\":\"https://api.squarespace.com\"}"
+]

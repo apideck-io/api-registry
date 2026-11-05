@@ -1,0 +1,9 @@
+[
+ "perPath: /partners/reporting/entity post security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The Marketplace API key found in My Account > API on partners.everflow.io.\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://api.eflow.team/v1\"}"
+]

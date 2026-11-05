@@ -1,0 +1,14 @@
+[
+ "perPath: /acceptDispute post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "perPath: /defendDispute post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "perPath: /deleteDisputeDefenseDocument post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "perPath: /retrieveApplicableDefenseReasons post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "perPath: /supplyDefenseDocument post security [{\"ApiKeyAuth\":[]},{\"BasicAuth\":[]}]",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-API-Key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "schemes.BasicAuth.scheme: \"basic\"",
+ "schemes.BasicAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://ca-test.adyen.com/ca/services/DisputeService/v30\"}"
+]

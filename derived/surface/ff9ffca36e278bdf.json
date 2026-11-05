@@ -1,0 +1,22 @@
+[
+ "perPath: /networks/conversions/reporting post security [{\"API Key\":[]}]",
+ "perPath: /networks/conversions/reporting/transaction_ids post security [{\"API Key\":[]}]",
+ "perPath: /networks/reporting/conversions patch security [{\"API Key\":[]}]",
+ "perPath: /networks/reporting/conversions post security [{\"API Key\":[]}]",
+ "perPath: /networks/reporting/conversions/email post security [{\"API Key\":[]}]",
+ "perPath: /networks/reporting/conversions/summary post security [{\"API Key\":[]}]",
+ "perPath: /networks/reporting/conversions/{conversionId} get security [{\"API Key\":[]}]",
+ "perPath: /networks/reporting/conversions/{conversionId}/notes put security [{\"API Key\":[]}]",
+ "perPath: /networks/reporting/conversions/{conversionId}/payoutrevenue put security [{\"API Key\":[]}]",
+ "perPath: /networks/reporting/conversions/{conversionId}/saleamount put security [{\"API Key\":[]}]",
+ "perPath: /networks/reporting/conversions/{transactionId} patch security [{\"API Key\":[]}]",
+ "perPath: /networks/reporting/upload/conversions post security [{\"API Key\":[]}]",
+ "perPath: /networks/reporting/upload/conversions/table post security [{\"API Key\":[]}]",
+ "perPath: /networks/reporting/upload/conversions/{uploadId} get security [{\"API Key\":[]}]",
+ "schemes.[\"API Key\"].description: \"The Everflow API key generated from the Control Center > Security.\"",
+ "schemes.[\"API Key\"].in: \"header\"",
+ "schemes.[\"API Key\"].name: \"X-Eflow-Api-Key\"",
+ "schemes.[\"API Key\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://api.eflow.team/v1\"}"
+]

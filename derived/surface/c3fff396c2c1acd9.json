@@ -1,0 +1,14 @@
+[
+ "perPath: []",
+ "schemes.basicAuth.description: \"Basic HTTP authentication using API key. Use your API key as the username and leave the password empty. The credentials will be Base64 encoded automatically.\"",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "schemes.bearerAuth.bearerFormat: \"JWT\"",
+ "schemes.bearerAuth.description: \"JWT Bearer token authentication. Include the token in the Authorization header as: `Bearer <token>`\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://external.pleo.io\"}",
+ "servers[1]: {\"description\":\"Staging server\",\"url\":\"https://external.staging.pleo.io\"}"
+]

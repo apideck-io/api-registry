@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.apiKeyScheme.in: \"header\"",
+ "schemes.apiKeyScheme.name: \"x-api-key\"",
+ "schemes.apiKeyScheme.type: \"apiKey\"",
+ "security[]: {\"apiKeyScheme\":[]}",
+ "servers[0]: {\"url\":\"https://api.spoonacular.com\",\"variables\":{}}"
+]

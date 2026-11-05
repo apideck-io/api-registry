@@ -1,0 +1,19 @@
+[
+ "basePath: null",
+ "definitions.oauth2.authorizationUrl: \"https://identity.apaleo.com/connect/authorize\"",
+ "definitions.oauth2.flow: \"implicit\"",
+ "definitions.oauth2.scopes.[\"reservations.import\"]: \"Import reservations\"",
+ "definitions.oauth2.scopes.admin: \"Full access\"",
+ "definitions.oauth2.type: \"oauth2\"",
+ "host: null",
+ "parameterizedHost: null",
+ "perOp: /availability/v1/properties/{id} get [{\"oauth2\":[\"admin\",\"availability.read\"]}]",
+ "perOp: /availability/v1/properties/{id} patch [{\"oauth2\":[\"admin\",\"availability.manage\"]}]",
+ "perOp: /availability/v1/reservations/{id}/units get [{\"oauth2\":[\"admin\",\"availability.read\",\"reservations.manage\"]}]",
+ "perOp: /availability/v1/services get [{\"oauth2\":[\"admin\",\"availability.read\"]}]",
+ "perOp: /availability/v1/unit-groups get [{\"oauth2\":[\"admin\",\"availability.read\"]}]",
+ "perOp: /availability/v1/unit-groups/{id} patch [{\"oauth2\":[\"admin\",\"availability.manage\"]}]",
+ "perOp: /availability/v1/units get [{\"oauth2\":[\"admin\",\"availability.read\"]}]",
+ "schemes: null",
+ "security: null"
+]

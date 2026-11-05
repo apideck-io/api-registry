@@ -1,0 +1,13 @@
+[
+ "perPath: /login post security []",
+ "schemes.accountId.description: \"Account UUID returned by `/login` (as `accountID`).\"",
+ "schemes.accountId.in: \"query\"",
+ "schemes.accountId.name: \"account_id\"",
+ "schemes.accountId.type: \"apiKey\"",
+ "schemes.authToken.description: \"Auth token from `/login`. May alternatively be sent as\\n`Authorization: Token token=\\\"<authToken>\\\"` with `account_id` still as a query param.\\n\"",
+ "schemes.authToken.in: \"query\"",
+ "schemes.authToken.name: \"authToken\"",
+ "schemes.authToken.type: \"apiKey\"",
+ "security[]: {\"accountId\":[],\"authToken\":[]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.shopvox.com/v1\"}"
+]

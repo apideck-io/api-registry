@@ -1,0 +1,16 @@
+[
+ "perPath: /v1/payments/payouts post security [{\"Oauth2\":[\"https://uri.paypal.com/payments/payouts\"]}]",
+ "perPath: /v1/payments/payouts-item/{payout_item_id} get security [{\"Oauth2\":[\"https://uri.paypal.com/payments/payouts\"]}]",
+ "perPath: /v1/payments/payouts-item/{payout_item_id}/cancel post security [{\"Oauth2\":[\"https://uri.paypal.com/payments/payouts\"]}]",
+ "perPath: /v1/payments/payouts/{id} get security [{\"Oauth2\":[\"https://uri.paypal.com/payments/payouts\"]}]",
+ "schemes.Oauth2.description: \"Oauth 2.0 authentication\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/payments/payouts\"]: \"Payout to a list of recipients.\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/payout-applications/status\"]: \"For retrieving payouts application status\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/payout-applications/update-status\"]: \"For updating payouts application status\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/payouts-item/reverse\"]: \"For reversing a completed payout item.\"",
+ "schemes.Oauth2.flows.clientCredentials.tokenUrl: \"/v1/oauth2/token\"",
+ "schemes.Oauth2.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"description\":\"PayPal Sandbox Environment\",\"url\":\"https://api-m.sandbox.paypal.com\"}",
+ "servers[1]: {\"description\":\"PayPal Live Environment\",\"url\":\"https://api-m.paypal.com\"}"
+]

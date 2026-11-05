@@ -1,0 +1,15 @@
+[
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/youtube\"].description: \"Manage your YouTube account\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/youtube.channel-memberships.creator\"].description: \"See a list of your current active channel members, their current level, and when they became a member\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/youtube.force-ssl\"].description: \"See, edit, and permanently delete your YouTube videos, ratings, comments and captions\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/youtube.readonly\"].description: \"View your YouTube account\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/youtube.upload\"].description: \"Manage your YouTube videos\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/youtubepartner\"].description: \"View and manage your assets and associated content on YouTube\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/youtubepartner-channel-audit\"].description: \"View private information of your YouTube channel relevant during the audit process with a YouTube partner\"",
+ "baseUrl: \"https://youtube.googleapis.com/\"",
+ "batchPath: \"batch\"",
+ "endpoints: null",
+ "mtlsRootUrl: \"https://youtube.mtls.googleapis.com/\"",
+ "rootUrl: \"https://youtube.googleapis.com/\"",
+ "servicePath: \"\""
+]

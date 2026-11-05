@@ -1,0 +1,20 @@
+[
+ "perPath: /cancel-service post [{\"url\":\"https://{store_endpoint}\",\"variables\":{\"store_endpoint\":{\"default\":\"storeapi.com\",\"description\":\"Server from the store.\"}}}]",
+ "perPath: /cancel/{carrierId}/{serviceId} post [{\"url\":\"https://api.pickingnpacking.com/{environment}/v1/tracking/hook\",\"variables\":{\"environment\":{\"default\":\"DefaultParameterValue\"}}}]",
+ "perPath: /create-service post [{\"url\":\"https://{store_endpoint}\",\"variables\":{\"store_endpoint\":{\"default\":\"storeapi.com\",\"description\":\"Server from the store.\"}}}]",
+ "perPath: /evidences/{carrierId}/{serviceId} post [{\"url\":\"https://api.pickingnpacking.com/{environment}/v1/tracking/hook\",\"variables\":{\"environment\":{\"default\":\"DefaultParameterValue\"}}}]",
+ "perPath: /labels/{carrierId}/{serviceId} post [{\"url\":\"https://api.pickingnpacking.com/{environment}/v1/tracking/hook\",\"variables\":{\"environment\":{\"default\":\"DefaultParameterValue\"}}}]",
+ "perPath: /list-carriers post [{\"url\":\"https://{store_endpoint}\",\"variables\":{\"store_endpoint\":{\"default\":\"storeapi.com\",\"description\":\"Server from the store.\"}}}]",
+ "perPath: /notes/{carrierId}/{serviceId} post [{\"url\":\"https://api.pickingnpacking.com/{environment}/v1/tracking/hook\",\"variables\":{\"environment\":{\"default\":\"DefaultParameterValue\"}}}]",
+ "perPath: /on-hold/{carrierId}/{serviceId} post [{\"url\":\"https://api.pickingnpacking.com/{environment}/v1/tracking/hook\",\"variables\":{\"environment\":{\"default\":\"DefaultParameterValue\"}}}]",
+ "perPath: /pause-service post [{\"url\":\"https://{store_endpoint}\",\"variables\":{\"store_endpoint\":{\"default\":\"storeapi.com\",\"description\":\"Server from the store.\"}}}]",
+ "perPath: /rates post [{\"url\":\"https://{store_endpoint}\",\"variables\":{\"store_endpoint\":{\"default\":\"storeapi.com\",\"description\":\"Server from the store.\"}}}]",
+ "perPath: /token post [{\"url\":\"https://auth.pickingnpacking.com/{environment}\",\"variables\":{\"environment\":{\"default\":\"DefaultParameterValue\",\"description\":\"Server to access the authentication necessary to make a request in the Pick and Pack Last Mile Protocol API.\"}}}]",
+ "perPath: /{carrierId}/{serviceId} get [{\"url\":\"https://api.pickingnpacking.com/{environment}/v1/tracking/hook\",\"variables\":{\"environment\":{\"default\":\"DefaultParameterValue\"}}}]",
+ "perPath: /{carrierId}/{serviceId} patch [{\"url\":\"https://api.pickingnpacking.com/{environment}/v1/tracking/hook\",\"variables\":{\"environment\":{\"default\":\"DefaultParameterValue\"}}}]",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"url\":\"https://auth.pickingnpacking.com/{environment}\",\"variables\":{\"environment\":{\"default\":\"DefaultParameterValue\",\"description\":\"Server to access the authentication necessary to make a request in the Pick and Pack Provider API.\"}}}",
+ "servers[1]: {\"url\":\"https://{store_endpoint}\",\"variables\":{\"store_endpoint\":{\"default\":\"storeapi.com\",\"description\":\"Server from the store.\"}}}",
+ "servers[2]: {\"url\":\"https://api.pickingnpacking.com/{environment}/v1/tracking/hook\",\"variables\":{\"environment\":{\"default\":\"DefaultParameterValue\",\"description\":\"Environment of the Pick and Pack Protocol App.\"}}}"
+]

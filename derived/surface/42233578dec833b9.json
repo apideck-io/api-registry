@@ -1,0 +1,8 @@
+[
+ "perPath: /v1/oauth/token post security [{}]",
+ "schemes.bearerAuth.bearerFormat: \"JWT\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://connect.digits.com\"}"
+]

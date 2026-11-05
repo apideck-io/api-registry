@@ -1,0 +1,20 @@
+[
+ "perPath: /bulk-operations get security [{\"read\":[]}]",
+ "perPath: /bulk-operations post security [{\"write\":[]}]",
+ "perPath: /bulk-operations/{id} get security [{\"read\":[]}]",
+ "perPath: /bulk-operations/{id}/jobs get security [{\"read\":[]}]",
+ "schemes.read.description: \"API Scope: \\\"Bulk Operations (read)\\\"\"",
+ "schemes.read.in: \"header\"",
+ "schemes.read.name: \"X-Authorization\"",
+ "schemes.read.type: \"apiKey\"",
+ "schemes.read.x-scope: \"Bulk Operations (Read)\"",
+ "schemes.write.description: \"API Scope: \\\"Bulk Operations (write)\\\"\"",
+ "schemes.write.in: \"header\"",
+ "schemes.write.name: \"X-Authorization\"",
+ "schemes.write.type: \"apiKey\"",
+ "schemes.write.x-scope: \"Bulk Operations (Write)\"",
+ "security: null",
+ "servers[0]: {\"description\":\"2026-10 (Stable)\",\"url\":\"https://api.loopreturns.com/api/2026-10\"}",
+ "servers[1]: {\"description\":\"2026-07\",\"url\":\"https://api.loopreturns.com/api/2026-07\"}",
+ "servers[2]: {\"description\":\"Unstable (Preview)\",\"url\":\"https://api.loopreturns.com/api/unstable\"}"
+]

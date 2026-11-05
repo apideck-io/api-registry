@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.OAuth2.flows.clientCredentials.scopes.pdfbroker: \"Scope to access the PdfBroker API.\"",
+ "schemes.OAuth2.flows.clientCredentials.tokenUrl: \"https://login.pdfbroker.io/connect/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security[]: {\"OAuth2\":[\"pdfbroker\"]}",
+ "servers: null"
+]

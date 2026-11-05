@@ -1,0 +1,19 @@
+[
+ "perPath: /agent/ask post security []",
+ "perPath: /agent/changes post security []",
+ "perPath: /agent/company-domains post security []",
+ "perPath: /agent/company-identifiers post security []",
+ "perPath: /agent/domain get security []",
+ "perPath: /agent/keywords post security []",
+ "perPath: /agent/recommendations post security []",
+ "perPath: /agent/redirects post security []",
+ "perPath: /agent/relationships post security []",
+ "perPath: /agent/tags post security []",
+ "perPath: /agent/technology-search post security []",
+ "perPath: /agent/trust post security []",
+ "perPath: /x402/list-pass/basic post security []",
+ "perPath: /x402/list-pass/pro post security []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.builtwith.com\"}"
+]

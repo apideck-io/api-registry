@@ -1,0 +1,14 @@
+[
+ "basePath: null",
+ "definitions: null",
+ "host: null",
+ "parameterizedHost: null",
+ "perOp: /ping/{workspace_id}/{subscription_id} post [{\"BasicAuth\":[]}]",
+ "perOp: /subscriptions/{workspace_id} get [{\"BasicAuth\":[]}]",
+ "perOp: /subscriptions/{workspace_id} post [{\"BasicAuth\":[]}]",
+ "perOp: /subscriptions/{workspace_id}/{subscription_id} delete [{\"BasicAuth\":[]}]",
+ "perOp: /subscriptions/{workspace_id}/{subscription_id} patch [{\"BasicAuth\":[]}]",
+ "perOp: /subscriptions/{workspace_id}/{subscription_id} put [{\"BasicAuth\":[]}]",
+ "schemes: null",
+ "security: null"
+]

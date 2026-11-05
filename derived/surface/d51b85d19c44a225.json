@@ -1,0 +1,22 @@
+[
+ "perPath: /v5.1/account get security [{\"api_key\":[]}]",
+ "perPath: /v5.1/bulk/json post security [{\"api_key\":[]}]",
+ "perPath: /v5.1/bulk/multipart post security [{\"api_key\":[]}]",
+ "perPath: /v5.1/bulk/{searchId} get security [{\"api_key\":[]}]",
+ "perPath: /v5.1/bulk/{searchId}/download get security [{\"api_key\":[]}]",
+ "perPath: /v5.1/find-email/company post security [{\"api_key\":[]}]",
+ "perPath: /v5.1/find-email/decision-maker post security [{\"api_key\":[]}]",
+ "perPath: /v5.1/find-email/linkedin-url post security [{\"api_key\":[]}]",
+ "perPath: /v5.1/find-email/person post security [{\"api_key\":[]}]",
+ "perPath: /v5.1/geo-lead post security [{\"api_key\":[]}]",
+ "perPath: /v5.1/geo-lead/{searchId} get security [{\"api_key\":[]}]",
+ "perPath: /v5.1/geo-lead/{searchId}/download get security [{\"api_key\":[]}]",
+ "perPath: /v5.1/report/bad-email post security [{\"api_key\":[]}]",
+ "perPath: /v5.1/reverse-email-lookup post security [{\"api_key\":[]}]",
+ "perPath: /v5.1/verify-email post security [{\"api_key\":[]}]",
+ "schemes.api_key.in: \"header\"",
+ "schemes.api_key.name: \"Authorization\"",
+ "schemes.api_key.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.anymailfinder.com\"}"
+]

@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.BearerAuth.description: \"OAuth 2.0 access token or Deputy Permanent Token.\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Deputy tenant\",\"url\":\"https://{subdomain}.{region}.deputy.com/api/v1\",\"variables\":{\"region\":{\"default\":\"deputy\",\"enum\":[\"au\",\"eu\",\"na\",\"deputy\"]},\"subdomain\":{\"default\":\"your-subdomain\"}}}"
+]

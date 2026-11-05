@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.apiKeyAuth.description: \"API key required for authentication.\"",
+ "schemes.apiKeyAuth.in: \"header\"",
+ "schemes.apiKeyAuth.name: \"x-api-key\"",
+ "schemes.apiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"apiKeyAuth\":[]}",
+ "servers[0]: {\"url\":\"https://app.dynamicmockups.com/api/v1\"}"
+]

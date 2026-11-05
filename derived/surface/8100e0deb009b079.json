@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.httpBearer.scheme: \"bearer\"",
+ "schemes.httpBearer.type: \"http\"",
+ "security[]: {\"httpBearer\":[]}",
+ "servers[0]: {\"url\":\"https://api.focus.teamleader.eu\",\"variables\":{}}"
+]

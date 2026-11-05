@@ -1,0 +1,19 @@
+[
+ "perPath: []",
+ "schemes.BasicAuth.description: \"**⚠\\u{fe0f} DEPRECATED** — Basic authentication (username/password) is deprecated and will be removed in a future release. Use `POST /v2/api/token/auth` to obtain a Bearer token instead.\\n\"",
+ "schemes.BasicAuth.scheme: \"basic\"",
+ "schemes.BasicAuth.type: \"http\"",
+ "schemes.Bearer.description: \"JWT Authorization header using the Bearer scheme. Obtain a token via `POST /v2/api/token/auth`.\"",
+ "schemes.Bearer.scheme: \"bearer\"",
+ "schemes.Bearer.type: \"http\"",
+ "schemes.LegacyTokenAuth.description: \"**⚠\\u{fe0f} DEPRECATED** — Legacy token authentication via the `x-compass-token` header is deprecated and will be removed in a future release. Use `POST /v2/api/token/auth` to obtain a Bearer token, or `POST /v2/api/token/auth/refresh` to refresh an existing token.\\n\"",
+ "schemes.LegacyTokenAuth.in: \"header\"",
+ "schemes.LegacyTokenAuth.name: \"x-compass-token\"",
+ "schemes.LegacyTokenAuth.type: \"apiKey\"",
+ "schemes.x-compass-api-key.description: \"Compass API Key\"",
+ "schemes.x-compass-api-key.in: \"header\"",
+ "schemes.x-compass-api-key.name: \"x-compass-api-key\"",
+ "schemes.x-compass-api-key.type: \"apiKey\"",
+ "security[]: {\"Bearer\":[],\"x-compass-api-key\":[]}",
+ "servers[0]: {\"url\":\"/\"}"
+]

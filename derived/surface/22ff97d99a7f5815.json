@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.basic.description: \"Docs API key as username, dummy password X\"",
+ "schemes.basic.scheme: \"basic\"",
+ "schemes.basic.type: \"http\"",
+ "security[]: {\"basic\":[]}",
+ "servers[0]: {\"url\":\"https://docsapi.helpscout.net\"}"
+]

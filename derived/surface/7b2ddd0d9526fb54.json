@@ -1,0 +1,12 @@
+[
+ "basePath: null",
+ "definitions: null",
+ "host: null",
+ "parameterizedHost.hostTemplate: \"{url}\"",
+ "parameterizedHost.parameters[]: {\"$ref\":\"#/parameters/Url\"}",
+ "parameterizedHost.positionInOperation: \"first\"",
+ "parameterizedHost.useSchemePrefix: false",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

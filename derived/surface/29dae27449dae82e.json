@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.appKey.in: \"header\"",
+ "schemes.appKey.name: \"X-VTEX-API-AppKey\"",
+ "schemes.appKey.type: \"apiKey\"",
+ "schemes.appToken.in: \"header\"",
+ "schemes.appToken.name: \"X-VTEX-API-AppToken\"",
+ "schemes.appToken.type: \"apiKey\"",
+ "security[]: {\"appKey\":[],\"appToken\":[]}",
+ "servers[0]: {\"description\":\"Fulfillment Endpoint.\",\"url\":\"https://{fulfillmentEndpoint}\",\"variables\":{\"fulfillmentEndpoint\":{\"default\":\"{fulfillmentEndpoint}\",\"description\":\"This is the fulfillment endpoint registered for each specific external seller in the **seller management** section of VTEX's admin panel.\"}}}"
+]

@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"Marketo Data Ingestion API\",\"url\":\"https://mkto-ingestion-api.adobe.io\"}"
+]

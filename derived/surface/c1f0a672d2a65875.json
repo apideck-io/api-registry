@@ -1,0 +1,13 @@
+[
+ "perPath: []",
+ "schemes.bearer-key.bearerFormat: \"JWT\"",
+ "schemes.bearer-key.description: \"e.g. Bearer YOUR_AUTHORIZATION_TOKEN\"",
+ "schemes.bearer-key.scheme: \"bearer\"",
+ "schemes.bearer-key.type: \"http\"",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"/\"",
+ "schemes.oauth2.flows.authorizationCode.scopes: {}",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"/\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security: null",
+ "servers: null"
+]

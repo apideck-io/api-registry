@@ -1,0 +1,16 @@
+[
+ "perPath: /api/jwt/issue get security [{\"BearerAuth\":[]}]",
+ "perPath: /api/jwt/validate get security [{\"BearerAuth\":[]}]",
+ "perPath: /api/two-factor/secret get security [{\"BearerAuth\":[]}]",
+ "perPath: /api/user/change-password post security [{\"BearerAuth\":[]}]",
+ "perPath: /oauth2/userinfo get security [{\"BearerAuth\":[]}]",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"Authorization\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "schemes.BearerAuth.bearerFormat: \"JWT\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"url\":\"http://localhost:9011\"}",
+ "servers[1]: {\"url\":\"https://sandbox.fusionauth.io\"}"
+]

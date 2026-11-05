@@ -1,0 +1,16 @@
+[
+ "perPath: /api/gasManager/policies get security [{\"BearerAuth\":[]}]",
+ "perPath: /api/gasManager/policy post security [{\"BearerAuth\":[]}]",
+ "perPath: /api/gasManager/policy/{id} delete security [{\"BearerAuth\":[]}]",
+ "perPath: /api/gasManager/policy/{id} get security [{\"BearerAuth\":[]}]",
+ "perPath: /api/gasManager/policy/{id} put security [{\"BearerAuth\":[]}]",
+ "perPath: /api/gasManager/policy/{id}/sponsorships get security [{\"BearerAuth\":[]}]",
+ "perPath: /api/gasManager/policy/{id}/stats/detailed get security [{\"BearerAuth\":[]}]",
+ "perPath: /api/gasManager/policy/{id}/status put security [{\"BearerAuth\":[]}]",
+ "perPath: /api/gasManager/policy/{id}/webhookSigningKey get security [{\"BearerAuth\":[]}]",
+ "perPath: /api/gasManager/policy/{id}/webhookSigningKey/reset post security [{\"BearerAuth\":[]}]",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://manage.g.alchemy.com\"}"
+]

@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://api.teya.com\"}",
+ "servers[1]: {\"description\":\"Development Server\",\"url\":\"https://api.teya.xyz\"}"
+]

@@ -1,0 +1,6 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://tron-mainnet.g.alchemy.com/v2/{apiKey}\",\"variables\":{\"apiKey\":{\"default\":\"docs-demo\"}}}"
+]

@@ -1,0 +1,13 @@
+[
+ "auth: null",
+ "hosts: [\"\",\"https://api.konnektive.com\"]",
+ "nested: \"/Gateways/Query Bin Mappings#request\" {\"isInherited\":false,\"type\":\"noauth\"}",
+ "nested: \"/Gateways/Query Bin Profiles#request\" {\"isInherited\":false,\"type\":\"noauth\"}",
+ "scripts:  prerequest [\"\"]",
+ "scripts:  test [\"\"]",
+ "scripts: \"/Public PGP Key for FTP Imports\" prerequest [\"\"]",
+ "scripts: \"/Public PGP Key for FTP Imports\" test [\"\"]",
+ "scripts: \"/State Code\" prerequest [\"\"]",
+ "scripts: \"/State Code\" test [\"\"]",
+ "variables: []"
+]

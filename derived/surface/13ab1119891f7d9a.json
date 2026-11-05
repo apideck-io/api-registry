@@ -1,0 +1,12 @@
+[
+ "perPath: []",
+ "schemes.FlinksAuthKey.in: \"header\"",
+ "schemes.FlinksAuthKey.name: \"flinks-auth-key\"",
+ "schemes.FlinksAuthKey.type: \"apiKey\"",
+ "schemes.OptionalApiKey.description: \"Optional security feature (must be enabled by Flinks). Contact your Flinks representative to activate.\"",
+ "schemes.OptionalApiKey.in: \"header\"",
+ "schemes.OptionalApiKey.name: \"x-api-key\"",
+ "schemes.OptionalApiKey.type: \"apiKey\"",
+ "security: []",
+ "servers[0]: {\"description\":\"Flinks Wealth API\",\"url\":\"https://{instanceWealth}-api.private.fin.ag\",\"variables\":{\"instanceWealth\":{\"default\":\"toolbox-wealth\",\"description\":\"The environment instance (e.g., toolbox-wealth, sandbox-wealth)\"}}}"
+]

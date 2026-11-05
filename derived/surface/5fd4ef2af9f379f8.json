@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.bearerFormat: \"OAuth2 access token\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.typeform.com\"}"
+]

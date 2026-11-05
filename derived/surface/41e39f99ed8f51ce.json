@@ -1,0 +1,16 @@
+[
+ "basePath: null",
+ "definitions.x-auth-key.description: \"Your account API key. Can be retrieved from your [account settings](/account/settings#api-tab).\"",
+ "definitions.x-auth-key.in: \"header\"",
+ "definitions.x-auth-key.name: \"x-auth-key\"",
+ "definitions.x-auth-key.type: \"apiKey\"",
+ "definitions.x-auth-secret.description: \"Your account API secret. Can be retrieved from your [account settings](/account/settings#api-tab). Keep it hidden.\"",
+ "definitions.x-auth-secret.in: \"header\"",
+ "definitions.x-auth-secret.name: \"x-auth-secret\"",
+ "definitions.x-auth-secret.type: \"apiKey\"",
+ "host: \"www.envoice.in\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

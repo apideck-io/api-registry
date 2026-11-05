@@ -1,0 +1,19 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.description: \"Drift OAuth2 access token\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "schemes.oauth2.flows.authorizationCode.authorizationUrl: \"https://dev.drift.com/authorize\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.account_read: \"Read accounts\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.account_write: \"Write accounts\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.contact_read: \"Read contacts\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.contact_write: \"Write contacts\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.conversation_read: \"Read conversations\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.conversation_write: \"Write conversations\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.playbook_read: \"Read playbooks\"",
+ "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://driftapi.com/oauth2/token\"",
+ "schemes.oauth2.type: \"oauth2\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "security[]: {\"oauth2\":[]}",
+ "servers[0]: {\"description\":\"Drift Production API\",\"url\":\"https://driftapi.com\"}"
+]

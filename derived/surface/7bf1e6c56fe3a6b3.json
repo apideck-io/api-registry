@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "servers[0]: {\"description\":\"Ambiente de producción\",\"url\":\"https://api.alegra.com/api/{version}\",\"variables\":{\"version\":{\"default\":\"v1\",\"enum\":[\"v1\"]}}}"
+]

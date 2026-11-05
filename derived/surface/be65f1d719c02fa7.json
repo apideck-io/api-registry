@@ -1,0 +1,9 @@
+[
+ "basePath: \"/clickapi\"",
+ "definitions: {}",
+ "host: \"www.demo.docusign.net\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

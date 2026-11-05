@@ -1,0 +1,10 @@
+[
+ "perPath: /v1/platform/regions get security []",
+ "perPath: /v1/tokens/authenticate post security []",
+ "perPath: /v1/tokens/authorize post security []",
+ "schemes.FlyBearerAuth.description: \"A Fly API token with access to the requested organization or resource. Send it as `Authorization: Bearer <Fly API token>`.\"",
+ "schemes.FlyBearerAuth.scheme: \"bearer\"",
+ "schemes.FlyBearerAuth.type: \"http\"",
+ "security[]: {\"FlyBearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.machines.dev\"}"
+]

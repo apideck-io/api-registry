@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.bearerFormat: \"API key or OAuth token\"",
+ "schemes.bearerAuth.description: \"Pass your API key or OAuth token as a Bearer token in the `Authorization` HTTP header.\\n\\n```\\ncurl -H \\\"Authorization: Bearer YOUR_API_KEY\\\" https://demodesk.com/api/v2/recordings\\n```\\n\\n**Obtaining a key:** Generate an API key in your Demodesk account under\\n*Settings > Integrations > Other*.\\n\\n**Permissions:** The key inherits the permissions of the user who created it.\\nSo when trying to access resources of your whole company, make sure to use the API key of an admin user who is\\nmember of all restricted groups.\\n\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Public demodesk host\",\"url\":\"https://demodesk.com/api/v2\"}"
+]

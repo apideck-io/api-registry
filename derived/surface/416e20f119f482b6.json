@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Merchant Portal > Settings > API Keys\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"X-RETEXTION-ACCESS-TOKEN\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://api.retextion.com/api/v2\"}"
+]

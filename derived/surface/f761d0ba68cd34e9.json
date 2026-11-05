@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.accessToken.description: \"Access token obtained from the Token API. This is required for authenticating requests to Walmart Marketplace APIs.\"",
+ "schemes.accessToken.in: \"header\"",
+ "schemes.accessToken.name: \"WM_SEC.ACCESS_TOKEN\"",
+ "schemes.accessToken.type: \"apiKey\"",
+ "security[]: {\"accessToken\":[]}",
+ "servers[0]: {\"description\":\"Base URL for production requests.\",\"url\":\"https://marketplace.walmartapis.com\"}",
+ "servers[1]: {\"description\":\"Base URL for sandbox requests.\",\"url\":\"https://sandbox.walmartapis.com\"}"
+]

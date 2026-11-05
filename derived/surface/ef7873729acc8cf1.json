@@ -1,0 +1,16 @@
+[
+ "perPath: /auth.config post security []",
+ "schemes.BearerAuth.bearerFormat: \"JWT\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "schemes.OAuth2.flows.authorizationCode.authorizationUrl: \"https://app.getoutline.com/oauth/authorize\"",
+ "schemes.OAuth2.flows.authorizationCode.refreshUrl: \"https://app.getoutline.com/oauth/token\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.read: \"Read access\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.write: \"Write access\"",
+ "schemes.OAuth2.flows.authorizationCode.tokenUrl: \"https://app.getoutline.com/oauth/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "security[]: {\"OAuth2\":[\"read\",\"write\"]}",
+ "servers[0]: {\"description\":\"Cloud hosted\",\"url\":\"https://app.getoutline.com/api\"}",
+ "servers[1]: {\"description\":\"Self-hosted on your own server\",\"url\":\"https://{domain}/api\",\"variables\":{\"domain\":{\"default\":\"example.com\"}}}"
+]

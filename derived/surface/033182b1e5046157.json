@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.[\"API key\"].in: \"header\"",
+ "schemes.[\"API key\"].name: \"x-api-key\"",
+ "schemes.[\"API key\"].type: \"apiKey\"",
+ "schemes.[\"Basic auth\"].scheme: \"basic\"",
+ "schemes.[\"Basic auth\"].type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Fusion\",\"url\":\"https://{FUSION_HOST}/api\",\"variables\":{\"FUSION_HOST\":{\"default\":\"FUSION_HOST\",\"description\":\"Your environment host.\"}}}",
+ "servers[1]: {\"description\":\"Fusion app\",\"url\":\"https://{FUSION_HOST}/api/apps/{APP_NAME}\",\"variables\":{\"APP_NAME\":{\"default\":\"APP_NAME\",\"description\":\"The name of your Fusion application.\"},\"FUSION_HOST\":{\"default\":\"FUSION_HOST\",\"description\":\"Your environment host.\"}}}"
+]

@@ -1,0 +1,20 @@
+[
+ "basePath: \"/api/v1\"",
+ "definitions.accessTokenAuth.in: \"header\"",
+ "definitions.accessTokenAuth.name: \"authorization\"",
+ "definitions.accessTokenAuth.type: \"apiKey\"",
+ "host: null",
+ "parameterizedHost: null",
+ "perOp: /devices get [{\"accessTokenAuth\":[]}]",
+ "perOp: /devices/{serial} get [{\"accessTokenAuth\":[]}]",
+ "perOp: /user get [{\"accessTokenAuth\":[]}]",
+ "perOp: /user/accessTokens get [{\"accessTokenAuth\":[]}]",
+ "perOp: /user/devices get [{\"accessTokenAuth\":[]}]",
+ "perOp: /user/devices post [{\"accessTokenAuth\":[]}]",
+ "perOp: /user/devices/{serial} delete [{\"accessTokenAuth\":[]}]",
+ "perOp: /user/devices/{serial} get [{\"accessTokenAuth\":[]}]",
+ "perOp: /user/devices/{serial}/remoteConnect delete [{\"accessTokenAuth\":[]}]",
+ "perOp: /user/devices/{serial}/remoteConnect post [{\"accessTokenAuth\":[]}]",
+ "schemes: [\"http\",\"https\"]",
+ "security: null"
+]

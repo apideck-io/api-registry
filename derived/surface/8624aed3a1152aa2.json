@@ -1,0 +1,9 @@
+[
+ "basePath: \"/v2.0\"",
+ "definitions: null",
+ "host: \"api.weatherbit.io\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\",\"http\"]",
+ "security: null"
+]

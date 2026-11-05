@@ -1,0 +1,16 @@
+[
+ "perPath: /v2/device/{id} patch security [{\"oauth2\":[\"management\"]}]",
+ "perPath: /v2/device/{id}/decommission post security [{\"oauth2\":[\"management\"]}]",
+ "perPath: /v2/device/{id}/last-logged-on-user get security [{\"oauth2\":[\"monitoring\"]}]",
+ "perPath: /v2/device/{id}/owner delete security [{\"oauth2\":[\"management\"]}]",
+ "perPath: /v2/device/{id}/owner/{ownerUid} post security [{\"oauth2\":[\"management\"]}]",
+ "schemes.oauth2.bearerFormat: \"bearer\"",
+ "schemes.oauth2.scheme: \"bearer\"",
+ "schemes.oauth2.type: \"http\"",
+ "schemes.sessionKey.in: \"cookie\"",
+ "schemes.sessionKey.name: \"sessionKey\"",
+ "schemes.sessionKey.type: \"apiKey\"",
+ "security[]: {\"oauth2\":[\"control\",\"management\",\"monitoring\"]}",
+ "security[]: {\"sessionKey\":[\"control\",\"management\",\"monitoring\"]}",
+ "servers: null"
+]

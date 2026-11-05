@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.api_key.in: \"header\"",
+ "schemes.api_key.name: \"api_key\"",
+ "schemes.api_key.type: \"apiKey\"",
+ "security[]: {\"api_key\":[]}",
+ "servers[0]: {\"url\":\"https://api.smsglobal.com\"}"
+]

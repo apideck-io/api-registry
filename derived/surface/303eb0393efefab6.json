@@ -1,0 +1,23 @@
+[
+ "perPath: /v2/payments/authorizations/{authorization_id} get security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/payment/authcapture\"]}]",
+ "perPath: /v2/payments/authorizations/{authorization_id}/capture post security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/payment/authcapture\"]}]",
+ "perPath: /v2/payments/authorizations/{authorization_id}/reauthorize post security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/payment/authcapture\"]}]",
+ "perPath: /v2/payments/authorizations/{authorization_id}/void post security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/payment/authcapture\"]}]",
+ "perPath: /v2/payments/captures/{capture_id} get security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/payment/authcapture\"]}]",
+ "perPath: /v2/payments/captures/{capture_id}/refund post security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/refund\"]}]",
+ "perPath: /v2/payments/find-eligible-methods post security [{\"Oauth2\":[\"Braintree:PaymentsReady\",\"https://uri.paypal.com/services/payments/client-payments-eligibility\",\"https://uri.paypal.com/services/payments/payments-ready\",\"https://uri.paypal.com/services/payments/realtimepayment\"]}]",
+ "perPath: /v2/payments/refunds/{refund_id} get security [{\"Oauth2\":[\"https://uri.paypal.com/services/payments/refund\"]}]",
+ "schemes.Oauth2.description: \"OAuth 2.0 authentication\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"Braintree:PaymentsReady\"]: \"Permission to call PaymentsReady via BrainTree SDK.\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/client-payments-eligibility\"]: \"Permission to get information about merchant's eligible payment methods.\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/non-referenced-credit\"]: \"Permission to initiate non referenced credit\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/payment/authcapture\"]: \"Permission to do non-real time payments like capture on authorization\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/payments-ready\"]: \"Permission to get information about payment readiness.\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/realtimepayment\"]: \"Permission to do any real time payment, with support for sale/authorize/order intents\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/refund\"]: \"Permission to initiate a refund on a capture transaction\"",
+ "schemes.Oauth2.flows.clientCredentials.scopes.[\"https://uri.paypal.com/services/payments/reversepayment\"]: \"Permission to do any reverse payment\"",
+ "schemes.Oauth2.flows.clientCredentials.tokenUrl: \"https://api-m.paypal.com/v1/oauth2/token\"",
+ "schemes.Oauth2.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Server for https scheme.\",\"url\":\"https://api-m.paypal.com\"}"
+]

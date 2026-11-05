@@ -1,0 +1,13 @@
+[
+ "auth: null",
+ "hosts: [\"https://{{api-domain}}\"]",
+ "nested: \"/Get Score Summary#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Get a Risk Score#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Rules/Create Rule#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Rules/Delete Rule#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Rules/List Rules#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Rules/Update Rule#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Track an Event#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "scripts: []",
+ "variables: []"
+]

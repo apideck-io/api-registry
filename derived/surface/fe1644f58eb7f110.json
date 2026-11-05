@@ -1,0 +1,7 @@
+[
+ "perPath: /api/embed-url/external-user * [{\"url\":\"https://api.retool.com\"}]",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.retool.com/api/v2\"}"
+]

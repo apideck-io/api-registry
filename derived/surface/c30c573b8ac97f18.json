@@ -1,0 +1,22 @@
+[
+ "basePath: \"/api/v2\"",
+ "definitions.HeaderKey.description: \"The AIO Key is used to restrict or grant access to your data. The key is unique, and you can generate a key per feed, and control it in many different ways. The easiest process is to just use your automatically generated master key. You can access this key right from the right-hand side of your dashboard or from an individual feed page.\"",
+ "definitions.HeaderKey.in: \"header\"",
+ "definitions.HeaderKey.name: \"X-AIO-Key\"",
+ "definitions.HeaderKey.type: \"apiKey\"",
+ "definitions.HeaderSignature.description: \"The AIO Signature is an AWS inspired request signature.\"",
+ "definitions.HeaderSignature.in: \"header\"",
+ "definitions.HeaderSignature.name: \"X-AIO-Signature\"",
+ "definitions.HeaderSignature.type: \"apiKey\"",
+ "definitions.QueryKey.description: \"The AIO Key is used to restrict or grant access to your data. The key is unique, and you can generate a key per feed, and control it in many different ways. The easiest process is to just use your automatically generated master key. You can access this key right from the right-hand side of your dashboard or from an individual feed page.\"",
+ "definitions.QueryKey.in: \"query\"",
+ "definitions.QueryKey.name: \"X-AIO-Key\"",
+ "definitions.QueryKey.type: \"apiKey\"",
+ "host: \"io.adafruit.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\",\"http\"]",
+ "security[]: {\"HeaderKey\":[]}",
+ "security[]: {\"HeaderSignature\":[]}",
+ "security[]: {\"QueryKey\":[]}"
+]

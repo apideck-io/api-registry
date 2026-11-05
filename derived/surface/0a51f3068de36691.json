@@ -1,0 +1,13 @@
+[
+ "perPath: []",
+ "schemes.OAuth2.flows.authorizationCode.authorizationUrl: \"https://example.com/api/oauth/dialog\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.scope: \"scope description\"",
+ "schemes.OAuth2.flows.authorizationCode.tokenUrl: \"https://platform.ringcentral.com/restapi/oauth/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "schemes.api_key.in: \"header\"",
+ "schemes.api_key.name: \"api_key\"",
+ "schemes.api_key.type: \"apiKey\"",
+ "security[]: {\"OAuth2\":[]}",
+ "servers[0]: {\"description\":\"Default server\",\"url\":\"https://platform.ringcentral.com\"}",
+ "servers[1]: {\"description\":\"Sandbox server\",\"url\":\"https://platform.devtest.ringcentral.com\"}"
+]

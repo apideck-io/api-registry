@@ -1,0 +1,10 @@
+[
+ "auth.basic[]: {\"key\":\"password\",\"type\":\"string\",\"value\":\"{{Password}}\"}",
+ "auth.basic[]: {\"key\":\"username\",\"type\":\"string\",\"value\":\"{{Username}}\"}",
+ "auth.type: \"basic\"",
+ "hosts: [\"{{Domain}}{{Path}}\"]",
+ "nested: []",
+ "scripts:  prerequest [\"\"]",
+ "scripts:  test [\"\"]",
+ "variables: []"
+]

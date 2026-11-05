@@ -1,0 +1,15 @@
+[
+ "perPath: /shipment/create_from_shipping_quote post security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.logistics\"]}]",
+ "perPath: /shipment/{shipmentId} get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.logistics\"]}]",
+ "perPath: /shipment/{shipmentId}/cancel post security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.logistics\"]}]",
+ "perPath: /shipment/{shipmentId}/download_label_file get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.logistics\"]}]",
+ "perPath: /shipping_quote post security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.logistics\"]}]",
+ "perPath: /shipping_quote/{shippingQuoteId} get security [{\"api_auth\":[\"https://api.ebay.com/oauth/api_scope/sell.logistics\"]}]",
+ "schemes.api_auth.description: \"The security definitions for this API. Please check individual operations for applicable scopes.\"",
+ "schemes.api_auth.flows.authorizationCode.authorizationUrl: \"https://auth.ebay.com/oauth2/authorize\"",
+ "schemes.api_auth.flows.authorizationCode.scopes.[\"https://api.ebay.com/oauth/api_scope/sell.logistics\"]: \" This scope would allow signed in user to access Logistics information.\"",
+ "schemes.api_auth.flows.authorizationCode.tokenUrl: \"https://api.ebay.com/identity/v1/oauth2/token\"",
+ "schemes.api_auth.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.ebay.com{basePath}\",\"variables\":{\"basePath\":{\"default\":\"/sell/logistics/v1_beta\"}}}"
+]

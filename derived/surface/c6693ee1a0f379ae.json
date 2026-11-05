@@ -1,0 +1,8 @@
+[
+ "perPath: /search get security []",
+ "schemes.bearerAuth.bearerFormat: \"All API requests must include a valid API token in the `Authorization` request header. The token must be prefixed by \\\"Bearer\\\", followed by a space and the token value.\\nExample: `Authorization: Bearer r8_Hw***********************************`\\nFind your tokens at https://replicate.com/account/api-tokens\\n\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.replicate.com/v1\"}"
+]

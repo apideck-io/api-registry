@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.TPPOAuth2Security.description: \"TPP client credential authorisation flow with the ASPSP\"",
+ "schemes.TPPOAuth2Security.flows.clientCredentials.scopes.accounts: \"Ability to read Accounts information\"",
+ "schemes.TPPOAuth2Security.flows.clientCredentials.scopes.fundsconfirmations: \"Ability to confirm funds\"",
+ "schemes.TPPOAuth2Security.flows.clientCredentials.scopes.payments: \"Generic payment scope\"",
+ "schemes.TPPOAuth2Security.flows.clientCredentials.tokenUrl: \"https://authserver.example/token\"",
+ "schemes.TPPOAuth2Security.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"url\":\"/open-banking/v4.0\"}"
+]

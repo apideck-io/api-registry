@@ -1,0 +1,18 @@
+[
+ "perPath: /learning/lms-integrations post security [{\"basic\":[]},{\"Bearer\":[]}]",
+ "perPath: /learning/lms-integrations/{provider-identifier} delete security [{\"basic\":[]},{\"Bearer\":[]}]",
+ "perPath: /learning/lms-integrations/{provider-identifier}/training-content patch security [{\"basic\":[]},{\"Bearer\":[]}]",
+ "perPath: /learning/lms-integrations/{provider-identifier}/training-content post security [{\"basic\":[]},{\"Bearer\":[]}]",
+ "perPath: /learning/lms-integrations/{provider-identifier}/training-content/archive patch security [{\"basic\":[]},{\"Bearer\":[]}]",
+ "perPath: /learning/lms-integrations/{provider-identifier}/xapi/statements post security [{\"basic\":[]},{\"Bearer\":[]}]",
+ "schemes.Bearer.bearerFormat: \"OAuth 2.0\"",
+ "schemes.Bearer.description: \"OAuth 2.0 access token. Complete the OAuth 2.0 flow in Postman, then paste the token here. <a href=\\\"https://apidocs.hibob.com/reference/oauth-20\\\" target=\\\"_blank\\\">Learn more about OAuth 2.0 in HiBob</a>\"",
+ "schemes.Bearer.scheme: \"bearer\"",
+ "schemes.Bearer.type: \"http\"",
+ "schemes.basic.description: \"Basic HTTP authentication using service user credentials\"",
+ "schemes.basic.scheme: \"basic\"",
+ "schemes.basic.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.hibob.com/v1\"}",
+ "servers[1]: {\"description\":\"Sandbox\",\"url\":\"https://api.sandbox.hibob.com/v1\"}"
+]

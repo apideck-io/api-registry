@@ -1,0 +1,9 @@
+[
+ "basePath: \"/ATServicesRest\"",
+ "definitions: null",
+ "host: \"webservices5.autotask.net\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

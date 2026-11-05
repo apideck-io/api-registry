@@ -1,0 +1,8 @@
+[
+ "auth.bearer[]: {\"key\":\"Authorization\",\"type\":\"string\"}",
+ "auth.type: \"bearer\"",
+ "hosts: [\"{{baseUrl}}\"]",
+ "nested: []",
+ "scripts: []",
+ "variables: baseUrl https://app.findymail.com"
+]

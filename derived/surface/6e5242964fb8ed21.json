@@ -1,0 +1,12 @@
+[
+ "basePath: \"/\"",
+ "definitions.[\"api_key\\\"\"].[\"in\\\"\"]: \"query\"",
+ "definitions.[\"api_key\\\"\"].[\"name\\\"\"]: \"_apikey\"",
+ "definitions.[\"api_key\\\"\"].[\"type\\\"\"]: \"apiKey\"",
+ "host: \"run.import.io\"",
+ "parameterizedHost: null",
+ "perOp: /extractor/{extractorId}/cancel post [{\"api_key\":[]}]",
+ "perOp: /extractor/{extractorId}/start post [{\"api_key\":[]}]",
+ "schemes: [\"https\"]",
+ "security: null"
+]

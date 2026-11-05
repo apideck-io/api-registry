@@ -1,0 +1,15 @@
+[
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/cloud-platform\"].description: \"See, edit, configure, and delete your Google Cloud data and see the email address for your Google Account.\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/maps-platform.places\"].description: \"Private Service: https://www.googleapis.com/auth/maps-platform.places\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/maps-platform.places.autocomplete\"].description: \"Private Service: https://www.googleapis.com/auth/maps-platform.places.autocomplete\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/maps-platform.places.details\"].description: \"Private Service: https://www.googleapis.com/auth/maps-platform.places.details\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/maps-platform.places.getphotomedia\"].description: \"Private Service: https://www.googleapis.com/auth/maps-platform.places.getphotomedia\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/maps-platform.places.nearbysearch\"].description: \"Private Service: https://www.googleapis.com/auth/maps-platform.places.nearbysearch\"",
+ "auth.oauth2.scopes.[\"https://www.googleapis.com/auth/maps-platform.places.textsearch\"].description: \"Private Service: https://www.googleapis.com/auth/maps-platform.places.textsearch\"",
+ "baseUrl: \"https://places.googleapis.com/\"",
+ "batchPath: \"batch\"",
+ "endpoints: null",
+ "mtlsRootUrl: \"https://places.mtls.googleapis.com/\"",
+ "rootUrl: \"https://places.googleapis.com/\"",
+ "servicePath: \"\""
+]

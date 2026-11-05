@@ -1,0 +1,19 @@
+[
+ "basePath: \"/api/v1\"",
+ "definitions.basicAuth.description: \"HTTP Basic Authentication.\"",
+ "definitions.basicAuth.type: \"basic\"",
+ "definitions.jwt.description: \"A JSON Web Token (JWT) used for access control and authorization.\"",
+ "definitions.jwt.in: \"header\"",
+ "definitions.jwt.name: \"Authorization\"",
+ "definitions.jwt.type: \"apiKey\"",
+ "host: null",
+ "parameterizedHost: null",
+ "perOp: /auth get [{\"basicAuth\":[]}]",
+ "perOp: /belege/{belegUuid} get []",
+ "perOp: /export/html/belege/{belegUuid} get []",
+ "perOp: /export/pdf/belege/{belegUuid} get []",
+ "perOp: /export/qr/belege/{belegUuid} get []",
+ "perOp: /export/thermal-print/belege/{belegUuid} get []",
+ "schemes: [\"https\"]",
+ "security[]: {\"jwt\":[]}"
+]

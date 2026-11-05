@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearer.description: \"Contact Check for a sandbox key; live key only after Check verifies the integration (sandbox: https://sandbox.checkhq.com)\"",
+ "schemes.bearer.scheme: \"bearer\"",
+ "schemes.bearer.type: \"http\"",
+ "security[]: {\"bearer\":[]}",
+ "servers[0]: {\"url\":\"https://api.checkhq.com\"}"
+]

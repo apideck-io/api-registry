@@ -1,0 +1,8 @@
+[
+ "perPath: /v3/shared-calls/{token} get security []",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"Authorization\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[],\"ApiKeyHeader\":[]}",
+ "servers: null"
+]

@@ -1,0 +1,14 @@
+[
+ "perPath: []",
+ "schemes.BearerAuth.bearerFormat: \"JWT\"",
+ "schemes.BearerAuth.description: \"Bearer token authentication\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "schemes.HeaderAuth.description: \"API token in Api-Token header\"",
+ "schemes.HeaderAuth.in: \"header\"",
+ "schemes.HeaderAuth.name: \"Api-Token\"",
+ "schemes.HeaderAuth.type: \"apiKey\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "security[]: {\"HeaderAuth\":[]}",
+ "servers[0]: {\"description\":\"Mailtrap account API (`mailtrap.io`) for domains, suppressions, tracking opt-outs, stats, and email logs.\\nError JSON matches other account endpoints (`error` or string `errors`), not the `send.api` / `bulk.api` sending shape (`success` + `errors` array).\\n\",\"url\":\"https://mailtrap.io\"}"
+]

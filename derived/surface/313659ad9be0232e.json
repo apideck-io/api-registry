@@ -1,0 +1,21 @@
+[
+ "perPath: []",
+ "schemes.API_Key_Header.description: \"Header based API Key authentication. You can generate an API Key in the SIGNL4 portal under 'Integrations' -> 'Api Keys'.\"",
+ "schemes.API_Key_Header.in: \"header\"",
+ "schemes.API_Key_Header.name: \"x-s4-api-key\"",
+ "schemes.API_Key_Header.type: \"apiKey\"",
+ "schemes.API_Key_Query.description: \"Query based API Key authentication. You can generate an API Key in the SIGNL4 portal under 'Integrations' -> 'Api Keys'.\"",
+ "schemes.API_Key_Query.in: \"query\"",
+ "schemes.API_Key_Query.name: \"x-s4-api-key\"",
+ "schemes.API_Key_Query.type: \"apiKey\"",
+ "schemes.OAuth2.description: \"OAuth2 Authentication. You can request subscription specific client credentials from the SIGNL4 support.\"",
+ "schemes.OAuth2.flows.authorizationCode.authorizationUrl: \"https://connect.signl4.com/identity/connect/authorize\"",
+ "schemes.OAuth2.flows.authorizationCode.refreshUrl: \"https://connect.signl4.com/identity/connect/token\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.offline_access: \"Allows usage of refresh tokens\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.public_api_read: \"Access read operations\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.public_api_write: \"Access write operations\"",
+ "schemes.OAuth2.flows.authorizationCode.tokenUrl: \"https://connect.signl4.com/identity/connect/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security[]: {}",
+ "servers[0]: {\"url\":\"https://connect.signl4.com/api\"}"
+]

@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.sec0.flows.clientCredentials.scopes: {}",
+ "schemes.sec0.flows.clientCredentials.tokenUrl: \"https://example.com/oauth2/token\"",
+ "schemes.sec0.type: \"oauth2\"",
+ "security[]: {\"sec0\":[]}",
+ "servers[0]: {\"url\":\"https://api.recruitee.com\"}"
+]

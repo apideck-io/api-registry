@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.Bearer.description: \"This API uses OAuth 2 with the Client Credentials grant flow.\"",
+ "schemes.Bearer.flows.clientCredentials.scopes: {}",
+ "schemes.Bearer.flows.clientCredentials.tokenUrl: \"https://api.iris.co.uk/oauth2/v1/token\"",
+ "schemes.Bearer.type: \"oauth2\"",
+ "security[]: {\"Bearer\":[]}",
+ "servers[0]: {\"url\":\"https://api.iris.co.uk/hr/v2\"}"
+]

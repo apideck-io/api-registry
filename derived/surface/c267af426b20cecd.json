@@ -1,0 +1,23 @@
+[
+ "auth: null",
+ "hosts: [\"https://{{api-domain}}\"]",
+ "nested: \"/Claims/Create Api Auth Server Claim#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Claims/Delete Api Auth Server Claim#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Claims/Get Api Auth Server Claims#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Claims/Update Api Auth Server Claim#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Client Apps/Add Api Auth Server Client#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Client Apps/Get Api Auth Server Clients#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Client Apps/Remove Api Auth Server Client#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Client Apps/Update Api Auth Server Client#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Create Api Auth Server#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Delete Api Auth Server#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Get Api Auth Server#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/List Api Auth Servers#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Scopes/Create Api Auth Server Scope#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Scopes/Delete Api Auth Server Scope#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Scopes/Get Api Auth Server Scopes#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Scopes/Update Api Auth Server Scope#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "nested: \"/Update Api Auth Server#request\" {\"bearer\":[{\"key\":\"token\",\"type\":\"string\",\"value\":\"{{access_token}}\"}],\"type\":\"bearer\"}",
+ "scripts: []",
+ "variables: []"
+]

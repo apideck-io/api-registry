@@ -1,0 +1,19 @@
+[
+ "perPath: /Timesheets get security [{\"OAuth2\":[\"payroll.timesheets\",\"payroll.timesheets.read\"]}]",
+ "perPath: /Timesheets post security [{\"OAuth2\":[\"payroll.timesheets\"]}]",
+ "perPath: /Timesheets/{TimesheetID} delete security [{\"OAuth2\":[\"payroll.timesheets\"]}]",
+ "perPath: /Timesheets/{TimesheetID} get security [{\"OAuth2\":[\"payroll.timesheets\",\"payroll.timesheets.read\"]}]",
+ "perPath: /Timesheets/{TimesheetID}/Approve post security [{\"OAuth2\":[\"payroll.timesheets\"]}]",
+ "perPath: /Timesheets/{TimesheetID}/Lines post security [{\"OAuth2\":[\"payroll.timesheets\"]}]",
+ "perPath: /Timesheets/{TimesheetID}/Lines/{TimesheetLineID} delete security [{\"OAuth2\":[\"payroll.timesheets\"]}]",
+ "perPath: /Timesheets/{TimesheetID}/Lines/{TimesheetLineID} put security [{\"OAuth2\":[\"payroll.timesheets\"]}]",
+ "perPath: /Timesheets/{TimesheetID}/RevertToDraft post security [{\"OAuth2\":[\"payroll.timesheets\"]}]",
+ "schemes.OAuth2.description: \"For more information visit https://developer.xero.com/documentation/oauth2/overview\"",
+ "schemes.OAuth2.flows.authorizationCode.authorizationUrl: \"https://login.xero.com/identity/connect/authorize\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.[\"payroll.timesheets\"]: \"Grant read-write access to payroll timesheets\"",
+ "schemes.OAuth2.flows.authorizationCode.scopes.[\"payroll.timesheets.read\"]: \"Grant read-only access to payroll timesheets\"",
+ "schemes.OAuth2.flows.authorizationCode.tokenUrl: \"https://identity.xero.com/connect/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Xero Payroll AU API 2.0\",\"url\":\"https://api.xero.com/payroll.xro/2.0\"}"
+]

@@ -1,0 +1,13 @@
+[
+ "perPath: []",
+ "schemes.appKey.description: \"Unique identifier created by the provider and configured through [Giftcard Hub API](https://developers.vtex.com/docs/api-reference/giftcard-hub-api#put-/api/giftcardproviders/-giftCardProviderId-).\"",
+ "schemes.appKey.in: \"header\"",
+ "schemes.appKey.name: \"X-PROVIDER-API-AppKey\"",
+ "schemes.appKey.type: \"apiKey\"",
+ "schemes.appToken.description: \"Unique token created by the provider and configured through [Giftcard Hub API](https://developers.vtex.com/docs/api-reference/giftcard-hub-api#put-/api/giftcardproviders/-giftCardProviderId-).\"",
+ "schemes.appToken.in: \"header\"",
+ "schemes.appToken.name: \"X-PROVIDER-API-AppToken\"",
+ "schemes.appToken.type: \"apiKey\"",
+ "security[]: {\"appKey\":[],\"appToken\":[]}",
+ "servers[0]: {\"description\":\"Gift card provider endpoint URL.\",\"url\":\"https://{providerApiEndpoint}\",\"variables\":{\"providerApiEndpoint\":{\"default\":\"{providerApiEndpoint}\",\"description\":\"Gift card provider endpoint URL.\"}}}"
+]

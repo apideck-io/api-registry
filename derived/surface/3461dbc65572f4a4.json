@@ -1,0 +1,13 @@
+[
+ "perPath: /mcp/docs delete security [{}]",
+ "perPath: /mcp/docs get security [{}]",
+ "perPath: /mcp/docs post security [{}]",
+ "perPath: /mcp/docs/server-card get security [{}]",
+ "perPath: /mcp/server-card get security [{}]",
+ "perPath: /openapi get security [{}]",
+ "schemes.DeveloperApiKey.description: \"A scoped Zuplo account API key sent as a bearer token. Create account API keys in Account Settings and grant only the access required for the calling agent or automation. These credentials are distinct from consumer keys issued through the Zuplo API Key Service.\"",
+ "schemes.DeveloperApiKey.scheme: \"Bearer\"",
+ "schemes.DeveloperApiKey.type: \"http\"",
+ "security[]: {\"DeveloperApiKey\":[]}",
+ "servers[0]: {\"url\":\"https://developer-api-main-8600723.self.zuplo.com\"}"
+]

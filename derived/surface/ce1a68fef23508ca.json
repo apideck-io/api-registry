@@ -1,0 +1,10 @@
+[
+ "basePath: null",
+ "definitions: null",
+ "host: \"api.axesso.de\"",
+ "parameterizedHost: null",
+ "perOp: /amz/amazon-lookup-product get []",
+ "perOp: /amz/amazon-search-by-keyword get []",
+ "schemes: [\"http\"]",
+ "security: null"
+]

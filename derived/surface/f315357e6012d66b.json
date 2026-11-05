@@ -1,0 +1,9 @@
+[
+ "perPath: /rest/api/index/custom-metadata/schema/{groupName} * [{\"url\":\"https://{instance}-be.glean.com\",\"variables\":{\"instance\":{\"default\":\"instance-name\",\"description\":\"The instance name (typically the email domain without the TLD) that determines the deployment backend.\"}}}]",
+ "perPath: /rest/api/index/document/{docId}/custom-metadata/{groupName} * [{\"url\":\"https://{instance}-be.glean.com\",\"variables\":{\"instance\":{\"default\":\"instance-name\",\"description\":\"The instance name (typically the email domain without the TLD) that determines the deployment backend.\"}}}]",
+ "perPath: /rest/api/index/submissions/{datasourceInstance}/{type} * [{\"url\":\"https://{instance}-be.glean.com\",\"variables\":{\"instance\":{\"default\":\"instance-name\",\"description\":\"The instance name (typically the email domain without the TLD) that determines the deployment backend.\"}}}]",
+ "schemes.APIToken.scheme: \"bearer\"",
+ "schemes.APIToken.type: \"http\"",
+ "security[]: {\"APIToken\":[]}",
+ "servers[0]: {\"url\":\"https://{instance}-be.glean.com\",\"variables\":{\"instance\":{\"default\":\"instance-name\",\"description\":\"The instance name (typically the email domain without the TLD) that determines the deployment backend.\"}}}"
+]

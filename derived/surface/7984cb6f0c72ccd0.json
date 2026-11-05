@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"Get the token at readwise.io/access_token. The header value is \\\"Token <key>\\\", not Bearer.\"",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"Authorization\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "schemes.apiKey.x-value-template: \"Token {key}\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://readwise.io/api/v2\"}"
+]

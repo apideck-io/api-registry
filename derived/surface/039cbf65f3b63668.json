@@ -1,0 +1,16 @@
+[
+ "perPath: /account get security [{\"apiKey\":[]}]",
+ "perPath: /async post security [{\"apiKey\":[]}]",
+ "perPath: /async/{request_id} get security [{\"apiKey\":[]}]",
+ "perPath: /company_finder/async post security [{\"apiKey\":[]}]",
+ "perPath: /company_finder/async/{request_id} get security [{\"apiKey\":[]}]",
+ "perPath: /enrich_profile/company post security [{\"apiKey\":[]}]",
+ "perPath: /enrich_profile/lead post security [{\"apiKey\":[]}]",
+ "perPath: /lead_finder/async post security [{\"apiKey\":[]}]",
+ "perPath: /lead_finder/async/{request_id} get security [{\"apiKey\":[]}]",
+ "schemes.apiKey.in: \"header\"",
+ "schemes.apiKey.name: \"X-API-Key\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"url\":\"https://app.bettercontact.rocks/api/v2\"}"
+]
