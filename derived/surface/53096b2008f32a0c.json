@@ -1,0 +1,9 @@
+[
+ "basePath: \"/single-pixel\"",
+ "definitions: null",
+ "host: \"daymet.ornl.gov\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.in: \"query\"",
+ "schemes.ApiKeyAuth.name: \"api_key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://api.dataflowkit.com/v1\"}"
+]

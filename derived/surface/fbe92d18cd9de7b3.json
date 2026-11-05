@@ -136,6 +136,7 @@
  "perPath: /v1/projects/{ref}/network-restrictions get security [{\"bearer\":[]}]",
  "perPath: /v1/projects/{ref}/network-restrictions patch security [{\"bearer\":[]}]",
  "perPath: /v1/projects/{ref}/network-restrictions/apply post security [{\"bearer\":[]}]",
+ "perPath: /v1/projects/{ref}/network-restrictions/review post security [{\"bearer\":[]}]",
  "perPath: /v1/projects/{ref}/pause post security [{\"bearer\":[]}]",
  "perPath: /v1/projects/{ref}/pgsodium get security [{\"bearer\":[]}]",
  "perPath: /v1/projects/{ref}/pgsodium put security [{\"bearer\":[]}]",

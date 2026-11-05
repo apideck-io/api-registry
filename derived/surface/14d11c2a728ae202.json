@@ -1,0 +1,21 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"url\":\"{{program_service}}\"}",
+ "servers[10]: {\"url\":\"{{installment_service}}\"}",
+ "servers[11]: {\"url\":\"{{rewards_service}}\"}",
+ "servers[12]: {\"url\":\"{{collection_service}}\"}",
+ "servers[13]: {\"url\":\"{{policy_impl_service}}\"}",
+ "servers[14]: {\"url\":\"{{credential_manager}}\"}",
+ "servers[15]: {\"url\":\"{{webhook_service}}\"}",
+ "servers[1]: {\"url\":\"{{program_policy_client_customer}}\"}",
+ "servers[2]: {\"url\":\"{{api-gateway-prod}}\"}",
+ "servers[3]: {\"url\":\"{{audit_service}}\"}",
+ "servers[4]: {\"url\":\"{{los}}\"}",
+ "servers[5]: {\"url\":\"{{account_management_service}}\"}",
+ "servers[6]: {\"url\":\"{{forex_account}}\"}",
+ "servers[7]: {\"url\":\"{{card_processor}}\"}",
+ "servers[8]: {\"url\":\"{{transaction_service}}\"}",
+ "servers[9]: {\"url\":\"{{dispute_service}}\"}"
+]

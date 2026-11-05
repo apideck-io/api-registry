@@ -1,0 +1,11 @@
+[
+ "perPath: /ping get security []",
+ "schemes.ApiKeyAuth.description: \"30 character long, alphanumeric string\"",
+ "schemes.ApiKeyAuth.in: \"query\"",
+ "schemes.ApiKeyAuth.name: \"key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "schemes.ApiKeyAuth.x-externalDocs.description: \"API key unique to your account\"",
+ "schemes.ApiKeyAuth.x-externalDocs.url: \"https://opencagedata.com/api#required-param\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"name\":\"OpenCage geocoding API\",\"url\":\"https://api.opencagedata.com/geocode/v1\"}"
+]

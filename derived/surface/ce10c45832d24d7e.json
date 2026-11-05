@@ -1,0 +1,11 @@
+[
+ "basePath: \"/svc/archive/v1\"",
+ "definitions.apikey.in: \"query\"",
+ "definitions.apikey.name: \"api-key\"",
+ "definitions.apikey.type: \"apiKey\"",
+ "host: \"api.nytimes.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"http\",\"https\"]",
+ "security[]: {\"apikey\":[]}"
+]

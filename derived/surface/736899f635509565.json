@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.sec0.in: \"header\"",
+ "schemes.sec0.name: \"ApiKey\"",
+ "schemes.sec0.type: \"apiKey\"",
+ "security[]: {\"sec0\":[]}",
+ "servers[0]: {\"url\":\"https://public.billsby.com/api/v1/rest/core\"}"
+]

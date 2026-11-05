@@ -1,0 +1,13 @@
+[
+ "perPath: []",
+ "schemes.api-key.description: \"Authorization key, either read-write or read-only\"",
+ "schemes.api-key.in: \"header\"",
+ "schemes.api-key.name: \"api-key\"",
+ "schemes.api-key.type: \"apiKey\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"api-key\":[]}",
+ "security[]: {\"bearerAuth\":[]}",
+ "security[]: {}",
+ "servers[0]: {\"url\":\"{protocol}://{hostname}:{port}\",\"variables\":{\"hostname\":{\"default\":\"localhost\"},\"port\":{\"default\":\"6333\"},\"protocol\":{\"default\":\"http\",\"enum\":[\"http\",\"https\"]}}}"
+]

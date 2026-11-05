@@ -83,6 +83,7 @@
  "perPath: /v2/webhooks/{webhook_id} delete security [{\"oauth2\":[\"webhook:read-write\"]}]",
  "perPath: /v2/webhooks/{webhook_id} get security [{\"oauth2\":[\"webhook:read\"]}]",
  "perPath: /v2/webhooks/{webhook_id} patch security [{\"oauth2\":[\"webhook:read-write\"]}]",
+ "perPath: /v2/workspace_blocklist_addresses get security [{\"oauth2\":[\"email_calendar_blocklist:read\"]}]",
  "perPath: /v2/workspace_blocklist_addresses put security [{\"oauth2\":[\"email_calendar_blocklist:read-write\"]}]",
  "perPath: /v2/workspace_blocklist_addresses/{address} delete security [{\"oauth2\":[\"email_calendar_blocklist:read-write\"]}]",
  "perPath: /v2/workspace_members get security [{\"oauth2\":[\"user_management:read\"]}]",

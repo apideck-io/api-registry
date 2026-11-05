@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"US Lago cluster\",\"url\":\"https://api.getlago.com/api/v1\"}",
+ "servers[1]: {\"description\":\"EU Lago cluster\",\"url\":\"https://api.eu.getlago.com/api/v1\"}"
+]

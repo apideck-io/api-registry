@@ -1,0 +1,12 @@
+[
+ "perPath: /v1/card_authorizations/{event_token}/challenge_response post security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /v1/embed get security []",
+ "perPath: /v1/ip_ranges get security []",
+ "perPath: /v1/status get security [{}]",
+ "perPath: /v1/three_ds_decisioning/challenge_response post security [{\"ApiKeyAuth\":[]}]",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"Authorization\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Sandbox environment that provides key functionality mirroring production\",\"url\":\"https://sandbox.lithic.com\"}"
+]

@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.x-api-key.in: \"header\"",
+ "schemes.x-api-key.name: \"api_key\"",
+ "schemes.x-api-key.type: \"apiKey\"",
+ "security[]: {\"x-api-key\":[]}",
+ "servers[0]: {\"description\":\"CalorieNinjas API server\",\"url\":\"api.calorieninjas.com\"}"
+]

@@ -1,0 +1,20 @@
+[
+ "perPath: /v2.1/locations get security []",
+ "perPath: /v2/auth/login get security []",
+ "perPath: /v2/auth/login post security []",
+ "perPath: /v2/auth/login/mfa post security []",
+ "perPath: /v2/auth/logout get security []",
+ "perPath: /v2/billing/pricing get security []",
+ "perPath: /v2/customers/company-types get security []",
+ "perPath: /v2/documents/{uuid} get security []",
+ "perPath: /v2/locations get security []",
+ "perPath: /v2/signup/email-validation get security []",
+ "perPath: /v2/team-invites/{signup_uuid} get security []",
+ "perPath: /v2/team-invites/{signup_uuid}/user post security []",
+ "perPath: /v2/users/request-password-reset post security []",
+ "perPath: /v2/users/reset-password post security []",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Production API\",\"url\":\"https://api.packetfabric.com\"}"
+]

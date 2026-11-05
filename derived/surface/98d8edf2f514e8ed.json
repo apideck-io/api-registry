@@ -1,0 +1,11 @@
+[
+ "perPath: /v1/projects/{project_id}/branches/{branch} post security [{\"API auth\":[]}]",
+ "perPath: /v1/projects/{project_id}/files/download get security [{\"API auth\":[]}]",
+ "perPath: /v1/projects/{project_id}/files/upload post security [{\"API auth\":[]}]",
+ "perPath: /v1/projects/{project_id}/status get security [{\"API auth\":[]}]",
+ "schemes.[\"API auth\"].in: \"header\"",
+ "schemes.[\"API auth\"].name: \"X-Api-Token\"",
+ "schemes.[\"API auth\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Generated server url\",\"url\":\"https://api.localizely.com\"}"
+]

@@ -1,0 +1,12 @@
+[
+ "basePath: \"/company/1.0\"",
+ "definitions.default.authorizationUrl: \"https://api.roaring.io/authorize\"",
+ "definitions.default.flow: \"implicit\"",
+ "definitions.default.scopes: {}",
+ "definitions.default.type: \"oauth2\"",
+ "host: \"api.roaring.io\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\",\"http\"]",
+ "security: null"
+]

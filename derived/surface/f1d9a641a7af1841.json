@@ -1,0 +1,17 @@
+[
+ "basePath: \"/api/v1\"",
+ "definitions.wsc-access-key.description: \"A valid 64-digit, alphanumeric API access key.\"",
+ "definitions.wsc-access-key.in: \"header\"",
+ "definitions.wsc-access-key.name: \"wsc-access-key\"",
+ "definitions.wsc-access-key.type: \"apiKey\"",
+ "definitions.wsc-api-key.description: \"Your account's 64-digit, alphanumeric API key. \"",
+ "definitions.wsc-api-key.in: \"header\"",
+ "definitions.wsc-api-key.name: \"wsc-api-key\"",
+ "definitions.wsc-api-key.type: \"apiKey\"",
+ "host: \"api-sandbox.cloud.wowza.com\"",
+ "parameterizedHost: null",
+ "perOp: /api/v1/specs get [{}]",
+ "schemes: [\"https\"]",
+ "security[]: {\"wsc-access-key\":[]}",
+ "security[]: {\"wsc-api-key\":[]}"
+]

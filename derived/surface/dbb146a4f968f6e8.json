@@ -1,0 +1,14 @@
+[
+ "perPath: []",
+ "schemes.Adv-Security-Token.description: \"The Adv-Security-Token header parameter is generated via the Dashboard on advicement.io website.\"",
+ "schemes.Adv-Security-Token.in: \"header\"",
+ "schemes.Adv-Security-Token.name: \"ADVICEment API Key\"",
+ "schemes.Adv-Security-Token.type: \"apiKey\"",
+ "schemes.X-RapidAPI-Key.description: \"The X-RapidAPI-Key header parameter can be found in the security section of your account on rapidapi.com\"",
+ "schemes.X-RapidAPI-Key.in: \"header\"",
+ "schemes.X-RapidAPI-Key.name: \"RapidAPI.com API Key\"",
+ "schemes.X-RapidAPI-Key.type: \"apiKey\"",
+ "security[]: {\"Adv-Security-Token\":[]}",
+ "security[]: {\"X-RapidAPI-Key\":[]}",
+ "servers[0]: {\"description\":\"via RapidAPI.com\",\"url\":\"https://dynamicdocs.p.rapidapi.com\"}"
+]

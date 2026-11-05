@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.OAuth2.flows.clientCredentials.scopes: {}",
+ "schemes.OAuth2.flows.clientCredentials.tokenUrl: \"https://auth.accounting-auth.com/oauth/token\"",
+ "schemes.OAuth2.type: \"oauth2\"",
+ "security[]: {\"OAuth2\":[]}",
+ "servers[0]: {\"description\":\"Production(US)\",\"url\":\"https://api.softledger.com/v2\"}",
+ "servers[1]: {\"description\":\"Europe\",\"url\":\"https://eu-api.softledger.com/v2\"}"
+]

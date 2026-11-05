@@ -1,0 +1,22 @@
+[
+ "perPath: \"/core/v1/partner/tickets/{ticket_id} (COPY)\" get security [{\"sec0\":[]}]",
+ "perPath: /core/v1/partner/devices get security [{\"sec0\":[]}]",
+ "perPath: /core/v1/partner/devices/histories get security [{\"sec0\":[]}]",
+ "perPath: /core/v1/partner/devices/{device_id} delete security [{\"sec0\":[]}]",
+ "perPath: /core/v1/partner/devices/{device_id} get security [{\"sec0\":[]}]",
+ "perPath: /core/v1/partner/devices/{device_id}/commands get security [{\"sec0\":[]}]",
+ "perPath: /core/v1/partner/devices/{device_id}/config get security [{\"sec0\":[]}]",
+ "perPath: /core/v1/partner/devices/{device_id}/history get security [{\"sec0\":[]}]",
+ "perPath: /core/v1/partner/devices/{device_id}/telemetries get security [{\"sec0\":[]}]",
+ "perPath: /core/v1/partner/tickets get security [{\"sec0\":[]}]",
+ "perPath: /core/v1/partner/tickets/{ticket_id} put security [{\"sec0\":[]}]",
+ "perPath: /core/v1/partner/tickets/{ticket_id}/message post security [{\"sec0\":[]}]",
+ "perPath: /core/v1/partner/tickets/{ticket_id}/resolved post security [{\"sec0\":[]}]",
+ "perPath: /v1/devices post security []",
+ "schemes.sec0.in: \"header\"",
+ "schemes.sec0.name: \"Authorization\"",
+ "schemes.sec0.type: \"apiKey\"",
+ "schemes.sec0.x-bearer-format: \"\"",
+ "security[]: {\"sec0\":[]}",
+ "servers[0]: {\"url\":\"{url}\",\"variables\":{\"url\":{\"default\":\"url\"}}}"
+]

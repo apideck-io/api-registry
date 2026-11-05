@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.Bearer.description: \"Please enter into field the word 'Bearer' following by space and JWT\"",
+ "schemes.Bearer.in: \"header\"",
+ "schemes.Bearer.name: \"Authorization\"",
+ "schemes.Bearer.type: \"apiKey\"",
+ "security[]: {\"Bearer\":[]}",
+ "servers[0]: {\"description\":\"url\",\"url\":\"api.finshark.io\"}"
+]

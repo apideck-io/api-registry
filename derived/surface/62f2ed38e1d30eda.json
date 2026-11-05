@@ -1,0 +1,16 @@
+[
+ "perPath: /v2/productinvoices/events/{accessKey} get security [{\"Authorization_Header\":[\"apiKey\"]},{\"Authorization_QueryParam\":[\"apiKey\"]}]",
+ "perPath: /v2/productinvoices/{accessKey} get security [{\"Authorization_Header\":[\"apiKey\"]},{\"Authorization_QueryParam\":[\"apiKey\"]}]",
+ "perPath: /v2/productinvoices/{accessKey}.pdf get security [{\"Authorization_Header\":[\"apiKey\"]},{\"Authorization_QueryParam\":[\"apiKey\"]}]",
+ "perPath: /v2/productinvoices/{accessKey}.xml get security [{\"Authorization_Header\":[\"apiKey\"]},{\"Authorization_QueryParam\":[\"apiKey\"]}]",
+ "schemes.Authorization_Header.description: \"Autenticar usando o Cabeçalho HTTP, exemplo: \\\"X-NFE-ApiKey {APIKEY_TOKEN}\\\"\"",
+ "schemes.Authorization_Header.in: \"header\"",
+ "schemes.Authorization_Header.name: \"Authorization\"",
+ "schemes.Authorization_Header.type: \"apiKey\"",
+ "schemes.Authorization_QueryParam.description: \"Autenticar usando o Parametro na URL, exemplo: \\\"/?apikey={APIKEY_TOKEN}\\\"\"",
+ "schemes.Authorization_QueryParam.in: \"query\"",
+ "schemes.Authorization_QueryParam.name: \"apikey\"",
+ "schemes.Authorization_QueryParam.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"nfe.api.nfe.io\"}"
+]

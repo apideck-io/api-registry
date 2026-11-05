@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.sec0.in: \"header\"",
+ "schemes.sec0.name: \"Authorization\"",
+ "schemes.sec0.type: \"apiKey\"",
+ "schemes.sec0.x-bearer-format: \"bearer\"",
+ "schemes.sec0.x-default: \"APIKEY\"",
+ "security[]: {\"sec0\":[]}",
+ "servers[0]: {\"url\":\"https://api.baremetrics.com\"}"
+]

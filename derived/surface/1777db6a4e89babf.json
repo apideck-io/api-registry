@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"x-api-key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.textrequest.com/api/v3\"}"
+]

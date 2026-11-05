@@ -1,0 +1,23 @@
+[
+ "basePath: \"/api/v1.4\"",
+ "definitions.api_key.description: \"Provides access to specific public API endpoints which don't require user authorization. <br /><br /> NOTE: Some API endpoints behave differently when requests are made using api keys instead of oauth (because api key requests have no user associated with them).  Check the documentation for each endpoint for a description of the differences.\\n\"",
+ "definitions.api_key.in: \"query\"",
+ "definitions.api_key.name: \"api_key\"",
+ "definitions.api_key.type: \"apiKey\"",
+ "host: \"trashnothing.com\"",
+ "parameterizedHost: null",
+ "perOp: /groups get [{\"api_key\":[]}]",
+ "perOp: /groups/multiple get [{\"api_key\":[]}]",
+ "perOp: /groups/{group_id} get [{\"api_key\":[]}]",
+ "perOp: /posts get [{\"api_key\":[]}]",
+ "perOp: /posts/all get [{\"api_key\":[]}]",
+ "perOp: /posts/all/changes get [{\"api_key\":[]}]",
+ "perOp: /posts/multiple get [{\"api_key\":[]}]",
+ "perOp: /posts/search get [{\"api_key\":[]}]",
+ "perOp: /posts/{post_id} get [{\"api_key\":[]}]",
+ "perOp: /posts/{post_id}/display get [{\"api_key\":[]}]",
+ "perOp: /users/{user_id}/posts get [{\"api_key\":[]}]",
+ "perOp: /users/{user_id}/posts/search get [{\"api_key\":[]}]",
+ "schemes: [\"https\"]",
+ "security: null"
+]

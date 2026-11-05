@@ -1,0 +1,9 @@
+[
+ "basePath: \"/v2\"",
+ "definitions: null",
+ "host: \"api.test.osf.io\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.apiKeyHeader.in: \"header\"",
+ "schemes.apiKeyHeader.name: \"X-IBM-Client-Id\"",
+ "schemes.apiKeyHeader.type: \"apiKey\"",
+ "security[]: {\"apiKeyHeader\":[]}",
+ "servers[0]: {\"url\":\"https://connect.apptigent.com/api/utilities\"}"
+]

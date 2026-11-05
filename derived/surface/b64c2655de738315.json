@@ -1,0 +1,22 @@
+[
+ "perPath: /health get security []",
+ "perPath: /metrics get security []",
+ "perPath: /openapi get security []",
+ "perPath: /openapi.json get security []",
+ "perPath: /openapi.yaml get security []",
+ "schemes.jwtCookie.description: \"JWT in cookies. Set cookie \\\"__SESSION\\\": \\\"{jwt}\\\".\"",
+ "schemes.jwtCookie.in: \"cookie\"",
+ "schemes.jwtCookie.name: \"__SESSION\"",
+ "schemes.jwtCookie.type: \"apiKey\"",
+ "schemes.jwtHeader.bearerFormat: \"JWT\"",
+ "schemes.jwtHeader.description: \"JWT in header. Set header \\\"Authorization\\\": \\\"Bearer {jwt}\\\".\"",
+ "schemes.jwtHeader.scheme: \"bearer\"",
+ "schemes.jwtHeader.type: \"http\"",
+ "schemes.keyHeader.description: \"API key auth. Set header \\\"Api-Key\\\": \\\"{key}\\\".\"",
+ "schemes.keyHeader.in: \"header\"",
+ "schemes.keyHeader.name: \"Api-Key\"",
+ "schemes.keyHeader.type: \"apiKey\"",
+ "security[]: {\"jwtCookie\":[]}",
+ "security[]: {\"keyHeader\":[]}",
+ "servers[0]: {\"url\":\"https://api.browsercat.com\"}"
+]

@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.BearerAuth.bearerFormat: \"JWT\"",
+ "schemes.BearerAuth.description: \"Merchant-level authentication (https://developer.peachpayments.com/docs/checkout-js-authentication).\"",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Sandbox environment.\",\"url\":\"https://sandbox-reconciliation.ppay.io\"}",
+ "servers[1]: {\"description\":\"Live environment.\",\"url\":\"https://reconciliation.peachpayments.com\"}"
+]

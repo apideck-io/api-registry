@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.Bearer.in: \"header\"",
+ "schemes.Bearer.name: \"Authorization\"",
+ "schemes.Bearer.type: \"apiKey\"",
+ "security[]: {\"Bearer\":[]}",
+ "servers[0]: {\"url\":\"https://api.spotdraft.com/api\"}"
+]

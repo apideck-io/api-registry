@@ -1,0 +1,23 @@
+[
+ "perPath: /alerts delete security [{\"JWTAuthorizer\":[]}]",
+ "perPath: /alerts get security [{\"JWTAuthorizer\":[]}]",
+ "perPath: /alerts head security [{\"JWTAuthorizer\":[]}]",
+ "perPath: /alerts post security [{\"JWTAuthorizer\":[]}]",
+ "perPath: /alerts/{alert_id} delete security [{\"JWTAuthorizer\":[]}]",
+ "perPath: /alerts/{alert_id} get security [{\"JWTAuthorizer\":[]}]",
+ "perPath: /alerts/{alert_id} head security [{\"JWTAuthorizer\":[]}]",
+ "perPath: /decisions delete security [{\"JWTAuthorizer\":[]}]",
+ "perPath: /decisions head security [{\"APIKeyAuthorizer\":[]}]",
+ "perPath: /decisions/stream get security [{\"APIKeyAuthorizer\":[]}]",
+ "perPath: /decisions/stream head security [{\"APIKeyAuthorizer\":[]}]",
+ "perPath: /decisions/{decision_id} delete security [{\"JWTAuthorizer\":[]}]",
+ "schemes.APIKeyAuthorizer.in: \"header\"",
+ "schemes.APIKeyAuthorizer.name: \"X-Api-Key\"",
+ "schemes.APIKeyAuthorizer.type: \"apiKey\"",
+ "schemes.JWTAuthorizer.in: \"header\"",
+ "schemes.JWTAuthorizer.name: \"Authorization: Bearer\"",
+ "schemes.JWTAuthorizer.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://127.0.0.1/v1\"}",
+ "servers[1]: {\"url\":\"http://127.0.0.1/v1\"}"
+]

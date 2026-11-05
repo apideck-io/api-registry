@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-API-KEY\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://{subdomain}.pinpointhq.com\",\"variables\":{\"subdomain\":{\"default\":\"your-subdomain\",\"description\":\"Subdomain of the company making requests\"}}}"
+]

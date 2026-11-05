@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.api_key.in: \"header\"",
+ "schemes.api_key.name: \"X-API-KEY\"",
+ "schemes.api_key.type: \"apiKey\"",
+ "schemes.x-api-key.in: \"header\"",
+ "schemes.x-api-key.name: \"x-api-key\"",
+ "schemes.x-api-key.type: \"apiKey\"",
+ "security[]: {\"api_key\":[]}",
+ "servers[0]: {\"description\":\"Revenium Metering API (Production)\",\"url\":\"https://api.revenium.io/meter/v1/api\"}"
+]

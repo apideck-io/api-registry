@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.api_key.in: \"header\"",
+ "schemes.api_key.name: \"X-API-KEY\"",
+ "schemes.api_key.type: \"apiKey\"",
+ "security[]: {\"api_key\":[]}",
+ "servers[0]: {\"description\":\"Billingo API\",\"url\":\"https://api.billingo.hu/v3\"}"
+]

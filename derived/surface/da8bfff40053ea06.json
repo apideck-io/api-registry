@@ -1,0 +1,13 @@
+[
+ "perPath: /api/balance get [{\"description\":\"Ollama's cloud\",\"url\":\"https://ollama.com\"}]",
+ "perPath: /api/balance get security [{\"bearerAuth\":[]}]",
+ "perPath: /api/usage get [{\"description\":\"Ollama's cloud\",\"url\":\"https://ollama.com\"}]",
+ "perPath: /api/usage get security [{\"bearerAuth\":[]}]",
+ "perPath: /v1/systemone post [{\"description\":\"Ollama\",\"url\":\"http://localhost:11434\"},{\"description\":\"Ollama's cloud\",\"url\":\"https://ollama.com\"}]",
+ "perPath: /v1/systemone post security [{\"bearerAuth\":[]},{}]",
+ "schemes.bearerAuth.bearerFormat: \"API Key\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security: []",
+ "servers[0]: {\"description\":\"Ollama\",\"url\":\"http://localhost:11434\"}"
+]

@@ -1,0 +1,22 @@
+[
+ "perPath: /balances get security [{\"httpAuth\":[]}]",
+ "perPath: /currencies get security [{\"httpAuth\":[]}]",
+ "perPath: /merchant-info get security [{\"httpAuth\":[]}]",
+ "perPath: /payins/!availablePaymentOptions post security [{\"httpAuth\":[]}]",
+ "perPath: /payins/{idPayin} get security [{\"httpAuth\":[]}]",
+ "perPath: /payins/{idPayin} post security [{\"httpAuth\":[]}]",
+ "perPath: /payins/{idPayin}/!setExternalReference post security [{\"httpAuth\":[]}]",
+ "perPath: /payins/{idPayin}/accounts get security [{\"httpAuth\":[]}]",
+ "perPath: /payment-methods get security [{\"httpAuth\":[]}]",
+ "perPath: /payment-operators get security [{\"httpAuth\":[]}]",
+ "perPath: /payment-options get security [{\"httpAuth\":[]}]",
+ "perPath: /payouts/!availablePaymentOptions post security [{\"httpAuth\":[]}]",
+ "perPath: /payouts/{idPayout} get security [{\"httpAuth\":[]}]",
+ "perPath: /payouts/{idPayout} post security [{\"httpAuth\":[]}]",
+ "perPath: /segments get security [{\"httpAuth\":[]}]",
+ "schemes.httpAuth.scheme: \"bearer\"",
+ "schemes.httpAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"description\":\"Sandbox server (uses test data)\",\"url\":\"https://api.sandbox.echelonpay.com\"}",
+ "servers[1]: {\"description\":\"Live server (uses live data)\",\"url\":\"https://api.echelonpay.com\"}"
+]

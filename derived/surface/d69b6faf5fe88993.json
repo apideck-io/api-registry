@@ -1,0 +1,9 @@
+[
+ "basePath: \"/v1.57\"",
+ "definitions: null",
+ "host: null",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"http\",\"https\"]",
+ "security: null"
+]

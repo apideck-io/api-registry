@@ -94,6 +94,8 @@
  "perPath: /v2/profiles/{profileId}/methods/{methodId}/issuers/{issuerId} delete security [{\"advancedAccessToken\":[\"profiles.write\"]},{\"apiKey\":[]},{\"oAuth\":[\"profiles.write\"]}]",
  "perPath: /v2/profiles/{profileId}/methods/{methodId}/issuers/{issuerId} post security [{\"advancedAccessToken\":[\"profiles.write\"]},{\"apiKey\":[]},{\"oAuth\":[\"profiles.write\"]}]",
  "perPath: /v2/refunds get security [{\"advancedAccessToken\":[\"refunds.read\"]},{\"apiKey\":[]},{\"oAuth\":[\"refunds.read\"]}]",
+ "perPath: /v2/reports post security [{\"advancedAccessToken\":[\"reports.write\"]}]",
+ "perPath: /v2/reports/{reportId} get security [{\"advancedAccessToken\":[\"reports.read\"]}]",
  "perPath: /v2/sales-invoices get security [{\"advancedAccessToken\":[\"sales-invoices.read\"]},{\"apiKey\":[]},{\"oAuth\":[\"sales-invoices.read\"]}]",
  "perPath: /v2/sales-invoices post security [{\"advancedAccessToken\":[\"sales-invoices.write\"]},{\"apiKey\":[]},{\"oAuth\":[\"sales-invoices.write\"]}]",
  "perPath: /v2/sales-invoices/{salesInvoiceId} delete security [{\"advancedAccessToken\":[\"sales-invoices.write\"]},{\"apiKey\":[]},{\"oAuth\":[\"sales-invoices.write\"]}]",

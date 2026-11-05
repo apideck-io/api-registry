@@ -1,0 +1,10 @@
+[
+ "perPath: /versions/{versionId}/import put security [{\"Authorization\":[]}]",
+ "perPath: /versions/{versionId}/publish post security [{\"Authorization\":[]}]",
+ "perPath: /versions/{versionId}/unpublish put security [{\"Authorization\":[]}]",
+ "schemes.Authorization.in: \"header\"",
+ "schemes.Authorization.name: \"Authorization\"",
+ "schemes.Authorization.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.stoplight.io/v1\"}"
+]

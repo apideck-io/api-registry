@@ -1,0 +1,9 @@
+[
+ "basePath: \"/infiniteloopltd/CarRegistration/1.0.0\"",
+ "definitions: null",
+ "host: \"virtserver.swaggerhub.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\"]",
+ "security: null"
+]

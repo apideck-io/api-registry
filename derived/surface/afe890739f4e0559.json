@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.JSONWebTokenAuth.bearerFormat: \"JWT\"",
+ "schemes.JSONWebTokenAuth.description: \"JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret (with the HMAC algorithm) or a public/private key pair using RSA or ECDSA. For more information about JSON Web Tokens check [jwt.io](https://jwt.io).\\n\"",
+ "schemes.JSONWebTokenAuth.scheme: \"bearer\"",
+ "schemes.JSONWebTokenAuth.type: \"http\"",
+ "security[]: {\"JSONWebTokenAuth\":[]}",
+ "servers[0]: {\"url\":\"https://us1.pdfgeneratorapi.com/api/v3\"}"
+]

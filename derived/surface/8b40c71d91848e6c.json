@@ -1,0 +1,9 @@
+[
+ "perPath: []",
+ "schemes.Token.description: \"You must authenticate your requests by including your API key in each request header as described below.\\n\\nRequests should include a header named `Authorization`, with the value `App {MY_API_KEY}`. Note the single space in the header value.\\n\\nExample: `Authorization: App MY_API_KEY`\\n\\n[Learn more about generating your key](https://developer.leaflink.com/brands/api/getting-started/)\\n\\n**Legacy API keys:** If you are not using an Application API key, your authorization header should include the string `Token` and access will be scoped to all companies under which the user exists as a companystaff.\\n\\nExample: `Authorization: Token MY_API_KEY`\\n\"",
+ "schemes.Token.in: \"header\"",
+ "schemes.Token.name: \"Authorization\"",
+ "schemes.Token.type: \"apiKey\"",
+ "security[]: {\"Token\":[]}",
+ "servers[0]: {\"url\":\"https://www.leaflink.com/api/v2\"}"
+]

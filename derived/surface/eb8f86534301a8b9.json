@@ -1,0 +1,21 @@
+[
+ "perPath: /v1/indices/candles/{resolution}/{symbol} get security [{\"Api Authentication\":[]},{}]",
+ "perPath: /v1/indices/quotes/{symbol} get security [{\"Api Authentication\":[]},{}]",
+ "perPath: /v1/markets/status get security [{\"Api Authentication\":[]},{}]",
+ "perPath: /v1/options/chain/{underlying} get security [{\"Api Authentication\":[]},{}]",
+ "perPath: /v1/options/expirations/{underlying} get security [{\"Api Authentication\":[]},{}]",
+ "perPath: /v1/options/lookup/{userInput} get security [{\"Api Authentication\":[]},{}]",
+ "perPath: /v1/options/quotes/{optionSymbol} get security [{\"Api Authentication\":[]},{}]",
+ "perPath: /v1/options/strikes/{underlying} get security [{\"Api Authentication\":[]},{}]",
+ "perPath: /v1/stocks/bulkcandles/{resolution} get security [{\"Api Authentication\":[]},{}]",
+ "perPath: /v1/stocks/bulkquotes get security [{\"Api Authentication\":[]},{}]",
+ "perPath: /v1/stocks/candles/{resolution}/{symbol} get security [{\"Api Authentication\":[]},{}]",
+ "perPath: /v1/stocks/earnings/{symbol} get security [{\"Api Authentication\":[]},{}]",
+ "perPath: /v1/stocks/news/{symbol} get security [{\"Api Authentication\":[]},{}]",
+ "perPath: /v1/stocks/quotes/{symbol} get security [{\"Api Authentication\":[]},{}]",
+ "schemes.[\"Api Authentication\"].in: \"query\"",
+ "schemes.[\"Api Authentication\"].name: \"token\"",
+ "schemes.[\"Api Authentication\"].type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://api.marketdata.app\"}"
+]

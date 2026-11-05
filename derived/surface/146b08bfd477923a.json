@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"X-ACCESS-TOKEN\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"description\":\"Our production API url.\",\"url\":\"https://api.fountain.com\"}"
+]

@@ -1,0 +1,15 @@
+[
+ "perPath: /api/partner/consumers post security [{}]",
+ "perPath: /api/partner/corporates post security [{}]",
+ "perPath: /api/partner/docs/terms get security [{}]",
+ "perPath: /api/partner/login post security [{}]",
+ "perPath: /api/partner/passwords/change post security [{}]",
+ "perPath: /api/partner/passwords/reset post security [{}]",
+ "perPath: /api/partner/refresh post security [{}]",
+ "perPath: /api/partner/web-page/{pageId} get security [{}]",
+ "schemes.Linkcy-Auth.bearerFormat: \"JWT\"",
+ "schemes.Linkcy-Auth.scheme: \"bearer\"",
+ "schemes.Linkcy-Auth.type: \"http\"",
+ "security[]: {\"Linkcy-Auth\":[]}",
+ "servers[0]: {\"description\":\"Generated server url\",\"url\":\"https://api.sandbox.linkcy.cloud\"}"
+]

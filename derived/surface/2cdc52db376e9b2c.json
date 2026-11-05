@@ -1,0 +1,10 @@
+[
+ "perPath: []",
+ "schemes.apiKey.description: \"We use SSL to transmit data from client to our service. You must authenticate client with provided API key passed as parameter in query string. [Don't have API key?](mailto:support@30k.com)\\n\\n#### URL example\\n\\n```https://milefy-api.30k.com/travelers?apiKey=eW91cmxvZ2luOnlvd```\\n\"",
+ "schemes.apiKey.in: \"query\"",
+ "schemes.apiKey.name: \"apiKey\"",
+ "schemes.apiKey.type: \"apiKey\"",
+ "security[]: {\"apiKey\":[]}",
+ "servers[0]: {\"description\":\"Production environment\",\"url\":\"milefy-api.30k.com\"}",
+ "servers[1]: {\"description\":\"Testing environment\",\"url\":\"milefy-api-test.30k.com\"}"
+]

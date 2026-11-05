@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.BearerAuth.scheme: \"bearer\"",
+ "schemes.BearerAuth.type: \"http\"",
+ "security[]: {\"BearerAuth\":[]}",
+ "servers[0]: {\"description\":\"ClickFunnels API\",\"url\":\"https://{subdomain}.myclickfunnels.com/api/v2\",\"variables\":{\"subdomain\":{\"default\":\"myworkspace\"}}}"
+]

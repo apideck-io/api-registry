@@ -1,0 +1,18 @@
+[
+ "perPath: /archive/delete get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /archive/delete/network get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /archive/export get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /archive/list get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /area post security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /clutter/add post security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /interference get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /mesh get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /network get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /path post security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /points post security [{\"ApiKeyAuth\":[]}]",
+ "schemes.ApiKeyAuth.in: \"header\"",
+ "schemes.ApiKeyAuth.name: \"key\"",
+ "schemes.ApiKeyAuth.type: \"apiKey\"",
+ "security[]: {\"ApiKeyAuth\":[]}",
+ "servers[0]: {\"url\":\"https://api.cloudrf.com\"}"
+]

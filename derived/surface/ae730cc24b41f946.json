@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes.api_key.scheme: \"basic\"",
+ "schemes.api_key.type: \"http\"",
+ "security[]: {\"api_key\":[]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.dots.dev/api\"}"
+]

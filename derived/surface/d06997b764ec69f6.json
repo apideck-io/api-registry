@@ -1,0 +1,8 @@
+[
+ "perPath: /stats/mounts/{mount}/auth-cache/reload post security [{\"basicAuth\":[]}]",
+ "perPath: /stats/mounts/{mount}/auth-cache/reload/all post security [{\"basicAuth\":[]}]",
+ "perPath: /stats/mounts/{mount}/live/total get security [{\"basicAuth\":[]}]",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"Generated server url\",\"url\":\"https://api.zeno.fm\"}"
+]

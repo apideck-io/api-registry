@@ -1,0 +1,9 @@
+[
+ "basePath: \"/v1\"",
+ "definitions.HTTP_BASIC.type: \"basic\"",
+ "host: \"example.com:80\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"http\"]",
+ "security: null"
+]

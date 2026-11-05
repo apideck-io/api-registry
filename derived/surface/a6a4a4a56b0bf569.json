@@ -1,0 +1,8 @@
+[
+ "perPath: /gladly/webhook * [{\"description\":\"Web service hosted on your servers should be reachable from the Gladly cluster\",\"url\":\"https://gateway.organization.com\"}]",
+ "schemes.BasicAuth.description: \"Gladly API uses token-based **Basic Authentication**. API tokens are associated with designated Gladly users.\\nTo create and use an API token, your user must have the API User permission. An API token can be used to perform any API request without restriction.\\n\\n| user name   | password  |\\n| ----------- | --------- |\\n| agent email | API token |\\n\\nThe credentials must be passed via an `Authorization` HTTP header. All requests must be made over HTTPS.\\n\\n```shell\\ncurl -u user@organization.com:$GLADLY_API_TOKEN \\\\\\nhttps://organization.gladly.com/api/v1/organization\\n```\\n\"",
+ "schemes.BasicAuth.scheme: \"basic\"",
+ "schemes.BasicAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"https://organization.gladly.com\"}"
+]

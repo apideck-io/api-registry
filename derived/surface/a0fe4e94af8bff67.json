@@ -1,0 +1,14 @@
+[
+ "perPath: /aggregation/v2/partners/authentication post security [{\"FinicityAppKey\":[]}]",
+ "perPath: /aggregation/v2/partners/authentication put security [{\"FinicityAppKey\":[]}]",
+ "schemes.FinicityAppKey.description: \"The \\\"Finicity-App-Key\\\" from the developer dashboard\"",
+ "schemes.FinicityAppKey.in: \"header\"",
+ "schemes.FinicityAppKey.name: \"Finicity-App-Key\"",
+ "schemes.FinicityAppKey.type: \"apiKey\"",
+ "schemes.FinicityAppToken.description: \"A token returned by the `/authentication` API\"",
+ "schemes.FinicityAppToken.in: \"header\"",
+ "schemes.FinicityAppToken.name: \"Finicity-App-Token\"",
+ "schemes.FinicityAppToken.type: \"apiKey\"",
+ "security[]: {\"FinicityAppKey\":[],\"FinicityAppToken\":[]}",
+ "servers[0]: {\"description\":\"Production\",\"url\":\"https://api.finicity.com\"}"
+]

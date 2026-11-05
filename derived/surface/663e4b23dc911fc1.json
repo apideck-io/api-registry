@@ -1,0 +1,8 @@
+[
+ "perPath: []",
+ "schemes.bearerAuth.bearerFormat: \"JWT\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[\"adr:banking:read\"]}",
+ "servers[0]: {\"url\":\"https://cdr-insights-prod.api.adatree.com.au\"}"
+]

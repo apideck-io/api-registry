@@ -1,0 +1,11 @@
+[
+ "perPath: []",
+ "schemes.API_Key.in: \"header\"",
+ "schemes.API_Key.name: \"x-api-key\"",
+ "schemes.API_Key.type: \"apiKey\"",
+ "schemes.Bearer.in: \"header\"",
+ "schemes.Bearer.name: \"Authorization\"",
+ "schemes.Bearer.type: \"apiKey\"",
+ "security[]: {\"API_Key\":[],\"Bearer\":[]}",
+ "servers[0]: {\"url\":\"https://api.golioth.io\"}"
+]

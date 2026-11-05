@@ -1,0 +1,12 @@
+[
+ "perPath: /uploads post security [{\"apikey\":[]}]",
+ "perPath: /uploads/report post security [{\"apikey\":[]}]",
+ "perPath: /uploads/{id} get security [{\"apikey\":[]}]",
+ "perPath: /uploads/{id}/download get security [{\"apikey\":[]}]",
+ "schemes.apikey.in: \"header\"",
+ "schemes.apikey.name: \"apikey\"",
+ "schemes.apikey.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"VA.gov API sandbox environment\",\"url\":\"https://sandbox-api.va.gov/services/vba_documents/{version}\",\"variables\":{\"version\":{\"default\":\"v1\"}}}",
+ "servers[1]: {\"description\":\"VA.gov API production environment\",\"url\":\"https://api.va.gov/services/vba_documents/{version}\",\"variables\":{\"version\":{\"default\":\"v1\"}}}"
+]

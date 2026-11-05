@@ -1,0 +1,9 @@
+[
+ "basePath: \"/api/\"",
+ "definitions: null",
+ "host: null",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: null",
+ "security: null"
+]

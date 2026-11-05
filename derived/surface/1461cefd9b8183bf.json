@@ -1,0 +1,11 @@
+[
+ "perPath: /barcode/decode post security [{\"bearerAuth\":[]}]",
+ "perPath: /barcode/decode/types get security [{\"bearerAuth\":[]}]",
+ "perPath: /barcode/encode get security [{\"bearerAuth\":[]}]",
+ "perPath: /barcode/encode/types get security [{\"bearerAuth\":[]}]",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security: null",
+ "servers[0]: {\"url\":\"http://api.fungenerators.com\"}",
+ "servers[1]: {\"url\":\"https://api.fungenerators.com\"}"
+]

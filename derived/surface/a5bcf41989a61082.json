@@ -1,0 +1,14 @@
+[
+ "perPath: []",
+ "schemes.basicAuth.description: \"Basic HTTP authentication. Allowed headers:\\n* `Authorization: Basic <base64 encoding of api_key>:`\\n* `Authorization: Basic <api_key>`\"",
+ "schemes.basicAuth.scheme: \"basic\"",
+ "schemes.basicAuth.type: \"http\"",
+ "schemes.bearerAuth.description: \"Bearer HTTP authentication. Allowed headers:\\n* `Authorization: Bearer <api_key>`\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"basicAuth\":[]}",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://cloud.lambda.com/\"}",
+ "servers[1]: {\"description\":\"Secondary production server (deprecated)\",\"url\":\"https://cloud.lambda.ai/\"}",
+ "servers[2]: {\"description\":\"Tertiary production server (deprecated)\",\"url\":\"https://cloud.lambdalabs.com/\"}"
+]

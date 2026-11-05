@@ -1,0 +1,9 @@
+[
+ "basePath: \"/v1\"",
+ "definitions.usertoken.type: \"basic\"",
+ "host: \"api.tvmaze.com\"",
+ "parameterizedHost: null",
+ "perOp: []",
+ "schemes: [\"https\",\"http\"]",
+ "security[]: {\"usertoken\":[]}"
+]
