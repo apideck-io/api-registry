@@ -1,0 +1,8 @@
+id: digitalnz
+name: DigitalNZ
+apideck: false
+specs:
+- name: DigitalNZ API
+  url: https://api.swaggerhub.com/apis/DigitalNZ/Records/3
+  format: openapi-3.0
+  provenance: vendor

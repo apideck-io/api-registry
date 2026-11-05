@@ -1,0 +1,8 @@
+id: immich
+name: Immich
+apideck: false
+specs:
+- name: Immich
+  url: https://raw.githubusercontent.com/immich-app/immich/main/open-api/immich-openapi-specs.json
+  format: openapi-3.0
+  provenance: vendor

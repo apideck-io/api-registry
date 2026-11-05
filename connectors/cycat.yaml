@@ -1,0 +1,8 @@
+id: cycat
+name: CyCAT.org
+apideck: false
+specs:
+- name: CyCAT.org API
+  url: https://api.cycat.org/swagger.json
+  format: swagger-2.0
+  provenance: vendor

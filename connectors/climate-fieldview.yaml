@@ -1,0 +1,8 @@
+id: climate-fieldview
+name: Climate FieldView Platform APIs
+apideck: false
+specs:
+- name: Climate FieldView Platform APIs
+  url: https://dev.fieldview.com/openapi/platform.yaml
+  format: openapi-3.0
+  provenance: vendor

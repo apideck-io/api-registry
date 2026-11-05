@@ -1,0 +1,8 @@
+id: chomp
+name: Chomp Food Database API Documentation
+apideck: false
+specs:
+- name: Chomp Food Database API Documentation
+  url: https://raw.githubusercontent.com/chompfoods/examples/master/chomp-Chomp-1.0.0-oas3-swagger.json
+  format: openapi-3.0
+  provenance: vendor

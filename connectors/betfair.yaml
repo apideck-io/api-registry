@@ -1,0 +1,9 @@
+id: betfair
+name: 'Betfair: Exchange Streaming'
+apideck: false
+specs:
+- name: 'Betfair: Exchange Streaming API'
+  url: https://raw.githubusercontent.com/betfair/stream-api-sample-code/master/ESASwaggerSchema.json
+  format: swagger-2.0
+  provenance: vendor
+  notes: Published sample schema for the Exchange Streaming API; this is not a complete REST API specification.

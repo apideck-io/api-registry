@@ -1,0 +1,8 @@
+id: files-com
+name: Files.com
+apideck: false
+specs:
+- name: Files.com API
+  url: https://app.files.com/api/rest/v1/swagger_doc.json
+  format: swagger-2.0
+  provenance: vendor

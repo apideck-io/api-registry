@@ -1,0 +1,10 @@
+id: forgejo
+name: Forgejo
+apideck: false
+specs:
+- name: Forgejo
+  url: https://codeberg.org/swagger.v1.json
+  format: swagger-2.0
+  provenance: third-party
+  notes: Rendered API document from the Codeberg Forgejo deployment. Its version and server configuration describe that instance,
+    not all Forgejo installations.

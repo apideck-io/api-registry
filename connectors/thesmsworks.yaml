@@ -1,0 +1,10 @@
+id: thesmsworks
+name: The SMS Works
+apideck: false
+specs:
+- name: The SMS Works API
+  url: https://api.apis.guru/v2/specs/thesmsworks.co.uk/1.8.0/swagger.json
+  format: swagger-2.0
+  provenance: community
+  notes: APIs.guru community-maintained specification. Confirm current API coverage against the vendor documentation before
+    integration.

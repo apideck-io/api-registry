@@ -1,0 +1,10 @@
+id: datumbox
+name: Datumbox
+apideck: false
+specs:
+- name: Datumbox API
+  url: https://api.apis.guru/v2/specs/datumbox.com/1.0/openapi.json
+  format: openapi-3.0
+  provenance: community
+  notes: APIs.guru community-maintained specification. Confirm current API coverage against the vendor documentation before
+    integration.

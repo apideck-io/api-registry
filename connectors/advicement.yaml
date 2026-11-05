@@ -1,0 +1,8 @@
+id: advicement
+name: Advicement DynamicDocs
+apideck: false
+specs:
+- name: Advicement DynamicDocs
+  url: https://advicement.io/open_api_spec/dynamicdocs.json
+  format: openapi-3.0
+  provenance: vendor

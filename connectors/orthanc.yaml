@@ -1,0 +1,8 @@
+id: orthanc
+name: Orthanc
+apideck: false
+specs:
+- name: Orthanc API
+  url: https://orthanc.uclouvain.be/api/orthanc-openapi.json
+  format: openapi-3.0
+  provenance: vendor

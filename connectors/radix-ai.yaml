@@ -1,0 +1,8 @@
+id: radix-ai
+name: Radix AI
+apideck: false
+specs:
+- name: Radix API
+  url: https://api.talentapi.com/openapi.json
+  format: openapi-3.1
+  provenance: vendor

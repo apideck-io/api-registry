@@ -1,0 +1,8 @@
+id: randommer
+name: Randommer
+apideck: false
+specs:
+- name: Randommer API
+  url: https://randommer.io/api/docs/v1/swagger.json
+  format: openapi-3.0
+  provenance: vendor

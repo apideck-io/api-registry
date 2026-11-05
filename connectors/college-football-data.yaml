@@ -1,0 +1,8 @@
+id: college-football-data
+name: College Football Data
+apideck: false
+specs:
+- name: College Football Data API
+  url: https://api.collegefootballdata.com/api-docs.json
+  format: openapi-3.0
+  provenance: vendor

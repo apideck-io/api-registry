@@ -1,0 +1,8 @@
+id: lithic
+name: Lithic
+apideck: false
+specs:
+- name: Lithic API
+  url: https://raw.githubusercontent.com/lithic-com/lithic-openapi/master/lithic-openapi.yml
+  format: openapi-3.1
+  provenance: vendor

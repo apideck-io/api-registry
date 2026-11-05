@@ -1,0 +1,8 @@
+id: authentik
+name: Authentik
+apideck: false
+specs:
+- name: Authentik
+  url: https://raw.githubusercontent.com/goauthentik/authentik/main/schema.yml
+  format: openapi-3.0
+  provenance: vendor

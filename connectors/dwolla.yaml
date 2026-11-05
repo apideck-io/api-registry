@@ -1,0 +1,8 @@
+id: dwolla
+name: Dwolla
+apideck: false
+specs:
+- name: Dwolla API
+  url: https://raw.githubusercontent.com/Dwolla/dwolla-openapi/master/openapi.yml
+  format: openapi-3.1
+  provenance: vendor

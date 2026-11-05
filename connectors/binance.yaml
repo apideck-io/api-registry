@@ -1,0 +1,8 @@
+id: binance
+name: Binance
+apideck: false
+specs:
+- name: Binance
+  url: https://raw.githubusercontent.com/binance/binance-api-swagger/master/spot_api.yaml
+  format: openapi-3.0
+  provenance: vendor

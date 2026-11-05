@@ -1,0 +1,9 @@
+id: kill-bill
+name: Kill Bill
+apideck: false
+specs:
+- name: Kill Bill API
+  url: https://raw.githubusercontent.com/killbill/slate/master/swagger/api.json
+  format: swagger-2.0
+  provenance: vendor
+  notes: The published source omits required info metadata; the registry reports that source warning.

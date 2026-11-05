@@ -1,0 +1,10 @@
+id: hm-land-registry
+name: HM Land Registry
+apideck: false
+specs:
+- name: Deed API
+  url: https://raw.githubusercontent.com/LandRegistry/dm-deed-api/master/application/deed/schemas/deed-api.json
+  format: swagger-2.0
+  provenance: vendor
+  notes: Published deed service schema; historical API surface. Availability of the document does not establish current service
+    access.

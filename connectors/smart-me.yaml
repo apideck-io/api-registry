@@ -1,0 +1,10 @@
+id: smart-me
+name: smart-me
+apideck: false
+specs:
+- name: smart-me API
+  url: https://api.apis.guru/v2/specs/smart-me.com/v1/openapi.json
+  format: openapi-3.0
+  provenance: community
+  notes: APIs.guru community-maintained specification. Confirm current API coverage against the vendor documentation before
+    integration.

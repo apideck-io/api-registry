@@ -1,0 +1,8 @@
+id: car-registration
+name: Car Registration
+apideck: false
+specs:
+- name: Car Registration API
+  url: https://api.swaggerhub.com/apis/infiniteloopltd/CarRegistration/1.0.0
+  format: swagger-2.0
+  provenance: vendor

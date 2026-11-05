@@ -1,0 +1,8 @@
+id: suprsend
+name: SuprSend
+apideck: false
+specs:
+- name: SuprSend API
+  url: https://docs.suprsend.com/openapi.yaml
+  format: openapi-3.1
+  provenance: vendor

@@ -1,0 +1,11 @@
+id: procurify
+name: Procurify
+apideck: false
+specs:
+- name: Procurify API
+  url: https://raw.githubusercontent.com/konfig-sdks/openapi-examples/main/procurify/openapi.yaml
+  format: openapi-3.0
+  provenance: third-party
+  notes: Konfig-maintained specification snapshot. This is a third-party source, not a claim of current vendor publication.
+    Confirm current API coverage before integration. The published source omits required info metadata; the registry reports
+    that source warning.

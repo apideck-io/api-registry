@@ -1,0 +1,8 @@
+id: linode
+name: Linode
+apideck: false
+specs:
+- name: Linode
+  url: https://raw.githubusercontent.com/linode/linode-api-docs/development/openapi.json
+  format: openapi-3.0
+  provenance: vendor

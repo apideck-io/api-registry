@@ -1,0 +1,8 @@
+id: chaingateway
+name: Chaingateway
+apideck: false
+specs:
+- name: Chaingateway API
+  url: https://chaingateway.io/openapi.yaml
+  format: openapi-3.0
+  provenance: vendor

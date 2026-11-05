@@ -1,0 +1,10 @@
+id: rivery-io
+name: Rivery
+apideck: false
+specs:
+- name: Boomi Data Integration API (formerly Rivery)
+  url: https://api.rivery.io/openapi.json
+  format: openapi-3.1
+  provenance: vendor
+  notes: 'Rivery is now Boomi Data Integration, the same product under a new name: https://boomi.com/rivery-is-now-boomi-data-integration/.
+    This source is still served on api.rivery.io; it does not describe the separate Boomi platform API.'

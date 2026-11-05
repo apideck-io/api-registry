@@ -1,0 +1,10 @@
+id: httpbin
+name: httpbin
+apideck: false
+specs:
+- name: httpbin
+  url: https://httpbin.org/spec.json
+  format: swagger-2.0
+  provenance: vendor
+  notes: Public HTTP request/response testing and echo service. The source omits info.version; the registry retains that source
+    metadata warning rather than inventing a version.

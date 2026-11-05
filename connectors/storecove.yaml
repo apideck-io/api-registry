@@ -1,0 +1,10 @@
+id: storecove
+name: Storecove
+apideck: false
+specs:
+- name: Storecove API
+  url: https://api.apis.guru/v2/specs/storecove.com/2.0.1/openapi.json
+  format: openapi-3.0
+  provenance: community
+  notes: APIs.guru community-maintained specification. Confirm current API coverage against the vendor documentation before
+    integration.

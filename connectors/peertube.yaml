@@ -1,0 +1,8 @@
+id: peertube
+name: PeerTube
+apideck: false
+specs:
+- name: PeerTube
+  url: https://raw.githubusercontent.com/Chocobozzz/PeerTube/develop/support/doc/api/openapi.yaml
+  format: openapi-3.0
+  provenance: vendor

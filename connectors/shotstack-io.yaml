@@ -1,0 +1,10 @@
+id: shotstack-io
+name: Shotstack
+apideck: false
+specs:
+- name: Shotstack API
+  url: https://api.apis.guru/v2/specs/shotstack.io/v1/openapi.json
+  format: openapi-3.0
+  provenance: community
+  notes: APIs.guru community-maintained specification. Confirm current API coverage against the vendor documentation before
+    integration.

@@ -1,0 +1,10 @@
+id: rebilly
+name: Rebilly
+apideck: false
+specs:
+- name: Rebilly API
+  url: https://api.apis.guru/v2/specs/rebilly.com/2.1/openapi.json
+  format: openapi-3.0
+  provenance: community
+  notes: APIs.guru community-maintained specification. Confirm current API coverage against the vendor documentation before
+    integration.

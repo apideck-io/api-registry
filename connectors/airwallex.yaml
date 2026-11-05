@@ -1,0 +1,8 @@
+id: airwallex
+name: Airwallex
+apideck: false
+specs:
+- name: Airwallex API
+  url: https://raw.githubusercontent.com/airwallex/airwallex-openapi/main/openapi/client-api/latest/airwallex-openapi-latest.json
+  format: openapi-3.1
+  provenance: vendor

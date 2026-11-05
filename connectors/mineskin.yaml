@@ -1,0 +1,8 @@
+id: mineskin
+name: MineSkin
+apideck: false
+specs:
+- name: MineSkin API
+  url: https://api.mineskin.org/openapi.yml
+  format: openapi-3.0
+  provenance: vendor

@@ -1,0 +1,10 @@
+id: contract-p
+name: Contract.fit
+apideck: false
+specs:
+- name: Contract.fit API
+  url: https://api.apis.guru/v2/specs/contract-p.fit/1.0/openapi.json
+  format: openapi-3.0
+  provenance: community
+  notes: APIs.guru community-maintained specification. Confirm current API coverage against the vendor documentation before
+    integration.

@@ -1,0 +1,8 @@
+id: planetscale
+name: PlanetScale
+apideck: false
+specs:
+- name: PlanetScale
+  url: https://api.planetscale.com/v1/openapi-spec
+  format: swagger-2.0
+  provenance: vendor

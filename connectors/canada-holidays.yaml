@@ -1,0 +1,8 @@
+id: canada-holidays
+name: Canada Holidays
+apideck: false
+specs:
+- name: Canada Holidays API
+  url: https://api.swaggerhub.com/apis/pcraig3/canada-holidays/1.8.0
+  format: openapi-3.0
+  provenance: community

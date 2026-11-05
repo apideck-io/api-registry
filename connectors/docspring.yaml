@@ -1,0 +1,8 @@
+id: docspring
+name: DocSpring
+apideck: false
+specs:
+- name: DocSpring
+  url: https://docspring.com/api-docs/v1/openapi.json
+  format: swagger-2.0
+  provenance: vendor

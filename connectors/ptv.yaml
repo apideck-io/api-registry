@@ -1,0 +1,8 @@
+id: ptv
+name: PTV Timetable API - Version 3
+apideck: false
+specs:
+- name: PTV Timetable API - Version 3
+  url: https://timetableapi.ptv.vic.gov.au/swagger/docs/v3
+  format: swagger-2.0
+  provenance: vendor

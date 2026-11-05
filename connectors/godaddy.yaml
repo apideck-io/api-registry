@@ -1,0 +1,12 @@
+id: godaddy
+name: GoDaddy
+apideck: false
+specs:
+- name: GoDaddy Domains API
+  url: https://raw.githubusercontent.com/konfig-sdks/openapi-examples/main/godaddy/domains/openapi.yaml
+  format: openapi-3.0
+  provenance: third-party
+  notes: 'Konfig-maintained specification snapshot. This is a third-party source, not a claim of current vendor publication.
+    Confirm current API coverage before integration. The source has no info.title; the local verifier reported this metadata
+    warning on 2026-11-05. The nightly index has not yet published this entry. Scope: GoDaddy Domains API only; this document
+    does not claim coverage of every product or API from the provider.'

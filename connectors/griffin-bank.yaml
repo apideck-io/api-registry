@@ -1,0 +1,11 @@
+id: griffin-bank
+name: Griffin
+apideck: false
+specs:
+- name: Griffin API
+  url: https://raw.githubusercontent.com/konfig-sdks/openapi-examples/main/griffin/openapi.yaml
+  format: openapi-3.0
+  provenance: third-party
+  notes: Konfig-maintained specification snapshot. This is a third-party source, not a claim of current vendor publication.
+    Confirm current API coverage before integration. The source has no info.version; the local verifier reported this metadata
+    warning on 2026-11-05. The nightly index has not yet published this entry.

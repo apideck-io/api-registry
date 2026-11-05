@@ -1,0 +1,8 @@
+id: cisco-meraki
+name: Cisco Meraki
+apideck: false
+specs:
+- name: Cisco Meraki Dashboard API
+  url: https://raw.githubusercontent.com/meraki/openapi/master/openapi/spec3.json
+  format: openapi-3.0
+  provenance: vendor

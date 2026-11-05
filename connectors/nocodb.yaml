@@ -1,0 +1,10 @@
+id: nocodb
+name: NocoDB
+apideck: false
+specs:
+- name: NocoDB API
+  url: https://raw.githubusercontent.com/konfig-sdks/openapi-examples/main/nocodb/openapi.yaml
+  format: openapi-3.0
+  provenance: third-party
+  notes: Konfig-maintained specification snapshot. Confirm current API coverage against https://docs.nocodb.com before integration.
+    The published source omits required info metadata; the registry reports that source warning.

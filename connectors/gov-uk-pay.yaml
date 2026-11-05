@@ -1,0 +1,8 @@
+id: gov-uk-pay
+name: GOV.UK Pay
+apideck: false
+specs:
+- name: GOV.UK Pay API
+  url: https://raw.githubusercontent.com/alphagov/pay-publicapi/master/swagger/swagger.json
+  format: swagger-2.0
+  provenance: vendor

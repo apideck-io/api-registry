@@ -1,0 +1,10 @@
+id: netlicensing
+name: Labs64 NetLicensing
+apideck: false
+specs:
+- name: Labs64 NetLicensing API
+  url: https://api.apis.guru/v2/specs/netlicensing.io/2.x/openapi.json
+  format: openapi-3.0
+  provenance: community
+  notes: APIs.guru community-maintained specification. Confirm current API coverage against the vendor documentation before
+    integration.

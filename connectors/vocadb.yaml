@@ -1,0 +1,8 @@
+id: vocadb
+name: VocaDbWeb
+apideck: false
+specs:
+- name: VocaDbWeb
+  url: https://vocadb.net/swagger/v1/swagger.json
+  format: openapi-3.0
+  provenance: vendor

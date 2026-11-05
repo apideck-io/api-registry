@@ -1,0 +1,8 @@
+id: debian-code-search
+name: Debian Code Search
+apideck: false
+specs:
+- name: Debian Code Search
+  url: https://codesearch.debian.net/openapi.yaml
+  format: openapi-3.0
+  provenance: vendor

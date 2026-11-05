@@ -1,0 +1,8 @@
+id: circl-hashlookup
+name: hashlookup CIRCL
+apideck: false
+specs:
+- name: hashlookup CIRCL API
+  url: https://hashlookup.circl.lu/swagger.json
+  format: swagger-2.0
+  provenance: vendor
