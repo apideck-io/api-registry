@@ -795,6 +795,7 @@ for (const e of entries) {
             lastRows.filter((r) => !now.has(r)),
             rows.filter((r) => !was.has(r)),
             lastRows,
+            bundle ? Object.keys(detail) : null,
           );
         }
       }
@@ -924,7 +925,7 @@ for (const e of entries) {
       (info.specIssues ? ` ⚠ spec: ${info.specIssues}` : "") +
       (s.volatile && !parsedForHash ? " ⚠ volatile: didn't parse, so hashed as served" : "") +
       (surfaceChanged && !surfaceRoutine ? " ⚠ surface: servers or authentication changed" : "") +
-      (surfaceChanged && surfaceRoutine ? " ⚠ scopes: only operations' own security requirements changed (listed, not held)" : "") +
+      (surfaceChanged && surfaceRoutine ? " ⚠ scopes: only operations' own security requirements or declared OAuth scopes changed, using schemes already there (listed, not held)" : "") +
       (surfaceNew ? " ⚠ surface: first check of its servers and authentication" : "") +
       (suspiciousNew ? ` ⚠ text: reads like instructions to an AI (${info.suspicious.map((x) => JSON.stringify(x)).join("; ")})` : "");
     console.log(`${mark} ${e.id} · ${s.name}: ${info.operations ?? "?"} operations${stale}`);

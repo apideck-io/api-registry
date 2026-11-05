@@ -349,66 +349,159 @@ const OP_METHODS = "get|put|post|delete|options|head|patch|trace|query";
 // The path is one token: bare, or a JSON string when it holds a space (surfaceRows quotes those), so a path can't
 // carry " get security [" into a server row. The requirement must be a JSON array that ends the row.
 const PATH_TOKEN = String.raw`("(?:[^"\\]|\\.)*"|[^\s"]+)`;
-const OPENAPI_SCOPE = new RegExp(`^perPath: ${PATH_TOKEN} (?:${OP_METHODS}) security (\\[.*\\])$`);
-const SWAGGER_SCOPE = new RegExp(`^perOp: ${PATH_TOKEN} (?:${OP_METHODS}) (\\[.*\\])$`);
+const OPENAPI_SCOPE = new RegExp(`^perPath: ${PATH_TOKEN} (${OP_METHODS}) security (\\[.*\\])$`);
+const SWAGGER_SCOPE = new RegExp(`^perOp: ${PATH_TOKEN} (${OP_METHODS}) (\\[.*\\])$`);
 /** An operation's own security row, parsed: its operation ("<path> <method>") and requirement, or null. */
 function parseScopeRow(row) {
   const m = OPENAPI_SCOPE.exec(row) ?? SWAGGER_SCOPE.exec(row);
   if (!m) return null;
   try {
-    const req = JSON.parse(m[2]);
+    const req = JSON.parse(m[3]);
     if (!Array.isArray(req)) return null;
-    const method = row.slice(0, row.length - m[2].length).trim().split(" ").filter((t) => t !== "security").at(-1);
-    return { op: `${m[1]} ${method}`, req };
+    return { op: `${m[1]} ${m[2]}`, req };
   } catch {
     return null;
   }
 }
 
-// The scheme names a requirement uses ([{"oauth2":["read"]},{"apiKey":[]}] -> oauth2,apiKey), sorted.
-const schemeNames = (req) => [...new Set(req.flatMap((x) => Object.keys(x)))].sort().join(",");
+// A requirement's shape: which schemes each alternative combines, without scopes. [{"a":["x"],"b":[]},{"c":[]}]
+// -> [[a,b],[c]], as JSON, so a scheme named "a+b" can't pass for two. Scopes may change; the grouping (AND within an
+// alternative, OR between them) may not.
+const shape = (req) => JSON.stringify(req.map((x) => JSON.stringify(Object.keys(x).sort())).sort());
 
-// Scheme names last night's rows knew: defined (schemes.<name>…), or used by the document or an operation.
+// Scheme names last night's rows defined (OpenAPI schemes.<name>, Swagger definitions.<name>). A name only
+// referenced by a requirement, never defined, doesn't count.
 function knownSchemes(lastRows) {
   const known = new Set();
   for (const r of lastRows) {
-    const def = /^schemes\.(\[("(?:[^"\\]|\\.)*")\]|[A-Za-z0-9_$-]+)/.exec(r);
+    const def = /^(?:schemes|definitions)\.(\[("(?:[^"\\]|\\.)*")\]|[A-Za-z0-9_$-]+)/.exec(r);
     if (def) known.add(def[2] ? JSON.parse(def[2]) : def[1]);
-    const p = parseScopeRow(r);
-    if (p) for (const x of p.req) for (const k of Object.keys(x)) known.add(k);
-    const doc = /^security\[\]: (\{.*\})$/.exec(r);
-    if (doc) {
-      try {
-        for (const k of Object.keys(JSON.parse(doc[1]))) known.add(k);
-      } catch {
-        // not a requirement row: ignored
-      }
-    }
   }
   return known;
 }
 
-/** Whether a night's surface change is routine: only the scopes inside operations' own security requirements
- *  changed, never which schemes they use. A changed operation must keep the same scheme names; a new one may only use
- *  schemes last night already knew; an empty requirement or a {} alternative (no auth) never counts; and an
- *  operation that loses its own requirement without a new one falls back to the document's, which may be none.
- *  Anything else (servers, schemes, document security, an operation's own servers) is held for a person. */
-export function routineScopeChange(removed, added, lastRows = []) {
-  if (!removed.length && !added.length) return false;
+// One alternative of the document-level requirement ("security[]: {...}"), or null.
+function docRequirement(row) {
+  const m = /^security\[\]: (\{.*\})$/.exec(row);
+  if (!m) return null;
+  try {
+    const x = JSON.parse(m[1]);
+    return x && typeof x === "object" && !Array.isArray(x) ? x : null;
+  } catch {
+    return null;
+  }
+}
+
+// A scheme name in a row key: bare, or a quoted JSON string in brackets.
+const SCHEME_NAME = String.raw`(\["(?:[^"\\]|\\.)*"\]|[A-Za-z0-9_$-]+)`;
+// A scope a scheme declares: OpenAPI "schemes.<name>.flows.<flow>.scopes.<scope>: …", Swagger
+// "definitions.<name>.scopes.<scope>: …". A new endpoint's new scope adds one.
+const SCOPE_DECL = new RegExp(`^(?:schemes\\.${SCHEME_NAME}\\.flows\\.[A-Za-z0-9_$-]+|definitions\\.${SCHEME_NAME})\\.scopes\\.`);
+
+function routineIn(removed, added, lastRows) {
+  // A scope newly declared under a flow (or Swagger definition) last night already had belongs to a scope change, as
+  // does one dropped. One re-described is held: its text is vendor prose a person should see.
+  const keyOf = (r) => r.slice(0, r.indexOf(": "));
+  const lastKeys = new Set(lastRows.map(keyOf));
+  const declared = (r) => {
+    const d = SCOPE_DECL.exec(r);
+    if (!d) return false;
+    // Swagger 2: only an OAuth definition declares scopes (an apiKey or basic one never does).
+    if (d[2]) return lastRows.includes(`definitions.${d[2]}.type: "oauth2"`);
+    return lastRows.some((x) => x.startsWith(d[0].slice(0, -"scopes.".length)));
+  };
+  // These rows reach the PR unheld, so any vendor text in them (a path, a scope's name or description) that reads
+  // like instructions to an AI agent holds it, as the text scan would. So does any escape: rows show hidden, bidi and
+  // control characters as \u{…} or \n, which the scan can't see through, and an ordinary scope or path has none.
+  // A declared scope's description is decoded and scanned as text instead: a YAML block scalar ends in a line break.
+  const unsafe = (r) => {
+    const at = r.indexOf(": ");
+    let value = r.slice(at + 2);
+    if (SCOPE_DECL.test(r)) {
+      try {
+        const text = JSON.parse(value);
+        if (typeof text === "string") {
+          if (scanText({ description: text }).hits.length > 0) return true;
+          value = "";
+        }
+      } catch {
+        return true;
+      }
+    }
+    const rest = r.slice(0, at + 2) + value;
+    return rest.replace(/\\"/g, "").includes("\\") || scanText({ description: rest }).hits.length > 0;
+  };
+  if (added.some(unsafe)) return false;
+  const addedKeys = new Set(added.map(keyOf));
+  // "perPath: []" ("perOp: []") is the empty list before any operation had its own requirement: the first one replaces it.
+  // Likewise "….scopes: {}", a flow (or definition) with no scopes yet, which its first scope replaces.
+  const noScopesYet = new RegExp(`^(?:schemes\\.${SCHEME_NAME}\\.flows\\.[A-Za-z0-9_$-]+|definitions\\.${SCHEME_NAME})\\.scopes: \\{\\}$`);
+  removed = removed.filter((r) => r !== "perPath: []" && r !== "perOp: []" && !noScopesYet.test(r) && !(declared(r) && !addedKeys.has(keyOf(r))));
+  added = added.filter((r) => {
+    // A flow's last scope dropped leaves "….scopes: {}" behind.
+    if (noScopesYet.test(r) && lastRows.some((x) => x.startsWith(r.slice(0, -": {}".length) + "."))) return false;
+    if (!declared(r) || lastKeys.has(keyOf(r))) return true;
+    try {
+      return typeof JSON.parse(r.slice(r.indexOf(": ") + 2)) !== "string";
+    } catch {
+      return true;
+    }
+  });
+  if (!removed.length && !added.length) return true;
   const before = new Map();
   for (const r of removed) {
     const p = parseScopeRow(r);
     if (!p) return false;
-    before.set(p.op, schemeNames(p.req));
+    before.set(p.op, shape(p.req));
   }
   const known = knownSchemes(lastRows);
+  // An operation without its own requirement uses the document's; when there is one, an operation that gains its own
+  // (new, or one that inherited until tonight) must keep its shape, or it changed how that operation authenticates.
+  const docAlts = lastRows.map(docRequirement).filter(Boolean);
+  const inherited = docAlts.length ? shape(docAlts) : null;
   const addedOps = new Set();
   for (const r of added) {
     const p = parseScopeRow(r);
     if (!p || !p.req.length || p.req.some((x) => !x || typeof x !== "object" || !Object.keys(x).length)) return false;
-    const names = schemeNames(p.req);
-    if (before.has(p.op) ? before.get(p.op) !== names : names.split(",").some((n) => !known.has(n))) return false;
+    const was = before.has(p.op) ? before.get(p.op) : inherited;
+    if (was !== null ? was !== shape(p.req) : p.req.some((x) => Object.keys(x).some((n) => !known.has(n)))) return false;
     addedOps.add(p.op);
   }
   return [...before.keys()].every((op) => addedOps.has(op));
+}
+
+/** Whether a night's surface change is routine: only the scopes inside operations' own security requirements
+ *  changed. A changed operation keeps its shape (the same schemes, grouped the same way); one that gains its own
+ *  requirement keeps the shape of the document's it used to inherit, or, with no document requirement (no auth
+ *  before), uses only schemes last night already knew; an empty requirement or a {} alternative (no auth) never
+ *  counts; and an operation that loses its own requirement is held. Anything else (servers, schemes, document
+ *  security, an operation's own servers) is held for a person. For a zip bundle, pass its module keys: rows are
+ *  prefixed with them, and each module is judged on its own rows. */
+export function routineScopeChange(removed, added, lastRows = [], modules = null) {
+  // A row that doesn't parse (a name shown with a \\u{…} escape for a character a reviewer can't see) is held.
+  try {
+    return routineScopeChangeOf(removed, added, lastRows, modules);
+  } catch {
+    return false;
+  }
+}
+
+function routineScopeChangeOf(removed, added, lastRows, modules) {
+  if (!removed.length && !added.length) return false;
+  if (!modules) return routineIn(removed, added, lastRows);
+  const prefixes = modules.map((k) => `${/^[A-Za-z0-9_$-]+$/.test(k) ? k : `[${JSON.stringify(k)}]`}.`);
+  // A plain key has no dot and a quoted one starts with "[", so no module's prefix starts another's.
+  const group = (rows) => {
+    const by = new Map(prefixes.map((p) => [p, []]));
+    for (const r of rows) {
+      const p = prefixes.find((x) => r.startsWith(x));
+      if (!p) return null;
+      by.get(p).push(r.slice(p.length));
+    }
+    return by;
+  };
+  const rm = group(removed), ad = group(added), last = group(lastRows.filter((r) => prefixes.some((p) => r.startsWith(p))));
+  // Every changed row must belong to a module.
+  if (!rm || !ad) return false;
+  return prefixes.every((p) => (!rm.get(p).length && !ad.get(p).length) || routineIn(rm.get(p), ad.get(p), last.get(p)));
 }
