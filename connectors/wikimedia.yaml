@@ -2,7 +2,7 @@ id: wikimedia
 name: Wikimedia
 apideck: false
 specs:
-- name: Wikimedia
+- name: Wikimedia Math API
   url: https://wikimedia.org/api/rest_v1/?spec
   format: openapi-3.0
   provenance: vendor
