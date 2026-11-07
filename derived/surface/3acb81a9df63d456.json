@@ -5,6 +5,8 @@
  "perPath: /v4/account/creator_profile get security [{\"API Key\":[]},{\"OAuth2\":[]}]",
  "perPath: /v4/account/email_stats get security [{\"API Key\":[]},{\"OAuth2\":[]}]",
  "perPath: /v4/account/growth_stats get security [{\"API Key\":[]},{\"OAuth2\":[]}]",
+ "perPath: /v4/apps get security [{\"API Key\":[]},{\"OAuth2\":[]}]",
+ "perPath: /v4/apps/{id} get security [{\"API Key\":[]},{\"OAuth2\":[]}]",
  "perPath: /v4/broadcasts get security [{\"API Key\":[]},{\"OAuth2\":[]}]",
  "perPath: /v4/broadcasts post security [{\"API Key\":[]},{\"OAuth2\":[]}]",
  "perPath: /v4/broadcasts/stats get security [{\"API Key\":[]},{\"OAuth2\":[]}]",

@@ -64,6 +64,7 @@
  "perPath: /v1/asset-folders/{folder_id} patch security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/asset-upload-sessions post security [{\"BearerAuth\":[]}]",
  "perPath: /v1/asset-upload-sessions/{upload_id} get security [{\"BearerAuth\":[]}]",
+ "perPath: /v1/asset-upload-sessions/{upload_id}/browser post security [{\"BearerAuth\":[]}]",
  "perPath: /v1/asset-upload-sessions/{upload_id}/cancel post security [{\"BearerAuth\":[]}]",
  "perPath: /v1/asset-upload-sessions/{upload_id}/complete post security [{\"BearerAuth\":[]}]",
  "perPath: /v1/asset-upload-sessions/{upload_id}/prepare post security [{\"BearerAuth\":[]}]",
