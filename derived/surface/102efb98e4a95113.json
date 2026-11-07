@@ -2,6 +2,8 @@
  "perPath: /api/alpha/decisions post [{\"url\":\"https://openrouter.ai\"}]",
  "perPath: /api/alpha/extractions post [{\"url\":\"https://openrouter.ai\"}]",
  "perPath: /credits/coinbase post security []",
+ "perPath: /credits/purchases post security [{\"bearerAuth\":[]}]",
+ "perPath: /credits/purchases/{id} get security [{\"bearerAuth\":[]}]",
  "perPath: /models/user get security [{\"bearer\":[]}]",
  "perPath: /presets get security [{\"apiKey\":[]}]",
  "perPath: /presets/{slug} get security [{\"apiKey\":[]}]",

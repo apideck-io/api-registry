@@ -100,6 +100,7 @@
  "perPath: /core/v1/accounting/accounts get security [{\"apiKeyAuth\":[]},{\"bearerAuth\":[]}]",
  "perPath: /core/v1/accounting/accounts/account-displaying get security [{\"apiKeyAuth\":[]},{\"bearerAuth\":[]}]",
  "perPath: /core/v1/accounting/accounts/by-code/{accountCode} get security [{\"apiKeyAuth\":[]},{\"bearerAuth\":[]}]",
+ "perPath: /core/v1/accounting/accounts/{accountCode}/statement get security [{\"apiKeyAuth\":[]},{\"bearerAuth\":[]}]",
  "perPath: /core/v1/accounting/booking-types get security [{\"apiKeyAuth\":[]},{\"bearerAuth\":[]}]",
  "perPath: /core/v1/accounting/business-case-templates get security [{\"apiKeyAuth\":[]},{\"bearerAuth\":[]}]",
  "perPath: /core/v1/accounting/business-case-templates/{businessCaseTemplateId} get security [{\"apiKeyAuth\":[]},{\"bearerAuth\":[]}]",

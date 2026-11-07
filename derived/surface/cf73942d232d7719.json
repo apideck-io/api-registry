@@ -2,6 +2,7 @@
  "perPath: /pickups get security [{\"HTTPBasicAuth\":[]},{\"OAuth2ClientCreds\":[\"read:pickup\"]}]",
  "perPath: /pickups post security [{\"HTTPBasicAuth\":[]},{\"OAuth2ClientCreds\":[\"write:pickup\"]}]",
  "perPath: /pickups/{id} get security [{\"HTTPBasicAuth\":[]},{\"OAuth2ClientCreds\":[\"read:pickup\"]}]",
+ "perPath: /pickups/{id}/cancel post security [{\"HTTPBasicAuth\":[]},{\"OAuth2ClientCreds\":[\"write:pickup\"]}]",
  "schemes.HTTPBasicAuth.description: \"Basic Authentication using API key and secrets is currently the main authentication mechanism.\"",
  "schemes.HTTPBasicAuth.scheme: \"basic\"",
  "schemes.HTTPBasicAuth.type: \"http\"",

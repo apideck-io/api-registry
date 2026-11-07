@@ -1,6 +1,22 @@
 [
- "perPath: []",
- "schemes: null",
+ "perPath: /api/create-webhook post security [{\"team_api_key\":[]}]",
+ "perPath: /api/delete-webhook delete security [{\"team_api_key\":[]}]",
+ "perPath: /api/graphql/variables/{var_name} delete security [{\"team_api_key\":[]}]",
+ "perPath: /api/graphql/variables/{var_name} get security [{\"team_api_key\":[]}]",
+ "perPath: /api/graphql/variables/{var_name} patch security [{\"team_api_key\":[]}]",
+ "perPath: /api/graphql/variables/{var_name} post security [{\"team_api_key\":[]}]",
+ "perPath: /api/team-webhooks get security [{\"team_api_key\":[]}]",
+ "perPath: /api/test-webhook post security [{\"team_api_key\":[]}]",
+ "perPath: /api/update-webhook put security [{\"team_api_key\":[]}]",
+ "perPath: /api/update-webhook-addresses patch security [{\"team_api_key\":[]}]",
+ "perPath: /api/update-webhook-addresses put security [{\"team_api_key\":[]}]",
+ "perPath: /api/update-webhook-nft-filters patch security [{\"team_api_key\":[]}]",
+ "perPath: /api/webhook-addresses get security [{\"team_api_key\":[]}]",
+ "perPath: /api/webhook-nft-filters get security [{\"team_api_key\":[]}]",
+ "schemes.team_api_key.description: \"Your team's auth token. Find it on the Webhooks page of the Alchemy dashboard.\"",
+ "schemes.team_api_key.in: \"header\"",
+ "schemes.team_api_key.name: \"X-Alchemy-Token\"",
+ "schemes.team_api_key.type: \"apiKey\"",
  "security: null",
- "servers[0]: {\"url\":\"https://dashboard.alchemy.com/api\"}"
+ "servers[0]: {\"url\":\"https://dashboard.alchemy.com\"}"
 ]

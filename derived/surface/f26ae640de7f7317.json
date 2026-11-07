@@ -13,7 +13,7 @@
  "perPath: /api/0/organizations/{organization_id_or_slug}/code-mappings/bulk/ post security [{\"auth_token\":[\"org:admin\",\"org:ci\",\"org:integrations\",\"org:read\",\"org:write\"]}]",
  "perPath: /api/0/organizations/{organization_id_or_slug}/code-mappings/{config_id}/ delete security [{\"auth_token\":[\"org:admin\",\"org:integrations\"]}]",
  "perPath: /api/0/organizations/{organization_id_or_slug}/code-mappings/{config_id}/ put security [{\"auth_token\":[\"org:admin\",\"org:integrations\",\"org:read\",\"org:write\"]}]",
- "perPath: /api/0/organizations/{organization_id_or_slug}/codeowners-associations/ get security [{\"auth_token\":[\"org:admin\",\"org:ci\",\"org:integrations\",\"org:read\",\"org:write\"]}]",
+ "perPath: /api/0/organizations/{organization_id_or_slug}/codeowners-associations/ get security [{\"auth_token\":[\"org:admin\",\"org:integrations\",\"org:read\",\"org:write\"]}]",
  "perPath: /api/0/organizations/{organization_id_or_slug}/config/integrations/ get security [{\"auth_token\":[\"org:admin\",\"org:read\",\"org:write\"]}]",
  "perPath: /api/0/organizations/{organization_id_or_slug}/dashboards/ get security [{\"auth_token\":[\"org:admin\",\"org:read\",\"org:write\"]}]",
  "perPath: /api/0/organizations/{organization_id_or_slug}/dashboards/ post security [{\"auth_token\":[\"org:admin\",\"org:read\",\"org:write\"]}]",

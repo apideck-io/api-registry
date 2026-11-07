@@ -1,5 +1,6 @@
 [
  "perPath: /v3/abuse get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /v3/abuse-bulk post security [{\"ApiKeyAuth\":[]}]",
  "perPath: /v3/asn get security [{\"ApiKeyAuth\":[]}]",
  "perPath: /v3/astronomy get security [{\"ApiKeyAuth\":[]}]",
  "perPath: /v3/astronomy/timeSeries get security [{\"ApiKeyAuth\":[]}]",
