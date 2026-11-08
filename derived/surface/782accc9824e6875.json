@@ -180,6 +180,8 @@
  "perPath: /{administration_id}/projects/{id}{format} patch security [{\"bearerAuth\":[\"settings\"]}]",
  "perPath: /{administration_id}/projects{format} get security [{\"bearerAuth\":[\"settings\"]}]",
  "perPath: /{administration_id}/projects{format} post security [{\"bearerAuth\":[\"settings\"]}]",
+ "perPath: /{administration_id}/purchase_transaction_batches/{id}/download{format} post security [{\"bearerAuth\":[\"bank\"]}]",
+ "perPath: /{administration_id}/purchase_transaction_batches/{id}{format} get security [{\"bearerAuth\":[\"bank\"]}]",
  "perPath: /{administration_id}/purchase_transactions/{id}/delete{format} delete security [{\"bearerAuth\":[\"bank\"]}]",
  "perPath: /{administration_id}/purchase_transactions/{id}{format} delete security [{\"bearerAuth\":[\"bank\"]}]",
  "perPath: /{administration_id}/purchase_transactions/{id}{format} get security [{\"bearerAuth\":[\"bank\"]}]",

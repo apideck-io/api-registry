@@ -191,6 +191,7 @@
  "perPath: /api/v1/videos/{id}/embed-privacy put security [{\"OAuth2\":[\"user\"]}]",
  "perPath: /api/v1/videos/{id}/embed-privacy/allowed get security [{\"OAuth2\":[\"user\"]}]",
  "perPath: /api/v1/videos/{id}/hls delete security [{\"OAuth2\":[\"admin\"]}]",
+ "perPath: /api/v1/videos/{id}/import/retry post security [{\"OAuth2\":[]}]",
  "perPath: /api/v1/videos/{id}/live-session get security [{\"OAuth2\":[]}]",
  "perPath: /api/v1/videos/{id}/passwords get security [{\"OAuth2\":[\"user\"]}]",
  "perPath: /api/v1/videos/{id}/passwords post security [{\"OAuth2\":[\"user\"]}]",

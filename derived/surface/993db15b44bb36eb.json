@@ -1,5 +1,5 @@
 [
- "perPath: []",
+ "perPath: /workspaces/{workspaceId}/audit-logs/search * [{\"description\":\"Production Server\",\"url\":\"https://studio-api.softr.io/v1/api\"}]",
  "schemes.ApiKeyAuth.in: \"header\"",
  "schemes.ApiKeyAuth.name: \"Softr-Api-Key\"",
  "schemes.ApiKeyAuth.type: \"apiKey\"",

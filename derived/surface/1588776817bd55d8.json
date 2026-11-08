@@ -136,6 +136,8 @@
  "schemes.oauth2.flows.authorizationCode.scopes.[\"task:read-write\"]: \"View, and optionally write, tasks.\"",
  "schemes.oauth2.flows.authorizationCode.scopes.[\"user_management:read\"]: \"View workspace members.\"",
  "schemes.oauth2.flows.authorizationCode.scopes.[\"user_management:read-write\"]: \"View workspace members.\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"view:read\"]: \"View, and optionally manage, the saved views of objects and lists, with their filters, sorts and shown attributes.\"",
+ "schemes.oauth2.flows.authorizationCode.scopes.[\"view:read-write\"]: \"View, and optionally manage, the saved views of objects and lists, with their filters, sorts and shown attributes.\"",
  "schemes.oauth2.flows.authorizationCode.scopes.[\"webhook:read\"]: \"View, and optionally manage, webhooks.\"",
  "schemes.oauth2.flows.authorizationCode.scopes.[\"webhook:read-write\"]: \"View, and optionally manage, webhooks.\"",
  "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://app.attio.com/oauth/token\"",
