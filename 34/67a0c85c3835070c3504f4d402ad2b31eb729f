@@ -1,0 +1,19 @@
+connectors/wikipedia.yaml
+  s_715af424203af5::t_c62b0a3687e195 10,12-13,20,27,35,41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3467a0c85c3835070c3504f4d402ad2b31eb729f",
+  "prompts": {},
+  "sessions": {
+    "s_715af424203af5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ff49b14b-ff73-4242-a5a8-efec868cc793",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
