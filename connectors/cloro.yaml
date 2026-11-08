@@ -1,0 +1,10 @@
+id: cloro
+name: "cloro"
+apideck: false
+specs:
+  - name: "cloro API"
+    url: "https://cloro.dev/docs/api-reference/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.cloro.dev"
+    notes: "The spec the cloro API reference is built from."
