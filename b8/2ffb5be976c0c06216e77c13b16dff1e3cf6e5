@@ -1,0 +1,21 @@
+connectors/wikimedia.yaml
+  s_dba12b13143a67::t_f401c200537bc4 5
+connectors/wikipedia.yaml
+  s_dba12b13143a67::t_6a746433651269 1-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b82ffb5be976c0c06216e77c13b16dff1e3cf6e5",
+  "prompts": {},
+  "sessions": {
+    "s_dba12b13143a67": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "99ede85e-a2b9-4afd-b84f-39711181c55e",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
