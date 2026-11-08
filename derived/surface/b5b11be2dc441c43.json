@@ -141,7 +141,7 @@
  "perOp: /repositories/{workspace}/{repo_slug}/permissions-config/users/{selected_user_id} get [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"repository:admin\"]}]",
  "perOp: /repositories/{workspace}/{repo_slug}/permissions-config/users/{selected_user_id} put [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"repository:admin\"]}]",
  "perOp: /repositories/{workspace}/{repo_slug}/pipelines get [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"pipeline\"]}]",
- "perOp: /repositories/{workspace}/{repo_slug}/pipelines post [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"pipeline\"]}]",
+ "perOp: /repositories/{workspace}/{repo_slug}/pipelines post [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"pipeline:write\"]}]",
  "perOp: /repositories/{workspace}/{repo_slug}/pipelines-config/caches delete [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"pipeline:write\"]}]",
  "perOp: /repositories/{workspace}/{repo_slug}/pipelines-config/caches get [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"pipeline\"]}]",
  "perOp: /repositories/{workspace}/{repo_slug}/pipelines-config/caches/{cache_uuid} delete [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"pipeline:write\"]}]",

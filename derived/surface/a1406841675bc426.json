@@ -19,5 +19,6 @@
  "security[]: {\"VtexIdclientAutCookie\":[]}",
  "security[]: {\"appKey\":[],\"appToken\":[]}",
  "servers[0]: {\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.{environment}.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"},\"environment\":{\"default\":\"vtexcommercestable\",\"description\":\"Environment to use. Used as part of the URL.\",\"enum\":[\"vtexcommercestable\"]}}}",
- "servers[1]: {\"description\":\"VTEX server URL for the accept or deny rule endpoint.\",\"url\":\"https://{accountName}.myvtex.com\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}"
+ "servers[1]: {\"description\":\"VTEX server URL for the accept or deny rule endpoint.\",\"url\":\"https://{accountName}.myvtex.com\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}",
+ "servers[2]: {\"description\":\"VTEX server URL for authorization dimensions.\",\"url\":\"https://api.vtexcommercestable.com.br\"}"
 ]

@@ -45,6 +45,7 @@
  "schemes.OAuth2CompanyAccessToken.flows.authorizationCode.scopes.[\"payroll:read\"]: \"Read payroll info\"",
  "schemes.OAuth2CompanyAccessToken.flows.authorizationCode.scopes.[\"paystub:read\"]: \"Read paystub info\"",
  "schemes.OAuth2CompanyAccessToken.flows.authorizationCode.scopes.[\"subscriptions:read\"]: \"Read company subscriptions\"",
+ "schemes.OAuth2CompanyAccessToken.flows.authorizationCode.scopes.[\"sui:read\"]: \"Read company state unemployment insurance tax info\"",
  "schemes.OAuth2CompanyAccessToken.flows.authorizationCode.scopes.[\"time_off:read\"]: \"Read time off info\"",
  "schemes.OAuth2CompanyAccessToken.flows.authorizationCode.scopes.[\"time_off:write\"]: \"Write time off info\"",
  "schemes.OAuth2CompanyAccessToken.flows.authorizationCode.tokenUrl: \"https://public-api.justworks.com/oauth/token\"",

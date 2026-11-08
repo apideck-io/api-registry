@@ -54,6 +54,8 @@
  "perPath: /documents/{documentId} delete security [{\"bearerAuth\":[]}]",
  "perPath: /documents/{documentId} get security [{\"bearerAuth\":[]}]",
  "perPath: /documents/{documentId}/controls get security [{\"bearerAuth\":[]}]",
+ "perPath: /documents/{documentId}/evaluate post security [{\"bearerAuth\":[]}]",
+ "perPath: /documents/{documentId}/evaluation get security [{\"bearerAuth\":[]}]",
  "perPath: /documents/{documentId}/links get security [{\"bearerAuth\":[]}]",
  "perPath: /documents/{documentId}/links post security [{\"bearerAuth\":[]}]",
  "perPath: /documents/{documentId}/links/{linkId} delete security [{\"bearerAuth\":[]}]",

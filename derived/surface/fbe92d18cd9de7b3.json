@@ -76,6 +76,7 @@
  "perPath: /v1/projects/{ref}/config/database/pooler get security [{\"bearer\":[]}]",
  "perPath: /v1/projects/{ref}/config/database/pooler patch security [{\"bearer\":[]}]",
  "perPath: /v1/projects/{ref}/config/database/postgres get security [{\"bearer\":[]}]",
+ "perPath: /v1/projects/{ref}/config/database/postgres patch security [{\"bearer\":[]}]",
  "perPath: /v1/projects/{ref}/config/database/postgres put security [{\"bearer\":[]}]",
  "perPath: /v1/projects/{ref}/config/disk get security [{\"bearer\":[]}]",
  "perPath: /v1/projects/{ref}/config/disk post security [{\"bearer\":[]}]",

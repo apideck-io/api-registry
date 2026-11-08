@@ -9,5 +9,5 @@
  "schemes.X-AppSecretToken.name: \"X-AppSecretToken\"",
  "schemes.X-AppSecretToken.type: \"apiKey\"",
  "security[]: {\"X-AgreementGrantToken\":[],\"X-AppSecretToken\":[]}",
- "servers[0]: {\"url\":\"https://apis.e-conomic.com/q2capi/v6.0.0/\"}"
+ "servers[0]: {\"url\":\"https://apis.e-conomic.com/q2capi/v7.0.0/\"}"
 ]
