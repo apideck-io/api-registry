@@ -1,0 +1,21 @@
+connectors/alchemy.yaml
+  s_715af424203af5::t_02b316c612dcc2 23,25
+connectors/workday.yaml
+  s_715af424203af5::t_02b316c612dcc2 6,10,12,16,18,22,24,28,30,34,36,40,42,46,48,52,54,58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "20510f49833334e1c16bfb654f968a7076c02433",
+  "prompts": {},
+  "sessions": {
+    "s_715af424203af5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ff49b14b-ff73-4242-a5a8-efec868cc793",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
