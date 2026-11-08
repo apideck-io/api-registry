@@ -20,9 +20,9 @@ specs:
     server: "https://api.g.alchemy.com/data/v1"
   - name: "Alchemy Webhooks (Notify) API"
     url: "https://dev-docs.alchemy.com/alchemy/rest/notify.json"
-    format: openapi-3.1
+    format: openapi-3.0
     provenance: vendor
-    server: "https://dashboard.alchemy.com/api"
+    server: "https://dashboard.alchemy.com"
   - name: "Alchemy Smart Wallets API"
     url: "https://dev-docs.alchemy.com/alchemy/rest/accounts.json"
     format: openapi-3.1
