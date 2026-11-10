@@ -1,0 +1,10 @@
+id: asin
+name: "Asin"
+apideck: false
+specs:
+  - name: "Asin API"
+    url: "https://www.asin.dev/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://www.asin.dev/api/v1"
+    notes: "The spec the Asin API reference is built from."
