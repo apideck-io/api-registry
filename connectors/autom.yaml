@@ -1,0 +1,10 @@
+id: autom
+name: "Autom"
+apideck: false
+specs:
+  - name: "Autom API"
+    url: "https://app.autom.dev/openapi"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.autom.dev"
+    notes: "The spec the Autom API reference is built from."
