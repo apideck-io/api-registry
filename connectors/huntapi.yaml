@@ -1,0 +1,10 @@
+id: huntapi
+name: "HuntAPI"
+apideck: false
+specs:
+  - name: "HuntAPI API"
+    url: "https://app.huntapi.com/openapi"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.huntapi.com"
+    notes: "The spec the HuntAPI API reference is built from."
