@@ -1,0 +1,10 @@
+id: browsersolver
+name: "BrowserSolver"
+apideck: false
+specs:
+  - name: "BrowserSolver API"
+    url: "https://app.browsersolver.com/openapi"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.browsersolver.com"
+    notes: "The spec the BrowserSolver API reference is built from."
