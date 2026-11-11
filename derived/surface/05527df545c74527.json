@@ -1,0 +1,19 @@
+[
+ "perPath: /sitemap/{indexId} get security [{\"CentralAuthSessionProvider-Session\":[],\"CentralAuthSessionProvider-Token\":[],\"CentralAuthSessionProvider-UserID\":[]}]",
+ "perPath: /sitemap/{indexId}/page/{pageId} get security [{\"CentralAuthSessionProvider-Session\":[],\"CentralAuthSessionProvider-Token\":[],\"CentralAuthSessionProvider-UserID\":[]}]",
+ "schemes.CentralAuthSessionProvider-Session.description: \"MediaWiki Session ID cookie.\\nNote: Write operations using this method also require a CSRF token to be submitted in the request body.\"",
+ "schemes.CentralAuthSessionProvider-Session.in: \"cookie\"",
+ "schemes.CentralAuthSessionProvider-Session.name: \"enwikiSession\"",
+ "schemes.CentralAuthSessionProvider-Session.type: \"apiKey\"",
+ "schemes.CentralAuthSessionProvider-Token.description: \"MediaWiki User Token cookie.\\nRequired for persistent session verification.\"",
+ "schemes.CentralAuthSessionProvider-Token.in: \"cookie\"",
+ "schemes.CentralAuthSessionProvider-Token.name: \"enwikiToken\"",
+ "schemes.CentralAuthSessionProvider-Token.type: \"apiKey\"",
+ "schemes.CentralAuthSessionProvider-UserID.description: \"MediaWiki User ID cookie.\\nRequired alongside the session ID.\"",
+ "schemes.CentralAuthSessionProvider-UserID.in: \"cookie\"",
+ "schemes.CentralAuthSessionProvider-UserID.name: \"enwikiUserID\"",
+ "schemes.CentralAuthSessionProvider-UserID.type: \"apiKey\"",
+ "security: null",
+ "servers[0]: {\"description\":\"(Production)\",\"url\":\"https://en.wikipedia.org/w/rest.php/site/v1\"}",
+ "servers[1]: {\"description\":\"(Sandbox)\",\"url\":\"https://test.wikimedia.org/w/rest.php/site/v1\"}"
+]

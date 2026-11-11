@@ -62,7 +62,6 @@
  "perPath: /users/{fp_id}/match_signals get security [{\"Secret API Key\":[\"preview:match_signals_list\"]}]",
  "perPath: /users/{fp_id}/onboardings get security [{\"Secret API Key\":[]}]",
  "perPath: /users/{fp_id}/onboardings/{id} get security [{\"Secret API Key\":[]}]",
- "perPath: /users/{fp_id}/onboardings/{id}/device_insights post security [{\"Secret API Key\":[\"preview:device_insights\"]}]",
  "perPath: /users/{fp_id}/onboardings/{onboarding_id}/risk_signals get security [{\"Secret API Key\":[]}]",
  "perPath: /users/{fp_id}/onboardings/{onboarding_id}/rule_results get security [{\"Secret API Key\":[\"preview:rule_results\"]}]",
  "perPath: /users/{fp_id}/risk_signals get security [{\"Secret API Key\":[\"preview:risk_signals_list\"]}]",

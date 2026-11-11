@@ -1,7 +1,7 @@
 [
  "perPath: []",
  "schemes.BearerAuth.bearerFormat: \"REST API key\"",
- "schemes.BearerAuth.description: \"REST API keys are created in the Braze dashboard at **Settings → APIs and\\nIdentifiers → API Keys**. The key must include the `events.list`\\npermission. Pass the key as `Authorization: Bearer YOUR_REST_API_KEY`.\\n\"",
+ "schemes.BearerAuth.description: \"REST API keys are created in the Braze dashboard at **Settings → APIs and\\nIdentifiers → API Keys**. The key must include the `events.list` permission.\\nPass the key as `Authorization: Bearer YOUR_REST_API_KEY`.\\n\"",
  "schemes.BearerAuth.scheme: \"bearer\"",
  "schemes.BearerAuth.type: \"http\"",
  "security[]: {\"BearerAuth\":[]}",

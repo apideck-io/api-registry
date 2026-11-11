@@ -1,0 +1,7 @@
+[
+ "perPath: []",
+ "schemes: null",
+ "security: null",
+ "servers[0]: {\"description\":\"(Production)\",\"url\":\"/api/rest_v1\"}",
+ "servers[1]: {\"description\":\"(Sandbox)\",\"url\":\"https://test.wikimedia.org/api/rest_v1\"}"
+]

@@ -323,6 +323,7 @@
  "perPath: /v1/organization/workspaces/{workspace_id} delete security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/organization/workspaces/{workspace_id} get security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/organization/workspaces/{workspace_id} patch security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
+ "perPath: /v1/organization/workspaces/{workspace_id}/whatsapp/numbers post security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/preferences get security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/preferences post security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/preferences/{preference_id} delete security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",

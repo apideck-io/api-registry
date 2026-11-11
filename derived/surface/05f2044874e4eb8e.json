@@ -15,7 +15,7 @@
  "perPath: /groups#group-set-once post security [{}]",
  "perPath: /groups#group-union post security [{}]",
  "perPath: /groups#group-unset post security [{}]",
- "perPath: /import post security [{\"OAuthToken\":[]},{\"ProjectSecret\":[]},{\"ServiceAccount\":[]}]",
+ "perPath: /import post security [{\"OAuthToken\":[]},{\"ServiceAccount\":[]}]",
  "perPath: /lookup-tables get security [{\"ServiceAccount\":[]}]",
  "perPath: /lookup-tables/{id} put security [{\"ProjectSecret\":[]},{\"ServiceAccount\":[]}]",
  "perPath: /track post security [{}]",

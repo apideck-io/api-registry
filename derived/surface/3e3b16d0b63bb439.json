@@ -22,6 +22,7 @@
  "perPath: /reviews/{reviewCycleId} get security [{\"bearerAuth\":[]}]",
  "perPath: /reviews/{reviewCycleId}/participants get security [{\"bearerAuth\":[]}]",
  "perPath: /reviews/{reviewCycleId}/participants/{userId}/overview get security [{\"bearerAuth\":[]}]",
+ "perPath: /time-tracking/employees/{userId}/events/punch post security [{\"bearerAuth\":[]}]",
  "perPath: /time-tracking/timesheets get security [{\"bearerAuth\":[]}]",
  "perPath: /token get security []",
  "perPath: /users/{userId}/documents post security [{\"bearerAuth\":[]}]",

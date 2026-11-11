@@ -151,6 +151,7 @@
  "perPath: /users/me/pending-sso-links get security [{\"bearer\":[]},{\"oauth2\":[\"email\",\"openid\",\"profile\"]}]",
  "perPath: /users/me/pending-sso-links/{id} delete security [{\"bearer\":[]},{\"oauth2\":[\"email\",\"openid\",\"profile\"]}]",
  "perPath: /users/me/pending-sso-links/{id}/confirm post security [{\"bearer\":[]},{\"oauth2\":[\"email\",\"openid\",\"profile\"]}]",
+ "perPath: /users/me/support-contacts post security [{\"bearer\":[]},{\"oauth2\":[\"email\",\"openid\",\"profile\"]}]",
  "perPath: /users/privacy-policies/accept post security [{\"bearer\":[]},{\"oauth2\":[\"email\",\"openid\",\"profile\"]}]",
  "perPath: /volumes get security [{\"bearer\":[]},{\"oauth2\":[\"email\",\"openid\",\"profile\"]}]",
  "perPath: /volumes post security [{\"bearer\":[]},{\"oauth2\":[\"email\",\"openid\",\"profile\"]}]",

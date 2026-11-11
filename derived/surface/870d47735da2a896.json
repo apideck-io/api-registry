@@ -140,6 +140,8 @@
  "perPath: /overtime-policies/v1/compensations/rest post security [{\"Bearer\":[]}]",
  "perPath: /overtime-policies/v1/employees/{employeeId}/adjustments get security [{\"Bearer\":[]}]",
  "perPath: /overtime-policies/v1/employees/{employeeId}/balance get security [{\"Bearer\":[]}]",
+ "perPath: /overtime-policies/v1/employees/{employeeId}/rest-compensable-balance get security [{\"Bearer\":[]}]",
+ "perPath: /overtime-policies/v1/employees/{employeeId}/rule-balances get security [{\"Bearer\":[]}]",
  "perPath: /poll/v1/evaluations get security [{\"Bearer\":[]}]",
  "perPath: /poll/v1/evaluations/candidate-recruitment/{evaluationId} post security [{\"Bearer\":[]}]",
  "perPath: /project/v1/customers get security [{\"Bearer\":[]}]",

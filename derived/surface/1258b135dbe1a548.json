@@ -205,8 +205,6 @@
  "scripts: /Departments test [\"\"]",
  "scripts: /Divisions prerequest [\"\"]",
  "scripts: /Divisions test [\"\"]",
- "scripts: /Jobs prerequest [\"\"]",
- "scripts: /Jobs test [\"\"]",
  "scripts: /Locations prerequest [\"\"]",
  "scripts: /Locations test [\"\"]",
  "scripts: /Questions prerequest [\"\"]",

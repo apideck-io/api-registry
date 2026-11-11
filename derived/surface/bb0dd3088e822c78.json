@@ -1,5 +1,7 @@
 [
- "perPath: []",
+ "perPath: /v2/signup/authentication-attempts post security []",
+ "perPath: /v2/signup/authentication-attempts/{id}/resend post security []",
+ "perPath: /v2/signup/authentication-attempts/{id}/verify post security []",
  "schemes.bearerAuth.bearerFormat: \"Runpod API Key\"",
  "schemes.bearerAuth.description: \"Runpod API key authentication. Generate an API key in the Runpod console and send it in the `Authorization` header as `Bearer <api_key>`. Keys are scoped to the permissions granted when created; requests may return `403` when a valid key lacks access to the requested resource or action.\\n\\nConsole sessions (Clerk JWTs) act for the signed-in user. To act for a team instead, also send `X-Team-Id: <team_id>`; it applies only when the user owns or belongs to that team, otherwise the request runs against the user's own account. API keys created inside a team already act for that team and do not need the header.\\n\"",
  "schemes.bearerAuth.scheme: \"bearer\"",
