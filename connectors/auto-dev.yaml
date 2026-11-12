@@ -5,6 +5,6 @@ notes: "Spec served by the vendor (found from its developer portal, https://auto
 specs:
   - name: "Auto.dev Vehicle Data API"
     url: "https://www.auto.dev/openapi.json"
-    format: openapi-3.1
+    format: openapi-3.0
     provenance: vendor
     server: "https://api.auto.dev"
