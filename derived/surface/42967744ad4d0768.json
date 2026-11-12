@@ -266,7 +266,7 @@
  "perPath: /v5/users get security [{\"basicAuth\":[]}]",
  "perPath: /v5/users/me get security [{\"basicAuth\":[]}]",
  "perPath: /v5/users/{user_id} get security [{\"basicAuth\":[]}]",
- "schemes.basicAuth.description: \"HTTP Basic auth using api:YOUR_API_KEY. See [documentation](https://documentation.mailgun.com/docs/mailgun/api-reference/authentication/)\"",
+ "schemes.basicAuth.description: \"HTTP Basic auth using api:YOUR_API_KEY. See [documentation](https://documentation.mailgun.com/docs/mailgun/api-reference/mg-auth)\"",
  "schemes.basicAuth.scheme: \"basic\"",
  "schemes.basicAuth.type: \"http\"",
  "security: null",

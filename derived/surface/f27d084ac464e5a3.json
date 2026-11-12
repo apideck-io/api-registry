@@ -5,6 +5,7 @@
  "perPath: /api/admin/v2/access_groups/{access_group_id}/community_members delete security [{\"host\":[],\"token_auth\":[]}]",
  "perPath: /api/admin/v2/access_groups/{access_group_id}/community_members get security [{\"host\":[],\"token_auth\":[]}]",
  "perPath: /api/admin/v2/access_groups/{access_group_id}/community_members post security [{\"host\":[],\"token_auth\":[]}]",
+ "perPath: /api/admin/v2/access_groups/{access_group_id}/community_members/batch post security [{\"host\":[],\"token_auth\":[]}]",
  "perPath: /api/admin/v2/access_groups/{access_group_id}/content patch security [{\"host\":[],\"token_auth\":[]}]",
  "perPath: /api/admin/v2/access_groups/{id} delete security [{\"host\":[],\"token_auth\":[]}]",
  "perPath: /api/admin/v2/access_groups/{id} put security [{\"host\":[],\"token_auth\":[]}]",

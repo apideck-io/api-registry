@@ -208,6 +208,7 @@
  "perPath: /users/{user_id} delete security [{\"BearerAuth\":[]}]",
  "perPath: /users/{user_id} get security [{\"BearerAuth\":[]}]",
  "perPath: /users/{user_id} patch security [{\"BearerAuth\":[]}]",
+ "perPath: /users/{user_id}/access get security [{\"BearerAuth\":[]}]",
  "perPath: /users/{user_id}/mfa/reset post security [{\"BearerAuth\":[]}]",
  "perPath: /users/{user_id}/revoke-all post security [{\"BearerAuth\":[]}]",
  "perPath: /users/{user_id}/tags get security [{\"BearerAuth\":[]}]",

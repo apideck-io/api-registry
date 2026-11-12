@@ -1,5 +1,5 @@
 [
- "perPath: []",
+ "perPath: /v1/uploads/{upload_id} put security []",
  "schemes: null",
  "security: null",
  "servers[0]: {\"description\":\"Hail Cloud\",\"url\":\"https://api.hail.so\"}"

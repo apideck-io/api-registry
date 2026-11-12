@@ -35,6 +35,7 @@
  "perPath: /categories/{companyId}/{id} get security [{\"HTTPBearer\":[]}]",
  "perPath: /companies get security [{\"HTTPBearer\":[]}]",
  "perPath: /companies/{companyId} get security [{\"HTTPBearer\":[]}]",
+ "perPath: /companies/{companyId} patch security [{\"HTTPBearer\":[]}]",
  "perPath: /companies/{companyId}/users get security [{\"HTTPBearer\":[]}]",
  "perPath: /contacts/{companyId} delete security [{\"HTTPBearer\":[]}]",
  "perPath: /contacts/{companyId} get security [{\"HTTPBearer\":[]}]",

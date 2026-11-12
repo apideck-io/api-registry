@@ -112,7 +112,7 @@
  "perPath: /api/v1/users/{id} put security [{\"OAuth2\":[]}]",
  "perPath: /api/v1/users/{id}/block post security [{\"OAuth2\":[\"admin\"]}]",
  "perPath: /api/v1/users/{id}/token-sessions get security [{\"OAuth2\":[]}]",
- "perPath: /api/v1/users/{id}/token-sessions/{tokenSessionId}/revoke get security [{\"OAuth2\":[]}]",
+ "perPath: /api/v1/users/{id}/token-sessions/{tokenSessionId}/revoke post security [{\"OAuth2\":[]}]",
  "perPath: /api/v1/users/{id}/two-factor/confirm-request post security [{\"OAuth2\":[]}]",
  "perPath: /api/v1/users/{id}/two-factor/disable post security [{\"OAuth2\":[]}]",
  "perPath: /api/v1/users/{id}/two-factor/request post security [{\"OAuth2\":[]}]",

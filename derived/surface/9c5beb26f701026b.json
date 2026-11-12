@@ -1,0 +1,13 @@
+[
+ "perPath: /v1/async/queue delete security [{\"bearerAuth\":[]}]",
+ "perPath: /v1/async/status get security [{\"bearerAuth\":[]}]",
+ "perPath: /v1/async/task post security [{\"bearerAuth\":[]}]",
+ "perPath: /v1/async/task/batch post security [{\"bearerAuth\":[]}]",
+ "perPath: /v1/async/task/{taskId} get security [{\"bearerAuth\":[]}]",
+ "perPath: /v1/credits get security [{\"bearerAuth\":[]}]",
+ "schemes.bearerAuth.description: \"cloro API key as a bearer token. One key grants every endpoint in this spec; per-key scopes are not available, so a client cannot request a narrower permission. Keys are created and revoked in the [dashboard](https://dashboard.cloro.dev/api-keys).\"",
+ "schemes.bearerAuth.scheme: \"bearer\"",
+ "schemes.bearerAuth.type: \"http\"",
+ "security[]: {\"bearerAuth\":[]}",
+ "servers[0]: {\"description\":\"Production server\",\"url\":\"https://api.cloro.dev\"}"
+]

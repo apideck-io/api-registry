@@ -291,6 +291,8 @@
  "perPath: /ledger/vatType get security [{\"tokenAuthScheme\":[]}]",
  "perPath: /ledger/vatType/createRelativeVatType put security [{\"tokenAuthScheme\":[]}]",
  "perPath: /ledger/vatType/{id} get security [{\"tokenAuthScheme\":[]}]",
+ "perPath: /ledger/vatType/{id}/:activate put security [{\"tokenAuthScheme\":[]}]",
+ "perPath: /ledger/vatType/{id}/:deactivate put security [{\"tokenAuthScheme\":[]}]",
  "perPath: /ledger/voucher get security [{\"tokenAuthScheme\":[]}]",
  "perPath: /ledger/voucher post security [{\"tokenAuthScheme\":[]}]",
  "perPath: /ledger/voucher/>externalVoucherNumber get security [{\"tokenAuthScheme\":[]}]",
