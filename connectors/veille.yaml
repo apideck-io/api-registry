@@ -1,0 +1,10 @@
+id: veille
+name: "Veille"
+apideck: false
+specs:
+  - name: "Veille API"
+    url: "https://app.veille.io/openapi"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.veille.io"
+    notes: "The spec the Veille API reference is built from."
