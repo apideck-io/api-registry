@@ -1,0 +1,10 @@
+id: chartquery
+name: "ChartQuery"
+apideck: false
+specs:
+  - name: "ChartQuery API"
+    url: "https://app.chartquery.com/openapi"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.chartquery.com"
+    notes: "The spec the ChartQuery API reference is built from."
