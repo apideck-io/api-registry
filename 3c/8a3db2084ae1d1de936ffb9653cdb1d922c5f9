@@ -1,0 +1,19 @@
+connectors/follow-up-boss.yaml
+  s_3508bd8c9a3273::t_4cf92133c4c318 4-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3c8a3db2084ae1d1de936ffb9653cdb1d922c5f9",
+  "prompts": {},
+  "sessions": {
+    "s_3508bd8c9a3273": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "84766a4d-f33d-4ac1-8d3e-2a28657aef54",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "GJ <info@gertjandewilde.com>"
+    }
+  }
+}
