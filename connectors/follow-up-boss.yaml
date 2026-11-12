@@ -1,10 +1,5 @@
 id: follow-up-boss
 name: "Follow Up Boss"
 apideck: false
-specs:
-  - name: "Follow Up Boss API"
-    url: "https://docs.followupboss.com/openapi/58b53c341065f9c438aa1f7e"
-    format: openapi-3.1
-    provenance: vendor
-    server: "https://api.followupboss.com/v1"
-    notes: "Listed in the docs site's /.well-known/api-catalog."
+notes: "Until November 2026 the ReadMe docs served the full OpenAPI 3.1 spec at https://docs.followupboss.com/openapi/58b53c341065f9c438aa1f7e (listed in /.well-known/api-catalog). Both now 404: the project turned spec downloads off (show_openapi_download: disabled), and each reference page embeds only its own single operation. llms.txt (https://docs.followupboss.com/llms.txt) links per-endpoint Markdown pages, no spec. API base: https://api.followupboss.com/v1 (HTTP Basic, API key as username)."
+specs: []
