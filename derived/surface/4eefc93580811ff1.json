@@ -1,6 +1,8 @@
 [
  "perPath: /anthropic/v1/messages post security [{\"HTTPBearer\":[]}]",
  "perPath: /anthropic/v1/messages/count_tokens post security [{\"HTTPBearer\":[]}]",
+ "perPath: /anthropic/v1/models get security [{\"HTTPBearer\":[]}]",
+ "perPath: /anthropic/v1/models/{model_id} get security [{\"HTTPBearer\":[]}]",
  "perPath: /deploy/hf/ post security [{\"HTTPBearer\":[]}]",
  "perPath: /deploy/list get security [{\"HTTPBearer\":[]}]",
  "perPath: /deploy/list/ get security [{\"HTTPBearer\":[]}]",

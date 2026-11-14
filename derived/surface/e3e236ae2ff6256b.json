@@ -98,6 +98,7 @@
  "perPath: /order.fulfillment_status.list.json get security [{\"ApiKeyAuth\":[],\"StoreKeyAuth\":[]}]",
  "perPath: /order.info.json get security [{\"ApiKeyAuth\":[],\"StoreKeyAuth\":[]}]",
  "perPath: /order.invoice.add.json post security [{\"ApiKeyAuth\":[],\"StoreKeyAuth\":[]}]",
+ "perPath: /order.invoice.list.json get security [{\"ApiKeyAuth\":[],\"StoreKeyAuth\":[]}]",
  "perPath: /order.list.json get security [{\"ApiKeyAuth\":[],\"StoreKeyAuth\":[]}]",
  "perPath: /order.preestimate_shipping.list.json post security [{\"ApiKeyAuth\":[],\"StoreKeyAuth\":[]}]",
  "perPath: /order.refund.add.json post security [{\"ApiKeyAuth\":[],\"StoreKeyAuth\":[]}]",

@@ -1,7 +1,0 @@
-[
- "perPath: []",
- "schemes.sec0.scheme: \"basic\"",
- "schemes.sec0.type: \"http\"",
- "security[]: {\"sec0\":[]}",
- "servers[0]: {\"url\":\"https://api.followupboss.com/v1\"}"
-]
