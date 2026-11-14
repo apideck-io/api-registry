@@ -2,8 +2,6 @@
  "perPath: /accountantDashboard/news get security [{\"tokenAuthScheme\":[]}]",
  "perPath: /accountantDashboard/news/tags get security [{\"tokenAuthScheme\":[]}]",
  "perPath: /accountingOffice/reconciliations/{reconciliationId}/control get security [{\"tokenAuthScheme\":[]}]",
- "perPath: /accountingOffice/reconciliations/{reconciliationId}/control/:controlReconciliation put security [{\"tokenAuthScheme\":[]}]",
- "perPath: /accountingOffice/reconciliations/{reconciliationId}/control/:reconcile put security [{\"tokenAuthScheme\":[]}]",
  "perPath: /accountingOffice/reconciliations/{reconciliationId}/control/:requestControl put security [{\"tokenAuthScheme\":[]}]",
  "perPath: /activity get security [{\"tokenAuthScheme\":[]}]",
  "perPath: /activity post security [{\"tokenAuthScheme\":[]}]",

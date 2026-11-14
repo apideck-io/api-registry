@@ -12,7 +12,7 @@
  "perPath: /folder/{folderId} delete security [{\"ApiKeyAuth\":[]}]",
  "perPath: /folder/{folderId} get security [{\"ApiKeyAuth\":[]},{}]",
  "perPath: /folder/{folderId} put security [{\"ApiKeyAuth\":[]}]",
- "perPath: /folder/{folderId}/share post security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /folder/{folderId}/share put security [{\"ApiKeyAuth\":[]}]",
  "perPath: /meeting/{meetingId} delete security [{\"ApiKeyAuth\":[]}]",
  "perPath: /meeting/{meetingId} get security [{\"ApiKeyAuth\":[]},{}]",
  "perPath: /meeting/{meetingId} put security [{\"ApiKeyAuth\":[]}]",

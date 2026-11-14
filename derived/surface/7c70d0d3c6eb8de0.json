@@ -47,7 +47,6 @@
  "perPath: /search/research/papers/{id}/similar get security [{\"bearerAuth\":[]}]",
  "perPath: /search/{jobId}/feedback post security [{\"bearerAuth\":[]}]",
  "perPath: /support/ask post security [{\"bearerAuth\":[]}]",
- "perPath: /support/docs-search post security [{\"bearerAuth\":[]}]",
  "perPath: /team/activity get security [{\"bearerAuth\":[]}]",
  "perPath: /team/credit-usage get security [{\"bearerAuth\":[]}]",
  "perPath: /team/credit-usage/historical get security [{\"bearerAuth\":[]}]",

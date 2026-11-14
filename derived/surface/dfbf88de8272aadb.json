@@ -28,6 +28,8 @@
  "perPath: /api/v1/submissions/{id} get security [{\"ApiKeyAuth\":[]},{\"TokenAuth\":[]}]",
  "perPath: /api/v1/submissions/{id} patch security [{\"ApiKeyAuth\":[]},{\"TokenAuth\":[]}]",
  "perPath: /api/v1/submissions/{id}/refire_webhooks post security [{\"ApiKeyAuth\":[]},{\"TokenAuth\":[]}]",
+ "perPath: /api/v1/submissions/{submission_id}/tags delete security [{\"ApiKeyAuth\":[]},{\"TokenAuth\":[]}]",
+ "perPath: /api/v1/submissions/{submission_id}/tags post security [{\"ApiKeyAuth\":[]},{\"TokenAuth\":[]}]",
  "schemes.ApiKeyAuth.description: \"Legacy: authenticate by passing your API key as the `api_token` query parameter. The Authorization header is preferred. Form API keys are limited to resources for that form.\"",
  "schemes.ApiKeyAuth.in: \"query\"",
  "schemes.ApiKeyAuth.name: \"api_token\"",
