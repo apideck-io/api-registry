@@ -1,0 +1,10 @@
+id: piloterr
+name: "Piloterr"
+apideck: false
+specs:
+  - name: "Piloterr API"
+    url: "https://app.piloterr.com/openapi"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://api.piloterr.com"
+    notes: "The spec the Piloterr API reference is built from."
