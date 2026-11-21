@@ -7,6 +7,7 @@
  "perPath: /v2/balances/{balanceId}/report get security [{\"advancedAccessToken\":[\"balance-reports.read\"]},{\"oAuth\":[\"balance-reports.read\"]}]",
  "perPath: /v2/balances/{balanceId}/transactions get security [{\"advancedAccessToken\":[\"balances.read\"]},{\"oAuth\":[\"balances.read\"]}]",
  "perPath: /v2/business-accounts/accounts get security [{\"oAuth\":[\"business-accounts.read\"]}]",
+ "perPath: /v2/business-accounts/accounts post security [{\"oAuth\":[\"business-accounts.write\"]}]",
  "perPath: /v2/business-accounts/accounts/{businessAccountId} get security [{\"oAuth\":[\"business-accounts.read\"]}]",
  "perPath: /v2/business-accounts/accounts/{businessAccountId}/transactions get security [{\"oAuth\":[\"business-accounts.read\"]}]",
  "perPath: /v2/business-accounts/accounts/{businessAccountId}/transactions/{transactionId} get security [{\"oAuth\":[\"business-accounts.read\"]}]",

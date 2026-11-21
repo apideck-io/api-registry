@@ -1,6 +1,8 @@
 [
  "perPath: /anthropic/v1/messages post security [{\"HTTPBearer\":[]}]",
  "perPath: /anthropic/v1/messages/count_tokens post security [{\"HTTPBearer\":[]}]",
+ "perPath: /anthropic/v1/models get security [{\"HTTPBearer\":[]}]",
+ "perPath: /anthropic/v1/models/{model_id} get security [{\"HTTPBearer\":[]}]",
  "perPath: /deploy/hf/ post security [{\"HTTPBearer\":[]}]",
  "perPath: /deploy/list get security [{\"HTTPBearer\":[]}]",
  "perPath: /deploy/list/ get security [{\"HTTPBearer\":[]}]",
@@ -108,6 +110,8 @@
  "perPath: /v1/me/gpu_pool/request/{request_id} delete security [{\"HTTPBearer\":[]}]",
  "perPath: /v1/me/rate_limit get security [{\"HTTPBearer\":[]}]",
  "perPath: /v1/me/rate_limit/request post security [{\"HTTPBearer\":[]}]",
+ "perPath: /v1/me/rate_limit/requests get security [{\"HTTPBearer\":[]}]",
+ "perPath: /v1/me/rate_limit/requests/{rl_request_id}/cancel post security [{\"HTTPBearer\":[]}]",
  "perPath: /v1/me/team_display_name post security [{\"HTTPBearer\":[]}]",
  "perPath: /v1/model/{model_name}/loras get security [{\"HTTPBearer\":[]}]",
  "perPath: /v1/models get security [{\"HTTPBearer\":[]}]",

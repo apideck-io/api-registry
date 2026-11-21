@@ -98,6 +98,7 @@
  "perPath: /product/{productId}/reviews get security [{\"ApiKey\":[]}]",
  "perPath: /product/{productId}/reviews post security [{\"ApiKey\":[]}]",
  "perPath: /revocation-request-form post security [{\"ApiKey\":[]}]",
+ "perPath: /sales-channel-file/{fileName} get security [{\"ApiKey\":[]}]",
  "perPath: /salutation get security [{\"ApiKey\":[]}]",
  "perPath: /salutation post security [{\"ApiKey\":[]}]",
  "perPath: /script/{hook} get security [{\"ApiKey\":[]}]",

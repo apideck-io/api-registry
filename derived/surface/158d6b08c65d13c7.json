@@ -11,6 +11,7 @@
  "perPath: /v1/legal-holds/{hold_id}/custodians/{custodian_id} delete security [{\"ApiKeyAuth\":[]}]",
  "perPath: /v1/notes get security [{\"ApiKeyAuth\":[]}]",
  "perPath: /v1/notes/search post security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /v1/notes/transcripts/search post security [{\"ApiKeyAuth\":[]}]",
  "perPath: /v1/notes/{note_id} get security [{\"ApiKeyAuth\":[]}]",
  "perPath: /v1/notes/{note_id}/transcript get security [{\"ApiKeyAuth\":[]}]",
  "perPath: /v1/spaces get security [{\"ApiKeyAuth\":[]}]",

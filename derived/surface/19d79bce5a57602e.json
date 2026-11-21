@@ -11,6 +11,7 @@
  "perPath: /calls/{callId}/tags delete [{\"url\":\"https://api.cloudtalk.io/v1\"}]",
  "perPath: /calls/{callId}/tags get [{\"url\":\"https://api.cloudtalk.io/v1\"}]",
  "perPath: /calls/{callId}/tags post [{\"url\":\"https://api.cloudtalk.io/v1\"}]",
+ "perPath: /calls/{callUuid}/insight-cards post [{\"url\":\"https://api.cloudtalk.io/v1\"}]",
  "perPath: /contact-fields get [{\"url\":\"https://api.cloudtalk.io/v1\"}]",
  "perPath: /contact-tags get [{\"url\":\"https://api.cloudtalk.io/v1\"}]",
  "perPath: /contact-tags post [{\"url\":\"https://api.cloudtalk.io/v1\"}]",

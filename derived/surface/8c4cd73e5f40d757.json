@@ -39,7 +39,7 @@
  "perPath: /v1/api/progressive-profile-view/workspace-id/{workspaceId}/person-id/{personId}/template-id/{templateId} get security [{\"bearerAuth\":[]}]",
  "perPath: /v1/api/progressive-profile-view/workspace-id/{workspaceId}/person-id/{personId}/template-name/{templateName} get security [{\"bearerAuth\":[]}]",
  "perPath: /v1/data/updateExternal put security [{\"bearer-key\":[]}]",
- "schemes.BEARER_TOKEN_FROM_CI.in: \"header\"",
+ "schemes.BEARER_TOKEN_FROM_CI.description: \"Access token, sent in the `Authorization` header as `Bearer <token>`.\"",
  "schemes.BEARER_TOKEN_FROM_CI.scheme: \"bearer\"",
  "schemes.BEARER_TOKEN_FROM_CI.type: \"http\"",
  "schemes.Bearer.bearerFormat: \"JWT\"",

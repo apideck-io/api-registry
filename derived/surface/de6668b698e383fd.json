@@ -1,5 +1,11 @@
 [
- "perPath: []",
+ "perPath: /v1/e-invoices post security [{\"einvoice\":[\"company\",\"expenses:write\"]}]",
+ "perPath: /v1/e-invoices/{id}/status get security [{\"einvoice\":[\"company\",\"expenses:read\"]}]",
+ "schemes.einvoice.flows.clientCredentials.scopes.[\"expenses:read\"]: \"Read e-invoice submission status\"",
+ "schemes.einvoice.flows.clientCredentials.scopes.[\"expenses:write\"]: \"Submit e-invoices\"",
+ "schemes.einvoice.flows.clientCredentials.scopes.company: \"Access the authenticated company\"",
+ "schemes.einvoice.flows.clientCredentials.tokenUrl: \"https://accounts.rydoo.com/connect/token\"",
+ "schemes.einvoice.type: \"oauth2\"",
  "schemes.swagopenapi.flows.clientCredentials.scopes.api_xpd2: \"api_xpd2 is a scope used by xpenditure\"",
  "schemes.swagopenapi.flows.clientCredentials.scopes.openid: \"openid is a scope used by xpenditure\"",
  "schemes.swagopenapi.flows.clientCredentials.tokenUrl: \"https://accounts.rydoo.com/connect/token\"",

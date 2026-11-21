@@ -53,6 +53,8 @@
  "perPath: /api/external/v2/customer_invoices/{customer_invoice_id}/appendices post security [{\"oauth2\":[\"customer_invoices:all\"]}]",
  "perPath: /api/external/v2/customer_invoices/{customer_invoice_id}/categories get security [{\"oauth2\":[\"customer_invoices:all\",\"customer_invoices:readonly\"]}]",
  "perPath: /api/external/v2/customer_invoices/{customer_invoice_id}/categories put security [{\"oauth2\":[\"customer_invoices:all\"]}]",
+ "perPath: /api/external/v2/customer_invoices/{customer_invoice_id}/comments get security [{\"oauth2\":[\"customer_invoices:all\",\"customer_invoices:readonly\"]}]",
+ "perPath: /api/external/v2/customer_invoices/{customer_invoice_id}/comments post security [{\"oauth2\":[\"customer_invoices:all\"]}]",
  "perPath: /api/external/v2/customer_invoices/{customer_invoice_id}/custom_header_fields get security [{\"oauth2\":[\"customer_invoices:all\",\"customer_invoices:readonly\"]}]",
  "perPath: /api/external/v2/customer_invoices/{customer_invoice_id}/installments get security [{\"oauth2\":[\"customer_invoices:all\",\"customer_invoices:readonly\"]}]",
  "perPath: /api/external/v2/customer_invoices/{customer_invoice_id}/installments/{id}/mark_as_paid put security [{\"oauth2\":[\"customer_invoices:all\"]}]",

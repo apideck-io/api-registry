@@ -186,6 +186,7 @@
  "perPath: /v2/documents/{documentId}/draft/publish post security [{\"bearerAuth\":[]}]",
  "perPath: /v2/documents/{documentId}/draft/{draftId} get security [{\"bearerAuth\":[]}]",
  "perPath: /v2/documents/{documentId}/draft/{draftId} patch security [{\"bearerAuth\":[]}]",
+ "perPath: /v2/documents/{documentId}/draft/{draftId}/queries/{queryKey}/input-columns post security [{\"bearerAuth\":[]}]",
  "perPath: /v2/documents/{documentId}/identifier put security [{\"bearerAuth\":[]}]",
  "schemes.bearerAuth.bearerFormat: \"JWT\"",
  "schemes.bearerAuth.description: \"Can be either an [Organization API Key](/api/authentication#organization-api-keys) or [Personal Access Token (PAT)](/api/authentication#token-types).\\n\\nInclude in the `Authorization` header as: `Bearer YOUR_TOKEN`\\n\"",
