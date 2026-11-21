@@ -11,7 +11,7 @@
  "perPath: /v2/brands/{identifier} get security [{\"bearerAuth\":[]},{\"mppPayment\":[]},{\"x402Payment\":[]}]",
  "perPath: /v2/brands/{identifier} head security [{\"bearerAuth\":[]}]",
  "perPath: /v2/context/{domain} get security [{\"bearerAuth\":[]},{\"mppPayment\":[]},{\"x402Payment\":[]}]",
- "perPath: /v2/search/{name}?c={clientId} get security [{\"clientId\":[]}]",
+ "perPath: /v2/search/{name} get security [{\"clientId\":[]}]",
  "perPath: /v2/viewer get security [{\"bearerAuth\":[]}]",
  "schemes.bearerAuth.scheme: \"bearer\"",
  "schemes.bearerAuth.type: \"http\"",

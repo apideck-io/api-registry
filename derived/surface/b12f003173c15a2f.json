@@ -34,6 +34,7 @@
  "perPath: /api/companies/{companyId}/employees/svwsettings get security [{\"Bearer\":[\"employee.payrollsettings\",\"employee.payrollsettings.read\"]}]",
  "perPath: /api/companies/{companyId}/employees/useraccounts get security [{\"Bearer\":[\"employee.info\",\"employee.info.read\"]}]",
  "perPath: /api/companies/{companyId}/employees/variablewagecomponents get security [{\"Bearer\":[\"employee.payment\",\"employee.payment.read\"]}]",
+ "perPath: /api/companies/{companyId}/employees/variablewagecomponents/batch post security [{\"Bearer\":[\"employee.payment\"]}]",
  "perPath: /api/companies/{companyId}/employees/wagetaxsettings get security [{\"Bearer\":[\"employee.payrollsettings\",\"employee.payrollsettings.read\"]}]",
  "perPath: /api/companies/{companyId}/employees/{employeeId}/absences post security [{\"Bearer\":[\"employee.leave\"]}]",
  "perPath: /api/companies/{companyId}/employees/{employeeId}/absences/{absenceDossierId}/registrations post security [{\"Bearer\":[\"employee.leave\"]}]",
@@ -109,6 +110,7 @@
  "perPath: /api/employees/{employeeId}/leaverequest post security [{\"Bearer\":[\"employee.leave\"]}]",
  "perPath: /api/employees/{employeeId}/manager put security [{\"Bearer\":[\"employee.orgstructure\"]}]",
  "perPath: /api/employees/{employeeId}/payslipperperiod get security [{\"Bearer\":[\"employee.document\",\"employee.document.read\"]}]",
+ "perPath: /api/employees/{employeeId}/payslipperrun get security [{\"Bearer\":[\"employee.document\",\"employee.document.read\"]}]",
  "perPath: /api/employees/{employeeId}/personalInfo put security [{\"Bearer\":[\"employee.info\"]}]",
  "perPath: /api/employees/{employeeId}/salary post security [{\"Bearer\":[\"employee.employment\"]}]",
  "perPath: /api/employees/{employeeId}/schedule post security [{\"Bearer\":[\"employee.employment\"]}]",
@@ -156,5 +158,6 @@
  "schemes.Bearer.flows.authorizationCode.tokenUrl: \"https://identityservice.nmbrs.com/connect/token\"",
  "schemes.Bearer.type: \"oauth2\"",
  "security[]: {\"Bearer\":[\"company.document.read\",\"company.info\",\"company.info.read\",\"company.leave.read\",\"company.payrollsettings.read\",\"debtor.info.read\",\"document.read\",\"employee.bankaccount\",\"employee.bankaccount.read\",\"employee.document\",\"employee.document.read\",\"employee.employment\",\"employee.employment.read\",\"employee.info\",\"employee.info.read\",\"employee.leave\",\"employee.leave.read\",\"employee.orgstructure\",\"employee.orgstructure.read\",\"employee.payment\",\"employee.payment.read\",\"employee.payrollsettings\",\"employee.payrollsettings.read\",\"offline_access\",\"user.info.read\"]}",
- "servers[0]: {\"description\":\"Nmbrs REST API\",\"url\":\"https://api.nmbrsapp.com\"}"
+ "servers[0]: {\"description\":\"Nmbrs REST API\",\"url\":\"https://api.nmbrsapp.com\"}",
+ "servers[1]: {\"description\":\"Mock Server\",\"url\":\"https://stoplight.io/mocks/nmbrs/nmbrs-restapi:Mock/12084760\"}"
 ]

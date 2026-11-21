@@ -15,6 +15,7 @@
  "perPath: /api/organizations get security []",
  "perPath: /api/organizations/{id} get security []",
  "perPath: /api/organizations/{organization_id_or_username}/articles get security []",
+ "perPath: /api/organizations/{organization_id_or_username}/listings get security []",
  "perPath: /api/organizations/{organization_id_or_username}/users get security []",
  "perPath: /api/organizations/{username} get security []",
  "perPath: /api/pages get security []",

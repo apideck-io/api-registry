@@ -3,7 +3,7 @@
  "perPath: /api/payments/pvt/payments/{paymentId}/payment-notification * [{\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.vtexpayments.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}]",
  "perPath: /api/payments/pvt/payments/{paymentId}/payment-notification get security [{\"appKey\":[],\"appToken\":[]},{\"VtexIdclientAutCookie\":[]}]",
  "perPath: /api/payments/pvt/payments/{paymentId}/payment-notification post security [{\"appKey\":[],\"appToken\":[]},{\"VtexIdclientAutCookie\":[]}]",
- "perPath: /api/payments/transactions/{transactionId}/payments * [{\"description\":\"VTEX Vault server URL.\",\"url\":\"https://api.vtexvault.com\"}]",
+ "perPath: /api/payments/transactions/{transactionId}/payments * [{\"description\":\"VTEX Vault server URL.\",\"url\":\"https://{accountName}.vtexvault.com\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}]",
  "perPath: /api/payments/transactions/{transactionId}/payments post security []",
  "perPath: /api/pvt/affiliations * [{\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.vtexpayments.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}]",
  "perPath: /api/pvt/affiliations get security [{\"appKey\":[],\"appToken\":[]},{\"VtexIdclientAutCookie\":[]}]",
@@ -31,12 +31,8 @@
  "perPath: /api/pvt/transactions/{transactionId}/additional-data post security [{\"appKey\":[],\"appToken\":[]},{\"VtexIdclientAutCookie\":[]}]",
  "perPath: /api/pvt/transactions/{transactionId}/authorization-request * [{\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.vtexpayments.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}]",
  "perPath: /api/pvt/transactions/{transactionId}/authorization-request post security [{\"appKey\":[],\"appToken\":[]},{\"VtexIdclientAutCookie\":[]}]",
- "perPath: /api/pvt/transactions/{transactionId}/cancellation-request * [{\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.vtexpayments.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}]",
- "perPath: /api/pvt/transactions/{transactionId}/cancellation-request post security [{\"appKey\":[],\"appToken\":[]},{\"VtexIdclientAutCookie\":[]}]",
  "perPath: /api/pvt/transactions/{transactionId}/payments/{paymentId} * [{\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.vtexpayments.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}]",
  "perPath: /api/pvt/transactions/{transactionId}/payments/{paymentId} get security [{\"appKey\":[],\"appToken\":[]},{\"VtexIdclientAutCookie\":[]}]",
- "perPath: /api/pvt/transactions/{transactionId}/refunding-request * [{\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.vtexpayments.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}]",
- "perPath: /api/pvt/transactions/{transactionId}/refunding-request post security [{\"appKey\":[],\"appToken\":[]},{\"VtexIdclientAutCookie\":[]}]",
  "perPath: /api/pvt/transactions/{transactionId}/settlement-request * [{\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.vtexpayments.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}]",
  "perPath: /api/pvt/transactions/{transactionId}/settlement-request post security [{\"appKey\":[],\"appToken\":[]},{\"VtexIdclientAutCookie\":[]}]",
  "perPath: /api/pvt/transactions/{transactionId}/settlements * [{\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.vtexpayments.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}]",
@@ -54,6 +50,5 @@
  "schemes.appToken.name: \"X-VTEX-API-AppToken\"",
  "schemes.appToken.type: \"apiKey\"",
  "security: null",
- "servers[0]: {\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.vtexpayments.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}",
- "servers[1]: {\"description\":\"VTEX Vault server URL.\",\"url\":\"https://api.vtexvault.com\"}"
+ "servers[0]: {\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.vtexpayments.com.br\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}"
 ]

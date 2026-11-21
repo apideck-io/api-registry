@@ -83,6 +83,8 @@
  "perPath: /v1/knowledge/context/{knowledge_context_id} get security [{\"HTTPBearer\":[]}]",
  "perPath: /v1/knowledge/context/{knowledge_context_id} patch security [{\"HTTPBearer\":[]}]",
  "perPath: /v1/knowledge/skills get security [{\"HTTPBearer\":[]}]",
+ "perPath: /v1/knowledge/skills post security [{\"HTTPBearer\":[]}]",
+ "perPath: /v1/knowledge/skills/{skill_id}/files/{path} put security [{\"HTTPBearer\":[]}]",
  "perPath: /v1/knowledge/skills/{title} get security [{\"HTTPBearer\":[]}]",
  "perPath: /vendor_agreements get security [{\"HTTPBearer\":[]}]",
  "perPath: /vendor_agreements/{vendor_agreement_id}/custom_attributes/{label} put security [{\"HTTPBearer\":[]}]",

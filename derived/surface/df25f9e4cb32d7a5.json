@@ -4,6 +4,8 @@
  "perPath: /v1/AuthTokens/Secondary * [{\"url\":\"https://accounts.twilio.com\"}]",
  "perPath: /v1/AuthTokens/Secondary delete security [{\"accountSid_authToken\":[]}]",
  "perPath: /v1/AuthTokens/Secondary post security [{\"accountSid_authToken\":[]}]",
+ "perPath: /v1/ComplianceSignals/Check * [{\"url\":\"https://accounts.twilio.com\"}]",
+ "perPath: /v1/ComplianceSignals/Check post security [{\"accountSid_authToken\":[]}]",
  "perPath: /v1/Consents/Bulk * [{\"url\":\"https://accounts.twilio.com\"}]",
  "perPath: /v1/Consents/Bulk post security [{\"accountSid_authToken\":[]}]",
  "perPath: /v1/Contacts/Bulk * [{\"url\":\"https://accounts.twilio.com\"}]",
