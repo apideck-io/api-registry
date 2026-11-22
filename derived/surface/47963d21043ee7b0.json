@@ -88,6 +88,7 @@
  "perPath: /api/public/unstable/dashboards/{dashboardId}/placements post security [{\"BasicAuth\":[]}]",
  "perPath: /api/public/unstable/dashboards/{dashboardId}/placements/{placementId} delete security [{\"BasicAuth\":[]}]",
  "perPath: /api/public/unstable/dashboards/{dashboardId}/placements/{placementId} patch security [{\"BasicAuth\":[]}]",
+ "perPath: /api/public/unstable/organizations/billable-units get security [{\"BasicAuth\":[]}]",
  "perPath: /api/public/unstable/topic-assignments get security [{\"BasicAuth\":[]}]",
  "perPath: /api/public/unstable/topic-facets get security [{\"BasicAuth\":[]}]",
  "perPath: /api/public/unstable/topic-facets/{facetId} get security [{\"BasicAuth\":[]}]",

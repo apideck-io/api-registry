@@ -275,6 +275,7 @@
  "perPath: /sms_template/{id}/ delete security [{\"ApiKeyAuth\":[]}]",
  "perPath: /sms_template/{id}/ get security [{\"ApiKeyAuth\":[]}]",
  "perPath: /sms_template/{id}/ put security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /sms_template/{id}/render/ get security [{\"ApiKeyAuth\":[]}]",
  "perPath: /standard_object_label/ get security [{\"ApiKeyAuth\":[]}]",
  "perPath: /standard_object_label/{label_type}/ delete security [{\"ApiKeyAuth\":[]}]",
  "perPath: /standard_object_label/{label_type}/ get security [{\"ApiKeyAuth\":[]}]",

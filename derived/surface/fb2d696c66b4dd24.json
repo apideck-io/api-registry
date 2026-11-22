@@ -23,7 +23,6 @@
  "perPath: /api/v1/answers/{id} delete security [{\"basicAuth\":[]}]",
  "perPath: /api/v1/answers/{id}/assign delete security [{\"basicAuth\":[]}]",
  "perPath: /api/v1/answers/{id}/assign put security [{\"basicAuth\":[]}]",
- "perPath: /api/v1/answers/{id}/boosteddocuments get security [{\"basicAuth\":[]}]",
  "perPath: /api/v1/answers/{id}/relevantunverifieddocuments get security [{\"basicAuth\":[]}]",
  "perPath: /api/v1/answers/{id}/restore post security [{\"basicAuth\":[]}]",
  "perPath: /api/v1/cards/extended post security [{\"basicAuth\":[]}]",

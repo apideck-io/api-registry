@@ -13,6 +13,7 @@
  "perPath: /lucca-api/employee-attribute-definitions/{id} put security [{\"oAuth\":[\"employee-attribute-definitions.readwrite\"]}]",
  "perPath: /lucca-api/employee-attributes get security [{\"oAuth\":[\"employee-attributes.readonly\"]},{\"oAuth\":[\"employee-attributes.readwrite\"]}]",
  "perPath: /lucca-api/employee-attributes post security [{\"oAuth\":[\"employee-attributes.readwrite\"]}]",
+ "perPath: /lucca-api/employee-attributes/{id} delete security [{\"oAuth\":[\"employee-attributes.readwrite\"]}]",
  "perPath: /lucca-api/employee-attributes/{id} get security [{\"oAuth\":[\"employee-attributes.readonly\"]},{\"oAuth\":[\"employee-attributes.readwrite\"]}]",
  "perPath: /lucca-api/employee-attributes/{id} patch security [{\"oAuth\":[\"employee-attributes.readwrite\"]}]",
  "perPath: /lucca-api/employee-attributes/{id} put security [{\"oAuth\":[\"employee-attributes.readwrite\"]}]",

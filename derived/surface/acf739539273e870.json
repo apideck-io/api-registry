@@ -1,5 +1,6 @@
 [
  "perPath: /v3/ get security [{\"BearerAuth\":[]},{}]",
+ "perPath: /v3/_/apply post security [{\"BearerAuth\":[]},{}]",
  "perPath: /v3/_/audit-entries get security [{\"BearerAuth\":[]},{}]",
  "perPath: /v3/_/audit-entries/{sequence} get security [{\"BearerAuth\":[]},{}]",
  "perPath: /v3/_/events-sinks get security [{\"BearerAuth\":[]},{}]",

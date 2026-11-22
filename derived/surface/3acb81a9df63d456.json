@@ -32,6 +32,7 @@
  "perPath: /v4/forms/{form_id}/subscribers get security [{\"API Key\":[]},{\"OAuth2\":[]}]",
  "perPath: /v4/forms/{form_id}/subscribers post security [{\"API Key\":[]},{\"OAuth2\":[]}]",
  "perPath: /v4/forms/{form_id}/subscribers/{id} post security [{\"API Key\":[]},{\"OAuth2\":[]}]",
+ "perPath: /v4/kit_fields get security [{\"API Key\":[]},{\"OAuth2\":[]}]",
  "perPath: /v4/posts get security [{\"API Key\":[]},{\"OAuth2\":[]}]",
  "perPath: /v4/posts/{id} get security [{\"API Key\":[]},{\"OAuth2\":[]}]",
  "perPath: /v4/purchases get security [{\"OAuth2\":[]}]",

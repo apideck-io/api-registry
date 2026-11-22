@@ -9,6 +9,7 @@
  "perPath: /networks/traffic/mismatches/{networkTrackingDomainId} post security [{\"API Key\":[]}]",
  "perPath: /networks/traffic/situation post security [{\"API Key\":[]}]",
  "perPath: /networks/traffic/situation/domains post security [{\"API Key\":[]}]",
+ "perPath: /networks/traffic/tables/domains/blacklistincidents post security [{\"API Key\":[]}]",
  "perPath: /networks/traffic/tasks get security [{\"API Key\":[]}]",
  "perPath: /networks/traffic/tasks/{taskIdentifier} get security [{\"API Key\":[]}]",
  "perPath: /networks/traffic/usage/domains post security [{\"API Key\":[]}]",

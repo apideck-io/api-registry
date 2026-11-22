@@ -15,6 +15,7 @@
  "perPath: /dynamic-search-rules/{uid} delete security [{\"Bearer\":[\"*\",\"*.delete\",\"dynamicSearchRules.*\",\"dynamicSearchRules.delete\"]}]",
  "perPath: /dynamic-search-rules/{uid} get security [{\"Bearer\":[\"*\",\"*.get\",\"dynamicSearchRules.*\",\"dynamicSearchRules.get\"]}]",
  "perPath: /dynamic-search-rules/{uid} patch security [{\"Bearer\":[\"*\",\"dynamicSearchRules.*\",\"dynamicSearchRules.update\"]}]",
+ "perPath: /dynamic-search-rules/{uid}/target get security [{\"Bearer\":[\"*\",\"*.get\",\"dynamicSearchRules.*\",\"dynamicSearchRules.get\"]}]",
  "perPath: /experimental-features get security [{\"Bearer\":[\"*\",\"experimental_features.*\",\"experimental_features.get\"]}]",
  "perPath: /experimental-features patch security [{\"Bearer\":[\"*\",\"experimental_features.*\",\"experimental_features.update\"]}]",
  "perPath: /export post security [{\"Bearer\":[\"*\",\"export\"]}]",

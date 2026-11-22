@@ -17,5 +17,5 @@
  "schemes.APIKeyHeader.name: \"X-API-Key\"",
  "schemes.APIKeyHeader.type: \"apiKey\"",
  "security: null",
- "servers: null"
+ "servers[0]: {\"url\":\"https://api.glyphic.ai\"}"
 ]

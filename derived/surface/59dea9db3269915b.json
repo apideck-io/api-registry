@@ -29,7 +29,6 @@
  "perPath: /businesses/{fp_id}/tags/{tag_id} delete security [{\"Secret API Key\":[]}]",
  "perPath: /entities/{fp_id}/vault/redact post security [{\"Secret API Key\":[\"preview:redact_user_data\"]}]",
  "perPath: /onboarding/session post security [{\"Secret API Key\":[\"preview:legacy_onboarding_session\"]}]",
- "perPath: /onboarding/session/run post security [{\"Secret API Key\":[\"preview:onboarding_session_run\"]}]",
  "perPath: /onboarding/session/validate post security [{\"Secret API Key\":[]}]",
  "perPath: /onboardings post security [{\"Secret API Key\":[]}]",
  "perPath: /onboardings/{id} get security [{\"Secret API Key\":[]}]",

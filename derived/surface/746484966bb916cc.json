@@ -296,6 +296,7 @@
  "perPath: /apps/{appId}/services/qonto/oauth/authorize-url get security [{\"feature_flag\":[\"e_invoicing\"]},{\"is_authenticated\":[]},{\"is_logged\":[]}]",
  "perPath: /apps/{appId}/services/qonto/registration delete security [{\"feature_flag\":[\"e_invoicing\"]},{\"is_authenticated\":[]},{\"is_logged\":[]}]",
  "perPath: /apps/{appId}/services/qonto/registration post security [{\"feature_flag\":[\"e_invoicing\"]},{\"is_authenticated\":[]},{\"is_logged\":[]}]",
+ "perPath: /apps/{appId}/services/qonto/state get security [{\"feature_flag\":[\"e_invoicing\"]},{\"is_authenticated\":[]},{\"is_logged\":[]}]",
  "perPath: /apps/{appId}/settings get security [{\"is_authenticated\":[]}]",
  "perPath: /apps/{appId}/settings post security [{\"is_authenticated\":[]},{\"is_logged\":[]}]",
  "perPath: /apps/{appId}/signature post security [{\"is_logged\":[]}]",
