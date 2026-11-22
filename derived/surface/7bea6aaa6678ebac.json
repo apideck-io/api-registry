@@ -31,5 +31,5 @@
  "schemes.CentralAuthSessionProvider-UserID.type: \"apiKey\"",
  "security: null",
  "servers[0]: {\"description\":\"(Production)\",\"url\":\"https://en.wikipedia.org/w/rest.php/readinglists/v0\"}",
- "servers[1]: {\"description\":\"(Sandbox)\",\"url\":\"https://test.wikimedia.org/w/rest.php/readinglists/v0\"}"
+ "servers[1]: {\"description\":\"(Sandbox)\",\"url\":\"https://test.wikipedia.org/w/rest.php/readinglists/v0\"}"
 ]

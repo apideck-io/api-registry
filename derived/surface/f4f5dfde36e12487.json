@@ -310,6 +310,7 @@
  "perPath: /console/v1/release_pipelines/{id} delete security [{\"STATSIG-API-KEY\":[]}]",
  "perPath: /console/v1/release_pipelines/{id} get security [{\"STATSIG-API-KEY\":[]}]",
  "perPath: /console/v1/release_pipelines/{id} post security [{\"STATSIG-API-KEY\":[]}]",
+ "perPath: /console/v1/reload_schedules get security [{\"STATSIG-API-KEY\":[]}]",
  "perPath: /console/v1/reports get security [{\"STATSIG-API-KEY\":[]}]",
  "perPath: /console/v1/roles get security [{\"STATSIG-API-KEY\":[]}]",
  "perPath: /console/v1/roles post security [{\"STATSIG-API-KEY\":[]}]",

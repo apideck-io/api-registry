@@ -74,7 +74,6 @@
  "perPath: /rest/api/consent/v1/receipts/cross-device delete security [{\"ConsentAPI_OAUTH2\":[\"COOKIE\"]}]",
  "perPath: /rest/api/consent/v4/data-subjects delete security [{\"ConsentAPI_OAUTH2\":[\"CONSENT\"]}]",
  "perPath: /rest/api/consent/v4/data-subjects/profiles delete security [{\"ConsentAPI_OAUTH2\":[\"CONSENT\"]}]",
- "perPath: /rest/api/consent/v4/datasubject-profiles get security [{\"ConsentAPI_OAUTH2\":[\"CONSENT\",\"CONSENT_READ\"]}]",
  "perPath: /rest/api/consent/v4/datasubjects get security [{\"ConsentAPI_OAUTH2\":[\"CONSENT\",\"CONSENT_READ\"]}]",
  "perPath: /rest/api/consent/v4/datasubjects/basic-details get security [{\"ConsentAPI_OAUTH2\":[\"CONSENT\",\"CONSENT_READ\"]}]",
  "perPath: /rest/api/consent/v4/datasubjects/details get security [{\"ConsentAPI_OAUTH2\":[\"CONSENT\",\"CONSENT_READ\"]}]",

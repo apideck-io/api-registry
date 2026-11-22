@@ -394,7 +394,7 @@
  "schemes.oauth2.flows.authorizationCode.scopes.VENDOR_WRITE: \"__HTTP Method__:  `POST`, `PUT`, `DELETE`\\n\\nGrants write access to vendor information, for example, when calling the\\n`BulkUpdateVendors` endpoint.\"",
  "schemes.oauth2.flows.authorizationCode.tokenUrl: \"https://connect.squareup.com/oauth2/token\"",
  "schemes.oauth2.type: \"oauth2\"",
- "schemes.oauth2.x-additional-headers[]: {\"description\":\"Square Connect API versions\",\"name\":\"Square-Version\",\"schema\":{\"default\":\"2026-09-16\"}}",
+ "schemes.oauth2.x-additional-headers[]: {\"description\":\"Square Connect API versions\",\"name\":\"Square-Version\",\"schema\":{\"default\":\"2026-11-18\"}}",
  "schemes.oauth2ClientSecret.in: \"header\"",
  "schemes.oauth2ClientSecret.name: \"Authorization\"",
  "schemes.oauth2ClientSecret.type: \"apiKey\"",

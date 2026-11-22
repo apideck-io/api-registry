@@ -55,6 +55,7 @@
  "perPath: /regional_advancement/{year} get security [{\"apiKey\":[]}]",
  "perPath: /regional_advancement/{year}/rankings get security [{\"apiKey\":[]}]",
  "perPath: /search_index get security [{\"apiKey\":[]}]",
+ "perPath: /sponsors get security [{\"apiKey\":[]}]",
  "perPath: /status get security [{\"apiKey\":[]}]",
  "perPath: /team/{team_key} get security [{\"apiKey\":[]}]",
  "perPath: /team/{team_key}/awards get security [{\"apiKey\":[]}]",
