@@ -16,6 +16,8 @@
  "perOp: /v3/blacklist post [{\"api_key\":[]}]",
  "perOp: /v3/blacklist put [{\"api_key\":[]}]",
  "perOp: /v3/blacklist/batch post [{\"api_key\":[]}]",
+ "perOp: /v3/blacklist/batchdelete post [{\"api_key\":[]}]",
+ "perOp: /v3/blacklist/drop delete [{\"api_key\":[]}]",
  "perOp: /v3/blacklist/validate post [{\"api_key\":[]}]",
  "perOp: /v3/blacklist/{email} delete [{\"api_key\":[]}]",
  "perOp: /v3/blacklist/{email} get [{\"api_key\":[]}]",

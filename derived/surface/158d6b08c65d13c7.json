@@ -1,4 +1,5 @@
 [
+ "perPath: /v1/analytics get security [{\"ApiKeyAuth\":[]}]",
  "perPath: /v1/audit get security [{\"ApiKeyAuth\":[]}]",
  "perPath: /v1/folders get security [{\"ApiKeyAuth\":[]}]",
  "perPath: /v1/legal-holds get security [{\"ApiKeyAuth\":[]}]",

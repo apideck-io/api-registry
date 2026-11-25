@@ -260,7 +260,6 @@
  "perPath: /apps/{appId}/recurringinvoices/{id} delete security [{\"is_authenticated\":[]},{\"is_logged\":[]}]",
  "perPath: /apps/{appId}/recurringinvoices/{id} get security [{\"is_authenticated\":[]}]",
  "perPath: /apps/{appId}/recurringinvoices/{id} post security [{\"is_authenticated\":[]},{\"is_logged\":[]}]",
- "perPath: /apps/{appId}/recurringinvoices/{id}/einvoicing-audit get security [{\"is_authenticated\":[]}]",
  "perPath: /apps/{appId}/recurringinvoices/{id}/einvoicing-audit/dismiss post security [{\"is_authenticated\":[]}]",
  "perPath: /apps/{appId}/recurringinvoices/{id}/plan get security [{\"is_authenticated\":[]}]",
  "perPath: /apps/{appId}/relationships get security [{\"is_authenticated\":[]}]",

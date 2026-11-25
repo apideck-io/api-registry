@@ -115,6 +115,7 @@
  "perPath: /v1/global-config/{edgeConfigId}/schema delete security [{\"bearerToken\":[]}]",
  "perPath: /v1/global-config/{edgeConfigId}/schema get security [{\"bearerToken\":[]}]",
  "perPath: /v1/global-config/{edgeConfigId}/schema post security [{\"bearerToken\":[]}]",
+ "perPath: /v1/global-config/{edgeConfigId}/token get security [{\"bearerToken\":[]}]",
  "perPath: /v1/global-config/{edgeConfigId}/token post security [{\"bearerToken\":[]}]",
  "perPath: /v1/global-config/{edgeConfigId}/token/{token} get security [{\"bearerToken\":[]}]",
  "perPath: /v1/global-config/{edgeConfigId}/tokens delete security [{\"bearerToken\":[]}]",

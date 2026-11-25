@@ -25,6 +25,7 @@
  "perPath: /v1/time-off/balances/{report_id} get security [{\"OAuth2CompanyAccessToken\":[\"time_off:read\"]}]",
  "perPath: /v1/time-off/policies get security [{\"OAuth2CompanyAccessToken\":[\"time_off:read\"]}]",
  "perPath: /v1/time-off/requests get security [{\"OAuth2CompanyAccessToken\":[\"time_off:read\"]}]",
+ "perPath: /v1/time-off/requests/{request_id} get security [{\"OAuth2CompanyAccessToken\":[\"time_off:read\"]}]",
  "perPath: /v1/time-off/requests/{request_id}:approve post security [{\"OAuth2CompanyAccessToken\":[\"time_off:write\"]}]",
  "perPath: /v1/time-off/requests/{request_id}:decline post security [{\"OAuth2CompanyAccessToken\":[\"time_off:write\"]}]",
  "schemes.OAuth2CompanyAccessToken.flows.authorizationCode.authorizationUrl: \"https://payroll.justworks.com/oauth/authorize\"",

@@ -163,6 +163,7 @@
  "perPath: /gst/compliance/tax-payer/ledgers/cash get security [{\"GstTaxpayerAccessToken\":[],\"SandboxApiKey1\":[]}]",
  "perPath: /gst/compliance/tax-payer/ledgers/itc get security [{\"GstTaxpayerAccessToken\":[],\"SandboxApiKey1\":[]}]",
  "perPath: /gst/compliance/tax-payer/ledgers/tax/{year}/{month} get security [{\"GstTaxpayerAccessToken\":[],\"SandboxApiKey1\":[]}]",
+ "perPath: /gst/compliance/tax-payer/ledgers/{gstr}/liability/{year}/{month} get security [{\"GstTaxpayerAccessToken\":[],\"SandboxApiKey1\":[]}]",
  "perPath: /gst/compliance/tax-payer/logout post security [{\"GstTaxpayerAccessToken\":[],\"SandboxApiKey1\":[]}]",
  "perPath: /gst/compliance/tax-payer/notices get security [{\"GstTaxpayerAccessToken\":[],\"SandboxApiKey1\":[]}]",
  "perPath: /gst/compliance/tax-payer/notices/{referenceId} get security [{\"GstTaxpayerAccessToken\":[],\"SandboxApiKey1\":[]}]",

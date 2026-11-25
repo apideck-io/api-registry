@@ -101,6 +101,7 @@
  "perPath: /v3/models/audio/tts/stream-input/tokens post security [{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}]",
  "perPath: /v3/models/audio/voices get security [{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}]",
  "perPath: /v3/models/audio/voices post security [{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}]",
+ "perPath: /v3/models/audio/voices/languages get security [{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}]",
  "perPath: /v3/models/audio/voices/{voice_id} delete security [{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}]",
  "perPath: /v3/models/audio/voices/{voice_id} get security [{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}]",
  "perPath: /v3/models/avatars post security [{\"ApiKeyAuth\":[]},{\"BearerAuth\":[]}]",

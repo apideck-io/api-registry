@@ -11,6 +11,8 @@
  "perPath: /v0/teams/{id}/members post security [{\"bearerAuth\":[]}]",
  "perPath: /v0/teams/{id}/members/{user_id} delete security [{\"bearerAuth\":[]}]",
  "perPath: /v0/teams/{id}/members/{user_id}/resend_invite post security [{\"bearerAuth\":[]}]",
+ "perPath: /v0/teams/{id}/streams get security [{\"bearerAuth\":[]}]",
+ "perPath: /v0/teams/{id}/streams patch security [{\"bearerAuth\":[]}]",
  "schemes.api_key.in: \"header\"",
  "schemes.api_key.name: \"x-api-key\"",
  "schemes.api_key.type: \"apiKey\"",
