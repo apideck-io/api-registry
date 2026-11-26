@@ -34,6 +34,7 @@
  "perPath: /v1/branches get security [{\"bearerAuth\":[]}]",
  "perPath: /v1/branches/{branchId} get security [{\"bearerAuth\":[]}]",
  "perPath: /v1/branches/{branchId} patch security [{\"bearerAuth\":[]}]",
+ "perPath: /v1/branches/{branchId}/move post security [{\"bearerAuth\":[]}]",
  "perPath: /v1/connection-environments post security [{\"bearerAuth\":[]}]",
  "perPath: /v1/connection-environments/{connectionEnvironmentId} delete security [{\"bearerAuth\":[]}]",
  "perPath: /v1/connection-environments/{connectionEnvironmentId} put security [{\"bearerAuth\":[]}]",

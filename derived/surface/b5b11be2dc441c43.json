@@ -262,7 +262,6 @@
  "perOp: /teams/{username}/pipelines_config/variables/{variable_uuid} delete [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"pipeline:variable\"]}]",
  "perOp: /teams/{username}/pipelines_config/variables/{variable_uuid} get [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"pipeline\"]}]",
  "perOp: /teams/{username}/pipelines_config/variables/{variable_uuid} put [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"pipeline:variable\"]}]",
- "perOp: /teams/{username}/search/code get [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"repository\"]}]",
  "perOp: /user get [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"account\"]}]",
  "perOp: /user/emails get [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"email\"]}]",
  "perOp: /user/emails/{email} get [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"email\"]}]",
@@ -282,7 +281,6 @@
  "perOp: /users/{selected_user}/properties/{app_key}/{property_name} delete [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[]}]",
  "perOp: /users/{selected_user}/properties/{app_key}/{property_name} get [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[]}]",
  "perOp: /users/{selected_user}/properties/{app_key}/{property_name} put [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[]}]",
- "perOp: /users/{selected_user}/search/code get [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"repository\"]}]",
  "perOp: /users/{selected_user}/ssh-keys get [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"account\"]}]",
  "perOp: /users/{selected_user}/ssh-keys post [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"account:write\"]}]",
  "perOp: /users/{selected_user}/ssh-keys/{key_id} delete [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"account:write\"]}]",
@@ -337,7 +335,6 @@
  "perOp: /workspaces/{workspace}/projects/{project_key}/permissions-config/users/{selected_user_id} get [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"project:admin\"]}]",
  "perOp: /workspaces/{workspace}/projects/{project_key}/permissions-config/users/{selected_user_id} put [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"project:admin\"]}]",
  "perOp: /workspaces/{workspace}/pullrequests/{selected_user} get [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"pullrequest\"]}]",
- "perOp: /workspaces/{workspace}/search/code get [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"repository\"]}]",
  "perOp: /workspaces/{workspace}/settings/gpg/public-key get [{\"api_key\":[]},{\"basic\":[]},{\"oauth2\":[\"account\"]}]",
  "schemes: [\"https\"]",
  "security: null"

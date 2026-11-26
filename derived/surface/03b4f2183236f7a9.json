@@ -18,6 +18,7 @@
  "perPath: /me get security [{\"BearerAuth\":[]},{\"OAuth2\":[]}]",
  "perPath: /prospects get security [{\"BearerAuth\":[]},{\"OAuth2\":[\"prospects:read\"]}]",
  "perPath: /prospects/{id} get security [{\"BearerAuth\":[]},{\"OAuth2\":[\"prospects:read\"]}]",
+ "perPath: /prospects/{id} patch security [{\"BearerAuth\":[]},{\"OAuth2\":[\"prospects:write\"]}]",
  "perPath: /prospects/{id}/notes post security [{\"BearerAuth\":[]},{\"OAuth2\":[\"notes:write\"]}]",
  "perPath: /public-ip-list get security []",
  "perPath: /sequenceStates get security [{\"BearerAuth\":[]},{\"OAuth2\":[\"sequence-states:read\"]}]",

@@ -1,4 +1,5 @@
 [
+ "perPath: /orders/{orderId}/deadline put [{\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.{environment}.com.br/vtex_pickandpack\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"},\"environment\":{\"default\":\"vtexcommercestable\",\"description\":\"Environment to use. Used as part of the URL.\",\"enum\":[\"vtexcommercestable\"]}}}]",
  "perPath: /{skuId}/warehouses delete security [{\"VtexIdclientAutCookie\":[]}]",
  "perPath: /{skuId}/warehouses get [{\"description\":\"VTEX server URL.\",\"url\":\"https://{accountName}.myvtex.com/pickpack/warehouses\",\"variables\":{\"accountName\":{\"default\":\"apiexamples\",\"description\":\"Name of the VTEX account. Used as part of the URL.\"}}}]",
  "perPath: /{skuId}/warehouses get security [{\"VtexIdclientAutCookie\":[]}]",

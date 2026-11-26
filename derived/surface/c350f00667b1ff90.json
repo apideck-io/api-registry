@@ -1,5 +1,8 @@
 [
  "basePath: \"/api/v1\"",
+ "definitions.apiKeyHeader.in: \"header\"",
+ "definitions.apiKeyHeader.name: \"X-API-KEY\"",
+ "definitions.apiKeyHeader.type: \"apiKey\"",
  "definitions.apiKeyQuery.in: \"query\"",
  "definitions.apiKeyQuery.name: \"key\"",
  "definitions.apiKeyQuery.type: \"apiKey\"",
@@ -7,5 +10,6 @@
  "parameterizedHost: null",
  "perOp: []",
  "schemes: [\"https\"]",
+ "security[]: {\"apiKeyHeader\":[]}",
  "security[]: {\"apiKeyQuery\":[]}"
 ]

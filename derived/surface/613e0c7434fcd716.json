@@ -33,6 +33,8 @@
  "perPath: /competence-employee/{id} get security [{\"bearer\":[]}]",
  "perPath: /competence-employee/{id} patch security [{\"bearer\":[]}]",
  "perPath: /competence-employee/{id} put security [{\"bearer\":[]}]",
+ "perPath: /competence-employee/{id}/change-log get security [{\"bearer\":[]}]",
+ "perPath: /competence-employee/{id}/renew post security [{\"bearer\":[]}]",
  "perPath: /competence-level get security [{\"bearer\":[]}]",
  "perPath: /competence-level post security [{\"bearer\":[]}]",
  "perPath: /competence-level/{id} delete security [{\"bearer\":[]}]",

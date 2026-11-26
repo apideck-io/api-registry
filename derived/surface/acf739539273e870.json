@@ -41,6 +41,7 @@
  "perPath: /v3/{ledgerName}/metadata-schema/{targetType}/{key} put security [{\"BearerAuth\":[]},{}]",
  "perPath: /v3/{ledgerName}/metadata/{key} delete security [{\"BearerAuth\":[]},{}]",
  "perPath: /v3/{ledgerName}/numscripts get security [{\"BearerAuth\":[]},{}]",
+ "perPath: /v3/{ledgerName}/numscripts/execute post security [{\"BearerAuth\":[]},{}]",
  "perPath: /v3/{ledgerName}/numscripts/{name} get security [{\"BearerAuth\":[]},{}]",
  "perPath: /v3/{ledgerName}/numscripts/{name} put security [{\"BearerAuth\":[]},{}]",
  "perPath: /v3/{ledgerName}/numscripts/{name}/usage get security [{\"BearerAuth\":[]},{}]",

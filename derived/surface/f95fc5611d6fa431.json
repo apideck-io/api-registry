@@ -1,4 +1,7 @@
 [
+ "perPath: /v2/content/verification post security []",
+ "perPath: /v2/content/verification/{verification_id} get security []",
+ "perPath: /v2/content/verification/{verification_id}/uploaded post security []",
  "perPath: /v2/conversations get security [{\"apiKey\":[]}]",
  "perPath: /v2/conversations/{conversation_id} delete security [{\"apiKey\":[]}]",
  "perPath: /v2/conversations/{conversation_id} get security [{\"apiKey\":[]}]",

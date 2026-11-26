@@ -1,9 +1,6 @@
 [
  "perPath: /public/crawler-ip-ranges get security []",
  "perPath: /public/crawler-ips get security []",
- "perPath: /public/domain-rating-free get security []",
- "perPath: /public/domain-rating-free post security []",
- "perPath: /public/domain-rating-top-domains get security []",
  "schemes.http.scheme: \"bearer\"",
  "schemes.http.type: \"http\"",
  "security[]: {\"http\":[\"read\"]}",

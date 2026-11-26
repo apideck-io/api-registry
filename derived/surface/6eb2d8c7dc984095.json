@@ -233,6 +233,7 @@
  "perPath: /v1/email/smtp/configs/{api_key_id} get security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/email/smtp/configs/{api_key_id} patch security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/email/stats/bounce-codes get security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
+ "perPath: /v1/email/stats/brands get security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/email/stats/broadcasts get security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/email/stats/categories get security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/email/stats/clients get security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
