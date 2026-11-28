@@ -83,6 +83,7 @@
  "perPath: /api/admin/v2/flagged_contents/{id}/approve patch security [{\"host\":[],\"token_auth\":[]}]",
  "perPath: /api/admin/v2/flagged_contents/{id}/reject patch security [{\"host\":[],\"token_auth\":[]}]",
  "perPath: /api/admin/v2/forms get security [{\"host\":[],\"token_auth\":[]}]",
+ "perPath: /api/admin/v2/forms post security [{\"host\":[],\"token_auth\":[]}]",
  "perPath: /api/admin/v2/forms/{form_id}/submissions get security [{\"host\":[],\"token_auth\":[]}]",
  "perPath: /api/admin/v2/forms/{form_id}/submissions post security [{\"host\":[],\"token_auth\":[]}]",
  "perPath: /api/admin/v2/forms/{id} delete security [{\"host\":[],\"token_auth\":[]}]",

@@ -83,6 +83,7 @@
  "perPath: /contacts/{id} get security [{\"oauth2\":[\"contacts.read\"]}]",
  "perPath: /contacts/{id} put security [{\"oauth2\":[\"contacts.write\"]}]",
  "perPath: /contacts/{id}/companies get security [{\"oauth2\":[\"companies.read\",\"contacts.read\"]}]",
+ "perPath: /contacts/{id}/share put security [{\"oauth2\":[\"contacts.write\"]}]",
  "perPath: /countries get security [{\"oauth2\":[\"accounts.read\"]}]",
  "perPath: /credit-notes get security [{\"oauth2\":[\"credit-notes.read\"]}]",
  "perPath: /credit-notes post security [{\"oauth2\":[\"credit-notes.write\"]}]",

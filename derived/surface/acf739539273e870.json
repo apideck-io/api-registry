@@ -11,6 +11,7 @@
  "perPath: /v3/_/indexes/{canonicalId} get security [{\"BearerAuth\":[]},{}]",
  "perPath: /v3/_/indexes/{canonicalId}/status get security [{\"BearerAuth\":[]},{}]",
  "perPath: /v3/_/logs/{sequence} get security [{\"BearerAuth\":[]},{}]",
+ "perPath: /v3/_/signing-config get security [{\"BearerAuth\":[]},{}]",
  "perPath: /v3/_/signing-keys get security [{\"BearerAuth\":[]},{}]",
  "perPath: /v3/numscripts/analyze post security [{\"BearerAuth\":[]},{}]",
  "perPath: /v3/{ledgerName} delete security [{\"BearerAuth\":[]},{}]",

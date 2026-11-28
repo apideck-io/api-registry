@@ -1,6 +1,6 @@
 [
  "perPath: []",
- "schemes.AccessToken.description: \"This authentication option is deprecated for removal in Gitea 1.23. Please use AuthorizationHeaderToken instead.\"",
+ "schemes.AccessToken.description: \"This authentication option is deprecated and disabled by default. Set DISABLE_QUERY_AUTH_TOKEN=false temporarily to restore it. Please use AuthorizationHeaderToken instead.\"",
  "schemes.AccessToken.in: \"query\"",
  "schemes.AccessToken.name: \"access_token\"",
  "schemes.AccessToken.type: \"apiKey\"",
@@ -22,7 +22,7 @@
  "schemes.TOTPHeader.in: \"header\"",
  "schemes.TOTPHeader.name: \"X-GITEA-OTP\"",
  "schemes.TOTPHeader.type: \"apiKey\"",
- "schemes.Token.description: \"This authentication option is deprecated for removal in Gitea 1.23. Please use AuthorizationHeaderToken instead.\"",
+ "schemes.Token.description: \"This authentication option is deprecated and disabled by default. Set DISABLE_QUERY_AUTH_TOKEN=false temporarily to restore it. Please use AuthorizationHeaderToken instead.\"",
  "schemes.Token.in: \"query\"",
  "schemes.Token.name: \"token\"",
  "schemes.Token.type: \"apiKey\"",

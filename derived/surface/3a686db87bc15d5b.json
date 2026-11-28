@@ -42,6 +42,7 @@
  "perPath: /v0/webhooks/{webhook_id}/events get security [{\"Bearer\":[]}]",
  "perPath: /v0/webhooks/{webhook_id}/events/count get security [{\"Bearer\":[]}]",
  "perPath: /v0/webhooks/{webhook_id}/status patch security [{\"Bearer\":[]}]",
+ "perPath: /v1/billing/credit-balance get security [{\"Bearer\":[]}]",
  "perPath: /v1/companies/buying_intents post security [{\"Bearer\":[]}]",
  "perPath: /v1/companies/search post security [{\"Bearer\":[]}]",
  "perPath: /v1/companies/technologies post security [{\"Bearer\":[]}]",

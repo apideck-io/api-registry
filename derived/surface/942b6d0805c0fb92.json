@@ -1,4 +1,6 @@
 [
+ "perPath: webhook:episode_transcription.completed post security [{\"WebhookSecret\":[]}]",
+ "perPath: webhook:episode_transcription.failed post security [{\"WebhookSecret\":[]}]",
  "perPath: webhook:podcastDeleted post security []",
  "perPath: webhook:podcastsSubmitAccepted post security []",
  "perPath: webhook:podcastsSubmitRejected post security []",
@@ -6,6 +8,10 @@
  "schemes.ListenApiKey.in: \"header\"",
  "schemes.ListenApiKey.name: \"X-ListenAPI-Key\"",
  "schemes.ListenApiKey.type: \"apiKey\"",
+ "schemes.WebhookSecret.description: \"Shared secret configured on your dashboard webhook endpoint. Verify it on incoming webhook requests. This header is not your Listen API key or an HMAC signature.\"",
+ "schemes.WebhookSecret.in: \"header\"",
+ "schemes.WebhookSecret.name: \"ListenAPI-Webhook-Secret\"",
+ "schemes.WebhookSecret.type: \"apiKey\"",
  "security[]: {\"ListenApiKey\":[]}",
  "servers[0]: {\"description\":\"API Production Server\",\"url\":\"https://listen-api.listennotes.com/api/v2\"}"
 ]
