@@ -1,0 +1,15 @@
+id: saascity
+name: "SaaSCity"
+apideck: false
+notes: "OpenAPI specs published directly by the vendor (docs: https://saascity.io/mcp and https://saascity.io/integrations/pipedream)."
+specs:
+  - name: "SaaSCity Public API"
+    url: "https://saascity.io/openapi.json"
+    format: openapi-3.1
+    provenance: vendor
+    server: "https://saascity.io"
+  - name: "SaaSCity Public & Maker API"
+    url: "https://saascity.io/openapi-rapidapi.json"
+    format: openapi-3.0
+    provenance: vendor
+    server: "https://saascity.io"
