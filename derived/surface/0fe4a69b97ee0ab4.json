@@ -109,6 +109,8 @@
  "perPath: /projects/{project_id}/tasks/{task_id} put security [{\"ApiKeyAuth\":[]}]",
  "perPath: /projects/{project_id}/tasks/{task_id}/edit-metrics * [{\"url\":\"https://api.lokalise.com/api2\"}]",
  "perPath: /projects/{project_id}/tasks/{task_id}/edit-metrics get security [{\"ApiKeyAuth\":[]}]",
+ "perPath: /projects/{project_id}/tasks/{task_id}/edit-metrics/keys * [{\"url\":\"https://api.lokalise.com/api2\"}]",
+ "perPath: /projects/{project_id}/tasks/{task_id}/edit-metrics/keys get security [{\"ApiKeyAuth\":[]}]",
  "perPath: /projects/{project_id}/tasks/{task_id}/usage-metrics * [{\"url\":\"https://api.lokalise.com/api2\"}]",
  "perPath: /projects/{project_id}/tasks/{task_id}/usage-metrics get security [{\"ApiKeyAuth\":[]}]",
  "perPath: /projects/{project_id}/tokens * [{\"url\":\"https://api.lokalise.com/api2\"}]",

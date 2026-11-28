@@ -444,7 +444,7 @@
  "perPath: /v1/voice/ring-groups/{ring_group_id} patch security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/voice/ring-groups/{ring_group_id}/members get security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/voice/ring-groups/{ring_group_id}/members post security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
- "perPath: /v1/voice/ring-groups/{ring_group_id}/members/{user_id} delete security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
+ "perPath: /v1/voice/ring-groups/{ring_group_id}/members/{member_id} delete security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/voice/session-credentials post security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/voice/settings get security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",
  "perPath: /v1/voice/settings patch security [{\"BearerAuth\":[]},{\"CookieAuth\":[]}]",

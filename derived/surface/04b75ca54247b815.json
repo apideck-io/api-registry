@@ -47,6 +47,7 @@
  "perPath: /v1/admin/workspaces/{workspace_uuid} patch security [{\"AdminApiKey\":[]}]",
  "perPath: /v1/admin/workspaces/{workspace_uuid}/add-users post security [{\"AdminApiKey\":[]}]",
  "perPath: /v1/admin/workspaces/{workspace_uuid}/remove-users delete security [{\"AdminApiKey\":[]}]",
+ "perPath: /v1/admin/workspaces/{workspace_uuid}/users get security [{\"AdminApiKey\":[]}]",
  "perPath: /v1/admin/workspaces/{workspace_uuid}/users patch security [{\"AdminApiKey\":[]}]",
  "perPath: /v1/billing/budget get security [{\"DashboardContextAuth\":[]}]",
  "perPath: /v1/billing/subscription get security [{\"DashboardContextAuth\":[]}]",

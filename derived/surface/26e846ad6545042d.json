@@ -7,6 +7,7 @@
  "perPath: /api/comments get security []",
  "perPath: /api/comments/{id} get security []",
  "perPath: /api/events get security []",
+ "perPath: /api/events/{event_id}/memberships get security []",
  "perPath: /api/events/{id} get security []",
  "perPath: /api/health_checks/app get security []",
  "perPath: /api/health_checks/cache get security []",

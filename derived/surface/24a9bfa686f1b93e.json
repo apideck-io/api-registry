@@ -74,6 +74,8 @@
  "perPath: /1/slos/{datasetSlug}/{sloId} put security [{\"configuration_key\":[]}]",
  "perPath: /1/slos/{datasetSlug}/{sloId}/counts get security [{\"configuration_key\":[]}]",
  "perPath: /1/slos/{datasetSlug}/{sloId}/counts/history get security [{\"configuration_key\":[]}]",
+ "perPath: /1/slos/{datasetSlug}/{sloId}/resets get security [{\"configuration_key\":[]}]",
+ "perPath: /1/slos/{datasetSlug}/{sloId}/resets post security [{\"configuration_key\":[]}]",
  "perPath: /1/triggers/{datasetSlug} get security [{\"configuration_key\":[]}]",
  "perPath: /1/triggers/{datasetSlug} post security [{\"configuration_key\":[]}]",
  "perPath: /1/triggers/{datasetSlug}/{triggerId} delete security [{\"configuration_key\":[]}]",

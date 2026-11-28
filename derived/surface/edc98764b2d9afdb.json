@@ -50,14 +50,17 @@
  "schemes.API-Nonce.in: \"header\"",
  "schemes.API-Nonce.name: \"API-Nonce\"",
  "schemes.API-Nonce.type: \"apiKey\"",
+ "schemes.API-Nonce.x-default: \"<api-nonce>\"",
  "schemes.API-OTP.description: \"The \\\"API-OTP\\\" header should contain your two-factor authentication one-time password. Required only if 2FA is configured for the API key.\"",
  "schemes.API-OTP.in: \"header\"",
  "schemes.API-OTP.name: \"API-OTP\"",
  "schemes.API-OTP.type: \"apiKey\"",
+ "schemes.API-OTP.x-default: \"<api-otp>\"",
  "schemes.API-Sign.description: \"Authenticated requests should be signed with the \\\"API-Sign\\\" header, using a signature generated with your private key, nonce, encoded payload, and URI path.\"",
  "schemes.API-Sign.in: \"header\"",
  "schemes.API-Sign.name: \"API-Sign\"",
  "schemes.API-Sign.type: \"apiKey\"",
+ "schemes.API-Sign.x-default: \"<api-sign>\"",
  "security[]: {\"API-Key\":[],\"API-Sign\":[]}",
  "servers[0]: {\"description\":\"Production Server\",\"url\":\"https://api.kraken.com/0\"}"
 ]

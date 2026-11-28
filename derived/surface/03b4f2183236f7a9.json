@@ -4,6 +4,7 @@
  "perPath: /accounts/{id}/notes post security [{\"BearerAuth\":[]},{\"OAuth2\":[\"notes:write\"]}]",
  "perPath: /callDispositions get security [{\"BearerAuth\":[]},{\"OAuth2\":[\"call-dispositions:read\"]}]",
  "perPath: /callDispositions/{id} get security [{\"BearerAuth\":[]},{\"OAuth2\":[\"call-dispositions:read\"]}]",
+ "perPath: /callStats get security [{\"BearerAuth\":[]},{\"OAuth2\":[\"calls:read\"]}]",
  "perPath: /calls get security [{\"BearerAuth\":[]},{\"OAuth2\":[\"calls:read\"]}]",
  "perPath: /calls post security [{\"BearerAuth\":[]},{\"OAuth2\":[\"calls:write\"]}]",
  "perPath: /calls/{id} get security [{\"BearerAuth\":[]},{\"OAuth2\":[\"calls:read\"]}]",

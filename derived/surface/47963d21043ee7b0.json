@@ -41,6 +41,10 @@
  "perPath: /api/public/organizations/memberships delete security [{\"BasicAuth\":[]}]",
  "perPath: /api/public/organizations/memberships get security [{\"BasicAuth\":[]}]",
  "perPath: /api/public/organizations/memberships put security [{\"BasicAuth\":[]}]",
+ "perPath: /api/public/organizations/models get security [{\"BasicAuth\":[]}]",
+ "perPath: /api/public/organizations/models put security [{\"BasicAuth\":[]}]",
+ "perPath: /api/public/organizations/models/{id} delete security [{\"BasicAuth\":[]}]",
+ "perPath: /api/public/organizations/models/{id} get security [{\"BasicAuth\":[]}]",
  "perPath: /api/public/organizations/projects get security [{\"BasicAuth\":[]}]",
  "perPath: /api/public/otel/v1/traces post security [{\"BasicAuth\":[]}]",
  "perPath: /api/public/projects get security [{\"BasicAuth\":[]}]",
@@ -96,7 +100,7 @@
  "perPath: /api/public/unstable/topic-rules/{ruleId} get security [{\"BasicAuth\":[]}]",
  "perPath: /api/public/unstable/topic-summaries get security [{\"BasicAuth\":[]}]",
  "perPath: /api/public/unstable/topics get security [{\"BasicAuth\":[]}]",
- "perPath: /api/public/unstable/topics/{topicId} get security [{\"BasicAuth\":[]}]",
+ "perPath: /api/public/unstable/topics/{topicStableId} get security [{\"BasicAuth\":[]}]",
  "perPath: /api/public/v2/datasets get security [{\"BasicAuth\":[]}]",
  "perPath: /api/public/v2/datasets post security [{\"BasicAuth\":[]}]",
  "perPath: /api/public/v2/datasets/{datasetName} get security [{\"BasicAuth\":[]}]",
@@ -122,5 +126,9 @@
  "schemes.BasicAuth.scheme: \"basic\"",
  "schemes.BasicAuth.type: \"http\"",
  "security: null",
- "servers: null"
+ "servers[0]: {\"description\":\"The Langfuse instance that serves this spec\",\"url\":\"/\"}",
+ "servers[1]: {\"description\":\"Langfuse Cloud, EU data region\",\"url\":\"https://cloud.langfuse.com\"}",
+ "servers[2]: {\"description\":\"Langfuse Cloud, US data region\",\"url\":\"https://us.cloud.langfuse.com\"}",
+ "servers[3]: {\"description\":\"Langfuse Cloud, Japan data region\",\"url\":\"https://jp.cloud.langfuse.com\"}",
+ "servers[4]: {\"description\":\"Langfuse Cloud, HIPAA data region\",\"url\":\"https://hipaa.cloud.langfuse.com\"}"
 ]

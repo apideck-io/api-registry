@@ -151,6 +151,7 @@
  "perPath: /core/v1/order-numbering-configurations get security [{\"apiKeyAuth\":[]},{\"bearerAuth\":[]}]",
  "perPath: /core/v1/orders/next-order-number get security [{\"apiKeyAuth\":[]},{\"bearerAuth\":[]}]",
  "perPath: /core/v1/payroll/contracts/{contractId}/payslips/{payslipId}/salary-items post security [{\"apiKeyAuth\":[]},{\"bearerAuth\":[]}]",
+ "perPath: /core/v1/payroll/contracts/{contractId}/payslips/{payslipId}/salary-items/{code}/quantity put security [{\"apiKeyAuth\":[]},{\"bearerAuth\":[]}]",
  "perPath: /core/v1/payroll/employees/{employeeId}/addable-salary-items get security [{\"apiKeyAuth\":[]},{\"bearerAuth\":[]}]",
  "perPath: /core/v1/vat-clearing-reports/{year}/{quarter} post security [{\"apiKeyAuth\":[]},{\"bearerAuth\":[]}]",
  "perPath: /core/v2/tenants/companies get security [{\"apiKeyAuth\":[]},{\"bearerAuth\":[]}]",

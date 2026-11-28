@@ -8,6 +8,7 @@
  "perPath: /v2/conversations/{conversation_id}/canvas/interactions get security [{\"apiKey\":[]}]",
  "perPath: /v2/conversations/{conversation_id}/canvas/interactions post security []",
  "perPath: /v2/conversations/{conversation_id}/end post security [{\"apiKey\":[]}]",
+ "perPath: /v2/conversations/{conversation_id}/send-app-message post security [{\"apiKey\":[]}]",
  "perPath: /v2/deployments get security [{\"apiKey\":[]}]",
  "perPath: /v2/deployments post security [{\"apiKey\":[]}]",
  "perPath: /v2/deployments/{deployment_id} delete security [{\"apiKey\":[]}]",
